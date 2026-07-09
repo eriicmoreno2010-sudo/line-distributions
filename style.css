@@ -8,3 +8,76 @@
     <h1>Mi proyecto de Line Distribution</h1>
 </body>
 </html>
+body{
+    margin:0;
+    background:#ececec;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    grid-template-rows:
+    380px
+    20px
+    250px;
+
+    gap:10px;
+
+    padding:10px;
+
+}
+
+.video{
+
+    background:#444;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.ranking{
+
+    background:white;
+
+    padding:20px;
+
+}
+
+.member{
+
+    display:flex;
+    justify-content:space-between;
+
+    margin:18px 0;
+
+    font-weight:bold;
+
+}
+
+.bar{
+
+    grid-column:1 / 2;
+
+    background:linear-gradient(
+    to right,
+    orange 25%,
+    red 15%,
+    deepskyblue 60%
+    );
+
+}
+
+.lyrics{
+
+    background:white;
+
+    padding:20px;
+
+}
