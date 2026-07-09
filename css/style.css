@@ -1,1 +1,283 @@
+/* ========================================= */
+/*              RESET GENERAL                */
+/* ========================================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --background:#181818;
+    --surface:#242424;
+    --surface-light:#303030;
+
+    --text:#ffffff;
+    --text-secondary:#cfcfcf;
+
+    --border:#3d3d3d;
+
+    --shadow:0 12px 30px rgba(0,0,0,.35);
+
+    --radius:18px;
+
+    --transition:.25s ease;
+
+}
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+/* ========================================= */
+/*                 APP                       */
+/* ========================================= */
+
+#app{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    padding:25px;
+
+}
+
+/* ========================================= */
+/*                HEADER                     */
+/* ========================================= */
+
+#header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+#group-name{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+#song-name{
+
+    font-size:19px;
+
+    font-weight:400;
+
+    color:var(--text-secondary);
+
+}
+
+/* ========================================= */
+/*              CONTENIDO                    */
+/* ========================================= */
+
+#main-content{
+
+    display:grid;
+
+    grid-template-columns:1.75fr 1fr;
+
+    gap:22px;
+
+    align-items:start;
+
+}
+
+/* ========================================= */
+/*               TARJETAS                    */
+/* ========================================= */
+
+#video-section,
+#ranking-section,
+#lyrics-section{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ========================================= */
+/*               VIDEO                       */
+/* ========================================= */
+
+#video-section{
+
+    overflow:hidden;
+
+}
+
+/* ========================================= */
+/*               RANKING                     */
+/* ========================================= */
+
+#ranking-section{
+
+    padding:18px;
+
+}
+
+/* ========================================= */
+/*              TIMELINE                     */
+/* ========================================= */
+
+#timeline-section{
+
+    width:100%;
+
+}
+
+#timeline{
+
+    width:100%;
+
+    height:8px;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    background:#3a3a3a;
+
+}
+
+#timeline-progress{
+
+    width:0%;
+
+    height:100%;
+
+    background:white;
+
+}
+
+/* ========================================= */
+/*                LETRAS                     */
+/* ========================================= */
+
+#lyrics-section{
+
+    padding:45px 30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-height:240px;
+
+}
+
+#current-member{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+#current-lyric{
+
+    font-size:34px;
+
+    line-height:1.6;
+
+    max-width:1000px;
+
+}
+
+/* ========================================= */
+/*             RESPONSIVE                    */
+/* ========================================= */
+
+@media (max-width:1200px){
+
+    #main-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media (max-width:700px){
+
+    #app{
+
+        padding:15px;
+
+    }
+
+    #group-name{
+
+        font-size:26px;
+
+    }
+
+    #song-name{
+
+        font-size:16px;
+
+    }
+
+    #current-member{
+
+        font-size:30px;
+
+    }
+
+    #current-lyric{
+
+        font-size:24px;
+
+    }
+
+}
