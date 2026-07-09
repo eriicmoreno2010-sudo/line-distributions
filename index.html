@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Distribution</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Zona del vídeo -->
+    <section class="video-section">
+        <video id="video" controls>
+            Tu navegador no soporta vídeos.
+        </video>
+    </section>
+
+    <!-- Ranking -->
+    <aside class="ranking-section">
+
+        <div class="song-info">
+            <h1 id="group-name">Grupo</h1>
+            <h2 id="song-name">Canción</h2>
+        </div>
+
+        <div id="ranking">
+            <!-- Se genera automáticamente -->
+        </div>
+
+    </aside>
+
+    <!-- Barra de progreso -->
+    <section class="timeline-section">
+
+        <div class="timeline">
+            <div id="timeline-progress"></div>
+        </div>
+
+    </section>
+
+    <!-- Letras -->
+    <section class="lyrics-section">
+
+        <h2 id="current-member">-</h2>
+
+        <p id="current-lyric">
+            Esperando...
+        </p>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
