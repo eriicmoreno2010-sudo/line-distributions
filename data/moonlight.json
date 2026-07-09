@@ -1,0 +1,46 @@
+{
+  "group": "NCT DREAM",
+  "song": "Moonlight",
+
+  "video": "videos/moonlight.mp4",
+
+  "members": [
+    {
+      "name": "MARK",
+      "image": "images/mark.png",
+      "color": "#4A90E2"
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/haechan.png",
+      "color": "#FF8C42"
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/renjun.png",
+      "color": "#6FCF97"
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/chenle.png",
+      "color": "#EB5757"
+    },
+    {
+      "name": "JENO",
+      "image": "images/jeno.png",
+      "color": "#9B51E0"
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/jaemin.png",
+      "color": "#F2C94C"
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/jisung.png",
+      "color": "#56CCF2"
+    }
+  ],
+
+  "lyrics": []
+}
