@@ -230,3 +230,74 @@ body{
     line-height:1.6;
 
 }
+
+/* ========================= */
+/* TARJETAS DE MIEMBRO */
+/* ========================= */
+
+.member{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.member-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.member-bar{
+
+    width:100%;
+
+    height:8px;
+
+    background:#555;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.member-progress{
+
+    width:0%;
+
+    height:100%;
+
+    transition:width .25s linear;
+
+}
+
+/* ========================= */
+/* SIN VIDEO */
+/* ========================= */
+
+.no-video{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:white;
+
+}
