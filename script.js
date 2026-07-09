@@ -1,32 +1,31 @@
+let membersData = [];
+
 async function loadSong() {
 
     const response = await fetch("data/moonlight.json");
     const song = await response.json();
 
-    // Grupo y canción
     document.getElementById("group-name").textContent = song.group;
     document.getElementById("song-name").textContent = song.song;
 
-    // Vídeo
-    const video = document.getElementById("video");
+    membersData = song.members.map(member => ({
+        ...member,
+        seconds: 0
+    }));
 
-    if(song.video){
-        video.src = song.video;
-    }else{
-        video.style.display = "none";
-        document.querySelector(".video-section").innerHTML = `
-            <div class="no-video">
-                <h2>VIDEO</h2>
-                <p>Añade un vídeo para esta canción</p>
-            </div>
-        `;
-    }
+    renderRanking();
 
-    // Ranking
+    startDemo();
+
+}
+
+function renderRanking(){
+
     const ranking = document.getElementById("ranking");
-    ranking.innerHTML = "";
 
-    song.members.forEach(member => {
+    ranking.innerHTML="";
+
+    membersData.forEach(member=>{
 
         ranking.innerHTML += `
 
@@ -36,20 +35,24 @@ async function loadSong() {
 
                 <div class="member-left">
 
-                    <img src="${member.image}" alt="${member.name}">
+                    <img src="${member.image}">
 
                     <span>${member.name}</span>
 
                 </div>
 
-                <span class="member-time">0.0 s</span>
+                <span class="member-time">${member.seconds.toFixed(1)} s</span>
 
             </div>
 
             <div class="member-bar">
 
-                <div class="member-progress"
-                     style="background:${member.color}; width:0%;">
+                <div
+                    class="member-progress"
+                    style="
+                        width:${member.seconds*4}%;
+                        background:${member.color};
+                    ">
                 </div>
 
             </div>
@@ -59,6 +62,32 @@ async function loadSong() {
         `;
 
     });
+
+}
+
+function startDemo(){
+
+    let current = 0;
+
+    setInterval(()=>{
+
+        membersData[current].seconds += 0.1;
+
+        if(membersData[current].seconds>8){
+
+            current++;
+
+            if(current>=membersData.length){
+
+                current=0;
+
+            }
+
+        }
+
+        renderRanking();
+
+    },100);
 
 }
 
