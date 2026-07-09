@@ -27,11 +27,11 @@ body{
 
     grid-template-columns:2fr 1fr;
 
-    grid-template-rows:
-        500px
-        16px
-        1fr;
-
+   grid-template-rows:
+    630px
+    12px
+    auto;
+    
     gap:15px;
 
     padding:15px;
