@@ -44,5 +44,20 @@
     }
   ],
 
-  "lyrics": []
+  "lyrics": [
+    {
+    "start": 6.00,
+    "end": 7.20,
+
+    "member": "JENO",
+
+    "hangul": "",
+
+    "romanization": "Yeah",
+
+    "english": "",
+
+    "adlib": ""
+  }  
+  ]
 }
