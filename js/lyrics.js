@@ -58,6 +58,10 @@ const Lyrics = {
         document.getElementById("adlibs-section").textContent =
             line.adlib || "";
 
+        Ranking.setActive(line.member);
+
+        Ranking.render();
+
     },
 
     clear() {
@@ -75,6 +79,10 @@ const Lyrics = {
         document.getElementById("english").textContent = "";
 
         document.getElementById("adlibs-section").textContent = "";
+
+        Ranking.setActive("");
+
+        Ranking.render();
 
     }
 
