@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         Ranking.load(SONG);
 
+        Player.init();
+
     } catch (error) {
 
         console.error("Error loading song:", error);
