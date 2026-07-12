@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         SONG = await response.json();
 
-        initializeApplication();
+        loadSongInformation();
+
+        loadVideo();
+
+        Ranking.load(SONG);
 
     } catch (error) {
 
@@ -25,15 +29,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
 });
-
-function initializeApplication() {
-
-    loadSongInformation();
-
-    loadVideo();
-
-    createRanking();
-
-    Player.init();
-
-}
