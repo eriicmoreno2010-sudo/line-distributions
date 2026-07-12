@@ -32,7 +32,7 @@ const Ranking = {
 
             const card=document.createElement("div");
 
-            card.className="member";
+           card.className = "member fade-in";
 
             if(member.active){
 
