@@ -120,6 +120,12 @@ body{
 
 }
 
+#song-info{
+
+    margin-left:10px;
+
+}
+
 #group-name{
 
     font-size:28px;
@@ -151,6 +157,8 @@ body{
     font-size:22px;
 
     font-weight:bold;
+
+    margin-right:10px;
 
 }
 
