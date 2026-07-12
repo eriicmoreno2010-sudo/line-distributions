@@ -128,7 +128,7 @@ const Ranking = {
 
     member.seconds += delta;
 
-}
+},
 
     sort(){
 
