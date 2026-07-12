@@ -112,7 +112,11 @@ const Ranking = {
 
             member.active=member.name===name;
 
-      addTime(name, delta){
+        });
+
+    },
+
+     addTime(name, delta){
 
     const member = this.members.find(
 
@@ -125,10 +129,6 @@ const Ranking = {
     member.seconds += delta;
 
 }
-
-        });
-
-    },
 
     sort(){
 
