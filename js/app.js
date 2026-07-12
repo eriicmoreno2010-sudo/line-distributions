@@ -1,45 +1,39 @@
-/* ========================================= */
-/*                APP.JS                     */
-/* ========================================= */
+/*
+=========================================
+K-Line Distribution
+Version: 2.0
+App
+=========================================
+*/
+
+let SONG = null;
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    try{
+    try {
 
-        const response = await fetch("data/moonlight.json");
+        const response = await fetch("data/nctdream/moonlight.json");
 
-        const song = await response.json();
+        SONG = await response.json();
 
-        UI.setGroup(song.group);
+        initializeApplication();
 
-        UI.setSong(song.song);
+    } catch (error) {
 
-        Ranking.load(song);
-
-        Engine.load(song);
-
-        Player.init();
-
-        function loop(){
-
-            const time = Player.getTime();
-
-            Engine.update(time);
-
-            Ranking.refresh(song.duration);
-
-            requestAnimationFrame(loop);
-
-        }
-
-        requestAnimationFrame(loop);
-
-    }
-
-    catch(error){
-
-        console.error(error);
+        console.error("Error loading song:", error);
 
     }
 
 });
+
+function initializeApplication() {
+
+    loadSongInformation();
+
+    loadVideo();
+
+    createRanking();
+
+    Player.init();
+
+}
