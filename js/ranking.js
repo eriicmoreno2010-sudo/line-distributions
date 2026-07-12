@@ -44,16 +44,21 @@ const Ranking = {
 
                 <div class="member-top">
 
-                    <div class="member-left">
+                  <div class="member-left">
 
-                        <img
-                            src="${member.image}"
-                            alt="${member.name}"
-                        >
+    <img
+        class="member-photo"
+        src="${member.image}"
+        alt="${member.name}"
+    >
 
-                        <span>${member.name}</span>
+    <span class="member-name">
 
-                    </div>
+        ${member.name}
+
+    </span>
+
+</div>
 
                     <span class="member-time">
 
