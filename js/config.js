@@ -1,69 +1,64 @@
+/*
+=========================================
+K-Line Distribution
+Version: 2.0
+Config
+=========================================
+*/
+
 const CONFIG = {
 
     app: {
 
-        group: "NCT DREAM",
+        version: "2.0",
 
-        song: "Moonlight"
-
-    },
-
-    ui: {
-
-        animationSpeed: 250,
-
-        progressBarHeight: 10,
-
-        memberPhotoSize: 52,
-
-        showVideo: true,
-
-        showSeconds: true
+        fps: 60
 
     },
 
-    lyrics: {
+    groups: {
 
-        fontSize: 30,
+        "NCT DREAM": {
 
-        memberFontSize: 38,
+            members: {
 
-        showHangul: true,
+                MARK: {
+                    color: "#b353cd",
+                    image: "images/nctdream/mark.png"
+                },
 
-        showRomanized: true,
+                RENJUN: {
+                    color: "#ab842f",
+                    image: "images/nctdream/renjun.png"
+                },
 
-        showEnglish: true
+                JENO: {
+                    color: "#cb0c0c",
+                    image: "images/nctdream/jeno.png"
+                },
 
-    },
+                HAECHAN: {
+                    color: "#0089b6",
+                    image: "images/nctdream/haechan.png"
+                },
 
-    members: {
+                JAEMIN: {
+                    color: "#1bcf72",
+                    image: "images/nctdream/jaemin.png"
+                },
 
-        MARK: {
-            color: "#b353cd"
-        },
+                CHENLE: {
+                    color: "#008206",
+                    image: "images/nctdream/chenle.png"
+                },
 
-        HAECHAN: {
-            color: "#0089b6"
-        },
+                JISUNG: {
+                    color: "#df068c",
+                    image: "images/nctdream/jisung.png"
+                }
 
-        RENJUN: {
-            color: "#ab842f"
-        },
+            }
 
-        CHENLE: {
-            color: "#008206"
-        },
-
-        JENO: {
-            color: "#cb0c0c"
-        },
-
-        JAEMIN: {
-            color: "#1bcf72"
-        },
-
-        JISUNG: {
-            color: "#df068c"
         }
 
     }
