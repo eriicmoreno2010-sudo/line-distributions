@@ -38,6 +38,8 @@ Lyrics
 
     justify-content:center;
 
+    transform:translateY(-30px);
+
     align-items:center;
 
     text-align:center;
