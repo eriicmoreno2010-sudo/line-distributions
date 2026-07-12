@@ -1,1 +1,123 @@
+/* ========================================= */
+/*                 VIDEO                      */
+/* ========================================= */
 
+#video-section{
+
+    position:relative;
+
+    width:100%;
+
+    aspect-ratio:16 / 9;
+
+    background:#000;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ========================================= */
+/*              VIDEO HTML                   */
+/* ========================================= */
+
+#video{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    background:black;
+
+}
+
+/* ========================================= */
+/*          PLACEHOLDER SIN VIDEO            */
+/* ========================================= */
+
+.no-video{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.no-video h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+.no-video p{
+
+    font-size:18px;
+
+    color:#bdbdbd;
+
+}
+
+/* ========================================= */
+/*              CONTROLES                    */
+/* ========================================= */
+
+/* De momento dejamos los controles nativos.
+   Más adelante haremos unos propios. */
+
+video::-webkit-media-controls{
+
+    opacity:1;
+
+}
+
+/* ========================================= */
+/*               EFECTOS                     */
+/* ========================================= */
+
+#video-section:hover{
+
+    transform:translateY(-2px);
+
+    transition:.25s;
+
+}
+
+/* ========================================= */
+/*            RESPONSIVE                     */
+/* ========================================= */
+
+@media(max-width:1200px){
+
+    #video-section{
+
+        aspect-ratio:16 / 9;
+
+    }
+
+}
