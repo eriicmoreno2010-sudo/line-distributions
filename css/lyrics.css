@@ -1,1 +1,217 @@
+/*
+=========================================
+K-Line Distribution
+Version: 2.0
+Lyrics
+=========================================
+*/
 
+/* ========================= */
+/* LYRICS CONTAINER */
+/* ========================= */
+
+#lyrics-container{
+
+    display:grid;
+
+    grid-template-columns:3fr 1fr;
+
+    gap:20px;
+
+    height:100%;
+
+}
+
+/* ========================= */
+/* MAIN LYRICS */
+/* ========================= */
+
+#lyrics-section{
+
+    background:#1b1b1b;
+
+    border-radius:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+/* ========================= */
+/* CURRENT MEMBER */
+/* ========================= */
+
+#current-member{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:35px;
+
+    transition:.25s;
+
+}
+
+/* ========================= */
+/* HANGUL */
+/* ========================= */
+
+#hangul{
+
+    min-height:42px;
+
+    font-size:30px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    color:white;
+
+}
+
+/* ========================= */
+/* ROMANIZATION */
+/* ========================= */
+
+#romanized{
+
+    min-height:42px;
+
+    margin-top:15px;
+
+    font-size:30px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    color:#f2f2f2;
+
+}
+
+/* ========================= */
+/* ENGLISH */
+/* ========================= */
+
+#english{
+
+    min-height:42px;
+
+    margin-top:15px;
+
+    font-size:30px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    color:#d5d5d5;
+
+}
+
+/* ========================= */
+/* ADLIBS PANEL */
+/* ========================= */
+
+#adlibs-section{
+
+    background:#1b1b1b;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+/* ========================= */
+/* ADLIB CARD */
+/* ========================= */
+
+.adlib-card{
+
+    border:2px solid transparent;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    background:rgba(255,255,255,.05);
+
+    transition:.25s;
+
+}
+
+/* ========================= */
+/* ADLIB MEMBER */
+/* ========================= */
+
+.adlib-card h4{
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+/* ========================= */
+/* ADLIB TEXT */
+/* ========================= */
+
+.adlib-card p{
+
+    font-size:18px;
+
+    line-height:1.5;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1200px){
+
+    #lyrics-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #current-member{
+
+        font-size:30px;
+
+    }
+
+    #hangul,
+    #romanized,
+    #english{
+
+        font-size:24px;
+
+    }
+
+}
