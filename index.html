@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Line Distribution</title>
 
+    <!-- ========================= -->
     <!-- CSS -->
+    <!-- ========================= -->
 
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/video.css">
+
     <link rel="stylesheet" href="css/ranking.css">
+
     <link rel="stylesheet" href="css/lyrics.css">
+
     <link rel="stylesheet" href="css/animations.css">
 
 </head>
@@ -22,29 +30,61 @@
 
 <div id="app">
 
-    <!-- ========================= -->
-    <!-- CABECERA -->
-    <!-- ========================= -->
+    <!-- ===================================== -->
+    <!-- LEFT PANEL -->
+    <!-- ===================================== -->
 
-    <header id="header">
+    <section id="left-panel">
 
-        <h1 id="group-name">
-            NCT DREAM
-        </h1>
+        <!-- ========================= -->
+        <!-- HEADER -->
+        <!-- ========================= -->
 
-        <h2 id="song-name">
-            Moonlight
-        </h2>
+        <header id="top-bar">
 
-    </header>
+            <div id="song-info">
 
-    <!-- ========================= -->
-    <!-- CONTENIDO -->
-    <!-- ========================= -->
+                <h1 id="group-name">
 
-    <main id="main-content">
+                    NCT DREAM
 
+                </h1>
+
+                <h2 id="song-name">
+
+                    Moonlight
+
+                </h2>
+
+            </div>
+
+            <div id="song-time">
+
+                <span id="current-time">
+
+                    00:00
+
+                </span>
+
+                <span>
+
+                    /
+
+                </span>
+
+                <span id="duration">
+
+                    00:00
+
+                </span>
+
+            </div>
+
+        </header>
+
+        <!-- ========================= -->
         <!-- VIDEO -->
+        <!-- ========================= -->
 
         <section id="video-section">
 
@@ -56,76 +96,3 @@
             </video>
 
         </section>
-
-        <!-- RANKING -->
-
-        <aside id="ranking-section">
-
-            <div id="ranking">
-
-                <!--
-                    JavaScript generará aquí
-                    todas las tarjetas
-                -->
-
-            </div>
-
-        </aside>
-
-    </main>
-
-    <!-- ========================= -->
-    <!-- BARRA -->
-    <!-- ========================= -->
-
-    <section id="timeline-section">
-
-        <div id="timeline">
-
-            <div id="timeline-progress"></div>
-
-        </div>
-
-    </section>
-
-    <!-- ========================= -->
-    <!-- LETRAS -->
-    <!-- ========================= -->
-
-    <section id="lyrics-section">
-
-        <h2 id="current-member">
-
-            MARK
-
-        </h2>
-
-        <p id="current-lyric">
-
-            Pulsa reproducir para comenzar.
-
-        </p>
-
-    </section>
-
-</div>
-
-<!-- ========================= -->
-<!-- JAVASCRIPT -->
-<!-- ========================= -->
-
-<script src="js/config.js"></script>
-
-<script src="js/ui.js"></script>
-
-<script src="js/player.js"></script>
-
-<script src="js/ranking.js"></script>
-
-<script src="js/engine.js"></script>
-
-<script src="js/app.js"></script>
-
-</body>
-
-</html>
