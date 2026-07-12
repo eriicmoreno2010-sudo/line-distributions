@@ -1,6 +1,14 @@
-/* ========================================= */
-/*              RESET GENERAL                */
-/* ========================================= */
+/*
+=========================================
+K-Line Distribution
+Version: 2.0
+Base Layout
+=========================================
+*/
+
+/* ========================= */
+/* RESET */
+/* ========================= */
 
 *{
     margin:0;
@@ -10,22 +18,27 @@
 
 :root{
 
-    --background:#181818;
-    --surface:#242424;
-    --surface-light:#303030;
+    --background:#111111;
+
+    --panel:#1b1b1b;
+
+    --panel2:#242424;
+
+    --border:#303030;
 
     --text:#ffffff;
-    --text-secondary:#cfcfcf;
 
-    --border:#3d3d3d;
-
-    --shadow:0 12px 30px rgba(0,0,0,.35);
+    --text2:#bfbfbf;
 
     --radius:18px;
 
-    --transition:.25s ease;
+    --shadow:0 12px 35px rgba(0,0,0,.35);
 
 }
+
+/* ========================= */
+/* BODY */
+/* ========================= */
 
 html,
 body{
@@ -45,92 +58,139 @@ body{
 
 }
 
-/* ========================================= */
-/*                 APP                       */
-/* ========================================= */
+/* ========================= */
+/* APP */
+/* ========================= */
 
 #app{
 
     width:100%;
-    min-height:100vh;
 
-    display:flex;
+    height:100vh;
 
-    flex-direction:column;
+    padding:18px;
 
-    gap:22px;
+    display:grid;
 
-    padding:25px;
+    grid-template-columns:2.2fr 1fr;
+
+    gap:18px;
 
 }
 
-/* ========================================= */
-/*                HEADER                     */
-/* ========================================= */
+/* ========================= */
+/* LEFT PANEL */
+/* ========================= */
 
-#header{
+#left-panel{
+
+    display:grid;
+
+    grid-template-rows:
+
+        auto
+
+        420px
+
+        1fr;
+
+    gap:18px;
+
+}
+
+/* ========================= */
+/* TOP BAR */
+/* ========================= */
+
+#top-bar{
+
+    background:var(--panel);
+
+    border-radius:var(--radius);
+
+    padding:18px 24px;
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:space-between;
 
     align-items:center;
 
-    justify-content:center;
-
-    gap:8px;
-
-    padding-bottom:18px;
-
-    border-bottom:1px solid var(--border);
+    box-shadow:var(--shadow);
 
 }
 
 #group-name{
 
-    font-size:34px;
+    font-size:28px;
 
     font-weight:700;
-
-    letter-spacing:1px;
 
 }
 
 #song-name{
 
-    font-size:19px;
+    margin-top:4px;
+
+    font-size:18px;
+
+    color:var(--text2);
 
     font-weight:400;
 
-    color:var(--text-secondary);
+}
+
+#song-time{
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    font-size:22px;
+
+    font-weight:bold;
 
 }
 
-/* ========================================= */
-/*              CONTENIDO                    */
-/* ========================================= */
+/* ========================= */
+/* VIDEO */
+/* ========================= */
 
-#main-content{
+#video-section{
+
+    background:var(--panel);
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ========================= */
+/* LYRICS + ADLIBS */
+/* ========================= */
+
+#lyrics-container{
 
     display:grid;
 
-    grid-template-columns:1.75fr 1fr;
+    grid-template-columns:3fr 1fr;
 
-    gap:22px;
-
-    align-items:start;
+    gap:18px;
 
 }
 
-/* ========================================= */
-/*               TARJETAS                    */
-/* ========================================= */
+/* ========================= */
+/* LYRICS */
+/* ========================= */
 
-#video-section,
-#ranking-section,
 #lyrics-section{
 
-    background:var(--surface);
+    background:var(--panel);
 
     border-radius:var(--radius);
 
@@ -138,33 +198,73 @@ body{
 
 }
 
-/* ========================================= */
-/*               VIDEO                       */
-/* ========================================= */
+/* ========================= */
+/* ADLIBS */
+/* ========================= */
 
-#video-section{
+#adlibs-section{
+
+    background:var(--panel);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ========================= */
+/* RIGHT PANEL */
+/* ========================= */
+
+#right-panel{
+
+    background:var(--panel);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
 
     overflow:hidden;
 
 }
 
-/* ========================================= */
-/*               RANKING                     */
-/* ========================================= */
+#ranking-title{
 
-#ranking-section{
+    text-align:center;
 
-    padding:18px;
+    font-size:24px;
+
+    margin-bottom:18px;
 
 }
 
-/* ========================================= */
-/*              TIMELINE                     */
-/* ========================================= */
+#ranking{
+
+    flex:1;
+
+}
+
+/* ========================= */
+/* TIMELINE */
+/* ========================= */
 
 #timeline-section{
 
+    position:fixed;
+
+    left:0;
+
+    bottom:0;
+
     width:100%;
+
+    height:6px;
 
 }
 
@@ -172,13 +272,9 @@ body{
 
     width:100%;
 
-    height:8px;
+    height:100%;
 
-    border-radius:999px;
-
-    overflow:hidden;
-
-    background:#3a3a3a;
+    background:#303030;
 
 }
 
@@ -192,91 +288,35 @@ body{
 
 }
 
-/* ========================================= */
-/*                LETRAS                     */
-/* ========================================= */
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
 
-#lyrics-section{
-
-    padding:45px 30px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    min-height:240px;
-
-}
-
-#current-member{
-
-    font-size:42px;
-
-    font-weight:700;
-
-    margin-bottom:22px;
-
-}
-
-#current-lyric{
-
-    font-size:34px;
-
-    line-height:1.6;
-
-    max-width:1000px;
-
-}
-
-/* ========================================= */
-/*             RESPONSIVE                    */
-/* ========================================= */
-
-@media (max-width:1200px){
-
-    #main-content{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
-@media (max-width:700px){
+@media(max-width:1200px){
 
     #app{
 
-        padding:15px;
+        grid-template-columns:1fr;
+
+        height:auto;
 
     }
 
-    #group-name{
+    #left-panel{
 
-        font-size:26px;
+        grid-template-rows:
 
-    }
+            auto
 
-    #song-name{
+            360px
 
-        font-size:16px;
-
-    }
-
-    #current-member{
-
-        font-size:30px;
+            auto;
 
     }
 
-    #current-lyric{
+    #lyrics-container{
 
-        font-size:24px;
+        grid-template-columns:1fr;
 
     }
 
