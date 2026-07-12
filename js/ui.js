@@ -37,3 +37,25 @@ function loadVideo(){
     UI.elements.video.src = SONG.video;
 
 }
+
+function formatTime(seconds){
+
+    const min = Math.floor(seconds / 60);
+
+    const sec = Math.floor(seconds % 60);
+
+    return `${String(min).padStart(2,"0")}:${String(sec).padStart(2,"0")}`;
+
+}
+
+UI.setCurrentTime = function(seconds){
+
+    this.elements.currentTime.textContent = formatTime(seconds);
+
+}
+
+UI.setDuration = function(seconds){
+
+    this.elements.duration.textContent = formatTime(seconds);
+
+}
