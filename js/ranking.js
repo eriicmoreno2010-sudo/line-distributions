@@ -16,7 +16,9 @@ const Ranking = {
 
             percentage:0,
 
-            active:false
+            active:false,
+
+            lastUpdate:0
 
         }));
 
@@ -109,6 +111,20 @@ const Ranking = {
         this.members.forEach(member=>{
 
             member.active=member.name===name;
+
+      addTime(name, delta){
+
+    const member = this.members.find(
+
+        m => m.name === name
+
+    );
+
+    if(!member) return;
+
+    member.seconds += delta;
+
+}
 
         });
 
