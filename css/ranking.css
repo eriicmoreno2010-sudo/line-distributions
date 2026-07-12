@@ -1,1 +1,204 @@
+/* ========================================= */
+/*              RANKING PANEL                */
+/* ========================================= */
 
+#ranking-section{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:20px;
+
+    height:100%;
+
+}
+
+#ranking{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+/* ========================================= */
+/*             MEMBER CARD                   */
+/* ========================================= */
+
+.member{
+
+    background:#2f2f2f;
+
+    border-radius:16px;
+
+    padding:14px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    transition:all .25s ease;
+
+    border:2px solid transparent;
+
+}
+
+.member:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ========================================= */
+/*             TOP ROW                       */
+/* ========================================= */
+
+.member-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ========================================= */
+/*          LEFT SIDE                        */
+/* ========================================= */
+
+.member-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+/* ========================================= */
+/*             MEMBER PHOTO                  */
+/* ========================================= */
+
+.member-left img{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    border:2px solid transparent;
+
+    transition:all .25s ease;
+
+}
+
+/* ========================================= */
+/*            MEMBER NAME                    */
+/* ========================================= */
+
+.member-left span{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+}
+
+/* ========================================= */
+/*             MEMBER TIME                   */
+/* ========================================= */
+
+.member-time{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:white;
+
+    min-width:70px;
+
+    text-align:right;
+
+}
+
+/* ========================================= */
+/*             PROGRESS BAR                  */
+/* ========================================= */
+
+.member-bar{
+
+    width:100%;
+
+    height:10px;
+
+    background:#4b4b4b;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.member-progress{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:999px;
+
+    transition:width .15s linear;
+
+}
+
+/* ========================================= */
+/*         ACTIVE MEMBER                     */
+/* ========================================= */
+
+.member.active{
+
+    transform:scale(1.02);
+
+}
+
+.member.active img{
+
+    transform:scale(1.08);
+
+}
+
+/* ========================================= */
+/*            RESPONSIVE                     */
+/* ========================================= */
+
+@media(max-width:900px){
+
+    .member-left span{
+
+        font-size:18px;
+
+    }
+
+    .member-time{
+
+        font-size:17px;
+
+    }
+
+}
