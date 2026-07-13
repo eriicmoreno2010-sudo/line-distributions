@@ -10,9 +10,12 @@ const Ranking = {
     gap: 12,
     cardH: 0,
     rowH: 0,
+    pendingTicks: [],
+    tickTimer: null,
 
     load(song){
 
+        this.pendingTicks = [];
         this.members = song.members.map(member => ({
             ...member,
             seconds:0,
@@ -21,6 +24,7 @@ const Ranking = {
         }));
 
         this.render();
+        this.startTicking();
     },
 
     /*
@@ -140,7 +144,23 @@ const Ranking = {
 
     addTime(name, delta){
         const member = this.members.find(m => m.name === name);
-        if(member) member.seconds += delta;
+        if(member) member.seconds = Math.round((member.seconds + delta) * 100) / 100;
+    },
+
+    queueTime(names){
+        this.pendingTicks.push(Array.isArray(names) ? names : [names]);
+    },
+
+    startTicking(){
+        if(this.tickTimer) clearInterval(this.tickTimer);
+
+        this.tickTimer = setInterval(() => {
+            if(!this.pendingTicks.length) return;
+
+            const names = this.pendingTicks.shift();
+            names.forEach(name => this.addTime(name, .01));
+            this.refresh(SONG.duration);
+        }, 10);
     },
 
     /* Reorder = just re-place; the CSS transform transition animates it. */
