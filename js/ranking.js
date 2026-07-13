@@ -99,6 +99,37 @@ render() {
 
 }
 
+        updateVisuals() {
+
+    this.members.forEach(member => {
+
+        if (member.timeElement) {
+
+            member.timeElement.textContent =
+                member.seconds.toFixed(2) + " s";
+
+        }
+
+        if (member.progressElement) {
+
+            member.progressElement.style.width =
+                member.percentage + "%";
+
+        }
+
+        if (member.element) {
+
+            member.element.classList.toggle(
+                "active",
+                member.active
+            );
+
+        }
+
+    });
+
+},
+    
     updateMember(name,seconds,totalDuration){
 
         const member=this.members.find(
