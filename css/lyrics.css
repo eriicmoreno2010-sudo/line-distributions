@@ -90,6 +90,7 @@ Version: 3.0 — Lyrics
 /* ========================= */
 
 #adlibs-section{
+    position:relative;
     min-height:0;
     padding:22px 20px;
     display:flex;
@@ -101,6 +102,27 @@ Version: 3.0 — Lyrics
     font-size:22px;
     font-weight:700;
     color:var(--accent);
+    overflow:hidden;
+}
+
+#adlibs-section::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(60% 55% at 50% 42%,
+        color-mix(in srgb, var(--accent) 16%, transparent),
+        transparent 70%);
+    opacity:0;
+    transition:opacity .35s var(--ease);
+    pointer-events:none;
+}
+
+#adlibs-section.singing::after{ opacity:1; }
+
+.adlib-member,
+.adlib-text{
+    position:relative;
+    z-index:1;
 }
 
 .adlib-member{

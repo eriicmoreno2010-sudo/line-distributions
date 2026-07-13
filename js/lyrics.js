@@ -94,8 +94,9 @@ const Lyrics = {
 
             // paint everything with the singing member's color
             e.section.style.setProperty("--accent", accent);
-            e.section.classList.add("singing");
+            e.section.classList.toggle("singing", !isAdlib);
             e.adlibs.style.setProperty("--accent", accent);
+            e.adlibs.classList.toggle("singing", isAdlib);
             e.member.style.color   = accent;
             e.original.style.color = accent;
             e.roman.style.color    = accent;
@@ -143,6 +144,7 @@ const Lyrics = {
             e.adlibs.style.removeProperty("--accent");
 
             e.section.classList.remove("singing");
+            e.adlibs.classList.remove("singing");
 
             this.group().forEach(el => el.classList.remove("fade-out"));
 
