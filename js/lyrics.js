@@ -82,13 +82,20 @@ if (currentTime - this.lastLineTime > 1) {
 
     });
 
+       elements.forEach(element => {
+
+    element.classList.add("fade-out");
+
+    element.classList.remove("fade-in");
+
+});
     setTimeout(() => {
 
-        document.getElementById("current-member").textContent =
-            line.members;
+     document.getElementById("current-member").textContent =
+    line.members.join(" & ");
 
         document.getElementById("original").textContent =
-            line.hangul;
+            line.original;
 
         document.getElementById("romanized").textContent =
             line.romanization;
@@ -119,17 +126,19 @@ if (currentTime - this.lastLineTime > 1) {
 
         this.currentIndex = -1;
 
-       setTimeout(() => {
+     const elements = [
 
-    document.getElementById("current-member").textContent = "";
+    document.getElementById("current-member"),
 
-    document.getElementById("original").textContent = "";
+    document.getElementById("original"),
 
-    document.getElementById("romanized").textContent = "";
+    document.getElementById("romanized"),
 
-    document.getElementById("english").textContent = "";
+    document.getElementById("english"),
 
-    document.getElementById("adlibs-section").textContent = "";
+    document.getElementById("adlibs-section")
+
+];
 
     elements.forEach(element => {
 
