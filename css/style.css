@@ -264,8 +264,10 @@ body{
     font-size:16px;
     font-weight:700;
     letter-spacing:.4px;
+    color:var(--text);
     text-overflow:ellipsis;
     white-space:nowrap;
+    transition:color .3s var(--ease);
 }
 
 #ranking .member-time{
@@ -304,6 +306,7 @@ body{
 #ranking .member.active .member-rank{ color:var(--accent); }
 #ranking .member.active .member-photo{ border-color:var(--accent); }
 #ranking .member.active .member-time{ color:var(--text); }
+#ranking .member.has-sung .member-name{ color:var(--accent); }
 
 /* ========================= */
 /* TIMELINE (fixed bottom) */

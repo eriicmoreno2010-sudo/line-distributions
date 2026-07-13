@@ -20,7 +20,8 @@ const Ranking = {
             ...member,
             seconds:0,
             percentage:0,
-            active:false
+            active:false,
+            hasSung:false
         }));
 
         this.render();
@@ -134,6 +135,8 @@ const Ranking = {
                 member.progressElement.style.width = member.percentage + "%";
             if(member.element)
                 member.element.classList.toggle("active", member.active);
+            if(member.element)
+                member.element.classList.toggle("has-sung", member.hasSung);
         });
     },
 
@@ -144,7 +147,10 @@ const Ranking = {
 
     addTime(name, delta){
         const member = this.members.find(m => m.name === name);
-        if(member) member.seconds = Math.round((member.seconds + delta) * 100) / 100;
+        if(member){
+            member.seconds = Math.round((member.seconds + delta) * 100) / 100;
+            member.hasSung = true;
+        }
     },
 
     queueTime(names){

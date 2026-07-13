@@ -119,10 +119,13 @@ Version: 4.0 — Ranking (transform leaderboard)
     font-size:16px;
     font-weight:700;
     letter-spacing:.4px;
+    color:var(--text);
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
+    transition:color .3s var(--ease);
 }
+.member.has-sung .member-name{ color:var(--accent); }
 
 .member-time{
     font-size:14px;
