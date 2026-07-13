@@ -61,11 +61,7 @@ const Ranking = {
             container.appendChild(card);
         });
 
-        // Measure once and reserve the vertical space.
-        this.cardH = Math.max(...this.members.map(m => m.element.offsetHeight));
-        this.rowH  = this.cardH + this.gap;
-        container.style.height =
-            (this.members.length * this.rowH - this.gap) + "px";
+        this.layout();
 
         this.order = this.members.map(m => m.name);
 
@@ -74,6 +70,45 @@ const Ranking = {
         requestAnimationFrame(() => {
             this.members.forEach(m => m.element.classList.add("ready"));
         });
+    },
+
+    /* Fill the desktop panel while keeping the compact mobile list natural. */
+    layout(){
+        const container = UI.elements.ranking;
+        const isDesktop = window.matchMedia("(min-width:1201px)").matches;
+
+        if(isDesktop){
+            container.style.height = "";
+
+            const style = getComputedStyle(container);
+            const verticalPadding =
+                parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+            const availableHeight = container.clientHeight - verticalPadding;
+
+            this.cardH = Math.max(
+                72,
+                (availableHeight - this.gap * (this.members.length - 1)) /
+                    this.members.length
+            );
+
+            this.members.forEach(m => {
+                m.element.style.height = this.cardH + "px";
+            });
+        } else {
+            this.members.forEach(m => {
+                m.element.style.height = "";
+            });
+            this.cardH = Math.max(...this.members.map(m => m.element.offsetHeight));
+        }
+
+        this.rowH = this.cardH + this.gap;
+
+        if(!isDesktop){
+            container.style.height =
+                (this.members.length * this.rowH - this.gap) + "px";
+        }
+
+        this.place(this.members);
     },
 
     /* Position each card at its slot + set stacking so risers pass over. */
@@ -135,3 +170,7 @@ const Ranking = {
         this.reorder();
     }
 };
+
+window.addEventListener("resize", () => {
+    if(Ranking.members.length) Ranking.layout();
+});
