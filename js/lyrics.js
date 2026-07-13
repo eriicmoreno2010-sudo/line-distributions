@@ -94,7 +94,7 @@ const Lyrics = {
 
             // paint everything with the singing member's color
             e.section.style.setProperty("--accent", accent);
-            e.section.classList.toggle("singing", !isAdlib);
+            e.section.classList.add("singing");
             e.adlibs.style.setProperty("--accent", accent);
             e.member.style.color   = accent;
             e.original.style.color = accent;
