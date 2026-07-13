@@ -8,13 +8,14 @@ const Engine = {
 
     previousTime:0,
     previousCentisecond:0,
+    lyricLead:.12,
 
     update(time){
 
         const delta = time - this.previousTime;
         this.previousTime = time;
 
-        Lyrics.update(time);
+        Lyrics.update(Math.min(time + this.lyricLead, SONG.duration));
         Timeline.update(time);
 
         // Ignore seeks / initial jumps so the ranking stays accurate
