@@ -36,7 +36,7 @@ const Engine = {
 
             Ranking.addTime(
 
-                current.member,
+                current.members[0],
 
                 delta
 
