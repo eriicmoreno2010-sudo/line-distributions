@@ -77,15 +77,28 @@ const Lyrics = {
             e.original.textContent = line.original || "";
             e.roman.textContent    = line.romanization || "";
             e.english.textContent  = line.english || "";
-            e.adlibs.textContent   = line.adlib || "";
+
+            e.adlibs.replaceChildren();
+            if(line.adlib){
+                const adlibMember = document.createElement("div");
+                adlibMember.className = "adlib-member";
+                adlibMember.textContent = line.members.join("  &  ");
+
+                const adlibText = document.createElement("div");
+                adlibText.className = "adlib-text";
+                adlibText.textContent = line.adlib;
+
+                e.adlibs.append(adlibMember, adlibText);
+            }
 
             // paint everything with the singing member's color
             e.section.style.setProperty("--accent", accent);
             e.section.classList.add("singing");
+            e.adlibs.style.setProperty("--accent", accent);
             e.member.style.color   = accent;
             e.original.style.color = accent;
-            e.roman.style.color    = `color-mix(in srgb, ${accent} 78%, white)`;
-            e.english.style.color  = `color-mix(in srgb, ${accent} 55%, white)`;
+            e.roman.style.color    = accent;
+            e.english.style.color  = accent;
 
             Ranking.setActive(singer);
             Ranking.updateVisuals();
@@ -119,13 +132,14 @@ const Lyrics = {
             e.original.textContent = "";
             e.roman.textContent    = "";
             e.english.textContent  = "";
-            e.adlibs.textContent   = "";
+            e.adlibs.replaceChildren();
 
             // reset accent colors
             e.member.style.color   = "";
             e.original.style.color = "";
             e.roman.style.color    = "";
             e.english.style.color  = "";
+            e.adlibs.style.removeProperty("--accent");
 
             e.section.classList.remove("singing");
 

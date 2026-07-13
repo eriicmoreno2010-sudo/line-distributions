@@ -96,12 +96,24 @@ Version: 3.0 — Lyrics
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
-    text-align:center;
+    align-items:flex-start;
+    text-align:left;
     gap:12px;
     font-size:22px;
     font-weight:700;
     color:var(--accent);
+}
+
+.adlib-member{
+    font-size:26px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.adlib-text{
+    font-size:22px;
+    font-weight:700;
 }
 
 /* ========================= */
