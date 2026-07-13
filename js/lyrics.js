@@ -60,6 +60,7 @@ const Lyrics = {
 
         const e = this.els();
         const singer = line.members[0];
+        const isAdlib = Boolean(line.adlib);
 
         // resolve accent color from the member singing
         const member = SONG.members.find(m => m.name === singer);
@@ -73,10 +74,10 @@ const Lyrics = {
 
         setTimeout(() => {
 
-            e.member.textContent   = line.members.join("  &  ");
-            e.original.textContent = line.original || "";
-            e.roman.textContent    = line.romanization || "";
-            e.english.textContent  = line.english || "";
+            e.member.textContent   = isAdlib ? "" : line.members.join("  &  ");
+            e.original.textContent = isAdlib ? "" : line.original || "";
+            e.roman.textContent    = isAdlib ? "" : line.romanization || "";
+            e.english.textContent  = isAdlib ? "" : line.english || "";
 
             e.adlibs.replaceChildren();
             if(line.adlib){
@@ -93,7 +94,7 @@ const Lyrics = {
 
             // paint everything with the singing member's color
             e.section.style.setProperty("--accent", accent);
-            e.section.classList.add("singing");
+            e.section.classList.toggle("singing", !isAdlib);
             e.adlibs.style.setProperty("--accent", accent);
             e.member.style.color   = accent;
             e.original.style.color = accent;
