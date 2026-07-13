@@ -28,67 +28,76 @@ const Ranking = {
 
     render(){
 
-        UI.elements.ranking.innerHTML="";
+render() {
 
-        this.members.forEach(member=>{
+    UI.elements.ranking.innerHTML = "";
 
-            const card=document.createElement("div");
+    this.members.forEach(member => {
 
-           card.className = "member fade-in";
+        const card = document.createElement("div");
 
-            if(member.active){
+        card.className = "member fade-in";
 
-                card.classList.add("active");
+        if (member.active) {
 
-            }
+            card.classList.add("active");
 
-            card.innerHTML=`
+        }
 
-                <div class="member-top">
+        card.innerHTML = `
 
-                  <div class="member-left">
+            <div class="member-top">
 
-    <img
-        class="member-photo"
-        src="${member.image}"
-        alt="${member.name}"
-    >
+                <div class="member-left">
 
-    <span class="member-name">
+                    <img
+                        class="member-photo"
+                        src="${member.image}"
+                        alt="${member.name}"
+                    >
 
-        ${member.name}
+                    <span class="member-name">
 
-    </span>
-
-</div>
-
-                    <span class="member-time">
-
-                        ${member.seconds.toFixed(2)} s
+                        ${member.name}
 
                     </span>
 
                 </div>
 
-                <div class="member-bar">
+                <span class="member-time">
 
-                    <div
-                        class="member-progress"
-                        style="
-                            width:${member.percentage}%;
-                            background:${member.color};
-                        ">
-                    </div>
+                    ${member.seconds.toFixed(2)} s
 
+                </span>
+
+            </div>
+
+            <div class="member-bar">
+
+                <div
+                    class="member-progress"
+                    style="
+                        width:${member.percentage}%;
+                        background:${member.color};
+                    ">
                 </div>
 
-            `;
+            </div>
 
-            UI.elements.ranking.appendChild(card);
+        `;
 
-        });
+        // 🔥 Guardamos referencias a los elementos
+        member.element = card;
 
-    },
+        member.timeElement = card.querySelector(".member-time");
+
+        member.progressElement = card.querySelector(".member-progress");
+
+        UI.elements.ranking.appendChild(card);
+
+    });
+
+}
 
     updateMember(name,seconds,totalDuration){
 
