@@ -191,7 +191,7 @@ render() {
 
         this.sort();
 
-        this.render();
+        this.updateVisuals();
 
     }
 
