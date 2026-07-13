@@ -102,15 +102,25 @@ const Lyrics = {
 
         this.currentIndex = -1;
 
-        document.getElementById("current-member").textContent = "";
+       setTimeout(() => {
 
-        document.getElementById("original").textContent = "";
+    document.getElementById("current-member").textContent = "";
 
-        document.getElementById("romanized").textContent = "";
+    document.getElementById("original").textContent = "";
 
-        document.getElementById("english").textContent = "";
+    document.getElementById("romanized").textContent = "";
 
-        document.getElementById("adlibs-section").textContent = "";
+    document.getElementById("english").textContent = "";
+
+    document.getElementById("adlibs-section").textContent = "";
+
+    elements.forEach(element => {
+
+        element.classList.remove("fade-out");
+
+    });
+
+}, 180);
 
         Ranking.setActive("");
 
