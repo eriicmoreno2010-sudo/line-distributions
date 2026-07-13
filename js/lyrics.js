@@ -99,7 +99,7 @@ if (currentTime - this.lastLineTime > 1) {
         document.getElementById("adlibs-section").textContent =
             line.adlib || "";
 
-        Ranking.setActive(line.members);
+        Ranking.setActive(line.members[0]);
 
         elements.forEach(element => {
 
