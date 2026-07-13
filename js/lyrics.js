@@ -1,200 +1,139 @@
 /*
 =========================================
-Lyrics
+Lyrics  v3
 =========================================
 */
 
 const Lyrics = {
 
     currentIndex: -1,
-
     lastLineTime: undefined,
 
-    update(currentTime) {
+    els(){
+        return {
+            section:  document.getElementById("lyrics-section"),
+            member:   document.getElementById("current-member"),
+            original: document.getElementById("original"),
+            roman:    document.getElementById("romanized"),
+            english:  document.getElementById("english"),
+            adlibs:   document.getElementById("adlibs-section")
+        };
+    },
 
-        if (!SONG || !SONG.lyrics) return;
+    group(){
+        // Ad-libs panel is intentionally NOT included so it doesn't blink
+        const e = this.els();
+        return [e.member, e.original, e.roman, e.english];
+    },
+
+    update(currentTime){
+
+        if(!SONG || !SONG.lyrics) return;
 
         const lyrics = SONG.lyrics;
 
-        for (let i = 0; i < lyrics.length; i++) {
-
+        for(let i = 0; i < lyrics.length; i++){
             const line = lyrics[i];
 
-            if (
-                currentTime >= line.start &&
-                currentTime < line.end
-            ) {
+            if(currentTime >= line.start && currentTime < line.end){
 
-                if (this.currentIndex !== i) {
-
+                if(this.currentIndex !== i){
                     this.currentIndex = i;
-
                     this.show(line);
-
                 }
 
-                // Hay una línea activa, reiniciamos el contador
-this.lastLineTime = undefined;
-
+                this.lastLineTime = undefined;   // active line -> reset gap timer
                 return;
-
             }
-
         }
 
-    // Si es la primera vez que no hay letra, guardamos el tiempo
-if (this.lastLineTime === undefined) {
-
-    this.lastLineTime = currentTime;
-
-}
-
-// Solo borramos si llevamos más de 1 segundo sin ninguna letra
-if (currentTime - this.lastLineTime > 1) {
-
-    this.clear();
-
-}
-
+        // No active line: only clear after a >1s silence
+        if(this.lastLineTime === undefined){
+            this.lastLineTime = currentTime;
+        }
+        if(currentTime - this.lastLineTime > 1){
+            this.clear();
+        }
     },
 
-   show(line) {
+    show(line){
 
-    const elements = [
+        const e = this.els();
+        const singer = line.members[0];
 
-        document.getElementById("current-member"),
+        // resolve accent color from the member singing
+        const member = SONG.members.find(m => m.name === singer);
+        const accent = member ? member.color : "var(--accent)";
 
-        document.getElementById("original"),
-
-        document.getElementById("romanized"),
-
-        document.getElementById("english"),
-
-        document.getElementById("adlibs-section")
-
-    ];
-
-
-       elements.forEach(element => {
-
-    element.classList.add("fade-out");
-
-    element.classList.remove("fade-in");
-
-});
-    setTimeout(() => {
-
-     document.getElementById("current-member").textContent =
-    line.members.join(" & ");
-
-        document.getElementById("original").textContent =
-            line.original;
-
-        document.getElementById("romanized").textContent =
-            line.romanization;
-
-        document.getElementById("english").textContent =
-            line.english;
-
-        document.getElementById("adlibs-section").textContent =
-            line.adlib || "";
-
-Ranking.setActive(line.members[0]);
-
-// =========================================
-// COLOR DEL TEXTO SEGÚN EL MIEMBRO
-// =========================================
-
-const member = SONG.members.find(
-    m => m.name === line.members[0]
-);
-
-if (member) {
-
-    elements.forEach(element => {
-
-        element.style.color = member.color;
-
-    });
-
-}
-
-elements.forEach(element => {
-
-    element.classList.remove("fade-out");
-
-    element.classList.add("fade-in");
-
-});
-
-    }, 180);
-
-},
-
-clear() {
-
-    if (this.currentIndex === -1) return;
-
-    this.currentIndex = -1;
-    this.lastLineTime = undefined;
-
-    const elements = [
-
-        document.getElementById("current-member"),
-
-        document.getElementById("original"),
-
-        document.getElementById("romanized"),
-
-        document.getElementById("english"),
-
-        document.getElementById("adlibs-section")
-
-    ];
-
-    // Fade Out
-    elements.forEach(element => {
-
-        element.classList.add("fade-out");
-
-        element.classList.remove("fade-in");
-
-    });
-
-    setTimeout(() => {
-
-        document.getElementById("current-member").textContent = "";
-
-        document.getElementById("original").textContent = "";
-
-        document.getElementById("romanized").textContent = "";
-
-        document.getElementById("english").textContent = "";
-
-        document.getElementById("adlibs-section").textContent = "";
-        
-// =========================================
-// RESTAURAR EL COLOR POR DEFECTO
-// =========================================
-
-elements.forEach(element => {
-
-    element.style.color = "";
-
-});
-
-        elements.forEach(element => {
-
-            element.classList.remove("fade-out");
-
+        // fade out
+        this.group().forEach(el => {
+            el.classList.add("fade-out");
+            el.classList.remove("fade-in");
         });
 
-    }, 180);
+        setTimeout(() => {
 
-    Ranking.setActive("");
+            e.member.textContent   = line.members.join("  &  ");
+            e.original.textContent = line.original || "";
+            e.roman.textContent    = line.romanization || "";
+            e.english.textContent  = line.english || "";
+            e.adlibs.textContent   = line.adlib || "";
 
-    Ranking.render();
+            // paint everything with the singing member's color
+            e.section.style.setProperty("--accent", accent);
+            e.section.classList.add("singing");
+            e.member.style.color   = accent;
+            e.original.style.color = accent;
+            e.roman.style.color    = `color-mix(in srgb, ${accent} 78%, white)`;
+            e.english.style.color  = `color-mix(in srgb, ${accent} 55%, white)`;
 
-}
+            Ranking.setActive(singer);
+            Ranking.updateVisuals();
 
+            // fade in
+            this.group().forEach(el => {
+                el.classList.remove("fade-out");
+                el.classList.add("fade-in");
+            });
+
+        }, 180);
+    },
+
+    clear(){
+
+        if(this.currentIndex === -1) return;
+
+        this.currentIndex = -1;
+        this.lastLineTime = undefined;
+
+        const e = this.els();
+
+        this.group().forEach(el => {
+            el.classList.add("fade-out");
+            el.classList.remove("fade-in");
+        });
+
+        setTimeout(() => {
+
+            e.member.textContent   = "";
+            e.original.textContent = "";
+            e.roman.textContent    = "";
+            e.english.textContent  = "";
+            e.adlibs.textContent   = "";
+
+            // reset accent colors
+            e.member.style.color   = "";
+            e.original.style.color = "";
+            e.roman.style.color    = "";
+            e.english.style.color  = "";
+
+            e.section.classList.remove("singing");
+
+            this.group().forEach(el => el.classList.remove("fade-out"));
+
+        }, 180);
+
+        Ranking.setActive("");
+        Ranking.updateVisuals();   // update in place — no full rebuild (no flicker)
+    }
 };

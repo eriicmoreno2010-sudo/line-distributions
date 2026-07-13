@@ -1,6 +1,6 @@
 /*
 =========================================
-Engine
+Engine  v3
 =========================================
 */
 
@@ -10,46 +10,23 @@ const Engine = {
 
     update(time){
 
-        const delta =
-
-            time - this.previousTime;
-
+        let delta = time - this.previousTime;
         this.previousTime = time;
 
         Lyrics.update(time);
-
         Timeline.update(time);
 
-        const current =
+        // Ignore seeks / initial jumps so the ranking stays accurate
+        if(delta < 0 || delta > 1) delta = 0;
 
-            SONG.lyrics.find(
+        const current = SONG.lyrics.find(
+            line => time >= line.start && time < line.end
+        );
 
-                line =>
-
-                time >= line.start &&
-
-                time < line.end
-
-            );
-
-        if(current){
-
-            Ranking.addTime(
-
-                current.members[0],
-
-                delta
-
-            );
-
-            Ranking.refresh(
-
-                SONG.duration
-
-            );
-
+        if(current && delta > 0){
+            Ranking.addTime(current.members[0], delta);
         }
 
+        Ranking.refresh(SONG.duration);
     }
-
 };

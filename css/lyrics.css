@@ -1,125 +1,89 @@
 /*
 =========================================
 K-Line Distribution
-Version: 2.0
-Lyrics
+Version: 3.0 — Lyrics
 =========================================
 */
 
 /* ========================= */
-/* LYRICS CONTAINER */
-/* ========================= */
-
-#lyrics-container{
-
-    display:grid;
-
-    grid-template-columns:3fr 1fr;
-
-    gap:20px;
-
-    height:100%;
-
-}
-
-/* ========================= */
-/* MAIN LYRICS */
+/* MAIN LYRICS PANEL */
 /* ========================= */
 
 #lyrics-section{
-
-    background:#1b1b1b;
-
-    border-radius:18px;
-
+    position:relative;
+    min-height:0;
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
-
-    padding:30px;
-
+    padding:28px 36px;
+    overflow:hidden;
 }
+
+/* subtle glow that tints with the active member's color */
+#lyrics-section::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(60% 55% at 50% 42%,
+        color-mix(in srgb, var(--accent) 16%, transparent),
+        transparent 70%);
+    opacity:0;
+    transition:opacity .35s var(--ease);
+    pointer-events:none;
+}
+
+#lyrics-section.singing::after{ opacity:1; }
 
 /* ========================= */
 /* CURRENT MEMBER */
 /* ========================= */
 
 #current-member{
-
-    font-size:38px;
-
-    font-weight:700;
-
+    position:relative;
+    min-height:34px;
+    font-size:26px;
+    font-weight:800;
     letter-spacing:2px;
-
-    margin-bottom:35px;
-
-    transition:.25s;
-
+    margin-bottom:26px;
+    color:var(--accent);
+    text-transform:uppercase;
 }
 
 /* ========================= */
-/* HANGUL */
+/* LYRIC LINES (real ids used by JS) */
 /* ========================= */
 
-#hangul{
+#original,
+#romanized,
+#english{
+    position:relative;
+    width:100%;
+    min-height:40px;              /* keeps height stable when empty -> no jump */
+    line-height:1.4;
+}
 
-    min-height:42px;
-
+#original{
     font-size:30px;
-
-    font-weight:600;
-
-    line-height:1.6;
-
-    color:white;
-
+    font-weight:700;
+    color:#fff;
 }
-
-/* ========================= */
-/* ROMANIZATION */
-/* ========================= */
 
 #romanized{
-
-    min-height:42px;
-
-    margin-top:15px;
-
-    font-size:30px;
-
+    margin-top:12px;
+    font-size:22px;
     font-weight:600;
-
-    line-height:1.6;
-
-    color:#f2f2f2;
-
+    color:var(--text);
+    opacity:.92;
 }
 
-/* ========================= */
-/* ENGLISH */
-/* ========================= */
-
 #english{
-
-    min-height:42px;
-
-    margin-top:15px;
-
-    font-size:30px;
-
-    font-weight:600;
-
-    line-height:1.6;
-
-    color:#d5d5d5;
-
+    margin-top:12px;
+    font-size:18px;
+    font-weight:500;
+    color:var(--text2);
+    font-style:italic;
 }
 
 /* ========================= */
@@ -127,65 +91,47 @@ Lyrics
 /* ========================= */
 
 #adlibs-section{
-
-    background:#1b1b1b;
-
-    border-radius:18px;
-
-    padding:20px;
-
+    min-height:0;
+    padding:22px 20px;
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
-
-    gap:15px;
-
-}
-
-/* ========================= */
-/* ADLIB CARD */
-/* ========================= */
-
-.adlib-card{
-
-    border:2px solid transparent;
-
-    border-radius:14px;
-
-    padding:14px;
-
-    background:rgba(255,255,255,.05);
-
-    transition:.25s;
-
-}
-
-/* ========================= */
-/* ADLIB MEMBER */
-/* ========================= */
-
-.adlib-card h4{
-
-    font-size:18px;
-
-    margin-bottom:10px;
-
+    align-items:center;
+    text-align:center;
+    gap:12px;
+    font-size:22px;
     font-weight:700;
-
+    color:var(--accent);
 }
 
 /* ========================= */
-/* ADLIB TEXT */
+/* CROSSFADE */
+/* Single, non-conflicting transition */
 /* ========================= */
 
-.adlib-card p{
+#current-member,
+#original,
+#romanized,
+#english{
+    transition:
+        opacity .18s var(--ease),
+        transform .18s var(--ease),
+        color .3s var(--ease);
+}
 
-    font-size:18px;
+/* Ad-libs update softly on their own, without blinking the whole panel */
+#adlibs-section{
+    transition:color .3s var(--ease);
+}
 
-    line-height:1.5;
+.fade-out{
+    opacity:0;
+    transform:translateY(10px);
+}
 
+.fade-in{
+    opacity:1;
+    transform:translateY(0);
 }
 
 /* ========================= */
@@ -193,57 +139,8 @@ Lyrics
 /* ========================= */
 
 @media(max-width:1200px){
-
-    #lyrics-container{
-
-        grid-template-columns:1fr;
-
-    }
-
-    #current-member{
-
-        font-size:30px;
-
-    }
-
-    #hangul,
-    #romanized,
-    #english{
-
-        font-size:24px;
-
-    }
-
-}
-
-/* ========================================= */
-/*            LYRICS ANIMATIONS             */
-/* ========================================= */
-
-.fade-out{
-
-    opacity:0;
-
-    transform:translateY(8px);
-
-}
-
-.fade-in{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-#current-member,
-#hangul,
-#romanized,
-#english,
-#adlibs-section{
-
-    transition:
-        opacity .18s ease,
-        transform .18s ease;
-
+    #current-member{ font-size:22px; }
+    #original{ font-size:24px; }
+    #romanized{ font-size:18px; }
+    #english{ font-size:16px; }
 }

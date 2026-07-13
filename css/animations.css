@@ -1,243 +1,38 @@
 /*
 =========================================
 K-Line Distribution
-Version: 2.0
-Animations
+Version: 3.0 — Animations
+(kept intentionally small; component
+ transitions live in their own files)
 =========================================
 */
 
-/* ========================= */
-/* TRANSITIONS */
-/* ========================= */
-
-*{
-
-    transition:
-
-        background-color .25s ease,
-
-        color .25s ease,
-
-        border-color .25s ease;
-
-}
-
-/* ========================= */
-/* MEMBER ACTIVE */
-/* ========================= */
-
-.member.active{
-
-    transform:scale(1.02);
-
-}
-
-.member.active .member-photo{
-
-    transform:scale(1.08);
-
-}
-
-/* ========================= */
-/* MEMBER BAR */
-/* ========================= */
-
-.member-progress{
-
-    transition:
-
-        width .15s linear,
-
-        background-color .25s ease;
-
-}
-
-/* ========================= */
-/* CURRENT MEMBER */
-/* ========================= */
-
-#current-member{
-
-    transition:
-
-        color .25s ease,
-
-        transform .25s ease;
-
-}
-
-#current-member.active{
-
-    transform:scale(1.03);
-
-}
-
-/* ========================= */
-/* LYRICS */
-/* ========================= */
-
-#hangul,
-#romanized,
-#english{
-
-    transition:
-
-        opacity .20s ease,
-
-        transform .20s ease;
-
-}
-
-.lyric-hidden{
-
-    opacity:0;
-
-    transform:translateY(8px);
-
-}
-
-.lyric-visible{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-
-/* ========================= */
-/* ADLIBS */
-/* ========================= */
-
+/* Adlib entrance */
 .adlib-card{
-
     opacity:0;
-
-    transform:translateX(20px);
-
-    animation:
-
-        adlibIn .25s ease forwards;
-
+    transform:translateX(16px);
+    animation:adlibIn .3s var(--ease) forwards;
 }
 
 @keyframes adlibIn{
+    from{ opacity:0; transform:translateX(16px); }
+    to{ opacity:1; transform:translateX(0); }
+}
 
-    from{
+/* First paint of the ranking cards */
+@keyframes cardIn{
+    from{ opacity:0; transform:translateY(8px); }
+    to{ opacity:1; transform:translateY(0); }
+}
 
-        opacity:0;
+.member.enter{
+    animation:cardIn .35s var(--ease) both;
+}
 
-        transform:translateX(20px);
-
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation-duration:.01ms !important;
+        transition-duration:.01ms !important;
     }
-
-    to{
-
-        opacity:1;
-
-        transform:translateX(0);
-
-    }
-
-}
-
-/* ========================= */
-/* RANKING REORDER */
-/* ========================= */
-
-.member{
-
-    transition:
-
-        transform .25s ease,
-
-        box-shadow .25s ease,
-
-        border-color .25s ease,
-
-        background-color .25s ease;
-
-}
-
-/* ========================= */
-/* VIDEO */
-/* ========================= */
-
-#video-section{
-
-    transition:
-
-        transform .25s ease,
-
-        box-shadow .25s ease;
-
-}
-
-/* ========================= */
-/* TIMELINE */
-/* ========================= */
-
-#timeline-progress{
-
-    transition:
-
-        width .05s linear,
-
-        background-color .20s ease;
-
-}
-
-/* ========================= */
-/* FADE IN */
-/* ========================= */
-
-.fade-in{
-
-    animation:
-
-        fadeIn .30s ease forwards;
-
-}
-
-@keyframes fadeIn{
-
-    from{
-
-        opacity:0;
-
-    }
-
-    to{
-
-        opacity:1;
-
-    }
-
-}
-
-/* ========================= */
-/* FADE OUT */
-/* ========================= */
-
-.fade-out{
-
-    animation:
-
-        fadeOut .25s ease forwards;
-
-}
-
-@keyframes fadeOut{
-
-    from{
-
-        opacity:1;
-
-    }
-
-    to{
-
-        opacity:0;
-
-    }
-
 }

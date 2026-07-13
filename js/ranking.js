@@ -1,198 +1,137 @@
 /* ========================================= */
-/*             RANKING.JS                    */
+/*             RANKING.JS  v4                 */
+/*   Transform-based leaderboard (no reflow)  */
 /* ========================================= */
 
 const Ranking = {
 
     members: [],
+    order: [],
+    gap: 12,
+    cardH: 0,
+    rowH: 0,
 
     load(song){
 
         this.members = song.members.map(member => ({
-
             ...member,
-
             seconds:0,
-
             percentage:0,
-
-            active:false,
-
-            lastUpdate:0
-
+            active:false
         }));
 
         this.render();
-
     },
 
+    /*
+       Build every card ONCE. Cards are absolutely positioned and never
+       re-inserted in the DOM again — only their translateY changes, which
+       CSS transitions animate. That removes all reflow-related flicker.
+    */
+    render(){
 
-render() {
+        const container = UI.elements.ranking;
+        container.innerHTML = "";
 
-    UI.elements.ranking.innerHTML = "";
+        this.members.forEach(member => {
 
-    this.members.forEach(member => {
+            const card = document.createElement("div");
+            card.className = "member";
+            card.style.setProperty("--accent", member.color);
 
-        const card = document.createElement("div");
-
-        card.className = "member fade-in";
-
-        if (member.active) {
-
-            card.classList.add("active");
-
-        }
-
-        card.innerHTML = `
-
-            <div class="member-top">
-
-                <div class="member-left">
-
-                    <img
-                        class="member-photo"
-                        src="${member.image}"
-                        alt="${member.name}"
-                    >
-
-                    <span class="member-name">
-
-                        ${member.name}
-
-                    </span>
-
+            card.innerHTML = `
+                <div class="member-rank">1</div>
+                <img class="member-photo" src="${member.image}" alt="${member.name}">
+                <div class="member-info">
+                    <div class="member-head">
+                        <span class="member-name">${member.name}</span>
+                        <span class="member-time">0.00s</span>
+                    </div>
+                    <div class="member-bar">
+                        <div class="member-progress"></div>
+                    </div>
                 </div>
+            `;
 
-                <span class="member-time">
+            member.element         = card;
+            member.rankElement     = card.querySelector(".member-rank");
+            member.timeElement     = card.querySelector(".member-time");
+            member.progressElement = card.querySelector(".member-progress");
 
-                    ${member.seconds.toFixed(2)} s
+            container.appendChild(card);
+        });
 
-                </span>
+        // Measure once and reserve the vertical space.
+        this.cardH = Math.max(...this.members.map(m => m.element.offsetHeight));
+        this.rowH  = this.cardH + this.gap;
+        container.style.height =
+            (this.members.length * this.rowH - this.gap) + "px";
 
-            </div>
+        this.order = this.members.map(m => m.name);
 
-            <div class="member-bar">
+        // Initial placement WITHOUT animation, then enable transitions.
+        this.place(this.members);
+        requestAnimationFrame(() => {
+            this.members.forEach(m => m.element.classList.add("ready"));
+        });
+    },
 
-                <div
-                    class="member-progress"
-                    style="
-                        width:${member.percentage}%;
-                        background:${member.color};
-                    ">
-                </div>
+    /* Position each card at its slot + set stacking so risers pass over. */
+    place(sorted){
+        const n = this.members.length;
+        sorted.forEach((m, i) => {
+            m.element.style.transform = `translateY(${i * this.rowH}px)`;
+            m.element.style.zIndex = String(n - i);   // #1 sits on top
+            if(m.rankElement) m.rankElement.textContent = i + 1;
+        });
+    },
 
-            </div>
-
-        `;
-
-        // 🔥 Guardamos referencias a los elementos
-        member.element = card;
-
-        member.timeElement = card.querySelector(".member-time");
-
-        member.progressElement = card.querySelector(".member-progress");
-
-        UI.elements.ranking.appendChild(card);
-
-    });
-
-},
-
-        updateVisuals() {
-
-    this.members.forEach(member => {
-
-        if (member.timeElement) {
-
-            member.timeElement.textContent =
-                member.seconds.toFixed(2) + " s";
-
-        }
-
-        if (member.progressElement) {
-
-            member.progressElement.style.width =
-                member.percentage + "%";
-
-        }
-
-        if (member.element) {
-
-            member.element.classList.toggle(
-                "active",
-                member.active
-            );
-
-        }
-
-    });
-
-},
-    
-    updateMember(name,seconds,totalDuration){
-
-        const member=this.members.find(
-
-            m=>m.name===name
-
-        );
-
-        if(!member) return;
-
-        member.seconds=seconds;
-
-        member.percentage=(seconds/totalDuration)*100;
-
+    /* Update text, bars and active glow in place (no layout change). */
+    updateVisuals(){
+        this.members.forEach(member => {
+            if(member.timeElement)
+                member.timeElement.textContent = member.seconds.toFixed(2) + "s";
+            if(member.progressElement)
+                member.progressElement.style.width = member.percentage + "%";
+            if(member.element)
+                member.element.classList.toggle("active", member.active);
+        });
     },
 
     setActive(name){
-
-        this.members.forEach(member=>{
-
-            member.active=member.name===name;
-
-        });
-
+        this.members.forEach(m => m.active = (m.name === name));
     },
 
-     addTime(name, delta){
+    addTime(name, delta){
+        const member = this.members.find(m => m.name === name);
+        if(member) member.seconds += delta;
+    },
 
-    const member = this.members.find(
+    /* Reorder = just re-place; the CSS transform transition animates it. */
+    reorder(){
+        const sorted   = [...this.members].sort((a,b) => b.seconds - a.seconds);
+        const newOrder = sorted.map(m => m.name);
+        if(newOrder.join() === this.order.join()) return;
 
-        m => m.name === name
+        // Mark cards that climb so they glide over the others.
+        sorted.forEach((m, i) => {
+            const prev = this.order.indexOf(m.name);
+            m.element.classList.toggle("rising", prev > i);
+        });
 
-    );
+        this.place(sorted);
+        this.order = newOrder;
 
-    if(!member) return;
-
-    member.seconds += delta;
-
-},
-
-    sort(){
-
-        this.members.sort(
-
-            (a,b)=>b.seconds-a.seconds
-
-        );
-
+        // Drop the elevated shadow once the glide settles.
+        clearTimeout(this._riseT);
+        this._riseT = setTimeout(() => {
+            this.members.forEach(m => m.element.classList.remove("rising"));
+        }, 620);
     },
 
     refresh(totalDuration){
-
-        this.members.forEach(member=>{
-
-            member.percentage=
-
-                (member.seconds/totalDuration)*100;
-
-        });
-
-        this.sort();
-
+        this.members.forEach(m => m.percentage = (m.seconds / totalDuration) * 100);
         this.updateVisuals();
-
+        this.reorder();
     }
-
 };

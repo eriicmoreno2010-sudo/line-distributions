@@ -1,25 +1,13 @@
 /*
 =========================================
 K-Line Distribution
-Version: 2.0
-Ranking
+Version: 4.0 — Ranking (transform leaderboard)
 =========================================
 */
 
-/* ========================= */
-/* RANKING */
-/* ========================= */
-
 #ranking{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:14px;
-
-    height:100%;
-
+    position:relative;      /* absolute cards are placed against this */
+    padding:2px 6px;
 }
 
 /* ========================= */
@@ -27,172 +15,140 @@ Ranking
 /* ========================= */
 
 .member{
+    --accent:#7c5cff;
+    position:absolute;
+    left:6px;
+    right:6px;
+    top:0;
+    transform:translateY(0);
 
-    background:#242424;
+    display:grid;
+    grid-template-columns:26px 48px 1fr;
+    align-items:center;
+    gap:12px;
+    padding:11px 16px 11px 12px;
 
-    border:2px solid transparent;
+    background:var(--panel2);
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+    box-shadow:0 2px 10px -6px rgba(0,0,0,.6);
 
-    border-radius:16px;
+    will-change:transform;
+}
 
-    padding:14px;
-
+/* transitions are enabled only after the first (instant) placement */
+.member.ready{
     transition:
-        transform .25s ease,
-        border-color .25s ease,
-        box-shadow .25s ease;
+        transform .55s cubic-bezier(.34,1.32,.5,1),   /* soft overshoot */
+        box-shadow .35s var(--ease),
+        background-color .35s var(--ease),
+        border-color .35s var(--ease);
+}
 
+/* a card climbing to a better rank floats over the ones it passes */
+.member.rising{
+    box-shadow:0 18px 36px -10px rgba(0,0,0,.75);
 }
 
 /* ========================= */
-/* HOVER */
-/* ========================= */
-
-.member:hover{
-
-    transform:translateY(-2px);
-
-}
-
-/* ========================= */
-/* ACTIVE MEMBER */
+/* ACTIVE STATE (color glow, no resizing) */
 /* ========================= */
 
 .member.active{
-
-    box-shadow:0 0 18px rgba(255,255,255,.15);
-
+    background:
+        linear-gradient(90deg,
+            color-mix(in srgb, var(--accent) 24%, transparent),
+            var(--panel2) 58%);
+    border-color:color-mix(in srgb, var(--accent) 60%, transparent);
+    box-shadow:
+        0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent),
+        0 12px 34px -12px var(--accent);
 }
 
 /* ========================= */
-/* TOP */
+/* RANK NUMBER */
 /* ========================= */
 
-.member-top{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    margin-bottom:12px;
-
+.member-rank{
+    text-align:center;
+    font-size:15px;
+    font-weight:800;
+    color:var(--text3);
+    font-variant-numeric:tabular-nums;
+    transition:color .3s var(--ease);
 }
-
-/* ========================= */
-/* LEFT */
-/* ========================= */
-
-.member-left{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:14px;
-
-}
+.member.active .member-rank{ color:var(--accent); }
 
 /* ========================= */
 /* PHOTO */
 /* ========================= */
 
 .member-photo{
-
-    width:56px;
-
-    height:56px;
-
+    width:48px;
+    height:48px;
     border-radius:50%;
-
     object-fit:cover;
-
     object-position:center top;
-
     border:2px solid transparent;
+    background:var(--panel3);
+    transition:border-color .3s var(--ease);
+}
+.member.active .member-photo{ border-color:var(--accent); }
 
-    transition:all .25s ease;
+/* ========================= */
+/* INFO */
+/* ========================= */
 
-    flex-shrink:0;
-
+.member-info{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+    min-width:0;
 }
 
-/* ========================= */
-/* ACTIVE PHOTO */
-/* ========================= */
-
-.member.active .member-photo{
-
-    transform:scale(1.08);
-
+.member-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:10px;
 }
-
-/* ========================= */
-/* NAME */
-/* ========================= */
 
 .member-name{
-
-    font-size:22px;
-
+    font-size:16px;
     font-weight:700;
-
-    letter-spacing:.5px;
-
+    letter-spacing:.4px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
-
-/* ========================= */
-/* TIME */
-/* ========================= */
 
 .member-time{
-
-    font-size:20px;
-
+    font-size:14px;
     font-weight:700;
-
-    color:white;
-
-    min-width:90px;
-
-    text-align:right;
-
+    color:var(--text2);
     font-variant-numeric:tabular-nums;
-
+    flex-shrink:0;
 }
+.member.active .member-time{ color:var(--text); }
 
 /* ========================= */
 /* BAR */
 /* ========================= */
 
 .member-bar{
-
     width:100%;
-
-    height:14px;
-
-    background:#3a3a3a;
-
+    height:8px;
+    background:var(--panel3);
     border-radius:999px;
-
     overflow:hidden;
-
 }
 
-/* ========================= */
-/* PROGRESS */
-/* ========================= */
-
 .member-progress{
-
     width:0%;
-
     height:100%;
-
     border-radius:999px;
-
-    transition:width .15s linear;
-
+    background:var(--accent);
+    transition:width .4s var(--ease);
 }
 
 /* ========================= */
@@ -200,25 +156,6 @@ Ranking
 /* ========================= */
 
 @media(max-width:1200px){
-
-    .member-name{
-
-        font-size:20px;
-
-    }
-
-    .member-time{
-
-        font-size:18px;
-
-    }
-
-    .member-photo{
-
-        width:50px;
-
-        height:50px;
-
-    }
-
+    .member-name{ font-size:15px; }
+    .member-photo{ width:44px; height:44px; }
 }

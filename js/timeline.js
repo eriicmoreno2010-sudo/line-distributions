@@ -1,67 +1,44 @@
 /*
 =========================================
-Timeline
+Timeline  v3
 =========================================
 */
 
 const Timeline = {
 
-    build() {
+    build(){
 
         const timeline = document.getElementById("timeline");
+        const cursor   = document.getElementById("timeline-cursor");
 
-        // Eliminamos todos los segmentos anteriores
-        timeline.querySelectorAll(".timeline-segment").forEach(segment => {
-            segment.remove();
-        });
+        // remove previous segments
+        timeline.querySelectorAll(".timeline-segment").forEach(s => s.remove());
 
-        if (!SONG || !SONG.lyrics) return;
-
-            console.log("Lyrics:", SONG.lyrics);
-    console.log("Duration:", SONG.duration);
+        if(!SONG || !SONG.lyrics) return;
 
         SONG.lyrics.forEach(line => {
 
-            const member = SONG.members.find(
-                m => m.name === line.member
-            );
-
-            if (!member) return;
+            // JSON uses "members" (array); take the main singer
+            const singer = line.members && line.members[0];
+            const member = SONG.members.find(m => m.name === singer);
+            if(!member) return;
 
             const segment = document.createElement("div");
-
             segment.className = "timeline-segment";
 
-            const left =
-                (line.start / SONG.duration) * 100;
-
-            const width =
-                ((line.end - line.start) / SONG.duration) * 100;
-
-            console.log(line.member, left, width);
-
-            segment.style.left = left + "%";
-            segment.style.width = width + "%";
+            segment.style.left   = (line.start / SONG.duration) * 100 + "%";
+            segment.style.width  = ((line.end - line.start) / SONG.duration) * 100 + "%";
             segment.style.background = member.color;
 
-            timeline.insertBefore(
-                segment,
-                document.getElementById("timeline-cursor")
-            );
-
+            timeline.insertBefore(segment, cursor);
         });
-
     },
 
-    update(currentTime) {
+    update(currentTime){
 
         const cursor = document.getElementById("timeline-cursor");
+        if(!cursor || !SONG) return;
 
-        if (!cursor || !SONG) return;
-
-        cursor.style.left =
-            (currentTime / SONG.duration) * 100 + "%";
-
+        cursor.style.left = (currentTime / SONG.duration) * 100 + "%";
     }
-
 };
