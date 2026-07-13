@@ -23,7 +23,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     transform:translateY(0);
 
     display:grid;
-    grid-template-columns:26px 58px 1fr;
+    grid-template-columns:26px 64px 1fr;
     align-items:center;
     gap:12px;
     padding:11px 16px 11px 12px;
@@ -85,8 +85,8 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member-photo{
     display:block;
-    width:58px;
-    height:58px;
+    width:64px;
+    height:64px;
     border-radius:50%;
     object-fit:cover;
     object-position:center 35%;
@@ -151,7 +151,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member-bar{
     width:100%;
-    height:8px;
+    height:10px;
     background:var(--panel3);
     border-radius:999px;
     overflow:hidden;
@@ -172,5 +172,5 @@ Version: 4.0 — Ranking (transform leaderboard)
 @media(max-width:1200px){
     .member-name{ font-size:16px; }
     .member-time{ font-size:15px; }
-    .member-photo{ width:54px; height:54px; }
+    .member-photo{ width:58px; height:58px; }
 }
