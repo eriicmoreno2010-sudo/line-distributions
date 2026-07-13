@@ -215,3 +215,35 @@ Lyrics
     }
 
 }
+
+/* ========================================= */
+/*            LYRICS ANIMATIONS             */
+/* ========================================= */
+
+.fade-out{
+
+    opacity:0;
+
+    transform:translateY(8px);
+
+}
+
+.fade-in{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+#current-member,
+#hangul,
+#romanized,
+#english,
+#adlibs-section{
+
+    transition:
+        opacity .18s ease,
+        transform .18s ease;
+
+}
