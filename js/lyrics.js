@@ -74,13 +74,6 @@ if (currentTime - this.lastLineTime > 1) {
 
     ];
 
-    elements.forEach(element => {
-
-        element.classList.add("fade-out");
-
-        element.classList.remove("fade-in");
-
-    });
 
        elements.forEach(element => {
 
@@ -120,38 +113,59 @@ if (currentTime - this.lastLineTime > 1) {
 
 },
 
-    clear() {
+clear() {
 
-        if (this.currentIndex === -1) return;
+    if (this.currentIndex === -1) return;
 
-        this.currentIndex = -1;
+    this.currentIndex = -1;
 
-     const elements = [
+    const elements = [
 
-    document.getElementById("current-member"),
+        document.getElementById("current-member"),
 
-    document.getElementById("original"),
+        document.getElementById("original"),
 
-    document.getElementById("romanized"),
+        document.getElementById("romanized"),
 
-    document.getElementById("english"),
+        document.getElementById("english"),
 
-    document.getElementById("adlibs-section")
+        document.getElementById("adlibs-section")
 
-];
+    ];
 
+    // Fade Out
     elements.forEach(element => {
 
-        element.classList.remove("fade-out");
+        element.classList.add("fade-out");
+
+        element.classList.remove("fade-in");
 
     });
 
-}, 180);
+    setTimeout(() => {
 
-        Ranking.setActive("");
+        document.getElementById("current-member").textContent = "";
 
-        Ranking.render();
+        document.getElementById("original").textContent = "";
 
-    }
+        document.getElementById("romanized").textContent = "";
+
+        document.getElementById("english").textContent = "";
+
+        document.getElementById("adlibs-section").textContent = "";
+
+        elements.forEach(element => {
+
+            element.classList.remove("fade-out");
+
+        });
+
+    }, 180);
+
+    Ranking.setActive("");
+
+    Ranking.render();
+
+}
 
 };
