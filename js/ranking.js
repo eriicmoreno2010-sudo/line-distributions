@@ -26,7 +26,6 @@ const Ranking = {
 
     },
 
-    render(){
 
 render() {
 
