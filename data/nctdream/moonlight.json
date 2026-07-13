@@ -118,7 +118,7 @@
 
     {
         "start": 21.35,
-        "end": 24.75,
+        "end": 23.65,
         "members": ["MARK"],
         "original": "何が見えるの?",
         "romanization": "Nani ga mieru no?",
@@ -127,8 +127,8 @@
     },
 
     {
-        "start": 26.09,
-        "end": 28.81,
+        "start": 25.00,
+        "end": 27.45,
         "members": ["CHENLE"],
         "original": "窓に差し込む光",
         "romanization": "Mado ni sashikomu hikari",
@@ -137,8 +137,8 @@
     },
 
     {
-        "start": 29.39,
-        "end": 32.40,
+        "start": 28.70,
+        "end": 31.50,
         "members": ["CHENLE"],
         "original": "浴び照らすよ reflection",
         "romanization": "Abi terasu yo reflection",
@@ -147,8 +147,8 @@
     },
 
     {
-        "start": 32.60,
-        "end": 36.28,
+        "start": 31.60,
+        "end": 35.28,
         "members": ["JAEMIN"],
         "original": "徐々に重なる波長夢が目覚める",
         "romanization": "Jojo ni kasanaru hachou yume ga mezameru",
@@ -157,8 +157,8 @@
     },
 
     {
-        "start": 36.28,
-        "end": 37.39,
+        "start": 35.28,
+        "end": 36.39,
         "members": ["JENO", "JISUNG"],
         "original": "",
         "romanization": "All shining bright",
@@ -168,7 +168,7 @@
 
     {
         "start": 37.39,
-        "end": 39.09,
+        "end": 38.50,
         "members": ["RENJUN"],
         "original": "",
         "romanization": "Yeah, like a crystal",
