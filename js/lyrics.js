@@ -47,7 +47,7 @@ const Lyrics = {
 
         document.getElementById("current-member"),
 
-        document.getElementById("hangul"),
+        document.getElementById("original"),
 
         document.getElementById("romanized"),
 
@@ -68,9 +68,9 @@ const Lyrics = {
     setTimeout(() => {
 
         document.getElementById("current-member").textContent =
-            line.member;
+            line.members;
 
-        document.getElementById("hangul").textContent =
+        document.getElementById("original").textContent =
             line.hangul;
 
         document.getElementById("romanized").textContent =
@@ -82,7 +82,7 @@ const Lyrics = {
         document.getElementById("adlibs-section").textContent =
             line.adlib || "";
 
-        Ranking.setActive(line.member);
+        Ranking.setActive(line.members);
 
         elements.forEach(element => {
 
@@ -104,7 +104,7 @@ const Lyrics = {
 
         document.getElementById("current-member").textContent = "";
 
-        document.getElementById("hangul").textContent = "";
+        document.getElementById("original").textContent = "";
 
         document.getElementById("romanized").textContent = "";
 
