@@ -17,6 +17,9 @@ const Timeline = {
 
         if (!SONG || !SONG.lyrics) return;
 
+            console.log("Lyrics:", SONG.lyrics);
+    console.log("Duration:", SONG.duration);
+
         SONG.lyrics.forEach(line => {
 
             const member = SONG.members.find(
@@ -34,6 +37,8 @@ const Timeline = {
 
             const width =
                 ((line.end - line.start) / SONG.duration) * 100;
+
+            console.log(line.member, left, width);
 
             segment.style.left = left + "%";
             segment.style.width = width + "%";
