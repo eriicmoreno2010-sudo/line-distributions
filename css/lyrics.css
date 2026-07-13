@@ -72,18 +72,17 @@ Version: 3.0 — Lyrics
 
 #romanized{
     margin-top:12px;
-    font-size:22px;
-    font-weight:600;
-    color:var(--text);
-    opacity:.92;
+    font-size:30px;
+    font-weight:700;
+    color:#fff;
 }
 
 #english{
     margin-top:12px;
-    font-size:18px;
-    font-weight:500;
-    color:var(--text2);
-    font-style:italic;
+    font-size:30px;
+    font-weight:700;
+    color:#fff;
+    font-style:normal;
 }
 
 /* ========================= */
@@ -96,8 +95,8 @@ Version: 3.0 — Lyrics
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:flex-start;
-    text-align:left;
+    align-items:center;
+    text-align:center;
     gap:12px;
     font-size:22px;
     font-weight:700;
@@ -109,6 +108,7 @@ Version: 3.0 — Lyrics
     font-weight:800;
     letter-spacing:2px;
     text-transform:uppercase;
+    transform:translateY(-10px);
 }
 
 .adlib-text{
@@ -153,6 +153,6 @@ Version: 3.0 — Lyrics
 @media(max-width:1200px){
     #current-member{ font-size:22px; }
     #original{ font-size:24px; }
-    #romanized{ font-size:18px; }
-    #english{ font-size:16px; }
+    #romanized,
+    #english{ font-size:24px; }
 }
