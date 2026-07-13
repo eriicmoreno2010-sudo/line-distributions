@@ -8,6 +8,8 @@ const Lyrics = {
 
     currentIndex: -1,
 
+    lastLineTime: undefined,
+
     update(currentTime) {
 
         if (!SONG || !SONG.lyrics) return;
@@ -31,13 +33,28 @@ const Lyrics = {
 
                 }
 
+                // Hay una línea activa, reiniciamos el contador
+this.lastLineTime = undefined;
+
                 return;
 
             }
 
         }
 
-        this.clear();
+    // Si es la primera vez que no hay letra, guardamos el tiempo
+if (this.lastLineTime === undefined) {
+
+    this.lastLineTime = currentTime;
+
+}
+
+// Solo borramos si llevamos más de 1 segundo sin ninguna letra
+if (currentTime - this.lastLineTime > 1) {
+
+    this.clear();
+
+}
 
     },
 
