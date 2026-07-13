@@ -57,8 +57,8 @@
     },
 
     {
-        "start": 7.20,
-        "end": 8.55,
+        "start": 8.10,
+        "end": 10.65,
         "members": ["HAECHAN"],
         "original": "過ぎる今日に goodbye",
         "romanization": "Sugiru kyou ni goodbye",
@@ -67,8 +67,8 @@
     },
 
     {
-        "start": 8.55,
-        "end": 9.85,
+        "start": 11.00,
+        "end": 13.35,
         "members": ["HAECHAN"],
         "original": "手を振ろう",
         "romanization": "Te o furou",
@@ -77,8 +77,8 @@
     },
 
     {
-        "start": 9.85,
-        "end": 10.65,
+        "start": 13.40,
+        "end": 14.20,
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -87,8 +87,8 @@
     },
 
     {
-        "start": 10.65,
-        "end": 11.25,
+        "start": 14.30,
+        "end": 15.72,
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -97,8 +97,8 @@
     },
 
     {
-        "start": 11.25,
-        "end": 12.70,
+        "start": 15.82,
+        "end": 18.20,
         "members": ["RENJUN"],
         "original": "数えて one, two, three, now",
         "romanization": "Kazoete one, two, three, now",
@@ -107,8 +107,8 @@
     },
 
     {
-        "start": 12.70,
-        "end": 13.95,
+        "start": 18.70,
+        "end": 20.95,
         "members": ["RENJUN"],
         "original": "",
         "romanization": "Oh, tune in on",
@@ -117,8 +117,8 @@
     },
 
     {
-        "start": 13.95,
-        "end": 15.40,
+        "start": 21.35,
+        "end": 24.75,
         "members": ["MARK"],
         "original": "何が見えるの?",
         "romanization": "Nani ga mieru no?",
@@ -127,8 +127,8 @@
     },
 
     {
-        "start": 15.40,
-        "end": 16.85,
+        "start": 26.09,
+        "end": 28.81,
         "members": ["CHENLE"],
         "original": "窓に差し込む光",
         "romanization": "Mado ni sashikomu hikari",
@@ -137,8 +137,8 @@
     },
 
     {
-        "start": 16.85,
-        "end": 18.40,
+        "start": 29.39,
+        "end": 32.40,
         "members": ["CHENLE"],
         "original": "浴び照らすよ reflection",
         "romanization": "Abi terasu yo reflection",
@@ -147,8 +147,8 @@
     },
 
     {
-        "start": 18.40,
-        "end": 20.85,
+        "start": 32.60,
+        "end": 36.28,
         "members": ["JAEMIN"],
         "original": "徐々に重なる波長夢が目覚める",
         "romanization": "Jojo ni kasanaru hachou yume ga mezameru",
@@ -157,8 +157,8 @@
     },
 
     {
-        "start": 20.85,
-        "end": 22.15,
+        "start": 36.28,
+        "end": 37.39,
         "members": ["JENO", "JISUNG"],
         "original": "",
         "romanization": "All shining bright",
@@ -167,8 +167,8 @@
     },
 
     {
-        "start": 22.15,
-        "end": 23.40,
+        "start": 37.39,
+        "end": 39.09,
         "members": ["RENJUN"],
         "original": "",
         "romanization": "Yeah, like a crystal",
