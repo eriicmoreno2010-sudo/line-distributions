@@ -23,7 +23,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     transform:translateY(0);
 
     display:grid;
-    grid-template-columns:26px 54px 1fr;
+    grid-template-columns:26px 58px 1fr;
     align-items:center;
     gap:12px;
     padding:11px 16px 11px 12px;
@@ -85,8 +85,8 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member-photo{
     display:block;
-    width:54px;
-    height:54px;
+    width:58px;
+    height:58px;
     border-radius:50%;
     object-fit:cover;
     object-position:center 35%;
@@ -117,7 +117,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 }
 
 .member-name{
-    font-size:16px;
+    font-size:18px;
     font-weight:700;
     letter-spacing:.4px;
     color:var(--text);
@@ -129,7 +129,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 .member.has-sung .member-name{ color:var(--accent); }
 
 .member-time{
-    font-size:14px;
+    font-size:16px;
     font-weight:700;
     color:var(--text2);
     font-variant-numeric:tabular-nums;
@@ -162,6 +162,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* ========================= */
 
 @media(max-width:1200px){
-    .member-name{ font-size:15px; }
-    .member-photo{ width:50px; height:50px; }
+    .member-name{ font-size:16px; }
+    .member-time{ font-size:15px; }
+    .member-photo{ width:54px; height:54px; }
 }
