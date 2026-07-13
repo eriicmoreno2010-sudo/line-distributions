@@ -96,7 +96,7 @@ render() {
 
     });
 
-}
+},
 
         updateVisuals() {
 
