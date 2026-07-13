@@ -18,6 +18,8 @@ const Engine = {
 
         Lyrics.update(time);
 
+        Timeline.update(time);
+
         const current =
 
             SONG.lyrics.find(
