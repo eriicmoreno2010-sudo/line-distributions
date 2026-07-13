@@ -133,8 +133,9 @@ const Ranking = {
         });
     },
 
-    setActive(name){
-        this.members.forEach(m => m.active = (m.name === name));
+    setActive(names){
+        const activeNames = new Set(Array.isArray(names) ? names : [names]);
+        this.members.forEach(m => m.active = activeNames.has(m.name));
     },
 
     addTime(name, delta){

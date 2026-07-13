@@ -24,7 +24,7 @@ const Engine = {
         );
 
         if(current && delta > 0){
-            Ranking.addTime(current.members[0], delta);
+            current.members.forEach(member => Ranking.addTime(member, delta));
         }
 
         Ranking.refresh(SONG.duration);
