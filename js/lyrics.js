@@ -59,13 +59,6 @@ if (currentTime - this.lastLineTime > 1) {
     },
 
    show(line) {
-       // Si ya se está mostrando esta línea, no hacemos nada
-if (
-    document.getElementById("current-member").textContent ===
-    line.members.join(" & ")
-) {
-    return;
-}
 
     const elements = [
 
