@@ -41,7 +41,31 @@ const Lyrics = {
 
     },
 
-    show(line) {
+   show(line) {
+
+    const elements = [
+
+        document.getElementById("current-member"),
+
+        document.getElementById("hangul"),
+
+        document.getElementById("romanized"),
+
+        document.getElementById("english"),
+
+        document.getElementById("adlibs-section")
+
+    ];
+
+    elements.forEach(element => {
+
+        element.classList.add("fade-out");
+
+        element.classList.remove("fade-in");
+
+    });
+
+    setTimeout(() => {
 
         document.getElementById("current-member").textContent =
             line.member;
@@ -60,9 +84,17 @@ const Lyrics = {
 
         Ranking.setActive(line.member);
 
-        Ranking.render();
+        elements.forEach(element => {
 
-    },
+            element.classList.remove("fade-out");
+
+            element.classList.add("fade-in");
+
+        });
+
+    }, 180);
+
+},
 
     clear() {
 
