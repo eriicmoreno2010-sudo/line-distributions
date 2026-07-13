@@ -118,7 +118,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member-name{
     font-size:18px;
-    font-weight:700;
+    font-weight:800;
     letter-spacing:.4px;
     color:var(--text);
     white-space:nowrap;
@@ -131,7 +131,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member-time{
     font-size:16px;
-    font-weight:700;
+    font-weight:800;
     color:var(--text2);
     font-variant-numeric:tabular-nums;
     flex-shrink:0;
@@ -140,7 +140,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 }
 .member.active .member-name,
 .member.active .member-time{
-    font-weight:800;
+    font-weight:900;
     transform:scale(1.08);
 }
 .member.active .member-time{ color:var(--text); }
