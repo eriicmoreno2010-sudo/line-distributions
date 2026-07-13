@@ -22,7 +22,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         Ranking.load(SONG);
 
+        Timeline.build();
+
         Player.init();
+
+        Lyrics.clear();
 
     } catch (error) {
 
