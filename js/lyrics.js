@@ -99,15 +99,33 @@ if (currentTime - this.lastLineTime > 1) {
         document.getElementById("adlibs-section").textContent =
             line.adlib || "";
 
-        Ranking.setActive(line.members[0]);
+Ranking.setActive(line.members[0]);
 
-        elements.forEach(element => {
+// =========================================
+// COLOR DEL TEXTO SEGÚN EL MIEMBRO
+// =========================================
 
-            element.classList.remove("fade-out");
+const member = SONG.members.find(
+    m => m.name === line.members[0]
+);
 
-            element.classList.add("fade-in");
+if (member) {
 
-        });
+    elements.forEach(element => {
+
+        element.style.color = member.color;
+
+    });
+
+}
+
+elements.forEach(element => {
+
+    element.classList.remove("fade-out");
+
+    element.classList.add("fade-in");
+
+});
 
     }, 180);
 
@@ -154,6 +172,16 @@ clear() {
         document.getElementById("english").textContent = "";
 
         document.getElementById("adlibs-section").textContent = "";
+        
+// =========================================
+// RESTAURAR EL COLOR POR DEFECTO
+// =========================================
+
+elements.forEach(element => {
+
+    element.style.color = "";
+
+});
 
         elements.forEach(element => {
 
