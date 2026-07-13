@@ -268,7 +268,8 @@ body{
     color:var(--text);
     text-overflow:ellipsis;
     white-space:nowrap;
-    transition:color .3s var(--ease);
+    transform-origin:left center;
+    transition:color .3s var(--ease), transform .3s var(--ease);
 }
 
 #ranking .member-time{
@@ -277,6 +278,8 @@ body{
     font-weight:700;
     color:var(--text2);
     font-variant-numeric:tabular-nums;
+    transform-origin:right center;
+    transition:color .3s var(--ease), transform .3s var(--ease);
 }
 
 #ranking .member-bar{
@@ -306,6 +309,11 @@ body{
 
 #ranking .member.active .member-rank{ color:var(--accent); }
 #ranking .member.active .member-photo{ border-color:var(--accent); }
+#ranking .member.active .member-name,
+#ranking .member.active .member-time{
+    font-weight:800;
+    transform:scale(1.08);
+}
 #ranking .member.active .member-time{ color:var(--text); }
 #ranking .member.has-sung .member-name{ color:var(--accent); }
 

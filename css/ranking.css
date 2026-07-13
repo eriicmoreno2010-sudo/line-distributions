@@ -124,7 +124,8 @@ Version: 4.0 — Ranking (transform leaderboard)
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
-    transition:color .3s var(--ease);
+    transform-origin:left center;
+    transition:color .3s var(--ease), transform .3s var(--ease);
 }
 .member.has-sung .member-name{ color:var(--accent); }
 
@@ -134,6 +135,13 @@ Version: 4.0 — Ranking (transform leaderboard)
     color:var(--text2);
     font-variant-numeric:tabular-nums;
     flex-shrink:0;
+    transform-origin:right center;
+    transition:color .3s var(--ease), transform .3s var(--ease);
+}
+.member.active .member-name,
+.member.active .member-time{
+    font-weight:800;
+    transform:scale(1.08);
 }
 .member.active .member-time{ color:var(--text); }
 

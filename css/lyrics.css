@@ -40,12 +40,6 @@ Version: 3.0 — Lyrics
 
 #lyrics-section.singing::after{ opacity:1; }
 
-#lyrics-section.singing #original,
-#lyrics-section.singing #romanized,
-#lyrics-section.singing #english{
-    font-weight:800;
-}
-
 /* ========================= */
 /* CURRENT MEMBER */
 /* ========================= */
