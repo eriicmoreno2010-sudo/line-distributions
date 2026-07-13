@@ -45,19 +45,138 @@
   ],
 
   "lyrics": [
+  "lyrics": [
+
     {
-    "start": 6.00,
-    "end": 7.20,
+        "start": 6.00,
+        "end": 7.20,
+        "members": ["JENO"],
+        "original": "",
+        "romanization": "Yeah",
+        "english": "",
+        "adlib": ""
+    },
 
-    "members": ["JENO"],
+    {
+        "start": 7.20,
+        "end": 8.55,
+        "members": ["HAECHAN"],
+        "original": "過ぎる今日に goodbye",
+        "romanization": "Sugiru kyou ni goodbye",
+        "english": "Goodbye to the day that's passing",
+        "adlib": ""
+    },
 
-    "original": "",
+    {
+        "start": 8.55,
+        "end": 9.85,
+        "members": ["HAECHAN"],
+        "original": "手を振ろう",
+        "romanization": "Te o furou",
+        "english": "Let's wave our hands",
+        "adlib": ""
+    },
 
-    "romanization": "Yeah",
+    {
+        "start": 9.85,
+        "end": 10.65,
+        "members": ["CHENLE"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Oh yeah"
+    },
 
-    "english": "",
+    {
+        "start": 10.65,
+        "end": 11.25,
+        "members": ["CHENLE"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Oh yeah ey"
+    },
 
-    "adlib": ""
-  }  
+    {
+        "start": 11.25,
+        "end": 12.70,
+        "members": ["RENJUN"],
+        "original": "数えて one, two, three, now",
+        "romanization": "Kazoete one, two, three, now",
+        "english": "Count one, two, three, now",
+        "adlib": ""
+    },
+
+    {
+        "start": 12.70,
+        "end": 13.95,
+        "members": ["RENJUN"],
+        "original": "Oh, tune in on",
+        "romanization": "Oh, tune in on",
+        "english": "",
+        "adlib": ""
+    },
+
+    {
+        "start": 13.95,
+        "end": 15.40,
+        "members": ["MARK"],
+        "original": "何が見えるの?",
+        "romanization": "Nani ga mieru no?",
+        "english": "What can you see?",
+        "adlib": ""
+    },
+
+    {
+        "start": 15.40,
+        "end": 16.85,
+        "members": ["CHENLE"],
+        "original": "窓に差し込む光",
+        "romanization": "Mado ni sashikomu hikari",
+        "english": "The light pouring in through the window",
+        "adlib": ""
+    },
+
+    {
+        "start": 16.85,
+        "end": 18.40,
+        "members": ["CHENLE"],
+        "original": "浴び照らすよ reflection",
+        "romanization": "Abi terasu yo reflection",
+        "english": "The reflection will shine on you",
+        "adlib": ""
+    },
+
+    {
+        "start": 18.40,
+        "end": 20.85,
+        "members": ["JAEMIN"],
+        "original": "徐々に重なる波長夢が目覚める",
+        "romanization": "Jojo ni kasanaru hachou yume ga mezameru",
+        "english": "Wavelengths gradually overlap and the dream awakens",
+        "adlib": ""
+    },
+
+    {
+        "start": 20.85,
+        "end": 22.15,
+        "members": ["JENO", "JISUNG"],
+        "original": "",
+        "romanization": "All shining bright",
+        "english": "",
+        "adlib": ""
+    },
+
+    {
+        "start": 22.15,
+        "end": 23.40,
+        "members": ["RENJUN"],
+        "original": "",
+        "romanization": "Yeah, like a crystal",
+        "english": "",
+        "adlib": ""
+    }
+
+]
   ]
 }
