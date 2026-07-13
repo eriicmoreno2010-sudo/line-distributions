@@ -130,7 +130,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 .member.has-sung .member-name{ color:var(--accent); }
 
 .member-time{
-    font-size:16px;
+    font-size:18px;
     font-weight:800;
     color:var(--text2);
     font-variant-numeric:tabular-nums;
