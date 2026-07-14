@@ -47,7 +47,8 @@ const Ranking = {
             card.innerHTML = `
                 <div class="member-rank">1</div>
                 <img class="member-photo" src="${member.image}" alt="${member.name}"
-                     style="object-position:center ${member.focus ?? 50}%">
+                     style="object-position:center ${member.focus ?? 50}%;
+                            transform:translateY(-${member.lift ?? 3}px)">
 
                 <div class="member-info">
                     <div class="member-head">
