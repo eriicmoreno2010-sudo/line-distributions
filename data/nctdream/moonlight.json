@@ -114,9 +114,9 @@
         "start": 15.82,
         "end": 18.20,
         "members": ["RENJUN"],
-        "original": "数えて one, two, three, now",
-        "romanization": "Kazoete one, two, three, now",
-        "english": "Count one, two, three, now",
+        "original": "数えて 1, 2, 3, now",
+        "romanization": "Kazoete 1, 2, 3, now",
+        "english": "Count 1, 2, 3, now",
         "adlib": ""
     },
 
@@ -125,7 +125,7 @@
         "end": 20.95,
         "members": ["RENJUN"],
         "original": "",
-        "romanization": "Oh, tune in now",
+        "romanization": "Oh, tune in on",
         "english": "",
         "adlib": ""
     },
@@ -188,7 +188,68 @@
         "romanization": "Yeah, like a crystal",
         "english": "",
         "adlib": ""
-    }
+    },
 
+     {
+        "start": 40.00,
+        "end": 41.00,
+        "members": ["NCT DREAM"],
+        "original": "Dancing in the moonlight, 弾ける瞬間",
+        "romanization": "Dancing in the moonlight, hajikeru shunkan",
+        "english": "Dancing in the moonlight, I come alive in this moment",
+        "adlib": ""
+    },
+
+    {
+    "start": 42.00,
+        "end": 43.00,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Oway Oway O Oway Oway",
+        "english": "",
+        "adlib": ""
+    },
+
+     {
+        "start": 44.00,
+        "end": 45.00,
+        "members": ["NCT DREAM"],
+        "original": "Singing to the night sky, 繋がる世界",
+        "romanization": "Singing to the night sky, tsunagaru sekai",
+        "english": "Singing to the night sky, the connected world",
+        "adlib": ""
+    },
+
+     {
+    "start": 46.00,
+        "end": 47.00,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Oway Oway O Oway Oway",
+        "english": "",
+        "adlib": ""
+    },
+
+     {
+    "start": 48.00,
+        "end": 49.00,
+        "members": ["NCT DREAM"],
+        "original": "そう どこにいても, 感じる心",
+        "romanization": "Sou doko ni ite mo, kanjiru kokoro",
+        "english": "That’s right, wherevеr I am, my heart feels it",
+        "adlib": ""
+    },
 ]
+
+   {
+    "start": 50.00,
+        "end": 51.00,
+        "members": ["NCT DREAM"],
+        "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
+        "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
+        "english": "My body feels it more, we're gonna scream, ah, ah, ah",
+        "adlib": ""
+    },
+    
+
 }
