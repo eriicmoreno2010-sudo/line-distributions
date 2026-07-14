@@ -13,19 +13,9 @@
       "color": "#b353cd"
     },
     {
-      "name": "HAECHAN",
-      "image": "images/haechan.png",
-      "color": "#0089b6"
-    },
-    {
       "name": "RENJUN",
       "image": "images/renjun.png",
       "color": "#ab842f"
-    },
-    {
-      "name": "CHENLE",
-      "image": "images/chenle.png",
-      "color": "#008206"
     },
     {
       "name": "JENO",
@@ -33,9 +23,19 @@
       "color": "#cb0c0c"
     },
     {
+      "name": "HAECHAN",
+      "image": "images/haechan.png",
+      "color": "#0089b6"
+    },
+    {
       "name": "JAEMIN",
       "image": "images/jaemin.png",
       "color": "#1bcf72"
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/chenle.png",
+      "color": "#008206"
     },
     {
       "name": "JISUNG",
