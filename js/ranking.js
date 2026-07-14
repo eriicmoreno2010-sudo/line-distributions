@@ -50,7 +50,7 @@ const Ranking = {
                 <div class="member-info">
                     <div class="member-head">
                         <span class="member-name">${member.name}</span>
-                        <span class="member-time">0.00s</span>
+                        <span class="member-time">0s</span>
                     </div>
                     <div class="member-bar">
                         <div class="member-progress"></div>
@@ -130,7 +130,7 @@ const Ranking = {
     updateVisuals(){
         this.members.forEach(member => {
             if(member.timeElement)
-                member.timeElement.textContent = member.seconds.toFixed(2) + "s";
+                member.timeElement.textContent = Math.floor(member.seconds) + "s";
             if(member.progressElement)
                 member.progressElement.style.width = member.percentage + "%";
             if(member.element)

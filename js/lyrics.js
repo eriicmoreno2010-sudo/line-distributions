@@ -7,7 +7,6 @@ Lyrics  v3
 const Lyrics = {
 
     currentIndex: -1,
-    lastLineTime: undefined,
 
     els(){
         return {
@@ -42,18 +41,12 @@ const Lyrics = {
                     this.show(line);
                 }
 
-                this.lastLineTime = undefined;   // active line -> reset gap timer
                 return;
             }
         }
 
-        // No active line: only clear after a >1s silence
-        if(this.lastLineTime === undefined){
-            this.lastLineTime = currentTime;
-        }
-        if(currentTime - this.lastLineTime > 1){
-            this.clear();
-        }
+        // No active line -> the member stopped singing: clear right away
+        this.clear();
     },
 
     show(line){
@@ -137,7 +130,6 @@ const Lyrics = {
         if(this.currentIndex === -1) return;
 
         this.currentIndex = -1;
-        this.lastLineTime = undefined;
 
         const e = this.els();
 
