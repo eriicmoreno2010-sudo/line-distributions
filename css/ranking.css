@@ -93,7 +93,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     height:64px;
     border-radius:50%;
     object-fit:cover;
-    object-position:center 45%;
+    object-position:center 65%;
     image-rendering:auto;
     transform:translateY(-3px);
     border:2px solid transparent;
