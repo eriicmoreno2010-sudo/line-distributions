@@ -59,7 +59,6 @@
   ],
 
   "lyrics": [
-
     {
         "start": 6.00,
         "end": 7.20,
@@ -69,7 +68,6 @@
         "english": "",
         "adlib": ""
     },
-
     {
         "start": 8.00,
         "end": 10.65,
@@ -79,7 +77,6 @@
         "english": "Goodbye to the day that's passing",
         "adlib": ""
     },
-
     {
         "start": 10.90,
         "end": 13.35,
@@ -89,7 +86,6 @@
         "english": "Let's wave our hands",
         "adlib": ""
     },
-
     {
         "start": 13.40,
         "end": 14.20,
@@ -99,7 +95,6 @@
         "english": "",
         "adlib": "Oh yeah"
     },
-
     {
         "start": 14.30,
         "end": 15.72,
@@ -109,7 +104,6 @@
         "english": "",
         "adlib": "Oh yeah ey"
     },
-
     {
         "start": 15.82,
         "end": 18.20,
@@ -119,7 +113,6 @@
         "english": "Count 1, 2, 3, now",
         "adlib": ""
     },
-
     {
         "start": 18.70,
         "end": 20.95,
@@ -129,7 +122,6 @@
         "english": "",
         "adlib": ""
     },
-
     {
         "start": 21.25,
         "end": 23.65,
@@ -139,7 +131,6 @@
         "english": "What can you see?",
         "adlib": ""
     },
-
     {
         "start": 24.50,
         "end": 27.45,
@@ -149,7 +140,6 @@
         "english": "The light pouring in through the window",
         "adlib": ""
     },
-
     {
         "start": 28.50,
         "end": 31.50,
@@ -159,7 +149,6 @@
         "english": "The reflection will shine on you",
         "adlib": ""
     },
-
     {
         "start": 31.60,
         "end": 35.28,
@@ -169,7 +158,6 @@
         "english": "Wavelengths gradually overlap and the dream awakens",
         "adlib": ""
     },
-
     {
         "start": 35.28,
         "end": 36.43,
@@ -179,7 +167,6 @@
         "english": "",
         "adlib": ""
     },
-
     {
         "start": 36.39,
         "end": 38.50,
@@ -189,7 +176,6 @@
         "english": "",
         "adlib": ""
     },
-
      {
         "start": 40.00,
         "end": 41.00,
@@ -199,7 +185,6 @@
         "english": "Dancing in the moonlight, I come alive in this moment",
         "adlib": ""
     },
-
     {
     "start": 42.00,
         "end": 43.00,
@@ -209,7 +194,6 @@
         "english": "",
         "adlib": ""
     },
-
      {
         "start": 44.00,
         "end": 45.00,
@@ -219,7 +203,6 @@
         "english": "Singing to the night sky, the connected world",
         "adlib": ""
     },
-
      {
     "start": 46.00,
         "end": 47.00,
@@ -229,7 +212,6 @@
         "english": "",
         "adlib": ""
     },
-
      {
     "start": 48.00,
         "end": 49.00,
@@ -239,7 +221,6 @@
         "english": "That’s right, wherevеr I am, my heart feels it",
         "adlib": ""
     },
-
    {
     "start": 50.00,
         "end": 51.00,
@@ -248,8 +229,304 @@
         "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
         "english": "My body feels it more, we're gonna scream, ah, ah, ah",
         "adlib": ""
-    }
-
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "閃く「今」を, 輝かせよう",
+        "romanization": "Hirameku "ima" "o, kagayakaseyou",
+        "english": "The dazzling "now", let's make it shine",
+        "adlib": ""
+    },
+      {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Dancing into the moonlight",
+        "english": "",
+        "adlib": ""
+    },
+      {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Frequencies of dream",
+        "english": "",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["CHENLE"],
+        "original": "さあ, 一歩踏み込んで, 重力からの解放",
+        "romanization": "Saa, ichi ho fumikondе, juuryoku kara no kaihou",
+        "english": "Hey, take one step forward, release yourself from gravity",
+        "adlib": ""
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["HAECHAN"],
+        "original": "Imajineeshon wa doko made mo",
+        "romanization": "Saa, ichi ho fumikondе, juuryoku kara no kaihou",
+        "english": "Imagination carries on forever",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["JISUNG"],
+        "original": "",
+        "romanization": "Na na na na na na",
+        "english": "",
+        "adlib": ""
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["JISUNG"],
+        "original": "自由に跳べ, fly",
+        "romanization": "Fly freely, fly",
+        "english": "",
+        "adlib": ""
+    },
+      {
+    "start":,
+        "end":,
+        "members": ["MARK"],
+        "original": "Yo, 今こそ, here we go",
+        "romanization": "Yo, ima koso, here we go",
+        "english": "Yo, now's the time, here we go",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["MARK"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Go"
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["MARK"],
+        "original": "「今度」なんてない in my dictionary",
+        "romanization": "Kondo" "nante nai in my dictionary",
+        "english": "Yo, now's the time, here we go",
+        "adlib": "Next time" isn't in my dictionary"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["JAEMIN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Ay"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["JAEMIN"],
+        "original": "引き寄せの法則",
+        "romanization": "hikiyose no housoku",
+        "english": "It's about the law of attraction",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["JENO"],
+        "original": "",
+        "romanization": "To the future and not the past, let's go",
+        "english": "",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "濃い霧のような迷い",
+        "romanization": "Koi kiri no youna mayoi",
+        "english": "I'm lost, as if in a deep mist",
+        "adlib": ""
+    },
+      {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "振り払うのさ reflection",
+        "romanization": "Furiharau nosa reflection",
+        "english": "But I'll shake it off, it's a reflection",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["HAECHAN"],
+        "original": "映し出したのはさめない夢 未来",
+        "romanization": "Utsushidashita no wa samenai yume mirai",
+        "english": "A future, a dream that never ends",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["CHENLE"],
+        "original": "",
+        "romanization": "Yeah, like a crystal",
+        "english": "",
+        "adlib": ""
+    },
+     {
+        "start": 40.00,
+        "end": 41.00,
+        "members": ["NCT DREAM"],
+        "original": "Dancing in the moonlight, 弾ける瞬間",
+        "romanization": "Dancing in the moonlight, hajikeru shunkan",
+        "english": "Dancing in the moonlight, I come alive in this moment",
+        "adlib": ""
+    },
+     {
+    "start": 46.00,
+        "end": 47.00,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Oway Oway O Oway Oway",
+        "english": "",
+        "adlib": ""
+    },
+     {
+        "start": 44.00,
+        "end": 45.00,
+        "members": ["NCT DREAM"],
+        "original": "Singing to the night sky, 繋がる世界",
+        "romanization": "Singing to the night sky, tsunagaru sekai",
+        "english": "Singing to the night sky, the connected world",
+        "adlib": ""
+    },
+    {
+    "start": 46.00,
+        "end": 47.00,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Oway Oway O Oway Oway",
+        "english": "",
+        "adlib": ""
+    },
+     {
+    "start": 48.00,
+        "end": 49.00,
+        "members": ["NCT DREAM"],
+        "original": "そう どこにいても, 感じる心",
+        "romanization": "Sou doko ni ite mo, kanjiru kokoro",
+        "english": "That’s right, wherevеr I am, my heart feels it",
+        "adlib": ""
+    },
+     {
+    "start": 50.00,
+        "end": 51.00,
+        "members": ["NCT DREAM"],
+        "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
+        "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
+        "english": "My body feels it more, we're gonna scream, ah, ah, ah",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Dancing into the moonlight",
+        "english": "",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Frequencies of dream",
+        "english": "",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["HAECHAN"],
+        "original": "The truth, 目の前に",
+        "romanization": "The truth, me no mae ni",
+        "english": "A future, a dream that never ends",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["CHENLE"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Hey"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["CHENLE"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Don't worry about that"
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["JENO"],
+        "original": "何があろうとも",
+        "romanization": "Nani ga aroutomo",
+        "english": "Right in front of me",
+        "adlib": "Don't worry about that"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "Travel 越えて行ける level",
+        "romanization": "Travel koete ikeru level",
+        "english": "The level goes beyond travel",
+        "adlib": ""
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "今をもっと revel, yeah-eh",
+        "romanization": "Ima o motto revel, yeah-eh",
+        "english": "We've got to revel, yeah-eh",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["JISUNG"],
+        "original": "想いを飛ばせ",
+        "romanization": "Omoi o tobase",
+        "english": "Let go of your thoughts",
+        "adlib": ""
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["JISUNG"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Dancing in the moon"
+    },
     ]
 
 }
