@@ -26,7 +26,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     transform-origin:center center;
 
     display:grid;
-    grid-template-columns:26px 74px 1fr;
+    grid-template-columns:26px 64px 1fr;
     align-items:center;
     gap:12px;
     padding:11px 16px 11px 12px;
@@ -89,13 +89,13 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member-photo{
     display:block;
-    width:74px;
-    height:74px;
+    width:64px;
+    height:64px;
     border-radius:50%;
     object-fit:cover;
-    object-position:center 35%;
+    object-position:center 45%;
     image-rendering:auto;
-    transform:translateY(-9px);
+    transform:translateY(-3px);
     border:2px solid transparent;
     background:var(--panel3);
     transition:border-color .3s var(--ease);
