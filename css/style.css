@@ -209,6 +209,8 @@ body{
 /* Ranking cards */
 #ranking .member{
     --accent:#7c5cff;
+    --rank-y:0px;
+    --card-scale:1;
     position:absolute;
     left:6px;
     right:6px;
@@ -222,6 +224,8 @@ body{
     border:1px solid var(--border);
     border-radius:var(--radius-sm);
     box-shadow:0 2px 10px -6px rgba(0,0,0,.6);
+    transform:translateY(var(--rank-y)) scale(var(--card-scale));
+    transform-origin:center center;
     will-change:transform;
 }
 
@@ -298,6 +302,7 @@ body{
 }
 
 #ranking .member.active{
+    --card-scale:1.04;
     background:linear-gradient(90deg,
         color-mix(in srgb, var(--accent) 24%, transparent),
         var(--panel2) 58%);
@@ -312,7 +317,7 @@ body{
 #ranking .member.active .member-name,
 #ranking .member.active .member-time{
     font-weight:900;
-    transform:scale(1.08);
+    transform:scale(1.14);
 }
 #ranking .member.active .member-time{ color:var(--text); }
 #ranking .member.has-sung .member-name{ color:var(--accent); }

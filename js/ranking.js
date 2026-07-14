@@ -120,7 +120,7 @@ const Ranking = {
     place(sorted){
         const n = this.members.length;
         sorted.forEach((m, i) => {
-            m.element.style.transform = `translateY(${i * this.rowH}px)`;
+            m.element.style.setProperty("--rank-y", `${i * this.rowH}px`);
             m.element.style.zIndex = String(n - i);   // #1 sits on top
             if(m.rankElement) m.rankElement.textContent = i + 1;
         });

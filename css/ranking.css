@@ -16,11 +16,14 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member{
     --accent:#7c5cff;
+    --rank-y:0px;
+    --card-scale:1;
     position:absolute;
     left:6px;
     right:6px;
     top:0;
-    transform:translateY(0);
+    transform:translateY(var(--rank-y)) scale(var(--card-scale));
+    transform-origin:center center;
 
     display:grid;
     grid-template-columns:26px 64px 1fr;
@@ -55,6 +58,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* ========================= */
 
 .member.active{
+    --card-scale:1.04;
     background:
         linear-gradient(90deg,
             color-mix(in srgb, var(--accent) 24%, transparent),
@@ -141,7 +145,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 .member.active .member-name,
 .member.active .member-time{
     font-weight:900;
-    transform:scale(1.08);
+    transform:scale(1.14);
 }
 .member.active .member-time{ color:var(--text); }
 
