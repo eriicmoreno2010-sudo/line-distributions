@@ -73,6 +73,10 @@ const Lyrics = {
             el.classList.add("fade-out");
             el.classList.remove("fade-in");
         });
+        e.adlibs.querySelectorAll(".adlib-member, .adlib-text").forEach(el => {
+            el.classList.add("fade-out");
+            el.classList.remove("fade-in");
+        });
 
         setTimeout(() => {
 
@@ -84,14 +88,22 @@ const Lyrics = {
             e.adlibs.replaceChildren();
             if(line.adlib){
                 const adlibMember = document.createElement("div");
-                adlibMember.className = "adlib-member";
+                adlibMember.className = "adlib-member fade-out";
                 adlibMember.textContent = line.members.join("  &  ");
 
                 const adlibText = document.createElement("div");
-                adlibText.className = "adlib-text";
+                adlibText.className = "adlib-text fade-out";
                 adlibText.textContent = line.adlib;
 
                 e.adlibs.append(adlibMember, adlibText);
+
+                // fade the ad-lib in, mirroring the main lyric crossfade
+                requestAnimationFrame(() => {
+                    [adlibMember, adlibText].forEach(el => {
+                        el.classList.remove("fade-out");
+                        el.classList.add("fade-in");
+                    });
+                });
             }
 
             // paint everything with the singing member's color
@@ -130,6 +142,10 @@ const Lyrics = {
         const e = this.els();
 
         this.group().forEach(el => {
+            el.classList.add("fade-out");
+            el.classList.remove("fade-in");
+        });
+        e.adlibs.querySelectorAll(".adlib-member, .adlib-text").forEach(el => {
             el.classList.add("fade-out");
             el.classList.remove("fade-in");
         });

@@ -156,7 +156,7 @@ Version: 3.0 — Lyrics
     font-weight:800;
     letter-spacing:2px;
     text-transform:uppercase;
-    transform:translateY(-10px);
+    margin-top:-10px;   /* moved off transform so the fade can drive translateY */
 }
 
 .adlib-text{
@@ -172,14 +172,16 @@ Version: 3.0 — Lyrics
 #current-member,
 #original,
 #romanized,
-#english{
+#english,
+.adlib-member,
+.adlib-text{
     transition:
         opacity .18s var(--ease),
         transform .18s var(--ease),
         color .3s var(--ease);
 }
 
-/* Ad-libs update softly on their own, without blinking the whole panel */
+/* Ad-libs crossfade their content like the main lyric lines */
 #adlibs-section{
     transition:color .3s var(--ease);
 }
