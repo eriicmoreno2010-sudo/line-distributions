@@ -384,8 +384,8 @@
         "adlib": ""
     },
      {
-        "start": 40.00,
-        "end": 41.00,
+        "start": ,
+        "end":,
         "members": ["NCT DREAM"],
         "original": "Dancing in the moonlight, 弾ける瞬間",
         "romanization": "Dancing in the moonlight, hajikeru shunkan",
@@ -393,8 +393,8 @@
         "adlib": ""
     },
      {
-    "start": 46.00,
-        "end": 47.00,
+    "start":,
+        "end":,
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -402,8 +402,8 @@
         "adlib": ""
     },
      {
-        "start": 44.00,
-        "end": 45.00,
+        "start":,
+        "end":,
         "members": ["NCT DREAM"],
         "original": "Singing to the night sky, 繋がる世界",
         "romanization": "Singing to the night sky, tsunagaru sekai",
@@ -411,8 +411,8 @@
         "adlib": ""
     },
     {
-    "start": 46.00,
-        "end": 47.00,
+    "start":,
+        "end":,
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -420,8 +420,8 @@
         "adlib": ""
     },
      {
-    "start": 48.00,
-        "end": 49.00,
+    "start":,
+        "end":,
         "members": ["NCT DREAM"],
         "original": "そう どこにいても, 感じる心",
         "romanization": "Sou doko ni ite mo, kanjiru kokoro",
@@ -429,8 +429,8 @@
         "adlib": ""
     },
      {
-    "start": 50.00,
-        "end": 51.00,
+    "start":,
+        "end":,
         "members": ["NCT DREAM"],
         "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
         "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
@@ -504,9 +504,9 @@
     "start":,
         "end":,
         "members": ["RENJUN"],
-        "original": "今をもっと revel, yeah-eh",
-        "romanization": "Ima o motto revel, yeah-eh",
-        "english": "We've got to revel, yeah-eh",
+        "original": "今をもっと revel, yeah",
+        "romanization": "Ima o motto revel, yeah",
+        "english": "We've got to revel, yeah",
         "adlib": ""
     },
      {
@@ -526,6 +526,178 @@
         "romanization": "",
         "english": "",
         "adlib": "Dancing in the moon"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["MARK"],
+        "original": "Dancing in the moonlight, 後悔なんてしない",
+        "romanization": "Dancing in the moonlight, Koukai nante shinai",
+        "english": "Dancing in the moonlight, There's no room for regret",
+        "adlib": ""
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["JAEMIN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "僕"
+    },
+     {
+        "start": ,
+        "end": ,
+        "members": ["NCT DREAM"],
+        "original": "Dancing in the moonlight, 弾ける瞬間",
+        "romanization": "Dancing in the moonlight, hajikeru shunkan",
+        "english": "Dancing in the moonlight, I come alive in this moment",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Oway Oway O Oway Oway",
+        "english": "",
+        "adlib": ""
+    },
+    {
+        "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "Singing to the night sky, 繋がる世界",
+        "romanization": "Singing to the night sky, tsunagaru sekai",
+        "english": "Singing to the night sky, the connected world",
+        "adlib": ""
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Oway Oway O Oway Oway",
+        "english": "",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "そう どこにいても, 感じる心",
+        "romanization": "Sou doko ni ite mo, kanjiru kokoro",
+        "english": "That’s right, wherevеr I am, my heart feels it",
+        "adlib": ""
+    },
+      {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
+        "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
+        "english": "My body feels it more, we're gonna scream, ah, ah, ah",
+        "adlib": ""
+    },
+
+     {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Dancing into the moonlight",
+        "english": "",
+        "adlib": ""
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["NCT DREAM"],
+        "original": "",
+        "romanization": "Frequencies of dream",
+        "english": "",
+        "adlib": ""
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Light, yeah"
+    },
+    {
+    "start":,
+        "end":,
+        "members": ["JAEMIN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Hey"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Yeah"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Yeah"
+    },
+      {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Yeah, yeah, yeah"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["RENJUN"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Yeah, yeah"
+    },
+      {
+    "start":,
+        "end":,
+        "members": ["CHENLE"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Yeah, yeah, yeah"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["JISUNG"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "Oh"
+    },
+     {
+    "start":,
+        "end":,
+        "members": ["JISUNG"],
+        "original": "",
+        "romanization": "",
+        "english": "",
+        "adlib": "輝かせよう"
     },
     ]
 
