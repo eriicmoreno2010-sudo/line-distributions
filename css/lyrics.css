@@ -69,7 +69,9 @@ Version: 3.0 — Lyrics
 #romanized,
 #english{
     position:relative;
-    width:100%;
+    /* shrink to the text width (like #current-member) so the group gradient
+       maps across the actual letters — full width would drop the edge colours */
+    max-width:100%;
     min-height:40px;              /* keeps height stable when empty -> no jump */
     line-height:1.4;
 }
