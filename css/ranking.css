@@ -160,6 +160,17 @@ Version: 4.0 — Ranking (transform leaderboard)
 }
 .member.active .member-progress{ background:var(--sing); }
 
+/* Done: member has sung their last line -> settle into their dark colour */
+.member.done{
+    background:linear-gradient(90deg,
+        color-mix(in srgb, var(--accent) 34%, #000),
+        color-mix(in srgb, var(--accent) 20%, #000));
+    border-color:color-mix(in srgb, var(--accent) 45%, #000);
+}
+.member.done .member-name{ color:color-mix(in srgb, var(--accent) 62%, #fff); }
+.member.done .member-time{ color:color-mix(in srgb, var(--accent) 45%, #fff); }
+.member.done .member-progress{ background:color-mix(in srgb, var(--accent) 60%, #000); }
+
 /* ========================= */
 /* BAR */
 /* ========================= */

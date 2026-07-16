@@ -22,44 +22,58 @@ const Ranking = {
             seconds:0,
             percentage:0,
             active:false,
-            hasSung:false
+            hasSung:false,
+            done:false,
+            lastSing:-Infinity
         }));
 
-        this.computeMaxTotal(song);
+        this.precompute(song);
         this.render();
         this.startTicking();
     },
 
     /*
-       All timings are known up front, so we can pre-sum how long each member
-       sings across the whole song and take the biggest total. That fixed
-       number is the 100% reference for the bars: the final leader ends full,
-       everyone else stays proportional to them the whole way through.
+       All timings are known up front, so we can pre-compute two things:
+        - maxTotal: the biggest per-member singing total, used as the 100%
+          reference for the bars (final leader ends full, rest proportional).
+        - lastSing: the last moment each member sings, so once playback passes
+          it we can mark that member as "done for the rest of the song".
     */
-    computeMaxTotal(song){
-        const totals = {};
-        song.members.forEach(m => totals[m.name] = 0);
+    precompute(song){
+        const totals   = {};
+        const lastSing = {};
+        song.members.forEach(m => { totals[m.name] = 0; lastSing[m.name] = -Infinity; });
 
         (song.lyrics || []).forEach(line => {
-            let duration;
+            let duration, endTime;
             if(Array.isArray(line.voice)){
-                duration = line.voice.reduce(
-                    (sum, [s, e]) => sum + Math.max(0, e - s), 0);
+                duration = line.voice.reduce((sum, [s, e]) => sum + Math.max(0, e - s), 0);
+                endTime  = line.voice.reduce((mx, [s, e]) => Math.max(mx, e), -Infinity);
             } else {
                 const voiceStart = line.voiceStart ?? line.start;
                 const voiceEnd   = line.voiceEnd   ?? line.end;
                 duration = Math.max(0, voiceEnd - voiceStart);
+                endTime  = voiceEnd;
             }
             if(!isFinite(duration)) duration = 0;
 
             // Shared lines add to every listed member; "NCT DREAM" isn't a
             // real member, so group lines add to no one (they don't count).
             (line.members || []).forEach(name => {
-                if(totals[name] !== undefined) totals[name] += duration;
+                if(totals[name] === undefined) return;
+                totals[name] += duration;
+                if(isFinite(endTime)) lastSing[name] = Math.max(lastSing[name], endTime);
             });
         });
 
         this.maxTotal = Math.max(0, ...Object.values(totals));
+        this.members.forEach(m => m.lastSing = lastSing[m.name]);
+    },
+
+    /* A member is "done" once playback has passed the last time they sing. */
+    markDone(time){
+        this.members.forEach(m =>
+            m.done = m.hasSung && isFinite(m.lastSing) && time >= m.lastSing);
     },
 
     /*
@@ -174,6 +188,8 @@ const Ranking = {
                 member.element.classList.toggle("active", member.active);
             if(member.element)
                 member.element.classList.toggle("has-sung", member.hasSung);
+            if(member.element)
+                member.element.classList.toggle("done", member.done && !member.active);
         });
     },
 

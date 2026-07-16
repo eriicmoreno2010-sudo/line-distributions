@@ -39,6 +39,7 @@ const Engine = {
             }
         }
         Ranking.setActive(active);
+        Ranking.markDone(time);   // dim the card of anyone who won't sing again
         Ranking.updateVisuals();
     },
 
