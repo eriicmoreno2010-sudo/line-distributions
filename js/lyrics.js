@@ -4,6 +4,10 @@ Lyrics  v3
 =========================================
 */
 
+// All the elements that live inside the ad-lib panel (used for fading).
+const ADLIB_PARTS =
+    ".adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text";
+
 const Lyrics = {
 
     currentIndex: -1,
@@ -65,6 +69,9 @@ const Lyrics = {
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`
             : "";
+        const groupMid = isGroupLine
+            ? SONG.members[Math.floor(SONG.members.length / 2)].color
+            : "";
 
         let accent, secondaryAccent, isSharedLine;
         if(isGroupLine){
@@ -83,7 +90,7 @@ const Lyrics = {
             el.classList.add("fade-out");
             el.classList.remove("fade-in");
         });
-        e.adlibs.querySelectorAll(".adlib-member, .adlib-text").forEach(el => {
+        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
             el.classList.add("fade-out");
             el.classList.remove("fade-in");
         });
@@ -97,21 +104,30 @@ const Lyrics = {
 
             e.adlibs.replaceChildren();
             if(line.adlib){
-                const adlibMember = document.createElement("div");
-                adlibMember.className = "adlib-member fade-out";
-                adlibMember.textContent = line.members.join("  &  ");
+                // The ad-lib panel mirrors the main panel: name + original +
+                // romanization + translation, plus the ad-lib vocalization.
+                // Only non-empty fields are shown.
+                const parts = [];
+                const addPart = (cls, text) => {
+                    if(!text) return;
+                    const el2 = document.createElement("div");
+                    el2.className = cls + " fade-out";
+                    el2.textContent = text;
+                    parts.push(el2);
+                };
+                addPart("adlib-member",   line.members.join("  &  "));
+                addPart("adlib-original", line.original);
+                addPart("adlib-roman",    line.romanization);
+                addPart("adlib-english",  line.english);
+                addPart("adlib-text",     line.adlib);
 
-                const adlibText = document.createElement("div");
-                adlibText.className = "adlib-text fade-out";
-                adlibText.textContent = line.adlib;
-
-                e.adlibs.append(adlibMember, adlibText);
+                e.adlibs.append(...parts);
 
                 // fade the ad-lib in, mirroring the main lyric crossfade
                 requestAnimationFrame(() => {
-                    [adlibMember, adlibText].forEach(el => {
-                        el.classList.remove("fade-out");
-                        el.classList.add("fade-in");
+                    parts.forEach(el2 => {
+                        el2.classList.remove("fade-out");
+                        el2.classList.add("fade-in");
                     });
                 });
             }
@@ -119,12 +135,14 @@ const Lyrics = {
             // paint everything with the singing member's color
             e.section.style.setProperty("--accent", accent);
             e.section.style.setProperty("--accent-secondary", secondaryAccent);
+            e.section.style.setProperty("--accent-mid", groupMid);
             e.section.style.setProperty("--group-gradient", groupGradient);
             e.section.classList.toggle("singing", !isAdlib);
             e.section.classList.toggle("multi-member", isSharedLine);
             e.section.classList.toggle("group", isGroupLine);
             e.adlibs.style.setProperty("--accent", accent);
             e.adlibs.style.setProperty("--accent-secondary", secondaryAccent);
+            e.adlibs.style.setProperty("--accent-mid", groupMid);
             e.adlibs.style.setProperty("--group-gradient", groupGradient);
             e.adlibs.classList.toggle("singing", isAdlib);
             e.adlibs.classList.toggle("multi-member", isSharedLine);
@@ -158,7 +176,7 @@ const Lyrics = {
             el.classList.add("fade-out");
             el.classList.remove("fade-in");
         });
-        e.adlibs.querySelectorAll(".adlib-member, .adlib-text").forEach(el => {
+        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
             el.classList.add("fade-out");
             el.classList.remove("fade-in");
         });
@@ -182,6 +200,8 @@ const Lyrics = {
 
             e.section.style.removeProperty("--group-gradient");
             e.adlibs.style.removeProperty("--group-gradient");
+            e.section.style.removeProperty("--accent-mid");
+            e.adlibs.style.removeProperty("--accent-mid");
 
             e.section.classList.remove("singing");
             e.section.classList.remove("multi-member");

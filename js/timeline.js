@@ -18,17 +18,22 @@ const Timeline = {
 
         SONG.lyrics.forEach(line => {
 
-            // Group lines get a blended gradient; solo lines get the singer's color
+            // Group lines blend every color; multi-singer lines blend theirs;
+            // solo lines use the single singer's color.
             const isGroupLine = line.members && line.members.includes(SONG.group);
+            const singers = (line.members || [])
+                .map(name => SONG.members.find(m => m.name === name))
+                .filter(Boolean);
 
             let background;
             if(isGroupLine){
                 background = `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`;
+            } else if(singers.length > 1){
+                background = `linear-gradient(90deg, ${singers.map(s => s.color).join(", ")})`;
+            } else if(singers.length === 1){
+                background = singers[0].color;
             } else {
-                const singer = line.members && line.members[0];
-                const member = SONG.members.find(m => m.name === singer);
-                if(!member) return;
-                background = member.color;
+                return;
             }
 
             const segment = document.createElement("div");
