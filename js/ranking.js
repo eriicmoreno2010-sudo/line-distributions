@@ -12,6 +12,7 @@ const Ranking = {
     rowH: 0,
     pendingTicks: [],
     tickTimer: null,
+    maxTotal: 0,
 
     load(song){
 
@@ -24,8 +25,41 @@ const Ranking = {
             hasSung:false
         }));
 
+        this.computeMaxTotal(song);
         this.render();
         this.startTicking();
+    },
+
+    /*
+       All timings are known up front, so we can pre-sum how long each member
+       sings across the whole song and take the biggest total. That fixed
+       number is the 100% reference for the bars: the final leader ends full,
+       everyone else stays proportional to them the whole way through.
+    */
+    computeMaxTotal(song){
+        const totals = {};
+        song.members.forEach(m => totals[m.name] = 0);
+
+        (song.lyrics || []).forEach(line => {
+            let duration;
+            if(Array.isArray(line.voice)){
+                duration = line.voice.reduce(
+                    (sum, [s, e]) => sum + Math.max(0, e - s), 0);
+            } else {
+                const voiceStart = line.voiceStart ?? line.start;
+                const voiceEnd   = line.voiceEnd   ?? line.end;
+                duration = Math.max(0, voiceEnd - voiceStart);
+            }
+            if(!isFinite(duration)) duration = 0;
+
+            // Shared lines add to every listed member; "NCT DREAM" isn't a
+            // real member, so group lines add to no one (they don't count).
+            (line.members || []).forEach(name => {
+                if(totals[name] !== undefined) totals[name] += duration;
+            });
+        });
+
+        this.maxTotal = Math.max(0, ...Object.values(totals));
     },
 
     /*
@@ -195,12 +229,15 @@ const Ranking = {
     },
 
     refresh(){
-        // Bars are relative to the current leader: #1 fills the bar, everyone
-        // else scales against it. (Scaling to the whole song made them tiny,
-        // since nobody sings the full track.) The seconds shown stay real.
-        const maxSeconds = Math.max(0, ...this.members.map(m => m.seconds));
+        // Bars scale to the final leader's total (precomputed), so #1 ends at
+        // 100% and everyone else stays proportional to them. The seconds shown
+        // stay real. Fall back to the current leader if totals aren't known.
+        const reference =
+            this.maxTotal || Math.max(0, ...this.members.map(m => m.seconds));
         this.members.forEach(m =>
-            m.percentage = maxSeconds > 0 ? (m.seconds / maxSeconds) * 100 : 0);
+            m.percentage = reference > 0
+                ? Math.min(100, (m.seconds / reference) * 100)
+                : 0);
         this.updateVisuals();
         this.reorder();
     }
