@@ -12,7 +12,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
 
-        const response = await fetch("data/nctdream/moonlight.json");
+        // Default song is Moonlight; append ?song=<path> to load another
+        // (e.g. ?song=data/nctdream/test.json to preview features).
+        const songUrl = new URLSearchParams(location.search).get("song")
+            || "data/nctdream/moonlight.json";
+
+        const response = await fetch(songUrl);
 
         SONG = await response.json();
 

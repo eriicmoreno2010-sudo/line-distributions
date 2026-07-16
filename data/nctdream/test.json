@@ -1,0 +1,146 @@
+{
+  "group": "NCT DREAM",
+  "song": "TEST (demo)",
+
+  "video": "videos/Nct Dream 엔시티 드림 'Moonlight' Mv.mp4",
+
+  "duration": 204.32,
+
+  "members": [
+    { "name": "MARK",    "image": "images/avatars/mark.png",    "color": "#b353cd", "focus": 50, "lift": 3 },
+    { "name": "RENJUN",  "image": "images/avatars/renjun.png",  "color": "#ab842f", "focus": 50, "lift": 3 },
+    { "name": "JENO",    "image": "images/jeno.png",            "color": "#cb0c0c", "focus": 85, "lift": 3 },
+    { "name": "HAECHAN", "image": "images/avatars/haechan.png", "color": "#0089b6", "focus": 50, "lift": 3 },
+    { "name": "JAEMIN",  "image": "images/avatars/jaemin.png",  "color": "#1bcf72", "focus": 50, "lift": 3 },
+    { "name": "CHENLE",  "image": "images/avatars/chenle.png",  "color": "#008206", "focus": 50, "lift": 3 },
+    { "name": "JISUNG",  "image": "images/avatars/jisung.png",  "color": "#df068c", "focus": 50, "lift": 3 }
+  ],
+
+  "lyrics": [
+    {
+      "start": 3.00, "end": 5.00,
+      "members": ["JENO"],
+      "original": "", "romanization": "Yeah, test", "english": "",
+      "adlib": ""
+    },
+    {
+      "start": 5.50, "end": 9.00,
+      "members": ["HAECHAN"],
+      "original": "テスト行を歌う",
+      "romanization": "Tesuto gyou o utau",
+      "english": "Singing a test line",
+      "adlib": ""
+    },
+    {
+      "start": 9.50, "end": 12.00,
+      "members": ["MARK"],
+      "original": "何が見える?",
+      "romanization": "Nani ga mieru?",
+      "english": "What do you see?",
+      "adlib": ""
+    },
+    {
+      "start": 12.50, "end": 16.50,
+      "members": ["CHENLE"],
+      "original": "窓の光",
+      "romanization": "Mado no hikari",
+      "english": "Light from the window",
+      "adlib": ""
+    },
+    {
+      "start": 17.00, "end": 19.00,
+      "members": ["CHENLE"],
+      "original": "", "romanization": "", "english": "",
+      "adlib": "Oh yeah"
+    },
+    {
+      "start": 19.50, "end": 23.00,
+      "members": ["JAEMIN"],
+      "original": "夢が目覚める",
+      "romanization": "Yume ga mezameru",
+      "english": "The dream awakens",
+      "adlib": ""
+    },
+    {
+      "start": 23.50, "end": 26.00,
+      "members": ["RENJUN"],
+      "original": "数えて now",
+      "romanization": "Kazoete now",
+      "english": "Count it now",
+      "adlib": ""
+    },
+    {
+      "start": 26.50, "end": 30.50,
+      "members": ["JENO", "JISUNG"],
+      "original": "二人で光る",
+      "romanization": "Futari de hikaru",
+      "english": "The two of us shine",
+      "adlib": ""
+    },
+    {
+      "start": 31.00, "end": 35.00,
+      "members": ["NCT DREAM"],
+      "original": "Dancing in the moonlight, 弾ける瞬間",
+      "romanization": "Dancing in the moonlight, hajikeru shunkan",
+      "english": "Dancing in the moonlight, I come alive",
+      "adlib": ""
+    },
+    {
+      "start": 35.50, "end": 37.80,
+      "members": ["JISUNG"],
+      "original": "夜空",
+      "romanization": "Yozora",
+      "english": "Night sky",
+      "adlib": "Woah"
+    },
+    {
+      "start": 38.00, "end": 42.00,
+      "members": ["MARK"],
+      "original": "今こそ here we go",
+      "romanization": "Ima koso here we go",
+      "english": "Now's the time, here we go",
+      "adlib": ""
+    },
+    {
+      "start": 42.50, "end": 46.00,
+      "members": ["HAECHAN"],
+      "original": "さめない夢",
+      "romanization": "Samenai yume",
+      "english": "A dream that never ends",
+      "adlib": ""
+    },
+    {
+      "start": 46.50, "end": 50.00,
+      "members": ["CHENLE"],
+      "original": "重力からの解放",
+      "romanization": "Juuryoku kara no kaihou",
+      "english": "Released from gravity",
+      "voice": [[46.50, 47.50], [48.50, 49.80]],
+      "adlib": ""
+    },
+    {
+      "start": 50.50, "end": 54.00,
+      "members": ["NCT DREAM"],
+      "original": "Singing to the night sky, 繋がる世界",
+      "romanization": "Singing to the night sky, tsunagaru sekai",
+      "english": "Singing to the night sky, the connected world",
+      "adlib": ""
+    },
+    {
+      "start": 54.50, "end": 57.00,
+      "members": ["JENO"],
+      "original": "未来へ",
+      "romanization": "Mirai e",
+      "english": "To the future",
+      "adlib": ""
+    },
+    {
+      "start": 57.50, "end": 60.00,
+      "members": ["RENJUN"],
+      "original": "もっと revel",
+      "romanization": "Motto revel",
+      "english": "Revel some more",
+      "adlib": ""
+    }
+  ]
+}
