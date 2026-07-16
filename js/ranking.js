@@ -168,7 +168,7 @@ const Ranking = {
 
             const names = this.pendingTicks.shift();
             names.forEach(name => this.addTime(name, .01));
-            this.refresh(SONG.duration);
+            this.refresh();
         }, 10);
     },
 
@@ -194,8 +194,13 @@ const Ranking = {
         }, 620);
     },
 
-    refresh(totalDuration){
-        this.members.forEach(m => m.percentage = (m.seconds / totalDuration) * 100);
+    refresh(){
+        // Bars are relative to the current leader: #1 fills the bar, everyone
+        // else scales against it. (Scaling to the whole song made them tiny,
+        // since nobody sings the full track.) The seconds shown stay real.
+        const maxSeconds = Math.max(0, ...this.members.map(m => m.seconds));
+        this.members.forEach(m =>
+            m.percentage = maxSeconds > 0 ? (m.seconds / maxSeconds) * 100 : 0);
         this.updateVisuals();
         this.reorder();
     }
