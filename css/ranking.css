@@ -59,7 +59,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member.active{
     --card-scale:1.04;
-    --sing:color-mix(in srgb, var(--accent) 40%, #fff);
+    --sing:color-mix(in srgb, var(--accent) 100%, #fff);
     background:
         linear-gradient(90deg,
             color-mix(in srgb, var(--accent) 58%, var(--panel2)),

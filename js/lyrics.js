@@ -157,8 +157,7 @@ const Lyrics = {
             e.roman.style.color    = accent;
             e.english.style.color  = accent;
 
-            Ranking.setActive(line.members);
-            Ranking.updateVisuals();
+            // (Card highlight is driven by the voice in Engine.updateActive.)
 
             // fade in
             this.group().forEach(el => {
@@ -219,7 +218,6 @@ const Lyrics = {
 
         }, 180);
 
-        Ranking.setActive("");
-        Ranking.updateVisuals();   // update in place — no full rebuild (no flicker)
+        // (Card highlight is driven by the voice in Engine.updateActive.)
     }
 };

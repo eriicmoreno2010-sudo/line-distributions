@@ -307,8 +307,9 @@ body{
    colour (kept legible) and the counter turns their colour too. */
 #ranking .member.active{
     --card-scale:1.04;
-    /* a light tint of the member's colour, readable on the coloured card */
-    --sing:color-mix(in srgb, var(--accent) 40%, #fff);
+    /* the member's colour for name/counter/bar/border while singing
+       (lower the % to lighten it if it ever reads too dark) */
+    --sing:color-mix(in srgb, var(--accent) 100%, #fff);
     background:linear-gradient(90deg,
         color-mix(in srgb, var(--accent) 58%, var(--panel2)),
         color-mix(in srgb, var(--accent) 34%, var(--panel2)));
