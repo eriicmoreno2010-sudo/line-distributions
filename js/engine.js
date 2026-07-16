@@ -34,8 +34,16 @@ const Engine = {
             const sampleTime = centisecond / 100 - .005;
 
             // The counter follows the VOICE, not how long the lyric is shown.
-            // Use voiceStart/voiceEnd when present; otherwise fall back to start/end.
+            //  - "voice": [[s,e],[s,e]]  -> counts several segments (silences in
+            //    between are NOT counted) while the text stays shown the whole line.
+            //  - "voiceStart"/"voiceEnd" -> a single voice segment.
+            //  - neither                 -> falls back to start/end.
             const current = SONG.lyrics.find(line => {
+                if(Array.isArray(line.voice)){
+                    return line.voice.some(
+                        ([s, e]) => sampleTime >= s && sampleTime < e
+                    );
+                }
                 const voiceStart = line.voiceStart ?? line.start;
                 const voiceEnd   = line.voiceEnd   ?? line.end;
                 return sampleTime >= voiceStart && sampleTime < voiceEnd;
