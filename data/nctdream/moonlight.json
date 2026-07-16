@@ -9,51 +9,51 @@
   "members": [
     {
       "name": "MARK",
-      "image": "images/avatars/mark.png",
+      "image": "images/mark.png",
       "color": "#b353cd",
-      "focus": 50,
+      "focus": 40,
       "lift": 3
     },
     {
       "name": "RENJUN",
-      "image": "images/avatars/renjun.png",
+      "image": "images/renjun.png",
       "color": "#ab842f",
-      "focus": 50,
+      "focus": 40,
       "lift": 3
     },
     {
       "name": "JENO",
       "image": "images/jeno.png",
       "color": "#cb0c0c",
-      "focus": 85,
+      "focus": 40,
       "lift": 3
     },
     {
       "name": "HAECHAN",
-      "image": "images/avatars/haechan.png",
+      "image": "images/haechan.png",
       "color": "#0089b6",
-      "focus": 50,
+      "focus": 40,
       "lift": 3
     },
     {
       "name": "JAEMIN",
-      "image": "images/avatars/jaemin.png",
+      "image": "images/jaemin.png",
       "color": "#1bcf72",
-      "focus": 50,
+      "focus": 40,
       "lift": 3
     },
     {
       "name": "CHENLE",
-      "image": "images/avatars/chenle.png",
+      "image": "images/chenle.png",
       "color": "#008206",
-      "focus": 50,
+      "focus": 40,
       "lift": 3
     },
     {
       "name": "JISUNG",
-      "image": "images/avatars/jisung.png",
+      "image": "images/jisung.png",
       "color": "#df068c",
-      "focus": 50,
+      "focus": 40,
       "lift": 3
     }
   ],
