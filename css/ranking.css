@@ -61,11 +61,11 @@ Version: 4.0 — Ranking (transform leaderboard)
     --card-scale:1.04;
     background:
         linear-gradient(90deg,
-            color-mix(in srgb, var(--accent) 24%, transparent),
-            var(--panel2) 58%);
-    border-color:color-mix(in srgb, var(--accent) 60%, transparent);
+            color-mix(in srgb, var(--accent) 58%, var(--panel2)),
+            color-mix(in srgb, var(--accent) 34%, var(--panel2)));
+    border-color:color-mix(in srgb, var(--accent) 80%, transparent);
     box-shadow:
-        0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--accent) 60%, transparent),
         0 12px 34px -12px var(--accent);
 }
 
@@ -142,12 +142,22 @@ Version: 4.0 — Ranking (transform leaderboard)
     transform-origin:right center;
     transition:color .3s var(--ease), transform .3s var(--ease);
 }
-.member.active .member-name,
-.member.active .member-time{
+.member.active .member-rank{ color:#fff; }
+.member.active .member-photo{ border-color:#fff; }
+.member.active .member-name{
+    color:#fff;
     font-weight:900;
     transform:scale(1.14);
 }
-.member.active .member-time{ color:var(--text); }
+.member.active .member-time{
+    color:color-mix(in srgb, var(--accent) 38%, #fff);
+    font-weight:900;
+    transform:scale(1.14);
+}
+.member.active .member-bar{
+    background:color-mix(in srgb, #000 22%, transparent);
+}
+.member.active .member-progress{ background:#fff; }
 
 /* ========================= */
 /* BAR */

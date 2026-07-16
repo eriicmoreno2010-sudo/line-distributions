@@ -301,26 +301,37 @@ body{
     background:var(--accent);
 }
 
+#ranking .member.has-sung .member-name{ color:var(--accent); }
+
+/* While a member is actually singing, their whole card lights up in their
+   colour (kept legible) and the counter turns their colour too. */
 #ranking .member.active{
     --card-scale:1.04;
     background:linear-gradient(90deg,
-        color-mix(in srgb, var(--accent) 24%, transparent),
-        var(--panel2) 58%);
-    border-color:color-mix(in srgb, var(--accent) 60%, transparent);
+        color-mix(in srgb, var(--accent) 58%, var(--panel2)),
+        color-mix(in srgb, var(--accent) 34%, var(--panel2)));
+    border-color:color-mix(in srgb, var(--accent) 80%, transparent);
     box-shadow:
-        0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--accent) 60%, transparent),
         0 12px 34px -12px var(--accent);
 }
 
-#ranking .member.active .member-rank{ color:var(--accent); }
-#ranking .member.active .member-photo{ border-color:var(--accent); }
-#ranking .member.active .member-name,
-#ranking .member.active .member-time{
+#ranking .member.active .member-rank{ color:#fff; }
+#ranking .member.active .member-photo{ border-color:#fff; }
+#ranking .member.active .member-name{
+    color:#fff;
     font-weight:900;
     transform:scale(1.14);
 }
-#ranking .member.active .member-time{ color:var(--text); }
-#ranking .member.has-sung .member-name{ color:var(--accent); }
+#ranking .member.active .member-time{
+    color:color-mix(in srgb, var(--accent) 38%, #fff);
+    font-weight:900;
+    transform:scale(1.14);
+}
+#ranking .member.active .member-bar{
+    background:color-mix(in srgb, #000 22%, transparent);
+}
+#ranking .member.active .member-progress{ background:#fff; }
 
 /* ========================= */
 /* TIMELINE (fixed bottom) */
