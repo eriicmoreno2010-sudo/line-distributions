@@ -7,13 +7,13 @@
   "duration": 204.32,
 
   "members": [
-    { "name": "MARK",    "image": "images/mark.png",    "color": "#b353cd", "focus": 40, "lift": 3 },
-    { "name": "RENJUN",  "image": "images/renjun.png",  "color": "#ab842f", "focus": 40, "lift": 3 },
-    { "name": "JENO",    "image": "images/jeno.png",    "color": "#cb0c0c", "focus": 40, "lift": 3 },
-    { "name": "HAECHAN", "image": "images/haechan.png", "color": "#0089b6", "focus": 40, "lift": 3 },
-    { "name": "JAEMIN",  "image": "images/jaemin.png",  "color": "#1bcf72", "focus": 40, "lift": 3 },
-    { "name": "CHENLE",  "image": "images/chenle.png",  "color": "#008206", "focus": 40, "lift": 3 },
-    { "name": "JISUNG",  "image": "images/jisung.png",  "color": "#df068c", "focus": 40, "lift": 3 }
+    { "name": "MARK",    "image": "images/avatars/mark.png",    "color": "#b353cd", "focus": 50, "lift": 3 },
+    { "name": "RENJUN",  "image": "images/avatars/renjun.png",  "color": "#ab842f", "focus": 50, "lift": 3 },
+    { "name": "JENO",    "image": "images/avatars/jeno.png",    "color": "#cb0c0c", "focus": 50, "lift": 3 },
+    { "name": "HAECHAN", "image": "images/avatars/haechan.png", "color": "#0089b6", "focus": 50, "lift": 3 },
+    { "name": "JAEMIN",  "image": "images/avatars/jaemin.png",  "color": "#1bcf72", "focus": 50, "lift": 3 },
+    { "name": "CHENLE",  "image": "images/avatars/chenle.png",  "color": "#008206", "focus": 50, "lift": 3 },
+    { "name": "JISUNG",  "image": "images/avatars/jisung.png",  "color": "#df068c", "focus": 50, "lift": 3 }
   ],
 
   "lyrics": [
