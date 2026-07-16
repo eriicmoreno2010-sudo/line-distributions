@@ -91,7 +91,7 @@
       "original": "夜空",
       "romanization": "Yozora",
       "english": "Night sky",
-      "adlib": "Woah"
+      "adlib": true
     },
     {
       "start": 38.00, "end": 42.00,

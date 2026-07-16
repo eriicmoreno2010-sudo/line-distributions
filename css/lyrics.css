@@ -188,23 +188,24 @@ Version: 3.0 — Lyrics
     margin-top:-10px;   /* moved off transform so the fade can drive translateY */
 }
 
+/* Same size/weight as the main lyric lines (#original, #romanized, #english) */
 .adlib-original{
-    font-size:24px;
+    font-size:30px;
     font-weight:700;
 }
 
 .adlib-roman{
-    font-size:21px;
+    font-size:30px;
     font-weight:700;
 }
 
 .adlib-english{
-    font-size:19px;
-    font-weight:600;
+    font-size:30px;
+    font-weight:700;
 }
 
 .adlib-text{
-    font-size:22px;
+    font-size:30px;
     font-weight:700;
 }
 

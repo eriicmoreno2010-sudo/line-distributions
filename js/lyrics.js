@@ -124,7 +124,9 @@ const Lyrics = {
                 addPart("adlib-original", line.original);
                 addPart("adlib-roman",    line.romanization);
                 addPart("adlib-english",  line.english);
-                addPart("adlib-text",     line.adlib);
+                // adlib can be `true` (just a marker) or a string (the
+                // vocalisation, e.g. "Woah"). Only show text when it's a string.
+                addPart("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
 
                 e.adlibs.append(...parts);
 
