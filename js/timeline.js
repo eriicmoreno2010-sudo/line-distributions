@@ -18,17 +18,25 @@ const Timeline = {
 
         SONG.lyrics.forEach(line => {
 
-            // JSON uses "members" (array); take the main singer
-            const singer = line.members && line.members[0];
-            const member = SONG.members.find(m => m.name === singer);
-            if(!member) return;
+            // Group lines get a blended gradient; solo lines get the singer's color
+            const isGroupLine = line.members && line.members.includes(SONG.group);
+
+            let background;
+            if(isGroupLine){
+                background = `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`;
+            } else {
+                const singer = line.members && line.members[0];
+                const member = SONG.members.find(m => m.name === singer);
+                if(!member) return;
+                background = member.color;
+            }
 
             const segment = document.createElement("div");
             segment.className = "timeline-segment";
 
             segment.style.left   = (line.start / SONG.duration) * 100 + "%";
             segment.style.width  = ((line.end - line.start) / SONG.duration) * 100 + "%";
-            segment.style.background = member.color;
+            segment.style.background = background;
 
             timeline.insertBefore(segment, cursor);
         });

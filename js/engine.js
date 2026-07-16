@@ -32,10 +32,17 @@ const Engine = {
 
             // Sample the middle of each centisecond so line boundaries count correctly.
             const sampleTime = centisecond / 100 - .005;
-            const current = SONG.lyrics.find(
-                line => sampleTime >= line.start && sampleTime < line.end
-            );
 
+            // The counter follows the VOICE, not how long the lyric is shown.
+            // Use voiceStart/voiceEnd when present; otherwise fall back to start/end.
+            const current = SONG.lyrics.find(line => {
+                const voiceStart = line.voiceStart ?? line.start;
+                const voiceEnd   = line.voiceEnd   ?? line.end;
+                return sampleTime >= voiceStart && sampleTime < voiceEnd;
+            });
+
+            // Group lines (e.g. "NCT DREAM") resolve to no real member, so they
+            // never add time — the counter stays per singer.
             if(current) Ranking.queueTime(current.members);
         }
 

@@ -151,6 +151,19 @@ Version: 3.0 — Lyrics
     color:transparent !important;
 }
 
+/* Group lines (whole band): blended gradient of every member's color */
+#lyrics-section.group #current-member,
+#lyrics-section.group #original,
+#lyrics-section.group #romanized,
+#lyrics-section.group #english,
+#adlibs-section.group .adlib-member,
+#adlibs-section.group .adlib-text{
+    background:var(--group-gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent !important;
+}
+
 .adlib-member{
     font-size:26px;
     font-weight:800;
