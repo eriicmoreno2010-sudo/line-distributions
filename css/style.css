@@ -307,6 +307,8 @@ body{
    colour (kept legible) and the counter turns their colour too. */
 #ranking .member.active{
     --card-scale:1.04;
+    /* a light tint of the member's colour, readable on the coloured card */
+    --sing:color-mix(in srgb, var(--accent) 40%, #fff);
     background:linear-gradient(90deg,
         color-mix(in srgb, var(--accent) 58%, var(--panel2)),
         color-mix(in srgb, var(--accent) 34%, var(--panel2)));
@@ -316,22 +318,22 @@ body{
         0 12px 34px -12px var(--accent);
 }
 
-#ranking .member.active .member-rank{ color:#fff; }
-#ranking .member.active .member-photo{ border-color:#fff; }
+#ranking .member.active .member-rank{ color:var(--sing); }
+#ranking .member.active .member-photo{ border-color:var(--sing); }
 #ranking .member.active .member-name{
-    color:#fff;
+    color:var(--sing);
     font-weight:900;
     transform:scale(1.14);
 }
 #ranking .member.active .member-time{
-    color:color-mix(in srgb, var(--accent) 38%, #fff);
+    color:var(--sing);
     font-weight:900;
     transform:scale(1.14);
 }
 #ranking .member.active .member-bar{
-    background:color-mix(in srgb, #000 22%, transparent);
+    background:color-mix(in srgb, #000 25%, transparent);
 }
-#ranking .member.active .member-progress{ background:#fff; }
+#ranking .member.active .member-progress{ background:var(--sing); }
 
 /* ========================= */
 /* TIMELINE (fixed bottom) */
