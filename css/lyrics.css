@@ -133,16 +133,10 @@ Version: 3.0 — Lyrics
 
 #adlibs-section.singing::after{ opacity:1; }
 
-/* Whole-band lines get a colourful halo, like a single member's glow */
+/* Whole-band lines get a halo made from every member's colour */
 #lyrics-section.singing.group::after,
 #adlibs-section.singing.group::after{
-    background:
-        radial-gradient(48% 60% at 20% 45%,
-            color-mix(in srgb, var(--accent) 20%, transparent), transparent 70%),
-        radial-gradient(48% 60% at 50% 45%,
-            color-mix(in srgb, var(--accent-mid, var(--accent)) 20%, transparent), transparent 70%),
-        radial-gradient(48% 60% at 80% 45%,
-            color-mix(in srgb, var(--accent-secondary) 20%, transparent), transparent 70%);
+    background: var(--group-glow);
     opacity:1;
 }
 

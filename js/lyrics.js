@@ -69,8 +69,13 @@ const Lyrics = {
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`
             : "";
-        const groupMid = isGroupLine
-            ? SONG.members[Math.floor(SONG.members.length / 2)].color
+        // Halo built from ALL member colors, one soft blob each across the width.
+        const groupGlow = isGroupLine
+            ? SONG.members.map((m, i, arr) => {
+                  const pos = arr.length > 1 ? 8 + (i / (arr.length - 1)) * 84 : 50;
+                  return `radial-gradient(42% 60% at ${pos}% 45%, ` +
+                         `color-mix(in srgb, ${m.color} 22%, transparent), transparent 70%)`;
+              }).join(", ")
             : "";
 
         let accent, secondaryAccent, isSharedLine;
@@ -135,14 +140,14 @@ const Lyrics = {
             // paint everything with the singing member's color
             e.section.style.setProperty("--accent", accent);
             e.section.style.setProperty("--accent-secondary", secondaryAccent);
-            e.section.style.setProperty("--accent-mid", groupMid);
+            e.section.style.setProperty("--group-glow", groupGlow);
             e.section.style.setProperty("--group-gradient", groupGradient);
             e.section.classList.toggle("singing", !isAdlib);
             e.section.classList.toggle("multi-member", isSharedLine);
             e.section.classList.toggle("group", isGroupLine);
             e.adlibs.style.setProperty("--accent", accent);
             e.adlibs.style.setProperty("--accent-secondary", secondaryAccent);
-            e.adlibs.style.setProperty("--accent-mid", groupMid);
+            e.adlibs.style.setProperty("--group-glow", groupGlow);
             e.adlibs.style.setProperty("--group-gradient", groupGradient);
             e.adlibs.classList.toggle("singing", isAdlib);
             e.adlibs.classList.toggle("multi-member", isSharedLine);
@@ -200,8 +205,8 @@ const Lyrics = {
 
             e.section.style.removeProperty("--group-gradient");
             e.adlibs.style.removeProperty("--group-gradient");
-            e.section.style.removeProperty("--accent-mid");
-            e.adlibs.style.removeProperty("--accent-mid");
+            e.section.style.removeProperty("--group-glow");
+            e.adlibs.style.removeProperty("--group-glow");
 
             e.section.classList.remove("singing");
             e.section.classList.remove("multi-member");
