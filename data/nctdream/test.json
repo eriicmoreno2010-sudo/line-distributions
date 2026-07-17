@@ -4,7 +4,7 @@
 
   "video": "videos/moonlight.mp4",
 
-  "duration": 204.32,
+  "duration": 191.44,
 
   "members": [
     { "name": "MARK",    "image": "images/avatars/mark.png",    "color": "#b353cd", "focus": 50, "lift": 3 },
