@@ -60,8 +60,8 @@
 
   "lyrics": [
     {
-        "start": 6.00,
-        "end": 7.20,
+        "start": 2.42,
+        "end": 3.32,
         "members": ["JENO"],
         "original": "",
         "romanization": "Yeah",
@@ -69,8 +69,8 @@
         "adlib": ""
     },
     {
-        "start": 8.00,
-        "end": 10.65,
+        "start": 4.3,
+        "end": 6.65,
         "members": ["HAECHAN"],
         "original": "過ぎる今日に goodbye",
         "romanization": "Sugiru kyou ni goodbye",
@@ -78,8 +78,8 @@
         "adlib": ""
     },
     {
-        "start": 10.90,
-        "end": 13.35,
+        "start": 7.15,
+        "end": 9.42,
         "members": ["HAECHAN"],
         "original": "手を振ろう",
         "romanization": "Te o furou",
@@ -87,8 +87,8 @@
         "adlib": ""
     },
     {
-        "start": 13.40,
-        "end": 14.20,
+        "start": 9.65,
+        "end": 10.49,
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -96,8 +96,8 @@
         "adlib": "Oh yeah"
     },
     {
-        "start": 14.30,
-        "end": 15.72,
+        "start": 10.68,
+        "end": 12.04,
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -105,8 +105,8 @@
         "adlib": "Oh yeah ey"
     },
     {
-        "start": 15.82,
-        "end": 18.20,
+        "start": 12.1,
+        "end": 14.59,
         "members": ["RENJUN"],
         "original": "数えて 1, 2, 3, now",
         "romanization": "Kazoete 1, 2, 3, now",
@@ -114,8 +114,8 @@
         "adlib": ""
     },
     {
-        "start": 18.70,
-        "end": 20.95,
+        "start": 14.97,
+        "end": 17.19,
         "members": ["RENJUN"],
         "original": "",
         "romanization": "Oh, tune in on",
@@ -123,8 +123,8 @@
         "adlib": ""
     },
     {
-        "start": 21.25,
-        "end": 23.65,
+        "start": 17.46,
+        "end": 19.63,
         "members": ["MARK"],
         "original": "何が見えるの?",
         "romanization": "Nani ga mieru no?",
@@ -132,8 +132,8 @@
         "adlib": ""
     },
     {
-        "start": 24.50,
-        "end": 27.45,
+        "start": 20.9,
+        "end": 23.64,
         "members": ["CHENLE"],
         "original": "窓に差し込む光",
         "romanization": "Mado ni sashikomu hikari",
@@ -141,8 +141,8 @@
         "adlib": ""
     },
     {
-        "start": 28.50,
-        "end": 31.50,
+        "start": 24.9,
+        "end": 27.79,
         "members": ["CHENLE"],
         "original": "浴び照らすよ reflection",
         "romanization": "Abi terasu yo reflection",
@@ -150,8 +150,8 @@
         "adlib": ""
     },
     {
-        "start": 31.60,
-        "end": 35.28,
+        "start": 27.82,
+        "end": 31.47,
         "members": ["JAEMIN"],
         "original": "徐々に重なる波長夢が目覚める",
         "romanization": "Jojo ni kasanaru hachou yume ga mezameru",
@@ -159,8 +159,8 @@
         "adlib": ""
     },
     {
-        "start": 35.28,
-        "end": 36.43,
+        "start": 31.48,
+        "end": 32.73,
         "members": ["JENO", "JISUNG"],
         "original": "",
         "romanization": "All shining bright",
@@ -168,8 +168,8 @@
         "adlib": ""
     },
     {
-        "start": 36.39,
-        "end": 38.50,
+        "start": 32.73,
+        "end": 34.32,
         "members": ["RENJUN"],
         "original": "",
         "romanization": "Yeah, like a crystal",
@@ -177,8 +177,8 @@
         "adlib": ""
     },
      {
-        "start": 40.00,
-        "end": 41.00,
+        "start": 34.4,
+        "end": 39.58,
         "members": ["NCT DREAM"],
         "original": "Dancing in the moonlight, 弾ける瞬間",
         "romanization": "Dancing in the moonlight, hajikeru shunkan",
