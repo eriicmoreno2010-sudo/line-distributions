@@ -50,7 +50,9 @@ function formatTime(seconds){
 
 UI.setCurrentTime = function(seconds){
 
-    this.elements.currentTime.textContent = formatTime(seconds);
+    // TEMP: show exact seconds with milliseconds for timing the lyrics.
+    // Revert to formatTime(seconds) when done.
+    this.elements.currentTime.textContent = seconds.toFixed(3);
 
 }
 
