@@ -8,7 +8,7 @@ const Engine = {
 
     previousTime:0,
     previousCentisecond:0,
-    lyricLead:.12,
+    lyricLead:.30,
 
     /*
        Is the VOICE of this line sounding at time t?
