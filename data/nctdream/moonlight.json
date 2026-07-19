@@ -62,6 +62,7 @@
     {
         "start": 2.22,
         "end": 3.29,
+        "voice": [[2.37,3.12]],
         "members": ["JENO"],
         "original": "",
         "romanization": "Yeah",
@@ -71,6 +72,7 @@
     {
         "start": 3.65,
         "end": 6.32,
+        "voice": [[4.25,6.41]],
         "members": ["HAECHAN"],
         "original": "過ぎる今日に goodbye",
         "romanization": "Sugiru kyou ni goodbye",
@@ -80,6 +82,7 @@
     {
         "start": 6.76,
         "end": 9.38,
+        "voice": [[7.10,9.34]],
         "members": ["HAECHAN"],
         "original": "手を振ろう",
         "romanization": "Te o furou",
@@ -107,6 +110,7 @@
     {
         "start": 11.76,
         "end": 14.44,
+        "voice": [[12.03,14.45]],
         "members": ["RENJUN"],
         "original": "数えて 1, 2, 3, now",
         "romanization": "Kazoete 1, 2, 3, now",
@@ -116,6 +120,7 @@
     {
         "start": 14.8,
         "end": 17.16,
+        "voice": [[14.96,17.18]],
         "members": ["RENJUN"],
         "original": "",
         "romanization": "Oh, tune in on",
@@ -125,6 +130,7 @@
     {
         "start": 17.31,
         "end": 19.48,
+        "voice": [[17.40,19.65]],
         "members": ["MARK"],
         "original": "何が見えるの?",
         "romanization": "Nani ga mieru no?",
@@ -134,6 +140,7 @@
     {
         "start": 20.75,
         "end": 23.45,
+        "voice": [[20.79,23.57]],
         "members": ["CHENLE"],
         "original": "窓に差し込む光",
         "romanization": "Mado ni sashikomu hikari",
@@ -143,6 +150,7 @@
     {
         "start": 24.5,
         "end": 27.46,
+        "voice": [[24.80,27.76]],
         "members": ["CHENLE"],
         "original": "浴び照らすよ reflection",
         "romanization": "Abi terasu yo reflection",
@@ -152,6 +160,7 @@
     {
         "start": 27.58,
         "end": 31.21,
+        "voice": [[27.72,31.39]],
         "members": ["JAEMIN"],
         "original": "徐々に重なる波長夢が目覚める",
         "romanization": "Jojo ni kasanaru hachou yume ga mezameru",
@@ -161,6 +170,7 @@
     {
         "start": 31.3,
         "end": 32.49,
+        "voice": [[31.35,32.59]],
         "members": ["JENO", "JISUNG"],
         "original": "",
         "romanization": "All shining bright",
@@ -170,6 +180,7 @@
     {
         "start": 32.58,
         "end": 34.1,
+        "voice": [[32.59,34.23]],
         "members": ["RENJUN"],
         "original": "",
         "romanization": "Yeah, like a crystal",
@@ -179,6 +190,7 @@
      {
         "start": 34.23,
         "end": 39.35,
+        "voice": [[34.33,37.06],[37.24,39.51]],
         "members": ["NCT DREAM"],
         "original": "Dancing in the moonlight, 弾ける瞬間",
         "romanization": "Dancing in the moonlight, hajikeru shunkan",
@@ -188,6 +200,7 @@
     {
     "start": 39.44,
         "end": 41.91,
+        "voice": [[39.52,40.79],[41.05,42.23]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -197,6 +210,7 @@
      {
         "start": 42.04,
         "end": 47.3,
+        "voice": [[42.14,44.70],[45.14,47.45]],
         "members": ["NCT DREAM"],
         "original": "Singing to the night sky, 繋がる世界",
         "romanization": "Singing to the night sky, tsunagaru sekai",
@@ -206,6 +220,7 @@
      {
     "start": 47.43,
         "end": 49.97,
+        "voice": [[47.36,48.58],[48.88,50.01]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -215,6 +230,7 @@
      {
     "start": 50.11,
         "end": 53.72,
+        "voice": [[50.18,51.63],[52.20,53.58]],
         "members": ["NCT DREAM"],
         "original": "そう どこにいても, 感じる心",
         "romanization": "Sou doko ni ite mo, kanjiru kokoro",
@@ -224,6 +240,7 @@
    {
     "start": 53.89,
         "end": 57.97,
+        "voice": [[54.17,55.67],[56.08,58.42]],
         "members": ["NCT DREAM"],
         "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
         "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
@@ -233,6 +250,7 @@
      {
         "start": 58.07,
         "end": 61.52,
+        "voice": [[58.10,59.42],[60.06,61.43]],
         "members": ["NCT DREAM"],
         "original": "閃く「今」を, 輝かせよう",
         "romanization": "Hirameku \"ima\" o, kagayakaseyou",
@@ -242,6 +260,7 @@
       {
     "start": 61.68,
         "end": 64.42,
+        "voice": [[62.07,64.41]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Dancing into the moonlight",
@@ -251,6 +270,7 @@
       {
     "start": 64.52,
         "end": 67.27,
+        "voice": [[64.87,67.39]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Frequencies of dream",
@@ -260,6 +280,7 @@
      {
     "start": 67.4,
         "end": 71.43,
+        "voice": [[67.46,71.55]],
         "members": ["CHENLE"],
         "original": "さあ 一歩踏み込んで, 重力からの解放",
         "romanization": "Sa ippo fumikondе juuryoku kara no kaihou",
@@ -269,6 +290,7 @@
     {
     "start": 71.43,
         "end": 74.56,
+        "voice": [[71.47,74.62]],
         "members": ["HAECHAN"],
         "original": "イマジネーションはどこまでも",
         "romanization": "Imajineeshon wa doko made mo",
@@ -278,6 +300,7 @@
      {
     "start": 74.75,
         "end": 76.11,
+        "voice": [[74.86,76.19]],
         "members": ["JISUNG"],
         "original": "",
         "romanization": "Na na na na na na",
@@ -287,6 +310,7 @@
     {
     "start": 76.23,
         "end": 77.91,
+        "voice": [[76.39,78.11]],
         "members": ["JISUNG"],
         "original": "自由に跳べ, fly",
         "romanization": "Jiyuu ni tobe, fly",
@@ -296,6 +320,7 @@
       {
     "start": 78.06,
         "end": 79.93,
+        "voice": [[78.11,78.39],[78.52,80.07]],
         "members": ["MARK"],
         "original": "Yo, 今こそ, here we go",
         "romanization": "Yo, ima koso, here we go",
@@ -314,6 +339,7 @@
     {
     "start": 80.06,
         "end": 82.41,
+        "voice": [[80.12,82.55]],
         "members": ["MARK"],
         "original": "「今度」なんてない in my dictionary",
         "romanization": "\"Kondo\" nante nai in my dictionary",
@@ -332,6 +358,7 @@
      {
     "start": 82.54,
         "end": 84.13,
+        "voice": [[82.77,84.27]],
         "members": ["JAEMIN"],
         "original": "引き寄せの法則",
         "romanization": "hikiyose no housoku",
@@ -341,6 +368,7 @@
      {
     "start": 84.15,
         "end": 86.31,
+        "voice": [[84.22,85.67,"JENO"],[85.79,86.46,"JAEMIN"]],
         "members": ["JENO", "JAEMIN"],
         "original": "",
         "romanization": "To the future and not the past, **let's go**",
@@ -350,6 +378,7 @@
      {
     "start": 87.57,
         "end": 90.36,
+        "voice": [[87.79,90.43]],
         "members": ["RENJUN"],
         "original": "濃い霧のような迷い",
         "romanization": "Koi kiri no youna mayoi",
@@ -359,6 +388,7 @@
       {
     "start": 91.46,
         "end": 94.54,
+        "voice": [[91.68,94.74]],
         "members": ["RENJUN"],
         "original": "振り払うのさ reflection",
         "romanization": "Furiharau nosa reflection",
@@ -368,6 +398,7 @@
      {
     "start": 94.64,
         "end": 99.35,
+        "voice": [[94.81,99.50]],
         "members": ["HAECHAN"],
         "original": "映し出したのはさめない夢 未来",
         "romanization": "Utsushidashita no wa samenai yume mirai",
@@ -377,6 +408,7 @@
      {
     "start": 99.45,
         "end": 101.01,
+        "voice": [[99.46,101.13]],
         "members": ["CHENLE"],
         "original": "",
         "romanization": "Yeah, like a crystal",
@@ -386,6 +418,7 @@
      {
         "start": 101.13,
         "end": 106.25,
+        "voice": [[101.19,103.79],[104.12,106.39]],
         "members": ["NCT DREAM"],
         "original": "Dancing in the moonlight, 弾ける瞬間",
         "romanization": "Dancing in the moonlight, hajikeru shunkan",
@@ -395,6 +428,7 @@
      {
     "start": 106.37,
         "end": 108.77,
+        "voice": [[106.39,107.63],[107.94,109.07]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -404,6 +438,7 @@
      {
         "start": 108.87,
         "end": 114.16,
+        "voice": [[109.00,111.60],[111.99,114.32]],
         "members": ["NCT DREAM"],
         "original": "Singing to the night sky, 繋がる世界",
         "romanization": "Singing to the night sky, tsunagaru sekai",
@@ -413,6 +448,7 @@
     {
     "start": 114.28,
         "end": 116.87,
+        "voice": [[114.23,115.46],[115.74,116.91]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -422,6 +458,7 @@
      {
     "start": 116.99,
         "end": 120.58,
+        "voice": [[117.06,118.49],[119.10,120.44]],
         "members": ["NCT DREAM"],
         "original": "そう どこにいても, 感じる心",
         "romanization": "Sou doko ni ite mo, kanjiru kokoro",
@@ -431,6 +468,7 @@
      {
     "start": 120.72,
         "end": 124.9,
+        "voice": [[121.00,122.50],[122.97,125.27]],
         "members": ["NCT DREAM"],
         "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
         "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
@@ -440,6 +478,7 @@
      {
         "start": 125.03,
         "end": 128.43,
+        "voice": [[124.98,126.34],[126.92,128.34]],
         "members": ["NCT DREAM"],
         "original": "閃く「今」を, 輝かせよう",
         "romanization": "Hirameku \"ima\" o, kagayakaseyou",
@@ -449,6 +488,7 @@
      {
     "start": 128.55,
         "end": 131.38,
+        "voice": [[128.95,131.37]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Dancing into the moonlight",
@@ -458,6 +498,7 @@
      {
     "start": 131.46,
         "end": 134.33,
+        "voice": [[131.64,134.33]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Frequencies of dream",
@@ -467,6 +508,7 @@
      {
     "start": 134.35,
         "end": 137.14,
+        "voice": [[134.40,135.53],[135.84,137.43]],
         "members": ["HAECHAN"],
         "original": "The truth, 目の前に",
         "romanization": "The truth, me no mae ni",
@@ -494,6 +536,7 @@
     {
     "start": 139.6,
         "end": 141.37,
+        "voice": [[139.84,141.49]],
         "members": ["JENO"],
         "original": "何があろうとも",
         "romanization": "Nani ga aroutomo",
@@ -503,6 +546,7 @@
      {
     "start": 141.49,
         "end": 144.21,
+        "voice": [[141.52,144.42]],
         "members": ["RENJUN"],
         "original": "Travel 越えて行ける level",
         "romanization": "Travel koete ikeru level",
@@ -512,6 +556,7 @@
     {
     "start": 144.33,
         "end": 147.15,
+        "voice": [[144.43,147.42]],
         "members": ["RENJUN"],
         "original": "今をもっと revel, yeah",
         "romanization": "Ima o motto revel, yeah",
@@ -521,6 +566,7 @@
      {
     "start": 147.31,
         "end": 148.36,
+        "voice": [[147.38,148.40]],
         "members": ["JISUNG"],
         "original": "想いを飛ばせ",
         "romanization": "Omoi o tobase",
@@ -539,6 +585,7 @@
      {
     "start": 148.38,
         "end": 154.69,
+        "voice": [[148.41,149.74],[149.87,151.15],[151.32,154.78]],
         "members": ["MARK"],
         "original": "Dancing in the moonlight, 後悔なんてしない",
         "romanization": "Dancing in the moonlight, Koukai nante shinai",
@@ -557,6 +604,7 @@
      {
         "start": 156.07,
         "end": 161.4,
+        "voice": [[156.26,159.04],[159.22,161.55]],
         "members": ["NCT DREAM"],
         "original": "Dancing in the moonlight, 弾ける瞬間",
         "romanization": "Dancing in the moonlight, hajikeru shunkan",
@@ -566,6 +614,7 @@
      {
     "start": 161.52,
         "end": 163.91,
+        "voice": [[161.51,162.75],[162.96,164.12]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -575,6 +624,7 @@
     {
         "start": 164.03,
         "end": 169.18,
+        "voice": [[164.08,166.71],[167.12,169.41]],
         "members": ["NCT DREAM"],
         "original": "Singing to the night sky, 繋がる世界",
         "romanization": "Singing to the night sky, tsunagaru sekai",
@@ -584,6 +634,7 @@
     {
     "start": 169.3,
         "end": 171.95,
+        "voice": [[169.37,170.56],[170.89,172.01]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Oway Oway O Oway Oway",
@@ -593,6 +644,7 @@
      {
     "start": 172.04,
         "end": 175.64,
+        "voice": [[172.17,173.63],[174.14,175.52]],
         "members": ["NCT DREAM"],
         "original": "そう どこにいても, 感じる心",
         "romanization": "Sou doko ni ite mo, kanjiru kokoro",
@@ -602,6 +654,7 @@
       {
     "start": 175.74,
         "end": 180,
+        "voice": [[176.12,177.62],[178.09,180.32]],
         "members": ["NCT DREAM"],
         "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
         "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
@@ -611,6 +664,7 @@
  {
         "start": 180.09,
         "end": 183.43,
+        "voice": [[180.14,181.42],[182.06,183.38]],
         "members": ["NCT DREAM"],
         "original": "閃く「今」を, 輝かせよう",
         "romanization": "Hirameku \"ima\" o, kagayakaseyou",
@@ -620,6 +674,7 @@
      {
     "start": 183.55,
         "end": 186.43,
+        "voice": [[183.95,185.30],[185.42,186.47]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Dancing into the moonlight",
@@ -629,6 +684,7 @@
      {
     "start": 186.56,
         "end": 189.7,
+        "voice": [[186.81,189.68]],
         "members": ["NCT DREAM"],
         "original": "",
         "romanization": "Frequencies of dream",
