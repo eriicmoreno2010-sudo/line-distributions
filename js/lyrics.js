@@ -11,6 +11,7 @@ const ADLIB_PARTS =
 const Lyrics = {
 
     currentIndex: -1,
+    lastMembers: null,   // key of last central singer(s) shown, for name persistence
 
     els(){
         return {
@@ -100,8 +101,19 @@ const Lyrics = {
             isSharedLine = !hasPartial && singers.length > 1;
         }
 
+        // Keep the member NAME on screen when consecutive central lines are the
+        // same singer(s): only the text crossfades. The name fades only when the
+        // next singer is different (or on ad-libs / clear).
+        const membersKey = line.members.join("|");
+        const sameName = !isAdlib && this.lastMembers === membersKey;
+        this.lastMembers = isAdlib ? null : membersKey;
+
+        const fadeEls = sameName
+            ? [e.original, e.roman, e.english]
+            : [e.member, e.original, e.roman, e.english];
+
         // fade out
-        this.group().forEach(el => {
+        fadeEls.forEach(el => {
             el.classList.add("fade-out");
             el.classList.remove("fade-in");
         });
@@ -135,18 +147,21 @@ const Lyrics = {
                 }
             };
 
-            clearPaint(e.member);
-            if(isAdlib){
-                e.member.textContent = "";
-            } else if(hasPartial){
-                e.member.textContent = line.members.join("  &  ");
-                e.member.style.background = sharedGradient;
-                e.member.style.webkitBackgroundClip = "text";
-                e.member.style.backgroundClip = "text";
-                e.member.style.color = "transparent";
-            } else {
-                e.member.textContent = line.members.join("  &  ");
-                e.member.style.color = accent;
+            // Skip repainting the name when it's the same singer (it stays put).
+            if(!sameName){
+                clearPaint(e.member);
+                if(isAdlib){
+                    e.member.textContent = "";
+                } else if(hasPartial){
+                    e.member.textContent = line.members.join("  &  ");
+                    e.member.style.background = sharedGradient;
+                    e.member.style.webkitBackgroundClip = "text";
+                    e.member.style.backgroundClip = "text";
+                    e.member.style.color = "transparent";
+                } else {
+                    e.member.textContent = line.members.join("  &  ");
+                    e.member.style.color = accent;
+                }
             }
             paintText(e.original, isAdlib ? "" : line.original);
             paintText(e.roman,    isAdlib ? "" : line.romanization);
@@ -203,8 +218,8 @@ const Lyrics = {
             // (Text colour/paint already applied above via paintText.)
             // (Card highlight is driven by the voice in Engine.updateActive.)
 
-            // fade in
-            this.group().forEach(el => {
+            // fade in (only the elements that were faded out)
+            fadeEls.forEach(el => {
                 el.classList.remove("fade-out");
                 el.classList.add("fade-in");
             });
@@ -217,6 +232,7 @@ const Lyrics = {
         if(this.currentIndex === -1) return;
 
         this.currentIndex = -1;
+        this.lastMembers = null;
 
         const e = this.els();
 

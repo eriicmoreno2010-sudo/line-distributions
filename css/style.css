@@ -408,7 +408,7 @@ body{
     box-shadow:0 0 12px rgba(255,255,255,.7);
     z-index:10;
     pointer-events:none;
-    transition:left .12s linear;
+    /* position driven every frame by requestAnimationFrame -> no transition */
 }
 
 /* ========================= */

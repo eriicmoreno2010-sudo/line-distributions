@@ -45,13 +45,32 @@ const Timeline = {
 
             timeline.insertBefore(segment, cursor);
         });
+
+        this.startCursor();
     },
 
-    update(currentTime){
+    /* The cursor is animated with requestAnimationFrame reading the video's
+       currentTime directly, so it glides smoothly at 60fps instead of jumping
+       on each (throttled) timeupdate event. */
+    cursorStarted:false,
+    startCursor(){
+        if(this.cursorStarted) return;
+        this.cursorStarted = true;
 
         const cursor = document.getElementById("timeline-cursor");
-        if(!cursor || !SONG) return;
+        const video  = document.getElementById("video");
 
-        cursor.style.left = (currentTime / SONG.duration) * 100 + "%";
-    }
+        const tick = () => {
+            if(cursor && video && SONG && SONG.duration){
+                const pct = Math.max(0, Math.min(100,
+                    (video.currentTime / SONG.duration) * 100));
+                cursor.style.left = pct + "%";
+            }
+            requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+    },
+
+    // Cursor is driven by startCursor()'s rAF loop; kept for the engine call.
+    update(){}
 };
