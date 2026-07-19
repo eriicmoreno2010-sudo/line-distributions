@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encuadre de fotos — ranking</title>
+<style>
+  :root{ --bg:#0e0e13; --panel:#1a1a22; --accent:#7c5cff; --text:#f2f2f7; --muted:#9a9aa8; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--text); }
+  #wrap{ max-width:900px; margin:0 auto; padding:20px; display:flex; flex-direction:column; gap:16px; align-items:center; }
+  h1{ font-size:18px; letter-spacing:1px; margin:4px 0; }
+  #who{ font-size:26px; font-weight:900; letter-spacing:1px; }
+  #stage{ display:flex; gap:30px; align-items:center; flex-wrap:wrap; justify-content:center; }
+  .previewbox{ text-align:center; }
+  canvas.circle{ border-radius:50%; background:#000; cursor:grab; box-shadow:0 0 0 3px #2a2a34; touch-action:none; }
+  canvas.circle:active{ cursor:grabbing; }
+  .cap{ font-size:12px; color:var(--muted); margin-top:6px; }
+  #controls{ display:flex; flex-direction:column; gap:12px; min-width:260px; }
+  .ctl label{ font-size:13px; color:var(--muted); display:block; margin-bottom:4px; }
+  input[type=range]{ width:100%; }
+  .btns{ display:flex; gap:10px; flex-wrap:wrap; }
+  button{ background:var(--accent); color:#fff; border:0; border-radius:8px; padding:9px 14px; font-weight:700; cursor:pointer; font-size:14px; }
+  button.sec{ background:#2a2a34; }
+  #thumbs{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  #thumbs canvas{ border-radius:50%; cursor:pointer; box-shadow:0 0 0 2px #2a2a34; }
+  #thumbs canvas.active{ box-shadow:0 0 0 3px var(--accent); }
+  textarea{ width:100%; max-width:640px; height:160px; background:#0a0a0f; color:#cfe; border:1px solid #333; border-radius:8px; font-family:monospace; font-size:13px; padding:10px; }
+  .hint{ font-size:13px; color:var(--muted); max-width:640px; text-align:center; line-height:1.5; }
+  kbd{ background:#2a2a34; border:1px solid #444; border-radius:5px; padding:2px 7px; font-weight:700; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>ENCUADRE DE FOTOS DEL RANKING</h1>
+  <div id="who">—</div>
+
+  <div id="stage">
+    <div class="previewbox">
+      <canvas id="prev" class="circle" width="320" height="320"></canvas>
+      <div class="cap">Arrastra para mover · rueda del ratón para zoom</div>
+    </div>
+    <div id="controls">
+      <div class="ctl">
+        <label>Zoom</label>
+        <input id="zoom" type="range" min="0.4" max="1" step="0.005">
+      </div>
+      <div class="ctl">
+        <label>Vertical</label>
+        <input id="vy" type="range" min="0" max="1" step="0.002">
+      </div>
+      <div class="ctl">
+        <label>Horizontal</label>
+        <input id="vx" type="range" min="0" max="1" step="0.002">
+      </div>
+      <div class="btns">
+        <button class="sec" id="prev-btn">◀ Anterior</button>
+        <button class="sec" id="next-btn">Siguiente ▶</button>
+        <button class="sec" id="resetOne">Reset este</button>
+      </div>
+      <div class="btns">
+        <button id="copy">Copiar valores</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="thumbs"></div>
+
+  <div class="hint">
+    Ajusta cada miembro (arrastra / zoom / sliders) hasta que quede como quieras.
+    Cuando estén todos, pulsa <b>Copiar valores</b> y pégamelos: yo regenero los recortes del ranking.
+    <kbd>←</kbd>/<kbd>→</kbd> cambian de miembro.
+  </div>
+
+  <textarea id="out" readonly></textarea>
+</div>
+
+<script>
+const P = 320;                 // preview size
+let members = [], idx = 0;
+
+const prev = document.getElementById("prev");
+const pctx = prev.getContext("2d");
+const zoom = document.getElementById("zoom");
+const vy = document.getElementById("vy");
+const vx = document.getElementById("vx");
+
+fetch("data/nctdream/moonlight.json").then(r=>r.json()).then(d=>{
+    const list = d.members.map(m => ({ name:m.name, src:"images/"+m.name.toLowerCase()+".png" }));
+    let loaded = 0;
+    list.forEach(m=>{
+        m.img = new Image();
+        m.img.onload = () => {
+            m.iw = m.img.naturalWidth; m.ih = m.img.naturalHeight;
+            // default: full-width square centred on the head
+            m.side = m.iw;
+            m.cx = m.iw/2;
+            m.cy = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2);
+            if(++loaded === list.length){ members = list; buildThumbs(); select(0); }
+        };
+        m.img.onerror = () => { console.error("no img", m.src); if(++loaded===list.length){ members=list; buildThumbs(); select(0);} };
+        m.img.src = m.src;
+    });
+});
+
+function clamp(v,a,b){ return Math.max(a, Math.min(b, v)); }
+function cur(){ return members[idx]; }
+
+function clampCrop(m){
+    const maxSide = Math.min(m.iw, m.ih);
+    m.side = clamp(m.side, maxSide*0.4, maxSide);
+    m.cx = clamp(m.cx, m.side/2, m.iw - m.side/2);
+    m.cy = clamp(m.cy, m.side/2, m.ih - m.side/2);
+}
+
+function drawInto(ctx, size, m){
+    ctx.clearRect(0,0,size,size);
+    if(!m.iw) return;
+    ctx.drawImage(m.img, m.cx-m.side/2, m.cy-m.side/2, m.side, m.side, 0, 0, size, size);
+}
+
+function render(){
+    const m = cur(); if(!m) return;
+    clampCrop(m);
+    drawInto(pctx, P, m);
+    document.getElementById("who").textContent = m.name;
+    // sliders reflect current values
+    zoom.value = (m.side / Math.min(m.iw,m.ih)).toFixed(3);
+    vy.value   = (m.cy / m.ih).toFixed(3);
+    vx.value   = (m.cx / m.iw).toFixed(3);
+    // update this thumb
+    if(m.thumbCtx) drawInto(m.thumbCtx, 64, m);
+    buildOutput();
+}
+
+function select(i){
+    idx = (i + members.length) % members.length;
+    members.forEach((m,k)=> m.thumb && m.thumb.classList.toggle("active", k===idx));
+    render();
+}
+
+/* ---- controls ---- */
+zoom.addEventListener("input", ()=>{ const m=cur(); m.side = parseFloat(zoom.value)*Math.min(m.iw,m.ih); render(); });
+vy.addEventListener("input", ()=>{ const m=cur(); m.cy = parseFloat(vy.value)*m.ih; render(); });
+vx.addEventListener("input", ()=>{ const m=cur(); m.cx = parseFloat(vx.value)*m.iw; render(); });
+
+document.getElementById("prev-btn").addEventListener("click", ()=>select(idx-1));
+document.getElementById("next-btn").addEventListener("click", ()=>select(idx+1));
+document.getElementById("resetOne").addEventListener("click", ()=>{
+    const m=cur(); m.side=m.iw; m.cx=m.iw/2; m.cy=clamp(0.44*m.ih,m.side/2,m.ih-m.side/2); render();
+});
+document.addEventListener("keydown", e=>{
+    if(e.key==="ArrowLeft") select(idx-1);
+    else if(e.key==="ArrowRight") select(idx+1);
+});
+
+/* drag to pan */
+let dragging=false, lx=0, ly=0;
+prev.addEventListener("pointerdown", e=>{ dragging=true; lx=e.clientX; ly=e.clientY; prev.setPointerCapture(e.pointerId); });
+prev.addEventListener("pointermove", e=>{
+    if(!dragging) return;
+    const m=cur(); const k = m.side/P;   // image px per preview px
+    m.cx -= (e.clientX-lx)*k;
+    m.cy -= (e.clientY-ly)*k;
+    lx=e.clientX; ly=e.clientY; render();
+});
+prev.addEventListener("pointerup", ()=>dragging=false);
+prev.addEventListener("wheel", e=>{
+    e.preventDefault();
+    const m=cur(); m.side *= (e.deltaY>0 ? 1.05 : 0.95); render();
+}, {passive:false});
+
+/* thumbnails */
+function buildThumbs(){
+    const box = document.getElementById("thumbs");
+    box.innerHTML = "";
+    members.forEach((m,k)=>{
+        const c = document.createElement("canvas"); c.width=64; c.height=64;
+        c.title = m.name;
+        c.addEventListener("click", ()=>select(k));
+        box.appendChild(c);
+        m.thumb = c; m.thumbCtx = c.getContext("2d");
+        drawInto(m.thumbCtx, 64, m);
+    });
+}
+
+function buildOutput(){
+    const lines = members.map(m => {
+        if(!m.iw) return m.name+": (sin imagen)";
+        const cx=(m.cx/m.iw), cy=(m.cy/m.ih), size=(m.side/m.iw);
+        return m.name+": cx="+cx.toFixed(3)+" cy="+cy.toFixed(3)+" size="+size.toFixed(3);
+    });
+    document.getElementById("out").value = lines.join("\n");
+}
+
+document.getElementById("copy").addEventListener("click", ()=>{
+    const o=document.getElementById("out"); o.select(); document.execCommand("copy");
+    const b=document.getElementById("copy"); const t=b.textContent; b.textContent="¡Copiado!"; setTimeout(()=>b.textContent=t,1200);
+});
+</script>
+</body>
+</html>
