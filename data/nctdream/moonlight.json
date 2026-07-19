@@ -289,8 +289,8 @@
         "end": 0,
         "members": ["JISUNG"],
         "original": "自由に跳べ, fly",
-        "romanization": "Fly freely, fly",
-        "english": "",
+        "romanization": "Jiyuu ni tobe, fly",
+        "english": "Fly freely, fly",
         "adlib": ""
     },
       {
@@ -317,8 +317,8 @@
         "members": ["MARK"],
         "original": "「今度」なんてない in my dictionary",
         "romanization": "\"Kondo\" nante nai in my dictionary",
-        "english": "Yo, now's the time, here we go",
-        "adlib": "\"Next time\" isn't in my dictionary"
+        "english": "\"Next time\" isn't in my dictionary",
+        "adlib": ""
     },
      {
     "start": 0,
@@ -341,7 +341,7 @@
      {
     "start": 0,
         "end": 0,
-        "members": ["JENO"],
+        "members": ["JENO", "JAEMIN"],
         "original": "",
         "romanization": "To the future and not the past, let's go",
         "english": "",
@@ -435,6 +435,15 @@
         "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
         "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
         "english": "My body feels it more, we're gonna scream, ah, ah, ah",
+        "adlib": ""
+    },
+     {
+        "start": 52.00,
+        "end": 53.00,
+        "members": ["NCT DREAM"],
+        "original": "閃く「今」を, 輝かせよう",
+        "romanization": "Hirameku \"ima\" o, kagayakaseyou",
+        "english": "The dazzling \"now\", let's make it shine",
         "adlib": ""
     },
      {
@@ -599,7 +608,15 @@
         "english": "My body feels it more, we're gonna scream, ah, ah, ah",
         "adlib": ""
     },
-
+ {
+        "start": 52.00,
+        "end": 53.00,
+        "members": ["NCT DREAM"],
+        "original": "閃く「今」を, 輝かせよう",
+        "romanization": "Hirameku \"ima\" o, kagayakaseyou",
+        "english": "The dazzling \"now\", let's make it shine",
+        "adlib": ""
+    },
      {
     "start": 0,
         "end": 0,
