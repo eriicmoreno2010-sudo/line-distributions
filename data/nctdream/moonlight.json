@@ -261,17 +261,17 @@
     "start": 0,
         "end": 0,
         "members": ["CHENLE"],
-        "original": "さあ, 一歩踏み込んで, 重力からの解放",
-        "romanization": "Saa, ichi ho fumikondе, juuryoku kara no kaihou",
-        "english": "Hey, take one step forward, release yourself from gravity",
+        "original": "さあ 一歩踏み込んで, 重力からの解放",
+        "romanization": "Sa ippo fumikondе juuryoku kara no kaihou",
+        "english": "Hey, take one step forward release yourself from gravity",
         "adlib": ""
     },
     {
     "start": 0,
         "end": 0,
         "members": ["HAECHAN"],
-        "original": "Imajineeshon wa doko made mo",
-        "romanization": "Saa, ichi ho fumikondе, juuryoku kara no kaihou",
+        "original": "イマジネーションはどこまでも",
+        "romanization": "Imajineeshon wa doko made mo",
         "english": "Imagination carries on forever",
         "adlib": ""
     },
@@ -470,7 +470,7 @@
         "members": ["HAECHAN"],
         "original": "The truth, 目の前に",
         "romanization": "The truth, me no mae ni",
-        "english": "A future, a dream that never ends",
+        "english": "The truth, Whatever happens",
         "adlib": ""
     },
      {
@@ -498,7 +498,7 @@
         "original": "何があろうとも",
         "romanization": "Nani ga aroutomo",
         "english": "Right in front of me",
-        "adlib": "Don't worry about that"
+        "adlib": ""
     },
      {
     "start": 0,
@@ -652,15 +652,6 @@
         "romanization": "",
         "english": "",
         "adlib": "Hey"
-    },
-     {
-    "start": 0,
-        "end": 0,
-        "members": ["RENJUN"],
-        "original": "",
-        "romanization": "",
-        "english": "",
-        "adlib": "Yeah"
     },
      {
     "start": 0,
