@@ -225,15 +225,11 @@ Version: 3.0 — Lyrics
 .adlib-roman,
 .adlib-english,
 .adlib-text{
+    /* colour is applied instantly (no transition) so the text never flashes
+       its default colour before settling on the member's colour */
     transition:
         opacity .18s var(--ease),
-        transform .18s var(--ease),
-        color .3s var(--ease);
-}
-
-/* Ad-libs crossfade their content like the main lyric lines */
-#adlibs-section{
-    transition:color .3s var(--ease);
+        transform .18s var(--ease);
 }
 
 .fade-out{
