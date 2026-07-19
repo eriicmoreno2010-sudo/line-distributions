@@ -92,6 +92,7 @@
     {
         "start": 9.51,
         "end": 10.44,
+        "voice": [[9.51,10.39]],
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -101,6 +102,7 @@
     {
         "start": 10.56,
         "end": 11.92,
+        "voice": [[10.51,11.97]],
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -330,6 +332,7 @@
      {
     "start": 80.06,
         "end": 80.56,
+        "voice": [[80.09,80.48]],
         "members": ["MARK"],
         "original": "",
         "romanization": "",
@@ -349,6 +352,7 @@
      {
     "start": 82.48,
         "end": 82.87,
+        "voice": [[82.53,82.83]],
         "members": ["JAEMIN"],
         "original": "",
         "romanization": "",
@@ -518,6 +522,7 @@
      {
     "start": 135.15,
         "end": 136.51,
+        "voice": [[135.12,136.57]],
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -527,6 +532,7 @@
      {
     "start": 136.99,
         "end": 140.78,
+        "voice": [[136.99,140.76]],
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -576,6 +582,7 @@
     {
     "start": 148.36,
         "end": 149.78,
+        "voice": [[148.43,149.84]],
         "members": ["JISUNG"],
         "original": "",
         "romanization": "",
@@ -595,6 +602,7 @@
     {
     "start": 154.77,
         "end": 155.32,
+        "voice": [[154.69,155.27]],
         "members": ["JAEMIN"],
         "original": "",
         "romanization": "",
@@ -694,6 +702,7 @@
     {
     "start": 157.74,
         "end": 162.61,
+        "voice": [[157.74,162.49]],
         "members": ["RENJUN"],
         "original": "",
         "romanization": "",
@@ -703,6 +712,7 @@
     {
     "start": 166.54,
         "end": 167.13,
+        "voice": [[166.65,167.24]],
         "members": ["JAEMIN"],
         "original": "",
         "romanization": "",
@@ -712,6 +722,7 @@
      {
     "start": 170.52,
         "end": 170.99,
+        "voice": [[170.55,170.99]],
         "members": ["RENJUN"],
         "original": "",
         "romanization": "",
@@ -721,6 +732,7 @@
       {
     "start": 171.94,
         "end": 175.82,
+        "voice": [[171.99,175.77]],
         "members": ["RENJUN"],
         "original": "",
         "romanization": "",
@@ -730,6 +742,7 @@
      {
     "start": 175.97,
         "end": 178.13,
+        "voice": [[176.01,177.98]],
         "members": ["RENJUN"],
         "original": "",
         "romanization": "",
@@ -739,6 +752,7 @@
       {
     "start": 178.84,
         "end": 181.11,
+        "voice": [[178.89,180.95]],
         "members": ["CHENLE"],
         "original": "",
         "romanization": "",
@@ -748,6 +762,7 @@
      {
     "start": 181.35,
         "end": 182.08,
+        "voice": [[181.38,182.15]],
         "members": ["JISUNG"],
         "original": "",
         "romanization": "",
@@ -757,6 +772,7 @@
      {
     "start": 183.06,
         "end": 184.76,
+        "voice": [[183.12,184.77]],
         "members": ["JISUNG"],
         "original": "",
         "romanization": "",
