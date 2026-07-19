@@ -32,7 +32,7 @@
 
   /* ---------- Donut ---------- */
   #chart-wrap{ position:relative; flex:0 0 auto; height:100%; display:flex; align-items:center; }
-  svg{ display:block; height:min(78vh,86vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
+  svg{ display:block; height:min(88vh,52vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
   .seg{
     fill:var(--gray);
     stroke:var(--bg); stroke-width:2.5;
@@ -95,11 +95,6 @@
 </head>
 <body>
 <div id="stage">
-  <div id="head">
-    <div class="kick">LINE DISTRIBUTION</div>
-    <div class="title" id="title">—</div>
-  </div>
-
   <div id="main">
     <div id="chart-wrap">
       <svg id="chart" viewBox="0 0 400 400"></svg>
@@ -146,7 +141,6 @@ fetch("data/nctdream/moonlight.json").then(r=>r.json())
 function build(){
     document.getElementById("grp").textContent = SONG.group;
     document.getElementById("sng").textContent = SONG.song;
-    document.getElementById("title").innerHTML = SONG.group + " <small>" + SONG.song + "</small>";
 
     const totals = totalsFrom(SONG);
     const sum = Math.max(0.0001, SONG.members.reduce((a,m)=>a+totals[m.name],0));
