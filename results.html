@@ -23,10 +23,10 @@
 
   #stage{ height:100vh; display:flex; flex-direction:column; padding:3.2vh 3vw; }
 
-  #main{ flex:1 1 auto; display:flex; align-items:stretch; gap:4vw; min-height:0; }
+  #main{ flex:1 1 auto; display:flex; align-items:stretch; gap:2vw; min-height:0; }
 
   /* left column: group/song, donut, evenness */
-  #left{ flex:0 0 auto; display:flex; flex-direction:column; justify-content:space-between;
+  #left{ flex:0 0 46vw; display:flex; flex-direction:column; justify-content:space-between;
          align-items:flex-start; min-height:0; }
   #head{ flex:0 0 auto; }
   #head .grp{ font-size:1.9vh; letter-spacing:.5vh; color:var(--muted); font-weight:800; }
@@ -43,8 +43,8 @@
   }
 
   /* ---------- Donut ---------- */
-  #chart-wrap{ position:relative; flex:1 1 auto; display:flex; align-items:center; justify-content:center; min-height:0; }
-  svg{ display:block; height:min(72vh,50vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
+  #chart-wrap{ position:relative; flex:1 1 auto; width:100%; display:flex; align-items:center; justify-content:center; min-height:0; }
+  svg{ display:block; height:min(74vh,42vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
   .seg{
     fill:var(--gray);
     stroke:var(--bg); stroke-width:2.5;
@@ -60,7 +60,7 @@
   #hole-label .sng{ font-size:1.45vh; font-weight:900; margin-top:.25vh; }
 
   /* ---------- Ranking list ---------- */
-  #list{ flex:1 1 auto; height:100%; max-width:44vw; display:flex; flex-direction:column; gap:1vh; min-width:0; }
+  #list{ flex:1 1 auto; height:100%; display:flex; flex-direction:column; gap:1vh; min-width:0; }
   .row{
     flex:1 1 0; min-height:0;
     display:grid; grid-template-columns:6.4vh 1fr auto; align-items:center; gap:1.6vh;
