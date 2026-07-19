@@ -178,7 +178,7 @@ function build(){
     const evenness = (N && sumsq>0) ? 1/(N*sumsq) : 0;
     const hue = Math.max(0, Math.min(120, evenness*120));
     const evBox = document.getElementById("evenness");
-    document.getElementById("ev").textContent = evenness.toFixed(4);
+    document.getElementById("ev").textContent = (evenness*100).toFixed(2) + "%";
     evBox.style.setProperty("--ev", `hsl(${hue.toFixed(0)}, 80%, 50%)`);
 
     // donut (ranking order, clockwise from top)
