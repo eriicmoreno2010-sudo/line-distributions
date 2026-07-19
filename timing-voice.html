@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timing tool — VOCES — Moonlight</title>
+<style>
+  :root{ --bg:#0e0e13; --panel:#1a1a22; --accent:#df068c; --text:#f2f2f7; --muted:#9a9aa8; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--text); }
+  #wrap{ max-width:1100px; margin:0 auto; padding:18px; display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  video{ width:100%; border-radius:12px; background:#000; grid-column:1 / 2; }
+  #right{ grid-column:2 / 3; display:flex; flex-direction:column; gap:12px; }
+  .card{ background:var(--panel); border-radius:12px; padding:16px; }
+  #now{ font-size:15px; color:var(--muted); }
+  #member{ font-size:26px; font-weight:800; letter-spacing:1px; margin:6px 0; }
+  #text{ font-size:20px; font-weight:600; line-height:1.4; min-height:56px; }
+  #status{ font-size:22px; font-weight:800; padding:14px; border-radius:10px; text-align:center; }
+  .st-idle{ background:#26262f; color:#cfcfe0; }
+  .st-rec{ background:#3a1030; color:#ff8ad0; }
+  #segs{ font-size:15px; color:#ff8ad0; min-height:22px; font-family:monospace; }
+  #next{ font-size:15px; color:var(--muted); }
+  #controls{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; grid-column:1 / 3; }
+  button{ background:var(--accent); color:#fff; border:0; border-radius:8px; padding:9px 14px; font-weight:700; cursor:pointer; font-size:14px; }
+  button.sec{ background:#2a2a34; }
+  input{ width:70px; background:#2a2a34; color:#fff; border:1px solid #3a3a44; border-radius:6px; padding:6px; }
+  kbd{ background:#2a2a34; border:1px solid #444; border-radius:5px; padding:2px 7px; font-weight:700; }
+  #bar{ height:10px; background:#2a2a34; border-radius:999px; overflow:hidden; grid-column:1 / 3; }
+  #barfill{ height:100%; width:0; background:var(--accent); }
+  textarea{ width:100%; height:220px; background:#0a0a0f; color:#fcd; border:1px solid #333; border-radius:8px; font-family:monospace; font-size:13px; padding:10px; grid-column:1 / 3; }
+  .hint{ font-size:13px; color:var(--muted); grid-column:1 / 3; line-height:1.5; }
+  b.acc{ color:var(--accent); }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <video id="v" src="videos/moonlight.mp4" controls preload="auto"></video>
+
+  <div id="right">
+    <div class="card">
+      <div id="now">Línea 0 / 0</div>
+      <div id="member">—</div>
+      <div id="text"></div>
+    </div>
+    <div id="status" class="st-idle">ESPACIO = empieza/para la voz · ENTER = siguiente línea</div>
+    <div id="segs" class="card"></div>
+    <div id="next" class="card">Siguiente: —</div>
+  </div>
+
+  <div id="controls">
+    <span>Velocidad:</span>
+    <button class="sec" data-rate="0.5">0.5x</button>
+    <button class="sec" data-rate="0.75">0.75x</button>
+    <button class="sec" data-rate="1">1x</button>
+    <span style="margin-left:12px">Compensar reacción (s):</span>
+    <input id="offset" type="number" step="0.01" value="0.12">
+    <button id="undo" class="sec">↶ Deshacer (Z)</button>
+    <button id="reset" class="sec">Reiniciar</button>
+    <button id="copy">Copiar voces</button>
+  </div>
+
+  <div id="bar"><div id="barfill"></div></div>
+
+  <div class="hint">
+    <b class="acc">Cómo usar (VOCES para el contador):</b> dale al play.
+    Pulsa <kbd>ESPACIO</kbd> cuando <b>empieza</b> la voz y otra vez cuando <b>para</b> (eso es un segmento).
+    Si en la misma línea vuelve a cantar, pulsa <kbd>ESPACIO</kbd> de nuevo para otro segmento.
+    Cuando acabe la línea, pulsa <kbd>ENTER</kbd> para pasar a la siguiente.
+    <kbd>Z</kbd> deshace. Baja a <b>0.75x</b> para acertar. Al final, <b>Copiar voces</b> y pégamelo.
+  </div>
+
+  <textarea id="out" readonly placeholder="Aquí saldrán las voces: «N: voice [[inicio,fin],...]»"></textarea>
+</div>
+
+<script>
+let lyrics = [];
+let idx = 0;
+let recStart = null;            // si estamos dentro de un segmento, su inicio
+const voices = [];              // voices[i] = [[s,e],...]
+const history = [];             // acciones para deshacer
+
+const v = document.getElementById("v");
+const elNow = document.getElementById("now");
+const elMember = document.getElementById("member");
+const elText = document.getElementById("text");
+const elStatus = document.getElementById("status");
+const elSegs = document.getElementById("segs");
+const elNext = document.getElementById("next");
+const elBar = document.getElementById("barfill");
+const elOut = document.getElementById("out");
+const elOffset = document.getElementById("offset");
+
+fetch("data/nctdream/moonlight.json")
+  .then(r => r.json())
+  .then(d => { lyrics = d.lyrics || []; render(); })
+  .catch(e => { elMember.textContent = "Error cargando moonlight.json"; console.error(e); });
+
+function lineText(l){
+  return [l.original, l.romanization, l.english].filter(Boolean).join("  /  ")
+      || (typeof l.adlib === "string" && l.adlib ? "(ad-lib: " + l.adlib + ")" : "(sin texto)");
+}
+function now(){ const off = parseFloat(elOffset.value)||0; return Math.max(0, Math.round((v.currentTime-off)*100)/100); }
+
+function render(){
+  const total = lyrics.length;
+  if(idx >= total){
+    elNow.textContent = "¡Terminado! " + total + " / " + total;
+    elMember.textContent = "✓ Listo";
+    elText.textContent = "Pulsa «Copiar voces».";
+    elStatus.textContent = "COMPLETADO"; elStatus.className = "st-idle";
+    elSegs.textContent = ""; elNext.textContent = "Siguiente: —";
+  } else {
+    const l = lyrics[idx];
+    const isAdlib = (l.adlib === true) || (typeof l.adlib === "string" && l.adlib.trim() !== "");
+    elNow.textContent = "Línea " + (idx+1) + " / " + total + (isAdlib ? "  ·  (ad-lib)" : "");
+    elMember.textContent = (l.members||[]).join(" & ");
+    elText.textContent = lineText(l);
+    if(recStart != null){ elStatus.textContent = "● GRABANDO voz… ESPACIO para PARAR"; elStatus.className = "st-rec"; }
+    else { elStatus.textContent = "ESPACIO = empieza voz · ENTER = siguiente"; elStatus.className = "st-idle"; }
+    const segs = voices[idx] || [];
+    elSegs.textContent = "Segmentos: " + (segs.length ? segs.map(s => "["+s[0].toFixed(2)+", "+s[1].toFixed(2)+"]").join(" ") : "—")
+                        + (recStart!=null ? "  (abierto: "+recStart.toFixed(2)+"…)" : "");
+    const nx = lyrics[idx+1];
+    elNext.textContent = nx ? ("Siguiente: " + (nx.members||[]).join(" & ")) : "Siguiente: (última)";
+  }
+  elBar.style.width = (total ? (idx/total)*100 : 0) + "%";
+  buildOutput();
+}
+
+function tapSpace(){
+  if(idx >= lyrics.length) return;
+  if(recStart == null){
+    recStart = now();
+    history.push({ type:"open" });
+  } else {
+    const seg = [recStart, now()];
+    if(!voices[idx]) voices[idx] = [];
+    voices[idx].push(seg);
+    recStart = null;
+    history.push({ type:"close", idx });
+  }
+  render();
+}
+
+function nextLine(){
+  if(idx >= lyrics.length) return;
+  if(recStart != null){ // cerrar segmento abierto automáticamente
+    const seg = [recStart, now()];
+    if(!voices[idx]) voices[idx] = [];
+    voices[idx].push(seg);
+    recStart = null;
+    history.push({ type:"close", idx });
+  }
+  history.push({ type:"next", idx });
+  idx++;
+  render();
+}
+
+function undo(){
+  const h = history.pop();
+  if(!h) return;
+  if(h.type === "open"){ recStart = null; }
+  else if(h.type === "close"){ if(voices[h.idx] && voices[h.idx].length){ const s = voices[h.idx].pop(); recStart = s[0]; } }
+  else if(h.type === "next"){ idx = h.idx; }
+  render();
+}
+
+function buildOutput(){
+  const lines = [];
+  for(let i=0;i<voices.length;i++){
+    const segs = voices[i];
+    if(!segs || !segs.length) continue;
+    const arr = segs.map(s => "["+s[0].toFixed(2)+","+s[1].toFixed(2)+"]").join(",");
+    lines.push((i+1) + ": voice [" + arr + "]");
+  }
+  elOut.value = lines.join("\n");
+}
+
+document.addEventListener("keydown", (e) => {
+  if(e.code === "Space"){ e.preventDefault(); tapSpace(); }
+  else if(e.code === "Enter"){ e.preventDefault(); nextLine(); }
+  else if(e.key === "z" || e.key === "Z"){ e.preventDefault(); undo(); }
+});
+document.querySelectorAll("[data-rate]").forEach(b => {
+  b.addEventListener("click", () => { v.playbackRate = parseFloat(b.dataset.rate); });
+});
+document.getElementById("undo").addEventListener("click", undo);
+document.getElementById("reset").addEventListener("click", () => {
+  idx = 0; recStart = null; voices.length = 0; history.length = 0; render();
+});
+document.getElementById("copy").addEventListener("click", () => {
+  elOut.select(); document.execCommand("copy");
+  const b = document.getElementById("copy"); const o = b.textContent;
+  b.textContent = "¡Copiado!"; setTimeout(() => b.textContent = o, 1200);
+});
+</script>
+</body>
+</html>

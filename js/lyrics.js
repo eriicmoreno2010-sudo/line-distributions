@@ -78,6 +78,16 @@ const Lyrics = {
               }).join(", ")
             : "";
 
+        // A line can wrap part of its text in **...** to show ONLY that
+        // fragment in the members' gradient (e.g. JENO sings the line, JAEMIN
+        // only "let's go"); the rest stays in the primary member's colour.
+        const hasPartial = !isGroupLine &&
+            [line.original, line.romanization, line.english]
+                .some(t => t && t.includes("**"));
+
+        const sharedGradient =
+            `linear-gradient(90deg, ${singers.map(s => s.color).join(", ")})`;
+
         let accent, secondaryAccent, isSharedLine;
         if(isGroupLine){
             const colors = SONG.members.map(m => m.color);
@@ -87,7 +97,7 @@ const Lyrics = {
         } else {
             accent = singers[0] ? singers[0].color : "var(--accent)";
             secondaryAccent = singers[1] ? singers[1].color : accent;
-            isSharedLine = singers.length > 1;
+            isSharedLine = !hasPartial && singers.length > 1;
         }
 
         // fade out
@@ -102,10 +112,45 @@ const Lyrics = {
 
         setTimeout(() => {
 
-            e.member.textContent   = isAdlib ? "" : line.members.join("  &  ");
-            e.original.textContent = isAdlib ? "" : line.original || "";
-            e.roman.textContent    = isAdlib ? "" : line.romanization || "";
-            e.english.textContent  = isAdlib ? "" : line.english || "";
+            // Paint text: normal lines use one colour; **marked** fragments
+            // (partial lines) render the marked part in the members' gradient.
+            const escapeHtml = s => (s || "")
+                .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+            const clearPaint = el => {
+                el.style.background = "";
+                el.style.webkitBackgroundClip = "";
+                el.style.backgroundClip = "";
+            };
+            const paintText = (el, text) => {
+                text = text || "";
+                clearPaint(el);
+                if(hasPartial && text.includes("**")){
+                    el.innerHTML = text.split("**").map((chunk, i) => i % 2
+                        ? `<span style="background:${sharedGradient};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(chunk)}</span>`
+                        : `<span style="color:${accent}">${escapeHtml(chunk)}</span>`
+                    ).join("");
+                } else {
+                    el.textContent = text;
+                    el.style.color = accent;
+                }
+            };
+
+            clearPaint(e.member);
+            if(isAdlib){
+                e.member.textContent = "";
+            } else if(hasPartial){
+                e.member.textContent = line.members.join("  &  ");
+                e.member.style.background = sharedGradient;
+                e.member.style.webkitBackgroundClip = "text";
+                e.member.style.backgroundClip = "text";
+                e.member.style.color = "transparent";
+            } else {
+                e.member.textContent = line.members.join("  &  ");
+                e.member.style.color = accent;
+            }
+            paintText(e.original, isAdlib ? "" : line.original);
+            paintText(e.roman,    isAdlib ? "" : line.romanization);
+            paintText(e.english,  isAdlib ? "" : line.english);
 
             e.adlibs.replaceChildren();
             if(line.adlib){
@@ -154,11 +199,8 @@ const Lyrics = {
             e.adlibs.classList.toggle("singing", isAdlib);
             e.adlibs.classList.toggle("multi-member", isSharedLine);
             e.adlibs.classList.toggle("group", isGroupLine);
-            e.member.style.color   = accent;
-            e.original.style.color = accent;
-            e.roman.style.color    = accent;
-            e.english.style.color  = accent;
 
+            // (Text colour/paint already applied above via paintText.)
             // (Card highlight is driven by the voice in Engine.updateActive.)
 
             // fade in
@@ -195,11 +237,13 @@ const Lyrics = {
             e.english.textContent  = "";
             e.adlibs.replaceChildren();
 
-            // reset accent colors
-            e.member.style.color   = "";
-            e.original.style.color = "";
-            e.roman.style.color    = "";
-            e.english.style.color  = "";
+            // reset accent colors and any partial-line gradient paint
+            [e.member, e.original, e.roman, e.english].forEach(el => {
+                el.style.color = "";
+                el.style.background = "";
+                el.style.webkitBackgroundClip = "";
+                el.style.backgroundClip = "";
+            });
             e.adlibs.style.removeProperty("--accent");
             e.section.style.removeProperty("--accent-secondary");
             e.adlibs.style.removeProperty("--accent-secondary");
