@@ -1,6 +1,6 @@
 /* ========================================= */
-/*             RANKING.JS  v4                 */
-/*   Transform-based leaderboard (no reflow)  */
+/*             RANKING.JS  v5                 */
+/*   Time-exact leaderboard (no drift/lag)    */
 /* ========================================= */
 
 const Ranking = {
@@ -10,13 +10,11 @@ const Ranking = {
     gap: 12,
     cardH: 0,
     rowH: 0,
-    pendingTicks: [],
-    tickTimer: null,
     maxTotal: 0,
+    clockStarted: false,
 
     load(song){
 
-        this.pendingTicks = [];
         this.members = song.members.map(member => ({
             ...member,
             seconds:0,
@@ -24,55 +22,79 @@ const Ranking = {
             active:false,
             hasSung:false,
             done:false,
+            intervals:[],
+            total:0,
             lastSing:-Infinity
         }));
 
-        this.precompute(song);
+        this.buildIntervals(song);
         this.render();
-        this.startTicking();
+        this.startClock();
     },
 
     /*
-       All timings are known up front, so we can pre-compute two things:
-        - maxTotal: the biggest per-member singing total, used as the 100%
-          reference for the bars (final leader ends full, rest proportional).
-        - lastSing: the last moment each member sings, so once playback passes
-          it we can mark that member as "done for the rest of the song".
+       Build, per member, the list of [start,end] intervals they actually sing
+       (from voice segments — which may name their own member — or start/end).
+       "NCT DREAM" isn't a real member, so group lines credit no one.
+       Also derive each member's total (100% bar reference) and last sing time.
     */
-    precompute(song){
-        const totals   = {};
-        const lastSing = {};
-        song.members.forEach(m => { totals[m.name] = 0; lastSing[m.name] = -Infinity; });
-
-        const credit = (name, dur, end) => {
-            if(totals[name] === undefined) return;   // "NCT DREAM" etc. -> ignored
-            totals[name] += Math.max(0, dur);
-            if(isFinite(end)) lastSing[name] = Math.max(lastSing[name], end);
-        };
+    buildIntervals(song){
+        const map = {};
+        this.members.forEach(m => map[m.name] = []);
+        const add = (name, s, e) => { if(map[name] && e > s) map[name].push([s, e]); };
 
         (song.lyrics || []).forEach(line => {
             if(Array.isArray(line.voice)){
-                // Each segment credits its own member(s) if named, else the line's.
                 line.voice.forEach(seg => {
                     const who = seg[2] ? (Array.isArray(seg[2]) ? seg[2] : [seg[2]]) : line.members;
-                    who.forEach(name => credit(name, seg[1] - seg[0], seg[1]));
+                    who.forEach(n => add(n, seg[0], seg[1]));
                 });
             } else {
-                const voiceStart = line.voiceStart ?? line.start;
-                const voiceEnd   = line.voiceEnd   ?? line.end;
-                (line.members || []).forEach(name =>
-                    credit(name, voiceEnd - voiceStart, voiceEnd));
+                const s = line.voiceStart ?? line.start;
+                const e = line.voiceEnd   ?? line.end;
+                (line.members || []).forEach(n => add(n, s, e));
             }
         });
 
-        this.maxTotal = Math.max(0, ...Object.values(totals));
-        this.members.forEach(m => m.lastSing = lastSing[m.name]);
+        this.members.forEach(m => {
+            m.intervals = (map[m.name] || []).filter(iv => isFinite(iv[0]) && isFinite(iv[1]));
+            m.total     = m.intervals.reduce((a, iv) => a + (iv[1] - iv[0]), 0);
+            m.lastSing  = m.intervals.reduce((mx, iv) => Math.max(mx, iv[1]), -Infinity);
+        });
+        this.maxTotal = Math.max(0, ...this.members.map(m => m.total));
     },
 
-    /* A member is "done" once playback has passed the last time they sing. */
-    markDone(time){
-        this.members.forEach(m =>
-            m.done = m.hasSung && isFinite(m.lastSing) && time >= m.lastSing);
+    /* Exact leaderboard state at time t — a pure function of the video clock,
+       so it never lags and stays correct after any seek. */
+    updateAt(t){
+        const ref = this.maxTotal || 1;
+        this.members.forEach(m => {
+            let sec = 0, active = false;
+            for(const iv of m.intervals){
+                if(t >= iv[1]) sec += iv[1] - iv[0];          // whole interval already sung
+                else if(t > iv[0]){ sec += t - iv[0]; active = true; }  // currently in it
+            }
+            m.seconds    = Math.round(sec * 100) / 100;
+            m.percentage = Math.min(100, (sec / ref) * 100);
+            m.active     = active;
+            m.hasSung    = sec > 0;
+            m.done       = m.hasSung && !active && isFinite(m.lastSing) && t >= m.lastSing;
+        });
+        this.updateVisuals();
+        this.reorder();
+    },
+
+    /* Drive the leaderboard from the video clock every frame (smooth 60fps). */
+    startClock(){
+        if(this.clockStarted) return;
+        this.clockStarted = true;
+        const video = document.getElementById("video");
+        const loop = () => {
+            if(video && typeof SONG !== "undefined" && SONG && SONG.duration)
+                this.updateAt(video.currentTime);
+            requestAnimationFrame(loop);
+        };
+        requestAnimationFrame(loop);
     },
 
     /*
@@ -183,42 +205,12 @@ const Ranking = {
                 member.timeElement.textContent = member.seconds.toFixed(2) + "s";
             if(member.progressElement)
                 member.progressElement.style.width = member.percentage + "%";
-            if(member.element)
+            if(member.element){
                 member.element.classList.toggle("active", member.active);
-            if(member.element)
                 member.element.classList.toggle("has-sung", member.hasSung);
-            if(member.element)
                 member.element.classList.toggle("done", member.done && !member.active);
+            }
         });
-    },
-
-    setActive(names){
-        const activeNames = new Set(Array.isArray(names) ? names : [names]);
-        this.members.forEach(m => m.active = activeNames.has(m.name));
-    },
-
-    addTime(name, delta){
-        const member = this.members.find(m => m.name === name);
-        if(member){
-            member.seconds = Math.round((member.seconds + delta) * 100) / 100;
-            member.hasSung = true;
-        }
-    },
-
-    queueTime(names){
-        this.pendingTicks.push(Array.isArray(names) ? names : [names]);
-    },
-
-    startTicking(){
-        if(this.tickTimer) clearInterval(this.tickTimer);
-
-        this.tickTimer = setInterval(() => {
-            if(!this.pendingTicks.length) return;
-
-            const names = this.pendingTicks.shift();
-            names.forEach(name => this.addTime(name, .01));
-            this.refresh();
-        }, 10);
     },
 
     /* Reorder = just re-place; the CSS transform transition animates it. */
@@ -241,20 +233,6 @@ const Ranking = {
         this._riseT = setTimeout(() => {
             this.members.forEach(m => m.element.classList.remove("rising"));
         }, 620);
-    },
-
-    refresh(){
-        // Bars scale to the final leader's total (precomputed), so #1 ends at
-        // 100% and everyone else stays proportional to them. The seconds shown
-        // stay real. Fall back to the current leader if totals aren't known.
-        const reference =
-            this.maxTotal || Math.max(0, ...this.members.map(m => m.seconds));
-        this.members.forEach(m =>
-            m.percentage = reference > 0
-                ? Math.min(100, (m.seconds / reference) * 100)
-                : 0);
-        this.updateVisuals();
-        this.reorder();
     }
 };
 

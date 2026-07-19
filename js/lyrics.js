@@ -216,7 +216,7 @@ const Lyrics = {
             e.adlibs.classList.toggle("group", isGroupLine);
 
             // (Text colour/paint already applied above via paintText.)
-            // (Card highlight is driven by the voice in Engine.updateActive.)
+            // (Card highlight is driven by the video clock in Ranking.updateAt.)
 
             // fade in (only the elements that were faded out)
             fadeEls.forEach(el => {
@@ -280,6 +280,6 @@ const Lyrics = {
 
         }, 180);
 
-        // (Card highlight is driven by the voice in Engine.updateActive.)
+        // (Card highlight is driven by the video clock in Ranking.updateAt.)
     }
 };
