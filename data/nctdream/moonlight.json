@@ -372,7 +372,7 @@
      {
     "start": 84.15,
         "end": 86.31,
-        "voice": [[84.22,85.67,"JENO"],[85.79,86.46,"JAEMIN"]],
+        "voice": [[84.22,85.67,"JENO"],[85.79,86.46,["JENO","JAEMIN"]]],
         "members": ["JENO", "JAEMIN"],
         "original": "",
         "romanization": "To the future and not the past, **let's go**",
