@@ -23,16 +23,28 @@
 
   #stage{ height:100vh; display:flex; flex-direction:column; padding:3.2vh 3vw; }
 
-  #head{ flex:0 0 auto; margin-bottom:2vh; }
-  #head .kick{ font-size:1.5vh; letter-spacing:.55vh; color:var(--muted); font-weight:800; }
-  #head .title{ font-size:4.4vh; font-weight:900; letter-spacing:.2vh; line-height:1; }
-  #head .title small{ font-weight:700; color:var(--muted); font-size:2.6vh; margin-left:1vh; }
+  #main{ flex:1 1 auto; display:flex; align-items:stretch; gap:4vw; min-height:0; }
 
-  #main{ flex:1 1 auto; display:flex; align-items:center; gap:4vw; min-height:0; }
+  /* left column: group/song, donut, evenness */
+  #left{ flex:0 0 auto; display:flex; flex-direction:column; justify-content:space-between;
+         align-items:flex-start; min-height:0; }
+  #head{ flex:0 0 auto; }
+  #head .grp{ font-size:1.9vh; letter-spacing:.5vh; color:var(--muted); font-weight:800; }
+  #head .sng{ font-size:4vh; font-weight:900; letter-spacing:.2vh; line-height:1; margin-top:.4vh; }
+
+  #evenness{ flex:0 0 auto; }
+  #evenness .ev-label{ font-size:1.8vh; letter-spacing:.5vh; color:var(--muted); font-weight:800; margin-bottom:.9vh; }
+  #evenness .ev-val{
+    display:inline-block; padding:.7vh 2.4vh; border-radius:1.2vh;
+    background:color-mix(in srgb, var(--ev,#888) 16%, var(--panel));
+    border:1px solid color-mix(in srgb, var(--ev,#888) 55%, transparent);
+    color:var(--ev,#888); font-size:4vh; font-weight:900; font-variant-numeric:tabular-nums;
+    transition:color .5s ease, background-color .5s ease, border-color .5s ease;
+  }
 
   /* ---------- Donut ---------- */
-  #chart-wrap{ position:relative; flex:0 0 auto; height:100%; display:flex; align-items:center; }
-  svg{ display:block; height:min(72vh,46vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
+  #chart-wrap{ position:relative; flex:1 1 auto; display:flex; align-items:center; justify-content:center; min-height:0; }
+  svg{ display:block; height:min(58vh,42vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
   .seg{
     fill:var(--gray);
     stroke:var(--bg); stroke-width:2.5;
@@ -96,9 +108,19 @@
 <body>
 <div id="stage">
   <div id="main">
-    <div id="chart-wrap">
-      <svg id="chart" viewBox="0 0 400 400"></svg>
-      <div id="hole-label"><div class="grp" id="grp"></div><div class="sng" id="sng"></div></div>
+    <div id="left">
+      <div id="head">
+        <div class="grp" id="grp"></div>
+        <div class="sng" id="sng"></div>
+      </div>
+      <div id="chart-wrap">
+        <svg id="chart" viewBox="0 0 400 400"></svg>
+        <div id="hole-label"></div>
+      </div>
+      <div id="evenness">
+        <div class="ev-label">EVENNESS</div>
+        <div class="ev-val" id="ev">—</div>
+      </div>
     </div>
     <div id="list"><div id="rows"></div></div>
   </div>
@@ -148,6 +170,16 @@ function build(){
                 sec:totals[m.name], pct:totals[m.name]/sum*100 }))
              .sort((a,b)=>b.sec-a.sec);
     const maxPct = ranked.length ? ranked[0].pct : 1;
+
+    // Evenness = Simpson's evenness  1 / (N · Σpᵢ²)  → 0..1 (1 = perfectly even).
+    // Shown as a decimal, coloured red(0)→yellow(0.5)→green(1).
+    const N = ranked.length;
+    const sumsq = ranked.reduce((a,m)=>a + Math.pow(m.pct/100, 2), 0);
+    const evenness = (N && sumsq>0) ? 1/(N*sumsq) : 0;
+    const hue = Math.max(0, Math.min(120, evenness*120));
+    const evBox = document.getElementById("evenness");
+    document.getElementById("ev").textContent = evenness.toFixed(4);
+    evBox.style.setProperty("--ev", `hsl(${hue.toFixed(0)}, 80%, 50%)`);
 
     // donut (ranking order, clockwise from top)
     const svg = document.getElementById("chart");
