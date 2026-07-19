@@ -171,9 +171,8 @@ const Lyrics = {
                 el.style.color = ""; el.style.background = "";
                 el.style.webkitBackgroundClip = ""; el.style.backgroundClip = "";
             });
-            e.section.style.removeProperty("--accent-secondary");
-            e.section.style.removeProperty("--group-gradient");
-            e.section.style.removeProperty("--group-glow");
+            // Keep the colour vars so the halo fades out in the member's colour
+            // (they get overwritten by the next line).
             e.section.classList.remove("singing");
             e.section.classList.remove("multi-member");
             e.section.classList.remove("group");
@@ -232,10 +231,9 @@ const Lyrics = {
 
         setTimeout(() => {
             e.adlibs.replaceChildren();
-            e.adlibs.style.removeProperty("--accent");
-            e.adlibs.style.removeProperty("--accent-secondary");
-            e.adlibs.style.removeProperty("--group-glow");
-            e.adlibs.style.removeProperty("--group-gradient");
+            // Keep the colour vars so the halo fades out in the member's colour
+            // (removing them would revert --accent to the default purple).
+            // They're harmless while idle and get overwritten by the next ad-lib.
             e.adlibs.classList.remove("singing");
             e.adlibs.classList.remove("multi-member");
             e.adlibs.classList.remove("group");
