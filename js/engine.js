@@ -11,34 +11,40 @@ const Engine = {
     lyricLead:.30,
 
     /*
-       Is the VOICE of this line sounding at time t?
-        - "voice": [[s,e],[s,e]]  -> several segments (silences in between
-          don't count) while the text stays shown for the whole line.
-        - "voiceStart"/"voiceEnd" -> a single voice segment.
-        - neither                 -> falls back to start/end.
+       Which members' VOICE is sounding at time t? Returns an array (may be empty).
+        - "voice": [[s,e],[s,e]]        -> segments credit the line's members.
+        - "voice": [[s,e,"JENO"], ...]  -> a segment can name its OWN member(s)
+          (3rd item, string or array) — for shared lines where one member only
+          sings a fragment (e.g. JAEMIN singing just "let's go").
+        - "voiceStart"/"voiceEnd"       -> a single segment, credits line members.
+        - none                          -> falls back to start/end, line members.
     */
-    voiceActiveAt(line, t){
-        if(Array.isArray(line.voice)){
-            return line.voice.some(([s, e]) => t >= s && t < e);
+    creditedMembers(t){
+        const out = [];
+        const add = names => { for(const n of names) if(!out.includes(n)) out.push(n); };
+
+        for(const line of SONG.lyrics){
+            if(Array.isArray(line.voice)){
+                for(const seg of line.voice){
+                    if(t >= seg[0] && t < seg[1]){
+                        const m = seg[2];
+                        add(m ? (Array.isArray(m) ? m : [m]) : line.members);
+                    }
+                }
+            } else {
+                const voiceStart = line.voiceStart ?? line.start;
+                const voiceEnd   = line.voiceEnd   ?? line.end;
+                if(t >= voiceStart && t < voiceEnd) add(line.members);
+            }
         }
-        const voiceStart = line.voiceStart ?? line.start;
-        const voiceEnd   = line.voiceEnd   ?? line.end;
-        return t >= voiceStart && t < voiceEnd;
+        return out;
     },
 
     /* Light up the cards of whoever's VOICE is sounding right now (not just
        whoever's lyric is on screen), so a card turns off during a silence
        even if the line's text stays visible. */
     updateActive(time){
-        const active = [];
-        for(const line of SONG.lyrics){
-            if(this.voiceActiveAt(line, time)){
-                for(const name of line.members){
-                    if(!active.includes(name)) active.push(name);
-                }
-            }
-        }
-        Ranking.setActive(active);
+        Ranking.setActive(this.creditedMembers(time));
         Ranking.markDone(time);   // dim the card of anyone who won't sing again
         Ranking.updateVisuals();
     },
@@ -65,12 +71,10 @@ const Engine = {
             centisecond++){
 
             // Sample the middle of each centisecond so line boundaries count correctly.
+            // Group lines (e.g. "NCT DREAM") resolve to no real member -> no time added.
             const sampleTime = centisecond / 100 - .005;
-
-            // Group lines (e.g. "NCT DREAM") resolve to no real member, so they
-            // never add time — the counter stays per singer.
-            const current = SONG.lyrics.find(line => this.voiceActiveAt(line, sampleTime));
-            if(current) Ranking.queueTime(current.members);
+            const who = this.creditedMembers(sampleTime);
+            if(who.length) Ranking.queueTime(who);
         }
 
         this.previousCentisecond = currentCentisecond;

@@ -44,26 +44,25 @@ const Ranking = {
         const lastSing = {};
         song.members.forEach(m => { totals[m.name] = 0; lastSing[m.name] = -Infinity; });
 
+        const credit = (name, dur, end) => {
+            if(totals[name] === undefined) return;   // "NCT DREAM" etc. -> ignored
+            totals[name] += Math.max(0, dur);
+            if(isFinite(end)) lastSing[name] = Math.max(lastSing[name], end);
+        };
+
         (song.lyrics || []).forEach(line => {
-            let duration, endTime;
             if(Array.isArray(line.voice)){
-                duration = line.voice.reduce((sum, [s, e]) => sum + Math.max(0, e - s), 0);
-                endTime  = line.voice.reduce((mx, [s, e]) => Math.max(mx, e), -Infinity);
+                // Each segment credits its own member(s) if named, else the line's.
+                line.voice.forEach(seg => {
+                    const who = seg[2] ? (Array.isArray(seg[2]) ? seg[2] : [seg[2]]) : line.members;
+                    who.forEach(name => credit(name, seg[1] - seg[0], seg[1]));
+                });
             } else {
                 const voiceStart = line.voiceStart ?? line.start;
                 const voiceEnd   = line.voiceEnd   ?? line.end;
-                duration = Math.max(0, voiceEnd - voiceStart);
-                endTime  = voiceEnd;
+                (line.members || []).forEach(name =>
+                    credit(name, voiceEnd - voiceStart, voiceEnd));
             }
-            if(!isFinite(duration)) duration = 0;
-
-            // Shared lines add to every listed member; "NCT DREAM" isn't a
-            // real member, so group lines add to no one (they don't count).
-            (line.members || []).forEach(name => {
-                if(totals[name] === undefined) return;
-                totals[name] += duration;
-                if(isFinite(endTime)) lastSing[name] = Math.max(lastSing[name], endTime);
-            });
         });
 
         this.maxTotal = Math.max(0, ...Object.values(totals));
