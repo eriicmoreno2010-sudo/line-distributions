@@ -44,7 +44,7 @@
 
   /* ---------- Donut ---------- */
   #chart-wrap{ position:relative; flex:1 1 auto; display:flex; align-items:center; justify-content:center; min-height:0; }
-  svg{ display:block; height:min(58vh,42vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
+  svg{ display:block; height:min(72vh,50vw); width:auto; filter:drop-shadow(0 2vh 4vh rgba(0,0,0,.5)); }
   .seg{
     fill:var(--gray);
     stroke:var(--bg); stroke-width:2.5;
@@ -60,35 +60,35 @@
   #hole-label .sng{ font-size:1.45vh; font-weight:900; margin-top:.25vh; }
 
   /* ---------- Ranking list ---------- */
-  #list{ flex:1 1 auto; height:100%; display:flex; flex-direction:column; gap:1.2vh; min-width:0; }
+  #list{ flex:1 1 auto; height:100%; max-width:44vw; display:flex; flex-direction:column; gap:1vh; min-width:0; }
   .row{
     flex:1 1 0; min-height:0;
-    display:grid; grid-template-columns:8vh 1fr auto; align-items:center; gap:2vh;
-    background:var(--panel); border:1px solid #23232e; border-radius:1.6vh;
-    padding:1.2vh 2.2vh;
+    display:grid; grid-template-columns:6.4vh 1fr auto; align-items:center; gap:1.6vh;
+    background:var(--panel); border:1px solid #23232e; border-radius:1.4vh;
+    padding:1vh 1.8vh;
     opacity:.5; transition:opacity .45s ease, background-color .45s ease,
         border-color .45s ease, box-shadow .45s ease, transform .3s ease;
   }
   .row .photo{
-    width:8vh; height:8vh; border-radius:50%; object-fit:cover; object-position:center 45%;
+    width:6.4vh; height:6.4vh; border-radius:50%; object-fit:cover; object-position:center 45%;
     background:#000; filter:grayscale(1) brightness(.75);
     transition:filter .5s ease, box-shadow .5s ease;
   }
   .row .info{ min-width:0; }
   .row .name{
-    font-size:3.2vh; font-weight:900; letter-spacing:.4px; color:var(--muted);
+    font-size:2.5vh; font-weight:900; letter-spacing:.4px; color:var(--muted);
     transition:color .5s ease; line-height:1.1;
   }
   .row .bar{
-    margin-top:1vh; height:1.5vh; border-radius:999px; background:var(--track); overflow:hidden;
+    margin-top:.8vh; height:1.2vh; border-radius:999px; background:var(--track); overflow:hidden;
   }
   .row .fill{
     height:100%; width:0; border-radius:999px; background:var(--gray);
     transition:width .6s cubic-bezier(.3,1,.4,1), background-color .5s ease;
   }
   .row .stats{ text-align:right; font-variant-numeric:tabular-nums; }
-  .row .pct{ font-size:3vh; font-weight:900; color:var(--muted); transition:color .5s ease; line-height:1; }
-  .row .sec{ font-size:1.8vh; color:var(--muted); margin-top:.5vh; }
+  .row .pct{ font-size:2.4vh; font-weight:900; color:var(--muted); transition:color .5s ease; line-height:1; }
+  .row .sec{ font-size:1.5vh; color:var(--muted); margin-top:.4vh; }
 
   .row.lit{
     opacity:1; background:var(--rowbg); border-color:color-mix(in srgb, var(--c) 55%, transparent);
