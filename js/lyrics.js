@@ -1,6 +1,8 @@
 /*
 =========================================
-Lyrics  v3
+Lyrics  v4
+Two independent tracks: the CENTRAL panel and the AD-LIB panel are shown
+separately, so a central line and an ad-lib can be on screen at the same time.
 =========================================
 */
 
@@ -8,10 +10,15 @@ Lyrics  v3
 const ADLIB_PARTS =
     ".adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text";
 
+function isAdlibLine(l){
+    return (l.adlib === true) || (typeof l.adlib === "string" && l.adlib.trim() !== "");
+}
+
 const Lyrics = {
 
-    currentIndex: -1,
-    lastMembers: null,   // key of last central singer(s) shown, for name persistence
+    centralIndex: -1,
+    adlibIndex: -1,
+    lastCentralMembers: null,   // for name persistence across same-singer lines
 
     els(){
         return {
@@ -24,53 +31,16 @@ const Lyrics = {
         };
     },
 
-    group(){
-        // Ad-libs panel is intentionally NOT included so it doesn't blink
-        const e = this.els();
-        return [e.member, e.original, e.roman, e.english];
-    },
-
-    update(currentTime){
-
-        if(!SONG || !SONG.lyrics) return;
-
-        const lyrics = SONG.lyrics;
-
-        for(let i = 0; i < lyrics.length; i++){
-            const line = lyrics[i];
-
-            if(currentTime >= line.start && currentTime < line.end){
-
-                if(this.currentIndex !== i){
-                    this.currentIndex = i;
-                    this.show(line);
-                }
-
-                return;
-            }
-        }
-
-        // No active line -> the member stopped singing: clear right away
-        this.clear();
-    },
-
-    show(line){
-
-        const e = this.els();
-        const isAdlib = Boolean(line.adlib);
-
-        // A "group" line (e.g. members: ["NCT DREAM"]) is sung by everyone:
-        // it gets a blended gradient of all member colors and never counts.
+    /* Colours/gradients derived from a line's members. */
+    colorsFor(line){
         const isGroupLine = line.members.includes(SONG.group);
-
         const singers = line.members
-            .map(name => SONG.members.find(member => member.name === name))
+            .map(name => SONG.members.find(m => m.name === name))
             .filter(Boolean);
 
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`
             : "";
-        // Halo built from ALL member colors, one soft blob each across the width.
         const groupGlow = isGroupLine
             ? SONG.members.map((m, i, arr) => {
                   const pos = arr.length > 1 ? 8 + (i / (arr.length - 1)) * 84 : 50;
@@ -79,13 +49,9 @@ const Lyrics = {
               }).join(", ")
             : "";
 
-        // A line can wrap part of its text in **...** to show ONLY that
-        // fragment in the members' gradient (e.g. JENO sings the line, JAEMIN
-        // only "let's go"); the rest stays in the primary member's colour.
         const hasPartial = !isGroupLine &&
             [line.original, line.romanization, line.english]
                 .some(t => t && t.includes("**"));
-
         const sharedGradient =
             `linear-gradient(90deg, ${singers.map(s => s.color).join(", ")})`;
 
@@ -100,186 +66,185 @@ const Lyrics = {
             secondaryAccent = singers[1] ? singers[1].color : accent;
             isSharedLine = !hasPartial && singers.length > 1;
         }
+        return { isGroupLine, groupGradient, groupGlow, hasPartial,
+                 sharedGradient, accent, secondaryAccent, isSharedLine };
+    },
 
-        // Keep the member NAME on screen when consecutive central lines are the
-        // same singer(s): only the text crossfades. The name fades only when the
-        // next singer is different (or on ad-libs / clear).
+    /* Each frame: pick the active CENTRAL line and the active AD-LIB line
+       independently, so both panels can be filled at the same time. */
+    update(currentTime){
+        if(!SONG || !SONG.lyrics) return;
+        const lyrics = SONG.lyrics;
+
+        let ci = -1, ai = -1;
+        for(let i = 0; i < lyrics.length; i++){
+            const l = lyrics[i];
+            if(currentTime >= l.start && currentTime < l.end){
+                if(isAdlibLine(l)){ if(ai === -1) ai = i; }
+                else            { if(ci === -1) ci = i; }
+            }
+        }
+
+        if(ci === -1) this.clearCentral();
+        else if(ci !== this.centralIndex){ this.centralIndex = ci; this.showCentral(lyrics[ci]); }
+
+        if(ai === -1) this.clearAdlib();
+        else if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
+    },
+
+    /* ---------------- CENTRAL panel ---------------- */
+    showCentral(line){
+        const e = this.els();
+        const c = this.colorsFor(line);
+
         const membersKey = line.members.join("|");
-        const sameName = !isAdlib && this.lastMembers === membersKey;
-        this.lastMembers = isAdlib ? null : membersKey;
+        const sameName = this.lastCentralMembers === membersKey;
+        this.lastCentralMembers = membersKey;
 
         const fadeEls = sameName
             ? [e.original, e.roman, e.english]
             : [e.member, e.original, e.roman, e.english];
 
-        // fade out
-        fadeEls.forEach(el => {
-            el.classList.add("fade-out");
-            el.classList.remove("fade-in");
-        });
-        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
-            el.classList.add("fade-out");
-            el.classList.remove("fade-in");
-        });
+        fadeEls.forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
 
         setTimeout(() => {
-
-            // Paint text: normal lines use one colour; **marked** fragments
-            // (partial lines) render the marked part in the members' gradient.
             const escapeHtml = s => (s || "")
                 .replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
             const clearPaint = el => {
-                el.style.background = "";
-                el.style.webkitBackgroundClip = "";
-                el.style.backgroundClip = "";
+                el.style.background = ""; el.style.webkitBackgroundClip = ""; el.style.backgroundClip = "";
             };
             const paintText = (el, text) => {
                 text = text || "";
                 clearPaint(el);
-                if(hasPartial && text.includes("**")){
+                if(c.hasPartial && text.includes("**")){
                     el.innerHTML = text.split("**").map((chunk, i) => i % 2
-                        ? `<span style="background:${sharedGradient};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(chunk)}</span>`
-                        : `<span style="color:${accent}">${escapeHtml(chunk)}</span>`
+                        ? `<span style="background:${c.sharedGradient};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(chunk)}</span>`
+                        : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`
                     ).join("");
                 } else {
                     el.textContent = text;
-                    el.style.color = accent;
+                    el.style.color = c.accent;
                 }
             };
 
-            // Skip repainting the name when it's the same singer (it stays put).
             if(!sameName){
                 clearPaint(e.member);
-                if(isAdlib){
-                    e.member.textContent = "";
-                } else if(hasPartial){
+                if(c.hasPartial){
                     e.member.textContent = line.members.join("  &  ");
-                    e.member.style.background = sharedGradient;
+                    e.member.style.background = c.sharedGradient;
                     e.member.style.webkitBackgroundClip = "text";
                     e.member.style.backgroundClip = "text";
                     e.member.style.color = "transparent";
                 } else {
                     e.member.textContent = line.members.join("  &  ");
-                    e.member.style.color = accent;
+                    e.member.style.color = c.accent;
                 }
             }
-            paintText(e.original, isAdlib ? "" : line.original);
-            paintText(e.roman,    isAdlib ? "" : line.romanization);
-            paintText(e.english,  isAdlib ? "" : line.english);
+            paintText(e.original, line.original);
+            paintText(e.roman,    line.romanization);
+            paintText(e.english,  line.english);
 
-            e.adlibs.replaceChildren();
-            if(line.adlib){
-                // The ad-lib panel mirrors the main panel: name + original +
-                // romanization + translation, plus the ad-lib vocalization.
-                // Only non-empty fields are shown.
-                const parts = [];
-                const addPart = (cls, text) => {
-                    if(!text) return;
-                    const el2 = document.createElement("div");
-                    el2.className = cls + " fade-out";
-                    el2.textContent = text;
-                    parts.push(el2);
-                };
-                addPart("adlib-member",   line.members.join("  &  "));
-                addPart("adlib-original", line.original);
-                addPart("adlib-roman",    line.romanization);
-                addPart("adlib-english",  line.english);
-                // adlib can be `true` (just a marker) or a string (the
-                // vocalisation, e.g. "Woah"). Only show text when it's a string.
-                addPart("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
+            e.section.style.setProperty("--accent", c.accent);
+            e.section.style.setProperty("--accent-secondary", c.secondaryAccent);
+            e.section.style.setProperty("--group-glow", c.groupGlow);
+            e.section.style.setProperty("--group-gradient", c.groupGradient);
+            e.section.classList.add("singing");
+            e.section.classList.toggle("multi-member", c.isSharedLine);
+            e.section.classList.toggle("group", c.isGroupLine);
 
-                e.adlibs.append(...parts);
-
-                // fade the ad-lib in, mirroring the main lyric crossfade
-                requestAnimationFrame(() => {
-                    parts.forEach(el2 => {
-                        el2.classList.remove("fade-out");
-                        el2.classList.add("fade-in");
-                    });
-                });
-            }
-
-            // paint everything with the singing member's color
-            e.section.style.setProperty("--accent", accent);
-            e.section.style.setProperty("--accent-secondary", secondaryAccent);
-            e.section.style.setProperty("--group-glow", groupGlow);
-            e.section.style.setProperty("--group-gradient", groupGradient);
-            e.section.classList.toggle("singing", !isAdlib);
-            e.section.classList.toggle("multi-member", isSharedLine);
-            e.section.classList.toggle("group", isGroupLine);
-            e.adlibs.style.setProperty("--accent", accent);
-            e.adlibs.style.setProperty("--accent-secondary", secondaryAccent);
-            e.adlibs.style.setProperty("--group-glow", groupGlow);
-            e.adlibs.style.setProperty("--group-gradient", groupGradient);
-            e.adlibs.classList.toggle("singing", isAdlib);
-            e.adlibs.classList.toggle("multi-member", isSharedLine);
-            e.adlibs.classList.toggle("group", isGroupLine);
-
-            // (Text colour/paint already applied above via paintText.)
-            // (Card highlight is driven by the video clock in Ranking.updateAt.)
-
-            // fade in (only the elements that were faded out)
-            fadeEls.forEach(el => {
-                el.classList.remove("fade-out");
-                el.classList.add("fade-in");
-            });
-
+            fadeEls.forEach(el => { el.classList.remove("fade-out"); el.classList.add("fade-in"); });
         }, 180);
     },
 
-    clear(){
-
-        if(this.currentIndex === -1) return;
-
-        this.currentIndex = -1;
-        this.lastMembers = null;
+    clearCentral(){
+        if(this.centralIndex === -1) return;
+        this.centralIndex = -1;
+        this.lastCentralMembers = null;
 
         const e = this.els();
-
-        this.group().forEach(el => {
-            el.classList.add("fade-out");
-            el.classList.remove("fade-in");
-        });
-        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
-            el.classList.add("fade-out");
-            el.classList.remove("fade-in");
-        });
+        const fadeEls = [e.member, e.original, e.roman, e.english];
+        fadeEls.forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
 
         setTimeout(() => {
-
-            e.member.textContent   = "";
-            e.original.textContent = "";
-            e.roman.textContent    = "";
-            e.english.textContent  = "";
-            e.adlibs.replaceChildren();
-
-            // reset accent colors and any partial-line gradient paint
-            [e.member, e.original, e.roman, e.english].forEach(el => {
-                el.style.color = "";
-                el.style.background = "";
-                el.style.webkitBackgroundClip = "";
-                el.style.backgroundClip = "";
+            fadeEls.forEach(el => {
+                el.textContent = "";
+                el.style.color = ""; el.style.background = "";
+                el.style.webkitBackgroundClip = ""; el.style.backgroundClip = "";
             });
-            e.adlibs.style.removeProperty("--accent");
             e.section.style.removeProperty("--accent-secondary");
-            e.adlibs.style.removeProperty("--accent-secondary");
-
             e.section.style.removeProperty("--group-gradient");
-            e.adlibs.style.removeProperty("--group-gradient");
             e.section.style.removeProperty("--group-glow");
-            e.adlibs.style.removeProperty("--group-glow");
-
             e.section.classList.remove("singing");
             e.section.classList.remove("multi-member");
             e.section.classList.remove("group");
+            fadeEls.forEach(el => el.classList.remove("fade-out"));
+        }, 180);
+    },
+
+    /* ---------------- AD-LIB panel ---------------- */
+    showAdlib(line){
+        const e = this.els();
+        const c = this.colorsFor(line);
+
+        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
+            el.classList.add("fade-out"); el.classList.remove("fade-in");
+        });
+
+        setTimeout(() => {
+            e.adlibs.replaceChildren();
+            const parts = [];
+            const addPart = (cls, text) => {
+                if(!text) return;
+                const el2 = document.createElement("div");
+                el2.className = cls + " fade-out";
+                el2.textContent = text;
+                parts.push(el2);
+            };
+            addPart("adlib-member",   line.members.join("  &  "));
+            addPart("adlib-original", line.original);
+            addPart("adlib-roman",    line.romanization);
+            addPart("adlib-english",  line.english);
+            addPart("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
+            e.adlibs.append(...parts);
+
+            e.adlibs.style.setProperty("--accent", c.accent);
+            e.adlibs.style.setProperty("--accent-secondary", c.secondaryAccent);
+            e.adlibs.style.setProperty("--group-glow", c.groupGlow);
+            e.adlibs.style.setProperty("--group-gradient", c.groupGradient);
+            e.adlibs.classList.add("singing");
+            e.adlibs.classList.toggle("multi-member", c.isSharedLine);
+            e.adlibs.classList.toggle("group", c.isGroupLine);
+
+            requestAnimationFrame(() => {
+                parts.forEach(el2 => { el2.classList.remove("fade-out"); el2.classList.add("fade-in"); });
+            });
+        }, 180);
+    },
+
+    clearAdlib(){
+        if(this.adlibIndex === -1) return;
+        this.adlibIndex = -1;
+
+        const e = this.els();
+        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
+            el.classList.add("fade-out"); el.classList.remove("fade-in");
+        });
+
+        setTimeout(() => {
+            e.adlibs.replaceChildren();
+            e.adlibs.style.removeProperty("--accent");
+            e.adlibs.style.removeProperty("--accent-secondary");
+            e.adlibs.style.removeProperty("--group-glow");
+            e.adlibs.style.removeProperty("--group-gradient");
             e.adlibs.classList.remove("singing");
             e.adlibs.classList.remove("multi-member");
             e.adlibs.classList.remove("group");
-
-            this.group().forEach(el => el.classList.remove("fade-out"));
-
         }, 180);
+    },
 
-        // (Card highlight is driven by the video clock in Ranking.updateAt.)
+    /* Clear both panels (used at startup). */
+    clear(){
+        this.clearCentral();
+        this.clearAdlib();
     }
 };
