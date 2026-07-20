@@ -31,8 +31,8 @@ Downloads a .webm when you stop.
     const mime = opts.find(t => window.MediaRecorder && MediaRecorder.isTypeSupported(t)) || "video/webm";
     rec = new MediaRecorder(stream, {
       mimeType: mime,
-      videoBitsPerSecond: 40000000,    // 40 Mbps -> texto/fotos nítidos
-      audioBitsPerSecond: 256000
+      videoBitsPerSecond: 25000000,    // 25 Mbps: nítido pero sin saturar la CPU (audio limpio)
+      audioBitsPerSecond: 320000
     });
     rec.ondataavailable = e => { if(e.data && e.data.size) chunks.push(e.data); };
     rec.onstop = () => {
