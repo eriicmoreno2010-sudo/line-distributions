@@ -204,7 +204,7 @@ function build(){
         row.style.setProperty("--c", m.color);
         row.style.setProperty("--rowbg", `color-mix(in srgb, ${m.color} 15%, var(--panel))`);
         row.innerHTML = `
-            <img class="photo" src="${m.image}" alt="">
+            <img class="photo" src="${m.image}?v=2" alt="">
             <div class="info">
                 <div class="name">${m.name}</div>
                 <div class="bar"><div class="fill"></div></div>

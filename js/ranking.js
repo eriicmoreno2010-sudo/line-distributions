@@ -3,6 +3,9 @@
 /*   Time-exact leaderboard (no drift/lag)    */
 /* ========================================= */
 
+/* Bump when the avatar images change, to bust the browser/Pages cache. */
+const PHOTO_VER = 2;
+
 const Ranking = {
 
     members: [],
@@ -115,7 +118,7 @@ const Ranking = {
 
             card.innerHTML = `
                 <div class="member-rank">1</div>
-                <img class="member-photo" src="${member.image}" alt="${member.name}"
+                <img class="member-photo" src="${member.image}?v=${PHOTO_VER}" alt="${member.name}"
                      style="object-position:center ${member.focus ?? 50}%;
                             transform:translateY(-${member.lift ?? 3}px)">
 
