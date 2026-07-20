@@ -6,28 +6,42 @@ Play/pause with a click anywhere or the SPACE bar.
 =========================================
 */
 (function(){
-  const params = new URLSearchParams(location.search);
-  if(!params.get("rec")) return;
+  if(!new URLSearchParams(location.search).get("rec")) return;
 
-  // hide the cursor everywhere
-  const style = document.createElement("style");
-  style.textContent = `*{ cursor:none !important; }
-    #video::-webkit-media-controls{ display:none !important; }`;
-  document.head.appendChild(style);
+  // hide cursor everywhere + kill webkit media controls
+  const css = document.createElement("style");
+  css.textContent = `
+    html, body, * { cursor:none !important; }
+    #video::-webkit-media-controls,
+    #video::-webkit-media-controls-enclosure,
+    #video::-webkit-media-controls-panel { display:none !important; -webkit-appearance:none !important; }
+  `;
+  (document.head || document.documentElement).appendChild(css);
 
-  const start = () => {
+  function strip(){
     const v = document.getElementById("video");
-    if(!v) return;
-    v.removeAttribute("controls");
+    if(v && v.hasAttribute("controls")) v.removeAttribute("controls");
+    return v;
+  }
 
-    const toggle = () => { if(v.paused) v.play(); else v.pause(); };
+  function init(){
+    const v = strip();
+    // keep controls off even if something re-adds them
+    if(v && window.MutationObserver){
+      new MutationObserver(strip).observe(v, { attributes:true, attributeFilter:["controls"] });
+    }
+    const toggle = () => {
+      const vid = document.getElementById("video");
+      if(!vid) return;
+      if(vid.paused) vid.play(); else vid.pause();
+    };
     document.addEventListener("click", toggle);
     document.addEventListener("keydown", e => {
       if(e.code === "Space"){ e.preventDefault(); toggle(); }
     });
-  };
+  }
 
   if(document.readyState === "loading")
-    document.addEventListener("DOMContentLoaded", start);
-  else start();
+    document.addEventListener("DOMContentLoaded", init);
+  else init();
 })();
