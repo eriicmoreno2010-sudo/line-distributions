@@ -166,7 +166,7 @@ const Ranking = {
             const availableHeight = container.clientHeight - verticalPadding;
 
             this.cardH = Math.max(
-                72,
+                92,
                 (availableHeight - this.gap * (this.members.length - 1)) /
                     this.members.length
             );

@@ -216,7 +216,7 @@ body{
     right:6px;
     top:0;
     display:grid;
-    grid-template-columns:26px 64px minmax(0, 1fr);
+    grid-template-columns:26px 84px minmax(0, 1fr);
     align-items:center;
     gap:12px;
     padding:11px 16px 11px 12px;
@@ -239,8 +239,8 @@ body{
 
 #ranking .member-photo{
     display:block;
-    width:64px;
-    height:64px;
+    width:84px;
+    height:84px;
     border:2px solid transparent;
     border-radius:50%;
     background:var(--panel3);
