@@ -35,7 +35,7 @@ Play/pause with a click anywhere or the SPACE bar.
       if(!vid) return;
       if(vid.paused) vid.play(); else vid.pause();
     };
-    document.addEventListener("click", toggle);
+    // Only the SPACE bar plays/pauses (clicking does nothing to the video).
     document.addEventListener("keydown", e => {
       if(e.code === "Space"){ e.preventDefault(); toggle(); }
     });
