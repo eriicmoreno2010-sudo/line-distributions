@@ -1,0 +1,75 @@
+name: Render video (mp4)
+
+# Ejecuta esto a mano desde la pestaña "Actions" -> "Render video (mp4)" -> "Run workflow".
+# Al terminar, descarga el mp4 en "Artifacts".
+on:
+  workflow_dispatch:
+    inputs:
+      song:
+        description: "Ruta del JSON de la cancion"
+        default: "data/nctdream/moonlight.json"
+      seconds:
+        description: "Segundos a grabar (cancion + resultados + margen)"
+        default: "210"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar dependencias
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg xvfb pulseaudio fonts-noto-cjk fonts-noto-color-emoji
+          wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
+
+      - name: Arrancar audio virtual (PulseAudio)
+        run: |
+          pulseaudio --start --exit-idle-time=-1
+          sleep 1
+          pactl load-module module-null-sink sink_name=v1 sink_properties=device.description=v1
+          pactl set-default-sink v1
+
+      - name: Servir la web
+        run: |
+          python3 -m http.server 8000 >/dev/null 2>&1 &
+          sleep 2
+
+      - name: Pantalla virtual (Xvfb)
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 >/dev/null 2>&1 &
+          sleep 2
+
+      - name: Grabar (ffmpeg empieza antes que el navegador)
+        env:
+          DISPLAY: ":99"
+        run: |
+          SONG="${{ github.event.inputs.song }}"
+          SECS="${{ github.event.inputs.seconds }}"
+          # ffmpeg empieza a capturar (pantalla en negro) antes de abrir el navegador
+          ffmpeg -y -loglevel warning \
+            -video_size 1920x1080 -framerate 60 -f x11grab -i :99.0 \
+            -f pulse -i v1.monitor \
+            -t "$SECS" \
+            -c:v libx264 -crf 18 -preset veryfast -pix_fmt yuv420p \
+            -c:a aac -b:a 256k render.mp4 &
+          FF=$!
+          sleep 1
+          # abrir Chrome a pantalla completa con autoplay con sonido
+          google-chrome-stable --no-sandbox --kiosk \
+            --autoplay-policy=no-user-gesture-required \
+            --window-size=1920,1080 --window-position=0,0 \
+            --disable-infobars --disable-gpu --no-first-run \
+            "http://localhost:8000/?auto=1&song=$SONG" >/dev/null 2>&1 &
+          # esperar a que ffmpeg termine su grabacion
+          wait $FF
+          pkill -f google-chrome || true
+
+      - name: Subir el mp4
+        uses: actions/upload-artifact@v4
+        with:
+          name: line-distribution-mp4
+          path: render.mp4
