@@ -57,9 +57,7 @@ stay crisp. Exports .mp4 if the browser supports it, otherwise .webm.
     try{
       stream = await navigator.mediaDevices.getDisplayMedia({
         video:{ frameRate:60 },
-        audio:true,
-        preferCurrentTab:true,           // captura SOLO esta pestaña -> sin barra de "compartiendo" en el video
-        selfBrowserSurface:"include"
+        audio:true
       });
     }catch(e){ return; }                  // cancelado
 
