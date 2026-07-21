@@ -89,13 +89,10 @@ stay crisp. Exports .mp4 if the browser supports it, otherwise .webm.
     document.title = "● REC — " + TITLE;
     btn.classList.add("hidden");          // se oculta para no salir en la grabacion
 
-    // arrancar el video desde el principio para que la grabacion pille todo
+    // dejar el video en pausa al principio (no arranca solo); tú le das
+    // al play con la barra espaciadora cuando quieras.
     const v = document.getElementById("video");
-    if(v){
-      try{ v.pause(); v.currentTime = 0; }catch(e){}
-      // pequeño respiro para que el seek a 0 se aplique antes de reproducir
-      setTimeout(() => { v.play().catch(()=>{}); }, 250);
-    }
+    if(v){ try{ v.pause(); v.currentTime = 0; }catch(e){} }
   }
 
   function stop(){ if(rec && rec.state !== "inactive") rec.stop(); }
