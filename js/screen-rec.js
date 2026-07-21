@@ -1,6 +1,6 @@
 /*
 =========================================
-In-browser recorder — click the "Grabar" button (or press "R").
+In-browser recorder — press "R" to start/stop.
 Uses getDisplayMedia + MediaRecorder at a high bitrate so text and photos
 stay crisp. Exports .mp4 if the browser supports it, otherwise .webm.
 =========================================
@@ -8,29 +8,6 @@ stay crisp. Exports .mp4 if the browser supports it, otherwise .webm.
 (function(){
   const TITLE = document.title;
   let rec = null, chunks = [], stream = null, ext = "webm";
-
-  /* ---- floating record button ---- */
-  const style = document.createElement("style");
-  style.textContent = `
-    #rec-btn{
-      position:fixed; right:18px; bottom:16px; z-index:400;
-      display:flex; align-items:center; gap:9px;
-      background:#e03050; color:#fff; border:0; border-radius:999px;
-      padding:11px 18px; font:700 15px "Segoe UI",Arial,sans-serif; cursor:pointer;
-      box-shadow:0 6px 20px -6px rgba(224,48,80,.8);
-    }
-    #rec-btn .dot{ width:11px; height:11px; border-radius:50%; background:#fff; }
-    #rec-btn.recording{ background:#333; }
-    #rec-btn.hidden{ display:none; }
-  `;
-  document.head.appendChild(style);
-
-  const btn = document.createElement("button");
-  btn.id = "rec-btn";
-  btn.innerHTML = `<span class="dot"></span>Grabar`;
-  btn.title = "Grabar (o tecla R)";
-  document.addEventListener("DOMContentLoaded", () => document.body.appendChild(btn));
-  if(document.readyState !== "loading") document.body.appendChild(btn);
 
   function pickMime(){
     const cands = [
@@ -59,7 +36,7 @@ stay crisp. Exports .mp4 if the browser supports it, otherwise .webm.
         video:{ frameRate:60 },
         audio:true
       });
-    }catch(e){ return; }                  // cancelado
+    }catch(e){ return; }
 
     chunks = [];
     rec = new MediaRecorder(stream, {
@@ -77,27 +54,24 @@ stay crisp. Exports .mp4 if the browser supports it, otherwise .webm.
       if(stream) stream.getTracks().forEach(t => t.stop());
       stream = null; rec = null;
       document.title = TITLE;
-      btn.classList.remove("recording", "hidden");
-      btn.innerHTML = `<span class="dot"></span>Grabar`;
     };
     stream.getVideoTracks()[0].addEventListener("ended", () => {
       if(rec && rec.state !== "inactive") rec.stop();
     });
     rec.start();
     document.title = "● REC — " + TITLE;
-    btn.classList.add("hidden");          // se oculta para no salir en la grabacion
 
-    // dejar el video en pausa al principio (no arranca solo); tú le das
-    // al play con la barra espaciadora cuando quieras.
+    // el video se queda en pausa en 0 (no arranca solo); dale a ESPACIO
     const v = document.getElementById("video");
     if(v){ try{ v.pause(); v.currentTime = 0; }catch(e){} }
   }
 
   function stop(){ if(rec && rec.state !== "inactive") rec.stop(); }
-  function toggle(){ (rec && rec.state === "recording") ? stop() : start(); }
 
-  btn.addEventListener("click", toggle);
   document.addEventListener("keydown", e => {
-    if(e.key === "r" || e.key === "R"){ e.preventDefault(); toggle(); }
+    if(e.key === "r" || e.key === "R"){
+      e.preventDefault();
+      (rec && rec.state === "recording") ? stop() : start();
+    }
   });
 })();
