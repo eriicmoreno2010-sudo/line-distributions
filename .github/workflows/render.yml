@@ -1,0 +1,80 @@
+name: Render Line Distribution
+
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg xvfb chromium
+
+      - name: Start local web server
+        run: |
+          python3 -m http.server 8080 > /tmp/server.log 2>&1 &
+          sleep 3
+
+      - name: Start virtual 4K display
+        run: |
+          Xvfb :99 -screen 0 3840x2160x24 -ac +extension GLX +render -noreset > /tmp/xvfb.log 2>&1 &
+          sleep 3
+
+      - name: Start Chromium in 4K render mode
+        env:
+          DISPLAY: :99
+        run: |
+          chromium \
+            --no-sandbox \
+            --disable-dev-shm-usage \
+            --disable-gpu \
+            --autoplay-policy=no-user-gesture-required \
+            --window-position=0,0 \
+            --window-size=3840,2160 \
+            --kiosk \
+            "http://127.0.0.1:8080/?render=1" \
+            > /tmp/chromium.log 2>&1 &
+          sleep 8
+
+      - name: Capture 4K 60 FPS
+        env:
+          DISPLAY: :99
+        run: |
+          ffmpeg \
+            -y \
+            -f x11grab \
+            -framerate 60 \
+            -video_size 3840x2160 \
+            -i :99.0+0,0 \
+            -t 240 \
+            -c:v libx264 \
+            -preset fast \
+            -crf 14 \
+            -pix_fmt yuv420p \
+            render-4k.mp4
+
+      - name: Downscale to clean 1080p
+        run: |
+          ffmpeg \
+            -y \
+            -i render-4k.mp4 \
+            -vf "scale=1920:1080:flags=lanczos" \
+            -c:v libx264 \
+            -preset slow \
+            -crf 14 \
+            -pix_fmt yuv420p \
+            render-1080p.mp4
+
+      - name: Upload 1080p render
+        uses: actions/upload-artifact@v4
+        with:
+          name: line-distribution-1080p
+          path: render-1080p.mp4
+          retention-days: 7
