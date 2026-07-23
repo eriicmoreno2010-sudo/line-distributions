@@ -72,6 +72,12 @@ const Lyrics = {
 
     /* Each frame: pick the active CENTRAL line and the active AD-LIB line
        independently, so both panels can be filled at the same time. */
+    // When a line ends the TEXT disappears right away, but the member NAME is
+    // kept through short gaps and only clears after HOLD seconds of silence —
+    // so on runs with small gaps (e.g. NCT DREAM) the name stays until they stop.
+    HOLD: 1.0,
+    centralTextCleared: false,
+
     update(currentTime){
         if(!SONG || !SONG.lyrics) return;
         const lyrics = SONG.lyrics;
@@ -85,9 +91,18 @@ const Lyrics = {
             }
         }
 
-        if(ci === -1) this.clearCentral();
-        else if(ci !== this.centralIndex){ this.centralIndex = ci; this.showCentral(lyrics[ci]); }
+        // CENTRAL — active line shows name+text; in a gap the text goes at once
+        // but the name is held until HOLD seconds pass with nobody singing.
+        if(ci !== -1){
+            if(ci !== this.centralIndex){ this.centralIndex = ci; this.showCentral(lyrics[ci]); }
+        } else if(this.centralIndex !== -1){
+            const shown = lyrics[this.centralIndex];
+            if(!this.centralTextCleared){ this.clearCentralText(); this.centralTextCleared = true; }
+            if(currentTime >= shown.end + this.HOLD || currentTime < shown.start)
+                this.clearCentral();
+        }
 
+        // AD-LIB — clears fully when nothing is active
         if(ai === -1) this.clearAdlib();
         else if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
     },
@@ -96,6 +111,7 @@ const Lyrics = {
     showCentral(line){
         const e = this.els();
         const c = this.colorsFor(line);
+        this.centralTextCleared = false;
 
         const membersKey = line.members.join("|");
         const sameName = this.lastCentralMembers === membersKey;
@@ -156,10 +172,26 @@ const Lyrics = {
         }, 180);
     },
 
+    /* Clear ONLY the lyric text (keep the member name showing during the gap). */
+    clearCentralText(){
+        const e = this.els();
+        const fadeEls = [e.original, e.roman, e.english];
+        fadeEls.forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
+        setTimeout(() => {
+            fadeEls.forEach(el => {
+                el.textContent = "";
+                el.style.color = ""; el.style.background = "";
+                el.style.webkitBackgroundClip = ""; el.style.backgroundClip = "";
+                el.classList.remove("fade-out");
+            });
+        }, 180);
+    },
+
     clearCentral(){
         if(this.centralIndex === -1) return;
         this.centralIndex = -1;
         this.lastCentralMembers = null;
+        this.centralTextCleared = false;
 
         const e = this.els();
         const fadeEls = [e.member, e.original, e.roman, e.english];
