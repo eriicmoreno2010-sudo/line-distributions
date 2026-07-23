@@ -100,16 +100,19 @@ const Lyrics = {
             if(ci !== this.centralIndex){ this.centralIndex = ci; this.showCentral(lyrics[ci]); }
         } else if(this.centralIndex !== -1){
             const shown = lyrics[this.centralIndex];
-            let nextStart = Infinity;
+            let next = null;
             for(let k = 0; k < lyrics.length; k++){
                 const l = lyrics[k];
-                if(!isAdlibLine(l) && l.start >= shown.end - 1e-3 && l.start < nextStart) nextStart = l.start;
+                if(!isAdlibLine(l) && l.start >= shown.end - 1e-3 && (!next || l.start < next.start)) next = l;
             }
-            const gap = nextStart - shown.end;
-            if(currentTime < shown.start || gap >= this.HOLD){
-                this.clearCentral();                 // long gap (or seek back): name + text go together
+            const gap = next ? next.start - shown.end : Infinity;
+            const sameSinger = next && next.members.join("|") === shown.members.join("|");
+            // Bridge with the name ONLY if the SAME singer continues within <HOLD;
+            // otherwise (different singer, long gap, or seek back) clear name+text together.
+            if(currentTime < shown.start || gap >= this.HOLD || !sameSinger){
+                this.clearCentral();
             } else if(!this.centralTextCleared){
-                this.clearCentralText();             // short gap: text goes, name bridges it
+                this.clearCentralText();
                 this.centralTextCleared = true;
             }
         }
@@ -119,13 +122,14 @@ const Lyrics = {
             if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
         } else if(this.adlibIndex !== -1){
             const shown = lyrics[this.adlibIndex];
-            let nextStart = Infinity;
+            let next = null;
             for(let k = 0; k < lyrics.length; k++){
                 const l = lyrics[k];
-                if(isAdlibLine(l) && l.start >= shown.end - 1e-3 && l.start < nextStart) nextStart = l.start;
+                if(isAdlibLine(l) && l.start >= shown.end - 1e-3 && (!next || l.start < next.start)) next = l;
             }
-            const gap = nextStart - shown.end;
-            if(currentTime < shown.start || gap >= this.HOLD){
+            const gap = next ? next.start - shown.end : Infinity;
+            const sameSinger = next && next.members.join("|") === shown.members.join("|");
+            if(currentTime < shown.start || gap >= this.HOLD || !sameSinger){
                 this.clearAdlib();
             } else if(!this.adlibTextCleared){
                 this.clearAdlibText();
