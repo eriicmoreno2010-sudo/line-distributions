@@ -77,6 +77,7 @@ const Lyrics = {
     // so on runs with small gaps (e.g. NCT DREAM) the name stays until they stop.
     HOLD: 1.0,
     centralTextCleared: false,
+    adlibTextCleared: false,
 
     update(currentTime){
         if(!SONG || !SONG.lyrics) return;
@@ -113,9 +114,24 @@ const Lyrics = {
             }
         }
 
-        // AD-LIB — clears fully when nothing is active
-        if(ai === -1) this.clearAdlib();
-        else if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
+        // AD-LIB — same look-ahead rule as the central lyrics
+        if(ai !== -1){
+            if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
+        } else if(this.adlibIndex !== -1){
+            const shown = lyrics[this.adlibIndex];
+            let nextStart = Infinity;
+            for(let k = 0; k < lyrics.length; k++){
+                const l = lyrics[k];
+                if(isAdlibLine(l) && l.start >= shown.end - 1e-3 && l.start < nextStart) nextStart = l.start;
+            }
+            const gap = nextStart - shown.end;
+            if(currentTime < shown.start || gap >= this.HOLD){
+                this.clearAdlib();
+            } else if(!this.adlibTextCleared){
+                this.clearAdlibText();
+                this.adlibTextCleared = true;
+            }
+        }
     },
 
     /* ---------------- CENTRAL panel ---------------- */
@@ -227,6 +243,7 @@ const Lyrics = {
     showAdlib(line){
         const e = this.els();
         const c = this.colorsFor(line);
+        this.adlibTextCleared = false;
 
         e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
             el.classList.add("fade-out"); el.classList.remove("fade-in");
@@ -263,9 +280,18 @@ const Lyrics = {
         }, 180);
     },
 
+    /* Clear ONLY the ad-lib text parts (keep the member name during the gap). */
+    clearAdlibText(){
+        const e = this.els();
+        const parts = e.adlibs.querySelectorAll(".adlib-original, .adlib-roman, .adlib-english, .adlib-text");
+        parts.forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
+        setTimeout(() => { parts.forEach(el => el.remove()); }, 180);
+    },
+
     clearAdlib(){
         if(this.adlibIndex === -1) return;
         this.adlibIndex = -1;
+        this.adlibTextCleared = false;
 
         const e = this.els();
         e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
