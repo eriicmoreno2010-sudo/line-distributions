@@ -74,6 +74,7 @@ Version: 3.0 — Lyrics
     max-width:100%;
     min-height:40px;              /* keeps height stable when empty -> no jump */
     line-height:1.4;
+    white-space:pre-line;         /* "\n" in the JSON becomes a real line break */
 }
 
 #original{
@@ -149,6 +150,7 @@ Version: 3.0 — Lyrics
 .adlib-text{
     position:relative;
     z-index:1;
+    white-space:pre-line;         /* "\n" in the JSON becomes a real line break */
 }
 
 #lyrics-section.multi-member #current-member,

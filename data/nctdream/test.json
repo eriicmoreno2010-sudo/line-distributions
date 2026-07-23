@@ -1,145 +1,427 @@
 {
   "group": "NCT DREAM",
   "song": "TEST (demo)",
-
   "video": "videos/moonlight.mp4",
-
-  "duration": 192.97,
-
+  "duration": 60,
   "members": [
-    { "name": "MARK",    "image": "images/avatars/mark.png",    "color": "#b353cd", "focus": 50, "lift": 3 },
-    { "name": "RENJUN",  "image": "images/avatars/renjun.png",  "color": "#ab842f", "focus": 50, "lift": 3 },
-    { "name": "JENO",    "image": "images/avatars/jeno.png",    "color": "#cb0c0c", "focus": 50, "lift": 3 },
-    { "name": "HAECHAN", "image": "images/avatars/haechan.png", "color": "#0089b6", "focus": 50, "lift": 3 },
-    { "name": "JAEMIN",  "image": "images/avatars/jaemin.png",  "color": "#1bcf72", "focus": 50, "lift": 3 },
-    { "name": "CHENLE",  "image": "images/avatars/chenle.png",  "color": "#008206", "focus": 50, "lift": 3 },
-    { "name": "JISUNG",  "image": "images/avatars/jisung.png",  "color": "#df068c", "focus": 50, "lift": 3 }
+    {
+      "name": "MARK",
+      "image": "images/avatars/mark.png",
+      "color": "#b353cd",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/avatars/renjun.png",
+      "color": "#ab842f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JENO",
+      "image": "images/avatars/jeno.png",
+      "color": "#cb0c0c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/avatars/haechan.png",
+      "color": "#0089b6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/avatars/jaemin.png",
+      "color": "#1bcf72",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/avatars/chenle.png",
+      "color": "#008206",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/avatars/jisung.png",
+      "color": "#df068c",
+      "focus": 50,
+      "lift": 3
+    }
   ],
-
   "lyrics": [
     {
-      "start": 3.00, "end": 5.00,
-      "members": ["JENO"],
-      "original": "", "romanization": "Yeah, test", "english": "",
+      "start": 2.22,
+      "end": 3.29,
+      "voice": [
+        [
+          2.37,
+          3.12
+        ]
+      ],
+      "members": [
+        "JENO"
+      ],
+      "original": "",
+      "romanization": "Yeah",
+      "english": "",
       "adlib": ""
     },
     {
-      "start": 5.50, "end": 9.00,
-      "members": ["HAECHAN"],
-      "original": "テスト行を歌う",
-      "romanization": "Tesuto gyou o utau",
-      "english": "Singing a test line",
+      "start": 3.65,
+      "end": 6.32,
+      "voice": [
+        [
+          4.25,
+          6.41
+        ]
+      ],
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "過ぎる今日に\ngoodbye",
+      "romanization": "Sugiru kyou\nni goodbye",
+      "english": "Goodbye to the day\nthat's passing",
       "adlib": ""
     },
     {
-      "start": 9.50, "end": 12.00,
-      "members": ["MARK"],
-      "original": "何が見える?",
-      "romanization": "Nani ga mieru?",
-      "english": "What do you see?",
+      "start": 6.76,
+      "end": 9.38,
+      "voice": [
+        [
+          7.1,
+          9.34
+        ]
+      ],
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "手を\n振ろう",
+      "romanization": "Te o\nfurou",
+      "english": "Let's wave\nour hands",
       "adlib": ""
     },
     {
-      "start": 12.50, "end": 16.50,
-      "members": ["CHENLE"],
-      "original": "窓の光",
-      "romanization": "Mado no hikari",
-      "english": "Light from the window",
-      "adlib": ""
-    },
-    {
-      "start": 17.00, "end": 19.00,
-      "members": ["CHENLE"],
-      "original": "", "romanization": "", "english": "",
+      "start": 9.51,
+      "end": 10.44,
+      "voice": [
+        [
+          9.51,
+          10.39
+        ]
+      ],
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
       "adlib": "Oh yeah"
     },
     {
-      "start": 19.50, "end": 23.00,
-      "members": ["JAEMIN"],
-      "original": "夢が目覚める",
-      "romanization": "Yume ga mezameru",
-      "english": "The dream awakens",
+      "start": 10.56,
+      "end": 11.92,
+      "voice": [
+        [
+          10.51,
+          11.97
+        ]
+      ],
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": "Oh yeah ey"
+    },
+    {
+      "start": 11.76,
+      "end": 14.44,
+      "voice": [
+        [
+          12.03,
+          14.45
+        ]
+      ],
+      "members": [
+        "RENJUN"
+      ],
+      "original": "数えて 1, 2, 3, now",
+      "romanization": "Kazoete 1, 2, 3, now",
+      "english": "Count 1, 2, 3, now",
       "adlib": ""
     },
     {
-      "start": 23.50, "end": 26.00,
-      "members": ["RENJUN"],
-      "original": "数えて now",
-      "romanization": "Kazoete now",
-      "english": "Count it now",
+      "start": 14.8,
+      "end": 17.16,
+      "voice": [
+        [
+          14.96,
+          17.18
+        ]
+      ],
+      "members": [
+        "RENJUN"
+      ],
+      "original": "",
+      "romanization": "Oh, tune in on",
+      "english": "",
       "adlib": ""
     },
     {
-      "start": 26.50, "end": 30.50,
-      "members": ["JENO", "JISUNG"],
-      "original": "二人で光る",
-      "romanization": "Futari de hikaru",
-      "english": "The two of us shine",
+      "start": 17.31,
+      "end": 19.48,
+      "voice": [
+        [
+          17.4,
+          19.65
+        ]
+      ],
+      "members": [
+        "MARK"
+      ],
+      "original": "何が見えるの?",
+      "romanization": "Nani ga mieru no?",
+      "english": "What can you see?",
       "adlib": ""
     },
     {
-      "start": 31.00, "end": 35.00,
-      "members": ["NCT DREAM"],
+      "start": 20.75,
+      "end": 23.45,
+      "voice": [
+        [
+          20.79,
+          23.57
+        ]
+      ],
+      "members": [
+        "CHENLE"
+      ],
+      "original": "窓に差し込む光",
+      "romanization": "Mado ni sashikomu hikari",
+      "english": "The light pouring in through the window",
+      "adlib": ""
+    },
+    {
+      "start": 24.5,
+      "end": 27.46,
+      "voice": [
+        [
+          24.8,
+          27.76
+        ]
+      ],
+      "members": [
+        "CHENLE"
+      ],
+      "original": "浴び照らすよ reflection",
+      "romanization": "Abi terasu yo reflection",
+      "english": "The reflection will shine on you",
+      "adlib": ""
+    },
+    {
+      "start": 27.58,
+      "end": 31.21,
+      "voice": [
+        [
+          27.72,
+          31.39
+        ]
+      ],
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "徐々に重なる波長夢が目覚める",
+      "romanization": "Jojo ni kasanaru hachou yume ga mezameru",
+      "english": "Wavelengths gradually overlap and the dream awakens",
+      "adlib": ""
+    },
+    {
+      "start": 31.3,
+      "end": 32.49,
+      "voice": [
+        [
+          31.35,
+          32.59
+        ]
+      ],
+      "members": [
+        "JENO",
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "All shining bright",
+      "english": "",
+      "adlib": ""
+    },
+    {
+      "start": 32.58,
+      "end": 34.1,
+      "voice": [
+        [
+          32.59,
+          34.23
+        ]
+      ],
+      "members": [
+        "RENJUN"
+      ],
+      "original": "",
+      "romanization": "Yeah, like a crystal",
+      "english": "",
+      "adlib": ""
+    },
+    {
+      "start": 34.23,
+      "end": 39.35,
+      "voice": [
+        [
+          34.33,
+          37.06
+        ],
+        [
+          37.24,
+          39.51
+        ]
+      ],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "Dancing in the moonlight, 弾ける瞬間",
       "romanization": "Dancing in the moonlight, hajikeru shunkan",
-      "english": "Dancing in the moonlight, I come alive",
+      "english": "Dancing in the moonlight, I come alive in this moment",
       "adlib": ""
     },
     {
-      "start": 35.50, "end": 37.80,
-      "members": ["JISUNG"],
-      "original": "夜空",
-      "romanization": "Yozora",
-      "english": "Night sky",
-      "adlib": true
-    },
-    {
-      "start": 38.00, "end": 42.00,
-      "members": ["MARK"],
-      "original": "今こそ here we go",
-      "romanization": "Ima koso here we go",
-      "english": "Now's the time, here we go",
+      "start": 39.44,
+      "end": 41.91,
+      "voice": [
+        [
+          39.52,
+          40.79
+        ],
+        [
+          41.05,
+          42.23
+        ]
+      ],
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Oway Oway O Oway Oway",
+      "english": "",
       "adlib": ""
     },
     {
-      "start": 42.50, "end": 46.00,
-      "members": ["HAECHAN"],
-      "original": "さめない夢",
-      "romanization": "Samenai yume",
-      "english": "A dream that never ends",
-      "adlib": ""
-    },
-    {
-      "start": 46.50, "end": 50.00,
-      "members": ["CHENLE"],
-      "original": "重力からの解放",
-      "romanization": "Juuryoku kara no kaihou",
-      "english": "Released from gravity",
-      "voice": [[46.50, 47.50], [48.50, 49.80]],
-      "adlib": ""
-    },
-    {
-      "start": 50.50, "end": 54.00,
-      "members": ["NCT DREAM"],
+      "start": 42.04,
+      "end": 47.3,
+      "voice": [
+        [
+          42.14,
+          44.7
+        ],
+        [
+          45.14,
+          47.45
+        ]
+      ],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "Singing to the night sky, 繋がる世界",
       "romanization": "Singing to the night sky, tsunagaru sekai",
       "english": "Singing to the night sky, the connected world",
       "adlib": ""
     },
     {
-      "start": 54.50, "end": 57.00,
-      "members": ["JENO"],
-      "original": "未来へ",
-      "romanization": "Mirai e",
-      "english": "To the future",
+      "start": 47.43,
+      "end": 49.97,
+      "voice": [
+        [
+          47.36,
+          48.58
+        ],
+        [
+          48.88,
+          50.01
+        ]
+      ],
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Oway Oway O Oway Oway",
+      "english": "",
       "adlib": ""
     },
     {
-      "start": 57.50, "end": 60.00,
-      "members": ["RENJUN"],
-      "original": "もっと revel",
-      "romanization": "Motto revel",
-      "english": "Revel some more",
+      "start": 50.11,
+      "end": 53.72,
+      "voice": [
+        [
+          50.18,
+          51.63
+        ],
+        [
+          52.2,
+          53.58
+        ]
+      ],
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "そう どこにいても, 感じる心",
+      "romanization": "Sou doko ni ite mo, kanjiru kokoro",
+      "english": "That’s right, wherevеr I am, my heart feels it",
+      "adlib": ""
+    },
+    {
+      "start": 53.89,
+      "end": 57.97,
+      "voice": [
+        [
+          54.17,
+          55.67
+        ],
+        [
+          56.08,
+          58.42
+        ]
+      ],
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "全身でもっと, 叫ぶのさ, ah, ah, ah",
+      "romanization": "Zenshin de motto, sakebu nosa, ah, ah, ah",
+      "english": "My body feels it more, we're gonna scream, ah, ah, ah",
+      "adlib": ""
+    },
+    {
+      "start": 58.07,
+      "end": 61.52,
+      "voice": [
+        [
+          58.1,
+          59.42
+        ],
+        [
+          60.06,
+          61.43
+        ]
+      ],
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "閃く「今」を, 輝かせよう",
+      "romanization": "Hirameku \"ima\" o, kagayakaseyou",
+      "english": "The dazzling \"now\", let's make it shine",
       "adlib": ""
     }
   ]
