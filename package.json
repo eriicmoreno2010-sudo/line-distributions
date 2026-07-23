@@ -1,0 +1,17 @@
+{
+  "name": "line-distributions-desktop",
+  "version": "1.0.0",
+  "description": "K-pop line distribution viewer, editor and 4K exporter (desktop app)",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.3.0"
+  }
+}

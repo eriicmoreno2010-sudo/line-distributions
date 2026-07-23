@@ -104,9 +104,45 @@ Hidden in the special ?rec / ?render / ?auto modes.
 
   function stop(){ if(rec && rec.state !== "inactive") rec.stop(); }
 
-  btn.onclick = () => { recording ? stop() : start(); };
+  // ---- Desktop app path: real frame-by-frame 4K export (no recording) ----
+  const desktop = window.desktop && window.desktop.isDesktop ? window.desktop : null;
+  let exporting = false;
+
+  async function desktopExport(){
+    if(exporting) return;
+    exporting = true;
+    btn.textContent = "⏳  Exportando…";
+    btn.style.background = "#d29a3b";
+    const song = new URLSearchParams(location.search).get("song") || null;
+    showHint("Renderizando fotograma a fotograma en 4K… puede tardar varios minutos. No cierres la app.");
+    const res = await window.desktop.exportVideo({ song });
+    exporting = false;
+    btn.textContent = "⬇  Exportar vídeo (4K)";
+    btn.style.background = "#7c5cff";
+    if(res && res.ok){ showHint("¡Listo! Vídeo 4K guardado en:\n" + res.out); }
+    else if(res && res.canceled){ hideHint(); }
+    else { showHint("Error al exportar: " + ((res && res.error) || "desconocido")); }
+    setTimeout(hideHint, 9000);
+  }
+
+  if(desktop){
+    btn.textContent = "⬇  Exportar vídeo (4K)";
+    window.desktop.onProgress(p => {
+      const pct = p.total ? Math.round(p.done / p.total * 100) : 0;
+      const label = p.phase === "results" ? "resultados" : "canción";
+      btn.textContent = `⏳  Exportando ${label} ${pct}%`;
+    });
+    btn.onclick = desktopExport;
+  }else{
+    btn.onclick = () => { recording ? stop() : start(); };
+  }
+
   document.addEventListener("keydown", e => {
-    if(e.key === "e" || e.key === "E"){ e.preventDefault(); recording ? stop() : start(); }
+    if(e.key === "e" || e.key === "E"){
+      e.preventDefault();
+      if(desktop) desktopExport();
+      else (recording ? stop() : start());
+    }
   });
 
   document.addEventListener("DOMContentLoaded", () => {
