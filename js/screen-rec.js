@@ -1,77 +1,116 @@
 /*
 =========================================
-In-browser recorder — press "R" to start/stop.
-Uses getDisplayMedia + MediaRecorder at a high bitrate so text and photos
-stay crisp. Exports .mp4 if the browser supports it, otherwise .webm.
+Export button — self-serve, one-click video export.
+Records the app in real time (smooth, all animations) at high bitrate and
+downloads the file. No extra tools. Press the button or "E".
+When Chrome asks what to share, pick "This tab / Esta pestaña" so the app's
+own audio is included and there is no sharing bar in the recording.
+Hidden in the special ?rec / ?render / ?auto modes.
 =========================================
 */
 (function(){
-  const TITLE = document.title;
-  let rec = null, chunks = [], stream = null, ext = "webm";
+  const p = new URLSearchParams(location.search);
+  if(p.get("rec") || p.get("render") || p.get("auto")) return;
+
+  let rec = null, chunks = [], stream = null, ext = "webm", recording = false;
 
   function pickMime(){
     const cands = [
-      "video/mp4;codecs=h264,aac",
+      "video/mp4;codecs=avc1.640028,mp4a.40.2",
       "video/mp4",
       "video/webm;codecs=vp9,opus",
-      "video/webm;codecs=vp9",
+      "video/webm;codecs=vp8,opus",
       "video/webm"
     ];
-    for(const c of cands){
+    for(const c of cands)
       if(window.MediaRecorder && MediaRecorder.isTypeSupported(c)){
         ext = c.indexOf("mp4") >= 0 ? "mp4" : "webm";
         return c;
       }
-    }
     ext = "webm"; return "video/webm";
   }
 
+  const btn = document.createElement("button");
+  btn.id = "export-btn";
+  btn.type = "button";
+  btn.textContent = "⬇  Exportar vídeo";
+  btn.style.cssText =
+    "position:fixed;bottom:20px;right:20px;z-index:2147483000;" +
+    "padding:13px 20px;font:800 15px system-ui,Segoe UI,sans-serif;letter-spacing:.3px;" +
+    "border:0;border-radius:12px;background:#7c5cff;color:#fff;cursor:pointer;" +
+    "box-shadow:0 8px 24px rgba(0,0,0,.45);transition:background .2s";
+  btn.onmouseenter = () => { if(!recording) btn.style.background = "#6a49f2"; };
+  btn.onmouseleave = () => { if(!recording) btn.style.background = "#7c5cff"; };
+
+  const hint = document.createElement("div");
+  hint.style.cssText =
+    "position:fixed;bottom:70px;right:20px;z-index:2147483000;max-width:320px;" +
+    "padding:10px 14px;font:600 13px system-ui,sans-serif;line-height:1.4;" +
+    "background:#15151d;color:#cfcfe0;border:1px solid #33334a;border-radius:10px;display:none";
+
+  function showHint(t){ hint.textContent = t; hint.style.display = "block"; }
+  function hideHint(){ hint.style.display = "none"; }
+
   async function start(){
     if(!navigator.mediaDevices || !navigator.mediaDevices.getDisplayMedia){
-      alert("Tu navegador no soporta la grabación integrada. Usa Chrome o Edge.");
+      alert("Tu navegador no soporta la exportación integrada. Usa Chrome o Edge.");
       return;
     }
     try{
       stream = await navigator.mediaDevices.getDisplayMedia({
-        video:{ frameRate:60 },
-        audio:true
+        video: { frameRate: 60 },
+        audio: true,
+        preferCurrentTab: true
       });
-    }catch(e){ return; }
+    }catch(e){ return; }   // user cancelled the picker
 
     chunks = [];
     rec = new MediaRecorder(stream, {
       mimeType: pickMime(),
-      videoBitsPerSecond: 25000000,
+      videoBitsPerSecond: 40000000,
       audioBitsPerSecond: 320000
     });
     rec.ondataavailable = e => { if(e.data && e.data.size) chunks.push(e.data); };
     rec.onstop = () => {
-      const blob = new Blob(chunks, { type: rec ? rec.mimeType : "video/webm" });
+      const blob = new Blob(chunks, { type: (rec && rec.mimeType) || "video/webm" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
-      a.href = url; a.download = "line-distribution." + ext; a.click();
-      setTimeout(() => URL.revokeObjectURL(url), 5000);
+      a.href = url; a.download = "moonlight-line-distribution." + ext; a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 8000);
       if(stream) stream.getTracks().forEach(t => t.stop());
-      stream = null; rec = null;
-      document.title = TITLE;
+      stream = null; rec = null; recording = false;
+      btn.textContent = "⬇  Exportar vídeo";
+      btn.style.background = "#7c5cff";
+      showHint("¡Listo! Se ha descargado el vídeo. Súbelo a YouTube.");
+      setTimeout(hideHint, 6000);
     };
+    // if the user stops sharing from Chrome's UI, finish cleanly
     stream.getVideoTracks()[0].addEventListener("ended", () => {
       if(rec && rec.state !== "inactive") rec.stop();
     });
-    rec.start();
-    document.title = "● REC — " + TITLE;
 
-    // el video se queda en pausa en 0 (no arranca solo); dale a ESPACIO
+    recording = true;
+    btn.textContent = "■  Detener y guardar";
+    btn.style.background = "#d23b5b";
+    rec.start(2000);   // flush every 2s so long recordings never break
+
     const v = document.getElementById("video");
-    if(v){ try{ v.pause(); v.currentTime = 0; }catch(e){} }
+    if(v){
+      try{ v.currentTime = 0; v.play(); }catch(e){}
+      showHint("Grabando la canción entera… se descargará sola al terminar. (Puedes pulsar Detener cuando quieras.)");
+      v.addEventListener("ended", () => { if(rec && rec.state !== "inactive") rec.stop(); }, { once:true });
+    }
   }
 
   function stop(){ if(rec && rec.state !== "inactive") rec.stop(); }
 
+  btn.onclick = () => { recording ? stop() : start(); };
   document.addEventListener("keydown", e => {
-    if(e.key === "r" || e.key === "R"){
-      e.preventDefault();
-      (rec && rec.state === "recording") ? stop() : start();
-    }
+    if(e.key === "e" || e.key === "E"){ e.preventDefault(); recording ? stop() : start(); }
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.appendChild(hint);
+    document.body.appendChild(btn);
   });
 })();
