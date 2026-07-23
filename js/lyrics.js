@@ -19,6 +19,7 @@ const Lyrics = {
     centralIndex: -1,
     adlibIndex: -1,
     lastCentralMembers: null,   // for name persistence across same-singer lines
+    lastAdlibMembers: null,
 
     els(){
         return {
@@ -249,26 +250,38 @@ const Lyrics = {
         const c = this.colorsFor(line);
         this.adlibTextCleared = false;
 
-        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
-            el.classList.add("fade-out"); el.classList.remove("fade-in");
-        });
+        const membersKey = line.members.join("|");
+        const sameName = this.lastAdlibMembers === membersKey;
+        this.lastAdlibMembers = membersKey;
+
+        // Persistent name element + a text container (mirrors the central panel),
+        // so the name doesn't flicker/rebuild on every ad-lib.
+        let nameEl = e.adlibs.querySelector(".adlib-member");
+        let textWrap = e.adlibs.querySelector(".adlib-textwrap");
+        if(!nameEl || !textWrap){
+            e.adlibs.replaceChildren();
+            nameEl = document.createElement("div"); nameEl.className = "adlib-member";
+            textWrap = document.createElement("div"); textWrap.className = "adlib-textwrap";
+            e.adlibs.append(nameEl, textWrap);
+        }
+
+        if(!sameName){ nameEl.classList.add("fade-out"); nameEl.classList.remove("fade-in"); }
+        [...textWrap.children].forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
 
         setTimeout(() => {
-            e.adlibs.replaceChildren();
+            if(!sameName) nameEl.textContent = line.members.join("  &  ");
             const parts = [];
             const addPart = (cls, text) => {
                 if(!text) return;
-                const el2 = document.createElement("div");
-                el2.className = cls + " fade-out";
-                el2.textContent = text;
-                parts.push(el2);
+                const d = document.createElement("div");
+                d.className = cls + " fade-out"; d.textContent = text;
+                parts.push(d);
             };
-            addPart("adlib-member",   line.members.join("  &  "));
             addPart("adlib-original", line.original);
             addPart("adlib-roman",    line.romanization);
             addPart("adlib-english",  line.english);
             addPart("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
-            e.adlibs.append(...parts);
+            textWrap.replaceChildren(...parts);
 
             e.adlibs.style.setProperty("--accent", c.accent);
             e.adlibs.style.setProperty("--accent-secondary", c.secondaryAccent);
@@ -279,7 +292,8 @@ const Lyrics = {
             e.adlibs.classList.toggle("group", c.isGroupLine);
 
             requestAnimationFrame(() => {
-                parts.forEach(el2 => { el2.classList.remove("fade-out"); el2.classList.add("fade-in"); });
+                nameEl.classList.remove("fade-out"); nameEl.classList.add("fade-in");
+                parts.forEach(d => { d.classList.remove("fade-out"); d.classList.add("fade-in"); });
             });
         }, 180);
     },
@@ -287,7 +301,9 @@ const Lyrics = {
     /* Clear ONLY the ad-lib text parts (keep the member name during the gap). */
     clearAdlibText(){
         const e = this.els();
-        const parts = e.adlibs.querySelectorAll(".adlib-original, .adlib-roman, .adlib-english, .adlib-text");
+        const textWrap = e.adlibs.querySelector(".adlib-textwrap");
+        if(!textWrap) return;
+        const parts = [...textWrap.children];
         parts.forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
         setTimeout(() => { parts.forEach(el => el.remove()); }, 180);
     },
@@ -296,11 +312,10 @@ const Lyrics = {
         if(this.adlibIndex === -1) return;
         this.adlibIndex = -1;
         this.adlibTextCleared = false;
+        this.lastAdlibMembers = null;
 
         const e = this.els();
-        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
-            el.classList.add("fade-out"); el.classList.remove("fade-in");
-        });
+        [...e.adlibs.children].forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
 
         setTimeout(() => {
             e.adlibs.replaceChildren();

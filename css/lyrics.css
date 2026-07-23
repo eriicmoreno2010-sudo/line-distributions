@@ -153,6 +153,10 @@ Version: 3.0 — Lyrics
     white-space:pre-line;         /* "\n" in the JSON becomes a real line break */
 }
 
+/* wrapper for the ad-lib text parts; display:contents so the section's flex
+   layout is unchanged while the member name stays a persistent element */
+.adlib-textwrap{ display:contents; }
+
 #lyrics-section.multi-member #current-member,
 #lyrics-section.multi-member #original,
 #lyrics-section.multi-member #romanized,
