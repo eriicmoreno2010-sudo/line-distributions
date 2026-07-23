@@ -91,15 +91,26 @@ const Lyrics = {
             }
         }
 
-        // CENTRAL — active line shows name+text; in a gap the text goes at once
-        // but the name is held until HOLD seconds pass with nobody singing.
+        // CENTRAL — active line shows name+text. When it ends, look AHEAD to the
+        // next central line: if that gap is < HOLD, the text goes but the name is
+        // kept to bridge it; if the gap is >= HOLD, name+text disappear together
+        // right away (no lone name lingering for a second).
         if(ci !== -1){
             if(ci !== this.centralIndex){ this.centralIndex = ci; this.showCentral(lyrics[ci]); }
         } else if(this.centralIndex !== -1){
             const shown = lyrics[this.centralIndex];
-            if(!this.centralTextCleared){ this.clearCentralText(); this.centralTextCleared = true; }
-            if(currentTime >= shown.end + this.HOLD || currentTime < shown.start)
-                this.clearCentral();
+            let nextStart = Infinity;
+            for(let k = 0; k < lyrics.length; k++){
+                const l = lyrics[k];
+                if(!isAdlibLine(l) && l.start >= shown.end - 1e-3 && l.start < nextStart) nextStart = l.start;
+            }
+            const gap = nextStart - shown.end;
+            if(currentTime < shown.start || gap >= this.HOLD){
+                this.clearCentral();                 // long gap (or seek back): name + text go together
+            } else if(!this.centralTextCleared){
+                this.clearCentralText();             // short gap: text goes, name bridges it
+                this.centralTextCleared = true;
+            }
         }
 
         // AD-LIB — clears fully when nothing is active
