@@ -73,7 +73,7 @@ Version: 3.0 — Lyrics
        maps across the actual letters — full width would drop the edge colours */
     max-width:100%;
     min-height:40px;              /* keeps height stable when empty -> no jump */
-    line-height:1.25;             /* tight within a field's own two lines */
+    line-height:1.4;
     white-space:pre-line;         /* "\n" in the JSON becomes a real line break */
 }
 
@@ -84,14 +84,14 @@ Version: 3.0 — Lyrics
 }
 
 #romanized{
-    margin-top:28px;              /* clear gap BETWEEN fields (> the line gap within) */
+    margin-top:12px;
     font-size:30px;
     font-weight:700;
     color:#fff;
 }
 
 #english{
-    margin-top:28px;
+    margin-top:12px;
     font-size:30px;
     font-weight:700;
     color:#fff;
