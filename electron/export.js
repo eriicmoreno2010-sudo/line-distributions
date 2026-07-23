@@ -1,23 +1,24 @@
 /*
 =========================================
-Frame-by-frame exporter (runs inside the desktop app).
-Uses headless Chrome (puppeteer-core, driving the system Chrome) because it can
-render ABOVE the physical screen resolution (Electron windows can't) — so we get
-true 4K. Each frame: seek the MV + refresh the overlays, screenshot, pipe into
-ffmpeg with the clean official audio. Renders at the MV's native fps (no judder).
-Perfect A/V sync by construction. No screen recording, no quality loss.
+Frame-by-frame exporter (runs inside the desktop app). NO screen recording.
+Uses headless Chrome (puppeteer-core → system Chrome) with a VIRTUAL CLOCK
+(CDP Emulation.setVirtualTimePolicy): each output frame we (1) seek the MV to
+that instant, (2) advance the virtual clock by exactly 1/fps so the app's OWN
+animations — ranking glide, lyric fades, halos — progress one real step, then
+(3) screenshot. The app's native animations render smoothly and deterministically,
+without faking anything. Audio is muxed from the clean official track. Perfect sync.
 =========================================
 */
 const { spawn } = require("child_process");
 const path = require("path");
 const fs = require("fs");
-// puppeteer-core is ESM-only -> load it via dynamic import (require() would throw).
+// puppeteer-core is ESM-only -> dynamic import.
 
 function findChrome(){
   const cands = [
     "C:/Program Files/Google/Chrome/Application/chrome.exe",
     "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
-    process.env.LOCALAPPDATA + "/Google/Chrome/Application/chrome.exe",
+    (process.env.LOCALAPPDATA || "") + "/Google/Chrome/Application/chrome.exe",
     "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
   ];
   for(const c of cands){ try{ if(c && fs.existsSync(c)) return c; }catch(e){} }
@@ -30,23 +31,13 @@ function fileUrl(root, song){
   return u;
 }
 
-function jsSeek(t){
-  return `(async()=>{
-    const v=document.getElementById('video');
-    await new Promise(r=>{ const d=()=>r(); v.addEventListener('seeked',d,{once:true});
-      try{ v.currentTime=${t}; }catch(e){ r(); } setTimeout(d,4000); });
-    try{ Engine.update(${t}); }catch(e){}
-    try{ Ranking.updateAt(${t}); }catch(e){}
-    try{ const c=document.getElementById('timeline-cursor'); if(c) c.style.left=(${t}/SONG.duration*100)+'%'; }catch(e){}
-  })()`;
-}
-
-// opts: { out, root, song, scale=2, fps=24000/1001, resultsHold=12, maxDur, ffmpeg }
+// opts: { out, root, song, scale, fps, resultsHold, maxDur, ffmpeg, chrome }
 async function runExport(opts, onProgress){
   const chrome = opts.chrome || findChrome();
-  if(!chrome) throw new Error("No se encontró Chrome/Edge instalado para el render.");
-  const scale = opts.scale || 2;
-  const fps = opts.fps || (24000 / 1001);
+  if(!chrome) throw new Error("No se encontró Chrome/Edge para el render.");
+  const scale = opts.scale || 1;                 // 1 = 1080p, 2 = 4K
+  const fps = opts.fps || (24000 / 1001);        // MV native fps
+  const budget = 1000 / fps;                     // ms of virtual time per frame
   const resultsHold = (opts.resultsHold != null) ? opts.resultsHold : 12;
 
   const puppeteer = (await import("puppeteer-core")).default;
@@ -69,12 +60,31 @@ async function runExport(opts, onProgress){
     const songFrames = Math.round(dur * fps);
     const videoAbs = path.join(opts.root, info.video.replace(/\//g, path.sep));
 
-    // freeze animations (exact per-frame state) + hide UI chrome
+    // hide only the UI chrome — DON'T freeze animations (the virtual clock drives them)
     await page.addStyleTag({ content:
-      "*{transition:none !important;animation:none !important;cursor:none !important}" +
-      "#export-btn,#export-hud,#lib-back{display:none !important}" +
+      "*{cursor:none !important}#export-btn,#lib-back{display:none !important}" +
       "#video::-webkit-media-controls,#video::-webkit-media-controls-enclosure,#video::-webkit-media-controls-panel{display:none !important}" });
-    await page.evaluate(() => { const v=document.getElementById("video"); v.removeAttribute("controls"); v.pause(); v.muted=true; });
+    await page.evaluate(() => {
+      const v = document.getElementById("video");
+      v.removeAttribute("controls"); v.pause(); v.muted = true;
+    });
+
+    const cli = await page.target().createCDPSession();
+    await cli.send("Emulation.setVirtualTimePolicy", { policy: "pause" });
+
+    // Put the MV on frame t, then give the media pipeline a little REAL time to
+    // decode it (Node timers run regardless of the paused virtual clock).
+    async function seekWait(t){
+      await page.evaluate((tt) => { document.getElementById("video").currentTime = tt; }, t);
+      await new Promise(r => setTimeout(r, 30));
+    }
+    // Advance the virtual clock so rAF/setTimeout/CSS animations step forward
+    // (and the freshly-decoded MV frame gets committed to the compositor).
+    async function advance(ms){
+      const done = new Promise(r => cli.once("Emulation.virtualTimeBudgetExpired", r));
+      await cli.send("Emulation.setVirtualTimePolicy", { policy: "advance", budget: ms });
+      await done;
+    }
 
     const ff = spawn(opts.ffmpeg || "ffmpeg", [
       "-y","-loglevel","error",
@@ -88,20 +98,22 @@ async function runExport(opts, onProgress){
     const ffClose = new Promise((res, rej) => ff.on("close", c => c===0 ? res() : rej(new Error("ffmpeg "+c+": "+fferr.slice(-400)))));
     const write = (b) => ff.stdin.write(b) ? Promise.resolve() : new Promise(r => ff.stdin.once("drain", r));
 
-    for(let i=0;i<songFrames;i++){
-      await page.evaluate(jsSeek(i/fps));
-      await write(await page.screenshot({ type:"jpeg", quality:96 }));
-      if(i % 8 === 0 && onProgress) onProgress({ phase:"song", done:i, total:songFrames });
+    // ---- song ----
+    for(let i = 0; i < songFrames; i++){
+      await seekWait((i + 0.5) / fps);   // MV frame centre → crisp, no judder
+      await advance(budget);             // app's own animations progress one step
+      await write(await page.screenshot({ type: "jpeg", quality: 96 }));
+      if(i % 8 === 0 && onProgress) onProgress({ phase: "song", done: i, total: songFrames });
     }
 
+    // ---- results (real reveal animation, driven by the virtual clock) ----
     if(resultsHold > 0){
       await page.evaluate(() => { const v=document.getElementById("video"); try{ v.currentTime=SONG.duration; }catch(e){} v.dispatchEvent(new Event("ended")); });
-      await new Promise(r => setTimeout(r, 7000));   // let the top-down reveal finish
-      const resBuf = await page.screenshot({ type:"jpeg", quality:96 });
       const resFrames = Math.round(resultsHold * fps);
-      for(let i=0;i<resFrames;i++){
-        await write(resBuf);
-        if(i % 8 === 0 && onProgress) onProgress({ phase:"results", done:i, total:resFrames });
+      for(let i = 0; i < resFrames; i++){
+        await advance(budget);
+        await write(await page.screenshot({ type: "jpeg", quality: 96 }));
+        if(i % 8 === 0 && onProgress) onProgress({ phase: "results", done: i, total: resFrames });
       }
     }
 
