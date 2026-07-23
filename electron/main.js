@@ -40,7 +40,7 @@ function createWindow(){
       preload: path.join(__dirname, "preload.js")
     }
   });
-  win.loadFile(path.join(ROOT, "index.html"));
+  win.loadFile(path.join(ROOT, "library.html"));
 
   if(SELFTEST){
     win.webContents.once("did-finish-load", async () => {
@@ -73,6 +73,34 @@ ipcMain.handle("export-video", async (evt, args) => {
   }catch(e){
     return { ok: false, error: e.message };
   }
+});
+
+// List every song JSON under data/ for the library screen.
+ipcMain.handle("list-songs", async () => {
+  const out = [];
+  const walk = (d) => {
+    let entries = [];
+    try{ entries = fs.readdirSync(d); }catch(e){ return; }
+    for(const name of entries){
+      const full = path.join(d, name);
+      let st; try{ st = fs.statSync(full); }catch(e){ continue; }
+      if(st.isDirectory()) walk(full);
+      else if(name.toLowerCase().endsWith(".json")){
+        try{
+          const j = JSON.parse(fs.readFileSync(full, "utf8"));
+          out.push({
+            path: path.relative(ROOT, full).replace(/\\/g, "/"),
+            group: j.group || "",
+            song: j.song || name.replace(/\.json$/i, ""),
+            duration: j.duration || 0,
+            members: (j.members || []).map(m => ({ name: m.name, image: m.image, color: m.color }))
+          });
+        }catch(e){}
+      }
+    }
+  };
+  walk(path.join(ROOT, "data"));
+  return out;
 });
 
 app.whenReady().then(() => {

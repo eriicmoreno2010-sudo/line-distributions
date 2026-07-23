@@ -72,7 +72,7 @@ async function runExport(opts, onProgress){
     // freeze animations (exact per-frame state) + hide UI chrome
     await page.addStyleTag({ content:
       "*{transition:none !important;animation:none !important;cursor:none !important}" +
-      "#export-btn,#export-hud{display:none !important}" +
+      "#export-btn,#export-hud,#lib-back{display:none !important}" +
       "#video::-webkit-media-controls,#video::-webkit-media-controls-enclosure,#video::-webkit-media-controls-panel{display:none !important}" });
     await page.evaluate(() => { const v=document.getElementById("video"); v.removeAttribute("controls"); v.pause(); v.muted=true; });
 

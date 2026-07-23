@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Line Distributions — Biblioteca</title>
+<style>
+  :root{ --bg:#0b0b10; --panel:#15151d; --panel2:#1b1b26; --border:#2a2a3a; --text:#f0f0f6; --text2:#9a9ab0; --accent:#7c5cff; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{ background:var(--bg); color:var(--text); font-family:"Segoe UI",Inter,Arial,sans-serif; padding:36px 44px; overflow-y:auto; }
+  header{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:28px; }
+  h1{ font-size:30px; font-weight:900; letter-spacing:.5px; }
+  h1 span{ color:var(--accent); }
+  .sub{ color:var(--text2); font-size:14px; margin-top:4px; }
+  #grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:20px; }
+  .card{ background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:20px; display:flex; flex-direction:column; gap:14px; }
+  .card .grp{ color:var(--text2); font-size:12px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; }
+  .card .name{ font-size:24px; font-weight:900; line-height:1.1; }
+  .card .meta{ color:var(--text2); font-size:13px; }
+  .avatars{ display:flex; }
+  .avatars img{ width:40px; height:40px; border-radius:50%; object-fit:cover; border:2px solid var(--panel); margin-left:-10px; background:var(--panel2); }
+  .avatars img:first-child{ margin-left:0; }
+  .actions{ display:flex; gap:10px; margin-top:4px; }
+  button{ flex:1; padding:11px 14px; font:800 14px "Segoe UI",sans-serif; border:0; border-radius:10px; cursor:pointer; }
+  .open{ background:var(--panel2); color:var(--text); border:1px solid var(--border); }
+  .open:hover{ background:#232333; }
+  .exp{ background:var(--accent); color:#fff; }
+  .exp:hover{ background:#6a49f2; }
+  .empty{ color:var(--text2); font-size:15px; padding:40px 0; }
+  #overlay{ position:fixed; inset:0; background:rgba(8,8,12,.92); display:none; flex-direction:column; align-items:center; justify-content:center; gap:18px; z-index:100; }
+  #overlay.show{ display:flex; }
+  #ovtitle{ font-size:20px; font-weight:800; }
+  #ovsub{ color:var(--text2); font-size:14px; max-width:600px; text-align:center; }
+  #bar{ width:min(520px,70vw); height:14px; background:var(--panel2); border-radius:999px; overflow:hidden; border:1px solid var(--border); }
+  #fill{ height:100%; width:0; background:var(--accent); transition:width .2s; }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Line <span>Distributions</span></h1>
+      <div class="sub">Biblioteca de canciones — abre para ver, o exporta el vídeo en 4K.</div>
+    </div>
+  </header>
+
+  <div id="grid"></div>
+
+  <div id="overlay">
+    <div id="ovtitle">Exportando vídeo 4K…</div>
+    <div id="bar"><div id="fill"></div></div>
+    <div id="ovsub">Renderizando fotograma a fotograma. Puede tardar varios minutos. No cierres la app.</div>
+  </div>
+
+<script src="js/library.js"></script>
+</body>
+</html>

@@ -7,5 +7,6 @@ const { contextBridge, ipcRenderer } = require("electron");
 contextBridge.exposeInMainWorld("desktop", {
   isDesktop: true,
   exportVideo: (args) => ipcRenderer.invoke("export-video", args || {}),
-  onProgress: (cb) => ipcRenderer.on("export-progress", (_e, p) => cb(p))
+  onProgress: (cb) => ipcRenderer.on("export-progress", (_e, p) => cb(p)),
+  listSongs: () => ipcRenderer.invoke("list-songs")
 });
