@@ -32,6 +32,7 @@
 </head>
 <body>
 <div id="wrap">
+  <a href="library.html" style="align-self:flex-start;color:#cfcfe0;text-decoration:none;background:#15151d;border:1px solid #33334a;border-radius:8px;padding:8px 12px;font-weight:700;font-size:13px">← Biblioteca</a>
   <h1>ENCUADRE DE FOTOS DEL RANKING</h1>
   <div id="who">—</div>
 
@@ -85,8 +86,9 @@ const zoom = document.getElementById("zoom");
 const vy = document.getElementById("vy");
 const vx = document.getElementById("vx");
 
-fetch("data/nctdream/moonlight.json").then(r=>r.json()).then(d=>{
-    const list = d.members.map(m => ({ name:m.name, src:"images/"+m.name.toLowerCase()+".png" }));
+const SONG_URL = new URLSearchParams(location.search).get("song") || "data/nctdream/moonlight.json";
+fetch(SONG_URL).then(r=>r.json()).then(d=>{
+    const list = d.members.map(m => ({ name:m.name, src: m.image }));
     let loaded = 0;
     list.forEach(m=>{
         m.img = new Image();
