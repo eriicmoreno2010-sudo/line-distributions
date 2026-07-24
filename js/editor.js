@@ -289,6 +289,7 @@
       btn.textContent = res.committed ? "✓ Guardado y subido a GitHub" : "✓ Guardado (ya estaba al día)";
     } else {
       btn.textContent = "✓ Guardado en el PC (no se pudo subir)";
+      btn.title = res.gitError ? ("git: " + res.gitError) : "";
       if(res.gitError) console.warn("git:", res.gitError);
     }
     btn.disabled = false;

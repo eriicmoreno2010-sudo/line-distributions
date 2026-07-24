@@ -15,14 +15,25 @@ const { runExport } = require("./export");
 
 const ROOT = path.join(__dirname, "..");
 
+// Resolve git: prefer the standard Windows install path, fall back to PATH.
+const GIT = (function(){
+  const cands = [
+    "C:\\Program Files\\Git\\cmd\\git.exe",
+    "C:\\Program Files\\Git\\bin\\git.exe",
+    "C:\\Program Files (x86)\\Git\\cmd\\git.exe"
+  ];
+  for(const c of cands){ try{ if(fs.existsSync(c)) return c; }catch(e){} }
+  return "git";
+})();
+
 // Run a git command in the repo root; never throws (returns code/out/err).
 function git(args){
   return new Promise(resolve => {
-    execFile("git", args, { cwd: ROOT, windowsHide: true, maxBuffer: 16 * 1024 * 1024 },
+    execFile(GIT, args, { cwd: ROOT, windowsHide: true, maxBuffer: 16 * 1024 * 1024 },
       (err, stdout, stderr) => resolve({
         code: err ? (typeof err.code === "number" ? err.code : 1) : 0,
         out: (stdout || "").trim(),
-        err: (stderr || "").trim()
+        err: (stderr || "").trim() || (err && err.message) || ""
       }));
   });
 }
