@@ -10,9 +10,22 @@ Desktop app (Electron) — main process.
 const { app, BrowserWindow, ipcMain, dialog } = require("electron");
 const path = require("path");
 const fs = require("fs");
+const { execFile } = require("child_process");
 const { runExport } = require("./export");
 
 const ROOT = path.join(__dirname, "..");
+
+// Run a git command in the repo root; never throws (returns code/out/err).
+function git(args){
+  return new Promise(resolve => {
+    execFile("git", args, { cwd: ROOT, windowsHide: true, maxBuffer: 16 * 1024 * 1024 },
+      (err, stdout, stderr) => resolve({
+        code: err ? (typeof err.code === "number" ? err.code : 1) : 0,
+        out: (stdout || "").trim(),
+        err: (stderr || "").trim()
+      }));
+  });
+}
 function argVal(flag){ const i = process.argv.indexOf(flag); return i !== -1 ? process.argv[i + 1] : null; }
 const EXPORT_OUT = argVal("--export");
 const SELFTEST   = process.argv.includes("--selftest");
@@ -115,11 +128,28 @@ ipcMain.handle("load-song", async (_e, relPath) => {
   catch(e){ return { ok: false, error: e.message }; }
 });
 ipcMain.handle("save-song", async (_e, args) => {
+  // 1) Write the file to disk.
   try{
     const full = path.join(ROOT, args.path);
     fs.writeFileSync(full, JSON.stringify(args.data, null, 2), "utf8");
-    return { ok: true };
   }catch(e){ return { ok: false, error: e.message }; }
+
+  // 2) Auto commit + push just this file (so every save lands on GitHub).
+  const res = { ok: true, committed: false, pushed: false, gitError: null };
+  try{
+    await git(["add", "--", args.path]);
+    const staged = await git(["diff", "--cached", "--quiet", "--", args.path]); // code!=0 => has changes
+    if(staged.code !== 0){
+      const song = (args.data && args.data.song) ? args.data.song : args.path;
+      const c = await git(["commit", "-m", "Update " + song + " line distribution", "--", args.path]);
+      if(c.code === 0) res.committed = true;
+      else res.gitError = c.err || c.out;
+    }
+    const p = await git(["push"]);
+    if(p.code === 0) res.pushed = true;
+    else res.gitError = (res.gitError ? res.gitError + " | " : "") + (p.err || p.out);
+  }catch(e){ res.gitError = e.message; }
+  return res;
 });
 
 app.whenReady().then(() => {

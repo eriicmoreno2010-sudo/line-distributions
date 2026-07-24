@@ -280,10 +280,19 @@
   }
 
   async function save(){
-    const res = await window.desktop.saveSong(songPath, song);
     const btn = $("#save");
-    btn.textContent = res.ok ? "✓ Guardado" : "Error";
-    setTimeout(()=>btn.textContent="Guardar", 1500);
+    btn.disabled = true; btn.textContent = "⏳ Guardando y subiendo…";
+    const res = await window.desktop.saveSong(songPath, song);
+    if(!res.ok){
+      btn.textContent = "✕ Error al guardar";
+    } else if(res.pushed){
+      btn.textContent = res.committed ? "✓ Guardado y subido a GitHub" : "✓ Guardado (ya estaba al día)";
+    } else {
+      btn.textContent = "✓ Guardado en el PC (no se pudo subir)";
+      if(res.gitError) console.warn("git:", res.gitError);
+    }
+    btn.disabled = false;
+    setTimeout(()=>btn.textContent="Guardar y subir", 2600);
   }
 
   // controls
