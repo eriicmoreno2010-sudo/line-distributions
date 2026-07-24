@@ -31,7 +31,6 @@
         <button class="open">▶  Abrir</button>
         <button class="edit">✎  Editar</button>
         <button class="fotos">🖼  Fotos</button>
-        <button class="exp">⬇  Exportar 4K</button>
       </div>`;
     el.querySelector(".open").onclick = () => {
       location.href = "index.html?song=" + encodeURIComponent(song.path);
@@ -42,7 +41,6 @@
     el.querySelector(".fotos").onclick = () => {
       location.href = "photos.html?song=" + encodeURIComponent(song.path);
     };
-    el.querySelector(".exp").onclick = () => doExport(song);
     return el;
   }
 
