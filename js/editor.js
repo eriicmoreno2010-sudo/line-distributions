@@ -2,7 +2,7 @@
 (function(){
   const $ = s => document.querySelector(s);
   const video = $("#vid"), listEl = $("#list");
-  let song = null, songPath = null, sel = 0;
+  let song = null, songPath = null, sel = 0, awaitingEnd = false;
 
   const fmt = t => { t = Math.max(0, t||0); const m=Math.floor(t/60), s=(t%60); return m+":"+String(Math.floor(s)).padStart(2,"0"); };
   const abbr = n => n.slice(0,3).toUpperCase();
@@ -19,6 +19,7 @@
     $("#title").textContent = song.song || "";
     $("#grp").textContent = song.group || "";
     renderLines();
+    updateTapUI();
     requestAnimationFrame(tick);
   }
 
@@ -33,11 +34,17 @@
     row.className = "row"; row.dataset.i = i;
 
     const num = document.createElement("div"); num.className = "num"; num.textContent = i+1;
+    num.title = "seleccionar"; num.onclick = () => { sel = i; awaitingEnd = false; highlightSel(); updateTapUI(); };
 
     const txt = document.createElement("div"); txt.className = "txt";
-    txt.innerHTML = `<div class="rom"></div><div class="orig"></div>`;
-    txt.querySelector(".rom").textContent = l.romanization || l.original || l.english || "(vacío)";
-    txt.querySelector(".orig").textContent = l.original || "";
+    const mkf = (cls, val, ph) => { const inp = document.createElement("input"); inp.className = "f " + cls; inp.value = val || ""; inp.placeholder = ph; return inp; };
+    const fo = mkf("orig", l.original, "original (coreano)");
+    const fr = mkf("rom", l.romanization, "romanización");
+    const fe = mkf("eng", l.english, "inglés");
+    fo.onchange = () => l.original = fo.value;
+    fr.onchange = () => l.romanization = fr.value;
+    fe.onchange = () => l.english = fe.value;
+    txt.append(fo, fr, fe);
 
     const chips = document.createElement("div"); chips.className = "chips";
     (song.members||[]).forEach(m => {
@@ -71,14 +78,18 @@
     times.append(si, sb, ei, eb);
 
     const rb = document.createElement("div"); rb.className="rowbtns";
+    const ins = document.createElement("button"); ins.textContent="＋"; ins.title="insertar línea vacía debajo";
+    ins.onclick = () => { song.lyrics.splice(i+1, 0, { start:0, end:0, members:[], original:"", romanization:"", english:"" }); sel = i+1; renderLines(); };
     const mg = document.createElement("button"); mg.textContent="unir ↓"; mg.title="juntar con la siguiente línea";
     mg.onclick = () => mergeDown(i);
     const del = document.createElement("button"); del.textContent="✕"; del.title="borrar línea";
-    del.onclick = () => { song.lyrics.splice(i,1); if(sel>=song.lyrics.length) sel=song.lyrics.length-1; renderLines(); };
-    rb.append(mg, del);
+    del.onclick = () => {
+      if(!confirm("¿Borrar esta línea?\n\n" + (l.romanization || l.original || "(vacía)"))) return;
+      song.lyrics.splice(i,1); if(sel>=song.lyrics.length) sel=song.lyrics.length-1; renderLines();
+    };
+    rb.append(ins, mg, del);
 
     row.append(num, txt, chips, times, rb);
-    row.onclick = (e) => { if(e.target===row||e.target===num||e.target.classList.contains("rom")||e.target.classList.contains("orig")||e.target===txt){ sel=i; highlightSel(); } };
     return row;
   }
 
@@ -136,14 +147,29 @@
     requestAnimationFrame(tick);
   }
 
-  function markStart(){
+  // S toggles: 1st press = start of the selected line, 2nd press = end (+advance).
+  function tapS(){
     if(!song.lyrics.length) return;
     const t = +video.currentTime.toFixed(2);
-    song.lyrics[sel].start = t;
-    if(sel>0) song.lyrics[sel-1].end = t;
-    // refresh the two affected rows' inputs
-    updateRowTimes(sel); if(sel>0) updateRowTimes(sel-1);
-    if(sel < song.lyrics.length-1){ sel++; highlightSel(); }
+    if(!awaitingEnd){
+      song.lyrics[sel].start = t;
+      awaitingEnd = true;
+      updateRowTimes(sel);
+    } else {
+      song.lyrics[sel].end = t;
+      awaitingEnd = false;
+      updateRowTimes(sel);
+      if(sel < song.lyrics.length-1){ sel++; highlightSel(); }
+    }
+    updateTapUI();
+  }
+  function updateTapUI(){
+    const btn = document.querySelector("#markstart");
+    if(btn){
+      btn.textContent = awaitingEnd ? "⏹ Marcar FIN de la línea (S)" : "⏱ Marcar INICIO de la línea (S)";
+      btn.classList.toggle("rec", awaitingEnd);
+    }
+    [...listEl.children].forEach((r,idx)=> r.classList.toggle("rec", awaitingEnd && idx===sel));
   }
   function updateRowTimes(i){
     const r = listEl.children[i]; if(!r) return;
@@ -164,16 +190,16 @@
   $("#playpause").onclick = ()=>{ video.paused ? video.play() : video.pause(); };
   $("#back2").onclick = ()=> video.currentTime = Math.max(0, video.currentTime-2);
   $("#fwd2").onclick = ()=> video.currentTime += 2;
-  $("#markstart").onclick = markStart;
+  $("#markstart").onclick = tapS;
 
   document.addEventListener("keydown", e => {
     if(e.target.tagName === "INPUT") return;  // don't hijack typing in time fields
-    if(e.key==="s"||e.key==="S"){ e.preventDefault(); markStart(); }
+    if(e.key==="s"||e.key==="S"){ e.preventDefault(); tapS(); }
     else if(e.key==="k"||e.key==="K"){ e.preventDefault(); video.paused?video.play():video.pause(); }
     else if(e.key==="j"||e.key==="J"){ e.preventDefault(); video.currentTime=Math.max(0,video.currentTime-2); }
     else if(e.key==="l"||e.key==="L"){ e.preventDefault(); video.currentTime+=2; }
-    else if(e.key==="ArrowDown"){ e.preventDefault(); if(sel<song.lyrics.length-1){sel++;highlightSel();} }
-    else if(e.key==="ArrowUp"){ e.preventDefault(); if(sel>0){sel--;highlightSel();} }
+    else if(e.key==="ArrowDown"){ e.preventDefault(); if(sel<song.lyrics.length-1){sel++; awaitingEnd=false; highlightSel(); updateTapUI();} }
+    else if(e.key==="ArrowUp"){ e.preventDefault(); if(sel>0){sel--; awaitingEnd=false; highlightSel(); updateTapUI();} }
     else if((e.ctrlKey||e.metaKey) && (e.key==="s")){ e.preventDefault(); save(); }
   });
 
