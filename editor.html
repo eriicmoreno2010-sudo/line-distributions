@@ -31,6 +31,7 @@
   .row.sel{ background:#1a1a28; outline:2px solid var(--accent); border-radius:8px; }
   .row.active{ background:#141422; }
   .row.rec{ outline:2px solid #d23b5b; background:#2a1620; border-radius:8px; }
+  .row.dim{ opacity:.32; }   /* line not part of the current timing pass */
   button.rec{ background:#d23b5b; border-color:#d23b5b; color:#fff; }
   .num{ color:var(--text2); font-weight:800; text-align:center; cursor:pointer; }
   .txt{ min-width:0; display:flex; flex-direction:column; gap:3px; }
@@ -61,6 +62,15 @@
         <span class="grp" id="grp"></span>
         <span id="clock">0:00</span>
         <button id="save" class="primary">Guardar</button>
+      </div>
+      <div class="btnrow">
+        <label style="font-weight:800;font-size:13px;color:var(--text2)">Modo:</label>
+        <select id="mode" style="background:#1b1b26;color:var(--text);border:1px solid var(--border);border-radius:8px;padding:8px;font-weight:700;font-size:13px">
+          <option value="lyric-central">Tiempos de LETRA — central</option>
+          <option value="lyric-adlib">Tiempos de LETRA — ad-libs</option>
+          <option value="voice-central">Tiempos de VOZ — central (cuenta)</option>
+          <option value="voice-adlib">Tiempos de VOZ — ad-libs (cuenta)</option>
+        </select>
       </div>
       <div class="btnrow">
         <button id="playpause">▶ / ⏸ (K)</button>

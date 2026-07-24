@@ -4,6 +4,16 @@
   const video = $("#vid"), listEl = $("#list");
   let song = null, songPath = null, sel = 0, awaitingEnd = false;
 
+  // Timing modes: LETRA (display start/end) vs VOZ (voiceStart/voiceEnd, which
+  // the ranking counts), each for the central lines or the ad-lib lines.
+  const MODES = {
+    "lyric-central": { fields:["start","end"], adlib:false },
+    "lyric-adlib":   { fields:["start","end"], adlib:true  },
+    "voice-central": { fields:["voiceStart","voiceEnd"], adlib:false },
+    "voice-adlib":   { fields:["voiceStart","voiceEnd"], adlib:true  }
+  };
+  let mode = MODES["lyric-central"];
+
   const fmt = t => { t = Math.max(0, t||0); const m=Math.floor(t/60), s=(t%60); return m+":"+String(Math.floor(s)).padStart(2,"0"); };
   const abbr = n => n.slice(0,3).toUpperCase();
   const isAdlib = l => l.adlib === true || (typeof l.adlib === "string" && l.adlib.trim() !== "");
@@ -66,15 +76,16 @@
     ad.onclick = () => { l.adlib = isAdlib(l) ? false : true; ad.classList.toggle("on"); };
     chips.appendChild(ad);
 
+    const f0 = mode.fields[0], f1 = mode.fields[1];
     const times = document.createElement("div"); times.className = "times";
-    const si = document.createElement("input"); si.className="start"; si.value = (+l.start||0).toFixed(2);
-    si.onchange = () => l.start = parseFloat(si.value)||0;
+    const si = document.createElement("input"); si.className="start"; si.value = (+l[f0]||0).toFixed(2);
+    si.onchange = () => l[f0] = parseFloat(si.value)||0;
     const sb = document.createElement("button"); sb.textContent="ini"; sb.title="inicio = tiempo actual";
-    sb.onclick = () => { l.start = +video.currentTime.toFixed(2); si.value = l.start.toFixed(2); };
-    const ei = document.createElement("input"); ei.className="end"; ei.value = (+l.end||0).toFixed(2);
-    ei.onchange = () => l.end = parseFloat(ei.value)||0;
+    sb.onclick = () => { l[f0] = +video.currentTime.toFixed(2); si.value = (+l[f0]).toFixed(2); };
+    const ei = document.createElement("input"); ei.className="end"; ei.value = (+l[f1]||0).toFixed(2);
+    ei.onchange = () => l[f1] = parseFloat(ei.value)||0;
     const eb = document.createElement("button"); eb.textContent="fin"; eb.title="fin = tiempo actual";
-    eb.onclick = () => { l.end = +video.currentTime.toFixed(2); ei.value = l.end.toFixed(2); };
+    eb.onclick = () => { l[f1] = +video.currentTime.toFixed(2); ei.value = (+l[f1]).toFixed(2); };
     times.append(si, sb, ei, eb);
 
     const rb = document.createElement("div"); rb.className="rowbtns";
@@ -90,6 +101,7 @@
     rb.append(ins, mg, del);
 
     row.append(num, txt, chips, times, rb);
+    if(isAdlib(l) !== mode.adlib) row.classList.add("dim");   // not part of this pass
     return row;
   }
 
@@ -147,19 +159,26 @@
     requestAnimationFrame(tick);
   }
 
+  const isAdlibLine = l => isAdlib(l);
+  function nextMatch(from){
+    for(let i=from;i<song.lyrics.length;i++){ if(isAdlibLine(song.lyrics[i])===mode.adlib) return i; }
+    return -1;
+  }
   // S toggles: 1st press = start of the selected line, 2nd press = end (+advance).
+  // Writes to the CURRENT mode's fields (letra: start/end, voz: voiceStart/End).
   function tapS(){
     if(!song.lyrics.length) return;
     const t = +video.currentTime.toFixed(2);
     if(!awaitingEnd){
-      song.lyrics[sel].start = t;
+      song.lyrics[sel][mode.fields[0]] = t;
       awaitingEnd = true;
       updateRowTimes(sel);
     } else {
-      song.lyrics[sel].end = t;
+      song.lyrics[sel][mode.fields[1]] = t;
       awaitingEnd = false;
       updateRowTimes(sel);
-      if(sel < song.lyrics.length-1){ sel++; highlightSel(); }
+      const nx = nextMatch(sel+1);
+      if(nx>=0){ sel=nx; highlightSel(); }
     }
     updateTapUI();
   }
@@ -173,8 +192,8 @@
   }
   function updateRowTimes(i){
     const r = listEl.children[i]; if(!r) return;
-    r.querySelector(".start").value = (+song.lyrics[i].start||0).toFixed(2);
-    r.querySelector(".end").value = (+song.lyrics[i].end||0).toFixed(2);
+    r.querySelector(".start").value = (+song.lyrics[i][mode.fields[0]]||0).toFixed(2);
+    r.querySelector(".end").value = (+song.lyrics[i][mode.fields[1]]||0).toFixed(2);
   }
 
   async function save(){
@@ -191,6 +210,12 @@
   $("#back2").onclick = ()=> video.currentTime = Math.max(0, video.currentTime-2);
   $("#fwd2").onclick = ()=> video.currentTime += 2;
   $("#markstart").onclick = tapS;
+  $("#mode").onchange = (e) => {
+    mode = MODES[e.target.value] || MODES["lyric-central"];
+    awaitingEnd = false;
+    const nx = nextMatch(0); sel = nx >= 0 ? nx : 0;
+    renderLines(); updateTapUI();
+  };
 
   document.addEventListener("keydown", e => {
     if(e.target.tagName === "INPUT") return;  // don't hijack typing in time fields
