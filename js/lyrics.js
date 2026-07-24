@@ -14,6 +14,16 @@ function isAdlibLine(l){
     return (l.adlib === true) || (typeof l.adlib === "string" && l.adlib.trim() !== "");
 }
 
+/* Shrink a lyric line's font until it fits on ONE row (detected by height). */
+function fitField(el){
+    if(!el || !(el.textContent || "").trim()) return;
+    el.style.fontSize = "";                 // back to the CSS base
+    let s = parseFloat(getComputedStyle(el)?.fontSize) || 30;
+    let guard = 0;
+    // one line ≈ 42px (min-height); a wrapped line is ~84px -> shrink past 52px
+    while(el.offsetHeight > 52 && s > 16 && guard++ < 40){ s -= 1; el.style.fontSize = s + "px"; }
+}
+
 const Lyrics = {
 
     centralIndex: -1,
@@ -170,9 +180,18 @@ const Lyrics = {
                     e.member.style.color = c.accent;
                 }
             }
-            paintText(e.original, line.original);
-            paintText(e.roman,    line.romanization);
-            paintText(e.english,  line.english);
+            // Don't repeat identical text 3× (e.g. pure-English lines): show it
+            // once, centred. Korean lines (3 distinct) still show all three.
+            const raw = [line.original, line.romanization, line.english].map(t => (t||"").trim());
+            const uniq = raw.filter((t,i) => t && raw.indexOf(t) === i);
+            let so="", sr="", se="";
+            if(uniq.length <= 1){ sr = uniq[0] || ""; }
+            else if(uniq.length === 2){ so = uniq[0]; sr = uniq[1]; }
+            else { so = raw[0]; sr = raw[1]; se = raw[2]; }
+            paintText(e.original, so);
+            paintText(e.roman,    sr);
+            paintText(e.english,  se);
+            requestAnimationFrame(() => { fitField(e.original); fitField(e.roman); fitField(e.english); });
 
             e.section.style.setProperty("--accent", c.accent);
             e.section.style.setProperty("--accent-secondary", c.secondaryAccent);
