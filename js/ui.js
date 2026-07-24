@@ -34,7 +34,8 @@ function loadSongInformation(){
 
 function loadVideo(){
 
-    UI.elements.video.src = SONG.video;
+    // Cache-bust by duration so re-trimmed videos reload instead of serving the stale cached file.
+    UI.elements.video.src = SONG.video + (SONG.video.indexOf("?") < 0 ? "?" : "&") + "v=" + (SONG.duration || 0);
 
 }
 
