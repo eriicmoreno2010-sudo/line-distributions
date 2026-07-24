@@ -1,0 +1,117 @@
+{
+  "group": "SEVENTEEN",
+  "song": "Candy",
+  "video": "videos/candy.mp4",
+  "duration": 0,
+  "members": [
+    { "name": "JEONGHAN",  "image": "images/seventeen/jeonghan.png",  "color": "#ff0c0c", "focus": 50, "lift": 3 },
+    { "name": "JOSHUA",    "image": "images/seventeen/joshua.png",    "color": "#a001c8", "focus": 50, "lift": 3 },
+    { "name": "WOOZI",     "image": "images/seventeen/woozi.png",     "color": "#fa7304", "focus": 50, "lift": 3 },
+    { "name": "DK",        "image": "images/seventeen/dk.png",        "color": "#0002e6", "focus": 50, "lift": 3 },
+    { "name": "SEUNGKWAN", "image": "images/seventeen/seungkwan.png", "color": "#ffea2d", "focus": 50, "lift": 3 }
+  ],
+  "lyrics": [
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "우리 사탕 같은 사랑해요",
+      "romanization": "Uri satang gateun saranghaeyo",
+      "english": "Our love is like candy"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "자그만 말 하나에도 기분이 좋아질 수 있게요",
+      "romanization": "Jageuman mal hanaedo gibuni joajil su itgeyo",
+      "english": "Even in a small bite can make me feel better"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "사랑 같은 건 아마 원래 쓰디쓴 걸까요",
+      "romanization": "Sarang gateun geon ama wonrae sseudisseun geolkkayo",
+      "english": "Love is so bitter when it's the first time"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "나는 싫어요 어쩌죠?",
+      "romanization": "Naneun silheoyo eojjeojyo?",
+      "english": "I don't like it, what should I do?"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "어른이 되는 것 만큼",
+      "romanization": "Eoreuni doeneun geot mankeum",
+      "english": "Love is as hard as being an adult"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "사랑도 힘든 걸요",
+      "romanization": "Sarangdo himdeun geolyo",
+      "english": ""
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "그러나 그치만 그래도",
+      "romanization": "Geureona geuchiman geuraedo",
+      "english": "But still, however, even so"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "우리 사탕 같은 사랑해요",
+      "romanization": "Uri satang gateun saranghaeyo",
+      "english": "Our love is like candy"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "자그만 말 하나에도 기분이 좋아질 수 있게요",
+      "romanization": "Jageuman mal hanaedo gibuni joajil su itgeyo",
+      "english": "Even in a small bite can make me feel better"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "우리 사탕 같은 사랑하며",
+      "romanization": "Uri satang gateun saranghamyeo",
+      "english": "We love each other like a candy"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "사르르 녹아질래요? 어때요?",
+      "romanization": "Sareureu nogajillaeyo? Eottaeyo?",
+      "english": "Do you want to melt it? How was it?"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "그대 맘을 다 가지고 싶다면 어린 맘인가요",
+      "romanization": "Geudae mameul da gajigo sipdamyeon eorin mamingayo",
+      "english": "If I want to have your whole heart, do I have to be young?"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "우리 사탕 같은 사랑해요",
+      "romanization": "Uri satang gateun saranghaeyo",
+      "english": "Our love is like candy"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "상처 뿐인 하루라도 한번은 웃을 수 있게요",
+      "romanization": "Sangcheo ppunin harurado han beoneun useul su itgeyo",
+      "english": "Even it hurts me inside every day, so I can smile once"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "우리 사탕 같은 사랑하며",
+      "romanization": "Uri satang gateun saranghamyeo",
+      "english": "We love each other like a candy"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "사르르 녹아질래요? 어때요?",
+      "romanization": "Sareureu nogajillaeyo? Eottaeyo?",
+      "english": "Do you want to melt it? How was it?"
+    },
+    {
+      "start": 0, "end": 0, "members": [],
+      "original": "그대 맘을 다 가지고 싶다면 어린 맘인가요",
+      "romanization": "Geudae mameul da gajigo sipdamyeon eorin mamingayo",
+      "english": "If I want to have your whole heart, do I have to be young?"
+    }
+  ]
+}
