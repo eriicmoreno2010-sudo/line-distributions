@@ -115,7 +115,7 @@
     if(l.members.includes(song.group)) l.members = [];
     else l.members = [song.group];
   }
-  function joinTxt(a,b){ return [a,b].filter(x=>x&&x.trim()).join(", "); }
+  function joinTxt(a,b){ a=(a||"").trim(); b=(b||"").trim(); if(!a) return b; if(!b) return a; return a.replace(/[,;·]\s*$/,"") + ", " + b; }
   function mergeDown(i){
     if(i+1 >= song.lyrics.length) return;
     const a = song.lyrics[i], b = song.lyrics[i+1];

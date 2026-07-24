@@ -97,7 +97,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     object-position:center 45%;
     image-rendering:auto;
     transform:translateY(-3px);
-    border:2px solid transparent;
+    border:3px solid var(--accent);   /* ring always in the member's colour */
     background:var(--panel3);
     transition:border-color .3s var(--ease);
 }
