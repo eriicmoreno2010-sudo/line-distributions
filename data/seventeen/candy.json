@@ -1,8 +1,8 @@
 {
   "group": "SEVENTEEN",
   "song": "Candy",
-  "video": "videos/candy.mp4",
-  "duration": 0,
+  "video": "videos/candy.mp3",
+  "duration": 183.83,
   "members": [
     { "name": "JEONGHAN",  "image": "images/seventeen/jeonghan.png",  "color": "#ff0c0c", "focus": 50, "lift": 3 },
     { "name": "JOSHUA",    "image": "images/seventeen/joshua.png",    "color": "#a001c8", "focus": 50, "lift": 3 },
