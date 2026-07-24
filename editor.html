@@ -48,6 +48,7 @@
   .times input{ width:64px; background:#0e0e15; border:1px solid var(--border); color:var(--text);
                 border-radius:6px; padding:5px; font:700 12px monospace; text-align:right; }
   .times button{ padding:5px 7px; font-size:11px; }
+  .times.voice .segs{ font:700 12px monospace; color:#8fe3b0; min-width:120px; }
   .rowbtns{ display:flex; gap:4px; }
   .rowbtns button{ padding:5px 7px; font-size:11px; }
 </style>
@@ -79,10 +80,11 @@
         <button id="markstart">⏱ Marcar inicio de la línea seleccionada (S)</button>
       </div>
       <div class="help">
-        <b>Flujo rápido:</b> selecciona la primera línea (clic), dale al play, y pulsa <b>S</b> justo cuando empieza cada línea
-        (marca su inicio, cierra la anterior y avanza sola). Los <b>colores</b> = clica el/los miembro(s) que cantan.
-        <b>TODOS</b> = línea de grupo (degradado, no cuenta). <b>AD</b> = ad-lib. <b>unir ↓</b> = junta con la siguiente.
-        Muévete con ↑/↓. No olvides <b>Guardar</b>.
+        <b>LETRA</b> (cuándo se ve el texto): <b>S</b> = inicio, <b>S</b> = fin y avanza sola.<br>
+        <b>VOZ</b> (lo que cuenta el ranking): <b>S</b> = empieza un trozo, <b>S</b> = lo cierra. Puedes marcar
+        <b>varios trozos</b> en la misma frase (si la voz para y vuelve). Cuando termines la línea, pulsa <b>Enter</b> para pasar a la siguiente.<br>
+        Los <b>colores</b> = quién canta. <b>TODOS</b> = grupo (degradado, no cuenta). <b>AD</b> = ad-lib.
+        <b>unir ↓</b> junta con la siguiente. Muévete con ↑/↓. No olvides <b>Guardar</b>.
       </div>
     </div>
   </div>
