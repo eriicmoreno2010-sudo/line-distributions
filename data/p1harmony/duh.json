@@ -49,614 +49,1246 @@
   ],
   "lyrics": [
     {
-      "start": 12.4,
-      "end": 12.92,
+      "start": 12.38,
+      "end": 12.93,
       "members": [
         "KEEHO"
       ],
       "original": "DUH!",
       "romanization": "DUH!",
-      "english": "DUH!"
+      "english": "DUH!",
+      "voice": [
+        [
+          12.42,
+          13
+        ]
+      ]
     },
     {
-      "start": 13.31,
-      "end": 17.51,
+      "start": 13.21,
+      "end": 17.49,
       "members": [
         "INTAK"
       ],
       "original": "Spectacular drama you like it, 보법이 다르지 펄떡 My stompin'",
       "romanization": "Spectacular drama you like it, Bobeobi dareuji peoltteok My stompin'",
-      "english": "Spectacular drama you like it, Different beats, I bouncing—My stompin'"
+      "english": "Spectacular drama you like it, Different beats, I bouncing—My stompin'",
+      "voice": [
+        [
+          13.23,
+          15.34
+        ],
+        [
+          15.49,
+          17.56
+        ]
+      ]
     },
     {
-      "start": 17.29,
-      "end": 21.11,
+      "start": 17.62,
+      "end": 21.5,
       "members": [
         "INTAK"
       ],
       "original": "All body 여기 봐 지금 Highlight scene, 입덕 위기에 처한 네가 보여",
       "romanization": "All body yeogi bwa jigeum Highlight scene, Ipdeok wigie cheohan nega boyeo",
-      "english": "All body looking this way; it's the Highlight scene, I see you falling for me; almost a fan already"
+      "english": "All body looking this way; it's the Highlight scene, I see you falling for me; almost a fan already",
+      "voice": [
+        [
+          17.55,
+          21.07
+        ]
+      ]
     },
     {
-      "start": 21.08,
-      "end": 22.33,
+      "start": 21.62,
+      "end": 22.58,
       "members": [
         "INTAK"
       ],
       "original": "Please don't be stupid",
       "romanization": "Please don't be stupid",
-      "english": "Please don't be stupid"
+      "english": "Please don't be stupid",
+      "voice": [
+        [
+          21.08,
+          22.23
+        ]
+      ]
     },
     {
-      "start": 22.76,
-      "end": 26.91,
+      "start": 22.7,
+      "end": 26.97,
       "members": [
         "KEEHO"
       ],
       "original": "당돌하게 Late to this party, 내 이름을 외쳐 봐",
       "romanization": "Dangdolhage Late to this party, Nae ireumeul oechyeo bwa",
-      "english": "Coming boldly, Late to this party, Go on, shout my name out loud"
+      "english": "Coming boldly, Late to this party, Go on, shout my name out loud",
+      "voice": [
+        [
+          22.59,
+          24.88
+        ],
+        [
+          25.03,
+          26.96
+        ]
+      ]
     },
     {
-      "start": 27.17,
-      "end": 30.96,
+      "start": 27.08,
+      "end": 30.85,
       "members": [
         "KEEHO"
       ],
       "original": "주인공은 나 Don't you rush me, La la la la",
       "romanization": "Juingongeun na Don't you rush me, La la la la",
-      "english": "I'm the star here, Don't you rush me, La la la la"
+      "english": "I'm the star here, Don't you rush me, La la la la",
+      "voice": [
+        [
+          27.2,
+          30.87
+        ]
+      ]
     },
     {
-      "start": 31.63,
-      "end": 38.05,
+      "start": 31.49,
+      "end": 38.24,
       "members": [
         "THEO"
       ],
       "original": "관심도 없던 우리의 무대, 놀랐겠지",
       "romanization": "Gwansimdo eopdeon uriui mudae, Nollatgetji",
-      "english": "You never paid attention to our stage—, bet you're shocked now, huh?"
+      "english": "You never paid attention to our stage—, bet you're shocked now, huh?",
+      "voice": [
+        [
+          31.66,
+          34.88
+        ],
+        [
+          35.12,
+          38.12
+        ]
+      ]
     },
     {
-      "start": 38.27,
-      "end": 40.8,
+      "start": 38.37,
+      "end": 40.7,
       "members": [
         "SOUL"
       ],
       "original": "Cause I got it like that, Oh I got it like that yeah",
       "romanization": "Cause I got it like that, Oh I got it like that yeah",
-      "english": "Cause I got it like that, Oh I got it like that yeah"
+      "english": "Cause I got it like that, Oh I got it like that yeah",
+      "voice": [
+        [
+          38.34,
+          39.46
+        ],
+        [
+          39.61,
+          40.98
+        ]
+      ]
     },
     {
-      "start": 40.93,
-      "end": 47.43,
+      "start": 40.83,
+      "end": 47.46,
       "members": [
         "THEO"
       ],
       "original": "난 뭐를 상상해도, 그 이상일 거야",
       "romanization": "Nan mworeul sangsanghaedo, Geu isangil geoya",
-      "english": "Whatever you imagine, I'll be more than that"
+      "english": "Whatever you imagine, I'll be more than that",
+      "voice": [
+        [
+          40.89,
+          43.7
+        ],
+        [
+          43.85,
+          47.44
+        ]
+      ]
     },
     {
-      "start": 47.7,
-      "end": 49.48,
+      "start": 47.62,
+      "end": 49.49,
       "members": [
         "SOUL"
       ],
       "original": "So Follow Me, are you ready",
       "romanization": "So Follow Me, are you ready",
-      "english": "So Follow Me, are you ready"
+      "english": "So Follow Me, are you ready",
+      "voice": [
+        [
+          47.83,
+          49.79
+        ]
+      ]
     },
     {
       "start": 49.61,
-      "end": 52.57,
+      "end": 52.52,
       "members": [
         "JIUNG"
       ],
       "original": "Um 누구야, 노는 물이 Top dog league",
       "romanization": "Um nugiya, Noneun muri Top dog league",
-      "english": "Um who's that?, We only play with the Top dog league"
+      "english": "Um who's that?, We only play with the Top dog league",
+      "voice": [
+        [
+          49.72,
+          50.27
+        ],
+        [
+          50.39,
+          52.57
+        ]
+      ]
     },
     {
       "start": 52.69,
-      "end": 54.63,
+      "end": 54.57,
       "members": [
         "JIUNG"
       ],
       "original": "우리를 새긴 Plain white T",
       "romanization": "Urireul saegin Plain white T",
-      "english": "Our names on a Plain white T"
+      "english": "Our names on a Plain white T",
+      "voice": [
+        [
+          52.93,
+          54.6
+        ]
+      ]
     },
     {
-      "start": 54.76,
-      "end": 57.32,
+      "start": 54.72,
+      "end": 57.2,
       "members": [
         "JIUNG"
       ],
       "original": "내가 원하면 이 자리가, First class seat",
       "romanization": "Naega wonhamyeon i jariga, First class seat",
-      "english": "If I want, this spot is, First class seat"
+      "english": "If I want, this spot is, First class seat",
+      "voice": [
+        [
+          54.82,
+          57.15
+        ]
+      ]
     },
     {
-      "start": 57.45,
-      "end": 59.38,
+      "start": 57.37,
+      "end": 59.36,
       "members": [
         "JIUNG"
       ],
       "original": "Who's that?, It's me, DUH!",
       "romanization": "Who's that?, It's me, DUH!",
-      "english": "Who's that?, It's me, DUH!"
+      "english": "Who's that?, It's me, DUH!",
+      "voice": [
+        [
+          57.56,
+          58.78
+        ],
+        [
+          58.97,
+          59.61
+        ]
+      ]
     },
     {
-      "start": 59.5,
-      "end": 61.61,
+      "start": 59.51,
+      "end": 61.56,
       "members": [
         "INTAK"
       ],
       "original": "Yeah 누구야, 내 Flow는 Sound so sweet",
       "romanization": "Yeah nugiya, Nae Flowneun Sound so sweet",
-      "english": "Yeah who's that?, My Flow Sound so sweet"
+      "english": "Yeah who's that?, My Flow Sound so sweet",
+      "voice": [
+        [
+          59.57,
+          61.67
+        ]
+      ]
     },
     {
-      "start": 61.69,
+      "start": 61.71,
       "end": 64.01,
       "members": [
         "INTAK"
       ],
       "original": "여기 멋진 Groove 춤이, Paint these streets",
       "romanization": "Yeogi meotjin Groove chumi, Paint these streets",
-      "english": "A cool Groove dance, Paint these streets"
+      "english": "A cool Groove dance, Paint these streets",
+      "voice": [
+        [
+          61.62,
+          64.02
+        ]
+      ]
     },
     {
       "start": 64.13,
-      "end": 66.41,
+      "end": 66.39,
       "members": [
         "INTAK"
       ],
       "original": "찍어 Peace, We the G.O.A.T",
       "romanization": "Jikkeo Peace, We the G.O.A.T",
-      "english": "Snap a Peace, We the G.O.A.T"
+      "english": "Snap a Peace, We the G.O.A.T",
+      "voice": [
+        [
+          64.32,
+          66.31
+        ]
+      ]
     },
     {
-      "start": 66.53,
-      "end": 68.83,
+      "start": 66.51,
+      "end": 68.79,
       "members": [
         "INTAK"
       ],
       "original": "Who's that?, It's me, DUH!",
       "romanization": "Who's that?, It's me, DUH!",
-      "english": "Who's that?, It's me, DUH!"
+      "english": "Who's that?, It's me, DUH!",
+      "voice": [
+        [
+          66.88,
+          68.11
+        ],
+        [
+          68.36,
+          68.88
+        ]
+      ]
     },
     {
-      "start": 68.81,
-      "end": 71.08,
+      "start": 68.91,
+      "end": 71.1,
       "members": [
         "JONGSEOB"
       ],
       "original": "DUH하거나 빼기 가위바위보 내기",
       "romanization": "DUH!hageona ppaegi gawibawibo naegi",
-      "english": "DUH or dodge—rock, paper, scissors, let's go"
+      "english": "DUH or dodge—rock, paper, scissors, let's go",
+      "voice": [
+        [
+          68.91,
+          69.93
+        ],
+        [
+          70.08,
+          71.18
+        ]
+      ]
     },
     {
-      "start": 71.18,
-      "end": 73.31,
+      "start": 71.22,
+      "end": 73.42,
       "members": [
         "JONGSEOB"
       ],
       "original": "묶음 상품들에 군중은 홀려",
       "romanization": "Mukkeum sangpumdeure gunjungeun hollyeo",
-      "english": "Crowd's hypnotized by bundle deals all day"
+      "english": "Crowd's hypnotized by bundle deals all day",
+      "voice": [
+        [
+          71.3,
+          73.47
+        ]
+      ]
     },
     {
-      "start": 73.43,
-      "end": 75.66,
+      "start": 73.54,
+      "end": 75.67,
       "members": [
         "JONGSEOB"
       ],
       "original": "찌는 던져졌고 물고기 떼는 몰려",
       "romanization": "Jjineun deonjyeotgo mulgogi tteneun mollyeo",
-      "english": "Bobbers thrown, the fishes rush in"
+      "english": "Bobbers thrown, the fishes rush in",
+      "voice": [
+        [
+          73.58,
+          75.78
+        ]
+      ]
     },
     {
-      "start": 75.77,
-      "end": 77.68,
+      "start": 75.8,
+      "end": 77.69,
       "members": [
         "JONGSEOB"
       ],
       "original": "빠르게 매진되는 가판대 위",
       "romanization": "Ppareuge maejindoeneun gapan dae wi",
-      "english": "Sold out fast, emptied already"
+      "english": "Sold out fast, emptied already",
+      "voice": [
+        [
+          75.88,
+          77.77
+        ]
+      ]
     },
     {
-      "start": 77.83,
-      "end": 80.26,
+      "start": 77.82,
+      "end": 80.34,
       "members": [
         "JONGSEOB"
       ],
       "original": "아니 밑바닥에서 우리는 값을 올려",
       "romanization": "Ani mitbadageseo urineun gapseul ollyeo",
-      "english": "From the bottom, we raise the price"
+      "english": "From the bottom, we raise the price",
+      "voice": [
+        [
+          77.82,
+          78.3
+        ],
+        [
+          78.45,
+          80.24
+        ]
+      ]
     },
     {
-      "start": 80.35,
-      "end": 83.24,
+      "start": 80.53,
+      "end": 83.3,
       "members": [
         "JONGSEOB"
       ],
       "original": "Ducking 더 더 더 더 Bumpin' 겁도 없어",
       "romanization": "Ducking deo deo deo deo Bumpin' geopdo eopseo",
-      "english": "Ducking more, more, more, we Bumpin' hard, no fear"
+      "english": "Ducking more, more, more, we Bumpin' hard, no fear",
+      "voice": [
+        [
+          80.56,
+          83.28
+        ]
+      ]
     },
     {
-      "start": 83.32,
-      "end": 85.8,
+      "start": 83.39,
+      "end": 85.52,
       "members": [
         "JONGSEOB"
       ],
       "original": "Double D 발걸음 보법 더 DDuh DDuh",
       "romanization": "Double D balgeoreum bobeop deo DDuh DDuh",
-      "english": "Double D steps DDuh DDuh"
+      "english": "Double D steps DDuh DDuh",
+      "voice": [
+        [
+          83.31,
+          85.43
+        ]
+      ]
     },
     {
-      "start": 85.9,
-      "end": 88.67,
+      "start": 85.64,
+      "end": 88.58,
       "members": [
         "JONGSEOB"
       ],
       "original": "위로 더 더 우린 Bump up, 이런 Hero 처음 보지",
       "romanization": "Wiro deo deo urin Bump up, Ireon Hero cheoeum boji",
-      "english": "We rise, Bump up and up, Bet you've never seen a Hero like this before"
+      "english": "We rise, Bump up and up, Bet you've never seen a Hero like this before",
+      "voice": [
+        [
+          85.44,
+          88.64
+        ]
+      ]
     },
     {
-      "start": 88.76,
-      "end": 89.78,
+      "start": 88.71,
+      "end": 89.77,
       "members": [
         "JONGSEOB"
       ],
       "original": "Take a picture",
       "romanization": "Take a picture",
-      "english": "Take a picture"
+      "english": "Take a picture",
+      "voice": [
+        [
+          88.68,
+          89.6
+        ]
+      ]
     },
     {
-      "start": 89.87,
-      "end": 96.35,
+      "start": 89.89,
+      "end": 96.47,
       "members": [
         "THEO"
       ],
       "original": "관심도 없던 우리의 무대, 놀랐겠지",
       "romanization": "Gwansimdo eopdeon uriui mudae, Nollatgetji",
-      "english": "You never paid attention to our stage—, bet you're shocked now, huh?"
+      "english": "You never paid attention to our stage—, bet you're shocked now, huh?",
+      "voice": [
+        [
+          89.93,
+          93.07
+        ],
+        [
+          93.34,
+          96.33
+        ]
+      ]
     },
     {
-      "start": 96.46,
-      "end": 99.06,
+      "start": 96.57,
+      "end": 99.02,
       "members": [
         "SOUL"
       ],
       "original": "Cause I got it like that, Oh I got it like that yeah",
       "romanization": "Cause I got it like that, Oh I got it like that yeah",
-      "english": "Cause I got it like that, Oh I got it like that yeah"
+      "english": "Cause I got it like that, Oh I got it like that yeah",
+      "voice": [
+        [
+          96.58,
+          97.71
+        ],
+        [
+          97.85,
+          99.24
+        ]
+      ]
     },
     {
-      "start": 99.19,
-      "end": 105.63,
+      "start": 99.14,
+      "end": 105.83,
       "members": [
         "THEO"
       ],
       "original": "난 뭐를 상상해도, 그 이상일 거야",
       "romanization": "Nan mworeul sangsanghaedo, Geu isangil geoya",
-      "english": "Whatever you imagine, I'll be more than that"
+      "english": "Whatever you imagine, I'll be more than that",
+      "voice": [
+        [
+          99.19,
+          101.98
+        ],
+        [
+          102.13,
+          105.67
+        ]
+      ]
     },
     {
-      "start": 105.73,
-      "end": 107.74,
+      "start": 105.99,
+      "end": 107.77,
       "members": [
         "SOUL"
       ],
       "original": "So Follow Me, are you ready",
       "romanization": "So Follow Me, are you ready",
-      "english": "So Follow Me, are you ready"
+      "english": "So Follow Me, are you ready",
+      "voice": [
+        [
+          106.06,
+          108.05
+        ]
+      ]
     },
     {
-      "start": 107.87,
-      "end": 110.84,
+      "start": 107.9,
+      "end": 110.81,
       "members": [
         "KEEHO"
       ],
       "original": "Um 누구야, 노는 물이 Top dog league",
       "romanization": "Um nugiya, Noneun muri Top dog league",
-      "english": "Um who's that?, We only play with the Top dog league"
+      "english": "Um who's that?, We only play with the Top dog league",
+      "voice": [
+        [
+          107.91,
+          108.47
+        ],
+        [
+          108.62,
+          110.78
+        ]
+      ]
     },
     {
-      "start": 110.96,
+      "start": 110.93,
       "end": 112.87,
       "members": [
         "KEEHO"
       ],
       "original": "우리를 새긴 Plain white T",
       "romanization": "Urireul saegin Plain white T",
-      "english": "Our names on a Plain white T"
+      "english": "Our names on a Plain white T",
+      "voice": [
+        [
+          111.09,
+          112.88
+        ]
+      ]
     },
     {
-      "start": 112.96,
-      "end": 115.5,
+      "start": 112.99,
+      "end": 115.4,
       "members": [
         "KEEHO"
       ],
       "original": "내가 원하면 이 자리가, First class seat",
       "romanization": "Naega wonhamyeon i jariga, First class seat",
-      "english": "If I want, this spot is, First class seat"
+      "english": "If I want, this spot is, First class seat",
+      "voice": [
+        [
+          113.12,
+          115.43
+        ]
+      ]
     },
     {
-      "start": 115.6,
-      "end": 117.59,
+      "start": 115.53,
+      "end": 117.6,
       "members": [
         "KEEHO"
       ],
       "original": "Who's that?, It's me, DUH!",
       "romanization": "Who's that?, It's me, DUH!",
-      "english": "Who's that?, It's me, DUH!"
+      "english": "Who's that?, It's me, DUH!",
+      "voice": [
+        [
+          115.84,
+          117.06
+        ],
+        [
+          117.27,
+          117.77
+        ]
+      ]
     },
     {
-      "start": 117.68,
-      "end": 119.81,
+      "start": 117.72,
+      "end": 119.8,
       "members": [
         "JONGSEOB"
       ],
       "original": "Yeah 누구야, 내 Flow는 Sound so sweet",
       "romanization": "Yeah nugiya, Nae Flowneun Sound so sweet",
-      "english": "Yeah who's that?, My Flow Sound so sweet"
+      "english": "Yeah who's that?, My Flow Sound so sweet",
+      "voice": [
+        [
+          117.71,
+          119.87
+        ]
+      ]
     },
     {
-      "start": 119.91,
-      "end": 122.27,
+      "start": 119.93,
+      "end": 122.25,
       "members": [
         "JONGSEOB"
       ],
       "original": "여기 멋진 Groove 춤이, Paint these streets",
       "romanization": "Yeogi meotjin Groove chumi, Paint these streets",
-      "english": "A cool Groove dance, Paint these streets"
+      "english": "A cool Groove dance, Paint these streets",
+      "voice": [
+        [
+          119.89,
+          122.31
+        ]
+      ]
     },
     {
       "start": 122.4,
-      "end": 124.81,
+      "end": 124.84,
       "members": [
         "JONGSEOB"
       ],
       "original": "찍어 Peace, We the G.O.A.T",
       "romanization": "Jikkeo Peace, We the G.O.A.T",
-      "english": "Snap a Peace, We the G.O.A.T"
+      "english": "Snap a Peace, We the G.O.A.T",
+      "voice": [
+        [
+          122.5,
+          124.52
+        ]
+      ]
     },
     {
-      "start": 124.93,
-      "end": 126.99,
+      "start": 124.98,
+      "end": 127.14,
       "members": [
         "JONGSEOB"
       ],
       "original": "Who's that?, It's me, DUH!",
       "romanization": "Who's that?, It's me, DUH!",
-      "english": "Who's that?, It's me, DUH!"
+      "english": "Who's that?, It's me, DUH!",
+      "voice": [
+        [
+          125.11,
+          126.35
+        ],
+        [
+          126.59,
+          127.11
+        ]
+      ]
     },
     {
-      "start": 128.83,
-      "end": 131.43,
+      "start": 129.13,
+      "end": 131.4,
       "members": [
         "JIUNG"
       ],
       "original": "빡빡 밀어 머리, 방탕하기는 멀리",
       "romanization": "Ppakppak mireo meori, Bangtanghagineun meolli",
-      "english": "Buzzcut, I shaved it clean, Far from reckless"
+      "english": "Buzzcut, I shaved it clean, Far from reckless",
+      "voice": [
+        [
+          129.21,
+          131.58
+        ]
+      ]
     },
     {
-      "start": 131.56,
+      "start": 131.5,
       "end": 133.69,
       "members": [
         "JIUNG"
       ],
       "original": "가죽 세트 But 인자하게 미소",
       "romanization": "Gajuk seteu But injahage miso",
-      "english": "Leather fit on, But my smile, serene"
+      "english": "Leather fit on, But my smile, serene",
+      "voice": [
+        [
+          131.5,
+          133.66
+        ]
+      ]
     },
     {
-      "start": 133.81,
-      "end": 136.32,
+      "start": 133.84,
+      "end": 136.31,
       "members": [
         "JIUNG"
       ],
       "original": "간판 없이 팔아도 맛집으로, 난 시작이 달라",
       "romanization": "Ganpan eopsi parado matjibeuro, Nan sijagi dalla",
-      "english": "No sign, still the hottest scene, My start is one of a kind"
+      "english": "No sign, still the hottest scene, My start is one of a kind",
+      "voice": [
+        [
+          133.84,
+          136.5
+        ]
+      ]
     },
     {
-      "start": 136.42,
-      "end": 138.7,
+      "start": 136.44,
+      "end": 138.6,
       "members": [
         "JIUNG"
       ],
       "original": "하나도 비울 수 없어, 매일이 갈라쇼 Like",
       "romanization": "Hanado biul su eopseo, Maeiri gallasyo Like",
-      "english": "Not leaving a thing behind, Every day's a gala show Like"
+      "english": "Not leaving a thing behind, Every day's a gala show Like",
+      "voice": [
+        [
+          136.47,
+          137.06
+        ],
+        [
+          137.17,
+          138.87
+        ]
+      ]
     },
     {
-      "start": 138.82,
-      "end": 141.04,
+      "start": 138.72,
+      "end": 140.92,
       "members": [
         "INTAK"
       ],
       "original": "Woah, 툭 까놓고 봐 봐 난 재미없어",
       "romanization": "Woah, Tuk kkanoko bwa bwa nan jaemieopseo",
-      "english": "Woah, Let's be real—I'm no fun"
+      "english": "Woah, Let's be real—I'm no fun",
+      "voice": [
+        [
+          138.83,
+          139.2
+        ],
+        [
+          139.36,
+          141.21
+        ]
+      ]
     },
     {
-      "start": 141.17,
+      "start": 141,
       "end": 143.3,
       "members": [
         "INTAK"
       ],
       "original": "Woah, 그만해 귀 따가운 그 소리 시끄러워",
       "romanization": "Woah, Geumanhae gwi ttagaun geu sori sikkeureowo",
-      "english": "Woah, Turn it off. That noise hurts my ears"
+      "english": "Woah, Turn it off. That noise hurts my ears",
+      "voice": [
+        [
+          141.19,
+          141.54
+        ],
+        [
+          141.66,
+          143.88
+        ]
+      ]
     },
     {
-      "start": 143.43,
-      "end": 145.41,
+      "start": 143.4,
+      "end": 145.37,
       "members": [
         "INTAK"
       ],
       "original": "나 빼곤 전부 다 똑같은 걸로만",
       "romanization": "Na ppaegon jeonbu da ttokgateun geolloman",
-      "english": "Everyone sounds the same, but not me"
+      "english": "Everyone sounds the same, but not me",
+      "voice": [
+        [
+          143.65,
+          145.35
+        ]
+      ]
     },
     {
-      "start": 145.51,
-      "end": 147.95,
+      "start": 145.46,
+      "end": 148.02,
       "members": [
         "INTAK"
       ],
       "original": "Potayto potahto, Tomayto tomahto, 비스무리하잖아",
       "romanization": "Potayto potahto, Tomayto tomahto, Biseumurihajana",
-      "english": "Potayto potahto, Tomayto tomahto, They're all the same"
+      "english": "Potayto potahto, Tomayto tomahto, They're all the same",
+      "voice": [
+        [
+          145.38,
+          148.11
+        ]
+      ]
     },
     {
-      "start": 148.05,
-      "end": 152.55,
+      "start": 148.14,
+      "end": 152.6,
       "members": [
         "KEEHO"
       ],
       "original": "내가 감춰졌던, 진짜 Diamond yeah",
       "romanization": "Naega gamchwoyeotdeon, Jinjja Diamond yeah",
-      "english": "But I was the one kept hidden, I'm the real Diamond yeah"
+      "english": "But I was the one kept hidden, I'm the real Diamond yeah",
+      "voice": [
+        [
+          148.17,
+          148.47
+        ],
+        [
+          148.62,
+          148.94
+        ],
+        [
+          149.09,
+          150.91
+        ],
+        [
+          151.03,
+          151.3
+        ],
+        [
+          151.43,
+          152.64
+        ]
+      ]
     },
     {
-      "start": 152.67,
-      "end": 157.3,
+      "start": 152.73,
+      "end": 157.21,
       "members": [
         "KEEHO"
       ],
       "original": "I don't want for nothing, no",
       "romanization": "I don't want for nothing, no",
-      "english": "I don't want for nothing, no"
+      "english": "I don't want for nothing, no",
+      "voice": [
+        [
+          152.78,
+          159.92
+        ]
+      ]
     },
     {
-      "start": 157.5,
-      "end": 159.82,
+      "start": 157.33,
+      "end": 159.72,
       "members": [
         "P1Harmony"
       ],
       "original": "누구야, 노는 물이 Top dog league",
       "romanization": "Nugiya, Noneun muri Top dog league",
-      "english": "Who's that?, We only play with the Top dog league"
+      "english": "Who's that?, We only play with the Top dog league",
+      "voice": [
+        [
+          157.62,
+          159.64
+        ]
+      ]
     },
     {
-      "start": 159.96,
-      "end": 161.97,
+      "start": 159.84,
+      "end": 161.75,
       "members": [
         "P1Harmony"
       ],
       "original": "우리를 새긴 Plain white T",
       "romanization": "Urireul saegin Plain white T",
-      "english": "Our names on a Plain white T"
+      "english": "Our names on a Plain white T",
+      "voice": [
+        [
+          160.06,
+          161.85
+        ]
+      ]
     },
     {
-      "start": 162.09,
-      "end": 164.58,
+      "start": 161.87,
+      "end": 164.27,
       "members": [
         "P1Harmony"
       ],
       "original": "내가 원하면 이 자리가, First class seat",
       "romanization": "Naega wonhamyeon i jariga, First class seat",
-      "english": "If I want, this spot is, First class seat"
+      "english": "If I want, this spot is, First class seat",
+      "voice": [
+        [
+          162.24,
+          164.2
+        ]
+      ]
     },
     {
-      "start": 164.81,
-      "end": 166.57,
+      "start": 164.39,
+      "end": 166.55,
       "members": [
         "P1Harmony"
       ],
-      "original": "Who's that?, It's me, DUH!",
-      "romanization": "Who's that?, It's me, DUH!",
-      "english": "Who's that?, It's me, DUH!"
+      "original": "Who's that?, It's me",
+      "romanization": "Who's that?, It's me",
+      "english": "Who's that?, It's me",
+      "voice": [
+        [
+          164.71,
+          165.95
+        ]
+      ]
     },
     {
-      "start": 166.69,
-      "end": 168.75,
+      "start": 166.67,
+      "end": 168.71,
       "members": [
         "P1Harmony"
       ],
       "original": "Yeah 누구야, 내 Flow는 Sound so sweet",
       "romanization": "Yeah nugiya, Nae Flowneun Sound so sweet",
-      "english": "Yeah who's that?, My Flow Sound so sweet"
+      "english": "Yeah who's that?, My Flow Sound so sweet",
+      "voice": [
+        [
+          166.63,
+          168.77
+        ]
+      ]
     },
     {
-      "start": 168.87,
-      "end": 171.27,
+      "start": 168.77,
+      "end": 171.18,
       "members": [
         "P1Harmony"
       ],
       "original": "여기 멋진 Groove 춤이, Paint these streets",
-      "romanization": "Yeogi meotjin Groove chumi, Paint these streets",
-      "english": "A cool Groove dance, Paint these streets"
+      "romanization": "Yeogi meossin Groove chumi, Paint these streets",
+      "english": "A cool Groove dance, Paint these streets",
+      "voice": [
+        [
+          168.81,
+          171.16
+        ]
+      ]
     },
     {
       "start": 171.39,
-      "end": 173.52,
+      "end": 173.5,
       "members": [
         "P1Harmony"
       ],
       "original": "찍어 Peace, We the G.O.A.T",
       "romanization": "Jikkeo Peace, We the G.O.A.T",
-      "english": "Snap a Peace, We the G.O.A.T"
+      "english": "Snap a Peace, We the G.O.A.T",
+      "voice": [
+        [
+          171.36,
+          173.43
+        ]
+      ]
     },
     {
-      "start": 173.61,
-      "end": 176.1,
+      "start": 173.62,
+      "end": 176.2,
       "members": [
         "P1Harmony"
       ],
-      "original": "Who's that?, It's me, DUH!",
-      "romanization": "Who's that?, It's me, DUH!",
-      "english": "Who's that?, It's me, DUH!"
+      "original": "Who's that?, It's me",
+      "romanization": "Who's that?, It's me",
+      "english": "Who's that?, It's me",
+      "voice": [
+        [
+          173.99,
+          175.18
+        ]
+      ]
     },
     {
-      "start": 177.34,
-      "end": 178.95,
+      "start": 177.36,
+      "end": 178.83,
       "members": [
         "JIUNG"
       ],
       "original": "You already know who it is",
       "romanization": "You already know who it is",
-      "english": "You already know who it is"
+      "english": "You already know who it is",
+      "voice": [
+        [
+          177.5,
+          178.88
+        ]
+      ]
     },
     {
-      "start": 179.88,
-      "end": 181.53,
+      "start": 179.79,
+      "end": 181.46,
       "members": [
         "JIUNG"
       ],
       "original": "Not gonna repeat myself",
       "romanization": "Not gonna repeat myself",
-      "english": "Not gonna repeat myself"
+      "english": "Not gonna repeat myself",
+      "voice": [
+        [
+          179.96,
+          181.37
+        ]
+      ]
     },
     {
-      "start": 182.66,
-      "end": 183.73,
+      "start": 182.73,
+      "end": 183.46,
       "members": [
         "JIUNG"
       ],
       "original": "Light work",
       "romanization": "Light work",
-      "english": "Light work"
+      "english": "Light work",
+      "voice": [
+        [
+          182.79,
+          183.43
+        ]
+      ]
     },
     {
-      "start": 184.79,
-      "end": 185.44,
+      "start": 184.82,
+      "end": 185.42,
       "members": [
         "JIUNG"
       ],
       "original": "DUH!",
       "romanization": "DUH!",
-      "english": "DUH!"
+      "english": "DUH!",
+      "voice": [
+        [
+          184.86,
+          185.48
+        ]
+      ]
+    },
+    {
+      "start": 89.55,
+      "end": 89.95,
+      "members": [
+        "JONGSEOB"
+      ],
+      "original": "Peace",
+      "romanization": "Peace",
+      "english": "Peace",
+      "adlib": true,
+      "voice": [
+        [
+          89.56,
+          89.92
+        ]
+      ]
+    },
+    {
+      "start": 127.29,
+      "end": 128.58,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "Uh huh, yeah",
+      "romanization": "Uh huh, yeah",
+      "english": "Uh huh, yeah",
+      "adlib": true,
+      "voice": [
+        [
+          127.47,
+          127.89
+        ],
+        [
+          128.06,
+          128.37
+        ]
+      ]
+    },
+    {
+      "start": 161.25,
+      "end": 163.55,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "Plain white T, yeah",
+      "romanization": "Plain white T, yeah",
+      "english": "Plain white T, yeah",
+      "adlib": true,
+      "voice": [
+        [
+          161.54,
+          163.38
+        ]
+      ]
+    },
+    {
+      "start": 163.68,
+      "end": 164.6,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "Yeah",
+      "romanization": "Yeah",
+      "english": "Yeah",
+      "adlib": true,
+      "voice": [
+        [
+          163.88,
+          164.55
+        ]
+      ]
+    },
+    {
+      "start": 166.04,
+      "end": 166.71,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "DUH!",
+      "romanization": "DUH!",
+      "english": "DUH!",
+      "adlib": true,
+      "voice": [
+        [
+          166.15,
+          166.69
+        ]
+      ]
+    },
+    {
+      "start": 170.19,
+      "end": 171.46,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "Paint these streets",
+      "romanization": "Paint these streets",
+      "english": "Paint these streets",
+      "adlib": true,
+      "voice": [
+        [
+          170.29,
+          171.27
+        ]
+      ]
+    },
+    {
+      "start": 172.99,
+      "end": 173.71,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "A.T.",
+      "romanization": "A.T.",
+      "english": "A.T.",
+      "adlib": true,
+      "voice": [
+        [
+          173.13,
+          173.66
+        ]
+      ]
+    },
+    {
+      "start": 174.52,
+      "end": 175.33,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "It’s me",
+      "romanization": "It’s me",
+      "english": "It’s me",
+      "adlib": true,
+      "voice": [
+        [
+          174.59,
+          175.3
+        ]
+      ]
+    },
+    {
+      "start": 175.33,
+      "end": 176.03,
+      "members": [
+        "INTAK"
+      ],
+      "original": "DUH!",
+      "romanization": "DUH!",
+      "english": "DUH!",
+      "adlib": true,
+      "voice": [
+        [
+          175.51,
+          176.08
+        ]
+      ]
+    },
+    {
+      "start": 183.82,
+      "end": 184.6,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "Ha ha ha",
+      "romanization": "Ha ha ha",
+      "english": "Ha ha ha",
+      "adlib": true,
+      "voice": [
+        [
+          183.94,
+          184.44
+        ]
+      ]
     }
   ]
 }
