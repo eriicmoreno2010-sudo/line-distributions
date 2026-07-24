@@ -19,7 +19,6 @@ const Lyrics = {
     centralIndex: -1,
     adlibIndex: -1,
     lastCentralMembers: null,   // for name persistence across same-singer lines
-    lastAdlibMembers: null,
 
     els(){
         return {
@@ -78,7 +77,6 @@ const Lyrics = {
     // so on runs with small gaps (e.g. NCT DREAM) the name stays until they stop.
     HOLD: 1.0,
     centralTextCleared: false,
-    adlibTextCleared: false,
 
     update(currentTime){
         if(!SONG || !SONG.lyrics) return;
@@ -118,25 +116,9 @@ const Lyrics = {
             }
         }
 
-        // AD-LIB — same look-ahead rule as the central lyrics
-        if(ai !== -1){
-            if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
-        } else if(this.adlibIndex !== -1){
-            const shown = lyrics[this.adlibIndex];
-            let next = null;
-            for(let k = 0; k < lyrics.length; k++){
-                const l = lyrics[k];
-                if(isAdlibLine(l) && l.start >= shown.end - 1e-3 && (!next || l.start < next.start)) next = l;
-            }
-            const gap = next ? next.start - shown.end : Infinity;
-            const sameSinger = next && next.members.join("|") === shown.members.join("|");
-            if(currentTime < shown.start || gap >= this.HOLD || !sameSinger){
-                this.clearAdlib();
-            } else if(!this.adlibTextCleared){
-                this.clearAdlibText();
-                this.adlibTextCleared = true;
-            }
-        }
+        // AD-LIB — clears fully as soon as nothing is active (original behaviour)
+        if(ai === -1) this.clearAdlib();
+        else if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
     },
 
     /* ---------------- CENTRAL panel ---------------- */
@@ -248,40 +230,27 @@ const Lyrics = {
     showAdlib(line){
         const e = this.els();
         const c = this.colorsFor(line);
-        this.adlibTextCleared = false;
 
-        const membersKey = line.members.join("|");
-        const sameName = this.lastAdlibMembers === membersKey;
-        this.lastAdlibMembers = membersKey;
-
-        // Persistent name element + a text container (mirrors the central panel),
-        // so the name doesn't flicker/rebuild on every ad-lib.
-        let nameEl = e.adlibs.querySelector(".adlib-member");
-        let textWrap = e.adlibs.querySelector(".adlib-textwrap");
-        if(!nameEl || !textWrap){
-            e.adlibs.replaceChildren();
-            nameEl = document.createElement("div"); nameEl.className = "adlib-member";
-            textWrap = document.createElement("div"); textWrap.className = "adlib-textwrap";
-            e.adlibs.append(nameEl, textWrap);
-        }
-
-        if(!sameName){ nameEl.classList.add("fade-out"); nameEl.classList.remove("fade-in"); }
-        [...textWrap.children].forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
+        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
+            el.classList.add("fade-out"); el.classList.remove("fade-in");
+        });
 
         setTimeout(() => {
-            if(!sameName) nameEl.textContent = line.members.join("  &  ");
+            e.adlibs.replaceChildren();
             const parts = [];
             const addPart = (cls, text) => {
                 if(!text) return;
-                const d = document.createElement("div");
-                d.className = cls + " fade-out"; d.textContent = text;
-                parts.push(d);
+                const el2 = document.createElement("div");
+                el2.className = cls + " fade-out";
+                el2.textContent = text;
+                parts.push(el2);
             };
+            addPart("adlib-member",   line.members.join("  &  "));
             addPart("adlib-original", line.original);
             addPart("adlib-roman",    line.romanization);
             addPart("adlib-english",  line.english);
             addPart("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
-            textWrap.replaceChildren(...parts);
+            e.adlibs.append(...parts);
 
             e.adlibs.style.setProperty("--accent", c.accent);
             e.adlibs.style.setProperty("--accent-secondary", c.secondaryAccent);
@@ -292,30 +261,19 @@ const Lyrics = {
             e.adlibs.classList.toggle("group", c.isGroupLine);
 
             requestAnimationFrame(() => {
-                nameEl.classList.remove("fade-out"); nameEl.classList.add("fade-in");
-                parts.forEach(d => { d.classList.remove("fade-out"); d.classList.add("fade-in"); });
+                parts.forEach(el2 => { el2.classList.remove("fade-out"); el2.classList.add("fade-in"); });
             });
         }, 180);
-    },
-
-    /* Clear ONLY the ad-lib text parts (keep the member name during the gap). */
-    clearAdlibText(){
-        const e = this.els();
-        const textWrap = e.adlibs.querySelector(".adlib-textwrap");
-        if(!textWrap) return;
-        const parts = [...textWrap.children];
-        parts.forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
-        setTimeout(() => { parts.forEach(el => el.remove()); }, 180);
     },
 
     clearAdlib(){
         if(this.adlibIndex === -1) return;
         this.adlibIndex = -1;
-        this.adlibTextCleared = false;
-        this.lastAdlibMembers = null;
 
         const e = this.els();
-        [...e.adlibs.children].forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
+        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
+            el.classList.add("fade-out"); el.classList.remove("fade-in");
+        });
 
         setTimeout(() => {
             e.adlibs.replaceChildren();
