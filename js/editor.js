@@ -30,6 +30,7 @@
     $("#grp").textContent = song.group || "";
     renderLines();
     updateTapUI();
+    syncModeUI();
     requestAnimationFrame(tick);
   }
 
@@ -37,6 +38,20 @@
     listEl.innerHTML = "";
     song.lyrics.forEach((l, i) => listEl.appendChild(makeRow(l, i)));
     highlightSel();
+  }
+
+  function syncModeUI(){
+    const btn = $("#addadlib");
+    if(btn) btn.style.display = mode.adlib ? "" : "none";
+  }
+  // Add a brand-new ad-lib line (ad-lib modes start empty; you build them here).
+  function addAdlib(){
+    song.lyrics.push({ start:0, end:0, members:[], original:"", romanization:"", english:"", adlib:true });
+    sel = song.lyrics.length - 1;
+    awaitingEnd = false;
+    renderLines(); updateTapUI();
+    const r = listEl.children[sel];
+    if(r){ const inp = r.querySelector(".f.orig"); if(inp) inp.focus(); }
   }
 
   function makeRow(l, i){
@@ -101,7 +116,7 @@
 
     const rb = document.createElement("div"); rb.className="rowbtns";
     const ins = document.createElement("button"); ins.textContent="＋"; ins.title="insertar línea vacía debajo";
-    ins.onclick = () => { song.lyrics.splice(i+1, 0, { start:0, end:0, members:[], original:"", romanization:"", english:"" }); sel = i+1; renderLines(); };
+    ins.onclick = () => { song.lyrics.splice(i+1, 0, { start:0, end:0, members:[], original:"", romanization:"", english:"", adlib: mode.adlib }); sel = i+1; renderLines(); };
     const mg = document.createElement("button"); mg.textContent="unir ↓"; mg.title="juntar con la siguiente línea";
     mg.onclick = () => mergeDown(i);
     const del = document.createElement("button"); del.textContent="✕"; del.title="borrar línea";
@@ -112,7 +127,7 @@
     rb.append(ins, mg, del);
 
     row.append(num, txt, chips, times, rb);
-    if(isAdlib(l) !== mode.adlib) row.classList.add("dim");   // not part of this pass
+    if(isAdlib(l) !== mode.adlib) row.classList.add("hide");   // hidden: not this pass (central vs ad-lib)
     return row;
   }
 
@@ -202,6 +217,7 @@
   function tapS(){
     if(!song.lyrics.length) return;
     const l = song.lyrics[sel];
+    if(!l || isAdlib(l) !== mode.adlib) return;   // selection must belong to the current pass
     const t = +video.currentTime.toFixed(2);
     if(mode.kind === "voice"){
       l.voice = voiceSegs(l);
@@ -234,6 +250,7 @@
   function tapEnter(){
     if(mode.kind !== "voice") return;
     const l = song.lyrics[sel];
+    if(!l || isAdlib(l) !== mode.adlib) return;
     if(awaitingEnd){
       const seg = voiceSegs(l)[voiceSegs(l).length-1];
       if(seg && seg.length===1) seg[1] = Math.max(+video.currentTime.toFixed(2), seg[0]);
@@ -276,11 +293,12 @@
   $("#back2").onclick = ()=> video.currentTime = Math.max(0, video.currentTime-2);
   $("#fwd2").onclick = ()=> video.currentTime += 2;
   $("#markstart").onclick = tapS;
+  $("#addadlib").onclick = addAdlib;
   $("#mode").onchange = (e) => {
     mode = MODES[e.target.value] || MODES["lyric-central"];
     awaitingEnd = false;
-    const nx = nextMatch(0); sel = nx >= 0 ? nx : 0;
-    renderLines(); updateTapUI();
+    const nx = nextMatch(0); sel = nx >= 0 ? nx : -1;
+    renderLines(); updateTapUI(); syncModeUI();
   };
 
   document.addEventListener("keydown", e => {

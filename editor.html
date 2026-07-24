@@ -31,7 +31,7 @@
   .row.sel{ background:#1a1a28; outline:2px solid var(--accent); border-radius:8px; }
   .row.active{ background:#141422; }
   .row.rec{ outline:2px solid #d23b5b; background:#2a1620; border-radius:8px; }
-  .row.dim{ opacity:.32; }   /* line not part of the current timing pass */
+  .row.hide{ display:none; }   /* line not part of the current pass (central vs ad-lib) */
   button.rec{ background:#d23b5b; border-color:#d23b5b; color:#fff; }
   .num{ color:var(--text2); font-weight:800; text-align:center; cursor:pointer; }
   .txt{ min-width:0; display:flex; flex-direction:column; gap:3px; }
@@ -72,6 +72,7 @@
           <option value="voice-central">Tiempos de VOZ — central (cuenta)</option>
           <option value="voice-adlib">Tiempos de VOZ — ad-libs (cuenta)</option>
         </select>
+        <button id="addadlib" style="display:none;background:#4a3a1a;border-color:#7a5a1a;color:#ffcf33">＋ Añadir ad-lib</button>
       </div>
       <div class="btnrow">
         <button id="playpause">▶ / ⏸ (K)</button>
