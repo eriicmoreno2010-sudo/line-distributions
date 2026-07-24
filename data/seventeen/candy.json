@@ -49,7 +49,17 @@
       ],
       "original": "우리 사탕 같은 사랑해요",
       "romanization": "Uri satang gateun saranghaeyo",
-      "english": "Our love is like candy"
+      "english": "Our love is like candy",
+      "voice": [
+        [
+          4.47,
+          5.85
+        ],
+        [
+          6.89,
+          10.29
+        ]
+      ]
     },
     {
       "start": 10.8,
@@ -59,7 +69,21 @@
       ],
       "original": "자그만 말 하나에도 기분이 좋아질 수 있게요",
       "romanization": "Jageuman mal hanaedo gibuni joajil su itgeyo",
-      "english": "Even in a small bite can make me feel better"
+      "english": "Even in a small bite can make me feel better",
+      "voice": [
+        [
+          11.19,
+          14.48
+        ],
+        [
+          16.55,
+          19.34
+        ],
+        [
+          19.49,
+          20.88
+        ]
+      ]
     },
     {
       "start": 22.54,
@@ -69,7 +93,17 @@
       ],
       "original": "사랑 같은 건 아마 원래 쓰디쓴 걸까요",
       "romanization": "Sarang gateun geon ama wonrae sseudisseun geolkkayo",
-      "english": "Love is so bitter when it's the first time"
+      "english": "Love is so bitter when it's the first time",
+      "voice": [
+        [
+          23.77,
+          27.34
+        ],
+        [
+          27.98,
+          31.69
+        ]
+      ]
     },
     {
       "start": 33.05,
@@ -79,7 +113,17 @@
       ],
       "original": "나는 싫어요 어쩌죠?",
       "romanization": "Naneun silheoyo eojjeojyo?",
-      "english": "I don't like it, what should I do?"
+      "english": "I don't like it, what should I do?",
+      "voice": [
+        [
+          33.72,
+          35.85
+        ],
+        [
+          36.27,
+          37.87
+        ]
+      ]
     },
     {
       "start": 40.77,
@@ -89,7 +133,21 @@
       ],
       "original": "어른이 되는 것 만큼, 사랑도 힘든 걸요",
       "romanization": "Eoreuni doeneun geot mankeum, Sarangdo himdeun geolyo",
-      "english": "Love is as hard as being an adult"
+      "english": "Love is as hard as being an adult",
+      "voice": [
+        [
+          41.14,
+          44.42
+        ],
+        [
+          45.5,
+          46.38
+        ],
+        [
+          46.55,
+          48.69
+        ]
+      ]
     },
     {
       "start": 50.6,
@@ -99,7 +157,21 @@
       ],
       "original": "그러나 그치만 그래도",
       "romanization": "Geureona geuchiman geuraedo",
-      "english": "But still, however, even so"
+      "english": "But still, however, even so",
+      "voice": [
+        [
+          50.84,
+          51.87
+        ],
+        [
+          52.01,
+          53.72
+        ],
+        [
+          53.86,
+          55.05
+        ]
+      ]
     },
     {
       "start": 55.23,
@@ -109,7 +181,17 @@
       ],
       "original": "우리 사탕 같은 사랑해요",
       "romanization": "Uri satang gateun saranghaeyo",
-      "english": "Our love is like candy"
+      "english": "Our love is like candy",
+      "voice": [
+        [
+          55.92,
+          57.42
+        ],
+        [
+          58.34,
+          61.74
+        ]
+      ]
     },
     {
       "start": 62.19,
@@ -119,7 +201,17 @@
       ],
       "original": "자그만 말 하나에도 기분이 좋아질 수 있게요",
       "romanization": "Jageuman mal hanaedo gibuni joajil su itgeyo",
-      "english": "Even in a small bite can make me feel better"
+      "english": "Even in a small bite can make me feel better",
+      "voice": [
+        [
+          62.59,
+          65.93
+        ],
+        [
+          68,
+          72.44
+        ]
+      ]
     },
     {
       "start": 72.38,
@@ -129,7 +221,25 @@
       ],
       "original": "우리 사탕 같은 사랑하며, 사르르 녹아질래요? 어때요?",
       "romanization": "Uri satang gateun saranghamyeo, Sareureu nogajillaeyo? Eottaeyo?",
-      "english": "We love each other like a candy, Do you want to melt it? How was it?"
+      "english": "We love each other like a candy, Do you want to melt it? How was it?",
+      "voice": [
+        [
+          73.02,
+          74.52
+        ],
+        [
+          75.54,
+          78.74
+        ],
+        [
+          79.78,
+          82.98
+        ],
+        [
+          83.41,
+          85.14
+        ]
+      ]
     },
     {
       "start": 85.11,
@@ -139,7 +249,17 @@
       ],
       "original": "그대 맘을 다 가지고 싶다면 어린 맘인가요",
       "romanization": "Geudae mameul da gajigo sipdamyeon eorin mamingayo",
-      "english": "If I want to have your whole heart, do I have to be young?"
+      "english": "If I want to have your whole heart, do I have to be young?",
+      "voice": [
+        [
+          85.59,
+          89.24
+        ],
+        [
+          89.4,
+          91.67
+        ]
+      ]
     },
     {
       "start": 124.13,
@@ -149,7 +269,17 @@
       ],
       "original": "우리 사탕 같은 사랑해요",
       "romanization": "Uri satang gateun saranghaeyo",
-      "english": "Our love is like candy"
+      "english": "Our love is like candy",
+      "voice": [
+        [
+          124.45,
+          126
+        ],
+        [
+          126.89,
+          130.29
+        ]
+      ]
     },
     {
       "start": 130.94,
@@ -159,7 +289,17 @@
       ],
       "original": "상처 뿐인 하루라도 한번은 웃을 수 있게요",
       "romanization": "Sangcheo ppunin harurado han beoneun useul su itgeyo",
-      "english": "Even it hurts me inside every day, so I can smile once"
+      "english": "Even it hurts me inside every day, so I can smile once",
+      "voice": [
+        [
+          131.23,
+          134.86
+        ],
+        [
+          136.57,
+          141.19
+        ]
+      ]
     },
     {
       "start": 141.31,
@@ -169,7 +309,25 @@
       ],
       "original": "우리 사탕 같은 사랑하며, 사르르 녹아질래요? 어때요?",
       "romanization": "Uri satang gateun saranghamyeo, Sareureu nogajillaeyo? Eottaeyo?",
-      "english": "We love each other like a candy, Do you want to melt it? How was it?"
+      "english": "We love each other like a candy, Do you want to melt it? How was it?",
+      "voice": [
+        [
+          141.6,
+          143.15
+        ],
+        [
+          144.05,
+          147.65
+        ],
+        [
+          148.23,
+          151.63
+        ],
+        [
+          151.92,
+          153.67
+        ]
+      ]
     },
     {
       "start": 153.79,
@@ -179,7 +337,17 @@
       ],
       "original": "그대 맘을 다 가지고 싶다면 어린 맘인가요",
       "romanization": "Geudae mameul da gajigo sipdamyeon eorin mamingayo",
-      "english": "If I want to have your whole heart, do I have to be young?"
+      "english": "If I want to have your whole heart, do I have to be young?",
+      "voice": [
+        [
+          154.09,
+          157.75
+        ],
+        [
+          157.9,
+          160.58
+        ]
+      ]
     }
   ]
 }
