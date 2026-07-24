@@ -40,7 +40,13 @@ function createWindow(){
       preload: path.join(__dirname, "preload.js")
     }
   });
-  win.loadFile(path.join(ROOT, "library.html"));
+  const page = argVal("--page");
+  if(page){
+    const [file, query] = page.split("?");
+    win.loadFile(path.join(ROOT, file), query ? { search: query } : {});
+  } else {
+    win.loadFile(path.join(ROOT, "library.html"));
+  }
 
   if(SELFTEST){
     win.webContents.once("did-finish-load", async () => {
@@ -101,6 +107,19 @@ ipcMain.handle("list-songs", async () => {
   };
   walk(path.join(ROOT, "data"));
   return out;
+});
+
+// Editor: load a song JSON, and save it back after editing.
+ipcMain.handle("load-song", async (_e, relPath) => {
+  try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }
+  catch(e){ return { ok: false, error: e.message }; }
+});
+ipcMain.handle("save-song", async (_e, args) => {
+  try{
+    const full = path.join(ROOT, args.path);
+    fs.writeFileSync(full, JSON.stringify(args.data, null, 2), "utf8");
+    return { ok: true };
+  }catch(e){ return { ok: false, error: e.message }; }
 });
 
 app.whenReady().then(() => {

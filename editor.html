@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Editor de líneas</title>
+<style>
+  :root{ --bg:#0b0b10; --panel:#15151d; --panel2:#1b1b26; --border:#2a2a3a; --text:#f0f0f6; --text2:#9a9ab0; --accent:#7c5cff; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{ background:var(--bg); color:var(--text); font-family:"Segoe UI",Inter,Arial,sans-serif; }
+
+  #top{ position:sticky; top:0; z-index:10; background:var(--bg); border-bottom:1px solid var(--border);
+        display:flex; gap:18px; padding:12px 18px; align-items:flex-start; }
+  #vid{ width:420px; flex:0 0 auto; background:#000; border-radius:8px; }
+  #ctrls{ flex:1 1 auto; display:flex; flex-direction:column; gap:8px; min-width:0; }
+  .titlerow{ display:flex; align-items:center; gap:12px; }
+  .titlerow h1{ font-size:20px; font-weight:900; }
+  .titlerow .grp{ color:var(--text2); font-size:13px; }
+  #clock{ font-variant-numeric:tabular-nums; font-weight:800; font-size:18px; }
+  button{ border:1px solid var(--border); background:var(--panel2); color:var(--text); border-radius:8px;
+          padding:8px 12px; cursor:pointer; font:700 13px "Segoe UI",sans-serif; }
+  button:hover{ background:#26263a; }
+  button.primary{ background:var(--accent); border-color:var(--accent); color:#fff; }
+  .help{ color:var(--text2); font-size:12px; line-height:1.5; }
+  .help b{ color:var(--text); }
+  .btnrow{ display:flex; gap:8px; flex-wrap:wrap; }
+
+  #list{ padding:8px 12px 60px; }
+  .row{ display:grid; grid-template-columns:40px 1fr auto auto; gap:12px; align-items:center;
+        padding:8px 10px; border-bottom:1px solid #1e1e2a; }
+  .row.sel{ background:#1a1a28; outline:2px solid var(--accent); border-radius:8px; }
+  .row.active{ background:#141422; }
+  .num{ color:var(--text2); font-weight:800; text-align:center; }
+  .txt{ min-width:0; }
+  .txt .rom{ font-weight:700; font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .txt .orig{ color:var(--text2); font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .chips{ display:flex; gap:5px; align-items:center; }
+  .chip{ width:34px; height:34px; border-radius:50%; padding:0; font-size:11px; font-weight:900;
+         border:2px solid #3a3a4a; background:#20202c; color:#8a8a9a; }
+  .chip.on{ background:var(--c); border-color:var(--c); color:#111; }
+  .chip.todos{ width:auto; border-radius:14px; padding:0 10px; }
+  .chip.adlib{ width:auto; border-radius:14px; padding:0 10px; }
+  .chip.adlib.on{ background:#ffcf33; border-color:#ffcf33; color:#111; }
+  .times{ display:flex; gap:4px; align-items:center; }
+  .times input{ width:64px; background:#0e0e15; border:1px solid var(--border); color:var(--text);
+                border-radius:6px; padding:5px; font:700 12px monospace; text-align:right; }
+  .times button{ padding:5px 7px; font-size:11px; }
+  .rowbtns{ display:flex; gap:4px; }
+  .rowbtns button{ padding:5px 7px; font-size:11px; }
+</style>
+</head>
+<body>
+  <div id="top">
+    <video id="vid" controls></video>
+    <div id="ctrls">
+      <div class="titlerow">
+        <button id="back">← Biblioteca</button>
+        <h1 id="title">—</h1>
+        <span class="grp" id="grp"></span>
+        <span id="clock">0:00</span>
+        <button id="save" class="primary">Guardar</button>
+      </div>
+      <div class="btnrow">
+        <button id="playpause">▶ / ⏸ (K)</button>
+        <button id="back2">« -2s (J)</button>
+        <button id="fwd2">+2s » (L)</button>
+        <button id="markstart">⏱ Marcar inicio de la línea seleccionada (S)</button>
+      </div>
+      <div class="help">
+        <b>Flujo rápido:</b> selecciona la primera línea (clic), dale al play, y pulsa <b>S</b> justo cuando empieza cada línea
+        (marca su inicio, cierra la anterior y avanza sola). Los <b>colores</b> = clica el/los miembro(s) que cantan.
+        <b>TODOS</b> = línea de grupo (degradado, no cuenta). <b>AD</b> = ad-lib. <b>unir ↓</b> = junta con la siguiente.
+        Muévete con ↑/↓. No olvides <b>Guardar</b>.
+      </div>
+    </div>
+  </div>
+  <div id="list"></div>
+<script src="js/editor.js"></script>
+</body>
+</html>

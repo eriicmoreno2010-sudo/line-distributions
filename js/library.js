@@ -29,10 +29,14 @@
       <div class="meta">${(song.members || []).length} miembros · ${fmtTime(song.duration)}</div>
       <div class="actions">
         <button class="open">▶  Abrir</button>
+        <button class="edit">✎  Editar</button>
         <button class="exp">⬇  Exportar 4K</button>
       </div>`;
     el.querySelector(".open").onclick = () => {
       location.href = "index.html?song=" + encodeURIComponent(song.path);
+    };
+    el.querySelector(".edit").onclick = () => {
+      location.href = "editor.html?song=" + encodeURIComponent(song.path);
     };
     el.querySelector(".exp").onclick = () => doExport(song);
     return el;

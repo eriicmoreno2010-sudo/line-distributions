@@ -8,5 +8,7 @@ contextBridge.exposeInMainWorld("desktop", {
   isDesktop: true,
   exportVideo: (args) => ipcRenderer.invoke("export-video", args || {}),
   onProgress: (cb) => ipcRenderer.on("export-progress", (_e, p) => cb(p)),
-  listSongs: () => ipcRenderer.invoke("list-songs")
+  listSongs: () => ipcRenderer.invoke("list-songs"),
+  loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
+  saveSong: (relPath, data) => ipcRenderer.invoke("save-song", { path: relPath, data })
 });
