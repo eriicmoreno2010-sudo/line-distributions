@@ -1,0 +1,51 @@
+{
+  "group": "P1Harmony",
+  "song": "Duh",
+  "video": "videos/duh.mp4",
+  "duration": 196.74,
+  "members": [
+    {
+      "name": "KEEHO",
+      "image": "images/p1harmony/keeho.png",
+      "color": "#ff751f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "THEO",
+      "image": "images/p1harmony/theo.png",
+      "color": "#ff3131",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JIUNG",
+      "image": "images/p1harmony/jiung.png",
+      "color": "#ffde59",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "INTAK",
+      "image": "images/p1harmony/intak.png",
+      "color": "#7ed957",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SOUL",
+      "image": "images/p1harmony/soul.png",
+      "color": "#38b6ff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JONGSEOB",
+      "image": "images/p1harmony/jongseob.png",
+      "color": "#8c52ff",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": []
+}
