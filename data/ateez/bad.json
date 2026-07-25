@@ -970,6 +970,37 @@
           145.32
         ]
       ]
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HONGJOONG"
+      ],
+      "original": "",
+      "romanization": "Chk-chk-chk-cha",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SAN"
+      ],
+      "original": "",
+      "romanization": "Ay",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Chk-ch-chk-c",
+      "english": "",
+      "adlib": true
     }
   ]
 }
