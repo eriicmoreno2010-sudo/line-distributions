@@ -53,6 +53,11 @@ Version: 4.0 — Ranking (transform leaderboard)
     box-shadow:0 18px 36px -10px rgba(0,0,0,.75);
 }
 
+/* a card that jumps to the OTHER column: snap into place (no diagonal slide)
+   then fade in, so the column change reads cleanly */
+.member.no-anim{ transition:none !important; }
+.member.switching{ transition:opacity .2s var(--ease) !important; }
+
 /* ========================= */
 /* ACTIVE STATE (color glow, no resizing) */
 /* ========================= */

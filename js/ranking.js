@@ -42,17 +42,20 @@ const Ranking = {
     buildColumns(){
         const rightEl = UI.elements.ranking;
         const leftEl  = document.getElementById("ranking-left");
-        if(this.members.length > 10 && leftEl){
+        const n = this.members.length;
+        if(n > 10 && leftEl){
             document.body.classList.add("two-side");
-            const half = Math.ceil(this.members.length / 2);
-            this.columns = [
-                { el: leftEl,  members: this.members.slice(0, half) },
-                { el: rightEl, members: this.members.slice(half) }
-            ];
+            this.twoSide = true;
+            this.half = Math.ceil(n / 2);
+            // Left column = global ranks 1..half, right = the rest. Cards move
+            // between columns as ranks change (a true global leaderboard).
+            this.columns = [ { el: leftEl, cap: this.half }, { el: rightEl, cap: n - this.half } ];
         } else {
             document.body.classList.remove("two-side");
             if(leftEl) leftEl.innerHTML = "";
-            this.columns = [ { el: rightEl, members: this.members } ];
+            this.twoSide = false;
+            this.half = n;
+            this.columns = [ { el: rightEl, cap: n } ];
         }
     },
 
@@ -129,16 +132,13 @@ const Ranking = {
         requestAnimationFrame(loop);
     },
 
-    /*
-       Build every card ONCE. Cards are absolutely positioned and never
-       re-inserted in the DOM again — only their translateY changes, which
-       CSS transitions animate. That removes all reflow-related flicker.
-    */
+    /* Build every card once; placeAll() then distributes them across columns
+       by GLOBAL rank and moves them between columns as ranks change. */
     render(){
 
         this.columns.forEach(col => col.el.innerHTML = "");
 
-        this.columns.forEach(col => col.members.forEach(member => {
+        this.members.forEach(member => {
 
             const card = document.createElement("div");
             card.className = "member";
@@ -165,29 +165,24 @@ const Ranking = {
             member.rankElement     = card.querySelector(".member-rank");
             member.timeElement     = card.querySelector(".member-time");
             member.progressElement = card.querySelector(".member-progress");
+            member._col = undefined;
 
-            col.el.appendChild(card);
-        }));
+            this.columns[0].el.appendChild(card);   // scratch parent; placeAll re-homes it
+        });
 
-        this.computeRanks();
-        this.layout();
-
+        this.layout();                              // computes cardH/rowH + initial placeAll
         this.order = this.members.map(m => m.name);
-
-        // Initial placement WITHOUT animation, then enable transitions.
-        this.columns.forEach(col => this.place(col, col.members));
         requestAnimationFrame(() => {
             this.members.forEach(m => m.element.classList.add("ready"));
         });
     },
 
-    /* Fill each column while keeping the compact mobile list natural. */
+    /* Compute each column's card height from its fixed capacity, then place. */
     layout(){
         const isDesktop = window.matchMedia("(min-width:1201px)").matches;
-        this.computeRanks();
 
         this.columns.forEach(col => {
-            const n = col.members.length;
+            const n = col.cap;
             if(isDesktop){
                 col.el.style.height = "";
                 const style = getComputedStyle(col.el);
@@ -196,29 +191,72 @@ const Ranking = {
                 const availableHeight = col.el.clientHeight - verticalPadding;
                 col.cardH = Math.max(72,
                     (availableHeight - this.gap * (n - 1)) / n);
-                col.members.forEach(m => m.element.style.height = col.cardH + "px");
             } else {
-                col.members.forEach(m => m.element.style.height = "");
-                col.cardH = Math.max(...col.members.map(m => m.element.offsetHeight));
+                col.cardH = Math.max(72, ...this.members.map(m => m.element.offsetHeight || 92));
             }
             col.rowH = col.cardH + this.gap;
             if(!isDesktop) col.el.style.height = (n * col.rowH - this.gap) + "px";
-
-            // keep the current sorted order on resize (don't reset to lineup)
-            this.place(col, [...col.members].sort((a,b) => b.seconds - a.seconds));
         });
+
+        this.placeAll(false);
     },
 
-    /* Position each card at its slot in its column + stacking so risers pass. */
-    place(col, sorted){
-        const n = col.members.length;
-        sorted.forEach((m, i) => {
-            m.element.style.setProperty("--rank-y", `${i * col.rowH}px`);
-            m.element.style.zIndex = String(n - i);   // top of column sits on top
-            m._pos = i;
-            if(m.rankElement)
-                m.rankElement.textContent = (this.rankMap && this.rankMap[m.name]) || (i + 1);
+    /* Place every card by GLOBAL rank: ranks 1..half in the left column,
+       the rest in the right. Cards that change column fade across cleanly. */
+    placeAll(animate){
+        const sorted = [...this.members].sort((a,b) => b.seconds - a.seconds);
+        this.rankMap = {};
+        const switched = [];
+
+        sorted.forEach((m, gi) => {
+            this.rankMap[m.name] = gi + 1;
+
+            let colIdx, row;
+            if(this.twoSide && gi >= this.half){ colIdx = 1; row = gi - this.half; }
+            else { colIdx = 0; row = gi; }
+            const col = this.columns[colIdx];
+
+            if(m.element.parentNode !== col.el){         // moving to the other column
+                m.element.classList.add("no-anim");      // no diagonal slide across
+                col.el.appendChild(m.element);
+                if(animate && m._col !== undefined) switched.push(m);
+            } else if(animate){
+                m.element.classList.toggle("rising", (m._pos ?? row) > row);
+            }
+
+            m.element.style.height = col.cardH ? col.cardH + "px" : "";
+            m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);
+            m.element.style.zIndex = String(col.cap - row);
+            if(m.rankElement) m.rankElement.textContent = gi + 1;
+            m._pos = row;
+            m._col = colIdx;
         });
+
+        // Column-switchers: appear instantly at the new slot, then fade in.
+        if(switched.length){
+            switched.forEach(m => { m.element.style.opacity = "0"; });
+            requestAnimationFrame(() => {
+                switched.forEach(m => {
+                    m.element.classList.remove("no-anim");
+                    m.element.classList.add("switching");
+                    m.element.style.opacity = "1";
+                });
+            });
+            clearTimeout(this._switchT);
+            this._switchT = setTimeout(() => {
+                switched.forEach(m => { m.element.classList.remove("switching"); m.element.style.opacity = ""; });
+            }, 260);
+        } else {
+            // clear any leftover no-anim from non-animated placements
+            this.members.forEach(m => m.element.classList.remove("no-anim"));
+        }
+
+        if(animate){
+            clearTimeout(this._riseT);
+            this._riseT = setTimeout(() => {
+                this.members.forEach(m => m.element.classList.remove("rising"));
+            }, 620);
+        }
     },
 
     /* Update text, bars and active glow in place (no layout change). */
@@ -236,28 +274,13 @@ const Ranking = {
         });
     },
 
-    /* Reorder = re-place within each column; the CSS transform transition animates it. */
+    /* Reorder = re-place everyone by global rank; transitions animate it. */
     reorder(){
-        const globalSorted = [...this.members].sort((a,b) => b.seconds - a.seconds);
-        const newOrder = globalSorted.map(m => m.name);
+        const sorted = [...this.members].sort((a,b) => b.seconds - a.seconds);
+        const newOrder = sorted.map(m => m.name);
         if(newOrder.join() === this.order.join()) return;
-
-        this.computeRanks();
-        this.columns.forEach(col => {
-            const colSorted = [...col.members].sort((a,b) => b.seconds - a.seconds);
-            // Mark cards that climb so they glide over the ones they pass.
-            colSorted.forEach((m, i) => {
-                m.element.classList.toggle("rising", (m._pos ?? i) > i);
-            });
-            this.place(col, colSorted);
-        });
+        this.placeAll(true);
         this.order = newOrder;
-
-        // Drop the elevated shadow once the glide settles.
-        clearTimeout(this._riseT);
-        this._riseT = setTimeout(() => {
-            this.members.forEach(m => m.element.classList.remove("rising"));
-        }, 620);
     }
 };
 

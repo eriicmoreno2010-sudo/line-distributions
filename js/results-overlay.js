@@ -85,6 +85,14 @@ Self-contained: injects its own styles and markup.
     #results-overlay .row.lit .fill{ background:var(--c); }
     #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 55%, #fff); }
     #results-overlay .row.lit .sec{ color:#f4f4f8; }
+    /* Many members (>10): two thick columns — ranks fill the left column
+       top-to-bottom, then the right — so rows are tall enough for the photos */
+    #results-overlay #ro-list.two-col{
+      display:grid; grid-template-columns:1fr 1fr;
+      grid-template-rows:repeat(var(--rows,7), 1fr);
+      grid-auto-flow:column; gap:1vh 1.4vh;
+    }
+    #results-overlay #ro-list.two-col .row{ flex:none; }
   `;
   document.head.appendChild(style);
 
@@ -149,6 +157,12 @@ Self-contained: injects its own styles and markup.
       m.row=row; m.fill=row.querySelector(".fill"); m.fillW=(m.pct/maxPct)*100;
       m.fill.style.width=m.fillW+"%";
     });
+
+    // >10 members: lay the list out in two thick columns (like the ranking)
+    if(ranked.length > 10){
+      list.classList.add("two-col");
+      list.style.setProperty("--rows", Math.ceil(ranked.length/2));
+    }
   }
 
   function setLit(m,on){ m.seg.style.fill=on?m.color:""; m.row.classList.toggle("lit",on); }
@@ -172,6 +186,10 @@ Self-contained: injects its own styles and markup.
 
   const video=document.getElementById("video");
   if(video) video.addEventListener("ended", show);
+  // preview hook: ?results=1 shows the results screen once it's built
+  if(new URLSearchParams(location.search).get("results")==="1"){
+    const t=setInterval(()=>{ if(built){ clearInterval(t); show(); } }, 100);
+  }
   document.addEventListener("keydown", e=>{
     if(e.key==="t"||e.key==="T"){ ov.classList.contains("show")?hide():show(); }
   });
