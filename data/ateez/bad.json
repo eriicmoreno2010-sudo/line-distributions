@@ -980,7 +980,13 @@
       "original": "",
       "romanization": "Chk-chk-chk-cha",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          43.47,
+          44.6
+        ]
+      ]
     },
     {
       "start": 44.76,
@@ -991,7 +997,13 @@
       "original": "",
       "romanization": "Ay",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          44.72,
+          45.07
+        ]
+      ]
     },
     {
       "start": 0,
@@ -1002,7 +1014,13 @@
       "original": "",
       "romanization": "Chk-cha-chk-cha",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          51.23,
+          52.33
+        ]
+      ]
     },
     {
       "start": 52.45,
@@ -1013,7 +1031,13 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          52.47,
+          52.86
+        ]
+      ]
     },
     {
       "start": 53.65,
@@ -1024,7 +1048,13 @@
       "original": "",
       "romanization": "Fix on!",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          53.64,
+          54.09
+        ]
+      ]
     },
     {
       "start": 69.45,
@@ -1035,7 +1065,13 @@
       "original": "",
       "romanization": "Ha ha ha ha",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          69.5,
+          70.14
+        ]
+      ]
     },
     {
       "start": 91.88,
@@ -1046,7 +1082,13 @@
       "original": "",
       "romanization": "Chk-chk-chk-cha",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          91.84,
+          92.97
+        ]
+      ]
     },
     {
       "start": 93.16,
@@ -1057,7 +1099,13 @@
       "original": "",
       "romanization": "Ay",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          93.07,
+          93.48
+        ]
+      ]
     },
     {
       "start": 99.61,
@@ -1068,7 +1116,13 @@
       "original": "",
       "romanization": "Chk-cha-chk-cha",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          99.62,
+          100.58
+        ]
+      ]
     },
     {
       "start": 100.83,
@@ -1079,7 +1133,13 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          100.91,
+          101.26
+        ]
+      ]
     },
     {
       "start": 129.87,
@@ -1090,7 +1150,13 @@
       "original": "",
       "romanization": "BAD",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          129.88,
+          130.29
+        ]
+      ]
     },
     {
       "start": 139.34,
@@ -1101,7 +1167,13 @@
       "original": "",
       "romanization": "Yo",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          139.35,
+          139.59
+        ]
+      ]
     },
     {
       "start": 143.18,
@@ -1112,7 +1184,13 @@
       "original": "",
       "romanization": "Yo",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          143.2,
+          143.47
+        ]
+      ]
     },
     {
       "start": 147.08,
@@ -1123,7 +1201,13 @@
       "original": "",
       "romanization": "Yo",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          147.07,
+          147.31
+        ]
+      ]
     },
     {
       "start": 150.9,
@@ -1134,7 +1218,13 @@
       "original": "",
       "romanization": "Yo",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          150.92,
+          151.16
+        ]
+      ]
     }
   ]
 }
