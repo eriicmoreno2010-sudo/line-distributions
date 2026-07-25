@@ -95,6 +95,7 @@ body{
 #video-section,
 #lyrics-section,
 #adlibs-section,
+#left-panel-rank,
 #right-panel{
     background:
         linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)) ,
@@ -205,6 +206,67 @@ body{
     flex:1 1 0;            /* desktop: ranking cards fill the available panel height */
     min-height:0;
 }
+
+/* ========================= */
+/* LEFT RANKING — only for big groups (> 10 members) */
+/* ========================= */
+#left-panel-rank{ display:none; }          /* hidden by default (single-side layout) */
+
+/* Big group: video centered, a ranking column on EACH side */
+body.two-side #app{
+    grid-template-columns:1fr 1.9fr 1fr;
+}
+body.two-side #left-panel-rank{
+    display:flex;
+    flex-direction:column;
+    min-height:0;
+    overflow-y:auto;
+    scrollbar-width:thin;
+    scrollbar-color:var(--panel3) transparent;
+    padding:18px 16px;
+}
+#left-panel-rank::-webkit-scrollbar{ width:6px; }
+#left-panel-rank::-webkit-scrollbar-thumb{ background:var(--panel3); border-radius:999px; }
+#left-panel-rank::before{
+    content:"LINE DISTRIBUTION";
+    display:block;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:2.5px;
+    color:var(--text3);
+    padding:2px 8px 14px;
+}
+#ranking-left{
+    position:relative;      /* absolute cards are placed against this */
+    flex:1 1 0;
+    min-height:0;
+    padding:2px 6px;
+}
+
+/* Two-side mode: force BOTH columns to the SAME compact card (the side
+   columns are narrower), overriding whatever ranking.css/style.css set. */
+body.two-side #ranking .member,
+body.two-side #ranking-left .member{
+    grid-template-columns:30px 72px minmax(0,1fr);
+    gap:12px;
+    padding:10px 14px 10px 12px;
+}
+body.two-side #ranking .member-photo,
+body.two-side #ranking-left .member-photo{
+    width:72px;
+    height:72px;
+    border:3px solid var(--accent);   /* colour ring on both sides */
+}
+body.two-side #ranking .member-rank,
+body.two-side #ranking-left .member-rank{ font-size:16px; }
+body.two-side #ranking .member-name,
+body.two-side #ranking-left .member-name{ font-size:20px; }
+body.two-side #ranking .member-time,
+body.two-side #ranking-left .member-time{ font-size:18px; }
+body.two-side #ranking .member-bar,
+body.two-side #ranking-left .member-bar{ height:13px; }
+body.two-side #ranking .member-info,
+body.two-side #ranking-left .member-info{ gap:8px; }
 
 /* Ranking cards */
 #ranking .member{
