@@ -202,7 +202,7 @@ const Lyrics = {
             e.section.classList.toggle("group", c.isGroupLine);
 
             fadeEls.forEach(el => { el.classList.remove("fade-out"); el.classList.add("fade-in"); });
-        }, 180);
+        }, 100);
     },
 
     /* Clear ONLY the lyric text (keep the member name showing during the gap). */
@@ -217,7 +217,7 @@ const Lyrics = {
                 el.style.webkitBackgroundClip = ""; el.style.backgroundClip = "";
                 el.classList.remove("fade-out");
             });
-        }, 180);
+        }, 100);
     },
 
     clearCentral(){
@@ -242,7 +242,7 @@ const Lyrics = {
             e.section.classList.remove("multi-member");
             e.section.classList.remove("group");
             fadeEls.forEach(el => el.classList.remove("fade-out"));
-        }, 180);
+        }, 100);
     },
 
     /* ---------------- AD-LIB panel ---------------- */
@@ -282,7 +282,7 @@ const Lyrics = {
             requestAnimationFrame(() => {
                 parts.forEach(el2 => { el2.classList.remove("fade-out"); el2.classList.add("fade-in"); });
             });
-        }, 180);
+        }, 100);
     },
 
     clearAdlib(){
@@ -302,7 +302,7 @@ const Lyrics = {
             e.adlibs.classList.remove("singing");
             e.adlibs.classList.remove("multi-member");
             e.adlibs.classList.remove("group");
-        }, 180);
+        }, 100);
     },
 
     /* Clear both panels (used at startup). */

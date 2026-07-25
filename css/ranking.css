@@ -42,10 +42,10 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* transitions are enabled only after the first (instant) placement */
 .member.ready{
     transition:
-        transform .55s cubic-bezier(.34,1.32,.5,1),   /* soft overshoot */
-        box-shadow .35s var(--ease),
-        background-color .35s var(--ease),
-        border-color .35s var(--ease);
+        transform .55s cubic-bezier(.34,1.32,.5,1),   /* soft overshoot (reorder glide) */
+        box-shadow .18s var(--ease),                  /* faster "light up" */
+        background-color .18s var(--ease),
+        border-color .18s var(--ease);
 }
 
 /* a card climbing to a better rank floats over the ones it passes */
@@ -80,7 +80,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     font-weight:800;
     color:var(--text3);
     font-variant-numeric:tabular-nums;
-    transition:color .3s var(--ease);
+    transition:color .15s var(--ease);
 }
 .member.active .member-rank{ color:var(--accent); }
 
@@ -99,7 +99,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     transform:translateY(-3px);
     border:3px solid var(--accent);   /* ring always in the member's colour */
     background:var(--panel3);
-    transition:border-color .3s var(--ease);
+    transition:border-color .15s var(--ease);
 }
 .member.active .member-photo{ border-color:var(--accent); }
 
@@ -130,7 +130,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     overflow:hidden;
     text-overflow:ellipsis;
     transform-origin:left center;
-    transition:color .3s var(--ease), transform .3s var(--ease);
+    transition:color .15s var(--ease), transform .15s var(--ease);
 }
 .member.has-sung .member-name{ color:var(--accent); }
 
@@ -141,7 +141,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     font-variant-numeric:tabular-nums;
     flex-shrink:0;
     transform-origin:right center;
-    transition:color .3s var(--ease), transform .3s var(--ease);
+    transition:color .15s var(--ease), transform .15s var(--ease);
 }
 .member.active .member-rank{ color:var(--sing); }
 .member.active .member-photo{ border-color:var(--sing); }

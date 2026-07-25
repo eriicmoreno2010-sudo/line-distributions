@@ -231,8 +231,8 @@ Version: 3.0 — Lyrics
     /* colour is applied instantly (no transition) so the text never flashes
        its default colour before settling on the member's colour */
     transition:
-        opacity .18s var(--ease),
-        transform .18s var(--ease);
+        opacity .1s var(--ease),
+        transform .1s var(--ease);
 }
 
 .fade-out{

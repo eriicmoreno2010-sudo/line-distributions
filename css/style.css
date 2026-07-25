@@ -335,7 +335,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     text-overflow:ellipsis;
     white-space:nowrap;
     transform-origin:left center;
-    transition:color .3s var(--ease), transform .3s var(--ease);
+    transition:color .15s var(--ease), transform .15s var(--ease);
 }
 
 #ranking .member-time{
@@ -345,7 +345,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     color:var(--text2);
     font-variant-numeric:tabular-nums;
     transform-origin:right center;
-    transition:color .3s var(--ease), transform .3s var(--ease);
+    transition:color .15s var(--ease), transform .15s var(--ease);
 }
 
 #ranking .member-bar{
