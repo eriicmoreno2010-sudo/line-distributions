@@ -70,7 +70,21 @@
       ],
       "original": "Your name stuck on my tongue, No words but say too much",
       "romanization": "your name stuck on my tongue, no words but say too much",
-      "english": "Your name stuck on my tongue, No words but say too much"
+      "english": "Your name stuck on my tongue, No words but say too much",
+      "voice": [
+        [
+          7.95,
+          8.19
+        ],
+        [
+          8.29,
+          9.7
+        ],
+        [
+          9.8,
+          11.62
+        ]
+      ]
     },
     {
       "start": 11.7,
@@ -80,7 +94,29 @@
       ],
       "original": "Every time I wanna go and get gone, You stop me with one touch",
       "romanization": "every time i wanna go and get gone, you stop me with one touch",
-      "english": "Every time I wanna go and get gone, You stop me with one touch"
+      "english": "Every time I wanna go and get gone, You stop me with one touch",
+      "voice": [
+        [
+          11.83,
+          13.96
+        ],
+        [
+          14.09,
+          14.35
+        ],
+        [
+          14.48,
+          14.74
+        ],
+        [
+          14.87,
+          15.1
+        ],
+        [
+          15.23,
+          15.58
+        ]
+      ]
     },
     {
       "start": 16,
@@ -90,7 +126,17 @@
       ],
       "original": "어지러워 너의 그 미소, 눈이 멀어 Stuck in your halo",
       "romanization": "eojireowo neoui geu miso, nuni meoreo stuck in your halo",
-      "english": "That smile of yours makes my head spin, Blinded, stuck in your halo"
+      "english": "That smile of yours makes my head spin, Blinded, stuck in your halo",
+      "voice": [
+        [
+          16,
+          17.68
+        ],
+        [
+          17.94,
+          19.59
+        ]
+      ]
     },
     {
       "start": 19.85,
@@ -100,7 +146,13 @@
       ],
       "original": "빠져버려 난 이제 포로",
       "romanization": "ppajyeobeoryeo nan ije poro",
-      "english": "Fallen for you, now I'm a captive"
+      "english": "Fallen for you, now I'm a captive",
+      "voice": [
+        [
+          19.92,
+          21.56
+        ]
+      ]
     },
     {
       "start": 21.61,
@@ -110,7 +162,13 @@
       ],
       "original": "I feel like if we go Latina like, like",
       "romanization": "i feel like if we go latina like, like",
-      "english": "I feel like if we go Latina like, like"
+      "english": "I feel like if we go Latina like, like",
+      "voice": [
+        [
+          21.74,
+          23.38
+        ]
+      ]
     },
     {
       "start": 23.34,
@@ -120,7 +178,13 @@
       ],
       "original": "Curves along her body got the people calling it photoshop",
       "romanization": "curves along her body got the people calling it photoshop",
-      "english": "Curves along her body got the people calling it photoshop"
+      "english": "Curves along her body got the people calling it photoshop",
+      "voice": [
+        [
+          23.43,
+          27.09
+        ]
+      ]
     },
     {
       "start": 27.09,
@@ -130,7 +194,13 @@
       ],
       "original": "She'll be going places wake up in Vegas nah, She don't stop",
       "romanization": "she'll be going places wake up in vegas nah, she don't stop",
-      "english": "She'll be going places wake up in Vegas nah, She don't stop"
+      "english": "She'll be going places wake up in Vegas nah, She don't stop",
+      "voice": [
+        [
+          27.29,
+          31.09
+        ]
+      ]
     },
     {
       "start": 31.09,
@@ -140,7 +210,17 @@
       ],
       "original": "홀렸네 막 아득해 나도 몰라 어떡해",
       "romanization": "hollyeonne mak adeukhae nado molla eotteokhae",
-      "english": "So bewitched, feeling out of it, don't really know what to do either"
+      "english": "So bewitched, feeling out of it, don't really know what to do either",
+      "voice": [
+        [
+          31.28,
+          33.18
+        ],
+        [
+          33.33,
+          35.04
+        ]
+      ]
     },
     {
       "start": 35.02,
@@ -150,7 +230,17 @@
       ],
       "original": "네게 빠져 허우적대 허우적대 허우적대",
       "romanization": "nege ppajyeo heoujeokdae heoujeokdae heoujeokdae",
-      "english": "Falling for you, struggling to stay afloat"
+      "english": "Falling for you, struggling to stay afloat",
+      "voice": [
+        [
+          35.16,
+          36.88
+        ],
+        [
+          37.03,
+          38.88
+        ]
+      ]
     },
     {
       "start": 38.34,
@@ -160,7 +250,37 @@
       ],
       "original": "She's so BAD BAD BAD BAD BAD BAD BAD",
       "romanization": "she's so bad bad bad bad bad bad bad",
-      "english": "She's so BAD BAD BAD BAD BAD BAD BAD"
+      "english": "She's so BAD BAD BAD BAD BAD BAD BAD",
+      "voice": [
+        [
+          38.4,
+          39.24
+        ],
+        [
+          39.36,
+          39.69
+        ],
+        [
+          39.81,
+          40.16
+        ],
+        [
+          40.31,
+          40.67
+        ],
+        [
+          40.79,
+          41.12
+        ],
+        [
+          41.27,
+          41.59
+        ],
+        [
+          41.74,
+          42.07
+        ]
+      ]
     },
     {
       "start": 42.2,
@@ -170,7 +290,13 @@
       ],
       "original": "She's so BAD",
       "romanization": "she's so bad",
-      "english": "She's so BAD"
+      "english": "She's so BAD",
+      "voice": [
+        [
+          42.23,
+          43.07
+        ]
+      ]
     },
     {
       "start": 45.06,
@@ -180,7 +306,13 @@
       ],
       "original": "Run it all night solo",
       "romanization": "run it all night solo",
-      "english": "Run it all night solo"
+      "english": "Run it all night solo",
+      "voice": [
+        [
+          45.17,
+          46.64
+        ]
+      ]
     },
     {
       "start": 46.57,
@@ -190,7 +322,37 @@
       ],
       "original": "BAD BAD BAD BAD BAD BAD BAD",
       "romanization": "bad bad bad bad bad bad bad",
-      "english": "BAD BAD BAD BAD BAD BAD BAD"
+      "english": "BAD BAD BAD BAD BAD BAD BAD",
+      "voice": [
+        [
+          46.73,
+          47.02
+        ],
+        [
+          47.17,
+          47.5
+        ],
+        [
+          47.68,
+          48
+        ],
+        [
+          48.15,
+          48.51
+        ],
+        [
+          48.66,
+          48.98
+        ],
+        [
+          49.14,
+          49.43
+        ],
+        [
+          49.58,
+          49.87
+        ]
+      ]
     },
     {
       "start": 49.83,
@@ -200,7 +362,13 @@
       ],
       "original": "She's so BAD",
       "romanization": "she's so bad",
-      "english": "She's so BAD"
+      "english": "She's so BAD",
+      "voice": [
+        [
+          49.98,
+          50.85
+        ]
+      ]
     },
     {
       "start": 52.64,
@@ -210,7 +378,13 @@
       ],
       "original": "Run it all night solo",
       "romanization": "run it all night solo",
-      "english": "Run it all night solo"
+      "english": "Run it all night solo",
+      "voice": [
+        [
+          52.9,
+          54.37
+        ]
+      ]
     },
     {
       "start": 54.41,
@@ -220,7 +394,17 @@
       ],
       "original": "Tú me tienes loco, toda la noche, loco contigo",
       "romanization": "tú me tienes loco, toda la noche, loco contigo",
-      "english": "Tú me tienes loco, toda la noche, loco contigo"
+      "english": "Tú me tienes loco, toda la noche, loco contigo",
+      "voice": [
+        [
+          54.37,
+          55.76
+        ],
+        [
+          55.88,
+          57.7
+        ]
+      ]
     },
     {
       "start": 57.88,
@@ -230,7 +414,17 @@
       ],
       "original": "Wild when you tease, tan lento, ritmo peligroso",
       "romanization": "wild when you tease, tan lento, ritmo peligroso",
-      "english": "Wild when you tease, tan lento, ritmo peligroso"
+      "english": "Wild when you tease, tan lento, ritmo peligroso",
+      "voice": [
+        [
+          58.23,
+          60.07
+        ],
+        [
+          60.2,
+          61.61
+        ]
+      ]
     },
     {
       "start": 61.79,
@@ -240,7 +434,13 @@
       ],
       "original": "짜릿해서 난 brr 떨려 넌 향기로운 amiga",
       "romanization": "jjarithaeseo nan brr tteollyeo neon hyanggiroun amiga",
-      "english": "Getting chills, got me trembling like brr such a sweet-smelling amiga"
+      "english": "Getting chills, got me trembling like brr such a sweet-smelling amiga",
+      "voice": [
+        [
+          62.09,
+          65.48
+        ]
+      ]
     },
     {
       "start": 65.51,
@@ -250,7 +450,13 @@
       ],
       "original": "Bella figura, got that peso 미쳐버려",
       "romanization": "bella figura, got that peso michyeobeoryeo",
-      "english": "Bella figura, got that peso, driving me crazy"
+      "english": "Bella figura, got that peso, driving me crazy",
+      "voice": [
+        [
+          65.96,
+          68.58
+        ]
+      ]
     },
     {
       "start": 68.51,
@@ -260,7 +466,13 @@
       ],
       "original": "Olé, mi Dios, so BAD",
       "romanization": "olé, mi dios, so bad",
-      "english": "Olé, mi Dios, so BAD"
+      "english": "Olé, mi Dios, so BAD",
+      "voice": [
+        [
+          68.61,
+          70.05
+        ]
+      ]
     },
     {
       "start": 70.11,
@@ -270,7 +482,13 @@
       ],
       "original": "She way too fine for the room",
       "romanization": "she way too fine for the room",
-      "english": "She way too fine for the room"
+      "english": "She way too fine for the room",
+      "voice": [
+        [
+          70.35,
+          71.54
+        ]
+      ]
     },
     {
       "start": 71.53,
@@ -280,7 +498,13 @@
       ],
       "original": "But you know that I'm a real VIP member",
       "romanization": "but you know that i'm a real vip member",
-      "english": "But you know that I'm a real VIP member"
+      "english": "But you know that I'm a real VIP member",
+      "voice": [
+        [
+          71.76,
+          73.8
+        ]
+      ]
     },
     {
       "start": 73.93,
@@ -290,7 +514,13 @@
       ],
       "original": "I don't even smoke, I don't, ooh",
       "romanization": "i don't even smoke, i don't, ooh",
-      "english": "I don't even smoke, I don't, ooh"
+      "english": "I don't even smoke, I don't, ooh",
+      "voice": [
+        [
+          74.17,
+          75.35
+        ]
+      ]
     },
     {
       "start": 75.41,
@@ -300,7 +530,13 @@
       ],
       "original": "But she rollin so classic like a Cohiba Cuban",
       "romanization": "but she rollin so classic like a cohiba cuban",
-      "english": "But she rollin so classic like a Cohiba Cuban"
+      "english": "But she rollin so classic like a Cohiba Cuban",
+      "voice": [
+        [
+          75.54,
+          77.67
+        ]
+      ]
     },
     {
       "start": 77.95,
@@ -310,7 +546,13 @@
       ],
       "original": "Her voice in my head that's all I wanna hear",
       "romanization": "her voice in my head that's all i wanna hear",
-      "english": "Her voice in my head that's all I wanna hear"
+      "english": "Her voice in my head that's all I wanna hear",
+      "voice": [
+        [
+          78.06,
+          79.76
+        ]
+      ]
     },
     {
       "start": 79.84,
@@ -320,7 +562,13 @@
       ],
       "original": "Got me writing poems, in my zone, Shakespeare",
       "romanization": "got me writing poems, in my zone, shakespeare",
-      "english": "Got me writing poems, in my zone, Shakespeare"
+      "english": "Got me writing poems, in my zone, Shakespeare",
+      "voice": [
+        [
+          79.95,
+          81.77
+        ]
+      ]
     },
     {
       "start": 81.95,
@@ -330,7 +578,13 @@
       ],
       "original": "Caught in her web she a spidey",
       "romanization": "caught in her web she a spidey",
-      "english": "Caught in her web she a spidey"
+      "english": "Caught in her web she a spidey",
+      "voice": [
+        [
+          81.96,
+          83.72
+        ]
+      ]
     },
     {
       "start": 83.91,
@@ -340,7 +594,13 @@
       ],
       "original": "청양고추 Vibe she spicy",
       "romanization": "cheongyanggochu vibe she spicy",
-      "english": "K-hot chilli pepper Vibe she spicy"
+      "english": "K-hot chilli pepper Vibe she spicy",
+      "voice": [
+        [
+          83.94,
+          85.81
+        ]
+      ]
     },
     {
       "start": 85.97,
@@ -350,7 +610,13 @@
       ],
       "original": "Fuego",
       "romanization": "fuego",
-      "english": "Fuego"
+      "english": "Fuego",
+      "voice": [
+        [
+          86.06,
+          86.93
+        ]
+      ]
     },
     {
       "start": 86.82,
@@ -360,7 +626,37 @@
       ],
       "original": "She's so BAD BAD BAD BAD BAD BAD BAD",
       "romanization": "she's so bad bad bad bad bad bad bad",
-      "english": "She's so BAD BAD BAD BAD BAD BAD BAD"
+      "english": "She's so BAD BAD BAD BAD BAD BAD BAD",
+      "voice": [
+        [
+          86.86,
+          87.61
+        ],
+        [
+          87.77,
+          88.09
+        ],
+        [
+          88.24,
+          88.6
+        ],
+        [
+          88.72,
+          89.07
+        ],
+        [
+          89.22,
+          89.55
+        ],
+        [
+          89.7,
+          90.02
+        ],
+        [
+          90.17,
+          90.5
+        ]
+      ]
     },
     {
       "start": 90.46,
@@ -370,7 +666,17 @@
       ],
       "original": "She's so BAD",
       "romanization": "she's so bad",
-      "english": "She's so BAD"
+      "english": "She's so BAD",
+      "voice": [
+        [
+          90.67,
+          91.13
+        ],
+        [
+          91.25,
+          91.55
+        ]
+      ]
     },
     {
       "start": 93.57,
@@ -380,7 +686,13 @@
       ],
       "original": "Run it all night solo",
       "romanization": "run it all night solo",
-      "english": "Run it all night solo"
+      "english": "Run it all night solo",
+      "voice": [
+        [
+          93.57,
+          95.04
+        ]
+      ]
     },
     {
       "start": 94.93,
@@ -390,7 +702,37 @@
       ],
       "original": "BAD BAD BAD BAD BAD BAD BAD",
       "romanization": "bad bad bad bad bad bad bad",
-      "english": "BAD BAD BAD BAD BAD BAD BAD"
+      "english": "BAD BAD BAD BAD BAD BAD BAD",
+      "voice": [
+        [
+          95.05,
+          95.37
+        ],
+        [
+          95.49,
+          95.82
+        ],
+        [
+          95.97,
+          96.35
+        ],
+        [
+          96.47,
+          96.83
+        ],
+        [
+          96.98,
+          97.33
+        ],
+        [
+          97.45,
+          97.77
+        ],
+        [
+          97.93,
+          98.25
+        ]
+      ]
     },
     {
       "start": 98.17,
@@ -400,7 +742,17 @@
       ],
       "original": "She's so BAD",
       "romanization": "she's so bad",
-      "english": "She's so BAD"
+      "english": "She's so BAD",
+      "voice": [
+        [
+          98.4,
+          98.81
+        ],
+        [
+          98.96,
+          99.23
+        ]
+      ]
     },
     {
       "start": 101.14,
@@ -410,7 +762,13 @@
       ],
       "original": "Run it all night solo",
       "romanization": "run it all night solo",
-      "english": "Run it all night solo"
+      "english": "Run it all night solo",
+      "voice": [
+        [
+          101.3,
+          102.75
+        ]
+      ]
     },
     {
       "start": 102.7,
@@ -420,7 +778,13 @@
       ],
       "original": "Yeah, she's so used to all 'em flashes Mona Lisa",
       "romanization": "yeah, she's so used to all 'em flashes mona lisa",
-      "english": "Yeah, she's so used to all 'em flashes Mona Lisa"
+      "english": "Yeah, she's so used to all 'em flashes Mona Lisa",
+      "voice": [
+        [
+          102.98,
+          106.54
+        ]
+      ]
     },
     {
       "start": 106.6,
@@ -430,7 +794,13 @@
       ],
       "original": "The way she's dancing looking red hot señorita",
       "romanization": "the way she's dancing looking red hot señorita",
-      "english": "The way she's dancing looking red hot señorita"
+      "english": "The way she's dancing looking red hot señorita",
+      "voice": [
+        [
+          106.79,
+          110.48
+        ]
+      ]
     },
     {
       "start": 110.49,
@@ -440,7 +810,13 @@
       ],
       "original": "난 너만 바래 내가 찾던 Euphoria",
       "romanization": "nan neoman barae naega chatdeon euphoria",
-      "english": "You're all I want, the Euphoria I've been looking for"
+      "english": "You're all I want, the Euphoria I've been looking for",
+      "voice": [
+        [
+          110.73,
+          114.27
+        ]
+      ]
     },
     {
       "start": 114.33,
@@ -450,7 +826,13 @@
       ],
       "original": "너에게 바치리 나의 La Victoria",
       "romanization": "neoege bachiri naye la victoria",
-      "english": "Dedicating my La Victoria to you"
+      "english": "Dedicating my La Victoria to you",
+      "voice": [
+        [
+          114.54,
+          118.2
+        ]
+      ]
     },
     {
       "start": 121.41,
@@ -460,7 +842,13 @@
       ],
       "original": "She's so BAD",
       "romanization": "she's so bad",
-      "english": "She's so BAD"
+      "english": "She's so BAD",
+      "voice": [
+        [
+          121.57,
+          122.41
+        ]
+      ]
     },
     {
       "start": 125.05,
@@ -470,7 +858,13 @@
       ],
       "original": "She's so BAD",
       "romanization": "she's so bad",
-      "english": "She's so BAD"
+      "english": "She's so BAD",
+      "voice": [
+        [
+          125.48,
+          126.31
+        ]
+      ]
     },
     {
       "start": 129.26,
@@ -480,7 +874,13 @@
       ],
       "original": "She's so",
       "romanization": "she's so ",
-      "english": "She's so "
+      "english": "She's so ",
+      "voice": [
+        [
+          129.37,
+          129.81
+        ]
+      ]
     },
     {
       "start": 129.82,
@@ -491,7 +891,17 @@
       "original": "BAD every day",
       "romanization": "bad every day",
       "english": "BAD every day",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.87,
+          130.25
+        ],
+        [
+          130.4,
+          131.27
+        ]
+      ]
     },
     {
       "start": 131.39,
@@ -501,7 +911,13 @@
       ],
       "original": "Way she's moving up the tempo",
       "romanization": "way she's moving up the tempo",
-      "english": "Way she's moving up the tempo"
+      "english": "Way she's moving up the tempo",
+      "voice": [
+        [
+          131.98,
+          133.74
+        ]
+      ]
     },
     {
       "start": 133.56,
@@ -511,7 +927,17 @@
       ],
       "original": "Switching up the pace",
       "romanization": "switching up the pace",
-      "english": "Switching up the pace"
+      "english": "Switching up the pace",
+      "voice": [
+        [
+          133.72,
+          134.04
+        ],
+        [
+          134.17,
+          135.12
+        ]
+      ]
     },
     {
       "start": 135.36,
@@ -521,7 +947,13 @@
       ],
       "original": "Love the way she's goin' loco",
       "romanization": "love the way she's goin' loco",
-      "english": "Love the way she's goin' loco"
+      "english": "Love the way she's goin' loco",
+      "voice": [
+        [
+          135.78,
+          137.6
+        ]
+      ]
     },
     {
       "start": 143.39,
@@ -531,7 +963,13 @@
       ],
       "original": "I feel like if we go Latina like, like",
       "romanization": "i feel like if we go latina like, like",
-      "english": "I feel like if we go Latina like, like"
+      "english": "I feel like if we go Latina like, like",
+      "voice": [
+        [
+          143.53,
+          145.32
+        ]
+      ]
     }
   ]
 }
