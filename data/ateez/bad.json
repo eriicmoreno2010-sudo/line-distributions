@@ -972,8 +972,8 @@
       ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 43.46,
+      "end": 44.7,
       "members": [
         "HONGJOONG"
       ],
@@ -983,8 +983,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 44.76,
+      "end": 45.08,
       "members": [
         "SAN"
       ],
@@ -996,9 +996,20 @@
     {
       "start": 0,
       "end": 0,
+      "members": [
+        "YEOSANG"
+      ],
+      "original": "",
+      "romanization": "Chk-ch-chk-cha",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
       "members": [],
       "original": "",
-      "romanization": "Chk-ch-chk-c",
+      "romanization": "",
       "english": "",
       "adlib": true
     }
