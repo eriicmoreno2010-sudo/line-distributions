@@ -1000,16 +1000,139 @@
         "YEOSANG"
       ],
       "original": "",
-      "romanization": "Chk-ch-chk-cha",
+      "romanization": "Chk-cha-chk-cha",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 52.45,
+      "end": 52.86,
+      "members": [
+        "SAN"
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "Yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 53.65,
+      "end": 54.12,
+      "members": [
+        "MINGI"
+      ],
+      "original": "",
+      "romanization": "Fix on!",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 69.45,
+      "end": 70.14,
+      "members": [
+        "HONGJOONG"
+      ],
+      "original": "",
+      "romanization": "Ha ha ha ha",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 91.88,
+      "end": 93.01,
+      "members": [
+        "SEONGHWA"
+      ],
+      "original": "",
+      "romanization": "Chk-chk-chk-cha",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 93.16,
+      "end": 93.49,
+      "members": [
+        "SAN"
+      ],
+      "original": "",
+      "romanization": "Ay",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 99.61,
+      "end": 100.68,
+      "members": [
+        "HONGJOONG"
+      ],
+      "original": "",
+      "romanization": "Chk-cha-chk-cha",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 100.83,
+      "end": 101.19,
+      "members": [
+        "SAN"
+      ],
+      "original": "",
+      "romanization": "Yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 129.87,
+      "end": 130.25,
+      "members": [
+        "SEONGHWA"
+      ],
+      "original": "",
+      "romanization": "BAD",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 139.34,
+      "end": 139.67,
+      "members": [
+        "SAN"
+      ],
+      "original": "",
+      "romanization": "Yo",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 143.18,
+      "end": 143.5,
+      "members": [
+        "SAN"
+      ],
+      "original": "",
+      "romanization": "Yo",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 147.08,
+      "end": 147.4,
+      "members": [
+        "SAN"
+      ],
+      "original": "",
+      "romanization": "Yo",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 150.9,
+      "end": 151.34,
+      "members": [
+        "SAN"
+      ],
+      "original": "",
+      "romanization": "Yo",
       "english": "",
       "adlib": true
     }
