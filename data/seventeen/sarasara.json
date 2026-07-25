@@ -4,19 +4,474 @@
   "video": "videos/sarasara.mp3",
   "duration": 0,
   "members": [
-    { "name": "S.COUPS",   "image": "images/seventeen/scoups.png",    "color": "#0557b8", "focus": 50, "lift": 3 },
-    { "name": "JEONGHAN",  "image": "images/seventeen/jeonghan.png",  "color": "#ff0c0c", "focus": 50, "lift": 3 },
-    { "name": "JOSHUA",    "image": "images/seventeen/joshua.png",    "color": "#a001c8", "focus": 50, "lift": 3 },
-    { "name": "JUN",       "image": "images/seventeen/jun.png",       "color": "#53a303", "focus": 50, "lift": 3 },
-    { "name": "HOSHI",     "image": "images/seventeen/hoshi.png",     "color": "#ba0303", "focus": 50, "lift": 3 },
-    { "name": "WONWOO",    "image": "images/seventeen/wonwoo.png",    "color": "#5a05d3", "focus": 50, "lift": 3 },
-    { "name": "WOOZI",     "image": "images/seventeen/woozi.png",     "color": "#fa7304", "focus": 50, "lift": 3 },
-    { "name": "DK",        "image": "images/seventeen/dk.png",        "color": "#0002e6", "focus": 50, "lift": 3 },
-    { "name": "MINGYU",    "image": "images/seventeen/mingyu.png",    "color": "#01a68d", "focus": 50, "lift": 3 },
-    { "name": "THE8",      "image": "images/seventeen/the8.png",      "color": "#00de81", "focus": 50, "lift": 3 },
-    { "name": "SEUNGKWAN", "image": "images/seventeen/seungkwan.png", "color": "#ffea2d", "focus": 50, "lift": 3 },
-    { "name": "VERNON",    "image": "images/seventeen/vernon.png",    "color": "#2ec601", "focus": 50, "lift": 3 },
-    { "name": "DINO",      "image": "images/seventeen/dino.png",      "color": "#f76ce9", "focus": 50, "lift": 3 }
+    {
+      "name": "S.COUPS",
+      "image": "images/seventeen/scoups.png",
+      "color": "#0557b8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JEONGHAN",
+      "image": "images/seventeen/jeonghan.png",
+      "color": "#ff0c0c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JOSHUA",
+      "image": "images/seventeen/joshua.png",
+      "color": "#a001c8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUN",
+      "image": "images/seventeen/jun.png",
+      "color": "#53a303",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HOSHI",
+      "image": "images/seventeen/hoshi.png",
+      "color": "#ba0303",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WONWOO",
+      "image": "images/seventeen/wonwoo.png",
+      "color": "#5a05d3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOOZI",
+      "image": "images/seventeen/woozi.png",
+      "color": "#fa7304",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DK",
+      "image": "images/seventeen/dk.png",
+      "color": "#0002e6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MINGYU",
+      "image": "images/seventeen/mingyu.png",
+      "color": "#01a68d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "THE8",
+      "image": "images/seventeen/the8.png",
+      "color": "#00de81",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SEUNGKWAN",
+      "image": "images/seventeen/seungkwan.png",
+      "color": "#ffea2d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "VERNON",
+      "image": "images/seventeen/vernon.png",
+      "color": "#2ec601",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DINO",
+      "image": "images/seventeen/dino.png",
+      "color": "#f76ce9",
+      "focus": 50,
+      "lift": 3
+    }
   ],
-  "lyrics": []
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "今日から共に歩んで欲しい",
+      "romanization": "Kyou kara tomo ni ayunde hoshii",
+      "english": "I want you to walk with me from today onwards"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "ささやかな言葉を終え",
+      "romanization": "Sasayakana kotoba wo oe",
+      "english": "Give me a few words"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "過ぎ去った季節に水をやり",
+      "romanization": "Sugisatta kisetsu ni mizu wo yari",
+      "english": "The best time to see the past season"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "枯れない花となった",
+      "romanization": "Karenai hana to natta",
+      "english": "It has become a flower that does not wither"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "出会いの若かった頃",
+      "romanization": "Deai no wakakatta koro",
+      "english": "In the early days of someone's encounter"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "未熟で時に初々しい",
+      "romanization": "Mijuku de toki ni uiuishii",
+      "english": "Be immature and sometimes tasty"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "あのまで満ちて揺らぐような",
+      "romanization": "Ano made michite yuragu you na",
+      "english": "It's like the road is shaking"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "心地が忘れられない",
+      "romanization": "Kokochi ga wasurerarenai",
+      "english": "Can't forget the feeling of"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "君から離れるなんて",
+      "romanization": "Kimi kara hanareru nante",
+      "english": "Why am I leaving you"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "そんな想像あまりに怖くて",
+      "romanization": "Sonna souzou amari ni kowakute",
+      "english": "I was so scared"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "結局ぼくらの関係値は",
+      "romanization": "Kekkyoku bokura no kankeichi wa",
+      "english": "In the end, our relationship value is"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sara Sara, Sara Sara",
+      "romanization": "Sara Sara, Sara Sara",
+      "english": "Sara Sara, Sara Sara"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "天の川のように",
+      "romanization": "Amanogawa no you ni",
+      "english": "Like the Milky Way"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sara Sara, Sara Sara",
+      "romanization": "Sara Sara, Sara Sara",
+      "english": "Sara Sara, Sara Sara"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "変わらず流れていく",
+      "romanization": "Kawarazu nagarete iku",
+      "english": "Continue to flow"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "完全に合わせれなかった",
+      "romanization": "Kanzen ni awaserarenakatta",
+      "english": "Completely unmatched"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "お互いの大切さを",
+      "romanization": "Otagai no taisetsu-sa wo",
+      "english": "The importance of each other"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "これからの世界も",
+      "romanization": "Korekara no sekai mo",
+      "english": "In the world from now on"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "僕と一緒にいてくれる？",
+      "romanization": "Boku to issho ni ite kureru?",
+      "english": "Will you be with me?"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "数字は僕らには意味がない",
+      "romanization": "Suuji wa bokura ni wa imi ga nai",
+      "english": "Numbers mean nothing to us"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "天の川の星のように",
+      "romanization": "Amanogawa no hoshi no you ni",
+      "english": "Like a star in the Milky Way"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "美しい流れこそ全て",
+      "romanization": "Utsukushii nagare koso subete",
+      "english": "Beautiful flow is everything"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "君より素晴らしいものは他にない",
+      "romanization": "Kimi yori subarashii mono wa hoka ni nai",
+      "english": "There is nothing better on the hill than you"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "最後に何も残せなくても",
+      "romanization": "Saigo ni nani mo nokosenakute mo",
+      "english": "Even if you can't leave anything at the end"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "君の名前それだけは覚えてられる",
+      "romanization": "Kimi no namae sore dake wa oboeterareru",
+      "english": "I can only remember your name"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "君から離れるなんて",
+      "romanization": "Kimi kara hanareru nante",
+      "english": "Why am I leaving you"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "そんな想像あまりに怖くて",
+      "romanization": "Sonna souzou amari ni kowakute",
+      "english": "I was so scared"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "結局ぼくらの関係値は",
+      "romanization": "Kekkyoku bokura no kankeichi wa",
+      "english": "In the end, our relationship value is"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sara Sara, Sara Sara",
+      "romanization": "Sara Sara, Sara Sara",
+      "english": "Sara Sara, Sara Sara"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "天の川のように",
+      "romanization": "Amanogawa no you ni",
+      "english": "Like the Milky Way"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sara Sara, Sara Sara",
+      "romanization": "Sara Sara, Sara Sara",
+      "english": "Sara Sara, Sara Sara"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "変わらず流れていく",
+      "romanization": "Kawarazu nagarete iku",
+      "english": "Continue to flow"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "完全に合わせれなかった",
+      "romanization": "Kanzen ni awaserarenakatta",
+      "english": "Completely unmatched"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "お互いの大切さを",
+      "romanization": "Otagai no taisetsu-sa wo",
+      "english": "The importance of each other"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "これからの世界も",
+      "romanization": "Korekara no sekai mo",
+      "english": "In the world from now on"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "僕と一緒にいてくれる？",
+      "romanization": "Boku to issho ni ite kureru?",
+      "english": "Will you be with me?"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "そのままで君は僕の全て",
+      "romanization": "Sono mama de kimi wa boku no subete",
+      "english": "Just like that, you are everything about me"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "いつか僕が行くよ君は僕の全て",
+      "romanization": "Itsuka boku ga iku yo kimi wa boku no subete",
+      "english": "Someday, I'll go, but you're everything to me"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "そのままで君は僕の全て",
+      "romanization": "Sono mama de kimi wa boku no subete",
+      "english": "Just like that, you are everything about me"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sara Sara, Sara Sara",
+      "romanization": "Sara Sara, Sara Sara",
+      "english": "Sara Sara, Sara Sara"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "天の川のように",
+      "romanization": "Amanogawa no you ni",
+      "english": "Like the Milky Way"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sara Sara, Sara Sara",
+      "romanization": "Sara Sara, Sara Sara",
+      "english": "Sara Sara, Sara Sara"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "変わらず流れていく",
+      "romanization": "Kawarazu nagarete iku",
+      "english": "Continue to flow"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "完全に合わせれなかった",
+      "romanization": "Kanzen ni awaserarenakatta",
+      "english": "Completely unmatched"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "お互いの大切さを",
+      "romanization": "Otagai no taisetsu-sa wo",
+      "english": "The importance of each other"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "これからも僕らの",
+      "romanization": "Korekara mo bokura no",
+      "english": "And from now on,"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "夢について来てくれる？",
+      "romanization": "Yume ni tsuite kite kureru?",
+      "english": "Will you follow our dreams?"
+    }
+  ]
 }
