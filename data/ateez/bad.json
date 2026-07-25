@@ -4,14 +4,463 @@
   "video": "videos/bad.mp3",
   "duration": 0,
   "members": [
-    { "name": "SEONGHWA",  "image": "images/ateez/bad/seonghwa.png",  "color": "#b7ba13", "focus": 50, "lift": 3 },
-    { "name": "HONGJOONG", "image": "images/ateez/bad/hongjoong.png", "color": "#100950", "focus": 50, "lift": 3 },
-    { "name": "YUNHO",     "image": "images/ateez/bad/yunho.png",     "color": "#4a02a5", "focus": 50, "lift": 3 },
-    { "name": "YEOSANG",   "image": "images/ateez/bad/yeosang.png",   "color": "#0d5f03", "focus": 50, "lift": 3 },
-    { "name": "SAN",       "image": "images/ateez/bad/san.png",       "color": "#074bb1", "focus": 50, "lift": 3 },
-    { "name": "MINGI",     "image": "images/ateez/bad/mingi.png",     "color": "#910094", "focus": 50, "lift": 3 },
-    { "name": "WOOYOUNG",  "image": "images/ateez/bad/wooyoung.png",  "color": "#018b3c", "focus": 50, "lift": 3 },
-    { "name": "JONGHO",    "image": "images/ateez/bad/jongho.png",    "color": "#ba4f02", "focus": 50, "lift": 3 }
+    {
+      "name": "SEONGHWA",
+      "image": "images/ateez/bad/seonghwa.png",
+      "color": "#b7ba13",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HONGJOONG",
+      "image": "images/ateez/bad/hongjoong.png",
+      "color": "#100095",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUNHO",
+      "image": "images/ateez/bad/yunho.png",
+      "color": "#4a02a5",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YEOSANG",
+      "image": "images/ateez/bad/yeosang.png",
+      "color": "#0d5f03",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SAN",
+      "image": "images/ateez/bad/san.png",
+      "color": "#074bb1",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MINGI",
+      "image": "images/ateez/bad/mingi.png",
+      "color": "#910094",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOOYOUNG",
+      "image": "images/ateez/bad/wooyoung.png",
+      "color": "#018b3c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JONGHO",
+      "image": "images/ateez/bad/jongho.png",
+      "color": "#ba4f02",
+      "focus": 50,
+      "lift": 3
+    }
   ],
-  "lyrics": []
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Your name stuck on my tongue",
+      "romanization": "your name stuck on my tongue",
+      "english": "Your name stuck on my tongue"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "No words but say too much",
+      "romanization": "no words but say too much",
+      "english": "No words but say too much"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Every time I wanna go and get gone",
+      "romanization": "every time i wanna go and get gone",
+      "english": "Every time I wanna go and get gone"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You stop me with one touch",
+      "romanization": "you stop me with one touch",
+      "english": "You stop me with one touch"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어지러워 너의 그 미소",
+      "romanization": "eojireowo neoui geu miso",
+      "english": "That smile of yours makes my head spin"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈이 멀어 Stuck in your halo",
+      "romanization": "nuni meoreo stuck in your halo",
+      "english": "Blinded, stuck in your halo"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "빠져버려 난 이제 포로",
+      "romanization": "ppajyeobeoryeo nan ije poro",
+      "english": "Fallen for you, now I'm a captive"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I feel like if we go Latina like, like",
+      "romanization": "i feel like if we go latina like, like",
+      "english": "I feel like if we go Latina like, like"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Curves along her body got the people calling it photoshop",
+      "romanization": "curves along her body got the people calling it photoshop",
+      "english": "Curves along her body got the people calling it photoshop"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She'll be going places wake up in Vegas nah",
+      "romanization": "she'll be going places wake up in vegas nah",
+      "english": "She'll be going places wake up in Vegas nah"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She don't stop",
+      "romanization": "she don't stop",
+      "english": "She don't stop"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "홀렸네 막 아득해 나도 몰라 어떡해",
+      "romanization": "hollyeonne mak adeukhae nado molla eotteokhae",
+      "english": "So bewitched, feeling out of it, don't really know what to do either"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네게 빠져 허우적대 허우적대 허우적대",
+      "romanization": "nege ppajyeo heoujeokdae heoujeokdae heoujeokdae",
+      "english": "Falling for you, struggling to stay afloat"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD BAD BAD BAD BAD BAD BAD",
+      "romanization": "she's so bad bad bad bad bad bad bad",
+      "english": "She's so BAD BAD BAD BAD BAD BAD BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD",
+      "romanization": "she's so bad",
+      "english": "She's so BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Run it all night solo",
+      "romanization": "run it all night solo",
+      "english": "Run it all night solo"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "BAD BAD BAD BAD BAD BAD BAD",
+      "romanization": "bad bad bad bad bad bad bad",
+      "english": "BAD BAD BAD BAD BAD BAD BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD",
+      "romanization": "she's so bad",
+      "english": "She's so BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Run it all night solo",
+      "romanization": "run it all night solo",
+      "english": "Run it all night solo"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Tú me tienes loco, toda la noche, loco contigo",
+      "romanization": "tú me tienes loco, toda la noche, loco contigo",
+      "english": "Tú me tienes loco, toda la noche, loco contigo"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Wild when you tease, tan lento, ritmo peligroso",
+      "romanization": "wild when you tease, tan lento, ritmo peligroso",
+      "english": "Wild when you tease, tan lento, ritmo peligroso"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "짜릿해서 난 brr 떨려 넌 향기로운 amiga",
+      "romanization": "jjarithaeseo nan brr tteollyeo neon hyanggiroun amiga",
+      "english": "Getting chills, got me trembling like brr such a sweet-smelling amiga"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Bella figura, got that peso 미쳐버려",
+      "romanization": "bella figura, got that peso michyeobeoryeo",
+      "english": "Bella figura, got that peso, driving me crazy"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Olé, mi Dios, so BAD",
+      "romanization": "olé, mi dios, so bad",
+      "english": "Olé, mi Dios, so BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She way too fine for the room",
+      "romanization": "she way too fine for the room",
+      "english": "She way too fine for the room"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "But you know that I'm a real VIP member",
+      "romanization": "but you know that i'm a real vip member",
+      "english": "But you know that I'm a real VIP member"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I don't even smoke, I don't, ooh",
+      "romanization": "i don't even smoke, i don't, ooh",
+      "english": "I don't even smoke, I don't, ooh"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "But she rollin so classic like a Cohiba Cuban",
+      "romanization": "but she rollin so classic like a cohiba cuban",
+      "english": "But she rollin so classic like a Cohiba Cuban"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Her voice in my head that's all I wanna hear",
+      "romanization": "her voice in my head that's all i wanna hear",
+      "english": "Her voice in my head that's all I wanna hear"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Got me writing poems, in my zone, Shakespeare",
+      "romanization": "got me writing poems, in my zone, shakespeare",
+      "english": "Got me writing poems, in my zone, Shakespeare"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Caught in her web she a spidey",
+      "romanization": "caught in her web she a spidey",
+      "english": "Caught in her web she a spidey"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "청양고추 Vibe she spicy",
+      "romanization": "cheongyanggochu vibe she spicy",
+      "english": "K-hot chilli pepper Vibe she spicy"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fuego",
+      "romanization": "fuego",
+      "english": "Fuego"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD BAD BAD BAD BAD BAD BAD",
+      "romanization": "she's so bad bad bad bad bad bad bad",
+      "english": "She's so BAD BAD BAD BAD BAD BAD BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD",
+      "romanization": "she's so bad",
+      "english": "She's so BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Run it all night solo",
+      "romanization": "run it all night solo",
+      "english": "Run it all night solo"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "BAD BAD BAD BAD BAD BAD BAD",
+      "romanization": "bad bad bad bad bad bad bad",
+      "english": "BAD BAD BAD BAD BAD BAD BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD",
+      "romanization": "she's so bad",
+      "english": "She's so BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Run it all night solo",
+      "romanization": "run it all night solo",
+      "english": "Run it all night solo"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah, she's so used to all 'em flashes Mona Lisa",
+      "romanization": "yeah, she's so used to all 'em flashes mona lisa",
+      "english": "Yeah, she's so used to all 'em flashes Mona Lisa"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "The way she's dancing looking red hot señorita",
+      "romanization": "the way she's dancing looking red hot señorita",
+      "english": "The way she's dancing looking red hot señorita"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "난 너만 바래 내가 찾던 Euphoria",
+      "romanization": "nan neoman barae naega chatdeon euphoria",
+      "english": "You're all I want, the Euphoria I've been looking for"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너에게 바치리 나의 La Victoria",
+      "romanization": "neoege bachiri naye la victoria",
+      "english": "Dedicating my La Victoria to you"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD",
+      "romanization": "she's so bad",
+      "english": "She's so BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD",
+      "romanization": "she's so bad",
+      "english": "She's so BAD"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "She's so BAD every day",
+      "romanization": "she's so bad every day",
+      "english": "She's so BAD every day"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Way she's moving up the tempo",
+      "romanization": "way she's moving up the tempo",
+      "english": "Way she's moving up the tempo"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Switching up the pace",
+      "romanization": "switching up the pace",
+      "english": "Switching up the pace"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Love the way she's goin' loco",
+      "romanization": "love the way she's goin' loco",
+      "english": "Love the way she's goin' loco"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I feel like if we go Latina like, like",
+      "romanization": "i feel like if we go latina like, like",
+      "english": "I feel like if we go Latina like, like"
+    }
+  ]
 }
