@@ -54,6 +54,10 @@
         <label>Horizontal</label>
         <input id="vx" type="range" min="0" max="1" step="0.002">
       </div>
+      <div class="ctl">
+        <label>Rotación (0–360°) — <span id="rotval">0</span>°</label>
+        <input id="rot" type="range" min="0" max="360" step="1" value="0">
+      </div>
       <div class="btns">
         <button class="sec" id="prev-btn">◀ Anterior</button>
         <button class="sec" id="next-btn">Siguiente ▶</button>
@@ -85,6 +89,7 @@ const pctx = prev.getContext("2d");
 const zoom = document.getElementById("zoom");
 const vy = document.getElementById("vy");
 const vx = document.getElementById("vx");
+const rot = document.getElementById("rot");
 
 const SONG_URL = new URLSearchParams(location.search).get("song") || "data/nctdream/moonlight.json";
 fetch(SONG_URL).then(r=>r.json()).then(d=>{
@@ -98,6 +103,7 @@ fetch(SONG_URL).then(r=>r.json()).then(d=>{
             m.side = m.iw;
             m.cx = m.iw/2;
             m.cy = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2);
+            m.rot = 0;
             if(++loaded === list.length){ members = list; buildThumbs(); select(0); }
         };
         m.img.onerror = () => { console.error("no img", m.src); if(++loaded===list.length){ members=list; buildThumbs(); select(0);} };
@@ -118,7 +124,14 @@ function clampCrop(m){
 function drawInto(ctx, size, m){
     ctx.clearRect(0,0,size,size);
     if(!m.iw) return;
+    ctx.save();
+    if(m.rot){                              // rotate the crop around its centre
+        ctx.translate(size/2, size/2);
+        ctx.rotate(m.rot * Math.PI/180);
+        ctx.translate(-size/2, -size/2);
+    }
     ctx.drawImage(m.img, m.cx-m.side/2, m.cy-m.side/2, m.side, m.side, 0, 0, size, size);
+    ctx.restore();
 }
 
 function render(){
@@ -130,6 +143,8 @@ function render(){
     zoom.value = (m.side / Math.min(m.iw,m.ih)).toFixed(3);
     vy.value   = (m.cy / m.ih).toFixed(3);
     vx.value   = (m.cx / m.iw).toFixed(3);
+    rot.value  = (m.rot || 0);
+    document.getElementById("rotval").textContent = Math.round(m.rot || 0);
     // update this thumb
     if(m.thumbCtx) drawInto(m.thumbCtx, 64, m);
     buildOutput();
@@ -145,11 +160,12 @@ function select(i){
 zoom.addEventListener("input", ()=>{ const m=cur(); m.side = parseFloat(zoom.value)*Math.min(m.iw,m.ih); render(); });
 vy.addEventListener("input", ()=>{ const m=cur(); m.cy = parseFloat(vy.value)*m.ih; render(); });
 vx.addEventListener("input", ()=>{ const m=cur(); m.cx = parseFloat(vx.value)*m.iw; render(); });
+rot.addEventListener("input", ()=>{ const m=cur(); m.rot = parseFloat(rot.value)||0; render(); });
 
 document.getElementById("prev-btn").addEventListener("click", ()=>select(idx-1));
 document.getElementById("next-btn").addEventListener("click", ()=>select(idx+1));
 document.getElementById("resetOne").addEventListener("click", ()=>{
-    const m=cur(); m.side=m.iw; m.cx=m.iw/2; m.cy=clamp(0.44*m.ih,m.side/2,m.ih-m.side/2); render();
+    const m=cur(); m.side=m.iw; m.cx=m.iw/2; m.cy=clamp(0.44*m.ih,m.side/2,m.ih-m.side/2); m.rot=0; render();
 });
 document.addEventListener("keydown", e=>{
     if(e.key==="ArrowLeft") select(idx-1);
@@ -190,7 +206,7 @@ function buildOutput(){
     const lines = members.map(m => {
         if(!m.iw) return m.name+": (sin imagen)";
         const cx=(m.cx/m.iw), cy=(m.cy/m.ih), size=(m.side/m.iw);
-        return m.name+": cx="+cx.toFixed(3)+" cy="+cy.toFixed(3)+" size="+size.toFixed(3);
+        return m.name+": cx="+cx.toFixed(3)+" cy="+cy.toFixed(3)+" size="+size.toFixed(3)+" rot="+Math.round(m.rot||0);
     });
     document.getElementById("out").value = lines.join("\n");
 }
