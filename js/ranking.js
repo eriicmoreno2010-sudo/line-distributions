@@ -165,6 +165,7 @@ const Ranking = {
             member.rankElement     = card.querySelector(".member-rank");
             member.timeElement     = card.querySelector(".member-time");
             member.progressElement = card.querySelector(".member-progress");
+            member.photoEl         = card.querySelector(".member-photo");
             member._col = undefined;
 
             this.columns[0].el.appendChild(card);   // scratch parent; placeAll re-homes it
@@ -196,6 +197,14 @@ const Ranking = {
             }
             col.rowH = col.cardH + this.gap;
             if(!isDesktop) col.el.style.height = (n * col.rowH - this.gap) + "px";
+        });
+
+        // Size photos to fit the shortest card so they never overflow it.
+        const minCardH = Math.min(...this.columns.map(c => c.cardH || 92));
+        this.photoSize = Math.max(44, Math.min(this.twoSide ? 72 : 96, Math.round(minCardH - 22)));
+        this.members.forEach(m => {
+            if(m.photoEl){ m.photoEl.style.width = this.photoSize + "px"; m.photoEl.style.height = this.photoSize + "px"; }
+            m.element.style.gridTemplateColumns = "32px " + this.photoSize + "px 1fr";
         });
 
         this.placeAll(false);
