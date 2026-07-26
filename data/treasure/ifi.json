@@ -702,8 +702,8 @@
       "start": 62.13,
       "end": 65.26,
       "members": [
-        "DOYOUNG",
-        "HARUTO"
+        "HARUTO",
+        "DOYOUNG"
       ],
       "original": "",
       "romanization": "If I win you love me, If I win too big you don't trust me",
@@ -1050,8 +1050,8 @@
       "start": 126.2,
       "end": 129.15,
       "members": [
-        "JIHOON",
-        "HARUTO"
+        "HARUTO",
+        "JIHOON"
       ],
       "original": "",
       "romanization": "If I win you love me, If I win too big you don't trust me",
@@ -1071,8 +1071,8 @@
       "start": 129.26,
       "end": 132.42,
       "members": [
-        "JIHOON",
-        "HARUTO"
+        "HARUTO",
+        "JIHOON"
       ],
       "original": "",
       "romanization": "If I win you love me, If I win too big you don't trust me",
@@ -1092,9 +1092,9 @@
       "start": 132.51,
       "end": 135.61,
       "members": [
-        "HYUNSUK",
         "HARUTO",
-        "YOSHI"
+        "YOSHI",
+        "HYUNSUK"
       ],
       "original": "",
       "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
@@ -1114,9 +1114,9 @@
       "start": 135.73,
       "end": 138.86,
       "members": [
-        "HYUNSUK",
+        "HARUTO",
         "YOSHI",
-        "HARUTO"
+        "HYUNSUK"
       ],
       "original": "",
       "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
@@ -1197,7 +1197,7 @@
       "english": ""
     },
     {
-      "start": 151.91,
+      "start": 151.83,
       "end": 154.97,
       "members": [
         "TREASURE"
@@ -1207,7 +1207,7 @@
       "english": ""
     },
     {
-      "start": 155.1,
+      "start": 155,
       "end": 158.25,
       "members": [
         "TREASURE"
@@ -1217,7 +1217,7 @@
       "english": ""
     },
     {
-      "start": 158.37,
+      "start": 158.27,
       "end": 161.41,
       "members": [
         "TREASURE"
@@ -1227,7 +1227,7 @@
       "english": ""
     },
     {
-      "start": 161.5,
+      "start": 161.42,
       "end": 164.13,
       "members": [
         "TREASURE"
