@@ -298,12 +298,135 @@
       "english": "I am here I am"
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ア アイヤイヤ ア アイヤイヤ アイヤイヤ アイデ",
-      "romanization": "a aiyaiya a aiyaiya aiyaiya aide",
-      "english": "",
+      "start": 72.6,
+      "end": 76.09,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "ア アイヤイヤ ア アイヤイヤ ",
+      "romanization": "a aiyaiya a aiyaiya ",
+      "english": "Ah, aiyaiyah ah aiyaiyah ",
+      "adlib": true
+    },
+    {
+      "start": 76.68,
+      "end": 78.52,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "アイヤイヤ アイデ",
+      "romanization": "aiyaiya aide",
+      "english": "Aiyaiyah aideh",
+      "adlib": true
+    },
+    {
+      "start": 79.74,
+      "end": 83.17,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "ア アイヤイヤ ア アイヤイヤ ",
+      "romanization": "a aiyaiya a aiyaiya ",
+      "english": "Ah, aiyaiyah ah aiyaiyah ",
+      "adlib": true
+    },
+    {
+      "start": 83.67,
+      "end": 85.4,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "アイヤイヤ アイデ",
+      "romanization": "aiyaiya aide",
+      "english": "Aiyaiyah aideh",
+      "adlib": true
+    },
+    {
+      "start": 129.49,
+      "end": 132.95,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "ア アイヤイヤ ア アイヤイヤ ",
+      "romanization": "a aiyaiya a aiyaiya ",
+      "english": "Ah, aiyaiyah ah aiyaiyah ",
+      "adlib": true
+    },
+    {
+      "start": 133.51,
+      "end": 135.01,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "アイヤイヤ アイデ",
+      "romanization": "aiyaiya aide",
+      "english": "Aiyaiyah aideh",
+      "adlib": true
+    },
+    {
+      "start": 136.69,
+      "end": 140.05,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "ア アイヤイヤ ア アイヤイヤ ",
+      "romanization": "a aiyaiya a aiyaiya ",
+      "english": "Ah, aiyaiyah ah aiyaiyah ",
+      "adlib": true
+    },
+    {
+      "start": 140.58,
+      "end": 142.42,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "アイヤイヤ アイデ",
+      "romanization": "aiyaiya aide",
+      "english": "Aiyaiyah aideh",
+      "adlib": true
+    },
+    {
+      "start": 172.15,
+      "end": 175.45,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "ア アイヤイヤ ア アイヤイヤ ",
+      "romanization": "a aiyaiya a aiyaiya ",
+      "english": "Ah, aiyaiyah ah aiyaiyah ",
+      "adlib": true
+    },
+    {
+      "start": 176.16,
+      "end": 178.12,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "アイヤイヤ アイデ",
+      "romanization": "aiyaiya aide",
+      "english": "Aiyaiyah aideh",
+      "adlib": true
+    },
+    {
+      "start": 179.22,
+      "end": 182.7,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "ア アイヤイヤ ア アイヤイヤ ",
+      "romanization": "a aiyaiya a aiyaiya ",
+      "english": "Ah, aiyaiyah ah aiyaiyah ",
+      "adlib": true
+    },
+    {
+      "start": 183.24,
+      "end": 185.21,
+      "members": [
+        "SEVENTEEN"
+      ],
+      "original": "アイヤイヤ アイデ",
+      "romanization": "aiyaiya aide",
+      "english": "Aiyaiyah aideh",
       "adlib": true
     }
   ]
