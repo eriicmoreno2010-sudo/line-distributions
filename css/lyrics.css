@@ -144,6 +144,13 @@ Version: 3.0 — Lyrics
     opacity:1;
 }
 
+/* Multi-member lines (2, 3, 4…): halo blends ALL the singers' colours */
+#lyrics-section.singing.multi-member::after,
+#adlibs-section.singing.multi-member::after{
+    background: var(--members-glow);
+    opacity:1;
+}
+
 .adlib-member,
 .adlib-original,
 .adlib-roman,
@@ -163,7 +170,7 @@ Version: 3.0 — Lyrics
 #adlibs-section.multi-member .adlib-roman,
 #adlibs-section.multi-member .adlib-english,
 #adlibs-section.multi-member .adlib-text{
-    background:linear-gradient(90deg, var(--accent), var(--accent-secondary));
+    background:var(--members-gradient, linear-gradient(90deg, var(--accent), var(--accent-secondary)));
     -webkit-background-clip:text;
     background-clip:text;
     color:transparent !important;

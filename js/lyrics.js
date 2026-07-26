@@ -14,6 +14,14 @@ function isAdlibLine(l){
     return (l.adlib === true) || (typeof l.adlib === "string" && l.adlib.trim() !== "");
 }
 
+/* Join singer names: "A" · "A & B" · "A, B & C" · "A, B, C & D" ... */
+function joinNames(names){
+    names = (names || []).filter(Boolean);
+    if(names.length <= 1) return names[0] || "";
+    if(names.length === 2) return names[0] + "  &  " + names[1];
+    return names.slice(0, -1).join(", ") + "  &  " + names[names.length - 1];
+}
+
 /* Shrink a lyric line's font until it fits on ONE row (detected by height). */
 function fitField(el){
     if(!el || !(el.textContent || "").trim()) return;
@@ -65,6 +73,15 @@ const Lyrics = {
         const sharedGradient =
             `linear-gradient(90deg, ${singers.map(s => s.color).join(", ")})`;
 
+        // Glow made from EVERY singer's colour (so 3+ members all show, not just 2).
+        const membersGlow = singers.length
+            ? singers.map((s, i, arr) => {
+                  const pos = arr.length > 1 ? 8 + (i / (arr.length - 1)) * 84 : 50;
+                  return `radial-gradient(42% 60% at ${pos}% 45%, ` +
+                         `color-mix(in srgb, ${s.color} 20%, transparent), transparent 70%)`;
+              }).join(", ")
+            : "";
+
         let accent, secondaryAccent, isSharedLine;
         if(isGroupLine){
             const colors = SONG.members.map(m => m.color);
@@ -77,7 +94,7 @@ const Lyrics = {
             isSharedLine = !hasPartial && singers.length > 1;
         }
         return { isGroupLine, groupGradient, groupGlow, hasPartial,
-                 sharedGradient, accent, secondaryAccent, isSharedLine };
+                 sharedGradient, membersGlow, accent, secondaryAccent, isSharedLine };
     },
 
     /* Each frame: pick the active CENTRAL line and the active AD-LIB line
@@ -170,13 +187,13 @@ const Lyrics = {
             if(!sameName){
                 clearPaint(e.member);
                 if(c.hasPartial){
-                    e.member.textContent = line.members.join("  &  ");
+                    e.member.textContent = joinNames(line.members);
                     e.member.style.background = c.sharedGradient;
                     e.member.style.webkitBackgroundClip = "text";
                     e.member.style.backgroundClip = "text";
                     e.member.style.color = "transparent";
                 } else {
-                    e.member.textContent = line.members.join("  &  ");
+                    e.member.textContent = joinNames(line.members);
                     e.member.style.color = c.accent;
                 }
             }
@@ -197,6 +214,8 @@ const Lyrics = {
             e.section.style.setProperty("--accent-secondary", c.secondaryAccent);
             e.section.style.setProperty("--group-glow", c.groupGlow);
             e.section.style.setProperty("--group-gradient", c.groupGradient);
+            e.section.style.setProperty("--members-gradient", c.sharedGradient);
+            e.section.style.setProperty("--members-glow", c.membersGlow);
             e.section.classList.add("singing");
             e.section.classList.toggle("multi-member", c.isSharedLine);
             e.section.classList.toggle("group", c.isGroupLine);
@@ -264,7 +283,7 @@ const Lyrics = {
                 el2.textContent = text;
                 parts.push(el2);
             };
-            addPart("adlib-member",   line.members.join("  &  "));
+            addPart("adlib-member",   joinNames(line.members));
             addPart("adlib-original", line.original);
             addPart("adlib-roman",    line.romanization);
             addPart("adlib-english",  line.english);
@@ -275,6 +294,8 @@ const Lyrics = {
             e.adlibs.style.setProperty("--accent-secondary", c.secondaryAccent);
             e.adlibs.style.setProperty("--group-glow", c.groupGlow);
             e.adlibs.style.setProperty("--group-gradient", c.groupGradient);
+            e.adlibs.style.setProperty("--members-gradient", c.sharedGradient);
+            e.adlibs.style.setProperty("--members-glow", c.membersGlow);
             e.adlibs.classList.add("singing");
             e.adlibs.classList.toggle("multi-member", c.isSharedLine);
             e.adlibs.classList.toggle("group", c.isGroupLine);
