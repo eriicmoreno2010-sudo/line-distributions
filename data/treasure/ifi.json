@@ -77,51 +77,35 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 0.72,
+      "end": 3.12,
       "members": [],
       "original": "",
       "romanization": "What if I did something that's unforgivable",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 3.84,
+      "end": 6.35,
       "members": [],
       "original": "",
       "romanization": "Hiding my potential like it's criminal",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 7.17,
+      "end": 10.98,
       "members": [],
       "original": "",
-      "romanization": "But I got an alter ego",
+      "romanization": "But I got an alter ego, Like a whole other human",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.07,
+      "end": 14.81,
       "members": [],
       "original": "",
-      "romanization": "Like a whole other human",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Seeing me for how I really am",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "But I can do the same",
+      "romanization": "Seeing me for how I really am, But I can do the same",
       "english": ""
     },
     {
@@ -134,148 +118,76 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 17.43,
+      "end": 21.07,
       "members": [],
       "original": "",
-      "romanization": "No I don't think I react",
+      "romanization": "No I don't think I react, Uh, Big step big moves",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 21.06,
+      "end": 23.95,
       "members": [],
       "original": "",
-      "romanization": "Uh",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Big step big moves",
+      "romanization": "I don't chase I attract, Too loud too fast",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I don't chase I attract",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Too loud too fast",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 24.07,
+      "end": 25.08,
       "members": [],
       "original": "",
       "romanization": "Whole room jump back",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.08,
+      "end": 27.99,
       "members": [],
       "original": "",
-      "romanization": "I ain't here for the rules",
+      "romanization": "I ain't here for the rules, I'm here for the impact",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I'm here for the impact",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 28.14,
+      "end": 28.78,
       "members": [],
       "original": "",
       "romanization": "Mhmm",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.91,
+      "end": 29.72,
       "members": [],
       "original": "",
       "romanization": "That money bounce",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 29.71,
+      "end": 33.39,
       "members": [],
       "original": "",
-      "romanization": "Like me",
+      "romanization": "Like me, No sleep caffeine, Dopamine drippin'",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.5,
+      "end": 36.75,
       "members": [],
       "original": "",
-      "romanization": "No sleep caffeine",
-      "english": ""
+      "romanization": "Small core big dreams, You want calm want peace",
+      "english": "",
+      "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.83,
+      "end": 41.73,
       "members": [],
       "original": "",
-      "romanization": "Dopamine drippin'",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Small core big dreams",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "You want calm want peace",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I want noise that heat",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "7CHILL go dumb",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "YÆ ain't no one check me",
+      "romanization": "I want noise that heat, 7CHILL go dumb, YÆ ain't no one check me",
       "english": ""
     },
     {
@@ -288,51 +200,35 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 41.86,
+      "end": 45.26,
       "members": [],
       "original": "",
       "romanization": "Ain't nobody ever gonna forget my name",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 45.38,
+      "end": 49.56,
       "members": [],
       "original": "",
-      "romanization": "Bullets ricochet it don't matter",
+      "romanization": "Bullets ricochet it don't matter, I know where the battle is",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I know where the battle is",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 49.5,
+      "end": 51.75,
       "members": [],
       "original": "",
       "romanization": "Me versus me errday",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.24,
+      "end": 55.95,
       "members": [],
       "original": "",
-      "romanization": "So bang bang the enemy",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Here come the best of me",
+      "romanization": "So bang bang the enemy, Here come the best of me",
       "english": ""
     },
     {
@@ -345,216 +241,96 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.12,
+      "end": 62,
       "members": [],
       "original": "",
-      "romanization": "If I win you love me",
+      "romanization": "If I win you love me, If I win too big you don't trust me",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.13,
+      "end": 65.26,
       "members": [],
       "original": "",
-      "romanization": "If I win too big you don't trust me",
+      "romanization": "If I win you love me, If I win too big you don't trust me",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 65.55,
+      "end": 68.47,
       "members": [],
       "original": "",
-      "romanization": "If I win you love me",
+      "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.76,
+      "end": 71.69,
       "members": [],
       "original": "",
-      "romanization": "If I win too big you don't trust me",
+      "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.91,
+      "end": 75.22,
       "members": [],
       "original": "",
-      "romanization": "If I go can't stop me",
+      "romanization": "IF I IF I IF I IF I, Move whole crowd going like",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I jump nobody gon' touch me",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I go can't stop me",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I jump nobody gon' touch me",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "IF I IF I IF I IF I",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Move whole crowd going like",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 75.21,
+      "end": 78.23,
       "members": [],
       "original": "",
       "romanization": "Wa A A A A A",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 78.29,
+      "end": 81.48,
       "members": [],
       "original": "",
-      "romanization": "IF I IF I IF I IF I",
+      "romanization": "IF I IF I IF I IF I, Come no doubt they gonna",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Come no doubt they gonna",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 81.57,
+      "end": 84.76,
       "members": [],
       "original": "",
       "romanization": "Hi I I I I I I de",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 84.7,
+      "end": 87.51,
       "members": [],
       "original": "",
-      "romanization": "Mask on",
+      "romanization": "Mask on, Brain gone, Hate the game, Don't play nice",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 87.79,
+      "end": 90.81,
       "members": [],
       "original": "",
-      "romanization": "Brain gone",
+      "romanization": "Heart cold, Head strong, Got the fame, Paid the price",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 90.82,
+      "end": 95.33,
       "members": [],
       "original": "",
-      "romanization": "Hate the game",
+      "romanization": "You call it a passion, Your limitation, My domination, Catching you fall",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Don't play nice",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Heart cold",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Head strong",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Got the fame",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Paid the price",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "You call it a passion",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Your limitation",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "My domination",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Catching you fall",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 95.45,
+      "end": 96.53,
       "members": [],
       "original": "",
       "romanization": "You're trippin like I'm black ice",
@@ -570,19 +346,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.27,
+      "end": 99.7,
       "members": [],
       "original": "",
-      "romanization": "You bitter cause",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I'm better under pressure",
+      "romanization": "You bitter cause, I'm better under pressure",
       "english": ""
     },
     {
@@ -595,19 +363,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 100.28,
+      "end": 102.87,
       "members": [],
       "original": "",
-      "romanization": "Turned my shadow into halo",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "That's that treasure",
+      "romanization": "Turned my shadow into halo, That's that treasure",
       "english": ""
     },
     {
@@ -620,64 +380,40 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 103.53,
+      "end": 106.84,
       "members": [],
       "original": "",
-      "romanization": "My confidence give you a complex",
+      "romanization": "My confidence give you a complex, So you better brush off the cobwebs",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 106.96,
+      "end": 109.18,
       "members": [],
       "original": "",
-      "romanization": "So you better brush off the cobwebs",
+      "romanization": "I'm counting my blessings and prospects, You know that",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I'm counting my blessings and prospects",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "You know that",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 109.18,
+      "end": 112.66,
       "members": [],
       "original": "",
       "romanization": "Ain't nobody ever gonna forget my name",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 112.66,
+      "end": 116.61,
       "members": [],
       "original": "",
-      "romanization": "Bullets ricochet it don't matter",
+      "romanization": "Bullets ricochet it don't matter, I know where the battle is",
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I know where the battle is",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 116.75,
+      "end": 118.83,
       "members": [],
       "original": "",
       "romanization": "Me versus me errday",
@@ -688,15 +424,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "So bang bang the enemy",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Here come the best of me",
+      "romanization": "So bang bang the enemy, Here come the best of me",
       "english": ""
     },
     {
@@ -713,7 +441,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "If I win you love me",
+      "romanization": "If I win you love me, If I win too big you don't trust me",
       "english": ""
     },
     {
@@ -721,7 +449,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "If I win too big you don't trust me",
+      "romanization": "If I win you love me, If I win too big you don't trust me",
       "english": ""
     },
     {
@@ -729,7 +457,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "If I win you love me",
+      "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
       "english": ""
     },
     {
@@ -737,7 +465,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "If I win too big you don't trust me",
+      "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
       "english": ""
     },
     {
@@ -745,47 +473,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "If I go can't stop me",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I jump nobody gon' touch me",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I go can't stop me",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I jump nobody gon' touch me",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "IF I IF I IF I IF I",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Move whole crowd going like",
+      "romanization": "IF I IF I IF I IF I, Move whole crowd going like",
       "english": ""
     },
     {
@@ -825,7 +513,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "Jump jump",
+      "romanization": "Jump jump, I make 'em, Jump jump, I make you",
       "english": ""
     },
     {
@@ -833,7 +521,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "I make 'em",
+      "romanization": "Jump jump, I make you, Jump jump, Errbody",
       "english": ""
     },
     {
@@ -841,7 +529,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "Jump jump",
+      "romanization": "Jump jump, Let's get it, Jump jump, Let's get it",
       "english": ""
     },
     {
@@ -849,7 +537,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "I make you",
+      "romanization": "Jump jump, Let's get it, Jump jump, Errbody",
       "english": ""
     },
     {
@@ -857,137 +545,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "Jump jump",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "I make you",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Jump jump",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Errbody",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Jump jump",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Let's get it",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Jump jump",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Let's get it",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Jump jump",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Let's get it",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Jump jump",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Errbody",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I say go",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Go",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "You say go",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Go",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I say one",
+      "romanization": "If I say go, You say go, If I say one,We number one",
       "english": ""
     },
     {
@@ -1004,75 +562,7 @@
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "We number one",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "One",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I move",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Move",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "You gon' move",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Move",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "If I jump",
-      "english": ""
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Jump",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "You gon' jump",
+      "romanization": "If I move, You gon' move, If I jump, You gon' jump",
       "english": ""
     },
     {
