@@ -4,16 +4,1093 @@
   "video": "videos/ifi.mp4",
   "duration": 0,
   "members": [
-    { "name": "HYUNSUK",  "image": "images/treasure/ifi/hyunsuk.png",  "color": "#f824c3", "focus": 50, "lift": 3 },
-    { "name": "JIHOON",   "image": "images/treasure/ifi/jihoon.png",   "color": "#b80983", "focus": 50, "lift": 3 },
-    { "name": "YOSHI",    "image": "images/treasure/ifi/yoshi.png",    "color": "#b8093e", "focus": 50, "lift": 3 },
-    { "name": "JUNKYU",   "image": "images/treasure/ifi/junkyu.png",   "color": "#ff751f", "focus": 50, "lift": 3 },
-    { "name": "JAEHYUK",  "image": "images/treasure/ifi/jaehyuk.png",  "color": "#cbdf28", "focus": 50, "lift": 3 },
-    { "name": "ASAHI",    "image": "images/treasure/ifi/asahi.png",    "color": "#0097b2", "focus": 50, "lift": 3 },
-    { "name": "DOYOUNG",  "image": "images/treasure/ifi/doyoung.png",  "color": "#3469cf", "focus": 50, "lift": 3 },
-    { "name": "HARUTO",   "image": "images/treasure/ifi/haruto.png",   "color": "#270dc4", "focus": 50, "lift": 3 },
-    { "name": "JEONGWOO", "image": "images/treasure/ifi/jeongwoo.png", "color": "#8d0a8f", "focus": 50, "lift": 3 },
-    { "name": "JUNGHWAN", "image": "images/treasure/ifi/junghwan.png", "color": "#fd61b5", "focus": 50, "lift": 3 }
+    {
+      "name": "HYUNSUK",
+      "image": "images/treasure/ifi/hyunsuk.png",
+      "color": "#f824c3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JIHOON",
+      "image": "images/treasure/ifi/jihoon.png",
+      "color": "#b80983",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YOSHI",
+      "image": "images/treasure/ifi/yoshi.png",
+      "color": "#b8093e",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNKYU",
+      "image": "images/treasure/ifi/junkyu.png",
+      "color": "#ff751f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUK",
+      "image": "images/treasure/ifi/jaehyuk.png",
+      "color": "#cbdf28",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ASAHI",
+      "image": "images/treasure/ifi/asahi.png",
+      "color": "#0097b2",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DOYOUNG",
+      "image": "images/treasure/ifi/doyoung.png",
+      "color": "#3469cf",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HARUTO",
+      "image": "images/treasure/ifi/haruto.png",
+      "color": "#270dc4",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JEONGWOO",
+      "image": "images/treasure/ifi/jeongwoo.png",
+      "color": "#8d0a8f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNGHWAN",
+      "image": "images/treasure/ifi/junghwan.png",
+      "color": "#fd61b5",
+      "focus": 50,
+      "lift": 3
+    }
   ],
-  "lyrics": []
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "What if I did something that's unforgivable",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Hiding my potential like it's criminal",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But I got an alter ego",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Like a whole other human",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Seeing me for how I really am",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But I can do the same",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let's go",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "No I don't think I react",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Uh",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Big step big moves",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I don't chase I attract",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Too loud too fast",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Whole room jump back",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I ain't here for the rules",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I'm here for the impact",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Mhmm",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "That money bounce",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Like me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "No sleep caffeine",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Dopamine drippin'",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Small core big dreams",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You want calm want peace",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I want noise that heat",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "7CHILL go dumb",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "YÆ ain't no one check me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Slay",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Ain't nobody ever gonna forget my name",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Bullets ricochet it don't matter",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I know where the battle is",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Me versus me errday",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "So bang bang the enemy",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Here come the best of me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Mhmm Let's go",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win you love me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win too big you don't trust me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win you love me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win too big you don't trust me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I go can't stop me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I jump nobody gon' touch me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I go can't stop me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I jump nobody gon' touch me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "IF I IF I IF I IF I",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Move whole crowd going like",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Wa A A A A A",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "IF I IF I IF I IF I",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Come no doubt they gonna",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Hi I I I I I I de",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Mask on",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Brain gone",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Hate the game",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Don't play nice",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Heart cold",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Head strong",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Got the fame",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Paid the price",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You call it a passion",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Your limitation",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "My domination",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Catching you fall",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You're trippin like I'm black ice",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Ah ah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You bitter cause",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I'm better under pressure",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Ah ah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Turned my shadow into halo",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "That's that treasure",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Yeah yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "My confidence give you a complex",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "So you better brush off the cobwebs",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I'm counting my blessings and prospects",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You know that",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Ain't nobody ever gonna forget my name",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Bullets ricochet it don't matter",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I know where the battle is",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Me versus me errday",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "So bang bang the enemy",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Here come the best of me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Mhmm Let's go",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win you love me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win too big you don't trust me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win you love me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I win too big you don't trust me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I go can't stop me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I jump nobody gon' touch me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I go can't stop me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I jump nobody gon' touch me",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "IF I IF I IF I IF I",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Move whole crowd going like",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Wa A A A A A",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "IF I IF I IF I IF I",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Come no doubt they gonna",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Hi I I I I I I de",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I make 'em",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I make you",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I make you",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Errbody",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let's get it",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let's get it",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let's get it",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Errbody",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I say go",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Go",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You say go",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Go",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I say one",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "One",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "We number one",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "One",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I move",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Move",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You gon' move",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Move",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "If I jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You gon' jump",
+      "english": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump",
+      "english": ""
+    }
+  ]
 }
