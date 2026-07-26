@@ -157,7 +157,13 @@
       "original": "",
       "romanization": "Let's go",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          17.12,
+          17.56
+        ]
+      ]
     },
     {
       "start": 19.5,
@@ -168,7 +174,13 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          19.55,
+          19.88
+        ]
+      ]
     },
     {
       "start": 30.15,
@@ -179,7 +191,13 @@
       "original": "",
       "romanization": "Like me",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          30.16,
+          30.63
+        ]
+      ]
     },
     {
       "start": 30.97,
@@ -190,7 +208,13 @@
       "original": "",
       "romanization": "No sleep",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          31.03,
+          31.47
+        ]
+      ]
     },
     {
       "start": 31.76,
@@ -201,7 +225,13 @@
       "original": "",
       "romanization": "Caffeine ",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          31.88,
+          32.18
+        ]
+      ]
     },
     {
       "start": 32.53,
@@ -212,7 +242,13 @@
       "original": "",
       "romanization": "Dopamine ",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          32.6,
+          33.01
+        ]
+      ]
     },
     {
       "start": 33.35,
@@ -223,7 +259,13 @@
       "original": "",
       "romanization": "Drippin'",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          33.37,
+          33.81
+        ]
+      ]
     },
     {
       "start": 34.14,
@@ -234,7 +276,13 @@
       "original": "",
       "romanization": "Small core ",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          34.27,
+          34.69
+        ]
+      ]
     },
     {
       "start": 34.93,
@@ -245,7 +293,13 @@
       "original": "",
       "romanization": "Big dreams ",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          34.99,
+          35.49
+        ]
+      ]
     },
     {
       "start": 35.75,
@@ -256,7 +310,13 @@
       "original": "",
       "romanization": "You want calm",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          35.82,
+          36.32
+        ]
+      ]
     },
     {
       "start": 36.55,
@@ -267,7 +327,13 @@
       "original": "",
       "romanization": "Want peace",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          36.75,
+          37.31
+        ]
+      ]
     },
     {
       "start": 37.35,
@@ -278,7 +344,13 @@
       "original": "",
       "romanization": "I want noise",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          37.48,
+          37.95
+        ]
+      ]
     },
     {
       "start": 38.13,
@@ -289,7 +361,13 @@
       "original": "",
       "romanization": "That heat",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          38.16,
+          38.63
+        ]
+      ]
     },
     {
       "start": 17.43,
@@ -510,7 +588,13 @@
       "original": "",
       "romanization": "Slay",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          41.46,
+          41.93
+        ]
+      ]
     },
     {
       "start": 41.86,
@@ -585,7 +669,13 @@
       "original": "",
       "romanization": "Let's go",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          58.71,
+          59.17
+        ]
+      ]
     },
     {
       "start": 59.02,
@@ -926,7 +1016,13 @@
       "original": "",
       "romanization": "Let's go",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          125.93,
+          126.43
+        ]
+      ]
     },
     {
       "start": 165.19,
