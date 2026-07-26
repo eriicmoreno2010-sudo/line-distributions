@@ -100,202 +100,646 @@
     {
       "start": 15.44,
       "end": 22.54,
-      "members": [],
+      "members": [
+        "WONWOO"
+      ],
       "original": "日が暮れとぼとぼ 暗い家に着いた",
       "romanization": "hi ga kure tobotobo kurai ie ni tsuita",
-      "english": "Night fell, I trudged into my dark home"
+      "english": "Night fell, I trudged into my dark home",
+      "voice": [
+        [
+          15.61,
+          17.08
+        ],
+        [
+          17.51,
+          18.85
+        ],
+        [
+          19.34,
+          20.74
+        ],
+        [
+          20.89,
+          22.25
+        ]
+      ]
     },
     {
       "start": 22.75,
       "end": 29.42,
-      "members": [],
+      "members": [
+        "WONWOO"
+      ],
       "original": "君はいないよ でもなぜか暖かい",
       "romanization": "kimi wa inai yo demo nazeka atatakai",
-      "english": "You're not here but it somehow feels warm"
+      "english": "You're not here but it somehow feels warm",
+      "voice": [
+        [
+          23.06,
+          24.22
+        ],
+        [
+          24.43,
+          25.79
+        ],
+        [
+          26.63,
+          27.75
+        ],
+        [
+          27.94,
+          29.38
+        ]
+      ]
     },
     {
       "start": 30.05,
       "end": 36.47,
-      "members": [],
+      "members": [
+        "DINO"
+      ],
       "original": "「ただいま」とか「いただきます」とか",
       "romanization": "\"tadaima\" toka \"itadakimasu\" toka",
-      "english": "\"I'm home\" or \"Bon appétit\""
+      "english": "\"I'm home\" or \"Bon appétit\"",
+      "voice": [
+        [
+          30.4,
+          31.32
+        ],
+        [
+          31.68,
+          32.86
+        ],
+        [
+          33.68,
+          35.61
+        ],
+        [
+          35.72,
+          36.43
+        ]
+      ]
     },
     {
       "start": 37.06,
       "end": 43.57,
-      "members": [],
+      "members": [
+        "DINO"
+      ],
       "original": "ひとりで言うのも 君のせいで平気",
       "romanization": "hitori de iu no mo kimi no sei de heiki",
-      "english": "I say to myself, but it's okay because of you"
+      "english": "I say to myself, but it's okay because of you",
+      "voice": [
+        [
+          37.42,
+          38.46
+        ],
+        [
+          38.62,
+          40.14
+        ],
+        [
+          40.81,
+          42.49
+        ],
+        [
+          42.64,
+          43.56
+        ]
+      ]
     },
     {
       "start": 44.23,
       "end": 50.64,
-      "members": [],
+      "members": [
+        "HOSHI"
+      ],
       "original": "冷蔵庫開け 少し残ってたMILK",
       "romanization": "reizouko ake sukoshi nokotteta milk",
-      "english": "Open the fridge, there's a bit of milk left"
+      "english": "Open the fridge, there's a bit of milk left",
+      "voice": [
+        [
+          44.32,
+          47.92
+        ],
+        [
+          48.05,
+          50.6
+        ]
+      ]
     },
     {
       "start": 51.23,
       "end": 57.73,
-      "members": [],
+      "members": [
+        "HOSHI"
+      ],
       "original": "飲もうとした時 ふとこう思ったんだ",
       "romanization": "nomou to shita toki futo kou omottanda",
-      "english": "I reach for it then I think to myself"
+      "english": "I reach for it then I think to myself",
+      "voice": [
+        [
+          51.43,
+          55
+        ],
+        [
+          55.15,
+          57.74
+        ]
+      ]
     },
     {
       "start": 58.11,
       "end": 65.26,
-      "members": [],
+      "members": [
+        "WOOZI"
+      ],
       "original": "感情の消費期限 いつまでだろう？",
       "romanization": "kanjou no shouhi kigen itsu made darou?",
-      "english": "What's the use-by date on love?"
+      "english": "What's the use-by date on love?",
+      "voice": [
+        [
+          58.42,
+          59.81
+        ],
+        [
+          60.18,
+          61.54
+        ],
+        [
+          61.96,
+          63.28
+        ],
+        [
+          63.7,
+          65.25
+        ]
+      ]
     },
     {
       "start": 65.43,
       "end": 72.13,
-      "members": [],
+      "members": [
+        "WOOZI"
+      ],
       "original": "ずっとこの感情のままでいたい",
       "romanization": "zutto kono kanjou no mama de itai",
-      "english": "Cuz I want to stay this way forever"
+      "english": "Cuz I want to stay this way forever",
+      "voice": [
+        [
+          65.58,
+          66.86
+        ],
+        [
+          67.26,
+          68.62
+        ],
+        [
+          69.06,
+          70.47
+        ],
+        [
+          70.64,
+          72.02
+        ]
+      ]
     },
     {
       "start": 73.74,
       "end": 80.67,
-      "members": [],
+      "members": [
+        "MINGYU"
+      ],
       "original": "ここにいるよ 僕は 変わらない心で",
       "romanization": "koko ni iru yo boku wa kawaranai kokoro de",
-      "english": "I am here, my heart unwavering"
+      "english": "I am here, my heart unwavering",
+      "voice": [
+        [
+          73.9,
+          76.09
+        ],
+        [
+          76.3,
+          77.17
+        ],
+        [
+          77.4,
+          79.74
+        ],
+        [
+          79.92,
+          80.7
+        ]
+      ]
     },
     {
       "start": 80.79,
       "end": 85.91,
-      "members": [],
+      "members": [
+        "MINGYU"
+      ],
       "original": "ここにいるよ 僕は ここに",
       "romanization": "koko ni iru yo boku wa koko ni",
-      "english": "I am here I am"
+      "english": "I am here I am",
+      "voice": [
+        [
+          81.01,
+          83.29
+        ],
+        [
+          83.53,
+          84.32
+        ],
+        [
+          84.58,
+          85.9
+        ]
+      ]
     },
     {
       "start": 86.47,
       "end": 89.69,
-      "members": [],
+      "members": [
+        "VERNON"
+      ],
       "original": "いくつもの過去と未来",
       "romanization": "ikutsu mo no kako to mirai",
-      "english": "Countless pasts and futures"
+      "english": "Countless pasts and futures",
+      "voice": [
+        [
+          86.58,
+          87.83
+        ],
+        [
+          88.32,
+          89.63
+        ]
+      ]
     },
     {
       "start": 89.96,
       "end": 93.3,
-      "members": [],
+      "members": [
+        "VERNON"
+      ],
       "original": "見えなくても大丈夫さ",
       "romanization": "mienakute mo daijoubu sa",
-      "english": "It's okay even if I can't see them"
+      "english": "It's okay even if I can't see them",
+      "voice": [
+        [
+          90.16,
+          91.55
+        ],
+        [
+          91.72,
+          93.2
+        ]
+      ]
     },
     {
       "start": 93.48,
       "end": 100.38,
-      "members": [],
+      "members": [
+        "S.COUPS"
+      ],
       "original": "どんな日でも 見つめあって 笑うことができるなら",
       "romanization": "donna hi demo mitsumeatte warau koto ga dekiru nara",
-      "english": "As long as I can lock eyes with you and smile"
+      "english": "As long as I can lock eyes with you and smile",
+      "voice": [
+        [
+          93.64,
+          95.37
+        ],
+        [
+          95.52,
+          97.19
+        ],
+        [
+          97.35,
+          98.82
+        ],
+        [
+          99.05,
+          100.24
+        ]
+      ]
     },
     {
       "start": 101.18,
       "end": 108.18,
-      "members": [],
+      "members": [
+        "JOSHUA"
+      ],
       "original": "突然降り出した雨に 濡れた君を両手で",
       "romanization": "totsuzen furidashita ame ni nureta kimi wo ryoute de",
-      "english": "When you're drenched from the sudden shower"
+      "english": "When you're drenched from the sudden shower",
+      "voice": [
+        [
+          101.43,
+          102.39
+        ],
+        [
+          102.62,
+          103.35
+        ],
+        [
+          103.5,
+          105.05
+        ],
+        [
+          105.3,
+          105.99
+        ],
+        [
+          106.23,
+          106.9
+        ],
+        [
+          107.08,
+          108.39
+        ]
+      ]
     },
     {
       "start": 108.3,
       "end": 114.74,
-      "members": [],
+      "members": [
+        "JOSHUA"
+      ],
       "original": "抱きしめてあげる 僕ならできるから",
       "romanization": "dakishimete ageru boku nara dekiru kara",
-      "english": "I'll wrap you in my arms because I can"
+      "english": "I'll wrap you in my arms because I can",
+      "voice": [
+        [
+          108.42,
+          111.95
+        ],
+        [
+          112.08,
+          114.87
+        ]
+      ]
     },
     {
       "start": 115.03,
       "end": 122.13,
-      "members": [],
+      "members": [
+        "SEUNGKWAN"
+      ],
       "original": "感情の消費期限 いつまでだろう？",
       "romanization": "kanjou no shouhi kigen itsu made darou?",
-      "english": "What's the use-by date on love?"
+      "english": "What's the use-by date on love?",
+      "voice": [
+        [
+          115.25,
+          116.87
+        ],
+        [
+          117.04,
+          118.43
+        ],
+        [
+          118.81,
+          120.26
+        ],
+        [
+          120.61,
+          122.28
+        ]
+      ]
     },
     {
       "start": 122.26,
       "end": 129.05,
-      "members": [],
+      "members": [
+        "SEUNGKWAN"
+      ],
       "original": "ずっとこの感情のままでいたい",
       "romanization": "zutto kono kanjou no mama de itai",
-      "english": "Cuz I want to stay this way forever"
+      "english": "Cuz I want to stay this way forever",
+      "voice": [
+        [
+          122.39,
+          123.81
+        ],
+        [
+          124.19,
+          125.56
+        ],
+        [
+          125.96,
+          127.37
+        ],
+        [
+          127.58,
+          129.05
+        ]
+      ]
     },
     {
       "start": 130.55,
       "end": 137.6,
-      "members": [],
+      "members": [
+        "THE8"
+      ],
       "original": "ここにいるよ 僕は 変わらない心で",
       "romanization": "koko ni iru yo boku wa kawaranai kokoro de",
-      "english": "I am here, my heart unwavering"
+      "english": "I am here, my heart unwavering",
+      "voice": [
+        [
+          130.8,
+          133.11
+        ],
+        [
+          133.31,
+          134.13
+        ],
+        [
+          134.34,
+          136.64
+        ],
+        [
+          136.87,
+          137.66
+        ]
+      ]
     },
     {
       "start": 137.7,
       "end": 142.82,
-      "members": [],
+      "members": [
+        "THE8"
+      ],
       "original": "ここにいるよ 僕は ここに",
       "romanization": "koko ni iru yo boku wa koko ni",
-      "english": "I am here I am"
+      "english": "I am here I am",
+      "voice": [
+        [
+          137.9,
+          140.21
+        ],
+        [
+          140.39,
+          141.2
+        ],
+        [
+          141.42,
+          142.86
+        ]
+      ]
     },
     {
       "start": 143.6,
       "end": 151.34,
-      "members": [],
+      "members": [
+        "JEONGHAN"
+      ],
       "original": "君への想い 君への感情には",
       "romanization": "kimi e no omoi kimi e no kanjou ni wa",
-      "english": "My love for you, my feelings for you"
+      "english": "My love for you, my feelings for you",
+      "voice": [
+        [
+          143.91,
+          147.19
+        ],
+        [
+          147.46,
+          151.34
+        ]
+      ]
     },
     {
       "start": 151.46,
       "end": 157.79,
-      "members": [],
+      "members": [
+        "JEONGHAN"
+      ],
       "original": "消費期限なんてない いつまでも変わらない",
       "romanization": "shouhi kigen nante nai itsu made mo kawaranai",
-      "english": "There's no use-by date, stay like this forever"
+      "english": "There's no use-by date, stay like this forever",
+      "voice": [
+        [
+          151.7,
+          153.12
+        ],
+        [
+          153.5,
+          154.86
+        ],
+        [
+          155.26,
+          159.46
+        ]
+      ]
     },
     {
       "start": 157.92,
       "end": 164.94,
-      "members": [],
+      "members": [
+        "DK"
+      ],
       "original": "感情に消費期限があるのなら",
       "romanization": "kanjou ni shouhi kigen ga aru no nara",
-      "english": "If there was a use-by date on love"
+      "english": "If there was a use-by date on love",
+      "voice": [
+        [
+          157.99,
+          159.51
+        ],
+        [
+          159.72,
+          161.23
+        ],
+        [
+          161.52,
+          163.02
+        ],
+        [
+          163.28,
+          164.85
+        ]
+      ]
     },
     {
       "start": 165.06,
       "end": 171.72,
-      "members": [],
+      "members": [
+        "DK"
+      ],
       "original": "生きてゆく意味など 僕にはない",
       "romanization": "ikite yuku imi nado boku ni wa nai",
-      "english": "There's no meaning to life for me"
+      "english": "There's no meaning to life for me",
+      "voice": [
+        [
+          165.07,
+          166.51
+        ],
+        [
+          166.86,
+          168.22
+        ],
+        [
+          168.57,
+          169.98
+        ],
+        [
+          170.16,
+          171.72
+        ]
+      ]
     },
     {
       "start": 173.17,
       "end": 180.21,
-      "members": [],
+      "members": [
+        "JUN"
+      ],
       "original": "ここにいるよ 僕は 変わらない心で",
       "romanization": "koko ni iru yo boku wa kawaranai kokoro de",
-      "english": "I am here, my heart unwavering"
+      "english": "I am here, my heart unwavering",
+      "voice": [
+        [
+          173.44,
+          175.75
+        ],
+        [
+          175.95,
+          176.77
+        ],
+        [
+          176.94,
+          179.28
+        ],
+        [
+          179.52,
+          180.27
+        ]
+      ]
     },
     {
       "start": 180.34,
       "end": 185.53,
-      "members": [],
+      "members": [
+        "JUN"
+      ],
       "original": "ここにいるよ 僕は ここに",
       "romanization": "koko ni iru yo boku wa koko ni",
-      "english": "I am here I am"
+      "english": "I am here I am",
+      "voice": [
+        [
+          180.57,
+          182.85
+        ],
+        [
+          183.03,
+          183.86
+        ],
+        [
+          184.1,
+          185.52
+        ]
+      ]
     },
     {
       "start": 72.6,
