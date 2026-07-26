@@ -750,7 +750,17 @@
       "original": "ア アイヤイヤ ア アイヤイヤ ",
       "romanization": "a aiyaiya a aiyaiya ",
       "english": "Ah, aiyaiyah ah aiyaiyah ",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          72.68,
+          73.83
+        ],
+        [
+          73.95,
+          76.17
+        ]
+      ]
     },
     {
       "start": 76.68,
@@ -761,7 +771,17 @@
       "original": "アイヤイヤ アイデ",
       "romanization": "aiyaiya aide",
       "english": "Aiyaiyah aideh",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          76.77,
+          77.86
+        ],
+        [
+          77.99,
+          78.74
+        ]
+      ]
     },
     {
       "start": 79.74,
@@ -772,7 +792,17 @@
       "original": "ア アイヤイヤ ア アイヤイヤ ",
       "romanization": "a aiyaiya a aiyaiya ",
       "english": "Ah, aiyaiyah ah aiyaiyah ",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          79.7,
+          81.4
+        ],
+        [
+          81.53,
+          83.17
+        ]
+      ]
     },
     {
       "start": 83.67,
@@ -783,7 +813,13 @@
       "original": "アイヤイヤ アイデ",
       "romanization": "aiyaiya aide",
       "english": "Aiyaiyah aideh",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          83.73,
+          85.44
+        ]
+      ]
     },
     {
       "start": 129.49,
@@ -794,7 +830,17 @@
       "original": "ア アイヤイヤ ア アイヤイヤ ",
       "romanization": "a aiyaiya a aiyaiya ",
       "english": "Ah, aiyaiyah ah aiyaiyah ",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          129.51,
+          131.16
+        ],
+        [
+          131.3,
+          132.96
+        ]
+      ]
     },
     {
       "start": 133.51,
@@ -805,7 +851,13 @@
       "original": "アイヤイヤ アイデ",
       "romanization": "aiyaiya aide",
       "english": "Aiyaiyah aideh",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          133.55,
+          135.27
+        ]
+      ]
     },
     {
       "start": 136.69,
@@ -816,7 +868,17 @@
       "original": "ア アイヤイヤ ア アイヤイヤ ",
       "romanization": "a aiyaiya a aiyaiya ",
       "english": "Ah, aiyaiyah ah aiyaiyah ",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          136.59,
+          138.2
+        ],
+        [
+          138.38,
+          140.06
+        ]
+      ]
     },
     {
       "start": 140.58,
@@ -827,7 +889,17 @@
       "original": "アイヤイヤ アイデ",
       "romanization": "aiyaiya aide",
       "english": "Aiyaiyah aideh",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          140.62,
+          141.83
+        ],
+        [
+          141.98,
+          142.34
+        ]
+      ]
     },
     {
       "start": 172.15,
@@ -838,7 +910,17 @@
       "original": "ア アイヤイヤ ア アイヤイヤ ",
       "romanization": "a aiyaiya a aiyaiya ",
       "english": "Ah, aiyaiyah ah aiyaiyah ",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          172.19,
+          173.86
+        ],
+        [
+          174,
+          175.59
+        ]
+      ]
     },
     {
       "start": 176.16,
@@ -849,7 +931,13 @@
       "original": "アイヤイヤ アイデ",
       "romanization": "aiyaiya aide",
       "english": "Aiyaiyah aideh",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          176.18,
+          177.97
+        ]
+      ]
     },
     {
       "start": 179.22,
@@ -860,7 +948,17 @@
       "original": "ア アイヤイヤ ア アイヤイヤ ",
       "romanization": "a aiyaiya a aiyaiya ",
       "english": "Ah, aiyaiyah ah aiyaiyah ",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          179.25,
+          180.95
+        ],
+        [
+          181.1,
+          182.69
+        ]
+      ]
     },
     {
       "start": 183.24,
@@ -871,7 +969,13 @@
       "original": "アイヤイヤ アイデ",
       "romanization": "aiyaiya aide",
       "english": "Aiyaiyah aideh",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          183.29,
+          185.02
+        ]
+      ]
     }
   ]
 }
