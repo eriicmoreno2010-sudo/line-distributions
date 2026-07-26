@@ -84,7 +84,13 @@
       ],
       "original": "",
       "romanization": "What if I did something that's unforgivable",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          0.7,
+          3.05
+        ]
+      ]
     },
     {
       "start": 3.84,
@@ -94,7 +100,13 @@
       ],
       "original": "",
       "romanization": "Hiding my potential like it's criminal",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          3.93,
+          6.21
+        ]
+      ]
     },
     {
       "start": 7.17,
@@ -104,7 +116,17 @@
       ],
       "original": "",
       "romanization": "But I got an alter ego, Like a whole other human",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          7.47,
+          8.27
+        ],
+        [
+          8.42,
+          11.11
+        ]
+      ]
     },
     {
       "start": 11.07,
@@ -114,7 +136,17 @@
       ],
       "original": "",
       "romanization": "Seeing me for how I really am, But I can do the same",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          11.14,
+          13.31
+        ],
+        [
+          13.43,
+          14.79
+        ]
+      ]
     },
     {
       "start": 17.02,
@@ -267,7 +299,25 @@
       ],
       "original": "",
       "romanization": "No I don't think I react, Big step big moves",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          17.58,
+          17.87
+        ],
+        [
+          18.02,
+          18.65
+        ],
+        [
+          18.79,
+          19.55
+        ],
+        [
+          19.87,
+          21.06
+        ]
+      ]
     },
     {
       "start": 21.06,
@@ -277,7 +327,21 @@
       ],
       "original": "",
       "romanization": "I don't chase I attract, Too loud too fast",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          21.11,
+          21.9
+        ],
+        [
+          22.02,
+          22.76
+        ],
+        [
+          22.91,
+          24.13
+        ]
+      ]
     },
     {
       "start": 24.07,
@@ -287,7 +351,13 @@
       ],
       "original": "",
       "romanization": "Whole room jump back",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          24.13,
+          25.09
+        ]
+      ]
     },
     {
       "start": 25.08,
@@ -297,7 +367,21 @@
       ],
       "original": "",
       "romanization": "I ain't here for the rules, I'm here for the impact",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          25.11,
+          26.45
+        ],
+        [
+          26.57,
+          27.06
+        ],
+        [
+          27.18,
+          28.06
+        ]
+      ]
     },
     {
       "start": 28.14,
@@ -307,7 +391,13 @@
       ],
       "original": "",
       "romanization": "Mhmm",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          28.15,
+          28.88
+        ]
+      ]
     },
     {
       "start": 28.91,
@@ -317,7 +407,13 @@
       ],
       "original": "",
       "romanization": "That money bounce",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          28.94,
+          29.69
+        ]
+      ]
     },
     {
       "start": 29.71,
@@ -327,7 +423,29 @@
       ],
       "original": "",
       "romanization": "Like me, No sleep caffeine, Dopamine drippin'",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          29.75,
+          30.28
+        ],
+        [
+          30.57,
+          31.09
+        ],
+        [
+          31.35,
+          31.88
+        ],
+        [
+          32.17,
+          32.67
+        ],
+        [
+          33,
+          33.46
+        ]
+      ]
     },
     {
       "start": 33.5,
@@ -338,7 +456,25 @@
       "original": "",
       "romanization": "Small core big dreams, You want calm want peace",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.76,
+          34.3
+        ],
+        [
+          34.55,
+          35.14
+        ],
+        [
+          35.41,
+          35.97
+        ],
+        [
+          36.18,
+          36.76
+        ]
+      ]
     },
     {
       "start": 36.83,
@@ -348,7 +484,21 @@
       ],
       "original": "",
       "romanization": "I want noise that heat, 7CHILL go dumb, YÆ ain't no one check me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          36.97,
+          37.53
+        ],
+        [
+          37.83,
+          38.33
+        ],
+        [
+          38.56,
+          41.54
+        ]
+      ]
     },
     {
       "start": 41.47,
@@ -370,7 +520,13 @@
       ],
       "original": "",
       "romanization": "Ain't nobody ever gonna forget my name",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          41.95,
+          45.2
+        ]
+      ]
     },
     {
       "start": 45.38,
@@ -380,7 +536,13 @@
       ],
       "original": "",
       "romanization": "Bullets ricochet it don't matter, I know where the battle is",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          45.54,
+          49.55
+        ]
+      ]
     },
     {
       "start": 49.5,
@@ -390,7 +552,13 @@
       ],
       "original": "",
       "romanization": "Me versus me errday",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          49.5,
+          51.7
+        ]
+      ]
     },
     {
       "start": 52.24,
@@ -400,7 +568,13 @@
       ],
       "original": "",
       "romanization": "So bang bang the enemy, Here come the best of me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          52.26,
+          55.95
+        ]
+      ]
     },
     {
       "start": 58.69,
@@ -422,7 +596,17 @@
       ],
       "original": "",
       "romanization": "If I win you love me, If I win too big you don't trust me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          59.17,
+          60.41
+        ],
+        [
+          60.56,
+          61.98
+        ]
+      ]
     },
     {
       "start": 62.13,
@@ -433,7 +617,17 @@
       ],
       "original": "",
       "romanization": "If I win you love me, If I win too big you don't trust me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          62.39,
+          63.53
+        ],
+        [
+          63.74,
+          65.1
+        ]
+      ]
     },
     {
       "start": 65.45,
@@ -445,7 +639,17 @@
       ],
       "original": "",
       "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          65.57,
+          66.74
+        ],
+        [
+          66.95,
+          68.34
+        ]
+      ]
     },
     {
       "start": 68.76,
@@ -457,7 +661,17 @@
       ],
       "original": "",
       "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          68.73,
+          69.89
+        ],
+        [
+          70.15,
+          71.52
+        ]
+      ]
     },
     {
       "start": 71.91,
@@ -467,7 +681,17 @@
       ],
       "original": "",
       "romanization": "IF I IF I IF I IF I, Move whole crowd going like",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          70.19,
+          71.52
+        ],
+        [
+          71.97,
+          75.17
+        ]
+      ]
     },
     {
       "start": 75.21,
@@ -485,7 +709,13 @@
       ],
       "original": "",
       "romanization": "IF I IF I IF I IF I, Come no doubt they gonna",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          78.3,
+          81.57
+        ]
+      ]
     },
     {
       "start": 81.57,
@@ -503,7 +733,13 @@
       ],
       "original": "",
       "romanization": "Mask on, Brain gone, Hate the game, Don't play nice",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          84.73,
+          87.52
+        ]
+      ]
     },
     {
       "start": 87.79,
@@ -513,7 +749,13 @@
       ],
       "original": "",
       "romanization": "Heart cold, Head strong, Got the fame, Paid the price",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          87.94,
+          90.72
+        ]
+      ]
     },
     {
       "start": 90.82,
@@ -523,7 +765,13 @@
       ],
       "original": "",
       "romanization": "You call it a passion, Your limitation, My domination, Catching you fall",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          90.94,
+          95.38
+        ]
+      ]
     },
     {
       "start": 95.45,
@@ -533,7 +781,13 @@
       ],
       "original": "",
       "romanization": "You're trippin like I'm black ice",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          95.3,
+          96.52
+        ]
+      ]
     },
     {
       "start": 97.27,
@@ -543,7 +797,13 @@
       ],
       "original": "",
       "romanization": "You bitter cause, I'm better under pressure",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          97.34,
+          99.66
+        ]
+      ]
     },
     {
       "start": 100.18,
@@ -553,7 +813,13 @@
       ],
       "original": "",
       "romanization": "Turned my shadow into halo, That's that treasure",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          100.31,
+          102.82
+        ]
+      ]
     },
     {
       "start": 103.53,
@@ -563,7 +829,13 @@
       ],
       "original": "",
       "romanization": "My confidence give you a complex, So you better brush off the cobwebs",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          103.7,
+          107.11
+        ]
+      ]
     },
     {
       "start": 106.86,
@@ -573,7 +845,13 @@
       ],
       "original": "",
       "romanization": "I'm counting my blessings and prospects, You know that",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          106.96,
+          109.18
+        ]
+      ]
     },
     {
       "start": 109.18,
@@ -583,7 +861,13 @@
       ],
       "original": "",
       "romanization": "Ain't nobody ever gonna forget my name",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          109.14,
+          112.42
+        ]
+      ]
     },
     {
       "start": 112.66,
@@ -593,7 +877,13 @@
       ],
       "original": "",
       "romanization": "Bullets ricochet it don't matter, I know where the battle is",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          112.76,
+          116.75
+        ]
+      ]
     },
     {
       "start": 116.7,
@@ -603,7 +893,13 @@
       ],
       "original": "",
       "romanization": "Me versus me errday",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          116.69,
+          118.85
+        ]
+      ]
     },
     {
       "start": 119.4,
@@ -613,7 +909,13 @@
       ],
       "original": "",
       "romanization": "So bang bang the enemy, Here come the best of me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          119.41,
+          123.13
+        ]
+      ]
     },
     {
       "start": 125.93,
@@ -657,7 +959,17 @@
       ],
       "original": "",
       "romanization": "If I win you love me, If I win too big you don't trust me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          126.3,
+          127.57
+        ],
+        [
+          127.72,
+          129.07
+        ]
+      ]
     },
     {
       "start": 129.26,
@@ -668,7 +980,17 @@
       ],
       "original": "",
       "romanization": "If I win you love me, If I win too big you don't trust me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          129.55,
+          130.83
+        ],
+        [
+          130.95,
+          132.25
+        ]
+      ]
     },
     {
       "start": 132.51,
@@ -680,7 +1002,17 @@
       ],
       "original": "",
       "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          132.72,
+          134.11
+        ],
+        [
+          134.24,
+          135.56
+        ]
+      ]
     },
     {
       "start": 135.73,
@@ -692,7 +1024,17 @@
       ],
       "original": "",
       "romanization": "If I go can't stop me, If I jump nobody gon' touch me",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          135.92,
+          137.22
+        ],
+        [
+          137.4,
+          138.53
+        ]
+      ]
     },
     {
       "start": 138.98,
@@ -702,7 +1044,13 @@
       ],
       "original": "",
       "romanization": "IF I IF I IF I IF I, Move whole crowd going like",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          139.15,
+          142.38
+        ]
+      ]
     },
     {
       "start": 142.37,
@@ -720,7 +1068,13 @@
       ],
       "original": "",
       "romanization": "IF I IF I IF I IF I",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          145.49,
+          147.06
+        ]
+      ]
     },
     {
       "start": 147.05,
@@ -730,7 +1084,13 @@
       ],
       "original": "",
       "romanization": "Come no doubt they gonna",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          147.12,
+          148.76
+        ]
+      ]
     },
     {
       "start": 148.77,
