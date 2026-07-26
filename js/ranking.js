@@ -199,12 +199,21 @@ const Ranking = {
             if(!isDesktop) col.el.style.height = (n * col.rowH - this.gap) + "px";
         });
 
-        // Size photos to fit the shortest card so they never overflow it.
+        // Make photos as large as the card allows (fill it) without overflowing.
+        // Single column: trim the card's vertical padding so the circle nearly
+        // fills the row. Two-side keeps its compact 72px look (unchanged).
         const minCardH = Math.min(...this.columns.map(c => c.cardH || 92));
-        this.photoSize = Math.max(44, Math.min(this.twoSide ? 72 : 96, Math.round(minCardH - 22)));
+        const isTwo = this.twoSide;
+        const cap = isTwo ? 72 : 120;
+        this.photoSize = Math.max(44, Math.min(cap, Math.round(minCardH - (isTwo ? 22 : 12))));
         this.members.forEach(m => {
-            if(m.photoEl){ m.photoEl.style.width = this.photoSize + "px"; m.photoEl.style.height = this.photoSize + "px"; }
+            if(m.photoEl){
+                m.photoEl.style.width = this.photoSize + "px";
+                m.photoEl.style.height = this.photoSize + "px";
+                if(!isTwo) m.photoEl.style.transform = "none";   // no lift so it centres & fills
+            }
             m.element.style.gridTemplateColumns = "32px " + this.photoSize + "px 1fr";
+            if(!isTwo){ m.element.style.paddingTop = "5px"; m.element.style.paddingBottom = "5px"; }
         });
 
         this.placeAll(false);
