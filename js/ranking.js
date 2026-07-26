@@ -202,11 +202,10 @@ const Ranking = {
     },
 
     /* Place every card by GLOBAL rank: ranks 1..half in the left column,
-       the rest in the right. Cards that change column fade across cleanly. */
+       the rest in the right. Same-column moves glide; column changes dissolve. */
     placeAll(animate){
         const sorted = [...this.members].sort((a,b) => b.seconds - a.seconds);
         this.rankMap = {};
-        const switched = [];
 
         sorted.forEach((m, gi) => {
             this.rankMap[m.name] = gi + 1;
@@ -215,15 +214,20 @@ const Ranking = {
             if(this.twoSide && gi >= this.half){ colIdx = 1; row = gi - this.half; }
             else { colIdx = 0; row = gi; }
             const col = this.columns[colIdx];
+            const changingCol = (m.element.parentNode !== col.el);
 
-            if(m.element.parentNode !== col.el){         // moving to the other column
-                m.element.classList.add("no-anim");      // no diagonal slide across
+            // Animated column change → soft two-phase dissolve (leave it where it is).
+            if(animate && changingCol && m._col !== undefined){
+                this.switchCard(m, colIdx, row, gi);
+                return;
+            }
+
+            if(changingCol){                         // initial / non-animated placement
+                m.element.classList.add("no-anim");
                 col.el.appendChild(m.element);
-                if(animate && m._col !== undefined) switched.push(m);
             } else if(animate){
                 m.element.classList.toggle("rising", (m._pos ?? row) > row);
             }
-
             m.element.style.height = col.cardH ? col.cardH + "px" : "";
             m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);
             m.element.style.zIndex = String(col.cap - row);
@@ -232,24 +236,10 @@ const Ranking = {
             m._col = colIdx;
         });
 
-        // Column-switchers: appear instantly at the new slot, then fade in.
-        if(switched.length){
-            switched.forEach(m => { m.element.style.opacity = "0"; });
-            requestAnimationFrame(() => {
-                switched.forEach(m => {
-                    m.element.classList.remove("no-anim");
-                    m.element.classList.add("switching");
-                    m.element.style.opacity = "1";
-                });
-            });
-            clearTimeout(this._switchT);
-            this._switchT = setTimeout(() => {
-                switched.forEach(m => { m.element.classList.remove("switching"); m.element.style.opacity = ""; });
-            }, 260);
-        } else {
-            // clear any leftover no-anim from non-animated placements
-            this.members.forEach(m => m.element.classList.remove("no-anim"));
-        }
+        // Re-enable animation next frame for any instant (no-anim) placements.
+        requestAnimationFrame(() => {
+            this.members.forEach(m => { if(!m._switching) m.element.classList.remove("no-anim"); });
+        });
 
         if(animate){
             clearTimeout(this._riseT);
@@ -257,6 +247,37 @@ const Ranking = {
                 this.members.forEach(m => m.element.classList.remove("rising"));
             }, 620);
         }
+    },
+
+    /* Column change as a soft cross-dissolve: fade out where it is, jump to the
+       new slot while invisible, then fade back in — never an abrupt pop. */
+    switchCard(m, colIdx, row, gi){
+        const col = this.columns[colIdx];
+        m._switching = true;
+        m.element.classList.remove("rising", "no-anim");
+        m.element.classList.add("switching");           // opacity-only transition
+        m.element.style.zIndex = "60";                  // float above while dissolving
+        if(m.rankElement) m.rankElement.textContent = gi + 1;
+        m.element.style.opacity = "0";                  // phase 1: fade out in place
+
+        clearTimeout(m._switchT);
+        m._switchT = setTimeout(() => {
+            m.element.classList.add("no-anim");          // phase 2: jump to new slot invisibly
+            col.el.appendChild(m.element);
+            m.element.style.height = col.cardH ? col.cardH + "px" : "";
+            m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);
+            m.element.style.zIndex = String(col.cap - row);
+            m._pos = row;
+            m._col = colIdx;
+            void m.element.offsetWidth;                  // force reflow → the jump is instant
+            m.element.classList.remove("no-anim");       // re-enable the opacity transition
+            m.element.style.opacity = "1";               // fade back in
+            setTimeout(() => {
+                m.element.classList.remove("switching");
+                m.element.style.opacity = "";
+                m._switching = false;
+            }, 220);
+        }, 180);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
