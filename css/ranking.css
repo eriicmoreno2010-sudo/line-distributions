@@ -16,6 +16,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member{
     --accent:#7c5cff;
+    --ring:rgba(255,255,255,.55);   /* photo ring: white by default */
     --rank-y:0px;
     --card-scale:1;
     position:absolute;
@@ -62,9 +63,12 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* ACTIVE STATE (color glow, no resizing) */
 /* ========================= */
 
+.member.has-sung{ --ring:var(--accent); }   /* once they've sung, ring takes their colour */
+
 .member.active{
     --card-scale:1.04;
     --sing:color-mix(in srgb, var(--accent) 100%, #fff);
+    --ring:var(--sing);
     background:
         linear-gradient(90deg,
             color-mix(in srgb, var(--accent) 58%, var(--panel2)),
@@ -102,7 +106,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     object-position:center 45%;
     image-rendering:auto;
     transform:translateY(-3px);
-    border:3px solid var(--accent);   /* ring always in the member's colour */
+    border:3px solid var(--ring);   /* white by default, member colour once they sing */
     background:var(--panel3);
     transition:border-color .15s var(--ease);
 }

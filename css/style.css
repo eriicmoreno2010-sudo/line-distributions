@@ -255,7 +255,7 @@ body.two-side #ranking .member-photo,
 body.two-side #ranking-left .member-photo{
     width:72px;
     height:72px;
-    border:3px solid var(--accent);   /* colour ring on both sides */
+    border:3px solid var(--ring);   /* white by default; their colour once they sing */
 }
 body.two-side #ranking .member-rank,
 body.two-side #ranking-left .member-rank{ font-size:16px; }
@@ -303,7 +303,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     display:block;
     width:84px;
     height:84px;
-    border:2px solid transparent;
+    border:3px solid var(--ring);
     border-radius:50%;
     background:var(--panel3);
     object-fit:cover;
