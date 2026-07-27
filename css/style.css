@@ -62,13 +62,24 @@ body{
     overflow:hidden;
 }
 
+/* The whole UI is designed at a fixed 1920×1080 canvas and scaled to fit the
+   screen, so it looks IDENTICAL on any monitor/resolution (no fixed-px drift). */
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 /* ========================= */
 /* APP */
 /* ========================= */
 
 #app{
-    width:100%;
-    height:100vh;
+    width:1920px;                     /* fixed design canvas */
+    height:1080px;
+    flex:none;
+    transform:scale(var(--ui-scale, 1));   /* scaled to fit any screen (set by JS) */
+    transform-origin:center center;
     padding:20px;
     padding-bottom:34px;              /* space for fixed timeline */
     display:grid;

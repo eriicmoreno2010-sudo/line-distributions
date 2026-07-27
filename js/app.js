@@ -8,6 +8,16 @@ App
 
 let SONG = null;
 
+/* Scale the fixed 1920×1080 UI canvas to fit the current screen, so the layout
+   looks the same on every monitor/resolution (fixes fonts/cards looking off on
+   higher-res displays). Recomputed on resize. */
+function fitUI(){
+    const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    document.documentElement.style.setProperty("--ui-scale", s);
+}
+window.addEventListener("resize", fitUI);
+fitUI();
+
 document.addEventListener("DOMContentLoaded", async () => {
 
     try {
