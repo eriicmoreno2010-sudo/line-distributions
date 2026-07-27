@@ -231,11 +231,14 @@ body.two-side #left-panel-rank{
     display:flex;
     flex-direction:column;
     min-height:0;
-    overflow-y:auto;
-    scrollbar-width:thin;
-    scrollbar-color:var(--panel3) transparent;
+    /* clip, don't scroll: the column-change glide briefly parks a card past the
+       bottom edge, which would otherwise flash a scrollbar (all cards fit on the
+       fixed 1080 canvas, so no real scrolling is needed here). */
+    overflow:hidden;
     padding:18px 16px;
 }
+/* Same clip on the right side so both columns behave identically. */
+body.two-side #right-panel{ overflow:hidden; }
 #left-panel-rank::-webkit-scrollbar{ width:6px; }
 #left-panel-rank::-webkit-scrollbar-thumb{ background:var(--panel3); border-radius:999px; }
 #left-panel-rank::before{
