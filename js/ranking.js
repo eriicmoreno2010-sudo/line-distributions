@@ -307,8 +307,8 @@ const Ranking = {
                 m.element.classList.remove("switching");
                 m.element.style.opacity = "";
                 m._switching = false;
-            }, 420);
-        }, 300);
+            }, 300);
+        }, 210);
     },
 
     /* Update text, bars and active glow in place (no layout change). */

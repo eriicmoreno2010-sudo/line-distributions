@@ -57,7 +57,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* a card that jumps to the OTHER column: snap into place (no diagonal slide)
    then fade in, so the column change reads cleanly */
 .member.no-anim{ transition:none !important; }
-.member.switching{ transition:transform .32s var(--ease), opacity .28s var(--ease) !important; }
+.member.switching{ transition:transform .22s var(--ease), opacity .18s var(--ease) !important; }
 
 /* ========================= */
 /* ACTIVE STATE (color glow, no resizing) */
