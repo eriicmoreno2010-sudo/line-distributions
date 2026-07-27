@@ -126,18 +126,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "갈 길을 잃은 채",
-      "romanization": "gal gireul ireun chae",
-      "english": "I lost my way"
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "갈 곳을 잃은 채",
-      "romanization": "gal goseul ireun chae",
-      "english": "I lost my aim",
-      "adlib": false
+      "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
+      "romanization": "gal gireul ireun chae gal goseul ireun chae",
+      "english": "I lost my way, I lost my aim"
     },
     {
       "start": 0,
@@ -151,9 +142,18 @@
       "start": 1.22,
       "end": 2.63,
       "members": [],
-      "original": "잊어버리자 이렇게 웃어 버리자 이렇게",
-      "romanization": "ijeobeorija ireoke useo beorija ireoke",
-      "english": "Let's just forget all of this, let's just laugh through all of this"
+      "original": "잊어버리자 이렇게",
+      "romanization": "ijeobeorija ireoke",
+      "english": "Let's just forget all of this"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "웃어 버리자 이렇게",
+      "romanization": "useo beorija ireoke",
+      "english": "Let's just laugh through all of this",
+      "adlib": false
     },
     {
       "start": 0,
@@ -183,50 +183,77 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "사라져 가는 내 모습을",
-      "romanization": "sarajyeo ganeun nae moseubeul",
+      "original": "사라져 가는 내 모습을 다시 찾고만 싶을 뿐",
+      "romanization": "sarajyeo ganeun nae moseubeul dasi chatgoman sipeul ppun",
       "english": "I just wanna find myself before I disappear completely"
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "다시 찾고만 싶을 뿐",
-      "romanization": "dasi chatgoman sipeul ppun",
-      "english": "",
+      "original": "어릴 때 만화영화에",
+      "romanization": "eoril ttae manhwayeonghwae",
+      "english": "When I was young and watched cartoons"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나오는 주인공은 왜",
+      "romanization": "naoneun juingongeun wae",
+      "english": "I wondered why I couldn't be",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "어릴 때 만화영화에 나오는 주인공은 왜",
-      "romanization": "eoril ttae manhwayeonghwae naoneun juingongeun wae",
-      "english": "When I was young and watched cartoons I wondered why I couldn't be"
+      "original": "내가 될 수 없는지",
+      "romanization": "naega doel su eomneunji",
+      "english": "The main character like I would see"
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "내가 될 수 없는지 내 맘은 아주 검은색",
-      "romanization": "naega doel su eomneunji nae mameun aju geomeunsaek",
-      "english": "The main character like I would see, my heart's all too blackened"
+      "original": "내 맘은 아주 검은색",
+      "romanization": "nae mameun aju geomeunsaek",
+      "english": "My heart's all too blackened",
+      "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "나와 하루만 심장 바꿔 줄 사람 어디도 없나",
-      "romanization": "nawa haruman simjang bakkwo jul saram eodido eomna",
-      "english": "Isn't there anyone who could trade their heart with mine just for a day?"
+      "original": "나와 하루만 심장 바꿔 줄",
+      "romanization": "nawa haruman simjang bakkwo jul",
+      "english": "Isn't there anyone who could"
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "이런 빌어먹을 세상 나만 혼자 바보 됐어",
-      "romanization": "ireon billeomeogeul sesang naman honja babo dwaesseo",
-      "english": "In this f***ing world, I'm the only stupid"
+      "original": "사람 어디도 없나",
+      "romanization": "saram eodido eomna",
+      "english": "Trade their heart with mine just for a day?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이런 빌어먹을 세상",
+      "romanization": "ireon billeomeogeul sesang",
+      "english": "In this f***ing world"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나만 혼자 바보 됐어",
+      "romanization": "naman honja babo dwaesseo",
+      "english": "I'm the only stupid",
+      "adlib": false
     },
     {
       "start": 0,
@@ -306,7 +333,7 @@
       "members": [],
       "original": "내일이 되고 싶지 않아",
       "romanization": "naeiri doego sipji ana",
-      "english": "for the me I knew yesterday"
+      "english": "or the me I knew yesterday"
     },
     {
       "start": 0,
