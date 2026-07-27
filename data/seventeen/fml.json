@@ -109,17 +109,35 @@
       "start": 1.39,
       "end": 3.98,
       "members": [],
-      "original": "이런 빌어먹을 세상 나만 혼자 바보 됐어",
-      "romanization": "ireon billeomeogeul sesang naman honja babo dwaesseo",
-      "english": "In this f***ing world, I'm the only stupid"
+      "original": "이런 빌어먹을 세상",
+      "romanization": "ireon billeomeogeul sesang",
+      "english": "In this f***ing world"
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
-      "romanization": "gal gireul ireun chae gal goseul ireun chae",
-      "english": "I lost my way, I lost my aim"
+      "original": "나만 혼자 바보 됐어",
+      "romanization": "naman honja babo dwaesseo",
+      "english": " I'm the only stupid",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갈 길을 잃은 채",
+      "romanization": "gal gireul ireun chae",
+      "english": "I lost my way"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갈 곳을 잃은 채",
+      "romanization": "gal goseul ireun chae",
+      "english": "I lost my aim",
+      "adlib": false
     },
     {
       "start": 0,
@@ -165,9 +183,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "사라져 가는 내 모습을 다시 찾고만 싶을 뿐",
-      "romanization": "sarajyeo ganeun nae moseubeul dasi chatgoman sipeul ppun",
+      "original": "사라져 가는 내 모습을",
+      "romanization": "sarajyeo ganeun nae moseubeul",
       "english": "I just wanna find myself before I disappear completely"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 찾고만 싶을 뿐",
+      "romanization": "dasi chatgoman sipeul ppun",
+      "english": "",
+      "adlib": false
     },
     {
       "start": 0,
