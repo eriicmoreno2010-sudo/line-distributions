@@ -26,6 +26,11 @@
     song = res.data;
     song.lyrics = song.lyrics || [];
     video.src = song.video;
+    // Keep the saved duration in step with the actual video (avoids a stale
+    // JSON duration making the timeline/results length wrong).
+    video.addEventListener("loadedmetadata", () => {
+        if(isFinite(video.duration) && video.duration > 0) song.duration = video.duration;
+    });
     $("#title").textContent = song.song || "";
     $("#grp").textContent = song.group || "";
     renderLines();

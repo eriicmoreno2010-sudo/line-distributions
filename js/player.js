@@ -16,6 +16,15 @@ const Player = {
 
             UI.setDuration(this.video.duration);
 
+            // The JSON's "duration" can be stale (e.g. after re-trimming the
+            // video). Trust the ACTUAL video so the timeline/ranking always
+            // match it, then rebuild the timeline with the correct length.
+            if(typeof SONG !== "undefined" && SONG &&
+               isFinite(this.video.duration) && this.video.duration > 0){
+                SONG.duration = this.video.duration;
+                if(typeof Timeline !== "undefined" && Timeline.build) Timeline.build();
+            }
+
         });
 
         // Drive the lyric/ad-lib panel every animation frame. The video's
