@@ -2,17 +2,71 @@
   "group": "&TEAM",
   "song": "We on Fire",
   "video": "videos/weonfire.mp4",
-  "duration": 0,
+  "duration": 119.24,
   "members": [
-    { "name": "K",        "image": "images/andteam/weonfire/k.png",        "color": "#c80032", "focus": 50, "lift": 3 },
-    { "name": "FUMA",     "image": "images/andteam/weonfire/fuma.png",     "color": "#1a2e6b", "focus": 50, "lift": 3 },
-    { "name": "NICHOLAS", "image": "images/andteam/weonfire/nicholas.png", "color": "#e6e6ec", "focus": 50, "lift": 3 },
-    { "name": "EJ",       "image": "images/andteam/weonfire/ej.png",       "color": "#d9a900", "focus": 50, "lift": 3 },
-    { "name": "YUMA",     "image": "images/andteam/weonfire/yuma.png",     "color": "#7a32c8", "focus": 50, "lift": 3 },
-    { "name": "JO",       "image": "images/andteam/weonfire/jo.png",       "color": "#2fa673", "focus": 50, "lift": 3 },
-    { "name": "HARUA",    "image": "images/andteam/weonfire/harua.png",    "color": "#7ec8e3", "focus": 50, "lift": 3 },
-    { "name": "TAKI",     "image": "images/andteam/weonfire/taki.png",     "color": "#ff7a00", "focus": 50, "lift": 3 },
-    { "name": "MAKI",     "image": "images/andteam/weonfire/maki.png",     "color": "#ff6fa3", "focus": 50, "lift": 3 }
+    {
+      "name": "K",
+      "image": "images/andteam/weonfire/k.png",
+      "color": "#c80032",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "FUMA",
+      "image": "images/andteam/weonfire/fuma.png",
+      "color": "#1a2e6b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "NICHOLAS",
+      "image": "images/andteam/weonfire/nicholas.png",
+      "color": "#e6e6ec",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "EJ",
+      "image": "images/andteam/weonfire/ej.png",
+      "color": "#d9a900",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUMA",
+      "image": "images/andteam/weonfire/yuma.png",
+      "color": "#7a32c8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JO",
+      "image": "images/andteam/weonfire/jo.png",
+      "color": "#2fa673",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HARUA",
+      "image": "images/andteam/weonfire/harua.png",
+      "color": "#7ec8e3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAKI",
+      "image": "images/andteam/weonfire/taki.png",
+      "color": "#ff7a00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MAKI",
+      "image": "images/andteam/weonfire/maki.png",
+      "color": "#ff6fa3",
+      "focus": 50,
+      "lift": 3
+    }
   ],
   "lyrics": []
 }
