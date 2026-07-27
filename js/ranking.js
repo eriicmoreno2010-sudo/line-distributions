@@ -267,35 +267,48 @@ const Ranking = {
         }
     },
 
-    /* Column change as a soft cross-dissolve: fade out where it is, jump to the
-       new slot while invisible, then fade back in — never an abrupt pop. */
+    /* Column change as a GLIDE (not a teleport): the card slides off its
+       current column edge (up when climbing to the left column, down when
+       dropping to the right one) and slides into the other column from the
+       opposite edge — so it reads as continuous motion. */
     switchCard(m, colIdx, row, gi){
-        const col = this.columns[colIdx];
+        const dest = this.columns[colIdx];
+        const src  = this.columns[m._col];
+        const improving = colIdx < m._col;              // moving to the left (better) column
         m._switching = true;
         m.element.classList.remove("rising", "no-anim");
-        m.element.classList.add("switching");           // opacity-only transition
-        m.element.style.zIndex = "60";                  // float above while dissolving
+        m.element.classList.add("switching");           // transition: transform + opacity
+        m.element.style.zIndex = "60";                  // float above while travelling
         if(m.rankElement) m.rankElement.textContent = gi + 1;
-        m.element.style.opacity = "0";                  // phase 1: fade out in place
+
+        // Phase 1: glide off the current column's edge (up if climbing, down if
+        // dropping) and fade out.
+        const exitY = improving ? -src.rowH : src.cap * src.rowH;
+        m.element.style.setProperty("--rank-y", `${exitY}px`);
+        m.element.style.opacity = "0";
 
         clearTimeout(m._switchT);
         m._switchT = setTimeout(() => {
-            m.element.classList.add("no-anim");          // phase 2: jump to new slot invisibly
-            col.el.appendChild(m.element);
-            m.element.style.height = col.cardH ? col.cardH + "px" : "";
-            m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);
-            m.element.style.zIndex = String(col.cap - row);
+            // Phase 2: drop into the other column just past the opposite edge
+            // (no animation), then glide into its slot and fade back in.
+            m.element.classList.add("no-anim");
+            dest.el.appendChild(m.element);
+            m.element.style.height = dest.cardH ? dest.cardH + "px" : "";
+            const enterY = improving ? (row + 1) * dest.rowH : (row - 1) * dest.rowH;
+            m.element.style.setProperty("--rank-y", `${enterY}px`);
+            m.element.style.zIndex = String(dest.cap - row);
             m._pos = row;
             m._col = colIdx;
-            void m.element.offsetWidth;                  // force reflow → the jump is instant
-            m.element.classList.remove("no-anim");       // re-enable the opacity transition
-            m.element.style.opacity = "1";               // fade back in
+            void m.element.offsetWidth;                  // reflow so the start pos is instant
+            m.element.classList.remove("no-anim");       // re-enable transitions
+            m.element.style.setProperty("--rank-y", `${row * dest.rowH}px`);   // glide into slot
+            m.element.style.opacity = "1";
             setTimeout(() => {
                 m.element.classList.remove("switching");
                 m.element.style.opacity = "";
                 m._switching = false;
-            }, 220);
-        }, 180);
+            }, 420);
+        }, 300);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
