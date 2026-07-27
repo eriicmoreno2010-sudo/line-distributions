@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "We on Fire",
   "video": "videos/weonfire.mp4",
-  "duration": 137.26,
+  "duration": 119.24,
   "members": [
     {
       "name": "K",
@@ -397,6 +397,114 @@
       "original": "Can you feel this fire",
       "romanization": "can you feel this fire",
       "english": "Can you feel this fire"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Fire right now",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "止めらんない",
+      "romanization": "tomerannai",
+      "english": "Can't be stopped",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "この瞬間",
+      "romanization": "kono shunkan",
+      "english": "This moment's",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Feel this fire",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Fire right now",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "止めらんない",
+      "romanization": "tomerannai",
+      "english": "Can't be stopped",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "この瞬間",
+      "romanization": "kono shunkan",
+      "english": "This moment's",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Feel this fire",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Fire right now",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "止めらんない",
+      "romanization": "tomerannai",
+      "english": "Can't be stopped",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "この瞬間",
+      "romanization": "kono shunkan",
+      "english": "This moment's",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Feel this fire",
+      "english": "",
+      "adlib": true
     }
   ]
 }
