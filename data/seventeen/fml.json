@@ -105,7 +105,13 @@
       ],
       "original": "이런 빌어먹을 세상",
       "romanization": "ireon billeomeogeul sesang",
-      "english": "This f***ing world"
+      "english": "This f***ing world",
+      "voice": [
+        [
+          4.78,
+          6.71
+        ]
+      ]
     },
     {
       "start": 28.81,
@@ -115,7 +121,13 @@
       ],
       "original": "이런 빌어먹을 세상",
       "romanization": "ireon billeomeogeul sesang",
-      "english": "In this f***ing world"
+      "english": "In this f***ing world",
+      "voice": [
+        [
+          28.85,
+          30.81
+        ]
+      ]
     },
     {
       "start": 31.57,
@@ -126,7 +138,13 @@
       "original": "나만 혼자 바보 됐어",
       "romanization": "naman honja babo dwaesseo",
       "english": " I'm the only stupid",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.81,
+          33.77
+        ]
+      ]
     },
     {
       "start": 34.66,
@@ -136,7 +154,13 @@
       ],
       "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
       "romanization": "gal gireul ireun chae gal goseul ireun chae",
-      "english": "I lost my way, I lost my aim"
+      "english": "I lost my way, I lost my aim",
+      "voice": [
+        [
+          34.84,
+          37.9
+        ]
+      ]
     },
     {
       "start": 38.02,
@@ -146,7 +170,13 @@
       ],
       "original": "나만 바보 됐어",
       "romanization": "naman babo dwaesseo",
-      "english": "Dumbest person alive"
+      "english": "Dumbest person alive",
+      "voice": [
+        [
+          38.23,
+          41.25
+        ]
+      ]
     },
     {
       "start": 41.43,
@@ -156,7 +186,13 @@
       ],
       "original": "잊어버리자 이렇게",
       "romanization": "ijeobeorija ireoke",
-      "english": "Let's just forget all of this"
+      "english": "Let's just forget all of this",
+      "voice": [
+        [
+          41.58,
+          44.14
+        ]
+      ]
     },
     {
       "start": 44.42,
@@ -167,7 +203,13 @@
       "original": "웃어 버리자 이렇게",
       "romanization": "useo beorija ireoke",
       "english": "Let's just laugh through all of this",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.59,
+          48.34
+        ]
+      ]
     },
     {
       "start": 48.51,
@@ -177,7 +219,13 @@
       ],
       "original": "되도 않는 위로를 해봐도",
       "romanization": "doedo anneun wiroreul haebwado",
-      "english": "Because this comfort is meaningless"
+      "english": "Because this comfort is meaningless",
+      "voice": [
+        [
+          48.66,
+          51.6
+        ]
+      ]
     },
     {
       "start": 51.78,
@@ -187,7 +235,13 @@
       ],
       "original": "집에 돌아가는 길에 울컥",
       "romanization": "jibe doraganeun gire ulkeok",
-      "english": "On my way back home I get choked up"
+      "english": "On my way back home I get choked up",
+      "voice": [
+        [
+          52.02,
+          54.78
+        ]
+      ]
     },
     {
       "start": 55.56,
@@ -197,7 +251,17 @@
       ],
       "original": "울고 싶어 계속 Wuh Uh Uh",
       "romanization": "ulgo sipeo gyesok wuh uh uh",
-      "english": "Keep feeling like crying, wuh uh uh"
+      "english": "Keep feeling like crying, wuh uh uh",
+      "voice": [
+        [
+          55.78,
+          57.74
+        ],
+        [
+          58.15,
+          58.59
+        ]
+      ]
     },
     {
       "start": 58.5,
@@ -207,49 +271,49 @@
       ],
       "original": "사라져 가는 내 모습을 다시 찾고만 싶을 뿐",
       "romanization": "sarajyeo ganeun nae moseubeul dasi chatgoman sipeul ppun",
-      "english": "I just wanna find myself before I disappear completely"
+      "english": "I just wanna find myself before I disappear completely",
+      "voice": [
+        [
+          58.56,
+          60.64
+        ],
+        [
+          61.59,
+          63.58
+        ]
+      ]
     },
     {
       "start": 64.37,
-      "end": 66.11,
-      "members": [
-        "HOSHI"
-      ],
-      "original": "어릴 때 만화영화에",
-      "romanization": "eoril ttae manhwayeonghwae",
-      "english": "When I was young and watched cartoons"
-    },
-    {
-      "start": 66.23,
       "end": 67.7,
       "members": [
         "HOSHI"
       ],
-      "original": "나오는 주인공은 왜",
-      "romanization": "naoneun juingongeun wae",
-      "english": "I wondered why I couldn't be",
-      "adlib": false
+      "original": "어릴 때 만화영화에, 나오는 주인공은 왜",
+      "romanization": "eoril ttae manhwayeonghwae, naoneun juingongeun wae",
+      "english": "When I was young and watched cartoons, I wondered why I couldn't be",
+      "voice": [
+        [
+          64.59,
+          67.64
+        ]
+      ]
     },
     {
       "start": 67.85,
-      "end": 69.01,
-      "members": [
-        "HOSHI"
-      ],
-      "original": "내가 될 수 없는지",
-      "romanization": "naega doel su eomneunji",
-      "english": "The main character like I would see"
-    },
-    {
-      "start": 69.13,
       "end": 70.98,
       "members": [
         "HOSHI"
       ],
-      "original": "내 맘은 아주 검은색",
-      "romanization": "nae mameun aju geomeunsaek",
-      "english": "My heart's all too blackened",
-      "adlib": false
+      "original": "내가 될 수 없는지, 내 맘은 아주 검은색",
+      "romanization": "naega doel su eomneunji, nae mameun aju geomeunsaek",
+      "english": "The main character like I would see, My heart's all too blackened",
+      "voice": [
+        [
+          67.89,
+          70.98
+        ]
+      ]
     },
     {
       "start": 71.57,
@@ -259,7 +323,25 @@
       ],
       "original": "나와 하루만 심장 바꿔 줄",
       "romanization": "nawa haruman simjang bakkwo jul",
-      "english": "Isn't there anyone who could"
+      "english": "Isn't there anyone who could",
+      "voice": [
+        [
+          71.57,
+          72.13
+        ],
+        [
+          72.36,
+          72.85
+        ],
+        [
+          73.09,
+          73.57
+        ],
+        [
+          73.92,
+          74.36
+        ]
+      ]
     },
     {
       "start": 74.52,
@@ -270,7 +352,21 @@
       "original": "사람 어디도 없나",
       "romanization": "saram eodido eomna",
       "english": "Trade their heart with mine just for a day?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.57,
+          75.19
+        ],
+        [
+          75.34,
+          75.89
+        ],
+        [
+          76.1,
+          76.59
+        ]
+      ]
     },
     {
       "start": 76.66,
@@ -280,7 +376,13 @@
       ],
       "original": "이런 빌어먹을 세상",
       "romanization": "ireon billeomeogeul sesang",
-      "english": "In this f***ing world"
+      "english": "In this f***ing world",
+      "voice": [
+        [
+          76.77,
+          78.76
+        ]
+      ]
     },
     {
       "start": 79.57,
@@ -291,7 +393,13 @@
       "original": "나만 혼자 바보 됐어",
       "romanization": "naman honja babo dwaesseo",
       "english": "I'm the only stupid",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          79.81,
+          81.8
+        ]
+      ]
     },
     {
       "start": 82.44,
@@ -301,7 +409,13 @@
       ],
       "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
       "romanization": "gal gireul ireun chae gal goseul ireun chae",
-      "english": "I lost my way, I lost my aim"
+      "english": "I lost my way, I lost my aim",
+      "voice": [
+        [
+          82.85,
+          85.91
+        ]
+      ]
     },
     {
       "start": 86.01,
@@ -311,7 +425,13 @@
       ],
       "original": "나만 바보 됐어",
       "romanization": "naman babo dwaesseo",
-      "english": "Dumbest person alive"
+      "english": "Dumbest person alive",
+      "voice": [
+        [
+          86.27,
+          87.76
+        ]
+      ]
     },
     {
       "start": 88.47,
@@ -321,7 +441,17 @@
       ],
       "original": "지금부터 Fight For My Life",
       "romanization": "jigeumbuteo fight for my life",
-      "english": "From now on I'll fight for my life"
+      "english": "From now on I'll fight for my life",
+      "voice": [
+        [
+          88.79,
+          90.43
+        ],
+        [
+          90.72,
+          91.85
+        ]
+      ]
     },
     {
       "start": 91.64,
@@ -331,7 +461,17 @@
       ],
       "original": "나를 위해 Fight For My Life",
       "romanization": "nareul wihae fight for my life",
-      "english": "For my own good, fight for my life"
+      "english": "For my own good, fight for my life",
+      "voice": [
+        [
+          91.74,
+          93.38
+        ],
+        [
+          93.71,
+          96.74
+        ]
+      ]
     },
     {
       "start": 96.62,
@@ -341,7 +481,13 @@
       ],
       "original": "무뎌짐이 익숙한 세상에서",
       "romanization": "mudyeojimi iksukan sesangeseo",
-      "english": "We're so used to feeling numb in this life"
+      "english": "We're so used to feeling numb in this life",
+      "voice": [
+        [
+          96.65,
+          99.33
+        ]
+      ]
     },
     {
       "start": 99.56,
@@ -351,7 +497,13 @@
       ],
       "original": "이제 나는 나를 찾고 싶어",
       "romanization": "ije naneun nareul chatgo sipeo",
-      "english": "Now I just wanna find myself"
+      "english": "Now I just wanna find myself",
+      "voice": [
+        [
+          99.78,
+          102.39
+        ]
+      ]
     },
     {
       "start": 102.87,
@@ -361,7 +513,21 @@
       ],
       "original": "점점 난 지쳐가 혼자서 꾸는 꿈",
       "romanization": "jeomjeom nan jichyeoga honjaseo kkuneun kkum",
-      "english": "I'm getting so tired dreaming by myself"
+      "english": "I'm getting so tired dreaming by myself",
+      "voice": [
+        [
+          103.05,
+          105.53
+        ],
+        [
+          106.03,
+          107.03
+        ],
+        [
+          107.16,
+          108.46
+        ]
+      ]
     },
     {
       "start": 108.52,
@@ -371,7 +537,17 @@
       ],
       "original": "이젠 너무나 지겨워 그만두고 싶어",
       "romanization": "ijen neomuna jigyeowo geumandugo sipeo",
-      "english": "I'm so sick of it all now, just wanna give up"
+      "english": "I'm so sick of it all now, just wanna give up",
+      "voice": [
+        [
+          108.91,
+          111.62
+        ],
+        [
+          111.86,
+          113.99
+        ]
+      ]
     },
     {
       "start": 113.94,
@@ -381,7 +557,17 @@
       ],
       "original": "난 나에게 어제 나에게 부끄러운",
       "romanization": "nan naege eoje naege bukkeureoun",
-      "english": "Don't wanna be an embarrassment tomorrow"
+      "english": "Don't wanna be an embarrassment tomorrow",
+      "voice": [
+        [
+          113.97,
+          116.33
+        ],
+        [
+          116.48,
+          117.38
+        ]
+      ]
     },
     {
       "start": 117.42,
@@ -391,7 +577,13 @@
       ],
       "original": "내일이 되고 싶지 않아",
       "romanization": "naeiri doego sipji ana",
-      "english": "For the me I knew yesterday"
+      "english": "For the me I knew yesterday",
+      "voice": [
+        [
+          117.33,
+          119.29
+        ]
+      ]
     },
     {
       "start": 119.45,
@@ -401,7 +593,13 @@
       ],
       "original": "되도 않는 다짐을 해봐도",
       "romanization": "doedo anneun dajimeul haebwado",
-      "english": "Because this commitment is meaningless"
+      "english": "Because this commitment is meaningless",
+      "voice": [
+        [
+          119.56,
+          123.52
+        ]
+      ]
     },
     {
       "start": 123.94,
@@ -411,7 +609,13 @@
       ],
       "original": "바보 같은 내 모습이 우스워",
       "romanization": "babo gateun nae moseubi useuwo",
-      "english": "I look so dumb it's almost ridiculous"
+      "english": "I look so dumb it's almost ridiculous",
+      "voice": [
+        [
+          124.08,
+          126.72
+        ]
+      ]
     },
     {
       "start": 127.43,
@@ -421,7 +625,17 @@
       ],
       "original": "울고 싶어 계속 Wuh Uh Uh",
       "romanization": "ulgo sipeo gyesok wuh uh uh",
-      "english": "Keep feeling like crying, wuh uh uh"
+      "english": "Keep feeling like crying, wuh uh uh",
+      "voice": [
+        [
+          127.78,
+          129.76
+        ],
+        [
+          130.08,
+          130.58
+        ]
+      ]
     },
     {
       "start": 130.57,
@@ -431,7 +645,13 @@
       ],
       "original": "세상에 맘이 무뎌져서",
       "romanization": "sesange mami mudyeojyeoseo",
-      "english": "I'm getting so numb to this life"
+      "english": "I'm getting so numb to this life",
+      "voice": [
+        [
+          130.61,
+          132.6
+        ]
+      ]
     },
     {
       "start": 133.42,
@@ -442,49 +662,45 @@
       "original": "내가 작아지는 기분",
       "romanization": "naega jagajineun gibun",
       "english": "That it feels like I'm shrinking away",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.64,
+          135.67
+        ]
+      ]
     },
     {
       "start": 136.45,
-      "end": 138.11,
-      "members": [
-        "DINO"
-      ],
-      "original": "말할 수 없는 비밀이",
-      "romanization": "malhal su eomneun bimiri",
-      "english": "I got a secret I can't tell"
-    },
-    {
-      "start": 138.23,
       "end": 139.64,
       "members": [
         "DINO"
       ],
-      "original": "또다시 눈물이 되지",
-      "romanization": "ttodasi nunmuri doeji",
-      "english": "And it's turning to tears again",
-      "adlib": false
+      "original": "말할 수 없는 비밀이, 또다시 눈물이 되지",
+      "romanization": "malhal su eomneun bimiri, ttodasi nunmuri doeji",
+      "english": "I got a secret I can't tell, And it's turning to tears again",
+      "voice": [
+        [
+          136.62,
+          139.66
+        ]
+      ]
     },
     {
       "start": 139.76,
-      "end": 141.37,
-      "members": [
-        "DINO"
-      ],
-      "original": "난 부끄러워서 누구에게도",
-      "romanization": "nan bukkeureowoseo nuguegedo",
-      "english": "I can't tell a soul"
-    },
-    {
-      "start": 141.5,
       "end": 142.94,
       "members": [
         "DINO"
       ],
-      "original": "말을 못 했지",
-      "romanization": "mareul mot haetji",
-      "english": "I'm too ashamed for that",
-      "adlib": false
+      "original": "난 부끄러워서 누구에게도, 말을 못 했지",
+      "romanization": "nan bukkeureowoseo nuguegedo, mareul mot haetji",
+      "english": "I can't tell a soul, I'm too ashamed for that",
+      "voice": [
+        [
+          139.63,
+          142.99
+        ]
+      ]
     },
     {
       "start": 143.44,
@@ -494,7 +710,29 @@
       ],
       "original": "나와 하루만 심장 바꿔 줄",
       "romanization": "nawa haruman simjang bakkwo jul",
-      "english": "Isn't there anyone who could"
+      "english": "Isn't there anyone who could",
+      "voice": [
+        [
+          142.73,
+          142.73
+        ],
+        [
+          143.58,
+          144.1
+        ],
+        [
+          144.33,
+          144.9
+        ],
+        [
+          145.1,
+          145.71
+        ],
+        [
+          145.86,
+          146.48
+        ]
+      ]
     },
     {
       "start": 146.55,
@@ -505,7 +743,21 @@
       "original": "사람 어디도 없나",
       "romanization": "saram eodido eomna",
       "english": "Trade their heart with mine just for a day?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          146.56,
+          147.2
+        ],
+        [
+          147.36,
+          147.98
+        ],
+        [
+          148.15,
+          148.68
+        ]
+      ]
     },
     {
       "start": 148.73,
@@ -515,7 +767,13 @@
       ],
       "original": "이런 빌어먹을 세상",
       "romanization": "ireon billeomeogeul sesang",
-      "english": "In this f***ing world,"
+      "english": "In this f***ing world,",
+      "voice": [
+        [
+          148.86,
+          150.72
+        ]
+      ]
     },
     {
       "start": 151.73,
@@ -526,7 +784,13 @@
       "original": "나만 혼자 바보 됐어",
       "romanization": "naman honja babo dwaesseo",
       "english": "I'm the only stupid",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          151.8,
+          153.79
+        ]
+      ]
     },
     {
       "start": 154.64,
@@ -536,7 +800,13 @@
       ],
       "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
       "romanization": "gal gireul ireun chae gal goseul ireun chae",
-      "english": "I lost my way, I lost my aim"
+      "english": "I lost my way, I lost my aim",
+      "voice": [
+        [
+          154.81,
+          157.9
+        ]
+      ]
     },
     {
       "start": 158.01,
@@ -546,7 +816,13 @@
       ],
       "original": "나만 바보 됐어",
       "romanization": "naman babo dwaesseo",
-      "english": "Dumbest person alive"
+      "english": "Dumbest person alive",
+      "voice": [
+        [
+          158.19,
+          159.7
+        ]
+      ]
     },
     {
       "start": 160.61,
@@ -556,7 +832,17 @@
       ],
       "original": "지금부터 Fight For My Life",
       "romanization": "jigeumbuteo fight for my life",
-      "english": "From now on I'll fight for my life"
+      "english": "From now on I'll fight for my life",
+      "voice": [
+        [
+          160.75,
+          162.36
+        ],
+        [
+          162.72,
+          163.81
+        ]
+      ]
     },
     {
       "start": 163.7,
@@ -566,7 +852,17 @@
       ],
       "original": "나를 위해 Fight For My Life",
       "romanization": "nareul wihae fight for my life",
-      "english": "For my own good, fight for my life"
+      "english": "For my own good, fight for my life",
+      "voice": [
+        [
+          163.83,
+          165.41
+        ],
+        [
+          165.76,
+          168.7
+        ]
+      ]
     },
     {
       "start": 168.54,
@@ -576,7 +872,13 @@
       ],
       "original": "무뎌짐이 익숙한 세상에서",
       "romanization": "mudyeojimi iksukan sesangeseo",
-      "english": "We're so used to feeling numb in this life"
+      "english": "We're so used to feeling numb in this life",
+      "voice": [
+        [
+          168.55,
+          171.35
+        ]
+      ]
     },
     {
       "start": 171.51,
@@ -586,7 +888,13 @@
       ],
       "original": "이제 나는 나를 찾고 싶어",
       "romanization": "ije naneun nareul chatgo sipeo",
-      "english": "Now I just wanna find myself"
+      "english": "Now I just wanna find myself",
+      "voice": [
+        [
+          171.71,
+          174.44
+        ]
+      ]
     },
     {
       "start": 192.45,
@@ -596,7 +904,13 @@
       ],
       "original": "무뎌짐이 익숙한 세상에서",
       "romanization": "mudyeojimi iksukan sesangeseo",
-      "english": "We're so used to feeling numb in this life"
+      "english": "We're so used to feeling numb in this life",
+      "voice": [
+        [
+          192.55,
+          195.34
+        ]
+      ]
     },
     {
       "start": 195.54,
@@ -606,7 +920,13 @@
       ],
       "original": "이제 나는 나를 찾고 싶어",
       "romanization": "ije naneun nareul chatgo sipeo",
-      "english": "Now I just wanna find myself"
+      "english": "Now I just wanna find myself",
+      "voice": [
+        [
+          195.74,
+          198.67
+        ]
+      ]
     }
   ]
 }
