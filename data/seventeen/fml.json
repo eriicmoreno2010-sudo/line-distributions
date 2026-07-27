@@ -274,12 +274,8 @@
       "english": "I just wanna find myself",
       "voice": [
         [
-          58.56,
-          60.64
-        ],
-        [
-          61.59,
-          63.58
+          58.61,
+          60.57
         ]
       ]
     },
@@ -292,7 +288,13 @@
       "original": "다시 찾고만 싶을 뿐",
       "romanization": "dasi chatgoman sipeul ppun",
       "english": "Before I disappear completely",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.65,
+          63.49
+        ]
+      ]
     },
     {
       "start": 64.63,
@@ -305,8 +307,8 @@
       "english": "When I was young and watched cartoons",
       "voice": [
         [
-          64.59,
-          67.64
+          64.57,
+          66.11
         ]
       ]
     },
@@ -319,7 +321,13 @@
       "original": "나오는 주인공은 왜",
       "romanization": "naoneun juingongeun wae",
       "english": "I wondered why I couldn't be",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.13,
+          67.69
+        ]
+      ]
     },
     {
       "start": 67.87,
@@ -332,8 +340,8 @@
       "english": "The main character like I would see,",
       "voice": [
         [
-          67.89,
-          70.98
+          67.91,
+          69.21
         ]
       ]
     },
@@ -346,7 +354,13 @@
       "original": "내 맘은 아주 검은색",
       "romanization": "nae mameun aju geomeunsaek",
       "english": "My heart's all too blackened",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.11,
+          70.97
+        ]
+      ]
     },
     {
       "start": 71.57,
@@ -549,16 +563,8 @@
       "english": "I'm getting so tired",
       "voice": [
         [
-          103.05,
-          105.53
-        ],
-        [
-          106.03,
-          107.03
-        ],
-        [
-          107.16,
-          108.46
+          103.03,
+          105.55
         ]
       ]
     },
@@ -571,7 +577,17 @@
       "original": "혼자서 꾸는 꿈",
       "romanization": "honjaseo kkuneun kkum",
       "english": "Dreaming by myself",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          106.05,
+          107.01
+        ],
+        [
+          107.13,
+          108.43
+        ]
+      ]
     },
     {
       "start": 108.76,
@@ -585,11 +601,7 @@
       "voice": [
         [
           108.91,
-          111.62
-        ],
-        [
-          111.86,
-          113.99
+          111.53
         ]
       ]
     },
@@ -602,7 +614,13 @@
       "original": "그만두고 싶어",
       "romanization": "geumandugo sipeo",
       "english": "Just wanna give up",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          111.88,
+          113.9
+        ]
+      ]
     },
     {
       "start": 113.94,
@@ -736,8 +754,8 @@
       "english": "I got a secret I can't tell",
       "voice": [
         [
-          136.62,
-          139.66
+          136.68,
+          138.17
         ]
       ]
     },
@@ -750,7 +768,13 @@
       "original": "또다시 눈물이 되지",
       "romanization": "ttodasi nunmuri doeji",
       "english": "And it's turning to tears again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          138.14,
+          139.62
+        ]
+      ]
     },
     {
       "start": 139.7,
@@ -763,8 +787,8 @@
       "english": "I can't tell a soul",
       "voice": [
         [
-          139.63,
-          142.99
+          139.58,
+          141.68
         ]
       ]
     },
@@ -777,7 +801,13 @@
       "original": "말을 못 했지",
       "romanization": "mareul mot haetji",
       "english": "I'm too ashamed for that",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.65,
+          142.99
+        ]
+      ]
     },
     {
       "start": 143.44,
