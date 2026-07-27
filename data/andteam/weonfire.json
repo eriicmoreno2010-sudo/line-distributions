@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "We on Fire",
   "video": "videos/weonfire.mp4",
-  "duration": 153.32,
+  "duration": 153.319833,
   "members": [
     {
       "name": "K",
@@ -70,8 +70,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 5.53,
+      "end": 8.74,
       "members": [
         "NICHOLAS"
       ],
@@ -80,8 +80,8 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 8.83,
+      "end": 12.49,
       "members": [
         "NICHOLAS"
       ],
@@ -90,8 +90,8 @@
       "english": "Even higher higher, can't be stopped, Feel the heat"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 12.61,
+      "end": 14.72,
       "members": [
         "YUMA"
       ],
@@ -101,8 +101,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.84,
+      "end": 18.3,
       "members": [
         "YUMA"
       ],
@@ -111,8 +111,8 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.5,
+      "end": 21.41,
       "members": [
         "MAKI"
       ],
@@ -121,8 +121,8 @@
       "english": "Late night, Lighting up my scarred face"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 21.62,
+      "end": 24.59,
       "members": [
         "MAKI"
       ],
@@ -131,8 +131,8 @@
       "english": "Those reckless, all-out past days"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 24.71,
+      "end": 27.65,
       "members": [
         "TAKI"
       ],
@@ -141,8 +141,8 @@
       "english": "That's how we overcame our fate"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 27.77,
+      "end": 30.22,
       "members": [
         "TAKI"
       ],
@@ -151,8 +151,8 @@
       "english": "Don't stop me, this spark hasn't gone out"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 30.32,
+      "end": 33.17,
       "members": [
         "K"
       ],
@@ -161,8 +161,8 @@
       "english": "No matter the pain, I'll accept it"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.35,
+      "end": 36.2,
       "members": [
         "K"
       ],
@@ -171,8 +171,8 @@
       "english": "Same squad, same team, aiming for the summit"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.44,
+      "end": 39.6,
       "members": [
         "FUMA"
       ],
@@ -181,8 +181,8 @@
       "english": "Our journey is still mysterious"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 39.78,
+      "end": 42.6,
       "members": [
         "FUMA"
       ],
@@ -191,8 +191,8 @@
       "english": "These walls we've passed are now my experience"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.76,
+      "end": 48.66,
       "members": [
         "EJ"
       ],
@@ -201,8 +201,8 @@
       "english": "I felt burned out, A \"burned everything out\" type of vibe yea"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 48.78,
+      "end": 53.83,
       "members": [
         "JO"
       ],
@@ -211,8 +211,8 @@
       "english": "But it ain't enough, It's a sign that this is just the beginning"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 53.98,
+      "end": 57.21,
       "members": [
         "MAKI"
       ],
@@ -221,8 +221,8 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.33,
+      "end": 61.11,
       "members": [
         "MAKI"
       ],
@@ -231,8 +231,8 @@
       "english": "Even higher higher, can't be stopped, Feel the heat"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 61.23,
+      "end": 63.33,
       "members": [
         "K"
       ],
@@ -241,8 +241,8 @@
       "english": "This moment's just the beginning"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 63.45,
+      "end": 66.43,
       "members": [
         "K"
       ],
@@ -251,8 +251,8 @@
       "english": "Can you feel this fire, Can you feel this fire"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.54,
+      "end": 69.46,
       "members": [
         "YUMA"
       ],
@@ -261,8 +261,8 @@
       "english": "Can't cool us, These feelings that never cool down"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.58,
+      "end": 73.15,
       "members": [
         "YUMA"
       ],
@@ -271,8 +271,8 @@
       "english": "Can't tame us, Won't let this fire die, Feel the heat"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 73.3,
+      "end": 75.61,
       "members": [
         "HARUA"
       ],
@@ -281,8 +281,8 @@
       "english": "Should we go until we turn to ashes?"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.7,
+      "end": 79.07,
       "members": [
         "HARUA"
       ],
@@ -291,8 +291,8 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.22,
+      "end": 82.22,
       "members": [
         "NICHOLAS"
       ],
@@ -301,8 +301,8 @@
       "english": "Midnight, This pain that's been burned into me"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.39,
+      "end": 85.17,
       "members": [
         "NICHOLAS"
       ],
@@ -311,8 +311,8 @@
       "english": "Pain that's proof of us"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.31,
+      "end": 88.23,
       "members": [
         "EJ"
       ],
@@ -321,8 +321,8 @@
       "english": "Crossing the line, breaking boundaries"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.37,
+      "end": 91.03,
       "members": [
         "EJ"
       ],
@@ -331,8 +331,8 @@
       "english": "My passion will never run out"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 91.12,
+      "end": 93.92,
       "members": [
         "JO"
       ],
@@ -341,8 +341,8 @@
       "english": "No matter the wish, I'll make it come true"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 94.07,
+      "end": 96.98,
       "members": [
         "JO"
       ],
@@ -351,8 +351,8 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.11,
+      "end": 100.41,
       "members": [
         "YUMA"
       ],
@@ -361,8 +361,8 @@
       "english": "It'll never disappear—I'll reach out again and again"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 100.57,
+      "end": 103.38,
       "members": [
         "YUMA"
       ],
@@ -371,8 +371,8 @@
       "english": "Sparks scatter as we drift yeah—set it free"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 103.51,
+      "end": 109.46,
       "members": [
         "HARUA"
       ],
@@ -381,8 +381,8 @@
       "english": "We stayed the same, Still shouting more loud yea"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 109.58,
+      "end": 114.63,
       "members": [
         "FUMA"
       ],
@@ -391,8 +391,8 @@
       "english": "But it ain't enough, It's a sign that this is just the beginning"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 114.78,
+      "end": 118,
       "members": [
         "K"
       ],
@@ -401,8 +401,8 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 118.12,
+      "end": 121.81,
       "members": [
         "K"
       ],
@@ -411,8 +411,8 @@
       "english": "Even higher higher, can't be stopped, Feel the heat"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.91,
+      "end": 124.04,
       "members": [
         "NICHOLAS"
       ],
@@ -421,8 +421,8 @@
       "english": "This moment's just the beginning"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 124.16,
+      "end": 127.13,
       "members": [
         "NICHOLAS"
       ],
@@ -431,8 +431,8 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 127.26,
+      "end": 130.19,
       "members": [
         "TAKI"
       ],
@@ -441,8 +441,8 @@
       "english": "Can't cool us, These feelings that never cool down"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.31,
+      "end": 133.96,
       "members": [
         "TAKI"
       ],
@@ -451,8 +451,8 @@
       "english": "Can't tame us, Won't let this fire die, Feel the heat"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.09,
+      "end": 136.31,
       "members": [
         "MAKI"
       ],
@@ -461,8 +461,8 @@
       "english": "Should we go until we turn to ashes?"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 136.43,
+      "end": 139.91,
       "members": [
         "MAKI"
       ],
@@ -471,8 +471,8 @@
       "english": "Can you feel this fire, Can you feel this fire"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 143.83,
+      "end": 149.4,
       "members": [
         "MAKI"
       ],
