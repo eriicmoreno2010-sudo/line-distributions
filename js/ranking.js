@@ -273,10 +273,23 @@ const Ranking = {
        dropping to the right one) and slides into the other column from the
        opposite edge — so it reads as continuous motion. */
     switchCard(m, colIdx, row, gi){
+        // Tight race guard: at 60fps a card that's climbing/dropping past many
+        // near-tied members fires a reorder EVERY frame. If it's already gliding
+        // toward THIS same column, don't restart the fade (that would keep it
+        // parked off-edge at opacity 0 forever = invisible). Just remember the
+        // latest slot it should land in and let the in-flight animation finish.
+        if(m._switching && m._switchCol === colIdx){
+            m._switchRow = row; m._switchGi = gi;
+            if(m.rankElement) m.rankElement.textContent = gi + 1;
+            return;
+        }
+
         const dest = this.columns[colIdx];
         const src  = this.columns[m._col];
         const improving = colIdx < m._col;              // moving to the left (better) column
         m._switching = true;
+        m._switchCol = colIdx;
+        m._switchRow = row; m._switchGi = gi;
         m.element.classList.remove("rising", "no-anim");
         m.element.classList.add("switching");           // transition: transform + opacity
         m.element.style.zIndex = "60";                  // float above while travelling
@@ -288,26 +301,30 @@ const Ranking = {
         m.element.style.setProperty("--rank-y", `${exitY}px`);
         m.element.style.opacity = "0";
 
-        clearTimeout(m._switchT);
+        clearTimeout(m._switchT); clearTimeout(m._cleanT);
         m._switchT = setTimeout(() => {
             // Phase 2: drop into the other column just past the opposite edge
-            // (no animation), then glide into its slot and fade back in.
+            // (no animation), then glide into its slot and fade back in. Use the
+            // LATEST target slot — it may have moved while we were fading out.
+            const r = m._switchRow, g = m._switchGi;
             m.element.classList.add("no-anim");
             dest.el.appendChild(m.element);
             m.element.style.height = dest.cardH ? dest.cardH + "px" : "";
-            const enterY = improving ? (row + 1) * dest.rowH : (row - 1) * dest.rowH;
+            const enterY = improving ? (r + 1) * dest.rowH : (r - 1) * dest.rowH;
             m.element.style.setProperty("--rank-y", `${enterY}px`);
-            m.element.style.zIndex = String(dest.cap - row);
-            m._pos = row;
+            m.element.style.zIndex = String(dest.cap - r);
+            m._pos = r;
             m._col = colIdx;
+            if(m.rankElement) m.rankElement.textContent = g + 1;
             void m.element.offsetWidth;                  // reflow so the start pos is instant
             m.element.classList.remove("no-anim");       // re-enable transitions
-            m.element.style.setProperty("--rank-y", `${row * dest.rowH}px`);   // glide into slot
+            m.element.style.setProperty("--rank-y", `${r * dest.rowH}px`);   // glide into slot
             m.element.style.opacity = "1";
-            setTimeout(() => {
+            m._cleanT = setTimeout(() => {
                 m.element.classList.remove("switching");
                 m.element.style.opacity = "";
                 m._switching = false;
+                m._switchCol = undefined;
             }, 300);
         }, 210);
     },
