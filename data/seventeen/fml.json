@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "F*ck My Life",
   "video": "videos/fml.mp4",
-  "duration": 200.24,
+  "duration": 200.241708,
   "members": [
     {
       "name": "S.COUPS",
@@ -106,8 +106,8 @@
       "english": "This f***ing world"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 1.39,
+      "end": 3.98,
       "members": [],
       "original": "이런 빌어먹을 세상 나만 혼자 바보 됐어",
       "romanization": "ireon billeomeogeul sesang naman honja babo dwaesseo",
