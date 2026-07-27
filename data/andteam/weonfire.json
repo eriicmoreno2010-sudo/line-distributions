@@ -827,7 +827,13 @@
       "original": "",
       "romanization": "Fire right now",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          7.72,
+          9.04
+        ]
+      ]
     },
     {
       "start": 10.55,
@@ -838,7 +844,13 @@
       "original": "止めらんない",
       "romanization": "tomerannai",
       "english": "Can't be stopped",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          10.74,
+          12.19
+        ]
+      ]
     },
     {
       "start": 13.64,
@@ -849,7 +861,13 @@
       "original": "この瞬間",
       "romanization": "kono shunkan",
       "english": "This moment's",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          13.76,
+          15.27
+        ]
+      ]
     },
     {
       "start": 16.66,
@@ -860,7 +878,13 @@
       "original": "",
       "romanization": "Feel this fire",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          16.8,
+          18.56
+        ]
+      ]
     },
     {
       "start": 56.22,
@@ -871,7 +895,13 @@
       "original": "",
       "romanization": "Fire right now",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          56.31,
+          57.52
+        ]
+      ]
     },
     {
       "start": 59.19,
@@ -882,7 +912,13 @@
       "original": "止めらんない",
       "romanization": "tomerannai",
       "english": "Can't be stopped",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          59.3,
+          60.59
+        ]
+      ]
     },
     {
       "start": 62.31,
@@ -893,7 +929,13 @@
       "original": "この瞬間",
       "romanization": "kono shunkan",
       "english": "This moment's",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          62.39,
+          63.6
+        ]
+      ]
     },
     {
       "start": 77.4,
@@ -904,7 +946,13 @@
       "original": "",
       "romanization": "Feel this fire",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          77.58,
+          79.26
+        ]
+      ]
     },
     {
       "start": 116.99,
@@ -915,7 +963,13 @@
       "original": "",
       "romanization": "Fire right now",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          117.16,
+          118.41
+        ]
+      ]
     },
     {
       "start": 119.98,
@@ -926,7 +980,13 @@
       "original": "止めらんない",
       "romanization": "tomerannai",
       "english": "Can't be stopped",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          120.12,
+          121.38
+        ]
+      ]
     },
     {
       "start": 123.07,
@@ -937,7 +997,13 @@
       "original": "この瞬間",
       "romanization": "kono shunkan",
       "english": "This moment's",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          123.15,
+          124.39
+        ]
+      ]
     },
     {
       "start": 138.27,
@@ -948,7 +1014,13 @@
       "original": "",
       "romanization": "Feel this fire",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          138.36,
+          140.06
+        ]
+      ]
     }
   ]
 }
