@@ -137,7 +137,7 @@
       ],
       "original": "나만 혼자 바보 됐어",
       "romanization": "naman honja babo dwaesseo",
-      "english": " I'm the only stupid",
+      "english": "I'm the only stupid",
       "adlib": false,
       "voice": [
         [
@@ -264,14 +264,14 @@
       ]
     },
     {
-      "start": 58.5,
-      "end": 63.73,
+      "start": 58.56,
+      "end": 60.46,
       "members": [
         "WONWOO"
       ],
-      "original": "사라져 가는 내 모습을 다시 찾고만 싶을 뿐",
-      "romanization": "sarajyeo ganeun nae moseubeul dasi chatgoman sipeul ppun",
-      "english": "I just wanna find myself before I disappear completely",
+      "original": "사라져 가는 내 모습을",
+      "romanization": "sarajyeo ganeun nae moseubeul",
+      "english": "I just wanna find myself",
       "voice": [
         [
           58.56,
@@ -284,14 +284,25 @@
       ]
     },
     {
-      "start": 64.37,
-      "end": 67.7,
+      "start": 61.59,
+      "end": 63.46,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "다시 찾고만 싶을 뿐",
+      "romanization": "dasi chatgoman sipeul ppun",
+      "english": "Before I disappear completely",
+      "adlib": false
+    },
+    {
+      "start": 64.63,
+      "end": 66.18,
       "members": [
         "HOSHI"
       ],
-      "original": "어릴 때 만화영화에, 나오는 주인공은 왜",
-      "romanization": "eoril ttae manhwayeonghwae, naoneun juingongeun wae",
-      "english": "When I was young and watched cartoons, I wondered why I couldn't be",
+      "original": "어릴 때 만화영화에",
+      "romanization": "eoril ttae manhwayeonghwae",
+      "english": "When I was young and watched cartoons",
       "voice": [
         [
           64.59,
@@ -300,20 +311,42 @@
       ]
     },
     {
-      "start": 67.85,
-      "end": 70.98,
+      "start": 66.22,
+      "end": 67.72,
       "members": [
         "HOSHI"
       ],
-      "original": "내가 될 수 없는지, 내 맘은 아주 검은색",
-      "romanization": "naega doel su eomneunji, nae mameun aju geomeunsaek",
-      "english": "The main character like I would see, My heart's all too blackened",
+      "original": "나오는 주인공은 왜",
+      "romanization": "naoneun juingongeun wae",
+      "english": "I wondered why I couldn't be",
+      "adlib": false
+    },
+    {
+      "start": 67.87,
+      "end": 68.97,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "내가 될 수 없는지",
+      "romanization": "naega doel su eomneunji",
+      "english": "The main character like I would see,",
       "voice": [
         [
           67.89,
           70.98
         ]
       ]
+    },
+    {
+      "start": 69.12,
+      "end": 70.99,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "내 맘은 아주 검은색",
+      "romanization": "nae mameun aju geomeunsaek",
+      "english": "My heart's all too blackened",
+      "adlib": false
     },
     {
       "start": 71.57,
@@ -506,14 +539,14 @@
       ]
     },
     {
-      "start": 102.87,
-      "end": 108.4,
+      "start": 102.78,
+      "end": 105.51,
       "members": [
         "DK"
       ],
-      "original": "점점 난 지쳐가 혼자서 꾸는 꿈",
-      "romanization": "jeomjeom nan jichyeoga honjaseo kkuneun kkum",
-      "english": "I'm getting so tired dreaming by myself",
+      "original": "점점 난 지쳐가",
+      "romanization": "jeomjeom nan jichyeoga",
+      "english": "I'm getting so tired",
       "voice": [
         [
           103.05,
@@ -530,14 +563,25 @@
       ]
     },
     {
-      "start": 108.52,
-      "end": 113.73,
+      "start": 105.93,
+      "end": 108.54,
       "members": [
         "DK"
       ],
-      "original": "이젠 너무나 지겨워 그만두고 싶어",
-      "romanization": "ijen neomuna jigyeowo geumandugo sipeo",
-      "english": "I'm so sick of it all now, just wanna give up",
+      "original": "혼자서 꾸는 꿈",
+      "romanization": "honjaseo kkuneun kkum",
+      "english": "Dreaming by myself",
+      "adlib": false
+    },
+    {
+      "start": 108.76,
+      "end": 111.46,
+      "members": [
+        "DK"
+      ],
+      "original": "이젠 너무나 지겨워",
+      "romanization": "ijen neomuna jigyeowo",
+      "english": "I'm so sick of it all now",
       "voice": [
         [
           108.91,
@@ -548,6 +592,17 @@
           113.99
         ]
       ]
+    },
+    {
+      "start": 111.73,
+      "end": 113.83,
+      "members": [
+        "DK"
+      ],
+      "original": "그만두고 싶어",
+      "romanization": "geumandugo sipeo",
+      "english": "Just wanna give up",
+      "adlib": false
     },
     {
       "start": 113.94,
@@ -671,14 +726,14 @@
       ]
     },
     {
-      "start": 136.45,
-      "end": 139.64,
+      "start": 136.69,
+      "end": 138.07,
       "members": [
         "DINO"
       ],
-      "original": "말할 수 없는 비밀이, 또다시 눈물이 되지",
-      "romanization": "malhal su eomneun bimiri, ttodasi nunmuri doeji",
-      "english": "I got a secret I can't tell, And it's turning to tears again",
+      "original": "말할 수 없는 비밀이",
+      "romanization": "malhal su eomneun bimiri",
+      "english": "I got a secret I can't tell",
       "voice": [
         [
           136.62,
@@ -687,20 +742,42 @@
       ]
     },
     {
-      "start": 139.76,
-      "end": 142.94,
+      "start": 138.19,
+      "end": 139.59,
       "members": [
         "DINO"
       ],
-      "original": "난 부끄러워서 누구에게도, 말을 못 했지",
-      "romanization": "nan bukkeureowoseo nuguegedo, mareul mot haetji",
-      "english": "I can't tell a soul, I'm too ashamed for that",
+      "original": "또다시 눈물이 되지",
+      "romanization": "ttodasi nunmuri doeji",
+      "english": "And it's turning to tears again",
+      "adlib": false
+    },
+    {
+      "start": 139.7,
+      "end": 141.4,
+      "members": [
+        "DINO"
+      ],
+      "original": "난 부끄러워서 누구에게도",
+      "romanization": "nan bukkeureowoseo nuguegedo",
+      "english": "I can't tell a soul",
       "voice": [
         [
           139.63,
           142.99
         ]
       ]
+    },
+    {
+      "start": 141.53,
+      "end": 142.91,
+      "members": [
+        "DINO"
+      ],
+      "original": "말을 못 했지",
+      "romanization": "mareul mot haetji",
+      "english": "I'm too ashamed for that",
+      "adlib": false
     },
     {
       "start": 143.44,
