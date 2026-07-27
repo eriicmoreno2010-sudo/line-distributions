@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "Bewitched",
   "video": "videos/bewitched.mp4",
-  "duration": 150.55,
+  "duration": 150.545011,
   "members": [
     {
       "name": "K",
@@ -76,6 +76,15 @@
       "original": "冷めた目つき",
       "romanization": "sameta metsuki",
       "english": "Cold, distant eyes"
+    },
+    {
+      "start": 3.76,
+      "end": 5.92,
+      "members": [],
+      "original": "冷めた目つき僕だけにほら君はbad seed",
+      "romanization": "sameta metsuki boku dake ni hora kimi wa bad seed",
+      "english": "Cold, distant eyes, Just for me, yeah you're a bad seed",
+      "adlib": false
     },
     {
       "start": 0,
