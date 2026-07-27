@@ -325,8 +325,8 @@ const Ranking = {
                 m.element.style.opacity = "";
                 m._switching = false;
                 m._switchCol = undefined;
-            }, 300);
-        }, 210);
+            }, 170);
+        }, 120);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
