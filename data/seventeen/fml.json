@@ -4,19 +4,410 @@
   "video": "videos/fml.mp4",
   "duration": 0,
   "members": [
-    { "name": "S.COUPS",   "image": "images/seventeen/fml/scoups.png",    "color": "#0557b8", "focus": 50, "lift": 3 },
-    { "name": "JEONGHAN",  "image": "images/seventeen/fml/jeonghan.png",  "color": "#ff0c0c", "focus": 50, "lift": 3 },
-    { "name": "JOSHUA",    "image": "images/seventeen/fml/joshua.png",    "color": "#a001c8", "focus": 50, "lift": 3 },
-    { "name": "JUN",       "image": "images/seventeen/fml/jun.png",       "color": "#53a303", "focus": 50, "lift": 3 },
-    { "name": "HOSHI",     "image": "images/seventeen/fml/hoshi.png",     "color": "#ba0303", "focus": 50, "lift": 3 },
-    { "name": "WONWOO",    "image": "images/seventeen/fml/wonwoo.png",    "color": "#5a05d3", "focus": 50, "lift": 3 },
-    { "name": "WOOZI",     "image": "images/seventeen/fml/woozi.png",     "color": "#fa7304", "focus": 50, "lift": 3 },
-    { "name": "DK",        "image": "images/seventeen/fml/dk.png",        "color": "#0002e6", "focus": 50, "lift": 3 },
-    { "name": "MINGYU",    "image": "images/seventeen/fml/mingyu.png",    "color": "#01a68d", "focus": 50, "lift": 3 },
-    { "name": "THE8",      "image": "images/seventeen/fml/the8.png",      "color": "#00de81", "focus": 50, "lift": 3 },
-    { "name": "SEUNGKWAN", "image": "images/seventeen/fml/seungkwan.png", "color": "#ffea2d", "focus": 50, "lift": 3 },
-    { "name": "VERNON",    "image": "images/seventeen/fml/vernon.png",    "color": "#2ec601", "focus": 50, "lift": 3 },
-    { "name": "DINO",      "image": "images/seventeen/fml/dino.png",      "color": "#f76ce9", "focus": 50, "lift": 3 }
+    {
+      "name": "S.COUPS",
+      "image": "images/seventeen/fml/scoups.png",
+      "color": "#0557b8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JEONGHAN",
+      "image": "images/seventeen/fml/jeonghan.png",
+      "color": "#ff0c0c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JOSHUA",
+      "image": "images/seventeen/fml/joshua.png",
+      "color": "#a001c8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUN",
+      "image": "images/seventeen/fml/jun.png",
+      "color": "#53a303",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HOSHI",
+      "image": "images/seventeen/fml/hoshi.png",
+      "color": "#ba0303",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WONWOO",
+      "image": "images/seventeen/fml/wonwoo.png",
+      "color": "#5a05d3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOOZI",
+      "image": "images/seventeen/fml/woozi.png",
+      "color": "#fa7304",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DK",
+      "image": "images/seventeen/fml/dk.png",
+      "color": "#0002e6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MINGYU",
+      "image": "images/seventeen/fml/mingyu.png",
+      "color": "#01a68d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "THE8",
+      "image": "images/seventeen/fml/the8.png",
+      "color": "#00de81",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SEUNGKWAN",
+      "image": "images/seventeen/fml/seungkwan.png",
+      "color": "#ffea2d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "VERNON",
+      "image": "images/seventeen/fml/vernon.png",
+      "color": "#2ec601",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DINO",
+      "image": "images/seventeen/fml/dino.png",
+      "color": "#f76ce9",
+      "focus": 50,
+      "lift": 3
+    }
   ],
-  "lyrics": []
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이런 빌어먹을 세상",
+      "romanization": "ireon billeomeogeul sesang",
+      "english": "This f***ing world"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이런 빌어먹을 세상 나만 혼자 바보 됐어",
+      "romanization": "ireon billeomeogeul sesang naman honja babo dwaesseo",
+      "english": "In this f***ing world, I'm the only stupid"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
+      "romanization": "gal gireul ireun chae gal goseul ireun chae",
+      "english": "I lost my way, I lost my aim"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나만 바보 됐어",
+      "romanization": "naman babo dwaesseo",
+      "english": "Dumbest person alive"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잊어버리자 이렇게 웃어 버리자 이렇게",
+      "romanization": "ijeobeorija ireoke useo beorija ireoke",
+      "english": "Let's just forget all of this, let's just laugh through all of this"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "되도 않는 위로를 해봐도",
+      "romanization": "doedo anneun wiroreul haebwado",
+      "english": "Because this comfort is meaningless"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "집에 돌아가는 길에 울컥",
+      "romanization": "jibe doraganeun gire ulkeok",
+      "english": "On my way back home I get choked up"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "울고 싶어 계속 Wuh Uh Uh",
+      "romanization": "ulgo sipeo gyesok wuh uh uh",
+      "english": "Keep feeling like crying, wuh uh uh"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "사라져 가는 내 모습을 다시 찾고만 싶을 뿐",
+      "romanization": "sarajyeo ganeun nae moseubeul dasi chatgoman sipeul ppun",
+      "english": "I just wanna find myself before I disappear completely"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어릴 때 만화영화에 나오는 주인공은 왜",
+      "romanization": "eoril ttae manhwayeonghwae naoneun juingongeun wae",
+      "english": "When I was young and watched cartoons I wondered why I couldn't be"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내가 될 수 없는지 내 맘은 아주 검은색",
+      "romanization": "naega doel su eomneunji nae mameun aju geomeunsaek",
+      "english": "The main character like I would see, my heart's all too blackened"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나와 하루만 심장 바꿔 줄 사람 어디도 없나",
+      "romanization": "nawa haruman simjang bakkwo jul saram eodido eomna",
+      "english": "Isn't there anyone who could trade their heart with mine just for a day?"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이런 빌어먹을 세상 나만 혼자 바보 됐어",
+      "romanization": "ireon billeomeogeul sesang naman honja babo dwaesseo",
+      "english": "In this f***ing world, I'm the only stupid"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
+      "romanization": "gal gireul ireun chae gal goseul ireun chae",
+      "english": "I lost my way, I lost my aim"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나만 바보 됐어",
+      "romanization": "naman babo dwaesseo",
+      "english": "Dumbest person alive"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지금부터 Fight For My Life",
+      "romanization": "jigeumbuteo fight for my life",
+      "english": "From now on I'll fight for my life"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나를 위해 Fight For My Life",
+      "romanization": "nareul wihae fight for my life",
+      "english": "For my own good, fight for my life"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "무뎌짐이 익숙한 세상에서",
+      "romanization": "mudyeojimi iksukan sesangeseo",
+      "english": "We're so used to feeling numb in this life"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이제 나는 나를 찾고 싶어",
+      "romanization": "ije naneun nareul chatgo sipeo",
+      "english": "Now I just wanna find myself"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "점점 난 지쳐가 혼자서 꾸는 꿈",
+      "romanization": "jeomjeom nan jichyeoga honjaseo kkuneun kkum",
+      "english": "I'm getting so tired dreaming by myself"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이젠 너무나 지겨워 그만두고 싶어",
+      "romanization": "ijen neomuna jigyeowo geumandugo sipeo",
+      "english": "I'm so sick of it all now, just wanna give up"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "난 나에게 어제 나에게 부끄러운",
+      "romanization": "nan naege eoje naege bukkeureoun",
+      "english": "Don't wanna be an embarrassment tomorrow"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내일이 되고 싶지 않아",
+      "romanization": "naeiri doego sipji ana",
+      "english": "for the me I knew yesterday"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "되도 않는 다짐을 해봐도",
+      "romanization": "doedo anneun dajimeul haebwado",
+      "english": "Because this commitment is meaningless"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "바보 같은 내 모습이 우스워",
+      "romanization": "babo gateun nae moseubi useuwo",
+      "english": "I look so dumb it's almost ridiculous"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "울고 싶어 계속 Wuh Uh Uh",
+      "romanization": "ulgo sipeo gyesok wuh uh uh",
+      "english": "Keep feeling like crying, wuh uh uh"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세상에 맘이 무뎌져서 내가 작아지는 기분",
+      "romanization": "sesange mami mudyeojyeoseo naega jagajineun gibun",
+      "english": "I'm getting so numb to this life that it feels like I'm shrinking away"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "말할 수 없는 비밀이 또다시 눈물이 되지",
+      "romanization": "malhal su eomneun bimiri ttodasi nunmuri doeji",
+      "english": "I got a secret I can't tell and it's turning to tears again"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "난 부끄러워서 누구에게도 말을 못 했지",
+      "romanization": "nan bukkeureowoseo nuguegedo mareul mot haetji",
+      "english": "I can't tell a soul, I'm too ashamed for that"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나와 하루만 심장 바꿔 줄 사람 어디도 없나",
+      "romanization": "nawa haruman simjang bakkwo jul saram eodido eomna",
+      "english": "Isn't there anyone who could trade their heart with mine just for a day?"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이런 빌어먹을 세상 나만 혼자 바보 됐어",
+      "romanization": "ireon billeomeogeul sesang naman honja babo dwaesseo",
+      "english": "In this f***ing world, I'm the only stupid"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갈 길을 잃은 채 갈 곳을 잃은 채",
+      "romanization": "gal gireul ireun chae gal goseul ireun chae",
+      "english": "I lost my way, I lost my aim"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나만 바보 됐어",
+      "romanization": "naman babo dwaesseo",
+      "english": "Dumbest person alive"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지금부터 Fight For My Life",
+      "romanization": "jigeumbuteo fight for my life",
+      "english": "From now on I'll fight for my life"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나를 위해 Fight For My Life",
+      "romanization": "nareul wihae fight for my life",
+      "english": "For my own good, fight for my life"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "무뎌짐이 익숙한 세상에서",
+      "romanization": "mudyeojimi iksukan sesangeseo",
+      "english": "We're so used to feeling numb in this life"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이제 나는 나를 찾고 싶어",
+      "romanization": "ije naneun nareul chatgo sipeo",
+      "english": "Now I just wanna find myself"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "무뎌짐이 익숙한 세상에서",
+      "romanization": "mudyeojimi iksukan sesangeseo",
+      "english": "We're so used to feeling numb in this life"
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이제 나는 나를 찾고 싶어",
+      "romanization": "ije naneun nareul chatgo sipeo",
+      "english": "Now I just wanna find myself"
+    }
+  ]
 }
