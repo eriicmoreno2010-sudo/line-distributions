@@ -70,14 +70,6 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "冷めた目つき",
-      "romanization": "sameta metsuki",
-      "english": "Cold, distant eyes"
-    },
-    {
       "start": 3.76,
       "end": 5.92,
       "members": [],
@@ -90,41 +82,17 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "僕だけにほら君はbad seed",
-      "romanization": "boku dake ni hora kimi wa bad seed",
-      "english": "Just for me, yeah you're a bad seed"
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
       "original": "嫌でも気になる",
       "romanization": "iya demo ki ni naru",
       "english": "Can't help but be curious"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 17.29,
+      "end": 18.89,
       "members": [],
-      "original": "悪いfantasy",
-      "romanization": "warui fantasy",
-      "english": "A wicked fantasy"
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "まるでblack magic",
-      "romanization": "marude black magic",
-      "english": "Just like black magic"
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "目を離せない Ooh",
-      "romanization": "me o hanasenai ooh",
-      "english": "Can't take my eyes off you Ooh"
+      "original": "悪いfantasy, まるでblack magic, 目を離せない Ooh",
+      "romanization": "warui fantasy, marude black magic, me o hanasenai ooh",
+      "english": "A wicked fantasy, Just like black magic, Can't take my eyes off you Ooh"
     },
     {
       "start": 0,
