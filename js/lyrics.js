@@ -14,6 +14,14 @@ function isAdlibLine(l){
     return (l.adlib === true) || (typeof l.adlib === "string" && l.adlib.trim() !== "");
 }
 
+/* `**...**` marks a substring sung by the shared members (gradient paint).
+   Only treat it as a marker when the `**` come in PAIRS (odd number of chunks
+   after splitting). This keeps censored profanity like "f***ing" — which has a
+   lone, unpaired `**` — as literal text instead of breaking the line. */
+function hasPairedMarker(t){
+    return typeof t === "string" && t.includes("**") && (t.split("**").length % 2 === 1);
+}
+
 /* Join singer names: "A" · "A & B" · "A, B & C" · "A, B, C & D" ... */
 function joinNames(names){
     names = (names || []).filter(Boolean);
@@ -69,7 +77,7 @@ const Lyrics = {
 
         const hasPartial = !isGroupLine &&
             [line.original, line.romanization, line.english]
-                .some(t => t && t.includes("**"));
+                .some(hasPairedMarker);
         const sharedGradient =
             `linear-gradient(90deg, ${singers.map(s => s.color).join(", ")})`;
 
@@ -173,7 +181,7 @@ const Lyrics = {
             const paintText = (el, text) => {
                 text = text || "";
                 clearPaint(el);
-                if(c.hasPartial && text.includes("**")){
+                if(c.hasPartial && hasPairedMarker(text)){
                     el.innerHTML = text.split("**").map((chunk, i) => i % 2
                         ? `<span style="background:${c.sharedGradient};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(chunk)}</span>`
                         : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`
