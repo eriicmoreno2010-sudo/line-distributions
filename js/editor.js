@@ -67,13 +67,21 @@
     num.title = "seleccionar"; num.onclick = () => { sel = i; awaitingEnd = false; highlightSel(); updateTapUI(); };
 
     const txt = document.createElement("div"); txt.className = "txt";
-    const mkf = (cls, val, ph) => { const inp = document.createElement("input"); inp.className = "f " + cls; inp.value = val || ""; inp.placeholder = ph; return inp; };
+    const mkf = (cls, val, ph) => {
+      const inp = document.createElement("input");
+      inp.className = "f " + cls; inp.value = val || ""; inp.placeholder = ph;
+      // Stop Chromium's autofill/suggestions dropdown from popping up and eating
+      // keystrokes when a box is emptied and retyped.
+      inp.autocomplete = "off"; inp.spellcheck = false;
+      inp.setAttribute("autocorrect", "off"); inp.setAttribute("autocapitalize", "off");
+      return inp;
+    };
     const fo = mkf("orig", l.original, "original (coreano)");
     const fr = mkf("rom", l.romanization, "romanización");
     const fe = mkf("eng", l.english, "inglés");
-    fo.onchange = () => l.original = fo.value;
-    fr.onchange = () => l.romanization = fr.value;
-    fe.onchange = () => l.english = fe.value;
+    fo.oninput = () => l.original = fo.value;
+    fr.oninput = () => l.romanization = fr.value;
+    fe.oninput = () => l.english = fe.value;
     txt.append(fo, fr, fe);
 
     const chips = document.createElement("div"); chips.className = "chips";
@@ -316,8 +324,13 @@
     renderLines(); updateTapUI(); syncModeUI();
   };
 
+  // Never hijack keys while typing in ANY editable field, nor mid-IME-composition.
+  // (Checks both the event target AND the real focused element, and covers
+  // input/textarea/select/contenteditable — not just <input> — so emptying a
+  // lyric box and continuing to type is never blocked by the S/K/J/L shortcuts.)
+  const isEditable = el => !!el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.tagName === "SELECT" || el.isContentEditable);
   document.addEventListener("keydown", e => {
-    if(e.target.tagName === "INPUT") return;  // don't hijack typing in time fields
+    if(isEditable(e.target) || isEditable(document.activeElement) || e.isComposing || e.keyCode === 229) return;
     if(e.key==="s"||e.key==="S"){ e.preventDefault(); tapS(); }
     else if(e.key==="Enter"){ e.preventDefault(); tapEnter(); }
     else if(e.key==="k"||e.key==="K"){ e.preventDefault(); video.paused?video.play():video.pause(); }
