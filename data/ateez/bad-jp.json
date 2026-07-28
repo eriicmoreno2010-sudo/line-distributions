@@ -6,56 +6,56 @@
   "members": [
     {
       "name": "SEONGHWA",
-      "image": "images/ateez/bad/seonghwa.png",
+      "image": "images/ateez/bad-jp/seonghwa.png",
       "color": "#b7ba13",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "HONGJOONG",
-      "image": "images/ateez/bad/hongjoong.png",
+      "image": "images/ateez/bad-jp/hongjoong.png",
       "color": "#100095",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "YUNHO",
-      "image": "images/ateez/bad/yunho.png",
+      "image": "images/ateez/bad-jp/yunho.png",
       "color": "#4a02a5",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "YEOSANG",
-      "image": "images/ateez/bad/yeosang.png",
+      "image": "images/ateez/bad-jp/yeosang.png",
       "color": "#0d5f03",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "SAN",
-      "image": "images/ateez/bad/san.png",
+      "image": "images/ateez/bad-jp/san.png",
       "color": "#074bb1",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "MINGI",
-      "image": "images/ateez/bad/mingi.png",
+      "image": "images/ateez/bad-jp/mingi.png",
       "color": "#910094",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "WOOYOUNG",
-      "image": "images/ateez/bad/wooyoung.png",
+      "image": "images/ateez/bad-jp/wooyoung.png",
       "color": "#018b3c",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JONGHO",
-      "image": "images/ateez/bad/jongho.png",
+      "image": "images/ateez/bad-jp/jongho.png",
       "color": "#ba4f02",
       "focus": 50,
       "lift": 3
