@@ -12,5 +12,6 @@ contextBridge.exposeInMainWorld("desktop", {
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
   saveSong: (relPath, data) => ipcRenderer.invoke("save-song", { path: relPath, data }),
   photoSources: (paths) => ipcRenderer.invoke("photo-sources", paths),
-  savePhotos: (args) => ipcRenderer.invoke("save-photos", args)
+  savePhotos: (args) => ipcRenderer.invoke("save-photos", args),
+  exportThumb: (args) => ipcRenderer.invoke("export-thumb", args)
 });

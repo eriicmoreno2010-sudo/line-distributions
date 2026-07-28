@@ -225,6 +225,33 @@ ipcMain.handle("save-photos", async (_e, args) => {
   return res;
 });
 
+// Thumbnail: render thumb.html at exactly 1280×720 in an offscreen window and
+// save it as a PNG (YouTube thumbnail size).
+ipcMain.handle("export-thumb", async (evt, args) => {
+  args = args || {};
+  const song = args.song || "";
+  const base = (args.name || song.split("/").pop().replace(/\.json$/i, "") || "thumb");
+  const def = path.join(app.getPath("pictures") || ROOT, base + "_thumb.png");
+  const { canceled, filePath } = await dialog.showSaveDialog({
+    title: "Guardar miniatura", defaultPath: def,
+    filters: [{ name: "Imagen PNG", extensions: ["png"] }]
+  });
+  if(canceled || !filePath) return { ok: false, canceled: true };
+  let win;
+  try{
+    win = new BrowserWindow({ width: 1280, height: 720, show: false, useContentSize: true,
+      webPreferences: { webSecurity: false, preload: path.join(__dirname, "preload.js") } });
+    let q = "song=" + song + "&export=1";
+    if(args.cover) q += "&cover=" + encodeURIComponent(args.cover);
+    await win.loadFile(path.join(ROOT, "thumb.html"), { search: q });
+    await new Promise(r => setTimeout(r, 1600));
+    const img = await win.webContents.capturePage({ x: 0, y: 0, width: 1280, height: 720 });
+    fs.writeFileSync(filePath, img.toPNG());
+    return { ok: true, out: filePath };
+  }catch(e){ return { ok: false, error: e.message }; }
+  finally{ if(win) win.destroy(); }
+});
+
 app.whenReady().then(() => {
   if(EXPORT_OUT) exportHeadless().catch(e => { console.error("EXPORT_ERR " + e.message); app.exit(1); });
   else createWindow();

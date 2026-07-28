@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Miniatura</title>
+<style>
+  :root{ --w:1280px; --h:720px; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:#05050a; }
+  /* fixed YouTube-thumbnail canvas, scaled to fit the window for preview */
+  #thumb{
+    position:relative; width:var(--w); height:var(--h); overflow:hidden;
+    background:#0b0b12; font-family:"Segoe UI",Inter,Arial,sans-serif; color:#fff;
+    transform-origin:top left;
+  }
+
+  /* LEFT — big cover photo */
+  #cover{ position:absolute; inset:0 42% 0 0; background:#111 center/cover no-repeat; }
+  #cover img{ width:100%; height:100%; object-fit:cover; object-position:center 22%; display:block; }
+  /* dark gradient bottom-left so the title reads on any photo */
+  #shade{ position:absolute; inset:0 42% 0 0; background:
+      linear-gradient(180deg, rgba(0,0,0,.10) 45%, rgba(0,0,0,.82) 100%),
+      linear-gradient(90deg, rgba(0,0,0,.35), rgba(0,0,0,0) 40%); }
+  /* soft seam between photo and ranking */
+  #seam{ position:absolute; top:0; bottom:0; left:58%; width:120px; transform:translateX(-50%);
+         background:linear-gradient(90deg, rgba(11,11,18,0), var(--panel,#0e0e18)); }
+
+  /* TITLE block (bottom-left over the photo) */
+  #title{ position:absolute; left:46px; bottom:40px; right:44%; z-index:3; }
+  #grp{ font-size:34px; font-weight:800; letter-spacing:3px; text-transform:uppercase;
+        color:#fff; opacity:.92; text-shadow:0 2px 12px rgba(0,0,0,.6); }
+  #song{ font-size:104px; line-height:.92; font-weight:900; letter-spacing:-1px; margin:2px 0 14px;
+         text-shadow:0 6px 26px rgba(0,0,0,.7); }
+  #tag{ display:inline-block; font-size:26px; font-weight:800; letter-spacing:.5px;
+        padding:8px 16px; border-radius:10px; background:var(--accent,#7c5cff);
+        box-shadow:0 8px 24px -8px var(--accent,#7c5cff); }
+
+  /* RIGHT — ranking panel */
+  #rank{ position:absolute; top:0; right:0; bottom:0; width:42%;
+         background:linear-gradient(180deg,#12121c,#0b0b12);
+         display:flex; flex-direction:column; justify-content:center; gap:0; padding:26px 34px; }
+  #rank .rhead{ font-size:20px; font-weight:800; letter-spacing:3px; color:#9a9ab0;
+                text-transform:uppercase; margin-bottom:14px; }
+  .row{ display:grid; grid-template-columns:44px 1fr auto; align-items:center; gap:16px;
+        padding:7px 0; }
+  .rk{ font-size:26px; font-weight:900; color:#6a6a80; text-align:center; font-variant-numeric:tabular-nums; }
+  .who{ display:flex; align-items:center; gap:14px; min-width:0; }
+  .av{ width:52px; height:52px; border-radius:50%; object-fit:cover; border:3px solid var(--c);
+       background:#1a1a24; flex:none; }
+  .nm{ font-size:30px; font-weight:800; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .bar{ width:150px; height:12px; border-radius:999px; background:#22222e; overflow:hidden; flex:none; }
+  .fill{ height:100%; border-radius:999px; background:var(--c); }
+
+  /* editing toolbar (never part of the exported image) */
+  #tools{ position:fixed; top:10px; left:10px; z-index:999; display:flex; gap:8px; align-items:center;
+          flex-wrap:wrap; background:rgba(10,10,16,.85); padding:8px 10px; border-radius:10px; }
+  #tools button{ border:0; border-radius:8px; padding:8px 12px; font-weight:800; font-size:13px; cursor:pointer;
+                 background:#7c5cff; color:#fff; font-family:"Segoe UI",Arial,sans-serif; }
+  #tools .cov{ background:transparent; border:2px solid var(--c); color:var(--c); border-radius:14px; padding:5px 9px; font-size:12px; }
+  #tools .cov:hover{ background:var(--c); color:#111; }
+  #tools .lbl{ color:#9a9ab0; font:700 12px "Segoe UI",Arial; }
+</style>
+</head>
+<body>
+<div id="thumb">
+  <div id="cover"><img id="coverimg" alt=""></div>
+  <div id="shade"></div>
+  <div id="seam"></div>
+  <div id="rank"><div class="rhead">Line Distribution</div><div id="rows"></div></div>
+  <div id="title">
+    <div id="grp">—</div>
+    <div id="song">—</div>
+    <div id="tag">Line Distribution + Lyrics</div>
+  </div>
+</div>
+<div id="tools">
+  <button id="save">💾 Guardar PNG</button>
+  <span class="lbl">Portada:</span>
+  <span id="covers"></span>
+</div>
+
+<script>
+const P = new URLSearchParams(location.search);
+const SONG_URL = P.get("song") || "data/nctdream/moonlight.json";
+const COVER = P.get("cover");            // optional member name for the big photo
+
+// scale the fixed 1280x720 canvas to fit the preview window
+function fit(){
+  const s = Math.min(window.innerWidth/1280, window.innerHeight/720);
+  document.getElementById("thumb").style.transform = "scale("+s+")";
+  document.body.style.height = (720*s)+"px";
+}
+window.addEventListener("resize", fit); fit();
+
+// per-member sung seconds from the lyrics (voice segments or members x duration)
+function totals(song){
+  const t = {}; (song.members||[]).forEach(m => t[m.name]=0);
+  const add = (n,s,e)=>{ if(t[n]!=null && e>s) t[n]+=e-s; };
+  (song.lyrics||[]).forEach(l=>{
+    if(Array.isArray(l.voice)){
+      l.voice.forEach(seg=>{ const who = seg[2] ? (Array.isArray(seg[2])?seg[2]:[seg[2]]) : l.members; (who||[]).forEach(n=>add(n,seg[0],seg[1])); });
+    } else { (l.members||[]).forEach(n=>add(n, l.voiceStart??l.start, l.voiceEnd??l.end)); }
+  });
+  return t;
+}
+
+// derive the _src (original) photo path from a framed image path
+function srcPhoto(img){
+  const i = img.lastIndexOf("/");
+  return img.slice(0,i) + "/_src" + img.slice(i);
+}
+
+fetch(SONG_URL).then(r=>r.json()).then(song=>{
+  const ver = "?v=" + (Date.now());   // thumbnails are one-off; always fresh
+  document.getElementById("grp").textContent  = song.group || "";
+  const songEl = document.getElementById("song");
+  songEl.textContent = song.song || "";
+  // shrink long titles so they don't overrun the photo
+  const len = (song.song || "").length;
+  if(len > 10) songEl.style.fontSize = Math.max(52, 104 - (len - 10) * 5) + "px";
+
+  const t = totals(song);
+  const ranked = [...(song.members||[])].sort((a,b)=> (t[b.name]||0)-(t[a.name]||0));
+  const max = Math.max(1, ...Object.values(t));
+
+  // big cover = chosen member, else the top-ranked one
+  const coverM = (COVER && song.members.find(m=>m.name.toLowerCase()===COVER.toLowerCase())) || ranked[0] || song.members[0];
+  if(coverM){
+    const img = document.getElementById("coverimg");
+    const orig = srcPhoto(coverM.image);
+    img.onerror = () => { img.onerror=null; img.src = coverM.image + ver; };   // fall back to framed
+    img.src = orig + ver;
+    document.getElementById("tag").style.setProperty("--accent", coverM.color);
+    document.documentElement.style.setProperty("--accent", coverM.color);
+  }
+
+  const rows = document.getElementById("rows");
+  ranked.forEach((m,i)=>{
+    const row = document.createElement("div"); row.className="row"; row.style.setProperty("--c", m.color);
+    row.innerHTML =
+      '<div class="rk">'+(i+1)+'</div>'+
+      '<div class="who"><img class="av" src="'+m.image+ver+'" alt=""><span class="nm">'+m.name+'</span></div>'+
+      '<div class="bar"><div class="fill" style="width:'+Math.max(6,Math.round((t[m.name]||0)/max*100))+'%"></div></div>';
+    rows.appendChild(row);
+  });
+
+  // toolbar (preview only — hidden while exporting, and in the plain browser)
+  const tools = document.getElementById("tools");
+  if(P.get("export") || !(window.desktop && window.desktop.exportThumb)){
+    tools.style.display = "none";
+  } else {
+    document.getElementById("save").onclick = async (e) => {
+      const b = e.target; const t0 = b.textContent; b.textContent = "⏳ Guardando…"; b.disabled = true;
+      let res = null;
+      try{ res = await window.desktop.exportThumb({ song: SONG_URL, cover: (coverM && coverM.name) || "" }); }catch(err){}
+      b.textContent = (res && res.ok) ? "✓ Guardada" : (res && res.canceled ? t0 : "✕ Error");
+      b.disabled = false; setTimeout(()=>b.textContent = t0, 2200);
+    };
+    const cov = document.getElementById("covers");
+    (song.members||[]).forEach(m => {
+      const b = document.createElement("button"); b.className = "cov"; b.textContent = m.name;
+      b.style.setProperty("--c", m.color);
+      b.onclick = () => { const u = new URL(location.href); u.searchParams.set("cover", m.name); location.href = u.toString(); };
+      cov.appendChild(b);
+    });
+  }
+});
+</script>
+</body>
+</html>
