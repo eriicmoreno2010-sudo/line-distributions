@@ -36,6 +36,7 @@
     renderLines();
     updateTapUI();
     syncModeUI();
+    buildWordPal();
     requestAnimationFrame(tick);
   }
 
@@ -318,31 +319,57 @@
   $("#markstart").onclick = tapS;
   $("#addadlib").onclick = addAdlib;
 
-  // 🌈 Coro: wrap (or unwrap) the current text selection in the focused lyric box
-  // with **...**, which the viewer paints as sung by the whole group.
+  // Per-word colour marking. Select a word in a lyric box, then:
+  //   🌈  -> the whole group sings it (**word**)
+  //   a member palette button -> that member sings it (**word@Name**); click more
+  //   members to stack them (**word@A,B**); click the same one again to remove it.
+  const flashMark = (btn, msg) => { const t = btn.textContent; btn.textContent = msg; setTimeout(()=>btn.textContent = t, 1400); };
+  function markSel(kind, btn){                                  // kind: "group" or a member name
+    const el = document.activeElement;
+    if(!el || !(el.classList && el.classList.contains("f"))){ flashMark(btn, "Selecciona texto"); return; }
+    let s = el.selectionStart, e = el.selectionEnd, v = el.value;
+    if(s == null || s === e){ flashMark(btn, "Marca la palabra"); return; }
+    let before = v.slice(0, s), chunk = v.slice(s, e), after = v.slice(e);
+    if(before.endsWith("**") && after.startsWith("**")){ before = before.slice(0, -2); after = after.slice(2); chunk = "**" + chunk + "**"; }
+    let inner = chunk, members = [], wasWrapped = false, wasGroup = false;
+    const m = chunk.match(/^\*\*([\s\S]*)\*\*$/);
+    if(m){
+      wasWrapped = true; inner = m[1];
+      const at = inner.lastIndexOf("@");
+      if(at > 0){
+        const names = inner.slice(at + 1).split(",").map(x => x.trim()).filter(Boolean);
+        const resolved = names.map(n => (song.members || []).find(mm => mm.name.toLowerCase() === n.toLowerCase()));
+        if(names.length && resolved.every(Boolean)){ members = resolved.map(mm => mm.name); inner = inner.slice(0, at); }
+        else wasGroup = true;
+      } else wasGroup = true;
+    }
+    let newChunk;
+    if(kind === "group"){
+      newChunk = (wasWrapped && wasGroup) ? inner : ("**" + inner + "**");   // toggle group
+    } else {
+      const i = members.findIndex(n => n.toLowerCase() === kind.toLowerCase());
+      if(i >= 0) members.splice(i, 1); else members.push(kind);
+      newChunk = members.length ? ("**" + inner + "@" + members.join(",") + "**") : inner;
+    }
+    el.value = before + newChunk + after;
+    el.dispatchEvent(new Event("input", { bubbles: true }));    // -> oninput saves to the model
+    el.focus(); try{ el.setSelectionRange(before.length, before.length + newChunk.length); }catch(err){}
+  }
   const markGroupBtn = $("#markgroup");
   if(markGroupBtn){
-    // preventDefault on mousedown so the button doesn't steal focus from the input
-    // (keeps the caret/selection alive in the lyric field).
-    markGroupBtn.addEventListener("mousedown", e => e.preventDefault());
-    const flash = msg => { const t = markGroupBtn.textContent; markGroupBtn.textContent = msg; setTimeout(()=>markGroupBtn.textContent = t, 1400); };
-    markGroupBtn.addEventListener("click", () => {
-      const el = document.activeElement;
-      if(!el || !(el.classList && el.classList.contains("f"))){ flash("Selecciona texto en una casilla"); return; }
-      let s = el.selectionStart, e = el.selectionEnd, v = el.value;
-      if(s == null || s === e){ flash("Marca la palabra primero"); return; }
-      const before = v.slice(0, s), sel = v.slice(s, e), after = v.slice(e);
-      let val, caretS, caretE;
-      if(sel.startsWith("**") && sel.endsWith("**") && sel.length >= 4){          // selection includes the ** -> strip
-        const inner = sel.slice(2, -2); val = before + inner + after; caretS = s; caretE = s + inner.length;
-      } else if(before.endsWith("**") && after.startsWith("**")){                  // already wrapped around selection -> strip
-        val = before.slice(0, -2) + sel + after.slice(2); caretS = s - 2; caretE = caretS + sel.length;
-      } else {                                                                     // wrap it
-        val = before + "**" + sel + "**" + after; caretS = s; caretE = e + 4;
-      }
-      el.value = val;
-      el.dispatchEvent(new Event("input", { bubbles: true }));   // -> oninput saves to the model
-      el.focus(); try{ el.setSelectionRange(caretS, caretE); }catch(err){}
+    markGroupBtn.addEventListener("mousedown", e => e.preventDefault());   // keep the field's selection alive
+    markGroupBtn.addEventListener("click", () => markSel("group", markGroupBtn));
+  }
+  function buildWordPal(){
+    const pal = $("#wordpal"); if(!pal) return;
+    pal.innerHTML = "";
+    (song.members || []).forEach(mm => {
+      const b = document.createElement("button");
+      b.textContent = abbr(mm.name); b.title = "Marcar la palabra seleccionada como " + mm.name;
+      b.style.setProperty("--c", mm.color);
+      b.addEventListener("mousedown", e => e.preventDefault());
+      b.addEventListener("click", () => markSel(mm.name, b));
+      pal.appendChild(b);
     });
   }
   $("#mode").onchange = (e) => {

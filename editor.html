@@ -54,6 +54,11 @@
   .times.voice .segs{ font:700 12px monospace; color:#8fe3b0; min-width:120px; }
   .rowbtns{ display:flex; gap:4px; }
   .rowbtns button{ padding:5px 7px; font-size:11px; }
+  /* per-word member palette (color a selected word for a specific member) */
+  #wordpal{ display:inline-flex; gap:4px; align-items:center; flex-wrap:wrap; }
+  #wordpal button{ padding:5px 8px; font-size:11px; font-weight:900; border-radius:14px;
+                   border:2px solid var(--c); background:transparent; color:var(--c); }
+  #wordpal button:hover{ background:var(--c); color:#111; }
 </style>
 </head>
 <body>
@@ -77,6 +82,7 @@
         </select>
         <button id="addadlib" style="display:none;background:#4a3a1a;border-color:#7a5a1a;color:#ffcf33">＋ Añadir ad-lib</button>
         <button id="markgroup" title="Selecciona una palabra dentro de una casilla de letra y pulsa aquí: se marca como cantada por TODO el grupo (se pinta en arcoíris). Vuelve a pulsar sobre una palabra ya marcada para quitarlo.">🌈 Coro (grupo)</button>
+        <span id="wordpal" title="Selecciona una palabra en una casilla y pulsa un miembro para pintarla con su color. Pulsa varios = la cantan varios (degradado). Vuelve a pulsar para quitar."></span>
       </div>
       <div class="btnrow">
         <button id="playpause">▶ / ⏸ (K)</button>

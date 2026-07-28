@@ -184,12 +184,36 @@ const Lyrics = {
             const clearPaint = el => {
                 el.style.background = ""; el.style.webkitBackgroundClip = ""; el.style.backgroundClip = "";
             };
+            // A **...** chunk may name who sings it: "word@Nicholas" (one member),
+            // "word@Nicholas,Taki" (a couple → their gradient), "word@todos" or plain
+            // "word" (no @) → the whole group / the line's shared colour.
+            const memberColor = name => {
+                const m = SONG.members.find(mm => mm.name.toLowerCase() === name.toLowerCase());
+                return m ? m.color : null;
+            };
+            const markedSpan = chunk => {
+                let display = chunk, colors = null;
+                const at = chunk.lastIndexOf("@");
+                if(at > 0){
+                    const names = chunk.slice(at + 1).split(",").map(s => s.trim()).filter(Boolean);
+                    if(names.length && names.every(n => /^(all|todos|grupo)$/i.test(n))){
+                        colors = SONG.members.map(m => m.color); display = chunk.slice(0, at);
+                    } else if(names.length){
+                        const cs = names.map(memberColor);
+                        if(cs.every(Boolean)){ colors = cs; display = chunk.slice(0, at); }
+                    }
+                }
+                if(colors && colors.length === 1)
+                    return `<span style="color:${colors[0]}">${escapeHtml(display)}</span>`;
+                const bg = colors ? `linear-gradient(90deg, ${colors.join(", ")})` : c.markGradient;
+                return `<span style="background:${bg};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(display)}</span>`;
+            };
             const paintText = (el, text) => {
                 text = text || "";
                 clearPaint(el);
                 if(c.hasPartial && hasPairedMarker(text)){
                     el.innerHTML = text.split("**").map((chunk, i) => i % 2
-                        ? `<span style="background:${c.markGradient};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(chunk)}</span>`
+                        ? markedSpan(chunk)
                         : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`
                     ).join("");
                 } else {
