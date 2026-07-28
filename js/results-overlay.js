@@ -66,24 +66,34 @@ Self-contained: injects its own styles and markup.
     }
     #results-overlay #ro-list{ flex:1 1 auto; height:100%; display:flex; flex-direction:column; gap:1vh; min-width:0; }
     #results-overlay .row{
-      flex:1 1 0; min-height:0; display:grid; grid-template-columns:6.4vh 1fr auto; align-items:center; gap:1.6vh;
-      background:#15151d; border:1px solid #23232e; border-radius:1.4vh; padding:1vh 1.8vh;
-      opacity:.5; transition:opacity .45s ease, background-color .45s ease, border-color .45s ease, box-shadow .45s ease;
+      flex:1 1 0; min-height:0; display:grid; grid-template-columns:6.8vh 1fr auto; align-items:center; gap:1.8vh;
+      background:linear-gradient(135deg,#1a1a24,#111119);
+      border:1px solid #262633; border-left:.55vh solid #2c2c37; border-radius:1.6vh; padding:1.1vh 2vh;
+      opacity:.5; box-shadow:0 1vh 2.4vh -1.4vh rgba(0,0,0,.6);
+      transition:opacity .45s ease, background .45s ease, border-color .45s ease, box-shadow .45s ease;
     }
-    #results-overlay .row .photo{ width:6.4vh; height:6.4vh; border-radius:50%; object-fit:cover; object-position:center 45%;
-      background:#000; filter:grayscale(1) brightness(.75); transition:filter .5s ease, box-shadow .5s ease; }
-    #results-overlay .row .name{ font-size:2.5vh; font-weight:900; letter-spacing:.4px; color:#7c7c8a; transition:color .5s ease; line-height:1.1; }
-    #results-overlay .row .bar{ margin-top:.8vh; height:1.2vh; border-radius:999px; background:#1c1c25; overflow:hidden; }
-    #results-overlay .row .fill{ height:100%; width:0; border-radius:999px; background:#2c2c37; transition:width .6s cubic-bezier(.3,1,.4,1), background-color .5s ease; }
+    #results-overlay .row .photo{ width:6.8vh; height:6.8vh; border-radius:50%; object-fit:cover; object-position:center 45%;
+      background:#000; filter:grayscale(1) brightness(.7); transition:filter .5s ease, box-shadow .5s ease; }
+    #results-overlay .row .name{ font-size:2.6vh; font-weight:900; letter-spacing:.4px; color:#7c7c8a; transition:color .5s ease, text-shadow .5s ease; line-height:1.1; }
+    #results-overlay .row .bar{ margin-top:1vh; height:1.5vh; border-radius:999px; background:#0f0f16;
+      box-shadow:inset 0 .15vh .45vh rgba(0,0,0,.7), inset 0 0 0 1px rgba(255,255,255,.03); overflow:hidden; }
+    #results-overlay .row .fill{ height:100%; width:0; border-radius:999px; background:#2c2c37;
+      box-shadow:inset 0 .35vh .35vh -.15vh rgba(255,255,255,.35); transition:width .6s cubic-bezier(.3,1,.4,1), background .5s ease; }
     #results-overlay .row .stats{ text-align:right; font-variant-numeric:tabular-nums; }
-    #results-overlay .row .pct{ font-size:2.4vh; font-weight:900; color:#7c7c8a; transition:color .5s ease; line-height:1; }
-    #results-overlay .row .sec{ font-size:1.5vh; color:#7c7c8a; margin-top:.4vh; }
-    #results-overlay .row.lit{ opacity:1; background:var(--rowbg); border-color:color-mix(in srgb, var(--c) 55%, transparent);
-      box-shadow:0 1.5vh 4vh -2vh color-mix(in srgb, var(--c) 70%, transparent); }
-    #results-overlay .row.lit .photo{ filter:none; box-shadow:0 0 0 .3vh var(--c); }
-    #results-overlay .row.lit .name{ color:var(--c); }
-    #results-overlay .row.lit .fill{ background:var(--c); }
-    #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 55%, #fff); }
+    #results-overlay .row .pct{ font-size:2.7vh; font-weight:900; color:#7c7c8a; transition:color .5s ease; line-height:1; }
+    #results-overlay .row .sec{ font-size:1.6vh; color:#7c7c8a; margin-top:.5vh; opacity:.85; }
+    #results-overlay .row.lit{ opacity:1;
+      background:linear-gradient(135deg, color-mix(in srgb, var(--c) 30%, #14141c), color-mix(in srgb, var(--c) 7%, #0f0f16));
+      border-color:color-mix(in srgb, var(--c) 50%, transparent);
+      border-left-color:var(--c);
+      box-shadow:0 1.6vh 4vh -1.8vh color-mix(in srgb, var(--c) 75%, transparent),
+                 inset 0 0 0 1px color-mix(in srgb, var(--c) 18%, transparent); }
+    #results-overlay .row.lit .photo{ filter:none;
+      box-shadow:0 0 0 .3vh var(--c), 0 0 2vh -.3vh color-mix(in srgb, var(--c) 80%, transparent); }
+    #results-overlay .row.lit .name{ color:color-mix(in srgb, var(--c) 62%, #fff);
+      text-shadow:0 0 1.8vh color-mix(in srgb, var(--c) 55%, transparent); }
+    #results-overlay .row.lit .fill{ background:linear-gradient(180deg, color-mix(in srgb, var(--c) 55%, #fff), var(--c)); }
+    #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 45%, #fff); }
     #results-overlay .row.lit .sec{ color:#f4f4f8; }
     /* Many members (>10): two thick columns — ranks fill the left column
        top-to-bottom, then the right — so rows are tall enough for the photos */
