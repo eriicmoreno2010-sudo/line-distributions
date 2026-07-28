@@ -78,8 +78,13 @@ const Lyrics = {
         const hasPartial = !isGroupLine &&
             [line.original, line.romanization, line.english]
                 .some(hasPairedMarker);
+        // A CSS linear-gradient needs >=2 colour stops; with a single singer we
+        // duplicate the colour so the gradient stays valid (otherwise the whole
+        // background is dropped and the name, painted with color:transparent,
+        // becomes INVISIBLE on solo lines that have a **...** highlight).
+        const singerCols = singers.map(s => s.color);
         const sharedGradient =
-            `linear-gradient(90deg, ${singers.map(s => s.color).join(", ")})`;
+            `linear-gradient(90deg, ${(singerCols.length === 1 ? [singerCols[0], singerCols[0]] : singerCols).join(", ")})`;
         // The `**...**` highlight: for a solo line it means "everyone joins in on
         // this word" -> paint it with the whole-group rainbow; for a line already
         // shared by several members, keep it as those members' gradient.
