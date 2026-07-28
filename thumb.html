@@ -75,6 +75,7 @@
   </div>
 </div>
 <div id="tools">
+  <button id="back">← Biblioteca</button>
   <button id="save">💾 Guardar PNG</button>
   <button id="reroll">🎲 Otro momento</button>
   <span class="lbl">Portada:</span>
@@ -159,6 +160,7 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
   if(P.get("export") || !(window.desktop && window.desktop.exportThumb)){
     tools.style.display = "none";
   } else {
+    document.getElementById("back").onclick = () => { location.href = "library.html"; };
     document.getElementById("save").onclick = async (e) => {
       const b = e.target; const t0 = b.textContent; b.textContent = "⏳ Guardando…"; b.disabled = true;
       let res = null;
