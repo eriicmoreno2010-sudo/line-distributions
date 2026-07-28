@@ -80,6 +80,12 @@ const Lyrics = {
                 .some(hasPairedMarker);
         const sharedGradient =
             `linear-gradient(90deg, ${singers.map(s => s.color).join(", ")})`;
+        // The `**...**` highlight: for a solo line it means "everyone joins in on
+        // this word" -> paint it with the whole-group rainbow; for a line already
+        // shared by several members, keep it as those members' gradient.
+        const groupAllGradient =
+            `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`;
+        const markGradient = singers.length <= 1 ? groupAllGradient : sharedGradient;
 
         // Glow made from EVERY singer's colour (so 3+ members all show, not just 2).
         const membersGlow = singers.length
@@ -102,7 +108,7 @@ const Lyrics = {
             isSharedLine = !hasPartial && singers.length > 1;
         }
         return { isGroupLine, groupGradient, groupGlow, hasPartial,
-                 sharedGradient, membersGlow, accent, secondaryAccent, isSharedLine };
+                 sharedGradient, markGradient, membersGlow, accent, secondaryAccent, isSharedLine };
     },
 
     /* Each frame: pick the active CENTRAL line and the active AD-LIB line
@@ -183,7 +189,7 @@ const Lyrics = {
                 clearPaint(el);
                 if(c.hasPartial && hasPairedMarker(text)){
                     el.innerHTML = text.split("**").map((chunk, i) => i % 2
-                        ? `<span style="background:${c.sharedGradient};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(chunk)}</span>`
+                        ? `<span style="background:${c.markGradient};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(chunk)}</span>`
                         : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`
                     ).join("");
                 } else {
