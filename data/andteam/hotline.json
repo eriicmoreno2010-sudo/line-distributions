@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "HOTLINE",
   "video": "videos/hotline.mp4",
-  "duration": 190.52,
+  "duration": 190.5233,
   "members": [
     {
       "name": "K",
@@ -254,12 +254,21 @@
       "english": "Yeah as the heart desires"
     },
     {
-      "start": 82.19,
-      "end": 86.7,
+      "start": 82.29,
+      "end": 85.4,
       "members": [],
-      "original": "何度でも We can make it, 須らくカマす, Like an M.O.M",
-      "romanization": "nando demo we can make it, suberakaraku kamasu, like an m.o.m",
-      "english": "With many tries we can make it, Pull it off with ease by all means, Like an M.O.M"
+      "original": "何度でも We can make it, 須らくカマす",
+      "romanization": "nando demo we can make it, suberakaraku kamasu",
+      "english": "With many tries we can make it, Pull it off with ease by all means"
+    },
+    {
+      "start": 85.55,
+      "end": 86.71,
+      "members": [],
+      "original": "",
+      "romanization": "Like an M.O.M",
+      "english": "",
+      "adlib": false
     },
     {
       "start": 86.96,
