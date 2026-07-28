@@ -163,6 +163,68 @@ ipcMain.handle("save-song", async (_e, args) => {
   return res;
 });
 
+// Photos tool: tell the framer where to READ each photo from — prefer the
+// pristine original in _src/ so re-framing is never done on an already-baked crop.
+ipcMain.handle("photo-sources", async (_e, paths) => {
+  return (paths || []).map(rel => {
+    try{
+      const abs = path.join(ROOT, rel);
+      const srcAbs = path.join(path.dirname(abs), "_src", path.basename(abs));
+      const use = fs.existsSync(srcAbs) ? srcAbs : abs;
+      return "file:///" + use.replace(/\\/g, "/");
+    }catch(e){ return "file:///" + path.join(ROOT, rel).replace(/\\/g, "/"); }
+  });
+});
+
+// Photos tool: write the baked 800×800 crops, bump the cache version, commit+push.
+ipcMain.handle("save-photos", async (_e, args) => {
+  args = args || {};
+  const photos = Array.isArray(args.photos) ? args.photos : [];
+  const res = { ok: true, written: 0, committed: false, pushed: false, gitError: null };
+  const dirs = new Set();
+  try{
+    for(const p of photos){
+      if(!p || !p.path || !p.dataURL) continue;
+      const abs = path.join(ROOT, p.path);
+      const dir = path.dirname(abs), base = path.basename(abs);
+      const srcDir = path.join(dir, "_src");
+      try{ fs.mkdirSync(srcDir, { recursive: true }); }catch(e){}
+      // Back up the pristine original the first time we bake over it.
+      const srcAbs = path.join(srcDir, base);
+      if(!fs.existsSync(srcAbs) && fs.existsSync(abs)){ try{ fs.copyFileSync(abs, srcAbs); }catch(e){} }
+      const b64 = String(p.dataURL).replace(/^data:image\/\w+;base64,/, "");
+      fs.writeFileSync(abs, Buffer.from(b64, "base64"));
+      res.written++; dirs.add(dir);
+    }
+  }catch(e){ return { ok: false, error: e.message }; }
+  if(res.written === 0) return { ok: false, error: "no hay fotos que guardar" };
+
+  // Bump PHOTO_VER so the viewer busts its image cache.
+  let bumped = null;
+  try{
+    const rvPath = path.join(ROOT, "js", "ranking.js");
+    let rv = fs.readFileSync(rvPath, "utf8");
+    const m = rv.match(/const PHOTO_VER\s*=\s*(\d+)\s*;/);
+    if(m){ rv = rv.replace(m[0], "const PHOTO_VER = " + (parseInt(m[1], 10) + 1) + ";"); fs.writeFileSync(rvPath, rv, "utf8"); bumped = "js/ranking.js"; }
+  }catch(e){}
+
+  // Commit + push (rebase-and-retry once if the remote moved on).
+  try{
+    for(const d of dirs){ await git(["add", "--", path.relative(ROOT, d).replace(/\\/g, "/")]); }
+    if(bumped) await git(["add", "--", bumped]);
+    const staged = await git(["diff", "--cached", "--quiet"]);
+    if(staged.code !== 0){
+      const c = await git(["commit", "-m", "Update " + (args.song || "song") + " photos"]);
+      if(c.code === 0) res.committed = true; else res.gitError = c.err || c.out;
+    }
+    let p = await git(["push"]);
+    if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+    if(p.code === 0) res.pushed = true;
+    else res.gitError = (res.gitError ? res.gitError + " | " : "") + (p.err || p.out);
+  }catch(e){ res.gitError = e.message; }
+  return res;
+});
+
 app.whenReady().then(() => {
   if(EXPORT_OUT) exportHeadless().catch(e => { console.error("EXPORT_ERR " + e.message); app.exit(1); });
   else createWindow();

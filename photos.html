@@ -64,7 +64,8 @@
         <button class="sec" id="resetOne">Reset este</button>
       </div>
       <div class="btns">
-        <button id="copy">Copiar valores</button>
+        <button id="save">💾 Guardar y subir</button>
+        <button class="sec" id="copy">Copiar valores</button>
       </div>
     </div>
   </div>
@@ -73,7 +74,7 @@
 
   <div class="hint">
     Ajusta cada miembro (arrastra / zoom / sliders) hasta que quede como quieras.
-    Cuando estén todos, pulsa <b>Copiar valores</b> y pégamelos: yo regenero los recortes del ranking.
+    Cuando estén todos, pulsa <b>💾 Guardar y subir</b>: recorta y sube las fotos solo (a GitHub).
     <kbd>←</kbd>/<kbd>→</kbd> cambian de miembro.
   </div>
 
@@ -82,7 +83,7 @@
 
 <script>
 const P = 320;                 // preview size
-let members = [], idx = 0;
+let members = [], idx = 0, SONG_META = null;
 
 const prev = document.getElementById("prev");
 const pctx = prev.getContext("2d");
@@ -92,8 +93,13 @@ const vx = document.getElementById("vx");
 const rot = document.getElementById("rot");
 
 const SONG_URL = new URLSearchParams(location.search).get("song") || "data/nctdream/moonlight.json";
-fetch(SONG_URL).then(r=>r.json()).then(d=>{
-    const list = d.members.map(m => ({ name:m.name, src: m.image }));
+fetch(SONG_URL).then(r=>r.json()).then(async d=>{
+    SONG_META = d;
+    // m.path = destination (JSON image path); m.src = where to READ from (prefer _src original).
+    const list = d.members.map(m => ({ name:m.name, path: m.image, src: m.image }));
+    if(window.desktop && window.desktop.photoSources){
+        try{ const urls = await window.desktop.photoSources(list.map(m=>m.path)); list.forEach((m,i)=> m.src = urls[i] || m.src); }catch(e){}
+    }
     let loaded = 0;
     list.forEach(m=>{
         m.img = new Image();
@@ -124,6 +130,7 @@ function clampCrop(m){
 function drawInto(ctx, size, m){
     ctx.clearRect(0,0,size,size);
     if(!m.iw) return;
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
     ctx.save();
     if(m.rot){                              // rotate the crop around its centre
         ctx.translate(size/2, size/2);
@@ -215,6 +222,33 @@ document.getElementById("copy").addEventListener("click", ()=>{
     const o=document.getElementById("out"); o.select(); document.execCommand("copy");
     const b=document.getElementById("copy"); const t=b.textContent; b.textContent="¡Copiado!"; setTimeout(()=>b.textContent=t,1200);
 });
+
+/* Bake each framed crop to an 800×800 PNG and upload it (desktop app only). */
+const saveBtn = document.getElementById("save");
+if(!(window.desktop && window.desktop.savePhotos)){
+    if(saveBtn) saveBtn.style.display = "none";   // browser preview: no saving
+} else {
+    saveBtn.addEventListener("click", async ()=>{
+        const photos = [];
+        members.forEach(m=>{
+            if(!m.iw) return;                     // skip members without a photo
+            const c = document.createElement("canvas"); c.width = 800; c.height = 800;
+            drawInto(c.getContext("2d"), 800, m);
+            photos.push({ path: m.path, dataURL: c.toDataURL("image/png") });
+        });
+        if(!photos.length){ return; }
+        const t = saveBtn.textContent; saveBtn.disabled = true; saveBtn.textContent = "⏳ Guardando y subiendo…";
+        let res = null;
+        try{ res = await window.desktop.savePhotos({ photos, song: (SONG_META && SONG_META.song) || "" }); }catch(e){}
+        if(!res || !res.ok)      saveBtn.textContent = "✕ Error al guardar";
+        else if(res.pushed)      saveBtn.textContent = "✓ Subido a GitHub (" + res.written + " fotos)";
+        else if(res.committed)   saveBtn.textContent = "✓ Guardado (no se pudo subir)";
+        else                     saveBtn.textContent = "✓ Guardado en el PC";
+        if(res && res.gitError) console.warn("git:", res.gitError);
+        saveBtn.disabled = false;
+        setTimeout(()=>saveBtn.textContent = t, 3000);
+    });
+}
 </script>
 </body>
 </html>
