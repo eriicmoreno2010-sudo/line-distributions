@@ -1223,7 +1223,21 @@
       "original": "",
       "romanization": "(Tonight, we will make it)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          175.02,
+          175.6
+        ],
+        [
+          175.81,
+          175.98
+        ],
+        [
+          176.14,
+          177.67
+        ]
+      ]
     },
     {
       "start": 178.13,
@@ -1234,7 +1248,17 @@
       "original": "",
       "romanization": "(Kick-off! Come with me)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          178.14,
+          179.25
+        ],
+        [
+          179.43,
+          180.77
+        ]
+      ]
     }
   ]
 }
