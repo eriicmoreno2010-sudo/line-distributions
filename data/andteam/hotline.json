@@ -77,7 +77,13 @@
       ],
       "original": "言葉も時空さえも超えて",
       "romanization": "kotoba mo jikuu sae mo koete",
-      "english": "Exceeding words and spacetimes"
+      "english": "Exceeding words and spacetimes",
+      "voice": [
+        [
+          12.69,
+          15.61
+        ]
+      ]
     },
     {
       "start": 15.67,
@@ -87,7 +93,13 @@
       ],
       "original": "僕らを結んでいるのは",
       "romanization": "bokura o musunde iru no wa",
-      "english": "The string that ties us together"
+      "english": "The string that ties us together",
+      "voice": [
+        [
+          15.85,
+          18.61
+        ]
+      ]
     },
     {
       "start": 18.72,
@@ -97,7 +109,17 @@
       ],
       "original": "誰にも侵せない絆",
       "romanization": "dare ni mo okasenai kizuna",
-      "english": "Creates an indestructible bond"
+      "english": "Creates an indestructible bond",
+      "voice": [
+        [
+          18.81,
+          19.74
+        ],
+        [
+          19.87,
+          22.23
+        ]
+      ]
     },
     {
       "start": 24.94,
@@ -107,7 +129,13 @@
       ],
       "original": "そびえ立った難解な壁が",
       "romanization": "sobietatta nankai na kabe ga",
-      "english": "Even if a challenging wall"
+      "english": "Even if a challenging wall",
+      "voice": [
+        [
+          25,
+          27.82
+        ]
+      ]
     },
     {
       "start": 28.02,
@@ -117,7 +145,13 @@
       ],
       "original": "フィールドを埋め尽くしても",
       "romanization": "fiirudo o umzukushite mo",
-      "english": "Fills up the entire field"
+      "english": "Fills up the entire field",
+      "voice": [
+        [
+          28.02,
+          30.92
+        ]
+      ]
     },
     {
       "start": 31.06,
@@ -127,7 +161,13 @@
       ],
       "original": "君となら突破できるから",
       "romanization": "kimi to nara toppa dekiru kara",
-      "english": "It can be broken down with you"
+      "english": "It can be broken down with you",
+      "voice": [
+        [
+          31.08,
+          34.46
+        ]
+      ]
     },
     {
       "start": 35.79,
@@ -137,7 +177,13 @@
       ],
       "original": "",
       "romanization": "So we're not afraid",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          35.89,
+          37.91
+        ]
+      ]
     },
     {
       "start": 38.07,
@@ -147,7 +193,13 @@
       ],
       "original": "魅せるんだ",
       "romanization": "miserunda",
-      "english": "We'll captivate"
+      "english": "We'll captivate",
+      "voice": [
+        [
+          38.15,
+          39.43
+        ]
+      ]
     },
     {
       "start": 39.38,
@@ -157,7 +209,13 @@
       ],
       "original": "",
       "romanization": "Yeah link-up play",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          39.39,
+          41.07
+        ]
+      ]
     },
     {
       "start": 41.21,
@@ -167,7 +225,13 @@
       ],
       "original": "このまま",
       "romanization": "kono mama",
-      "english": "As who we are"
+      "english": "As who we are",
+      "voice": [
+        [
+          41.09,
+          42.47
+        ]
+      ]
     },
     {
       "start": 42.43,
@@ -177,7 +241,13 @@
       ],
       "original": "",
       "romanization": "We own this game",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          42.47,
+          44.18
+        ]
+      ]
     },
     {
       "start": 44.19,
@@ -187,7 +257,17 @@
       ],
       "original": "気づけば, 何よりも強く今 Trust you",
       "romanization": "kizukeba, nani yori mo tsuyoku ima trust you",
-      "english": "If you notice, Now we are stronger than anything trust you"
+      "english": "If you notice, Now we are stronger than anything trust you",
+      "voice": [
+        [
+          44.28,
+          45.67
+        ],
+        [
+          45.79,
+          48.81
+        ]
+      ]
     },
     {
       "start": 49.49,
@@ -197,7 +277,21 @@
       ],
       "original": "繋いでいたい 叶える日まで",
       "romanization": "tsunaide itai kanaeru hi made",
-      "english": "Want to keep hold until it comes true"
+      "english": "Want to keep hold until it comes true",
+      "voice": [
+        [
+          49.78,
+          50.3
+        ],
+        [
+          50.45,
+          50.86
+        ],
+        [
+          51,
+          52.92
+        ]
+      ]
     },
     {
       "start": 53.03,
@@ -207,7 +301,13 @@
       ],
       "original": "途切れずに目指す One goal",
       "romanization": "togirezu ni mezasu one goal",
-      "english": "A nonstop aim towards one goal"
+      "english": "A nonstop aim towards one goal",
+      "voice": [
+        [
+          53.13,
+          55.95
+        ]
+      ]
     },
     {
       "start": 55.43,
@@ -217,7 +317,21 @@
       ],
       "original": "ほら切り拓いて Making one chance",
       "romanization": "hora kirihiraite making one chance",
-      "english": "Open up a path making one chance"
+      "english": "Open up a path making one chance",
+      "voice": [
+        [
+          55.5,
+          56.38
+        ],
+        [
+          56.49,
+          57
+        ],
+        [
+          57.12,
+          59.08
+        ]
+      ]
     },
     {
       "start": 59.22,
@@ -227,7 +341,13 @@
       ],
       "original": "想い重ね Here we go",
       "romanization": "omoi kasane here we go",
-      "english": "Repeating thoughts here we go"
+      "english": "Repeating thoughts here we go",
+      "voice": [
+        [
+          59.32,
+          62.14
+        ]
+      ]
     },
     {
       "start": 61.76,
@@ -237,7 +357,29 @@
       ],
       "original": "",
       "romanization": "It's a hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          61.72,
+          62.36
+        ],
+        [
+          62.41,
+          62.72
+        ],
+        [
+          62.86,
+          63.38
+        ],
+        [
+          63.49,
+          63.75
+        ],
+        [
+          63.77,
+          64.4
+        ]
+      ]
     },
     {
       "start": 65.14,
@@ -247,7 +389,29 @@
       ],
       "original": "",
       "romanization": "Hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          65.16,
+          65.51
+        ],
+        [
+          65.46,
+          65.88
+        ],
+        [
+          65.9,
+          66.43
+        ],
+        [
+          66.5,
+          66.83
+        ],
+        [
+          66.86,
+          67.44
+        ]
+      ]
     },
     {
       "start": 68.17,
@@ -257,7 +421,21 @@
       ],
       "original": "繋いでいたい 叶える日まで",
       "romanization": "tsunaide itai kanaeru hi made",
-      "english": "Want to keep hold until it comes true"
+      "english": "Want to keep hold until it comes true",
+      "voice": [
+        [
+          68.26,
+          68.72
+        ],
+        [
+          68.87,
+          69.28
+        ],
+        [
+          69.43,
+          71.37
+        ]
+      ]
     },
     {
       "start": 71.62,
@@ -267,7 +445,13 @@
       ],
       "original": "加速していく, **Hotline with you**",
       "romanization": "kasoku shite iku, **hotline with you**",
-      "english": "An accelerating, **Hotline with you**"
+      "english": "An accelerating, **Hotline with you**",
+      "voice": [
+        [
+          71.66,
+          72.93
+        ]
+      ]
     },
     {
       "start": 74.64,
@@ -277,7 +461,13 @@
       ],
       "original": "上がっていく息と鼓動さえもシンクロ",
       "romanization": "agatte iku iki to kodou sae mo shinkuro",
-      "english": "Increasing breaths and heartbeats synchro"
+      "english": "Increasing breaths and heartbeats synchro",
+      "voice": [
+        [
+          74.59,
+          77.5
+        ]
+      ]
     },
     {
       "start": 77.67,
@@ -287,7 +477,13 @@
       ],
       "original": "I got this feeling,特別な Connection",
       "romanization": "i got this feeling, tokubetsu na connection",
-      "english": "I got this feeling, a special connection"
+      "english": "I got this feeling, a special connection",
+      "voice": [
+        [
+          77.68,
+          80.74
+        ]
+      ]
     },
     {
       "start": 80.7,
@@ -297,7 +493,13 @@
       ],
       "original": "Yeah 心のままに",
       "romanization": "yeah kokoro no mama ni",
-      "english": "Yeah as the heart desires"
+      "english": "Yeah as the heart desires",
+      "voice": [
+        [
+          80.65,
+          82.07
+        ]
+      ]
     },
     {
       "start": 82.29,
@@ -307,7 +509,13 @@
       ],
       "original": "何度でも We can make it, 須らくカマす",
       "romanization": "nando demo we can make it, suberakaraku kamasu",
-      "english": "With many tries we can make it, Pull it off with ease by all means"
+      "english": "With many tries we can make it, Pull it off with ease by all means",
+      "voice": [
+        [
+          82.22,
+          85.54
+        ]
+      ]
     },
     {
       "start": 85.55,
@@ -318,7 +526,13 @@
       "original": "",
       "romanization": "Like an M.O.M",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.5,
+          86.71
+        ]
+      ]
     },
     {
       "start": 86.96,
@@ -328,7 +542,13 @@
       ],
       "original": "互いの背を押すように",
       "romanization": "tagai no se o osu you ni",
-      "english": "As if pushing each other's backs"
+      "english": "As if pushing each other's backs",
+      "voice": [
+        [
+          86.81,
+          89.72
+        ]
+      ]
     },
     {
       "start": 89.91,
@@ -338,7 +558,17 @@
       ],
       "original": "自然と走り出すとき",
       "romanization": "shizen to hashiridasu toki",
-      "english": "When starting a natural sprint"
+      "english": "When starting a natural sprint",
+      "voice": [
+        [
+          89.92,
+          90.81
+        ],
+        [
+          90.96,
+          92.75
+        ]
+      ]
     },
     {
       "start": 92.97,
@@ -348,7 +578,13 @@
       ],
       "original": "無限の力を感じた",
       "romanization": "mugen no chikara o kanjita",
-      "english": "I felt an infinite amount of strength"
+      "english": "I felt an infinite amount of strength",
+      "voice": [
+        [
+          92.97,
+          96.58
+        ]
+      ]
     },
     {
       "start": 97.7,
@@ -358,7 +594,13 @@
       ],
       "original": "",
       "romanization": "So we're not afraid",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          97.72,
+          99.82
+        ]
+      ]
     },
     {
       "start": 99.94,
@@ -368,7 +610,13 @@
       ],
       "original": "魅せるんだ",
       "romanization": "miserunda",
-      "english": "We'll captivate"
+      "english": "We'll captivate",
+      "voice": [
+        [
+          99.98,
+          101.31
+        ]
+      ]
     },
     {
       "start": 101.11,
@@ -378,7 +626,13 @@
       ],
       "original": "",
       "romanization": "Yeah link-up play",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          101.28,
+          103
+        ]
+      ]
     },
     {
       "start": 103.11,
@@ -388,7 +642,13 @@
       ],
       "original": "このまま",
       "romanization": "kono mama",
-      "english": "As who we are"
+      "english": "As who we are",
+      "voice": [
+        [
+          102.97,
+          104.38
+        ]
+      ]
     },
     {
       "start": 104.26,
@@ -398,7 +658,13 @@
       ],
       "original": "",
       "romanization": "We own this game",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          104.4,
+          106.15
+        ]
+      ]
     },
     {
       "start": 106.08,
@@ -408,7 +674,17 @@
       ],
       "original": "身体が, 考えるより先に Move on",
       "romanization": "karada ga, kangaeru yori saki ni move on",
-      "english": "Our bodies, Without a single thought we will move on"
+      "english": "Our bodies, Without a single thought we will move on",
+      "voice": [
+        [
+          106.11,
+          107.52
+        ],
+        [
+          107.64,
+          110.66
+        ]
+      ]
     },
     {
       "start": 111.59,
@@ -418,7 +694,17 @@
       ],
       "original": "繋いでいたい 叶える日まで",
       "romanization": "tsunaide itai kanaeru hi made",
-      "english": "Want to keep hold until it comes true"
+      "english": "Want to keep hold until it comes true",
+      "voice": [
+        [
+          111.63,
+          112.73
+        ],
+        [
+          112.87,
+          114.73
+        ]
+      ]
     },
     {
       "start": 114.96,
@@ -428,7 +714,17 @@
       ],
       "original": "研ぎ澄まして Ready, set, go",
       "romanization": "togisumashite ready, set, go",
-      "english": "Sharpen our skills and ready, set, go"
+      "english": "Sharpen our skills and ready, set, go",
+      "voice": [
+        [
+          115.05,
+          116.86
+        ],
+        [
+          116.99,
+          117.85
+        ]
+      ]
     },
     {
       "start": 117.34,
@@ -438,7 +734,21 @@
       ],
       "original": "ただ突きつけて This is our way",
       "romanization": "tada tsukitsukete this is our way",
-      "english": "Just proceeding forward this is our way"
+      "english": "Just proceeding forward this is our way",
+      "voice": [
+        [
+          117.32,
+          118.25
+        ],
+        [
+          118.4,
+          118.83
+        ],
+        [
+          118.96,
+          120.9
+        ]
+      ]
     },
     {
       "start": 121.09,
@@ -448,7 +758,13 @@
       ],
       "original": "想い重ね Here we go",
       "romanization": "omoi kasane here we go",
-      "english": "Repeating thoughts here we go"
+      "english": "Repeating thoughts here we go",
+      "voice": [
+        [
+          121.21,
+          124
+        ]
+      ]
     },
     {
       "start": 123.57,
@@ -458,7 +774,29 @@
       ],
       "original": "",
       "romanization": "It's a hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          123.56,
+          124.24
+        ],
+        [
+          124.37,
+          124.64
+        ],
+        [
+          124.69,
+          125.22
+        ],
+        [
+          125.26,
+          125.61
+        ],
+        [
+          125.58,
+          126.2
+        ]
+      ]
     },
     {
       "start": 126.95,
@@ -468,7 +806,29 @@
       ],
       "original": "",
       "romanization": "Hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          127.04,
+          127.4
+        ],
+        [
+          127.37,
+          127.74
+        ],
+        [
+          127.79,
+          128.32
+        ],
+        [
+          128.38,
+          128.76
+        ],
+        [
+          128.7,
+          129.29
+        ]
+      ]
     },
     {
       "start": 130.04,
@@ -478,7 +838,21 @@
       ],
       "original": "繋いでいたい 叶える日まで",
       "romanization": "tsunaide itai kanaeru hi made",
-      "english": "To keep hold until it comes true"
+      "english": "To keep hold until it comes true",
+      "voice": [
+        [
+          130.07,
+          130.56
+        ],
+        [
+          130.72,
+          131.18
+        ],
+        [
+          131.31,
+          133.21
+        ]
+      ]
     },
     {
       "start": 133.5,
@@ -488,7 +862,13 @@
       ],
       "original": "世界穿つ **Hotline with you**",
       "romanization": "sekai ugatsu **hotline with you**",
-      "english": "Pierce the world **Hotline with you**"
+      "english": "Pierce the world **Hotline with you**",
+      "voice": [
+        [
+          133.52,
+          134.67
+        ]
+      ]
     },
     {
       "start": 136.28,
@@ -508,7 +888,13 @@
       ],
       "original": "You know we are one, いつでも On your side",
       "romanization": "you know we are one, itsu demo on your side",
-      "english": "You know we are one, Whenever on your side"
+      "english": "You know we are one, Whenever on your side",
+      "voice": [
+        [
+          138.9,
+          142.49
+        ]
+      ]
     },
     {
       "start": 142.37,
@@ -528,7 +914,17 @@
       ],
       "original": "逆境も蹴り飛ばせ HOTLINE",
       "romanization": "gyakkyou mo keritobase hotline",
-      "english": "Kick the misfortunes away HOTLINE"
+      "english": "Kick the misfortunes away HOTLINE",
+      "voice": [
+        [
+          145.03,
+          146.52
+        ],
+        [
+          146.68,
+          148.99
+        ]
+      ]
     },
     {
       "start": 150.04,
@@ -538,7 +934,21 @@
       ],
       "original": "繋いでいたい 叶える日まで",
       "romanization": "tsunaide itai kanaeru hi made",
-      "english": "Want to keep hold until it comes true"
+      "english": "Want to keep hold until it comes true",
+      "voice": [
+        [
+          150.09,
+          150.6
+        ],
+        [
+          150.76,
+          151.17
+        ],
+        [
+          151.29,
+          153.26
+        ]
+      ]
     },
     {
       "start": 153.38,
@@ -548,7 +958,13 @@
       ],
       "original": "途切れずに目指す One goal",
       "romanization": "togirezu ni mezasu one goal",
-      "english": "A nonstop aim towards one goal"
+      "english": "A nonstop aim towards one goal",
+      "voice": [
+        [
+          153.53,
+          156.23
+        ]
+      ]
     },
     {
       "start": 155.93,
@@ -558,7 +974,21 @@
       ],
       "original": "ほら切り拓いて Making one chance",
       "romanization": "hora kirihiraite making one chance",
-      "english": "Open up a path making one chance"
+      "english": "Open up a path making one chance",
+      "voice": [
+        [
+          155.76,
+          156.7
+        ],
+        [
+          156.85,
+          157.31
+        ],
+        [
+          157.43,
+          159.4
+        ]
+      ]
     },
     {
       "start": 159.6,
@@ -568,7 +998,13 @@
       ],
       "original": "想い乗せて Take a shot",
       "romanization": "omoi nosete take a shot",
-      "english": "Lay your thoughts and take a shot"
+      "english": "Lay your thoughts and take a shot",
+      "voice": [
+        [
+          159.66,
+          162
+        ]
+      ]
     },
     {
       "start": 162.03,
@@ -578,7 +1014,29 @@
       ],
       "original": "",
       "romanization": "It's a hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          162.01,
+          162.65
+        ],
+        [
+          162.76,
+          163.08
+        ],
+        [
+          163.14,
+          163.72
+        ],
+        [
+          163.79,
+          164.09
+        ],
+        [
+          164.07,
+          164.65
+        ]
+      ]
     },
     {
       "start": 165.43,
@@ -588,7 +1046,29 @@
       ],
       "original": "",
       "romanization": "Hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          165.44,
+          165.85
+        ],
+        [
+          165.8,
+          166.18
+        ],
+        [
+          166.18,
+          166.74
+        ],
+        [
+          166.84,
+          167.16
+        ],
+        [
+          167.15,
+          167.73
+        ]
+      ]
     },
     {
       "start": 168.47,
@@ -598,7 +1078,21 @@
       ],
       "original": "繋いでいたい 未踏の地まで",
       "romanization": "tsunaide itai mitou no chi made",
-      "english": "Want to keep hold till an untrodden path"
+      "english": "Want to keep hold till an untrodden path",
+      "voice": [
+        [
+          168.52,
+          169.07
+        ],
+        [
+          169.23,
+          169.63
+        ],
+        [
+          169.79,
+          171.7
+        ]
+      ]
     },
     {
       "start": 171.96,
@@ -608,7 +1102,13 @@
       ],
       "original": "辿り着ける **Hotline with you**",
       "romanization": "tadoritsukeru **hotline with you**",
-      "english": "We can get there **Hotline with you**"
+      "english": "We can get there **Hotline with you**",
+      "voice": [
+        [
+          172,
+          173.18
+        ]
+      ]
     },
     {
       "start": 174.67,
@@ -618,7 +1118,29 @@
       ],
       "original": "",
       "romanization": "Hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          174.66,
+          175.07
+        ],
+        [
+          175.02,
+          175.48
+        ],
+        [
+          175.45,
+          176.01
+        ],
+        [
+          176.06,
+          176.39
+        ],
+        [
+          176.36,
+          176.98
+        ]
+      ]
     },
     {
       "start": 177.77,
@@ -628,7 +1150,29 @@
       ],
       "original": "",
       "romanization": "Hot, **HOTLINE!**",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          177.81,
+          178.13
+        ],
+        [
+          178.09,
+          178.49
+        ],
+        [
+          178.57,
+          179.07
+        ],
+        [
+          179.18,
+          179.51
+        ],
+        [
+          179.5,
+          180.08
+        ]
+      ]
     },
     {
       "start": 180.88,
@@ -638,7 +1182,21 @@
       ],
       "original": "繋いでいたい 叶える日まで",
       "romanization": "tsunaide itai kanaeru hi made",
-      "english": "Want to keep hold until it comes true"
+      "english": "Want to keep hold until it comes true",
+      "voice": [
+        [
+          180.84,
+          181.37
+        ],
+        [
+          181.52,
+          181.92
+        ],
+        [
+          182.08,
+          183.95
+        ]
+      ]
     },
     {
       "start": 184.22,
@@ -648,7 +1206,13 @@
       ],
       "original": "想い重ね **Hotline with you**",
       "romanization": "omoi kasane **hotline with you**",
-      "english": "Repeating thoughts **Hotline with you**"
+      "english": "Repeating thoughts **Hotline with you**",
+      "voice": [
+        [
+          184.25,
+          185.47
+        ]
+      ]
     },
     {
       "start": 175.13,
