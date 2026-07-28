@@ -75,6 +75,7 @@
 </div>
 <div id="tools">
   <button id="save">💾 Guardar PNG</button>
+  <button id="reroll">🎲 Otro momento</button>
   <span class="lbl">Portada:</span>
   <span id="covers"></span>
 </div>
@@ -92,10 +93,11 @@ function fit(){
 }
 window.addEventListener("resize", fit); fit();
 
-// per-member sung seconds from the lyrics (voice segments or members x duration)
-function totals(song){
+// per-member sung seconds ACCUMULATED UP TO time T (a mid-song snapshot, so the
+// thumbnail doesn't spoil the final ranking).
+function totalsAt(song, T){
   const t = {}; (song.members||[]).forEach(m => t[m.name]=0);
-  const add = (n,s,e)=>{ if(t[n]!=null && e>s) t[n]+=e-s; };
+  const add = (n,s,e)=>{ if(t[n]==null) return; if(T>=e){ if(e>s) t[n]+=e-s; } else if(T>s){ t[n]+=T-s; } };
   (song.lyrics||[]).forEach(l=>{
     if(Array.isArray(l.voice)){
       l.voice.forEach(seg=>{ const who = seg[2] ? (Array.isArray(seg[2])?seg[2]:[seg[2]]) : l.members; (who||[]).forEach(n=>add(n,seg[0],seg[1])); });
@@ -119,11 +121,18 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
   const len = (song.song || "").length;
   if(len > 10) songEl.style.fontSize = Math.max(52, 104 - (len - 10) * 5) + "px";
 
-  const t = totals(song);
-  const ranked = [...(song.members||[])].sort((a,b)=> (t[b.name]||0)-(t[a.name]||0));
-  const max = Math.max(1, ...Object.values(t));
+  // snapshot moment: fixed via ?t= (so preview and saved PNG match), else a
+  // random point 30%–72% into the song (mid-song, never the ending).
+  const dur = song.duration || 180;
+  const tp = P.get("t");
+  const T = (tp!=null && tp!=="") ? parseFloat(tp) : +(dur * (0.30 + Math.random()*0.42)).toFixed(2);
+  window._T = T;
 
-  // big cover = chosen member, else the top-ranked one
+  const t = totalsAt(song, T);
+  const ranked = [...(song.members||[])].sort((a,b)=> (t[b.name]||0)-(t[a.name]||0)).slice(0, 5);  // top 5 at that moment
+  const max = Math.max(1, ...ranked.map(m=>t[m.name]||0));
+
+  // big cover = chosen member, else whoever leads at that moment
   const coverM = (COVER && song.members.find(m=>m.name.toLowerCase()===COVER.toLowerCase())) || ranked[0] || song.members[0];
   if(coverM){
     const img = document.getElementById("coverimg");
@@ -152,9 +161,14 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     document.getElementById("save").onclick = async (e) => {
       const b = e.target; const t0 = b.textContent; b.textContent = "⏳ Guardando…"; b.disabled = true;
       let res = null;
-      try{ res = await window.desktop.exportThumb({ song: SONG_URL, cover: (coverM && coverM.name) || "" }); }catch(err){}
+      try{ res = await window.desktop.exportThumb({ song: SONG_URL, cover: (coverM && coverM.name) || "", t: T }); }catch(err){}
       b.textContent = (res && res.ok) ? "✓ Guardada" : (res && res.canceled ? t0 : "✕ Error");
       b.disabled = false; setTimeout(()=>b.textContent = t0, 2200);
+    };
+    document.getElementById("reroll").onclick = () => {
+      const u = new URL(location.href);
+      u.searchParams.set("t", (dur * (0.30 + Math.random()*0.42)).toFixed(2));
+      location.href = u.toString();
     };
     const cov = document.getElementById("covers");
     (song.members||[]).forEach(m => {
