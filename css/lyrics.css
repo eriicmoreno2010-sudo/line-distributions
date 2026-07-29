@@ -106,13 +106,13 @@ Version: 3.0 — Lyrics
 #adlibs-section{
     position:relative;
     min-height:0;
-    padding:22px 20px;
+    padding:28px 20px;            /* match the central panel's vertical padding */
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    gap:12px;
+    gap:0;                        /* spacing comes from the members' margins (like central) */
     font-size:22px;
     font-weight:700;
     color:var(--accent);
@@ -192,33 +192,48 @@ Version: 3.0 — Lyrics
     color:transparent !important;
 }
 
+/* Mirror the CENTRAL panel's rhythm so both panels line up row-for-row:
+   the name reserves the same block (min-height + margin-bottom) and each lyric
+   line has the same min-height/line-height/top-margin as #original etc. */
 .adlib-member{
     font-size:26px;
     font-weight:800;
     letter-spacing:2px;
     text-transform:uppercase;
-    margin-top:-10px;   /* moved off transform so the fade can drive translateY */
+    min-height:34px;             /* == #current-member */
+    margin:0 0 26px;             /* == #current-member's margin-bottom */
 }
 
-/* Same size/weight as the main lyric lines while singing (which are 800) */
+/* Same size/weight/metrics as the main lyric lines while singing (which are 800) */
 .adlib-original{
     font-size:30px;
     font-weight:800;
+    min-height:42px;
+    line-height:42px;
 }
 
 .adlib-roman{
     font-size:30px;
     font-weight:800;
+    min-height:42px;
+    line-height:42px;
+    margin-top:12px;
 }
 
 .adlib-english{
     font-size:30px;
     font-weight:800;
+    min-height:42px;
+    line-height:42px;
+    margin-top:12px;
 }
 
 .adlib-text{
     font-size:30px;
     font-weight:800;
+    min-height:42px;
+    line-height:42px;
+    margin-top:12px;
 }
 
 /* ========================= */

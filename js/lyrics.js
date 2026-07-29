@@ -344,14 +344,16 @@ const Lyrics = {
         setTimeout(() => {
             e.adlibs.replaceChildren();
             const parts = [];
-            const addPart = (cls, text) => {
-                if(!text) return;
+            const addPart = (cls, text, always) => {
+                if(!text && !always) return;
                 const el2 = document.createElement("div");
                 el2.className = cls + " fade-out";
-                el2.textContent = text;
+                el2.textContent = text || "";
                 parts.push(el2);
             };
-            addPart("adlib-member",   joinNames(line.members));
+            // the name is ALWAYS added (even empty) so it reserves the same block
+            // as the central panel's #current-member → both panels line up.
+            addPart("adlib-member",   joinNames(line.members), true);
             addPart("adlib-original", line.original);
             addPart("adlib-roman",    line.romanization);
             addPart("adlib-english",  line.english);
@@ -393,16 +395,16 @@ const Lyrics = {
             lines.forEach((line, gi) => {
                 const c = this.colorsFor(line);
                 accents.push(c.accent);
-                const add = (cls, text) => {
-                    if(!text) return;
-                    const d = document.createElement("div"); d.className = cls + " fade-out"; d.textContent = text;
+                const add = (cls, text, always) => {
+                    if(!text && !always) return;
+                    const d = document.createElement("div"); d.className = cls + " fade-out"; d.textContent = text || "";
                     if(cls === "adlib-member" && gi > 0) d.style.marginTop = "20px";   // gap before the 2nd ad-lib
                     if(c.isGroupLine)        clip(d, c.groupGradient);
                     else if(c.isSharedLine)  clip(d, c.sharedGradient);
                     else                     d.style.color = c.accent;
                     parts.push(d);
                 };
-                add("adlib-member",   joinNames(line.members));
+                add("adlib-member",   joinNames(line.members), true);
                 add("adlib-original", line.original);
                 add("adlib-roman",    line.romanization);
                 add("adlib-english",  line.english);
