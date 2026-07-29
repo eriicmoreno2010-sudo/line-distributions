@@ -36,8 +36,10 @@ function fitField(el){
     el.style.fontSize = "";                 // back to the CSS base
     let s = parseFloat(getComputedStyle(el)?.fontSize) || 30;
     let guard = 0;
-    // one line ≈ 42px (min-height); a wrapped line is ~84px -> shrink past 52px
-    while(el.offsetHeight > 52 && s > 16 && guard++ < 40){ s -= 1; el.style.fontSize = s + "px"; }
+    // one line ≈ 42px (min-height); a wrapped line is ~84px -> shrink past 52px.
+    // Floor at 22px so it never gets tiny/illegible — if it still doesn't fit it
+    // just wraps to two lines (readable) instead of shrinking into nothing.
+    while(el.offsetHeight > 52 && s > 22 && guard++ < 40){ s -= 1; el.style.fontSize = s + "px"; }
 }
 
 /* Shrink an ad-lib line's font until it fits within maxW on a single row.
@@ -51,13 +53,17 @@ function fitOneLine(el, maxW){
     el.style.fontSize = "";                 // back to the CSS base
     let s = parseFloat(getComputedStyle(el)?.fontSize) || 30;
     let guard = 0;
-    while(el.scrollWidth > maxW && s > 14 && guard++ < 100){ s -= 1; el.style.fontSize = s + "px"; }
+    // Floor at 22px so it stays legible. If it still overflows at the floor,
+    // let it wrap (readable two lines) instead of clipping a tiny single line.
+    while(el.scrollWidth > maxW && s > 22 && guard++ < 100){ s -= 1; el.style.fontSize = s + "px"; }
+    if(el.scrollWidth > maxW) el.style.whiteSpace = "";   // give up on one line -> wrap
 }
 
 const Lyrics = {
 
     centralIndex: -1,
     adlibIndex: -1,
+    _adlibKey: "",              // which ad-lib line(s) are currently shown
     lastCentralMembers: null,   // for name persistence across same-singer lines
 
     els(){
@@ -142,12 +148,12 @@ const Lyrics = {
         if(!SONG || !SONG.lyrics) return;
         const lyrics = SONG.lyrics;
 
-        let ci = -1, ai = -1;
+        let ci = -1; const ais = [];
         for(let i = 0; i < lyrics.length; i++){
             const l = lyrics[i];
             if(currentTime >= l.start && currentTime < l.end){
-                if(isAdlibLine(l)){ if(ai === -1) ai = i; }
-                else            { if(ci === -1) ci = i; }
+                if(isAdlibLine(l)) ais.push(i);       // ALL active ad-libs (can be 2+)
+                else if(ci === -1) ci = i;
             }
         }
 
@@ -176,9 +182,14 @@ const Lyrics = {
             }
         }
 
-        // AD-LIB — clears fully as soon as nothing is active (original behaviour)
-        if(ai === -1) this.clearAdlib();
-        else if(ai !== this.adlibIndex){ this.adlibIndex = ai; this.showAdlib(lyrics[ai]); }
+        // AD-LIB — show every active ad-lib (1 → single panel, 2+ → stacked).
+        const akey = ais.join(",");
+        if(ais.length === 0){ if(this._adlibKey) this.clearAdlib(); }
+        else if(akey !== this._adlibKey){
+            this._adlibKey = akey;
+            if(ais.length === 1) this.showAdlib(lyrics[ais[0]]);
+            else this.showAdlibs(ais.map(i => lyrics[i]));
+        }
     },
 
     /* ---------------- CENTRAL panel ---------------- */
@@ -365,8 +376,55 @@ const Lyrics = {
         }, 100);
     },
 
+    /* Two or more ad-libs at once: render them stacked, each in its own colour,
+       with the panel halo blended from the two sides. */
+    showAdlibs(lines){
+        const e = this.els();
+        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
+
+        setTimeout(() => {
+            e.adlibs.replaceChildren();
+            e.adlibs.classList.remove("multi-member", "group");   // colour each part inline instead
+            const clip = (el, grad) => {
+                el.style.background = grad; el.style.webkitBackgroundClip = "text";
+                el.style.backgroundClip = "text"; el.style.color = "transparent";
+            };
+            const parts = [], accents = [];
+            lines.forEach((line, gi) => {
+                const c = this.colorsFor(line);
+                accents.push(c.accent);
+                const add = (cls, text) => {
+                    if(!text) return;
+                    const d = document.createElement("div"); d.className = cls + " fade-out"; d.textContent = text;
+                    if(cls === "adlib-member" && gi > 0) d.style.marginTop = "20px";   // gap before the 2nd ad-lib
+                    if(c.isGroupLine)        clip(d, c.groupGradient);
+                    else if(c.isSharedLine)  clip(d, c.sharedGradient);
+                    else                     d.style.color = c.accent;
+                    parts.push(d);
+                };
+                add("adlib-member",   joinNames(line.members));
+                add("adlib-original", line.original);
+                add("adlib-roman",    line.romanization);
+                add("adlib-english",  line.english);
+                add("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
+            });
+            e.adlibs.append(...parts);
+            // halo: base ::after blends --accent (left) + --accent-secondary (right)
+            e.adlibs.style.setProperty("--accent", accents[0] || "#7c5cff");
+            e.adlibs.style.setProperty("--accent-secondary", accents[1] || accents[0] || "#7c5cff");
+            e.adlibs.classList.add("singing");
+
+            requestAnimationFrame(() => {
+                const maxW = e.adlibs.clientWidth - 40;
+                parts.forEach(el => fitOneLine(el, maxW));
+                parts.forEach(el => { el.classList.remove("fade-out"); el.classList.add("fade-in"); });
+            });
+        }, 100);
+    },
+
     clearAdlib(){
-        if(this.adlibIndex === -1) return;
+        if(!this._adlibKey) return;
+        this._adlibKey = "";
         this.adlibIndex = -1;
 
         const e = this.els();
