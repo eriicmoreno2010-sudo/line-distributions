@@ -40,6 +40,20 @@ function fitField(el){
     while(el.offsetHeight > 52 && s > 16 && guard++ < 40){ s -= 1; el.style.fontSize = s + "px"; }
 }
 
+/* Shrink an ad-lib line's font until it fits within maxW on a single row.
+   (Ad-lib lines are centred/hug-content, so we fit by WIDTH, not height.)
+   Skipped for empty text or text with explicit "\n" line breaks. */
+function fitOneLine(el, maxW){
+    if(!el) return;
+    const txt = (el.textContent || "").trim();
+    if(!txt || txt.includes("\n") || !maxW) return;
+    el.style.whiteSpace = "nowrap";
+    el.style.fontSize = "";                 // back to the CSS base
+    let s = parseFloat(getComputedStyle(el)?.fontSize) || 30;
+    let guard = 0;
+    while(el.scrollWidth > maxW && s > 14 && guard++ < 100){ s -= 1; el.style.fontSize = s + "px"; }
+}
+
 const Lyrics = {
 
     centralIndex: -1,
@@ -344,6 +358,8 @@ const Lyrics = {
             e.adlibs.classList.toggle("group", c.isGroupLine);
 
             requestAnimationFrame(() => {
+                const maxW = e.adlibs.clientWidth - 40;   // minus the panel's h-padding
+                parts.forEach(el2 => fitOneLine(el2, maxW));
                 parts.forEach(el2 => { el2.classList.remove("fade-out"); el2.classList.add("fade-in"); });
             });
         }, 100);
