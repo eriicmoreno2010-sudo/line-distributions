@@ -16,7 +16,7 @@
 
   /* LEFT — big cover photo */
   #cover{ position:absolute; inset:0 42% 0 0; background:#111 center/cover no-repeat; }
-  #cover img{ width:100%; height:100%; object-fit:cover; object-position:center 22%; display:block; }
+  #cover img{ width:100%; height:100%; object-fit:cover; object-position:center 42%; display:block; }
   /* dark gradient bottom-left so the title reads on any photo */
   #shade{ position:absolute; inset:0 42% 0 0; background:
       linear-gradient(180deg, rgba(0,0,0,.10) 45%, rgba(0,0,0,.82) 100%),
@@ -140,13 +140,13 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     const img = document.getElementById("coverimg");
     const folder = coverM.image.slice(0, coverM.image.lastIndexOf("/"));   // images/<group>/<song>
     // Cover source priority:
-    //   1) a dedicated high-res cover in the folder (_cover.png/.jpg) — best when
-    //      the member photos aren't high enough resolution for a big cover;
-    //   2) the member's original in _src/;  3) the framed member photo.
-    // (If you pick a member with the "Portada" buttons, that member wins.)
+    //   1) a dedicated high-res cover in the folder (_cover.png/.jpg);
+    //   2) the SAME framed face photo the ranking uses (m.image) — it's already
+    //      cropped to the face and 800px is sharp at the ~740px cover size;
+    //   3) the member's full original in _src/ (last resort).
     const chain = (COVER
-        ? [ srcPhoto(coverM.image), coverM.image ]
-        : [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ])
+        ? [ coverM.image, srcPhoto(coverM.image) ]
+        : [ folder+"/_cover.png", folder+"/_cover.jpg", coverM.image, srcPhoto(coverM.image) ])
       .map(u => u + ver);
     let ci = 0;
     const tryNext = () => { if(ci < chain.length){ img.onerror = tryNext; img.src = chain[ci++]; } };
