@@ -1,0 +1,58 @@
+{
+  "group": "NCT DREAM",
+  "song": "Smoothie",
+  "video": "videos/smoothie.mp4",
+  "duration": 188.08,
+  "members": [
+    {
+      "name": "MARK",
+      "image": "images/nctdream/smoothie/mark.png",
+      "color": "#b353cd",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/nctdream/smoothie/renjun.png",
+      "color": "#ab842f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JENO",
+      "image": "images/nctdream/smoothie/jeno.png",
+      "color": "#cb0c0c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nctdream/smoothie/haechan.png",
+      "color": "#0089b6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/nctdream/smoothie/jaemin.png",
+      "color": "#1bcf72",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/nctdream/smoothie/chenle.png",
+      "color": "#008206",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/nctdream/smoothie/jisung.png",
+      "color": "#df068c",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": []
+}
