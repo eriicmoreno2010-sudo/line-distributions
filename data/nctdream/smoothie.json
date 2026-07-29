@@ -772,13 +772,19 @@
       ]
     },
     {
-      "start": 6.19,
-      "end": 6.68,
+      "start": 6.22,
+      "end": 6.72,
       "members": [],
       "original": "",
       "romanization": "ha ha",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          6.19,
+          6.68
+        ]
+      ]
     },
     {
       "start": 28.6,
@@ -787,7 +793,13 @@
       "original": "",
       "romanization": "Hey",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          28.59,
+          28.89
+        ]
+      ]
     },
     {
       "start": 29.63,
@@ -796,7 +808,13 @@
       "original": "",
       "romanization": "Hey",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          29.69,
+          30.01
+        ]
+      ]
     },
     {
       "start": 31.26,
@@ -805,7 +823,13 @@
       "original": "",
       "romanization": "Brrah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          31.26,
+          32.13
+        ]
+      ]
     },
     {
       "start": 109.51,
@@ -814,7 +838,13 @@
       "original": "거칠게 Mess up yeah",
       "romanization": "geochilge Mess up yeah",
       "english": "Rough that Mess up yeah",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          109.56,
+          112.93
+        ]
+      ]
     },
     {
       "start": 116.09,
@@ -823,7 +853,13 @@
       "original": "끈적하게 날 뒤덮어",
       "romanization": "kkeunjokage nal dwideop",
       "english": "Felt sticky on me",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          116.07,
+          117.95
+        ]
+      ]
     },
     {
       "start": 135.7,
@@ -832,7 +868,13 @@
       "original": "가볍게 씹어 삼켜",
       "romanization": "gabyeopge ssibeo samkyeo",
       "english": "Chew a bit 'n' swallow it",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          135.73,
+          136.8
+        ]
+      ]
     },
     {
       "start": 136.81,
@@ -841,7 +883,13 @@
       "original": "",
       "romanization": "Smoothie",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          136.81,
+          137.59
+        ]
+      ]
     },
     {
       "start": 153.47,
@@ -850,7 +898,13 @@
       "original": "흘러간 뒤",
       "romanization": "heulleogan dwi",
       "english": "After it flows",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          153.42,
+          154.46
+        ]
+      ]
     },
     {
       "start": 110.49,
@@ -1179,7 +1233,13 @@
       "original": "",
       "romanization": "Sip it down yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          162.42,
+          165.13
+        ]
+      ]
     },
     {
       "start": 163.98,
@@ -1204,7 +1264,17 @@
       "original": "",
       "romanization": "Pour it like Smoothie yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          166.8,
+          167.96
+        ],
+        [
+          168.2,
+          169.53
+        ]
+      ]
     },
     {
       "start": 168.45,
@@ -1221,7 +1291,13 @@
       "original": "Dirty taste 들이켜",
       "romanization": "Dirty taste deurikyeo",
       "english": "Dirty taste drink it up",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          168.52,
+          169.53
+        ]
+      ]
     },
     {
       "start": 169.56,
@@ -1230,7 +1306,13 @@
       "original": "",
       "romanization": "Smoothie",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          169.52,
+          170.71
+        ]
+      ]
     },
     {
       "start": 169.52,
@@ -1255,7 +1337,13 @@
       "original": "가볍게 씹어 삼켜 Smoothie",
       "romanization": "gabyeopge ssibeo samkyeo Smoothie",
       "english": "Chew a bit 'n' swallow it Smoothie",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          172.85,
+          174.36
+        ]
+      ]
     },
     {
       "start": 175.82,
@@ -1264,7 +1352,13 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          175.81,
+          176.33
+        ]
+      ]
     },
     {
       "start": 173.89,
