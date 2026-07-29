@@ -138,9 +138,19 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
   const coverM = (COVER && song.members.find(m=>m.name.toLowerCase()===COVER.toLowerCase())) || ranked[0] || song.members[0];
   if(coverM){
     const img = document.getElementById("coverimg");
-    const orig = srcPhoto(coverM.image);
-    img.onerror = () => { img.onerror=null; img.src = coverM.image + ver; };   // fall back to framed
-    img.src = orig + ver;
+    const folder = coverM.image.slice(0, coverM.image.lastIndexOf("/"));   // images/<group>/<song>
+    // Cover source priority:
+    //   1) a dedicated high-res cover in the folder (_cover.png/.jpg) — best when
+    //      the member photos aren't high enough resolution for a big cover;
+    //   2) the member's original in _src/;  3) the framed member photo.
+    // (If you pick a member with the "Portada" buttons, that member wins.)
+    const chain = (COVER
+        ? [ srcPhoto(coverM.image), coverM.image ]
+        : [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ])
+      .map(u => u + ver);
+    let ci = 0;
+    const tryNext = () => { if(ci < chain.length){ img.onerror = tryNext; img.src = chain[ci++]; } };
+    tryNext();
     document.getElementById("tag").style.setProperty("--accent", coverM.color);
     document.documentElement.style.setProperty("--accent", coverM.color);
   }
