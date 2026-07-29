@@ -769,7 +769,13 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          9.94,
+          11.16
+        ]
+      ]
     },
     {
       "start": 22.7,
@@ -780,7 +786,13 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          22.72,
+          22.91
+        ]
+      ]
     },
     {
       "start": 99.61,
@@ -791,7 +803,13 @@
       "original": "",
       "romanization": "I will dive into you",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          99.66,
+          101.91
+        ]
+      ]
     },
     {
       "start": 103.13,
@@ -802,7 +820,13 @@
       "original": "",
       "romanization": "Woo hoo",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          103.14,
+          104.27
+        ]
+      ]
     },
     {
       "start": 104.72,
@@ -813,7 +837,13 @@
       "original": "",
       "romanization": "Oh oh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          104.71,
+          105.91
+        ]
+      ]
     },
     {
       "start": 107.72,
@@ -824,7 +854,25 @@
       "original": "",
       "romanization": "Into you into you into you yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          107.71,
+          108.5
+        ],
+        [
+          108.61,
+          109.29
+        ],
+        [
+          109.45,
+          110.14
+        ],
+        [
+          110.33,
+          110.82
+        ]
+      ]
     },
     {
       "start": 116.06,
@@ -835,7 +883,13 @@
       "original": "눈앞이 파랗게",
       "romanization": "nunapi parake",
       "english": "To the blue sea in front of my eyes",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          116.09,
+          117.77
+        ]
+      ]
     },
     {
       "start": 119.9,
@@ -846,7 +900,13 @@
       "original": "Oh 난 꿈을 꿔",
       "romanization": "oh nan kkumeul kkwo",
       "english": "Oh into the dream I have",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          119.95,
+          121.46
+        ]
+      ]
     },
     {
       "start": 130.03,
@@ -857,7 +917,13 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          130.06,
+          130.24
+        ]
+      ]
     },
     {
       "start": 133.15,
@@ -868,7 +934,13 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          133.21,
+          133.39
+        ]
+      ]
     },
     {
       "start": 136.32,
@@ -879,7 +951,13 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          136.39,
+          136.53
+        ]
+      ]
     },
     {
       "start": 139.47,
@@ -890,7 +968,13 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          139.53,
+          139.69
+        ]
+      ]
     },
     {
       "start": 152.54,
@@ -901,7 +985,13 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          152.5,
+          156.38
+        ]
+      ]
     },
     {
       "start": 156.43,
@@ -912,7 +1002,13 @@
       "original": "",
       "romanization": "I will dive into you",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          156.5,
+          158.76
+        ]
+      ]
     },
     {
       "start": 157.32,
@@ -923,7 +1019,13 @@
       "original": "",
       "romanization": "Into you",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          157.27,
+          158.82
+        ]
+      ]
     },
     {
       "start": 160.04,
@@ -934,7 +1036,13 @@
       "original": "",
       "romanization": "Oh oh oh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          159.98,
+          161.48
+        ]
+      ]
     },
     {
       "start": 161.26,
@@ -945,7 +1053,13 @@
       "original": "",
       "romanization": "Into you",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          161.29,
+          162.67
+        ]
+      ]
     },
     {
       "start": 166.56,
@@ -956,7 +1070,13 @@
       "original": "눈앞이 파랗게",
       "romanization": "nunapi parake",
       "english": "To the blue sea in front of my eyes",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          166.56,
+          168.2
+        ]
+      ]
     },
     {
       "start": 170.48,
@@ -967,7 +1087,13 @@
       "original": "Oh 난 꿈을 꿔",
       "romanization": "oh nan kkumeul kkwo",
       "english": "Oh into the dream I have",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          170.42,
+          172.05
+        ]
+      ]
     },
     {
       "start": 179.26,
@@ -978,7 +1104,13 @@
       "original": "",
       "romanization": "Woo",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          179.37,
+          181.73
+        ]
+      ]
     }
   ]
 }
