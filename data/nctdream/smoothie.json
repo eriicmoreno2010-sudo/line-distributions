@@ -384,21 +384,66 @@
       "english": "Freeze like ice, Mess up, rough it up"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 6.19,
+      "end": 6.68,
       "members": [],
-      "original": "(거칠게 Mess up yeah)",
-      "romanization": "(geochilge Mess up yeah)",
-      "english": "(Rough that Mess up yeah)",
+      "original": "",
+      "romanization": "ha ha",
+      "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.6,
+      "end": 28.89,
       "members": [],
-      "original": "(흘러간 뒤)",
-      "romanization": "(heulleogan dwi)",
-      "english": "(After it flows)",
+      "original": "",
+      "romanization": "Hey",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 29.63,
+      "end": 29.98,
+      "members": [],
+      "original": "",
+      "romanization": "Hey",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 31.26,
+      "end": 32.03,
+      "members": [],
+      "original": "",
+      "romanization": "Brrah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 109.51,
+      "end": 112.97,
+      "members": [],
+      "original": "거칠게 Mess up yeah",
+      "romanization": "geochilge Mess up yeah",
+      "english": "Rough that Mess up yeah",
+      "adlib": true
+    },
+    {
+      "start": 116.09,
+      "end": 118.02,
+      "members": [],
+      "original": "끈적하게 날 뒤덮어",
+      "romanization": "kkeunjokage nal dwideop",
+      "english": "Felt sticky on me",
+      "adlib": true
+    },
+    {
+      "start": 153.47,
+      "end": 154.34,
+      "members": [],
+      "original": "흘러간 뒤",
+      "romanization": "heulleogan dwi",
+      "english": "After it flows",
       "adlib": true
     },
     {
@@ -546,11 +591,11 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 162.37,
+      "end": 165.09,
       "members": [],
       "original": "",
-      "romanization": "(Sip it down yeah)",
+      "romanization": "Sip it down yeah",
       "english": "",
       "adlib": true
     },
@@ -571,11 +616,11 @@
       "english": ""
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 166.77,
+      "end": 169.49,
       "members": [],
       "original": "",
-      "romanization": "(Pour it like Smoothie yeah)",
+      "romanization": "Pour it like Smoothie yeah",
       "english": "",
       "adlib": true
     },
@@ -588,12 +633,12 @@
       "english": "Dirty taste drink it up"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 168.42,
+      "end": 170.7,
       "members": [],
-      "original": "(Dirty taste 들이켜 Smoothie)",
-      "romanization": "(Dirty taste deurikyeo Smoothie)",
-      "english": "(Dirty taste drink it up Smoothie)",
+      "original": "Dirty taste 들이켜 Smoothie",
+      "romanization": "Dirty taste deurikyeo Smoothie",
+      "english": "Dirty taste drink it up Smoothie",
       "adlib": true
     },
     {
@@ -613,12 +658,21 @@
       "english": "Chew a bit 'n' swallow it"
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 172.81,
+      "end": 174.46,
       "members": [],
-      "original": "(가볍게 씹어 삼켜 Smoothie yeah)",
-      "romanization": "(gabyeopge ssibeo samkyeo Smoothie yeah)",
-      "english": "(Chew a bit 'n' swallow it Smoothie yeah)",
+      "original": "가볍게 씹어 삼켜 Smoothie",
+      "romanization": "gabyeopge ssibeo samkyeo Smoothie",
+      "english": "Chew a bit 'n' swallow it Smoothie",
+      "adlib": true
+    },
+    {
+      "start": 175.82,
+      "end": 176.4,
+      "members": [],
+      "original": "",
+      "romanization": "Yeah",
+      "english": "",
       "adlib": true
     },
     {
