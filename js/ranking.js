@@ -204,7 +204,9 @@ const Ranking = {
         // fills the row. Two-side keeps its compact 72px look (unchanged).
         const minCardH = Math.min(...this.columns.map(c => c.cardH || 92));
         const isTwo = this.twoSide;
-        const cap = isTwo ? 70 : 88;
+        // Two columns (>10, e.g. SEVENTEEN): 100. Single column: 88 for 7–10
+        // members, a bit larger (100) for small groups of 5–6 so they don't look tiny.
+        const cap = isTwo ? 100 : (this.members.length <= 6 ? 100 : 88);
         this.photoSize = Math.max(44, Math.min(cap, Math.round(minCardH - 12)));
         this.members.forEach(m => {
             if(m.photoEl){
