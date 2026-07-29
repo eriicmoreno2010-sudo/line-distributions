@@ -529,7 +529,9 @@
     {
       "start": 9.87,
       "end": 11.17,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "Yeah",
       "english": "",
@@ -538,7 +540,9 @@
     {
       "start": 22.7,
       "end": 22.95,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "Uh",
       "english": "",
@@ -547,7 +551,9 @@
     {
       "start": 99.61,
       "end": 101.96,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "I will dive into you",
       "english": "",
@@ -556,7 +562,9 @@
     {
       "start": 103.13,
       "end": 104.27,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "",
       "romanization": "Woo hoo",
       "english": "",
@@ -565,7 +573,9 @@
     {
       "start": 104.72,
       "end": 105.93,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "",
       "romanization": "Oh oh",
       "english": "",
@@ -574,7 +584,9 @@
     {
       "start": 107.72,
       "end": 110.83,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "Into you into you into you yeah",
       "english": "",
@@ -583,7 +595,9 @@
     {
       "start": 116.06,
       "end": 117.77,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "눈앞이 파랗게",
       "romanization": "nunapi parake",
       "english": "To the blue sea in front of my eyes",
@@ -592,7 +606,9 @@
     {
       "start": 119.9,
       "end": 121.49,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "Oh 난 꿈을 꿔",
       "romanization": "oh nan kkumeul kkwo",
       "english": "Oh into the dream I have",
@@ -601,7 +617,9 @@
     {
       "start": 130.03,
       "end": 130.33,
-      "members": [],
+      "members": [
+        "JISUNG"
+      ],
       "original": "",
       "romanization": "Uh",
       "english": "",
@@ -610,7 +628,9 @@
     {
       "start": 133.15,
       "end": 133.53,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "",
       "romanization": "Uh",
       "english": "",
@@ -619,7 +639,9 @@
     {
       "start": 136.32,
       "end": 136.62,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "",
       "romanization": "Uh",
       "english": "",
@@ -628,7 +650,9 @@
     {
       "start": 139.47,
       "end": 139.8,
-      "members": [],
+      "members": [
+        "JAEMIN"
+      ],
       "original": "",
       "romanization": "Uh",
       "english": "",
@@ -637,7 +661,9 @@
     {
       "start": 152.54,
       "end": 156.31,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "Yeah",
       "english": "",
@@ -666,18 +692,22 @@
       "adlib": true
     },
     {
-      "start": 159.96,
-      "end": 161.3,
-      "members": [],
+      "start": 160.04,
+      "end": 161.24,
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "Oh oh oh",
       "english": "",
       "adlib": true
     },
     {
-      "start": 161.25,
-      "end": 162.6,
-      "members": [],
+      "start": 161.26,
+      "end": 162.53,
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "Into you",
       "english": "",
@@ -686,7 +716,9 @@
     {
       "start": 166.56,
       "end": 168.18,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "눈앞이 파랗게",
       "romanization": "nunapi parake",
       "english": "To the blue sea in front of my eyes",
@@ -695,7 +727,9 @@
     {
       "start": 170.48,
       "end": 172.12,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "Oh 난 꿈을 꿔",
       "romanization": "oh nan kkumeul kkwo",
       "english": "Oh into the dream I have",
@@ -704,7 +738,9 @@
     {
       "start": 179.26,
       "end": 181.69,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "Woo",
       "english": "",
