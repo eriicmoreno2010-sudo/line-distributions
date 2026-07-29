@@ -63,7 +63,13 @@
       ],
       "original": "Look around 둘러봐도 온통 짙은 푸른빛",
       "romanization": "look around dulleobwado ontong jiteun pureunbit",
-      "english": "Even when I look around it's all dark blue"
+      "english": "Even when I look around it's all dark blue",
+      "voice": [
+        [
+          13.14,
+          16.04
+        ]
+      ]
     },
     {
       "start": 16.28,
@@ -73,7 +79,13 @@
       ],
       "original": "까만 밤 마치 깊은 물에 잠수한 듯이",
       "romanization": "kkaman bam machi gipeun mure jamsuhan deusi",
-      "english": "In this jet-black night it's like I submerged deep in the water"
+      "english": "In this jet-black night it's like I submerged deep in the water",
+      "voice": [
+        [
+          16.31,
+          19.15
+        ]
+      ]
     },
     {
       "start": 19.38,
@@ -83,7 +95,13 @@
       ],
       "original": "먹먹함 속에 너의 목소리만 뚜렷해",
       "romanization": "meokmeokam soge neoui moksoriman tturyeothae",
-      "english": "In this darkness only your voice is clear"
+      "english": "In this darkness only your voice is clear",
+      "voice": [
+        [
+          19.41,
+          22.54
+        ]
+      ]
     },
     {
       "start": 23.44,
@@ -93,7 +111,13 @@
       ],
       "original": "어쩌지",
       "romanization": "eojjeoji",
-      "english": "What should I do?"
+      "english": "What should I do?",
+      "voice": [
+        [
+          23.43,
+          24.42
+        ]
+      ]
     },
     {
       "start": 25.68,
@@ -103,7 +127,13 @@
       ],
       "original": "나에게 넌 달아나는 저 수평선 같지",
       "romanization": "naege neon darananeun jeo supyeongseon gatji",
-      "english": "To me you are like that horizon that escapes"
+      "english": "To me you are like that horizon that escapes",
+      "voice": [
+        [
+          25.79,
+          28.69
+        ]
+      ]
     },
     {
       "start": 28.92,
@@ -113,7 +143,13 @@
       ],
       "original": "눈앞에 너를 두고서도 나는 또다시",
       "romanization": "nunape neoreul dugoseodo naneun ttodasi",
-      "english": "Even with you in front of me I miss you again"
+      "english": "Even with you in front of me I miss you again",
+      "voice": [
+        [
+          28.91,
+          31.88
+        ]
+      ]
     },
     {
       "start": 32.06,
@@ -123,7 +159,13 @@
       ],
       "original": "그리워 너는 파도처럼 나를 삼키지",
       "romanization": "geuriwo neoneun padocheoreom nareul samkiji",
-      "english": "You swallow me like a wave"
+      "english": "You swallow me like a wave",
+      "voice": [
+        [
+          32.07,
+          35
+        ]
+      ]
     },
     {
       "start": 35.94,
@@ -133,7 +175,13 @@
       ],
       "original": "어쩌지",
       "romanization": "eojjeoji",
-      "english": "What should I do?"
+      "english": "What should I do?",
+      "voice": [
+        [
+          35.97,
+          37.11
+        ]
+      ]
     },
     {
       "start": 37.5,
@@ -143,7 +191,13 @@
       ],
       "original": "Oh you and I, 넌 아득한 나의 바다",
       "romanization": "oh you and i, neon adeukan naui bada",
-      "english": "Oh you and I, You are my faraway sea"
+      "english": "Oh you and I, You are my faraway sea",
+      "voice": [
+        [
+          37.59,
+          42.5
+        ]
+      ]
     },
     {
       "start": 42.59,
@@ -153,7 +207,13 @@
       ],
       "original": "난 너의 품에 빠져",
       "romanization": "nan neoui pume ppajyeo",
-      "english": "I fall into your arms"
+      "english": "I fall into your arms",
+      "voice": [
+        [
+          42.68,
+          44.71
+        ]
+      ]
     },
     {
       "start": 44.29,
@@ -163,7 +223,13 @@
       ],
       "original": "You and I, 너에게 가 닿고 싶어",
       "romanization": "you and i, neoege ga dako sipeo",
-      "english": "You and I, I want to be in touch with you"
+      "english": "You and I, I want to be in touch with you",
+      "voice": [
+        [
+          44.39,
+          48.99
+        ]
+      ]
     },
     {
       "start": 49.04,
@@ -193,7 +259,13 @@
       ],
       "original": "",
       "romanization": "I will dive into you",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          61.76,
+          63.7
+        ]
+      ]
     },
     {
       "start": 63.73,
@@ -203,7 +275,13 @@
       ],
       "original": "궁금해 네 맘 한가운데 나는 어딘지",
       "romanization": "gunggeumhae ne mam hangaunde naneun eodinji",
-      "english": "I wonder where I stand in the center of your heart"
+      "english": "I wonder where I stand in the center of your heart",
+      "voice": [
+        [
+          63.71,
+          66.7
+        ]
+      ]
     },
     {
       "start": 66.84,
@@ -213,7 +291,13 @@
       ],
       "original": "표류해 모르는 채 한번 가보는 거지",
       "romanization": "pyoryuhae moreuneun chae hanbeon gaboneun geoji",
-      "english": "I will drift and go inside of it without knowing"
+      "english": "I will drift and go inside of it without knowing",
+      "voice": [
+        [
+          66.89,
+          69.84
+        ]
+      ]
     },
     {
       "start": 69.95,
@@ -223,7 +307,13 @@
       ],
       "original": "막막해 가끔 이 마음의 끝은 어딜지",
       "romanization": "mangmakae gakkeum i maeumui kkeuteun eodilji",
-      "english": "Eventually I lose my way where's the ending to this heart?"
+      "english": "Eventually I lose my way where's the ending to this heart?",
+      "voice": [
+        [
+          70.02,
+          73.2
+        ]
+      ]
     },
     {
       "start": 73.84,
@@ -233,7 +323,13 @@
       ],
       "original": "너인지",
       "romanization": "neoinji",
-      "english": "Where you are"
+      "english": "Where you are",
+      "voice": [
+        [
+          73.97,
+          75.18
+        ]
+      ]
     },
     {
       "start": 76.19,
@@ -243,7 +339,13 @@
       ],
       "original": "심각해 널 스치는 바람마저 질투해",
       "romanization": "simgakae neol seuchineun barammajeo jiltuhae",
-      "english": "It's serious I'm even jealous of the wind that passes by you"
+      "english": "It's serious I'm even jealous of the wind that passes by you",
+      "voice": [
+        [
+          76.31,
+          79.29
+        ]
+      ]
     },
     {
       "start": 79.47,
@@ -253,7 +355,13 @@
       ],
       "original": "네 뺨에 내려앉은 달빛도 annoying me",
       "romanization": "ne ppyame naeryeoanjeun dalbitdo annoying me",
-      "english": "Even the moonlight glowing on your cheek is annoying me"
+      "english": "Even the moonlight glowing on your cheek is annoying me",
+      "voice": [
+        [
+          79.48,
+          82.47
+        ]
+      ]
     },
     {
       "start": 82.63,
@@ -263,7 +371,13 @@
       ],
       "original": "그보다 더 가까이 내가 곁에 있을래",
       "romanization": "geuboda deo gakkai naega gyeote isseullae",
-      "english": "I wanna be closer to you than that"
+      "english": "I wanna be closer to you than that",
+      "voice": [
+        [
+          82.67,
+          85.69
+        ]
+      ]
     },
     {
       "start": 86.23,
@@ -273,7 +387,13 @@
       ],
       "original": "가까이",
       "romanization": "gakkai",
-      "english": "Closer"
+      "english": "Closer",
+      "voice": [
+        [
+          86.4,
+          87.75
+        ]
+      ]
     },
     {
       "start": 88.1,
@@ -283,7 +403,13 @@
       ],
       "original": "Oh you and I, 넌 유일한 나의 바다",
       "romanization": "oh you and i, neon yuilhan naui bada",
-      "english": "Oh you and I, You are my only sea"
+      "english": "Oh you and I, You are my only sea",
+      "voice": [
+        [
+          88.18,
+          93.08
+        ]
+      ]
     },
     {
       "start": 93.11,
@@ -293,7 +419,13 @@
       ],
       "original": "난 너의 눈에 잠겨",
       "romanization": "nan neoui nune jamgyeo",
-      "english": "I am submerged in your eyes"
+      "english": "I am submerged in your eyes",
+      "voice": [
+        [
+          93.24,
+          95.1
+        ]
+      ]
     },
     {
       "start": 94.8,
@@ -303,7 +435,13 @@
       ],
       "original": "You and I, 그 안에 난 살고 싶어",
       "romanization": "you and i, geu ane nan salgo sipeo",
-      "english": "You and I, I want to live in that world of you and I"
+      "english": "You and I, I want to live in that world of you and I",
+      "voice": [
+        [
+          94.9,
+          99.56
+        ]
+      ]
     },
     {
       "start": 99.6,
@@ -333,7 +471,13 @@
       ],
       "original": "",
       "romanization": "I will dive into you",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          112.25,
+          114.2
+        ]
+      ]
     },
     {
       "start": 114.18,
@@ -363,7 +507,13 @@
       ],
       "original": "",
       "romanization": "I will dive into you",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          124.87,
+          126.84
+        ]
+      ]
     },
     {
       "start": 127.05,
@@ -373,7 +523,17 @@
       ],
       "original": "Sail 떠도는 바다 위의",
       "romanization": "sail tteodoneun bada wiui",
-      "english": "I sail wandering this floating sea"
+      "english": "I sail wandering this floating sea",
+      "voice": [
+        [
+          127.19,
+          127.92
+        ],
+        [
+          128.08,
+          129.82
+        ]
+      ]
     },
     {
       "start": 130.39,
@@ -383,7 +543,17 @@
       ],
       "original": "Whale 늘 바랬어 머물기를",
       "romanization": "whale neul baraesseo meomulgireul",
-      "english": "Whale I always want to stay"
+      "english": "Whale I always want to stay",
+      "voice": [
+        [
+          130.42,
+          131
+        ],
+        [
+          131.12,
+          132.89
+        ]
+      ]
     },
     {
       "start": 133.49,
@@ -393,7 +563,17 @@
       ],
       "original": "매일 외로운 낮과 긴 밤을",
       "romanization": "maeil oeroun natgwa gin bameul",
-      "english": "Through lonely days and long nights every day"
+      "english": "Through lonely days and long nights every day",
+      "voice": [
+        [
+          133.6,
+          134.15
+        ],
+        [
+          134.28,
+          136.12
+        ]
+      ]
     },
     {
       "start": 136.44,
@@ -403,7 +583,13 @@
       ],
       "original": "나 찾아 헤맸던 건 너였음을",
       "romanization": "na chaja hemaetdeon geon neoyeosseumeul",
-      "english": "You were the one who looked for me"
+      "english": "You were the one who looked for me",
+      "voice": [
+        [
+          136.92,
+          139.16
+        ]
+      ]
     },
     {
       "start": 139.81,
@@ -413,7 +599,13 @@
       ],
       "original": "이제는 나 알 것 같애",
       "romanization": "ijeneun na al geot gatae",
-      "english": "I think I know now"
+      "english": "I think I know now",
+      "voice": [
+        [
+          139.87,
+          141.92
+        ]
+      ]
     },
     {
       "start": 142.51,
@@ -423,7 +615,13 @@
       ],
       "original": "네가 날 숨 쉬게 한단 걸 yea yea",
       "romanization": "nega nal sum swige handan geol yeah yeah",
-      "english": "That you're the one that makes me breathe yeah yeah"
+      "english": "That you're the one that makes me breathe yeah yeah",
+      "voice": [
+        [
+          142.63,
+          145.99
+        ]
+      ]
     },
     {
       "start": 145.58,
@@ -433,7 +631,13 @@
       ],
       "original": "너에게 너의 안에, 너를 향해 가는 항해",
       "romanization": "neoege neoui ane, neoreul hyanghae ganeun hanghae",
-      "english": "To you inside you, Sailing towards you"
+      "english": "To you inside you, Sailing towards you",
+      "voice": [
+        [
+          145.63,
+          148.62
+        ]
+      ]
     },
     {
       "start": 148.53,
@@ -444,7 +648,13 @@
       ],
       "original": "",
       "romanization": "I will dive I will dive I will dive into you",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          148.67,
+          152.16
+        ]
+      ]
     },
     {
       "start": 152.51,
@@ -474,7 +684,13 @@
       ],
       "original": "",
       "romanization": "I will dive into you",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          162.84,
+          164.72
+        ]
+      ]
     },
     {
       "start": 164.68,
@@ -504,7 +720,13 @@
       ],
       "original": "",
       "romanization": "I will dive into you",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          175.44,
+          177.38
+        ]
+      ]
     },
     {
       "start": 183.23,
@@ -514,7 +736,13 @@
       ],
       "original": "You and I 나의 바다 포근한 품",
       "romanization": "you and i naui bada pogeunhan pum",
-      "english": "You and I you're my sea into your warm embrace"
+      "english": "You and I you're my sea into your warm embrace",
+      "voice": [
+        [
+          183.3,
+          187.94
+        ]
+      ]
     },
     {
       "start": 188.04,
@@ -524,7 +752,13 @@
       ],
       "original": "",
       "romanization": "I will dive into you",
-      "english": ""
+      "english": "",
+      "voice": [
+        [
+          188.13,
+          190.13
+        ]
+      ]
     },
     {
       "start": 9.87,
