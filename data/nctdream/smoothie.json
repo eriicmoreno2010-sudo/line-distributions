@@ -651,12 +651,21 @@
       "english": "Dirty taste drink it up"
     },
     {
-      "start": 168.42,
-      "end": 170.7,
+      "start": 168.48,
+      "end": 169.44,
       "members": [],
-      "original": "Dirty taste 들이켜 Smoothie",
-      "romanization": "Dirty taste deurikyeo Smoothie",
-      "english": "Dirty taste drink it up Smoothie",
+      "original": "Dirty taste 들이켜",
+      "romanization": "Dirty taste deurikyeo",
+      "english": "Dirty taste drink it up",
+      "adlib": true
+    },
+    {
+      "start": 169.56,
+      "end": 170.75,
+      "members": [],
+      "original": "",
+      "romanization": "Smoothie",
+      "english": "",
       "adlib": true
     },
     {
