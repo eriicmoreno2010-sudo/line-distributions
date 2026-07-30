@@ -66,11 +66,11 @@ Self-contained: injects its own styles and markup.
     }
     #results-overlay #ro-list{ flex:1 1 auto; height:100%; display:flex; flex-direction:column; gap:1vh; min-width:0; }
     #results-overlay .row{
-      flex:1 1 0; min-height:0; display:grid; grid-template-columns:9vh 1fr auto; align-items:center; gap:1.6vh;
+      flex:1 1 0; min-height:0; display:grid; grid-template-columns:var(--rphoto,9vh) 1fr auto; align-items:center; gap:1.6vh;
       background:#15151d; border:1px solid #23232e; border-radius:1.4vh; padding:1vh 1.8vh;
       opacity:.5; transition:opacity .45s ease, background-color .45s ease, border-color .45s ease, box-shadow .45s ease;
     }
-    #results-overlay .row .photo{ width:9vh; height:9vh; border-radius:50%; object-fit:cover; object-position:center 45%;
+    #results-overlay .row .photo{ width:var(--rphoto,9vh); height:var(--rphoto,9vh); border-radius:50%; object-fit:cover; object-position:center 45%;
       background:#000; filter:grayscale(1) brightness(.75); transition:filter .5s ease, box-shadow .5s ease; }
     #results-overlay .row .name{ font-size:2.5vh; font-weight:900; letter-spacing:.4px; color:#7c7c8a; transition:color .5s ease; line-height:1.1; }
     #results-overlay .row .bar{ margin-top:.8vh; height:1.2vh; border-radius:999px; background:#1c1c25; overflow:hidden; }
@@ -163,6 +163,20 @@ Self-contained: injects its own styles and markup.
       list.classList.add("two-col");
       list.style.setProperty("--rows", Math.ceil(ranked.length/2));
     }
+
+    // Fit the avatar to the row height so it never overflows/touches the card
+    // edges on crowded columns (9–10 members = short rows). Capped at 9vh.
+    const fitPhotos = () => {
+      const row = list.querySelector(".row"); if(!row) return;
+      const cs = getComputedStyle(row);
+      const avail = row.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      if(avail > 0){
+        const size = Math.max(40, Math.min(0.09 * window.innerHeight, avail - 8));
+        list.style.setProperty("--rphoto", Math.round(size) + "px");
+      }
+    };
+    requestAnimationFrame(fitPhotos);
+    window.addEventListener("resize", fitPhotos);
   }
 
   function setLit(m,on){ m.seg.style.fill=on?m.color:""; m.row.classList.toggle("lit",on); }
