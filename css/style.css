@@ -494,6 +494,21 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 /* ========================= */
 
 /* ========================= */
+/* CRISP TEXT IN THE RECORDING                                                  */
+/* A subtle light outline on coloured text. Saturated/dark colours blur in the  */
+/* recorded video (4:2:0 chroma subsampling halves colour resolution); a thin   */
+/* luma-contrast edge keeps the glyphs sharp. paint-order keeps the fill on top. */
+/* ========================= */
+#ranking .member-name, #ranking .member-time, #ranking .member-rank,
+#current-member, #original, #romanized, #english,
+.adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text,
+#results-overlay .row .name, #results-overlay .row .pct, #results-overlay .row .sec,
+#results-overlay #ro-even .val{
+    -webkit-text-stroke:0.45px rgba(255,255,255,.4);
+    paint-order:stroke fill;
+}
+
+/* ========================= */
 /* MOBILE (phones): fluid, vertically-stacked layout — the fixed 1920×1080     */
 /* canvas is dropped here (it would shrink to nothing on a narrow screen).      */
 /* ========================= */
