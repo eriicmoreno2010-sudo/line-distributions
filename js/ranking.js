@@ -43,8 +43,8 @@ const Ranking = {
         const rightEl = UI.elements.ranking;
         const leftEl  = document.getElementById("ranking-left");
         const n = this.members.length;
-        // 7-member groups have taller cards -> bigger names look better (CSS uses this)
-        document.body.classList.toggle("members-7", n === 7);
+        // Small groups (<=7) have taller cards -> bigger names look better (CSS uses this)
+        document.body.classList.toggle("few-members", n <= 7);
         // On phones there's no room for two side columns — always use a single
         // (scrollable) column, even for big groups.
         const mobile = window.matchMedia("(max-width:900px)").matches;
@@ -225,6 +225,24 @@ const Ranking = {
         });
 
         this.placeAll(false);
+        this.fitNames();
+    },
+
+    /* Shrink any name that would overflow its cell so it's as big as possible
+       (up to the CSS size) but never truncated with an ellipsis. */
+    fitNames(){
+        requestAnimationFrame(() => {
+            this.members.forEach(m => {
+                const el = m.element && m.element.querySelector(".member-name");
+                if(!el) return;
+                el.style.fontSize = "";                 // back to the CSS base
+                let s = parseFloat(getComputedStyle(el).fontSize) || 44;
+                let guard = 0;
+                while(el.scrollWidth > el.clientWidth + 1 && s > 26 && guard++ < 60){
+                    s -= 1; el.style.fontSize = s + "px";
+                }
+            });
+        });
     },
 
     /* Place every card by GLOBAL rank: ranks 1..half in the left column,

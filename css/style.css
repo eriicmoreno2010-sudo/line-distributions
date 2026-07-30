@@ -508,9 +508,9 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     paint-order:stroke fill;
 }
 
-/* 7-member groups: taller cards, so bump the ranking names a bit (desktop only). */
+/* Small groups (<=7): taller cards, so bump the ranking names a bit (desktop only). */
 @media(min-width:901px){
-    body.members-7 #ranking .member-name{ font-size:54px; }
+    body.few-members #ranking .member-name{ font-size:54px; }
 }
 
 /* ========================= */
