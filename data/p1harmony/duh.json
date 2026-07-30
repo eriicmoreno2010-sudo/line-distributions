@@ -2,7 +2,7 @@
   "group": "P1Harmony",
   "song": "DUH!",
   "video": "videos/duh.mp4",
-  "duration": 188.06,
+  "duration": 188.062875,
   "members": [
     {
       "name": "KEEHO",
@@ -183,12 +183,12 @@
       "english": "Cause I got it like that, Oh I got it like that yeah",
       "voice": [
         [
-          38.34,
-          39.46
+          38.31,
+          39.42
         ],
         [
-          39.61,
-          40.98
+          39.46,
+          41.02
         ]
       ]
     },
@@ -223,8 +223,8 @@
       "english": "So Follow Me, are you ready",
       "voice": [
         [
-          47.83,
-          49.79
+          47.74,
+          49.7
         ]
       ]
     },
@@ -551,12 +551,12 @@
       "english": "Cause I got it like that, Oh I got it like that yeah",
       "voice": [
         [
-          96.58,
-          97.71
+          96.51,
+          97.68
         ],
         [
-          97.85,
-          99.24
+          97.7,
+          99.23
         ]
       ]
     },
@@ -591,8 +591,8 @@
       "english": "So Follow Me, are you ready",
       "voice": [
         [
-          106.06,
-          108.05
+          105.96,
+          107.92
         ]
       ]
     },
