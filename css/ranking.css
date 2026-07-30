@@ -132,9 +132,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member-name{
     /* OJO: el font-size aqui NO manda (lo pisa #ranking .member-name en style.css).
-       El tamaño del nombre se toca en css/style.css:
-         - grupos de 7 o menos  -> body.few-members #ranking .member-name  (~linea 514)
-         - grupos de 8 o mas    -> #ranking .member-name                    (~linea 345) */
+       El tamaño del nombre del ranking se toca en css/style.css -> #ranking .member-name (~linea 345). */
     font-weight:800;
     letter-spacing:.4px;
     color:var(--text);
