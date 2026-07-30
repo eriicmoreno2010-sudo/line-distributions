@@ -344,7 +344,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 
 #ranking .member-name{
     overflow:hidden;
-    font-size:18px;
+    font-size:18px;   /* <<< TAMAÑO NOMBRE — grupos de 8 miembros o mas */
     font-weight:800;
     letter-spacing:.4px;
     color:var(--text);
@@ -511,6 +511,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 /* Small groups (<=7): taller cards, so names can be a touch bigger (desktop only).
    Tuned conservatively — the auto-shrink (fitNames) still prevents any overflow. */
 @media(min-width:901px){
+    /* <<< TAMAÑO NOMBRE — grupos de 7 miembros o menos (el que se ve casi siempre) */
     body.few-members #ranking .member-name{ font-size:48px; }
 }
 

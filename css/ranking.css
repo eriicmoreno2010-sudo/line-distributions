@@ -131,7 +131,10 @@ Version: 4.0 — Ranking (transform leaderboard)
 }
 
 .member-name{
-    font-size:1px;
+    /* OJO: el font-size aqui NO manda (lo pisa #ranking .member-name en style.css).
+       El tamaño del nombre se toca en css/style.css:
+         - grupos de 7 o menos  -> body.few-members #ranking .member-name  (~linea 514)
+         - grupos de 8 o mas    -> #ranking .member-name                    (~linea 345) */
     font-weight:800;
     letter-spacing:.4px;
     color:var(--text);
@@ -205,7 +208,6 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* ========================= */
 
 @media(max-width:1200px){
-    .member-name{ font-size:16px; }
-    .member-time{ font-size:15px; }
+    /* .member-name aqui tampoco manda (lo pisa style.css). Solo fotos. */
     .member-photo{ width:58px; height:58px; }
 }
