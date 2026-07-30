@@ -508,9 +508,10 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     paint-order:stroke fill;
 }
 
-/* Small groups (<=7): taller cards, so bump the ranking names a bit (desktop only). */
+/* Small groups (<=7): taller cards, so names can be a touch bigger (desktop only).
+   Tuned conservatively — the auto-shrink (fitNames) still prevents any overflow. */
 @media(min-width:901px){
-    body.few-members #ranking .member-name{ font-size:54px; }
+    body.few-members #ranking .member-name{ font-size:48px; }
 }
 
 /* ========================= */
