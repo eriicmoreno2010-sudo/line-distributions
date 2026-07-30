@@ -499,13 +499,19 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 /* recorded video (4:2:0 chroma subsampling halves colour resolution); a thin   */
 /* luma-contrast edge keeps the glyphs sharp. paint-order keeps the fill on top. */
 /* ========================= */
+/* Ranking + contador + resultados: contorno moderado */
 #ranking .member-name, #ranking .member-time, #ranking .member-rank,
-#current-member, #original, #romanized, #english,
-.adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text,
 #results-overlay .row .name, #results-overlay .row .pct, #results-overlay .row .sec,
 #results-overlay #ro-even .val{
     -webkit-text-stroke:1.4px rgba(255,255,255,.92);
     paint-order:stroke fill;   /* fill encima -> el borde solo crece hacia FUERA, no come la letra */
+}
+
+/* Panel central (letra) + ad-libs: contorno mas grueso -> letras mas 'gordas' */
+#current-member, #original, #romanized, #english,
+.adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text{
+    -webkit-text-stroke:2.4px rgba(255,255,255,.95);
+    paint-order:stroke fill;   /* el borde solo crece hacia FUERA, no come la letra */
 }
 
 
