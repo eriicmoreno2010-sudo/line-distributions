@@ -43,6 +43,8 @@ const Ranking = {
         const rightEl = UI.elements.ranking;
         const leftEl  = document.getElementById("ranking-left");
         const n = this.members.length;
+        // 7-member groups have taller cards -> bigger names look better (CSS uses this)
+        document.body.classList.toggle("members-7", n === 7);
         // On phones there's no room for two side columns — always use a single
         // (scrollable) column, even for big groups.
         const mobile = window.matchMedia("(max-width:900px)").matches;
