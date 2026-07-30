@@ -43,7 +43,10 @@ const Ranking = {
         const rightEl = UI.elements.ranking;
         const leftEl  = document.getElementById("ranking-left");
         const n = this.members.length;
-        if(n > 10 && leftEl){
+        // On phones there's no room for two side columns — always use a single
+        // (scrollable) column, even for big groups.
+        const mobile = window.matchMedia("(max-width:900px)").matches;
+        if(n > 10 && leftEl && !mobile){
             document.body.classList.add("two-side");
             this.twoSide = true;
             this.half = Math.ceil(n / 2);

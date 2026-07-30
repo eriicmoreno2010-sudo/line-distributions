@@ -491,36 +491,57 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 /* RESPONSIVE */
 /* ========================= */
 
-@media(max-width:1200px){
+/* ========================= */
+/* MOBILE (phones): fluid, vertically-stacked layout — the fixed 1920×1080     */
+/* canvas is dropped here (it would shrink to nothing on a narrow screen).      */
+/* ========================= */
+@media(max-width:900px){
 
-    body{ overflow:auto; }
+    html, body{ height:auto; min-height:100%; overflow-x:hidden; overflow-y:auto; }
+    body{ display:block; }
 
     #app{
-        grid-template-columns:1fr;
-        height:auto;
+        width:100% !important; height:auto !important;
+        transform:none !important;                 /* no canvas scaling on phones */
+        grid-template-columns:1fr !important;       /* single column */
+        gap:12px; padding:10px 10px 18px;
     }
+    body.two-side #app{ grid-template-columns:1fr !important; }   /* undo the 3-col two-side grid */
+    #left-panel-rank{ display:none !important; }    /* ranking is single-column on mobile */
 
-    #left-panel{
-        grid-template-rows:auto 320px auto;
-    }
+    #left-panel{ display:flex; flex-direction:column; gap:12px; min-height:0; }
 
-    #lyrics-container{
-        grid-template-columns:1fr;
-    }
+    #top-bar{ padding:10px 14px; }
+    #song-info h1{ font-size:19px; }
+    #song-info h2{ font-size:13px; }
+    #song-time{ font-size:14px; }
 
-    #right-panel{
-        max-height:70vh;
-    }
+    /* video keeps a normal 16:9 box and shows the whole frame */
+    #video-section{ height:auto; aspect-ratio:16/9; }
+    #video{ object-fit:contain; }
 
-    #ranking{
-        flex:0 0 auto;
-    }
+    /* lyrics + ad-libs stacked */
+    #lyrics-container{ display:flex; flex-direction:column; gap:12px; }
+    #lyrics-section{ padding:16px 14px; }
+    #adlibs-section{ padding:14px; min-height:96px; }
+    #current-member{ font-size:16px; margin-bottom:12px; min-height:20px; }
+    #original, #romanized, #english{ font-size:21px; line-height:29px; min-height:29px; }
+    #romanized, #english{ margin-top:6px; }
+    .adlib-member{ font-size:15px; min-height:20px; margin:0 0 12px; }
+    .adlib-original, .adlib-roman, .adlib-english, .adlib-text{ font-size:21px; min-height:29px; line-height:29px; }
+    .adlib-roman, .adlib-english, .adlib-text{ margin-top:6px; }
 
-    #ranking .member-photo{
-        width:58px;
-        height:58px;
-    }
+    /* ranking as a single scrollable list */
+    #right-panel{ max-height:none; padding:10px; }
+    /* let #ranking use the explicit height JS gives it (not flex-collapse to 0),
+       so all the absolutely-positioned cards have room and the page scrolls */
+    #ranking{ flex:0 0 auto !important; }
+    #ranking .member-name{ font-size:19px; }
+    #ranking .member-time{ font-size:16px; }
+    #ranking .member-rank{ font-size:15px; }
+    #ranking .member-bar{ height:11px; }
+    #ranking .member-info{ gap:6px; }
 
-    #ranking .member-name{ font-size:16px; }
-    #ranking .member-time{ font-size:15px; }
+    /* timeline sits in the flow (not a fixed overlay) so it doesn't cover content */
+    #timeline-section{ position:static; margin-top:6px; }
 }

@@ -12,7 +12,10 @@ let SONG = null;
    looks the same on every monitor/resolution (fixes fonts/cards looking off on
    higher-res displays). Recomputed on resize. */
 function fitUI(){
-    const s = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    // Phones use a fluid, stacked layout (see the mobile @media block) — no
+    // fixed-canvas scaling there, or everything would shrink to nothing.
+    const mobile = window.matchMedia("(max-width:900px)").matches;
+    const s = mobile ? 1 : Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
     document.documentElement.style.setProperty("--ui-scale", s);
 }
 window.addEventListener("resize", fitUI);

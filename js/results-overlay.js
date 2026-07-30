@@ -93,6 +93,21 @@ Self-contained: injects its own styles and markup.
       grid-auto-flow:column; gap:1vh 1.4vh;
     }
     #results-overlay #ro-list.two-col .row{ flex:none; }
+
+    /* Mobile: stack the donut above the ranking and let it scroll */
+    @media(max-width:900px){
+      #results-overlay{ overflow-y:auto; }
+      #results-overlay #ro-main{ flex-direction:column; height:auto; min-height:100vh; padding:3vh 5vw; gap:2.4vh; }
+      #results-overlay #ro-left{ flex:none; width:100%; align-items:center; }
+      #results-overlay #ro-head{ text-align:center; }
+      #results-overlay #ro-head .sng{ font-size:5vw; }
+      #results-overlay svg{ height:auto; width:min(64vw, 42vh); }
+      #results-overlay #ro-list{ height:auto; width:100%; gap:1.2vh; }
+      #results-overlay #ro-list.two-col{ display:flex; flex-direction:column; }
+      #results-overlay .row{ flex:0 0 auto; min-height:9vh; }
+      #results-overlay .row .name{ font-size:4.4vw; }
+      #results-overlay .row .pct{ font-size:4.4vw; }
+    }
   `;
   document.head.appendChild(style);
 

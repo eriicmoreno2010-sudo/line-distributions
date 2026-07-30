@@ -37,6 +37,6 @@ Version: 3.0 — Video
     letter-spacing:.5px;
 }
 
-@media(max-width:1200px){
-    #video{ object-fit:cover; }
+@media(max-width:900px){
+    #video{ object-fit:contain; }   /* show the whole frame on phones */
 }
