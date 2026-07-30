@@ -504,8 +504,8 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 .adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text,
 #results-overlay .row .name, #results-overlay .row .pct, #results-overlay .row .sec,
 #results-overlay #ro-even .val{
-    -webkit-text-stroke:0.45px rgba(255,255,255,.4);
-    paint-order:stroke fill;
+    -webkit-text-stroke:1.4px rgba(255,255,255,.92);
+    paint-order:stroke fill;   /* fill encima -> el borde solo crece hacia FUERA, no come la letra */
 }
 
 
