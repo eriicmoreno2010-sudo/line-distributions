@@ -78,8 +78,10 @@ body{
     width:1920px;                     /* fixed design canvas */
     height:1080px;
     flex:none;
-    transform:scale(var(--ui-scale, 1));   /* scaled to fit any screen (set by JS) */
-    transform-origin:center center;
+    /* `zoom` (not transform:scale) so text re-rasterises at the target size and
+       stays SHARP when the canvas is scaled up on bigger-than-1080p monitors.
+       transform:scale would just stretch a 1920×1080 bitmap → pixelated. */
+    zoom:var(--ui-scale, 1);
     padding:20px;
     padding-bottom:34px;              /* space for fixed timeline */
     display:grid;
@@ -502,7 +504,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 
     #app{
         width:100% !important; height:auto !important;
-        transform:none !important;                 /* no canvas scaling on phones */
+        transform:none !important; zoom:1 !important; /* no canvas scaling on phones */
         grid-template-columns:1fr !important;       /* single column */
         gap:12px; padding:10px 10px 18px;
     }
