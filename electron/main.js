@@ -46,9 +46,11 @@ async function exportHeadless(){
   await runExport({
     out: EXPORT_OUT, root: ROOT,
     song: argVal("--song"),
+    scale: argVal("--scale") ? parseFloat(argVal("--scale")) : (4 / 3),  // default 1440p
     maxDur: argVal("--maxdur") ? parseFloat(argVal("--maxdur")) : null,
     fps: argVal("--fps") ? parseFloat(argVal("--fps")) : null,
-    resultsHold: argVal("--hold") ? parseFloat(argVal("--hold")) : null
+    resultsHold: argVal("--hold") ? parseFloat(argVal("--hold")) : null,
+    ffmpeg: argVal("--ffmpeg") || null
   }, p => console.log("PROGRESS " + JSON.stringify(p)));
   console.log("EXPORT_DONE " + EXPORT_OUT);
   app.quit();
@@ -97,7 +99,7 @@ ipcMain.handle("export-video", async (evt, args) => {
 
   const web = evt.sender;
   try{
-    await runExport({ out: filePath, root: ROOT, song: args.song || null },
+    await runExport({ out: filePath, root: ROOT, song: args.song || null, scale: args.scale || (4 / 3) },
       p => web.send("export-progress", p));
     return { ok: true, out: filePath };
   }catch(e){

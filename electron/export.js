@@ -25,6 +25,28 @@ function findChrome(){
   return null;
 }
 
+// ffmpeg may not be on the app's PATH; fall back to the winget install location.
+function findFfmpeg(){
+  const home = process.env.USERPROFILE || process.env.HOME || "";
+  const cands = [
+    home + "/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.2-full_build/bin/ffmpeg.exe"
+  ];
+  for(const c of cands){ try{ if(c && fs.existsSync(c)) return c; }catch(e){} }
+  // glob-ish: any Gyan.FFmpeg* version under winget Packages
+  try{
+    const pkg = home + "/AppData/Local/Microsoft/WinGet/Packages";
+    for(const d of fs.readdirSync(pkg)){
+      if(!/^Gyan\.FFmpeg/i.test(d)) continue;
+      const bin = path.join(pkg, d);
+      for(const sub of fs.readdirSync(bin)){
+        const exe = path.join(bin, sub, "bin", "ffmpeg.exe");
+        if(fs.existsSync(exe)) return exe;
+      }
+    }
+  }catch(e){}
+  return "ffmpeg"; // last resort: rely on PATH
+}
+
 function fileUrl(root, song){
   let u = "file:///" + path.join(root, "index.html").replace(/\\/g, "/");
   if(song) u += "?song=" + encodeURIComponent(song);
@@ -86,7 +108,7 @@ async function runExport(opts, onProgress){
       await done;
     }
 
-    const ff = spawn(opts.ffmpeg || "ffmpeg", [
+    const ff = spawn(opts.ffmpeg || findFfmpeg(), [
       "-y","-loglevel","error",
       "-f","image2pipe","-framerate", String(fps), "-i","pipe:0",
       "-i", videoAbs,
@@ -125,4 +147,4 @@ async function runExport(opts, onProgress){
   }
 }
 
-module.exports = { runExport, findChrome };
+module.exports = { runExport, findChrome, findFfmpeg };
