@@ -21,7 +21,7 @@
     {
       "name": "JENO",
       "image": "images/nctdream/smoothie/jeno.png",
-      "color": "#cb0c0c",
+      "color": "#f23c3c",
       "focus": 50,
       "lift": 3
     },
@@ -49,7 +49,7 @@
     {
       "name": "JISUNG",
       "image": "images/nctdream/smoothie/jisung.png",
-      "color": "#df068c",
+      "color": "#fb3fa8",
       "focus": 50,
       "lift": 3
     }
