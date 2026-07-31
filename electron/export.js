@@ -66,8 +66,15 @@ async function runExport(opts, onProgress){
   const browser = await puppeteer.launch({
     executablePath: chrome, headless: "new",
     args: ["--allow-file-access-from-files","--autoplay-policy=no-user-gesture-required",
-           "--disable-features=Translate","--ignore-gpu-blocklist","--enable-gpu-rasterization",
-           "--use-angle=gl","--hide-scrollbars","--mute-audio"]
+           "--disable-features=Translate,PaintHolding",
+           "--ignore-gpu-blocklist","--enable-gpu-rasterization","--use-angle=gl",
+           // Deterministic frame-by-frame animation: force CSS transitions/animations
+           // onto the MAIN thread so they advance in lockstep with the virtual clock
+           // (composited/threaded animations ignore virtual time -> "2 fps" glide).
+           "--disable-threaded-animation","--disable-threaded-scrolling",
+           "--disable-checker-imaging","--disable-new-content-rendering-timeout",
+           "--run-all-compositor-stages-before-draw","--disable-background-timer-throttling",
+           "--hide-scrollbars","--mute-audio"]
   });
   try{
     const page = await browser.newPage();
@@ -78,7 +85,8 @@ async function runExport(opts, onProgress){
       { timeout: 20000 });
 
     const info = await page.evaluate(() => ({ dur: SONG.duration, video: SONG.video }));
-    const dur = Math.min(info.dur, opts.maxDur || info.dur);
+    const startT = Math.max(0, opts.start || 0);                       // render a mid-song window
+    const dur = Math.min(opts.maxDur || (info.dur - startT), info.dur - startT);
     const songFrames = Math.round(dur * fps);
     const videoAbs = path.join(opts.root, info.video.replace(/\//g, path.sep));
 
@@ -111,6 +119,7 @@ async function runExport(opts, onProgress){
     const ff = spawn(opts.ffmpeg || findFfmpeg(), [
       "-y","-loglevel","error",
       "-f","image2pipe","-framerate", String(fps), "-i","pipe:0",
+      ...(startT > 0 ? ["-ss", String(startT)] : []),   // align audio to a mid-song start
       "-i", videoAbs,
       "-map","0:v:0","-map","1:a:0","-t", String(dur + Math.max(0, resultsHold)),
       "-c:v","libx264","-crf","16","-preset","medium","-pix_fmt","yuv420p",
@@ -120,9 +129,16 @@ async function runExport(opts, onProgress){
     const ffClose = new Promise((res, rej) => ff.on("close", c => c===0 ? res() : rej(new Error("ffmpeg "+c+": "+fferr.slice(-400)))));
     const write = (b) => ff.stdin.write(b) ? Promise.resolve() : new Promise(r => ff.stdin.once("drain", r));
 
+    // If starting mid-song, jump there and let the initial reorder settle before
+    // capturing (ranking is a pure function of t, so a mid-song start is exact).
+    if(startT > 0){
+      await seekWait(startT);
+      await advance(800);
+    }
+
     // ---- song ----
     for(let i = 0; i < songFrames; i++){
-      await seekWait((i + 0.5) / fps);   // MV frame centre → crisp, no judder
+      await seekWait(startT + (i + 0.5) / fps);   // MV frame centre → crisp, no judder
       await advance(budget);             // app's own animations progress one step
       await write(await page.screenshot({ type: "jpeg", quality: 96 }));
       if(i % 8 === 0 && onProgress) onProgress({ phase: "song", done: i, total: songFrames });

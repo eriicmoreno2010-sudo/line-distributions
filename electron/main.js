@@ -47,6 +47,7 @@ async function exportHeadless(){
     out: EXPORT_OUT, root: ROOT,
     song: argVal("--song"),
     scale: argVal("--scale") ? parseFloat(argVal("--scale")) : (4 / 3),  // default 1440p
+    start: argVal("--start") ? parseFloat(argVal("--start")) : 0,
     maxDur: argVal("--maxdur") ? parseFloat(argVal("--maxdur")) : null,
     fps: argVal("--fps") ? parseFloat(argVal("--fps")) : null,
     resultsHold: argVal("--hold") ? parseFloat(argVal("--hold")) : null,
