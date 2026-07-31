@@ -507,8 +507,9 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     /* Sombra suave oscura (en vez del contorno blanco duro): separa del fondo y da
        nitidez en la grabacion sin borde visible. Funciona tambien en texto con degradado. */
     text-shadow:
-        0 0 3px rgba(0,0,0,.85),
-        0 1px 3px rgba(0,0,0,.65);
+        0 0 2px rgba(0,0,0,.92),
+        0 0 5px rgba(0,0,0,.72),
+        0 1px 4px rgba(0,0,0,.6);
 }
 
 
