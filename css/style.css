@@ -19,9 +19,9 @@ Base Layout
 :root{
 
     /* Surfaces */
-    --background:#0a0b0f;
-    --panel:#14161d;
-    --panel2:#1b1e27;
+    --background:#1b1e26;   /* exterior: gris oscuro (el color que tenian los paneles) */
+    --panel:#050608;        /* paneles (video, letra, ad-libs, ranking, top-bar): negro */
+    --panel2:#0e1016;       /* tarjetas del ranking / pill: casi negro (leve relieve) */
     --panel3:#232733;
     --border:rgba(255,255,255,.07);
 
