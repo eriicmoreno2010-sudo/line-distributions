@@ -87,7 +87,12 @@ const Lyrics = {
         // Brighten each stop (mix with white) so the whole-group rainbow stays
         // legible on the black panel — the raw colours include dark ones that
         // vanish. Kept vivid enough to still read as each member's colour.
-        const lift = c => `color-mix(in srgb, ${c} 66%, #fff)`;
+        // Group/multi gradient stops: on the dark theme brighten (mix white) so the
+        // rainbow reads on black; on the light theme darken (mix black) so it reads on white.
+        const lightTheme = typeof document !== "undefined" && document.body.classList.contains("theme-light");
+        const lift = c => lightTheme
+            ? `color-mix(in srgb, ${c} 78%, #000)`
+            : `color-mix(in srgb, ${c} 66%, #fff)`;
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`
             : "";

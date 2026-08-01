@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         SONG = await response.json();
 
+        // Optional per-song light theme (e.g. Moonlight test): white panels + light bg.
+        document.body.classList.toggle("theme-light", SONG.theme === "light");
+
         loadSongInformation();
 
         loadVideo();
