@@ -106,11 +106,27 @@ async function runExport(opts, onProgress){
     const cli = await page.target().createCDPSession();
     await cli.send("Emulation.setVirtualTimePolicy", { policy: "pause" });
 
-    // Put the MV on frame t, then give the media pipeline a little REAL time to
-    // decode it (Node timers run regardless of the paused virtual clock).
+    // Put the MV on frame t and make sure the decode ACTUALLY finishes before we
+    // capture — otherwise a non-keyframe seek isn't ready in time and the old
+    // frame is captured, so the MV looks frozen until the next scene cut.
+    // Under the paused virtual clock the seek won't complete on its own (the
+    // "seeked" event never fires), so we nudge the virtual clock a hair to let
+    // the compositor process the seek while giving the decoder REAL time. Bounded
+    // so a stuck seek can never hang the render.
     async function seekWait(t){
-      await page.evaluate((tt) => { document.getElementById("video").currentTime = tt; }, t);
-      await new Promise(r => setTimeout(r, 30));
+      await page.evaluate((tt) => {
+        const v = document.getElementById("video");
+        window.__sk = false;
+        const on = () => { window.__sk = true; v.removeEventListener("seeked", on); };
+        v.addEventListener("seeked", on);
+        try { v.currentTime = tt; } catch(e){ window.__sk = true; }
+      }, t);
+      const t0 = Date.now();
+      while(Date.now() - t0 < 500){
+        if(await page.evaluate(() => window.__sk)) break;
+        await advance(2);                          // nudge compositor so the seek presents
+        await new Promise(r => setTimeout(r, 6));  // REAL time for the decoder
+      }
     }
     // Advance the virtual clock so rAF/setTimeout/CSS animations step forward
     // (and the freshly-decoded MV frame gets committed to the compositor).
