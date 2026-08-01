@@ -71,6 +71,11 @@ body.theme-light #right-panel{
         var(--panel);
 }
 body.theme-light #video-section{ background:#f3f4f8; }
+/* Nombres de miembro un pelin mas claros / suaves en tema claro (mezcla con blanco). */
+body.theme-light #ranking .member.has-sung .member-name,
+body.theme-light #current-member{
+    color:color-mix(in srgb, var(--accent) 78%, #fff);
+}
 
 /* ========================= */
 /* BODY */
