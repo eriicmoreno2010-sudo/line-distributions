@@ -284,11 +284,13 @@ Version: 3.0 — Lyrics
    tiene contraste de sobra, aqui quitamos la sombra del todo. */
 #lyrics-section.group #current-member,
 #lyrics-section.group #original, #lyrics-section.group #romanized, #lyrics-section.group #english,
+#lyrics-section.multi-member #current-member,
 #lyrics-section.multi-member #original, #lyrics-section.multi-member #romanized, #lyrics-section.multi-member #english,
 #adlibs-section.group .adlib-member, #adlibs-section.group .adlib-original,
 #adlibs-section.group .adlib-roman, #adlibs-section.group .adlib-english, #adlibs-section.group .adlib-text,
-#adlibs-section.multi-member .adlib-original, #adlibs-section.multi-member .adlib-roman,
-#adlibs-section.multi-member .adlib-english, #adlibs-section.multi-member .adlib-text{
+#adlibs-section.multi-member .adlib-member, #adlibs-section.multi-member .adlib-original,
+#adlibs-section.multi-member .adlib-roman, #adlibs-section.multi-member .adlib-english,
+#adlibs-section.multi-member .adlib-text{
     text-shadow:none;
 }
 
