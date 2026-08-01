@@ -122,6 +122,35 @@ const Ranking = {
         });
         this.updateVisuals();
         this.reorder();
+        if(this.det) this.tweenTick(t);
+    },
+
+    /* Export-only: ease every card's Y toward its current slot as a pure function
+       of the video clock, so the glide is smooth at any frame rate (the CSS
+       transform transition doesn't animate a var()-driven change under the
+       virtual clock). Mirrors the live spring (slight overshoot). */
+    tweenTick(t){
+        const DUR = 0.55;
+        const easeOutBack = x => { const c1 = 1.70158, c3 = c1 + 1;
+            return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+        this.members.forEach(m => {
+            if(m._slotY == null) return;
+            if(m._tweenTo !== m._slotY){                 // slot changed → start a new tween
+                m._tweenFrom  = (m._curY != null) ? m._curY : m._slotY;
+                m._tweenTo    = m._slotY;
+                m._tweenStart = t;
+            }
+            let cur;
+            if(m._tweenStart == null){                   // at rest (never tweened yet)
+                cur = m._slotY;
+            } else {
+                let p = (t - m._tweenStart) / DUR;
+                if(p < 0) p = 0; else if(p > 1) p = 1;
+                cur = m._tweenFrom + (m._tweenTo - m._tweenFrom) * easeOutBack(p);
+            }
+            m._curY = cur;
+            if(m.element) m.element.style.setProperty("--rank-y", cur.toFixed(2) + "px");
+        });
     },
 
     /* Drive the leaderboard from the video clock every frame (smooth 60fps). */
@@ -140,6 +169,19 @@ const Ranking = {
     /* Build every card once; placeAll() then distributes them across columns
        by GLOBAL rank and moves them between columns as ranks change. */
     render(){
+
+        // Deterministic-animation mode (frame-by-frame export): the CSS transition
+        // on transform does NOT tick when the value comes from a var(--rank-y) under
+        // the virtual clock (it teleports). So in export we drive the card Y in JS
+        // (time-based easing, every frame) and disable the CSS transform transition.
+        this.det = !!(typeof window !== "undefined" && window.__DET_ANIM);
+        if(this.det && !this._detStyle){
+            const st = document.createElement("style");
+            st.textContent = "#ranking .member.ready{transition:box-shadow .18s var(--ease)," +
+                "background-color .18s var(--ease),border-color .18s var(--ease) !important}";
+            document.head.appendChild(st);
+            this._detStyle = true;
+        }
 
         this.columns.forEach(col => col.el.innerHTML = "");
 
@@ -273,7 +315,16 @@ const Ranking = {
                 m.element.classList.toggle("rising", (m._pos ?? row) > row);
             }
             m.element.style.height = col.cardH ? col.cardH + "px" : "";
-            m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);
+            const slotY = row * col.rowH;
+            if(this.det){
+                m._slotY = slotY;                       // tweenTick eases --rank-y toward this
+                if(!animate){                           // initial/instant placement: snap
+                    m._curY = slotY; m._tweenTo = slotY;
+                    m.element.style.setProperty("--rank-y", `${slotY}px`);
+                }
+            } else {
+                m.element.style.setProperty("--rank-y", `${slotY}px`);
+            }
             m.element.style.zIndex = String(col.cap - row);
             if(m.rankElement) m.rankElement.textContent = gi + 1;
             m._pos = row;

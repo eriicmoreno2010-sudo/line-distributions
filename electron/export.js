@@ -78,6 +78,10 @@ async function runExport(opts, onProgress){
   });
   try{
     const page = await browser.newPage();
+    // Tell the app to use deterministic JS easing for the ranking glide (the CSS
+    // transform transition teleports under the virtual clock). Must be set before
+    // the app scripts run.
+    await page.evaluateOnNewDocument(() => { window.__DET_ANIM = true; });
     await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: scale });
     await page.goto(fileUrl(opts.root, opts.song), { waitUntil: "networkidle0", timeout: 30000 });
     await page.waitForFunction(
