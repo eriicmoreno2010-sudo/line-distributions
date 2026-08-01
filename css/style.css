@@ -47,10 +47,10 @@ Base Layout
 /* ---- Tema CLARO (opt-in por cancion: SONG.theme === "light", p.ej. Moonlight) ----
    Paneles (letra/ranking/etc.) en BLANCO puro; exterior en gris claro; texto oscuro. */
 body.theme-light{
-    --background:#e6e8ee;   /* exterior: gris claro */
-    --panel:#ffffff;        /* paneles: blanco puro */
-    --panel2:#ffffff;       /* tarjetas del ranking / pill: blanco */
-    --panel3:#e3e5ec;       /* pista de barras / fondo foto: gris claro */
+    --background:#dfe1ea;   /* exterior: gris claro */
+    --panel:#f3f4f8;        /* paneles: blanco suave (menos glare que el blanco puro) */
+    --panel2:#f3f4f8;       /* tarjetas del ranking / pill */
+    --panel3:#dcdee7;       /* pista de barras / fondo foto: gris claro */
     --border:rgba(0,0,0,.10);
     --text:#12131a;
     --text2:#565b68;
@@ -70,7 +70,7 @@ body.theme-light #right-panel{
         linear-gradient(180deg, rgba(0,0,0,.02), rgba(0,0,0,0)),
         var(--panel);
 }
-body.theme-light #video-section{ background:#ffffff; }
+body.theme-light #video-section{ background:#f3f4f8; }
 
 /* ========================= */
 /* BODY */
