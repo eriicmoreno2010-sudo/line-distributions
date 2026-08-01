@@ -84,14 +84,18 @@ const Lyrics = {
             .map(name => SONG.members.find(m => m.name === name))
             .filter(Boolean);
 
+        // Brighten each stop (mix with white) so the whole-group rainbow stays
+        // legible on the black panel — the raw colours include dark ones that
+        // vanish. Kept vivid enough to still read as each member's colour.
+        const lift = c => `color-mix(in srgb, ${c} 66%, #fff)`;
         const groupGradient = isGroupLine
-            ? `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`
+            ? `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`
             : "";
         const groupGlow = isGroupLine
             ? SONG.members.map((m, i, arr) => {
                   const pos = arr.length > 1 ? 8 + (i / (arr.length - 1)) * 84 : 50;
                   return `radial-gradient(42% 60% at ${pos}% 45%, ` +
-                         `color-mix(in srgb, ${m.color} 22%, transparent), transparent 70%)`;
+                         `color-mix(in srgb, ${m.color} 13%, transparent), transparent 70%)`;
               }).join(", ")
             : "";
 
@@ -109,7 +113,7 @@ const Lyrics = {
         // this word" -> paint it with the whole-group rainbow; for a line already
         // shared by several members, keep it as those members' gradient.
         const groupAllGradient =
-            `linear-gradient(90deg, ${SONG.members.map(m => m.color).join(", ")})`;
+            `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`;
         const markGradient = singers.length <= 1 ? groupAllGradient : sharedGradient;
 
         // Glow made from EVERY singer's colour (so 3+ members all show, not just 2).
@@ -117,7 +121,7 @@ const Lyrics = {
             ? singers.map((s, i, arr) => {
                   const pos = arr.length > 1 ? 8 + (i / (arr.length - 1)) * 84 : 50;
                   return `radial-gradient(42% 60% at ${pos}% 45%, ` +
-                         `color-mix(in srgb, ${s.color} 20%, transparent), transparent 70%)`;
+                         `color-mix(in srgb, ${s.color} 14%, transparent), transparent 70%)`;
               }).join(", ")
             : "";
 

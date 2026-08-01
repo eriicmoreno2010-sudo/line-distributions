@@ -277,3 +277,19 @@ Version: 3.0 — Lyrics
     #romanized,
     #english{ font-size:24px; }
 }
+
+/* El texto de grupo/multi usa background-clip:text (degradado). La sombra oscura
+   pesada del bloque general lo ahoga (se pinta oscuro sobre el panel negro). Aqui
+   la sustituimos por un contorno oscuro MUY fino: mantiene algo de nitidez en la
+   grabacion sin apagar el color. */
+#lyrics-section.group #current-member,
+#lyrics-section.group #original, #lyrics-section.group #romanized, #lyrics-section.group #english,
+#lyrics-section.multi-member #original, #lyrics-section.multi-member #romanized, #lyrics-section.multi-member #english,
+#adlibs-section.group .adlib-member, #adlibs-section.group .adlib-original,
+#adlibs-section.group .adlib-roman, #adlibs-section.group .adlib-english, #adlibs-section.group .adlib-text,
+#adlibs-section.multi-member .adlib-original, #adlibs-section.multi-member .adlib-roman,
+#adlibs-section.multi-member .adlib-english, #adlibs-section.multi-member .adlib-text{
+    text-shadow:
+        0 0 1px rgba(0,0,0,.55),
+        0 1px 2px rgba(0,0,0,.45);
+}

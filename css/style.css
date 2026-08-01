@@ -370,6 +370,8 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     overflow:hidden;
     border-radius:999px;
     background:var(--panel3);
+    /* soft shadow like the names: recessed track + a faint lift off the black card */
+    box-shadow:inset 0 1px 2px rgba(0,0,0,.6), 0 1px 2px rgba(0,0,0,.5);
 }
 
 #ranking .member-progress{
