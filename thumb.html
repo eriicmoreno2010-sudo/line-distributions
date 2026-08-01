@@ -60,6 +60,18 @@
   #tools .cov{ background:transparent; border:2px solid var(--c); color:var(--c); border-radius:14px; padding:5px 9px; font-size:12px; }
   #tools .cov:hover{ background:var(--c); color:#111; }
   #tools .lbl{ color:#9a9ab0; font:700 12px "Segoe UI",Arial; }
+
+  /* ---- Tema CLARO (cuando SONG.theme === "light", p.ej. Moonlight) ----
+     Miniatura en blanco, nombres en NEGRO. El titulo va sobre la foto -> sigue blanco. */
+  #thumb.light{ background:#eef0f5; color:#12131a; }
+  #thumb.light #rank{ background:linear-gradient(180deg,#f6f7fa,#eceef4); }
+  #thumb.light .rhead{ color:#6b7180; }
+  #thumb.light .rk{ color:#a3a9b5; }
+  #thumb.light .nm{ color:#0d0e13; }                 /* nombres en negro */
+  #thumb.light .av{ background:#e3e5ec; }
+  #thumb.light .bar{ background:#dbdde6; }
+  #thumb.light #seam{ background:linear-gradient(90deg, rgba(238,240,245,0), #f4f5f9); }
+  #thumb.light #song{ color:#fff; }                  /* titulo sobre la foto: blanco */
 </style>
 </head>
 <body>
@@ -116,6 +128,7 @@ function srcPhoto(img){
 
 fetch(SONG_URL).then(r=>r.json()).then(song=>{
   const ver = "?v=" + (Date.now());   // thumbnails are one-off; always fresh
+  document.getElementById("thumb").classList.toggle("light", song.theme === "light");
   document.getElementById("grp").textContent  = song.group || "";
   const songEl = document.getElementById("song");
   songEl.textContent = song.song || "";
