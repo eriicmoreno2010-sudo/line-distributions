@@ -278,10 +278,10 @@ Version: 3.0 — Lyrics
     #english{ font-size:24px; }
 }
 
-/* El texto de grupo/multi usa background-clip:text (degradado). La sombra oscura
-   pesada del bloque general lo ahoga (se pinta oscuro sobre el panel negro). Aqui
-   la sustituimos por un contorno oscuro MUY fino: mantiene algo de nitidez en la
-   grabacion sin apagar el color. */
+/* El texto de grupo/multi usa background-clip:text (degradado). CUALQUIER sombra
+   oscura lo apaga (el relleno del degradado deja pasar la sombra), aunque en texto
+   SOLIDO la misma sombra va bien. Como el arcoiris aclarado sobre panel negro ya
+   tiene contraste de sobra, aqui quitamos la sombra del todo. */
 #lyrics-section.group #current-member,
 #lyrics-section.group #original, #lyrics-section.group #romanized, #lyrics-section.group #english,
 #lyrics-section.multi-member #original, #lyrics-section.multi-member #romanized, #lyrics-section.multi-member #english,
@@ -289,7 +289,12 @@ Version: 3.0 — Lyrics
 #adlibs-section.group .adlib-roman, #adlibs-section.group .adlib-english, #adlibs-section.group .adlib-text,
 #adlibs-section.multi-member .adlib-original, #adlibs-section.multi-member .adlib-roman,
 #adlibs-section.multi-member .adlib-english, #adlibs-section.multi-member .adlib-text{
-    text-shadow:
-        0 0 1px rgba(0,0,0,.55),
-        0 1px 2px rgba(0,0,0,.45);
+    text-shadow:none;
 }
+
+/* El glow (::after) es contenido generado -> se pinta DESPUES del texto y quedaba
+   ENCIMA, apagandolo (sobre todo el degradado de grupo, que ya es menos punchy que
+   un color solido). El glow debe ir DETRAS como halo: subimos el texto por z-index. */
+#lyrics-section::after, #adlibs-section::after{ z-index:0; }
+#current-member, #original, #romanized, #english,
+.adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text{ z-index:1; }
