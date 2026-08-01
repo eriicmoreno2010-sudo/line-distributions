@@ -58,7 +58,7 @@ async function runExport(opts, onProgress){
   const chrome = opts.chrome || findChrome();
   if(!chrome) throw new Error("No se encontró Chrome/Edge para el render.");
   const scale = opts.scale || 1;                 // 1 = 1080p, 2 = 4K
-  const fps = opts.fps || (24000 / 1001);        // MV native fps
+  const fps = opts.fps || (48000 / 1001);        // 2x MV fps (47.952) — smoother UI, clean MV (exact 2x)
   const budget = 1000 / fps;                     // ms of virtual time per frame
   const resultsHold = (opts.resultsHold != null) ? opts.resultsHold : 12;
 

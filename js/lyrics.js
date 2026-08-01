@@ -148,6 +148,18 @@ const Lyrics = {
         if(!SONG || !SONG.lyrics) return;
         const lyrics = SONG.lyrics;
 
+        // Frame-by-frame export: the CSS fade transition doesn't render under the
+        // virtual clock (text pops). Disable it and drive opacity/slide in JS.
+        if(this.det == null){
+            this.det = !!(typeof window !== "undefined" && window.__DET_ANIM);
+            if(this.det){
+                const st = document.createElement("style");
+                st.textContent = "#lyrics-section .fade-in,#lyrics-section .fade-out," +
+                    "#adlibs-section .fade-in,#adlibs-section .fade-out{transition:none !important}";
+                document.head.appendChild(st);
+            }
+        }
+
         let ci = -1; const ais = [];
         for(let i = 0; i < lyrics.length; i++){
             const l = lyrics[i];
@@ -190,6 +202,36 @@ const Lyrics = {
             if(ais.length === 1) this.showAdlib(lyrics[ais[0]]);
             else this.showAdlibs(ais.map(i => lyrics[i]));
         }
+
+        if(this.det) this.tweenFades(currentTime);
+    },
+
+    /* Export-only: ease each lyric element's opacity+slide toward the target its
+       fade-in/fade-out class implies, every frame, so the crossfade is smooth
+       under the virtual clock (CSS transitions don't render there). */
+    tweenFades(t){
+        const DUR = 0.1;
+        const ease = x => 1 - Math.pow(1 - x, 3);          // easeOutCubic
+        const els = document.querySelectorAll(
+            "#lyrics-section .fade-in,#lyrics-section .fade-out," +
+            "#adlibs-section .fade-in,#adlibs-section .fade-out");
+        els.forEach(el => {
+            const target = el.classList.contains("fade-out") ? 0 : 1;
+            if(el._opTo !== target){
+                el._opFrom  = (el._op != null) ? el._op : target;
+                el._opTo    = target;
+                el._opStart = t;
+            }
+            let o = target;
+            if(el._opStart != null){
+                let p = (t - el._opStart) / DUR;
+                if(p < 0) p = 0; else if(p > 1) p = 1;
+                o = el._opFrom + (el._opTo - el._opFrom) * ease(p);
+            }
+            el._op = o;
+            el.style.opacity = o.toFixed(3);
+            el.style.transform = "translateY(" + ((1 - o) * 10).toFixed(2) + "px)";
+        });
     },
 
     /* ---------------- CENTRAL panel ---------------- */

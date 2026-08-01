@@ -150,6 +150,23 @@ const Ranking = {
             }
             m._curY = cur;
             if(m.element) m.element.style.setProperty("--rank-y", cur.toFixed(2) + "px");
+
+            // Active pulse (scale) — also JS-driven here: with the transform
+            // transition off in det mode the CSS --card-scale change would snap.
+            const st = m.active ? 1.04 : 1.0;
+            if(m._scaleTo !== st){
+                m._scaleFrom  = (m._curScale != null) ? m._curScale : st;
+                m._scaleTo    = st;
+                m._scaleStart = t;
+            }
+            let cs = st;
+            if(m._scaleStart != null){
+                let q = (t - m._scaleStart) / DUR;
+                if(q < 0) q = 0; else if(q > 1) q = 1;
+                cs = m._scaleFrom + (m._scaleTo - m._scaleFrom) * easeOutBack(q);
+            }
+            m._curScale = cs;
+            if(m.element) m.element.style.setProperty("--card-scale", cs.toFixed(4));
         });
     },
 
