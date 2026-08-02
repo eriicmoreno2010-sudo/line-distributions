@@ -25,7 +25,7 @@
     {
       "name": "JENO",
       "image": "images/avatars/jeno.png",
-      "color": "#f23c3c",
+      "color": "#cb0c0c",
       "focus": 50,
       "lift": 3
     },
@@ -53,7 +53,7 @@
     {
       "name": "JISUNG",
       "image": "images/avatars/jisung.png",
-      "color": "#fb3fa8",
+      "color": "#df068c",
       "focus": 50,
       "lift": 3
     }
