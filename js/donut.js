@@ -4,7 +4,7 @@
 (function(){
   const $ = s => document.querySelector(s);
   const TAU = Math.PI * 2;
-  const CX = 220, CY = 220, R = 175, r = 98, POP_R = 22, POP_OFF = 16;
+  const CX = 250, CY = 250, R = 175, r = 98, POP_R = 26, POP_OFF = 6;
 
   const svgNS = "http://www.w3.org/2000/svg";
   const slicesG = $("#slices"), legendEl = $("#legend");
@@ -116,7 +116,7 @@
       m.path.setAttribute("opacity", frac > 0 ? 1 : 0);
       const mid = (a0+a1)/2, off = m.pop*POP_OFF;
       m.path.setAttribute("transform", `translate(${(off*Math.sin(mid)).toFixed(2)},${(-off*Math.cos(mid)).toFixed(2)})`);
-      m.val.innerHTML = secs[i].toFixed(2) + "s &nbsp; <b>" + (total>0 ? Math.round(secs[i]/total*100) : 0) + "%</b>";
+      m.val.innerHTML = secs[i].toFixed(2) + "s &nbsp; <b>" + (total>0 ? (secs[i]/total*100).toFixed(2) : "0.00") + "%</b>";
       m.row.classList.toggle("sing", on);
     });
 
@@ -124,7 +124,7 @@
     if(singers.length){
       const nm = singers.length > 1 ? "VARIOS" : singers[0].name;
       centerLbl.textContent = nm;
-      centerLbl.setAttribute("font-size", nm.length > 7 ? 22 : (nm.length > 5 ? 28 : 34));
+      centerLbl.setAttribute("font-size", nm.length > 8 ? 20 : nm.length > 6 ? 25 : nm.length > 4 ? 30 : 34);
       centerSub.textContent = "cantando";
     } else { centerLbl.textContent = "—"; centerLbl.setAttribute("font-size", 34); centerSub.textContent = ""; }
 
