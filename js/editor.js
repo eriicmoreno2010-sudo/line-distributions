@@ -319,6 +319,54 @@
   $("#markstart").onclick = tapS;
   $("#addadlib").onclick = addAdlib;
 
+  // --- Pegar letra en lote: original/roman/inglés -> una línea por renglón ---
+  function openPaste(){
+    $("#paOrig").value = ""; $("#paRom").value = ""; $("#paEng").value = "";
+    $("#pastemodal").classList.add("show"); $("#paOrig").focus();
+  }
+  $("#pasteLyrics").onclick = openPaste;
+  $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");
+  $("#pastemodal").addEventListener("click", e => { if(e.target.id === "pastemodal") $("#pastemodal").classList.remove("show"); });
+  $("#paGen").onclick = () => {
+    const so = $("#paOrig").value.split("\n").map(s => s.trim());
+    const sr = $("#paRom").value.split("\n").map(s => s.trim());
+    const se = $("#paEng").value.split("\n").map(s => s.trim());
+    const n = Math.max(so.length, sr.length, se.length);
+    const rows = [];
+    for(let i = 0; i < n; i++){
+      const o = so[i] || "", r = sr[i] || "", e = se[i] || "";
+      if(!o && !r && !e) continue;                    // salta renglones en blanco
+      rows.push({ start:0, end:0, members:[], original:o, romanization:r, english:e, adlib:false });
+    }
+    if(!rows.length){ alert("Pega al menos una línea de letra."); return; }
+    const hasData = (song.lyrics || []).some(l =>
+      ("" + (l.original||"") + (l.romanization||"") + (l.english||"")).trim() || (l.members||[]).length);
+    if(hasData && !confirm("Esto REEMPLAZA las " + song.lyrics.length + " líneas actuales por " +
+        rows.length + " líneas nuevas.\n\n¿Continuar?")) return;
+    song.lyrics = rows; sel = 0; awaitingEnd = false;
+    $("#pastemodal").classList.remove("show");
+    renderLines(); updateTapUI();
+  };
+
+  // --- Elegir el vídeo (MV) desde el PC: se copia, se pone en el reproductor y se guarda ---
+  $("#pickvideo").onclick = async () => {
+    const btn = $("#pickvideo"); const t = btn.textContent;
+    btn.disabled = true; btn.textContent = "⏳ Copiando y subiendo vídeo…";
+    const res = await window.desktop.pickVideo({ group: song.group, song: song.song });
+    btn.disabled = false;
+    if(res && res.canceled){ btn.textContent = t; return; }
+    if(res && res.ok){
+      song.video = res.video;
+      video.src = song.video; video.load();            // se ve al instante en el editor
+      btn.textContent = res.pushed ? "✓ Vídeo puesto" : "✓ Vídeo (local, no subido)";
+      save();                                           // guarda el JSON con el nuevo vídeo
+    } else {
+      btn.textContent = "✕ Error";
+      if(res && res.error) console.warn(res.error);
+    }
+    setTimeout(() => btn.textContent = t, 2800);
+  };
+
   // Per-word colour marking. Select a word in a lyric box, then:
   //   🌈  -> the whole group sings it (**word**)
   //   a member palette button -> that member sings it (**word@Name**); click more

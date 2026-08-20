@@ -59,6 +59,19 @@
   #wordpal button{ padding:5px 8px; font-size:11px; font-weight:900; border-radius:14px;
                    border:2px solid var(--c); background:transparent; color:var(--c); }
   #wordpal button:hover{ background:var(--c); color:#111; }
+
+  /* modal "pegar letra" */
+  #pastemodal{ position:fixed; inset:0; background:rgba(8,8,12,.85); display:none; align-items:center; justify-content:center; z-index:100; }
+  #pastemodal.show{ display:flex; }
+  #pastemodal .pbox{ background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:22px 24px;
+                     width:min(1000px,94vw); display:flex; flex-direction:column; gap:14px; }
+  #pastemodal .ptitle{ font-size:18px; font-weight:900; }
+  #pastemodal .pcols{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  #pastemodal .pcols label{ display:block; color:var(--text2); font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:5px; }
+  #pastemodal textarea{ width:100%; background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                        border-radius:10px; padding:10px 12px; font:600 13px "Segoe UI",sans-serif; resize:vertical; }
+  #pastemodal .phint{ color:var(--text2); font-size:12px; }
+  #pastemodal .pactions{ display:flex; gap:10px; justify-content:flex-end; }
 </style>
 </head>
 <body>
@@ -90,6 +103,10 @@
         <button id="fwd2">+2s » (L)</button>
         <button id="markstart">⏱ Marcar inicio de la línea seleccionada (S)</button>
       </div>
+      <div class="btnrow">
+        <button id="pasteLyrics">📋 Pegar letra (original/roman/inglés)</button>
+        <button id="pickvideo">📹 Elegir vídeo</button>
+      </div>
       <div class="help">
         <b>LETRA</b> (cuándo se ve el texto): <b>S</b> = inicio, <b>S</b> = fin y avanza sola.<br>
         <b>VOZ</b> (lo que cuenta el ranking): <b>S</b> = empieza un trozo, <b>S</b> = lo cierra. Puedes marcar
@@ -101,6 +118,23 @@
     </div>
   </div>
   <div id="list"></div>
+
+  <div id="pastemodal">
+    <div class="pbox">
+      <div class="ptitle">Pegar letra — una línea por renglón, las 3 columnas alineadas</div>
+      <div class="pcols">
+        <div><label>Original</label><textarea id="paOrig" rows="14" placeholder="línea 1&#10;línea 2&#10;línea 3&#10;..."></textarea></div>
+        <div><label>Romanización</label><textarea id="paRom" rows="14" placeholder="romaji/roman de cada línea"></textarea></div>
+        <div><label>Inglés</label><textarea id="paEng" rows="14" placeholder="traducción de cada línea"></textarea></div>
+      </div>
+      <div class="phint">Crea una línea por renglón (las 3 columnas se emparejan por posición; los renglones vacíos se saltan). Luego pones los colores y los tiempos aquí en el editor.</div>
+      <div class="pactions">
+        <button id="paCancel">Cancelar</button>
+        <button id="paGen" class="primary">Generar líneas</button>
+      </div>
+    </div>
+  </div>
+
 <script src="js/editor.js"></script>
 </body>
 </html>

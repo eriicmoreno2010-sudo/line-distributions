@@ -229,6 +229,37 @@ ipcMain.handle("create-song", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// ---- Elegir el vídeo (MV) desde el PC: copia a videos/ y lo sube ----
+ipcMain.handle("pick-video", async (_e, args) => {
+  args = args || {};
+  try{
+    const { canceled, filePaths } = await dialog.showOpenDialog({
+      title: "Elegir vídeo (MV)",
+      properties: ["openFile"],
+      filters: [{ name:"Vídeo", extensions:["mp4","mov","mkv","webm","m4v","avi"] }]
+    });
+    if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
+    const srcFile = filePaths[0];
+    const base = (slug(args.group || "") + "_" + slug(args.song || "video")).replace(/^_|_$/g, "") || "video";
+    const ext = (path.extname(srcFile) || ".mp4").toLowerCase();
+    fs.mkdirSync(path.join(ROOT, "videos"), { recursive:true });
+    const destRel = "videos/" + base + ext;
+    fs.copyFileSync(srcFile, path.join(ROOT, destRel));
+
+    const res = { ok:true, video: destRel, pushed:false };
+    try{
+      await git(["add", "--", destRel]);
+      const staged = await git(["diff", "--cached", "--quiet", "--", destRel]);
+      if(staged.code !== 0) await git(["commit", "-m", "Add video: " + (args.song || destRel)]);
+      let p = await git(["push"]);
+      if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+      res.pushed = (p.code === 0);
+      if(!res.pushed) res.gitError = p.err || p.out;
+    }catch(e){ res.gitError = e.message; }
+    return res;
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }

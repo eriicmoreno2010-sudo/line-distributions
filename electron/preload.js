@@ -10,6 +10,7 @@ contextBridge.exposeInMainWorld("desktop", {
   onProgress: (cb) => ipcRenderer.on("export-progress", (_e, p) => cb(p)),
   listSongs: () => ipcRenderer.invoke("list-songs"),
   createSong: (args) => ipcRenderer.invoke("create-song", args || {}),
+  pickVideo: (args) => ipcRenderer.invoke("pick-video", args || {}),
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
   saveSong: (relPath, data) => ipcRenderer.invoke("save-song", { path: relPath, data }),
   photoSources: (paths) => ipcRenderer.invoke("photo-sources", paths),
