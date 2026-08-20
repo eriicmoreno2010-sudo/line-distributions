@@ -136,6 +136,99 @@ ipcMain.handle("list-songs", async () => {
   return out;
 });
 
+// ---- Crear una cancion nueva (croquis): JSON + carpeta de fotos ----
+function slug(s){
+  return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "").trim();
+}
+const NEW_GROUP_PALETTE = [
+  "#ff4d6d","#4dabf7","#51cf66","#ffd43b","#cc5de8","#20c997","#ff922b",
+  "#748ffc","#f06595","#94d82d","#5c7cfa","#e64980","#22b8cf","#fa5252"
+];
+
+ipcMain.handle("create-song", async (_e, args) => {
+  args = args || {};
+  try{
+    const songName = String(args.song || "").trim();
+    if(!songName) return { ok:false, error:"Falta el nombre de la canción." };
+    const songFile = slug(songName);
+    if(!songFile) return { ok:false, error:"El nombre de la canción no es válido." };
+
+    let groupName, groupFolder, members;
+
+    if(args.sourcePath){
+      // Reutilizar un grupo existente: clonar los miembros de una canción suya.
+      const src = JSON.parse(fs.readFileSync(path.join(ROOT, args.sourcePath), "utf8"));
+      groupName   = src.group || args.group || "Grupo";
+      groupFolder = args.sourcePath.split("/")[1] || slug(groupName);   // data/<folder>/x.json
+      members = (src.members || []).map(m => {
+        const base = (m.image || "").split("/").pop() || (slug(m.name) + ".png");
+        return { name:m.name, image:`images/${groupFolder}/${songFile}/${base}`,
+                 color:m.color || "#7c5cff", focus:(m.focus ?? 50), lift:(m.lift ?? 3) };
+      });
+    } else {
+      // Grupo nuevo.
+      groupName = String(args.group || "").trim();
+      if(!groupName) return { ok:false, error:"Falta el nombre del grupo." };
+      const names = (args.members || []).map(s => String(s).trim()).filter(Boolean);
+      if(!names.length) return { ok:false, error:"Añade al menos un miembro." };
+      groupFolder = slug(groupName);
+      members = names.map((nm, i) => ({
+        name:nm, image:`images/${groupFolder}/${songFile}/${slug(nm)}.png`,
+        color:NEW_GROUP_PALETTE[i % NEW_GROUP_PALETTE.length], focus:50, lift:3
+      }));
+    }
+    if(!groupFolder) return { ok:false, error:"El nombre del grupo no es válido." };
+
+    const dataDir  = path.join(ROOT, "data", groupFolder);
+    const dataPath = path.join(dataDir, songFile + ".json");
+    if(fs.existsSync(dataPath)) return { ok:false, error:"Ya existe una canción con ese nombre en ese grupo." };
+    fs.mkdirSync(dataDir, { recursive:true });
+
+    const song = {
+      group: groupName, song: songName, video: "", duration: 0,
+      members,
+      lyrics: [
+        { start:0, end:0, members:[members[0] ? members[0].name : ""],
+          original:"", romanization:"", english:"", adlib:"" }
+      ]
+    };
+    fs.writeFileSync(dataPath, JSON.stringify(song, null, 2), "utf8");
+
+    // Carpeta de fotos + copiar las de la canción fuente (si reutilizamos grupo).
+    const imgDir = path.join(ROOT, "images", groupFolder, songFile);
+    fs.mkdirSync(imgDir, { recursive:true });
+    if(args.sourcePath){
+      const srcImgDir = path.join(ROOT, "images", groupFolder,
+        path.basename(args.sourcePath, ".json"));
+      for(const m of members){
+        const base = m.image.split("/").pop();
+        try{ const from = path.join(srcImgDir, base);
+             if(fs.existsSync(from)) fs.copyFileSync(from, path.join(imgDir, base)); }catch(e){}
+        try{ const fromS = path.join(srcImgDir, "_src", base);
+             if(fs.existsSync(fromS)){ fs.mkdirSync(path.join(imgDir, "_src"), { recursive:true });
+               fs.copyFileSync(fromS, path.join(imgDir, "_src", base)); } }catch(e){}
+      }
+    }
+
+    // git add + commit + push (como save-song).
+    const relData = path.relative(ROOT, dataPath).replace(/\\/g, "/");
+    const relImg  = path.relative(ROOT, imgDir).replace(/\\/g, "/");
+    const res = { ok:true, path: relData, committed:false, pushed:false };
+    try{
+      await git(["add", "--", relData, relImg]);
+      const staged = await git(["diff", "--cached", "--quiet"]);
+      if(staged.code !== 0){
+        const c = await git(["commit", "-m", "Add song skeleton: " + groupName + " - " + songName]);
+        if(c.code === 0) res.committed = true;
+      }
+      let p = await git(["push"]);
+      if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+      if(p.code === 0) res.pushed = true;
+    }catch(e){ res.gitError = e.message; }
+    return res;
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }

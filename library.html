@@ -37,6 +37,30 @@
   #ovsub{ color:var(--text2); font-size:14px; max-width:600px; text-align:center; }
   #bar{ width:min(520px,70vw); height:14px; background:var(--panel2); border-radius:999px; overflow:hidden; border:1px solid var(--border); }
   #fill{ height:100%; width:0; background:var(--accent); transition:width .2s; }
+
+  /* botones de crear (cabecera) */
+  .headbtns{ display:flex; gap:10px; flex:none; }
+  .newbtn{ padding:11px 16px; font:800 14px "Segoe UI",sans-serif; border:0; border-radius:10px; cursor:pointer;
+           background:var(--accent); color:#fff; }
+  .newbtn:hover{ background:#6a49f2; }
+  .newbtn.ng{ background:var(--panel2); color:var(--text); border:1px solid var(--border); }
+  .newbtn.ng:hover{ background:#232333; }
+
+  /* modal crear cancion */
+  #newmodal{ position:fixed; inset:0; background:rgba(8,8,12,.8); display:none; align-items:center; justify-content:center; z-index:200; }
+  #newmodal.show{ display:flex; }
+  #newmodal .box{ background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:26px 28px;
+                  width:min(460px,92vw); display:flex; flex-direction:column; gap:16px; }
+  #newmodal .mtitle{ font-size:20px; font-weight:900; }
+  #newmodal .field{ display:flex; flex-direction:column; gap:6px; }
+  #newmodal label{ color:var(--text2); font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase; }
+  #newmodal input, #newmodal select, #newmodal textarea{
+    background:var(--panel2); border:1px solid var(--border); border-radius:10px; color:var(--text);
+    padding:11px 13px; font:600 15px "Segoe UI",sans-serif; resize:vertical; }
+  #newmodal .mactions{ display:flex; gap:10px; margin-top:4px; }
+  #newmodal .mcancel{ flex:1; background:var(--panel2); color:var(--text); border:1px solid var(--border); }
+  #newmodal .mcreate{ flex:1; background:var(--accent); color:#fff; border:0; }
+  #newmodal .merror{ color:#ff8080; font-size:13px; min-height:16px; }
 </style>
 </head>
 <body>
@@ -45,9 +69,40 @@
       <h1>Line <span>Distributions</span></h1>
       <div class="sub">Biblioteca de canciones — abre para ver, o exporta el vídeo en 4K.</div>
     </div>
+    <div class="headbtns">
+      <button id="newSong" class="newbtn">➕  Nueva canción</button>
+      <button id="newGroup" class="newbtn ng">➕  Nueva canción + grupo</button>
+    </div>
   </header>
 
   <div id="grid"></div>
+
+  <div id="newmodal">
+    <div class="box">
+      <div class="mtitle" id="mtitle">Nueva canción</div>
+      <div class="field" id="fGroupSelect">
+        <label>Grupo</label>
+        <select id="groupSelect"></select>
+      </div>
+      <div class="field" id="fGroupName" style="display:none">
+        <label>Nombre del grupo</label>
+        <input id="groupName" placeholder="p. ej. Stray Kids">
+      </div>
+      <div class="field" id="fMembers" style="display:none">
+        <label>Miembros (uno por línea)</label>
+        <textarea id="membersTa" rows="6" placeholder="Bang Chan&#10;Lee Know&#10;Changbin&#10;Hyunjin&#10;..."></textarea>
+      </div>
+      <div class="field">
+        <label>Nombre de la canción</label>
+        <input id="songName" placeholder="p. ej. Into The Sea">
+      </div>
+      <div class="mactions">
+        <button id="mCancel" class="mcancel">Cancelar</button>
+        <button id="mCreate" class="mcreate">Crear</button>
+      </div>
+      <div id="merror" class="merror"></div>
+    </div>
+  </div>
 
   <div id="overlay">
     <div id="ovtitle">Exportando vídeo 4K…</div>

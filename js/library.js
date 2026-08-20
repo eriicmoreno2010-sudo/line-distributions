@@ -66,10 +66,73 @@
       " — " + pct + "%  ·  renderizando fotograma a fotograma, no cierres la app.";
   });
 
+  // ---- Crear canción nueva (modal) ----
+  function setupCreate(groups){
+    const modal   = document.getElementById("newmodal");
+    const mtitle  = document.getElementById("mtitle");
+    const mError  = document.getElementById("merror");
+    const sel     = document.getElementById("groupSelect");
+    const btnNew  = document.getElementById("newSong");
+    const btnGrp  = document.getElementById("newGroup");
+    const mCreate = document.getElementById("mCreate");
+    let mode = "existing";
+
+    function open(m){
+      mode = (m === "new" || !Object.keys(groups).length) ? "new" : "existing";
+      mtitle.textContent = mode === "new" ? "Nueva canción + grupo nuevo" : "Nueva canción";
+      document.getElementById("fGroupSelect").style.display = mode === "existing" ? "" : "none";
+      document.getElementById("fGroupName").style.display   = mode === "new" ? "" : "none";
+      document.getElementById("fMembers").style.display     = mode === "new" ? "" : "none";
+      sel.innerHTML = "";
+      Object.keys(groups).sort().forEach(g => {
+        const o = document.createElement("option"); o.value = g; o.textContent = g; sel.appendChild(o);
+      });
+      mError.textContent = "";
+      document.getElementById("songName").value = "";
+      document.getElementById("groupName").value = "";
+      document.getElementById("membersTa").value = "";
+      modal.classList.add("show");
+    }
+
+    btnNew.onclick = () => open("existing");
+    btnGrp.onclick = () => open("new");
+    document.getElementById("mCancel").onclick = () => modal.classList.remove("show");
+    modal.addEventListener("click", e => { if(e.target === modal) modal.classList.remove("show"); });
+
+    mCreate.onclick = async () => {
+      const song = document.getElementById("songName").value.trim();
+      if(!song){ mError.textContent = "Pon el nombre de la canción."; return; }
+      const args = { song };
+      if(mode === "existing"){
+        const g = sel.value;
+        args.group = g; args.sourcePath = groups[g];
+      } else {
+        const gn = document.getElementById("groupName").value.trim();
+        const mem = document.getElementById("membersTa").value.split("\n").map(x => x.trim()).filter(Boolean);
+        if(!gn){ mError.textContent = "Pon el nombre del grupo."; return; }
+        if(!mem.length){ mError.textContent = "Pon al menos un miembro."; return; }
+        args.group = gn; args.members = mem;
+      }
+      mCreate.disabled = true; mCreate.textContent = "Creando…";
+      const res = await window.desktop.createSong(args);
+      mCreate.disabled = false; mCreate.textContent = "Crear";
+      if(res && res.ok){
+        modal.classList.remove("show");
+        location.reload();                 // muestra la nueva tarjeta
+      } else {
+        mError.textContent = (res && res.error) || "Error al crear la canción.";
+      }
+    };
+  }
+
   (async () => {
-    const songs = await window.desktop.listSongs();
-    if(!songs || !songs.length){
-      grid.innerHTML = '<div class="empty">No hay canciones en <b>data/</b> todavía.</div>';
+    const songs = await window.desktop.listSongs() || [];
+    const groups = {};
+    songs.forEach(s => { if(s.group && !groups[s.group]) groups[s.group] = s.path; });
+    setupCreate(groups);
+
+    if(!songs.length){
+      grid.innerHTML = '<div class="empty">No hay canciones todavía. Crea una con <b>➕ Nueva canción + grupo</b>.</div>';
       return;
     }
     songs.sort((a, b) => (a.group + a.song).localeCompare(b.group + b.song));
