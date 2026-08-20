@@ -96,6 +96,8 @@
 
     btnNew.onclick = () => open("existing");
     btnGrp.onclick = () => open("new");
+    const donutBtn = document.getElementById("donutBtn");
+    if(donutBtn) donutBtn.onclick = () => { location.href = "donut.html"; };
     document.getElementById("mCancel").onclick = () => modal.classList.remove("show");
     modal.addEventListener("click", e => { if(e.target === modal) modal.classList.remove("show"); });
 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Line Distributions — Donut</title>
+<style>
+  :root{ --bg:#0b0b10; --panel:#15151d; --panel2:#1b1b26; --border:#2a2a3a; --text:#f0f0f6; --text2:#9a9ab0; --accent:#7c5cff; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{ background:var(--bg); color:var(--text); font-family:"Segoe UI",Inter,Arial,sans-serif;
+        display:flex; flex-direction:column; overflow:hidden; }
+
+  header{ display:flex; align-items:center; gap:14px; padding:14px 22px; border-bottom:1px solid var(--border); flex:none; }
+  header h1{ font-size:20px; font-weight:900; letter-spacing:.4px; }
+  header h1 span{ color:var(--accent); }
+  header .spacer{ flex:1; }
+  button, select{ border:1px solid var(--border); background:var(--panel2); color:var(--text); border-radius:9px;
+                  padding:9px 13px; cursor:pointer; font:800 14px "Segoe UI",sans-serif; }
+  button:hover{ background:#26263a; }
+  select{ font-weight:700; }
+
+  #controls{ display:flex; align-items:center; gap:12px; padding:12px 22px; border-bottom:1px solid var(--border); flex:none; }
+  #seek{ flex:1; accent-color:var(--accent); cursor:pointer; }
+  #time{ font-variant-numeric:tabular-nums; font-weight:800; font-size:15px; color:var(--text2); min-width:110px; text-align:right; }
+
+  #stage{ flex:1; display:flex; align-items:center; gap:30px; padding:24px 40px; min-height:0; }
+  #donutwrap{ flex:0 0 auto; height:100%; display:flex; align-items:center; justify-content:center; }
+  #donut{ height:min(78vh, 640px); width:auto; overflow:visible; }
+  #donut path{ stroke:var(--bg); stroke-width:2; }
+  #centerlbl{ font-weight:900; fill:var(--text); text-anchor:middle; }
+  #centersub{ fill:var(--text2); text-anchor:middle; font-weight:700; }
+
+  #legend{ flex:1 1 auto; display:flex; flex-direction:column; gap:9px; overflow-y:auto; max-height:100%; padding-right:6px; }
+  .lg{ display:grid; grid-template-columns:16px 1fr auto; gap:12px; align-items:center;
+       padding:9px 12px; border-radius:10px; background:var(--panel); border:1px solid transparent; }
+  .lg.sing{ border-color:var(--c); background:#191924; }
+  .lg .dot{ width:16px; height:16px; border-radius:4px; background:var(--c); }
+  .lg .nm{ font-size:16px; font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .lg .val{ font-variant-numeric:tabular-nums; font-weight:800; font-size:15px; color:var(--text2); }
+  .lg .val b{ color:var(--text); }
+  .empty{ color:var(--text2); font-size:15px; padding:40px; margin:auto; }
+</style>
+</head>
+<body>
+  <header>
+    <button id="back">← Biblioteca</button>
+    <h1>Donut <span>Distribution</span></h1>
+    <div class="spacer"></div>
+    <select id="songSel" title="Elegir canción"></select>
+  </header>
+
+  <div id="controls">
+    <button id="play">▶</button>
+    <input id="seek" type="range" min="0" max="1000" value="0" step="1">
+    <span id="time">0:00 / 0:00</span>
+    <button id="mute" title="Silenciar / activar audio">🔊</button>
+  </div>
+
+  <div id="stage">
+    <div id="donutwrap">
+      <svg id="donut" viewBox="0 0 440 440">
+        <g id="slices"></g>
+        <text id="centerlbl" x="220" y="214" font-size="40">0%</text>
+        <text id="centersub" x="220" y="248" font-size="17">cantando</text>
+      </svg>
+    </div>
+    <div id="legend"></div>
+  </div>
+
+  <video id="vid" style="display:none"></video>
+<script src="js/donut.js"></script>
+</body>
+</html>
