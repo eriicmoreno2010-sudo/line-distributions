@@ -37,6 +37,7 @@
     updateTapUI();
     syncModeUI();
     buildWordPal();
+    buildColors();
     requestAnimationFrame(tick);
   }
 
@@ -418,6 +419,20 @@
       b.addEventListener("mousedown", e => e.preventDefault());
       b.addEventListener("click", () => markSel(mm.name, b));
       pal.appendChild(b);
+    });
+  }
+
+  // Cambiar el color de cada miembro (útil sobre todo para grupos nuevos).
+  function toHex(c){ return /^#[0-9a-fA-F]{6}$/.test(c || "") ? c : "#7c5cff"; }
+  function buildColors(){
+    const row = $("#colorsRow"); if(!row) return;
+    row.querySelectorAll(".mcol").forEach(e => e.remove());
+    (song.members || []).forEach(m => {
+      const w = document.createElement("label"); w.className = "mcol";
+      const inp = document.createElement("input"); inp.type = "color"; inp.value = toHex(m.color);
+      inp.oninput = () => { m.color = inp.value; renderLines(); buildWordPal(); };
+      const nm = document.createElement("span"); nm.textContent = abbr(m.name); nm.title = m.name;
+      w.append(inp, nm); row.appendChild(w);
     });
   }
   $("#mode").onchange = (e) => {

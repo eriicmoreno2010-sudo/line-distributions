@@ -59,6 +59,12 @@
   #wordpal button{ padding:5px 8px; font-size:11px; font-weight:900; border-radius:14px;
                    border:2px solid var(--c); background:transparent; color:var(--c); }
   #wordpal button:hover{ background:var(--c); color:#111; }
+  /* selector de color por miembro */
+  #colorsRow{ align-items:center; }
+  #colorsRow .mcol{ display:inline-flex; align-items:center; gap:5px; }
+  #colorsRow .mcol input[type=color]{ width:28px; height:28px; padding:0; border:1px solid var(--border);
+                                      border-radius:7px; background:none; cursor:pointer; }
+  #colorsRow .mcol span{ font-size:11px; font-weight:800; color:var(--text2); }
 
   /* modal "pegar letra" */
   #pastemodal{ position:fixed; inset:0; background:rgba(8,8,12,.85); display:none; align-items:center; justify-content:center; z-index:100; }
@@ -96,6 +102,9 @@
         <button id="addadlib" style="display:none;background:#4a3a1a;border-color:#7a5a1a;color:#ffcf33">＋ Añadir ad-lib</button>
         <button id="markgroup" title="Selecciona una palabra dentro de una casilla de letra y pulsa aquí: se marca como cantada por TODO el grupo (se pinta en arcoíris). Vuelve a pulsar sobre una palabra ya marcada para quitarlo.">🌈 Coro (grupo)</button>
         <span id="wordpal" title="Selecciona una palabra en una casilla y pulsa un miembro para pintarla con su color. Pulsa varios = la cantan varios (degradado). Vuelve a pulsar para quitar."></span>
+      </div>
+      <div class="btnrow" id="colorsRow">
+        <label style="font-weight:800;font-size:13px;color:var(--text2)">🎨 Colores:</label>
       </div>
       <div class="btnrow">
         <button id="playpause">▶ / ⏸ (K)</button>
