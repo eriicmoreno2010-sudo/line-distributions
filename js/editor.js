@@ -329,17 +329,25 @@
   $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");
   $("#pastemodal").addEventListener("click", e => { if(e.target.id === "pastemodal") $("#pastemodal").classList.remove("show"); });
   $("#paGen").onclick = () => {
-    const so = $("#paOrig").value.split("\n").map(s => s.trim());
-    const sr = $("#paRom").value.split("\n").map(s => s.trim());
-    const se = $("#paEng").value.split("\n").map(s => s.trim());
+    // Quita los renglones vacíos de CADA columna por separado (así un salto de línea
+    // de más en una no descuadra las demás), y luego empareja por posición.
+    const so = $("#paOrig").value.split("\n").map(s => s.trim()).filter(Boolean);
+    const sr = $("#paRom").value.split("\n").map(s => s.trim()).filter(Boolean);
+    const se = $("#paEng").value.split("\n").map(s => s.trim()).filter(Boolean);
     const n = Math.max(so.length, sr.length, se.length);
+    if(!n){ alert("Pega al menos una línea de letra."); return; }
+    // Aviso si las columnas que has rellenado no tienen el mismo nº de líneas.
+    const counts = [so.length, sr.length, se.length].filter(x => x > 0);
+    if(new Set(counts).size > 1){
+      if(!confirm("⚠ Las columnas tienen DISTINTO número de líneas y no cuadrarán bien:\n\n" +
+        "· Original: " + so.length + "\n· Romanización: " + sr.length + "\n· Inglés: " + se.length + "\n\n" +
+        "Consejo: deja el MISMO número de líneas en las que uses (una línea por renglón), " +
+        "o deja una columna entera vacía si no la usas.\n\n¿Generar igualmente?")) return;
+    }
     const rows = [];
     for(let i = 0; i < n; i++){
-      const o = so[i] || "", r = sr[i] || "", e = se[i] || "";
-      if(!o && !r && !e) continue;                    // salta renglones en blanco
-      rows.push({ start:0, end:0, members:[], original:o, romanization:r, english:e, adlib:false });
+      rows.push({ start:0, end:0, members:[], original:so[i]||"", romanization:sr[i]||"", english:se[i]||"", adlib:false });
     }
-    if(!rows.length){ alert("Pega al menos una línea de letra."); return; }
     const hasData = (song.lyrics || []).some(l =>
       ("" + (l.original||"") + (l.romanization||"") + (l.english||"")).trim() || (l.members||[]).length);
     if(hasData && !confirm("Esto REEMPLAZA las " + song.lyrics.length + " líneas actuales por " +
