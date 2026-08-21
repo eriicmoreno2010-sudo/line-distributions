@@ -1,0 +1,161 @@
+{
+  "group": "NCT 2023",
+  "song": "Golden Age",
+  "video": "",
+  "duration": 0,
+  "members": [
+    {
+      "name": "TAEIL",
+      "image": "images/nct2023/goldenage/taeil.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JOHNNY",
+      "image": "images/nct2023/goldenage/johnny.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAEYONG",
+      "image": "images/nct2023/goldenage/taeyong.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUTA",
+      "image": "images/nct2023/goldenage/yuta.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KUN",
+      "image": "images/nct2023/goldenage/kun.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DOYOUNG",
+      "image": "images/nct2023/goldenage/doyoung.png",
+      "color": "#20c997",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TEN",
+      "image": "images/nct2023/goldenage/ten.png",
+      "color": "#ff922b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUN",
+      "image": "images/nct2023/goldenage/jaehyun.png",
+      "color": "#748ffc",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WINWIN",
+      "image": "images/nct2023/goldenage/winwin.png",
+      "color": "#f06595",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNGWOO",
+      "image": "images/nct2023/goldenage/jungwoo.png",
+      "color": "#94d82d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MARK",
+      "image": "images/nct2023/goldenage/mark.png",
+      "color": "#5c7cfa",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "XIAOJUN",
+      "image": "images/nct2023/goldenage/xiaojun.png",
+      "color": "#e64980",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HENDERY",
+      "image": "images/nct2023/goldenage/hendery.png",
+      "color": "#22b8cf",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/nct2023/goldenage/renjun.png",
+      "color": "#fa5252",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JENO",
+      "image": "images/nct2023/goldenage/jeno.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nct2023/goldenage/haechan.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/nct2023/goldenage/jaemin.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YANGYANG",
+      "image": "images/nct2023/goldenage/yangyang.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/nct2023/goldenage/chenle.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/nct2023/goldenage/jisung.png",
+      "color": "#20c997",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
