@@ -21,7 +21,7 @@
     {
       "name": "TAEYONG",
       "image": "images/nct2023/goldenage/taeyong.png",
-      "color": "#51cf66",
+      "color": "#f273ca",
       "focus": 50,
       "lift": 3
     },
@@ -35,21 +35,21 @@
     {
       "name": "KUN",
       "image": "images/nct2023/goldenage/kun.png",
-      "color": "#cc5de8",
+      "color": "#43fe2a",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "DOYOUNG",
       "image": "images/nct2023/goldenage/doyoung.png",
-      "color": "#20c997",
+      "color": "#1100ff",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "TEN",
       "image": "images/nct2023/goldenage/ten.png",
-      "color": "#ff922b",
+      "color": "#dba206",
       "focus": 50,
       "lift": 3
     },
@@ -63,14 +63,14 @@
     {
       "name": "WINWIN",
       "image": "images/nct2023/goldenage/winwin.png",
-      "color": "#f06595",
+      "color": "#f089ad",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JUNGWOO",
       "image": "images/nct2023/goldenage/jungwoo.png",
-      "color": "#94d82d",
+      "color": "#4d6593",
       "focus": 50,
       "lift": 3
     },
@@ -84,49 +84,49 @@
     {
       "name": "XIAOJUN",
       "image": "images/nct2023/goldenage/xiaojun.png",
-      "color": "#e64980",
+      "color": "#428bff",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "HENDERY",
       "image": "images/nct2023/goldenage/hendery.png",
-      "color": "#22b8cf",
+      "color": "#8f1fff",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "RENJUN",
       "image": "images/nct2023/goldenage/renjun.png",
-      "color": "#fa5252",
+      "color": "#fac142",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JENO",
       "image": "images/nct2023/goldenage/jeno.png",
-      "color": "#ff4d6d",
+      "color": "#ff3131",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "HAECHAN",
       "image": "images/nct2023/goldenage/haechan.png",
-      "color": "#4dabf7",
+      "color": "#1bb7e8",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JAEMIN",
       "image": "images/nct2023/goldenage/jaemin.png",
-      "color": "#51cf66",
+      "color": "#61fdad",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "YANGYANG",
       "image": "images/nct2023/goldenage/yangyang.png",
-      "color": "#ffd43b",
+      "color": "#fe653e",
       "focus": 50,
       "lift": 3
     },
