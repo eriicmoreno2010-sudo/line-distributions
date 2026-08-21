@@ -7,49 +7,49 @@
     {
       "name": "MARK",
       "image": "images/nctdream/smoothie/mark.png",
-      "color": "#b353cd",
+      "color": "#cb6ce6",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "RENJUN",
       "image": "images/nctdream/smoothie/renjun.png",
-      "color": "#ab842f",
+      "color": "#fac142",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JENO",
       "image": "images/nctdream/smoothie/jeno.png",
-      "color": "#cb0c0c",
+      "color": "#ff3131",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "HAECHAN",
       "image": "images/nctdream/smoothie/haechan.png",
-      "color": "#0089b6",
+      "color": "#1bb7e8",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JAEMIN",
       "image": "images/nctdream/smoothie/jaemin.png",
-      "color": "#1bcf72",
+      "color": "#61fdad",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "CHENLE",
       "image": "images/nctdream/smoothie/chenle.png",
-      "color": "#008206",
+      "color": "#22c429",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JISUNG",
       "image": "images/nctdream/smoothie/jisung.png",
-      "color": "#df068c",
+      "color": "#f12ba5",
       "focus": 50,
       "lift": 3
     }

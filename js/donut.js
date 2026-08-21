@@ -4,7 +4,7 @@
 (function(){
   const $ = s => document.querySelector(s);
   const TAU = Math.PI * 2;
-  const CX = 250, CY = 250, R = 175, r = 98, POP_R = 26, POP_OFF = 6;
+  const CX = 250, CY = 250, R = 175, r = 98, POP_R = 16;   // POP: solo crece el radio EXTERIOR (sobresale por arriba); el interior no se mueve
 
   const svgNS = "http://www.w3.org/2000/svg";
   const slicesG = $("#slices"), legendEl = $("#legend");
@@ -111,11 +111,9 @@
       m.pop += ((on?1:0) - m.pop) * 0.25;                 // smooth grow/shrink
       const frac = total > 0 ? secs[i]/total : 0;
       const a0 = cum*TAU, a1 = (cum + Math.min(frac, 0.99999))*TAU; cum += frac;
-      const outerR = R + m.pop*POP_R;
+      const outerR = R + m.pop*POP_R;                 // crece hacia fuera; r (interior) fijo
       m.path.setAttribute("d", frac > 0 ? ringSlice(CX,CY,r,outerR,a0,a1) : "");
       m.path.setAttribute("opacity", frac > 0 ? 1 : 0);
-      const mid = (a0+a1)/2, off = m.pop*POP_OFF;
-      m.path.setAttribute("transform", `translate(${(off*Math.sin(mid)).toFixed(2)},${(-off*Math.cos(mid)).toFixed(2)})`);
       m.val.innerHTML = secs[i].toFixed(2) + "s &nbsp; <b>" + (total>0 ? (secs[i]/total*100).toFixed(2) : "0.00") + "%</b>";
       m.row.classList.toggle("sing", on);
     });
