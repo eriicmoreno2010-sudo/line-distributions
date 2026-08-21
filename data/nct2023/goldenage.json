@@ -149,13 +149,614 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "TAEIL"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "Uh",
+      "romanization": "uh",
+      "english": "Uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 멀리 갈까 더 많이 더 높이 쌓을까",
+      "romanization": "deo meolli galkka deo mani deo nopi ssaukkwa",
+      "english": "Should we go further, should we stack 'em more and higher",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나누던 꿈과 별처럼 흐르던 시간",
+      "romanization": "nanudeon kkumgwa byeolcheoreom heureudeon sigan",
+      "english": "Dreams and stars we've been talking about and the unstopping time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "뭐든 말해봐 I send and deliver",
+      "romanization": "mwodeun malhaebwa i send and deliver",
+      "english": "Tell me whatever you want, I send and deliver",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So watch me watch me watch me 우리",
+      "romanization": "so watch me watch me watch me uri",
+      "english": "So watch me watch me watch me, we",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sketch for the future",
+      "romanization": "sketch for the future",
+      "english": "Sketch for the future",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "언제나 흑백인 꿈에 너라는 물감을 칠해",
+      "romanization": "eonjena heukbaegin kkum-e neoraneun mulgameul chilhae",
+      "english": "On the dream that's always been black and white, I'm painting you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pop like a picture 눈앞에 펼쳐",
+      "romanization": "pop like a picture nunape pyeolchyeo",
+      "english": "Pop like a picture, unfold before my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "4차원 이상의 그림",
+      "romanization": "sachawon isangui geurim",
+      "english": "The higher dimensional view",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You be like yeah, I be like there",
+      "romanization": "you be like yeah, i be like there",
+      "english": "You be like yeah, I be like there",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네가 날 상상한 대로 탄성이",
+      "romanization": "nega nal sangsanghan daero tanseongi",
+      "english": "You'll be moanin' however you anticipated me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Wow wow wow",
+      "romanization": "wow wow wow",
+      "english": "Wow wow wow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터질 수 있게 Like that",
+      "romanization": "teojil su itge like that",
+      "english": "So we can blow 'em up, Like that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내가 뭘 원하는지",
+      "romanization": "naega mwol wonhaneunji",
+      "english": "What do I really want",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈을 감고 다시 생각해",
+      "romanization": "nuneul gamgo dasi saenggakhae",
+      "english": "Close my eyes and think again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Your touch is all I need",
+      "romanization": "your touch is all i need",
+      "english": "Your touch is all I need",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "수많은 길 중에",
+      "romanization": "sumaneun gil junge",
+      "english": "Of all the ways",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(A million thousand ways)",
+      "romanization": "(a million thousand ways)",
+      "english": "(A million thousand ways)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 길을 걸을게 (네가 비춰주는)",
+      "romanization": "nae gireul georeulge (nega bichwojuneun)",
+      "english": "I'll walk my road (Through your light)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I, I will keep my promise",
+      "romanization": "i, i will keep my promise",
+      "english": "I, I will keep my promise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "펼쳐진 Golden age, our age",
+      "romanization": "pyeolchyeojin golden age, our age",
+      "english": "This unfolded Golden Age, our age",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지금 우리 Oh ooh uh",
+      "romanization": "jigeum uri oh ooh uh",
+      "english": "us now, Oh ooh uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 소중한 순간은 바래지 않으니",
+      "romanization": "i sojunghan sunganeun baraeji aneuni",
+      "english": "This moment will not fade away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'll give you all of me yeah all of me",
+      "romanization": "i'll give you all of me yeah all of me",
+      "english": "I'll give you all of me yeah all of me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'll never leave",
+      "romanization": "i'll never leave",
+      "english": "I'll never leave",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "긴 꿈의 Page에",
+      "romanization": "gin kkume page-e",
+      "english": "On the page of my long dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그려지는 Starry way",
+      "romanization": "geuryeojineun starry way",
+      "english": "Draw a starry way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fantastic, so classic",
+      "romanization": "fantastic, so classic",
+      "english": "Fantastic, so classic",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 황금빛의 New wave",
+      "romanization": "i hwanggeumbitui new wave",
+      "english": "This golden new wave",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I be up, I be down",
+      "romanization": "i be up, i be down",
+      "english": "I be up, I be down",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "헤엄쳐 너와 나",
+      "romanization": "heomyeochyeo neowa na",
+      "english": "You and I, swimmin'",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝이 없는 별의 바다",
+      "romanization": "kkeuchi eomneun byeorui bada",
+      "english": "A never-ending sea of stars",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 숨을 고르고 Dive",
+      "romanization": "dasi sumeul gireugo dive",
+      "english": "Take another breath and dive",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "온몸 번지는 반짝임",
+      "romanization": "onmom beonjineun banjjagim",
+      "english": "The glitter's covering my body",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "힘껏 당기는 Gravity",
+      "romanization": "himkkeot danggineun gravity",
+      "english": "Gravity's pulling me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "여기 무대 위 Fly with me",
+      "romanization": "yeogi mudae wi fly with me",
+      "english": "On this stage, fly with me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 움직여",
+      "romanization": "nal umjigyeo",
+      "english": "Make me move",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Into the new world",
+      "romanization": "into the new world",
+      "english": "Into the new world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내가 뭘 원하는지",
+      "romanization": "naega mwol wonhaneunji",
+      "english": "What do I really want",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈을 감고 다시 생각해",
+      "romanization": "nuneul gamgo dasi saenggakhae",
+      "english": "Close my eyes and think again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Your touch is all I need",
+      "romanization": "your touch is all i need",
+      "english": "Your touch is all I need",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "수많은 길 중에",
+      "romanization": "sumaneun gil junge",
+      "english": "Of all the ways",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(A million thousand ways)",
+      "romanization": "(a million thousand ways)",
+      "english": "(A million thousand ways)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 곁을 걸을게 (너만 원한다면)",
+      "romanization": "ne gyeoteul georeulge (neoman wonhandamyeon)",
+      "english": "I'll walk by your side (only if you want)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I, I will keep my promise",
+      "romanization": "i, i will keep my promise",
+      "english": "I, I will keep my promise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "펼쳐진 Golden age, our age",
+      "romanization": "pyeolchyeojin golden age, our age",
+      "english": "This unfolded Golden Age, our age",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지금 우리 Oh ooh uh",
+      "romanization": "jigeum uri oh ooh uh",
+      "english": "us now, Oh ooh uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 곁에 있을게",
+      "romanization": "ne gyeote isseulge",
+      "english": "I'll be by your side",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'll give you all of me yeah all of me",
+      "romanization": "i'll give you all of me yeah all of me",
+      "english": "I'll give you all of me yeah all of me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'll never leave",
+      "romanization": "i'll never leave",
+      "english": "I'll never leave",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "긴 꿈의 Page에",
+      "romanization": "gin kkume page-e",
+      "english": "On the page of my long dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그려지는 Starry way",
+      "romanization": "geuryeojineun starry way",
+      "english": "Draw a starry way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fantastic, so classic",
+      "romanization": "fantastic, so classic",
+      "english": "Fantastic, so classic",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 황금빛의 New wave",
+      "romanization": "i hwanggeumbitui new wave",
+      "english": "This golden new wave",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Okay!",
+      "romanization": "okay!",
+      "english": "Okay!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Everybody",
+      "romanization": "everybody",
+      "english": "Everybody",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Say are you ready?",
+      "romanization": "say are you ready?",
+      "english": "Say are you ready?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Are you ready?",
+      "romanization": "are you ready?",
+      "english": "Are you ready?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어디든 빛날 거야 Where we go",
+      "romanization": "eodideun bitnal geoya where we go",
+      "english": "We'll shine wherever we be, Where we go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Just say my name, I'll be there",
+      "romanization": "just say my name, i'll be there",
+      "english": "Just say my name, I'll be there",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넓은 Universe 손을 내밀어",
+      "romanization": "neolbeun universe soneul naemireo",
+      "english": "Huge Universe, Give me your hand",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Only you and me now",
+      "romanization": "only you and me now",
+      "english": "Only you and me now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah ay",
+      "romanization": "yeah ay",
+      "english": "Yeah ay",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 영원할 기억 속에",
+      "romanization": "i yeongwonhal gieok soge",
+      "english": "In this memory that'll never be lost",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fantastic, so classic",
+      "romanization": "fantastic, so classic",
+      "english": "Fantastic, so classic",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "또 시작되는 New wave",
+      "romanization": "tto sijakdoeneun new wave",
+      "english": "yet again a new wave",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 영원한 꿈속에",
+      "romanization": "i yeongwonhan kkumsoge",
+      "english": "Carved in this never-ending dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "새겨지는 New page",
+      "romanization": "saegyeojineun new page",
+      "english": "is a new page",
+      "adlib": false
     }
   ]
 }
