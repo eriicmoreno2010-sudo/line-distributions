@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Prueba — foto que late</title>
+<style>
+  :root{ --bg:#0b0b10; --text:#f0f0f6; --text2:#9a9ab0; --glow:#61fdad; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{ background:var(--bg); color:var(--text); font-family:"Segoe UI",Inter,Arial,sans-serif;
+        display:flex; flex-direction:column; align-items:center; justify-content:center; gap:40px; }
+
+  .wrap{ position:relative; width:300px; height:300px; display:flex; align-items:center; justify-content:center; }
+  /* halo/aura que palpita detrás de la foto */
+  .aura, .aura2{ position:absolute; border-radius:50%; pointer-events:none;
+                 background:radial-gradient(circle, var(--glow) 0%, transparent 62%); }
+  .aura{ inset:-22%; filter:blur(26px); animation:beat var(--dur,.7s) ease-in-out infinite; }
+  .aura2{ inset:-8%;  filter:blur(14px); opacity:.7; animation:beat var(--dur,.7s) ease-in-out infinite; }
+  .photo{ position:relative; width:210px; height:210px; border-radius:50%; object-fit:cover;
+          object-position:center 42%; border:4px solid rgba(255,255,255,.85);
+          box-shadow:0 0 0 2px var(--glow); z-index:2;
+          animation:pop var(--dur,.7s) ease-in-out infinite; }
+
+  @keyframes beat{ 0%,100%{ transform:scale(.85); opacity:.45 } 45%{ transform:scale(1.28); opacity:1 } }
+  @keyframes pop{  0%,100%{ transform:scale(1) }            45%{ transform:scale(1.05) } }
+
+  .panel{ display:flex; flex-direction:column; gap:14px; width:min(460px,86vw); }
+  .row{ display:flex; align-items:center; gap:14px; }
+  .row label{ width:110px; color:var(--text2); font-weight:800; font-size:13px; }
+  input[type=range]{ flex:1; accent-color:var(--glow); }
+  .row .v{ width:70px; text-align:right; font-weight:800; font-variant-numeric:tabular-nums; }
+  .swatches{ display:flex; gap:8px; flex-wrap:wrap; }
+  .sw{ width:30px; height:30px; border-radius:8px; border:2px solid #2a2a3a; cursor:pointer; }
+  .hint{ color:var(--text2); font-size:13px; text-align:center; }
+</style>
+</head>
+<body>
+  <div class="wrap" id="wrap" style="--dur:.7s">
+    <div class="aura"></div>
+    <div class="aura2"></div>
+    <img class="photo" src="images/nctdream/smoothie/haechan.png" alt="">
+  </div>
+
+  <div class="panel">
+    <div class="row"><label>Velocidad</label><input id="bpm" type="range" min="40" max="200" value="86"><span class="v" id="bpmv">86 BPM</span></div>
+    <div class="row"><label>Color</label><div class="swatches" id="sw"></div></div>
+    <div class="hint">Prueba de la foto que “late”. En la app real, el color sería el del miembro y el ritmo se podría sincronizar con los beats de la canción.</div>
+  </div>
+
+<script>
+  const wrap = document.getElementById("wrap");
+  const bpm = document.getElementById("bpm"), bpmv = document.getElementById("bpmv");
+  function setBpm(v){ wrap.style.setProperty("--dur", (60/v).toFixed(3)+"s"); bpmv.textContent = v+" BPM"; }
+  bpm.oninput = () => setBpm(+bpm.value); setBpm(+bpm.value);
+
+  const colors = ["#61fdad","#cb6ce6","#fac142","#ff3131","#1bb7e8","#22c429","#f12ba5","#ffffff"];
+  const sw = document.getElementById("sw");
+  colors.forEach(c => { const b=document.createElement("div"); b.className="sw"; b.style.background=c;
+    b.onclick=()=> document.documentElement.style.setProperty("--glow", c); sw.appendChild(b); });
+</script>
+</body>
+</html>
