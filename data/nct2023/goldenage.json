@@ -49,7 +49,7 @@
     {
       "name": "TEN",
       "image": "images/nct2023/goldenage/ten.png",
-      "color": "#dba206",
+      "color": "#db8d06",
       "focus": 50,
       "lift": 3
     },
@@ -149,7 +149,9 @@
     {
       "start": 13.07,
       "end": 26.18,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "",
       "romanization": "Uh",
       "english": "",
@@ -158,7 +160,9 @@
     {
       "start": 28.58,
       "end": 30,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "더 멀리 갈까 ",
       "romanization": "deo meolli galkka ",
       "english": "Should we go further",
@@ -167,7 +171,9 @@
     {
       "start": 30.12,
       "end": 31.62,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "더 많이 더 높이 쌓을까",
       "romanization": "deo mani deo nopi ssaukkwa",
       "english": "Should we stack 'em more and higher",
@@ -176,7 +182,9 @@
     {
       "start": 31.92,
       "end": 33.23,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "나누던 꿈과 ",
       "romanization": "nanudeon kkumgwa",
       "english": "Dreams and stars we've been talking about ",
@@ -185,7 +193,9 @@
     {
       "start": 33.39,
       "end": 34.72,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "별처럼 흐르던 시간",
       "romanization": "byeolcheoreom heureudeon sigan",
       "english": "And the unstopping time",
@@ -194,7 +204,9 @@
     {
       "start": 34.62,
       "end": 37.55,
-      "members": [],
+      "members": [
+        "YANGYANG"
+      ],
       "original": "뭐든 말해봐 I send and deliver",
       "romanization": "mwodeun malhaebwa i send and deliver",
       "english": "Tell me whatever you want, I send and deliver",
@@ -203,7 +215,9 @@
     {
       "start": 37.69,
       "end": 39.29,
-      "members": [],
+      "members": [
+        "WINWIN"
+      ],
       "original": "So watch me watch me watch me 우리",
       "romanization": "so watch me watch me watch me uri",
       "english": "So watch me watch me watch me, we",
@@ -212,7 +226,9 @@
     {
       "start": 39.38,
       "end": 40.97,
-      "members": [],
+      "members": [
+        "WINWIN"
+      ],
       "original": "",
       "romanization": "Sketch for the future",
       "english": "",
@@ -221,7 +237,9 @@
     {
       "start": 41.53,
       "end": 42.8,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "언제나 흑백인 꿈에",
       "romanization": "eonjena heukbaegin kkume",
       "english": "On the dream that's always been black and white",
@@ -230,7 +248,9 @@
     {
       "start": 42.96,
       "end": 44.37,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "너라는 물감을 칠해",
       "romanization": "neoraneun mulgameul chilhae",
       "english": "I'm painting you",
@@ -239,7 +259,9 @@
     {
       "start": 44.71,
       "end": 46.18,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "Pop like a picture 눈앞에 펼쳐",
       "romanization": "pop like a picture nunape pyeolchyeo",
       "english": "Pop like a picture, unfold before my eyes",
@@ -248,7 +270,9 @@
     {
       "start": 46.31,
       "end": 47.46,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "4차원 이상의 그림",
       "romanization": "sachawon isangui geurim",
       "english": "The higher dimensional view",
@@ -257,7 +281,9 @@
     {
       "start": 47.74,
       "end": 49.2,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "",
       "romanization": "You be like yeah, I be like there",
       "english": "",
@@ -266,7 +292,9 @@
     {
       "start": 49.35,
       "end": 51.26,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "네가 날 상상한 대로 탄성이",
       "romanization": "nega nal sangsanghan daero tanseongi",
       "english": "You'll be moanin' however you anticipated me",
@@ -275,7 +303,9 @@
     {
       "start": 51.41,
       "end": 53.81,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "Wow wow wow, 터질 수 있게 Like that",
       "romanization": "wow wow wow, teojil su itge like that",
       "english": "Wow wow wow, So we can blow 'em up, Like that",
@@ -284,7 +314,9 @@
     {
       "start": 54.4,
       "end": 57.3,
-      "members": [],
+      "members": [
+        "XIAOJUN"
+      ],
       "original": "내가 뭘 원하는지",
       "romanization": "naega mwol wonhaneunji",
       "english": "What do I really want",
@@ -293,7 +325,9 @@
     {
       "start": 57.51,
       "end": 59.75,
-      "members": [],
+      "members": [
+        "XIAOJUN"
+      ],
       "original": "눈을 감고 다시 생각해",
       "romanization": "nuneul gamgo dasi saenggakhae",
       "english": "Close my eyes and think again",
@@ -302,7 +336,9 @@
     {
       "start": 59.85,
       "end": 64.44,
-      "members": [],
+      "members": [
+        "XIAOJUN"
+      ],
       "original": "",
       "romanization": "Your touch is all I need",
       "english": "",
@@ -311,7 +347,9 @@
     {
       "start": 66.08,
       "end": 72.17,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "수많은 길 중에, 내 길을 걸을게",
       "romanization": "sumaneun gil junge, nae gireul georeulge",
       "english": "Of all the ways, I'll walk my road",
@@ -320,7 +358,9 @@
     {
       "start": 72.48,
       "end": 78.59,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "",
       "romanization": "I, I will keep my promise",
       "english": "",
@@ -329,7 +369,9 @@
     {
       "start": 78.71,
       "end": 82.2,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "펼쳐진 Golden age, our age",
       "romanization": "pyeolchyeojin golden age, our age",
       "english": "This unfolded Golden Age, our age",
@@ -338,7 +380,9 @@
     {
       "start": 82.35,
       "end": 85.05,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "지금 우리 Oh ooh uh",
       "romanization": "jigeum uri oh ooh uh",
       "english": "us now, Oh ooh uh",
@@ -347,7 +391,9 @@
     {
       "start": 85.21,
       "end": 88.84,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "이 소중한 순간은 바래지 않으니",
       "romanization": "i sojunghan sunganeun baraeji aneuni",
       "english": "This moment will not fade away",
@@ -356,7 +402,9 @@
     {
       "start": 88.99,
       "end": 91.78,
-      "members": [],
+      "members": [
+        "TEN"
+      ],
       "original": "",
       "romanization": "I'll give you all of me yeah all of me, I'll never leave",
       "english": "",
@@ -365,7 +413,9 @@
     {
       "start": 91.9,
       "end": 97.33,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "긴 꿈의 Page에, 그려지는 Starry way",
       "romanization": "gin kkume pagee, geuryeojineun starry way",
       "english": "On the page of my long dream, Draw a starry way",
@@ -374,7 +424,9 @@
     {
       "start": 97.48,
       "end": 104.29,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "Fantastic, so classic, 이 황금빛의 New wave",
       "romanization": "fantastic, so classic, i hwanggeumbitui new wave",
       "english": "Fantastic, so classic, This golden new wave",
@@ -383,7 +435,9 @@
     {
       "start": 105.85,
       "end": 108.83,
-      "members": [],
+      "members": [
+        "JAEMIN"
+      ],
       "original": "I be up, I be down, 헤엄쳐 너와 나",
       "romanization": "i be up, i be down, heomyeochyeo neowa na",
       "english": "I be up, I be down, You and I, swimmin'",
@@ -392,7 +446,9 @@
     {
       "start": 108.96,
       "end": 110.47,
-      "members": [],
+      "members": [
+        "HENDERY"
+      ],
       "original": "끝이 없는 별의 바다",
       "romanization": "kkeuchi eomneun byeorui bada",
       "english": "A never-ending sea of stars",
@@ -401,7 +457,9 @@
     {
       "start": 110.59,
       "end": 111.98,
-      "members": [],
+      "members": [
+        "HENDERY"
+      ],
       "original": "다시 숨을 고르고 Dive",
       "romanization": "dasi sumeul gireugo dive",
       "english": "Take another breath and dive",
@@ -410,7 +468,9 @@
     {
       "start": 112.13,
       "end": 113.58,
-      "members": [],
+      "members": [
+        "JISUNG"
+      ],
       "original": "온몸 번지는 반짝임",
       "romanization": "onmom beonjineun banjjagim",
       "english": "The glitter's covering my body",
@@ -419,7 +479,9 @@
     {
       "start": 113.74,
       "end": 115.23,
-      "members": [],
+      "members": [
+        "JISUNG"
+      ],
       "original": "힘껏 당기는 Gravity",
       "romanization": "himkkeot danggineun gravity",
       "english": "Gravity's pulling me",
@@ -428,7 +490,9 @@
     {
       "start": 115.4,
       "end": 116.75,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "여기 무대 위 Fly with me",
       "romanization": "yeogi mudae wi fly with me",
       "english": "On this stage, fly with me",
@@ -437,7 +501,9 @@
     {
       "start": 116.87,
       "end": 119.01,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "날 움직여, Into the new world",
       "romanization": "nal umjigyeo, into the new world",
       "english": "Make me move, Into the new world",
@@ -446,7 +512,9 @@
     {
       "start": 119.59,
       "end": 122.44,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "내가 뭘 원하는지",
       "romanization": "naega mwol wonhaneunji",
       "english": "What do I really want",
@@ -455,7 +523,9 @@
     {
       "start": 122.7,
       "end": 124.94,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "눈을 감고 다시 생각해",
       "romanization": "nuneul gamgo dasi saenggakhae",
       "english": "Close my eyes and think again",
@@ -464,7 +534,9 @@
     {
       "start": 125.06,
       "end": 130.07,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "",
       "romanization": "Your touch is all I need",
       "english": "",
@@ -473,7 +545,9 @@
     {
       "start": 131.21,
       "end": 137.57,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "수많은 길 중에, 네 곁을 걸을게",
       "romanization": "sumaneun gil junge, ne gyeoteul georeulge",
       "english": "Of all the ways, I'll walk by your side",
@@ -482,7 +556,9 @@
     {
       "start": 137.87,
       "end": 143.68,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "I, I will keep my promise",
       "english": "",
@@ -491,7 +567,9 @@
     {
       "start": 143.8,
       "end": 147.42,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "펼쳐진 Golden age, our age",
       "romanization": "pyeolchyeojin golden age, our age",
       "english": "This unfolded Golden Age, our age",
@@ -500,7 +578,9 @@
     {
       "start": 147.58,
       "end": 150.25,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "지금 우리 Oh ooh uh",
       "romanization": "jigeum uri oh ooh uh",
       "english": "us now, Oh ooh uh",
@@ -509,7 +589,9 @@
     {
       "start": 150.37,
       "end": 154.06,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "네 곁에 있을게",
       "romanization": "ne gyeote isseulge",
       "english": "I'll be by your side",
@@ -518,7 +600,9 @@
     {
       "start": 154.19,
       "end": 156.97,
-      "members": [],
+      "members": [
+        "KUN"
+      ],
       "original": "",
       "romanization": "I'll give you all of me yeah all of me, I'll never leave",
       "english": "",
@@ -527,7 +611,9 @@
     {
       "start": 157.08,
       "end": 162.54,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "긴 꿈의 Page에, 그려지는 Starry way",
       "romanization": "gin kkume pagee, geuryeojineun starry way",
       "english": "On the page of my long dream, Draw a starry way",
@@ -536,7 +622,9 @@
     {
       "start": 163.1,
       "end": 169.16,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "Fantastic, so classic, 이 황금빛의 New wave",
       "romanization": "fantastic, so classic, i hwanggeumbitui new wave",
       "english": "Fantastic, so classic, This golden new wave",
@@ -545,7 +633,9 @@
     {
       "start": 169.18,
       "end": 170.07,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "Okay!",
       "english": "",
@@ -554,7 +644,9 @@
     {
       "start": 170.93,
       "end": 172.33,
-      "members": [],
+      "members": [
+        "XIAOJUN"
+      ],
       "original": "",
       "romanization": "Everybody",
       "english": "",
@@ -563,7 +655,9 @@
     {
       "start": 173.15,
       "end": 174.42,
-      "members": [],
+      "members": [
+        "YANGYANG"
+      ],
       "original": "",
       "romanization": "Say are you ready?",
       "english": "",
@@ -572,7 +666,9 @@
     {
       "start": 175.53,
       "end": 176.5,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "",
       "romanization": "Are you ready?",
       "english": "",
@@ -581,7 +677,9 @@
     {
       "start": 177.06,
       "end": 179.5,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "어디든 빛날 거야 Where we go",
       "romanization": "eodideun bitnal geoya where we go",
       "english": "We'll shine wherever we be, Where we go",
@@ -590,7 +688,9 @@
     {
       "start": 180.86,
       "end": 183.19,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "Just say my name, I'll be there",
       "english": "",
@@ -599,7 +699,9 @@
     {
       "start": 184.63,
       "end": 190.41,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "넓은 Universe 손을 내밀어",
       "romanization": "neolbeun universe soneul naemireo",
       "english": "Huge Universe, Give me your hand",
@@ -608,7 +710,9 @@
     {
       "start": 191.03,
       "end": 195.91,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "",
       "romanization": "Only you and me now",
       "english": "",
@@ -617,7 +721,9 @@
     {
       "start": 196.37,
       "end": 202.74,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "이 영원할 기억 속에",
       "romanization": "i yeongwonhal gieok soge",
       "english": "In this memory that'll never be lost",
@@ -626,7 +732,9 @@
     {
       "start": 202.87,
       "end": 209.07,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "Fantastic, so classic, 또 시작되는 New wave",
       "romanization": "fantastic, so classic, tto sijakdoeneun new wave",
       "english": "Fantastic, so classic, yet again a new wave",
@@ -635,7 +743,9 @@
     {
       "start": 209.2,
       "end": 215.46,
-      "members": [],
+      "members": [
+        "NCT 2023"
+      ],
       "original": "이 영원한 꿈속에, 새겨지는 New page",
       "romanization": "i yeongwonhan kkumsoge, saegyeojineun new page",
       "english": "Carved in this never-ending dream, is a new page",
