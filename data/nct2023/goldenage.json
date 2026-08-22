@@ -1106,40 +1106,64 @@
       "original": "",
       "romanization": "Oh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          64.54,
+          66.21
+        ]
+      ]
     },
     {
       "start": 68.29,
       "end": 69.79,
       "members": [
-        "TEN"
+        "HAECHAN"
       ],
       "original": "",
-      "romanization": "(A million thousand ways)",
+      "romanization": "A million thousand ways",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          68.32,
+          69.8
+        ]
+      ]
     },
     {
       "start": 71.4,
       "end": 72.97,
       "members": [
-        "TEN"
+        "HAECHAN"
       ],
-      "original": " (네가 비춰주는)",
-      "romanization": "(nega bichwojuneun)",
-      "english": "(Through your light)",
-      "adlib": true
+      "original": " 네가 비춰주는",
+      "romanization": "nega bichwojuneun",
+      "english": "Through your light",
+      "adlib": true,
+      "voice": [
+        [
+          71.46,
+          72.96
+        ]
+      ]
     },
     {
       "start": 73.63,
       "end": 74.38,
       "members": [
-        "TEN"
+        "HAECHAN"
       ],
       "original": "",
       "romanization": "I",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          73.75,
+          74.48
+        ]
+      ]
     },
     {
       "start": 129.61,
@@ -1150,40 +1174,64 @@
       "original": "",
       "romanization": "Oh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          129.67,
+          131.3
+        ]
+      ]
     },
     {
       "start": 133.51,
       "end": 134.88,
       "members": [
-        "HAECHAN"
+        "TEN"
       ],
       "original": "",
-      "romanization": "(A million thousand ways)",
+      "romanization": "A million thousand ways",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          133.48,
+          135.05
+        ]
+      ]
     },
     {
       "start": 136.67,
       "end": 138.05,
       "members": [
-        "HAECHAN"
+        "TEN"
       ],
-      "original": "(너만 원한다면)",
-      "romanization": "(neoman wonhandamyeon)",
-      "english": "(Only if you want)",
-      "adlib": true
+      "original": "너만 원한다면",
+      "romanization": "neoman wonhandamyeon",
+      "english": "Only if you want",
+      "adlib": true,
+      "voice": [
+        [
+          136.58,
+          138.12
+        ]
+      ]
     },
     {
       "start": 138.82,
       "end": 139.58,
       "members": [
-        "HAECHAN"
+        "TEN"
       ],
       "original": "",
       "romanization": "I",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          138.85,
+          139.64
+        ]
+      ]
     },
     {
       "start": 195.03,
@@ -1194,7 +1242,13 @@
       "original": "",
       "romanization": "Yeah ay",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          195.06,
+          196.9
+        ]
+      ]
     }
   ]
 }
