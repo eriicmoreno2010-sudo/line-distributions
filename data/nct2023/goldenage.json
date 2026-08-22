@@ -285,27 +285,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "수많은 길 중에",
-      "romanization": "sumaneun gil junge",
-      "english": "Of all the ways",
+      "original": "수많은 길 중에, 내 길을 걸을게",
+      "romanization": "sumaneun gil junge, nae gireul georeulge",
+      "english": "Of all the ways, I'll walk my road",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "내 길을 걸을게 (네가 비춰주는)",
-      "romanization": "nae gireul georeulge (nega bichwojuneun)",
-      "english": "I'll walk my road (Through your light)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I, I will keep my promise",
-      "romanization": "i, i will keep my promise",
-      "english": "I, I will keep my promise",
+      "original": "",
+      "romanization": "I, I will keep my promise",
+      "english": "",
       "adlib": false
     },
     {
@@ -339,18 +330,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I'll give you all of me yeah all of me",
-      "romanization": "i'll give you all of me yeah all of me",
-      "english": "I'll give you all of me yeah all of me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I'll never leave",
-      "romanization": "i'll never leave",
-      "english": "I'll never leave",
+      "original": "",
+      "romanization": "I'll give you all of me yeah all of me, I'll never leave",
+      "english": "",
       "adlib": false
     },
     {
@@ -755,6 +737,15 @@
       "members": [],
       "original": " 네가 비춰주는)",
       "romanization": "(nega bichwojuneun)",
+      "english": "(Through your light)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I",
       "english": "",
       "adlib": true
     }
