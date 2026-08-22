@@ -155,7 +155,21 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.31,
+          16.48
+        ],
+        [
+          16.79,
+          20
+        ],
+        [
+          20.4,
+          26.2
+        ]
+      ]
     },
     {
       "start": 28.58,
@@ -166,7 +180,17 @@
       "original": "더 멀리 갈까 ",
       "romanization": "deo meolli galkka ",
       "english": "Should we go further",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.77,
+          29.25
+        ],
+        [
+          29.57,
+          30.15
+        ]
+      ]
     },
     {
       "start": 30.12,
@@ -177,7 +201,13 @@
       "original": "더 많이 더 높이 쌓을까",
       "romanization": "deo mani deo nopi ssaukkwa",
       "english": "Should we stack 'em more and higher",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          30.36,
+          31.69
+        ]
+      ]
     },
     {
       "start": 31.92,
@@ -188,7 +218,17 @@
       "original": "나누던 꿈과 ",
       "romanization": "nanudeon kkumgwa",
       "english": "Dreams and stars we've been talking about ",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.9,
+          32.51
+        ],
+        [
+          32.75,
+          33.22
+        ]
+      ]
     },
     {
       "start": 33.39,
@@ -199,7 +239,13 @@
       "original": "별처럼 흐르던 시간",
       "romanization": "byeolcheoreom heureudeon sigan",
       "english": "And the unstopping time",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.45,
+          34.75
+        ]
+      ]
     },
     {
       "start": 34.62,
@@ -210,7 +256,13 @@
       "original": "뭐든 말해봐 I send and deliver",
       "romanization": "mwodeun malhaebwa i send and deliver",
       "english": "Tell me whatever you want, I send and deliver",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.76,
+          37.8
+        ]
+      ]
     },
     {
       "start": 37.69,
@@ -221,7 +273,13 @@
       "original": "So watch me watch me watch me 우리",
       "romanization": "so watch me watch me watch me uri",
       "english": "So watch me watch me watch me, we",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          37.72,
+          39.46
+        ]
+      ]
     },
     {
       "start": 39.38,
@@ -232,7 +290,13 @@
       "original": "",
       "romanization": "Sketch for the future",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          39.53,
+          41.01
+        ]
+      ]
     },
     {
       "start": 41.53,
@@ -243,7 +307,13 @@
       "original": "언제나 흑백인 꿈에",
       "romanization": "eonjena heukbaegin kkume",
       "english": "On the dream that's always been black and white",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          41.49,
+          42.77
+        ]
+      ]
     },
     {
       "start": 42.96,
@@ -254,7 +324,13 @@
       "original": "너라는 물감을 칠해",
       "romanization": "neoraneun mulgameul chilhae",
       "english": "I'm painting you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          43.05,
+          44.35
+        ]
+      ]
     },
     {
       "start": 44.71,
@@ -265,7 +341,13 @@
       "original": "Pop like a picture 눈앞에 펼쳐",
       "romanization": "pop like a picture nunape pyeolchyeo",
       "english": "Pop like a picture, unfold before my eyes",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.64,
+          46.3
+        ]
+      ]
     },
     {
       "start": 46.31,
@@ -276,7 +358,13 @@
       "original": "4차원 이상의 그림",
       "romanization": "sachawon isangui geurim",
       "english": "The higher dimensional view",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          46.25,
+          47.47
+        ]
+      ]
     },
     {
       "start": 47.74,
@@ -287,7 +375,17 @@
       "original": "",
       "romanization": "You be like yeah, I be like there",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          47.83,
+          48.54
+        ],
+        [
+          48.69,
+          49.33
+        ]
+      ]
     },
     {
       "start": 49.35,
@@ -298,7 +396,17 @@
       "original": "네가 날 상상한 대로 탄성이",
       "romanization": "nega nal sangsanghan daero tanseongi",
       "english": "You'll be moanin' however you anticipated me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.44,
+          50.88
+        ],
+        [
+          51.01,
+          51.42
+        ]
+      ]
     },
     {
       "start": 51.41,
@@ -309,7 +417,13 @@
       "original": "Wow wow wow, 터질 수 있게 Like that",
       "romanization": "wow wow wow, teojil su itge like that",
       "english": "Wow wow wow, So we can blow 'em up, Like that",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.38,
+          53.85
+        ]
+      ]
     },
     {
       "start": 54.4,
@@ -320,7 +434,13 @@
       "original": "내가 뭘 원하는지",
       "romanization": "naega mwol wonhaneunji",
       "english": "What do I really want",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.56,
+          57.27
+        ]
+      ]
     },
     {
       "start": 57.51,
@@ -331,7 +451,13 @@
       "original": "눈을 감고 다시 생각해",
       "romanization": "nuneul gamgo dasi saenggakhae",
       "english": "Close my eyes and think again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.63,
+          59.96
+        ]
+      ]
     },
     {
       "start": 59.85,
@@ -342,7 +468,13 @@
       "original": "",
       "romanization": "Your touch is all I need",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.93,
+          64.68
+        ]
+      ]
     },
     {
       "start": 66.08,
@@ -353,7 +485,17 @@
       "original": "수많은 길 중에, 내 길을 걸을게",
       "romanization": "sumaneun gil junge, nae gireul georeulge",
       "english": "Of all the ways, I'll walk my road",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          65.98,
+          68.63
+        ],
+        [
+          69.21,
+          72.44
+        ]
+      ]
     },
     {
       "start": 72.48,
@@ -364,7 +506,17 @@
       "original": "",
       "romanization": "I, I will keep my promise",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.88,
+          74.24
+        ],
+        [
+          74.48,
+          78.66
+        ]
+      ]
     },
     {
       "start": 78.71,
@@ -397,7 +549,13 @@
       "original": "이 소중한 순간은 바래지 않으니",
       "romanization": "i sojunghan sunganeun baraeji aneuni",
       "english": "This moment will not fade away",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.2,
+          90.57
+        ]
+      ]
     },
     {
       "start": 88.99,
@@ -408,7 +566,13 @@
       "original": "",
       "romanization": "I'll give you all of me yeah all of me, I'll never leave",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89,
+          91.91
+        ]
+      ]
     },
     {
       "start": 91.9,
@@ -441,7 +605,37 @@
       "original": "I be up, I be down, 헤엄쳐 너와 나",
       "romanization": "i be up, i be down, heomyeochyeo neowa na",
       "english": "I be up, I be down, You and I, swimmin'",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.9,
+          106.22
+        ],
+        [
+          106.34,
+          106.6
+        ],
+        [
+          106.69,
+          106.95
+        ],
+        [
+          107.07,
+          107.48
+        ],
+        [
+          107.46,
+          108.15
+        ],
+        [
+          108.28,
+          108.59
+        ],
+        [
+          108.69,
+          109.11
+        ]
+      ]
     },
     {
       "start": 108.96,
@@ -452,7 +646,13 @@
       "original": "끝이 없는 별의 바다",
       "romanization": "kkeuchi eomneun byeorui bada",
       "english": "A never-ending sea of stars",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.06,
+          110.59
+        ]
+      ]
     },
     {
       "start": 110.59,
@@ -463,7 +663,13 @@
       "original": "다시 숨을 고르고 Dive",
       "romanization": "dasi sumeul gireugo dive",
       "english": "Take another breath and dive",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          110.68,
+          112.18
+        ]
+      ]
     },
     {
       "start": 112.13,
@@ -474,7 +680,13 @@
       "original": "온몸 번지는 반짝임",
       "romanization": "onmom beonjineun banjjagim",
       "english": "The glitter's covering my body",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          112.19,
+          113.79
+        ]
+      ]
     },
     {
       "start": 113.74,
@@ -485,7 +697,13 @@
       "original": "힘껏 당기는 Gravity",
       "romanization": "himkkeot danggineun gravity",
       "english": "Gravity's pulling me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.7,
+          115.39
+        ]
+      ]
     },
     {
       "start": 115.4,
@@ -496,7 +714,13 @@
       "original": "여기 무대 위 Fly with me",
       "romanization": "yeogi mudae wi fly with me",
       "english": "On this stage, fly with me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          115.36,
+          116.96
+        ]
+      ]
     },
     {
       "start": 116.87,
@@ -507,7 +731,21 @@
       "original": "날 움직여, Into the new world",
       "romanization": "nal umjigyeo, into the new world",
       "english": "Make me move, Into the new world",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.94,
+          117.69
+        ],
+        [
+          117.82,
+          118.42
+        ],
+        [
+          118.58,
+          119.07
+        ]
+      ]
     },
     {
       "start": 119.59,
@@ -518,7 +756,13 @@
       "original": "내가 뭘 원하는지",
       "romanization": "naega mwol wonhaneunji",
       "english": "What do I really want",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.75,
+          122.4
+        ]
+      ]
     },
     {
       "start": 122.7,
@@ -529,7 +773,13 @@
       "original": "눈을 감고 다시 생각해",
       "romanization": "nuneul gamgo dasi saenggakhae",
       "english": "Close my eyes and think again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          122.76,
+          125.14
+        ]
+      ]
     },
     {
       "start": 125.06,
@@ -540,7 +790,13 @@
       "original": "",
       "romanization": "Your touch is all I need",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          125.09,
+          130.16
+        ]
+      ]
     },
     {
       "start": 131.21,
@@ -551,7 +807,17 @@
       "original": "수많은 길 중에, 네 곁을 걸을게",
       "romanization": "sumaneun gil junge, ne gyeoteul georeulge",
       "english": "Of all the ways, I'll walk by your side",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          131.18,
+          134.06
+        ],
+        [
+          134.36,
+          137.5
+        ]
+      ]
     },
     {
       "start": 137.87,
@@ -562,7 +828,17 @@
       "original": "",
       "romanization": "I, I will keep my promise",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          138.01,
+          138.97
+        ],
+        [
+          139.6,
+          143.85
+        ]
+      ]
     },
     {
       "start": 143.8,
@@ -595,7 +871,13 @@
       "original": "네 곁에 있을게",
       "romanization": "ne gyeote isseulge",
       "english": "I'll be by your side",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          150.35,
+          155.87
+        ]
+      ]
     },
     {
       "start": 154.19,
@@ -606,7 +888,13 @@
       "original": "",
       "romanization": "I'll give you all of me yeah all of me, I'll never leave",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.21,
+          157.1
+        ]
+      ]
     },
     {
       "start": 157.08,
@@ -639,7 +927,13 @@
       "original": "",
       "romanization": "Okay!",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          169.2,
+          170.08
+        ]
+      ]
     },
     {
       "start": 170.93,
@@ -650,7 +944,13 @@
       "original": "",
       "romanization": "Everybody",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          171.03,
+          172.31
+        ]
+      ]
     },
     {
       "start": 173.15,
@@ -661,7 +961,13 @@
       "original": "",
       "romanization": "Say are you ready?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          173.2,
+          174.48
+        ]
+      ]
     },
     {
       "start": 175.53,
@@ -672,7 +978,13 @@
       "original": "",
       "romanization": "Are you ready?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          175.72,
+          176.45
+        ]
+      ]
     },
     {
       "start": 177.06,
@@ -683,7 +995,13 @@
       "original": "어디든 빛날 거야 Where we go",
       "romanization": "eodideun bitnal geoya where we go",
       "english": "We'll shine wherever we be, Where we go",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          177.15,
+          179.53
+        ]
+      ]
     },
     {
       "start": 180.86,
@@ -694,7 +1012,13 @@
       "original": "",
       "romanization": "Just say my name, I'll be there",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          180.94,
+          183.25
+        ]
+      ]
     },
     {
       "start": 184.63,
@@ -705,7 +1029,17 @@
       "original": "넓은 Universe 손을 내밀어",
       "romanization": "neolbeun universe soneul naemireo",
       "english": "Huge Universe, Give me your hand",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          184.89,
+          187.38
+        ],
+        [
+          188.08,
+          190.4
+        ]
+      ]
     },
     {
       "start": 191.03,
@@ -716,7 +1050,13 @@
       "original": "",
       "romanization": "Only you and me now",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          191.25,
+          195.98
+        ]
+      ]
     },
     {
       "start": 196.37,
@@ -727,7 +1067,13 @@
       "original": "이 영원할 기억 속에",
       "romanization": "i yeongwonhal gieok soge",
       "english": "In this memory that'll never be lost",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          196.43,
+          202.73
+        ]
+      ]
     },
     {
       "start": 202.87,
