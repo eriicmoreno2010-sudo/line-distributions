@@ -7,7 +7,7 @@
     {
       "name": "TAEIL",
       "image": "images/nct2023/goldenage/taeil.png",
-      "color": "#c80404",
+      "color": "#f273ca",
       "focus": 50,
       "lift": 3
     },
@@ -21,7 +21,7 @@
     {
       "name": "TAEYONG",
       "image": "images/nct2023/goldenage/taeyong.png",
-      "color": "#f273ca",
+      "color": "#c80404",
       "focus": 50,
       "lift": 3
     },
@@ -370,7 +370,7 @@
       "start": 47.74,
       "end": 49.2,
       "members": [
-        "TAEIL"
+        "TAEYONG"
       ],
       "original": "",
       "romanization": "You be like yeah, I be like there",
@@ -391,7 +391,7 @@
       "start": 49.35,
       "end": 51.26,
       "members": [
-        "TAEIL"
+        "TAEYONG"
       ],
       "original": "네가 날 상상한 대로 탄성이",
       "romanization": "nega nal sangsanghan daero tanseongi",
@@ -412,7 +412,7 @@
       "start": 51.41,
       "end": 53.81,
       "members": [
-        "TAEIL"
+        "TAEYONG"
       ],
       "original": "Wow wow wow, 터질 수 있게 Like that",
       "romanization": "wow wow wow, teojil su itge like that",
@@ -922,7 +922,7 @@
       "start": 169.18,
       "end": 170.07,
       "members": [
-        "TAEYONG"
+        "TAEIL"
       ],
       "original": "",
       "romanization": "Okay!",
@@ -1062,7 +1062,7 @@
       "start": 196.37,
       "end": 202.74,
       "members": [
-        "TAEYONG"
+        "TAEIL"
       ],
       "original": "이 영원할 기억 속에",
       "romanization": "i yeongwonhal gieok soge",
@@ -1169,7 +1169,7 @@
       "start": 129.61,
       "end": 131.29,
       "members": [
-        "TAEYONG"
+        "TAEIL"
       ],
       "original": "",
       "romanization": "Oh",
