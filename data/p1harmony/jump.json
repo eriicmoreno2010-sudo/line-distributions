@@ -2,7 +2,7 @@
   "group": "P1Harmony",
   "song": "JUMP",
   "video": "videos/p1harmony_jump.mp4",
-  "duration": 0,
+  "duration": 177.259711,
   "members": [
     {
       "name": "KEEHO",
@@ -51,13 +51,605 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "KEEHO"
-      ],
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "JUMP JUMP",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "All day all night, 일어나 이제는 Highlight",
+      "romanization": "all day all night, ireona ijeneun highlight",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One way my way, 내 길은 앞으로 Highway",
+      "romanization": "one way my way, nae gireun apeuro highway",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dance with me, 우리가 즐기는 순간이 Party",
+      "romanization": "dance with me, uriga jeulgineun sungani party",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Energy 분위기를 올려 봐, 모두 We got it",
+      "romanization": "energy bunwigireul ollyeo bwa, modu we got it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어때 내 노랜 MVP, 한층 더 위로 VIP",
+      "romanization": "eottae nae noraen mvp, hancheung deo wiro vip",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "전부 내 춤에, Eyes on me, eyes on me",
+      "romanization": "jeonbu nae chume, eyes on me, eyes on me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pump up the tempo, 더 올려 봐",
+      "romanization": "pump up the tempo, deo ollyeo bwa",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 어깨를 누른 고민 따윈, Drop it all",
+      "romanization": "ne eokkaereul nureun gomin ttawin, drop it all",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Your life is simple, 시작해 봐",
+      "romanization": "your life is simple, sijakhae bwa",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "망설이다간 재미없게, Game over over",
+      "romanization": "mangseoridagan jaemi eopge, game over over",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "One, two, three, four",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 느낌대로 Go",
+      "romanization": "nae neukkimdaero go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Dumb",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Just put your hands up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 리듬 따라 Go",
+      "romanization": "nae rideum ttara go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Dumb dumb dumb",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP JUMP JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "저 저 저 점 보이지 I’m going",
+      "romanization": "jeo jeo jeo jeom boiji i’m going",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나 하늘 위 고지대에 닿고 있다",
+      "romanization": "na haneul wi gojidaee dahgo itda",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꼬인 답답하게 사방",
+      "romanization": "kkoin dapdaphage sabang",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Wa-wait wa-wait, I’m a JUMP boy",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "High-five with the satellite, 내 기분은 Okay",
+      "romanization": "high-five with the satellite, nae gibuneun okay",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터질듯한 분위기에, 함께 취해 It’s okay",
+      "romanization": "teojildeuthan bunwigie, hamkke chwihae it’s okay",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ok ok, 오 기분이 두 배로 좋아",
+      "romanization": "ok ok, o gibuni du baero joa",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "올라가 막 무대로, Everest에서 Ski ski 타듯이",
+      "romanization": "ollaga mak mudaero, everesteseo ski ski tadeusi",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "미끄러져도 여긴 Trampoline, 알잖아 난 안 죽어",
+      "romanization": "mikkeureojyeodo yeogin trampoline, aljana nan an jugeo",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Your life is simple, 시작해 봐",
+      "romanization": "your life is simple, sijakhae bwa",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "망설이다간 재미없게, Game over over",
+      "romanization": "mangseoridagan jaemi eopge, game over over",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "One, two, three, four",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 느낌대로 Go",
+      "romanization": "nae neukkimdaero go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Dumb",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Just put your hands up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 리듬 따라 Go",
+      "romanization": "nae rideum ttara go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Dumb dumb dumb",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP JUMP JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나를 따라, 위로 날아, 재미있잖아",
+      "romanization": "nareul ttara, wiro nala, jaemiitjana",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우린 Never coming down",
+      "romanization": "urin never coming down",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "못 노는 친구 출입 금지",
+      "romanization": "mot noneun chingu chulip geumji",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "긋지 선 물지 우리 둥지",
+      "romanization": "geutji seon mulji uri dungji",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아무나 못 껴 끼리끼리",
+      "romanization": "amuna mot kkyeo kkiri kkiri",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Run away 미리미리",
+      "romanization": "run away mirimiri",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "도망쳐 겁나니",
+      "romanization": "domangchyeo geomnani",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "발이 불이 나게 I’m ready",
+      "romanization": "bari buri nage i’m ready",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "One, two, three, four",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 느낌대로 Go",
+      "romanization": "nae neukkimdaero go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Dumb",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Just put your hands up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Da ra ri da ra",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 리듬 따라 Go",
+      "romanization": "nae rideum ttara go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Dumb dumb dumb",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP JUMP JUMP",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP JUMP",
+      "english": "",
+      "adlib": false
     }
   ]
 }
