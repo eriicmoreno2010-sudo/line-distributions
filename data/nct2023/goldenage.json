@@ -156,21 +156,39 @@
       "adlib": false
     },
     {
-      "start": 28.49,
-      "end": 31.57,
+      "start": 28.58,
+      "end": 30,
       "members": [],
-      "original": "더 멀리 갈까 더 많이 더 높이 쌓을까",
-      "romanization": "deo meolli galkka deo mani deo nopi ssaukkwa",
-      "english": "Should we go further, should we stack 'em more and higher",
+      "original": "더 멀리 갈까 ",
+      "romanization": "deo meolli galkka ",
+      "english": "Should we go further",
       "adlib": false
     },
     {
-      "start": 31.7,
-      "end": 34.5,
+      "start": 30.12,
+      "end": 31.62,
       "members": [],
-      "original": "나누던 꿈과 별처럼 흐르던 시간",
-      "romanization": "nanudeon kkumgwa byeolcheoreom heureudeon sigan",
-      "english": "Dreams and stars we've been talking about and the unstopping time",
+      "original": "더 많이 더 높이 쌓을까",
+      "romanization": "deo mani deo nopi ssaukkwa",
+      "english": "Should we stack 'em more and higher",
+      "adlib": false
+    },
+    {
+      "start": 31.92,
+      "end": 33.23,
+      "members": [],
+      "original": "나누던 꿈과 ",
+      "romanization": "nanudeon kkumgwa",
+      "english": "Dreams and stars we've been talking about ",
+      "adlib": false
+    },
+    {
+      "start": 33.39,
+      "end": 34.72,
+      "members": [],
+      "original": "별처럼 흐르던 시간",
+      "romanization": "byeolcheoreom heureudeon sigan",
+      "english": "And the unstopping time",
       "adlib": false
     },
     {
@@ -201,12 +219,21 @@
       "adlib": false
     },
     {
-      "start": 41.32,
-      "end": 44.24,
+      "start": 41.53,
+      "end": 42.8,
       "members": [],
-      "original": "언제나 흑백인 꿈에 너라는 물감을 칠해",
-      "romanization": "eonjena heukbaegin kkum-e neoraneun mulgameul chilhae",
-      "english": "On the dream that's always been black and white, I'm painting you",
+      "original": "언제나 흑백인 꿈에",
+      "romanization": "eonjena heukbaegin kkume",
+      "english": "On the dream that's always been black and white",
+      "adlib": false
+    },
+    {
+      "start": 42.96,
+      "end": 44.37,
+      "members": [],
+      "original": "너라는 물감을 칠해",
+      "romanization": "neoraneun mulgameul chilhae",
+      "english": "I'm painting you",
       "adlib": false
     },
     {
