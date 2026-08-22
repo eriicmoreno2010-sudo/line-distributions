@@ -739,6 +739,24 @@
       "romanization": "saegyeojineun new page",
       "english": "is a new page",
       "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(A million thousand ways)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": " 네가 비춰주는)",
+      "romanization": "(nega bichwojuneun)",
+      "english": "",
+      "adlib": true
     }
   ]
 }
