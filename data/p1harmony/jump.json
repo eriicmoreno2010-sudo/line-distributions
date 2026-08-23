@@ -68,7 +68,21 @@
       "original": "All day all night, 일어나 이제는 Highlight",
       "romanization": "all day all night, ireona ijeneun highlight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          8.5,
+          9.25
+        ],
+        [
+          9.57,
+          10.34
+        ],
+        [
+          10.59,
+          12.22
+        ]
+      ]
     },
     {
       "start": 12.42,
@@ -79,7 +93,21 @@
       "original": "One way my way, 내 길은 앞으로 Highway",
       "romanization": "one way my way, nae gireun apeuro highway",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          12.58,
+          13.25
+        ],
+        [
+          13.57,
+          14.24
+        ],
+        [
+          14.53,
+          16.09
+        ]
+      ]
     },
     {
       "start": 16.25,
@@ -90,7 +118,17 @@
       "original": "Dance with me, 우리가 즐기는 순간이 Party",
       "romanization": "dance with me, uriga jeulgineun sungani party",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.48,
+          17.64
+        ],
+        [
+          18.05,
+          20.3
+        ]
+      ]
     },
     {
       "start": 20.34,
@@ -101,7 +139,17 @@
       "original": "Energy 분위기를 올려 봐, 모두 We got it",
       "romanization": "energy bunwigireul ollyeo bwa, modu we got it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          20.54,
+          21.64
+        ],
+        [
+          21.98,
+          24.33
+        ]
+      ]
     },
     {
       "start": 24.35,
@@ -112,7 +160,17 @@
       "original": "어때 내 노랜 MVP, 한층 더 위로 VIP",
       "romanization": "eottae nae noraen mvp, hancheung deo wiro vip",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          24.47,
+          26.25
+        ],
+        [
+          26.41,
+          28.14
+        ]
+      ]
     },
     {
       "start": 28.26,
@@ -123,7 +181,17 @@
       "original": "전부 내 춤에, Eyes on me, eyes on me",
       "romanization": "jeonbu nae chume, eyes on me, eyes on me",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.42,
+          30.28
+        ],
+        [
+          30.43,
+          31.5
+        ]
+      ]
     },
     {
       "start": 31.32,
@@ -134,7 +202,17 @@
       "original": "Pump up the tempo, 더 올려 봐",
       "romanization": "pump up the tempo, deo ollyeo bwa",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.38,
+          33.23
+        ],
+        [
+          33.42,
+          34.45
+        ]
+      ]
     },
     {
       "start": 35.06,
@@ -145,7 +223,13 @@
       "original": "네 어깨를 누른 고민 따윈, Drop it all",
       "romanization": "ne eokkaereul nureun gomin ttawin, drop it all",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.35,
+          39.17
+        ]
+      ]
     },
     {
       "start": 39.21,
@@ -156,7 +240,17 @@
       "original": "Your life is simple, 시작해 봐",
       "romanization": "your life is simple, sijakhae bwa",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          39.24,
+          41.09
+        ],
+        [
+          41.32,
+          42.62
+        ]
+      ]
     },
     {
       "start": 43.25,
@@ -167,7 +261,13 @@
       "original": "망설이다간 재미없게, Game over over",
       "romanization": "mangseoridagan jaemi eopge, game over over",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          43.27,
+          47.69
+        ]
+      ]
     },
     {
       "start": 47.72,
@@ -178,7 +278,25 @@
       "original": "",
       "romanization": "One, two, three, four",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          47.8,
+          48.16
+        ],
+        [
+          48.31,
+          48.63
+        ],
+        [
+          48.78,
+          49.08
+        ],
+        [
+          49.23,
+          49.64
+        ]
+      ]
     },
     {
       "start": 49.69,
@@ -200,7 +318,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          50.49,
+          51.85
+        ]
+      ]
     },
     {
       "start": 51.9,
@@ -211,7 +335,13 @@
       "original": "내 느낌대로 Go",
       "romanization": "nae neukkimdaero go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.97,
+          53.75
+        ]
+      ]
     },
     {
       "start": 53.61,
@@ -233,7 +363,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.39,
+          55.77
+        ]
+      ]
     },
     {
       "start": 55.91,
@@ -244,7 +380,13 @@
       "original": "",
       "romanization": "Just put your hands up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          55.87,
+          57.57
+        ]
+      ]
     },
     {
       "start": 57.62,
@@ -266,7 +408,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          58.4,
+          59.75
+        ]
+      ]
     },
     {
       "start": 59.86,
@@ -277,7 +425,13 @@
       "original": "내 리듬 따라 Go",
       "romanization": "nae rideum ttara go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.89,
+          61.68
+        ]
+      ]
     },
     {
       "start": 61.56,
@@ -288,7 +442,13 @@
       "original": "",
       "romanization": "Dumb dumb dumb",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.68,
+          63.21
+        ]
+      ]
     },
     {
       "start": 63.59,
@@ -299,7 +459,13 @@
       "original": "",
       "romanization": "JUMP JUMP JUMP",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          63.6,
+          65.13
+        ]
+      ]
     },
     {
       "start": 64.78,
@@ -310,7 +476,17 @@
       "original": "저 저 저 점 보이지 I’m going",
       "romanization": "jeo jeo jeo jeom boiji i’m going",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          64.85,
+          66.24
+        ],
+        [
+          66.4,
+          67.23
+        ]
+      ]
     },
     {
       "start": 67.38,
@@ -321,7 +497,17 @@
       "original": "나 하늘 위 고지대에 닿고 있다",
       "romanization": "na haneul wi gojidaee dahgo itda",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          67.38,
+          67.75
+        ],
+        [
+          67.91,
+          69.81
+        ]
+      ]
     },
     {
       "start": 69.87,
@@ -332,7 +518,13 @@
       "original": "꼬인 답답하게 사방",
       "romanization": "kkoin dapdaphage sabang",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.81,
+          71.31
+        ]
+      ]
     },
     {
       "start": 71.32,
@@ -343,7 +535,13 @@
       "original": "",
       "romanization": "Wa-wait wa-wait, I’m a JUMP boy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          71.29,
+          73.09
+        ]
+      ]
     },
     {
       "start": 73.51,
@@ -354,7 +552,13 @@
       "original": "High-five with the satellite, 내 기분은 Okay",
       "romanization": "high-five with the satellite, nae gibuneun okay",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          73.53,
+          76.81
+        ]
+      ]
     },
     {
       "start": 76.98,
@@ -365,7 +569,13 @@
       "original": "터질듯한 분위기에, 함께 취해 It’s okay",
       "romanization": "teojildeuthan bunwigie, hamkke chwihae it’s okay",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          77.02,
+          81.51
+        ]
+      ]
     },
     {
       "start": 80.69,
@@ -376,7 +586,25 @@
       "original": "Ok ok, 오 기분이 두 배로 좋아",
       "romanization": "ok ok, o gibuni du baero joa",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.69,
+          81.8
+        ],
+        [
+          81.96,
+          82.26
+        ],
+        [
+          82.41,
+          83.39
+        ],
+        [
+          83.52,
+          83.83
+        ]
+      ]
     },
     {
       "start": 83.9,
@@ -387,7 +615,17 @@
       "original": "올라가 막 무대로, Everest에서 Ski ski 타듯이",
       "romanization": "ollaga mak mudaero, everesteseo ski ski tadeusi",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          84,
+          84.32
+        ],
+        [
+          84.47,
+          86.83
+        ]
+      ]
     },
     {
       "start": 86.81,
@@ -398,7 +636,17 @@
       "original": "미끄러져도 여긴 Trampoline, 알잖아 난 안 죽어",
       "romanization": "mikkeureojyeodo yeogin trampoline, aljana nan an jugeo",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.86,
+          87.38
+        ],
+        [
+          87.51,
+          89.29
+        ]
+      ]
     },
     {
       "start": 88.92,
@@ -409,7 +657,17 @@
       "original": "Your life is simple, 시작해 봐",
       "romanization": "your life is simple, sijakhae bwa",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.03,
+          90.73
+        ],
+        [
+          90.95,
+          92.02
+        ]
+      ]
     },
     {
       "start": 92.67,
@@ -420,7 +678,13 @@
       "original": "망설이다간 재미없게, Game over over",
       "romanization": "mangseoridagan jaemi eopge, game over over",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          92.81,
+          97.15
+        ]
+      ]
     },
     {
       "start": 97.27,
@@ -431,7 +695,25 @@
       "original": "",
       "romanization": "One, two, three, four",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          97.37,
+          97.78
+        ],
+        [
+          97.9,
+          98.22
+        ],
+        [
+          98.38,
+          98.73
+        ],
+        [
+          98.86,
+          99.3
+        ]
+      ]
     },
     {
       "start": 99.24,
@@ -453,7 +735,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          100.06,
+          101.36
+        ]
+      ]
     },
     {
       "start": 101.58,
@@ -464,7 +752,13 @@
       "original": "내 느낌대로 Go",
       "romanization": "nae neukkimdaero go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101.52,
+          103.3
+        ]
+      ]
     },
     {
       "start": 103.25,
@@ -486,7 +780,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          104.05,
+          105.32
+        ]
+      ]
     },
     {
       "start": 105.49,
@@ -497,7 +797,13 @@
       "original": "",
       "romanization": "Just put your hands up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.54,
+          107.12
+        ]
+      ]
     },
     {
       "start": 107.18,
@@ -519,7 +825,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.98,
+          109.28
+        ]
+      ]
     },
     {
       "start": 109.45,
@@ -530,7 +842,13 @@
       "original": "내 리듬 따라 Go",
       "romanization": "nae rideum ttara go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.5,
+          111.25
+        ]
+      ]
     },
     {
       "start": 111.18,
@@ -541,7 +859,13 @@
       "original": "",
       "romanization": "Dumb dumb dumb",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          111.21,
+          112.8
+        ]
+      ]
     },
     {
       "start": 113.02,
@@ -552,7 +876,13 @@
       "original": "",
       "romanization": "JUMP JUMP JUMP",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.2,
+          114.73
+        ]
+      ]
     },
     {
       "start": 115.52,
@@ -563,7 +893,21 @@
       "original": "나를 따라, 위로 날아, 재미있잖아",
       "romanization": "nareul ttara, wiro nala, jaemiitjana",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          115.64,
+          116.76
+        ],
+        [
+          117.66,
+          118.76
+        ],
+        [
+          119.6,
+          120.73
+        ]
+      ]
     },
     {
       "start": 120.96,
@@ -574,7 +918,13 @@
       "original": "우린 Never coming down",
       "romanization": "urin never coming down",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          121.21,
+          123.33
+        ]
+      ]
     },
     {
       "start": 122.51,
@@ -585,7 +935,13 @@
       "original": "못 노는 친구 출입 금지",
       "romanization": "mot noneun chingu chulip geumji",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          122.65,
+          124.15
+        ]
+      ]
     },
     {
       "start": 124.33,
@@ -596,7 +952,13 @@
       "original": "긋지 선 물지 우리 둥지",
       "romanization": "geutji seon mulji uri dungji",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          124.38,
+          126.15
+        ]
+      ]
     },
     {
       "start": 126.27,
@@ -607,7 +969,13 @@
       "original": "아무나 못 껴 끼리끼리",
       "romanization": "amuna mot kkyeo kkiri kkiri",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          126.38,
+          127.85
+        ]
+      ]
     },
     {
       "start": 127.75,
@@ -618,7 +986,13 @@
       "original": "Run away 미리미리",
       "romanization": "run away mirimiri",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          127.87,
+          128.86
+        ]
+      ]
     },
     {
       "start": 128.77,
@@ -629,7 +1003,13 @@
       "original": "도망쳐 겁나니",
       "romanization": "domangchyeo geomnani",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          128.85,
+          129.87
+        ]
+      ]
     },
     {
       "start": 129.85,
@@ -640,7 +1020,13 @@
       "original": "발이 불이 나게 I’m ready",
       "romanization": "bari buri nage i’m ready",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.82,
+          131.21
+        ]
+      ]
     },
     {
       "start": 131.07,
@@ -651,7 +1037,25 @@
       "original": "",
       "romanization": "One, two, three, four",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          131.12,
+          131.47
+        ],
+        [
+          131.62,
+          131.92
+        ],
+        [
+          132.04,
+          132.42
+        ],
+        [
+          132.56,
+          132.93
+        ]
+      ]
     },
     {
       "start": 132.95,
@@ -673,7 +1077,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.76,
+          135.01
+        ]
+      ]
     },
     {
       "start": 135.23,
@@ -684,7 +1094,13 @@
       "original": "내 느낌대로 Go",
       "romanization": "nae neukkimdaero go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          135.23,
+          136.99
+        ]
+      ]
     },
     {
       "start": 136.98,
@@ -706,7 +1122,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          137.72,
+          139.06
+        ]
+      ]
     },
     {
       "start": 139.18,
@@ -717,7 +1139,13 @@
       "original": "",
       "romanization": "Just put your hands up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          139.25,
+          140.89
+        ]
+      ]
     },
     {
       "start": 140.87,
@@ -739,7 +1167,13 @@
       "original": "",
       "romanization": "Da ra ri da ra",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.72,
+          143.02
+        ]
+      ]
     },
     {
       "start": 143.19,
@@ -750,7 +1184,13 @@
       "original": "내 리듬 따라 Go",
       "romanization": "nae rideum ttara go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          143.21,
+          144.98
+        ]
+      ]
     },
     {
       "start": 144.9,
@@ -761,7 +1201,13 @@
       "original": "",
       "romanization": "Dumb dumb dumb",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          144.96,
+          146.47
+        ]
+      ]
     },
     {
       "start": 146.85,
@@ -772,7 +1218,13 @@
       "original": "",
       "romanization": "JUMP JUMP JUMP",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          146.9,
+          148.49
+        ]
+      ]
     },
     {
       "start": 148.91,
@@ -786,15 +1238,21 @@
       "adlib": false
     },
     {
-      "start": 107.8,
-      "end": 109.07,
+      "start": 107.74,
+      "end": 109.06,
       "members": [
         "JIUNG"
       ],
       "original": "",
       "romanization": "JUMP JUMP",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          107.73,
+          109.06
+        ]
+      ]
     },
     {
       "start": 109.37,
@@ -805,7 +1263,13 @@
       "original": "내 리듬 따라 Go, Dumb",
       "romanization": "nae rideum ttara go, dumb",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          109.45,
+          111.79
+        ]
+      ]
     },
     {
       "start": 131.01,
@@ -816,7 +1280,13 @@
       "original": "",
       "romanization": "One two three four",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          131.09,
+          133.23
+        ]
+      ]
     },
     {
       "start": 135.22,
@@ -824,10 +1294,16 @@
       "members": [
         "KEEHO"
       ],
-      "original": "내 느낌대로 Go, Dumb",
-      "romanization": "nae neukkimdaero go, dumb",
+      "original": "느낌대로 Go, Dumb",
+      "romanization": "neukkimdaero go, dumb",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          135.54,
+          137.99
+        ]
+      ]
     },
     {
       "start": 144.4,
@@ -838,7 +1314,13 @@
       "original": "",
       "romanization": "Go, Dumb dumb dumb",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          144.53,
+          146.41
+        ]
+      ]
     },
     {
       "start": 147.69,
@@ -849,7 +1331,13 @@
       "original": "",
       "romanization": "JUMP",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          147.7,
+          149.07
+        ]
+      ]
     }
   ]
 }
