@@ -48,6 +48,8 @@
           box-shadow:0 16px 40px -10px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.12);
           transform:scale(calc(1 + var(--beat)*.03)); transition:transform .06s linear; }
   #meta{ min-width:0; }
+  #nowplaying{ font-size:clamp(11px,1.2vw,14px); font-weight:800; letter-spacing:3px; text-transform:uppercase;
+               color:#8fa4d6; margin-bottom:7px; }
   #title{ font-size:clamp(20px,3.4vw,40px); font-weight:900; letter-spacing:.5px; line-height:1;
           white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
           text-shadow:0 2px 20px rgba(120,190,255,.35); }
@@ -102,6 +104,7 @@
     <div id="top">
       <img id="cover" alt="">
       <div id="meta">
+        <div id="nowplaying">Now playing…</div>
         <div id="title">—</div>
         <div id="artist"></div>
       </div>
@@ -120,7 +123,7 @@
 
   <div class="side" id="sideR"></div>
 
-  <div class="hint">▶ Pulsa play — la onda y el brillo reaccionan a la música. (Prueba)</div>
+  <!-- <div class="hint">▶ Pulsa play — la onda y el brillo reaccionan a la música. (Prueba)</div> -->
 </div>
 
 <audio id="aud" preload="metadata"></audio>
