@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transcribir subtítulos — YouTube → inglés</title>
+<style>
+  :root{ --bg:#0e0e13; --panel:#15151d; --accent:#7c5cff; --text:#f2f2f7; --muted:#9a9aa8; --border:#2a2a36; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--text); }
+  #wrap{ max-width:820px; margin:0 auto; padding:22px; display:flex; flex-direction:column; gap:16px; }
+  a.back{ align-self:flex-start; color:#cfcfe0; text-decoration:none; background:#15151d; border:1px solid #33334a;
+          border-radius:8px; padding:8px 12px; font-weight:700; font-size:13px; }
+  h1{ font-size:20px; letter-spacing:.5px; margin:2px 0 0; }
+  .sub{ color:var(--muted); font-size:14px; line-height:1.5; }
+  .card{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:12px; }
+  label{ font-size:13px; color:var(--muted); font-weight:700; }
+  input[type=text], select{ width:100%; background:#0a0a0f; color:var(--text); border:1px solid var(--border);
+          border-radius:9px; padding:11px 13px; font-size:15px; }
+  .row{ display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
+  .row > div{ flex:1; min-width:180px; }
+  button{ background:var(--accent); color:#fff; border:0; border-radius:9px; padding:12px 20px; font-weight:800; cursor:pointer; font-size:15px; }
+  button.sec{ background:#2a2a34; }
+  button:disabled{ opacity:.6; cursor:default; }
+  #status{ font-size:14px; color:#cfe; min-height:20px; font-family:monospace; white-space:pre-wrap; }
+  textarea{ width:100%; height:340px; background:#0a0a0f; color:#e9e9f2; border:1px solid var(--border);
+            border-radius:10px; font-family:"Segoe UI",Arial,sans-serif; font-size:15px; line-height:1.5; padding:14px; resize:vertical; }
+  .toolbar{ display:flex; gap:10px; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+  .hint{ color:var(--muted); font-size:13px; line-height:1.5; }
+  .warn{ background:#2a1a1a; border:1px solid #663; color:#ffd; border-radius:10px; padding:12px 14px; font-size:14px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <a class="back" href="library.html">← Biblioteca</a>
+  <h1>🎙️ Transcribir subtítulos</h1>
+  <div class="sub">Pega un enlace de YouTube y lo transcribe <b>traducido al inglés</b>, en líneas limpias <b>sin tiempos</b>, listas para copiar.</div>
+
+  <div id="nodesktop" class="warn" style="display:none">Esta herramienta solo funciona en la <b>app de escritorio</b> (usa Whisper en tu PC).</div>
+
+  <div class="card">
+    <div>
+      <label for="url">Enlace de YouTube</label>
+      <input id="url" type="text" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="row">
+      <div>
+        <label for="model">Modelo (calidad ↔ velocidad)</label>
+        <select id="model"></select>
+      </div>
+      <button id="go">Transcribir</button>
+    </div>
+    <div id="status"></div>
+  </div>
+
+  <div class="card">
+    <div class="toolbar">
+      <label style="font-size:14px">Texto (inglés) — sin tiempos</label>
+      <div style="display:flex; gap:10px">
+        <button class="sec" id="copy">📋 Copiar</button>
+        <button class="sec" id="clear">Limpiar</button>
+      </div>
+    </div>
+    <textarea id="out" placeholder="Aquí saldrá la transcripción traducida…"></textarea>
+    <div class="hint">Consejo: Whisper con música puede fallar en alguna palabra; repásalo antes de pegarlo en el editor.
+      El modelo <b>medium</b> es un buen equilibrio; <b>large</b> es más preciso pero más lento (CPU).</div>
+  </div>
+</div>
+
+<script>
+  const D = window.desktop;
+  const $ = id => document.getElementById(id);
+  if(!(D && D.transcribeUrl)){
+    $("nodesktop").style.display = "block";
+    $("go").disabled = true;
+  } else {
+    // rellenar modelos disponibles
+    D.transcribeListModels().then(r => {
+      const sel = $("model"); sel.innerHTML = "";
+      const models = (r && r.models && r.models.length) ? r.models : ["ggml-medium.bin"];
+      const nice = m => m.replace(/^ggml-/,"").replace(/\.bin$/,"");
+      models.forEach(m => { const o = document.createElement("option"); o.value = m; o.textContent = nice(m); sel.appendChild(o); });
+      // preferir medium por defecto
+      const def = models.find(m => /medium/i.test(m)) || models[0];
+      if(def) sel.value = def;
+    });
+
+    D.onTranscribeProgress(msg => { $("status").textContent = msg; });
+
+    $("go").onclick = async () => {
+      const url = $("url").value.trim();
+      if(!url){ $("status").textContent = "Pega un enlace de YouTube."; return; }
+      const btn = $("go"); btn.disabled = true; const t = btn.textContent; btn.textContent = "⏳ Trabajando…";
+      $("status").textContent = "Preparando…";
+      let res = null;
+      try{ res = await D.transcribeUrl({ url, model: $("model").value }); }catch(e){ res = { ok:false, error:String(e) }; }
+      btn.disabled = false; btn.textContent = t;
+      if(res && res.ok){ $("out").value = res.text; $("status").textContent = "✅ Listo (" + res.text.split("\n").length + " líneas)"; }
+      else { $("status").textContent = "✕ " + ((res && res.error) || "error"); }
+    };
+
+    $("copy").onclick = () => {
+      const o = $("out"); if(!o.value) return; o.select(); document.execCommand("copy");
+      const b = $("copy"); const t = b.textContent; b.textContent = "¡Copiado!"; setTimeout(()=>b.textContent=t, 1200);
+    };
+    $("clear").onclick = () => { $("out").value = ""; $("status").textContent = ""; };
+    $("url").addEventListener("keydown", e => { if(e.key === "Enter") $("go").click(); });
+  }
+</script>
+</body>
+</html>

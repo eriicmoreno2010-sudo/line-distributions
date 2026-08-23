@@ -10,7 +10,8 @@ Desktop app (Electron) — main process.
 const { app, BrowserWindow, ipcMain, dialog } = require("electron");
 const path = require("path");
 const fs = require("fs");
-const { execFile } = require("child_process");
+const os = require("os");
+const { execFile, spawn } = require("child_process");
 const { runExport } = require("./export");
 
 const ROOT = path.join(__dirname, "..");
@@ -417,6 +418,88 @@ ipcMain.handle("export-thumb", async (evt, args) => {
     return { ok: true, out: filePath };
   }catch(e){ return { ok: false, error: e.message }; }
   finally{ if(win) win.destroy(); }
+});
+
+// =========================================================================
+// Transcriptor: YouTube -> audio (yt-dlp) -> Whisper.cpp (traduce a inglés) ->
+// texto limpio SIN tiempos, listo para copiar. Todo con binarios portátiles en
+// tools/ (sin instalar Python). Streamea progreso a la ventana.
+// =========================================================================
+const TOOLS   = path.join(ROOT, "tools");
+const YTDLP   = path.join(TOOLS, "yt-dlp.exe");
+const WHISPER = path.join(TOOLS, "whisper", "Release", "whisper-cli.exe");
+const MODELS  = path.join(TOOLS, "models");
+
+// Lanza un proceso; envía cada línea de salida a `onLine`; resuelve con el código.
+function spawnStream(exe, args, onLine, opts){
+  return new Promise((resolve, reject) => {
+    let child;
+    try{ child = spawn(exe, args, Object.assign({ windowsHide: true }, opts || {})); }
+    catch(e){ return reject(e); }
+    let out = "";
+    const feed = buf => { const s = buf.toString(); out += s;
+      s.split(/\r?\n/).forEach(l => { l = l.trim(); if(l && onLine) onLine(l); }); };
+    child.stdout.on("data", feed);
+    child.stderr.on("data", feed);
+    child.on("error", reject);
+    child.on("close", code => resolve({ code, out }));
+  });
+}
+
+ipcMain.handle("transcribe-list-models", async () => {
+  try{
+    const files = fs.readdirSync(MODELS).filter(f => /^ggml-.*\.bin$/i.test(f));
+    return { ok: true, models: files };
+  }catch(e){ return { ok: true, models: [] }; }
+});
+
+ipcMain.handle("transcribe-url", async (evt, args) => {
+  args = args || {};
+  const url = String(args.url || "").trim();
+  const model = String(args.model || "ggml-medium.bin");
+  const send = msg => { try{ evt.sender.send("transcribe-progress", msg); }catch(e){} };
+  if(!url) return { ok: false, error: "Pega un enlace de YouTube." };
+  if(!fs.existsSync(YTDLP))   return { ok: false, error: "Falta tools/yt-dlp.exe" };
+  if(!fs.existsSync(WHISPER)) return { ok: false, error: "Falta tools/whisper/Release/whisper-cli.exe" };
+  const modelPath = path.join(MODELS, model);
+  if(!fs.existsSync(modelPath)) return { ok: false, error: "Falta el modelo: " + model + " (aún descargándose)" };
+
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "ld-trans-"));
+  const outTpl = path.join(tmp, "audio.%(ext)s");
+  try{
+    send("⬇️ Descargando audio de YouTube…");
+    const dl = await spawnStream(YTDLP,
+      ["-x", "--audio-format", "mp3", "--audio-quality", "0", "--no-playlist",
+       "--no-part", "-o", outTpl, url],
+      line => { if(/\[download\]|ERROR|Destination|Extracting/i.test(line)) send(line); });
+    const mp3 = path.join(tmp, "audio.mp3");
+    if(dl.code !== 0 || !fs.existsSync(mp3)) throw new Error("No se pudo descargar el audio (¿enlace válido?).");
+
+    send("🧠 Transcribiendo y traduciendo a inglés… (puede tardar unos minutos)");
+    const txtBase = path.join(tmp, "out");
+    const threads = String(Math.max(4, Math.min(8, (os.cpus() || []).length || 4)));
+    // -sns (suprimir tokens no-voz) + umbrales = mucho menos alucinación con música
+    const wh = await spawnStream(WHISPER,
+      ["-m", modelPath, "-f", mp3, "--translate", "-l", "auto",
+       "-nt", "-sns", "-et", "2.4", "-lpt", "-1.0", "-t", threads,
+       "-otxt", "-of", txtBase, "-pp"],
+      line => {
+        const pm = line.match(/progress\s*=\s*(\d+)%/i);   // -pp imprime el %
+        if(pm){ send("🧠 Traduciendo… " + pm[1] + "%"); return; }
+      });
+    const txtFile = txtBase + ".txt";
+    let text = "";
+    if(fs.existsSync(txtFile)) text = fs.readFileSync(txtFile, "utf8");
+    else if(wh.out) text = wh.out;              // por si no escribió el .txt
+    const clean = text.split(/\r?\n/).map(s => s.trim()).filter(Boolean).join("\n");
+    if(!clean) throw new Error("No se obtuvo texto (¿audio sin voz o modelo faltante?).");
+    send("✅ Listo");
+    return { ok: true, text: clean };
+  }catch(e){
+    return { ok: false, error: e.message };
+  }finally{
+    try{ fs.rmSync(tmp, { recursive: true, force: true }); }catch(e){}
+  }
 });
 
 app.whenReady().then(() => {

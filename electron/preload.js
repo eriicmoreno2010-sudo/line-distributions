@@ -16,5 +16,8 @@ contextBridge.exposeInMainWorld("desktop", {
   saveSong: (relPath, data) => ipcRenderer.invoke("save-song", { path: relPath, data }),
   photoSources: (paths) => ipcRenderer.invoke("photo-sources", paths),
   savePhotos: (args) => ipcRenderer.invoke("save-photos", args),
-  exportThumb: (args) => ipcRenderer.invoke("export-thumb", args)
+  exportThumb: (args) => ipcRenderer.invoke("export-thumb", args),
+  transcribeUrl: (args) => ipcRenderer.invoke("transcribe-url", args || {}),
+  transcribeListModels: () => ipcRenderer.invoke("transcribe-list-models"),
+  onTranscribeProgress: (cb) => ipcRenderer.on("transcribe-progress", (_e, m) => cb(m))
 });

@@ -98,6 +98,8 @@
     btnGrp.onclick = () => open("new");
     const donutBtn = document.getElementById("donutBtn");
     if(donutBtn) donutBtn.onclick = () => { location.href = "donut.html"; };
+    const transcribeBtn = document.getElementById("transcribeBtn");
+    if(transcribeBtn) transcribeBtn.onclick = () => { location.href = "transcribe.html"; };
     document.getElementById("mCancel").onclick = () => modal.classList.remove("show");
     modal.addEventListener("click", e => { if(e.target === modal) modal.classList.remove("show"); });
 

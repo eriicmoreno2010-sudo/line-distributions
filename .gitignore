@@ -13,3 +13,6 @@
 /package-lock.json
 /dist/
 /out/
+
+# transcripción (binarios y modelos, no subir)
+/tools/
