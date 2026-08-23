@@ -191,23 +191,21 @@
     const d=DPR(), w=cv.width/d, h=cv.height/d, mid=h/2;
     cx.clearRect(0,0,w,h);
     if(analyser){
+      analyser.getByteTimeDomainData(tdata);
       analyser.getByteFrequencyData(freq);
       let s=0; for(let i=1;i<8;i++) s+=freq[i]; const bass=(s/7)/255;
       const target=Math.min(1,bass*1.5); if(target>beat) beat=target; else beat+=(target-beat)*0.12;
       document.documentElement.style.setProperty("--beat", beat.toFixed(3));
 
-      // envolvente del espectro (reacciona al beat) en línea simétrica, como la foto
-      const N=150, step=w/(N-1), maxAmp=h*0.46;
-      const amp=[];
-      for(let i=0;i<N;i++){ const fi=Math.floor(Math.pow(i/(N-1),1.55)*(freq.length*0.62)); amp.push((freq[fi]||0)/255); }
-      const sm=amp.map((v,i)=>{ const a=amp[i-1]??v, b=amp[i+1]??v; return (a+2*v+b)/4; });
-      const up=[], lo=[];
-      for(let i=0;i<N;i++){ const y=Math.pow(sm[i],0.9)*maxAmp; up.push([i*step, mid-y]); lo.push([i*step, mid+y]); }
+      // oscilograma plano (dominio del tiempo) cian->magenta con glow
+      const N=260, step=w/(N-1), amp=h*0.42*(0.75+0.9*beat);
       const grad=cx.createLinearGradient(0,0,w,0);
       grad.addColorStop(0,getCss("--c1")); grad.addColorStop(.5,"#b56bff"); grad.addColorStop(1,getCss("--c2"));
+      const pts=[];
+      for(let i=0;i<N;i++){ const ti=Math.floor(i/(N-1)*(tdata.length-1)); const v=(tdata[ti]-128)/128; pts.push([i*step, mid + v*amp]); }
       cx.lineJoin="round"; cx.lineCap="round"; cx.strokeStyle=grad; cx.shadowColor="rgba(120,200,255,.9)";
-      cx.globalAlpha=.30; cx.lineWidth=9; cx.shadowBlur=26; strokePath(up); strokePath(lo);
-      cx.globalAlpha=1;   cx.lineWidth=2.6; cx.shadowBlur=14; strokePath(up); strokePath(lo);
+      cx.globalAlpha=.32; cx.lineWidth=9; cx.shadowBlur=26; strokePath(pts);
+      cx.globalAlpha=1;   cx.lineWidth=2.6; cx.shadowBlur=14; strokePath(pts);
       cx.shadowBlur=0;
     }
     requestAnimationFrame(draw);
