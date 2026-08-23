@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reproductor — visualizador de audio</title>
+<style>
+  :root{
+    --c1:#22d3ee;      /* cian */
+    --c2:#ff2fb0;      /* magenta */
+    --beat:0;          /* 0..1, lo pone el análisis de graves */
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{ background:#05060b; color:#eef; font-family:"Montserrat","Segoe UI",Arial,sans-serif;
+        overflow:hidden; display:flex; align-items:center; justify-content:center; }
+
+  /* ---- escenario ---- */
+  #stage{ position:relative; width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+
+  /* fondo: rayas de luz + resplandor que late con el beat */
+  #bg{ position:absolute; inset:0; overflow:hidden; z-index:0;
+       background:
+         radial-gradient(60% 45% at 50% 50%, rgba(40,60,120,.25), transparent 70%),
+         linear-gradient(#05060b,#06080f); }
+  #glow{ position:absolute; left:50%; top:50%; width:120vmin; height:120vmin; transform:translate(-50%,-50%) scale(calc(.8 + var(--beat)*.35));
+         background:radial-gradient(circle, color-mix(in srgb,var(--c2) 40%, var(--c1)) 0%, transparent 60%);
+         opacity:calc(.10 + var(--beat)*.30); filter:blur(30px); transition:transform .05s linear, opacity .05s linear; z-index:0; }
+  /* motas flotando */
+  .dot{ position:absolute; width:3px; height:3px; border-radius:50%; background:#bcd; opacity:.5;
+        animation:float linear infinite; }
+  @keyframes float{ from{ transform:translateY(20px); opacity:0 } 10%{opacity:.6} 90%{opacity:.6} to{ transform:translateY(-60vh); opacity:0 } }
+
+  /* waveform (canvas a lo ancho, detrás de la tarjeta) */
+  #wave{ position:absolute; left:0; top:50%; transform:translateY(-50%); width:100%; height:70vmin; z-index:1; pointer-events:none; }
+
+  /* ---- tarjeta central ---- */
+  #card{ position:relative; z-index:2; width:min(760px,82vw); padding:26px 30px;
+         border-radius:26px; border:1px solid rgba(180,210,255,.22);
+         background:linear-gradient(180deg, rgba(20,26,44,.55), rgba(10,12,22,.45));
+         backdrop-filter:blur(6px);
+         box-shadow:0 0 0 1px rgba(120,180,255,.10) inset,
+                    0 30px 80px -30px rgba(0,0,0,.8),
+                    0 0 calc(30px + var(--beat)*40px) rgba(90,160,255,calc(.15 + var(--beat)*.25)); }
+  #top{ display:flex; gap:22px; align-items:center; }
+  #cover{ width:150px; height:150px; border-radius:16px; object-fit:cover; flex:none;
+          box-shadow:0 12px 30px -8px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.08);
+          transform:scale(calc(1 + var(--beat)*.03)); transition:transform .06s linear; }
+  #meta{ min-width:0; }
+  #title{ font-size:34px; font-weight:900; letter-spacing:.5px; line-height:1;
+          white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  #artist{ font-size:18px; font-weight:700; color:#9fb0d6; margin-top:8px; letter-spacing:2px; text-transform:uppercase; }
+
+  /* progreso */
+  #prog{ margin-top:22px; }
+  #bar{ height:6px; border-radius:999px; background:rgba(255,255,255,.12); cursor:pointer; position:relative; overflow:hidden; }
+  #fill{ position:absolute; left:0; top:0; bottom:0; width:0%;
+         background:linear-gradient(90deg,var(--c1),var(--c2)); border-radius:999px; }
+  #times{ display:flex; justify-content:space-between; margin-top:8px; font-size:13px; color:#9fb0d6; font-variant-numeric:tabular-nums; }
+
+  /* controles */
+  #controls{ display:flex; align-items:center; justify-content:center; gap:26px; margin-top:18px; }
+  .ctl{ background:none; border:0; color:#dfe6ff; cursor:pointer; display:grid; place-items:center; }
+  .ctl svg{ width:26px; height:26px; fill:currentColor; }
+  #play{ width:64px; height:64px; border-radius:50%; background:linear-gradient(135deg,var(--c1),var(--c2)); color:#06121f;
+         box-shadow:0 10px 30px -8px var(--c2); }
+  #play svg{ width:28px; height:28px; }
+  #shuffle.on{ color:var(--c1); }
+
+  /* portadas del álbum a los lados */
+  .side{ position:absolute; top:50%; transform:translateY(-50%); z-index:2; display:flex; flex-direction:column; gap:14px; }
+  #sideL{ left:2vw; } #sideR{ right:2vw; }
+  .side img{ width:90px; height:90px; border-radius:12px; object-fit:cover; opacity:.55; cursor:pointer;
+             box-shadow:0 8px 20px -8px #000, 0 0 0 1px rgba(255,255,255,.06); transition:opacity .2s, transform .2s; }
+  .side img:hover{ opacity:1; transform:scale(1.06); }
+
+  .hint{ position:absolute; bottom:14px; left:0; right:0; text-align:center; color:#68789c; font-size:13px; z-index:3; }
+  @media(max-width:820px){ .side{ display:none; } #title{ font-size:26px; } #cover{ width:110px; height:110px; } }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+  <div id="glow"></div>
+  <canvas id="wave"></canvas>
+
+  <div class="side" id="sideL"></div>
+
+  <div id="card">
+    <div id="top">
+      <img id="cover" alt="">
+      <div id="meta">
+        <div id="title">—</div>
+        <div id="artist"></div>
+      </div>
+    </div>
+    <div id="prog">
+      <div id="bar"><div id="fill"></div></div>
+      <div id="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+    </div>
+    <div id="controls">
+      <button class="ctl" id="prev" title="Anterior"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg></button>
+      <button class="ctl" id="play" title="Reproducir"><svg viewBox="0 0 24 24" id="playIcon"><path d="M8 5v14l11-7z"/></svg></button>
+      <button class="ctl" id="next" title="Siguiente"><svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></svg></button>
+      <button class="ctl" id="shuffle" title="Aleatorio"><svg viewBox="0 0 24 24"><path d="M17 3l4 4-4 4V8h-3l-2.5 3.5L9 8H3V6h5l2.5 3.5L13 6h4V3zM3 16h5l2.5-3.5 1.2 1.7-2.6 3.8H3v-2zm14-2v-3l4 4-4 4v-3h-3l-2.2-3.2 1.2-1.7L14 14h3z"/></svg></button>
+    </div>
+  </div>
+
+  <div class="side" id="sideR"></div>
+
+  <div class="hint">▶ Pulsa play — la onda y el fondo reaccionan a la música. (Prueba)</div>
+</div>
+
+<audio id="aud" preload="metadata"></audio>
+
+<script>
+  // ------- lista del álbum (portada propia por canción) -------
+  // Sustituye "cover" por tus imágenes de portada reales.
+  const AUDIO_DIR = "audio/";
+  const TRACKS = [
+    { title:"Smoothie", artist:"NCT DREAM", file:"NCT DREAM (엔씨티 드림) 'Smoothie' Official Audio.mp3", cover:"images/nctdream/smoothie/haechan.png" },
+    { title:"Dive Into You", artist:"NCT DREAM", file:"NCT DREAM - 고래 Dive into You.mp3", cover:"images/nctdream/diveintoyou/mark.png" },
+    { title:"Dive Into You", artist:"NCT DREAM", file:"NCT DREAM - 고래 Dive into You.mp3", cover:"images/nctdream/diveintoyou/chenle.png" }
+  ];
+  let idx = 0, shuffle = false;
+
+  const $ = id => document.getElementById(id);
+  const aud = $("aud"), cover = $("cover"), fill = $("fill");
+  const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
+
+  function loadTrack(i, autoplay){
+    idx = (i + TRACKS.length) % TRACKS.length;
+    const t = TRACKS[idx];
+    aud.src = AUDIO_DIR + encodeURIComponent(t.file);
+    cover.src = t.cover + "?v=27";
+    $("title").textContent = t.title;
+    $("artist").textContent = t.artist;
+    $("cur").textContent = "0:00"; $("dur").textContent = "0:00"; fill.style.width = "0%";
+    buildSides();
+    if(autoplay) play();
+  }
+
+  function buildSides(){
+    const L = $("sideL"), R = $("sideR"); L.innerHTML = ""; R.innerHTML = "";
+    TRACKS.forEach((t,i)=>{
+      if(i === idx) return;
+      const im = document.createElement("img"); im.src = t.cover + "?v=27"; im.title = t.title;
+      im.onclick = () => loadTrack(i, true);
+      (i < idx ? L : R).appendChild(im);
+    });
+  }
+
+  // ------- Web Audio: onda + beat (tras gesto del usuario) -------
+  let ctx, analyser, freq, srcNode, beat = 0;
+  function initAudio(){
+    if(ctx) return;
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    srcNode = ctx.createMediaElementSource(aud);
+    analyser = ctx.createAnalyser();
+    analyser.fftSize = 2048; analyser.smoothingTimeConstant = 0.72;
+    freq = new Uint8Array(analyser.frequencyBinCount);
+    srcNode.connect(analyser); analyser.connect(ctx.destination);
+  }
+
+  async function play(){ initAudio(); if(ctx.state === "suspended") await ctx.resume();
+    try{ await aud.play(); }catch(e){} }
+  function pause(){ aud.pause(); }
+
+  $("play").onclick = () => { aud.paused ? play() : pause(); };
+  aud.onplay  = () => $("playIcon").innerHTML = '<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';   // pausa
+  aud.onpause = () => $("playIcon").innerHTML = '<path d="M8 5v14l11-7z"/>';                // play
+  aud.onended = () => next();
+  $("prev").onclick = () => loadTrack(idx - 1, true);
+  $("next").onclick = () => next();
+  function next(){ loadTrack(shuffle ? (Math.floor((idx + 1 + Math.random()*(TRACKS.length-1))) ) : idx + 1, true); }
+  $("shuffle").onclick = () => { shuffle = !shuffle; $("shuffle").classList.toggle("on", shuffle); };
+
+  aud.ontimeupdate = () => {
+    if(aud.duration){ fill.style.width = (aud.currentTime/aud.duration*100) + "%";
+      $("cur").textContent = fmt(aud.currentTime); $("dur").textContent = fmt(aud.duration); }
+  };
+  aud.onloadedmetadata = () => { $("dur").textContent = fmt(aud.duration || 0); };
+  $("bar").onclick = e => { if(!aud.duration) return; const r = $("bar").getBoundingClientRect();
+    aud.currentTime = (e.clientX - r.left)/r.width * aud.duration; };
+
+  // ------- canvas waveform -------
+  const cv = $("wave"), cx = cv.getContext("2d");
+  function resize(){ const r = cv.getBoundingClientRect(); const dpr = Math.min(2, window.devicePixelRatio||1);
+    cv.width = r.width*dpr; cv.height = r.height*dpr; cx.setTransform(dpr,0,0,dpr,0,0); }
+  window.addEventListener("resize", resize); resize();
+
+  function draw(){
+    const w = cv.width/(Math.min(2,window.devicePixelRatio||1)), h = cv.height/(Math.min(2,window.devicePixelRatio||1));
+    cx.clearRect(0,0,w,h);
+    const midY = h/2;
+    const N = 110;                                  // nº de barras a lo ancho
+    let bass = 0;
+    if(analyser){
+      analyser.getByteFrequencyData(freq);
+      // beat = energía de graves suavizada
+      let sum=0; for(let i=1;i<8;i++) sum+=freq[i]; bass = (sum/7)/255;
+      const g = cx.createLinearGradient(0,0,w,0);
+      g.addColorStop(0, getCss("--c1")); g.addColorStop(1, getCss("--c2"));
+      cx.fillStyle = g; cx.shadowBlur = 18;
+      const bw = w/N, gap = bw*0.34;
+      for(let i=0;i<N;i++){
+        // muestrea el espectro (más resolución en graves-medios)
+        const fi = Math.floor(Math.pow(i/N, 1.4) * (freq.length*0.7));
+        const v = (freq[fi]||0)/255;
+        const bh = Math.max(2, v*v* (h*0.46));
+        cx.shadowColor = i < N/2 ? getCss("--c1") : getCss("--c2");
+        const x = i*bw + gap/2, bwi = bw-gap;
+        roundRect(cx, x, midY-bh, bwi, bh*2, bwi/2);
+        cx.fill();
+      }
+      cx.shadowBlur = 0;
+    }
+    // envelope follower para el beat
+    const target = Math.min(1, bass*1.6);
+    if(target>beat) beat = target; else beat += (target-beat)*0.12;
+    document.documentElement.style.setProperty("--beat", beat.toFixed(3));
+    requestAnimationFrame(draw);
+  }
+  function roundRect(c,x,y,w,h,r){ r=Math.min(r,w/2,h/2); c.beginPath();
+    c.moveTo(x+r,y); c.arcTo(x+w,y,x+w,y+h,r); c.arcTo(x+w,y+h,x,y+h,r);
+    c.arcTo(x,y+h,x,y,r); c.arcTo(x,y,x+w,y,r); c.closePath(); }
+  function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim() || "#22d3ee"; }
+  requestAnimationFrame(draw);
+
+  // motas del fondo
+  (function dots(){ const bg = $("bg");
+    for(let i=0;i<26;i++){ const d=document.createElement("div"); d.className="dot";
+      d.style.left=(Math.random()*100)+"%"; d.style.top=(Math.random()*100)+"%";
+      d.style.animationDuration=(6+Math.random()*8)+"s"; d.style.animationDelay=(-Math.random()*10)+"s";
+      bg.appendChild(d); } })();
+
+  loadTrack(0, false);
+</script>
+</body>
+</html>
