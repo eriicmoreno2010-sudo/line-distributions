@@ -334,8 +334,9 @@
     const so = $("#paOrig").value.split("\n").map(s => s.trim()).filter(Boolean);
     const sr = $("#paRom").value.split("\n").map(s => s.trim()).filter(Boolean);
     const se = $("#paEng").value.split("\n").map(s => s.trim()).filter(Boolean);
-    const n = Math.max(so.length, sr.length, se.length);
-    if(!n){ alert("Pega al menos una línea de letra."); return; }
+    // Qué columnas has pegado (una columna vacía NO se toca -> no machaca lo que ya hay)
+    const provO = so.length > 0, provR = sr.length > 0, provE = se.length > 0;
+    if(!provO && !provR && !provE){ alert("Pega al menos una línea de letra."); return; }
     // Aviso si las columnas que has rellenado no tienen el mismo nº de líneas.
     const counts = [so.length, sr.length, se.length].filter(x => x > 0);
     if(new Set(counts).size > 1){
@@ -344,14 +345,26 @@
         "Consejo: deja el MISMO número de líneas en las que uses (una línea por renglón), " +
         "o deja una columna entera vacía si no la usas.\n\n¿Generar igualmente?")) return;
     }
+    const old = song.lyrics || [];
+    const n = Math.max(so.length, sr.length, se.length, (provO && provR && provE) ? 0 : old.length);
     const rows = [];
     for(let i = 0; i < n; i++){
-      rows.push({ start:0, end:0, members:[], original:so[i]||"", romanization:sr[i]||"", english:se[i]||"", adlib:false });
+      // Partimos de la línea que ya existe (mantiene miembros, tiempos, voz, adlib…)
+      const base = old[i] || { start:0, end:0, members:[], voice:undefined,
+                               original:"", romanization:"", english:"", adlib:false };
+      rows.push(Object.assign({}, base, {
+        original:     provO ? (so[i] || "") : (base.original || ""),
+        romanization: provR ? (sr[i] || "") : (base.romanization || ""),
+        english:      provE ? (se[i] || "") : (base.english || "")
+      }));
     }
-    const hasData = (song.lyrics || []).some(l =>
-      ("" + (l.original||"") + (l.romanization||"") + (l.english||"")).trim() || (l.members||[]).length);
-    if(hasData && !confirm("Esto REEMPLAZA las " + song.lyrics.length + " líneas actuales por " +
-        rows.length + " líneas nuevas.\n\n¿Continuar?")) return;
+    const cols = [provO ? "original" : null, provR ? "romanización" : null, provE ? "inglés" : null].filter(Boolean);
+    const allThree = provO && provR && provE;
+    const hasData = old.some(l => ("" + (l.original||"") + (l.romanization||"") + (l.english||"")).trim() || (l.members||[]).length);
+    const msg = allThree
+      ? ("Esto REEMPLAZA las " + old.length + " líneas actuales por " + rows.length + " líneas nuevas.\n\n¿Continuar?")
+      : ("Se rellenará SOLO: " + cols.join(", ") + ".\nLas demás columnas y los miembros/tiempos por línea se MANTIENEN.\n\n¿Continuar?");
+    if(hasData && !confirm(msg)) return;
     song.lyrics = rows; sel = 0; awaitingEnd = false;
     $("#pastemodal").classList.remove("show");
     renderLines(); updateTapUI();

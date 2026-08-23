@@ -98,21 +98,26 @@ const rot = document.getElementById("rot");
 const SONG_URL = new URLSearchParams(location.search).get("song") || "data/nctdream/moonlight.json";
 fetch(SONG_URL).then(r=>r.json()).then(async d=>{
     SONG_META = d;
-    // m.path = destination (JSON image path); m.src = where to READ from (prefer _src original).
+    // encuadre guardado por miembro (si existe en el JSON)
+    const frameOf = name => { const mm = (d.members||[]).find(x=>x.name===name); return mm && mm.frame; };
+    // m.path = destination (JSON image path); m.src = where to READ from.
     const list = d.members.map(m => ({ name:m.name, path: m.image, src: m.image }));
     if(window.desktop && window.desktop.photoSources){
-        try{ const urls = await window.desktop.photoSources(list.map(m=>m.path)); list.forEach((m,i)=> m.src = urls[i] || m.src); }catch(e){}
+        try{
+            const urls = await window.desktop.photoSources(list.map(m=>m.path));
+            // Con encuadre guardado -> leer del original (_src) para recortar con calidad.
+            // Sin encuadre (canción antigua) -> leer la foto YA recortada (display) para que
+            // la vista previa coincida con el ranking y no se "descuadre" al abrir.
+            list.forEach((m,i)=>{ m.src = frameOf(m.name) ? (urls[i] || m.src) : (m.path + "?t=" + Date.now()); });
+        }catch(e){}
     }
     let loaded = 0;
     list.forEach(m=>{
         m.img = new Image();
         m.img.onload = () => {
             m.iw = m.img.naturalWidth; m.ih = m.img.naturalHeight;
-            // default: full-width square centred on the head
-            m.side = m.iw;
-            m.cx = m.iw/2;
-            m.cy = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2);
-            m.rot = 0;
+            applyFrame(m, frameOf(m.name));
+            m.dirty = false;                 // recién cargado -> sin tocar
             if(++loaded === list.length){ members = list; buildThumbs(); select(0); }
         };
         m.img.onerror = () => { console.error("no img", m.src); if(++loaded===list.length){ members=list; buildThumbs(); select(0);} };
@@ -122,6 +127,21 @@ fetch(SONG_URL).then(r=>r.json()).then(async d=>{
 
 function clamp(v,a,b){ return Math.max(a, Math.min(b, v)); }
 function cur(){ return members[idx]; }
+
+// Aplica un encuadre guardado (fracciones del original) o el de por defecto.
+function applyFrame(m, f){
+    if(f && isFinite(f.size)){
+        m.side = f.size * m.iw;
+        m.cx   = (isFinite(f.cx) ? f.cx : 0.5) * m.iw;
+        m.cy   = (isFinite(f.cy) ? f.cy : 0.44) * m.ih;
+        m.rot  = f.rot || 0;
+    } else {
+        m.side = m.iw;                 // por defecto: cuadrado a lo ancho, centrado en la cabeza
+        m.cx   = m.iw/2;
+        m.cy   = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2);
+        m.rot  = 0;
+    }
+}
 
 function clampCrop(m){
     const maxSide = Math.min(m.iw, m.ih);
@@ -167,15 +187,15 @@ function select(i){
 }
 
 /* ---- controls ---- */
-zoom.addEventListener("input", ()=>{ const m=cur(); m.side = parseFloat(zoom.value)*Math.min(m.iw,m.ih); render(); });
-vy.addEventListener("input", ()=>{ const m=cur(); m.cy = parseFloat(vy.value)*m.ih; render(); });
-vx.addEventListener("input", ()=>{ const m=cur(); m.cx = parseFloat(vx.value)*m.iw; render(); });
-rot.addEventListener("input", ()=>{ const m=cur(); m.rot = parseFloat(rot.value)||0; render(); });
+zoom.addEventListener("input", ()=>{ const m=cur(); m.side = parseFloat(zoom.value)*Math.min(m.iw,m.ih); m.dirty=true; render(); });
+vy.addEventListener("input", ()=>{ const m=cur(); m.cy = parseFloat(vy.value)*m.ih; m.dirty=true; render(); });
+vx.addEventListener("input", ()=>{ const m=cur(); m.cx = parseFloat(vx.value)*m.iw; m.dirty=true; render(); });
+rot.addEventListener("input", ()=>{ const m=cur(); m.rot = parseFloat(rot.value)||0; m.dirty=true; render(); });
 
 document.getElementById("prev-btn").addEventListener("click", ()=>select(idx-1));
 document.getElementById("next-btn").addEventListener("click", ()=>select(idx+1));
 document.getElementById("resetOne").addEventListener("click", ()=>{
-    const m=cur(); m.side=m.iw; m.cx=m.iw/2; m.cy=clamp(0.44*m.ih,m.side/2,m.ih-m.side/2); m.rot=0; render();
+    const m=cur(); applyFrame(m, null); m.dirty=true; render();
 });
 
 // Importar la foto del miembro actual desde el PC (se carga aquí para encuadrar y
@@ -193,7 +213,7 @@ document.getElementById("importOne").addEventListener("click", async ()=>{
     const img = new Image();
     img.onload = () => {
         m.img = img; m.iw = img.naturalWidth; m.ih = img.naturalHeight;
-        m.side = m.iw; m.cx = m.iw/2; m.cy = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2); m.rot = 0;
+        applyFrame(m, null); m.dirty = true;   // foto nueva -> encuadre por defecto y marcada para subir
         render(); if(m.thumbCtx) drawInto(m.thumbCtx, 64, m);
     };
     img.src = res.src + "?t=" + Date.now();   // cache-bust
@@ -211,12 +231,13 @@ prev.addEventListener("pointermove", e=>{
     const m=cur(); const k = m.side/P;   // image px per preview px
     m.cx -= (e.clientX-lx)*k;
     m.cy -= (e.clientY-ly)*k;
+    m.dirty=true;
     lx=e.clientX; ly=e.clientY; render();
 });
 prev.addEventListener("pointerup", ()=>dragging=false);
 prev.addEventListener("wheel", e=>{
     e.preventDefault();
-    const m=cur(); m.side *= (e.deltaY>0 ? 1.05 : 0.95); render();
+    const m=cur(); m.side *= (e.deltaY>0 ? 1.05 : 0.95); m.dirty=true; render();
 }, {passive:false});
 
 /* thumbnails */
@@ -256,18 +277,35 @@ if(!(window.desktop && window.desktop.savePhotos)){
         const photos = [];
         members.forEach(m=>{
             if(!m.iw) return;                     // skip members without a photo
+            // persistir el encuadre de TODOS (para que al reabrir salga igual)
+            const meta = (SONG_META.members || []).find(x => x.name === m.name);
+            if(meta) meta.frame = {
+                cx:   +(m.cx / m.iw).toFixed(4),
+                cy:   +(m.cy / m.ih).toFixed(4),
+                size: +(m.side / m.iw).toFixed(4),
+                rot:  Math.round(m.rot || 0)
+            };
+            // hornear y subir SOLO los que has tocado (los demás no se tocan)
+            if(!m.dirty) return;
             const c = document.createElement("canvas"); c.width = 800; c.height = 800;
             drawInto(c.getContext("2d"), 800, m);
             photos.push({ path: m.path, dataURL: c.toDataURL("image/png") });
         });
-        if(!photos.length){ return; }
+        if(!photos.length){
+            saveBtn.textContent = "No has tocado ninguna foto";
+            setTimeout(()=>saveBtn.textContent = "💾 Guardar y subir", 2500);
+            return;
+        }
         const t = saveBtn.textContent; saveBtn.disabled = true; saveBtn.textContent = "⏳ Guardando y subiendo…";
         let res = null;
-        try{ res = await window.desktop.savePhotos({ photos, song: (SONG_META && SONG_META.song) || "" }); }catch(e){}
+        const songPath = new URLSearchParams(location.search).get("song") || "";
+        try{ res = await window.desktop.savePhotos({ photos, song: (SONG_META && SONG_META.song) || "",
+                                                     songPath, songData: SONG_META }); }catch(e){}
         if(!res || !res.ok)      saveBtn.textContent = "✕ Error al guardar";
         else if(res.pushed)      saveBtn.textContent = "✓ Subido a GitHub (" + res.written + " fotos)";
         else if(res.committed)   saveBtn.textContent = "✓ Guardado (no se pudo subir)";
         else                     saveBtn.textContent = "✓ Guardado en el PC";
+        if(res && res.ok) members.forEach(m=> m.dirty = false);   // ya subidas -> limpias
         if(res && res.gitError) console.warn("git:", res.gitError);
         saveBtn.disabled = false;
         setTimeout(()=>saveBtn.textContent = t, 3000);

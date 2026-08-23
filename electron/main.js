@@ -348,21 +348,36 @@ ipcMain.handle("save-photos", async (_e, args) => {
       res.written++; dirs.add(dir);
     }
   }catch(e){ return { ok: false, error: e.message }; }
-  if(res.written === 0) return { ok: false, error: "no hay fotos que guardar" };
 
-  // Bump PHOTO_VER so the viewer busts its image cache.
-  let bumped = null;
+  // Persist each member's framing (crop/zoom/rotation) into the song JSON so
+  // reopening the tool restores exactly how you left every photo — and changing
+  // ONE never touches the others. Written in the SAME commit as the photos.
+  let songRel = null;
   try{
-    const rvPath = path.join(ROOT, "js", "ranking.js");
-    let rv = fs.readFileSync(rvPath, "utf8");
-    const m = rv.match(/const PHOTO_VER\s*=\s*(\d+)\s*;/);
-    if(m){ rv = rv.replace(m[0], "const PHOTO_VER = " + (parseInt(m[1], 10) + 1) + ";"); fs.writeFileSync(rvPath, rv, "utf8"); bumped = "js/ranking.js"; }
-  }catch(e){}
+    if(args.songPath && args.songData){
+      fs.writeFileSync(path.join(ROOT, args.songPath), JSON.stringify(args.songData, null, 2), "utf8");
+      songRel = String(args.songPath).replace(/\\/g, "/");
+    }
+  }catch(e){ res.gitError = "json: " + e.message; }
+
+  if(res.written === 0 && !songRel) return { ok: false, error: "no hay cambios que guardar" };
+
+  // Bump PHOTO_VER so the viewer busts its image cache (only if photos changed).
+  let bumped = null;
+  if(res.written > 0){
+    try{
+      const rvPath = path.join(ROOT, "js", "ranking.js");
+      let rv = fs.readFileSync(rvPath, "utf8");
+      const m = rv.match(/const PHOTO_VER\s*=\s*(\d+)\s*;/);
+      if(m){ rv = rv.replace(m[0], "const PHOTO_VER = " + (parseInt(m[1], 10) + 1) + ";"); fs.writeFileSync(rvPath, rv, "utf8"); bumped = "js/ranking.js"; }
+    }catch(e){}
+  }
 
   // Commit + push (rebase-and-retry once if the remote moved on).
   try{
     for(const d of dirs){ await git(["add", "--", path.relative(ROOT, d).replace(/\\/g, "/")]); }
     if(bumped) await git(["add", "--", bumped]);
+    if(songRel) await git(["add", "--", songRel]);
     const staged = await git(["diff", "--cached", "--quiet"]);
     if(staged.code !== 0){
       const c = await git(["commit", "-m", "Update " + (args.song || "song") + " photos"]);
