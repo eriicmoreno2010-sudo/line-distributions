@@ -44,6 +44,7 @@
   </div>
 
   <button class="play" id="play">▶  Reproducir</button>
+  <div class="hint" id="status" style="margin-top:-22px"></div>
 
   <div class="panel">
     <div class="row"><label>Sensibilidad</label><input id="sens" type="range" min="0.5" max="4" step="0.1" value="1.8"><span class="v" id="sensv">1.8×</span></div>
@@ -61,8 +62,11 @@
   const sens = document.getElementById("sens"), sensv = document.getElementById("sensv");
   const inten= document.getElementById("inten"), intenv = document.getElementById("intenv");
 
+  const status = document.getElementById("status");
   // audio de prueba (mismo origen -> el analizador funciona sin problemas de CORS)
   aud.src = "audio/" + encodeURIComponent("NCT DREAM (엔씨티 드림) 'Smoothie' Official Audio.mp3");
+  aud.onerror = () => status.textContent = "⚠️ No se pudo cargar el audio (¿404?).";
+  aud.oncanplay = () => { if (!aud.dataset.ready){ aud.dataset.ready = "1"; status.textContent = "Audio listo ✓"; } };
 
   sens.oninput  = () => sensv.textContent  = (+sens.value).toFixed(1) + "×";
   inten.oninput = () => intenv.textContent = (+inten.value).toFixed(2) + "×";
@@ -82,10 +86,12 @@
   }
 
   play.onclick = async () => {
-    initAudio();
-    if (ctx.state === "suspended") await ctx.resume();
-    if (aud.paused){ await aud.play(); play.textContent = "⏸  Pausar"; }
-    else { aud.pause(); play.textContent = "▶  Reproducir"; }
+    try {
+      initAudio();
+      if (ctx.state === "suspended") await ctx.resume();
+      if (aud.paused){ await aud.play(); play.textContent = "⏸  Pausar"; status.textContent = "▶ reproduciendo"; }
+      else { aud.pause(); play.textContent = "▶  Reproducir"; status.textContent = "⏸ en pausa"; }
+    } catch (e){ status.textContent = "⚠️ " + (e && e.message ? e.message : e); }
   };
   aud.onended = () => play.textContent = "▶  Reproducir";
 
