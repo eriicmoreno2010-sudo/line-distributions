@@ -74,7 +74,9 @@ Autónomo: inyecta sus estilos y su markup.
   const liveStart = (typeof performance!=="undefined" && performance.now) ? performance.now() : 0;
   const nowMs = () => (typeof performance!=="undefined" && performance.now) ? performance.now() : 0;
 
+  let done = false;   // pestillo: la intro se muestra UNA sola vez
   function tick(){
+    if (done) return;
     // Reloj:
     //  - export frame a frame (determinista) -> reloj del vídeo
     //  - vídeo reproduciéndose (>0)          -> reloj del vídeo
@@ -84,10 +86,10 @@ Autónomo: inyecta sus estilos y su markup.
     else if (cur() > 0.03)       t = cur();
     else                         t = (nowMs() - liveStart) / 1000;
 
-    let op;
-    if (t <= HOLD) op = 1;
-    else if (t >= HOLD + FADE) op = 0;
-    else op = 1 - (t - HOLD) / FADE;
+    // ya terminó -> quitar del todo y no volver a mostrarla (aunque rebobines)
+    if (t >= HOLD + FADE){ done = true; el.remove(); return; }
+
+    const op = (t <= HOLD) ? 1 : 1 - (t - HOLD) / FADE;
     // suavizado (ease-in-out) del fundido
     const e = op<=0?0 : op>=1?1 : (op<.5 ? 2*op*op : 1-Math.pow(-2*op+2,2)/2);
 
