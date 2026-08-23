@@ -2,27 +2,27 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Prueba — foto que late</title>
+<title>Prueba — aura reactiva al audio</title>
 <style>
-  :root{ --bg:#0b0b10; --text:#f0f0f6; --text2:#9a9ab0; --glow:#61fdad; }
+  :root{ --bg:#0b0b10; --text:#f0f0f6; --text2:#9a9ab0; --glow:#1bb7e8; }
   *{ box-sizing:border-box; margin:0; padding:0; }
   html,body{ height:100%; }
   body{ background:var(--bg); color:var(--text); font-family:"Segoe UI",Inter,Arial,sans-serif;
-        display:flex; flex-direction:column; align-items:center; justify-content:center; gap:40px; }
+        display:flex; flex-direction:column; align-items:center; justify-content:center; gap:36px; }
 
-  .wrap{ position:relative; width:300px; height:300px; display:flex; align-items:center; justify-content:center; }
-  /* halo/aura que palpita detrás de la foto */
+  .wrap{ position:relative; width:320px; height:320px; display:flex; align-items:center; justify-content:center;
+         --scale:.9; --opacity:.35; --blur:16px; --pop:1; }
+  /* halo/aura: ahora NO usa @keyframes, lo mueven las variables que pone el audio */
   .aura, .aura2{ position:absolute; border-radius:50%; pointer-events:none;
-                 background:radial-gradient(circle, var(--glow) 0%, transparent 62%); }
-  .aura{ inset:-22%; filter:blur(26px); animation:beat var(--dur,.7s) ease-in-out infinite; }
-  .aura2{ inset:-8%;  filter:blur(14px); opacity:.7; animation:beat var(--dur,.7s) ease-in-out infinite; }
+                 background:radial-gradient(circle, var(--glow) 0%, transparent 62%);
+                 transform:scale(var(--scale));
+                 transition:transform .04s linear, opacity .04s linear; }
+  .aura{  inset:-24%; filter:blur(var(--blur)); opacity:var(--opacity); }
+  .aura2{ inset:-9%;  filter:blur(calc(var(--blur) * .55)); opacity:calc(var(--opacity) * .8); }
   .photo{ position:relative; width:210px; height:210px; border-radius:50%; object-fit:cover;
           object-position:center 42%; border:4px solid rgba(255,255,255,.85);
           box-shadow:0 0 0 2px var(--glow); z-index:2;
-          animation:pop var(--dur,.7s) ease-in-out infinite; }
-
-  @keyframes beat{ 0%,100%{ transform:scale(.85); opacity:.45 } 45%{ transform:scale(1.28); opacity:1 } }
-  @keyframes pop{  0%,100%{ transform:scale(1) }            45%{ transform:scale(1.05) } }
+          transform:scale(var(--pop)); transition:transform .04s linear; }
 
   .panel{ display:flex; flex-direction:column; gap:14px; width:min(460px,86vw); }
   .row{ display:flex; align-items:center; gap:14px; }
@@ -31,32 +31,91 @@
   .row .v{ width:70px; text-align:right; font-weight:800; font-variant-numeric:tabular-nums; }
   .swatches{ display:flex; gap:8px; flex-wrap:wrap; }
   .sw{ width:30px; height:30px; border-radius:8px; border:2px solid #2a2a3a; cursor:pointer; }
+  .play{ align-self:center; padding:12px 26px; border:none; border-radius:999px; cursor:pointer;
+         background:var(--glow); color:#08131a; font-weight:900; font-size:16px; letter-spacing:.02em; }
   .hint{ color:var(--text2); font-size:13px; text-align:center; }
 </style>
 </head>
 <body>
-  <div class="wrap" id="wrap" style="--dur:.7s">
+  <div class="wrap" id="wrap">
     <div class="aura"></div>
     <div class="aura2"></div>
     <img class="photo" src="images/nctdream/smoothie/haechan.png" alt="">
   </div>
 
+  <button class="play" id="play">▶  Reproducir</button>
+
   <div class="panel">
-    <div class="row"><label>Velocidad</label><input id="bpm" type="range" min="40" max="200" value="86"><span class="v" id="bpmv">86 BPM</span></div>
+    <div class="row"><label>Sensibilidad</label><input id="sens" type="range" min="0.5" max="4" step="0.1" value="1.8"><span class="v" id="sensv">1.8×</span></div>
+    <div class="row"><label>Tamaño halo</label><input id="inten" type="range" min="0.4" max="2" step="0.05" value="1"><span class="v" id="intenv">1.00×</span></div>
     <div class="row"><label>Color</label><div class="swatches" id="sw"></div></div>
-    <div class="hint">Prueba de la foto que “late”. En la app real, el color sería el del miembro y el ritmo se podría sincronizar con los beats de la canción.</div>
+    <div class="hint">El aura late con los <b>graves/kicks</b> de la canción (Web Audio + AnalyserNode). Pulsa Reproducir.</div>
   </div>
+
+  <audio id="aud" preload="auto"></audio>
 
 <script>
   const wrap = document.getElementById("wrap");
-  const bpm = document.getElementById("bpm"), bpmv = document.getElementById("bpmv");
-  function setBpm(v){ wrap.style.setProperty("--dur", (60/v).toFixed(3)+"s"); bpmv.textContent = v+" BPM"; }
-  bpm.oninput = () => setBpm(+bpm.value); setBpm(+bpm.value);
+  const aud  = document.getElementById("aud");
+  const play = document.getElementById("play");
+  const sens = document.getElementById("sens"), sensv = document.getElementById("sensv");
+  const inten= document.getElementById("inten"), intenv = document.getElementById("intenv");
 
-  const colors = ["#61fdad","#cb6ce6","#fac142","#ff3131","#1bb7e8","#22c429","#f12ba5","#ffffff"];
+  // audio de prueba (mismo origen -> el analizador funciona sin problemas de CORS)
+  aud.src = "audio/" + encodeURIComponent("NCT DREAM (엔씨티 드림) 'Smoothie' Official Audio.mp3");
+
+  sens.oninput  = () => sensv.textContent  = (+sens.value).toFixed(1) + "×";
+  inten.oninput = () => intenv.textContent = (+inten.value).toFixed(2) + "×";
+
+  // ---- Web Audio: se crea SOLO tras el gesto del usuario (pulsar Reproducir) ----
+  let ctx, analyser, freq, srcNode, level = 0;
+  function initAudio(){
+    if (ctx) return;
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    srcNode  = ctx.createMediaElementSource(aud);   // enruta el audio por el grafo
+    analyser = ctx.createAnalyser();
+    analyser.fftSize = 1024;                          // ~43 Hz por bin a 44.1kHz
+    analyser.smoothingTimeConstant = 0.55;
+    freq = new Uint8Array(analyser.frequencyBinCount);
+    srcNode.connect(analyser);
+    analyser.connect(ctx.destination);               // IMPRESCINDIBLE o el sonido se muda
+  }
+
+  play.onclick = async () => {
+    initAudio();
+    if (ctx.state === "suspended") await ctx.resume();
+    if (aud.paused){ await aud.play(); play.textContent = "⏸  Pausar"; }
+    else { aud.pause(); play.textContent = "▶  Reproducir"; }
+  };
+  aud.onended = () => play.textContent = "▶  Reproducir";
+
+  // ---- bucle de dibujo: lee graves -> envelope follower -> variables CSS ----
+  function loop(){
+    if (analyser){
+      analyser.getByteFrequencyData(freq);
+      const binHz = ctx.sampleRate / analyser.fftSize;
+      const maxBin = Math.max(2, Math.min(freq.length, Math.floor(180 / binHz) + 1));
+      let sum = 0, n = 0;
+      for (let i = 1; i < maxBin; i++){ sum += freq[i]; n++; }   // salta el bin 0 (DC)
+      const bass = n ? (sum / n) / 255 : 0;                       // 0..1
+      const target = Math.min(1, bass * (+sens.value));
+      if (target > level) level = target;                         // ataque instantáneo (el "golpe")
+      else level += (target - level) * 0.10;                      // caída suave (se desvanece)
+    }
+    const k = +inten.value;
+    wrap.style.setProperty("--scale",   (0.90 + level * 0.65 * k).toFixed(3));
+    wrap.style.setProperty("--opacity", (0.30 + level * 0.70).toFixed(3));
+    wrap.style.setProperty("--blur",    (16 + level * 28).toFixed(1) + "px");
+    wrap.style.setProperty("--pop",     (1 + level * 0.05).toFixed(3));
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  // colores (como antes)
+  const colors = ["#1bb7e8","#61fdad","#cb6ce6","#fac142","#ff3131","#22c429","#f12ba5","#ffffff"];
   const sw = document.getElementById("sw");
-  colors.forEach(c => { const b=document.createElement("div"); b.className="sw"; b.style.background=c;
-    b.onclick=()=> document.documentElement.style.setProperty("--glow", c); sw.appendChild(b); });
+  colors.forEach(c => { const b = document.createElement("div"); b.className = "sw"; b.style.background = c;
+    b.onclick = () => document.documentElement.style.setProperty("--glow", c); sw.appendChild(b); });
 </script>
 </body>
 </html>
