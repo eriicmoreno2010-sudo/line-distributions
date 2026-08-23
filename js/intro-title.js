@@ -1,9 +1,10 @@
 /*
 =========================================
-Intro title — al empezar el vídeo aparece el título de la canción (sobre un
-fondo oscuro) y luego se desvanece dejando ver toda la app. Se controla con
-video.currentTime (no reloj de pared) para que también salga en el vídeo
-exportado frame a frame. Autónomo: inyecta sus estilos y su markup.
+Intro title — al empezar aparece el título de la canción (grupo · canción ·
+LINE DISTRIBUTION) sobre un fondo oscuro y luego se desvanece dejando ver la
+app. Se auto-reproduce al cargar (aunque el navegador bloquee el autoplay del
+vídeo); en el export frame a frame sigue el reloj del vídeo (determinista).
+Autónomo: inyecta sus estilos y su markup.
 =========================================
 */
 (function(){
@@ -24,18 +25,24 @@ exportado frame a frame. Autónomo: inyecta sus estilos y su markup.
       color:#f4f4f8; font-family:"Segoe UI",Inter,Arial,sans-serif;
       opacity:1;
     }
-    #intro-title .it-inner{ display:flex; flex-direction:column; align-items:center; gap:2.4vh; }
+    #intro-title .it-inner{ display:flex; flex-direction:column; align-items:center; gap:1.2vh; }
+    /* GRUPO (arriba, pequeño, mayúsculas) */
     #intro-title .it-grp{
-      font-size:2.4vh; font-weight:800; letter-spacing:1.1vh; text-transform:uppercase;
-      color:#9a9ab0;
+      font-size:2.6vh; font-weight:800; letter-spacing:.7vh; text-transform:uppercase;
+      color:#e9e9f2;
     }
-    #intro-title .it-bar{ width:8vh; height:.55vh; border-radius:999px;
-      background:linear-gradient(90deg, transparent, var(--accent,#7c5cff), transparent); }
-    #intro-title .it-sng{ font-size:9.2vh; font-weight:900; letter-spacing:.2vh; line-height:1;
+    /* CANCIÓN (protagonista) */
+    #intro-title .it-sng{ font-size:9.2vh; font-weight:900; letter-spacing:.1vh; line-height:1;
       text-shadow:0 2vh 6vh rgba(0,0,0,.6); }
+    /* LINE DISTRIBUTION (subtítulo, mayúsculas) */
+    #intro-title .it-sub{
+      font-size:2.4vh; font-weight:800; letter-spacing:.85vh; text-transform:uppercase;
+      color:#cfcfe0; margin-top:.6vh;
+    }
     @media(max-width:900px){
       #intro-title .it-sng{ font-size:9vw; }
-      #intro-title .it-grp{ font-size:3.2vw; letter-spacing:1.4vw; }
+      #intro-title .it-grp{ font-size:3.4vw; letter-spacing:1vw; }
+      #intro-title .it-sub{ font-size:3vw; letter-spacing:1vw; }
     }
   `;
   document.head.appendChild(style);
@@ -44,8 +51,8 @@ exportado frame a frame. Autónomo: inyecta sus estilos y su markup.
   el.id = "intro-title";
   el.innerHTML = `<div class="it-inner">
       <div class="it-grp"></div>
-      <div class="it-bar"></div>
       <div class="it-sng"></div>
+      <div class="it-sub">Line Distribution</div>
     </div>`;
   document.body.appendChild(el);
 
@@ -63,15 +70,27 @@ exportado frame a frame. Autónomo: inyecta sus estilos y su markup.
   });
 
   const video = document.getElementById("video");
+  const cur = () => (video && isFinite(video.currentTime)) ? video.currentTime : 0;
+  const liveStart = (typeof performance!=="undefined" && performance.now) ? performance.now() : 0;
+  const nowMs = () => (typeof performance!=="undefined" && performance.now) ? performance.now() : 0;
 
   function tick(){
-    const t = (video && isFinite(video.currentTime)) ? video.currentTime : 0;
+    // Reloj:
+    //  - export frame a frame (determinista) -> reloj del vídeo
+    //  - vídeo reproduciéndose (>0)          -> reloj del vídeo
+    //  - parado en 0 (autoplay bloqueado)    -> reloj de pared: la intro se reproduce sola
+    let t;
+    if (window.__DET_ANIM)       t = cur();
+    else if (cur() > 0.03)       t = cur();
+    else                         t = (nowMs() - liveStart) / 1000;
+
     let op;
     if (t <= HOLD) op = 1;
     else if (t >= HOLD + FADE) op = 0;
     else op = 1 - (t - HOLD) / FADE;
     // suavizado (ease-in-out) del fundido
     const e = op<=0?0 : op>=1?1 : (op<.5 ? 2*op*op : 1-Math.pow(-2*op+2,2)/2);
+
     el.style.opacity = e.toFixed(3);
     el.style.visibility = e > 0.002 ? "visible" : "hidden";
     inner.style.transform = "translateY(" + (-(1 - e) * 2.4).toFixed(2) + "vh)"; // sube un poco al irse
