@@ -445,16 +445,73 @@
 
   // Cambiar el color de cada miembro (útil sobre todo para grupos nuevos).
   function toHex(c){ return /^#[0-9a-fA-F]{6}$/.test(c || "") ? c : "#7c5cff"; }
+  function slugParts(){ const p = String(songPath).replace(/\\/g,"/").split("/");
+    return { g: p[p.length-2] || "grupo", s: (p[p.length-1] || "cancion").replace(/\.json$/i,"") }; }
+
+  function removeMember(name){
+    if(!confirm("¿Quitar a " + name + " de esta canción?\n(no afecta a otras canciones)")) return;
+    song.members = (song.members || []).filter(m => m.name !== name);
+    (song.lyrics || []).forEach(l => {
+      if(Array.isArray(l.members)) l.members = l.members.filter(n => n !== name);
+      if(Array.isArray(l.voice)) l.voice.forEach(seg => { if(seg && seg[2] != null){
+        if(Array.isArray(seg[2])) seg[2] = seg[2].filter(n => n !== name);
+        else if(seg[2] === name) seg[2] = undefined; } });
+    });
+    renderLines(); buildWordPal(); buildColors();
+  }
+
+  function addMember(preset){
+    const name = (preset.name || "").trim(); if(!name) return;
+    if((song.members || []).some(m => m.name.toLowerCase() === name.toLowerCase())){ alert("Ese miembro ya está en la canción."); return; }
+    const { g, s } = slugParts();
+    const base = name.toLowerCase().replace(/[^a-z0-9]+/g, "");
+    song.members = song.members || [];
+    song.members.push({ name, image: "images/" + g + "/" + s + "/" + base + ".png",
+      color: preset.color || "#7c5cff", focus: preset.focus != null ? preset.focus : 50, lift: preset.lift != null ? preset.lift : 3 });
+    renderLines(); buildWordPal(); buildColors();
+  }
+
+  async function openAddMenu(anchor){
+    document.querySelectorAll(".addmenu").forEach(e => e.remove());
+    let presets = [];
+    try{ const r = await window.desktop.groupMembers(songPath); if(r && r.members) presets = r.members; }catch(e){}
+    const have = new Set((song.members || []).map(m => m.name.toLowerCase()));
+    presets = presets.filter(p => !have.has(p.name.toLowerCase()));
+    const menu = document.createElement("div"); menu.className = "addmenu";
+    presets.forEach(p => {
+      const b = document.createElement("button"); b.type = "button"; b.className = "ami";
+      b.innerHTML = '<span class="cdot" style="background:' + toHex(p.color) + '"></span>' + p.name;
+      b.title = "añadir " + p.name + " (con su color guardado)";
+      b.onclick = () => { addMember(p); menu.remove(); };
+      menu.appendChild(b);
+    });
+    if(!presets.length){ const e = document.createElement("div"); e.className = "amempty"; e.textContent = "(sin presets del grupo)"; menu.appendChild(e); }
+    const nu = document.createElement("button"); nu.type = "button"; nu.className = "ami new"; nu.textContent = "➕ Nuevo miembro…";
+    nu.onclick = () => { const n = prompt("Nombre del nuevo miembro:"); if(n && n.trim()) addMember({ name: n.trim().toUpperCase() }); menu.remove(); };
+    menu.appendChild(nu);
+    const r = anchor.getBoundingClientRect();
+    menu.style.left = r.left + "px"; menu.style.bottom = (window.innerHeight - r.top + 6) + "px";
+    document.body.appendChild(menu);
+    setTimeout(() => document.addEventListener("click", function h(ev){
+      if(!menu.contains(ev.target) && ev.target !== anchor){ menu.remove(); document.removeEventListener("click", h); } }), 0);
+  }
+
   function buildColors(){
     const row = $("#colorsRow"); if(!row) return;
-    row.querySelectorAll(".mcol").forEach(e => e.remove());
+    row.querySelectorAll(".mcol, .addmem").forEach(e => e.remove());
     (song.members || []).forEach(m => {
-      const w = document.createElement("label"); w.className = "mcol";
+      const w = document.createElement("span"); w.className = "mcol";
       const inp = document.createElement("input"); inp.type = "color"; inp.value = toHex(m.color);
       inp.oninput = () => { m.color = inp.value; renderLines(); buildWordPal(); };
       const nm = document.createElement("span"); nm.textContent = abbr(m.name); nm.title = m.name;
-      w.append(inp, nm); row.appendChild(w);
+      const x = document.createElement("button"); x.type = "button"; x.className = "mx"; x.textContent = "✕"; x.title = "quitar " + m.name;
+      x.onclick = () => removeMember(m.name);
+      w.append(inp, nm, x); row.appendChild(w);
     });
+    const add = document.createElement("button"); add.type = "button"; add.className = "addmem"; add.textContent = "➕ miembro";
+    add.title = "añadir miembro (recupera el preajuste si ya existió)";
+    add.onclick = () => openAddMenu(add);
+    row.appendChild(add);
   }
   $("#mode").onchange = (e) => {
     mode = MODES[e.target.value] || MODES["lyric-central"];

@@ -315,6 +315,34 @@ ipcMain.handle("save-song", async (_e, args) => {
   return res;
 });
 
+// Member presets: reúne los miembros vistos en las OTRAS canciones del mismo
+// grupo (misma carpeta), con su color/focus/lift más frecuente. Sirve para que,
+// al re-añadir a alguien en el editor, salga con el preajuste que ya tenía.
+ipcMain.handle("group-members", async (_e, relPath) => {
+  try{
+    const dir = path.dirname(path.join(ROOT, String(relPath)));
+    const files = fs.readdirSync(dir).filter(f => f.toLowerCase().endsWith(".json"));
+    const agg = {};
+    for(const f of files){
+      let data; try{ data = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")); }catch(e){ continue; }
+      (data.members || []).forEach(m => {
+        if(!m || !m.name) return;
+        const k = m.name;
+        if(!agg[k]) agg[k] = { name:m.name, colors:{}, focus:m.focus, lift:m.lift };
+        if(m.color) agg[k].colors[m.color] = (agg[k].colors[m.color] || 0) + 1;
+        if(agg[k].focus == null && m.focus != null) agg[k].focus = m.focus;
+        if(agg[k].lift  == null && m.lift  != null) agg[k].lift  = m.lift;
+      });
+    }
+    const members = Object.values(agg).map(a => {
+      let best = null, bc = -1;
+      for(const c in a.colors){ if(a.colors[c] > bc){ bc = a.colors[c]; best = c; } }
+      return { name:a.name, color: best || "#7c5cff", focus: a.focus != null ? a.focus : 50, lift: a.lift != null ? a.lift : 3 };
+    });
+    return { ok:true, members };
+  }catch(e){ return { ok:false, error:e.message, members:[] }; }
+});
+
 // Photos tool: tell the framer where to READ each photo from — prefer the
 // pristine original in _src/ so re-framing is never done on an already-baked crop.
 ipcMain.handle("photo-sources", async (_e, paths) => {

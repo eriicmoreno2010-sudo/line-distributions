@@ -65,6 +65,21 @@
   #colorsRow .mcol input[type=color]{ width:28px; height:28px; padding:0; border:1px solid var(--border);
                                       border-radius:7px; background:none; cursor:pointer; }
   #colorsRow .mcol span{ font-size:11px; font-weight:800; color:var(--text2); }
+  #colorsRow .mcol .mx{ border:0; background:none; color:#8a8a99; cursor:pointer; font-size:12px; font-weight:900;
+                        padding:0 2px; line-height:1; }
+  #colorsRow .mcol .mx:hover{ color:#ff5470; }
+  #colorsRow .addmem{ border:1px dashed var(--border); background:none; color:var(--text2); cursor:pointer;
+                      border-radius:8px; padding:5px 10px; font-size:11px; font-weight:800; }
+  #colorsRow .addmem:hover{ color:#fff; border-color:#666; }
+  .addmenu{ position:fixed; z-index:200; background:#15151d; border:1px solid #33334a; border-radius:10px;
+            padding:6px; display:flex; flex-direction:column; gap:2px; max-height:60vh; overflow:auto;
+            box-shadow:0 16px 40px -12px #000; min-width:170px; }
+  .addmenu .ami{ display:flex; align-items:center; gap:8px; text-align:left; border:0; background:none; color:#e8e8f2;
+                 cursor:pointer; padding:7px 9px; border-radius:7px; font-size:13px; font-weight:700; }
+  .addmenu .ami:hover{ background:#26263400; background:#232331; }
+  .addmenu .ami.new{ color:#9fd; border-top:1px solid #2a2a3a; margin-top:2px; }
+  .addmenu .cdot{ width:13px; height:13px; border-radius:50%; flex:none; box-shadow:0 0 0 1px rgba(255,255,255,.15); }
+  .addmenu .amempty{ color:#777; font-size:12px; padding:6px 9px; }
 
   /* modal "pegar letra" */
   #pastemodal{ position:fixed; inset:0; background:rgba(8,8,12,.85); display:none; align-items:center; justify-content:center; z-index:100; }
