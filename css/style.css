@@ -165,41 +165,65 @@ body{
 #song-info{
     display:flex;
     flex-direction:column;
-    gap:2px;
+    gap:6px;
+    position:relative;
+    padding-left:16px;
 }
 
+/* barra de acento tipo marcador de título (Adobe/lower-third) */
+#song-info::before{
+    content:"";
+    position:absolute; left:0; top:2px; bottom:2px; width:4px;
+    border-radius:999px;
+    background:linear-gradient(180deg, var(--accent), color-mix(in srgb, var(--accent) 35%, #fff));
+    box-shadow:0 0 18px -2px var(--accent);
+}
+
+/* GRUPO: "eyebrow" pequeño en mayúsculas y muy espaciado */
 #group-name{
-    font-size:26px;
+    font-size:13px;
     font-weight:800;
-    letter-spacing:.5px;
-    line-height:1.05;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--text2);
+    line-height:1;
 }
 
+/* CANCIÓN: protagonista, grande y con peso */
 #song-name{
-    font-size:15px;
-    color:var(--text2);
-    font-weight:500;
-    letter-spacing:.3px;
+    font-size:31px;
+    color:var(--text);
+    font-weight:900;
+    letter-spacing:.2px;
+    line-height:1;
 }
 
 #song-time{
     display:flex;
-    gap:8px;
-    align-items:baseline;
+    gap:10px;
+    align-items:center;
     font-size:15px;
-    font-weight:600;
+    font-weight:700;
     color:var(--text2);
-    background:var(--panel2);
+    background:linear-gradient(180deg, color-mix(in srgb,#fff 5%, var(--panel2)), var(--panel2));
     border:1px solid var(--border);
-    padding:8px 16px;
+    padding:9px 18px;
     border-radius:999px;
     font-variant-numeric:tabular-nums;
+    letter-spacing:.5px;
+    box-shadow:var(--shadow-sm);
 }
+
+/* la barra "/" más tenue */
+#song-time span:nth-of-type(2){ opacity:.4; font-weight:600; }
 
 #current-time{
     color:var(--text);
-    font-weight:800;
+    font-weight:900;
+    font-size:16px;
 }
+
+#duration{ font-weight:700; }
 
 /* ========================= */
 /* VIDEO */
@@ -550,8 +574,8 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     #left-panel{ display:flex; flex-direction:column; gap:12px; min-height:0; }
 
     #top-bar{ padding:10px 14px; }
-    #song-info h1{ font-size:19px; }
-    #song-info h2{ font-size:13px; }
+    #song-info h1{ font-size:11px; letter-spacing:2px; }
+    #song-info h2{ font-size:22px; }
     #song-time{ font-size:14px; }
 
     /* video keeps a normal 16:9 box and shows the whole frame */

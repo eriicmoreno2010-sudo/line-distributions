@@ -39,16 +39,22 @@ Self-contained: injects its own styles and markup.
   /* ---------- styles ---------- */
   const style=document.createElement("style");
   style.textContent=`
+    /* Deslizante: los resultados esperan fuera de pantalla (abajo) y suben.
+       El ranking+letra (#app) sube y se va — NO se difumina. */
     #results-overlay{
-      position:fixed; inset:0; z-index:300; opacity:0; visibility:hidden;
-      transition:opacity 1.1s ease, visibility 1.1s ease;
+      position:fixed; inset:0; z-index:300;
+      transform:translateY(100%); will-change:transform;
+      transition:transform 1s cubic-bezier(.65,0,.2,1);
       background:
         radial-gradient(120% 90% at 20% 10%, #17172a 0%, transparent 55%),
         radial-gradient(120% 90% at 90% 90%, #1a1330 0%, transparent 55%),
         #0b0b11;
       color:#f4f4f8; font-family:"Segoe UI",Inter,Arial,sans-serif;
     }
-    #results-overlay.show{ opacity:1; visibility:visible; }
+    #results-overlay.show{ transform:translateY(0); }
+    /* el canvas principal sube y sale por arriba, en sincronía con el donut */
+    #app{ transition:transform 1s cubic-bezier(.65,0,.2,1); will-change:transform; }
+    body.results-up #app{ transform:translateY(-100%); }
     #results-overlay #ro-main{ height:100vh; display:flex; align-items:stretch; gap:2vw; padding:3.2vh 3vw; }
     #results-overlay #ro-left{ flex:0 0 46vw; display:flex; flex-direction:column; justify-content:space-between; align-items:flex-start; min-height:0; }
     #results-overlay #ro-head .grp{ font-size:1.9vh; letter-spacing:.5vh; color:#7c7c8a; font-weight:800; }
@@ -210,8 +216,10 @@ Self-contained: injects its own styles and markup.
     }, 900);
   }
 
-  function show(){ if(!built || ov.classList.contains("show")) return; ov.classList.add("show"); autoReveal(); }
-  function hide(){ ov.classList.remove("show"); if(revealTimer) clearInterval(revealTimer); reset(); }
+  function show(){ if(!built || ov.classList.contains("show")) return;
+    document.body.classList.add("results-up"); ov.classList.add("show"); autoReveal(); }
+  function hide(){ ov.classList.remove("show"); document.body.classList.remove("results-up");
+    if(revealTimer) clearInterval(revealTimer); reset(); }
 
   const video=document.getElementById("video");
   if(video) video.addEventListener("ended", show);
