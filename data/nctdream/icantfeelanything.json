@@ -1,0 +1,70 @@
+{
+  "group": "NCT DREAM",
+  "song": "icantfeelanything",
+  "video": "",
+  "duration": 0,
+  "members": [
+    {
+      "name": "MARK",
+      "image": "images/nctdream/icantfeelanything/mark.png",
+      "color": "#cb6ce6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/nctdream/icantfeelanything/renjun.png",
+      "color": "#fac142",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JENO",
+      "image": "images/nctdream/icantfeelanything/jeno.png",
+      "color": "#ff3131",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nctdream/icantfeelanything/haechan.png",
+      "color": "#1bb7e8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/nctdream/icantfeelanything/jaemin.png",
+      "color": "#61fdad",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/nctdream/icantfeelanything/chenle.png",
+      "color": "#22c429",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/nctdream/icantfeelanything/jisung.png",
+      "color": "#f12ba5",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
