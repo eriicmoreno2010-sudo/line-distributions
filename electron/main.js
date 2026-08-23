@@ -260,6 +260,30 @@ ipcMain.handle("pick-video", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// ---- Importar una foto (desde el PC) para un miembro: copia a _src y al display,
+//      para que se vea ya y se pueda encuadrar. No hace commit (se sube al Guardar). ----
+ipcMain.handle("import-photo", async (_e, args) => {
+  args = args || {};
+  try{
+    const dest = String(args.imagePath || "");            // p.ej. images/nct2023/goldenage/mark.png
+    if(!dest) return { ok:false, error:"falta la ruta de destino" };
+    const { canceled, filePaths } = await dialog.showOpenDialog({
+      title: "Elegir foto" + (args.name ? " de " + args.name : ""),
+      properties: ["openFile"],
+      filters: [{ name:"Imagen", extensions:["png","jpg","jpeg","webp","avif","bmp"] }]
+    });
+    if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
+    const srcFile = filePaths[0];
+    const destAbs = path.join(ROOT, dest);
+    const dir = path.dirname(destAbs), base = path.basename(destAbs);
+    const srcDir = path.join(dir, "_src");
+    fs.mkdirSync(srcDir, { recursive:true });
+    fs.copyFileSync(srcFile, path.join(srcDir, base));     // origen para encuadrar
+    fs.copyFileSync(srcFile, destAbs);                     // display (se ve ya en el ranking, local)
+    return { ok:true, src: "file:///" + path.join(srcDir, base).replace(/\\/g, "/") };
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }

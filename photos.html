@@ -42,6 +42,9 @@
       <div class="cap">Arrastra para mover · rueda del ratón para zoom</div>
     </div>
     <div id="controls">
+      <div class="btns">
+        <button id="importOne">📁 Elegir foto (de este miembro)</button>
+      </div>
       <div class="ctl">
         <label>Zoom</label>
         <input id="zoom" type="range" min="0.15" max="1" step="0.005">
@@ -173,6 +176,27 @@ document.getElementById("prev-btn").addEventListener("click", ()=>select(idx-1))
 document.getElementById("next-btn").addEventListener("click", ()=>select(idx+1));
 document.getElementById("resetOne").addEventListener("click", ()=>{
     const m=cur(); m.side=m.iw; m.cx=m.iw/2; m.cy=clamp(0.44*m.ih,m.side/2,m.ih-m.side/2); m.rot=0; render();
+});
+
+// Importar la foto del miembro actual desde el PC (se carga aquí para encuadrar y
+// se ve ya en el ranking; se sube con "Guardar y subir").
+document.getElementById("importOne").addEventListener("click", async ()=>{
+    const m = cur(); if(!m) return;
+    if(!(window.desktop && window.desktop.importPhoto)){ alert("Esto solo funciona en la app de escritorio."); return; }
+    const btn = document.getElementById("importOne"); const t = btn.textContent;
+    btn.disabled = true; btn.textContent = "⏳ Cargando…";
+    let res = null;
+    try{ res = await window.desktop.importPhoto({ imagePath: m.path, name: m.name }); }catch(e){}
+    btn.disabled = false; btn.textContent = t;
+    if(res && res.canceled) return;
+    if(!res || !res.ok){ alert("No se pudo importar: " + ((res && res.error) || "error")); return; }
+    const img = new Image();
+    img.onload = () => {
+        m.img = img; m.iw = img.naturalWidth; m.ih = img.naturalHeight;
+        m.side = m.iw; m.cx = m.iw/2; m.cy = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2); m.rot = 0;
+        render(); if(m.thumbCtx) drawInto(m.thumbCtx, 64, m);
+    };
+    img.src = res.src + "?t=" + Date.now();   // cache-bust
 });
 document.addEventListener("keydown", e=>{
     if(e.key==="ArrowLeft") select(idx-1);
