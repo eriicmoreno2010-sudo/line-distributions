@@ -131,11 +131,12 @@
   const DIVE     = "NCT DREAM - 고래 Dive into You.mp3";
   const ALBUM    = "covers/smoothie_album.jpg";   // portada por defecto (cambia cada cover cuando tengas más)
   const TRACKS = [
-    { title:"Box",                artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM },
-    { title:"Carat Cake",         artist:"NCT DREAM", file:DIVE,     cover:ALBUM },
-    { title:"Smoothie",           artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM },   // <- actual
-    { title:"I Cant Feel Anything", artist:"NCT DREAM", file:DIVE,   cover:ALBUM },
-    { title:"Unknown",            artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM }
+    { title:"icantfeelanything",     artist:"NCT DREAM", file:DIVE, cover:ALBUM },
+    { title:"Smoothie",         artist:"NCT DREAM", file:SMOOTHIE,     cover:ALBUM }, // <- actual
+    { title:"BOX",           artist:"NCT DREAM", file:DIVE, cover:ALBUM }, 
+    { title:"Carat Cake", artist:"NCT DREAM", file:SMOOTHIE,   cover:ALBUM },
+    { title:"UNKNOWN",            artist:"NCT DREAM", file:DIVE, cover:ALBUM },
+    { title:"숨 (Breathing)",            artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM }
   ];
   let idx = 2, shuffle = false;
   const $ = id => document.getElementById(id);
