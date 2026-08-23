@@ -127,12 +127,17 @@
 
 <script>
   const AUDIO_DIR = "audio/";
+  const SMOOTHIE = "NCT DREAM (엔씨티 드림) 'Smoothie' Official Audio.mp3";
+  const DIVE     = "NCT DREAM - 고래 Dive into You.mp3";
+  const ALBUM    = "covers/smoothie_album.jpg";   // portada por defecto (cambia cada cover cuando tengas más)
   const TRACKS = [
-    { title:"Smoothie", artist:"NCT DREAM", file:"NCT DREAM (엔씨티 드림) 'Smoothie' Official Audio.mp3", cover:"covers/smoothie_album.jpg" },
-    { title:"Dive Into You", artist:"NCT DREAM", file:"NCT DREAM - 고래 Dive into You.mp3", cover:"images/nctdream/diveintoyou/mark.png" },
-    { title:"Dive Into You", artist:"NCT DREAM", file:"NCT DREAM - 고래 Dive into You.mp3", cover:"images/nctdream/diveintoyou/chenle.png" }
+    { title:"Box",                artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM },
+    { title:"Carat Cake",         artist:"NCT DREAM", file:DIVE,     cover:ALBUM },
+    { title:"Smoothie",           artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM },   // <- actual
+    { title:"I Cant Feel Anything", artist:"NCT DREAM", file:DIVE,   cover:ALBUM },
+    { title:"Unknown",            artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM }
   ];
-  let idx = 0, shuffle = false;
+  let idx = 2, shuffle = false;
   const $ = id => document.getElementById(id);
   const aud = $("aud"), cover = $("cover"), fill = $("fill"), knob = $("knob");
   const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
@@ -191,26 +196,28 @@
     const d=DPR(), w=cv.width/d, h=cv.height/d, mid=h/2;
     cx.clearRect(0,0,w,h);
     if(analyser){
-      analyser.getByteTimeDomainData(tdata);
       analyser.getByteFrequencyData(freq);
       let s=0; for(let i=1;i<8;i++) s+=freq[i]; const bass=(s/7)/255;
       const target=Math.min(1,bass*1.5); if(target>beat) beat=target; else beat+=(target-beat)*0.12;
       document.documentElement.style.setProperty("--beat", beat.toFixed(3));
 
-      // oscilograma plano (dominio del tiempo) cian->magenta con glow
-      const N=260, step=w/(N-1), amp=h*0.42*(0.75+0.9*beat);
+      // barritas cian->magenta reactivas (crecen arriba y abajo desde el centro)
+      const N=72, bw=w/N, gap=bw*0.52, iw=bw-gap;
       const grad=cx.createLinearGradient(0,0,w,0);
       grad.addColorStop(0,getCss("--c1")); grad.addColorStop(.5,"#b56bff"); grad.addColorStop(1,getCss("--c2"));
-      const pts=[];
-      for(let i=0;i<N;i++){ const ti=Math.floor(i/(N-1)*(tdata.length-1)); const v=(tdata[ti]-128)/128; pts.push([i*step, mid + v*amp]); }
-      cx.lineJoin="round"; cx.lineCap="round"; cx.strokeStyle=grad; cx.shadowColor="rgba(120,200,255,.9)";
-      cx.globalAlpha=.32; cx.lineWidth=9; cx.shadowBlur=26; strokePath(pts);
-      cx.globalAlpha=1;   cx.lineWidth=2.6; cx.shadowBlur=14; strokePath(pts);
+      cx.fillStyle=grad; cx.shadowColor="rgba(120,200,255,.85)"; cx.shadowBlur=14;
+      for(let i=0;i<N;i++){
+        const fi=Math.floor(Math.pow(i/(N-1),1.4)*(freq.length*0.7));
+        const v=(freq[fi]||0)/255; const bh=Math.max(3, v*v*h*0.42);
+        roundRect(i*bw+gap/2, mid-bh, iw, bh*2, iw/2); cx.fill();
+      }
       cx.shadowBlur=0;
     }
     requestAnimationFrame(draw);
   }
-  function strokePath(pts){ cx.beginPath(); pts.forEach((p,i)=> i?cx.lineTo(p[0],p[1]):cx.moveTo(p[0],p[1])); cx.stroke(); }
+  function roundRect(x,y,w,h,r){ r=Math.min(r,w/2,h/2); cx.beginPath();
+    cx.moveTo(x+r,y); cx.arcTo(x+w,y,x+w,y+h,r); cx.arcTo(x+w,y+h,x,y+h,r);
+    cx.arcTo(x,y+h,x,y,r); cx.arcTo(x,y,x+w,y,r); cx.closePath(); }
   function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim()||"#25e0f2"; }
   requestAnimationFrame(draw);
 
@@ -224,7 +231,7 @@
       dt.style.animationDuration=(6+Math.random()*8)+"s"; dt.style.animationDelay=(-Math.random()*12)+"s"; bg.appendChild(dt); }
   })();
 
-  loadTrack(0, false);
+  loadTrack(2, false);
 </script>
 </body>
 </html>
