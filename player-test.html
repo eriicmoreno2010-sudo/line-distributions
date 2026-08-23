@@ -138,7 +138,7 @@
     { title:"UNKNOWN",            artist:"NCT DREAM", file:DIVE, cover:ALBUM },
     { title:"숨 (Breathing)",            artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM }
   ];
-  let idx = 2, shuffle = false;
+  let idx = 1, shuffle = false;
   const $ = id => document.getElementById(id);
   const aud = $("aud"), cover = $("cover"), fill = $("fill"), knob = $("knob");
   const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
@@ -151,9 +151,11 @@
     $("cur").textContent = "0:00"; $("dur").textContent = "0:00"; fill.style.width = "0%"; knob.style.left = "0%";
     buildSides(); if(autoplay) play();
   }
+  const WIN = 2;   // cuántas canciones mostrar a cada lado (ventana alrededor de la actual)
   function buildSides(){
     const L = $("sideL"), R = $("sideR"); L.innerHTML = ""; R.innerHTML = "";
     TRACKS.forEach((t,i)=>{ if(i===idx) return;
+      if(i < idx-WIN || i > idx+WIN) return;   // solo las cercanas, no todas
       const c = document.createElement("div"); c.className = "scard"; c.title = t.title; c.onclick = () => loadTrack(i, true);
       const th = document.createElement("div"); th.className = "sthumb";
       if(t.cover) th.style.backgroundImage = "url('" + t.cover + "?v=27')";
@@ -232,7 +234,7 @@
       dt.style.animationDuration=(6+Math.random()*8)+"s"; dt.style.animationDelay=(-Math.random()*12)+"s"; bg.appendChild(dt); }
   })();
 
-  loadTrack(2, false);
+  loadTrack(1, false);
 </script>
 </body>
 </html>
