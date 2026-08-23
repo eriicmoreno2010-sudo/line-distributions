@@ -64,6 +64,7 @@
   #times{ display:flex; justify-content:space-between; margin-top:8px; font-size:clamp(11px,1.2vw,14px); color:#aebbdd; font-variant-numeric:tabular-nums; }
 
   #controls{ display:flex; align-items:center; justify-content:center; gap:6%; margin-top:5%; position:relative; }
+  body.clean #controls{ display:none; }   /* tecla R: modo grabación sin controles */
   .ctl{ background:none; border:0; color:#e8eeff; cursor:pointer; display:grid; place-items:center;
         filter:drop-shadow(0 2px 8px rgba(0,0,0,.5)); }
   .ctl svg{ width:26px; height:26px; fill:currentColor; }
@@ -115,7 +116,6 @@
       <button class="ctl" id="prev" title="Anterior"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg></button>
       <button class="ctl" id="play" title="Reproducir"><svg viewBox="0 0 24 24" id="playIcon"><path d="M8 5v14l11-7z"/></svg></button>
       <button class="ctl" id="next" title="Siguiente"><svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 6l8.5 6L6 18z"/></svg></button>
-      <button class="ctl" id="shuffle" title="Aleatorio"><svg viewBox="0 0 24 24"><path d="M17 3l4 4-4 4V8h-3l-2.5 3.5L9 8H3V6h5l2.5 3.5L13 6h4V3zM3 16h5l2.5-3.5 1.2 1.7-2.6 3.8H3v-2zm14-2v-3l4 4-4 4v-3h-3l-2.2-3.2 1.2-1.7L14 14h3z"/></svg></button>
     </div>
   </div>
 
@@ -180,8 +180,9 @@
   aud.onended = () => next();
   $("prev").onclick = () => loadTrack(idx-1, true);
   $("next").onclick = () => next();
-  function next(){ loadTrack(shuffle ? Math.floor(idx+1+Math.random()*(TRACKS.length-1)) : idx+1, true); }
-  $("shuffle").onclick = () => { shuffle=!shuffle; $("shuffle").classList.toggle("on",shuffle); };
+  function next(){ loadTrack(idx+1, true); }
+  // Tecla R: modo grabación -> oculta TODOS los controles (para grabar con OBS)
+  document.addEventListener("keydown", e => { if(e.key==="r"||e.key==="R") document.body.classList.toggle("clean"); });
   aud.ontimeupdate = () => { if(aud.duration){ const p=aud.currentTime/aud.duration*100;
     fill.style.width=p+"%"; knob.style.left=p+"%"; $("cur").textContent=fmt(aud.currentTime); $("dur").textContent=fmt(aud.duration); } };
   aud.onloadedmetadata = () => $("dur").textContent = fmt(aud.duration||0);
