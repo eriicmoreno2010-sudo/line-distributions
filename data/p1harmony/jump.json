@@ -650,6 +650,60 @@
       "romanization": "JUMP JUMP",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 107.8,
+      "end": 109.07,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP JUMP",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 109.37,
+      "end": 112.02,
+      "members": [],
+      "original": "내 리듬 따라 Go, Dumb",
+      "romanization": "nae rideum ttara go, dumb",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 131.01,
+      "end": 133.36,
+      "members": [],
+      "original": "",
+      "romanization": "One two three four",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 135.22,
+      "end": 137.83,
+      "members": [],
+      "original": "내 느낌대로 Go, Dumb",
+      "romanization": "nae neukkimdaero go, dumb",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 144.4,
+      "end": 146.51,
+      "members": [],
+      "original": "",
+      "romanization": "Go, Dumb dumb dumb",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 147.69,
+      "end": 149.13,
+      "members": [],
+      "original": "",
+      "romanization": "JUMP",
+      "english": "",
+      "adlib": true
     }
   ]
 }
