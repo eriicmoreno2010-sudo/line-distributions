@@ -1,0 +1,13 @@
+/* Tipografía del proyecto — Montserrat (auto-alojada: funciona en la web,
+   en la app de escritorio y en el export sin depender de internet). */
+@font-face{
+  font-family:"Montserrat";
+  font-style:normal;
+  font-weight:100 900;            /* fuente variable: cubre todos los pesos */
+  font-display:swap;
+  src:url("../fonts/montserrat-latin.woff2") format("woff2");
+}
+
+:root{
+  --app-font:"Montserrat","Segoe UI",Inter,Arial,Helvetica,sans-serif;
+}

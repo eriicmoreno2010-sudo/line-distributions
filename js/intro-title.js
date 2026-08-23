@@ -22,7 +22,7 @@ Autónomo: inyecta sus estilos y su markup.
         radial-gradient(120% 90% at 50% 38%, #17172a 0%, transparent 60%),
         radial-gradient(120% 90% at 50% 100%, #1a1330 0%, transparent 55%),
         #0b0b11;
-      color:#f4f4f8; font-family:"Segoe UI",Inter,Arial,sans-serif;
+      color:#f4f4f8; font-family:var(--app-font,"Segoe UI",Inter,Arial,sans-serif);
       opacity:1;
     }
     #intro-title .it-inner{ display:flex; flex-direction:column; align-items:center; gap:1.2vh; }

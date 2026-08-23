@@ -90,7 +90,7 @@ body{
         radial-gradient(900px 600px at -5% 110%, rgba(0,180,255,.08), transparent 55%),
         var(--background);
     color:var(--text);
-    font-family:"Segoe UI",Inter,Arial,Helvetica,sans-serif;
+    font-family:var(--app-font,"Segoe UI",Inter,Arial,Helvetica,sans-serif);
     -webkit-font-smoothing:antialiased;
     overflow:hidden;
 }

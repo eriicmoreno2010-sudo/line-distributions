@@ -49,7 +49,7 @@ Self-contained: injects its own styles and markup.
         radial-gradient(120% 90% at 20% 10%, #17172a 0%, transparent 55%),
         radial-gradient(120% 90% at 90% 90%, #1a1330 0%, transparent 55%),
         #0b0b11;
-      color:#f4f4f8; font-family:"Segoe UI",Inter,Arial,sans-serif;
+      color:#f4f4f8; font-family:var(--app-font,"Segoe UI",Inter,Arial,sans-serif);
     }
     #results-overlay.show{ transform:translateY(0); }
     /* el canvas principal sube y sale por arriba, en sincronía con el donut */
