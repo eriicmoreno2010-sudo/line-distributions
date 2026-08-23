@@ -43,19 +43,31 @@
       <label for="url">Enlace de YouTube</label>
       <input id="url" type="text" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off" spellcheck="false">
     </div>
+    <div>
+      <label for="mode">Modo</label>
+      <select id="mode">
+        <option value="subs">Subtítulos del vídeo (rápido, los que ya trae)</option>
+        <option value="transcribe">Transcribir (idioma original) — Whisper</option>
+        <option value="translate">Traducir a inglés — Whisper</option>
+      </select>
+    </div>
     <div class="row">
-      <div>
+      <div id="langWrap">
+        <label for="subLang">Idioma de subtítulos</label>
+        <input id="subLang" type="text" value="en" placeholder="en, ko, es, ja…" autocomplete="off" spellcheck="false">
+      </div>
+      <div id="modelWrap" style="display:none">
         <label for="model">Modelo (calidad ↔ velocidad)</label>
         <select id="model"></select>
       </div>
-      <button id="go">Transcribir</button>
+      <button id="go">Obtener texto</button>
     </div>
     <div id="status"></div>
   </div>
 
   <div class="card">
     <div class="toolbar">
-      <label style="font-size:14px">Texto (inglés) — sin tiempos</label>
+      <label style="font-size:14px" id="outLabel">Texto — sin tiempos</label>
       <div style="display:flex; gap:10px">
         <button class="sec" id="copy">📋 Copiar</button>
         <button class="sec" id="clear">Limpiar</button>
@@ -87,13 +99,25 @@
 
     D.onTranscribeProgress(msg => { $("status").textContent = msg; });
 
+    // mostrar idioma (subs) o modelo (whisper) según el modo
+    function syncMode(){
+      const m = $("mode").value;
+      $("langWrap").style.display  = (m === "subs") ? "" : "none";
+      $("modelWrap").style.display = (m === "subs") ? "none" : "";
+      $("outLabel").textContent = m === "translate" ? "Texto (inglés) — sin tiempos"
+        : m === "transcribe" ? "Texto (idioma original) — sin tiempos"
+        : "Subtítulos del vídeo — sin tiempos";
+    }
+    $("mode").onchange = syncMode; syncMode();
+
     $("go").onclick = async () => {
       const url = $("url").value.trim();
       if(!url){ $("status").textContent = "Pega un enlace de YouTube."; return; }
       const btn = $("go"); btn.disabled = true; const t = btn.textContent; btn.textContent = "⏳ Trabajando…";
       $("status").textContent = "Preparando…";
       let res = null;
-      try{ res = await D.transcribeUrl({ url, model: $("model").value }); }catch(e){ res = { ok:false, error:String(e) }; }
+      try{ res = await D.transcribeUrl({ url, mode: $("mode").value, model: $("model").value, subLang: $("subLang").value.trim() }); }
+      catch(e){ res = { ok:false, error:String(e) }; }
       btn.disabled = false; btn.textContent = t;
       if(res && res.ok){ $("out").value = res.text; $("status").textContent = "✅ Listo (" + res.text.split("\n").length + " líneas)"; }
       else { $("status").textContent = "✕ " + ((res && res.error) || "error"); }
