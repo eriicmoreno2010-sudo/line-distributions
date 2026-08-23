@@ -427,8 +427,6 @@ ipcMain.handle("export-thumb", async (evt, args) => {
 // =========================================================================
 const TOOLS   = path.join(ROOT, "tools");
 const YTDLP   = path.join(TOOLS, "yt-dlp.exe");
-const WHISPER = path.join(TOOLS, "whisper", "Release", "whisper-cli.exe");
-const MODELS  = path.join(TOOLS, "models");
 
 // Lanza un proceso; envía cada línea de salida a `onLine`; resuelve con el código.
 function spawnStream(exe, args, onLine, opts){
@@ -445,13 +443,6 @@ function spawnStream(exe, args, onLine, opts){
     child.on("close", code => resolve({ code, out }));
   });
 }
-
-ipcMain.handle("transcribe-list-models", async () => {
-  try{
-    const files = fs.readdirSync(MODELS).filter(f => /^ggml-.*\.bin$/i.test(f));
-    return { ok: true, models: files };
-  }catch(e){ return { ok: true, models: [] }; }
-});
 
 // Limpia un .srt/.vtt -> solo texto, sin números ni tiempos, sin repes seguidas.
 function parseSubs(raw){
@@ -473,8 +464,6 @@ function parseSubs(raw){
 ipcMain.handle("transcribe-url", async (evt, args) => {
   args = args || {};
   const url = String(args.url || "").trim();
-  const mode = String(args.mode || "translate");     // "subs" | "transcribe" | "translate"
-  const model = String(args.model || "ggml-medium.bin");
   const subLang = String(args.subLang || "en").trim() || "en";
   const send = msg => { try{ evt.sender.send("transcribe-progress", msg); }catch(e){} };
   if(!url) return { ok: false, error: "Pega un enlace de YouTube." };
@@ -482,52 +471,16 @@ ipcMain.handle("transcribe-url", async (evt, args) => {
 
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "ld-trans-"));
   try{
-    // ---- MODO 1: subtítulos del propio vídeo (rápido, sin Whisper) ----
-    if(mode === "subs"){
-      send("⬇️ Buscando subtítulos del vídeo (" + subLang + ")…");
-      const sub = await spawnStream(YTDLP,
-        ["--skip-download", "--write-subs", "--write-auto-subs",
-         "--sub-langs", subLang, "--convert-subs", "srt", "--no-playlist",
-         "-o", path.join(tmp, "subs"), url],
-        line => { if(/\[info\]|Writing|Deleting|ERROR|no subtitles|There are no subtitles/i.test(line)) send(line); });
-      const srts = fs.readdirSync(tmp).filter(f => /\.srt$/i.test(f));
-      if(!srts.length) throw new Error("El vídeo no tiene subtítulos en '" + subLang + "'. Prueba otro idioma (p.ej. ko, en, es) o usa Transcribir/Traducir.");
-      const clean = parseSubs(fs.readFileSync(path.join(tmp, srts[0]), "utf8"));
-      if(!clean) throw new Error("Los subtítulos venían vacíos.");
-      send("✅ Listo"); return { ok: true, text: clean };
-    }
-
-    // ---- MODO 2/3: Whisper (transcribir original / traducir a inglés) ----
-    if(!fs.existsSync(WHISPER)) return { ok: false, error: "Falta tools/whisper/Release/whisper-cli.exe" };
-    const modelPath = path.join(MODELS, model);
-    if(!fs.existsSync(modelPath)) return { ok: false, error: "Falta el modelo: " + model + " (aún descargándose)" };
-
-    send("⬇️ Descargando audio de YouTube…");
-    const outTpl = path.join(tmp, "audio.%(ext)s");
-    const dl = await spawnStream(YTDLP,
-      ["-x", "--audio-format", "mp3", "--audio-quality", "0", "--no-playlist",
-       "--no-part", "-o", outTpl, url],
-      line => { if(/\[download\]|ERROR|Destination|Extracting/i.test(line)) send(line); });
-    const mp3 = path.join(tmp, "audio.mp3");
-    if(dl.code !== 0 || !fs.existsSync(mp3)) throw new Error("No se pudo descargar el audio (¿enlace válido?).");
-
-    const translate = (mode !== "transcribe");
-    send(translate ? "🧠 Transcribiendo y traduciendo a inglés…" : "🧠 Transcribiendo (idioma original)…");
-    const txtBase = path.join(tmp, "out");
-    const threads = String(Math.max(4, Math.min(8, (os.cpus() || []).length || 4)));
-    // -sns (suprimir tokens no-voz) + umbrales = mucho menos alucinación con música
-    const wArgs = ["-m", modelPath, "-f", mp3, "-l", "auto",
-       "-nt", "-sns", "-et", "2.4", "-lpt", "-1.0", "-t", threads,
-       "-otxt", "-of", txtBase, "-pp"];
-    if(translate) wArgs.splice(4, 0, "--translate");
-    const wh = await spawnStream(WHISPER, wArgs, line => {
-        const pm = line.match(/progress\s*=\s*(\d+)%/i);
-        if(pm){ send((translate ? "🧠 Traduciendo… " : "🧠 Transcribiendo… ") + pm[1] + "%"); }
-      });
-    const txtFile = txtBase + ".txt";
-    let text = fs.existsSync(txtFile) ? fs.readFileSync(txtFile, "utf8") : (wh.out || "");
-    const clean = text.split(/\r?\n/).map(s => s.trim()).filter(Boolean).join("\n");
-    if(!clean) throw new Error("No se obtuvo texto (¿audio sin voz o modelo faltante?).");
+    send("⬇️ Buscando subtítulos del vídeo (" + subLang + ")…");
+    await spawnStream(YTDLP,
+      ["--skip-download", "--write-subs", "--write-auto-subs",
+       "--sub-langs", subLang, "--convert-subs", "srt", "--no-playlist",
+       "-o", path.join(tmp, "subs"), url],
+      line => { if(/\[info\]|Writing|Deleting|ERROR|no subtitles|There are no subtitles/i.test(line)) send(line); });
+    const srts = fs.readdirSync(tmp).filter(f => /\.srt$/i.test(f));
+    if(!srts.length) throw new Error("El vídeo no tiene subtítulos en '" + subLang + "'. Prueba otro idioma (p.ej. ko, en, es, ja).");
+    const clean = parseSubs(fs.readFileSync(path.join(tmp, srts[0]), "utf8"));
+    if(!clean) throw new Error("Los subtítulos venían vacíos.");
     send("✅ Listo");
     return { ok: true, text: clean };
   }catch(e){

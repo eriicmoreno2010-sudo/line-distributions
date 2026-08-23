@@ -34,7 +34,7 @@
 <div id="wrap">
   <a class="back" href="library.html">← Biblioteca</a>
   <h1>🎙️ Transcribir subtítulos</h1>
-  <div class="sub">Pega un enlace de YouTube y lo transcribe <b>traducido al inglés</b>, en líneas limpias <b>sin tiempos</b>, listas para copiar.</div>
+  <div class="sub">Pega un enlace de YouTube y saca <b>los subtítulos del propio vídeo</b>, en líneas limpias <b>sin tiempos</b>, listas para copiar.</div>
 
   <div id="nodesktop" class="warn" style="display:none">Esta herramienta solo funciona en la <b>app de escritorio</b> (usa Whisper en tu PC).</div>
 
@@ -43,24 +43,12 @@
       <label for="url">Enlace de YouTube</label>
       <input id="url" type="text" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off" spellcheck="false">
     </div>
-    <div>
-      <label for="mode">Modo</label>
-      <select id="mode">
-        <option value="subs">Subtítulos del vídeo (rápido, los que ya trae)</option>
-        <option value="transcribe">Transcribir (idioma original) — Whisper</option>
-        <option value="translate">Traducir a inglés — Whisper</option>
-      </select>
-    </div>
     <div class="row">
-      <div id="langWrap">
+      <div>
         <label for="subLang">Idioma de subtítulos</label>
         <input id="subLang" type="text" value="en" placeholder="en, ko, es, ja…" autocomplete="off" spellcheck="false">
       </div>
-      <div id="modelWrap" style="display:none">
-        <label for="model">Modelo (calidad ↔ velocidad)</label>
-        <select id="model"></select>
-      </div>
-      <button id="go">Obtener texto</button>
+      <button id="go">Obtener subtítulos</button>
     </div>
     <div id="status"></div>
   </div>
@@ -74,8 +62,9 @@
       </div>
     </div>
     <textarea id="out" placeholder="Aquí saldrá la transcripción traducida…"></textarea>
-    <div class="hint">Consejo: Whisper con música puede fallar en alguna palabra; repásalo antes de pegarlo en el editor.
-      El modelo <b>medium</b> es un buen equilibrio; <b>large</b> es más preciso pero más lento (CPU).</div>
+    <div class="hint">Saca los subtítulos que ya trae el vídeo (manuales o automáticos de YouTube).
+      Pon el <b>idioma</b> que quieras (<b>ko</b> coreano, <b>en</b> inglés, <b>es</b> español, <b>ja</b> japonés…).
+      Si el vídeo no los tiene en ese idioma, te avisa; prueba otro.</div>
   </div>
 </div>
 
@@ -86,29 +75,7 @@
     $("nodesktop").style.display = "block";
     $("go").disabled = true;
   } else {
-    // rellenar modelos disponibles
-    D.transcribeListModels().then(r => {
-      const sel = $("model"); sel.innerHTML = "";
-      const models = (r && r.models && r.models.length) ? r.models : ["ggml-medium.bin"];
-      const nice = m => m.replace(/^ggml-/,"").replace(/\.bin$/,"");
-      models.forEach(m => { const o = document.createElement("option"); o.value = m; o.textContent = nice(m); sel.appendChild(o); });
-      // preferir medium por defecto
-      const def = models.find(m => /medium/i.test(m)) || models[0];
-      if(def) sel.value = def;
-    });
-
     D.onTranscribeProgress(msg => { $("status").textContent = msg; });
-
-    // mostrar idioma (subs) o modelo (whisper) según el modo
-    function syncMode(){
-      const m = $("mode").value;
-      $("langWrap").style.display  = (m === "subs") ? "" : "none";
-      $("modelWrap").style.display = (m === "subs") ? "none" : "";
-      $("outLabel").textContent = m === "translate" ? "Texto (inglés) — sin tiempos"
-        : m === "transcribe" ? "Texto (idioma original) — sin tiempos"
-        : "Subtítulos del vídeo — sin tiempos";
-    }
-    $("mode").onchange = syncMode; syncMode();
 
     $("go").onclick = async () => {
       const url = $("url").value.trim();
@@ -116,7 +83,7 @@
       const btn = $("go"); btn.disabled = true; const t = btn.textContent; btn.textContent = "⏳ Trabajando…";
       $("status").textContent = "Preparando…";
       let res = null;
-      try{ res = await D.transcribeUrl({ url, mode: $("mode").value, model: $("model").value, subLang: $("subLang").value.trim() }); }
+      try{ res = await D.transcribeUrl({ url, subLang: $("subLang").value.trim() }); }
       catch(e){ res = { ok:false, error:String(e) }; }
       btn.disabled = false; btn.textContent = t;
       if(res && res.ok){ $("out").value = res.text; $("status").textContent = "✅ Listo (" + res.text.split("\n").length + " líneas)"; }
