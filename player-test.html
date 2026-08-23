@@ -131,14 +131,9 @@
   const ICANT    = "NCT DREAM - icantfeelanything.mp3";
   const ALBUM    = "covers/smoothie_album.jpg";   // portada por defecto (cambia cada cover cuando tengas más)
   const TRACKS = [
-    { title:"icantfeelanything",     artist:"NCT DREAM", file:ICANT, cover:ALBUM },
-    { title:"Smoothie",         artist:"NCT DREAM", file:SMOOTHIE,     cover:ALBUM }, // <- actual
-    { title:"BOX",           artist:"NCT DREAM", file:DIVE, cover:ALBUM }, 
-    { title:"Carat Cake", artist:"NCT DREAM", file:SMOOTHIE,   cover:ALBUM },
-    { title:"UNKNOWN",            artist:"NCT DREAM", file:DIVE, cover:ALBUM },
-    { title:"숨 (Breathing)",            artist:"NCT DREAM", file:SMOOTHIE, cover:ALBUM }
+    { title:"icantfeelanything", artist:"NCT DREAM", file:ICANT, cover:ALBUM }   // única canción (centro)
   ];
-  let idx = 1, shuffle = false;
+  let idx = 0, shuffle = false;
   const $ = id => document.getElementById(id);
   const aud = $("aud"), cover = $("cover"), fill = $("fill"), knob = $("knob");
   const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
@@ -235,7 +230,7 @@
       dt.style.animationDuration=(6+Math.random()*8)+"s"; dt.style.animationDelay=(-Math.random()*12)+"s"; bg.appendChild(dt); }
   })();
 
-  loadTrack(1, false);
+  loadTrack(0, false);
 </script>
 </body>
 </html>
