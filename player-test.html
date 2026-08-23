@@ -64,7 +64,7 @@
   #times{ display:flex; justify-content:space-between; margin-top:8px; font-size:clamp(11px,1.2vw,14px); color:#aebbdd; font-variant-numeric:tabular-nums; }
 
   #controls{ display:flex; align-items:center; justify-content:center; gap:6%; margin-top:5%; position:relative; }
-  body.clean #controls{ display:none; }   /* tecla R: modo grabación sin controles */
+  body.clean, body.clean *{ cursor:none !important; }   /* tecla R: oculta el ratón para grabar */
   .ctl{ background:none; border:0; color:#e8eeff; cursor:pointer; display:grid; place-items:center;
         filter:drop-shadow(0 2px 8px rgba(0,0,0,.5)); }
   .ctl svg{ width:26px; height:26px; fill:currentColor; }
@@ -177,7 +177,7 @@
   $("prev").onclick = () => loadTrack(idx-1, true);
   $("next").onclick = () => next();
   function next(){ loadTrack(idx+1, true); }
-  // Tecla R: modo grabación -> oculta TODOS los controles (para grabar con OBS)
+  // Tecla R: oculta/muestra el cursor del ratón (para grabar limpio con OBS)
   document.addEventListener("keydown", e => { if(e.key==="r"||e.key==="R") document.body.classList.toggle("clean"); });
   aud.ontimeupdate = () => { if(aud.duration){ const p=aud.currentTime/aud.duration*100;
     fill.style.width=p+"%"; knob.style.left=p+"%"; $("cur").textContent=fmt(aud.currentTime); $("dur").textContent=fmt(aud.duration); } };
