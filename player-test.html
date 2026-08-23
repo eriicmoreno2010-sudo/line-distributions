@@ -3,90 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reproductor — visualizador de audio</title>
+<title>Reproductor — visualizador glossy</title>
 <style>
-  :root{
-    --c1:#22d3ee;      /* cian */
-    --c2:#ff2fb0;      /* magenta */
-    --beat:0;          /* 0..1, lo pone el análisis de graves */
-  }
+  :root{ --c1:#25e0f2; --c2:#ff2fb0; --beat:0; }
   *{ box-sizing:border-box; margin:0; padding:0; }
   html,body{ height:100%; }
-  body{ background:#05060b; color:#eef; font-family:"Montserrat","Segoe UI",Arial,sans-serif;
+  body{ background:#04060d; color:#eef; font-family:"Montserrat","Segoe UI",Arial,sans-serif;
         overflow:hidden; display:flex; align-items:center; justify-content:center; }
-
-  /* ---- escenario ---- */
   #stage{ position:relative; width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
 
-  /* fondo: rayas de luz + resplandor que late con el beat */
+  /* ---- fondo: sala oscura con rayas de luz y bokeh ---- */
   #bg{ position:absolute; inset:0; overflow:hidden; z-index:0;
        background:
-         radial-gradient(60% 45% at 50% 50%, rgba(40,60,120,.25), transparent 70%),
-         linear-gradient(#05060b,#06080f); }
-  #glow{ position:absolute; left:50%; top:50%; width:120vmin; height:120vmin; transform:translate(-50%,-50%) scale(calc(.8 + var(--beat)*.35));
-         background:radial-gradient(circle, color-mix(in srgb,var(--c2) 40%, var(--c1)) 0%, transparent 60%);
-         opacity:calc(.10 + var(--beat)*.30); filter:blur(30px); transition:transform .05s linear, opacity .05s linear; z-index:0; }
-  /* motas flotando */
-  .dot{ position:absolute; width:3px; height:3px; border-radius:50%; background:#bcd; opacity:.5;
+         radial-gradient(70% 55% at 50% 42%, #0e1430 0%, transparent 70%),
+         linear-gradient(#04060d,#05070f); }
+  .streak{ position:absolute; top:-10%; width:2px; height:120%; filter:blur(2px); opacity:.35;
+           background:linear-gradient(#fff,transparent); transform:rotate(8deg); }
+  .beam{ position:absolute; border-radius:50%; filter:blur(50px); opacity:.22; }
+  #b1{ left:8%; top:18%; width:34vmin; height:34vmin; background:var(--c1); }
+  #b2{ right:8%; bottom:14%; width:34vmin; height:34vmin; background:var(--c2); }
+  .dot{ position:absolute; width:3px; height:3px; border-radius:50%; background:#dfe8ff; opacity:.5;
         animation:float linear infinite; }
-  @keyframes float{ from{ transform:translateY(20px); opacity:0 } 10%{opacity:.6} 90%{opacity:.6} to{ transform:translateY(-60vh); opacity:0 } }
+  @keyframes float{ from{ transform:translateY(30px); opacity:0 } 12%{opacity:.7} 88%{opacity:.7} to{ transform:translateY(-70vh); opacity:0 } }
 
-  /* waveform (canvas a lo ancho, detrás de la tarjeta) */
-  #wave{ position:absolute; left:0; top:50%; transform:translateY(-50%); width:100%; height:70vmin; z-index:1; pointer-events:none; }
+  /* onda a lo ancho, por detrás del cristal */
+  #wave{ position:absolute; left:0; top:50%; transform:translateY(-50%); width:100%; height:78vmin; z-index:1; pointer-events:none; }
 
-  /* ---- tarjeta central ---- */
-  #card{ position:relative; z-index:2; width:min(760px,82vw); padding:26px 30px;
-         border-radius:26px; border:1px solid rgba(180,210,255,.22);
-         background:linear-gradient(180deg, rgba(20,26,44,.55), rgba(10,12,22,.45));
-         backdrop-filter:blur(6px);
-         box-shadow:0 0 0 1px rgba(120,180,255,.10) inset,
-                    0 30px 80px -30px rgba(0,0,0,.8),
-                    0 0 calc(30px + var(--beat)*40px) rgba(90,160,255,calc(.15 + var(--beat)*.25)); }
-  #top{ display:flex; gap:22px; align-items:center; }
-  #cover{ width:150px; height:150px; border-radius:16px; object-fit:cover; flex:none;
-          box-shadow:0 12px 30px -8px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.08);
+  /* ---- marco de cristal (glassmorphism) ---- */
+  #frame{ position:relative; z-index:2; width:min(860px,80vw); aspect-ratio:16/9.2;
+          border-radius:30px; padding:5.2%;
+          background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.02));
+          border:1px solid rgba(210,230,255,.35);
+          box-shadow:0 0 0 1px rgba(255,255,255,.05) inset,
+                     0 40px 120px -40px #000,
+                     0 0 calc(40px + var(--beat)*60px) rgba(90,180,255,calc(.10 + var(--beat)*.22));
+          -webkit-backdrop-filter:blur(7px) saturate(1.2); backdrop-filter:blur(7px) saturate(1.2);
+          display:flex; flex-direction:column; justify-content:center; }
+  /* segundo borde interior fino */
+  #frame::before{ content:""; position:absolute; inset:14px; border-radius:22px;
+                  border:1px solid rgba(180,210,255,.14); pointer-events:none; }
+
+  #top{ display:flex; gap:26px; align-items:center; }
+  #cover{ width:23%; aspect-ratio:1; border-radius:14px; object-fit:cover; flex:none;
+          box-shadow:0 16px 40px -10px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.12);
           transform:scale(calc(1 + var(--beat)*.03)); transition:transform .06s linear; }
   #meta{ min-width:0; }
-  #title{ font-size:34px; font-weight:900; letter-spacing:.5px; line-height:1;
-          white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  #artist{ font-size:18px; font-weight:700; color:#9fb0d6; margin-top:8px; letter-spacing:2px; text-transform:uppercase; }
+  #title{ font-size:clamp(20px,3.4vw,40px); font-weight:900; letter-spacing:.5px; line-height:1;
+          white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+          text-shadow:0 2px 20px rgba(120,190,255,.35); }
+  #artist{ font-size:clamp(12px,1.5vw,18px); font-weight:700; color:#aebbdd; margin-top:8px; letter-spacing:3px; text-transform:uppercase; }
 
-  /* progreso */
-  #prog{ margin-top:22px; }
-  #bar{ height:6px; border-radius:999px; background:rgba(255,255,255,.12); cursor:pointer; position:relative; overflow:hidden; }
+  #prog{ margin-top:6%; }
+  #bar{ height:5px; border-radius:999px; background:rgba(255,255,255,.16); cursor:pointer; position:relative; }
   #fill{ position:absolute; left:0; top:0; bottom:0; width:0%;
-         background:linear-gradient(90deg,var(--c1),var(--c2)); border-radius:999px; }
-  #times{ display:flex; justify-content:space-between; margin-top:8px; font-size:13px; color:#9fb0d6; font-variant-numeric:tabular-nums; }
+         background:linear-gradient(90deg,var(--c1),var(--c2)); border-radius:999px; box-shadow:0 0 12px var(--c1); }
+  #knob{ position:absolute; top:50%; width:13px; height:13px; border-radius:50%; background:#fff; left:0;
+         transform:translate(-50%,-50%); box-shadow:0 0 10px #fff; }
+  #times{ display:flex; justify-content:space-between; margin-top:8px; font-size:clamp(11px,1.2vw,14px); color:#aebbdd; font-variant-numeric:tabular-nums; }
 
-  /* controles */
-  #controls{ display:flex; align-items:center; justify-content:center; gap:26px; margin-top:18px; }
-  .ctl{ background:none; border:0; color:#dfe6ff; cursor:pointer; display:grid; place-items:center; }
+  #controls{ display:flex; align-items:center; justify-content:center; gap:6%; margin-top:5%; position:relative; }
+  .ctl{ background:none; border:0; color:#e8eeff; cursor:pointer; display:grid; place-items:center;
+        filter:drop-shadow(0 2px 8px rgba(0,0,0,.5)); }
   .ctl svg{ width:26px; height:26px; fill:currentColor; }
-  #play{ width:64px; height:64px; border-radius:50%; background:linear-gradient(135deg,var(--c1),var(--c2)); color:#06121f;
-         box-shadow:0 10px 30px -8px var(--c2); }
-  #play svg{ width:28px; height:28px; }
-  #shuffle.on{ color:var(--c1); }
+  #play{ width:66px; height:66px; border-radius:50%; color:#eef;
+         background:radial-gradient(circle at 50% 35%, rgba(255,255,255,.28), rgba(255,255,255,.06));
+         border:1.5px solid rgba(255,255,255,.7);
+         box-shadow:0 0 26px rgba(120,200,255,.5), 0 0 0 1px rgba(255,255,255,.15) inset; }
+  #play svg{ width:26px; height:26px; }
+  #shuffle{ position:absolute; right:2%; width:46px; height:46px; border-radius:50%;
+            border:1.5px solid rgba(255,255,255,.45); }
+  #shuffle.on{ color:var(--c1); border-color:var(--c1); box-shadow:0 0 16px var(--c1); }
 
   /* portadas del álbum a los lados */
-  .side{ position:absolute; top:50%; transform:translateY(-50%); z-index:2; display:flex; flex-direction:column; gap:14px; }
-  #sideL{ left:2vw; } #sideR{ right:2vw; }
-  .side img{ width:90px; height:90px; border-radius:12px; object-fit:cover; opacity:.55; cursor:pointer;
-             box-shadow:0 8px 20px -8px #000, 0 0 0 1px rgba(255,255,255,.06); transition:opacity .2s, transform .2s; }
-  .side img:hover{ opacity:1; transform:scale(1.06); }
+  .side{ position:absolute; top:50%; transform:translateY(-50%); z-index:2; display:flex; flex-direction:column; gap:16px; }
+  #sideL{ left:1.5vw; } #sideR{ right:1.5vw; }
+  .side img{ width:88px; height:88px; border-radius:14px; object-fit:cover; opacity:.5; cursor:pointer;
+             box-shadow:0 10px 26px -10px #000, 0 0 0 1px rgba(255,255,255,.08); transition:opacity .2s, transform .2s; }
+  .side img:hover{ opacity:1; transform:scale(1.07); }
 
-  .hint{ position:absolute; bottom:14px; left:0; right:0; text-align:center; color:#68789c; font-size:13px; z-index:3; }
-  @media(max-width:820px){ .side{ display:none; } #title{ font-size:26px; } #cover{ width:110px; height:110px; } }
+  .hint{ position:absolute; bottom:14px; left:0; right:0; text-align:center; color:#5d6c92; font-size:13px; z-index:3; }
+  @media(max-width:820px){ .side{ display:none; } #frame{ width:92vw; } }
 </style>
 </head>
 <body>
 <div id="stage">
-  <div id="bg"></div>
-  <div id="glow"></div>
+  <div id="bg">
+    <div class="beam" id="b1"></div><div class="beam" id="b2"></div>
+  </div>
   <canvas id="wave"></canvas>
 
   <div class="side" id="sideL"></div>
 
-  <div id="card">
+  <div id="frame">
     <div id="top">
       <img id="cover" alt="">
       <div id="meta">
@@ -95,7 +103,7 @@
       </div>
     </div>
     <div id="prog">
-      <div id="bar"><div id="fill"></div></div>
+      <div id="bar"><div id="fill"></div><div id="knob"></div></div>
       <div id="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
     </div>
     <div id="controls">
@@ -108,14 +116,12 @@
 
   <div class="side" id="sideR"></div>
 
-  <div class="hint">▶ Pulsa play — la onda y el fondo reaccionan a la música. (Prueba)</div>
+  <div class="hint">▶ Pulsa play — la onda y el brillo reaccionan a la música. (Prueba)</div>
 </div>
 
 <audio id="aud" preload="metadata"></audio>
 
 <script>
-  // ------- lista del álbum (portada propia por canción) -------
-  // Sustituye "cover" por tus imágenes de portada reales.
   const AUDIO_DIR = "audio/";
   const TRACKS = [
     { title:"Smoothie", artist:"NCT DREAM", file:"NCT DREAM (엔씨티 드림) 'Smoothie' Official Audio.mp3", cover:"images/nctdream/smoothie/haechan.png" },
@@ -123,116 +129,94 @@
     { title:"Dive Into You", artist:"NCT DREAM", file:"NCT DREAM - 고래 Dive into You.mp3", cover:"images/nctdream/diveintoyou/chenle.png" }
   ];
   let idx = 0, shuffle = false;
-
   const $ = id => document.getElementById(id);
-  const aud = $("aud"), cover = $("cover"), fill = $("fill");
+  const aud = $("aud"), cover = $("cover"), fill = $("fill"), knob = $("knob");
   const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
 
   function loadTrack(i, autoplay){
-    idx = (i + TRACKS.length) % TRACKS.length;
-    const t = TRACKS[idx];
+    idx = (i + TRACKS.length) % TRACKS.length; const t = TRACKS[idx];
     aud.src = AUDIO_DIR + encodeURIComponent(t.file);
     cover.src = t.cover + "?v=27";
-    $("title").textContent = t.title;
-    $("artist").textContent = t.artist;
-    $("cur").textContent = "0:00"; $("dur").textContent = "0:00"; fill.style.width = "0%";
-    buildSides();
-    if(autoplay) play();
+    $("title").textContent = t.title; $("artist").textContent = t.artist;
+    $("cur").textContent = "0:00"; $("dur").textContent = "0:00"; fill.style.width = "0%"; knob.style.left = "0%";
+    buildSides(); if(autoplay) play();
   }
-
   function buildSides(){
     const L = $("sideL"), R = $("sideR"); L.innerHTML = ""; R.innerHTML = "";
-    TRACKS.forEach((t,i)=>{
-      if(i === idx) return;
+    TRACKS.forEach((t,i)=>{ if(i===idx) return;
       const im = document.createElement("img"); im.src = t.cover + "?v=27"; im.title = t.title;
-      im.onclick = () => loadTrack(i, true);
-      (i < idx ? L : R).appendChild(im);
-    });
+      im.onclick = () => loadTrack(i, true); (i < idx ? L : R).appendChild(im); });
   }
 
-  // ------- Web Audio: onda + beat (tras gesto del usuario) -------
-  let ctx, analyser, freq, srcNode, beat = 0;
-  function initAudio(){
-    if(ctx) return;
-    ctx = new (window.AudioContext || window.webkitAudioContext)();
+  // Web Audio
+  let ctx, analyser, tdata, srcNode, beat = 0;
+  function initAudio(){ if(ctx) return;
+    ctx = new (window.AudioContext||window.webkitAudioContext)();
     srcNode = ctx.createMediaElementSource(aud);
-    analyser = ctx.createAnalyser();
-    analyser.fftSize = 2048; analyser.smoothingTimeConstant = 0.72;
-    freq = new Uint8Array(analyser.frequencyBinCount);
-    srcNode.connect(analyser); analyser.connect(ctx.destination);
-  }
-
-  async function play(){ initAudio(); if(ctx.state === "suspended") await ctx.resume();
-    try{ await aud.play(); }catch(e){} }
+    analyser = ctx.createAnalyser(); analyser.fftSize = 2048; analyser.smoothingTimeConstant = 0.6;
+    tdata = new Uint8Array(analyser.fftSize);
+    freq  = new Uint8Array(analyser.frequencyBinCount);
+    srcNode.connect(analyser); analyser.connect(ctx.destination); }
+  let freq;
+  async function play(){ initAudio(); if(ctx.state==="suspended") await ctx.resume(); try{ await aud.play(); }catch(e){} }
   function pause(){ aud.pause(); }
-
-  $("play").onclick = () => { aud.paused ? play() : pause(); };
-  aud.onplay  = () => $("playIcon").innerHTML = '<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';   // pausa
-  aud.onpause = () => $("playIcon").innerHTML = '<path d="M8 5v14l11-7z"/>';                // play
+  $("play").onclick = () => aud.paused ? play() : pause();
+  aud.onplay  = () => $("playIcon").innerHTML = '<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';
+  aud.onpause = () => $("playIcon").innerHTML = '<path d="M8 5v14l11-7z"/>';
   aud.onended = () => next();
-  $("prev").onclick = () => loadTrack(idx - 1, true);
+  $("prev").onclick = () => loadTrack(idx-1, true);
   $("next").onclick = () => next();
-  function next(){ loadTrack(shuffle ? (Math.floor((idx + 1 + Math.random()*(TRACKS.length-1))) ) : idx + 1, true); }
-  $("shuffle").onclick = () => { shuffle = !shuffle; $("shuffle").classList.toggle("on", shuffle); };
+  function next(){ loadTrack(shuffle ? Math.floor(idx+1+Math.random()*(TRACKS.length-1)) : idx+1, true); }
+  $("shuffle").onclick = () => { shuffle=!shuffle; $("shuffle").classList.toggle("on",shuffle); };
+  aud.ontimeupdate = () => { if(aud.duration){ const p=aud.currentTime/aud.duration*100;
+    fill.style.width=p+"%"; knob.style.left=p+"%"; $("cur").textContent=fmt(aud.currentTime); $("dur").textContent=fmt(aud.duration); } };
+  aud.onloadedmetadata = () => $("dur").textContent = fmt(aud.duration||0);
+  $("bar").onclick = e => { if(!aud.duration) return; const r=$("bar").getBoundingClientRect();
+    aud.currentTime=(e.clientX-r.left)/r.width*aud.duration; };
 
-  aud.ontimeupdate = () => {
-    if(aud.duration){ fill.style.width = (aud.currentTime/aud.duration*100) + "%";
-      $("cur").textContent = fmt(aud.currentTime); $("dur").textContent = fmt(aud.duration); }
-  };
-  aud.onloadedmetadata = () => { $("dur").textContent = fmt(aud.duration || 0); };
-  $("bar").onclick = e => { if(!aud.duration) return; const r = $("bar").getBoundingClientRect();
-    aud.currentTime = (e.clientX - r.left)/r.width * aud.duration; };
-
-  // ------- canvas waveform -------
+  // ---- canvas: onda de LÍNEA continua (osciloscopio) cian->magenta ----
   const cv = $("wave"), cx = cv.getContext("2d");
-  function resize(){ const r = cv.getBoundingClientRect(); const dpr = Math.min(2, window.devicePixelRatio||1);
-    cv.width = r.width*dpr; cv.height = r.height*dpr; cx.setTransform(dpr,0,0,dpr,0,0); }
+  const DPR = () => Math.min(2, window.devicePixelRatio||1);
+  function resize(){ const r=cv.getBoundingClientRect(), d=DPR(); cv.width=r.width*d; cv.height=r.height*d; cx.setTransform(d,0,0,d,0,0); }
   window.addEventListener("resize", resize); resize();
 
   function draw(){
-    const w = cv.width/(Math.min(2,window.devicePixelRatio||1)), h = cv.height/(Math.min(2,window.devicePixelRatio||1));
+    const d=DPR(), w=cv.width/d, h=cv.height/d, mid=h/2;
     cx.clearRect(0,0,w,h);
-    const midY = h/2;
-    const N = 110;                                  // nº de barras a lo ancho
-    let bass = 0;
     if(analyser){
+      analyser.getByteTimeDomainData(tdata);
       analyser.getByteFrequencyData(freq);
-      // beat = energía de graves suavizada
-      let sum=0; for(let i=1;i<8;i++) sum+=freq[i]; bass = (sum/7)/255;
-      const g = cx.createLinearGradient(0,0,w,0);
-      g.addColorStop(0, getCss("--c1")); g.addColorStop(1, getCss("--c2"));
-      cx.fillStyle = g; cx.shadowBlur = 18;
-      const bw = w/N, gap = bw*0.34;
-      for(let i=0;i<N;i++){
-        // muestrea el espectro (más resolución en graves-medios)
-        const fi = Math.floor(Math.pow(i/N, 1.4) * (freq.length*0.7));
-        const v = (freq[fi]||0)/255;
-        const bh = Math.max(2, v*v* (h*0.46));
-        cx.shadowColor = i < N/2 ? getCss("--c1") : getCss("--c2");
-        const x = i*bw + gap/2, bwi = bw-gap;
-        roundRect(cx, x, midY-bh, bwi, bh*2, bwi/2);
-        cx.fill();
-      }
-      cx.shadowBlur = 0;
+      let s=0; for(let i=1;i<8;i++) s+=freq[i]; const bass=(s/7)/255;
+      const target=Math.min(1,bass*1.5); if(target>beat) beat=target; else beat+=(target-beat)*0.12;
+      document.documentElement.style.setProperty("--beat", beat.toFixed(3));
+
+      const N=260, step=w/(N-1), amp=h*0.42*(0.5+0.9*beat+0.25);
+      const grad=cx.createLinearGradient(0,0,w,0);
+      grad.addColorStop(0,getCss("--c1")); grad.addColorStop(.5,"#b56bff"); grad.addColorStop(1,getCss("--c2"));
+      const pts=[];
+      for(let i=0;i<N;i++){ const ti=Math.floor(i/(N-1)*(tdata.length-1)); const v=(tdata[ti]-128)/128; pts.push([i*step, mid + v*amp]); }
+      // halo (línea gruesa translúcida) + línea nítida encima
+      cx.lineJoin="round"; cx.lineCap="round";
+      cx.strokeStyle=grad; cx.shadowColor="rgba(120,200,255,.9)";
+      cx.globalAlpha=.35; cx.lineWidth=9; cx.shadowBlur=26; strokePath(pts);
+      cx.globalAlpha=1;   cx.lineWidth=2.6; cx.shadowBlur=14; strokePath(pts);
+      cx.shadowBlur=0;
     }
-    // envelope follower para el beat
-    const target = Math.min(1, bass*1.6);
-    if(target>beat) beat = target; else beat += (target-beat)*0.12;
-    document.documentElement.style.setProperty("--beat", beat.toFixed(3));
     requestAnimationFrame(draw);
   }
-  function roundRect(c,x,y,w,h,r){ r=Math.min(r,w/2,h/2); c.beginPath();
-    c.moveTo(x+r,y); c.arcTo(x+w,y,x+w,y+h,r); c.arcTo(x+w,y+h,x,y+h,r);
-    c.arcTo(x,y+h,x,y,r); c.arcTo(x,y,x+w,y,r); c.closePath(); }
-  function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim() || "#22d3ee"; }
+  function strokePath(pts){ cx.beginPath(); pts.forEach((p,i)=> i?cx.lineTo(p[0],p[1]):cx.moveTo(p[0],p[1])); cx.stroke(); }
+  function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim()||"#25e0f2"; }
   requestAnimationFrame(draw);
 
-  // motas del fondo
-  (function dots(){ const bg = $("bg");
-    for(let i=0;i<26;i++){ const d=document.createElement("div"); d.className="dot";
-      d.style.left=(Math.random()*100)+"%"; d.style.top=(Math.random()*100)+"%";
-      d.style.animationDuration=(6+Math.random()*8)+"s"; d.style.animationDelay=(-Math.random()*10)+"s";
-      bg.appendChild(d); } })();
+  // fondo: rayas de luz + motas
+  (function scene(){ const bg=$("bg");
+    for(let i=0;i<7;i++){ const s=document.createElement("div"); s.className="streak";
+      s.style.left=(8+Math.random()*84)+"%"; s.style.height=(60+Math.random()*60)+"%";
+      s.style.opacity=(.12+Math.random()*.3); s.style.transform="rotate("+(6+Math.random()*6)+"deg)"; bg.appendChild(s); }
+    for(let i=0;i<28;i++){ const dt=document.createElement("div"); dt.className="dot";
+      dt.style.left=(Math.random()*100)+"%"; dt.style.top=(Math.random()*100)+"%";
+      dt.style.animationDuration=(6+Math.random()*8)+"s"; dt.style.animationDelay=(-Math.random()*12)+"s"; bg.appendChild(dt); }
+  })();
 
   loadTrack(0, false);
 </script>
