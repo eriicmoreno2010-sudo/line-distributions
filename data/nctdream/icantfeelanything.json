@@ -16,7 +16,13 @@
       "image": "images/nctdream/icantfeelanything/renjun.png",
       "color": "#fac142",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JENO",
