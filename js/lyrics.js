@@ -72,6 +72,25 @@ function fitFieldsEqual(els, maxW){
     if(!fits()) els.forEach(el => el.style.whiteSpace = "");   // aún no cabe -> deja que envuelva
 }
 
+/* Luminancia de un color hex (0..1) para decidir si es "oscuro". */
+function _hexLum(h){
+    try{
+        h = String(h).trim().replace("#", "");
+        if(h.length === 3) h = h.split("").map(c => c + c).join("");
+        const n = parseInt(h, 16);
+        return (0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255;
+    }catch(e){ return 1; }
+}
+/* Deja el color REAL; solo aclara (mezcla con blanco) los MUY oscuros para que
+   lean sobre el panel negro. Los vivos no se tocan. */
+function brightIfDark(c){
+    if(typeof c !== "string" || c[0] !== "#") return c;
+    const L = _hexLum(c);
+    if(L >= 0.5) return c;
+    const mix = Math.round((0.5 - L) / 0.5 * 55);   // 0..55%
+    return mix > 4 ? `color-mix(in srgb, ${c} ${100 - mix}%, #fff)` : c;
+}
+
 const Lyrics = {
 
     centralIndex: -1,
@@ -105,7 +124,7 @@ const Lyrics = {
         const lightTheme = typeof document !== "undefined" && document.body.classList.contains("theme-light");
         const lift = c => lightTheme
             ? `color-mix(in srgb, ${c} 82%, #000)`   // tema claro: oscurecer un poco para que lea sobre blanco
-            : c;                                       // tema oscuro: COLORES REALES de cada miembro
+            : brightIfDark(c);                         // tema oscuro: color REAL (solo aclara los muy oscuros)
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`
             : "";

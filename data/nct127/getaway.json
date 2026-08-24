@@ -50,7 +50,7 @@
       "original": "하루 비워둬, That’s all it takes",
       "romanization": "haru biwodwo, that’s all it takes",
       "english": "Leave the day wide open, That’s all it takes",
-      "adlib": "",
+      "adlib": false,
       "voice": []
     },
     {
@@ -806,7 +806,7 @@
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           3.24,
@@ -823,7 +823,7 @@
       "original": "",
       "romanization": "hey",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 94,
@@ -834,7 +834,7 @@
       "original": "",
       "romanization": "Mm yeah",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           93.99,
@@ -851,7 +851,7 @@
       "original": "",
       "romanization": "You",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 104.92,
@@ -862,7 +862,7 @@
       "original": "",
       "romanization": "Away",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 107.58,
@@ -873,7 +873,7 @@
       "original": "",
       "romanization": "Left or right",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 121.31,
@@ -884,7 +884,7 @@
       "original": "",
       "romanization": "Take it up",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 125.53,
@@ -895,7 +895,7 @@
       "original": "",
       "romanization": "This ain't enough",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 128.17,
@@ -906,7 +906,7 @@
       "original": "",
       "romanization": "hey",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 144.42,
@@ -915,7 +915,7 @@
         "JOHNNY"
       ],
       "original": "새로운 Main course",
-      "romanization": "saeroun main course",
+      "romanization": "(saeroun main course)",
       "english": "A new main course",
       "adlib": true,
       "voice": [
@@ -934,7 +934,7 @@
       "original": "",
       "romanization": "That's all it takes",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           149,
@@ -951,7 +951,7 @@
       "original": "My coupe, 데리러 갈게",
       "romanization": "my coupe, derireo galge",
       "english": "My coupe, I’ll come pick you up",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           150.32,
@@ -968,7 +968,7 @@
       "original": "데리러 갈게",
       "romanization": "derireo galge",
       "english": "I’ll come pick you up",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           153.23,
@@ -985,7 +985,7 @@
       "original": "",
       "romanization": "Just get away",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           157.37,
@@ -1002,7 +1002,7 @@
       "original": "",
       "romanization": "It's a joyride with no GPS",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           158.19,
@@ -1017,7 +1017,7 @@
         "JAEHYUN"
       ],
       "original": "",
-      "romanization": "Oh my god for real",
+      "romanization": "(Oh my god for real)",
       "english": "",
       "adlib": true,
       "voice": [
@@ -1038,7 +1038,7 @@
         "JOHNNY"
       ],
       "original": "",
-      "romanization": "Okay okay okay",
+      "romanization": "(Okay okay okay)",
       "english": "",
       "adlib": true,
       "voice": [
@@ -1055,7 +1055,7 @@
         "JOHNNY"
       ],
       "original": "",
-      "romanization": "That's it that's is",
+      "romanization": "(That's it that's is)",
       "english": "",
       "adlib": true,
       "voice": [

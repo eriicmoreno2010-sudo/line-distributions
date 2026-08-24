@@ -321,13 +321,13 @@ Version: 3.0 — Lyrics
                0 0 34px -8px color-mix(in srgb, var(--al-accent,#7c5cff) 60%, transparent),
                0 0 0 1px rgba(255,255,255,.05) inset;
     /* al aparecer/desaparecer una tarjeta, empuja a las demás suavemente */
-    transition:max-height .35s var(--ease), opacity .3s var(--ease),
-               transform .35s var(--ease), margin-top .35s var(--ease);
+    transition:max-height .5s cubic-bezier(.22,1,.36,1), opacity .4s var(--ease),
+               transform .5s cubic-bezier(.22,1,.36,1), margin-top .5s cubic-bezier(.22,1,.36,1);
 }
-.al-box + .al-box{ margin-top:16px; }
+.al-box + .al-box{ margin-top:26px; }    /* separación entre 2+ ad-libs (no pegados) */
 .al-box.enter, .al-box.leave{ max-height:0; opacity:0; margin-top:0; }
-.al-box.enter{ transform:translateY(16px); }
-.al-box.leave{ transform:translateY(-10px); }
+.al-box.enter{ transform:translateY(26px); }
+.al-box.leave{ transform:translateY(-12px); }
 .al-box .al-name{ font-size:15px; font-weight:900; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; }
 /* mismo tamaño y grosor para las tres versiones */
 .al-box .al-text{ font-size:24px; font-weight:800; line-height:1.28; }

@@ -332,6 +332,16 @@
     $("#pastemodal").classList.add("show"); $("#paOrig").focus();
   }
   $("#pasteLyrics").onclick = openPaste;
+  // Reaplica la regla: AD-LIB solo si la línea va entre paréntesis ( )
+  $("#markAdlibs").onclick = () => {
+    let n = 0;
+    (song.lyrics || []).forEach(l => {
+      const ad = [l.original, l.romanization, l.english].some(x => /^\(.*\)$/.test((x || "").trim()));
+      l.adlib = ad; if(ad) n++;
+    });
+    renderLines(); updateTapUI();
+    alert(n + " línea(s) marcada(s) como ad-lib (las que van entre paréntesis). El resto pasan a central.");
+  };
   $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");
   $("#pastemodal").addEventListener("click", e => { if(e.target.id === "pastemodal") $("#pastemodal").classList.remove("show"); });
 
@@ -397,7 +407,9 @@
       const r = provR ? (sr[i] || "") : (base.romanization || "");
       const e = provE ? (se[i] || "") : (base.english || "");
       if(!o && !r && !e && !(base.members || []).length) continue;   // salta huecos de alineación vacíos
-      rows.push(Object.assign({}, base, { original:o, romanization:r, english:e }));
+      // AD-LIB = SOLO si la línea va entre paréntesis (regla del usuario)
+      const isAd = [o, r, e].some(x => /^\(.*\)$/.test((x || "").trim()));
+      rows.push(Object.assign({}, base, { original:o, romanization:r, english:e, adlib:isAd }));
     }
     const cols = [provO ? "original" : null, provR ? "romanización" : null, provE ? "inglés" : null].filter(Boolean);
     const allThree = provO && provR && provE;
