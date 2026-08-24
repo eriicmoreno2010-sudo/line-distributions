@@ -313,7 +313,8 @@ const Lyrics = {
                 if(colors && colors.length === 1)
                     return `<span style="color:${colors[0]}">${escapeHtml(display)}</span>`;
                 const bg = colors ? `linear-gradient(90deg, ${colors.join(", ")})` : c.markGradient;
-                return `<span style="background:${bg};-webkit-background-clip:text;background-clip:text;color:transparent">${escapeHtml(display)}</span>`;
+                // sin sombra oscura en el texto con degradado (la apagaba y ocultaba el color real)
+                return `<span style="background:${bg};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(display)}</span>`;
             };
             const paintText = (el, text) => {
                 text = text || "";
@@ -337,9 +338,11 @@ const Lyrics = {
                     e.member.style.webkitBackgroundClip = "text";
                     e.member.style.backgroundClip = "text";
                     e.member.style.color = "transparent";
+                    e.member.style.textShadow = "none";   // degradado -> sin sombra oscura
                 } else {
                     e.member.textContent = joinNames(line.members);
                     e.member.style.color = c.accent;
+                    e.member.style.textShadow = "";        // sólido -> sombra normal
                 }
             }
             // Don't repeat identical text 3× (e.g. pure-English lines): show it
