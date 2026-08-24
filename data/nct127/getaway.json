@@ -796,7 +796,13 @@
       "original": "",
       "romanization": "my coupe nah na nah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          150.34,
+          153.47
+        ]
+      ]
     },
     {
       "start": 0,
@@ -807,7 +813,13 @@
       "original": "",
       "romanization": "it’s a joyride with no gps",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          158.19,
+          161.92
+        ]
+      ]
     }
   ]
 }
