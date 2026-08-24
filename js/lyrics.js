@@ -162,15 +162,18 @@ const Lyrics = {
               }).join(", ")
             : "";
 
+        // en tema oscuro, aclara los colores MUY oscuros (p.ej. rojo de Taeyong)
+        // para que se lean sobre el panel negro (real si ya son claros).
+        const adapt = c => lightTheme ? c : brightIfDark(c);
         let accent, secondaryAccent, isSharedLine;
         if(isGroupLine){
             const colors = SONG.members.map(m => m.color);
-            accent = colors[0];
-            secondaryAccent = colors[colors.length - 1];
+            accent = adapt(colors[0]);
+            secondaryAccent = adapt(colors[colors.length - 1]);
             isSharedLine = false;
         } else {
-            accent = singers[0] ? singers[0].color : "var(--accent)";
-            secondaryAccent = singers[1] ? singers[1].color : accent;
+            accent = singers[0] ? adapt(singers[0].color) : "var(--accent)";
+            secondaryAccent = singers[1] ? adapt(singers[1].color) : accent;
             isSharedLine = !hasPartial && singers.length > 1;
         }
         return { isGroupLine, groupGradient, groupGlow, hasPartial,
@@ -460,12 +463,14 @@ const Lyrics = {
             else if(c.isSharedLine){ el.style.background = c.sharedGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
             else el.style.color = c.accent;
         };
+        const inner = document.createElement("div"); inner.className = "al-inner";   // lo que colapsa el grid-rows
         const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(line.members);
-        paint(nm); box.appendChild(nm);
+        paint(nm); inner.appendChild(nm);
         const raw = [line.original, line.romanization, line.english].map(x => (x || "").trim());
         const uniq = raw.filter((x, i) => x && raw.indexOf(x) === i);
         const shown = uniq.length ? uniq : (typeof line.adlib === "string" && line.adlib.trim() ? [line.adlib.trim()] : []);
-        shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); box.appendChild(d); });
+        shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); inner.appendChild(d); });
+        box.appendChild(inner);
         return box;
     },
 
