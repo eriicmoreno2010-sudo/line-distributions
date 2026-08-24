@@ -800,16 +800,26 @@
     {
       "start": 3.1,
       "end": 6.1,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          3.24,
+          6.12
+        ]
+      ]
     },
     {
       "start": 77.67,
       "end": 78.26,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "hey",
       "english": "",
@@ -818,16 +828,26 @@
     {
       "start": 94,
       "end": 95.02,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "Mm yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          93.99,
+          95.01
+        ]
+      ]
     },
     {
       "start": 96.57,
       "end": 98.06,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "You",
       "english": "",
@@ -836,7 +856,9 @@
     {
       "start": 104.92,
       "end": 105.89,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "Away",
       "english": "",
@@ -845,7 +867,9 @@
     {
       "start": 107.58,
       "end": 108.72,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "Left or right",
       "english": "",
@@ -854,7 +878,9 @@
     {
       "start": 121.31,
       "end": 122.35,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "Take it up",
       "english": "",
@@ -863,7 +889,9 @@
     {
       "start": 125.53,
       "end": 126.48,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "This ain't enough",
       "english": "",
@@ -872,7 +900,9 @@
     {
       "start": 128.17,
       "end": 128.78,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "hey",
       "english": "",
@@ -881,83 +911,159 @@
     {
       "start": 144.42,
       "end": 146.13,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "새로운 Main course",
       "romanization": "saeroun main course",
       "english": "A new main course",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          144.46,
+          146.23
+        ]
+      ]
     },
     {
       "start": 148.98,
       "end": 150.25,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "That's all it takes",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          149,
+          150.34
+        ]
+      ]
     },
     {
       "start": 150.3,
       "end": 153.22,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "My coupe, 데리러 갈게",
       "romanization": "my coupe, derireo galge",
       "english": "My coupe, I’ll come pick you up",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          150.32,
+          153.3
+        ]
+      ]
     },
     {
       "start": 153.16,
       "end": 154.4,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "데리러 갈게",
       "romanization": "derireo galge",
       "english": "I’ll come pick you up",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          153.23,
+          154.43
+        ]
+      ]
     },
     {
       "start": 157.36,
       "end": 158.57,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "Just get away",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          157.37,
+          158.5
+        ]
+      ]
     },
     {
       "start": 158.19,
       "end": 162.03,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "It's a joyride with no GPS",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          158.19,
+          161.96
+        ]
+      ]
     },
     {
       "start": 164.79,
       "end": 166.56,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "Oh my god for real",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          164.91,
+          165.48
+        ],
+        [
+          165.99,
+          166.52
+        ]
+      ]
     },
     {
       "start": 168.95,
       "end": 170.8,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "Okay okay okay",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          168.97,
+          170.73
+        ]
+      ]
     },
     {
       "start": 174.46,
       "end": 175.67,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "That's it that's is",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          174.49,
+          175.65
+        ]
+      ]
     }
   ]
 }
