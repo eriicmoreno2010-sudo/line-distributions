@@ -50,7 +50,8 @@
       "original": "",
       "romanization": "haru biwodwo, that’s all it takes",
       "english": "",
-      "adlib": ""
+      "adlib": "",
+      "voice": []
     },
     {
       "start": 0,
@@ -86,7 +87,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "airplane mode, onjongil kyeodwo",
       "english": "",
@@ -95,7 +98,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "geunyang naepdwo, nameun il",
       "english": "",
@@ -104,7 +109,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "home sweet home, jamsi dwiro hae",
       "english": "",
@@ -113,7 +120,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "sikhyeodullae, meorineun chill",
       "english": "",
@@ -122,7 +131,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "paemareun dwijibeo, take a day off",
       "english": "",
@@ -131,7 +142,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "pedareul balba, imma drive",
       "english": "",
@@ -140,7 +153,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "tto oenson-en han jan-ui cherry coke, ttak oneulman swieo",
       "english": "",
@@ -149,7 +164,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "it’s alright, go for a ride",
       "english": "",
@@ -158,7 +175,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "jido-edo eomneun route",
       "english": "",
@@ -167,7 +186,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "nuguna aneun swiun gireun jeonbu beoseona",
       "english": "",
@@ -176,7 +197,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "natseoreun avenue, gikkeoi hemaebolkka",
       "english": "",
@@ -185,7 +208,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "gotta take a five, ttaeron piryohae",
       "english": "",
@@ -194,7 +219,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "yejeong-e eopdeon siesta",
       "english": "",
@@ -203,7 +230,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "urin jayuropgo nareonhae, eojjeomyeon ige driver’s high",
       "english": "",
@@ -212,7 +241,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "take the road, yeoyuman gadeuk sir-eun chaero",
       "english": "",
@@ -221,7 +252,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "han tempo neurin taedo, geuge uri dress code",
       "english": "",
@@ -230,7 +263,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "we don’t need a way home, nae jikgamman-eul jjotaga",
       "english": "",
@@ -239,7 +274,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "hemaenda haedo, geuge saeroun main course",
       "english": "",
@@ -248,16 +285,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(hey)",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "haru biwodwo, that’s all it takes",
       "english": "",
@@ -266,7 +296,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "pull up in my coupe, derireo galge",
       "english": "",
@@ -275,7 +307,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "we don’t need a passport, tteona gabyeopge",
       "english": "",
@@ -284,7 +318,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "it’s a joyride with no gps",
       "english": "",
@@ -293,7 +329,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "dansume jigu wireul, myeot bakwireul doneun gibun",
       "english": "",
@@ -302,7 +340,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "free and crazy, with my crew all in the backseat",
       "english": "",
@@ -311,7 +351,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "take take take it way up, mokjeokjimajeo random",
       "english": "",
@@ -320,7 +362,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "mugyehoegi nae masterplan, lemme shuffle all my playlist",
       "english": "",
@@ -329,25 +373,20 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
-      "romanization": "gwaenhan geokjeong jeobeodwo",
+      "romanization": "gwaenhan geokjeong jeobeodwo, urin piryohae",
       "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "urin piryohae",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "wongeunbeobi ppeonhan haruwa meoreojin dwi",
       "english": "",
@@ -356,7 +395,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "beoseona ginmal eopsi",
       "english": "",
@@ -365,7 +406,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "let’s take it up, haejil ttaekkaji dalryeodo",
       "english": "",
@@ -374,7 +417,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "this ain’t enough, domangalkka naeir-euro",
       "english": "",
@@ -383,7 +428,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "take the road, yeoyuman gadeuk sir-eun chaero",
       "english": "",
@@ -392,7 +439,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "han tempo neurin taedo, geuge uri dress code",
       "english": "",
@@ -401,7 +450,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "we don’t need a way home, nae jikgamman-eul jjotaga",
       "english": "",
@@ -410,7 +461,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "hemaenda haedo, geuge saeroun main course",
       "english": "",
@@ -419,7 +472,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(saeroun main course)",
       "english": "",
@@ -428,7 +483,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "haru biwodwo, that’s all it takes",
       "english": "",
@@ -437,7 +494,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "pull up in my coupe, derireo galge",
       "english": "",
@@ -446,7 +505,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "we don’t need a passport, tteona gabyeopge",
       "english": "",
@@ -455,7 +516,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "it’s a joyride with no gps",
       "english": "",
@@ -464,7 +527,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "pick up the pace",
       "english": "",
@@ -473,7 +538,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "da da da da da la da la da",
       "english": "",
@@ -482,7 +549,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "(oh my god for real)",
       "english": "",
@@ -491,7 +560,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "da da da da da la da la da",
       "english": "",
@@ -500,7 +571,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(okay okay okay)",
       "english": "",
@@ -509,7 +582,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "da da da da da la da la da",
       "english": "",
@@ -518,7 +593,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(that’s it that’s it)",
       "english": "",
@@ -527,7 +604,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "da da da da da la da la da",
       "english": "",
@@ -536,7 +615,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "my coupe nah na nah",
       "english": "",
@@ -545,7 +626,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "it’s a joyride with no gps",
       "english": "",
