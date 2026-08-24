@@ -124,7 +124,7 @@ const Lyrics = {
         const lightTheme = typeof document !== "undefined" && document.body.classList.contains("theme-light");
         const lift = c => lightTheme
             ? `color-mix(in srgb, ${c} 82%, #000)`   // tema claro: oscurecer un poco para que lea sobre blanco
-            : brightIfDark(c);                         // tema oscuro: color REAL (solo aclara los muy oscuros)
+            : c;                                       // tema oscuro: color CRUDO/real de cada miembro (líneas de grupo)
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`
             : "";
