@@ -806,7 +806,7 @@
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           3.24,
@@ -823,7 +823,7 @@
       "original": "",
       "romanization": "hey",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 94,
@@ -834,7 +834,7 @@
       "original": "",
       "romanization": "Mm yeah",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           93.99,
@@ -851,7 +851,7 @@
       "original": "",
       "romanization": "You",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 104.92,
@@ -862,7 +862,7 @@
       "original": "",
       "romanization": "Away",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 107.58,
@@ -873,7 +873,7 @@
       "original": "",
       "romanization": "Left or right",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 121.31,
@@ -884,7 +884,7 @@
       "original": "",
       "romanization": "Take it up",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 125.53,
@@ -895,7 +895,7 @@
       "original": "",
       "romanization": "This ain't enough",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 128.17,
@@ -906,7 +906,7 @@
       "original": "",
       "romanization": "hey",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 144.42,
@@ -934,7 +934,7 @@
       "original": "",
       "romanization": "That's all it takes",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           149,
@@ -951,7 +951,7 @@
       "original": "My coupe, 데리러 갈게",
       "romanization": "my coupe, derireo galge",
       "english": "My coupe, I’ll come pick you up",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           150.32,
@@ -968,7 +968,7 @@
       "original": "데리러 갈게",
       "romanization": "derireo galge",
       "english": "I’ll come pick you up",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           153.23,
@@ -985,7 +985,7 @@
       "original": "",
       "romanization": "Just get away",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           157.37,
@@ -1002,7 +1002,7 @@
       "original": "",
       "romanization": "It's a joyride with no GPS",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           158.19,
