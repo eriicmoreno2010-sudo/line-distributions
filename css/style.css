@@ -240,10 +240,9 @@ body{
 /* ========================= */
 
 #lyrics-container{
+    position:relative;          /* ancla del mensaje de ad-lib flotante */
     min-height:0;
-    display:grid;
-    grid-template-columns:3fr 1fr;
-    gap:20px;
+    display:block;              /* un solo panel: solo la letra central */
 }
 
 /* ========================= */

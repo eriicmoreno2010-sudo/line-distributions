@@ -59,6 +59,19 @@ function fitOneLine(el, maxW){
     if(el.scrollWidth > maxW) el.style.whiteSpace = "";   // give up on one line -> wrap
 }
 
+/* Ajusta original/roman/inglés al MISMO tamaño (y en UNA línea): baja el tamaño
+   de las TRES a la vez hasta que la más larga quepa. Así el roman NUNCA queda
+   más pequeño/fino que las demás. */
+function fitFieldsEqual(els, maxW){
+    els = (els || []).filter(el => el && (el.textContent || "").trim());
+    if(!els.length || !maxW) return;
+    els.forEach(el => { el.style.whiteSpace = "nowrap"; el.style.fontSize = ""; });
+    let s = 30, guard = 0;
+    const fits = () => els.every(el => el.scrollWidth <= maxW);
+    while(!fits() && s > 16 && guard++ < 80){ s -= 1; els.forEach(el => el.style.fontSize = s + "px"); }
+    if(!fits()) els.forEach(el => el.style.whiteSpace = "");   // aún no cabe -> deja que envuelva
+}
+
 const Lyrics = {
 
     centralIndex: -1,
@@ -203,14 +216,8 @@ const Lyrics = {
             }
         }
 
-        // AD-LIB — show every active ad-lib (1 → single panel, 2+ → stacked).
-        const akey = ais.join(",");
-        if(ais.length === 0){ if(this._adlibKey) this.clearAdlib(); }
-        else if(akey !== this._adlibKey){
-            this._adlibKey = akey;
-            if(ais.length === 1) this.showAdlib(lyrics[ais[0]]);
-            else this.showAdlibs(ais.map(i => lyrics[i]));
-        }
+        // AD-LIB — mensaje flotante que sube y se mete en el panel central
+        this.updateAdlib(currentTime, ais, lyrics);
 
         if(this.det) this.tweenFades(currentTime);
     },
@@ -327,7 +334,7 @@ const Lyrics = {
             paintText(e.original, so);
             paintText(e.roman,    sr);
             paintText(e.english,  se);
-            requestAnimationFrame(() => { fitField(e.original); fitField(e.roman); fitField(e.english); });
+            requestAnimationFrame(() => { fitFieldsEqual([e.original, e.roman, e.english], e.section.clientWidth - 72); });
 
             e.section.style.setProperty("--accent", c.accent);
             e.section.style.setProperty("--accent-secondary", c.secondaryAccent);
@@ -383,117 +390,68 @@ const Lyrics = {
         }, 100);
     },
 
-    /* ---------------- AD-LIB panel ---------------- */
-    showAdlib(line){
-        const e = this.els();
-        const c = this.colorsFor(line);
+    /* ---------------- AD-LIB (mensaje flotante) ---------------- */
+    _alKey: "", _alStart: 0, _alEnd: 0, _alY: null, _alExit: null,
 
-        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
-            el.classList.add("fade-out"); el.classList.remove("fade-in");
-        });
+    updateAdlib(t, ais, lyrics){
+        const msg = document.getElementById("adlib-msg");
+        if(!msg) return;
+        const ease = x => 1 - Math.pow(1 - x, 3);
+        const START = 72, REST = -34;   // px: entra desde abajo (+) y sube hacia el panel (-)
 
-        setTimeout(() => {
-            e.adlibs.replaceChildren();
-            const parts = [];
-            const addPart = (cls, text, always) => {
-                if(!text && !always) return;
-                const el2 = document.createElement("div");
-                el2.className = cls + " fade-out";
-                el2.textContent = text || "";
-                parts.push(el2);
-            };
-            // the name is ALWAYS added (even empty) so it reserves the same block
-            // as the central panel's #current-member → both panels line up.
-            addPart("adlib-member",   joinNames(line.members), true);
-            addPart("adlib-original", line.original);
-            addPart("adlib-roman",    line.romanization);
-            addPart("adlib-english",  line.english);
-            addPart("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
-            e.adlibs.append(...parts);
-
-            e.adlibs.style.setProperty("--accent", c.accent);
-            e.adlibs.style.setProperty("--accent-secondary", c.secondaryAccent);
-            e.adlibs.style.setProperty("--group-glow", c.groupGlow);
-            e.adlibs.style.setProperty("--group-gradient", c.groupGradient);
-            e.adlibs.style.setProperty("--members-gradient", c.sharedGradient);
-            e.adlibs.style.setProperty("--members-glow", c.membersGlow);
-            e.adlibs.classList.add("singing");
-            e.adlibs.classList.toggle("multi-member", c.isSharedLine);
-            e.adlibs.classList.toggle("group", c.isGroupLine);
-
-            requestAnimationFrame(() => {
-                const maxW = e.adlibs.clientWidth - 40;   // minus the panel's h-padding
-                parts.forEach(el2 => fitOneLine(el2, maxW));
-                parts.forEach(el2 => { el2.classList.remove("fade-out"); el2.classList.add("fade-in"); });
-            });
-        }, 100);
+        if(ais.length){
+            const key = ais.join(",");
+            if(key !== this._alKey){
+                this._alKey = key; this._alExit = null;
+                const lines = ais.map(i => lyrics[i]);
+                this._alStart = Math.min.apply(null, lines.map(l => l.start));
+                this._alEnd   = Math.max.apply(null, lines.map(l => l.end));
+                this.fillAdlibMsg(msg, lines);
+            }
+            const dur = Math.max(0.001, this._alEnd - this._alStart);
+            let p = (t - this._alStart) / dur; p = p < 0 ? 0 : p > 1 ? 1 : p;
+            this._alY = START + (REST - START) * p;                            // sube lentamente durante su vida
+            const fin = Math.min(1, Math.max(0, (t - this._alStart) / 0.4));   // fundido de entrada (.4s)
+            msg.style.transform = "translateY(" + this._alY.toFixed(1) + "px)";
+            msg.style.opacity = fin.toFixed(3);
+        } else if(this._alKey){
+            // se acabó: sube rápido y "se mete" en el panel central + se desvanece
+            if(!this._alExit) this._alExit = { t0: t, y0: (this._alY != null ? this._alY : REST) };
+            const EX = 0.55;
+            let q = (t - this._alExit.t0) / EX; q = q < 0 ? 0 : q > 1 ? 1 : q;
+            const y = this._alExit.y0 + (-190 - this._alExit.y0) * ease(q);
+            msg.style.transform = "translateY(" + y.toFixed(1) + "px)";
+            msg.style.opacity = (1 - q).toFixed(3);
+            if(q >= 1){ this._alKey = ""; this._alExit = null; this._alY = null;
+                        msg.replaceChildren(); msg.style.opacity = "0"; }
+        }
     },
 
-    /* Two or more ad-libs at once: render them stacked, each in its own colour,
-       with the panel halo blended from the two sides. */
-    showAdlibs(lines){
-        const e = this.els();
-        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => { el.classList.add("fade-out"); el.classList.remove("fade-in"); });
-
-        setTimeout(() => {
-            e.adlibs.replaceChildren();
-            e.adlibs.classList.remove("multi-member", "group");   // colour each part inline instead
-            const clip = (el, grad) => {
-                el.style.background = grad; el.style.webkitBackgroundClip = "text";
-                el.style.backgroundClip = "text"; el.style.color = "transparent";
+    fillAdlibMsg(msg, lines){
+        msg.replaceChildren();
+        lines.forEach((line, gi) => {
+            const c = this.colorsFor(line);
+            if(gi === 0) msg.style.setProperty("--al-accent", c.accent);
+            const paint = el => {
+                if(c.isGroupLine){ el.style.background = c.groupGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
+                else if(c.isSharedLine){ el.style.background = c.sharedGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
+                else el.style.color = c.accent;
             };
-            const parts = [], accents = [];
-            lines.forEach((line, gi) => {
-                const c = this.colorsFor(line);
-                accents.push(c.accent);
-                const add = (cls, text, always) => {
-                    if(!text && !always) return;
-                    const d = document.createElement("div"); d.className = cls + " fade-out"; d.textContent = text || "";
-                    if(cls === "adlib-member" && gi > 0) d.style.marginTop = "20px";   // gap before the 2nd ad-lib
-                    if(c.isGroupLine)        clip(d, c.groupGradient);
-                    else if(c.isSharedLine)  clip(d, c.sharedGradient);
-                    else                     d.style.color = c.accent;
-                    parts.push(d);
-                };
-                add("adlib-member",   joinNames(line.members), true);
-                add("adlib-original", line.original);
-                add("adlib-roman",    line.romanization);
-                add("adlib-english",  line.english);
-                add("adlib-text", typeof line.adlib === "string" ? line.adlib : "");
-            });
-            e.adlibs.append(...parts);
-            // halo: base ::after blends --accent (left) + --accent-secondary (right)
-            e.adlibs.style.setProperty("--accent", accents[0] || "#7c5cff");
-            e.adlibs.style.setProperty("--accent-secondary", accents[1] || accents[0] || "#7c5cff");
-            e.adlibs.classList.add("singing");
-
-            requestAnimationFrame(() => {
-                const maxW = e.adlibs.clientWidth - 40;
-                parts.forEach(el => fitOneLine(el, maxW));
-                parts.forEach(el => { el.classList.remove("fade-out"); el.classList.add("fade-in"); });
-            });
-        }, 100);
+            const grp = document.createElement("div"); grp.className = "al-line";
+            const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(line.members);
+            paint(nm); grp.appendChild(nm);
+            const raw = [line.original, line.romanization, line.english].map(x => (x || "").trim());
+            const uniq = raw.filter((x, i) => x && raw.indexOf(x) === i);
+            const shown = uniq.length ? uniq : (typeof line.adlib === "string" && line.adlib.trim() ? [line.adlib.trim()] : []);
+            shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); grp.appendChild(d); });
+            msg.appendChild(grp);
+        });
     },
 
     clearAdlib(){
-        if(!this._adlibKey) return;
-        this._adlibKey = "";
-        this.adlibIndex = -1;
-
-        const e = this.els();
-        e.adlibs.querySelectorAll(ADLIB_PARTS).forEach(el => {
-            el.classList.add("fade-out"); el.classList.remove("fade-in");
-        });
-
-        setTimeout(() => {
-            e.adlibs.replaceChildren();
-            // Keep the colour vars so the halo fades out in the member's colour
-            // (removing them would revert --accent to the default purple).
-            // They're harmless while idle and get overwritten by the next ad-lib.
-            e.adlibs.classList.remove("singing");
-            e.adlibs.classList.remove("multi-member");
-            e.adlibs.classList.remove("group");
-        }, 100);
+        const msg = document.getElementById("adlib-msg");
+        this._alKey = ""; this._alExit = null; this._alY = null;
+        if(msg){ msg.replaceChildren(); msg.style.opacity = "0"; msg.style.transform = ""; }
     },
 
     /* Clear both panels (used at startup). */
