@@ -331,19 +331,30 @@
   $("#paGen").onclick = () => {
     // Quita los renglones vacíos de CADA columna por separado (así un salto de línea
     // de más en una no descuadra las demás), y luego empareja por posición.
-    const so = $("#paOrig").value.split("\n").map(s => s.trim()).filter(Boolean);
-    const sr = $("#paRom").value.split("\n").map(s => s.trim()).filter(Boolean);
-    const se = $("#paEng").value.split("\n").map(s => s.trim()).filter(Boolean);
-    // Qué columnas has pegado (una columna vacía NO se toca -> no machaca lo que ya hay)
-    const provO = so.length > 0, provR = sr.length > 0, provE = se.length > 0;
+    // Líneas "en bruto" (respetando blancos), quitando solo los blancos del final.
+    const rawOf = id => { const a = $(id).value.replace(/\r/g, "").split("\n").map(s => s.trim());
+      while(a.length && !a[a.length - 1]) a.pop(); return a; };
+    const rawO = rawOf("#paOrig"), rawR = rawOf("#paRom"), rawE = rawOf("#paEng");
+    const provO = rawO.some(Boolean), provR = rawR.some(Boolean), provE = rawE.some(Boolean);
     if(!provO && !provR && !provE){ alert("Pega al menos una línea de letra."); return; }
-    // Aviso si las columnas que has rellenado no tienen el mismo nº de líneas.
-    const counts = [so.length, sr.length, se.length].filter(x => x > 0);
-    if(new Set(counts).size > 1){
-      if(!confirm("⚠ Las columnas tienen DISTINTO número de líneas y no cuadrarán bien:\n\n" +
-        "· Original: " + so.length + "\n· Romanización: " + sr.length + "\n· Inglés: " + se.length + "\n\n" +
-        "Consejo: deja el MISMO número de líneas en las que uses (una línea por renglón), " +
-        "o deja una columna entera vacía si no la usas.\n\n¿Generar igualmente?")) return;
+    // ¿Las columnas usadas tienen el MISMO nº de líneas (CONTANDO los blancos)?
+    const rawCounts = [provO ? rawO.length : null, provR ? rawR.length : null, provE ? rawE.length : null].filter(x => x != null);
+    const sameRaw = new Set(rawCounts).size === 1;
+    let so, sr, se;
+    if(sameRaw){
+      // Emparejar por posición REAL: los renglones EN BLANCO sirven de alineación
+      // (deja una línea vacía en una versión donde la otra tenga un "(ad-lib)").
+      so = rawO; sr = rawR; se = rawE;
+    } else {
+      // Si no cuadran, quita blancos por columna y empareja por orden (+ aviso).
+      so = rawO.filter(Boolean); sr = rawR.filter(Boolean); se = rawE.filter(Boolean);
+      const counts = [so.length, sr.length, se.length].filter(x => x > 0);
+      if(new Set(counts).size > 1){
+        if(!confirm("⚠ Las columnas usadas tienen DISTINTO número de líneas:\n\n" +
+          "· Original: " + so.length + "\n· Romanización: " + sr.length + "\n· Inglés: " + se.length + "\n\n" +
+          "Para cuadrar: pon el MISMO número de líneas en cada columna, dejando una línea EN BLANCO " +
+          "donde una versión no tenga texto (p. ej. un (ad-lib) en inglés que no está en coreano).\n\n¿Generar igualmente?")) return;
+      }
     }
     const old = song.lyrics || [];
     const n = Math.max(so.length, sr.length, se.length, (provO && provR && provE) ? 0 : old.length);

@@ -451,15 +451,13 @@ const Lyrics = {
        añade las nuevas colapsadas -> al expandirse EMPUJAN a las demás (sin salto). */
     syncAdlibBoxes(msg, ais, lyrics){
         const want = ais.map(String);
+        // los que ya no tocan se quitan AL MOMENTO (así el antiguo no parpadea)
         Array.from(msg.children).forEach(box => {
-            if(want.indexOf(box.dataset.i) === -1 && !box._leaving){
-                box._leaving = true; box.classList.add("leave");
-                setTimeout(() => box.remove(), 360);
-            }
+            if(want.indexOf(box.dataset.i) === -1) box.remove();
         });
+        // los nuevos entran colapsados y al expandirse EMPUJAN a los demás
         ais.forEach(i => {
-            const existing = msg.querySelector('.al-box[data-i="' + i + '"]');
-            if(existing && !existing._leaving) return;
+            if(msg.querySelector('.al-box[data-i="' + i + '"]')) return;
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
             box.classList.add("enter");
             msg.appendChild(box);
