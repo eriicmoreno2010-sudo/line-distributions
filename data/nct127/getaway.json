@@ -93,13 +93,29 @@
       "original": "",
       "romanization": "airplane mode, onjongil kyeodwo",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.12,
+          28.04
+        ],
+        [
+          28.23,
+          29.21
+        ]
+      ]
     },
     {
       "start": 0,
       "end": 0,
       "members": [
         "JOHNNY"
+      ],
+      "voice": [
+        [
+          29.24,
+          31.2
+        ]
       ],
       "original": "",
       "romanization": "geunyang naepdwo, nameun il",
@@ -112,6 +128,16 @@
       "members": [
         "JOHNNY"
       ],
+      "voice": [
+        [
+          31.38,
+          32.24
+        ],
+        [
+          32.4,
+          33.7
+        ]
+      ],
       "original": "",
       "romanization": "home sweet home, jamsi dwiro hae",
       "english": "",
@@ -122,6 +148,12 @@
       "end": 0,
       "members": [
         "JOHNNY"
+      ],
+      "voice": [
+        [
+          33.72,
+          35.43
+        ]
       ],
       "original": "",
       "romanization": "sikhyeodullae, meorineun chill",
@@ -178,6 +210,12 @@
       "members": [
         "HAECHAN"
       ],
+      "voice": [
+        [
+          45.06,
+          46.36
+        ]
+      ],
       "original": "",
       "romanization": "jido-edo eomneun route",
       "english": "",
@@ -188,6 +226,12 @@
       "end": 0,
       "members": [
         "HAECHAN"
+      ],
+      "voice": [
+        [
+          46.31,
+          48.87
+        ]
       ],
       "original": "",
       "romanization": "nuguna aneun swiun gireun jeonbu beoseona",
@@ -200,6 +244,12 @@
       "members": [
         "HAECHAN"
       ],
+      "voice": [
+        [
+          49.24,
+          52.2
+        ]
+      ],
       "original": "",
       "romanization": "natseoreun avenue, gikkeoi hemaebolkka",
       "english": "",
@@ -210,6 +260,12 @@
       "end": 0,
       "members": [
         "YUTA"
+      ],
+      "voice": [
+        [
+          52.38,
+          54.68
+        ]
       ],
       "original": "",
       "romanization": "gotta take a five, ttaeron piryohae",
@@ -222,6 +278,12 @@
       "members": [
         "YUTA"
       ],
+      "voice": [
+        [
+          54.75,
+          56.6
+        ]
+      ],
       "original": "",
       "romanization": "yejeong-e eopdeon siesta",
       "english": "",
@@ -232,6 +294,12 @@
       "end": 0,
       "members": [
         "YUTA"
+      ],
+      "voice": [
+        [
+          56.59,
+          60.88
+        ]
       ],
       "original": "",
       "romanization": "urin jayuropgo nareonhae, eojjeomyeon ige driver’s high",
@@ -332,6 +400,20 @@
       "members": [
         "HAECHAN"
       ],
+      "voice": [
+        [
+          95.26,
+          96.36
+        ],
+        [
+          96.48,
+          97.19
+        ],
+        [
+          97.36,
+          99.33
+        ]
+      ],
       "original": "",
       "romanization": "dansume jigu wireul, myeot bakwireul doneun gibun",
       "english": "",
@@ -342,6 +424,16 @@
       "end": 0,
       "members": [
         "HAECHAN"
+      ],
+      "voice": [
+        [
+          99.79,
+          101.29
+        ],
+        [
+          101.58,
+          103.51
+        ]
       ],
       "original": "",
       "romanization": "free and crazy, with my crew all in the backseat",
@@ -409,6 +501,16 @@
       "members": [
         "JOHNNY"
       ],
+      "voice": [
+        [
+          120.05,
+          121.36
+        ],
+        [
+          122.2,
+          124.32
+        ]
+      ],
       "original": "",
       "romanization": "let’s take it up, haejil ttaekkaji dalryeodo",
       "english": "",
@@ -419,6 +521,16 @@
       "end": 0,
       "members": [
         "JOHNNY"
+      ],
+      "voice": [
+        [
+          124.25,
+          125.52
+        ],
+        [
+          126.11,
+          128.16
+        ]
       ],
       "original": "",
       "romanization": "this ain’t enough, domangalkka naeir-euro",
@@ -453,6 +565,16 @@
       "members": [
         "YUTA"
       ],
+      "voice": [
+        [
+          136.34,
+          138.5
+        ],
+        [
+          138.94,
+          140.58
+        ]
+      ],
       "original": "",
       "romanization": "we don’t need a way home, nae jikgamman-eul jjotaga",
       "english": "",
@@ -464,6 +586,24 @@
       "members": [
         "YUTA"
       ],
+      "voice": [
+        [
+          140.51,
+          141.7
+        ],
+        [
+          141.85,
+          142.26
+        ],
+        [
+          142.42,
+          143.86
+        ],
+        [
+          143.98,
+          144.71
+        ]
+      ],
       "original": "",
       "romanization": "hemaenda haedo, geuge saeroun main course",
       "english": "",
@@ -474,6 +614,12 @@
       "end": 0,
       "members": [
         "JOHNNY"
+      ],
+      "voice": [
+        [
+          144.43,
+          146.17
+        ]
       ],
       "original": "",
       "romanization": "(saeroun main course)",
@@ -574,6 +720,12 @@
       "members": [
         "JOHNNY"
       ],
+      "voice": [
+        [
+          169.02,
+          170.78
+        ]
+      ],
       "original": "",
       "romanization": "(okay okay okay)",
       "english": "",
@@ -596,6 +748,12 @@
       "members": [
         "JOHNNY"
       ],
+      "voice": [
+        [
+          174.56,
+          175.6
+        ]
+      ],
       "original": "",
       "romanization": "(that’s it that’s it)",
       "english": "",
@@ -611,6 +769,23 @@
       "romanization": "da da da da da la da la da",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "mm yeah",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          94.03,
+          95.04
+        ]
+      ]
     },
     {
       "start": 0,
