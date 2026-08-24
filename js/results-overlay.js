@@ -132,11 +132,20 @@ Self-contained: injects its own styles and markup.
   document.body.appendChild(ov);
 
   let ranked=[], built=false, revealTimer=null;
+  let instSrc="", instAudio=null;      // instrumental que suena en la pantalla de resultados
 
   fetch(SONG_URL).then(r=>r.json()).then(SONG=>{ buildResults(SONG); built=true; })
     .catch(e=>console.error("results-overlay:", e));
 
+  function playInstrumental(){
+    if(!instSrc) return;
+    if(!instAudio){ instAudio=new Audio(instSrc); instAudio.preload="auto"; }
+    try{ instAudio.currentTime=0; instAudio.play().catch(()=>{}); }catch(e){}
+  }
+  function stopInstrumental(){ if(instAudio){ try{ instAudio.pause(); }catch(e){} } }
+
   function buildResults(SONG){
+    instSrc = SONG.instrumental || SONG.resultsAudio || "";
     document.getElementById("ro-grp").textContent=SONG.group;
     document.getElementById("ro-sng").textContent=SONG.song;
 
@@ -217,9 +226,9 @@ Self-contained: injects its own styles and markup.
   }
 
   function show(){ if(!built || ov.classList.contains("show")) return;
-    document.body.classList.add("results-up"); ov.classList.add("show"); autoReveal(); }
+    document.body.classList.add("results-up"); ov.classList.add("show"); autoReveal(); playInstrumental(); }
   function hide(){ ov.classList.remove("show"); document.body.classList.remove("results-up");
-    if(revealTimer) clearInterval(revealTimer); reset(); }
+    if(revealTimer) clearInterval(revealTimer); reset(); stopInstrumental(); }
 
   const video=document.getElementById("video");
   if(video) video.addEventListener("ended", show);

@@ -66,16 +66,21 @@
       m.row = row; m.val = row.querySelector(".val");
     });
 
+    // instrumental opcional: si existe, suena el mp3 (y muteamos el vídeo)
+    instSrc = s.instrumental || s.resultsAudio || "";
+    instAudio = instSrc ? new Audio(instSrc) : null;
+
     // clock: prefer the MV video (audio + time); else a manual timer over duration
     clock.playing = false; clock.t = 0; clock.seeking = false; clock.dur = s.duration || 0;
     if(s.video){
-      clock.useVideo = true; vid.src = s.video; vid.muted = false;
+      clock.useVideo = true; vid.src = s.video; vid.muted = !!instAudio;   // si hay instrumental, mutea el vídeo
       vid.addEventListener("loadedmetadata", () => { if(isFinite(vid.duration)&&vid.duration>0) clock.dur = vid.duration; }, { once:true });
     } else {
       clock.useVideo = false; vid.removeAttribute("src");
     }
     playBtn.textContent = "▶";
   }
+  let instSrc = "", instAudio = null;
 
   function curTime(){ return clock.useVideo ? (vid.currentTime||0) : clock.t; }
   function curDur(){ return clock.useVideo ? (isFinite(vid.duration)&&vid.duration>0 ? vid.duration : clock.dur) : clock.dur; }
@@ -84,11 +89,13 @@
     clock.playing = p;
     if(clock.useVideo){ p ? vid.play().catch(()=>{}) : vid.pause(); }
     else { clock.last = Date.now(); }
+    if(instAudio){ try{ instAudio.currentTime = curTime(); p ? instAudio.play().catch(()=>{}) : instAudio.pause(); }catch(e){} }
     playBtn.textContent = p ? "⏸" : "▶";
   }
   function seekTo(frac){
     const d = curDur() || 0; const t = frac * d;
     if(clock.useVideo){ try{ vid.currentTime = t; }catch(e){} } else { clock.t = Math.min(t, d); clock.last = Date.now(); }
+    if(instAudio){ try{ instAudio.currentTime = t; }catch(e){} }
   }
 
   function frame(){

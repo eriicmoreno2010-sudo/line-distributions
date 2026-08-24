@@ -104,8 +104,8 @@ const Lyrics = {
         // rainbow reads on black; on the light theme darken (mix black) so it reads on white.
         const lightTheme = typeof document !== "undefined" && document.body.classList.contains("theme-light");
         const lift = c => lightTheme
-            ? `color-mix(in srgb, ${c} 78%, #000)`
-            : `color-mix(in srgb, ${c} 66%, #fff)`;
+            ? `color-mix(in srgb, ${c} 82%, #000)`   // tema claro: oscurecer un poco para que lea sobre blanco
+            : c;                                       // tema oscuro: COLORES REALES de cada miembro
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`
             : "";
@@ -407,7 +407,7 @@ const Lyrics = {
                 const lines = ais.map(i => lyrics[i]);
                 this._alStart = Math.min.apply(null, lines.map(l => l.start));
                 this._alEnd   = Math.max.apply(null, lines.map(l => l.end));
-                this.fillAdlibMsg(msg, lines);
+                this.syncAdlibBoxes(msg, ais, lyrics);   // diff: añade/quita tarjetas (empuja, no teletransporta)
             }
             const dur = Math.max(0.001, this._alEnd - this._alStart);
             let p = (t - this._alStart) / dur; p = p < 0 ? 0 : p > 1 ? 1 : p;
@@ -428,24 +428,42 @@ const Lyrics = {
         }
     },
 
-    fillAdlibMsg(msg, lines){
-        msg.replaceChildren();
-        lines.forEach((line) => {
-            const c = this.colorsFor(line);
-            const box = document.createElement("div"); box.className = "al-box";
-            box.style.setProperty("--al-accent", c.accent);   // cada tarjeta con su color
-            const paint = el => {
-                if(c.isGroupLine){ el.style.background = c.groupGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
-                else if(c.isSharedLine){ el.style.background = c.sharedGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
-                else el.style.color = c.accent;
-            };
-            const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(line.members);
-            paint(nm); box.appendChild(nm);
-            const raw = [line.original, line.romanization, line.english].map(x => (x || "").trim());
-            const uniq = raw.filter((x, i) => x && raw.indexOf(x) === i);
-            const shown = uniq.length ? uniq : (typeof line.adlib === "string" && line.adlib.trim() ? [line.adlib.trim()] : []);
-            shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); box.appendChild(d); });
+    /* Construye la tarjeta de UN ad-lib (con su color propio). */
+    buildAdlibBox(line){
+        const c = this.colorsFor(line);
+        const box = document.createElement("div"); box.className = "al-box";
+        box.style.setProperty("--al-accent", c.accent);
+        const paint = el => {
+            if(c.isGroupLine){ el.style.background = c.groupGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
+            else if(c.isSharedLine){ el.style.background = c.sharedGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
+            else el.style.color = c.accent;
+        };
+        const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(line.members);
+        paint(nm); box.appendChild(nm);
+        const raw = [line.original, line.romanization, line.english].map(x => (x || "").trim());
+        const uniq = raw.filter((x, i) => x && raw.indexOf(x) === i);
+        const shown = uniq.length ? uniq : (typeof line.adlib === "string" && line.adlib.trim() ? [line.adlib.trim()] : []);
+        shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); box.appendChild(d); });
+        return box;
+    },
+
+    /* Diff de tarjetas: mantiene las activas, quita las que acaban (colapsan) y
+       añade las nuevas colapsadas -> al expandirse EMPUJAN a las demás (sin salto). */
+    syncAdlibBoxes(msg, ais, lyrics){
+        const want = ais.map(String);
+        Array.from(msg.children).forEach(box => {
+            if(want.indexOf(box.dataset.i) === -1 && !box._leaving){
+                box._leaving = true; box.classList.add("leave");
+                setTimeout(() => box.remove(), 360);
+            }
+        });
+        ais.forEach(i => {
+            const existing = msg.querySelector('.al-box[data-i="' + i + '"]');
+            if(existing && !existing._leaving) return;
+            const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
+            box.classList.add("enter");
             msg.appendChild(box);
+            requestAnimationFrame(() => requestAnimationFrame(() => box.classList.remove("enter")));
         });
     },
 
