@@ -42,57 +42,37 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.63,
+      "end": 14.21,
       "members": [
         "NCT 127"
       ],
-      "original": "하루 비워둬",
-      "romanization": "haru biwodwo",
-      "english": "Leave the day wide open",
+      "original": "하루 비워둬, That’s all it takes",
+      "romanization": "haru biwodwo, that’s all it takes",
+      "english": "Leave the day wide open, That’s all it takes",
       "adlib": "",
       "voice": []
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.34,
+      "end": 18.58,
       "members": [
         "NCT 127"
       ],
-      "original": "That’s all it takes",
-      "romanization": "that’s all it takes",
-      "english": "That’s all it takes",
+      "original": "Pull up in my coupe, 데리러 갈게",
+      "romanization": "pull up in my coupe, derireo galge",
+      "english": "Pull up in my coupe, I’ll come pick you up",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "NCT 127"
-      ],
-      "original": "Pull up in my coupe",
-      "romanization": "pull up in my coupe",
-      "english": "Pull up in my coupe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "데리러 갈게",
-      "romanization": "derireo galge",
-      "english": "I’ll come pick you up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 18.7,
+      "end": 22.77,
       "members": [
         "JOHNNY"
       ],
-      "original": "We don’t need a passport",
-      "romanization": "we don’t need a passport",
-      "english": "We don’t need a passport",
+      "original": "We don’t need a passport, 떠나 가볍게",
+      "romanization": "we don’t need a passport, tteona gabyeopge",
+      "english": "We don’t need a passport, Let’s get away, nice and easy",
       "adlib": false,
       "voice": [
         [
@@ -106,25 +86,8 @@
       ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "JOHNNY"
-      ],
-      "voice": [
-        [
-          29.24,
-          31.2
-        ]
-      ],
-      "original": "떠나 가볍게",
-      "romanization": "tteona gabyeopge",
-      "english": "Let’s get away, nice and easy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 22.93,
+      "end": 26.91,
       "members": [
         "JOHNNY"
       ],
@@ -138,58 +101,36 @@
           33.7
         ]
       ],
-      "original": "It’s a joyride with no GPS",
-      "romanization": "it’s a joyride with no gps",
-      "english": "It’s a joyride with no GPS",
+      "original": "",
+      "romanization": "It’s a joyride with no GPS",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 27.06,
+      "end": 31.13,
       "members": [
         "TAEYONG"
       ],
-      "original": "Airplane mode",
-      "romanization": "airplane mode",
-      "english": "Airplane mode",
+      "original": "Airplane mode, 온종일 켜둬 그냥 냅둬 남은 일",
+      "romanization": "airplane mode, onjongil kyeodwo geunyang naepdwo nameun il",
+      "english": "Airplane mode, Keep it on all day, Just leave the rest of it alone",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 31.29,
+      "end": 35.29,
       "members": [
         "TAEYONG"
       ],
-      "original": "온종일 켜둬 그냥 냅둬 남은 일",
-      "romanization": "onjongil kyeodwo geunyang naepdwo nameun il",
-      "english": "Keep it on all day, Just leave the rest of it alone",
+      "original": "Home sweet home 잠시 뒤로 해, 식혀둘래 머리는 Chill",
+      "romanization": "home sweet home jamsi dwiro hae, sikhyeodullae meorineun chill",
+      "english": "Home sweet home, Put it on hold for a while, I wanna cool my head, Chill",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "TAEYONG"
-      ],
-      "original": "Home sweet home 잠시 뒤로 해",
-      "romanization": "home sweet home jamsi dwiro hae",
-      "english": "Home sweet home, Put it on hold for a while",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "TAEYONG"
-      ],
-      "original": "식혀둘래 머리는 Chill",
-      "romanization": "sikhyeodullae meorineun chill",
-      "english": "I wanna cool my head, Chill",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 35.47,
+      "end": 39.47,
       "members": [
         "HAECHAN"
       ],
@@ -199,33 +140,17 @@
           46.36
         ]
       ],
-      "original": "팻말은 뒤집어 Take a day off",
-      "romanization": "paemareun dwijibeo take a day off",
-      "english": "Turn the sign around, Take a day off",
+      "original": "팻말은 뒤집어 Take a day off, 페달을 밟아 Imma drive",
+      "romanization": "paemareun dwijibeo take a day off, pedareul balba imma drive",
+      "english": "Turn the sign around, Take a day off, Step on the pedal, Imma drive",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 39.6,
+      "end": 43.46,
       "members": [
-        "HAECHAN"
-      ],
-      "voice": [
-        [
-          46.31,
-          48.87
-        ]
-      ],
-      "original": "페달을 밟아 Imma drive",
-      "romanization": "pedareul balba imma drive",
-      "english": "Step on the pedal, Imma drive",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "YUTA"
       ],
       "voice": [
         [
@@ -233,31 +158,14 @@
           52.2
         ]
       ],
-      "original": "또 왼손엔 한 잔의 Cherry coke",
-      "romanization": "tto oensonen han janui cherry coke",
-      "english": "And in my left hand, a glass of Cherry Coke",
+      "original": "또 왼손엔 한 잔의 Cherry coke, 딱 오늘만 쉬어 It’s alright",
+      "romanization": "tto oensonen han janui cherry coke, ttak oneulman swieo it’s alright",
+      "english": "And in my left hand, a glass of Cherry Coke, Just take today off, It’s alright",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "YUTA"
-      ],
-      "voice": [
-        [
-          52.38,
-          54.68
-        ]
-      ],
-      "original": "딱 오늘만 쉬어 It’s alright",
-      "romanization": "ttak oneulman swieo it’s alright",
-      "english": "Just take today off, It’s alright",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 43.64,
+      "end": 44.83,
       "members": [
         "YUTA"
       ],
@@ -267,9 +175,9 @@
           56.44
         ]
       ],
-      "original": "Go for a ride",
-      "romanization": "go for a ride",
-      "english": "Go for a ride",
+      "original": "",
+      "romanization": "Go for a ride",
+      "english": "",
       "adlib": false
     },
     {
