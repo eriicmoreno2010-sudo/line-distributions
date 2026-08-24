@@ -162,18 +162,16 @@ const Lyrics = {
               }).join(", ")
             : "";
 
-        // en tema oscuro, aclara los colores MUY oscuros (p.ej. rojo de Taeyong)
-        // para que se lean sobre el panel negro (real si ya son claros).
-        const adapt = c => lightTheme ? c : brightIfDark(c);
+        // Colores CRUDOS/reales de cada miembro en todo (grupo y solitario).
         let accent, secondaryAccent, isSharedLine;
         if(isGroupLine){
             const colors = SONG.members.map(m => m.color);
-            accent = adapt(colors[0]);
-            secondaryAccent = adapt(colors[colors.length - 1]);
+            accent = colors[0];
+            secondaryAccent = colors[colors.length - 1];
             isSharedLine = false;
         } else {
-            accent = singers[0] ? adapt(singers[0].color) : "var(--accent)";
-            secondaryAccent = singers[1] ? adapt(singers[1].color) : accent;
+            accent = singers[0] ? singers[0].color : "var(--accent)";
+            secondaryAccent = singers[1] ? singers[1].color : accent;
             isSharedLine = !hasPartial && singers.length > 1;
         }
         return { isGroupLine, groupGradient, groupGlow, hasPartial,
