@@ -1,0 +1,56 @@
+{
+  "group": "NCT 127",
+  "song": "Getaway",
+  "video": "",
+  "duration": 0,
+  "members": [
+    {
+      "name": "JOHNNY",
+      "image": "images/nct127/getaway/johnny.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAEYONG",
+      "image": "images/nct127/getaway/taeyong.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUTA",
+      "image": "images/nct127/getaway/yuta.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUN",
+      "image": "images/nct127/getaway/jaehyun.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nct127/getaway/haechan.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
