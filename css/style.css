@@ -242,7 +242,10 @@ body{
 #lyrics-container{
     position:relative;          /* ancla del mensaje de ad-lib flotante */
     min-height:0;
-    display:block;              /* un solo panel: solo la letra central */
+    display:grid;               /* un solo panel: la letra ocupa TODO (misma altura que antes) */
+    grid-template-columns:1fr;
+    overflow:hidden;            /* el ad-lib se "mete" en el panel y no se cae al timeline */
+    border-radius:var(--radius);
 }
 
 /* ========================= */

@@ -397,7 +397,8 @@ const Lyrics = {
         const msg = document.getElementById("adlib-msg");
         if(!msg) return;
         const ease = x => 1 - Math.pow(1 - x, 3);
-        const START = 72, REST = -34;   // px: entra desde abajo (+) y sube hacia el panel (-)
+        const START = 54, REST = -14;   // px: entra desde abajo (+) y sube un poco (-)
+        const ch = (msg.parentNode && msg.parentNode.clientHeight) || 400;
 
         if(ais.length){
             const key = ais.join(",");
@@ -415,13 +416,13 @@ const Lyrics = {
             msg.style.transform = "translateY(" + this._alY.toFixed(1) + "px)";
             msg.style.opacity = fin.toFixed(3);
         } else if(this._alKey){
-            // se acabó: sube rápido y "se mete" en el panel central + se desvanece
+            // se acabó: sube y se METE por arriba del panel (se recorta con overflow) + fundido
             if(!this._alExit) this._alExit = { t0: t, y0: (this._alY != null ? this._alY : REST) };
-            const EX = 0.55;
+            const EX = 0.6;
             let q = (t - this._alExit.t0) / EX; q = q < 0 ? 0 : q > 1 ? 1 : q;
-            const y = this._alExit.y0 + (-190 - this._alExit.y0) * ease(q);
+            const y = this._alExit.y0 + (-(ch + 60) - this._alExit.y0) * ease(q);
             msg.style.transform = "translateY(" + y.toFixed(1) + "px)";
-            msg.style.opacity = (1 - q).toFixed(3);
+            msg.style.opacity = (1 - Math.min(1, q * 1.15)).toFixed(3);
             if(q >= 1){ this._alKey = ""; this._alExit = null; this._alY = null;
                         msg.replaceChildren(); msg.style.opacity = "0"; }
         }
@@ -429,22 +430,22 @@ const Lyrics = {
 
     fillAdlibMsg(msg, lines){
         msg.replaceChildren();
-        lines.forEach((line, gi) => {
+        lines.forEach((line) => {
             const c = this.colorsFor(line);
-            if(gi === 0) msg.style.setProperty("--al-accent", c.accent);
+            const box = document.createElement("div"); box.className = "al-box";
+            box.style.setProperty("--al-accent", c.accent);   // cada tarjeta con su color
             const paint = el => {
                 if(c.isGroupLine){ el.style.background = c.groupGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
                 else if(c.isSharedLine){ el.style.background = c.sharedGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
                 else el.style.color = c.accent;
             };
-            const grp = document.createElement("div"); grp.className = "al-line";
             const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(line.members);
-            paint(nm); grp.appendChild(nm);
+            paint(nm); box.appendChild(nm);
             const raw = [line.original, line.romanization, line.english].map(x => (x || "").trim());
             const uniq = raw.filter((x, i) => x && raw.indexOf(x) === i);
             const shown = uniq.length ? uniq : (typeof line.adlib === "string" && line.adlib.trim() ? [line.adlib.trim()] : []);
-            shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); grp.appendChild(d); });
-            msg.appendChild(grp);
+            shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); box.appendChild(d); });
+            msg.appendChild(box);
         });
     },
 
