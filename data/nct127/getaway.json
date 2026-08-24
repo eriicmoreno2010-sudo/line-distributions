@@ -7,35 +7,35 @@
     {
       "name": "JOHNNY",
       "image": "images/nct127/getaway/johnny.png",
-      "color": "#ff4d6d",
+      "color": "#31b287",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "TAEYONG",
       "image": "images/nct127/getaway/taeyong.png",
-      "color": "#4dabf7",
+      "color": "#c80404",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "YUTA",
       "image": "images/nct127/getaway/yuta.png",
-      "color": "#51cf66",
+      "color": "#dd7f10",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JAEHYUN",
       "image": "images/nct127/getaway/jaehyun.png",
-      "color": "#ffd43b",
+      "color": "#bf9b00",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "HAECHAN",
       "image": "images/nct127/getaway/haechan.png",
-      "color": "#cc5de8",
+      "color": "#1bb7e8",
       "focus": 50,
       "lift": 3
     }
