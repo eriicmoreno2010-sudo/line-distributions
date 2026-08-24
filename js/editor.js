@@ -320,54 +320,84 @@
   $("#markstart").onclick = tapS;
   $("#addadlib").onclick = addAdlib;
 
-  // --- Pegar letra en lote: original/roman/inglés -> una línea por renglón ---
+  // --- Pegar letra en lote + VISTA para cuadrar a mano ---
+  let pv = null;   // {O:[],R:[],E:[]} cuando la previsualización está activa
+
+  const rawOf = id => { const a = $(id).value.replace(/\r/g, "").split("\n").map(s => s.trim());
+    while(a.length && !a[a.length - 1]) a.pop(); return a; };   // quita blancos del final
+
   function openPaste(){
     $("#paOrig").value = ""; $("#paRom").value = ""; $("#paEng").value = "";
+    pv = null; const pp = $("#paPreview"); pp.classList.remove("show"); pp.innerHTML = "";
     $("#pastemodal").classList.add("show"); $("#paOrig").focus();
   }
   $("#pasteLyrics").onclick = openPaste;
   $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");
   $("#pastemodal").addEventListener("click", e => { if(e.target.id === "pastemodal") $("#pastemodal").classList.remove("show"); });
+
+  // Previsualizar: construye la tabla desde los textareas
+  $("#paPreviewBtn").onclick = () => {
+    pv = { O: rawOf("#paOrig"), R: rawOf("#paRom"), E: rawOf("#paEng") };
+    if(!pv.O.some(Boolean) && !pv.R.some(Boolean) && !pv.E.some(Boolean)){ alert("Pega al menos una línea de letra."); pv = null; return; }
+    renderPreview();
+  };
+
+  function renderPreview(){
+    const pp = $("#paPreview"); pp.classList.add("show");
+    const cols = [];
+    if(pv.O.some(Boolean)) cols.push(["O", "Original"]);
+    if(pv.R.some(Boolean)) cols.push(["R", "Roman"]);
+    if(pv.E.some(Boolean)) cols.push(["E", "Inglés"]);
+    const n = Math.max(pv.O.length, pv.R.length, pv.E.length);
+    const esc = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    let html = "<table><thead><tr><th>#</th>" + cols.map(c => "<th>" + c[1] + "</th>").join("") + "</tr></thead><tbody>";
+    for(let i = 0; i < n; i++){
+      const pres = cols.map(c => !!(pv[c[0]][i] && pv[c[0]][i].trim()));
+      const mism = pres.some(Boolean) && pres.some(x => !x);
+      html += "<tr class='" + (mism ? "mismatch" : "") + "'><td class='num'>" + (i + 1) + "</td>";
+      cols.forEach(c => {
+        const t = pv[c[0]][i] || "";
+        html += "<td><div class='cell'><span class='tx" + (t.trim() ? "" : " empty") + "'>" +
+                (t.trim() ? esc(t) : "— vacío —") + "</span><span class='ops'>" +
+                "<button class='ins' data-c='" + c[0] + "' data-i='" + i + "' title='meter hueco aquí (empuja abajo)'>＋</button>" +
+                "<button class='del' data-c='" + c[0] + "' data-i='" + i + "' title='quitar esta línea (sube)'>✕</button>" +
+                "</span></div></td>";
+      });
+      html += "</tr>";
+    }
+    pp.innerHTML = html + "</tbody></table>";
+    pp.querySelectorAll("button.ins").forEach(b => b.onclick = () => { pv[b.dataset.c].splice(+b.dataset.i, 0, ""); renderPreview(); });
+    pp.querySelectorAll("button.del").forEach(b => b.onclick = () => { pv[b.dataset.c].splice(+b.dataset.i, 1); renderPreview(); });
+  }
+
   $("#paGen").onclick = () => {
-    // Quita los renglones vacíos de CADA columna por separado (así un salto de línea
-    // de más en una no descuadra las demás), y luego empareja por posición.
-    // Líneas "en bruto" (respetando blancos), quitando solo los blancos del final.
-    const rawOf = id => { const a = $(id).value.replace(/\r/g, "").split("\n").map(s => s.trim());
-      while(a.length && !a[a.length - 1]) a.pop(); return a; };
-    const rawO = rawOf("#paOrig"), rawR = rawOf("#paRom"), rawE = rawOf("#paEng");
-    const provO = rawO.some(Boolean), provR = rawR.some(Boolean), provE = rawE.some(Boolean);
-    if(!provO && !provR && !provE){ alert("Pega al menos una línea de letra."); return; }
-    // ¿Las columnas usadas tienen el MISMO nº de líneas (CONTANDO los blancos)?
-    const rawCounts = [provO ? rawO.length : null, provR ? rawR.length : null, provE ? rawE.length : null].filter(x => x != null);
-    const sameRaw = new Set(rawCounts).size === 1;
     let so, sr, se;
-    if(sameRaw){
-      // Emparejar por posición REAL: los renglones EN BLANCO sirven de alineación
-      // (deja una línea vacía en una versión donde la otra tenga un "(ad-lib)").
-      so = rawO; sr = rawR; se = rawE;
-    } else {
-      // Si no cuadran, quita blancos por columna y empareja por orden (+ aviso).
-      so = rawO.filter(Boolean); sr = rawR.filter(Boolean); se = rawE.filter(Boolean);
-      const counts = [so.length, sr.length, se.length].filter(x => x > 0);
-      if(new Set(counts).size > 1){
-        if(!confirm("⚠ Las columnas usadas tienen DISTINTO número de líneas:\n\n" +
-          "· Original: " + so.length + "\n· Romanización: " + sr.length + "\n· Inglés: " + se.length + "\n\n" +
-          "Para cuadrar: pon el MISMO número de líneas en cada columna, dejando una línea EN BLANCO " +
-          "donde una versión no tenga texto (p. ej. un (ad-lib) en inglés que no está en coreano).\n\n¿Generar igualmente?")) return;
+    if(pv){                                   // usa lo que has cuadrado en la vista
+      so = pv.O.slice(); sr = pv.R.slice(); se = pv.E.slice();
+    } else {                                  // sin vista: empareja respetando blancos si el nº coincide
+      const rawO = rawOf("#paOrig"), rawR = rawOf("#paRom"), rawE = rawOf("#paEng");
+      const pO = rawO.some(Boolean), pR = rawR.some(Boolean), pE = rawE.some(Boolean);
+      if(!pO && !pR && !pE){ alert("Pega al menos una línea de letra."); return; }
+      const rc = [pO ? rawO.length : null, pR ? rawR.length : null, pE ? rawE.length : null].filter(x => x != null);
+      if(new Set(rc).size === 1){ so = rawO; sr = rawR; se = rawE; }
+      else {
+        so = rawO.filter(Boolean); sr = rawR.filter(Boolean); se = rawE.filter(Boolean);
+        const counts = [so.length, sr.length, se.length].filter(x => x > 0);
+        if(new Set(counts).size > 1 &&
+           !confirm("⚠ Las columnas tienen DISTINTO número de líneas (O:" + so.length + " R:" + sr.length + " E:" + se.length + ").\n\nUsa 👁 Previsualizar y cuadrar para alinearlas a mano.\n\n¿Generar igualmente?")) return;
       }
     }
+    const provO = so.some(Boolean), provR = sr.some(Boolean), provE = se.some(Boolean);
     const old = song.lyrics || [];
     const n = Math.max(so.length, sr.length, se.length, (provO && provR && provE) ? 0 : old.length);
     const rows = [];
     for(let i = 0; i < n; i++){
-      // Partimos de la línea que ya existe (mantiene miembros, tiempos, voz, adlib…)
-      const base = old[i] || { start:0, end:0, members:[], voice:undefined,
-                               original:"", romanization:"", english:"", adlib:false };
-      rows.push(Object.assign({}, base, {
-        original:     provO ? (so[i] || "") : (base.original || ""),
-        romanization: provR ? (sr[i] || "") : (base.romanization || ""),
-        english:      provE ? (se[i] || "") : (base.english || "")
-      }));
+      const base = old[i] || { start:0, end:0, members:[], voice:undefined, original:"", romanization:"", english:"", adlib:false };
+      const o = provO ? (so[i] || "") : (base.original || "");
+      const r = provR ? (sr[i] || "") : (base.romanization || "");
+      const e = provE ? (se[i] || "") : (base.english || "");
+      if(!o && !r && !e && !(base.members || []).length) continue;   // salta huecos de alineación vacíos
+      rows.push(Object.assign({}, base, { original:o, romanization:r, english:e }));
     }
     const cols = [provO ? "original" : null, provR ? "romanización" : null, provE ? "inglés" : null].filter(Boolean);
     const allThree = provO && provR && provE;
@@ -377,6 +407,7 @@
       : ("Se rellenará SOLO: " + cols.join(", ") + ".\nLas demás columnas y los miembros/tiempos por línea se MANTIENEN.\n\n¿Continuar?");
     if(hasData && !confirm(msg)) return;
     song.lyrics = rows; sel = 0; awaitingEnd = false;
+    pv = null; $("#paPreview").classList.remove("show");
     $("#pastemodal").classList.remove("show");
     renderLines(); updateTapUI();
   };

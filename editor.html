@@ -93,6 +93,24 @@
                         border-radius:10px; padding:10px 12px; font:600 13px "Segoe UI",sans-serif; resize:vertical; }
   #pastemodal .phint{ color:var(--text2); font-size:12px; }
   #pastemodal .pactions{ display:flex; gap:10px; justify-content:flex-end; }
+  /* tabla de alineación */
+  #paPreview{ display:none; max-height:52vh; overflow:auto; border:1px solid var(--border); border-radius:10px; }
+  #paPreview.show{ display:block; }
+  #paPreview table{ border-collapse:collapse; width:100%; font:600 13px "Segoe UI",sans-serif; }
+  #paPreview th{ position:sticky; top:0; background:#15151d; color:var(--text2); font-size:11px; letter-spacing:1px;
+                 text-transform:uppercase; padding:7px 8px; text-align:left; z-index:1; }
+  #paPreview td{ border-top:1px solid var(--border); padding:4px 8px; vertical-align:top; color:var(--text); }
+  #paPreview td.num{ color:var(--text2); font-variant-numeric:tabular-nums; text-align:right; width:34px; }
+  #paPreview tr.mismatch td{ background:rgba(255,90,110,.10); }
+  #paPreview .cell{ display:flex; align-items:flex-start; gap:6px; }
+  #paPreview .cell .tx{ flex:1; min-width:60px; white-space:pre-wrap; }
+  #paPreview .cell .tx.empty{ color:#55586a; font-style:italic; }
+  #paPreview .cell .ops{ display:flex; gap:2px; flex:none; }
+  #paPreview .cell button{ border:1px solid var(--border); background:#1b1b26; color:#cfd; border-radius:5px;
+                           cursor:pointer; font-size:11px; font-weight:800; padding:1px 5px; line-height:1.4; }
+  #paPreview .cell button:hover{ border-color:#666; }
+  #paPreview .cell button.ins{ color:#9fd; }
+  #paPreview .cell button.del{ color:#ff8095; }
 </style>
 </head>
 <body>
@@ -151,9 +169,11 @@
         <div><label>Romanización</label><textarea id="paRom" rows="14" placeholder="romaji/roman de cada línea"></textarea></div>
         <div><label>Inglés</label><textarea id="paEng" rows="14" placeholder="traducción de cada línea"></textarea></div>
       </div>
-      <div class="phint">Pon el <b>mismo número de líneas</b> en las columnas que uses (una por renglón; los renglones vacíos se ignoran). Se emparejan por posición: línea 1 ↔ línea 1, 2 ↔ 2… Si no usas una columna, déjala vacía entera. Luego pones colores y tiempos.</div>
+      <div class="phint">Pega cada versión (una línea por renglón). Luego pulsa <b>Previsualizar y cuadrar</b> para ver la tabla y alinear a mano con ＋ (mete un hueco y empuja) y ✕ (quita) por celda. Las filas descuadradas salen marcadas.</div>
+      <div id="paPreview"></div>
       <div class="pactions">
         <button id="paCancel">Cancelar</button>
+        <button id="paPreviewBtn">👁 Previsualizar y cuadrar</button>
         <button id="paGen" class="primary">Generar líneas</button>
       </div>
     </div>
