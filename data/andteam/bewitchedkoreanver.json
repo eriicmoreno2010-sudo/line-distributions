@@ -208,9 +208,9 @@
           37.88
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 38.63,
@@ -246,9 +246,9 @@
           48.8
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 50.15,
@@ -284,9 +284,9 @@
           58.53
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 58.4,
@@ -372,9 +372,9 @@
           82.89
         ]
       ],
-      "original": "Am I under your spell now?",
-      "romanization": "am i under your spell now?",
-      "english": "Am I under your spell now?"
+      "original": "",
+      "romanization": "Am I under your spell now?",
+      "english": ""
     },
     {
       "start": 84.7,
@@ -386,9 +386,9 @@
           87.76
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 88.64,
@@ -424,9 +424,9 @@
           98.78
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 99.16,
@@ -462,9 +462,9 @@
           106.22
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 107.16,
@@ -500,9 +500,9 @@
           114.26
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 118.72,
@@ -530,9 +530,9 @@
           125.83
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 126.63,
@@ -568,9 +568,9 @@
           137.79
         ]
       ],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah"
+      "original": "",
+      "romanization": "Woah",
+      "english": ""
     },
     {
       "start": 138.7,
@@ -624,7 +624,9 @@
     {
       "start": 37.11,
       "end": 38.72,
-      "members": [],
+      "members": [
+        "FUMA"
+      ],
       "original": "",
       "romanization": "One look, I'm through, One look, I'm through",
       "english": "",
@@ -642,7 +644,9 @@
     {
       "start": 66.97,
       "end": 68.85,
-      "members": [],
+      "members": [
+        "YUMA"
+      ],
       "original": "",
       "romanization": "It's only you, It's only you",
       "english": "",
@@ -660,7 +664,9 @@
     {
       "start": 75.14,
       "end": 76.75,
-      "members": [],
+      "members": [
+        "K"
+      ],
       "original": "",
       "romanization": "Bewitched by you, Bewitched by you",
       "english": "",
@@ -670,15 +676,17 @@
       "start": 83.14,
       "end": 84.75,
       "members": [],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah",
+      "original": "",
+      "romanization": "Woah",
+      "english": "",
       "adlib": false
     },
     {
       "start": 87.16,
       "end": 88.78,
-      "members": [],
+      "members": [
+        "MAKI"
+      ],
       "original": "만월을 삼킨 듯한 네 eyes",
       "romanization": "manworeul samkin deushan ne eyes",
       "english": "Your eyes, like a full moon",
@@ -688,15 +696,17 @@
       "start": 91.2,
       "end": 92.79,
       "members": [],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah",
+      "original": "",
+      "romanization": "Woah",
+      "english": "",
       "adlib": false
     },
     {
       "start": 102.03,
       "end": 103.24,
-      "members": [],
+      "members": [
+        "MAKI"
+      ],
       "original": "넋이 나간 채 완전히 fall out",
       "romanization": "neoksi nagan chae wanjeonhi fall out",
       "english": "Like I'm possessed, I fall out",
@@ -706,15 +716,17 @@
       "start": 106.08,
       "end": 107.25,
       "members": [],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah",
+      "original": "",
+      "romanization": "Woah",
+      "english": "",
       "adlib": false
     },
     {
       "start": 110.13,
       "end": 111.25,
-      "members": [],
+      "members": [
+        "EJ"
+      ],
       "original": "더는 떼어낼 수 없어 난, Bewitched, I’m bewitched",
       "romanization": "deoneun tteeonael su eopseo nan, bewitched, i’m bewitched",
       "english": "Once our eyes meet, there’s no going back, Bewitched, I’m bewitched",
@@ -724,15 +736,17 @@
       "start": 117.2,
       "end": 118.85,
       "members": [],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah",
+      "original": "",
+      "romanization": "Woah",
+      "english": "",
       "adlib": false
     },
     {
       "start": 121.15,
       "end": 122.76,
-      "members": [],
+      "members": [
+        "YUMA"
+      ],
       "original": "붉은 달이 스며드는 night",
       "romanization": "bulgeun dari seumyeodeuneun night",
       "english": "A night dyed by the red moon",
@@ -742,15 +756,17 @@
       "start": 125.13,
       "end": 126.69,
       "members": [],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah",
+      "original": "",
+      "romanization": "Woah",
+      "english": "",
       "adlib": false
     },
     {
       "start": 133.13,
       "end": 134.83,
-      "members": [],
+      "members": [
+        "YUMA"
+      ],
       "original": "이제야 네 맘을 알 것 같아",
       "romanization": "ijeya ne mameul al geot gata",
       "english": "Now that I’ve realized your love",
@@ -760,19 +776,22 @@
       "start": 137.14,
       "end": 138.79,
       "members": [],
-      "original": "Woah",
-      "romanization": "woah",
-      "english": "Woah",
+      "original": "",
+      "romanization": "Woah",
+      "english": "",
       "adlib": false
     },
     {
       "start": 141.17,
       "end": 142.76,
-      "members": [],
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "허락해 줘 영원히 날, Bewitched, I’m bewitched",
       "romanization": "heorakhae jwo yeongwonhi nal, bewitched, i’m bewitched",
       "english": "I want to carve it deep inside of me, Bewitched, I’m bewitched",
       "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/team_bewitchedkoreanver.mp3"
 }
