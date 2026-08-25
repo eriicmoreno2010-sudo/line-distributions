@@ -112,10 +112,13 @@
       times.classList.add("voice");
       const segs = document.createElement("span"); segs.className = "segs";
       segs.textContent = voiceLabel(l); segs.title = voiceTitle(l);
+      const who = document.createElement("button"); who.textContent = "✎ quién";
+      who.title = "asignar qué miembro canta cada trozo (para líneas que empieza uno y termina otro)";
+      who.onclick = () => openSegMenu(i, who);
       const clr = document.createElement("button"); clr.textContent = "limpiar";
       clr.title = "borrar los trozos de voz de esta línea";
       clr.onclick = () => { l.voice = []; if(sel===i) awaitingEnd = false; updateVoiceCell(i); updateTapUI(); };
-      times.append(segs, clr);
+      times.append(segs, who, clr);
     } else {
       const f0 = mode.fields[0], f1 = mode.fields[1];
       const si = document.createElement("input"); si.className="start"; si.value = (+l[f0]||0).toFixed(2);
@@ -207,25 +210,74 @@
   }
   // Voice segments: label + tooltip + cell refresh.
   function voiceSegs(l){ return Array.isArray(l.voice) ? l.voice : []; }
+  function segMembers(seg){ return (seg.length > 2 && seg[2] != null) ? (Array.isArray(seg[2]) ? seg[2] : [seg[2]]) : []; }
   function voiceLabel(l){
     const v = voiceSegs(l);
-    const done = v.filter(s => s.length===2 && isFinite(s[1]) && s[1] > s[0]);
+    const done = v.filter(s => s.length>=2 && isFinite(s[1]) && s[1] > s[0]);
     const total = done.reduce((a,s)=> a + (s[1]-s[0]), 0);
     const open = v.some(s => s.length===1);
     let txt = done.length ? (done.length + " seg · " + total.toFixed(2) + "s") : "sin voz";
+    if(done.some(s => segMembers(s).length)) txt += " · ✎";   // hay trozos con miembro propio
     if(open) txt += " · ●REC";
     return txt;
   }
   function voiceTitle(l){
     const v = voiceSegs(l);
     if(!v.length) return "aún sin trozos de voz";
-    return v.map(s => s.length===2 ? s[0].toFixed(2)+"–"+s[1].toFixed(2) : s[0].toFixed(2)+"–…").join("  ");
+    return v.map(s => { const t = s.length>=2 ? s[0].toFixed(2)+"–"+s[1].toFixed(2) : s[0].toFixed(2)+"–…";
+      const m = segMembers(s); return m.length ? t + " " + m.map(abbr).join("+") : t; }).join("   ");
   }
   function updateVoiceCell(i){
     const r = listEl.children[i]; if(!r) return;
     const s = r.querySelector(".segs");
     if(s){ s.textContent = voiceLabel(song.lyrics[i]); s.title = voiceTitle(song.lyrics[i]); }
   }
+
+  // Panel: asignar QUÉ miembro canta cada trozo de voz (para líneas partidas).
+  function openSegMenu(i, anchor){
+    document.querySelectorAll(".segmenu").forEach(e => e.remove());
+    const l = song.lyrics[i];
+    const segs = voiceSegs(l).filter(s => s.length >= 2 && isFinite(s[1]) && s[1] > s[0]);
+    if(!segs.length){ alert("Esta línea no tiene trozos de voz todavía. En modo VOZ, marca los trozos con S primero."); return; }
+    const menu = document.createElement("div"); menu.className = "segmenu";
+    const title = document.createElement("div"); title.className = "sm-title";
+    title.textContent = "¿Quién canta cada trozo?  (por defecto = " + (joinNamesAbbr(l) || "línea") + ")";
+    menu.appendChild(title);
+    segs.forEach(seg => {
+      const row = document.createElement("div"); row.className = "sm-row";
+      const tlab = document.createElement("span"); tlab.className = "sm-time";
+      tlab.textContent = seg[0].toFixed(1) + "–" + seg[1].toFixed(1) + "s";
+      const chips = document.createElement("div"); chips.className = "sm-chips";
+      const def = document.createElement("button"); def.className = "sm-chip def"; def.textContent = "línea";
+      const refresh = () => {
+        const cur = segMembers(seg);
+        def.classList.toggle("on", cur.length === 0);
+        chips.querySelectorAll("button[data-m]").forEach(b => b.classList.toggle("on", cur.includes(b.dataset.m)));
+      };
+      def.onclick = () => { if(seg.length > 2) seg.length = 2; refresh(); updateVoiceCell(i); };
+      chips.appendChild(def);
+      (song.members || []).forEach(m => {
+        const b = document.createElement("button"); b.className = "sm-chip"; b.dataset.m = m.name;
+        b.textContent = abbr(m.name); b.style.setProperty("--c", m.color); b.title = m.name;
+        b.onclick = () => {
+          let arr = segMembers(seg);
+          arr = arr.includes(m.name) ? arr.filter(x => x !== m.name) : arr.concat(m.name);
+          if(arr.length) seg[2] = arr; else if(seg.length > 2) seg.length = 2;
+          refresh(); updateVoiceCell(i);
+        };
+        chips.appendChild(b);
+      });
+      row.append(tlab, chips); menu.appendChild(row);
+      refresh();
+    });
+    const r = anchor.getBoundingClientRect();
+    menu.style.left = Math.max(8, Math.min(r.left, window.innerWidth - 380)) + "px";
+    menu.style.top = Math.min(r.bottom + 6, window.innerHeight - 60) + "px";
+    document.body.appendChild(menu);
+    setTimeout(() => document.addEventListener("click", function h(ev){
+      if(!menu.contains(ev.target) && ev.target !== anchor){ menu.remove(); document.removeEventListener("click", h); } }), 0);
+  }
+  function joinNamesAbbr(l){ return (l.members || []).map(abbr).join("+"); }
 
   // S — LETRA: 1st=inicio, 2nd=fin (+avanza solo).
   //     VOZ: 1st=empieza trozo, 2nd=cierra trozo (repetible); avanzas con Enter.

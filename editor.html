@@ -80,6 +80,18 @@
   .addmenu .ami.new{ color:#9fd; border-top:1px solid #2a2a3a; margin-top:2px; }
   .addmenu .cdot{ width:13px; height:13px; border-radius:50%; flex:none; box-shadow:0 0 0 1px rgba(255,255,255,.15); }
   .addmenu .amempty{ color:#777; font-size:12px; padding:6px 9px; }
+  /* panel: quién canta cada trozo de voz */
+  .segmenu{ position:fixed; z-index:200; background:#15151d; border:1px solid #33334a; border-radius:12px;
+            padding:10px; display:flex; flex-direction:column; gap:8px; max-height:70vh; overflow:auto;
+            box-shadow:0 18px 46px -12px #000; min-width:340px; max-width:min(560px,94vw); }
+  .segmenu .sm-title{ font-size:12px; font-weight:800; color:var(--text2); }
+  .segmenu .sm-row{ display:flex; align-items:center; gap:10px; }
+  .segmenu .sm-time{ font-size:12px; font-weight:800; color:#9aa; width:92px; flex:none; font-variant-numeric:tabular-nums; }
+  .segmenu .sm-chips{ display:flex; gap:5px; flex-wrap:wrap; }
+  .segmenu .sm-chip{ border:1px solid var(--border); background:#1b1b26; color:#cfd; cursor:pointer;
+                     border-radius:6px; padding:4px 8px; font-size:11px; font-weight:800; }
+  .segmenu .sm-chip.on{ background:color-mix(in srgb, var(--c,#7c5cff) 32%, #15151d); border-color:var(--c,#7c5cff); color:#fff; }
+  .segmenu .sm-chip.def.on{ background:#333; border-color:#666; color:#fff; }
 
   /* modal "pegar letra" */
   #pastemodal{ position:fixed; inset:0; background:rgba(8,8,12,.85); display:none; align-items:center; justify-content:center; z-index:100; }
