@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "Bewitched (Korean ver.)",
   "video": "videos/team_bewitchedkoreanver.mp4",
-  "duration": 0,
+  "duration": 150.545011,
   "members": [
     {
       "name": "K",
@@ -70,15 +70,709 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 0.15,
+      "end": 6.19,
       "members": [
         "K"
       ],
+      "original": "차디찬 눈빛, 얼어 붙을 것 같아 넌 정말 bad seed",
+      "romanization": "chadichan nunbit, eoreo buteul geot gata neon jeongmal bad seed",
+      "english": "Cold, distant eyes, Just for me, yeah you’re a bad seed",
+      "adlib": false,
+      "voice": [
+        [
+          0.25,
+          2.25
+        ],
+        [
+          2.58,
+          4.34
+        ],
+        [
+          4.46,
+          6.17
+        ]
+      ]
+    },
+    {
+      "start": 6.34,
+      "end": 8.28,
+      "members": [
+        "K"
+      ],
+      "voice": [
+        [
+          6.55,
+          8.43
+        ]
+      ],
+      "original": "날이 서린 그 말투",
+      "romanization": "nari seorin geu maltu",
+      "english": "Can't help but be curious"
+    },
+    {
+      "start": 8.41,
+      "end": 15.39,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          8.35,
+          10.26
+        ],
+        [
+          10.4,
+          12.28
+        ],
+        [
+          12.41,
+          14.37
+        ],
+        [
+          14.64,
+          15.43
+        ]
+      ],
+      "original": "잔혹한 fantasy, 너라는 black magic, 눈을 뗄 수가 없지 Ooh",
+      "romanization": "janhokan fantasy, neoraneun black magic, nuneul tte suga eopji ooh",
+      "english": "A wicked fantasy, Just like black magic, Can’t take my eyes off you Ooh"
+    },
+    {
+      "start": 18.76,
+      "end": 21.81,
+      "members": [
+        "YUMA"
+      ],
+      "voice": [
+        [
+          18.9,
+          21.94
+        ]
+      ],
+      "original": "지독히 엉키고 얽매인 사이, 끝도 없이 망가져만 가",
+      "romanization": "jidokhi eongkigo eolmaein sai, kkeutdo eopsi mangajyeoman ga",
+      "english": "Can't help it any more, No one can stop me"
+    },
+    {
+      "start": 22.74,
+      "end": 25.85,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          22.84,
+          26.07
+        ]
+      ],
+      "original": "마법에 걸린 것만 같아",
+      "romanization": "mabeope geollin geotman gata",
+      "english": "This spell can’t be broken"
+    },
+    {
+      "start": 26.5,
+      "end": 32.67,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          26.81,
+          27.25
+        ],
+        [
+          26.84,
+          29.77
+        ],
+        [
+          29.91,
+          31.26
+        ],
+        [
+          31.42,
+          32.72
+        ]
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "Bewitched by you, Bewitched by you",
+      "english": ""
+    },
+    {
+      "start": 34.69,
+      "end": 37.91,
+      "members": [],
+      "voice": [
+        [
+          34.86,
+          37.88
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 38.63,
+      "end": 41.73,
+      "members": [
+        "JO"
+      ],
+      "voice": [
+        [
+          38.82,
+          41.79
+        ]
+      ],
+      "original": "만월을 삼킨 듯한 네 eyes",
+      "romanization": "manworeul samkin deushan ne eyes",
+      "english": "Your eyes, like a full moon"
+    },
+    {
+      "start": 42.8,
+      "end": 48.78,
+      "members": [],
+      "voice": [
+        [
+          42.87,
+          45.69
+        ],
+        [
+          46.09,
+          47.26
+        ],
+        [
+          47.44,
+          48.8
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 50.15,
+      "end": 54.26,
+      "members": [
+        "JO"
+      ],
+      "voice": [
+        [
+          50.48,
+          52.48
+        ],
+        [
+          52.63,
+          54.44
+        ]
+      ],
+      "original": "넋이 나간 채 완전히 fall out",
+      "romanization": "neoksi nagan chae wanjeonhi fall out",
+      "english": "Like I'm possessed, I fall out"
+    },
+    {
+      "start": 54.41,
+      "end": 58.37,
+      "members": [],
+      "voice": [
+        [
+          54.34,
+          56.39
+        ],
+        [
+          56.59,
+          58.53
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 58.4,
+      "end": 64.48,
+      "members": [
+        "HARUA"
+      ],
+      "voice": [
+        [
+          58.32,
+          64.52
+        ]
+      ],
+      "original": "더는 떼어낼 수 없어 난, Bewitched, I’m bewitched",
+      "romanization": "deoneun tteeonael su eopseo nan, bewitched, i’m bewitched",
+      "english": "Once our eyes meet, there’s no going back, Bewitched, I’m bewitched"
+    },
+    {
+      "start": 64.51,
+      "end": 66.58,
+      "members": [
+        "MAKI"
+      ],
+      "voice": [
+        [
+          64.64,
+          66.63
+        ]
+      ],
+      "original": "I’m out of my mind, 아득한 사막 그 위",
+      "romanization": "i’m out of my mind, adeukhan samak geu wi",
+      "english": "I’m out of my mind, In a stormy desert"
+    },
+    {
+      "start": 68.74,
+      "end": 71.77,
+      "members": [
+        "MAKI"
+      ],
+      "voice": [
+        [
+          68.89,
+          71.87
+        ]
+      ],
+      "original": "덮쳐오는 whiteout, 마저 이끌려 갈래",
+      "romanization": "deopchyeooneun whiteout, majeo ikkeullyeo gallae",
+      "english": "A blinding whiteout, Led by you once again"
+    },
+    {
+      "start": 72.82,
+      "end": 75.69,
+      "members": [
+        "K"
+      ],
+      "voice": [
+        [
+          72.84,
+          75.81
+        ]
+      ],
+      "original": "끝 없는 환생이란 반복 속에, 새겨져 버린 이 karma ooh",
+      "romanization": "kkeut eomneun hwangsaengiran banbok soge, saegyeojyeo beorin i karma ooh",
+      "english": "Like that, we keep repeating, reincarnating, Running into this karma Ooh"
+    },
+    {
+      "start": 76.65,
+      "end": 82.88,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          76.75,
+          79.72
+        ],
+        [
+          80.1,
+          81.24
+        ],
+        [
+          81.39,
+          82.89
+        ]
+      ],
+      "original": "Am I under your spell now?",
+      "romanization": "am i under your spell now?",
+      "english": "Am I under your spell now?"
+    },
+    {
+      "start": 84.7,
+      "end": 87.72,
+      "members": [],
+      "voice": [
+        [
+          84.79,
+          87.76
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 88.64,
+      "end": 91.78,
+      "members": [
+        "EJ"
+      ],
+      "voice": [
+        [
+          88.75,
+          91.75
+        ]
+      ],
+      "original": "만월을 삼킨 듯한 네 eyes",
+      "romanization": "manworeul samkin deushan ne eyes",
+      "english": "Your eyes, like a full moon"
+    },
+    {
+      "start": 92.71,
+      "end": 98.88,
+      "members": [],
+      "voice": [
+        [
+          92.85,
+          95.73
+        ],
+        [
+          96.17,
+          97.24
+        ],
+        [
+          97.39,
+          98.78
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 99.16,
+      "end": 102.17,
+      "members": [
+        "EJ"
+      ],
+      "voice": [
+        [
+          99.4,
+          100.81
+        ],
+        [
+          100.93,
+          102.22
+        ]
+      ],
+      "original": "넋이 나간 채 완전히 fall out",
+      "romanization": "neoksi nagan chae wanjeonhi fall out",
+      "english": "Like I'm possessed, I fall out"
+    },
+    {
+      "start": 103.19,
+      "end": 106.18,
+      "members": [],
+      "voice": [
+        [
+          103.37,
+          104.71
+        ],
+        [
+          104.88,
+          106.22
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 107.16,
+      "end": 110.22,
+      "members": [
+        "FUMA"
+      ],
+      "voice": [
+        [
+          107.39,
+          108.77
+        ],
+        [
+          108.89,
+          110.19
+        ]
+      ],
+      "original": "더는 떼어낼 수 없어 난, Bewitched, I’m bewitched",
+      "romanization": "deoneun tteeonael su eopseo nan, bewitched, i’m bewitched",
+      "english": "Once our eyes meet, there’s no going back, Bewitched, I’m bewitched"
+    },
+    {
+      "start": 111.17,
+      "end": 114.29,
+      "members": [],
+      "voice": [
+        [
+          111.3,
+          112.74
+        ],
+        [
+          112.87,
+          114.26
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 118.72,
+      "end": 121.71,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          118.79,
+          121.78
+        ]
+      ],
+      "original": "세상은 널 향해 기울어가지",
+      "romanization": "sesangeun neol hyanghae giureogaji",
+      "english": "I’ve already lost my sense of balance"
+    },
+    {
+      "start": 122.66,
+      "end": 125.72,
+      "members": [],
+      "voice": [
+        [
+          122.8,
+          125.83
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 126.63,
+      "end": 132.86,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          126.79,
+          129.76
+        ],
+        [
+          130.16,
+          131.23
+        ],
+        [
+          131.39,
+          132.74
+        ]
+      ],
+      "original": "이제야 네 맘을 알 것 같아",
+      "romanization": "ijeya ne mameul al geot gata",
+      "english": "Now that I’ve realized your love"
+    },
+    {
+      "start": 134.74,
+      "end": 137.71,
+      "members": [],
+      "voice": [
+        [
+          134.86,
+          137.79
+        ]
+      ],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah"
+    },
+    {
+      "start": 138.7,
+      "end": 141.81,
+      "members": [
+        "HARUA"
+      ],
+      "voice": [
+        [
+          138.81,
+          141.92
+        ]
+      ],
+      "original": "안댈 풀어 헤친 채 hold you, Bewitched, I’m bewitched",
+      "romanization": "andaeul pureo hechin chae hold you, bewitched, i’m bewitched",
+      "english": "I tear off the blindfold and hold you, Bewitched, I’m bewitched"
+    },
+    {
+      "start": 142.62,
+      "end": 149.05,
+      "members": [
+        "JO"
+      ],
+      "voice": [
+        [
+          142.82,
+          145.82
+        ],
+        [
+          146.17,
+          147.22
+        ],
+        [
+          147.36,
+          148.95
+        ]
+      ],
+      "original": "",
+      "romanization": "I'm so confused, I'm so confused",
+      "english": ""
+    },
+    {
+      "start": 33.16,
+      "end": 34.84,
+      "members": [],
+      "original": "(Bewitched)",
+      "romanization": "(bewitched)",
+      "english": "(Bewitched)",
+      "adlib": true
+    },
+    {
+      "start": 37.11,
+      "end": 38.72,
+      "members": [],
+      "original": "",
+      "romanization": "One look, I'm through, One look, I'm through",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 41.11,
+      "end": 42.71,
+      "members": [],
+      "original": "(Bewitched)",
+      "romanization": "(bewitched)",
+      "english": "(Bewitched)",
+      "adlib": true
+    },
+    {
+      "start": 66.97,
+      "end": 68.85,
+      "members": [],
+      "original": "",
+      "romanization": "It's only you, It's only you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 71.15,
+      "end": 72.78,
+      "members": [],
+      "original": "(Bewitched)",
+      "romanization": "(bewitched)",
+      "english": "(Bewitched)",
+      "adlib": true
+    },
+    {
+      "start": 75.14,
+      "end": 76.75,
+      "members": [],
+      "original": "",
+      "romanization": "Bewitched by you, Bewitched by you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 83.14,
+      "end": 84.75,
+      "members": [],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah",
+      "adlib": false
+    },
+    {
+      "start": 87.16,
+      "end": 88.78,
+      "members": [],
+      "original": "만월을 삼킨 듯한 네 eyes",
+      "romanization": "manworeul samkin deushan ne eyes",
+      "english": "Your eyes, like a full moon",
+      "adlib": false
+    },
+    {
+      "start": 91.2,
+      "end": 92.79,
+      "members": [],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah",
+      "adlib": false
+    },
+    {
+      "start": 102.03,
+      "end": 103.24,
+      "members": [],
+      "original": "넋이 나간 채 완전히 fall out",
+      "romanization": "neoksi nagan chae wanjeonhi fall out",
+      "english": "Like I'm possessed, I fall out",
+      "adlib": false
+    },
+    {
+      "start": 106.08,
+      "end": 107.25,
+      "members": [],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah",
+      "adlib": false
+    },
+    {
+      "start": 110.13,
+      "end": 111.25,
+      "members": [],
+      "original": "더는 떼어낼 수 없어 난, Bewitched, I’m bewitched",
+      "romanization": "deoneun tteeonael su eopseo nan, bewitched, i’m bewitched",
+      "english": "Once our eyes meet, there’s no going back, Bewitched, I’m bewitched",
+      "adlib": false
+    },
+    {
+      "start": 117.2,
+      "end": 118.85,
+      "members": [],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah",
+      "adlib": false
+    },
+    {
+      "start": 121.15,
+      "end": 122.76,
+      "members": [],
+      "original": "붉은 달이 스며드는 night",
+      "romanization": "bulgeun dari seumyeodeuneun night",
+      "english": "A night dyed by the red moon",
+      "adlib": false
+    },
+    {
+      "start": 125.13,
+      "end": 126.69,
+      "members": [],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah",
+      "adlib": false
+    },
+    {
+      "start": 133.13,
+      "end": 134.83,
+      "members": [],
+      "original": "이제야 네 맘을 알 것 같아",
+      "romanization": "ijeya ne mameul al geot gata",
+      "english": "Now that I’ve realized your love",
+      "adlib": false
+    },
+    {
+      "start": 137.14,
+      "end": 138.79,
+      "members": [],
+      "original": "Woah",
+      "romanization": "woah",
+      "english": "Woah",
+      "adlib": false
+    },
+    {
+      "start": 141.17,
+      "end": 142.76,
+      "members": [],
+      "original": "허락해 줘 영원히 날, Bewitched, I’m bewitched",
+      "romanization": "heorakhae jwo yeongwonhi nal, bewitched, i’m bewitched",
+      "english": "I want to carve it deep inside of me, Bewitched, I’m bewitched",
+      "adlib": false
     }
   ]
 }
