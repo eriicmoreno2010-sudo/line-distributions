@@ -332,6 +332,35 @@
     $("#pastemodal").classList.add("show"); $("#paOrig").focus();
   }
   $("#pasteLyrics").onclick = openPaste;
+
+  // --- Importar tiempos/reparto de otra canción (misma canción en otro idioma) ---
+  $("#importTimes").onclick = async () => {
+    const selEl = $("#importSel"); selEl.innerHTML = "";
+    let songs = [];
+    try{ songs = await window.desktop.listSongs(); }catch(e){}
+    const others = (songs || []).filter(s => s.path !== songPath);
+    if(!others.length){ alert("No hay otras canciones de donde importar."); return; }
+    // primero las del mismo grupo
+    others.sort((a, b) => (a.group === song.group ? -1 : 1) - (b.group === song.group ? -1 : 1)
+                          || (a.group + a.song).localeCompare(b.group + b.song));
+    others.forEach(s => { const o = document.createElement("option"); o.value = s.path;
+      o.textContent = s.group + " — " + s.song + (s.group === song.group ? "  ✓ mismo grupo" : ""); selEl.appendChild(o); });
+    $("#importmodal").classList.add("show");
+  };
+  $("#importCancel").onclick = () => $("#importmodal").classList.remove("show");
+  $("#importmodal").addEventListener("click", e => { if(e.target.id === "importmodal") $("#importmodal").classList.remove("show"); });
+  $("#importGo").onclick = async () => {
+    const src = $("#importSel").value; if(!src) return;
+    let res = null; try{ res = await window.desktop.loadSong(src); }catch(e){}
+    if(!res || !res.ok){ alert("No se pudo cargar esa canción."); return; }
+    const srcLyrics = (res.data && res.data.lyrics) || [];
+    if(!srcLyrics.length){ alert("La canción de origen no tiene líneas."); return; }
+    if(!confirm("Esto REEMPLAZA las líneas actuales por las de la otra canción — copia tiempos, segmentos de voz, miembros y texto (" + srcLyrics.length + " líneas).\n\nDespués usa 📋 Pegar letra para cambiar solo el texto al idioma nuevo (los tiempos se mantienen).\n\n¿Continuar?")) return;
+    song.lyrics = JSON.parse(JSON.stringify(srcLyrics));   // copia profunda
+    sel = 0; awaitingEnd = false;
+    $("#importmodal").classList.remove("show");
+    renderLines(); updateTapUI();
+  };
   // Reaplica la regla: AD-LIB solo si la línea va entre paréntesis ( )
   $("#markAdlibs").onclick = () => {
     let n = 0;

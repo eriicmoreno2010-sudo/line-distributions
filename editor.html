@@ -93,6 +93,14 @@
                         border-radius:10px; padding:10px 12px; font:600 13px "Segoe UI",sans-serif; resize:vertical; }
   #pastemodal .phint{ color:var(--text2); font-size:12px; }
   #pastemodal .pactions{ display:flex; gap:10px; justify-content:flex-end; }
+  /* modal importar tiempos (mismo estilo) */
+  #importmodal{ position:fixed; inset:0; background:rgba(8,8,12,.85); display:none; align-items:center; justify-content:center; z-index:100; }
+  #importmodal.show{ display:flex; }
+  #importmodal .pbox{ background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:22px 24px;
+                      width:min(560px,92vw); display:flex; flex-direction:column; gap:14px; }
+  #importmodal .ptitle{ font-size:18px; font-weight:900; }
+  #importmodal .phint{ color:var(--text2); font-size:13px; line-height:1.5; }
+  #importmodal .pactions{ display:flex; gap:10px; justify-content:flex-end; }
   /* tabla de alineación */
   #paPreview{ display:none; max-height:52vh; overflow:auto; border:1px solid var(--border); border-radius:10px; }
   #paPreview.show{ display:block; }
@@ -147,6 +155,7 @@
       </div>
       <div class="btnrow">
         <button id="pasteLyrics">📋 Pegar letra (original/roman/inglés)</button>
+        <button id="importTimes" title="Copia tiempos, segmentos de voz y miembros de otra canción (misma canción en otro idioma). Luego cambias solo el texto con Pegar letra.">⏱️ Importar tiempos</button>
         <button id="markAdlibs" title="Marca como AD-LIB solo las líneas que van entre paréntesis ( ), y quita el ad-lib del resto.">( )→ ad-libs</button>
         <button id="pickvideo">📹 Elegir vídeo</button>
       </div>
@@ -161,6 +170,18 @@
     </div>
   </div>
   <div id="list"></div>
+
+  <div id="importmodal">
+    <div class="pbox">
+      <div class="ptitle">⏱️ Importar tiempos y reparto de otra canción</div>
+      <div class="phint">Copia TODOS los tiempos, segmentos de voz y miembros por línea (ideal para la misma canción en otro idioma). El texto también se copia; luego usa <b>📋 Pegar letra</b> para cambiarlo al idioma nuevo (mantiene los tiempos). Elige la canción de origen (mismo grupo):</div>
+      <select id="importSel" style="width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:11px 13px;font-size:15px;font-weight:700"></select>
+      <div class="pactions">
+        <button id="importCancel">Cancelar</button>
+        <button id="importGo" class="primary">Importar tiempos</button>
+      </div>
+    </div>
+  </div>
 
   <div id="pastemodal">
     <div class="pbox">
