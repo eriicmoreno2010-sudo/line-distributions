@@ -11,6 +11,7 @@ contextBridge.exposeInMainWorld("desktop", {
   listSongs: () => ipcRenderer.invoke("list-songs"),
   createSong: (args) => ipcRenderer.invoke("create-song", args || {}),
   pickVideo: (args) => ipcRenderer.invoke("pick-video", args || {}),
+  pickAudio: (args) => ipcRenderer.invoke("pick-audio", args || {}),
   importPhoto: (args) => ipcRenderer.invoke("import-photo", args || {}),
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
   saveSong: (relPath, data) => ipcRenderer.invoke("save-song", { path: relPath, data }),

@@ -355,11 +355,31 @@
     if(!res || !res.ok){ alert("No se pudo cargar esa canción."); return; }
     const srcLyrics = (res.data && res.data.lyrics) || [];
     if(!srcLyrics.length){ alert("La canción de origen no tiene líneas."); return; }
-    if(!confirm("Esto REEMPLAZA las líneas actuales por las de la otra canción — copia tiempos, segmentos de voz, miembros y texto (" + srcLyrics.length + " líneas).\n\nDespués usa 📋 Pegar letra para cambiar solo el texto al idioma nuevo (los tiempos se mantienen).\n\n¿Continuar?")) return;
-    song.lyrics = JSON.parse(JSON.stringify(srcLyrics));   // copia profunda
-    sel = 0; awaitingEnd = false;
+    const cur = song.lyrics || [];
+    const curN = cur.length, srcN = srcLyrics.length;
+
+    // Importa SOLO tiempos + segmentos de voz + miembros + adlib, línea a línea,
+    // MANTENIENDO el texto actual (pon la letra primero, luego importa los tiempos).
+    if(curN !== srcN){
+      if(!confirm("⚠ El nº de líneas NO coincide:\n· Esta canción: " + curN + "\n· Origen: " + srcN + "\n\n" +
+        "Se importarán los tiempos de las primeras " + Math.min(curN, srcN) + " líneas que coincidan; el resto lo retocas tú.\n\n¿Continuar?")) return;
+    } else {
+      if(curN && !confirm("Se importarán los tiempos, segmentos de voz y miembros de \"" + (res.data.song || "") + "\" a estas " + curN + " líneas (tu TEXTO se mantiene).\n\n¿Continuar?")) return;
+    }
+    const n = Math.min(curN, srcN);
+    for(let i = 0; i < n; i++){
+      const s = srcLyrics[i];
+      cur[i].start = s.start; cur[i].end = s.end;
+      cur[i].voice = s.voice ? JSON.parse(JSON.stringify(s.voice)) : undefined;
+      if("voiceStart" in s) cur[i].voiceStart = s.voiceStart;
+      if("voiceEnd" in s) cur[i].voiceEnd = s.voiceEnd;
+      cur[i].members = Array.isArray(s.members) ? s.members.slice() : [];
+      cur[i].adlib = s.adlib;
+      // el texto (original/romanization/english) NO se toca
+    }
     $("#importmodal").classList.remove("show");
     renderLines(); updateTapUI();
+    if(curN !== srcN) alert("Importados los tiempos de " + n + " líneas. Revisa el resto (había " + (curN>srcN?("sobran "+(curN-srcN)):("faltan "+(srcN-curN))) + " líneas de diferencia).");
   };
   // Reaplica la regla: AD-LIB solo si la línea va entre paréntesis ( )
   $("#markAdlibs").onclick = () => {
@@ -465,6 +485,26 @@
       video.src = song.video; video.load();            // se ve al instante en el editor
       btn.textContent = res.pushed ? "✓ Vídeo puesto" : "✓ Vídeo (local, no subido)";
       save();                                           // guarda el JSON con el nuevo vídeo
+    } else {
+      btn.textContent = "✕ Error";
+      if(res && res.error) console.warn(res.error);
+    }
+    setTimeout(() => btn.textContent = t, 2800);
+  };
+
+  // Elegir el AUDIO limpio (mp3): se copia, se pone en song.audio y se guarda.
+  $("#pickaudio").onclick = async () => {
+    const btn = $("#pickaudio"); const t = btn.textContent;
+    btn.disabled = true; btn.textContent = "⏳ Copiando y subiendo audio…";
+    let res = null;
+    try{ res = await window.desktop.pickAudio({ group: song.group, song: song.song }); }catch(e){}
+    btn.disabled = false;
+    if(res && res.canceled){ btn.textContent = t; return; }
+    if(res && res.ok){
+      song.audio = res.audio;
+      video.muted = true;                                // el sonido saldrá del mp3
+      btn.textContent = res.pushed ? "✓ Audio puesto" : "✓ Audio (local, no subido)";
+      save();
     } else {
       btn.textContent = "✕ Error";
       if(res && res.error) console.warn(res.error);

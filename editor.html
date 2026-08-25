@@ -158,6 +158,7 @@
         <button id="importTimes" title="Copia tiempos, segmentos de voz y miembros de otra canción (misma canción en otro idioma). Luego cambias solo el texto con Pegar letra.">⏱️ Importar tiempos</button>
         <button id="markAdlibs" title="Marca como AD-LIB solo las líneas que van entre paréntesis ( ), y quita el ad-lib del resto.">( )→ ad-libs</button>
         <button id="pickvideo">📹 Elegir vídeo</button>
+        <button id="pickaudio" title="Elegir un mp3 de audio limpio: silencia el vídeo y suena el mp3 sincronizado.">🎵 Elegir audio</button>
       </div>
       <div class="help">
         <b>LETRA</b> (cuándo se ve el texto): <b>S</b> = inicio, <b>S</b> = fin y avanza sola.<br>
@@ -174,7 +175,7 @@
   <div id="importmodal">
     <div class="pbox">
       <div class="ptitle">⏱️ Importar tiempos y reparto de otra canción</div>
-      <div class="phint">Copia TODOS los tiempos, segmentos de voz y miembros por línea (ideal para la misma canción en otro idioma). El texto también se copia; luego usa <b>📋 Pegar letra</b> para cambiarlo al idioma nuevo (mantiene los tiempos). Elige la canción de origen (mismo grupo):</div>
+      <div class="phint"><b>Pon primero la letra</b> (📋 Pegar letra) y luego importa aquí: copia <b>solo los tiempos, segmentos de voz y miembros</b> línea a línea (tu texto se mantiene). Ideal para la misma canción en otro idioma. Debe tener el <b>mismo nº de casillas</b>; si no, te avisa y retocas. Elige la canción de origen (mismo grupo):</div>
       <select id="importSel" style="width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:11px 13px;font-size:15px;font-weight:700"></select>
       <div class="pactions">
         <button id="importCancel">Cancelar</button>

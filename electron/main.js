@@ -261,6 +261,37 @@ ipcMain.handle("pick-video", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// ---- Elegir el AUDIO (mp3) desde el PC: copia a audio/ y lo sube ----
+ipcMain.handle("pick-audio", async (_e, args) => {
+  args = args || {};
+  try{
+    const { canceled, filePaths } = await dialog.showOpenDialog({
+      title: "Elegir audio (mp3)",
+      properties: ["openFile"],
+      filters: [{ name:"Audio", extensions:["mp3","m4a","aac","wav","ogg","opus","flac"] }]
+    });
+    if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
+    const srcFile = filePaths[0];
+    const base = (slug(args.group || "") + "_" + slug(args.song || "audio")).replace(/^_|_$/g, "") || "audio";
+    const ext = (path.extname(srcFile) || ".mp3").toLowerCase();
+    fs.mkdirSync(path.join(ROOT, "audio"), { recursive:true });
+    const destRel = "audio/" + base + ext;
+    fs.copyFileSync(srcFile, path.join(ROOT, destRel));
+
+    const res = { ok:true, audio: destRel, pushed:false };
+    try{
+      await git(["add", "--", destRel]);
+      const staged = await git(["diff", "--cached", "--quiet", "--", destRel]);
+      if(staged.code !== 0) await git(["commit", "-m", "Add audio: " + (args.song || destRel)]);
+      let p = await git(["push"]);
+      if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+      res.pushed = (p.code === 0);
+      if(!res.pushed) res.gitError = p.err || p.out;
+    }catch(e){ res.gitError = e.message; }
+    return res;
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // ---- Importar una foto (desde el PC) para un miembro: copia a _src y al display,
 //      para que se vea ya y se pueda encuadrar. No hace commit (se sube al Guardar). ----
 ipcMain.handle("import-photo", async (_e, args) => {
