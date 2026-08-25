@@ -26,6 +26,7 @@
     song = res.data;
     song.lyrics = song.lyrics || [];
     video.src = song.video;
+    video.muted = false;   // en el editor siempre se oye el VÍDEO (para cuadrar los tiempos)
     // Keep the saved duration in step with the actual video (avoids a stale
     // JSON duration making the timeline/results length wrong).
     video.addEventListener("loadedmetadata", () => {
@@ -554,8 +555,10 @@
     if(res && res.canceled){ btn.textContent = t; return; }
     if(res && res.ok){
       song.audio = res.audio;
-      video.muted = true;                                // el sonido saldrá del mp3
-      btn.textContent = res.pushed ? "✓ Audio puesto" : "✓ Audio (local, no subido)";
+      // En el EDITOR seguimos oyendo el VÍDEO (ahí está el coreano para cuadrar);
+      // el mp3 solo se usa en el reproductor/vídeo final.
+      video.muted = false;
+      btn.textContent = res.pushed ? "✓ Audio puesto (suena en el reproductor)" : "✓ Audio (local, no subido)";
       save();
     } else {
       btn.textContent = "✕ Error";
