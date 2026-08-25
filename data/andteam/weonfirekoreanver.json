@@ -71,45 +71,30 @@
   "lyrics": [
     {
       "start": 5.53,
-      "end": 8.74,
+      "end": 12.49,
       "members": [
         "NICHOLAS"
       ],
-      "original": "",
-      "romanization": "We on fire fire fire right now",
-      "english": "",
+      "original": "We on fire fire fire right now, 좀 더 higher higher 타들어가",
+      "romanization": "we on fire fire fire right now, jom deo higher higher tadeureoga",
+      "english": "We on fire fire fire right now, Even higher higher, can’t be stopped",
       "voice": [
         [
           5.64,
           8.83
         ]
-      ]
-    },
-    {
-      "start": 8.83,
-      "end": 12.49,
-      "members": [
-        "NICHOLAS"
       ],
-      "original": "もっと higher higher 止めらんない, Feel the heat",
-      "romanization": "motto higher higher tomerannai, feel the heat",
-      "english": "Even higher higher, can't be stopped, Feel the heat",
-      "voice": [
-        [
-          8.8,
-          12.62
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 12.61,
-      "end": 14.72,
+      "end": 18.3,
       "members": [
         "YUMA"
       ],
-      "original": "始まりはこの瞬間",
-      "romanization": "hajimari wa kono shunkan",
-      "english": "This moment's just the beginning",
+      "original": "Feel the heat, 끓어올라 지금 이 순간",
+      "romanization": "feel the heat, kkeureoolla jigeum i sungan",
+      "english": "Feel the heat, This moment’s just the beginning",
       "adlib": false,
       "voice": [
         [
@@ -119,30 +104,14 @@
       ]
     },
     {
-      "start": 14.84,
-      "end": 18.3,
+      "start": 18.5,
+      "end": 24.59,
       "members": [
-        "YUMA"
+        "MAKI"
       ],
       "original": "",
       "romanization": "Can you feel this fire, Can you feel this fire",
       "english": "",
-      "voice": [
-        [
-          14.87,
-          18.44
-        ]
-      ]
-    },
-    {
-      "start": 18.5,
-      "end": 21.41,
-      "members": [
-        "MAKI"
-      ],
-      "original": "Late night, 照らし出す my scar face",
-      "romanization": "late night, terashidasu my scar face",
-      "english": "Late night, Lighting up my scarred face",
       "voice": [
         [
           18.73,
@@ -152,83 +121,26 @@
           19.84,
           21.48
         ]
-      ]
-    },
-    {
-      "start": 21.62,
-      "end": 24.59,
-      "members": [
-        "MAKI"
       ],
-      "original": "ただがむしゃらだった past days",
-      "romanization": "tada gamushara datta past days",
-      "english": "Those reckless, all-out past days",
-      "voice": [
-        [
-          22.07,
-          24.49
-        ]
-      ]
-    },
-    {
-      "start": 24.71,
-      "end": 27.65,
-      "members": [
-        "TAKI"
-      ],
-      "original": "そうやって超えてきた運命",
-      "romanization": "sou yatte koete kita unmei",
-      "english": "That's how we overcame our fate",
-      "voice": [
-        [
-          25.17,
-          25.52
-        ],
-        [
-          25.64,
-          27.55
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 27.77,
-      "end": 30.22,
+      "end": 33.17,
       "members": [
-        "TAKI"
+        "TAKI",
+        "K"
       ],
-      "original": "Don't stop me, 消えてない火種",
-      "romanization": "don't stop me, kietenai hidane",
-      "english": "Don't stop me, this spark hasn't gone out",
+      "original": "Late night, 드러내 보여 my scar face",
+      "romanization": "late night, deureonae boyeo my scar face",
+      "english": "Late night, Lighting up my scarred face",
       "voice": [
         [
           27.87,
           30.55
         ]
-      ]
-    },
-    {
-      "start": 30.32,
-      "end": 33.17,
-      "members": [
-        "K"
       ],
-      "original": "どんな痛みも甘んじよう",
-      "romanization": "donna itami mo amanjiyou",
-      "english": "No matter the pain, I'll accept it",
-      "voice": [
-        [
-          30.47,
-          31.2
-        ],
-        [
-          31.32,
-          31.92
-        ],
-        [
-          32.08,
-          33.23
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 33.35,
@@ -236,15 +148,16 @@
       "members": [
         "K"
       ],
-      "original": "Same squad, same team, 狙う頂上",
-      "romanization": "same squad, same team, nerau choujou",
-      "english": "Same squad, same team, aiming for the summit",
+      "original": "그저 달려가야 했던 past days",
+      "romanization": "geujeo dalryeogaya haetdeon past days",
+      "english": "Those reckless, all-out past days",
       "voice": [
         [
           33.57,
           36.27
         ]
-      ]
+      ],
+      "adlib": false
     },
     {
       "start": 36.44,
@@ -252,15 +165,16 @@
       "members": [
         "FUMA"
       ],
-      "original": "僕らの旅は still mysterious",
-      "romanization": "bokura no tabi wa still mysterious",
-      "english": "Our journey is still mysterious",
+      "original": "끊어내 버린 내 삶의 굴레",
+      "romanization": "kkeuneonae beorin nae salmui gulle",
+      "english": "That’s how we overcame our fate",
       "voice": [
         [
           36.58,
           39.68
         ]
-      ]
+      ],
+      "adlib": false
     },
     {
       "start": 39.78,
@@ -268,15 +182,16 @@
       "members": [
         "FUMA"
       ],
-      "original": "超えた壁はもう my experience",
-      "romanization": "koeta kabe wa mou my experience",
-      "english": "These walls we've passed are now my experience",
+      "original": "Don’t stop me, 계속해 날 시험해",
+      "romanization": "don’t stop, gyesokhae nal siheomhae",
+      "english": "Don’t stop me, this spark hasn’t gone out",
       "voice": [
         [
           40,
           42.69
         ]
-      ]
+      ],
+      "adlib": false
     },
     {
       "start": 42.76,
@@ -284,9 +199,9 @@
       "members": [
         "EJ"
       ],
-      "original": "I felt burned out, 全部燃やし尽くすような vibe yea",
-      "romanization": "i felt burned out, zenbu moyashitsukusu you na vibe yea",
-      "english": "I felt burned out, A \"burned everything out\" type of vibe yea",
+      "original": "어떤 쓰라림도 끌어 안아",
+      "romanization": "eotteon sseurimdo kkeureo ana",
+      "english": "No matter the pain, I’ll accept it",
       "voice": [
         [
           42.83,
@@ -300,7 +215,8 @@
           48.35,
           48.88
         ]
-      ]
+      ],
+      "adlib": false
     },
     {
       "start": 48.78,
@@ -308,9 +224,9 @@
       "members": [
         "JO"
       ],
-      "original": "But it ain't enough, それは始まりを告げる sign",
-      "romanization": "but it ain't enough, sore wa hajimari o tsugeru sign",
-      "english": "But it ain't enough, It's a sign that this is just the beginning",
+      "original": "Same squad, same team 나를 지켜줘",
+      "romanization": "same squad, same team nareul jikyeojwo",
+      "english": "Same squad, same team, aiming for the summit",
       "voice": [
         [
           48.94,
@@ -320,7 +236,8 @@
           50.62,
           53.81
         ]
-      ]
+      ],
+      "adlib": false
     },
     {
       "start": 53.98,
@@ -328,15 +245,16 @@
       "members": [
         "MAKI"
       ],
-      "original": "",
-      "romanization": "We on fire fire fire right now",
-      "english": "",
+      "original": "가는 길은 언제나 still mysterious",
+      "romanization": "ganeun gireun eonjena still mysterious",
+      "english": "Our journey is still mysterious",
       "voice": [
         [
           54.27,
           57.52
         ]
-      ]
+      ],
+      "adlib": false
     },
     {
       "start": 57.33,
@@ -344,77 +262,45 @@
       "members": [
         "MAKI"
       ],
-      "original": "もっと higher higher 止めらんない, Feel the heat",
-      "romanization": "motto higher higher tomerannai, feel the heat",
-      "english": "Even higher higher, can't be stopped, Feel the heat",
+      "original": "지난 흔적마저도 my experience",
+      "romanization": "jinan heunjeokmajjeodo my experience",
+      "english": "These walls we’ve passed are now my experience",
       "voice": [
         [
           57.43,
           61.26
         ]
-      ]
-    },
-    {
-      "start": 61.23,
-      "end": 63.33,
-      "members": [
-        "K"
       ],
-      "original": "始まりはこの瞬間",
-      "romanization": "hajimari wa kono shunkan",
-      "english": "This moment's just the beginning",
-      "voice": [
-        [
-          61.25,
-          63.53
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 63.45,
-      "end": 66.43,
+      "end": 69.46,
       "members": [
-        "K"
+        "K",
+        "YUMA"
       ],
-      "original": "",
-      "romanization": "Can you feel this fire, can you feel this fire",
-      "english": "",
+      "original": "I felt burned out, 전부 태워버릴 것만 같은 vibe yea",
+      "romanization": "i felt burned out, jeonbu taewobeoril geotman gateun vibe yea",
+      "english": "I felt burned out, A “burned everything out” type of vibe yea",
       "voice": [
         [
           63.49,
           66.95
         ]
-      ]
-    },
-    {
-      "start": 66.54,
-      "end": 69.46,
-      "members": [
-        "YUMA"
       ],
-      "original": "Can't cool us, 冷めぬこの想い",
-      "romanization": "can't cool us, samenu kono omoi",
-      "english": "Can't cool us, These feelings that never cool down",
-      "voice": [
-        [
-          66.63,
-          67.93
-        ],
-        [
-          68.12,
-          69.59
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 69.58,
-      "end": 73.15,
+      "end": 75.61,
       "members": [
-        "YUMA"
+        "YUMA",
+        "HARUA"
       ],
-      "original": "Can't tame us, 消させない fire, Feel the heat",
-      "romanization": "can't tame us, kesasenai fire, feel the heat",
-      "english": "Can't tame us, Won't let this fire die, Feel the heat",
+      "original": "But it ain’t enough, 어느새 나지막이 또 치솟는 sign",
+      "romanization": "but it ain’t enough, eoneusae najimaki tto chisotneun sign",
+      "english": "But it ain’t enough, It’s a sign that this is just the beginning",
       "voice": [
         [
           69.61,
@@ -424,49 +310,18 @@
           71.17,
           73.39
         ]
-      ]
-    },
-    {
-      "start": 73.3,
-      "end": 75.61,
-      "members": [
-        "HARUA"
       ],
-      "original": "灰になるまで 行こうか",
-      "romanization": "hai ni naru made ikou ka",
-      "english": "Should we go until we turn to ashes?",
-      "voice": [
-        [
-          73.39,
-          75.61
-        ]
-      ]
-    },
-    {
-      "start": 75.7,
-      "end": 79.07,
-      "members": [
-        "HARUA"
-      ],
-      "original": "",
-      "romanization": "Can you feel this fire, Can you feel this fire",
-      "english": "",
-      "voice": [
-        [
-          75.62,
-          79.1
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 79.22,
-      "end": 82.22,
+      "end": 85.17,
       "members": [
         "NICHOLAS"
       ],
-      "original": "Midnight, 焦げついてる my pain",
-      "romanization": "midnight, kogetsuiteru my pain",
-      "english": "Midnight, This pain that's been burned into me",
+      "original": "We on fire fire fire right now, 좀 더 higher higher 타들어가",
+      "romanization": "we on fire fire fire right now, jom deo higher higher tadeureoga",
+      "english": "We on fire fire fire right now, Even higher higher, can’t be stopped",
       "voice": [
         [
           79.46,
@@ -476,65 +331,35 @@
           80.34,
           82.16
         ]
-      ]
-    },
-    {
-      "start": 82.39,
-      "end": 85.17,
-      "members": [
-        "NICHOLAS"
       ],
-      "original": "この痛みが僕らの証明",
-      "romanization": "kono itami ga bokura no shoumei",
-      "english": "Pain that's proof of us",
-      "voice": [
-        [
-          82.49,
-          85.17
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 85.31,
-      "end": 88.23,
+      "end": 91.03,
       "members": [
         "EJ"
       ],
-      "original": "一線超えて壊す概念",
-      "romanization": "issen koete kowasu gainen",
-      "english": "Crossing the line, breaking boundaries",
+      "original": "Feel the heat, 끓어올라 지금 이 순간",
+      "romanization": "feel the heat, kkeureoolla jigeum i sungan",
+      "english": "Feel the heat, This moment’s just the beginning",
       "voice": [
         [
           85.53,
           88.22
         ]
-      ]
-    },
-    {
-      "start": 88.37,
-      "end": 91.03,
-      "members": [
-        "EJ"
       ],
-      "original": "尽きたりしない僕の情熱",
-      "romanization": "tsukitarishinai boku no jounetsu",
-      "english": "My passion will never run out",
-      "voice": [
-        [
-          88.53,
-          91.32
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 91.12,
-      "end": 93.92,
+      "end": 96.98,
       "members": [
         "JO"
       ],
-      "original": "どんな願いも叶えよう",
-      "romanization": "donna negai mo kanaeyou",
-      "english": "No matter the wish, I'll make it come true",
+      "original": "",
+      "romanization": "Can you feel this fire, Can you feel this fire",
+      "english": "",
       "voice": [
         [
           91.06,
@@ -552,101 +377,37 @@
           93.23,
           93.95
         ]
-      ]
-    },
-    {
-      "start": 94.07,
-      "end": 96.98,
-      "members": [
-        "JO"
       ],
-      "original": "",
-      "romanization": "No doubt, no brakes, that ambition",
-      "english": "",
-      "voice": [
-        [
-          94.29,
-          94.96
-        ],
-        [
-          95.11,
-          95.69
-        ],
-        [
-          95.84,
-          97.03
-        ]
-      ]
-    },
-    {
-      "start": 97.11,
-      "end": 100.41,
-      "members": [
-        "YUMA"
-      ],
-      "original": "消えはしない何度だって手を伸ばす",
-      "romanization": "kie wa shinai nando datte te o nobasu",
-      "english": "It'll never disappear—I'll reach out again and again",
-      "voice": [
-        [
-          97.32,
-          99.29
-        ],
-        [
-          99.4,
-          100.44
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 100.57,
-      "end": 103.38,
+      "end": 109.46,
       "members": [
-        "YUMA"
+        "YUMA",
+        "HARUA"
       ],
-      "original": "火花散らしdrift yea 解き放つ",
-      "romanization": "hibana chirashi drift yea tokihanatsu",
-      "english": "Sparks scatter as we drift yeah—set it free",
+      "original": "Can’t cool us, 달아오른 내 맘이",
+      "romanization": "can’t cool us, daraoreun nae mami",
+      "english": "Can’t cool us, These feelings that never cool down",
       "voice": [
         [
           100.77,
           103.48
         ]
-      ]
-    },
-    {
-      "start": 103.51,
-      "end": 109.46,
-      "members": [
-        "HARUA"
       ],
-      "original": "We stayed the same, まだ叫び続ける more loud yea",
-      "romanization": "we stayed the same, mada sakebitsuzukeru more loud yea",
-      "english": "We stayed the same, Still shouting more loud yea",
-      "voice": [
-        [
-          103.63,
-          105.04
-        ],
-        [
-          105.33,
-          108.76
-        ],
-        [
-          109.11,
-          109.57
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 109.58,
-      "end": 114.63,
+      "end": 118,
       "members": [
-        "FUMA"
+        "FUMA",
+        "K"
       ],
-      "original": "But it ain't enough, それは始まりを告げる sign",
-      "romanization": "but it ain't enough, sore wa hajimari o tsugeru sign",
-      "english": "But it ain't enough, It's a sign that this is just the beginning",
+      "original": "Can’t tame us, 거세져 가는 fire",
+      "romanization": "can’t tame us, geosejyeo ganeun fire",
+      "english": "Can’t tame us, Won’t let this fire die",
       "voice": [
         [
           109.69,
@@ -656,61 +417,33 @@
           111.43,
           114.65
         ]
-      ]
-    },
-    {
-      "start": 114.78,
-      "end": 118,
-      "members": [
-        "K"
       ],
-      "original": "",
-      "romanization": "We on fire fire fire right now",
-      "english": "",
-      "voice": [
-        [
-          114.96,
-          118.3
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 118.12,
-      "end": 121.81,
+      "end": 124.04,
       "members": [
-        "K"
+        "K",
+        "NICHOLAS"
       ],
-      "original": "もっと higher higher 止めらんない, Feel the heat",
-      "romanization": "motto higher higher tomerannai, feel the heat",
-      "english": "Even higher higher, can't be stopped, Feel the heat",
+      "original": "Feel the heat, 타오르지 내 마지막까지",
+      "romanization": "feel the heat, taoreuji nae majimakkkaji",
+      "english": "Feel the heat, Should we go until we turn to ashes?",
       "voice": [
         [
           118.22,
           121.99
         ]
-      ]
-    },
-    {
-      "start": 121.91,
-      "end": 124.04,
-      "members": [
-        "NICHOLAS"
       ],
-      "original": "始まりはこの瞬間",
-      "romanization": "hajimari wa kono shunkan",
-      "english": "This moment's just the beginning",
-      "voice": [
-        [
-          122.02,
-          124.3
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 124.16,
-      "end": 127.13,
+      "end": 130.19,
       "members": [
-        "NICHOLAS"
+        "NICHOLAS",
+        "TAKI"
       ],
       "original": "",
       "romanization": "Can you feel this fire, Can you feel this fire",
@@ -720,79 +453,25 @@
           124.29,
           127.8
         ]
-      ]
-    },
-    {
-      "start": 127.26,
-      "end": 130.19,
-      "members": [
-        "TAKI"
       ],
-      "original": "Can't cool us, 冷めぬこの想い",
-      "romanization": "can't cool us, samenu kono omoi",
-      "english": "Can't cool us, These feelings that never cool down",
-      "voice": [
-        [
-          127.29,
-          128.71
-        ],
-        [
-          128.89,
-          130.4
-        ]
-      ]
-    },
-    {
-      "start": 130.31,
-      "end": 133.96,
-      "members": [
-        "TAKI"
-      ],
-      "original": "Can't tame us, 消させない fire, Feel the heat",
-      "romanization": "can't tame us, kesasenai fire, feel the heat",
-      "english": "Can't tame us, Won't let this fire die, Feel the heat",
-      "voice": [
-        [
-          130.37,
-          131.76
-        ],
-        [
-          131.91,
-          134.18
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 134.09,
-      "end": 136.31,
+      "end": 139.91,
       "members": [
         "MAKI"
       ],
-      "original": "灰になるまで 行こうか",
-      "romanization": "hai ni naru made ikou ka",
-      "english": "Should we go until we turn to ashes?",
+      "original": "Midnight, 눌어 붙어버린 my pain",
+      "romanization": "midnight, nureo buteobeorin my pain",
+      "english": "Midnight, This pain that’s been burned into me",
       "voice": [
         [
           134.17,
           136.46
         ]
-      ]
-    },
-    {
-      "start": 136.43,
-      "end": 139.91,
-      "members": [
-        "MAKI"
       ],
-      "original": "",
-      "romanization": "Can you feel this fire, can you feel this fire",
-      "english": "",
-      "voice": [
-        [
-          136.5,
-          139.95
-        ]
-      ]
+      "adlib": false
     },
     {
       "start": 143.83,
@@ -800,9 +479,9 @@
       "members": [
         "MAKI"
       ],
-      "original": "",
-      "romanization": "Can you feel this fire",
-      "english": "",
+      "original": "그을린 상처가 되려 날 증명해",
+      "romanization": "geureulin sangcheoga doeryeo nal jeungmyeonghae",
+      "english": "Pain that’s proof of us",
       "voice": [
         [
           144.06,
@@ -816,18 +495,19 @@
           148.01,
           149.37
         ]
-      ]
+      ],
+      "adlib": false
     },
     {
       "start": 7.52,
-      "end": 9.05,
+      "end": 12.06,
       "members": [
         "NICHOLAS"
       ],
-      "original": "",
-      "romanization": "Fire right now",
-      "english": "",
-      "adlib": true,
+      "original": "실패 따윈 웃어넘겨 이젠, 짙게 타오른 맘의 불씨는 여전해",
+      "romanization": "silpae ttawin useoneomgyeo, ijen jitge taoreun mamui bulssineun yeojeonhae",
+      "english": "Crossing the line, breaking boundaries, My passion will never run out",
+      "adlib": false,
       "voice": [
         [
           7.72,
@@ -836,53 +516,19 @@
       ]
     },
     {
-      "start": 10.55,
-      "end": 12.06,
-      "members": [
-        "NICHOLAS"
-      ],
-      "original": "止めらんない",
-      "romanization": "tomerannai",
-      "english": "Can't be stopped",
-      "adlib": true,
-      "voice": [
-        [
-          10.74,
-          12.19
-        ]
-      ]
-    },
-    {
       "start": 13.64,
-      "end": 15.15,
-      "members": [
-        "YUMA"
-      ],
-      "original": "この瞬間",
-      "romanization": "kono shunkan",
-      "english": "This moment's",
-      "adlib": true,
-      "voice": [
-        [
-          13.76,
-          15.27
-        ]
-      ]
-    },
-    {
-      "start": 16.66,
       "end": 18.54,
       "members": [
         "YUMA"
       ],
-      "original": "",
-      "romanization": "Feel this fire",
-      "english": "",
-      "adlib": true,
+      "original": "어떤 바램도 거머쥐어, No doubt, no brakes, that ambition",
+      "romanization": "eotteon baraemdo geomeojwieo, no doubt, no brakes, that ambition",
+      "english": "No matter the wish, I’ll make it come true, No doubt, no brakes, that ambition",
+      "adlib": false,
       "voice": [
         [
-          16.8,
-          18.56
+          13.76,
+          15.27
         ]
       ]
     },
@@ -892,10 +538,10 @@
       "members": [
         "MAKI"
       ],
-      "original": "",
-      "romanization": "Fire right now",
-      "english": "",
-      "adlib": true,
+      "original": "의심 없이 불길처럼 번져나가",
+      "romanization": "uisim eopsi bulgilcheoreom beonjyeonaga",
+      "english": "It’ll never disappear—I’ll reach out again and again",
+      "adlib": false,
       "voice": [
         [
           56.31,
@@ -909,10 +555,10 @@
       "members": [
         "MAKI"
       ],
-      "original": "止めらんない",
-      "romanization": "tomerannai",
-      "english": "Can't be stopped",
-      "adlib": true,
+      "original": "몇 번이고 다시 drift yea 꽃피워 난",
+      "romanization": "myeot beonigo dasi drift yea kkotpiwo nan",
+      "english": "Sparks scatter as we drift yeah—set it free",
+      "adlib": false,
       "voice": [
         [
           59.3,
@@ -926,10 +572,10 @@
       "members": [
         "K"
       ],
-      "original": "この瞬間",
-      "romanization": "kono shunkan",
-      "english": "This moment's",
-      "adlib": true,
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": false,
       "voice": [
         [
           62.39,
@@ -943,10 +589,10 @@
       "members": [
         "HARUA"
       ],
-      "original": "",
-      "romanization": "Feel this fire",
-      "english": "",
-      "adlib": true,
+      "original": "We stayed the same",
+      "romanization": "we stayed the same",
+      "english": "We stayed the same",
+      "adlib": false,
       "voice": [
         [
           77.58,
@@ -960,10 +606,10 @@
       "members": [
         "K"
       ],
-      "original": "",
-      "romanization": "Fire right now",
-      "english": "",
-      "adlib": true,
+      "original": "끝까지 온몸이 찢어질 듯 more loud yea",
+      "romanization": "kkeutkkaji onmomi jjijeojil deut more loud yea",
+      "english": "Still shouting more loud yea",
+      "adlib": false,
       "voice": [
         [
           117.16,
@@ -977,10 +623,10 @@
       "members": [
         "K"
       ],
-      "original": "止めらんない",
-      "romanization": "tomerannai",
-      "english": "Can't be stopped",
-      "adlib": true,
+      "original": "But it ain’t enough",
+      "romanization": "but it ain’t enough",
+      "english": "But it ain’t enough",
+      "adlib": false,
       "voice": [
         [
           120.12,
@@ -994,10 +640,10 @@
       "members": [
         "NICHOLAS"
       ],
-      "original": "この瞬間",
-      "romanization": "kono shunkan",
-      "english": "This moment's",
-      "adlib": true,
+      "original": "어느새 나지막이 또 치솟는 sign",
+      "romanization": "eoneusae najimaki tto chisotneun sign",
+      "english": "It’s a sign that this is just the beginning",
+      "adlib": false,
       "voice": [
         [
           123.15,
@@ -1012,15 +658,150 @@
         "MAKI"
       ],
       "original": "",
-      "romanization": "Feel this fire",
+      "romanization": "",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           138.36,
           140.06
         ]
       ]
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We on fire fire fire right now",
+      "romanization": "we on fire fire fire right now",
+      "english": "We on fire fire fire right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "좀 더 higher higher 타들어가",
+      "romanization": "jom deo higher higher tadeureoga",
+      "english": "Even higher higher, can’t be stopped",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Feel the heat",
+      "romanization": "feel the heat",
+      "english": "Feel the heat",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끓어올라 지금 이 순간",
+      "romanization": "kkeureoolla jigeum i sungan",
+      "english": "This moment’s just the beginning",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can you feel this fire",
+      "romanization": "can you feel this fire",
+      "english": "Can you feel this fire",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can you feel this fire",
+      "romanization": "can you feel this fire",
+      "english": "Can you feel this fire",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can’t cool us",
+      "romanization": "can’t cool us",
+      "english": "Can’t cool us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "달아오른 내 맘이",
+      "romanization": "daraoreun nae mami",
+      "english": "These feelings that never cool down",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can’t tame us",
+      "romanization": "can’t tame us",
+      "english": "Can’t tame us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거세져 가는 fire",
+      "romanization": "geosejyeo ganeun fire",
+      "english": "Won’t let this fire die",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Feel the heat",
+      "romanization": "feel the heat",
+      "english": "Feel the heat",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "타오르지 내 마지막까지",
+      "romanization": "taoreuji nae majimakkkaji",
+      "english": "Should we go until we turn to ashes?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can you feel this fire",
+      "romanization": "can you feel this fire",
+      "english": "Can you feel this fire",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can you feel this fire",
+      "romanization": "can you feel this fire",
+      "english": "Can you feel this fire",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can you feel this fire",
+      "romanization": "can you feel this fire",
+      "english": "Can you feel this fire",
+      "adlib": false
     }
   ]
 }
