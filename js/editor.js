@@ -18,6 +18,30 @@
   const abbr = n => n.slice(0,3).toUpperCase();
   const isAdlib = l => l.adlib === true || (typeof l.adlib === "string" && l.adlib.trim() !== "");
 
+  // ---- Audio del editor: si la canción tiene SONG.audio (mp3), se PRIORIZA ese
+  // (silencia el vídeo y suena el mp3 sincronizado); si no, suena el vídeo. ----
+  let edAudio = null;
+  function attachAudioSync(){
+    const sync = () => { if(edAudio){ try{ if(Math.abs(edAudio.currentTime - video.currentTime) > 0.22) edAudio.currentTime = video.currentTime; }catch(e){} } };
+    video.addEventListener("play",  () => { if(edAudio){ sync(); edAudio.play().catch(() => {}); } });
+    video.addEventListener("pause", () => { if(edAudio) edAudio.pause(); });
+    video.addEventListener("seeked", sync);
+    video.addEventListener("ratechange", () => { if(edAudio) edAudio.playbackRate = video.playbackRate; });
+    video.addEventListener("ended", () => { if(edAudio) edAudio.pause(); });
+    setInterval(() => { if(edAudio && !video.paused && !edAudio.paused) sync(); }, 1000);
+  }
+  function applyEditorAudio(){
+    if(edAudio){ try{ edAudio.pause(); }catch(e){} edAudio = null; }
+    const src = song && song.audio;
+    if(src){
+      edAudio = new Audio(src); edAudio.preload = "auto";
+      video.muted = true;                                   // prioriza el mp3
+      if(!video.paused){ try{ edAudio.currentTime = video.currentTime; edAudio.play().catch(() => {}); }catch(e){} }
+    } else {
+      video.muted = false;                                  // sin mp3 -> audio del vídeo
+    }
+  }
+
   async function init(){
     songPath = new URLSearchParams(location.search).get("song");
     if(!window.desktop || !songPath){ listEl.textContent = "Abre el editor desde la biblioteca."; return; }
@@ -26,7 +50,8 @@
     song = res.data;
     song.lyrics = song.lyrics || [];
     video.src = song.video;
-    video.muted = false;   // en el editor siempre se oye el VÍDEO (para cuadrar los tiempos)
+    attachAudioSync();      // sincroniza el mp3 (si lo hay) con el vídeo
+    applyEditorAudio();     // prioriza SONG.audio si existe; si no, audio del vídeo
     // Keep the saved duration in step with the actual video (avoids a stale
     // JSON duration making the timeline/results length wrong).
     video.addEventListener("loadedmetadata", () => {
@@ -555,10 +580,8 @@
     if(res && res.canceled){ btn.textContent = t; return; }
     if(res && res.ok){
       song.audio = res.audio;
-      // En el EDITOR seguimos oyendo el VÍDEO (ahí está el coreano para cuadrar);
-      // el mp3 solo se usa en el reproductor/vídeo final.
-      video.muted = false;
-      btn.textContent = res.pushed ? "✓ Audio puesto (suena en el reproductor)" : "✓ Audio (local, no subido)";
+      applyEditorAudio();                                 // suena el mp3 ya en el editor
+      btn.textContent = res.pushed ? "✓ Audio puesto (suena en el editor)" : "✓ Audio (local, no subido)";
       save();
     } else {
       btn.textContent = "✕ Error";
