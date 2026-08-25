@@ -70,8 +70,8 @@
   ],
   "lyrics": [
     {
-      "start": 0.15,
-      "end": 6.19,
+      "start": 0.26,
+      "end": 6.18,
       "members": [
         "K"
       ],
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "start": 6.34,
-      "end": 8.28,
+      "start": 6.53,
+      "end": 8.23,
       "members": [
         "K"
       ],
@@ -111,8 +111,8 @@
       "english": "Can't help but be curious"
     },
     {
-      "start": 8.41,
-      "end": 15.39,
+      "start": 8.35,
+      "end": 15.48,
       "members": [
         "NICHOLAS"
       ],
@@ -139,8 +139,8 @@
       "english": "A wicked fantasy, Just like black magic, Can’t take my eyes off you Ooh"
     },
     {
-      "start": 18.76,
-      "end": 21.81,
+      "start": 18.83,
+      "end": 26.72,
       "members": [
         "YUMA"
       ],
@@ -155,8 +155,8 @@
       "english": "Can't help it any more, No one can stop me"
     },
     {
-      "start": 22.74,
-      "end": 25.85,
+      "start": 26.85,
+      "end": 29.65,
       "members": [
         "TAKI"
       ],
@@ -171,8 +171,8 @@
       "english": "This spell can’t be broken"
     },
     {
-      "start": 26.5,
-      "end": 32.67,
+      "start": 29.8,
+      "end": 32.68,
       "members": [
         "TAKI"
       ],
@@ -199,8 +199,8 @@
       "english": ""
     },
     {
-      "start": 34.69,
-      "end": 37.91,
+      "start": 33.14,
+      "end": 34.7,
       "members": [],
       "voice": [
         [
@@ -213,8 +213,8 @@
       "english": ""
     },
     {
-      "start": 38.63,
-      "end": 41.73,
+      "start": 34.9,
+      "end": 37.86,
       "members": [
         "JO"
       ],
@@ -229,8 +229,8 @@
       "english": "Your eyes, like a full moon"
     },
     {
-      "start": 42.8,
-      "end": 48.78,
+      "start": 37.08,
+      "end": 38.7,
       "members": [],
       "voice": [
         [
@@ -248,11 +248,12 @@
       ],
       "original": "",
       "romanization": "Woah",
-      "english": ""
+      "english": "",
+      "adlib": true
     },
     {
-      "start": 50.15,
-      "end": 54.26,
+      "start": 38.88,
+      "end": 41.82,
       "members": [
         "JO"
       ],
@@ -271,8 +272,8 @@
       "english": "Like I'm possessed, I fall out"
     },
     {
-      "start": 54.41,
-      "end": 58.37,
+      "start": 41.19,
+      "end": 42.72,
       "members": [],
       "voice": [
         [
@@ -286,11 +287,12 @@
       ],
       "original": "",
       "romanization": "Woah",
-      "english": ""
+      "english": "",
+      "adlib": true
     },
     {
-      "start": 58.4,
-      "end": 64.48,
+      "start": 42.87,
+      "end": 48.71,
       "members": [
         "HARUA"
       ],
@@ -305,8 +307,8 @@
       "english": "Once our eyes meet, there’s no going back, Bewitched, I’m bewitched"
     },
     {
-      "start": 64.51,
-      "end": 66.58,
+      "start": 50.36,
+      "end": 54.2,
       "members": [
         "MAKI"
       ],
@@ -321,8 +323,8 @@
       "english": "I’m out of my mind, In a stormy desert"
     },
     {
-      "start": 68.74,
-      "end": 71.77,
+      "start": 54.36,
+      "end": 58.22,
       "members": [
         "MAKI"
       ],
@@ -337,8 +339,8 @@
       "english": "A blinding whiteout, Led by you once again"
     },
     {
-      "start": 72.82,
-      "end": 75.69,
+      "start": 58.37,
+      "end": 64.4,
       "members": [
         "K"
       ],
@@ -353,8 +355,8 @@
       "english": "Like that, we keep repeating, reincarnating, Running into this karma Ooh"
     },
     {
-      "start": 76.65,
-      "end": 82.88,
+      "start": 64.61,
+      "end": 66.68,
       "members": [
         "NICHOLAS"
       ],
@@ -377,8 +379,8 @@
       "english": ""
     },
     {
-      "start": 84.7,
-      "end": 87.72,
+      "start": 67.12,
+      "end": 68.74,
       "members": [],
       "voice": [
         [
@@ -388,11 +390,12 @@
       ],
       "original": "",
       "romanization": "Woah",
-      "english": ""
+      "english": "",
+      "adlib": true
     },
     {
-      "start": 88.64,
-      "end": 91.78,
+      "start": 68.89,
+      "end": 71.83,
       "members": [
         "EJ"
       ],
@@ -426,11 +429,12 @@
       ],
       "original": "",
       "romanization": "Woah",
-      "english": ""
+      "english": "",
+      "adlib": true
     },
     {
-      "start": 99.16,
-      "end": 102.17,
+      "start": 72.81,
+      "end": 75.81,
       "members": [
         "EJ"
       ],
@@ -467,8 +471,8 @@
       "english": ""
     },
     {
-      "start": 107.16,
-      "end": 110.22,
+      "start": 76.83,
+      "end": 82.88,
       "members": [
         "FUMA"
       ],
@@ -505,8 +509,8 @@
       "english": ""
     },
     {
-      "start": 118.72,
-      "end": 121.71,
+      "start": 84.81,
+      "end": 87.77,
       "members": [
         "TAKI"
       ],
@@ -535,8 +539,8 @@
       "english": ""
     },
     {
-      "start": 126.63,
-      "end": 132.86,
+      "start": 88.79,
+      "end": 91.78,
       "members": [
         "TAKI"
       ],
@@ -573,8 +577,8 @@
       "english": ""
     },
     {
-      "start": 138.7,
-      "end": 141.81,
+      "start": 92.88,
+      "end": 98.9,
       "members": [
         "HARUA"
       ],
@@ -589,8 +593,8 @@
       "english": "I tear off the blindfold and hold you, Bewitched, I’m bewitched"
     },
     {
-      "start": 142.62,
-      "end": 149.05,
+      "start": 99.32,
+      "end": 102.24,
       "members": [
         "JO"
       ],
@@ -622,8 +626,8 @@
       "adlib": true
     },
     {
-      "start": 37.11,
-      "end": 38.72,
+      "start": 103.36,
+      "end": 106.24,
       "members": [
         "FUMA"
       ],
@@ -642,8 +646,8 @@
       "adlib": true
     },
     {
-      "start": 66.97,
-      "end": 68.85,
+      "start": 107.37,
+      "end": 110.27,
       "members": [
         "YUMA"
       ],
@@ -662,8 +666,8 @@
       "adlib": true
     },
     {
-      "start": 75.14,
-      "end": 76.75,
+      "start": 111.38,
+      "end": 114.32,
       "members": [
         "K"
       ],
@@ -679,11 +683,11 @@
       "original": "",
       "romanization": "Woah",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 87.16,
-      "end": 88.78,
+      "start": 118.86,
+      "end": 121.89,
       "members": [
         "MAKI"
       ],
@@ -699,11 +703,11 @@
       "original": "",
       "romanization": "Woah",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 102.03,
-      "end": 103.24,
+      "start": 122.83,
+      "end": 125.8,
       "members": [
         "MAKI"
       ],
@@ -719,11 +723,11 @@
       "original": "",
       "romanization": "Woah",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 110.13,
-      "end": 111.25,
+      "start": 126.88,
+      "end": 132.79,
       "members": [
         "EJ"
       ],
@@ -739,11 +743,11 @@
       "original": "",
       "romanization": "Woah",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 121.15,
-      "end": 122.76,
+      "start": 134.84,
+      "end": 137.98,
       "members": [
         "YUMA"
       ],
@@ -759,11 +763,11 @@
       "original": "",
       "romanization": "Woah",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 133.13,
-      "end": 134.83,
+      "start": 138.9,
+      "end": 141.95,
       "members": [
         "YUMA"
       ],
@@ -779,11 +783,11 @@
       "original": "",
       "romanization": "Woah",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 141.17,
-      "end": 142.76,
+      "start": 142.83,
+      "end": 148.87,
       "members": [
         "NICHOLAS"
       ],
