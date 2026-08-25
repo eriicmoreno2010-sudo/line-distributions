@@ -414,41 +414,17 @@ const Lyrics = {
     },
 
     /* ---------------- AD-LIB (mensaje flotante) ---------------- */
-    _alKey: "", _alStart: 0, _alEnd: 0, _alY: null, _alExit: null,
+    _alKey: "",
 
+    // Cada tarjeta se anima por su cuenta (entra desde abajo, sale hacia arriba).
+    // El contenedor NO se mueve -> quitar una no descuadra a la otra.
     updateAdlib(t, ais, lyrics){
         const msg = document.getElementById("adlib-msg");
         if(!msg) return;
-        const ease = x => 1 - Math.pow(1 - x, 3);
-        const START = 54, REST = -14;   // px: entra desde abajo (+) y sube un poco (-)
-        const ch = (msg.parentNode && msg.parentNode.clientHeight) || 400;
-
-        if(ais.length){
-            const key = ais.join(",");
-            if(key !== this._alKey){
-                this._alKey = key; this._alExit = null;
-                const lines = ais.map(i => lyrics[i]);
-                this._alStart = Math.min.apply(null, lines.map(l => l.start));
-                this._alEnd   = Math.max.apply(null, lines.map(l => l.end));
-                this.syncAdlibBoxes(msg, ais, lyrics);   // diff: añade/quita tarjetas (empuja, no teletransporta)
-            }
-            const dur = Math.max(0.001, this._alEnd - this._alStart);
-            let p = (t - this._alStart) / dur; p = p < 0 ? 0 : p > 1 ? 1 : p;
-            this._alY = START + (REST - START) * p;                            // sube lentamente durante su vida
-            const fin = Math.min(1, Math.max(0, (t - this._alStart) / 0.4));   // fundido de entrada (.4s)
-            msg.style.transform = "translateY(" + this._alY.toFixed(1) + "px)";
-            msg.style.opacity = fin.toFixed(3);
-        } else if(this._alKey){
-            // se acabó: sube y se METE por arriba del panel (se recorta con overflow) + fundido
-            if(!this._alExit) this._alExit = { t0: t, y0: (this._alY != null ? this._alY : REST) };
-            const EX = 0.6;
-            let q = (t - this._alExit.t0) / EX; q = q < 0 ? 0 : q > 1 ? 1 : q;
-            const y = this._alExit.y0 + (-(ch + 60) - this._alExit.y0) * ease(q);
-            msg.style.transform = "translateY(" + y.toFixed(1) + "px)";
-            msg.style.opacity = (1 - Math.min(1, q * 1.15)).toFixed(3);
-            if(q >= 1){ this._alKey = ""; this._alExit = null; this._alY = null;
-                        msg.replaceChildren(); msg.style.opacity = "0"; }
-        }
+        const key = ais.join(",");
+        if(key === this._alKey) return;
+        this._alKey = key;
+        this.syncAdlibBoxes(msg, ais, lyrics);
     },
 
     /* Construye la tarjeta de UN ad-lib (con su color propio). */
@@ -476,13 +452,18 @@ const Lyrics = {
        añade las nuevas colapsadas -> al expandirse EMPUJAN a las demás (sin salto). */
     syncAdlibBoxes(msg, ais, lyrics){
         const want = ais.map(String);
-        // los que ya no tocan se quitan AL MOMENTO (así el antiguo no parpadea)
+        // SALEN: los que ya no tocan -> suben hacia el panel y se colapsan (cada uno solo)
         Array.from(msg.children).forEach(box => {
-            if(want.indexOf(box.dataset.i) === -1) box.remove();
+            if(want.indexOf(box.dataset.i) === -1 && !box._leaving){
+                box._leaving = true; box.classList.remove("enter"); box.classList.add("leave");
+                setTimeout(() => box.remove(), 480);
+            }
         });
-        // los nuevos entran colapsados y al expandirse EMPUJAN a los demás
+        // ENTRAN: los nuevos -> desde abajo, colapsados; al expandirse empujan a los demás
         ais.forEach(i => {
-            if(msg.querySelector('.al-box[data-i="' + i + '"]')) return;
+            const ex = msg.querySelector('.al-box[data-i="' + i + '"]');
+            if(ex && !ex._leaving) return;
+            if(ex && ex._leaving) ex.remove();     // si reaparece justo al salir, lo recreamos
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
             box.classList.add("enter");
             msg.appendChild(box);
@@ -492,8 +473,8 @@ const Lyrics = {
 
     clearAdlib(){
         const msg = document.getElementById("adlib-msg");
-        this._alKey = ""; this._alExit = null; this._alY = null;
-        if(msg){ msg.replaceChildren(); msg.style.opacity = "0"; msg.style.transform = ""; }
+        this._alKey = "";
+        if(msg) msg.replaceChildren();
     },
 
     /* Clear both panels (used at startup). */

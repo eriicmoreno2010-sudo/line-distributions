@@ -308,7 +308,7 @@ Version: 3.0 — Lyrics
 #adlib-msg{
     position:absolute; right:26px; bottom:22px; max-width:48%; z-index:5;
     display:flex; flex-direction:column; align-items:flex-end;
-    pointer-events:none; opacity:0; will-change:transform,opacity;
+    pointer-events:none;   /* fijo: cada tarjeta se anima sola, el contenedor NO se mueve */
 }
 .al-box{
     border-radius:18px; text-align:center; max-width:100%;
@@ -327,8 +327,8 @@ Version: 3.0 — Lyrics
 .al-box > .al-inner{ overflow:hidden; padding:14px 22px; }
 .al-box + .al-box{ margin-top:24px; }    /* separación entre 2+ ad-libs (no pegados) */
 .al-box.enter, .al-box.leave{ grid-template-rows:0fr; opacity:0; margin-top:0; }
-.al-box.enter{ transform:translateY(14px); }
-.al-box.leave{ transform:translateY(-10px); }
+.al-box.enter{ transform:translateY(34px); }    /* aparece desde ABAJO */
+.al-box.leave{ transform:translateY(-70px); }   /* al acabar SUBE hacia el panel y desaparece */
 .al-box .al-name{ font-size:15px; font-weight:900; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; }
 /* mismo tamaño y grosor para las tres versiones */
 .al-box .al-text{ font-size:24px; font-weight:800; line-height:1.28; }
