@@ -7,10 +7,16 @@ Player
 const Player = {
 
     video: null,
+    audio: null,
 
     init() {
 
         this.video = document.getElementById("video");
+
+        // Audio limpio del mp3 en vez del audio del vídeo (opcional): pon
+        // "audio":"audio/xxx.mp3" en el JSON de la canción. Silencia el vídeo y
+        // reproduce el mp3 sincronizado (play/pausa/seek/velocidad lo siguen).
+        this.setupAudio();
 
         this.video.addEventListener("loadedmetadata", () => {
 
@@ -41,6 +47,25 @@ const Player = {
         };
         requestAnimationFrame(loop);
 
+    },
+
+    setupAudio() {
+        const src = (typeof SONG !== "undefined" && SONG && (SONG.audio || SONG.mp3)) || "";
+        if(!src) return;                         // sin campo audio -> usa el audio del vídeo (como siempre)
+        const v = this.video;
+        const aud = new Audio(src + (src.indexOf("?") < 0 ? "?" : "&") + "v=" + (SONG.duration || 0));
+        aud.preload = "auto";
+        this.audio = aud;
+        v.muted = true;                          // el sonido sale del mp3, no del vídeo
+
+        const sync = () => { try{ if(Math.abs(aud.currentTime - v.currentTime) > 0.25) aud.currentTime = v.currentTime; }catch(e){} };
+        v.addEventListener("play",  () => { sync(); aud.play().catch(() => {}); });
+        v.addEventListener("pause", () => aud.pause());
+        v.addEventListener("seeked", sync);
+        v.addEventListener("ratechange", () => { aud.playbackRate = v.playbackRate; });
+        v.addEventListener("ended", () => aud.pause());
+        // corrección de deriva mientras suena
+        setInterval(() => { if(!v.paused && !aud.paused) sync(); }, 1000);
     }
 
 };
