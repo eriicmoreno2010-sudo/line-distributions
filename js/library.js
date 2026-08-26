@@ -106,7 +106,7 @@
     mCreate.onclick = async () => {
       const song = document.getElementById("songName").value.trim();
       if(!song){ mError.textContent = "Pon el nombre de la canción."; return; }
-      const args = { song };
+      const args = { song, theme: document.getElementById("themeSelect").value };
       if(mode === "existing"){
         const g = sel.value;
         args.group = g; args.sourcePath = groups[g];

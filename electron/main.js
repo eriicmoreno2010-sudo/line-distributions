@@ -187,6 +187,7 @@ ipcMain.handle("create-song", async (_e, args) => {
 
     const song = {
       group: groupName, song: songName, video: "", duration: 0,
+      theme: (args.theme === "light" ? "light" : "dark"),   // fondo elegido al crear
       members,
       lyrics: [
         { start:0, end:0, members:[members[0] ? members[0].name : ""],
