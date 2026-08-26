@@ -498,6 +498,12 @@
       "members": [
         "TAEYONG"
       ],
+      "voice": [
+        [
+          71.21,
+          71.71
+        ]
+      ],
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
@@ -512,7 +518,17 @@
       "original": "",
       "romanization": "(Woo, woo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          73.34,
+          73.49
+        ],
+        [
+          73.68,
+          74
+        ]
+      ]
     },
     {
       "start": 87.42,
@@ -521,7 +537,13 @@
       "original": "",
       "romanization": "(Ooh, hoo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          87.39,
+          88.44
+        ]
+      ]
     },
     {
       "start": 125.95,
@@ -543,7 +565,13 @@
       "original": "",
       "romanization": "(One)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          127.82,
+          128.14
+        ]
+      ]
     },
     {
       "start": 128.45,
@@ -554,7 +582,13 @@
       "original": "",
       "romanization": "(Plus)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          128.44,
+          128.8
+        ]
+      ]
     },
     {
       "start": 129.12,
@@ -565,7 +599,13 @@
       "original": "",
       "romanization": "(Make it 10)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          129.08,
+          129.98
+        ]
+      ]
     },
     {
       "start": 130.84,
@@ -576,7 +616,13 @@
       "original": "(마침내 완벽해)",
       "romanization": "(machimnae wanbyeokhae)",
       "english": "(Finally, it's perfect)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          130.83,
+          132.38
+        ]
+      ]
     },
     {
       "start": 133.25,
@@ -587,7 +633,13 @@
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          133.32,
+          133.67
+        ]
+      ]
     },
     {
       "start": 134.24,
@@ -598,7 +650,13 @@
       "original": "",
       "romanization": "(Woo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          134.29,
+          134.53
+        ]
+      ]
     },
     {
       "start": 167.58,
@@ -609,7 +667,13 @@
       "original": "",
       "romanization": "(Doesn't matter how far)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          167.53,
+          171.71
+        ]
+      ]
     },
     {
       "start": 172.5,
@@ -620,7 +684,13 @@
       "original": "(Woo, 서든)",
       "romanization": "(woo, seodeun)",
       "english": "(Woo, where) ",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          172.47,
+          174.79
+        ]
+      ]
     },
     {
       "start": 175.85,
@@ -631,7 +701,13 @@
       "original": "(라는 걸)",
       "romanization": "(raneun geol)",
       "english": "(Be together)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          175.84,
+          178.38
+        ]
+      ]
     },
     {
       "start": 179.15,
@@ -640,7 +716,17 @@
       "original": "(Yeah, yeah, -려갈게 Promise)",
       "romanization": "(yeah, yeah, -llyeogalge promise)",
       "english": "(Yeah, yeah, run to you, promise)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          179.17,
+          179.96
+        ],
+        [
+          180.17,
+          182.48
+        ]
+      ]
     },
     {
       "start": 127.54,
