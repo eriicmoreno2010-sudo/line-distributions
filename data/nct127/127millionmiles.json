@@ -78,7 +78,9 @@
     {
       "start": 15.72,
       "end": 19.9,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           15.74,
@@ -97,7 +99,9 @@
     {
       "start": 20.25,
       "end": 24.07,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "voice": [
         [
           20.23,
@@ -116,7 +120,9 @@
     {
       "start": 24.31,
       "end": 28.35,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "voice": [
         [
           24.35,
@@ -131,7 +137,9 @@
     {
       "start": 30.43,
       "end": 34.7,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "voice": [
         [
           30.45,
@@ -165,7 +173,9 @@
     {
       "start": 40.29,
       "end": 47.6,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "voice": [
         [
           40.22,
@@ -184,7 +194,9 @@
     {
       "start": 47.72,
       "end": 52.34,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
       "english": "",
@@ -193,7 +205,9 @@
     {
       "start": 52.52,
       "end": 57.23,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "언제든 어디서든 우린 함께라는 걸",
       "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
       "english": "No matter when or where, we’ll always be together",
@@ -202,7 +216,9 @@
     {
       "start": 57.38,
       "end": 62.19,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
       "english": "Even from Venus to Mars, I’ll run to you, promise",
@@ -230,7 +246,9 @@
     {
       "start": 69.11,
       "end": 71.22,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "voice": [
         [
           69.19,
@@ -245,7 +263,9 @@
     {
       "start": 71.7,
       "end": 73.72,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "voice": [
         [
           71.66,
@@ -260,7 +280,9 @@
     {
       "start": 74.07,
       "end": 76.56,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "voice": [
         [
           74.13,
@@ -279,7 +301,9 @@
     {
       "start": 76.68,
       "end": 78.85,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "voice": [
         [
           76.73,
@@ -324,7 +348,9 @@
     {
       "start": 88.32,
       "end": 90.49,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           88.31,
@@ -343,37 +369,43 @@
     {
       "start": 90.67,
       "end": 92.96,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           91.08,
           93.14
         ]
       ],
-      "original": "Two 둘로 나눠져 있던, 세상을 껴안아",
-      "romanization": "two dulro nanwyeojyeo itdeon, sesangeul kkyeoana",
-      "english": "Two I embrace the world, that had been divided in two",
+      "original": "**Two** 둘로 나눠져 있던, 세상을 껴안아",
+      "romanization": "**two** dulro nanwyeojyeo itdeon, sesangeul kkyeoana",
+      "english": "**Two** I embrace the world, that had been divided in two",
       "adlib": false
     },
     {
       "start": 93.11,
       "end": 95.16,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           93.5,
           95.37
         ]
       ],
-      "original": "Seven 일곱 개의 별들 사이 새겨진",
-      "romanization": "seven ilgop gaeui byeoldeul sai saegyeojin",
-      "english": "Seven If I follow the light engraved",
+      "original": "**Seven** 일곱 개의 별들 사이 새겨진",
+      "romanization": "**seven** ilgop gaeui byeoldeul sai saegyeojin",
+      "english": "**Seven** If I follow the light engraved",
       "adlib": false
     },
     {
       "start": 95.31,
       "end": 98.05,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           95.41,
@@ -388,7 +420,9 @@
     {
       "start": 98.72,
       "end": 106.22,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "voice": [
         [
           98.72,
@@ -407,7 +441,9 @@
     {
       "start": 106.4,
       "end": 111.07,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
       "english": "",
@@ -416,7 +452,9 @@
     {
       "start": 111.25,
       "end": 115.98,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "언제든 어디서든 우린 함께라는 걸",
       "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
       "english": "No matter when or where, we’ll always be together",
@@ -425,7 +463,9 @@
     {
       "start": 116.16,
       "end": 120.83,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
       "english": "Even Venus to Mars, I’ll run to you, promise",
@@ -434,7 +474,9 @@
     {
       "start": 120.98,
       "end": 126.51,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "voice": [
         [
           120.87,
@@ -594,7 +636,9 @@
     {
       "start": 127.54,
       "end": 132.24,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "voice": [
         [
           127.52,
@@ -617,7 +661,9 @@
     {
       "start": 132.42,
       "end": 133.32,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           132.26,
@@ -632,7 +678,9 @@
     {
       "start": 133.5,
       "end": 134.57,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           133.44,
@@ -647,7 +695,9 @@
     {
       "start": 134.72,
       "end": 135.56,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           134.71,
@@ -662,7 +712,9 @@
     {
       "start": 135.71,
       "end": 137.76,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "voice": [
         [
           135.74,
@@ -711,7 +763,9 @@
     {
       "start": 147.92,
       "end": 152.8,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "voice": [
         [
           147.96,
@@ -730,7 +784,9 @@
     {
       "start": 152.95,
       "end": 157.67,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "voice": [
         [
           152.92,
@@ -749,7 +805,9 @@
     {
       "start": 157.82,
       "end": 162.5,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "voice": [
         [
           157.74,
@@ -768,7 +826,9 @@
     {
       "start": 162.62,
       "end": 167.47,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "voice": [
         [
           162.68,
@@ -783,15 +843,17 @@
           167.7
         ]
       ],
-      "original": "127 Million miles, Light the way hold my hands",
-      "romanization": "127 million miles, light the way hold my hands",
-      "english": "127 million miles, Light the way, hold my hands",
+      "original": "",
+      "romanization": "127 Million miles, Light the way hold my hands",
+      "english": "",
       "adlib": false
     },
     {
       "start": 167.59,
       "end": 172.29,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
       "english": "",
@@ -800,7 +862,9 @@
     {
       "start": 172.45,
       "end": 177.03,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "언제든 어디서든 우린 함께라는 걸",
       "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
       "english": "No matter when or where, we’ll always be together",
@@ -809,7 +873,9 @@
     {
       "start": 177.24,
       "end": 182.03,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
       "english": "Even from Venus to Mars, I’ll run to you, promise",
@@ -837,7 +903,9 @@
     {
       "start": 187.19,
       "end": 193.18,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "voice": [
         [
           187.13,
