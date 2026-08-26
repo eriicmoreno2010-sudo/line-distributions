@@ -493,8 +493,8 @@
       "adlib": false
     },
     {
-      "start": 71.11,
-      "end": 71.66,
+      "start": 71.2,
+      "end": 71.65,
       "members": [
         "TAEYONG"
       ],
@@ -511,6 +511,15 @@
       ],
       "original": "",
       "romanization": "(Woo, woo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 87.42,
+      "end": 88.41,
+      "members": [],
+      "original": "",
+      "romanization": "(Ooh, hoo)",
       "english": "",
       "adlib": true
     },
