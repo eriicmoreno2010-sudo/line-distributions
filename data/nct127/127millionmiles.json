@@ -43,10 +43,10 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.78,
+      "end": 15.03,
       "members": [
-        "JOHNNY"
+        "JAEHYUN"
       ],
       "original": "Never felt 이런 느낌, Couldn’t help but smile",
       "romanization": "never felt ireon neukkim, couldn’t help but smile",
@@ -54,8 +54,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 15.72,
+      "end": 19.9,
       "members": [],
       "original": "Turn my world upside down, 너로 가득한 걸",
       "romanization": "turn my world upside down, neoro gadeukhan geol",
@@ -63,8 +63,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.25,
+      "end": 24.07,
       "members": [],
       "original": "어떻게 넓은 우주 속에서",
       "romanization": "eotteoke neolbeun uju sogeseo",
@@ -72,17 +72,17 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 24.31,
+      "end": 28.35,
       "members": [],
       "original": "너라는 행성을 만났는지",
       "romanization": "neoraneun haengseongeul mannanneunji",
-      "english": "In this vast universe? One thing is certain",
+      "english": "In this vast universe?",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 30.43,
+      "end": 34.7,
       "members": [],
       "original": "하나 분명한 건 둘이라서 난",
       "romanization": "hana bunmyeonghan geon duraseo nan",
@@ -90,8 +90,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 35.37,
+      "end": 40.01,
       "members": [],
       "original": "Seven days a week, 더 나은 사람이 되어가",
       "romanization": "seven days a week, deo naeun sarami doeeoga",
@@ -99,8 +99,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 40.29,
+      "end": 47.6,
       "members": [],
       "original": "매일이 행복할 순 없겠지만, 이것만 약속할게",
       "romanization": "maeiri haengbokhal sun eopgetjiman, igeotman yaksokhalge",
@@ -108,8 +108,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.72,
+      "end": 52.34,
       "members": [],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
@@ -117,8 +117,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.52,
+      "end": 57.23,
       "members": [],
       "original": "언제든 어디서든 우린 함께라는 걸",
       "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
@@ -126,8 +126,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.38,
+      "end": 62.19,
       "members": [],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
@@ -135,8 +135,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.34,
+      "end": 68.23,
       "members": [],
       "original": "",
       "romanization": "127 Million miles away",
@@ -144,8 +144,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.11,
+      "end": 71.22,
       "members": [],
       "original": "더 멀리 펼쳐질 순간 앞에",
       "romanization": "deo meolli pyeolchyeojil sungan ape",
@@ -153,8 +153,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.7,
+      "end": 73.72,
       "members": [],
       "original": "기억이 닿는 곳 전부 함께",
       "romanization": "gieogi dahneun got jeonbu hamkke",
@@ -162,26 +162,26 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 74.07,
+      "end": 76.56,
       "members": [],
       "original": "And you became my seven, 저 무지개의 색은",
-      "romanization": "and you became my seven, jeo mujigaeui saegeun neoro inhae",
+      "romanization": "and you became my seven, jeo mujigaeui saegeun",
       "english": "And you became my seven, The colors of that rainbow",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 76.68,
+      "end": 78.85,
       "members": [],
       "original": "너로 인해 이제서야 난 다채로워",
-      "romanization": "ijeseoya nan dachaerowo",
+      "romanization": "neoro inhae ijeseoya nan dachaerowo",
       "english": "Because of you, I can finally see the world in all its colors",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 78.92,
+      "end": 82.88,
       "members": [],
       "original": "입가에 맴돌던 영원이란 말의",
       "romanization": "ipgae maemdoldeon yeongwoniran malui",
@@ -189,8 +189,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.95,
+      "end": 87.28,
       "members": [],
       "original": "의미를 이제서야 난 깨달아",
       "romanization": "uimireul ijeseoya nan kkaedara",
@@ -198,8 +198,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.32,
+      "end": 90.49,
       "members": [],
       "original": "One을 그리고 나면, 항상 그 끝엔 내가",
       "romanization": "oneeul geurigo namyeon, hangsang geu kkeuten naega",
@@ -207,8 +207,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 90.67,
+      "end": 92.96,
       "members": [],
       "original": "Two 둘로 나눠져 있던, 세상을 껴안아",
       "romanization": "two dulro nanwyeojyeo itdeon, sesangeul kkyeoana",
@@ -216,8 +216,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 93.11,
+      "end": 95.16,
       "members": [],
       "original": "Seven 일곱 개의 별들 사이 새겨진",
       "romanization": "seven ilgop gaeui byeoldeul sai saegyeojin",
@@ -225,8 +225,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 95.31,
+      "end": 98.05,
       "members": [],
       "original": "빛을 따라가다 보면, 그곳엔 네가 있어",
       "romanization": "bicheul ttaragada bomyeon, geugosen nega isseo",
@@ -234,8 +234,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 98.72,
+      "end": 106.22,
       "members": [],
       "original": "초록빛에 물든 세상이 마침내, 우리란 걸 발견해",
       "romanization": "chorokbiche muldeun sesangi machimnae, uriran geol balgyeonhae",
@@ -243,8 +243,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 106.4,
+      "end": 111.07,
       "members": [],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
@@ -252,8 +252,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 111.25,
+      "end": 115.98,
       "members": [],
       "original": "언제든 어디서든 우린 함께라는 걸",
       "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
@@ -261,8 +261,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 116.16,
+      "end": 120.83,
       "members": [],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
@@ -270,8 +270,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.98,
+      "end": 126.51,
       "members": [],
       "original": "",
       "romanization": "127 Million miles away",
@@ -288,8 +288,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 127.54,
+      "end": 132.24,
       "members": [],
       "original": "One Two Seven Make it 10, From the start 마침내 완벽해",
       "romanization": "one two seven make it 10, from the start machimnae wanbyeokhae",
@@ -297,8 +297,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 132.42,
+      "end": 133.32,
       "members": [],
       "original": "많은 시간을 지나",
       "romanization": "maneun siganeul jina",
@@ -306,8 +306,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 133.5,
+      "end": 134.57,
       "members": [],
       "original": "닿은 듯해 How could I",
       "romanization": "daeun deushae how could i",
@@ -315,8 +315,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.72,
+      "end": 135.56,
       "members": [],
       "original": "내가 바라고 바랬던",
       "romanization": "naega barago baraetdeon",
@@ -324,8 +324,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 135.71,
+      "end": 137.76,
       "members": [],
       "original": "우리만의 그 Paradise",
       "romanization": "urimanui geu paradise",
@@ -333,8 +333,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 137.94,
+      "end": 141.69,
       "members": [],
       "original": "조금 멀리 이어질 꿈을 지나면",
       "romanization": "jogeum meolli ieojil kkumeul jinamyeon",
@@ -342,8 +342,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 141.89,
+      "end": 146.82,
       "members": [],
       "original": "결국 서로를 찾아낼 테니까",
       "romanization": "gyeolguk seororeul chajanael tenikka",
@@ -351,8 +351,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 147.92,
+      "end": 152.8,
       "members": [],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
@@ -360,8 +360,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 152.95,
+      "end": 157.67,
       "members": [],
       "original": "언제든 어디서든 우린 함께야",
       "romanization": "eonjedeun eodiseodeun urin hamkkyeoya",
@@ -369,8 +369,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 157.82,
+      "end": 162.5,
       "members": [],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
@@ -378,8 +378,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 162.62,
+      "end": 167.47,
       "members": [],
       "original": "127 Million miles, Light the way hold my hands",
       "romanization": "127 million miles, light the way hold my hands",
@@ -387,8 +387,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.59,
+      "end": 172.29,
       "members": [],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
@@ -396,8 +396,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 172.45,
+      "end": 177.03,
       "members": [],
       "original": "언제든 어디서든 우린 함께라는 걸",
       "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
@@ -405,8 +405,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 177.24,
+      "end": 182.03,
       "members": [],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
@@ -414,8 +414,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 182.22,
+      "end": 187.06,
       "members": [],
       "original": "",
       "romanization": "127 Million miles away",
@@ -423,8 +423,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 187.19,
+      "end": 193.18,
       "members": [],
       "original": "",
       "romanization": "127 Million miles away",
