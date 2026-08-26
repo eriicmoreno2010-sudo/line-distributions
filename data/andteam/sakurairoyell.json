@@ -443,6 +443,39 @@
       "romanization": "Always the only one",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 156.84,
+      "end": 158.83,
+      "members": [
+        "K"
+      ],
+      "original": "",
+      "romanization": "Ah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 159.96,
+      "end": 161.84,
+      "members": [
+        "K"
+      ],
+      "original": "",
+      "romanization": "Oh",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 190.89,
+      "end": 192.53,
+      "members": [
+        "MAKI"
+      ],
+      "original": "",
+      "romanization": "Ah woah",
+      "english": "",
+      "adlib": true
     }
   ],
   "audio": "audio/team_sakurairoyell.mp3"
