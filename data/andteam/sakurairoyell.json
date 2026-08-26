@@ -79,7 +79,21 @@
       "original": "やわらかな風が この世界ごと包み込んで",
       "romanization": "yawarakana kaze ga kono sekaigoto tsutsumikonde",
       "english": "A gentle breeze envelops this whole world",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          12.22,
+          14.06
+        ],
+        [
+          14.27,
+          17.37
+        ],
+        [
+          17.53,
+          18.83
+        ]
+      ]
     },
     {
       "start": 18.9,
@@ -90,7 +104,17 @@
       "original": "僕らの背中を押すよ Oh",
       "romanization": "bokura no senaka o osu yo oh",
       "english": "And pushes us forward Oh",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          18.87,
+          23.58
+        ],
+        [
+          24.1,
+          24.98
+        ]
+      ]
     },
     {
       "start": 25.11,
@@ -101,7 +125,21 @@
       "original": "期待と不安, 入り混じった心がまたこそばゆくて",
       "romanization": "kitai to fuan, iri majitta kokoro ga mata kosobayukute",
       "english": "Hope and anxiety, Tangled together makes my heart tingle",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          24.96,
+          26.77
+        ],
+        [
+          26.98,
+          29.92
+        ],
+        [
+          30.13,
+          31.57
+        ]
+      ]
     },
     {
       "start": 31.67,
@@ -112,7 +150,17 @@
       "original": "ほどけた蕾のよう",
       "romanization": "hodoketa tsubomi no yō",
       "english": "Like an unraveling bud",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.66,
+          33.19
+        ],
+        [
+          33.31,
+          37.25
+        ]
+      ]
     },
     {
       "start": 38.92,
@@ -123,7 +171,17 @@
       "original": "芽吹き始めた希望 夢",
       "romanization": "mebuki hajimeta kibō yume",
       "english": "Newly sprouted hopes and dreams",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.85,
+          39.52
+        ],
+        [
+          39.67,
+          44.18
+        ]
+      ]
     },
     {
       "start": 45.1,
@@ -134,7 +192,17 @@
       "original": "心の奥で抱きしめ",
       "romanization": "kokoro no oku de dakishime",
       "english": "Holding them deep in my heart",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.29,
+          45.81
+        ],
+        [
+          45.96,
+          50.42
+        ]
+      ]
     },
     {
       "start": 51.36,
@@ -145,7 +213,29 @@
       "original": "どんな夜も超えて 君と咲かせたい",
       "romanization": "donna yoru mo koete kimi to sakasetai",
       "english": "No matter the night, I want to make them bloom with you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.42,
+          52.12
+        ],
+        [
+          52.3,
+          52.91
+        ],
+        [
+          53.06,
+          53.76
+        ],
+        [
+          53.94,
+          54.46
+        ],
+        [
+          54.67,
+          57.29
+        ]
+      ]
     },
     {
       "start": 57.58,
@@ -156,7 +246,17 @@
       "original": "きっと 色褪せることはない",
       "romanization": "kitto iroaseru koto wa nai",
       "english": "Their color will surely never fade",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.63,
+          59.11
+        ],
+        [
+          59.35,
+          63.49
+        ]
+      ]
     },
     {
       "start": 63.34,
@@ -167,7 +267,17 @@
       "original": "桜色Yell 君に届け",
       "romanization": "sakura-iro yell kimi ni todoke",
       "english": "Sakura colored cheer, hope it reaches you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          63.47,
+          66.46
+        ],
+        [
+          66.67,
+          69.69
+        ]
+      ]
     },
     {
       "start": 69.87,
@@ -178,7 +288,21 @@
       "original": "離れても 変わらずに 味方でいるから",
       "romanization": "hanarete mo kawarazu ni mikata de iru kara",
       "english": "Even if we’re apart, I’ll always be by your side",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.91,
+          71.44
+        ],
+        [
+          71.68,
+          73.09
+        ],
+        [
+          73.68,
+          76.24
+        ]
+      ]
     },
     {
       "start": 76.29,
@@ -189,7 +313,17 @@
       "original": "何年後の 未来だって",
       "romanization": "nannengo no mirai datte",
       "english": "No matter how many years into the future",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          76.25,
+          79.12
+        ],
+        [
+          79.42,
+          82.64
+        ]
+      ]
     },
     {
       "start": 82.8,
@@ -200,7 +334,17 @@
       "original": "また会える 約束をかわそう",
       "romanization": "mata aeru yakusoku o kawasō",
       "english": "Let’s promise we’ll meet again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          82.89,
+          84.31
+        ],
+        [
+          84.49,
+          87.74
+        ]
+      ]
     },
     {
       "start": 88.94,
@@ -211,7 +355,21 @@
       "original": "鮮やかな花も せわしい日々を生きてると",
       "romanization": "azayaka na hana mo sewashii hibi o ikiteru to",
       "english": "Even vivid flowers, when living busy days",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.03,
+          90.96
+        ],
+        [
+          91.14,
+          94.16
+        ],
+        [
+          94.31,
+          95.61
+        ]
+      ]
     },
     {
       "start": 95.62,
@@ -222,7 +380,21 @@
       "original": "モノクロに見えてしまうよ Oh",
       "romanization": "monokuro ni miete shimau yo oh",
       "english": "Can start to look monochrome Oh",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          95.72,
+          96.73
+        ],
+        [
+          96.91,
+          100.36
+        ],
+        [
+          100.83,
+          101.78
+        ]
+      ]
     },
     {
       "start": 101.65,
@@ -233,7 +405,17 @@
       "original": "心配ない 迷った時にはいつも",
       "romanization": "shinpai nai mayotta toki ni wa itsumo",
       "english": "But don’t worry, whenever you feel lost",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101.82,
+          103.66
+        ],
+        [
+          103.87,
+          106.84
+        ]
+      ]
     },
     {
       "start": 107.01,
@@ -244,7 +426,17 @@
       "original": "大切な記憶が 胸に光るよ",
       "romanization": "taisetsu na kioku ga mune ni hikaru yo",
       "english": "Precious memories will shine through in your heart",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.17,
+          109.91
+        ],
+        [
+          110.06,
+          114.05
+        ]
+      ]
     },
     {
       "start": 114.36,
@@ -255,7 +447,13 @@
       "original": "今思えばひとりよがりの日々も",
       "romanization": "ima omoeba hitoriyogari no hibi mo",
       "english": "Looking back, even those self-centered days",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          114.48,
+          117.64
+        ]
+      ]
     },
     {
       "start": 117.76,
@@ -266,7 +464,13 @@
       "original": "振り向けば君が隣にいた",
       "romanization": "furimukeba kimi ga tonari ni ita",
       "english": "When I turned around, you were always there beside me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          117.8,
+          120.88
+        ]
+      ]
     },
     {
       "start": 121.01,
@@ -277,7 +481,13 @@
       "original": "これからもずっと変わらずずっと",
       "romanization": "kore kara mo zutto kawarazu zutto",
       "english": "From now on and forever, like I always have",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          121.05,
+          124.44
+        ]
+      ]
     },
     {
       "start": 124.24,
@@ -288,7 +498,13 @@
       "original": "この場所で君を待ってる",
       "romanization": "kono basho de kimi o matteru",
       "english": "I’ll be right here waiting for you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          124.33,
+          127.46
+        ]
+      ]
     },
     {
       "start": 127.44,
@@ -299,7 +515,17 @@
       "original": "桜色Yell 君に届け",
       "romanization": "sakura-iro yell kimi ni todoke",
       "english": "Sakura colored cheer, hope it reaches you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          127.43,
+          130.51
+        ],
+        [
+          130.69,
+          133.77
+        ]
+      ]
     },
     {
       "start": 133.83,
@@ -310,7 +536,21 @@
       "original": "誰よりも すぐそばに 感じられるから",
       "romanization": "dare yori mo sugu soba ni kanjirareru kara",
       "english": "'Cause I can feel you closer than anyone else",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.05,
+          135.47
+        ],
+        [
+          135.65,
+          137.21
+        ],
+        [
+          137.53,
+          140.21
+        ]
+      ]
     },
     {
       "start": 140.28,
@@ -321,7 +561,17 @@
       "original": "何回でも 思い出して",
       "romanization": "nankai demo omoidashite",
       "english": "Over and over, just remember",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          140.27,
+          143.32
+        ],
+        [
+          143.5,
+          146.58
+        ]
+      ]
     },
     {
       "start": 146.77,
@@ -332,7 +582,21 @@
       "original": "いつまでも 結ばれた 絆を",
       "romanization": "itsu made mo musubareta kizuna o",
       "english": "The bond that ties us together forever",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          146.85,
+          148.29
+        ],
+        [
+          148.44,
+          149.86
+        ],
+        [
+          150.01,
+          151.97
+        ]
+      ]
     },
     {
       "start": 152.07,
@@ -343,7 +607,13 @@
       "original": "",
       "romanization": "Always the only one",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          152.02,
+          156.06
+        ]
+      ]
     },
     {
       "start": 154.34,
@@ -354,7 +624,17 @@
       "original": "ヒラヒラと舞う花びら, 僕たちを彩る Magic",
       "romanization": "hirahira to mau hanabira, bokutachi o irodoru magic",
       "english": "Petals fluttering in the breeze, A magic that colors our lives",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.44,
+          157.3
+        ],
+        [
+          157.59,
+          160.55
+        ]
+      ]
     },
     {
       "start": 160.77,
@@ -365,7 +645,13 @@
       "original": "歩いてこう 花道を さあ",
       "romanization": "aruite kō hanamichi o saa",
       "english": "Let’s walk down this path of flowers",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.83,
+          163.94
+        ]
+      ]
     },
     {
       "start": 166.43,
@@ -376,7 +662,13 @@
       "original": "いくつ季節が移り変わったって",
       "romanization": "ikutsu kisetsu ga utsurikawatta tte",
       "english": "No matter how many seasons pass",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          166.54,
+          172
+        ]
+      ]
     },
     {
       "start": 172.28,
@@ -387,7 +679,13 @@
       "original": "僕たちはいつも, 繋がってるから強くなれる",
       "romanization": "bokutachi wa itsumo, tsunagatteru kara tsuyoku nareru",
       "english": "We will always, Stay connected, and that makes us strong",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          172.46,
+          178.78
+        ]
+      ]
     },
     {
       "start": 178.62,
@@ -398,7 +696,17 @@
       "original": "桜色Yell 君に届け",
       "romanization": "sakura-iro yell kimi ni todoke",
       "english": "Sakura colored cheer, hope it reaches you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          178.67,
+          181.64
+        ],
+        [
+          181.85,
+          184.86
+        ]
+      ]
     },
     {
       "start": 185.06,
@@ -409,7 +717,21 @@
       "original": "離れても 変わらずに 味方でいるから",
       "romanization": "hanarete mo kawarazu ni mikata de iru kara",
       "english": "Even if we’re apart, I’ll always be by your side",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          185.19,
+          186.73
+        ],
+        [
+          186.91,
+          188.38
+        ],
+        [
+          188.82,
+          191.49
+        ]
+      ]
     },
     {
       "start": 191.34,
@@ -420,7 +742,17 @@
       "original": "何年後の 未来だって",
       "romanization": "nannengo no mirai datte",
       "english": "No matter how many years into the future",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          191.45,
+          194.5
+        ],
+        [
+          194.74,
+          197.71
+        ]
+      ]
     },
     {
       "start": 197.91,
@@ -431,7 +763,21 @@
       "original": "また会える 約束をかわそう",
       "romanization": "mata aeru yakusoku o kawasō",
       "english": "Let’s promise we’ll meet again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          197.92,
+          199.42
+        ],
+        [
+          199.63,
+          200.99
+        ],
+        [
+          201.14,
+          203.01
+        ]
+      ]
     },
     {
       "start": 203.21,
@@ -442,7 +788,13 @@
       "original": "",
       "romanization": "Always the only one",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          203.26,
+          208.2
+        ]
+      ]
     },
     {
       "start": 156.84,
