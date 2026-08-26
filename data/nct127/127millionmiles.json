@@ -51,12 +51,44 @@
       "original": "Never felt 이런 느낌, Couldn’t help but smile",
       "romanization": "never felt ireon neukkim, couldn’t help but smile",
       "english": "Never felt this kind of feeling, Couldn’t help but smile",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          10.83,
+          12.54
+        ],
+        [
+          13.29,
+          13.9
+        ],
+        [
+          14.03,
+          15.02
+        ],
+        [
+          10.79,
+          12.47
+        ],
+        [
+          13.28,
+          15.04
+        ]
+      ]
     },
     {
       "start": 15.72,
       "end": 19.9,
       "members": [],
+      "voice": [
+        [
+          15.74,
+          18.13
+        ],
+        [
+          18.28,
+          19.99
+        ]
+      ],
       "original": "Turn my world upside down, 너로 가득한 걸",
       "romanization": "turn my world upside down, neoro gadeukhan geol",
       "english": "You’ve turned my world upside down, It’s filled with you",
@@ -66,6 +98,16 @@
       "start": 20.25,
       "end": 24.07,
       "members": [],
+      "voice": [
+        [
+          20.23,
+          21.34
+        ],
+        [
+          21.52,
+          24.04
+        ]
+      ],
       "original": "어떻게 넓은 우주 속에서",
       "romanization": "eotteoke neolbeun uju sogeseo",
       "english": "How did I find a planet like you",
@@ -75,6 +117,12 @@
       "start": 24.31,
       "end": 28.35,
       "members": [],
+      "voice": [
+        [
+          24.35,
+          28.28
+        ]
+      ],
       "original": "너라는 행성을 만났는지",
       "romanization": "neoraneun haengseongeul mannanneunji",
       "english": "In this vast universe?",
@@ -84,6 +132,16 @@
       "start": 30.43,
       "end": 34.7,
       "members": [],
+      "voice": [
+        [
+          30.45,
+          32.22
+        ],
+        [
+          32.92,
+          34.63
+        ]
+      ],
       "original": "하나 분명한 건 둘이라서 난",
       "romanization": "hana bunmyeonghan geon duraseo nan",
       "english": "One thing is certain, Because there are two of us",
@@ -93,6 +151,12 @@
       "start": 35.37,
       "end": 40.01,
       "members": [],
+      "voice": [
+        [
+          35.33,
+          39.93
+        ]
+      ],
       "original": "Seven days a week, 더 나은 사람이 되어가",
       "romanization": "seven days a week, deo naeun sarami doeeoga",
       "english": "I’m seven days a week, Becoming a better person",
@@ -102,6 +166,16 @@
       "start": 40.29,
       "end": 47.6,
       "members": [],
+      "voice": [
+        [
+          40.22,
+          44.72
+        ],
+        [
+          45.13,
+          47.76
+        ]
+      ],
       "original": "매일이 행복할 순 없겠지만, 이것만 약속할게",
       "romanization": "maeiri haengbokhal sun eopgetjiman, igeotman yaksokhalge",
       "english": "Every day may not always be happy, But I’ll promise you this",
@@ -138,6 +212,16 @@
       "start": 62.34,
       "end": 68.23,
       "members": [],
+      "voice": [
+        [
+          62.25,
+          64.53
+        ],
+        [
+          64.8,
+          68.23
+        ]
+      ],
       "original": "",
       "romanization": "127 Million miles away",
       "english": "",
@@ -147,6 +231,12 @@
       "start": 69.11,
       "end": 71.22,
       "members": [],
+      "voice": [
+        [
+          69.19,
+          71.33
+        ]
+      ],
       "original": "더 멀리 펼쳐질 순간 앞에",
       "romanization": "deo meolli pyeolchyeojil sungan ape",
       "english": "Before the moments that stretch even farther unfold",
@@ -156,6 +246,12 @@
       "start": 71.7,
       "end": 73.72,
       "members": [],
+      "voice": [
+        [
+          71.66,
+          73.79
+        ]
+      ],
       "original": "기억이 닿는 곳 전부 함께",
       "romanization": "gieogi dahneun got jeonbu hamkke",
       "english": "I’ll be with you everywhere my memories can reach",
@@ -165,6 +261,16 @@
       "start": 74.07,
       "end": 76.56,
       "members": [],
+      "voice": [
+        [
+          74.13,
+          75.26
+        ],
+        [
+          75.41,
+          76.54
+        ]
+      ],
       "original": "And you became my seven, 저 무지개의 색은",
       "romanization": "and you became my seven, jeo mujigaeui saegeun",
       "english": "And you became my seven, The colors of that rainbow",
@@ -174,6 +280,12 @@
       "start": 76.68,
       "end": 78.85,
       "members": [],
+      "voice": [
+        [
+          76.73,
+          78.97
+        ]
+      ],
       "original": "너로 인해 이제서야 난 다채로워",
       "romanization": "neoro inhae ijeseoya nan dachaerowo",
       "english": "Because of you, I can finally see the world in all its colors",
@@ -183,6 +295,12 @@
       "start": 78.92,
       "end": 82.88,
       "members": [],
+      "voice": [
+        [
+          78.87,
+          82.8
+        ]
+      ],
       "original": "입가에 맴돌던 영원이란 말의",
       "romanization": "ipgae maemdoldeon yeongwoniran malui",
       "english": "I finally understand, The meaning of the word “forever”",
@@ -192,6 +310,12 @@
       "start": 82.95,
       "end": 87.28,
       "members": [],
+      "voice": [
+        [
+          83.13,
+          87.25
+        ]
+      ],
       "original": "의미를 이제서야 난 깨달아",
       "romanization": "uimireul ijeseoya nan kkaedara",
       "english": "That used to linger on my lips",
@@ -201,6 +325,16 @@
       "start": 88.32,
       "end": 90.49,
       "members": [],
+      "voice": [
+        [
+          88.31,
+          88.75
+        ],
+        [
+          88.9,
+          90.73
+        ]
+      ],
       "original": "One을 그리고 나면, 항상 그 끝엔 내가",
       "romanization": "oneeul geurigo namyeon, hangsang geu kkeuten naega",
       "english": "After drawing One, At the end, there’s always me",
@@ -210,6 +344,12 @@
       "start": 90.67,
       "end": 92.96,
       "members": [],
+      "voice": [
+        [
+          91.08,
+          93.14
+        ]
+      ],
       "original": "Two 둘로 나눠져 있던, 세상을 껴안아",
       "romanization": "two dulro nanwyeojyeo itdeon, sesangeul kkyeoana",
       "english": "Two I embrace the world, that had been divided in two",
@@ -219,6 +359,12 @@
       "start": 93.11,
       "end": 95.16,
       "members": [],
+      "voice": [
+        [
+          93.5,
+          95.37
+        ]
+      ],
       "original": "Seven 일곱 개의 별들 사이 새겨진",
       "romanization": "seven ilgop gaeui byeoldeul sai saegyeojin",
       "english": "Seven If I follow the light engraved",
@@ -228,6 +374,12 @@
       "start": 95.31,
       "end": 98.05,
       "members": [],
+      "voice": [
+        [
+          95.41,
+          98.07
+        ]
+      ],
       "original": "빛을 따라가다 보면, 그곳엔 네가 있어",
       "romanization": "bicheul ttaragada bomyeon, geugosen nega isseo",
       "english": "Among the seven stars, I’ll find you there",
@@ -237,6 +389,16 @@
       "start": 98.72,
       "end": 106.22,
       "members": [],
+      "voice": [
+        [
+          98.72,
+          103.51
+        ],
+        [
+          103.92,
+          107.93
+        ]
+      ],
       "original": "초록빛에 물든 세상이 마침내, 우리란 걸 발견해",
       "romanization": "chorokbiche muldeun sesangi machimnae, uriran geol balgyeonhae",
       "english": "I finally discover that the world dyed in green, Is, at last, the two of us",
@@ -273,6 +435,16 @@
       "start": 120.98,
       "end": 126.51,
       "members": [],
+      "voice": [
+        [
+          120.87,
+          123.06
+        ],
+        [
+          123.33,
+          126.16
+        ]
+      ],
       "original": "",
       "romanization": "127 Million miles away",
       "english": "",
@@ -303,7 +475,9 @@
     {
       "start": 125.95,
       "end": 128.4,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(I’ll be right there where you are)",
       "english": "",
@@ -312,7 +486,9 @@
     {
       "start": 127.83,
       "end": 128.15,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "(One)",
       "english": "",
@@ -321,7 +497,9 @@
     {
       "start": 128.45,
       "end": 128.77,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "(Plus)",
       "english": "",
@@ -330,7 +508,9 @@
     {
       "start": 129.12,
       "end": 130,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "(Make it 10)",
       "english": "",
@@ -339,7 +519,9 @@
     {
       "start": 130.84,
       "end": 132.4,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "(마침내 완벽해)",
       "romanization": "(machimnae wanbyeokhae)",
       "english": "(Finally, it's perfect)",
@@ -348,7 +530,9 @@
     {
       "start": 133.25,
       "end": 133.6,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
@@ -357,7 +541,9 @@
     {
       "start": 134.24,
       "end": 134.62,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -366,7 +552,9 @@
     {
       "start": 167.58,
       "end": 171.82,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Doesn't matter how far)",
       "english": "",
@@ -375,7 +563,9 @@
     {
       "start": 172.5,
       "end": 174.87,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "(Woo, 서든)",
       "romanization": "(woo, seodeun)",
       "english": "(Woo, where) ",
@@ -384,7 +574,9 @@
     {
       "start": 175.85,
       "end": 178.51,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "(라는 걸)",
       "romanization": "(raneun geol)",
       "english": "(Be together)",
@@ -403,6 +595,20 @@
       "start": 127.54,
       "end": 132.24,
       "members": [],
+      "voice": [
+        [
+          127.52,
+          127.88
+        ],
+        [
+          128.14,
+          128.47
+        ],
+        [
+          128.7,
+          132.39
+        ]
+      ],
       "original": "One Two Seven Make it 10, From the start 마침내 완벽해",
       "romanization": "one two seven make it 10, from the start machimnae wanbyeokhae",
       "english": "One Two Seven Make it 10, From the start, Finally, it’s perfect",
@@ -412,6 +618,12 @@
       "start": 132.42,
       "end": 133.32,
       "members": [],
+      "voice": [
+        [
+          132.26,
+          133.25
+        ]
+      ],
       "original": "많은 시간을 지나",
       "romanization": "maneun siganeul jina",
       "english": "After so much time has passed, It feels like",
@@ -421,6 +633,12 @@
       "start": 133.5,
       "end": 134.57,
       "members": [],
+      "voice": [
+        [
+          133.44,
+          134.5
+        ]
+      ],
       "original": "닿은 듯해 How could I",
       "romanization": "daeun deushae how could i",
       "english": "we’ve finally reached each other, How could I",
@@ -430,6 +648,12 @@
       "start": 134.72,
       "end": 135.56,
       "members": [],
+      "voice": [
+        [
+          134.71,
+          135.77
+        ]
+      ],
       "original": "내가 바라고 바랬던",
       "romanization": "naega barago baraetdeon",
       "english": "After dreaming and wishing for it again and again",
@@ -439,6 +663,12 @@
       "start": 135.71,
       "end": 137.76,
       "members": [],
+      "voice": [
+        [
+          135.74,
+          137.91
+        ]
+      ],
       "original": "우리만의 그 Paradise",
       "romanization": "urimanui geu paradise",
       "english": "Our very own Paradise",
@@ -448,6 +678,12 @@
       "start": 137.94,
       "end": 141.69,
       "members": [],
+      "voice": [
+        [
+          137.92,
+          141.61
+        ]
+      ],
       "original": "조금 멀리 이어질 꿈을 지나면",
       "romanization": "jogeum meolli ieojil kkumeul jinamyeon",
       "english": "Because once we pass through the dream, That stretches a little farther away",
@@ -457,6 +693,16 @@
       "start": 141.89,
       "end": 146.82,
       "members": [],
+      "voice": [
+        [
+          141.88,
+          143.91
+        ],
+        [
+          144.06,
+          146.69
+        ]
+      ],
       "original": "결국 서로를 찾아낼 테니까",
       "romanization": "gyeolguk seororeul chajanael tenikka",
       "english": "We’ll eventually find each other",
@@ -466,6 +712,16 @@
       "start": 147.92,
       "end": 152.8,
       "members": [],
+      "voice": [
+        [
+          147.96,
+          150.16
+        ],
+        [
+          150.4,
+          152.67
+        ]
+      ],
       "original": "",
       "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
       "english": "",
@@ -475,6 +731,16 @@
       "start": 152.95,
       "end": 157.67,
       "members": [],
+      "voice": [
+        [
+          152.92,
+          155.14
+        ],
+        [
+          155.39,
+          157.73
+        ]
+      ],
       "original": "언제든 어디서든 우린 함께야",
       "romanization": "eonjedeun eodiseodeun urin hamkkyeoya",
       "english": "No matter when or where, we’ll always be together",
@@ -484,6 +750,16 @@
       "start": 157.82,
       "end": 162.5,
       "members": [],
+      "voice": [
+        [
+          157.74,
+          159.93
+        ],
+        [
+          160.23,
+          162.83
+        ]
+      ],
       "original": "Even Venus to Mars, 달려갈게 Promise",
       "romanization": "even venus to mars, dallyeogalge promise",
       "english": "Even from Venus to Mars, I’ll run to you, promise",
@@ -493,6 +769,20 @@
       "start": 162.62,
       "end": 167.47,
       "members": [],
+      "voice": [
+        [
+          162.68,
+          164.47
+        ],
+        [
+          164.62,
+          165.58
+        ],
+        [
+          165.76,
+          167.7
+        ]
+      ],
       "original": "127 Million miles, Light the way hold my hands",
       "romanization": "127 million miles, light the way hold my hands",
       "english": "127 million miles, Light the way, hold my hands",
@@ -529,6 +819,16 @@
       "start": 182.22,
       "end": 187.06,
       "members": [],
+      "voice": [
+        [
+          182.25,
+          184.5
+        ],
+        [
+          184.74,
+          188.12
+        ]
+      ],
       "original": "",
       "romanization": "127 Million miles away",
       "english": "",
@@ -538,6 +838,16 @@
       "start": 187.19,
       "end": 193.18,
       "members": [],
+      "voice": [
+        [
+          187.13,
+          189.46
+        ],
+        [
+          189.75,
+          193.21
+        ]
+      ],
       "original": "",
       "romanization": "127 Million miles away",
       "english": "",
