@@ -279,12 +279,124 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.11,
+      "end": 71.66,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 73.22,
+      "end": 73.9,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "(Woo, woo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 125.95,
+      "end": 128.4,
       "members": [],
-      "original": "(I’ll be right there where you are)",
-      "romanization": "(i’ll be right there where you are)",
-      "english": "(I’ll be right there where you are)",
+      "original": "",
+      "romanization": "(I’ll be right there where you are)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 127.83,
+      "end": 128.15,
+      "members": [],
+      "original": "",
+      "romanization": "(One)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 128.45,
+      "end": 128.77,
+      "members": [],
+      "original": "",
+      "romanization": "(Plus)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 129.12,
+      "end": 130,
+      "members": [],
+      "original": "",
+      "romanization": "(Make it 10)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 130.84,
+      "end": 132.4,
+      "members": [],
+      "original": "(마침내 완벽해)",
+      "romanization": "(machimnae wanbyeokhae)",
+      "english": "(Finally, it's perfect)",
+      "adlib": true
+    },
+    {
+      "start": 133.25,
+      "end": 133.6,
+      "members": [],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 134.24,
+      "end": 134.62,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 167.58,
+      "end": 171.82,
+      "members": [],
+      "original": "",
+      "romanization": "(Doesn't matter how far)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 172.5,
+      "end": 174.87,
+      "members": [],
+      "original": "(Woo, 서든)",
+      "romanization": "(woo, seodeun)",
+      "english": "(Woo, where) ",
+      "adlib": true
+    },
+    {
+      "start": 175.85,
+      "end": 178.51,
+      "members": [],
+      "original": "(라는 걸)",
+      "romanization": "(raneun geol)",
+      "english": "(Be together)",
+      "adlib": true
+    },
+    {
+      "start": 179.15,
+      "end": 182.49,
+      "members": [],
+      "original": "(Yeah, yeah, -려갈게 Promise)",
+      "romanization": "(yeah, yeah, -llyeogalge promise)",
+      "english": "(Yeah, yeah, run to you, promise)",
       "adlib": true
     },
     {
