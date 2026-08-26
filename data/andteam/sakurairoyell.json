@@ -805,7 +805,13 @@
       "original": "",
       "romanization": "Ah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          156.78,
+          158.57
+        ]
+      ]
     },
     {
       "start": 159.96,
@@ -816,7 +822,13 @@
       "original": "",
       "romanization": "Oh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          159.96,
+          161.6
+        ]
+      ]
     },
     {
       "start": 190.89,
@@ -827,7 +839,13 @@
       "original": "",
       "romanization": "Ah woah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          190.86,
+          192.53
+        ]
+      ]
     }
   ],
   "audio": "audio/team_sakurairoyell.mp3"
