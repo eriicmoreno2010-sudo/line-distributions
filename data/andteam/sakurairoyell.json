@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "Sakura-iro Yell",
   "video": "videos/team_sakurairoyell.mp4",
-  "duration": 0,
+  "duration": 221.220289,
   "theme": "light",
   "members": [
     {
@@ -81,5 +81,6 @@
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/team_sakurairoyell.mp3"
 }
