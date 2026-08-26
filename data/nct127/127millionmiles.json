@@ -2,7 +2,7 @@
   "group": "NCT 127",
   "song": "127 Million Miles",
   "video": "videos/nct127_127millionmiles.mp4",
-  "duration": 0,
+  "duration": 210.8,
   "theme": "light",
   "members": [
     {
@@ -48,10 +48,388 @@
       "members": [
         "JOHNNY"
       ],
+      "original": "Never felt 이런 느낌, Couldn’t help but smile",
+      "romanization": "never felt ireon neukkim, couldn’t help but smile",
+      "english": "Never felt this kind of feeling, Couldn’t help but smile",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Turn my world upside down, 너로 가득한 걸",
+      "romanization": "turn my world upside down, neoro gadeukhan geol",
+      "english": "You’ve turned my world upside down, It’s filled with you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어떻게 넓은 우주 속에서",
+      "romanization": "eotteoke neolbeun uju sogeseo",
+      "english": "How did I find a planet like you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너라는 행성을 만났는지",
+      "romanization": "neoraneun haengseongeul mannanneunji",
+      "english": "In this vast universe? One thing is certain",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하나 분명한 건 둘이라서 난",
+      "romanization": "hana bunmyeonghan geon duraseo nan",
+      "english": "One thing is certain, Because there are two of us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Seven days a week, 더 나은 사람이 되어가",
+      "romanization": "seven days a week, deo naeun sarami doeeoga",
+      "english": "I’m seven days a week, Becoming a better person",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "매일이 행복할 순 없겠지만, 이것만 약속할게",
+      "romanization": "maeiri haengbokhal sun eopgetjiman, igeotman yaksokhalge",
+      "english": "Every day may not always be happy, But I’ll promise you this",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "언제든 어디서든 우린 함께라는 걸",
+      "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
+      "english": "No matter when or where, we’ll always be together",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Even Venus to Mars, 달려갈게 Promise",
+      "romanization": "even venus to mars, dallyeogalge promise",
+      "english": "Even from Venus to Mars, I’ll run to you, promise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "127 Million miles away",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 멀리 펼쳐질 순간 앞에",
+      "romanization": "deo meolli pyeolchyeojil sungan ape",
+      "english": "Before the moments that stretch even farther unfold",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "기억이 닿는 곳 전부 함께",
+      "romanization": "gieogi dahneun got jeonbu hamkke",
+      "english": "I’ll be with you everywhere my memories can reach",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "And you became my seven, 저 무지개의 색은",
+      "romanization": "and you became my seven, jeo mujigaeui saegeun neoro inhae",
+      "english": "And you became my seven, The colors of that rainbow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너로 인해 이제서야 난 다채로워",
+      "romanization": "ijeseoya nan dachaerowo",
+      "english": "Because of you, I can finally see the world in all its colors",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "입가에 맴돌던 영원이란 말의",
+      "romanization": "ipgae maemdoldeon yeongwoniran malui",
+      "english": "I finally understand, The meaning of the word “forever”",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "의미를 이제서야 난 깨달아",
+      "romanization": "uimireul ijeseoya nan kkaedara",
+      "english": "That used to linger on my lips",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One을 그리고 나면, 항상 그 끝엔 내가",
+      "romanization": "oneeul geurigo namyeon, hangsang geu kkeuten naega",
+      "english": "After drawing One, At the end, there’s always me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Two 둘로 나눠져 있던, 세상을 껴안아",
+      "romanization": "two dulro nanwyeojyeo itdeon, sesangeul kkyeoana",
+      "english": "Two I embrace the world, that had been divided in two",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Seven 일곱 개의 별들 사이 새겨진",
+      "romanization": "seven ilgop gaeui byeoldeul sai saegyeojin",
+      "english": "Seven If I follow the light engraved",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "빛을 따라가다 보면, 그곳엔 네가 있어",
+      "romanization": "bicheul ttaragada bomyeon, geugosen nega isseo",
+      "english": "Among the seven stars, I’ll find you there",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "초록빛에 물든 세상이 마침내, 우리란 걸 발견해",
+      "romanization": "chorokbiche muldeun sesangi machimnae, uriran geol balgyeonhae",
+      "english": "I finally discover that the world dyed in green, Is, at last, the two of us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "언제든 어디서든 우린 함께라는 걸",
+      "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
+      "english": "No matter when or where, we’ll always be together",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Even Venus to Mars, 달려갈게 Promise",
+      "romanization": "even venus to mars, dallyeogalge promise",
+      "english": "Even Venus to Mars, I’ll run to you, promise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "127 Million miles away",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(I’ll be right there where you are)",
+      "romanization": "(i’ll be right there where you are)",
+      "english": "(I’ll be right there where you are)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One Two Seven Make it 10, From the start 마침내 완벽해",
+      "romanization": "one two seven make it 10, from the start machimnae wanbyeokhae",
+      "english": "One Two Seven Make it 10, From the start, Finally, it’s perfect",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "많은 시간을 지나",
+      "romanization": "maneun siganeul jina",
+      "english": "After so much time has passed, It feels like",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "닿은 듯해 How could I",
+      "romanization": "daeun deushae how could i",
+      "english": "we’ve finally reached each other, How could I",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내가 바라고 바랬던",
+      "romanization": "naega barago baraetdeon",
+      "english": "After dreaming and wishing for it again and again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우리만의 그 Paradise",
+      "romanization": "urimanui geu paradise",
+      "english": "Our very own Paradise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "조금 멀리 이어질 꿈을 지나면",
+      "romanization": "jogeum meolli ieojil kkumeul jinamyeon",
+      "english": "Because once we pass through the dream, That stretches a little farther away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "결국 서로를 찾아낼 테니까",
+      "romanization": "gyeolguk seororeul chajanael tenikka",
+      "english": "We’ll eventually find each other",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "언제든 어디서든 우린 함께야",
+      "romanization": "eonjedeun eodiseodeun urin hamkkyeoya",
+      "english": "No matter when or where, we’ll always be together",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Even Venus to Mars, 달려갈게 Promise",
+      "romanization": "even venus to mars, dallyeogalge promise",
+      "english": "Even from Venus to Mars, I’ll run to you, promise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "127 Million miles, Light the way hold my hands",
+      "romanization": "127 million miles, light the way hold my hands",
+      "english": "127 million miles, Light the way, hold my hands",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Doesn’t matter how far, Doesn’t matter where you are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "언제든 어디서든 우린 함께라는 걸",
+      "romanization": "eonjedeun eodiseodeun urin hamkkeraneun geol",
+      "english": "No matter when or where, we’ll always be together",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Even Venus to Mars, 달려갈게 Promise",
+      "romanization": "even venus to mars, dallyeogalge promise",
+      "english": "Even from Venus to Mars, I’ll run to you, promise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "127 Million miles away",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "127 Million miles away",
+      "english": "",
+      "adlib": false
     }
   ],
   "audio": "audio/nct127_127millionmiles.mp3"
