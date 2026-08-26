@@ -1,0 +1,57 @@
+{
+  "group": "NCT 127",
+  "song": "127 Million Miles",
+  "video": "",
+  "duration": 0,
+  "theme": "light",
+  "members": [
+    {
+      "name": "JOHNNY",
+      "image": "images/nct127/127millionmiles/johnny.png",
+      "color": "#31b287",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAEYONG",
+      "image": "images/nct127/127millionmiles/taeyong.png",
+      "color": "#c80404",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUTA",
+      "image": "images/nct127/127millionmiles/yuta.png",
+      "color": "#dd7f10",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUN",
+      "image": "images/nct127/127millionmiles/jaehyun.png",
+      "color": "#bf9b00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nct127/127millionmiles/haechan.png",
+      "color": "#1bb7e8",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
