@@ -79,12 +79,11 @@ body.theme-light #ranking .member.has-sung .member-name,
 body.theme-light #current-member{
     color:color-mix(in srgb, var(--accent) 76%, #000);
 }
-body.theme-light #ranking .member.has-sung .member-time,
-body.theme-light #ranking .member.done .member-time{
-    color:color-mix(in srgb, var(--accent) 66%, #000);
-}
 body.theme-light #ranking .member:not(.has-sung) .member-name{ color:#98a0af; }
-body.theme-light #ranking .member:not(.has-sung) .member-time{ color:#aab0bd; }
+/* CONTADOR: SIEMPRE gris; SOLO se pone del color del miembro mientras canta (active),
+   luego vuelve a gris (igual que el oscuro vuelve a blanco). */
+body.theme-light #ranking .member-time{ color:#98a0af; }
+body.theme-light #ranking .member.active .member-time{ color:color-mix(in srgb, var(--accent) 66%, #000); }
 
 /* ========================= */
 /* BODY */

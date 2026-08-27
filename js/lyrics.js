@@ -467,7 +467,18 @@ const Lyrics = {
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
             box.classList.add("enter");
             msg.appendChild(box);
-            requestAnimationFrame(() => requestAnimationFrame(() => box.classList.remove("enter")));
+            requestAnimationFrame(() => { this.fitAdlibText(box); requestAnimationFrame(() => box.classList.remove("enter")); });
+        });
+    },
+
+    /* Encoge la fuente de cada ad-lib para que SIEMPRE quepa en 1 renglón. */
+    fitAdlibText(box){
+        const avail = box.clientWidth - 48;   // ancho útil (menos padding/borde)
+        if(avail <= 20) return;
+        box.querySelectorAll(".al-text").forEach(el => {
+            el.style.fontSize = "";
+            let s = parseFloat(getComputedStyle(el).fontSize) || 24, guard = 0;
+            while(el.scrollWidth > avail && s > 12 && guard++ < 60){ s -= 1; el.style.fontSize = s + "px"; }
         });
     },
 
