@@ -10,35 +10,65 @@
       "image": "images/nct127/127millionmiles/johnny.png",
       "color": "#31b287",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 0.62,
+        "rot": 0
+      }
     },
     {
       "name": "TAEYONG",
       "image": "images/nct127/127millionmiles/taeyong.png",
       "color": "#c80404",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 0.505,
+        "rot": 0
+      }
     },
     {
       "name": "YUTA",
       "image": "images/nct127/127millionmiles/yuta.png",
       "color": "#dd7f10",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.734,
+        "size": 0.48,
+        "rot": 0
+      }
     },
     {
       "name": "JAEHYUN",
       "image": "images/nct127/127millionmiles/jaehyun.png",
       "color": "#bf9b00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.21,
+        "size": 0.56,
+        "rot": 0
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nct127/127millionmiles/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 0.53,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
