@@ -73,7 +73,6 @@
       </div>
       <div class="btns">
         <button id="save">💾 Guardar y subir</button>
-        <button class="sec" id="copy">Copiar valores</button>
       </div>
     </div>
   </div>
@@ -222,12 +221,16 @@ document.getElementById("copyFrame").addEventListener("click", ()=>{
     document.getElementById("pasteAll").disabled = false;
     const b=document.getElementById("copyFrame"); const t=b.textContent; b.textContent="✓ Copiado"; setTimeout(()=>b.textContent=t,1200);
 });
-document.getElementById("pasteFrame").addEventListener("click", ()=>{ applyClipTo(cur()); render(); });
-document.getElementById("pasteAll").addEventListener("click", ()=>{
-    if(!frameClip) return;
+function toast(btn, msg){ const t=btn.textContent; btn.textContent=msg; setTimeout(()=>btn.textContent=t,1200); }
+document.getElementById("pasteFrame").addEventListener("click", (e)=>{
+    if(!frameClip){ alert("Primero pulsa 📋 Copiar encuadre en una foto."); return; }
+    applyClipTo(cur()); render(); toast(e.currentTarget, "✓ Pegado");
+});
+document.getElementById("pasteAll").addEventListener("click", (e)=>{
+    if(!frameClip){ alert("Primero pulsa 📋 Copiar encuadre en una foto."); return; }
     if(!confirm("¿Aplicar este encuadre a TODAS las fotos?")) return;
     members.forEach(m=>{ if(m.iw) applyClipTo(m); });
-    render();
+    render(); toast(e.currentTarget, "✓ Pegado a todos");
 });
 
 // Importar la foto del miembro actual desde el PC (se carga aquí para encuadrar y
@@ -295,10 +298,6 @@ function buildOutput(){
     document.getElementById("out").value = lines.join("\n");
 }
 
-document.getElementById("copy").addEventListener("click", ()=>{
-    const o=document.getElementById("out"); o.select(); document.execCommand("copy");
-    const b=document.getElementById("copy"); const t=b.textContent; b.textContent="¡Copiado!"; setTimeout(()=>b.textContent=t,1200);
-});
 
 /* Bake each framed crop to an 800×800 PNG and upload it (desktop app only). */
 const saveBtn = document.getElementById("save");

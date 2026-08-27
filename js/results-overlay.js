@@ -126,14 +126,21 @@ Self-contained: injects its own styles and markup.
     body.theme-light #results-overlay .seg{ fill:#d2d5df; stroke:#eff1f6; }
     body.theme-light #results-overlay #ro-head .grp{ color:#7b8090; }
     body.theme-light #results-overlay #ro-even .lbl{ color:#7b8090; }
-    body.theme-light #results-overlay .row{ background:#e3e5ee; border-color:#d1d4de; opacity:.6; }
-    body.theme-light #results-overlay .row .name{ color:#8890a0; }
-    body.theme-light #results-overlay .row .fill{ background:#d2d5df; }
-    body.theme-light #results-overlay .row .pct{ color:#8890a0; }
-    body.theme-light #results-overlay .row .sec{ color:#a0a6b3; }
     body.theme-light #results-overlay .row .bar{ background:#d6d9e2; }
+    /* filas AÚN sin encender: gris atenuado */
+    body.theme-light #results-overlay .row:not(.lit){ background:#e3e5ee; border-color:#d1d4de; opacity:.55; }
+    body.theme-light #results-overlay .row:not(.lit) .name{ color:#8890a0; }
+    body.theme-light #results-overlay .row:not(.lit) .pct{ color:#8890a0; }
+    body.theme-light #results-overlay .row:not(.lit) .sec{ color:#a0a6b3; }
+    body.theme-light #results-overlay .row:not(.lit) .fill{ background:#c9cdd8; }
+    /* filas ENCENDIDAS: tinte claro del color del miembro (se nota bien sobre claro) */
+    body.theme-light #results-overlay .row.lit{ opacity:1;
+      background:color-mix(in srgb, var(--c) 16%, #fff);
+      border-color:color-mix(in srgb, var(--c) 55%, transparent); }
+    body.theme-light #results-overlay .row.lit .name{ color:color-mix(in srgb, var(--c) 74%, #000); }
+    body.theme-light #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 64%, #000); }
     body.theme-light #results-overlay .row.lit .sec{ color:#14151c; }
-    body.theme-light #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 60%, #000); }
+    body.theme-light #results-overlay .row.lit .fill{ background:var(--c); }
   `;
   document.head.appendChild(style);
 
