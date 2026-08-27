@@ -47,10 +47,10 @@ Base Layout
 /* ---- Tema CLARO (opt-in por cancion: SONG.theme === "light", p.ej. Moonlight) ----
    Paneles (letra/ranking/etc.) en BLANCO puro; exterior en gris claro; texto oscuro. */
 body.theme-light{
-    --background:#dfe1ea;   /* exterior: gris claro */
-    --panel:#e3e5ee;        /* paneles: gris claro (un poco menos blanco todavía) */
-    --panel2:#e3e5ee;       /* tarjetas del ranking / pill */
-    --panel3:#d4d7e1;       /* pista de barras / fondo foto: gris claro */
+    --background:#d3d6de;   /* exterior: GRIS */
+    --panel:#f1f2f6;        /* paneles: blanco MUY suave (no puro, no cansa la vista) */
+    --panel2:#f1f2f6;       /* tarjetas del ranking / pill */
+    --panel3:#dfe1e9;       /* pista de barras / fondo foto: gris claro */
     --border:rgba(0,0,0,.10);
     --text:#12131a;
     --text2:#565b68;
@@ -71,18 +71,20 @@ body.theme-light #right-panel{
         var(--panel);
 }
 body.theme-light #video-section{ background:#f3f4f8; }
-/* Nombres de miembro un pelin mas claros / suaves en tema claro (mezcla con blanco). */
+/* Tema claro — como en el ranking del donut:
+   - AL CANTAR: nombre y contador con el COLOR REAL del miembro (oscurecido un
+     pelín para que se lea sobre el claro) -> se nota que "se iluminan".
+   - ANTES de cantar: gris claro. */
 body.theme-light #ranking .member.has-sung .member-name,
 body.theme-light #current-member{
-    color:color-mix(in srgb, var(--accent) 78%, #fff);
+    color:color-mix(in srgb, var(--accent) 76%, #000);
 }
-/* Tema claro:
-   - ANTES de cantar: nombre + contador en gris CLARO.
-   - DESPUÉS de cantar: nombre con el color del miembro (ya está) y contador en GRIS. */
-body.theme-light #ranking .member:not(.has-sung) .member-name{ color:#98a0af; }
-body.theme-light #ranking .member:not(.has-sung) .member-time{ color:#a6adba; }
 body.theme-light #ranking .member.has-sung .member-time,
-body.theme-light #ranking .member.done .member-time{ color:#5b6070; }
+body.theme-light #ranking .member.done .member-time{
+    color:color-mix(in srgb, var(--accent) 66%, #000);
+}
+body.theme-light #ranking .member:not(.has-sung) .member-name{ color:#98a0af; }
+body.theme-light #ranking .member:not(.has-sung) .member-time{ color:#aab0bd; }
 
 /* ========================= */
 /* BODY */
