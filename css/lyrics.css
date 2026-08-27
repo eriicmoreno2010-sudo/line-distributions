@@ -304,16 +304,16 @@ Version: 3.0 — Lyrics
 /* ========================= */
 /* AD-LIB: mensaje flotante (borde + cristal) */
 /* ========================= */
-/* #adlib-msg solo posiciona/anima; cada ad-lib es su propia tarjeta .al-box */
+/* #adlib-msg = contenedor alto a la derecha; cada .al-box va posicionada en px
+   (JS) para que las nuevas entren por ABAJO empujando hacia arriba, y al irse una
+   las demás NO se muevan. */
 #adlib-msg{
-    /* anclado ARRIBA: los que ya están se quedan; los nuevos entran por debajo y
-       se apilan; al irse los de abajo, los de arriba NO bajan. */
-    position:absolute; right:26px; top:22px; max-width:48%; z-index:5;
-    display:flex; flex-direction:column; align-items:flex-end;
+    position:absolute; right:26px; top:22px; bottom:22px; width:48%; z-index:5;
     pointer-events:none;
 }
 .al-box{
-    border-radius:18px; text-align:center; max-width:100%;
+    position:absolute; right:0; bottom:0; max-width:100%;
+    border-radius:18px; text-align:center;
     border:1.5px solid color-mix(in srgb, var(--al-accent,#7c5cff) 60%, transparent);
     background:color-mix(in srgb, var(--al-accent,#7c5cff) 12%, rgba(8,8,14,.55));
     /* el cristal difumina la parte de la letra central que queda por detrás */
@@ -321,16 +321,10 @@ Version: 3.0 — Lyrics
     box-shadow:0 24px 60px -24px #000,
                0 0 34px -8px color-mix(in srgb, var(--al-accent,#7c5cff) 60%, transparent),
                0 0 0 1px rgba(255,255,255,.05) inset;
-    /* grid-rows 1fr<->0fr = colapso/expansión EXACTO y fluido (empuja al resto sin salto) */
-    display:grid; grid-template-rows:1fr;
-    transition:grid-template-rows .45s cubic-bezier(.4,0,.2,1), opacity .35s ease,
-               margin-top .45s cubic-bezier(.4,0,.2,1), transform .45s cubic-bezier(.4,0,.2,1);
+    /* sube fluido (bottom) al ser empujada; aparece/desaparece con opacity+transform */
+    transition:bottom .42s cubic-bezier(.4,0,.2,1), opacity .32s ease, transform .42s cubic-bezier(.4,0,.2,1);
 }
 .al-box > .al-inner{ overflow:hidden; padding:14px 22px; }
-.al-box + .al-box{ margin-top:24px; }    /* separación entre 2+ ad-libs (no pegados) */
-.al-box.enter, .al-box.leave{ grid-template-rows:0fr; opacity:0; margin-top:0; }
-.al-box.enter{ transform:translateY(34px); }    /* aparece desde ABAJO */
-.al-box.leave{ transform:translateY(-70px); }   /* al acabar SUBE hacia el panel y desaparece */
 .al-box .al-name{ font-size:15px; font-weight:900; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; white-space:nowrap; }
 /* mismo tamaño y grosor para las tres versiones; SIEMPRE en 1 renglón (la fuente se encoge en JS) */
 .al-box .al-text{ font-size:24px; font-weight:800; line-height:1.28; white-space:nowrap; }

@@ -452,22 +452,39 @@ const Lyrics = {
        añade las nuevas colapsadas -> al expandirse EMPUJAN a las demás (sin salto). */
     syncAdlibBoxes(msg, ais, lyrics){
         const want = ais.map(String);
-        // SALEN: los que ya no tocan -> suben hacia el panel y se colapsan (cada uno solo)
+        const GAP = 16;
+        // SALEN: los que ya no tocan -> se van (fade + un pelín hacia arriba). NO se
+        // tocan los demás -> los que quedan NO se mueven.
         Array.from(msg.children).forEach(box => {
             if(want.indexOf(box.dataset.i) === -1 && !box._leaving){
-                box._leaving = true; box.classList.remove("enter"); box.classList.add("leave");
-                setTimeout(() => box.remove(), 480);
+                box._leaving = true;
+                box.style.opacity = "0";
+                box.style.transform = "translateY(-22px)";
+                setTimeout(() => box.remove(), 420);
             }
         });
-        // ENTRAN: los nuevos -> desde abajo, colapsados; al expandirse empujan a los demás
+        // ENTRAN: nuevos -> por ABAJO (bottom 0); empujan a los existentes hacia arriba.
         ais.forEach(i => {
-            const ex = msg.querySelector('.al-box[data-i="' + i + '"]');
-            if(ex && !ex._leaving) return;
-            if(ex && ex._leaving) ex.remove();     // si reaparece justo al salir, lo recreamos
+            const existing = Array.from(msg.querySelectorAll('.al-box[data-i="' + i + '"]'));
+            if(existing.some(b => !b._leaving)) return;     // ya hay una activa para este ad-lib
+            existing.forEach(b => b.remove());              // reaparece justo al salir -> recrear
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
-            box.classList.add("enter");
+            box.style.opacity = "0";
             msg.appendChild(box);
-            requestAnimationFrame(() => { this.fitAdlibText(box); requestAnimationFrame(() => box.classList.remove("enter")); });
+            this.fitAdlibText(box);
+            const h = box.offsetHeight || 90;
+            // empuja las que ya están (que no se van) hacia arriba
+            Array.from(msg.children).forEach(b => {
+                if(b === box || b._leaving) return;
+                const nb = (parseFloat(b.dataset.bottom) || 0) + h + GAP;
+                b.dataset.bottom = nb; b.style.bottom = nb + "px";
+            });
+            box.dataset.bottom = "0";
+            box.style.bottom = (-h - 10) + "px";           // empieza debajo (fuera, recortado)
+            box.style.transform = "translateY(0)";
+            requestAnimationFrame(() => requestAnimationFrame(() => {
+                box.style.bottom = "0px"; box.style.opacity = "1";   // sube a su sitio
+            }));
         });
     },
 
