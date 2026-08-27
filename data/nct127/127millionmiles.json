@@ -45,6 +45,13 @@
       }
     },
     {
+      "name": "DOYOUNG",
+      "image": "images/nct127/127millionmiles/doyoung.png",
+      "color": "#7c5cff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
       "name": "JAEHYUN",
       "image": "images/nct127/127millionmiles/jaehyun.png",
       "color": "#bf9b00",
@@ -56,6 +63,13 @@
         "size": 0.2,
         "rot": 0
       }
+    },
+    {
+      "name": "JUNGWOO",
+      "image": "images/nct127/127millionmiles/jungwoo.png",
+      "color": "#7c5cff",
+      "focus": 50,
+      "lift": 3
     },
     {
       "name": "HAECHAN",
