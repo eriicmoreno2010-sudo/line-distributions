@@ -9,35 +9,65 @@
       "image": "images/seventeen/jeonghan.png",
       "color": "#ff0c0c",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 44
+      }
     },
     {
       "name": "JOSHUA",
       "image": "images/seventeen/joshua.png",
       "color": "#a001c8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "WOOZI",
       "image": "images/seventeen/woozi.png",
       "color": "#fa7304",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 281
+      }
     },
     {
       "name": "DK",
       "image": "images/seventeen/dk.png",
       "color": "#0002e6",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "SEUNGKWAN",
       "image": "images/seventeen/seungkwan.png",
       "color": "#ffea2d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 336
+      }
     }
   ],
   "lyrics": [
