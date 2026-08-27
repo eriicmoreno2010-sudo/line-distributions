@@ -20,6 +20,13 @@
       "lift": 3
     },
     {
+      "name": "DOYOUNG",
+      "image": "images/nct127/127millionmiles/doyoung.png",
+      "color": "#7c5cff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
       "name": "YUTA",
       "image": "images/nct127/127millionmiles/yuta.png",
       "color": "#dd7f10",
@@ -30,6 +37,13 @@
       "name": "JAEHYUN",
       "image": "images/nct127/127millionmiles/jaehyun.png",
       "color": "#bf9b00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNGWOO",
+      "image": "images/nct127/127millionmiles/jungwoo.png",
+      "color": "#7c5cff",
       "focus": 50,
       "lift": 3
     },
