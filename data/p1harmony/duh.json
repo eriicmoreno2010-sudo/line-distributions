@@ -9,42 +9,78 @@
       "image": "images/p1harmony/keeho.png",
       "color": "#ff751f",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "THEO",
       "image": "images/p1harmony/theo.png",
       "color": "#ff3131",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JIUNG",
       "image": "images/p1harmony/jiung.png",
       "color": "#ffde59",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "INTAK",
       "image": "images/p1harmony/intak.png",
       "color": "#7ed957",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "SOUL",
       "image": "images/p1harmony/soul.png",
       "color": "#38b6ff",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 57
+      }
     },
     {
       "name": "JONGSEOB",
       "image": "images/p1harmony/jongseob.png",
       "color": "#8c52ff",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
