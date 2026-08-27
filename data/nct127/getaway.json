@@ -9,35 +9,65 @@
       "image": "images/nct127/getaway/johnny.png",
       "color": "#31b287",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.16,
+        "size": 0.19,
+        "rot": 0
+      }
     },
     {
       "name": "TAEYONG",
       "image": "images/nct127/getaway/taeyong.png",
       "color": "#c80404",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.504,
+        "cy": 0.16,
+        "size": 0.18,
+        "rot": 0
+      }
     },
     {
       "name": "YUTA",
       "image": "images/nct127/getaway/yuta.png",
       "color": "#dd7f10",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.514,
+        "cy": 0.154,
+        "size": 0.19,
+        "rot": 0
+      }
     },
     {
       "name": "JAEHYUN",
       "image": "images/nct127/getaway/jaehyun.png",
       "color": "#bf9b00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.174,
+        "size": 0.2,
+        "rot": 0
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nct127/getaway/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.516,
+        "cy": 0.152,
+        "size": 0.185,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
