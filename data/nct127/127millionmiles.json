@@ -713,6 +713,27 @@
       ]
     },
     {
+      "start": 157.75,
+      "end": 162.73,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "(Even Venus to Mars, 달려갈게 Promise)",
+      "romanization": "(even venus to mars, dallyeogalge promise)",
+      "english": "(Even from Venus to Mars, I’ll run to you, promise)",
+      "adlib": true,
+      "voice": [
+        [
+          157.83,
+          159.99
+        ],
+        [
+          160.26,
+          162.68
+        ]
+      ]
+    },
+    {
       "start": 167.58,
       "end": 171.82,
       "members": [
