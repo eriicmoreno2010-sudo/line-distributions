@@ -312,7 +312,8 @@ Version: 3.0 — Lyrics
     pointer-events:none;
 }
 .al-box{
-    position:absolute; right:0; bottom:0; max-width:100%;
+    position:absolute; right:0; bottom:0;
+    width:max-content; max-width:none;   /* la tarjeta se ensancha para caber en 1 línea (la fuente NO cambia) */
     border-radius:18px; text-align:center;
     border:1.5px solid color-mix(in srgb, var(--al-accent,#7c5cff) 60%, transparent);
     background:color-mix(in srgb, var(--al-accent,#7c5cff) 12%, rgba(8,8,14,.55));

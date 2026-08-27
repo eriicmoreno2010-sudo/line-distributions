@@ -471,8 +471,7 @@ const Lyrics = {
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
             box.style.opacity = "0";
             msg.appendChild(box);
-            this.fitAdlibText(box);
-            const h = box.offsetHeight || 90;
+            const h = box.offsetHeight || 90;   // fuente fija; la tarjeta se ensancha sola (CSS width:max-content)
             // empuja las que ya están (que no se van) hacia arriba
             Array.from(msg.children).forEach(b => {
                 if(b === box || b._leaving) return;
