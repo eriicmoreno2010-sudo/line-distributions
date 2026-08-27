@@ -67,6 +67,11 @@
         <button class="sec" id="resetOne">Reset este</button>
       </div>
       <div class="btns">
+        <button class="sec" id="copyFrame">📋 Copiar encuadre</button>
+        <button class="sec" id="pasteFrame" disabled>📌 Pegar aquí</button>
+        <button class="sec" id="pasteAll" disabled>📌 Pegar a todos</button>
+      </div>
+      <div class="btns">
         <button id="save">💾 Guardar y subir</button>
         <button class="sec" id="copy">Copiar valores</button>
       </div>
@@ -196,6 +201,33 @@ document.getElementById("prev-btn").addEventListener("click", ()=>select(idx-1))
 document.getElementById("next-btn").addEventListener("click", ()=>select(idx+1));
 document.getElementById("resetOne").addEventListener("click", ()=>{
     const m=cur(); applyFrame(m, null); m.dirty=true; render();
+});
+
+// Copiar/pegar encuadre entre fotos (valores en FRACCIÓN, así vale aunque las
+// fotos tengan tamaños distintos).
+let frameClip = null;
+function applyClipTo(m){
+    if(!frameClip || !m.iw) return;
+    m.side = frameClip.size * m.iw;
+    m.cx   = frameClip.cx * m.iw;
+    m.cy   = frameClip.cy * m.ih;
+    m.rot  = frameClip.rot || 0;
+    m.dirty = true; clampCrop(m);
+    if(m.thumbCtx) drawInto(m.thumbCtx, 64, m);
+}
+document.getElementById("copyFrame").addEventListener("click", ()=>{
+    const m=cur(); if(!m || !m.iw) return;
+    frameClip = { size:m.side/m.iw, cx:m.cx/m.iw, cy:m.cy/m.ih, rot:m.rot||0 };
+    document.getElementById("pasteFrame").disabled = false;
+    document.getElementById("pasteAll").disabled = false;
+    const b=document.getElementById("copyFrame"); const t=b.textContent; b.textContent="✓ Copiado"; setTimeout(()=>b.textContent=t,1200);
+});
+document.getElementById("pasteFrame").addEventListener("click", ()=>{ applyClipTo(cur()); render(); });
+document.getElementById("pasteAll").addEventListener("click", ()=>{
+    if(!frameClip) return;
+    if(!confirm("¿Aplicar este encuadre a TODAS las fotos?")) return;
+    members.forEach(m=>{ if(m.iw) applyClipTo(m); });
+    render();
 });
 
 // Importar la foto del miembro actual desde el PC (se carga aquí para encuadrar y

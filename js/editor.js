@@ -661,34 +661,53 @@
     renderLines(); buildWordPal(); buildColors();
   }
 
-  function addMember(preset){
+  // canon = orden canónico del grupo (nombres) para insertar en su sitio
+  function addMember(preset, canon){
     const name = (preset.name || "").trim(); if(!name) return;
     if((song.members || []).some(m => m.name.toLowerCase() === name.toLowerCase())){ alert("Ese miembro ya está en la canción."); return; }
     const { g, s } = slugParts();
     const base = name.toLowerCase().replace(/[^a-z0-9]+/g, "");
+    const nm = { name, image: "images/" + g + "/" + s + "/" + base + ".png",
+      color: preset.color || "#7c5cff", focus: preset.focus != null ? preset.focus : 50, lift: preset.lift != null ? preset.lift : 3 };
     song.members = song.members || [];
-    song.members.push({ name, image: "images/" + g + "/" + s + "/" + base + ".png",
-      color: preset.color || "#7c5cff", focus: preset.focus != null ? preset.focus : 50, lift: preset.lift != null ? preset.lift : 3 });
+    // colócalo en su posición del orden del grupo (si lo conocemos); si no, al final
+    let idx = song.members.length;
+    const pos = canon ? canon.indexOf(name) : -1;
+    if(pos >= 0){
+      const after = song.members.findIndex(m => { const cp = canon.indexOf(m.name); return cp !== -1 && cp > pos; });
+      idx = after === -1 ? song.members.length : after;
+    }
+    song.members.splice(idx, 0, nm);
     renderLines(); buildWordPal(); buildColors();
   }
 
   async function openAddMenu(anchor){
     document.querySelectorAll(".addmenu").forEach(e => e.remove());
-    let presets = [];
-    try{ const r = await window.desktop.groupMembers(songPath); if(r && r.members) presets = r.members; }catch(e){}
+    let all = [];
+    try{ const r = await window.desktop.groupMembers(songPath); if(r && r.members) all = r.members; }catch(e){}
+    const canon = all.map(p => p.name);                       // orden canónico del grupo
     const have = new Set((song.members || []).map(m => m.name.toLowerCase()));
-    presets = presets.filter(p => !have.has(p.name.toLowerCase()));
+    const presets = all.filter(p => !have.has(p.name.toLowerCase()));
     const menu = document.createElement("div"); menu.className = "addmenu";
     presets.forEach(p => {
       const b = document.createElement("button"); b.type = "button"; b.className = "ami";
       b.innerHTML = '<span class="cdot" style="background:' + toHex(p.color) + '"></span>' + p.name;
-      b.title = "añadir " + p.name + " (con su color guardado)";
-      b.onclick = () => { addMember(p); menu.remove(); };
+      b.title = "añadir " + p.name + " (con su color guardado, en su posición)";
+      b.onclick = () => { addMember(p, canon); menu.remove(); };
       menu.appendChild(b);
     });
     if(!presets.length){ const e = document.createElement("div"); e.className = "amempty"; e.textContent = "(sin presets del grupo)"; menu.appendChild(e); }
+    // "Nuevo miembro": campo de texto en línea (prompt() no funciona en Electron)
     const nu = document.createElement("button"); nu.type = "button"; nu.className = "ami new"; nu.textContent = "➕ Nuevo miembro…";
-    nu.onclick = () => { const n = prompt("Nombre del nuevo miembro:"); if(n && n.trim()) addMember({ name: n.trim().toUpperCase() }); menu.remove(); };
+    nu.onclick = () => {
+      const wrap = document.createElement("div"); wrap.className = "aminew";
+      const inp = document.createElement("input"); inp.type = "text"; inp.placeholder = "Nombre del miembro…"; inp.className = "aminput";
+      const ok = document.createElement("button"); ok.type = "button"; ok.className = "ami"; ok.textContent = "Añadir";
+      const doAdd = () => { const v = inp.value.trim(); if(v){ addMember({ name: v.toUpperCase() }, canon); menu.remove(); } };
+      ok.onclick = doAdd;
+      inp.addEventListener("keydown", e => { if(e.key === "Enter"){ e.preventDefault(); doAdd(); } });
+      nu.replaceWith(wrap); wrap.append(inp, ok); inp.focus();
+    };
     menu.appendChild(nu);
     const r = anchor.getBoundingClientRect();
     menu.style.left = r.left + "px"; menu.style.bottom = (window.innerHeight - r.top + 6) + "px";
@@ -697,17 +716,27 @@
       if(!menu.contains(ev.target) && ev.target !== anchor){ menu.remove(); document.removeEventListener("click", h); } }), 0);
   }
 
+  function moveMember(i, dir){
+    const a = song.members || []; const j = i + dir;
+    if(j < 0 || j >= a.length) return;
+    const t = a[i]; a[i] = a[j]; a[j] = t;   // intercambia posiciones
+    renderLines(); buildColors();
+  }
   function buildColors(){
     const row = $("#colorsRow"); if(!row) return;
     row.querySelectorAll(".mcol, .addmem").forEach(e => e.remove());
-    (song.members || []).forEach(m => {
+    (song.members || []).forEach((m, mi) => {
       const w = document.createElement("span"); w.className = "mcol";
+      const lft = document.createElement("button"); lft.type = "button"; lft.className = "mmove"; lft.textContent = "◀"; lft.title = "mover a la izquierda";
+      lft.onclick = () => moveMember(mi, -1);
       const inp = document.createElement("input"); inp.type = "color"; inp.value = toHex(m.color);
       inp.oninput = () => { m.color = inp.value; renderLines(); buildWordPal(); };
       const nm = document.createElement("span"); nm.textContent = abbr(m.name); nm.title = m.name;
+      const rgt = document.createElement("button"); rgt.type = "button"; rgt.className = "mmove"; rgt.textContent = "▶"; rgt.title = "mover a la derecha";
+      rgt.onclick = () => moveMember(mi, 1);
       const x = document.createElement("button"); x.type = "button"; x.className = "mx"; x.textContent = "✕"; x.title = "quitar " + m.name;
       x.onclick = () => removeMember(m.name);
-      w.append(inp, nm, x); row.appendChild(w);
+      w.append(lft, inp, nm, rgt, x); row.appendChild(w);
     });
     const add = document.createElement("button"); add.type = "button"; add.className = "addmem"; add.textContent = "➕ miembro";
     add.title = "añadir miembro (recupera el preajuste si ya existió)";

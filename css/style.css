@@ -48,8 +48,8 @@ Base Layout
    Paneles (letra/ranking/etc.) en BLANCO puro; exterior en gris claro; texto oscuro. */
 body.theme-light{
     --background:#dfe1ea;   /* exterior: gris claro */
-    --panel:#e7e9f0;        /* paneles: gris muy claro (menos blanco que antes, sin llegar al fondo) */
-    --panel2:#e7e9f0;       /* tarjetas del ranking / pill */
+    --panel:#e3e5ee;        /* paneles: gris claro (un poco menos blanco todavía) */
+    --panel2:#e3e5ee;       /* tarjetas del ranking / pill */
     --panel3:#d4d7e1;       /* pista de barras / fondo foto: gris claro */
     --border:rgba(0,0,0,.10);
     --text:#12131a;
@@ -76,9 +76,13 @@ body.theme-light #ranking .member.has-sung .member-name,
 body.theme-light #current-member{
     color:color-mix(in srgb, var(--accent) 78%, #fff);
 }
-/* Tema claro: nombres y segundos de los que AÚN no cantan -> gris (no negro). */
-body.theme-light #ranking .member:not(.has-sung) .member-name{ color:#5b6070; }
-body.theme-light #ranking .member:not(.has-sung) .member-time{ color:#7b8090; }
+/* Tema claro:
+   - ANTES de cantar: nombre + contador en gris CLARO.
+   - DESPUÉS de cantar: nombre con el color del miembro (ya está) y contador en GRIS. */
+body.theme-light #ranking .member:not(.has-sung) .member-name{ color:#98a0af; }
+body.theme-light #ranking .member:not(.has-sung) .member-time{ color:#a6adba; }
+body.theme-light #ranking .member.has-sung .member-time,
+body.theme-light #ranking .member.done .member-time{ color:#5b6070; }
 
 /* ========================= */
 /* BODY */
