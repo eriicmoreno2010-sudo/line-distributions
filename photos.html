@@ -72,6 +72,9 @@
         <button class="sec" id="pasteAll" disabled>📌 Pegar a todos</button>
       </div>
       <div class="btns">
+        <button class="sec" id="importFrames">📥 Encuadres de otra canción</button>
+      </div>
+      <div class="btns">
         <button id="save">💾 Guardar y subir</button>
       </div>
     </div>
@@ -86,6 +89,18 @@
   </div>
 
   <textarea id="out" readonly></textarea>
+</div>
+
+<div id="impmodal" style="position:fixed;inset:0;background:rgba(8,8,12,.8);display:none;align-items:center;justify-content:center;z-index:300">
+  <div style="background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px 24px;width:min(480px,92vw);display:flex;flex-direction:column;gap:12px">
+    <div style="font-weight:900;font-size:17px">📥 Importar encuadres de otra canción</div>
+    <div class="hint" style="text-align:left;margin:0">Copia el recorte/zoom de cada miembro desde otra canción (mismo grupo). Se aplica a los miembros con el <b>mismo nombre</b>. Después pulsa <b>💾 Guardar y subir</b>.</div>
+    <select id="impsel" style="width:100%"></select>
+    <div style="display:flex;gap:10px;justify-content:flex-end">
+      <button class="sec" id="impcancel">Cancelar</button>
+      <button id="impgo">Importar</button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -232,6 +247,35 @@ document.getElementById("pasteAll").addEventListener("click", (e)=>{
     members.forEach(m=>{ if(m.iw) applyClipTo(m); });
     render(); toast(e.currentTarget, "✓ Pegado a todos");
 });
+
+// Importar los encuadres de OTRA canción (mismo grupo, mismas fotos) por nombre.
+const impmodal = document.getElementById("impmodal");
+document.getElementById("importFrames").addEventListener("click", async ()=>{
+    if(!(window.desktop && window.desktop.listSongs)){ alert("Esto solo funciona en la app de escritorio."); return; }
+    const sel = document.getElementById("impsel"); sel.innerHTML = "";
+    let songs = []; try{ songs = await window.desktop.listSongs(); }catch(e){}
+    const others = (songs || []).filter(s => s.path !== SONG_URL);
+    if(!others.length){ alert("No hay otras canciones."); return; }
+    const myGroup = SONG_META && SONG_META.group;
+    others.sort((a,b)=> (a.group===myGroup?-1:1)-(b.group===myGroup?-1:1) || (a.group+a.song).localeCompare(b.group+b.song));
+    others.forEach(s=>{ const o=document.createElement("option"); o.value=s.path;
+        o.textContent = s.group + " — " + s.song + (s.group===myGroup ? "  ✓ mismo grupo" : ""); sel.appendChild(o); });
+    impmodal.style.display = "flex";
+});
+document.getElementById("impcancel").onclick = ()=> impmodal.style.display = "none";
+impmodal.addEventListener("click", e=>{ if(e.target===impmodal) impmodal.style.display="none"; });
+document.getElementById("impgo").onclick = async ()=>{
+    const src = document.getElementById("impsel").value; if(!src) return;
+    let res = null; try{ res = await window.desktop.loadSong(src); }catch(e){}
+    if(!res || !res.ok){ alert("No se pudo cargar esa canción."); return; }
+    const map = {}; (res.data.members||[]).forEach(m=>{ if(m.frame) map[m.name.toLowerCase()] = m.frame; });
+    let n = 0;
+    members.forEach(m=>{ const f = map[m.name.toLowerCase()];
+        if(f && m.iw){ applyFrame(m, f); m.dirty = true; clampCrop(m); if(m.thumbCtx) drawInto(m.thumbCtx, 64, m); n++; } });
+    impmodal.style.display = "none"; render();
+    alert(n ? ("Encuadres importados en " + n + " miembro(s). Revisa y pulsa 💾 Guardar y subir.")
+            : "Esa canción no tiene encuadres guardados. Ábrela, encuadra las fotos y guarda; luego ya se pueden importar.");
+};
 
 // Importar la foto del miembro actual desde el PC (se carga aquí para encuadrar y
 // se ve ya en el ranking; se sube con "Guardar y subir").
