@@ -48,6 +48,7 @@
   // ---- build the slices + legend once for a song ----
   function setupSong(s){
     song = s;
+    document.body.classList.toggle("theme-light", s.theme === "light");   // claro si la canción es clara
     members = (s.members||[]).map(m => ({ name:m.name, color:m.color||"#888", iv:[], pop:0 }));
     const map = buildIntervals(s);
     members.forEach(m => m.iv = map[m.name] || []);

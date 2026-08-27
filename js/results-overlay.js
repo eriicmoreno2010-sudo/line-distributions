@@ -114,6 +114,26 @@ Self-contained: injects its own styles and markup.
       #results-overlay .row .name{ font-size:4.4vw; }
       #results-overlay .row .pct{ font-size:4.4vw; }
     }
+
+    /* ----- Tema CLARO: si la canción es clara, la pantalla de resultados también ----- */
+    body.theme-light #results-overlay{
+      background:
+        radial-gradient(120% 90% at 20% 10%, #e9ebf4 0%, transparent 55%),
+        radial-gradient(120% 90% at 90% 90%, #eae6f2 0%, transparent 55%),
+        #eff1f6;
+      color:#14151c;
+    }
+    body.theme-light #results-overlay .seg{ fill:#d2d5df; stroke:#eff1f6; }
+    body.theme-light #results-overlay #ro-head .grp{ color:#7b8090; }
+    body.theme-light #results-overlay #ro-even .lbl{ color:#7b8090; }
+    body.theme-light #results-overlay .row{ background:#e3e5ee; border-color:#d1d4de; opacity:.6; }
+    body.theme-light #results-overlay .row .name{ color:#8890a0; }
+    body.theme-light #results-overlay .row .fill{ background:#d2d5df; }
+    body.theme-light #results-overlay .row .pct{ color:#8890a0; }
+    body.theme-light #results-overlay .row .sec{ color:#a0a6b3; }
+    body.theme-light #results-overlay .row .bar{ background:#d6d9e2; }
+    body.theme-light #results-overlay .row.lit .sec{ color:#14151c; }
+    body.theme-light #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 60%, #000); }
   `;
   document.head.appendChild(style);
 

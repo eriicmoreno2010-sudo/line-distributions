@@ -699,7 +699,8 @@
     if(!presets.length){ const e = document.createElement("div"); e.className = "amempty"; e.textContent = "(sin presets del grupo)"; menu.appendChild(e); }
     // "Nuevo miembro": campo de texto en línea (prompt() no funciona en Electron)
     const nu = document.createElement("button"); nu.type = "button"; nu.className = "ami new"; nu.textContent = "➕ Nuevo miembro…";
-    nu.onclick = () => {
+    nu.onclick = (ev) => {
+      ev.stopPropagation();   // evita que el cierre-al-clic-fuera cierre el menú
       const wrap = document.createElement("div"); wrap.className = "aminew";
       const inp = document.createElement("input"); inp.type = "text"; inp.placeholder = "Nombre del miembro…"; inp.className = "aminput";
       const ok = document.createElement("button"); ok.type = "button"; ok.className = "ami"; ok.textContent = "Añadir";

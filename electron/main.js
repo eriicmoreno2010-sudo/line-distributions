@@ -7,7 +7,7 @@ Desktop app (Electron) — main process.
  - `--export <out.mp4> [--song p] [--maxdur N] [--hold N]`: headless render + quit.
 =========================================
 */
-const { app, BrowserWindow, ipcMain, dialog } = require("electron");
+const { app, BrowserWindow, ipcMain, dialog, session } = require("electron");
 const path = require("path");
 const fs = require("fs");
 const os = require("os");
@@ -550,7 +550,10 @@ ipcMain.handle("transcribe-url", async (evt, args) => {
   }
 });
 
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
+  // Limpia la caché al arrancar -> cada reinicio carga el HTML/JS/CSS nuevo
+  // (evita que la app siga usando versiones viejas del editor/fotos/etc.).
+  try{ await session.defaultSession.clearCache(); }catch(e){}
   if(EXPORT_OUT) exportHeadless().catch(e => { console.error("EXPORT_ERR " + e.message); app.exit(1); });
   else createWindow();
 });
