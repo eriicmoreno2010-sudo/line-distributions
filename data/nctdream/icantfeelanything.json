@@ -375,7 +375,13 @@
       "original": "",
       "romanization": "(ooh Though I'm)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          74.46,
+          78.36
+        ]
+      ]
     },
     {
       "start": 0,
@@ -386,7 +392,13 @@
       "original": "",
       "romanization": "(Still confused)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          79.12,
+          81.23
+        ]
+      ]
     },
     {
       "start": 0,
@@ -395,9 +407,19 @@
         "RENJUN"
       ],
       "original": "",
-      "romanization": "(Just get through erased from my mind)",
+      "romanization": "(Just get through, erased from my mind)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          82.85,
+          84.27
+        ],
+        [
+          84.42,
+          87.49
+        ]
+      ]
     },
     {
       "start": 0,
