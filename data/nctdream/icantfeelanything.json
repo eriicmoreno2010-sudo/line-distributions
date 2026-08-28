@@ -9,7 +9,13 @@
       "image": "images/nctdream/icantfeelanything/mark.png",
       "color": "#cb6ce6",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.545,
+        "cy": 0.318,
+        "size": 0.91,
+        "rot": 0
+      }
     },
     {
       "name": "RENJUN",
@@ -18,8 +24,8 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.532,
-        "cy": 0.434,
+        "cx": 0.54,
+        "cy": 0.378,
         "size": 0.765,
         "rot": 0
       }
@@ -29,35 +35,65 @@
       "image": "images/nctdream/icantfeelanything/jeno.png",
       "color": "#ff3131",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.514,
+        "cy": 0.2705,
+        "size": 0.835,
+        "rot": 0
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nctdream/icantfeelanything/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.348,
+        "size": 0.825,
+        "rot": 0
+      }
     },
     {
       "name": "JAEMIN",
       "image": "images/nctdream/icantfeelanything/jaemin.png",
       "color": "#61fdad",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.336,
+        "size": 0.885,
+        "rot": 0
+      }
     },
     {
       "name": "CHENLE",
       "image": "images/nctdream/icantfeelanything/chenle.png",
       "color": "#22c429",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.514,
+        "cy": 0.338,
+        "size": 0.75,
+        "rot": 0
+      }
     },
     {
       "name": "JISUNG",
       "image": "images/nctdream/icantfeelanything/jisung.png",
       "color": "#f12ba5",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.465,
+        "cy": 0.31,
+        "size": 0.93,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
