@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "icantfeelanything",
   "video": "videos/nctdream_icantfeelanything.mp4",
-  "duration": 0,
+  "duration": 140.133333,
   "members": [
     {
       "name": "MARK",
@@ -62,15 +62,245 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 15.05,
+      "end": 17.87,
       "members": [
         "MARK"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "I might’ve been afraid to be brave, Come on",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 18.14,
+      "end": 20.99,
+      "members": [
+        "MARK"
+      ],
+      "original": "가본 적 없는 Place 낯선 Way, Come on",
+      "romanization": "gabon jeok eomneun place natseon way, come on",
+      "english": "A place I’ve never been to an unfamiliar way, Come on",
+      "adlib": false
+    },
+    {
+      "start": 21.26,
+      "end": 25.87,
+      "members": [
+        "MARK"
+      ],
+      "original": "아득한 벽 앞에 멈춘 채, Come on come on",
+      "romanization": "adeukhan byeok ape meomchun chae, come on come on",
+      "english": "Standing still before a distant wall, Come on, come on",
+      "adlib": false
+    },
+    {
+      "start": 26.02,
+      "end": 34.34,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "Cause I'm lost and confused, 어둠 속에 빠져 난 지금",
+      "romanization": "cause i'm lost and confused, eodum soge ppajyeo nan jigeum",
+      "english": "’Cause I’m lost and confused, I’m falling into the darkness",
+      "adlib": false
+    },
+    {
+      "start": 34.49,
+      "end": 37.63,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "아득해져 가",
+      "romanization": "adeukhae jyeo ga",
+      "english": "It’s getting more distant now",
+      "adlib": false
+    },
+    {
+      "start": 37.76,
+      "end": 39.67,
+      "members": [
+        "RENJUN"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 43.84,
+      "end": 45.69,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 50.12,
+      "end": 51.68,
+      "members": [
+        "JENO"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 51.8,
+      "end": 58.6,
+      "members": [
+        "RENJUN"
+      ],
+      "original": "ooh Now I try hard to escape, 길었던 밤의 저편에",
+      "romanization": "ooh now i try hard to escape, gireotdeon bame jeopyeone",
+      "english": "Ooh now I try hard to escape, Beyond the long night",
+      "adlib": false
+    },
+    {
+      "start": 58.72,
+      "end": 64.14,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "두려움을 딛어, 자신을 믿어, 새로운 세상을, 향해 Speed up",
+      "romanization": "duryeoumeul dideo, jasineul mideo, saeroun sesangeul, hyanghae speed up",
+      "english": "I overcome my fear, I believe in myself, Toward a new world, Speed up",
+      "adlib": false
+    },
+    {
+      "start": 64.29,
+      "end": 68.06,
+      "members": [
+        "JENO"
+      ],
+      "original": "ay ay 새벽을 건너, Now I fly high 더 높이",
+      "romanization": "ay ay saebyeogeul geonneo, now i fly high deo nopi",
+      "english": "Ay, ay crossing through the dawn, Now I fly high higher",
+      "adlib": false
+    },
+    {
+      "start": 68.22,
+      "end": 71.13,
+      "members": [
+        "JENO"
+      ],
+      "original": "날 붙잡던 어둠은, 다 흩어지듯이",
+      "romanization": "nal butjapdeon eodumeun, da heuteojideusi",
+      "english": "The darkness that held me back, Scatters away",
+      "adlib": false
+    },
+    {
+      "start": 71.28,
+      "end": 74.24,
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "Lookin’ up higher in the sky, 어제의 두려움은 다",
+      "romanization": "lookin’ up higher in the sky, eojeui duryeoumeun da",
+      "english": "Lookin’ up higher in the sky, Yesterday’s fears are all fading out",
+      "adlib": false
+    },
+    {
+      "start": 74.4,
+      "end": 76.05,
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "Fadin’ out 작아져만 가",
+      "romanization": "fadin’ out jagajyeoman ga",
+      "english": "They’re getting smaller and smaller",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(ooh Though I'm)",
+      "romanization": "(ooh though i'm)",
+      "english": "(Ooh, though I’m)",
+      "adlib": true
+    },
+    {
+      "start": 76.81,
+      "end": 87.46,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "I'm still confused, Wishin’ that I could just get through, erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 87.58,
+      "end": 89.35,
+      "members": [
+        "MARK"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 93.76,
+      "end": 95.55,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 99.9,
+      "end": 101.75,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 106.22,
+      "end": 107.96,
+      "members": [
+        "JENO"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 112.45,
+      "end": 114.68,
+      "members": [
+        "RENJUN",
+        "JAEMIN"
+      ],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 120.1,
+      "end": 124.69,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "Escape from reality and dream beyond",
+      "english": "",
+      "adlib": false
     }
   ],
   "audio": "audio/nctdream_icantfeelanything.mp3",
