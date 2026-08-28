@@ -15,7 +15,7 @@
   /* barra superior (elegir canción) — se oculta con la tecla R para grabar */
   #topbar{ position:fixed; top:0; left:0; right:0; z-index:10; display:flex; align-items:center; gap:12px;
            padding:12px 18px; }
-  #topbar a, #topbar select{ background:rgba(20,24,40,.7); color:#dfe6ff; border:1px solid rgba(180,210,255,.25);
+  #topbar a, #topbar select, #topbar button{ background:rgba(20,24,40,.7); color:#dfe6ff; border:1px solid rgba(180,210,255,.25);
            border-radius:9px; padding:9px 12px; font-weight:700; font-size:14px; text-decoration:none; cursor:pointer; }
   #topbar .sp{ flex:1; }
   #topbar .tip{ color:#5d6c92; font-size:12px; }
@@ -75,6 +75,7 @@
 <div id="topbar">
   <a id="back" href="library.html">← Biblioteca</a>
   <select id="songSel" title="Elegir canción"></select>
+  <button id="pickcover" title="Elegir la portada de esta canción">🖼️ Portada</button>
   <span class="sp"></span>
   <span class="tip">▶ para reproducir · tecla <b>R</b> oculta esta barra y el ratón (para grabar)</span>
 </div>
@@ -111,10 +112,11 @@
   const aud = $("aud"), cover = $("cover"), fill = $("fill"), knob = $("knob"), msg = $("msg");
   const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
   const D = window.desktop;
-  let SONG = null;
+  let SONG = null, curPath = null;
 
   // ---- cargar canción (audio + portada + título) ----
   async function loadByPath(path){
+    curPath = path;
     let data = null;
     try{
       if(D && D.loadSong){ const r = await D.loadSong(path); if(r && r.ok) data = r.data; }
@@ -169,6 +171,23 @@
   aud.onloadedmetadata = () => $("dur").textContent = fmt(aud.duration || 0);
   $("bar").onclick = e => { if(!aud.duration) return; const r = $("bar").getBoundingClientRect(); aud.currentTime = (e.clientX - r.left)/r.width * aud.duration; };
   document.addEventListener("keydown", e => { if(e.key === "r" || e.key === "R") document.body.classList.toggle("clean"); });
+
+  // ---- Elegir portada de esta canción (se guarda en el JSON) ----
+  const pickBtn = $("pickcover");
+  if(!(D && D.pickCover)) pickBtn.style.display = "none";
+  else pickBtn.onclick = async () => {
+    if(!SONG || !curPath){ alert("Elige primero una canción."); return; }
+    const t = pickBtn.textContent; pickBtn.disabled = true; pickBtn.textContent = "⏳ Subiendo…";
+    let res = null; try{ res = await D.pickCover({ group: SONG.group, song: SONG.song }); }catch(e){}
+    pickBtn.disabled = false; pickBtn.textContent = t;
+    if(res && res.canceled) return;
+    if(res && res.ok){
+      SONG.cover = res.cover;
+      try{ await D.saveSong(curPath, SONG); }catch(e){}
+      cover.src = res.cover + "?t=" + Date.now();          // se ve al instante
+      pickBtn.textContent = "✓ Portada"; setTimeout(() => pickBtn.textContent = t, 1800);
+    } else { alert("No se pudo poner la portada."); }
+  };
 
   // ---- canvas: barras reactivas cian->magenta ----
   const cv = $("wave"), cx = cv.getContext("2d");

@@ -293,6 +293,35 @@ ipcMain.handle("pick-audio", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// ---- Elegir la PORTADA (imagen) desde el PC: copia a covers/ y la sube ----
+ipcMain.handle("pick-cover", async (_e, args) => {
+  args = args || {};
+  try{
+    const { canceled, filePaths } = await dialog.showOpenDialog({
+      title: "Elegir portada",
+      properties: ["openFile"],
+      filters: [{ name:"Imagen", extensions:["jpg","jpeg","png","webp"] }]
+    });
+    if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
+    const srcFile = filePaths[0];
+    const base = (slug(args.group || "") + "_" + slug(args.song || "cover")).replace(/^_|_$/g, "") || "cover";
+    const ext = (path.extname(srcFile) || ".jpg").toLowerCase();
+    fs.mkdirSync(path.join(ROOT, "covers"), { recursive:true });
+    const destRel = "covers/" + base + ext;
+    fs.copyFileSync(srcFile, path.join(ROOT, destRel));
+    const res = { ok:true, cover: destRel, pushed:false };
+    try{
+      await git(["add", "--", destRel]);
+      const staged = await git(["diff", "--cached", "--quiet", "--", destRel]);
+      if(staged.code !== 0) await git(["commit", "-m", "Add cover: " + (args.song || destRel)]);
+      let p = await git(["push"]);
+      if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+      res.pushed = (p.code === 0);
+    }catch(e){ res.gitError = e.message; }
+    return res;
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // ---- Importar una foto (desde el PC) para un miembro: copia a _src y al display,
 //      para que se vea ya y se pueda encuadrar. No hace commit (se sube al Guardar). ----
 ipcMain.handle("import-photo", async (_e, args) => {
