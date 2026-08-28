@@ -613,5 +613,6 @@
     }
   ],
   "audio": "audio/nctdream_icantfeelanything.mp3",
-  "cover": "covers/nctdream_icantfeelanything.jpg"
+  "cover": "covers/nctdream_icantfeelanything.jpg",
+  "instrumental": "audio/nctdream_icantfeelanything_inst.mp3"
 }
