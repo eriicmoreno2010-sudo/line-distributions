@@ -1589,5 +1589,6 @@
     }
   ],
   "instrumentalStart": 44.87227029764453,
-  "instrumentalEnd": 76.40413591220556
+  "instrumentalEnd": 76.40413591220556,
+  "instrumentalFade": true
 }
