@@ -1,7 +1,7 @@
 {
   "group": "NCT 127",
   "song": "Piñata",
-  "video": "",
+  "video": "videos/nct127_piata.mp4",
   "duration": 0,
   "theme": "dark",
   "members": [
@@ -75,9 +75,7 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "JOHNNY"
-      ],
+      "members": [],
       "original": "Back in the town",
       "romanization": "back in the town",
       "english": "Back in the town",
