@@ -97,23 +97,37 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* PHOTO */
 /* ========================= */
 
-.member-photo{
+/* El borde (anillo de color) va en el contenedor, para que NO se apague cuando
+   la foto pasa a blanco y negro (el filter grayscale del <img> no le afecta). */
+.member-photo-wrap{
     display:block;
     width:100px;
     height:100px;
     border-radius:50%;
-    object-fit:cover;
-    object-position:center 45%;
-    image-rendering:auto;
+    overflow:hidden;
+    box-sizing:border-box;
+    flex-shrink:0;
     transform:translateY(-3px);
     border:3px solid var(--ring);   /* white by default, member colour once they sing */
     background:var(--panel3);
-    filter:none;   /* a color; pasa a blanco y negro SOLO cuando ya no canta más (.done) */
-    transition:border-color .15s var(--ease), filter .35s var(--ease);
+    transition:border-color .15s var(--ease);
 }
-.member.active .member-photo{ border-color:var(--accent); }
-/* Cuando el miembro ya no cantará más en toda la canción, su foto en blanco y negro */
+.member-photo{
+    display:block;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center 45%;
+    image-rendering:auto;
+    filter:none;   /* a color; pasa a blanco y negro SOLO cuando ya no canta más (.done) */
+    transition:filter .35s var(--ease);
+}
+.member.active .member-photo-wrap{ border-color:var(--accent); }
+/* Cuando el miembro ya no cantará más: foto en blanco y negro pero el borde
+   se queda de su color. */
 .member.done .member-photo{ filter:grayscale(1) brightness(.9); }
+.member.done .member-photo-wrap{ border-color:var(--accent); }
 
 /* ========================= */
 /* INFO */
@@ -157,7 +171,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     transition:color .15s var(--ease), transform .15s var(--ease);
 }
 .member.active .member-rank{ color:var(--sing); }
-.member.active .member-photo{ border-color:var(--sing); }
+.member.active .member-photo-wrap{ border-color:var(--sing); }
 .member.active .member-name{
     color:var(--sing);
     font-weight:900;
@@ -210,5 +224,5 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 @media(max-width:1200px){
     /* .member-name aqui tampoco manda (lo pisa style.css). Solo fotos. */
-    .member-photo{ width:58px; height:58px; }
+    .member-photo-wrap{ width:58px; height:58px; }
 }

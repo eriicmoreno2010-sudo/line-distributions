@@ -315,8 +315,8 @@ body.two-side #ranking-left .member{
     gap:12px;
     padding:10px 14px 10px 12px;
 }
-body.two-side #ranking .member-photo,
-body.two-side #ranking-left .member-photo{
+body.two-side #ranking .member-photo-wrap,
+body.two-side #ranking-left .member-photo-wrap{
     width:72px;
     height:72px;
     border:3px solid var(--ring);   /* white by default; their colour once they sing */
@@ -363,18 +363,35 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     font-variant-numeric:tabular-nums;
 }
 
-#ranking .member-photo{
+/* El anillo de color vive en el contenedor; la imagen lo rellena (así el
+   filtro grayscale del .done solo afecta a la foto, nunca al borde). */
+#ranking .member-photo-wrap{
     display:block;
     width:84px;
     height:84px;
     border:3px solid var(--ring);
     border-radius:50%;
+    overflow:hidden;
+    box-sizing:border-box;
+    background:var(--panel3);
+    transform:translateY(-3px);
+    flex-shrink:0;
+    transition:border-color .15s var(--ease);
+}
+#ranking .member-photo{
+    display:block;
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:50%;
     background:var(--panel3);
     object-fit:cover;
     object-position:center 45%;
     image-rendering:auto;
-    transform:translateY(-3px);
+    transform:none;
 }
+#ranking .member.done .member-photo-wrap,
+#ranking-left .member.done .member-photo-wrap{ border-color:var(--accent); }
 
 #ranking .member-info{
     display:flex;
@@ -448,7 +465,8 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 }
 
 #ranking .member.active .member-rank{ color:var(--sing); }
-#ranking .member.active .member-photo{ border-color:var(--sing); }
+#ranking .member.active .member-photo-wrap,
+#ranking-left .member.active .member-photo-wrap{ border-color:var(--sing); }
 #ranking .member.active .member-name{
     color:var(--sing);
     font-weight:900;

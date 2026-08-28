@@ -210,9 +210,10 @@ const Ranking = {
 
             card.innerHTML = `
                 <div class="member-rank">1</div>
-                <img class="member-photo" src="${member.image}?v=${PHOTO_VER}" alt="${member.name}"
-                     style="object-position:center ${member.focus ?? 50}%;
-                            transform:translateY(-${member.lift ?? 3}px)">
+                <span class="member-photo-wrap">
+                    <img class="member-photo" src="${member.image}?v=${PHOTO_VER}" alt="${member.name}"
+                         style="object-position:center ${member.focus ?? 50}%">
+                </span>
 
                 <div class="member-info">
                     <div class="member-head">
@@ -230,6 +231,7 @@ const Ranking = {
             member.timeElement     = card.querySelector(".member-time");
             member.progressElement = card.querySelector(".member-progress");
             member.photoEl         = card.querySelector(".member-photo");
+            member.photoWrap       = card.querySelector(".member-photo-wrap");
             member._col = undefined;
 
             this.columns[0].el.appendChild(card);   // scratch parent; placeAll re-homes it
@@ -273,11 +275,11 @@ const Ranking = {
         const cap = isTwo ? 100 : (this.members.length <= 6 ? 100 : 88);
         this.photoSize = Math.max(44, Math.min(cap, Math.round(minCardH - 12)));
         this.members.forEach(m => {
-            if(m.photoEl){
-                m.photoEl.style.width = this.photoSize + "px";
-                m.photoEl.style.height = this.photoSize + "px";
-                m.photoEl.style.transform = "none";   // no lift so it centres & fills
+            if(m.photoWrap){
+                m.photoWrap.style.width = this.photoSize + "px";
+                m.photoWrap.style.height = this.photoSize + "px";
             }
+            if(m.photoEl) m.photoEl.style.transform = "none";   // no lift so it centres & fills
             m.element.style.gridTemplateColumns = "32px " + this.photoSize + "px 1fr";
             m.element.style.paddingTop = "5px";
             m.element.style.paddingBottom = "5px";

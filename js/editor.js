@@ -591,13 +591,46 @@
     setTimeout(() => btn.textContent = t, 2800);
   };
 
-  // Elegir el INSTRUMENTAL (suena en donut/resultados) + trozo (inicio/fin).
+  // ===== INSTRUMENTAL: barra para marcar el trozo que suena en el donut =====
+  const instTrack = $("#instTrack"), instRegion = $("#instRegion"),
+        instHA = $("#instHandleA"), instHB = $("#instHandleB"),
+        instLA = $("#instLblA"), instLB = $("#instLblB"), instHead = $("#instPlayhead");
+  let instAudio = null, instDur = 0, instPrev = null;
+
+  function instBounds(){
+    const a = (song.instrumentalStart != null) ? song.instrumentalStart : 0;
+    const b = (song.instrumentalEnd   != null) ? song.instrumentalEnd   : instDur;
+    return [a, b];
+  }
+  function drawInst(){
+    if(!instDur) return;
+    let [a,b] = instBounds();
+    a = Math.max(0, Math.min(a, instDur));
+    b = Math.max(a, Math.min(b, instDur));
+    const pa = (a/instDur)*100, pb = (b/instDur)*100;
+    instRegion.style.left = pa + "%"; instRegion.style.width = (pb-pa) + "%";
+    instHA.style.left = pa + "%"; instHB.style.left = pb + "%";
+    instLA.textContent = fmt(a); instLB.textContent = fmt(b);
+  }
+  function loadInstAudio(){
+    if(!song || !song.instrumental) return;
+    instDur = 0;
+    instAudio = new Audio(song.instrumental);
+    instAudio.preload = "metadata";
+    instAudio.onloadedmetadata = () => {
+      instDur = instAudio.duration || 0;
+      if(song.instrumentalStart == null) song.instrumentalStart = 0;
+      if(song.instrumentalEnd   == null) song.instrumentalEnd   = instDur;
+      drawInst();
+    };
+  }
   function syncInstSeg(){
     const has = !!(song && song.instrumental);
-    $("#instseg").style.display = has ? "inline-flex" : "none";
-    if(has){ $("#instStart").value = (song.instrumentalStart != null ? song.instrumentalStart : "");
-             $("#instEnd").value = (song.instrumentalEnd != null ? song.instrumentalEnd : ""); }
+    $("#instpanel").style.display = has ? "block" : "none";
+    $("#instFade").checked = !!(song && song.instrumentalFade);
+    if(has) loadInstAudio();
   }
+
   $("#pickinst").onclick = async () => {
     const btn = $("#pickinst"); const t = btn.textContent;
     btn.disabled = true; btn.textContent = "⏳ Copiando…";
@@ -606,15 +639,62 @@
     btn.disabled = false;
     if(res && res.canceled){ btn.textContent = t; return; }
     if(res && res.ok){ song.instrumental = res.audio; btn.textContent = res.pushed ? "✓ Instrumental" : "✓ Instrumental (local)";
+      song.instrumentalStart = undefined; song.instrumentalEnd = undefined; // se recalculan al cargar
       syncInstSeg(); save(); }
     else { btn.textContent = "✕ Error"; }
     setTimeout(() => btn.textContent = t, 2800);
   };
-  $("#instStart").oninput = () => { const v = parseFloat($("#instStart").value); song.instrumentalStart = isFinite(v) ? v : undefined; };
-  $("#instEnd").oninput   = () => { const v = parseFloat($("#instEnd").value);   song.instrumentalEnd   = isFinite(v) ? v : undefined; };
-  $("#instStart").onchange = save; $("#instEnd").onchange = save;
-  $("#instStartNow").onclick = () => { song.instrumentalStart = +video.currentTime.toFixed(2); $("#instStart").value = song.instrumentalStart; save(); };
-  $("#instEndNow").onclick   = () => { song.instrumentalEnd   = +video.currentTime.toFixed(2); $("#instEnd").value = song.instrumentalEnd; save(); };
+
+  // arrastrar un manejador ('a' = inicio, 'b' = fin)
+  function dragHandle(which){
+    const rect = instTrack.getBoundingClientRect();
+    const move = (e) => {
+      const cx = e.touches ? e.touches[0].clientX : e.clientX;
+      let p = Math.max(0, Math.min(1, (cx - rect.left) / rect.width));
+      const tt = p * instDur;
+      if(which === "a") song.instrumentalStart = Math.min(tt, (song.instrumentalEnd ?? instDur) - 0.2);
+      else              song.instrumentalEnd   = Math.max(tt, (song.instrumentalStart ?? 0) + 0.2);
+      drawInst();
+    };
+    const up = () => { document.removeEventListener("pointermove", move);
+                       document.removeEventListener("pointerup", up); save(); };
+    document.addEventListener("pointermove", move);
+    document.addEventListener("pointerup", up);
+  }
+  instHA.addEventListener("pointerdown", (e) => { e.preventDefault(); e.stopPropagation(); dragHandle("a"); });
+  instHB.addEventListener("pointerdown", (e) => { e.preventDefault(); e.stopPropagation(); dragHandle("b"); });
+  instTrack.addEventListener("pointerdown", (e) => {
+    if(e.target.classList.contains("insth") || !instDur) return;
+    const rect = instTrack.getBoundingClientRect();
+    const tt = ((e.clientX - rect.left)/rect.width) * instDur;
+    const [a,b] = instBounds();
+    if(Math.abs(tt-a) <= Math.abs(tt-b)){ song.instrumentalStart = Math.min(tt, b-0.2); drawInst(); dragHandle("a"); }
+    else { song.instrumentalEnd = Math.max(tt, a+0.2); drawInst(); dragHandle("b"); }
+    save();
+  });
+
+  $("#instFade").onchange = () => { song.instrumentalFade = $("#instFade").checked; save(); };
+
+  // escuchar el trozo elegido (aplica el atenuado si está marcado)
+  $("#instPlay").onclick = () => {
+    const stop = () => { if(instPrev){ instPrev.pause(); instPrev = null; }
+      instHead.style.display = "none"; $("#instPlay").textContent = "▶ Escuchar"; };
+    if(instPrev){ stop(); return; }
+    if(!song.instrumental || !instDur) return;
+    const [a,b] = instBounds();
+    const p = new Audio(song.instrumental); instPrev = p; p.currentTime = a;
+    $("#instPlay").textContent = "⏹ Parar"; instHead.style.display = "block";
+    const FADE = 1.5;
+    const tick = () => {
+      if(instPrev !== p) return;
+      const ct = p.currentTime;
+      instHead.style.left = ((ct/instDur)*100) + "%";
+      p.volume = (song.instrumentalFade && b - ct < FADE) ? Math.max(0, (b-ct)/FADE) : 1;
+      if(ct >= b){ stop(); return; }
+      requestAnimationFrame(tick);
+    };
+    p.play().then(() => requestAnimationFrame(tick)).catch(()=>{});
+  };
 
   // Per-word colour marking. Select a word in a lyric box, then:
   //   🌈  -> the whole group sings it (**word**)

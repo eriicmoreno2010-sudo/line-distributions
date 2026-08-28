@@ -159,7 +159,7 @@ Self-contained: injects its own styles and markup.
   document.body.appendChild(ov);
 
   let ranked=[], built=false, revealTimer=null;
-  let instSrc="", instAudio=null, instStart=0, instEnd=0;   // instrumental (y su trozo) en resultados
+  let instSrc="", instAudio=null, instStart=0, instEnd=0, instFade=false;   // instrumental (trozo + atenuado) en resultados
 
   fetch(SONG_URL).then(r=>r.json()).then(SONG=>{ buildResults(SONG); built=true; })
     .catch(e=>console.error("results-overlay:", e));
@@ -172,7 +172,16 @@ Self-contained: injects its own styles and markup.
       instAudio.addEventListener("timeupdate", ()=>{ if(instEnd>instStart && instAudio.currentTime>=instEnd) instAudio.currentTime=instStart; });
       instAudio.addEventListener("ended", ()=>{ try{ instAudio.currentTime=instStart; instAudio.play().catch(()=>{}); }catch(e){} });
     }
-    try{ instAudio.currentTime=instStart; instAudio.play().catch(()=>{}); }catch(e){}
+    try{ instAudio.currentTime=instStart; instAudio.volume=1; instAudio.play().catch(()=>{}); }catch(e){}
+    requestAnimationFrame(instVolLoop);
+  }
+  // Atenuar el volumen en el último tramo antes del fin del trozo (si está marcado).
+  function instVolLoop(){
+    if(!instAudio || instAudio.paused) return;
+    const FADE=1.5;
+    instAudio.volume = (instFade && instEnd>instStart && instEnd-instAudio.currentTime < FADE)
+      ? Math.max(0, (instEnd-instAudio.currentTime)/FADE) : 1;
+    requestAnimationFrame(instVolLoop);
   }
   function stopInstrumental(){ if(instAudio){ try{ instAudio.pause(); }catch(e){} } }
 
@@ -180,6 +189,7 @@ Self-contained: injects its own styles and markup.
     instSrc = SONG.instrumental || SONG.resultsAudio || "";
     instStart = +SONG.instrumentalStart || 0;
     instEnd = +SONG.instrumentalEnd || 0;
+    instFade = !!SONG.instrumentalFade;
     document.getElementById("ro-grp").textContent=SONG.group;
     document.getElementById("ro-sng").textContent=SONG.song;
 
