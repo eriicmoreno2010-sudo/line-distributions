@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "Smoothie",
   "video": "videos/smoothie.mp4",
-  "instrumental": "audio/smoothie_instrumental.mp3",
+  "instrumental": "audio/nctdream_smoothie_inst.mp3",
   "duration": 188.062875,
   "members": [
     {
@@ -1587,6 +1587,5 @@
       "romanization": "Smoothie",
       "english": ""
     }
-  ],
-  "instrumentalStart": 0
+  ]
 }
