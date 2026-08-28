@@ -595,7 +595,7 @@
   const instTrack = $("#instTrack"), instRegion = $("#instRegion"),
         instHA = $("#instHandleA"), instHB = $("#instHandleB"),
         instLA = $("#instLblA"), instLB = $("#instLblB"), instHead = $("#instPlayhead");
-  let instMetaAudio = null, instDur = 0, instPrev = null, instMode = "segment";
+  let instMetaAudio = null, instDur = 0, instPrev = null, instMode = "segment", instAt = null;
 
   function instBounds(){
     const a = (song.instrumentalStart != null) ? song.instrumentalStart : 0;
@@ -632,8 +632,9 @@
     if(has) loadInstAudio(); else $("#instpanel").style.display = "none";
   }
   const instOpen  = () => { $("#instpanel").style.display = "block"; drawInst();
-    // muestra la barrita en el inicio para poder arrastrarla desde ya
-    const [a] = instBounds(); if(instDur){ instHead.style.left = (a/instDur*100)+"%"; instHead.style.display = "block"; } };
+    // muestra la barrita (en su última posición o en el inicio) para poder arrastrarla
+    const [a] = instBounds(); const at = (instAt != null) ? instAt : a;
+    if(instDur){ instHead.style.left = (at/instDur*100)+"%"; instHead.style.display = "block"; } };
   const instClose = () => { stopPrev(); $("#instpanel").style.display = "none"; };
   const instShown = () => $("#instpanel").style.display === "block";
 
@@ -682,8 +683,9 @@
   instHB.addEventListener("pointerdown", (e) => { e.preventDefault(); e.stopPropagation(); dragHandle("b"); });
 
   // ---- reproducción/escucha ----
+  // Para la reproducción pero DEJA la barrita donde estaba (no vuelve al inicio).
   function stopPrev(){ if(instPrev){ try{ instPrev.pause(); }catch(e){} instPrev = null; }
-    instHead.style.display = "none"; $("#instPlay").textContent = "▶ Escuchar"; }
+    $("#instPlay").textContent = "▶ Escuchar"; }
   function ensurePrev(){
     if(instPrev) return instPrev;
     const p = new Audio(song.instrumental); instPrev = p;
@@ -691,33 +693,35 @@
     const FADE = 1.5;
     const tick = () => {
       if(instPrev !== p) return;
-      const ct = p.currentTime;
+      const ct = p.currentTime; instAt = ct;
       instHead.style.left = ((ct/instDur)*100) + "%";
       if(instMode === "segment"){
         const [a,b] = instBounds();
         p.volume = (song.instrumentalFade && b - ct < FADE) ? Math.max(0, (b-ct)/FADE) : 1;
-        if(ct >= b){ stopPrev(); return; }          // suena una vez, no se repite
-      } else { p.volume = 1; if(ct >= instDur){ stopPrev(); return; } }
+        if(ct >= b){ stopPrev(); instAt = null; return; }   // suena una vez; al final se reinicia
+      } else { p.volume = 1; if(ct >= instDur){ stopPrev(); instAt = null; return; } }
       requestAnimationFrame(tick);
     };
     p.addEventListener("play", () => requestAnimationFrame(tick));
     return p;
   }
 
-  // escuchar el trozo elegido (una sola vez, con atenuado si está marcado)
+  // escuchar el trozo (una sola vez); si estaba en pausa, continúa donde quedó
   $("#instPlay").onclick = () => {
     if(instPrev){ stopPrev(); return; }
     if(!song.instrumental || !instDur) return;
     instMode = "segment";
-    const [a] = instBounds();
-    const p = ensurePrev(); p.currentTime = a; p.volume = 1; p.play().catch(()=>{});
+    const [a,b] = instBounds();
+    const startAt = (instAt != null && instAt >= a && instAt < b) ? instAt : a;
+    const p = ensurePrev(); p.currentTime = startAt; p.volume = 1; p.play().catch(()=>{});
   };
 
   // barrita blanca: clic/arrastre en la pista para escuchar cualquier punto rápido
   function scrubTo(clientX, p){
     const rect = instTrack.getBoundingClientRect();
     const frac = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
-    try{ p.currentTime = frac * instDur; }catch(e){}
+    instAt = frac * instDur;
+    try{ p.currentTime = instAt; }catch(e){}
     instHead.style.left = (frac*100) + "%";
   }
   function beginScrub(startX){
