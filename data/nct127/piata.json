@@ -78,10 +78,721 @@
       "members": [
         "JOHNNY"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "Back in the town",
+      "romanization": "back in the town",
+      "english": "Back in the town",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "여기 드디어",
+      "romanization": "yeogi deudieo",
+      "english": "Finally, here I am",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지면 위에 발을 딛어",
+      "romanization": "jimyeon wie bareul dideo",
+      "english": "With my feet back on the ground",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 집이야",
+      "romanization": "nae jibiya",
+      "english": "This is my home",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 말 끝나기 무섭게",
+      "romanization": "nae mal kkeunnagi museopge",
+      "english": "Before I can even finish my words",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "모두 Hit me up",
+      "romanization": "modu hit me up",
+      "english": "Everyone hits me up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "준비해 We gon' turn it up",
+      "romanization": "junbihae we gon' turn it up",
+      "english": "Get ready we gon' turn it up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We’re so hot 가끔은 해가 숨어",
+      "romanization": "we’re so hot gakkeumeun haega sumeo",
+      "english": "We’re so hot sometimes the sun hides away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네가 알고 있던 화끈함은 잊어",
+      "romanization": "nega algo itdeon hwakkeunhameun ijeo",
+      "english": "Forget the heat you thought you knew",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I hit the stage",
+      "romanization": "when i hit the stage",
+      "english": "When I hit the stage",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah I’m back again",
+      "romanization": "yeah i’m back again",
+      "english": "Yeah, I’m back again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Say my name 더 크게",
+      "romanization": "say my name deo keuge",
+      "english": "Say my name louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "주저하지 마 더 거침없이 Blow",
+      "romanization": "jujeohaji ma deo geochimeopsi blow",
+      "english": "Don’t hesitate, blow it without holding back",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어떤 순간도 We can’t go wrong",
+      "romanization": "eotteon sungando we can’t go wrong",
+      "english": "No matter the moment we can’t go wrong",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ready to pop off!",
+      "romanization": "ready to pop off!",
+      "english": "Ready to pop off!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다 쏟아내 봐",
+      "romanization": "da ssodanae bwa",
+      "english": "Let it all pour out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "느낌은 완전 Jackpot",
+      "romanization": "neukkimeun wanjeon jackpot",
+      "english": "It feels just like a jackpot",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "셋을 세면 Strike",
+      "romanization": "seteul semyeon strike",
+      "english": "When I count to three, strike",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "소리 질러 Right now",
+      "romanization": "sori jilleo right now",
+      "english": "Scream out right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ready to pop off!",
+      "romanization": "ready to pop off!",
+      "english": "Ready to pop off!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨이 차올라",
+      "romanization": "sumi chaolla",
+      "english": "Breathless",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "크게 휘둘러 My mic",
+      "romanization": "keuge hwidulleo my mic",
+      "english": "Swing my mic hard",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "셋을 세면 Strike",
+      "romanization": "seteul semyeon strike",
+      "english": "When I count to three, strike",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지금부터 Showtime",
+      "romanization": "jigeumbuteo showtime",
+      "english": "Showtime starts right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Come on!",
+      "romanization": "come on!",
+      "english": "Come on!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One time one time one time",
+      "romanization": "one time one time one time",
+      "english": "One time, one time, one time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터져 Confetti",
+      "romanization": "teojyeo confetti",
+      "english": "Confetti bursts",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One time one time",
+      "romanization": "one time one time",
+      "english": "One time, one time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It's like that 다들 눈을 못 떼",
+      "romanization": "it's like that dadeul nuneul mot tte",
+      "english": "It's like that everyone can’t take their eyes off me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이렇게 빛나는 걸 처음 본 듯해",
+      "romanization": "ireoke bitnaneun geol cheoeum bon deuthae",
+      "english": "As if they’ve never seen anything this dazzling before",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "변함이 없어 We’re still louder",
+      "romanization": "byeonhami eopseo we’re still louder",
+      "english": "Nothing’s changed we’re still louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "손대는 것이 곧 Piñata",
+      "romanization": "sondaeneun geosi got piñata",
+      "english": "Whatever we touch becomes a Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그저 계속 망설임 없이",
+      "romanization": "geujeo gyesok mangseorim eopsi",
+      "english": "I just keep going without hesitation",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Told you ‘I’m back again’",
+      "romanization": "told you ‘i’m back again’",
+      "english": "Told you, “I’m back again”",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "걸어 다녀 Street",
+      "romanization": "georeo danyeo street",
+      "english": "Walking through the streets",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "바닥나는 Patience",
+      "romanization": "badaganeun patience",
+      "english": "My patience is running out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "차오르는 Feel",
+      "romanization": "chaoreuneun feel",
+      "english": "The feeling is building up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Now I got what you need",
+      "romanization": "now i got what you need",
+      "english": "Now I got what you need",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "what you need what you need",
+      "romanization": "what you need what you need",
+      "english": "What you need what you need",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "주저하지 마 더 거침없이 Blow",
+      "romanization": "jujeohaji ma deo geochimeopsi blow",
+      "english": "Don’t hesitate, blow it without holding back",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어떤 순간도 We can’t go wrong",
+      "romanization": "eotteon sungando we can’t go wrong",
+      "english": "No matter the moment we can’t go wrong",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ready to pop off!",
+      "romanization": "ready to pop off!",
+      "english": "Ready to pop off!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다 쏟아내 봐",
+      "romanization": "da ssodanae bwa",
+      "english": "Let it all pour out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "느낌은 완전 Jackpot",
+      "romanization": "neukkimeun wanjeon jackpot",
+      "english": "It feels just like a jackpot",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "셋을 세면 Strike",
+      "romanization": "seteul semyeon strike",
+      "english": "When I count to three, strike",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "소리 질러 Right now",
+      "romanization": "sori jilleo right now",
+      "english": "Scream out right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ready to pop off!",
+      "romanization": "ready to pop off!",
+      "english": "Ready to pop off!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨이 차올라",
+      "romanization": "sumi chaolla",
+      "english": "Breathless",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "크게 휘둘러 My mic",
+      "romanization": "keuge hwidulleo my mic",
+      "english": "Swing my mic hard",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "셋을 세면 Strike",
+      "romanization": "seteul semyeon strike",
+      "english": "When I count to three, strike",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지금부터 Showtime",
+      "romanization": "jigeumbuteo showtime",
+      "english": "Showtime starts right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "축제는 끝나지 않아 영원히",
+      "romanization": "chukjeneun kkeunnaji ana yeongwonhi",
+      "english": "The party never ends forever",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oh you better want it",
+      "romanization": "oh you better want it",
+      "english": "Oh, you better want it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "want it like crazy",
+      "romanization": "want it like crazy",
+      "english": "want it like crazy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터지는 순간이 시작인 Party",
+      "romanization": "teojineun sungani sijagin party",
+      "english": "The moment it explodes is when the party begins",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So come and get some!",
+      "romanization": "so come and get some!",
+      "english": "So come and get some!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "C’mon!",
+      "romanization": "c’mon!",
+      "english": "C’mon!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ready to pop off!",
+      "romanization": "ready to pop off!",
+      "english": "Ready to pop off!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다 쏟아내 봐",
+      "romanization": "da ssodanae bwa",
+      "english": "Let it all pour out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "느낌은 완전 Jackpot",
+      "romanization": "neukkimeun wanjeon jackpot",
+      "english": "It feels just like a jackpot",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "셋을 세면 Strike",
+      "romanization": "seteul semyeon strike",
+      "english": "When I count to three, strike",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "소리 질러 Right now",
+      "romanization": "sori jilleo right now",
+      "english": "Scream out right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ready to pop off!",
+      "romanization": "ready to pop off!",
+      "english": "Ready to pop off!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨이 차올라",
+      "romanization": "sumi chaolla",
+      "english": "Breathless",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "크게 휘둘러 My mic",
+      "romanization": "keuge hwidulleo my mic",
+      "english": "Swing my mic hard",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "셋을 세면 Strike",
+      "romanization": "seteul semyeon strike",
+      "english": "When I count to three, strike",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지금부터 Showtime",
+      "romanization": "jigeumbuteo showtime",
+      "english": "Showtime starts right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Shake it shake it shake it up)",
+      "romanization": "(shake it shake it shake it up)",
+      "english": "(Shake it, shake it, shake it up)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Come on!",
+      "romanization": "come on!",
+      "english": "Come on!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One time one time one time",
+      "romanization": "one time one time one time",
+      "english": "One time, one time, one time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터져 Confetti",
+      "romanization": "teojyeo confetti",
+      "english": "Confetti bursts",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One time one time",
+      "romanization": "one time one time",
+      "english": "One time, one time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like Piñata",
+      "romanization": "like piñata",
+      "english": "Like Piñata",
+      "adlib": false
     }
   ]
 }
