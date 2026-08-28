@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Now Playing — visualizador de audio</title>
+<style>
+  :root{ --c1:#25e0f2; --c2:#ff2fb0; --beat:0; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{ background:#04060d; color:#eef; font-family:"Montserrat","Segoe UI",Arial,sans-serif;
+        overflow:hidden; }
+  #stage{ position:relative; width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+
+  /* barra superior (elegir canción) — se oculta con la tecla R para grabar */
+  #topbar{ position:fixed; top:0; left:0; right:0; z-index:10; display:flex; align-items:center; gap:12px;
+           padding:12px 18px; }
+  #topbar a, #topbar select{ background:rgba(20,24,40,.7); color:#dfe6ff; border:1px solid rgba(180,210,255,.25);
+           border-radius:9px; padding:9px 12px; font-weight:700; font-size:14px; text-decoration:none; cursor:pointer; }
+  #topbar .sp{ flex:1; }
+  #topbar .tip{ color:#5d6c92; font-size:12px; }
+  body.clean #topbar{ display:none; }
+
+  #bg{ position:absolute; inset:0; overflow:hidden; z-index:0;
+       background:
+         radial-gradient(70% 55% at 50% 42%, #0e1430 0%, transparent 70%),
+         linear-gradient(#04060d,#05070f); }
+  .streak{ position:absolute; top:-10%; width:2px; height:120%; filter:blur(2px); opacity:.35;
+           background:linear-gradient(#fff,transparent); transform:rotate(8deg); }
+  .beam{ position:absolute; border-radius:50%; filter:blur(50px); opacity:.22; }
+  #b1{ left:8%; top:18%; width:34vmin; height:34vmin; background:var(--c1); }
+  #b2{ right:8%; bottom:14%; width:34vmin; height:34vmin; background:var(--c2); }
+  .dot{ position:absolute; width:3px; height:3px; border-radius:50%; background:#dfe8ff; opacity:.5; animation:float linear infinite; }
+  @keyframes float{ from{ transform:translateY(30px); opacity:0 } 12%{opacity:.7} 88%{opacity:.7} to{ transform:translateY(-70vh); opacity:0 } }
+
+  #wave{ position:absolute; left:0; top:50%; transform:translateY(-50%); width:100%; height:78vmin; z-index:1; pointer-events:none; }
+
+  #frame{ position:relative; z-index:2; width:min(860px,80vw); aspect-ratio:16/9.2;
+          border-radius:30px; padding:5.2%;
+          background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.02));
+          border:1px solid rgba(210,230,255,.35);
+          box-shadow:0 0 0 1px rgba(255,255,255,.05) inset, 0 40px 120px -40px #000,
+                     0 0 calc(40px + var(--beat)*60px) rgba(90,180,255,calc(.10 + var(--beat)*.22));
+          -webkit-backdrop-filter:blur(7px) saturate(1.2); backdrop-filter:blur(7px) saturate(1.2);
+          display:flex; flex-direction:column; justify-content:center; }
+  #frame::before{ content:""; position:absolute; inset:14px; border-radius:22px; border:1px solid rgba(180,210,255,.14); pointer-events:none; }
+
+  #top{ display:flex; gap:26px; align-items:center; }
+  #cover{ width:23%; aspect-ratio:1; border-radius:14px; object-fit:cover; flex:none; background:#0a0e18;
+          box-shadow:0 16px 40px -10px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.12);
+          transform:scale(calc(1 + var(--beat)*.03)); transition:transform .06s linear; }
+  #meta{ min-width:0; transform:translateY(-4px); }
+  #nowplaying{ font-size:clamp(11px,1.2vw,14px); font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#8fa4d6; margin-bottom:7px; }
+  #title{ font-size:clamp(20px,3.4vw,40px); font-weight:900; letter-spacing:.5px; line-height:1.18; padding-bottom:.08em;
+          white-space:nowrap; overflow:hidden; text-overflow:ellipsis; text-shadow:0 2px 20px rgba(120,190,255,.35); }
+  #artist{ font-size:clamp(12px,1.5vw,18px); font-weight:700; color:#aebbdd; margin-top:8px; letter-spacing:3px; text-transform:uppercase; }
+
+  #prog{ margin-top:6%; }
+  #bar{ height:5px; border-radius:999px; background:rgba(255,255,255,.16); cursor:pointer; position:relative; }
+  #fill{ position:absolute; left:0; top:0; bottom:0; width:0%; background:linear-gradient(90deg,var(--c1),var(--c2)); border-radius:999px; box-shadow:0 0 12px var(--c1); }
+  #knob{ position:absolute; top:50%; width:13px; height:13px; border-radius:50%; background:#fff; left:0; transform:translate(-50%,-50%); box-shadow:0 0 10px #fff; }
+  #times{ display:flex; justify-content:space-between; margin-top:8px; font-size:clamp(11px,1.2vw,14px); color:#aebbdd; font-variant-numeric:tabular-nums; }
+
+  #controls{ display:flex; align-items:center; justify-content:center; gap:6%; margin-top:5%; position:relative; }
+  body.clean, body.clean *{ cursor:none !important; }
+  .ctl{ background:none; border:0; color:#e8eeff; cursor:pointer; display:grid; place-items:center; filter:drop-shadow(0 2px 8px rgba(0,0,0,.5)); }
+  .ctl svg{ width:26px; height:26px; fill:currentColor; }
+  #play{ width:66px; height:66px; border-radius:50%; color:#eef; background:rgba(255,255,255,.05); border:2px solid rgba(255,255,255,.9); box-shadow:0 0 22px rgba(120,200,255,.35); }
+  #play svg{ width:26px; height:26px; }
+
+  #msg{ position:absolute; bottom:14px; left:0; right:0; text-align:center; color:#8aa; font-size:14px; z-index:3; }
+</style>
+</head>
+<body>
+<div id="topbar">
+  <a id="back" href="library.html">← Biblioteca</a>
+  <select id="songSel" title="Elegir canción"></select>
+  <span class="sp"></span>
+  <span class="tip">▶ para reproducir · tecla <b>R</b> oculta esta barra y el ratón (para grabar)</span>
+</div>
+
+<div id="stage">
+  <div id="bg"><div class="beam" id="b1"></div><div class="beam" id="b2"></div></div>
+  <canvas id="wave"></canvas>
+
+  <div id="frame">
+    <div id="top">
+      <img id="cover" alt="">
+      <div id="meta">
+        <div id="nowplaying">Now playing…</div>
+        <div id="title">—</div>
+        <div id="artist"></div>
+      </div>
+    </div>
+    <div id="prog">
+      <div id="bar"><div id="fill"></div><div id="knob"></div></div>
+      <div id="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+    </div>
+    <div id="controls">
+      <button class="ctl" id="play" title="Reproducir"><svg viewBox="0 0 24 24" id="playIcon"><path d="M8 5v14l11-7z"/></svg></button>
+    </div>
+  </div>
+
+  <div id="msg"></div>
+</div>
+
+<audio id="aud" preload="metadata"></audio>
+
+<script>
+  const $ = id => document.getElementById(id);
+  const aud = $("aud"), cover = $("cover"), fill = $("fill"), knob = $("knob"), msg = $("msg");
+  const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
+  const D = window.desktop;
+  let SONG = null;
+
+  // ---- cargar canción (audio + portada + título) ----
+  async function loadByPath(path){
+    let data = null;
+    try{
+      if(D && D.loadSong){ const r = await D.loadSong(path); if(r && r.ok) data = r.data; }
+      else { data = await fetch(path).then(r => r.json()); }
+    }catch(e){}
+    if(!data){ msg.textContent = "No se pudo cargar la canción."; return; }
+    SONG = data;
+    $("title").textContent = data.song || "";
+    $("artist").textContent = data.group || "";
+    const cov = data.cover || (data.members && data.members[0] && data.members[0].image) || "";
+    cover.src = cov ? (cov + (cov.indexOf("?") < 0 ? "?" : "&") + "v=" + (data.duration || 0)) : "";
+    const audioSrc = data.audio || "";
+    if(!audioSrc){
+      msg.textContent = "Esta canción no tiene audio. Ponlo con 🎵 Elegir audio en el editor.";
+      aud.removeAttribute("src");
+    } else {
+      msg.textContent = "";
+      aud.src = audioSrc + (audioSrc.indexOf("?") < 0 ? "?" : "&") + "v=" + (data.duration || 0);
+    }
+    $("cur").textContent = "0:00"; $("dur").textContent = "0:00"; fill.style.width = "0%"; knob.style.left = "0%";
+  }
+
+  // ---- selector de canciones (escritorio) ----
+  async function fillSongs(preselect){
+    const sel = $("songSel");
+    if(!(D && D.listSongs)){ sel.style.display = "none"; return; }
+    let songs = []; try{ songs = await D.listSongs(); }catch(e){}
+    songs.sort((a,b) => (a.group + a.song).localeCompare(b.group + b.song));
+    sel.innerHTML = "";
+    songs.forEach(s => { const o = document.createElement("option"); o.value = s.path;
+      o.textContent = s.group + " — " + s.song; sel.appendChild(o); });
+    if(preselect) sel.value = preselect;
+    sel.onchange = () => loadByPath(sel.value);
+    if(sel.value) loadByPath(sel.value);
+  }
+
+  // ---- Web Audio (barras reactivas) ----
+  let ctx, analyser, freq, srcNode, beat = 0;
+  function initAudio(){ if(ctx) return;
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    srcNode = ctx.createMediaElementSource(aud);
+    analyser = ctx.createAnalyser(); analyser.fftSize = 2048; analyser.smoothingTimeConstant = 0.6;
+    freq = new Uint8Array(analyser.frequencyBinCount);
+    srcNode.connect(analyser); analyser.connect(ctx.destination);
+  }
+  async function play(){ if(!aud.getAttribute("src")) return; initAudio(); if(ctx.state === "suspended") await ctx.resume(); try{ await aud.play(); }catch(e){} }
+  $("play").onclick = () => aud.paused ? play() : aud.pause();
+  aud.onplay  = () => $("playIcon").innerHTML = '<path d="M6 5h4v14H6zm8 0h4v14h-4z"/>';
+  aud.onpause = () => $("playIcon").innerHTML = '<path d="M8 5v14l11-7z"/>';
+  aud.ontimeupdate = () => { if(aud.duration){ const p = aud.currentTime/aud.duration*100;
+    fill.style.width = p + "%"; knob.style.left = p + "%"; $("cur").textContent = fmt(aud.currentTime); $("dur").textContent = fmt(aud.duration); } };
+  aud.onloadedmetadata = () => $("dur").textContent = fmt(aud.duration || 0);
+  $("bar").onclick = e => { if(!aud.duration) return; const r = $("bar").getBoundingClientRect(); aud.currentTime = (e.clientX - r.left)/r.width * aud.duration; };
+  document.addEventListener("keydown", e => { if(e.key === "r" || e.key === "R") document.body.classList.toggle("clean"); });
+
+  // ---- canvas: barras reactivas cian->magenta ----
+  const cv = $("wave"), cx = cv.getContext("2d");
+  const DPR = () => Math.min(2, window.devicePixelRatio || 1);
+  function resize(){ const r = cv.getBoundingClientRect(), d = DPR(); cv.width = r.width*d; cv.height = r.height*d; cx.setTransform(d,0,0,d,0,0); }
+  window.addEventListener("resize", resize); resize();
+  function getCss(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim() || "#25e0f2"; }
+  function roundRect(x,y,w,h,r){ r = Math.min(r, w/2, h/2); cx.beginPath();
+    cx.moveTo(x+r,y); cx.arcTo(x+w,y,x+w,y+h,r); cx.arcTo(x+w,y+h,x,y+h,r); cx.arcTo(x,y+h,x,y,r); cx.arcTo(x,y,x+w,y,r); cx.closePath(); }
+  function draw(){
+    const d = DPR(), w = cv.width/d, h = cv.height/d, mid = h/2;
+    cx.clearRect(0,0,w,h);
+    if(analyser){
+      analyser.getByteFrequencyData(freq);
+      let s = 0; for(let i=1;i<8;i++) s += freq[i]; const bass = (s/7)/255;
+      const target = Math.min(1, bass*1.5); if(target > beat) beat = target; else beat += (target-beat)*0.12;
+      document.documentElement.style.setProperty("--beat", beat.toFixed(3));
+      const N = 72, bw = w/N, gap = bw*0.52, iw = bw - gap;
+      const grad = cx.createLinearGradient(0,0,w,0);
+      grad.addColorStop(0, getCss("--c1")); grad.addColorStop(.5, "#b56bff"); grad.addColorStop(1, getCss("--c2"));
+      cx.fillStyle = grad; cx.shadowColor = "rgba(120,200,255,.85)"; cx.shadowBlur = 14;
+      for(let i=0;i<N;i++){
+        const fi = Math.floor(Math.pow(i/(N-1), 1.4) * (freq.length*0.7));
+        const v = (freq[fi]||0)/255; const bh = Math.max(3, v*v*h*0.42);
+        roundRect(i*bw + gap/2, mid - bh, iw, bh*2, iw/2); cx.fill();
+      }
+      cx.shadowBlur = 0;
+    }
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
+
+  // fondo decorativo
+  (function scene(){ const bg = $("bg");
+    for(let i=0;i<7;i++){ const s = document.createElement("div"); s.className = "streak";
+      s.style.left = (8+Math.random()*84) + "%"; s.style.height = (60+Math.random()*60) + "%";
+      s.style.opacity = (.12+Math.random()*.3); s.style.transform = "rotate(" + (6+Math.random()*6) + "deg)"; bg.appendChild(s); }
+    for(let i=0;i<28;i++){ const dt = document.createElement("div"); dt.className = "dot";
+      dt.style.left = (Math.random()*100)+"%"; dt.style.top = (Math.random()*100)+"%";
+      dt.style.animationDuration = (6+Math.random()*8)+"s"; dt.style.animationDelay = (-Math.random()*12)+"s"; bg.appendChild(dt); }
+  })();
+
+  // arranque: ?song= (web/directo) o el selector (escritorio)
+  const param = new URLSearchParams(location.search).get("song");
+  if(param){ $("songSel").style.display = D && D.listSongs ? "" : "none"; fillSongs(param); if(!(D && D.listSongs)) loadByPath(param); }
+  else fillSongs();
+</script>
+</body>
+</html>
