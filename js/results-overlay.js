@@ -166,21 +166,18 @@ Self-contained: injects its own styles and markup.
 
   function playInstrumental(){
     if(!instSrc) return;
-    if(!instAudio){
-      instAudio=new Audio(instSrc); instAudio.preload="auto";
-      // bucle del trozo elegido (inicio->fin)
-      instAudio.addEventListener("timeupdate", ()=>{ if(instEnd>instStart && instAudio.currentTime>=instEnd) instAudio.currentTime=instStart; });
-      instAudio.addEventListener("ended", ()=>{ try{ instAudio.currentTime=instStart; instAudio.play().catch(()=>{}); }catch(e){} });
-    }
+    if(!instAudio){ instAudio=new Audio(instSrc); instAudio.preload="auto"; }
     try{ instAudio.currentTime=instStart; instAudio.volume=1; instAudio.play().catch(()=>{}); }catch(e){}
     requestAnimationFrame(instVolLoop);
   }
-  // Atenuar el volumen en el último tramo antes del fin del trozo (si está marcado).
+  // Suena UNA vez: al llegar al fin del trozo se para (no se reactiva). Atenúa el
+  // último tramo si está marcado.
   function instVolLoop(){
     if(!instAudio || instAudio.paused) return;
-    const FADE=1.5;
-    instAudio.volume = (instFade && instEnd>instStart && instEnd-instAudio.currentTime < FADE)
-      ? Math.max(0, (instEnd-instAudio.currentTime)/FADE) : 1;
+    const FADE=1.5, ct=instAudio.currentTime;
+    if(instEnd>instStart && ct>=instEnd){ try{ instAudio.pause(); }catch(e){} return; }
+    instAudio.volume = (instFade && instEnd>instStart && instEnd-ct < FADE)
+      ? Math.max(0, (instEnd-ct)/FADE) : 1;
     requestAnimationFrame(instVolLoop);
   }
   function stopInstrumental(){ if(instAudio){ try{ instAudio.pause(); }catch(e){} } }

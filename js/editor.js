@@ -591,11 +591,11 @@
     setTimeout(() => btn.textContent = t, 2800);
   };
 
-  // ===== INSTRUMENTAL: barra para marcar el trozo que suena en el donut =====
+  // ===== INSTRUMENTAL: popover con barra para marcar el trozo del donut =====
   const instTrack = $("#instTrack"), instRegion = $("#instRegion"),
         instHA = $("#instHandleA"), instHB = $("#instHandleB"),
         instLA = $("#instLblA"), instLB = $("#instLblB"), instHead = $("#instPlayhead");
-  let instAudio = null, instDur = 0, instPrev = null;
+  let instMetaAudio = null, instDur = 0, instPrev = null, instMode = "segment";
 
   function instBounds(){
     const a = (song.instrumentalStart != null) ? song.instrumentalStart : 0;
@@ -615,35 +615,52 @@
   function loadInstAudio(){
     if(!song || !song.instrumental) return;
     instDur = 0;
-    instAudio = new Audio(song.instrumental);
-    instAudio.preload = "metadata";
-    instAudio.onloadedmetadata = () => {
-      instDur = instAudio.duration || 0;
+    instMetaAudio = new Audio(song.instrumental);
+    instMetaAudio.preload = "metadata";
+    instMetaAudio.onloadedmetadata = () => {
+      instDur = instMetaAudio.duration || 0;
       if(song.instrumentalStart == null) song.instrumentalStart = 0;
       if(song.instrumentalEnd   == null) song.instrumentalEnd   = instDur;
       drawInst();
     };
   }
+  // syncInstSeg: refleja si hay instrumental (texto del botón); NO abre el popover.
   function syncInstSeg(){
     const has = !!(song && song.instrumental);
-    $("#instpanel").style.display = has ? "block" : "none";
+    $("#pickinst").textContent = has ? "🎼 Instrumental ▾" : "🎼 Elegir audio instrumental";
     $("#instFade").checked = !!(song && song.instrumentalFade);
-    if(has) loadInstAudio();
+    if(has) loadInstAudio(); else $("#instpanel").style.display = "none";
   }
+  const instOpen  = () => { $("#instpanel").style.display = "block"; drawInst();
+    // muestra la barrita en el inicio para poder arrastrarla desde ya
+    const [a] = instBounds(); if(instDur){ instHead.style.left = (a/instDur*100)+"%"; instHead.style.display = "block"; } };
+  const instClose = () => { stopPrev(); $("#instpanel").style.display = "none"; };
+  const instShown = () => $("#instpanel").style.display === "block";
 
-  $("#pickinst").onclick = async () => {
+  async function pickInstFile(){
     const btn = $("#pickinst"); const t = btn.textContent;
     btn.disabled = true; btn.textContent = "⏳ Copiando…";
     let res = null;
     try{ res = await window.desktop.pickAudio({ group: song.group, song: song.song, suffix: "_inst" }); }catch(e){}
     btn.disabled = false;
     if(res && res.canceled){ btn.textContent = t; return; }
-    if(res && res.ok){ song.instrumental = res.audio; btn.textContent = res.pushed ? "✓ Instrumental" : "✓ Instrumental (local)";
+    if(res && res.ok){
+      song.instrumental = res.audio;
       song.instrumentalStart = undefined; song.instrumentalEnd = undefined; // se recalculan al cargar
-      syncInstSeg(); save(); }
-    else { btn.textContent = "✕ Error"; }
-    setTimeout(() => btn.textContent = t, 2800);
+      syncInstSeg(); save(); instOpen();
+    } else { btn.textContent = "✕ Error"; setTimeout(syncInstSeg, 2200); }
+  }
+
+  // El botón: si no hay instrumental -> elegir archivo; si ya hay -> abrir/cerrar barra.
+  $("#pickinst").onclick = () => {
+    if(!song.instrumental){ pickInstFile(); return; }
+    instShown() ? instClose() : instOpen();
   };
+  $("#instChange").onclick = (e) => { e.stopPropagation(); pickInstFile(); };
+  // cerrar el popover al hacer clic fuera
+  document.addEventListener("pointerdown", (e) => {
+    if(instShown() && !$("#instwrap").contains(e.target)) instClose();
+  });
 
   // arrastrar un manejador ('a' = inicio, 'b' = fin)
   function dragHandle(which){
@@ -663,38 +680,64 @@
   }
   instHA.addEventListener("pointerdown", (e) => { e.preventDefault(); e.stopPropagation(); dragHandle("a"); });
   instHB.addEventListener("pointerdown", (e) => { e.preventDefault(); e.stopPropagation(); dragHandle("b"); });
-  instTrack.addEventListener("pointerdown", (e) => {
-    if(e.target.classList.contains("insth") || !instDur) return;
-    const rect = instTrack.getBoundingClientRect();
-    const tt = ((e.clientX - rect.left)/rect.width) * instDur;
-    const [a,b] = instBounds();
-    if(Math.abs(tt-a) <= Math.abs(tt-b)){ song.instrumentalStart = Math.min(tt, b-0.2); drawInst(); dragHandle("a"); }
-    else { song.instrumentalEnd = Math.max(tt, a+0.2); drawInst(); dragHandle("b"); }
-    save();
-  });
 
-  $("#instFade").onchange = () => { song.instrumentalFade = $("#instFade").checked; save(); };
-
-  // escuchar el trozo elegido (aplica el atenuado si está marcado)
-  $("#instPlay").onclick = () => {
-    const stop = () => { if(instPrev){ instPrev.pause(); instPrev = null; }
-      instHead.style.display = "none"; $("#instPlay").textContent = "▶ Escuchar"; };
-    if(instPrev){ stop(); return; }
-    if(!song.instrumental || !instDur) return;
-    const [a,b] = instBounds();
-    const p = new Audio(song.instrumental); instPrev = p; p.currentTime = a;
-    $("#instPlay").textContent = "⏹ Parar"; instHead.style.display = "block";
+  // ---- reproducción/escucha ----
+  function stopPrev(){ if(instPrev){ try{ instPrev.pause(); }catch(e){} instPrev = null; }
+    instHead.style.display = "none"; $("#instPlay").textContent = "▶ Escuchar"; }
+  function ensurePrev(){
+    if(instPrev) return instPrev;
+    const p = new Audio(song.instrumental); instPrev = p;
+    instHead.style.display = "block"; $("#instPlay").textContent = "⏹ Parar";
     const FADE = 1.5;
     const tick = () => {
       if(instPrev !== p) return;
       const ct = p.currentTime;
       instHead.style.left = ((ct/instDur)*100) + "%";
-      p.volume = (song.instrumentalFade && b - ct < FADE) ? Math.max(0, (b-ct)/FADE) : 1;
-      if(ct >= b){ stop(); return; }
+      if(instMode === "segment"){
+        const [a,b] = instBounds();
+        p.volume = (song.instrumentalFade && b - ct < FADE) ? Math.max(0, (b-ct)/FADE) : 1;
+        if(ct >= b){ stopPrev(); return; }          // suena una vez, no se repite
+      } else { p.volume = 1; if(ct >= instDur){ stopPrev(); return; } }
       requestAnimationFrame(tick);
     };
-    p.play().then(() => requestAnimationFrame(tick)).catch(()=>{});
+    p.addEventListener("play", () => requestAnimationFrame(tick));
+    return p;
+  }
+
+  // escuchar el trozo elegido (una sola vez, con atenuado si está marcado)
+  $("#instPlay").onclick = () => {
+    if(instPrev){ stopPrev(); return; }
+    if(!song.instrumental || !instDur) return;
+    instMode = "segment";
+    const [a] = instBounds();
+    const p = ensurePrev(); p.currentTime = a; p.volume = 1; p.play().catch(()=>{});
   };
+
+  // barrita blanca: clic/arrastre en la pista para escuchar cualquier punto rápido
+  function scrubTo(clientX, p){
+    const rect = instTrack.getBoundingClientRect();
+    const frac = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    try{ p.currentTime = frac * instDur; }catch(e){}
+    instHead.style.left = (frac*100) + "%";
+  }
+  function beginScrub(startX){
+    if(!song.instrumental || !instDur) return;
+    instMode = "free";
+    const p = ensurePrev(); p.volume = 1;
+    scrubTo(startX, p); p.play().catch(()=>{});
+    const mv = (e) => scrubTo(e.touches ? e.touches[0].clientX : e.clientX, p);
+    const up = () => { document.removeEventListener("pointermove", mv);
+                       document.removeEventListener("pointerup", up); };
+    document.addEventListener("pointermove", mv);
+    document.addEventListener("pointerup", up);
+  }
+  instTrack.addEventListener("pointerdown", (e) => {
+    if(e.target.classList.contains("insth")) return;   // los bordes = mover inicio/fin
+    e.preventDefault(); beginScrub(e.clientX);
+  });
+  instHead.addEventListener("pointerdown", (e) => { e.preventDefault(); e.stopPropagation(); beginScrub(e.clientX); });
+
+  $("#instFade").onchange = () => { song.instrumentalFade = $("#instFade").checked; save(); };
 
   // Per-word colour marking. Select a word in a lyric box, then:
   //   🌈  -> the whole group sings it (**word**)
