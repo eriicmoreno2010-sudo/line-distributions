@@ -838,5 +838,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/team_bewitchedkoreanver.mp3"
+  "audio": "audio/team_bewitchedkoreanver.mp3",
+  "cover": "covers/team_bewitchedkoreanver.jpg"
 }
