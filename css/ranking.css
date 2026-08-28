@@ -108,10 +108,12 @@ Version: 4.0 — Ranking (transform leaderboard)
     transform:translateY(-3px);
     border:3px solid var(--ring);   /* white by default, member colour once they sing */
     background:var(--panel3);
-    filter:grayscale(1) brightness(.9);   /* en blanco y negro; a color SOLO mientras cantan */
-    transition:border-color .15s var(--ease), filter .3s var(--ease);
+    filter:none;   /* a color; pasa a blanco y negro SOLO cuando ya no canta más (.done) */
+    transition:border-color .15s var(--ease), filter .35s var(--ease);
 }
-.member.active .member-photo{ border-color:var(--accent); filter:none; }
+.member.active .member-photo{ border-color:var(--accent); }
+/* Cuando el miembro ya no cantará más en toda la canción, su foto en blanco y negro */
+.member.done .member-photo{ filter:grayscale(1) brightness(.9); }
 
 /* ========================= */
 /* INFO */
