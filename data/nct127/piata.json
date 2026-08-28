@@ -469,12 +469,36 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Shake it shake it shake it up)",
-      "romanization": "(shake it shake it shake it up)",
-      "english": "(Shake it, shake it, shake it up)",
+      "start": 15.26,
+      "end": 16.32,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "(Huh, huh, huh, huh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 118.34,
+      "end": 118.62,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 140.01,
+      "end": 142.23,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "(Shake it shake it shake it up)",
+      "english": "",
       "adlib": true
     },
     {
