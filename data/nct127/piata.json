@@ -791,7 +791,21 @@
       "original": "",
       "romanization": "(Huh, huh, huh, huh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          15.27,
+          15.69
+        ],
+        [
+          15.83,
+          15.98
+        ],
+        [
+          16.13,
+          16.26
+        ]
+      ]
     },
     {
       "start": 118.34,
@@ -802,7 +816,13 @@
       "original": "",
       "romanization": "(Uh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          118.36,
+          118.59
+        ]
+      ]
     },
     {
       "start": 140.01,
