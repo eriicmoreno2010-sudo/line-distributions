@@ -3,6 +3,9 @@
 /*.mkv
 /*.webm
 
+# MV demasiado grande para GitHub (>100MB); se queda en local
+/videos/p1harmony_prettyboy.mp4
+
 # Imágenes de prueba
 /preview-*.png
 /prueba-*.png
