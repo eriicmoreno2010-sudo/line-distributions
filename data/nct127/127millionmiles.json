@@ -1100,5 +1100,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/nct127_127millionmiles.mp3"
+  "audio": "audio/nct127_127millionmiles.mp3",
+  "cover": "covers/nct127_127millionmiles.jpg"
 }
