@@ -616,5 +616,6 @@
   "cover": "covers/nctdream_icantfeelanything.jpg",
   "instrumental": "audio/nctdream_icantfeelanything_inst.mp3",
   "instrumentalStart": 40.383491458533655,
-  "instrumentalEnd": 56.103311484174675
+  "instrumentalEnd": 56.103311484174675,
+  "instrumentalFade": true
 }
