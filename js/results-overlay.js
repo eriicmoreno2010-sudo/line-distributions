@@ -159,20 +159,27 @@ Self-contained: injects its own styles and markup.
   document.body.appendChild(ov);
 
   let ranked=[], built=false, revealTimer=null;
-  let instSrc="", instAudio=null;      // instrumental que suena en la pantalla de resultados
+  let instSrc="", instAudio=null, instStart=0, instEnd=0;   // instrumental (y su trozo) en resultados
 
   fetch(SONG_URL).then(r=>r.json()).then(SONG=>{ buildResults(SONG); built=true; })
     .catch(e=>console.error("results-overlay:", e));
 
   function playInstrumental(){
     if(!instSrc) return;
-    if(!instAudio){ instAudio=new Audio(instSrc); instAudio.preload="auto"; }
-    try{ instAudio.currentTime=0; instAudio.play().catch(()=>{}); }catch(e){}
+    if(!instAudio){
+      instAudio=new Audio(instSrc); instAudio.preload="auto";
+      // bucle del trozo elegido (inicio->fin)
+      instAudio.addEventListener("timeupdate", ()=>{ if(instEnd>instStart && instAudio.currentTime>=instEnd) instAudio.currentTime=instStart; });
+      instAudio.addEventListener("ended", ()=>{ try{ instAudio.currentTime=instStart; instAudio.play().catch(()=>{}); }catch(e){} });
+    }
+    try{ instAudio.currentTime=instStart; instAudio.play().catch(()=>{}); }catch(e){}
   }
   function stopInstrumental(){ if(instAudio){ try{ instAudio.pause(); }catch(e){} } }
 
   function buildResults(SONG){
     instSrc = SONG.instrumental || SONG.resultsAudio || "";
+    instStart = +SONG.instrumentalStart || 0;
+    instEnd = +SONG.instrumentalEnd || 0;
     document.getElementById("ro-grp").textContent=SONG.group;
     document.getElementById("ro-sng").textContent=SONG.song;
 

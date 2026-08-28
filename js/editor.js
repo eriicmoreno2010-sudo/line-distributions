@@ -64,6 +64,7 @@
     syncModeUI();
     buildWordPal();
     buildColors();
+    syncInstSeg();
     requestAnimationFrame(tick);
   }
 
@@ -589,6 +590,31 @@
     }
     setTimeout(() => btn.textContent = t, 2800);
   };
+
+  // Elegir el INSTRUMENTAL (suena en donut/resultados) + trozo (inicio/fin).
+  function syncInstSeg(){
+    const has = !!(song && song.instrumental);
+    $("#instseg").style.display = has ? "inline-flex" : "none";
+    if(has){ $("#instStart").value = (song.instrumentalStart != null ? song.instrumentalStart : "");
+             $("#instEnd").value = (song.instrumentalEnd != null ? song.instrumentalEnd : ""); }
+  }
+  $("#pickinst").onclick = async () => {
+    const btn = $("#pickinst"); const t = btn.textContent;
+    btn.disabled = true; btn.textContent = "⏳ Copiando…";
+    let res = null;
+    try{ res = await window.desktop.pickAudio({ group: song.group, song: song.song, suffix: "_inst" }); }catch(e){}
+    btn.disabled = false;
+    if(res && res.canceled){ btn.textContent = t; return; }
+    if(res && res.ok){ song.instrumental = res.audio; btn.textContent = res.pushed ? "✓ Instrumental" : "✓ Instrumental (local)";
+      syncInstSeg(); save(); }
+    else { btn.textContent = "✕ Error"; }
+    setTimeout(() => btn.textContent = t, 2800);
+  };
+  $("#instStart").oninput = () => { const v = parseFloat($("#instStart").value); song.instrumentalStart = isFinite(v) ? v : undefined; };
+  $("#instEnd").oninput   = () => { const v = parseFloat($("#instEnd").value);   song.instrumentalEnd   = isFinite(v) ? v : undefined; };
+  $("#instStart").onchange = save; $("#instEnd").onchange = save;
+  $("#instStartNow").onclick = () => { song.instrumentalStart = +video.currentTime.toFixed(2); $("#instStart").value = song.instrumentalStart; save(); };
+  $("#instEndNow").onclick   = () => { song.instrumentalEnd   = +video.currentTime.toFixed(2); $("#instEnd").value = song.instrumentalEnd; save(); };
 
   // Per-word colour marking. Select a word in a lyric box, then:
   //   🌈  -> the whole group sings it (**word**)

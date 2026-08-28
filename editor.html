@@ -176,6 +176,15 @@
         <button id="markAdlibs" title="Marca como AD-LIB solo las líneas que van entre paréntesis ( ), y quita el ad-lib del resto.">( )→ ad-libs</button>
         <button id="pickvideo">📹 Elegir vídeo</button>
         <button id="pickaudio" title="Elegir un mp3 de audio limpio: silencia el vídeo y suena el mp3 sincronizado.">🎵 Elegir audio</button>
+        <button id="pickinst" title="Elegir el mp3 INSTRUMENTAL: suena en el donut y la pantalla de resultados.">🎼 Elegir audio instrumental</button>
+        <span id="instseg" style="display:none;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--text2)">
+          🍩 trozo donut:
+          <input id="instStart" type="number" step="0.1" placeholder="inicio" style="width:70px;background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:5px">
+          <button id="instStartNow" title="poner inicio = tiempo actual del reproductor">⏱</button>
+          a
+          <input id="instEnd" type="number" step="0.1" placeholder="fin" style="width:70px;background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:5px">
+          <button id="instEndNow" title="poner fin = tiempo actual del reproductor">⏱</button> s
+        </span>
       </div>
       <div class="help">
         <b>LETRA</b> (cuándo se ve el texto): <b>S</b> = inicio, <b>S</b> = fin y avanza sola.<br>

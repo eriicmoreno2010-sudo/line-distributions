@@ -273,10 +273,11 @@ ipcMain.handle("pick-audio", async (_e, args) => {
     });
     if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
     const srcFile = filePaths[0];
+    const suffix = args.suffix ? String(args.suffix) : "";     // p.ej. "_inst" para el instrumental
     const base = (slug(args.group || "") + "_" + slug(args.song || "audio")).replace(/^_|_$/g, "") || "audio";
     const ext = (path.extname(srcFile) || ".mp3").toLowerCase();
     fs.mkdirSync(path.join(ROOT, "audio"), { recursive:true });
-    const destRel = "audio/" + base + ext;
+    const destRel = "audio/" + base + suffix + ext;
     fs.copyFileSync(srcFile, path.join(ROOT, destRel));
 
     const res = { ok:true, audio: destRel, pushed:false };
