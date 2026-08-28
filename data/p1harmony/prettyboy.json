@@ -1,0 +1,64 @@
+{
+  "group": "P1Harmony",
+  "song": "Pretty Boy",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "members": [
+    {
+      "name": "KEEHO",
+      "image": "images/p1harmony/prettyboy/keeho.png",
+      "color": "#ff751f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "THEO",
+      "image": "images/p1harmony/prettyboy/theo.png",
+      "color": "#ff3131",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JIUNG",
+      "image": "images/p1harmony/prettyboy/jiung.png",
+      "color": "#ffde59",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "INTAK",
+      "image": "images/p1harmony/prettyboy/intak.png",
+      "color": "#7ed957",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SOUL",
+      "image": "images/p1harmony/prettyboy/soul.png",
+      "color": "#38b6ff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JONGSEOB",
+      "image": "images/p1harmony/prettyboy/jongseob.png",
+      "color": "#8c52ff",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
