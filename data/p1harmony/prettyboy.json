@@ -94,12 +94,30 @@
       "original": "한 번 더 불러 봐 날, 매번 더 자극해 Baby",
       "romanization": "han beon deo bulleo bwa, nal maebeon deo jageukhae baby",
       "english": "Call my name one more time, You excite me more every time baby",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.92,
+          11.54
+        ],
+        [
+          12.15,
+          13.89
+        ]
+      ]
     },
     {
       "start": 13.9,
       "end": 16.24,
-      "members": [],
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          13.96,
+          16.3
+        ]
+      ],
       "original": "Want you to say it say it 말해 계속",
       "romanization": "want you to say it say it malhae gyesok",
       "english": "Want you to say it, say it, say it, it keeps going",
@@ -108,7 +126,15 @@
     {
       "start": 16.37,
       "end": 18.76,
-      "members": [],
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          16.31,
+          18.77
+        ]
+      ],
       "original": "점점 Shaking shaking 미치겠어",
       "romanization": "jeomjeom shaking shaking michigesseo",
       "english": "Getting more and more, shaking, shaking, I’m going crazy",
@@ -117,7 +143,15 @@
     {
       "start": 19.15,
       "end": 23.82,
-      "members": [],
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          19.26,
+          23.9
+        ]
+      ],
       "original": "One 앞에 날 보는 사이, Two yes, you gon’ realize and",
       "romanization": "one ape nal boneun sai, two yes, you gon’ realize and",
       "english": "One while you’re looking at me, Two yes, you gon’ realize and",
@@ -126,7 +160,19 @@
     {
       "start": 23.98,
       "end": 29.89,
-      "members": [],
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          24.01,
+          26.47
+        ],
+        [
+          26.65,
+          30.08
+        ]
+      ],
       "original": "Pop 터져 내 몸은 Shine, You just wanna fantasize me",
       "romanization": "pop teojyeo nae momeun shine, you just wanna fantasize me",
       "english": "Pop it bursts my body shines, You just wanna fantasize me",
@@ -135,7 +181,27 @@
     {
       "start": 30.07,
       "end": 38.03,
-      "members": [],
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          30.13,
+          32.33
+        ],
+        [
+          32.48,
+          34.7
+        ],
+        [
+          34.86,
+          35.75
+        ],
+        [
+          35.88,
+          38.21
+        ]
+      ],
       "original": "Just say please 그 사인이, 꺼진 불을 밝히네 Tonight",
       "romanization": "just say please geu saini, kkeojin bureul balkine tonight",
       "english": "Just say please that sign, Lights up the flame that had gone out tonight",
@@ -144,7 +210,31 @@
     {
       "start": 38.21,
       "end": 42.91,
-      "members": [],
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          38.14,
+          38.55
+        ],
+        [
+          38.73,
+          39.03
+        ],
+        [
+          39.21,
+          39.62
+        ],
+        [
+          39.8,
+          40.59
+        ],
+        [
+          40.77,
+          42.9
+        ]
+      ],
       "original": "Say my name, Pretty pretty, I’m a pretty Pretty Boy, 불러 봐라",
       "romanization": "say my name, pretty pretty, i’m a pretty pretty boy, bulleo bwara",
       "english": "Say my name, Pretty, pretty, I’m a pretty, pretty boy, Call me out",
@@ -153,7 +243,23 @@
     {
       "start": 43.06,
       "end": 47.41,
-      "members": [],
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          43.09,
+          45.31
+        ],
+        [
+          45.5,
+          46.54
+        ],
+        [
+          46.92,
+          47.5
+        ]
+      ],
       "original": "내가 노는 Dance floor, Call me pretty, I’m a pretty Pretty Boy",
       "romanization": "naega noneun dance floor, call me pretty, i’m a pretty pretty boy",
       "english": "I’m the one ruling this dance floor, Call me pretty, I’m a pretty, pretty boy",
@@ -162,7 +268,31 @@
     {
       "start": 47.54,
       "end": 52.24,
-      "members": [],
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          47.53,
+          47.97
+        ],
+        [
+          48.12,
+          48.47
+        ],
+        [
+          48.65,
+          49.12
+        ],
+        [
+          49.27,
+          50
+        ],
+        [
+          50.18,
+          52.28
+        ]
+      ],
       "original": "Say my name, Pretty pretty, I’m a pretty Pretty Boy, 불러 봐라",
       "romanization": "say my name, pretty pretty, i’m a pretty pretty boy, bulleo bwara",
       "english": "Say my name, Pretty, pretty, I’m a pretty, pretty boy, Call me out",
@@ -171,7 +301,23 @@
     {
       "start": 52.39,
       "end": 56.88,
-      "members": [],
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          52.5,
+          54.76
+        ],
+        [
+          54.91,
+          56
+        ],
+        [
+          56.28,
+          56.92
+        ]
+      ],
       "original": "내가 노는 Dance floor, Call me pretty, I’m a pretty Pretty Boy",
       "romanization": "naega noneun dance floor, call me pretty, i’m a pretty pretty boy",
       "english": "I’m the one ruling this dance floor, Call me pretty, I’m a pretty, pretty boy",
@@ -180,7 +326,27 @@
     {
       "start": 56.91,
       "end": 63.05,
-      "members": [],
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          56.96,
+          58.31
+        ],
+        [
+          58.47,
+          60.57
+        ],
+        [
+          60.75,
+          61.86
+        ],
+        [
+          61.99,
+          62.98
+        ]
+      ],
       "original": "Call me pretty yeah, Push me plz yeah, Pick 네가 원한 Pretty",
       "romanization": "call me pretty yeah, push me plz yeah, pick nega wonhan pretty",
       "english": "Call me pretty, yeah, Push me, please, yeah, Pick the pretty one you wanted",
@@ -189,7 +355,23 @@
     {
       "start": 63.17,
       "end": 66.38,
-      "members": [],
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          63.33,
+          63.54
+        ],
+        [
+          63.69,
+          63.96
+        ],
+        [
+          64.03,
+          66.31
+        ]
+      ],
       "original": "",
       "romanization": "Right right equal, That’s me that you wanna see",
       "english": "",
@@ -198,25 +380,53 @@
     {
       "start": 66.4,
       "end": 70.84,
-      "members": [],
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          66.39,
+          68.53
+        ],
+        [
+          68.68,
+          70.9
+        ]
+      ],
       "original": "Pretty girls like pretty boys like me, 꼬부랑 머리 마치 Broccoli",
       "romanization": "pretty girls like pretty boys like me, kkoburang meori machi broccoli",
       "english": "Pretty girls like pretty boys like me, Curly hair, looking just like broccoli",
       "adlib": false
     },
     {
-      "start": 71,
-      "end": 73.01,
-      "members": [],
+      "start": 71.09,
+      "end": 72.89,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          71.09,
+          73.08
+        ]
+      ],
       "original": "귀엽게 봤지만 마주치면 흠칫",
       "romanization": "gwiyeopge bwatjiman majuchimyeon heumchit",
       "english": "You thought I was cute, but when you run into me, you flinch",
       "adlib": false
     },
     {
-      "start": 73.17,
-      "end": 75.5,
-      "members": [],
+      "start": 73.09,
+      "end": 75.43,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          73.07,
+          75.93
+        ]
+      ],
       "original": "나 오히려 좋지 Please call me pretty",
       "romanization": "na ohiryeo jochi please call me pretty",
       "english": "I actually like that please call me pretty",
@@ -225,7 +435,15 @@
     {
       "start": 75.51,
       "end": 80.14,
-      "members": [],
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          75.48,
+          80.19
+        ]
+      ],
       "original": "네가 불러 주는 이미지, 꾸미지 말고 뱉어",
       "romanization": "nega bulleo juneun imiji, kkumiji malgo baeteo",
       "english": "The image of me that you call out, Don’t dress it up",
@@ -234,7 +452,19 @@
     {
       "start": 80.17,
       "end": 84.67,
-      "members": [],
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          80.18,
+          80.59
+        ],
+        [
+          80.77,
+          84.7
+        ]
+      ],
       "original": "떠오른 대로 Describe me, 이미 나오고 있는걸",
       "romanization": "tteooreun daero describe me, imi naogo itneun geol",
       "english": "Just say it as it comes to mind describe me, It’s already coming out",
@@ -243,7 +473,15 @@
     {
       "start": 85.2,
       "end": 89.69,
-      "members": [],
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          85.17,
+          89.76
+        ]
+      ],
       "original": "One 앞에 날 보는 사이, Two yes, you gon’ realize and",
       "romanization": "one ape nal boneun sai, two yes, you gon’ realize and",
       "english": "One while you’re looking at me, Two yes, you gon’ realize and",
@@ -252,7 +490,23 @@
     {
       "start": 89.93,
       "end": 94.86,
-      "members": [],
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          89.92,
+          90.22
+        ],
+        [
+          90.37,
+          92.36
+        ],
+        [
+          92.51,
+          95.45
+        ]
+      ],
       "original": "Pop 터져 내 몸은 Shine, You just wanna fantasize me",
       "romanization": "pop teojyeo nae momeun shine, you just wanna fantasize me",
       "english": "Pop it bursts my body shines, You just wanna fantasize me",
@@ -261,7 +515,27 @@
     {
       "start": 94.9,
       "end": 99.26,
-      "members": [],
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          94.86,
+          95.87
+        ],
+        [
+          96.05,
+          97.07
+        ],
+        [
+          97.25,
+          98.32
+        ],
+        [
+          98.5,
+          99.46
+        ]
+      ],
       "original": "",
       "romanization": "Rock rock rock it, Pretty Boy bumping, Rock rock rock it, Pretty Boy bumping",
       "english": "",
@@ -270,7 +544,27 @@
     {
       "start": 99.42,
       "end": 103.68,
-      "members": [],
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          99.51,
+          100.61
+        ],
+        [
+          100.76,
+          101.75
+        ],
+        [
+          101.9,
+          103
+        ],
+        [
+          103.15,
+          103.73
+        ]
+      ],
       "original": "",
       "romanization": "Rock, rock, rock it, Pretty boy bumping, Rock, rock, rock it, Pretty boy",
       "english": "",
@@ -279,7 +573,31 @@
     {
       "start": 103.84,
       "end": 108.64,
-      "members": [],
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          103.92,
+          104.39
+        ],
+        [
+          104.58,
+          104.87
+        ],
+        [
+          105.05,
+          105.49
+        ],
+        [
+          105.67,
+          106.43
+        ],
+        [
+          106.6,
+          108.77
+        ]
+      ],
       "original": "Say my name, Pretty pretty, I’m a pretty Pretty Boy, 불러 봐라",
       "romanization": "say my name, pretty pretty, i’m a pretty pretty boy, bulleo bwara",
       "english": "Say my name, Pretty, pretty, I’m a pretty, pretty boy, Call me out",
@@ -288,7 +606,23 @@
     {
       "start": 108.8,
       "end": 113.26,
-      "members": [],
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          108.93,
+          111.15
+        ],
+        [
+          111.3,
+          112.4
+        ],
+        [
+          112.79,
+          113.37
+        ]
+      ],
       "original": "내가 노는 Dance floor, Call me pretty, I’m a pretty Pretty Boy",
       "romanization": "naega noneun dance floor, call me pretty, i’m a pretty pretty boy",
       "english": "I’m the one ruling this dance floor, Call me pretty, I’m a pretty, pretty boy",
@@ -297,7 +631,31 @@
     {
       "start": 113.38,
       "end": 118.17,
-      "members": [],
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          113.37,
+          113.81
+        ],
+        [
+          113.99,
+          114.35
+        ],
+        [
+          114.53,
+          114.93
+        ],
+        [
+          115.11,
+          115.88
+        ],
+        [
+          116.09,
+          118.08
+        ]
+      ],
       "original": "Say my name, Pretty pretty, I’m a pretty Pretty Boy, 불러 봐라",
       "romanization": "say my name, pretty pretty, i’m a pretty pretty boy, bulleo bwara",
       "english": "Say my name, Pretty, pretty, I’m a pretty, pretty boy, Call me out",
@@ -306,7 +664,23 @@
     {
       "start": 118.32,
       "end": 122.68,
-      "members": [],
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          118.35,
+          120.52
+        ],
+        [
+          120.73,
+          121.77
+        ],
+        [
+          122.18,
+          122.85
+        ]
+      ],
       "original": "내가 노는 Dance floor, Call me pretty, I’m a pretty Pretty Boy",
       "romanization": "naega noneun dance floor, call me pretty, i’m a pretty pretty boy",
       "english": "I’m the one ruling this dance floor, Call me pretty, I’m a pretty, pretty boy",
@@ -315,7 +689,23 @@
     {
       "start": 122.8,
       "end": 134.08,
-      "members": [],
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          122.78,
+          125.37
+        ],
+        [
+          125.61,
+          129.47
+        ],
+        [
+          129.79,
+          134.11
+        ]
+      ],
       "original": "Wait, 하얀 백지 위에 날 그려, 너의 색에 물들어 가",
       "romanization": "wait, hayan baekji wie nal geuryeo, neoui saege muldeureo ga",
       "english": "Wait, Draw me on a blank white page, I’m becoming colored by your colors",
@@ -324,7 +714,23 @@
     {
       "start": 134.23,
       "end": 141.15,
-      "members": [],
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          134.25,
+          135.33
+        ],
+        [
+          135.68,
+          137.96
+        ],
+        [
+          138.11,
+          141.14
+        ]
+      ],
       "original": "Baby please, 느낀 대로 지금 Say my name",
       "romanization": "baby please, neukkim daero jigeum say my name",
       "english": "Baby, please, Right now, say my name just as you feel it",
@@ -333,7 +739,27 @@
     {
       "start": 142.09,
       "end": 146.47,
-      "members": [],
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          142.16,
+          143
+        ],
+        [
+          143.15,
+          144.18
+        ],
+        [
+          144.33,
+          145.35
+        ],
+        [
+          145.5,
+          146.52
+        ]
+      ],
       "original": "",
       "romanization": "Rock rock it, Pretty Boy bumping, Rock rock rock it, Pretty Boy bumping",
       "english": "",
@@ -342,7 +768,27 @@
     {
       "start": 146.6,
       "end": 151.21,
-      "members": [],
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          146.62,
+          147.69
+        ],
+        [
+          147.84,
+          148.86
+        ],
+        [
+          149.01,
+          150.08
+        ],
+        [
+          150.23,
+          151.24
+        ]
+      ],
       "original": "",
       "romanization": "Rock, rock it, Pretty boy bumping, Rock, rock it, Pretty boy bumping",
       "english": "",
@@ -351,7 +797,23 @@
     {
       "start": 151.35,
       "end": 153.81,
-      "members": [],
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          151.36,
+          152.03
+        ],
+        [
+          152.23,
+          152.61
+        ],
+        [
+          152.82,
+          153.24
+        ]
+      ],
       "original": "",
       "romanization": "Pretty Boy",
       "english": "",
@@ -360,7 +822,31 @@
     {
       "start": 155.72,
       "end": 160.51,
-      "members": [],
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          155.77,
+          156.21
+        ],
+        [
+          156.36,
+          156.77
+        ],
+        [
+          156.95,
+          157.36
+        ],
+        [
+          157.51,
+          158.23
+        ],
+        [
+          158.41,
+          160.52
+        ]
+      ],
       "original": "Say my name, Pretty pretty, I’m a pretty Pretty Boy, 불러 봐라",
       "romanization": "say my name, pretty pretty, i’m a pretty pretty boy, bulleo bwara",
       "english": "Say my name, Pretty, pretty, I’m a pretty, pretty boy, Call me out",
@@ -369,7 +855,23 @@
     {
       "start": 160.66,
       "end": 164.94,
-      "members": [],
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          160.74,
+          162.91
+        ],
+        [
+          163.09,
+          164.19
+        ],
+        [
+          164.57,
+          165.07
+        ]
+      ],
       "original": "내가 노는 Dance floor, Call me pretty, I’m a pretty Pretty Boy",
       "romanization": "naega noneun dance floor, call me pretty, i’m a pretty pretty boy",
       "english": "I’m the one ruling this dance floor, Call me pretty, I’m a pretty, pretty boy",
@@ -378,7 +880,35 @@
     {
       "start": 165.07,
       "end": 169.91,
-      "members": [],
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          165.08,
+          165.58
+        ],
+        [
+          165.73,
+          166.11
+        ],
+        [
+          166.3,
+          166.73
+        ],
+        [
+          166.85,
+          167.64
+        ],
+        [
+          167.82,
+          169.12
+        ],
+        [
+          169.3,
+          169.94
+        ]
+      ],
       "original": "Say my name, Pretty pretty, I’m a pretty Pretty Boy, 불러 봐라",
       "romanization": "say my name, pretty pretty, i’m a pretty pretty boy, bulleo bwara",
       "english": "Say my name, Pretty, pretty, I’m a pretty, pretty boy, Call me out",
@@ -387,7 +917,23 @@
     {
       "start": 170.04,
       "end": 174.25,
-      "members": [],
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          170.1,
+          172.36
+        ],
+        [
+          172.51,
+          173.67
+        ],
+        [
+          173.91,
+          174.53
+        ]
+      ],
       "original": "내가 노는 Dance floor, Call me pretty, I’m a pretty Pretty Boy",
       "romanization": "naega noneun dance floor, call me pretty, i’m a pretty pretty boy",
       "english": "I’m the one ruling this dance floor, Call me pretty, I’m a pretty, pretty boy",
@@ -396,7 +942,23 @@
     {
       "start": 174.4,
       "end": 176.53,
-      "members": [],
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          174.56,
+          174.8
+        ],
+        [
+          174.95,
+          175.4
+        ],
+        [
+          175.56,
+          176.46
+        ]
+      ],
       "original": "",
       "romanization": "Rock rock it, Pretty Boy bumping",
       "english": "",
