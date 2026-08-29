@@ -15,6 +15,7 @@
 
   const fmt = t => { t = Math.max(0, t||0); const m=Math.floor(t/60), s=Math.floor(t%60); return m+":"+String(s).padStart(2,"0"); };
   const fmtS = t => (Math.round((t||0)*100)/100).toFixed(2) + "s";
+  const ord = n => { const s=["th","st","nd","rd"], v=n%100; return n + (s[(v-20)%10] || s[v] || s[0]); };
   const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
   // ---- quién canta cuánto (mismo cálculo que el ranking/donut) ----
@@ -101,10 +102,10 @@
   }
 
   function evenLabel(e){
-    if(e >= 0.93) return "Muy repartido";
-    if(e >= 0.85) return "Equilibrado";
-    if(e >= 0.72) return "Algo desigual";
-    return "Desigual";
+    if(e >= 0.93) return "Very even";
+    if(e >= 0.85) return "Balanced";
+    if(e >= 0.72) return "Slightly uneven";
+    return "Uneven";
   }
 
   // ===================== construir diapositivas =====================
@@ -151,8 +152,8 @@
         return { m, segs };
       });
       el.innerHTML = `
-        <div class="slide-title">Total de segundos</div>
-        <div class="slide-sub">Se van sumando canción a canción · <span class="now-song"></span></div>
+        <div class="slide-title">Total seconds</div>
+        <div class="slide-sub">Adding up song by song · <span class="now-song"></span></div>
         <div class="rows">${rows.map(r => `
           <div class="trow" style="--accent:${r.m.color}">
             <img class="ph" src="${esc(r.m.image)}" alt="">
@@ -211,8 +212,8 @@
         `<div class="li"><span class="dot" style="background:${m.color}"></span>${esc(m.name)}
           <span class="v">${m.pct.toFixed(1)}% · ${fmtS(m.total)}</span></div>`).join("");
       el.innerHTML = `
-        <div class="slide-title">Reparto del álbum</div>
-        <div class="slide-sub">Donut de segundos totales · evenness</div>
+        <div class="slide-title">Album distribution</div>
+        <div class="slide-sub">Total seconds per member · evenness</div>
         <div class="donut-wrap">
           <div class="donut-holder" style="position:relative">
             <svg viewBox="0 0 500 500">${paths}</svg>
@@ -227,16 +228,20 @@
     {
       const el = makeSlide("bump", "bump-slide");
       el.innerHTML = `
-        <div class="slide-title">Ranking por canción</div>
-        <div class="slide-sub">Cómo quedó cada miembro en cada canción</div>
+        <div class="slide-title">Ranking per song</div>
+        <div class="slide-sub">How each member placed in every song</div>
         <div class="bump-wrap"></div>`;
       const draw = () => {
         const wrap = el.querySelector(".bump-wrap");
         // El bloque de fotos+nombres vive en su propia franja a la derecha del todo,
         // separada del área de líneas, para no tapar los nombres de las canciones.
-        const W=1180, H=560, mL=44, mT=26, mB=86;
-        const xEnd = 780;                 // fin del área de líneas / etiquetas de canción
-        const pcx = 900, pr = 26;         // centro y radio de la foto (franja derecha)
+        const H=560, mL=44, mT=26, mB=124;
+        const xEnd = 800;                 // fin del área de líneas / etiquetas de canción
+        const pcx = 915, pr = 26;         // centro y radio de la foto (franja derecha)
+        const nameX = pcx + pr + 14;
+        // el ancho se adapta al nombre más largo, para que los nombres lleguen a la derecha sin cortarse
+        const maxNameLen = Math.max(4, ...A.members.map(m => m.name.length));
+        const W = Math.ceil(nameX + maxNameLen * 12.5 + 24);
         const n = A.songs.length, maxR = Math.max(A.maxRank, 1);
         const xAt = i => n>1 ? mL + i*(xEnd-mL)/(n-1) : mL + (xEnd-mL)/2;
         const yAt = r => mT + (maxR>1 ? (r-1)*(H-mT-mB)/(maxR-1) : (H-mT-mB)/2);
@@ -245,10 +250,13 @@
         for(let r=1;r<=maxR;r++){ const y=yAt(r);
           svg += `<line class="axis" x1="${mL}" y1="${y}" x2="${xEnd}" y2="${y}"></line>`;
           svg += `<text class="rlab" x="${mL-12}" y="${y+5}" text-anchor="end">${r}</text>`; }
-        // etiquetas de canción (x) — la primera a la izquierda, la última a la derecha
+        // etiquetas de canción (x) — en DOS filas alternas para que no se solapen los títulos largos
+        const yBase = H - mB + 30;
         A.songs.forEach((s,i)=>{ const x=xAt(i);
           const anch = i===0 ? "start" : (i===n-1 ? "end" : "middle");
-          svg += `<text class="xlab" x="${x}" y="${H-mB+28}" text-anchor="${anch}">${esc(s.title)}</text>`; });
+          const y = yBase + (i % 2) * 30;
+          svg += `<line class="axis" x1="${x}" y1="${H-mB+6}" x2="${x}" y2="${y-14}" opacity="0.4"></line>`;
+          svg += `<text class="xlab" x="${x}" y="${y}" text-anchor="${anch}">${esc(s.title)}</text>`; });
         // una línea por miembro
         [...A.members].sort((a,b)=>b.total-a.total).forEach(m => {
           const pts = [];
@@ -266,7 +274,7 @@
           svg += `<clipPath id="${cid}"><circle cx="${pcx}" cy="${ey}" r="${pr}"></circle></clipPath>`;
           svg += `<image href="${esc(m.image)}" x="${pcx-pr}" y="${ey-pr}" width="${pr*2}" height="${pr*2}" clip-path="url(#${cid})" preserveAspectRatio="xMidYMid slice"></image>`;
           svg += `<circle cx="${pcx}" cy="${ey}" r="${pr}" fill="none" stroke="${m.color}" stroke-width="3"></circle>`;
-          svg += `<text x="${pcx+pr+12}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="19">${esc(m.name)}</text>`;
+          svg += `<text x="${nameX}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="20">${esc(m.name)}</text>`;
         });
         svg += `</svg>`;
         wrap.innerHTML = svg;
@@ -285,8 +293,8 @@
       const glines = []; for(let i=1;i<=maxC;i++) glines.push(`<div class="gl" style="bottom:${i/maxC*100}%"></div>`);
       const ylabs  = []; for(let i=0;i<=maxC;i++) ylabs.push(`<span style="bottom:${i/maxC*100}%">${i}</span>`);
       el.innerHTML = `
-        <div class="slide-title">Número de veces</div>
-        <div class="place-big">${place}º puesto</div>
+        <div class="slide-title">Number of times</div>
+        <div class="place-big">${ord(place)} place</div>
         <div class="pchart">
           <div class="yax">${ylabs.join("")}</div>
           <div class="plot">
