@@ -24,13 +24,17 @@
       "start": 32.804659246892975,
       "end": 45.35746253014283
     },
-    {},
+    {
+      "audio": "audio/team_3rdminialbumweonfirea3.mp3"
+    },
     {
       "start": 63.26987590428492,
       "end": 75.89908792431831
     },
     {
-      "audio": "audio/team_3rdminialbumweonfirea5.mp3"
+      "audio": "audio/team_3rdminialbumweonfirea5.mp3",
+      "start": 0,
+      "end": 12
     },
     {
       "start": 53.891302761547024,
