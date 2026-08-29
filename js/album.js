@@ -486,33 +486,41 @@
   // ===================== reproductor de diapositivas =====================
   let slides = [], idx = 0, playing = true, elapsed = 0, last = 0, instAudio = null;
   let bgA = 0, bgB = 0, bgRaf = 0, wasRace = false;   // audio de fondo
-  const BGFADE = 1.6;
+  const BGFADE = 1.6;      // fundido de entrada
+  const BGFADEOUT = 0.35;  // fundido de salida (rápido, al entrar al race)
   const bgCancel = () => { cancelAnimationFrame(bgRaf); bgRaf = 0; };
-  // reproduce el trozo de fondo UNA vez: entra suave, sale suave al final y para (no se repite)
-  function bgSessionStart(){
+  // arranca/reanuda el fondo: entra suave (siempre), sale suave al final, y NO se repite.
+  // fromStart=false -> continúa donde estaba (no reinicia la canción).
+  function bgStart(fromStart){
     if(!instAudio) return;
     bgCancel();
-    try{ instAudio.currentTime = bgA; }catch(e){}
+    if(fromStart){ try{ instAudio.currentTime = bgA; }catch(e){} }
+    const t0 = performance.now();
     instAudio.volume = 0; instAudio.play().catch(()=>{});
     const loop = () => {
       if(!instAudio || instAudio.paused) return;
       const ct = instAudio.currentTime;
       const end = (bgB > bgA) ? bgB : (isFinite(instAudio.duration) ? instAudio.duration : ct + 1e9);
       if(ct >= end){ try{ instAudio.pause(); }catch(e){} return; }   // no se repite
-      const inn = ct - bgA, out = end - ct;
-      instAudio.volume = Math.max(0, Math.min(1, inn < BGFADE ? inn/BGFADE : (out < BGFADE ? out/BGFADE : 1)));
+      const sinceIn = (performance.now() - t0) / 1000, out = end - ct;
+      let v = 1;
+      if(sinceIn < BGFADE) v = sinceIn / BGFADE;         // entra suave (también al reanudar)
+      if(out < BGFADE) v = Math.min(v, out / BGFADE);    // sale suave al final
+      instAudio.volume = Math.max(0, Math.min(1, v));
       bgRaf = requestAnimationFrame(loop);
     };
     bgRaf = requestAnimationFrame(loop);
   }
-  // se apaga suavemente (antes de entrar al race)
+  const bgSessionStart = () => bgStart(true);    // al inicio del álbum
+  const bgResume = () => bgStart(false);         // al salir del race: continúa (no reinicia)
+  // se apaga RÁPIDO al entrar al race, pero mantiene la posición (no reinicia)
   function bgFadeOutStop(){
     if(!instAudio) return;
     bgCancel();
     const v0 = instAudio.volume || 1, t0 = performance.now();
-    const step = () => { if(!instAudio) return; let p=(performance.now()-t0)/(BGFADE*1000); if(p>1)p=1;
+    const step = () => { if(!instAudio) return; let p=(performance.now()-t0)/(BGFADEOUT*1000); if(p>1)p=1;
       instAudio.volume = Math.max(0, v0*(1-p));
-      if(p<1) bgRaf = requestAnimationFrame(step); else { try{ instAudio.pause(); }catch(e){} } };
+      if(p<1) bgRaf = requestAnimationFrame(step); else { try{ instAudio.pause(); }catch(e){} } };  // pausa, no reinicia
     bgRaf = requestAnimationFrame(step);
   }
 
@@ -528,7 +536,7 @@
     // audio de fondo: se apaga al entrar al race; al salir del race vuelve suave (una vez)
     const isRace = cur.el.dataset.kind === "total";
     if(isRace && !wasRace) bgFadeOutStop();
-    else if(!isRace && wasRace) bgSessionStart();
+    else if(!isRace && wasRace) bgResume();   // continúa donde iba (no reinicia la canción)
     wasRace = isRace;
     if(cur.enter) requestAnimationFrame(() => requestAnimationFrame(cur.enter));
     elapsed = 0; last = performance.now();
