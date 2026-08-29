@@ -13,6 +13,16 @@
 
   function paintCover(){ el("#cov").innerHTML = album.cover ? '<img src="'+album.cover+'?v='+Date.now()+'">' : "💿"; }
 
+  // reordenar canciones (mueve juntos: canción, su trozo y su color)
+  const swapAt = (arr,i,j) => { if(!arr) return; const t=arr[i]; arr[i]=arr[j]; arr[j]=t; };
+  async function moveSong(i, dir){
+    const j = i+dir, n = (album.songs||[]).length; if(j<0 || j>=n) return;
+    swapAt(album.songs, i, j);
+    album.clips = album.clips || []; swapAt(album.clips, i, j);
+    album.songColors = album.songColors || []; swapAt(album.songColors, i, j);
+    await save(); location.reload();
+  }
+
   const sdurEls = {};   // etiqueta de "cuánto dura esta canción en el race" por índice
   const raceDwell = c => Math.max(6, ((c && c.end>c.start) ? (c.end-c.start) : 9) + 0.8);
   function updateRaceDur(){
@@ -30,12 +40,15 @@
     host.appendChild(wave);
     const crow = document.createElement("div"); crow.className = "crow";
     crow.innerHTML = '<button class="play pri">▶ Escuchar</button><span class="lbl">—</span>'+
+      '<span class="times">inicio <input class="ti" type="number" step="0.1" min="0"> a '+
+      '<input class="te" type="number" step="0.1" min="0"> s</span>'+
       '<label style="margin-left:auto"><input type="checkbox" class="fade" checked> atenuar entrada/salida</label>';
     host.appendChild(crow);
     const canvas = wave.querySelector("canvas"), region = wave.querySelector(".region"),
           hL = wave.querySelector(".hL"), hR = wave.querySelector(".hR"),
           head = wave.querySelector(".playhead"), lbl = crow.querySelector(".lbl"),
-          playBtn = crow.querySelector(".play"), fadeCb = crow.querySelector(".fade");
+          playBtn = crow.querySelector(".play"), fadeCb = crow.querySelector(".fade"),
+          tiEl = crow.querySelector(".ti"), teEl = crow.querySelector(".te");
 
     let dur = 0, buf = null;
     try{
@@ -65,6 +78,8 @@
       hL.style.left = pct(a)+"%"; hR.style.left = pct(b)+"%";
       head.style.left = pct(Math.max(0,Math.min(phT,dur)))+"%";
       lbl.textContent = fmt(a)+" – "+fmt(b)+"  ("+(b-a).toFixed(1)+"s)";
+      if(document.activeElement !== tiEl) tiEl.value = a.toFixed(2);
+      if(document.activeElement !== teEl) teEl.value = b.toFixed(2);
     }
     drawWave(); draw();
     window.addEventListener("resize", () => { drawWave(); draw(); });
@@ -101,6 +116,11 @@
     };
     fadeCb.checked = clip.fade !== false;
     fadeCb.onchange = () => { clip.fade = fadeCb.checked; onSave && onSave(); };
+
+    // campos numéricos de tiempo (además de arrastrar) para cuadrar exacto
+    tiEl.oninput = () => { const v=parseFloat(tiEl.value); if(isFinite(v)){ clip.start=Math.max(0,Math.min(v, clip.end-0.3)); phT=clip.start; draw(); } };
+    teEl.oninput = () => { const v=parseFloat(teEl.value); if(isFinite(v)){ clip.end=Math.min(dur, Math.max(v, clip.start+0.3)); draw(); } };
+    tiEl.onchange = teEl.onchange = () => { onSave && onSave(); };
   }
 
   async function buildSong(i, songData){
@@ -114,11 +134,14 @@
     const src = albumAudio || songData.audio || songData.instrumental || "";
     const kind = albumAudio ? "audio del álbum" : (songData.audio ? "audio" : (songData.instrumental ? "instrumental" : "sin audio"));
     wrap.innerHTML = '<div class="stitle">'+((i+1)+". "+(songData.song || "Canción "+(i+1)))+' <small>('+kind+')</small>'+
-      ' <span class="sdur"></span></div>'+
+      ' <span class="sdur"></span>'+
+      '<span class="reorder"><button class="up" title="subir">↑</button><button class="down" title="bajar">↓</button></span></div>'+
       '<div class="scolor">🎨 Color de la canción (race): <input type="color" class="scol" value="'+scol+'"></div>';
     el("#songs").appendChild(wrap);
     sdurEls[i] = wrap.querySelector(".sdur");
     wrap.querySelector(".scol").oninput = e => { album.songColors[i] = e.target.value; save(); };
+    wrap.querySelector(".up").onclick = () => moveSong(i, -1);
+    wrap.querySelector(".down").onclick = () => moveSong(i, 1);
 
     const arow = document.createElement("div"); arow.className = "arow";
     arow.innerHTML = '<button class="pickaud ng">🎵 '+(albumAudio?"Cambiar":"Poner")+' audio del álbum</button>'+

@@ -46,7 +46,11 @@
   /* barra blanca (playhead): solo INDICADOR de reproducción (no se arrastra) */
   .playhead{ position:absolute; top:-6px; bottom:0; width:2px; margin-left:-1px; background:#fff;
     box-shadow:0 0 0 1px rgba(0,0,0,.55); z-index:6; pointer-events:none; }
-  .crow{ display:flex; align-items:center; gap:12px; margin-top:10px; }
+  .reorder{ margin-left:10px; display:inline-flex; gap:4px; }
+  .reorder button{ padding:3px 9px; font-size:13px; background:var(--panel2); color:var(--text); border:1px solid var(--border); border-radius:7px; }
+  .times{ color:var(--text2); font-size:13px; font-weight:700; }
+  .times input{ width:64px; background:var(--panel2); border:1px solid var(--border); border-radius:6px; color:var(--text); padding:5px 6px; font:700 13px "Segoe UI",Arial; }
+  .crow{ display:flex; align-items:center; gap:12px; margin-top:10px; flex-wrap:wrap; }
   .crow .lbl{ color:var(--text2); font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; }
   .crow label{ display:flex; align-items:center; gap:6px; color:var(--text2); font-size:13px; font-weight:700; cursor:pointer; }
 
@@ -88,6 +92,6 @@
 <h2 class="secthead">🎧 Música de fondo <small>· suena en todas las diapositivas menos el race</small></h2>
 <div id="bgaudio"></div>
 
-<script src="js/album-edit.js?v=6"></script>
+<script src="js/album-edit.js?v=7"></script>
 </body>
 </html>
