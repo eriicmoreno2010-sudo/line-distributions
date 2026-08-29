@@ -9,8 +9,8 @@
     "data/andteam/weonfire.json",
     "data/andteam/bewitched.json",
     "data/andteam/hotline.json",
-    "data/andteam/bewitchedkoreanver.json",
     "data/andteam/sakurairoyell.json",
+    "data/andteam/bewitchedkoreanver.json",
     "data/andteam/weonfirekoreanver.json"
   ],
   "thumbBg": "#c1152f",
@@ -31,12 +31,12 @@
       "end": 62.09984443980709
     },
     {
-      "start": 32.804659246892975,
-      "end": 45.35746253014283
-    },
-    {
       "start": 63.26987590428492,
       "end": 75.89908792431831
+    },
+    {
+      "start": 32.804659246892975,
+      "end": 45.35746253014283
     },
     {
       "start": 53.891302761547024,
@@ -47,8 +47,8 @@
     "#ff4d00",
     "#700015",
     "#f2830d",
-    "#e27495",
     "#fbb1f5",
+    "#e27495",
     "#3d5dff"
   ],
   "raceColors": {
