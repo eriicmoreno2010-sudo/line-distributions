@@ -10,8 +10,8 @@
     "data/andteam/bewitched.json",
     "data/andteam/hotline.json",
     "data/andteam/sakurairoyell.json",
-    "data/andteam/bewitchedkoreanver.json",
-    "data/andteam/weonfirekoreanver.json"
+    "data/andteam/weonfirekoreanver.json",
+    "data/andteam/bewitchedkoreanver.json"
   ],
   "thumbBg": "#c1152f",
   "clips": [
@@ -35,12 +35,12 @@
       "end": 75.89908792431831
     },
     {
-      "start": 32.804659246892975,
-      "end": 45.35746253014283
-    },
-    {
       "start": 53.891302761547024,
       "end": 66.52610580133556
+    },
+    {
+      "start": 32.804659246892975,
+      "end": 45.35746253014283
     }
   ],
   "songColors": [
@@ -48,8 +48,8 @@
     "#700015",
     "#f2830d",
     "#fbb1f5",
-    "#e27495",
-    "#3d5dff"
+    "#3d5dff",
+    "#e27495"
   ],
   "raceColors": {
     "K": "#8c213c",
