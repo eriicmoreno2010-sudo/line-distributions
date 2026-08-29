@@ -13,11 +13,13 @@
 
   function paintCover(){ el("#cov").innerHTML = album.cover ? '<img src="'+album.cover+'?v='+Date.now()+'">' : "💿"; }
 
+  const sdurEls = {};   // etiqueta de "cuánto dura esta canción en el race" por índice
   const raceDwell = c => Math.max(6, ((c && c.end>c.start) ? (c.end-c.start) : 9) + 0.8);
   function updateRaceDur(){
     const n = (album.songs||[]).length; let est = 0;
-    for(let i=0;i<n;i++) est += raceDwell((album.clips||[])[i]);
-    const e2 = el("#racedur"); if(e2) e2.textContent = "⏱ Total seconds ≈ " + Math.round(est+3) + " s";
+    for(let i=0;i<n;i++){ const d = raceDwell((album.clips||[])[i]); est += d;
+      if(sdurEls[i]) sdurEls[i].textContent = "⏱ en el race dura " + d.toFixed(1) + " s"; }
+    const e2 = el("#racedur"); if(e2) e2.textContent = "⏱ Total ≈ " + Math.round(est+3) + " s";
   }
 
   // ---- editor de onda reutilizable (recorta un trozo de un audio) ----
@@ -111,9 +113,11 @@
     const albumAudio = clip.audio || "";
     const src = albumAudio || songData.audio || songData.instrumental || "";
     const kind = albumAudio ? "audio del álbum" : (songData.audio ? "audio" : (songData.instrumental ? "instrumental" : "sin audio"));
-    wrap.innerHTML = '<div class="stitle">'+((i+1)+". "+(songData.song || "Canción "+(i+1)))+' <small>('+kind+')</small></div>'+
+    wrap.innerHTML = '<div class="stitle">'+((i+1)+". "+(songData.song || "Canción "+(i+1)))+' <small>('+kind+')</small>'+
+      ' <span class="sdur"></span></div>'+
       '<div class="scolor">🎨 Color de la canción (race): <input type="color" class="scol" value="'+scol+'"></div>';
     el("#songs").appendChild(wrap);
+    sdurEls[i] = wrap.querySelector(".sdur");
     wrap.querySelector(".scol").oninput = e => { album.songColors[i] = e.target.value; save(); };
 
     const arow = document.createElement("div"); arow.className = "arow";
@@ -133,18 +137,14 @@
     await buildWave(wrap, src, clip, () => { album.clips[i]=clip; save(); updateRaceDur(); });
   }
 
-  // colores por miembro (nombres y aros de la DERECHA del race)
-  function buildRaceColors(roster){
-    album.raceColors = album.raceColors || {};
+  // color ÚNICO de los nombres y aros de la DERECHA del race
+  function buildRaceColors(){
     const host = el("#racecolors"); host.innerHTML = "";
-    roster.forEach(m => {
-      const c = album.raceColors[m.name] || m.color || "#888"; album.raceColors[m.name] = c;
-      const d = document.createElement("div"); d.className = "rc"; d.style.setProperty("--accent", c);
-      d.innerHTML = '<img src="'+m.image+'?v='+Date.now()+'"><span class="nm">'+m.name+'</span><input type="color" value="'+c+'">';
-      host.appendChild(d);
-      d.querySelector("input").oninput = e => { album.raceColors[m.name] = e.target.value;
-        d.style.setProperty("--accent", e.target.value); save(); };
-    });
+    const c = album.raceColor || "#ffffff"; album.raceColor = c;
+    const d = document.createElement("div"); d.className = "onecolor";
+    d.innerHTML = '<span style="font-weight:800">Color de nombres y aros:</span> <input type="color" value="'+c+'">';
+    host.appendChild(d);
+    d.querySelector("input").oninput = e => { album.raceColor = e.target.value; save(); };
   }
 
   // música de fondo (todas las diapositivas menos el race)
@@ -180,11 +180,8 @@
       if(res && res.ok){ album.cover=res.cover; paintCover(); save(); }
     };
     const songs = await Promise.all((album.songs||[]).map(loadJSON));
-    // roster (unión de miembros) para los colores del race
-    const roster = [], seen = {};
-    songs.forEach(sd => (sd && sd.members || []).forEach(m => { if(!seen[m.name]){ seen[m.name]=1; roster.push({name:m.name, color:m.color, image:m.image}); } }));
     for(let i=0;i<songs.length;i++){ if(songs[i]) await buildSong(i, songs[i]); }
-    buildRaceColors(roster);
+    buildRaceColors();
     await buildBgAudio();
     updateRaceDur();
   }

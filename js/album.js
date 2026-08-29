@@ -156,7 +156,7 @@
       // Colores del race: cada canción su color (elegido); nombres/aros de la derecha, color por miembro (elegido).
       const songColor = j => (A.album.songColors && A.album.songColors[j]) || SONG_COLORS[j % SONG_COLORS.length];
       const memColor = {}; A.members.forEach(m => memColor[m.name] = m.color);
-      const raceColor = name => (A.album.raceColors && A.album.raceColors[name]) || memColor[name] || "#888";
+      const raceCol = A.album.raceColor || "#ffffff";   // color único de nombres+aros de la derecha
 
       el.innerHTML = `
         <div class="ts-cols">
@@ -186,7 +186,7 @@
         songMap[m.name] = { row:s, fill:s.querySelector(".fill"), nm:s.querySelector(".nm"), sec:s.querySelector(".sec") };
 
         const t = document.createElement("div");
-        t.className = "ts-row"; t.style.setProperty("--accent", raceColor(m.name));   // nombre + aro (color elegido)
+        t.className = "ts-row"; t.style.setProperty("--accent", raceCol);   // nombre + aro (color único elegido)
         const segs = A.songs.map((s2,j)=>`<div class="seg" style="width:0;background:${songColor(j)}"></div>`).join("");
         t.innerHTML = `<img class="ph" src="${esc(m.image)}" alt=""><div class="mid"><div class="nm">${esc(m.name)}</div>
           <div class="bar stack">${segs}<div class="divlines"></div></div></div><div class="sec">0.00s</div>`;
