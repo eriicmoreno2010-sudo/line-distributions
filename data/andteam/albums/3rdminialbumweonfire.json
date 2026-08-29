@@ -12,5 +12,6 @@
     "data/andteam/sakurairoyell.json",
     "data/andteam/weonfire.json",
     "data/andteam/weonfirekoreanver.json"
-  ]
+  ],
+  "thumbBg": "#c1152f"
 }
