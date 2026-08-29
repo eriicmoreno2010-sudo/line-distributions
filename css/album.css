@@ -108,9 +108,11 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
   background:var(--panel2); overflow:hidden; margin-top:6px; box-sizing:border-box; }
 .ts-row .fill{ height:100%; width:0; background:var(--accent);
   transition:width 1.4s cubic-bezier(.22,1,.36,1); }
+.ts-row .bar.stack{ display:flex; }
+.ts-row .seg{ height:100%; width:0; transition:width 1.4s cubic-bezier(.22,1,.36,1); }
 .ts-row .divlines{ position:absolute; inset:0; pointer-events:none; }
 .ts-row .divline{ position:absolute; top:0; bottom:0; width:2px; background:#000; transform:translateX(-1px); }
-.ts-row.no-anim .fill{ transition:none; }
+.ts-row.no-anim .fill, .ts-row.no-anim .seg{ transition:none; }
 .ts-row .sec{ font-size:min(2.1vh,19px); font-weight:900; font-variant-numeric:tabular-nums; text-align:right; }
 
 /* ============ Slide: AVERAGE por canción ============ */

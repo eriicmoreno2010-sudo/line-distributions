@@ -153,6 +153,10 @@
       const albumMax = (membersByTotal[0] && membersByTotal[0].total) || 1;   // 100% = máximo total del álbum
       const cumAt = (m, si) => { let x=0; for(let j=0;j<=si;j++) x += m.per[j]||0; return x; };
       const easeOut = p => 1 - Math.pow(1-p, 3);
+      // Colores del race: cada canción su color (elegido); nombres/aros de la derecha, color por miembro (elegido).
+      const songColor = j => (A.album.songColors && A.album.songColors[j]) || SONG_COLORS[j % SONG_COLORS.length];
+      const memColor = {}; A.members.forEach(m => memColor[m.name] = m.color);
+      const raceColor = name => (A.album.raceColors && A.album.raceColors[name]) || memColor[name] || "#888";
 
       el.innerHTML = `
         <div class="ts-cols">
@@ -170,22 +174,24 @@
       const totRowsEl  = el.querySelector('[data-side="total"]');
       const tagEl = el.querySelector(".song-tag");
 
-      // izquierda: barra simple. derecha: barra del color del miembro + líneas negras entre canciones.
+      // izquierda: barra simple (color de la canción). derecha: barra apilada por color de
+      // canción + líneas negras; nombres/aros con el color elegido por miembro.
       const songMap = {}, totMap = {};
       A.members.forEach(m => {
         const s = document.createElement("div");
-        s.className = "ts-row"; s.style.setProperty("--accent", m.color);
+        s.className = "ts-row"; s.style.setProperty("--accent", memColor[m.name]);
         s.innerHTML = `<img class="ph" src="${esc(m.image)}" alt=""><div class="mid"><div class="nm">${esc(m.name)}</div>
           <div class="bar"><div class="fill"></div></div></div><div class="sec">0.00s</div>`;
         songRowsEl.appendChild(s);
-        songMap[m.name] = { row:s, fill:s.querySelector(".fill"), sec:s.querySelector(".sec") };
+        songMap[m.name] = { row:s, fill:s.querySelector(".fill"), nm:s.querySelector(".nm"), sec:s.querySelector(".sec") };
 
         const t = document.createElement("div");
-        t.className = "ts-row"; t.style.setProperty("--accent", m.color);
+        t.className = "ts-row"; t.style.setProperty("--accent", raceColor(m.name));   // nombre + aro (color elegido)
+        const segs = A.songs.map((s2,j)=>`<div class="seg" style="width:0;background:${songColor(j)}"></div>`).join("");
         t.innerHTML = `<img class="ph" src="${esc(m.image)}" alt=""><div class="mid"><div class="nm">${esc(m.name)}</div>
-          <div class="bar"><div class="fill"></div><div class="divlines"></div></div></div><div class="sec">0.00s</div>`;
+          <div class="bar stack">${segs}<div class="divlines"></div></div></div><div class="sec">0.00s</div>`;
         totRowsEl.appendChild(t);
-        totMap[m.name] = { row:t, fill:t.querySelector(".fill"), lines:t.querySelector(".divlines"), sec:t.querySelector(".sec") };
+        totMap[m.name] = { row:t, segs:[...t.querySelectorAll(".seg")], lines:t.querySelector(".divlines"), sec:t.querySelector(".sec") };
       });
 
       const positions = (container, map, sorted) => {
@@ -252,7 +258,7 @@
         positions(songRowsEl, songMap, songSorted(0));
         positions(totRowsEl,  totMap,  songSorted(0));
         A.members.forEach(m => { songMap[m.name].fill.style.width = "0"; songMap[m.name].sec.textContent = "0.00s";
-          totMap[m.name].fill.style.width = "0"; totMap[m.name].lines.innerHTML = ""; totMap[m.name].sec.textContent = "0.00s"; });
+          totMap[m.name].segs.forEach(sg => sg.style.width = "0"); totMap[m.name].lines.innerHTML = ""; totMap[m.name].sec.textContent = "0.00s"; });
         void el.offsetWidth;
         el.querySelectorAll(".ts-row").forEach(r => r.classList.remove("no-anim"));
 
@@ -268,10 +274,13 @@
           el._timers.push(setTimeout(() => {
             if(el._gen !== gen) return;
             tagEl.textContent = (si+1) + ". " + A.songs[si].title;
+            tagEl.style.color = songColor(si);
             positions(songRowsEl, songMap, songSorted(si));
             const top = Math.max(1, ...A.members.map(m => m.per[si]||0));   // el mayor de ESTA canción = barra llena
+            const col = songColor(si);
             A.members.forEach(m => {
               const v = m.per[si] || 0;
+              songMap[m.name].row.style.setProperty("--accent", col);   // izquierda: todo del color de la canción
               songMap[m.name].fill.style.width = (v/top*100) + "%";
               tweenNum(songMap[m.name].sec, prevSong[m.name], v, 1400, gen);
               prevSong[m.name] = v;
@@ -282,7 +291,7 @@
             if(el._gen !== gen) return;
             positions(totRowsEl, totMap, totSorted(si));
             A.members.forEach(m => {
-              totMap[m.name].fill.style.width = (cumAt(m,si)/albumMax*100) + "%";
+              totMap[m.name].segs[si].style.width = ((m.per[si]||0)/albumMax*100) + "%";  // crece el segmento de esta canción
               drawLines(m, si);
               const from = si>0 ? cumAt(m,si-1) : 0, to = cumAt(m,si);
               tweenNum(totMap[m.name].sec, from, to, 1600, gen);
@@ -295,7 +304,7 @@
       const reset = () => { el._gen++; clearTimers(); stopAudios();
         if(typeof instAudio !== "undefined" && instAudio){ try{ instAudio.play().catch(()=>{}); }catch(e){} }  // reanuda el fondo del álbum
         A.members.forEach(m => { songMap[m.name].fill.style.width = "0";
-          totMap[m.name].fill.style.width = "0"; totMap[m.name].lines.innerHTML = ""; }); };
+          totMap[m.name].segs.forEach(sg => sg.style.width = "0"); totMap[m.name].lines.innerHTML = ""; }); };
       // duración estimada: suma de todos los dwells + margen
       let est = 0; for(let si=0; si<nSongs; si++) est += Math.max(6, (clip(si).len||DEF_CLIP)+GAP);
       slides.push({ el, dur: est + 3, enter, reset });
@@ -520,10 +529,19 @@
     showSlide(0);
     requestAnimationFrame(tick);
 
-    // instrumental de fondo opcional (bucle)
-    if(albumData.instrumental){
-      instAudio = new Audio(albumData.instrumental); instAudio.loop = true;
-      instAudio.play().catch(()=>{});
+    // audio de FONDO opcional (suena en todas las diapositivas menos el race), recortado + fundido de entrada
+    const bg = albumData.bgAudio;
+    const bgSrc = (bg && bg.src) || albumData.instrumental || "";
+    if(bgSrc){
+      instAudio = new Audio(bgSrc);
+      const ba = (bg && +bg.start) || 0, bb = (bg && +bg.end) || 0;
+      try{ instAudio.currentTime = ba; }catch(e){}
+      if(bb > ba) instAudio.addEventListener("timeupdate", () => { if(instAudio.currentTime >= bb) instAudio.currentTime = ba; });
+      else instAudio.loop = true;
+      instAudio.volume = 0; instAudio.play().catch(()=>{});
+      const t0 = performance.now();
+      const fin = () => { if(!instAudio) return; let p=(performance.now()-t0)/1500; if(p>1)p=1; instAudio.volume=p; if(p<1) requestAnimationFrame(fin); };
+      requestAnimationFrame(fin);
     }
 
     // controles

@@ -1,64 +1,35 @@
-/* Editor del álbum — foto del álbum + editor de onda por canción (script externo). */
+/* Editor del álbum — foto, colores del race, música por canción y música de fondo. */
 (function(){
   const P = new URLSearchParams(location.search);
   const ALBUM_URL = P.get("album") || "";
   const desktop = (window.desktop && window.desktop.isDesktop) ? window.desktop : null;
   const el = s => document.querySelector(s);
   const fmt = t => { t = Math.max(0, t||0); const m=Math.floor(t/60), s=Math.floor(t%60); return m+":"+String(s).padStart(2,"0"); };
+  const SONG_COLORS = ["#ff4d6d","#4dabf7","#ffa94d","#cc5de8","#20c997","#ffd43b","#748ffc","#f783ac","#69db7c","#e8590c","#22b8cf","#9775fa"];
 
   let album = null;
   const loadJSON = p => desktop ? desktop.loadSong(p).then(x => (x && x.ok) ? x.data : null) : fetch(p).then(r=>r.json()).catch(()=>null);
   const save = async () => { if(!desktop) return; try{ await desktop.saveSong(ALBUM_URL, album); }catch(e){} };
 
-  function paintCover(){
-    el("#cov").innerHTML = album.cover ? '<img src="'+album.cover+'?v='+Date.now()+'">' : "💿";
-  }
+  function paintCover(){ el("#cov").innerHTML = album.cover ? '<img src="'+album.cover+'?v='+Date.now()+'">' : "💿"; }
 
-  // Duración del race = suma de los "parones" (cada canción dura su trozo, min 6s) + margen.
   const raceDwell = c => Math.max(6, ((c && c.end>c.start) ? (c.end-c.start) : 9) + 0.8);
   function updateRaceDur(){
     const n = (album.songs||[]).length; let est = 0;
     for(let i=0;i<n;i++) est += raceDwell((album.clips||[])[i]);
-    const s = Math.round(est + 3);
-    const el2 = el("#racedur"); if(el2) el2.textContent = "⏱ Total seconds ≈ " + s + " s";
+    const e2 = el("#racedur"); if(e2) e2.textContent = "⏱ Total seconds ≈ " + Math.round(est+3) + " s";
   }
 
-  async function buildSong(i, songData){
-    album.clips = album.clips || [];
-    let clip = album.clips[i] || {}; album.clips[i] = clip;
-
-    const wrap = document.createElement("div"); wrap.className = "song";
-    const albumAudio = clip.audio || "";
-    const src = albumAudio || songData.audio || songData.instrumental || "";
-    const kind = albumAudio ? "audio del álbum" : (songData.audio ? "audio" : (songData.instrumental ? "instrumental" : "sin audio"));
-    wrap.innerHTML = '<div class="stitle">'+((i+1)+". "+(songData.song || "Canción "+(i+1)))+' <small>('+kind+')</small></div>';
-    el("#songs").appendChild(wrap);
-
-    // fila de audio: poner un audio SOLO para el álbum (no toca la canción ni el vídeo)
-    const arow = document.createElement("div"); arow.className = "arow";
-    arow.innerHTML = '<button class="pickaud ng">🎵 '+(albumAudio?"Cambiar":"Poner")+' audio del álbum</button>'+
-      '<span class="ahint">solo para el álbum · no afecta al vídeo ni a la canción</span>';
-    wrap.appendChild(arow);
-    arow.querySelector(".pickaud").onclick = async () => {
-      if(!desktop) return;
-      const b = arow.querySelector(".pickaud"); const t0=b.textContent; b.disabled=true; b.textContent="⏳…";
-      let res=null; try{ res = await desktop.pickAudio({ group: album.group, song: (album.album||"album")+"_a"+(i+1) }); }catch(e){}
-      b.disabled=false; b.textContent=t0;
-      if(res && res.ok){ clip.audio = res.audio; album.clips[i]=clip; await save(); location.reload(); }
-    };
-
-    if(!src){ const n=document.createElement("div"); n.className="noaudio";
-      n.textContent="Esta canción no tiene audio: pon uno arriba para usarlo en el álbum."; wrap.appendChild(n); return; }
-
+  // ---- editor de onda reutilizable (recorta un trozo de un audio) ----
+  async function buildWave(host, src, clip, onSave){
     const wave = document.createElement("div"); wave.className = "wave";
     wave.innerHTML = '<canvas></canvas><div class="region"><div class="rknob"></div></div>'+
       '<div class="handle hL"></div><div class="handle hR"></div><div class="playhead"></div>';
-    wrap.appendChild(wave);
+    host.appendChild(wave);
     const crow = document.createElement("div"); crow.className = "crow";
     crow.innerHTML = '<button class="play pri">▶ Escuchar</button><span class="lbl">—</span>'+
       '<label style="margin-left:auto"><input type="checkbox" class="fade" checked> atenuar entrada/salida</label>';
-    wrap.appendChild(crow);
-
+    host.appendChild(crow);
     const canvas = wave.querySelector("canvas"), region = wave.querySelector(".region"),
           hL = wave.querySelector(".hL"), hR = wave.querySelector(".hR"),
           head = wave.querySelector(".playhead"), lbl = crow.querySelector(".lbl"),
@@ -68,15 +39,13 @@
     try{
       const ab = await fetch(src).then(r=>r.arrayBuffer());
       const actx = new (window.AudioContext||window.webkitAudioContext)();
-      buf = await actx.decodeAudioData(ab);
-      dur = buf.duration;
+      buf = await actx.decodeAudioData(ab); dur = buf.duration;
     }catch(e){ lbl.textContent = "No se pudo leer el audio"; }
     if(!dur){ return; }
 
     if(clip.start==null) clip.start = 0;
     if(clip.end==null || clip.end<=clip.start) clip.end = Math.min(dur, clip.start + 12);
-    album.clips[i] = clip;
-    let phT = clip.start;   // posición de la barra blanca (playhead)
+    let phT = clip.start;
 
     function drawWave(){
       const cw = canvas.clientWidth || wave.clientWidth, ch = canvas.clientHeight || 96;
@@ -100,8 +69,6 @@
 
     const xToT = clientX => { const r = wave.getBoundingClientRect();
       return Math.max(0, Math.min(1,(clientX-r.left)/r.width)) * dur; };
-
-    // Se mueve LO MORADO (la región): cuerpo/pomo la desplazan; los bordes recortan.
     function drag(kind, e0){
       const t0 = xToT(e0.clientX), a0 = clip.start, b0 = clip.end;
       const move = e => { const d = xToT(e.clientX) - t0;
@@ -109,23 +76,20 @@
         else if(kind==="R"){ clip.end = Math.min(dur, Math.max(xToT(e.clientX), clip.start+0.3)); }
         else { const len=b0-a0; let na=Math.max(0, Math.min(a0+d, dur-len)); clip.start=na; clip.end=na+len; }
         phT = clip.start; draw(); };
-      const up = () => { document.removeEventListener("pointermove",move); document.removeEventListener("pointerup",up);
-        album.clips[i]=clip; save(); updateRaceDur(); };
+      const up = () => { document.removeEventListener("pointermove",move); document.removeEventListener("pointerup",up); onSave && onSave(); };
       document.addEventListener("pointermove",move); document.addEventListener("pointerup",up);
     }
     hL.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("L",e); });
     hR.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("R",e); });
     region.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("M",e); });
 
-    // escuchar (con atenuado). Al pausar, la barra NO vuelve al inicio; sigue desde ahí.
     let au = null, raf = 0;
     const stop = () => { if(au){ au.pause(); au=null; } cancelAnimationFrame(raf); playBtn.textContent="▶ Escuchar"; };
     playBtn.onclick = () => {
-      if(au){ stop(); return; }                    // pausa: deja phT donde está
+      if(au){ stop(); return; }
       au = new Audio(src);
-      const from = (phT > clip.start && phT < clip.end) ? phT : clip.start;   // reanuda desde la barra si está dentro
-      au.currentTime = from; au.volume = fadeCb.checked?0:1;
-      playBtn.textContent="⏹ Parar";
+      const from = (phT > clip.start && phT < clip.end) ? phT : clip.start;
+      au.currentTime = from; au.volume = fadeCb.checked?0:1; playBtn.textContent="⏹ Parar";
       const FADE=1.4;
       const tick = () => { if(!au) return; const ct=au.currentTime; phT = ct; head.style.left = pct(ct)+"%";
         if(fadeCb.checked){ const inn=ct-clip.start, out=clip.end-ct;
@@ -133,8 +97,72 @@
         if(ct>=clip.end){ stop(); return; } raf=requestAnimationFrame(tick); };
       au.play().then(()=>{ raf=requestAnimationFrame(tick); }).catch(()=>{});
     };
-    fadeCb.onchange = () => { clip.fade = fadeCb.checked; album.clips[i]=clip; save(); };
-    if(clip.fade===false) fadeCb.checked=false;
+    fadeCb.checked = clip.fade !== false;
+    fadeCb.onchange = () => { clip.fade = fadeCb.checked; onSave && onSave(); };
+  }
+
+  async function buildSong(i, songData){
+    album.clips = album.clips || [];
+    let clip = album.clips[i] || {}; album.clips[i] = clip;
+    album.songColors = album.songColors || [];
+    const scol = album.songColors[i] || SONG_COLORS[i % SONG_COLORS.length]; album.songColors[i] = scol;
+
+    const wrap = document.createElement("div"); wrap.className = "song";
+    const albumAudio = clip.audio || "";
+    const src = albumAudio || songData.audio || songData.instrumental || "";
+    const kind = albumAudio ? "audio del álbum" : (songData.audio ? "audio" : (songData.instrumental ? "instrumental" : "sin audio"));
+    wrap.innerHTML = '<div class="stitle">'+((i+1)+". "+(songData.song || "Canción "+(i+1)))+' <small>('+kind+')</small></div>'+
+      '<div class="scolor">🎨 Color de la canción (race): <input type="color" class="scol" value="'+scol+'"></div>';
+    el("#songs").appendChild(wrap);
+    wrap.querySelector(".scol").oninput = e => { album.songColors[i] = e.target.value; save(); };
+
+    const arow = document.createElement("div"); arow.className = "arow";
+    arow.innerHTML = '<button class="pickaud ng">🎵 '+(albumAudio?"Cambiar":"Poner")+' audio del álbum</button>'+
+      '<span class="ahint">solo para el álbum · no afecta al vídeo ni a la canción</span>';
+    wrap.appendChild(arow);
+    arow.querySelector(".pickaud").onclick = async () => {
+      if(!desktop) return;
+      const b = arow.querySelector(".pickaud"); const t0=b.textContent; b.disabled=true; b.textContent="⏳…";
+      let res=null; try{ res = await desktop.pickAudio({ group: album.group, song: (album.album||"album")+"_a"+(i+1) }); }catch(e){}
+      b.disabled=false; b.textContent=t0;
+      if(res && res.ok){ clip.audio = res.audio; album.clips[i]=clip; await save(); location.reload(); }
+    };
+
+    if(!src){ const n=document.createElement("div"); n.className="noaudio";
+      n.textContent="Esta canción no tiene audio: pon uno arriba para usarlo en el álbum."; wrap.appendChild(n); return; }
+    await buildWave(wrap, src, clip, () => { album.clips[i]=clip; save(); updateRaceDur(); });
+  }
+
+  // colores por miembro (nombres y aros de la DERECHA del race)
+  function buildRaceColors(roster){
+    album.raceColors = album.raceColors || {};
+    const host = el("#racecolors"); host.innerHTML = "";
+    roster.forEach(m => {
+      const c = album.raceColors[m.name] || m.color || "#888"; album.raceColors[m.name] = c;
+      const d = document.createElement("div"); d.className = "rc"; d.style.setProperty("--accent", c);
+      d.innerHTML = '<img src="'+m.image+'?v='+Date.now()+'"><span class="nm">'+m.name+'</span><input type="color" value="'+c+'">';
+      host.appendChild(d);
+      d.querySelector("input").oninput = e => { album.raceColors[m.name] = e.target.value;
+        d.style.setProperty("--accent", e.target.value); save(); };
+    });
+  }
+
+  // música de fondo (todas las diapositivas menos el race)
+  async function buildBgAudio(){
+    album.bgAudio = album.bgAudio || {};
+    const host = el("#bgaudio"); host.innerHTML = "";
+    const arow = document.createElement("div"); arow.className = "arow";
+    arow.innerHTML = '<button class="pickbg ng">🎵 '+(album.bgAudio.src?"Cambiar":"Poner")+' audio de fondo</button>'+
+      '<span class="ahint">suena en portada, donut, ranking, nº de veces, average y most/less</span>';
+    host.appendChild(arow);
+    arow.querySelector(".pickbg").onclick = async () => {
+      if(!desktop) return;
+      const b=arow.querySelector(".pickbg"); const t0=b.textContent; b.disabled=true; b.textContent="⏳…";
+      let res=null; try{ res = await desktop.pickAudio({ group: album.group, song: (album.album||"album")+"_bg" }); }catch(e){}
+      b.disabled=false; b.textContent=t0;
+      if(res && res.ok){ album.bgAudio = { src: res.audio }; await save(); location.reload(); }
+    };
+    if(album.bgAudio.src) await buildWave(host, album.bgAudio.src, album.bgAudio, save);
   }
 
   async function load(){
@@ -152,7 +180,12 @@
       if(res && res.ok){ album.cover=res.cover; paintCover(); save(); }
     };
     const songs = await Promise.all((album.songs||[]).map(loadJSON));
+    // roster (unión de miembros) para los colores del race
+    const roster = [], seen = {};
+    songs.forEach(sd => (sd && sd.members || []).forEach(m => { if(!seen[m.name]){ seen[m.name]=1; roster.push({name:m.name, color:m.color, image:m.image}); } }));
     for(let i=0;i<songs.length;i++){ if(songs[i]) await buildSong(i, songs[i]); }
+    buildRaceColors(roster);
+    await buildBgAudio();
     updateRaceDur();
   }
   load();

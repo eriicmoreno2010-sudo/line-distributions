@@ -49,6 +49,18 @@
   .crow{ display:flex; align-items:center; gap:12px; margin-top:10px; }
   .crow .lbl{ color:var(--text2); font-size:13px; font-weight:700; font-variant-numeric:tabular-nums; }
   .crow label{ display:flex; align-items:center; gap:6px; color:var(--text2); font-size:13px; font-weight:700; cursor:pointer; }
+
+  /* color de la canción (race) */
+  .scolor{ display:flex; align-items:center; gap:8px; margin:0 0 10px; color:var(--text2); font-size:13px; font-weight:700; }
+  input[type=color]{ width:38px; height:30px; border:1px solid var(--border); border-radius:8px; background:var(--panel2); cursor:pointer; padding:2px; }
+  .secthead{ font-size:16px; font-weight:900; margin:28px 0 12px; }
+  .secthead small{ color:var(--text2); font-weight:700; font-size:13px; }
+  #racecolors{ display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:12px;
+    background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px 18px; }
+  .rc{ display:flex; align-items:center; gap:10px; }
+  .rc img{ width:36px; height:36px; border-radius:50%; object-fit:cover; border:2px solid var(--accent); }
+  .rc .nm{ font-weight:800; font-size:14px; flex:1; min-width:0; }
+  #bgaudio{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px 18px; }
 </style>
 </head>
 <body>
@@ -70,6 +82,12 @@
 
 <div id="songs"></div>
 
-<script src="js/album-edit.js?v=3"></script>
+<h2 class="secthead">🎨 Colores del race — nombres y aros (parte derecha) <small>· las barras usan el color de cada canción (arriba)</small></h2>
+<div id="racecolors"></div>
+
+<h2 class="secthead">🎧 Música de fondo <small>· suena en todas las diapositivas menos el race</small></h2>
+<div id="bgaudio"></div>
+
+<script src="js/album-edit.js?v=4"></script>
 </body>
 </html>
