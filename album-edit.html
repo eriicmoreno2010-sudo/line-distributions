@@ -43,9 +43,11 @@
   .handle{ position:absolute; top:0; bottom:0; width:16px; margin-left:-8px; cursor:ew-resize; z-index:4;
     display:flex; align-items:center; justify-content:center; }
   .handle::after{ content:""; width:4px; height:40px; background:var(--accent); border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
-  /* barra blanca (playhead): solo INDICADOR de reproducción (no se arrastra) */
-  .playhead{ position:absolute; top:-6px; bottom:0; width:2px; margin-left:-1px; background:#fff;
-    box-shadow:0 0 0 1px rgba(0,0,0,.55); z-index:6; pointer-events:none; }
+  /* barra blanca (playhead): se arrastra SOLA (no mueve lo morado) */
+  .playhead{ position:absolute; top:-12px; bottom:0; width:2px; margin-left:-1px; background:#fff;
+    box-shadow:0 0 0 1px rgba(0,0,0,.55); z-index:7; cursor:ew-resize; }
+  .playhead .phk{ position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:16px; height:16px;
+    border-radius:50%; background:#fff; box-shadow:0 1px 5px rgba(0,0,0,.6); cursor:ew-resize; }
   .reorder{ margin-left:10px; display:inline-flex; gap:4px; }
   .reorder button{ padding:3px 9px; font-size:13px; background:var(--panel2); color:var(--text); border:1px solid var(--border); border-radius:7px; }
   .times{ color:var(--text2); font-size:13px; font-weight:700; }
@@ -92,6 +94,6 @@
 <h2 class="secthead">🎧 Música de fondo <small>· suena en todas las diapositivas menos el race</small></h2>
 <div id="bgaudio"></div>
 
-<script src="js/album-edit.js?v=7"></script>
+<script src="js/album-edit.js?v=8"></script>
 </body>
 </html>

@@ -255,7 +255,7 @@
 
       const enter = () => {
         el._gen++; const gen = el._gen; clearTimers(); stopAudios();
-        if(typeof instAudio !== "undefined" && instAudio){ try{ instAudio.pause(); }catch(e){} }  // pausa el fondo del álbum
+        // (el audio de fondo se apaga solo al entrar al race, gestionado en showSlide)
         // estado inicial (sin animación): todo a 0, orden de la 1ª canción
         el.querySelectorAll(".ts-row").forEach(r => r.classList.add("no-anim"));
         positions(songRowsEl, songMap, songSorted(0));
@@ -305,7 +305,7 @@
         el._raceTotal = t;
       };
       const reset = () => { el._gen++; clearTimers(); stopAudios();
-        if(typeof instAudio !== "undefined" && instAudio){ try{ instAudio.play().catch(()=>{}); }catch(e){} }  // reanuda el fondo del álbum
+        // (el audio de fondo vuelve suave al salir del race, gestionado en showSlide)
         A.members.forEach(m => { songMap[m.name].fill.style.width = "0";
           totMap[m.name].segs.forEach(sg => sg.style.width = "0"); totMap[m.name].lines.innerHTML = ""; }); };
       // duración estimada: suma de todos los dwells + margen
@@ -485,6 +485,36 @@
 
   // ===================== reproductor de diapositivas =====================
   let slides = [], idx = 0, playing = true, elapsed = 0, last = 0, instAudio = null;
+  let bgA = 0, bgB = 0, bgRaf = 0, wasRace = false;   // audio de fondo
+  const BGFADE = 1.6;
+  const bgCancel = () => { cancelAnimationFrame(bgRaf); bgRaf = 0; };
+  // reproduce el trozo de fondo UNA vez: entra suave, sale suave al final y para (no se repite)
+  function bgSessionStart(){
+    if(!instAudio) return;
+    bgCancel();
+    try{ instAudio.currentTime = bgA; }catch(e){}
+    instAudio.volume = 0; instAudio.play().catch(()=>{});
+    const loop = () => {
+      if(!instAudio || instAudio.paused) return;
+      const ct = instAudio.currentTime;
+      const end = (bgB > bgA) ? bgB : (isFinite(instAudio.duration) ? instAudio.duration : ct + 1e9);
+      if(ct >= end){ try{ instAudio.pause(); }catch(e){} return; }   // no se repite
+      const inn = ct - bgA, out = end - ct;
+      instAudio.volume = Math.max(0, Math.min(1, inn < BGFADE ? inn/BGFADE : (out < BGFADE ? out/BGFADE : 1)));
+      bgRaf = requestAnimationFrame(loop);
+    };
+    bgRaf = requestAnimationFrame(loop);
+  }
+  // se apaga suavemente (antes de entrar al race)
+  function bgFadeOutStop(){
+    if(!instAudio) return;
+    bgCancel();
+    const v0 = instAudio.volume || 1, t0 = performance.now();
+    const step = () => { if(!instAudio) return; let p=(performance.now()-t0)/(BGFADE*1000); if(p>1)p=1;
+      instAudio.volume = Math.max(0, v0*(1-p));
+      if(p<1) bgRaf = requestAnimationFrame(step); else { try{ instAudio.pause(); }catch(e){} } };
+    bgRaf = requestAnimationFrame(step);
+  }
 
   function showSlide(i){
     if(!slides.length) return;
@@ -495,6 +525,11 @@
       s.el.classList.toggle("active", on);
     });
     const cur = slides[idx];
+    // audio de fondo: se apaga al entrar al race; al salir del race vuelve suave (una vez)
+    const isRace = cur.el.dataset.kind === "total";
+    if(isRace && !wasRace) bgFadeOutStop();
+    else if(!isRace && wasRace) bgSessionStart();
+    wasRace = isRace;
     if(cur.enter) requestAnimationFrame(() => requestAnimationFrame(cur.enter));
     elapsed = 0; last = performance.now();
     slidelbl.textContent = (idx+1) + " / " + slides.length;
@@ -535,19 +570,15 @@
     showSlide(0);
     requestAnimationFrame(tick);
 
-    // audio de FONDO opcional (suena en todas las diapositivas menos el race), recortado + fundido de entrada
+    // audio de FONDO opcional: suena en las diapositivas que NO son el race, con fundido
+    // de entrada y de salida, una sola vez (no se repite); se apaga al entrar al race.
     const bg = albumData.bgAudio;
     const bgSrc = (bg && bg.src) || albumData.instrumental || "";
     if(bgSrc){
       instAudio = new Audio(bgSrc);
-      const ba = (bg && +bg.start) || 0, bb = (bg && +bg.end) || 0;
-      try{ instAudio.currentTime = ba; }catch(e){}
-      if(bb > ba) instAudio.addEventListener("timeupdate", () => { if(instAudio.currentTime >= bb) instAudio.currentTime = ba; });
-      else instAudio.loop = true;
-      instAudio.volume = 0; instAudio.play().catch(()=>{});
-      const t0 = performance.now();
-      const fin = () => { if(!instAudio) return; let p=(performance.now()-t0)/1500; if(p>1)p=1; instAudio.volume=p; if(p<1) requestAnimationFrame(fin); };
-      requestAnimationFrame(fin);
+      bgA = (bg && +bg.start) || 0;
+      bgB = (bg && +bg.end) || 0;
+      if(!wasRace) bgSessionStart();     // empieza en la portada (no-race)
     }
 
     // controles

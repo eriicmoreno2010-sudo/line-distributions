@@ -36,7 +36,7 @@
   async function buildWave(host, src, clip, onSave){
     const wave = document.createElement("div"); wave.className = "wave";
     wave.innerHTML = '<canvas></canvas><div class="region"><div class="rknob"></div></div>'+
-      '<div class="handle hL"></div><div class="handle hR"></div><div class="playhead"></div>';
+      '<div class="handle hL"></div><div class="handle hR"></div><div class="playhead"><span class="phk"></span></div>';
     host.appendChild(wave);
     const crow = document.createElement("div"); crow.className = "crow";
     crow.innerHTML = '<button class="play pri">▶ Escuchar</button><span class="lbl">—</span>'+
@@ -99,6 +99,13 @@
     hL.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("L",e); });
     hR.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("R",e); });
     region.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("M",e); });
+    // arrastrar SOLO la barra blanca (playhead) — no mueve lo morado
+    function dragHead(e0){
+      const move = e => { phT = xToT(e.clientX); if(au){ try{ au.currentTime = phT; }catch(_){} } draw(); };
+      const up = () => { document.removeEventListener("pointermove",move); document.removeEventListener("pointerup",up); };
+      document.addEventListener("pointermove",move); document.addEventListener("pointerup",up);
+    }
+    head.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); dragHead(e); });
 
     let au = null, raf = 0;
     const stop = () => { if(au){ au.pause(); au=null; } cancelAnimationFrame(raf); playBtn.textContent="▶ Escuchar"; };
