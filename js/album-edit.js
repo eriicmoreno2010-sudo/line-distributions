@@ -14,6 +14,15 @@
     el("#cov").innerHTML = album.cover ? '<img src="'+album.cover+'?v='+Date.now()+'">' : "💿";
   }
 
+  // Duración del race = suma de los "parones" (cada canción dura su trozo, min 6s) + margen.
+  const raceDwell = c => Math.max(6, ((c && c.end>c.start) ? (c.end-c.start) : 9) + 0.8);
+  function updateRaceDur(){
+    const n = (album.songs||[]).length; let est = 0;
+    for(let i=0;i<n;i++) est += raceDwell((album.clips||[])[i]);
+    const s = Math.round(est + 3);
+    const el2 = el("#racedur"); if(el2) el2.textContent = "⏱ Total seconds ≈ " + s + " s";
+  }
+
   async function buildSong(i, songData){
     album.clips = album.clips || [];
     let clip = album.clips[i] || {}; album.clips[i] = clip;
@@ -42,8 +51,8 @@
       n.textContent="Esta canción no tiene audio: pon uno arriba para usarlo en el álbum."; wrap.appendChild(n); return; }
 
     const wave = document.createElement("div"); wave.className = "wave";
-    wave.innerHTML = '<canvas></canvas><div class="region"></div><div class="handle hL"></div><div class="handle hR"></div>'+
-      '<div class="playhead"><div class="phknob"></div></div>';
+    wave.innerHTML = '<canvas></canvas><div class="region"><div class="rknob"></div></div>'+
+      '<div class="handle hL"></div><div class="handle hR"></div><div class="playhead"></div>';
     wrap.appendChild(wave);
     const crow = document.createElement("div"); crow.className = "crow";
     crow.innerHTML = '<button class="play pri">▶ Escuchar</button><span class="lbl">—</span>'+
@@ -91,26 +100,22 @@
 
     const xToT = clientX => { const r = wave.getBoundingClientRect();
       return Math.max(0, Math.min(1,(clientX-r.left)/r.width)) * dur; };
-    // mueve la región manteniendo su longitud, para que empiece en t
-    function moveStartTo(t){ const len = clip.end - clip.start;
-      let s = Math.max(0, Math.min(t, dur - len)); clip.start = s; clip.end = s + len; phT = clip.start; }
 
+    // Se mueve LO MORADO (la región): cuerpo/pomo la desplazan; los bordes recortan.
     function drag(kind, e0){
-      const move = e => { const t = xToT(e.clientX);
-        if(kind==="L"){ clip.start = Math.max(0, Math.min(t, clip.end-0.3)); phT = clip.start; }
-        else if(kind==="R"){ clip.end = Math.min(dur, Math.max(t, clip.start+0.3)); phT = clip.start; }
-        else { moveStartTo(t); }          // barra blanca / región / fondo: coloca la región donde está la barra
-        draw(); };
+      const t0 = xToT(e0.clientX), a0 = clip.start, b0 = clip.end;
+      const move = e => { const d = xToT(e.clientX) - t0;
+        if(kind==="L"){ clip.start = Math.max(0, Math.min(xToT(e.clientX), clip.end-0.3)); }
+        else if(kind==="R"){ clip.end = Math.min(dur, Math.max(xToT(e.clientX), clip.start+0.3)); }
+        else { const len=b0-a0; let na=Math.max(0, Math.min(a0+d, dur-len)); clip.start=na; clip.end=na+len; }
+        phT = clip.start; draw(); };
       const up = () => { document.removeEventListener("pointermove",move); document.removeEventListener("pointerup",up);
-        album.clips[i]=clip; save(); };
+        album.clips[i]=clip; save(); updateRaceDur(); };
       document.addEventListener("pointermove",move); document.addEventListener("pointerup",up);
     }
     hL.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("L",e); });
     hR.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("R",e); });
     region.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); drag("M",e); });
-    head.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation(); moveStartTo(xToT(e.clientX)); draw(); drag("H",e); });
-    wave.addEventListener("pointerdown", e => { if(e.target.closest(".handle,.region,.playhead")) return;
-      e.preventDefault(); moveStartTo(xToT(e.clientX)); draw(); drag("H",e); });
 
     // escuchar (con atenuado). Al pausar, la barra NO vuelve al inicio; sigue desde ahí.
     let au = null, raf = 0;
@@ -148,6 +153,7 @@
     };
     const songs = await Promise.all((album.songs||[]).map(loadJSON));
     for(let i=0;i<songs.length;i++){ if(songs[i]) await buildSong(i, songs[i]); }
+    updateRaceDur();
   }
   load();
 })();
