@@ -13,5 +13,22 @@
     "data/andteam/weonfire.json",
     "data/andteam/weonfirekoreanver.json"
   ],
-  "thumbBg": "#c1152f"
+  "thumbBg": "#c1152f",
+  "clips": [
+    null,
+    {
+      "start": 11.7,
+      "end": 12
+    },
+    null,
+    {
+      "start": 0,
+      "end": 12
+    },
+    null,
+    {
+      "start": 0,
+      "end": 12
+    }
+  ]
 }
