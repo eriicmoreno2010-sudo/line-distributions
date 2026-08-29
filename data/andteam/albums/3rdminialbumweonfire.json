@@ -62,6 +62,8 @@
     "TAKI": "#ff7a00",
     "MAKI": "#ff6fa3"
   },
-  "bgAudio": {},
+  "bgAudio": {
+    "src": "audio/team_3rdminialbumweonfirebg.mp3"
+  },
   "raceColor": "#883030"
 }
