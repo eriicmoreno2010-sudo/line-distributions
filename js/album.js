@@ -147,6 +147,13 @@
     const albumHead = (A.album.group ? esc(A.album.group) + " — " : "") + esc(A.album.album);
     {
       const el = makeSlide("total", "race-slide");
+      const nSongs = A.songs.length;
+      const SC = i => SONG_COLORS[i % SONG_COLORS.length];
+      const albumMax = (membersByTotal[0] && membersByTotal[0].total) || 1;   // 100% = máximo total del álbum
+      let songMax = 1; A.members.forEach(m => A.songs.forEach((s,j) => songMax = Math.max(songMax, m.per[j]||0)));
+      const cumAt = (m, si) => { let x=0; for(let j=0;j<=si;j++) x += m.per[j]||0; return x; };
+      const easeOut = p => 1 - Math.pow(1-p, 3);
+
       el.innerHTML = `
         <div class="ts-cols">
           <div class="ts-card">
@@ -163,68 +170,91 @@
       const totRowsEl  = el.querySelector('[data-side="total"]');
       const tagEl = el.querySelector(".song-tag");
 
-      const buildRows = (container) => {
-        const map = {};
-        A.members.forEach(m => {
-          const row = document.createElement("div");
-          row.className = "ts-row"; row.style.setProperty("--accent", m.color);
-          row.innerHTML = `<img class="ph" src="${esc(m.image)}" alt="">
-            <div class="mid"><div class="nm">${esc(m.name)}</div><div class="bar"><div class="fill"></div></div></div>
-            <div class="sec">0.00s</div>`;
-          container.appendChild(row);
-          map[m.name] = { row, fill: row.querySelector(".fill"), sec: row.querySelector(".sec") };
-        });
-        return map;
-      };
-      const songMap = buildRows(songRowsEl), totMap = buildRows(totRowsEl);
+      // izquierda: barra simple (color del miembro). derecha: barra apilada (un color por canción)
+      const songMap = {}, totMap = {};
+      A.members.forEach(m => {
+        const s = document.createElement("div");
+        s.className = "ts-row"; s.style.setProperty("--accent", m.color);
+        s.innerHTML = `<img class="ph" src="${esc(m.image)}" alt=""><div class="mid"><div class="nm">${esc(m.name)}</div>
+          <div class="bar"><div class="fill"></div></div></div><div class="sec">0.00s</div>`;
+        songRowsEl.appendChild(s);
+        songMap[m.name] = { row:s, fill:s.querySelector(".fill"), sec:s.querySelector(".sec") };
 
-      const albumMax = (membersByTotal[0] && membersByTotal[0].total) || 1;   // 100% = máximo total del álbum
-      let songMax = 1; A.members.forEach(m => A.songs.forEach((s,j) => songMax = Math.max(songMax, m.per[j]||0)));
-
-      const place = (container, map, sorted, maxVal, zero) => {
-        const N = sorted.length, H = container.clientHeight || 1, rowH = H / N;
-        sorted.forEach((it, idx) => {
-          const r = map[it.name];
-          r.row.style.height = rowH + "px";
-          r.row.style.transform = `translateY(${(idx*rowH).toFixed(1)}px)`;
-          r.fill.style.width = (zero ? 0 : (maxVal ? it.sec/maxVal*100 : 0)) + "%";
-          r.sec.textContent = fmtS(it.sec);
-        });
-      };
-      const stepData = (si) => ({
-        song: A.members.map(m => ({ name:m.name, sec:m.per[si]||0 })).sort((a,b)=>b.sec-a.sec),
-        total: A.members.map(m => { let x=0; for(let j=0;j<=si;j++) x+=m.per[j]||0; return {name:m.name, sec:x}; })
-                        .sort((a,b)=>b.sec-a.sec)
+        const t = document.createElement("div");
+        t.className = "ts-row"; t.style.setProperty("--accent", m.color);
+        t.innerHTML = `<img class="ph" src="${esc(m.image)}" alt=""><div class="mid"><div class="nm">${esc(m.name)}</div>
+          <div class="bar stack">${A.songs.map((s2,j)=>`<div class="seg" style="width:0;background:${SC(j)}"></div>`).join("")}</div></div>
+          <div class="sec">0.00s</div>`;
+        totRowsEl.appendChild(t);
+        totMap[m.name] = { row:t, segs:[...t.querySelectorAll(".seg")], sec:t.querySelector(".sec") };
       });
-      const render = (si) => {
-        const d = stepData(si);
-        tagEl.textContent = (si+1) + ". " + A.songs[si].title;
-        place(songRowsEl, songMap, d.song, songMax, false);
-        place(totRowsEl,  totMap,  d.total, albumMax, false);
+
+      // posiciona las filas (orden = ranking); no toca barras
+      const positions = (container, map, sorted) => {
+        const N = sorted.length, H = container.clientHeight || 1, rowH = H / N;
+        sorted.forEach((it, idx) => { const r = map[it.name];
+          r.row.style.height = rowH + "px";
+          r.row.style.transform = `translateY(${(idx*rowH).toFixed(1)}px)`; });
+      };
+      const songSorted = si => A.members.map(m=>({name:m.name, sec:m.per[si]||0})).sort((a,b)=>b.sec-a.sec);
+      const totSorted  = si => A.members.map(m=>({name:m.name, sec:cumAt(m,si)})).sort((a,b)=>b.sec-a.sec);
+
+      // anima un número gradualmente (respeta la "generación" para cancelar al salir)
+      const tweenNum = (elm, from, to, dur, gen) => {
+        const t0 = performance.now();
+        const loop = now => { if(el._gen !== gen) return; let p=(now-t0)/dur; if(p>1)p=1;
+          elm.textContent = (from + (to-from)*easeOut(p)).toFixed(2) + "s";
+          if(p<1) requestAnimationFrame(loop); };
+        requestAnimationFrame(loop);
       };
 
-      const STEP = 2300;
+      el._gen = 0; el._timers = [];
+      const clearTimers = () => { el._timers.forEach(clearTimeout); el._timers = []; };
+
       const enter = () => {
-        clearInterval(el._raceT);
-        const d0 = stepData(0);
-        tagEl.textContent = "1. " + A.songs[0].title;
-        // posición inicial (orden de la 1ª canción) sin animar y con barras a 0
+        el._gen++; const gen = el._gen; clearTimers();
+        // ---- estado inicial (sin animación): todo a 0 y orden de la 1ª canción ----
         el.querySelectorAll(".ts-row").forEach(r => r.classList.add("no-anim"));
-        place(songRowsEl, songMap, d0.song, songMax, true);
-        place(totRowsEl,  totMap,  d0.total, albumMax, true);
+        positions(songRowsEl, songMap, songSorted(0));
+        positions(totRowsEl,  totMap,  songSorted(0));
+        A.members.forEach(m => { songMap[m.name].fill.style.width = "0"; songMap[m.name].sec.textContent = "0.00s";
+          totMap[m.name].segs.forEach(sg => sg.style.width = "0"); totMap[m.name].sec.textContent = "0.00s"; });
         void el.offsetWidth;
         el.querySelectorAll(".ts-row").forEach(r => r.classList.remove("no-anim"));
-        requestAnimationFrame(() => render(0));      // crecen las barras de la 1ª canción
-        let si = 0;
-        el._raceT = setInterval(() => {
-          si++;
-          if(si >= A.songs.length){ clearInterval(el._raceT); return; }
-          render(si);                                 // añade canción -> se reordena el total
-        }, STEP);
+
+        const DWELL = 4200, STAGGER = 1500;   // despacito: cada canción tiene su momento
+        let prevSong = {}; A.members.forEach(m => prevSong[m.name] = 0);
+
+        for(let si = 0; si < nSongs; si++){
+          // (1) primero cambia la IZQUIERDA (ranking de la canción)
+          el._timers.push(setTimeout(() => {
+            if(el._gen !== gen) return;
+            tagEl.textContent = (si+1) + ". " + A.songs[si].title;
+            positions(songRowsEl, songMap, songSorted(si));
+            A.members.forEach(m => {
+              const v = m.per[si] || 0;
+              songMap[m.name].fill.style.width = (v/songMax*100) + "%";
+              tweenNum(songMap[m.name].sec, prevSong[m.name], v, 1400, gen);
+              prevSong[m.name] = v;
+            });
+          }, si * DWELL));
+
+          // (2) después se implementa en la DERECHA (total acumulado)
+          el._timers.push(setTimeout(() => {
+            if(el._gen !== gen) return;
+            positions(totRowsEl, totMap, totSorted(si));
+            A.members.forEach(m => {
+              totMap[m.name].segs[si].style.width = ((m.per[si]||0)/albumMax*100) + "%";  // crece el segmento de esta canción
+              const from = si>0 ? cumAt(m,si-1) : 0, to = cumAt(m,si);
+              tweenNum(totMap[m.name].sec, from, to, 1600, gen);
+            });
+          }, si * DWELL + STAGGER));
+        }
       };
-      const reset = () => { clearInterval(el._raceT);
-        el.querySelectorAll(".fill").forEach(f => f.style.width = "0"); };
-      slides.push({ el, dur: A.songs.length * 2.3 + 4, enter, reset });
+      const reset = () => { el._gen++; clearTimers();
+        A.members.forEach(m => { songMap[m.name].fill.style.width = "0";
+          totMap[m.name].segs.forEach(sg => sg.style.width = "0"); }); };
+      slides.push({ el, dur: nSongs * 4.2 + 4, enter, reset });
     }
 
     // ---------- 3) DONUT + evenness ----------

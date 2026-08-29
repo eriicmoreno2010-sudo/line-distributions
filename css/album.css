@@ -94,19 +94,22 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .ts-tag.song-tag{ font-size:24px; letter-spacing:.5px; text-transform:none; color:var(--text); }
 .ts-tag2{ font-size:18px; font-weight:900; letter-spacing:1.5px; text-transform:uppercase; color:var(--text2); }
 .ts-rows{ flex:1; position:relative; margin-top:16px; min-height:0; }
-.ts-row{ position:absolute; left:0; right:0; top:0; display:grid; grid-template-columns:auto 1fr auto;
+/* columna de segundos con ancho FIJO -> la barra nunca se encoge aunque el número pase de 100 */
+.ts-row{ position:absolute; left:0; right:0; top:0; display:grid; grid-template-columns:auto 1fr 118px;
   align-items:center; gap:15px; will-change:transform;
-  transition:transform .9s cubic-bezier(.22,1,.36,1); }
+  transition:transform 1.4s cubic-bezier(.22,1,.36,1); }
 .ts-row.no-anim{ transition:none; }
 .ts-row .ph{ width:min(5.2vh,52px); height:min(5.2vh,52px); border-radius:50%; object-fit:cover;
   border:3px solid var(--accent); flex:none; }
 .ts-row .mid{ min-width:0; }
 .ts-row .mid .nm{ font-size:min(2.4vh,21px); font-weight:900; color:var(--accent); line-height:1.1; }
-.ts-row .bar{ height:12px; border-radius:999px; background:var(--panel2); overflow:hidden; margin-top:6px; }
+.ts-row .bar{ height:14px; border-radius:999px; background:var(--panel2); overflow:hidden; margin-top:6px; }
+.ts-row .bar.stack{ display:flex; }
 .ts-row .fill{ height:100%; width:0; background:var(--accent); border-radius:999px;
-  transition:width .9s cubic-bezier(.22,1,.36,1); }
-.ts-row.no-anim .fill{ transition:none; }
-.ts-row .sec{ font-size:min(2.4vh,21px); font-weight:900; font-variant-numeric:tabular-nums; }
+  transition:width 1.4s cubic-bezier(.22,1,.36,1); }
+.ts-row .seg{ height:100%; width:0; transition:width 1.4s cubic-bezier(.22,1,.36,1); }
+.ts-row.no-anim .fill, .ts-row.no-anim .seg{ transition:none; }
+.ts-row .sec{ font-size:min(2.1vh,19px); font-weight:900; font-variant-numeric:tabular-nums; text-align:right; }
 
 /* ============ Slide: AVERAGE por canción ============ */
 .avg-slide{ align-items:center; padding:44px 70px 44px; }
