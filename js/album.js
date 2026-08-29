@@ -213,9 +213,10 @@
       // ---- audio por canción (trozo elegido, con fundido de entrada y salida) ----
       const FADE = 1.6, DEF_CLIP = 9, GAP = 0.8;
       const clip = si => {
-        const s = A.songs[si]; const src = s.audio || s.instrumental || "";
-        // prioridad: clip elegido para el ÁLBUM (album-edit) > segmento del instrumental de la canción
+        const s = A.songs[si];
         const ac = (A.album.clips && A.album.clips[si]) || {};
+        // audio: el propio del álbum (album-edit) tiene prioridad; si no, el de la canción
+        const src = ac.audio || s.audio || s.instrumental || "";
         let a = (ac.start != null ? ac.start : s.clipStart) || 0;
         let b = (ac.end != null ? ac.end : s.clipEnd) || 0;
         if(!(b > a)) b = a + DEF_CLIP;
