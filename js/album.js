@@ -75,7 +75,9 @@
       });
       songs.push({ i, title: sd.song || ("Canción " + (i+1)),
                    color: SONG_COLORS[i % SONG_COLORS.length], secs, ranked,
-                   dur: sd.duration || 0 });
+                   dur: sd.duration || 0,
+                   audio: sd.audio || "", instrumental: sd.instrumental || "",
+                   clipStart: +sd.instrumentalStart || 0, clipEnd: +sd.instrumentalEnd || 0 });
     });
 
     const members = order.map(n => roster[n]);
@@ -148,9 +150,7 @@
     {
       const el = makeSlide("total", "race-slide");
       const nSongs = A.songs.length;
-      const SC = i => SONG_COLORS[i % SONG_COLORS.length];
       const albumMax = (membersByTotal[0] && membersByTotal[0].total) || 1;   // 100% = máximo total del álbum
-      let songMax = 1; A.members.forEach(m => A.songs.forEach((s,j) => songMax = Math.max(songMax, m.per[j]||0)));
       const cumAt = (m, si) => { let x=0; for(let j=0;j<=si;j++) x += m.per[j]||0; return x; };
       const easeOut = p => 1 - Math.pow(1-p, 3);
 
@@ -170,7 +170,7 @@
       const totRowsEl  = el.querySelector('[data-side="total"]');
       const tagEl = el.querySelector(".song-tag");
 
-      // izquierda: barra simple (color del miembro). derecha: barra apilada (un color por canción)
+      // izquierda: barra simple. derecha: barra del color del miembro + líneas negras entre canciones.
       const songMap = {}, totMap = {};
       A.members.forEach(m => {
         const s = document.createElement("div");
@@ -183,13 +183,11 @@
         const t = document.createElement("div");
         t.className = "ts-row"; t.style.setProperty("--accent", m.color);
         t.innerHTML = `<img class="ph" src="${esc(m.image)}" alt=""><div class="mid"><div class="nm">${esc(m.name)}</div>
-          <div class="bar stack">${A.songs.map((s2,j)=>`<div class="seg" style="width:0;background:${SC(j)}"></div>`).join("")}</div></div>
-          <div class="sec">0.00s</div>`;
+          <div class="bar"><div class="fill"></div><div class="divlines"></div></div></div><div class="sec">0.00s</div>`;
         totRowsEl.appendChild(t);
-        totMap[m.name] = { row:t, segs:[...t.querySelectorAll(".seg")], sec:t.querySelector(".sec") };
+        totMap[m.name] = { row:t, fill:t.querySelector(".fill"), lines:t.querySelector(".divlines"), sec:t.querySelector(".sec") };
       });
 
-      // posiciona las filas (orden = ranking); no toca barras
       const positions = (container, map, sorted) => {
         const N = sorted.length, H = container.clientHeight || 1, rowH = H / N;
         sorted.forEach((it, idx) => { const r = map[it.name];
@@ -198,8 +196,6 @@
       };
       const songSorted = si => A.members.map(m=>({name:m.name, sec:m.per[si]||0})).sort((a,b)=>b.sec-a.sec);
       const totSorted  = si => A.members.map(m=>({name:m.name, sec:cumAt(m,si)})).sort((a,b)=>b.sec-a.sec);
-
-      // anima un número gradualmente (respeta la "generación" para cancelar al salir)
       const tweenNum = (elm, from, to, dur, gen) => {
         const t0 = performance.now();
         const loop = now => { if(el._gen !== gen) return; let p=(now-t0)/dur; if(p>1)p=1;
@@ -207,54 +203,98 @@
           if(p<1) requestAnimationFrame(loop); };
         requestAnimationFrame(loop);
       };
+      // líneas negras que separan las canciones dentro de la barra del total
+      const drawLines = (m, si) => {
+        let h = "";
+        for(let j=0; j<si; j++){ const x = cumAt(m,j)/albumMax*100; h += `<div class="divline" style="left:${x}%"></div>`; }
+        totMap[m.name].lines.innerHTML = h;
+      };
 
-      el._gen = 0; el._timers = [];
+      // ---- audio por canción (trozo elegido, con fundido de entrada y salida) ----
+      const FADE = 1.6, DEF_CLIP = 9, GAP = 0.8;
+      const clip = si => {
+        const s = A.songs[si]; const src = s.audio || s.instrumental || "";
+        let a = s.clipStart || 0, b = s.clipEnd || 0;
+        if(!(b > a)) b = a + DEF_CLIP;
+        b = Math.min(b, a + 20);                 // tope de seguridad
+        return { src, a, b, len: b - a };
+      };
+      const playClip = (si, gen) => {
+        const c = clip(si); if(!c.src) return;
+        const au = new Audio(c.src); au.preload = "auto"; au.volume = 0;
+        try{ au.currentTime = c.a; }catch(e){}
+        el._audios.push(au);
+        au.play().catch(()=>{});
+        const loop = () => {
+          if(el._gen !== gen){ try{ au.pause(); }catch(e){} return; }
+          const ct = au.currentTime;
+          if(ct >= c.b){ try{ au.pause(); }catch(e){} return; }
+          const inn = ct - c.a, out = c.b - ct;
+          au.volume = Math.max(0, Math.min(1, inn < FADE ? inn/FADE : (out < FADE ? out/FADE : 1)));
+          requestAnimationFrame(loop);
+        };
+        requestAnimationFrame(loop);
+      };
+
+      el._gen = 0; el._timers = []; el._audios = [];
       const clearTimers = () => { el._timers.forEach(clearTimeout); el._timers = []; };
+      const stopAudios = () => { el._audios.forEach(a => { try{ a.pause(); }catch(e){} }); el._audios = []; };
 
       const enter = () => {
-        el._gen++; const gen = el._gen; clearTimers();
-        // ---- estado inicial (sin animación): todo a 0 y orden de la 1ª canción ----
+        el._gen++; const gen = el._gen; clearTimers(); stopAudios();
+        if(typeof instAudio !== "undefined" && instAudio){ try{ instAudio.pause(); }catch(e){} }  // pausa el fondo del álbum
+        // estado inicial (sin animación): todo a 0, orden de la 1ª canción
         el.querySelectorAll(".ts-row").forEach(r => r.classList.add("no-anim"));
         positions(songRowsEl, songMap, songSorted(0));
         positions(totRowsEl,  totMap,  songSorted(0));
         A.members.forEach(m => { songMap[m.name].fill.style.width = "0"; songMap[m.name].sec.textContent = "0.00s";
-          totMap[m.name].segs.forEach(sg => sg.style.width = "0"); totMap[m.name].sec.textContent = "0.00s"; });
+          totMap[m.name].fill.style.width = "0"; totMap[m.name].lines.innerHTML = ""; totMap[m.name].sec.textContent = "0.00s"; });
         void el.offsetWidth;
         el.querySelectorAll(".ts-row").forEach(r => r.classList.remove("no-anim"));
 
-        const DWELL = 4200, STAGGER = 1500;   // despacito: cada canción tiene su momento
+        const STAGGER = 1600;
         let prevSong = {}; A.members.forEach(m => prevSong[m.name] = 0);
-
+        let t = 0;                                       // tiempo acumulado (ms)
         for(let si = 0; si < nSongs; si++){
-          // (1) primero cambia la IZQUIERDA (ranking de la canción)
+          const dwell = Math.max(6, (clip(si).len || DEF_CLIP) + GAP) * 1000;
+          const start = t;
+          // audio del trozo de esta canción (con fundido)
+          el._timers.push(setTimeout(() => { if(el._gen === gen) playClip(si, gen); }, start));
+          // (1) izquierda: ranking de la canción (el 1º siempre lleno)
           el._timers.push(setTimeout(() => {
             if(el._gen !== gen) return;
             tagEl.textContent = (si+1) + ". " + A.songs[si].title;
             positions(songRowsEl, songMap, songSorted(si));
+            const top = Math.max(1, ...A.members.map(m => m.per[si]||0));   // el mayor de ESTA canción = barra llena
             A.members.forEach(m => {
               const v = m.per[si] || 0;
-              songMap[m.name].fill.style.width = (v/songMax*100) + "%";
+              songMap[m.name].fill.style.width = (v/top*100) + "%";
               tweenNum(songMap[m.name].sec, prevSong[m.name], v, 1400, gen);
               prevSong[m.name] = v;
             });
-          }, si * DWELL));
-
-          // (2) después se implementa en la DERECHA (total acumulado)
+          }, start));
+          // (2) derecha: total acumulado (se reordena) + líneas de canciones
           el._timers.push(setTimeout(() => {
             if(el._gen !== gen) return;
             positions(totRowsEl, totMap, totSorted(si));
             A.members.forEach(m => {
-              totMap[m.name].segs[si].style.width = ((m.per[si]||0)/albumMax*100) + "%";  // crece el segmento de esta canción
+              totMap[m.name].fill.style.width = (cumAt(m,si)/albumMax*100) + "%";
+              drawLines(m, si);
               const from = si>0 ? cumAt(m,si-1) : 0, to = cumAt(m,si);
               tweenNum(totMap[m.name].sec, from, to, 1600, gen);
             });
-          }, si * DWELL + STAGGER));
+          }, start + STAGGER));
+          t += dwell;
         }
+        el._raceTotal = t;
       };
-      const reset = () => { el._gen++; clearTimers();
+      const reset = () => { el._gen++; clearTimers(); stopAudios();
+        if(typeof instAudio !== "undefined" && instAudio){ try{ instAudio.play().catch(()=>{}); }catch(e){} }  // reanuda el fondo del álbum
         A.members.forEach(m => { songMap[m.name].fill.style.width = "0";
-          totMap[m.name].segs.forEach(sg => sg.style.width = "0"); }); };
-      slides.push({ el, dur: nSongs * 4.2 + 4, enter, reset });
+          totMap[m.name].fill.style.width = "0"; totMap[m.name].lines.innerHTML = ""; }); };
+      // duración estimada: suma de todos los dwells + margen
+      let est = 0; for(let si=0; si<nSongs; si++) est += Math.max(6, (clip(si).len||DEF_CLIP)+GAP);
+      slides.push({ el, dur: est + 3, enter, reset });
     }
 
     // ---------- 3) DONUT + evenness ----------
