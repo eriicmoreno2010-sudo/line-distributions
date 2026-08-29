@@ -86,8 +86,9 @@ function paint(){
   el("atitle").textContent = album.album || "";
   el("asub").textContent = ((album.group || "") + " " + (album.thumbTag || "1ST MINI ALBUM")).trim();
   const p = el("photo");
-  if(album.cover){
-    p.innerHTML = '<img src="' + album.cover + '?v=' + Date.now() + '" alt="">';
+  const photo = album.thumbPhoto || album.cover;   // foto propia de la miniatura (independiente del disco)
+  if(photo){
+    p.innerHTML = '<img src="' + photo + '?v=' + Date.now() + '" alt="">';
   } else {
     p.innerHTML = '<div class="ph-empty">Elige la foto grupal →</div>';
   }
@@ -120,7 +121,7 @@ async function load(){
     let res = null;
     try{ res = await desktop.pickCover({ group: album.group, song: album.album + "_thumb" }); }catch(e){}
     b.disabled = false; b.textContent = t0;
-    if(res && res.ok){ album.cover = res.cover; paint(); save(true); }
+    if(res && res.ok){ album.thumbPhoto = res.cover; paint(); save(true); }
   };
   el("back").onclick = () => { location.href = "library.html"; };
   el("save").onclick = async (e) => {
