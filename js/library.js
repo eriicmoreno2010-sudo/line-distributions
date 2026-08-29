@@ -48,6 +48,24 @@
     return el;
   }
 
+  function albumCard(al){
+    const el = document.createElement("div");
+    el.className = "card album";
+    const cover = al.cover ? `<img class="cover" src="${al.cover}" alt="">` : "";
+    el.innerHTML = `
+      ${cover}
+      <div class="grp">${al.group || "—"}</div>
+      <div class="name">${al.album || "(sin título)"}</div>
+      <div class="meta">${(al.songs || []).length} canciones</div>
+      <div class="actions">
+        <button class="open">▶  Abrir</button>
+      </div>`;
+    el.querySelector(".open").onclick = () => {
+      location.href = "album.html?album=" + encodeURIComponent(al.path);
+    };
+    return el;
+  }
+
   async function doExport(song){
     overlay.classList.add("show");
     ovtitle.textContent = "Exportando: " + song.song;
@@ -131,16 +149,74 @@
     };
   }
 
+  // ---- Crear álbum (modal): elige grupo, nombre y marca sus canciones ----
+  function setupAlbumCreate(songs, groups){
+    const modal = document.getElementById("albummodal");
+    const gSel  = document.getElementById("alGroup");
+    const list  = document.getElementById("alSongs");
+    const err   = document.getElementById("alError");
+    const btn   = document.getElementById("newAlbum");
+    const create = document.getElementById("alCreate");
+
+    function renderSongs(group){
+      const mine = songs.filter(s => s.group === group)
+                        .sort((a,b) => a.song.localeCompare(b.song));
+      list.innerHTML = mine.length
+        ? mine.map(s => `<label><input type="checkbox" value="${s.path}"> ${s.song}</label>`).join("")
+        : '<div class="none">Este grupo no tiene canciones.</div>';
+    }
+    function open(){
+      const gs = Object.keys(groups).sort();
+      if(!gs.length){ err.textContent = "Primero crea alguna canción."; }
+      gSel.innerHTML = gs.map(g => `<option value="${g}">${g}</option>`).join("");
+      renderSongs(gSel.value);
+      document.getElementById("alName").value = "";
+      err.textContent = "";
+      modal.classList.add("show");
+    }
+    if(btn) btn.onclick = open;
+    gSel.onchange = () => renderSongs(gSel.value);
+    document.getElementById("alCancel").onclick = () => modal.classList.remove("show");
+    modal.addEventListener("click", e => { if(e.target === modal) modal.classList.remove("show"); });
+
+    create.onclick = async () => {
+      const album = document.getElementById("alName").value.trim();
+      const group = gSel.value;
+      const chosen = [...list.querySelectorAll("input:checked")].map(i => i.value);
+      if(!album){ err.textContent = "Pon el nombre del álbum."; return; }
+      if(!chosen.length){ err.textContent = "Marca al menos una canción."; return; }
+      create.disabled = true; create.textContent = "Creando…";
+      const res = await window.desktop.createAlbum({
+        group, album, theme: document.getElementById("alTheme").value,
+        songs: chosen, sourcePath: groups[group]
+      });
+      create.disabled = false; create.textContent = "Crear álbum";
+      if(res && res.ok){ modal.classList.remove("show"); location.reload(); }
+      else err.textContent = (res && res.error) || "Error al crear el álbum.";
+    };
+  }
+
   (async () => {
     const songs = await window.desktop.listSongs() || [];
+    const albums = (window.desktop.listAlbums ? await window.desktop.listAlbums() : []) || [];
     const groups = {};
     songs.forEach(s => { if(s.group && !groups[s.group]) groups[s.group] = s.path; });
     setupCreate(groups);
+    setupAlbumCreate(songs, groups);
+
+    // Álbumes arriba
+    if(albums.length){
+      document.getElementById("albumsect").style.display = "";
+      const ag = document.getElementById("albumgrid");
+      albums.sort((a,b) => (a.group + a.album).localeCompare(b.group + b.album));
+      albums.forEach(a => ag.appendChild(albumCard(a)));
+    }
 
     if(!songs.length){
       grid.innerHTML = '<div class="empty">No hay canciones todavía. Crea una con <b>➕ Nueva canción + grupo</b>.</div>';
       return;
     }
+    if(albums.length) document.getElementById("songsttl").style.display = "";
     songs.sort((a, b) => (a.group + a.song).localeCompare(b.group + b.song));
     songs.forEach(s => grid.appendChild(card(s)));
   })();

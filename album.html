@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" translate="no" class="notranslate">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>Album Distribution</title>
+  <link rel="stylesheet" href="css/fonts.css?v=51">
+  <link rel="stylesheet" href="css/album.css?v=1">
+</head>
+<body>
+
+  <button id="lib-back" onclick="location.href='library.html'">←  Biblioteca</button>
+
+  <select id="albumSel" title="Elegir álbum"></select>
+
+  <main id="stage">
+    <div id="loading" class="loading">Cargando álbum…</div>
+  </main>
+
+  <div id="hud">
+    <button id="prev" title="Anterior (←)">◀</button>
+    <button id="playpause" title="Reproducir/Pausar (espacio)">⏸</button>
+    <button id="next" title="Siguiente (→)">▶</button>
+    <div id="progress"><div id="pfill"></div></div>
+    <span id="slidelbl">—</span>
+  </div>
+
+  <script src="js/rec-mode.js?v=51"></script>
+  <script src="js/album.js?v=1"></script>
+</body>
+</html>

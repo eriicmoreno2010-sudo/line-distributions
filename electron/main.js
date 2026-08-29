@@ -122,6 +122,7 @@ ipcMain.handle("list-songs", async () => {
       else if(name.toLowerCase().endsWith(".json")){
         try{
           const j = JSON.parse(fs.readFileSync(full, "utf8"));
+          if(j.type === "album") continue;   // los álbumes no son canciones
           out.push({
             path: path.relative(ROOT, full).replace(/\\/g, "/"),
             group: j.group || "",
@@ -226,6 +227,78 @@ ipcMain.handle("create-song", async (_e, args) => {
       let p = await git(["push"]);
       if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
       if(p.code === 0) res.pushed = true;
+    }catch(e){ res.gitError = e.message; }
+    return res;
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
+// ---- Álbumes: listar y crear ----
+// Un álbum es un JSON con type:"album" que apunta a varias canciones del grupo.
+ipcMain.handle("list-albums", async () => {
+  const out = [];
+  const walk = (d) => {
+    let entries = []; try{ entries = fs.readdirSync(d); }catch(e){ return; }
+    for(const name of entries){
+      const full = path.join(d, name);
+      let st; try{ st = fs.statSync(full); }catch(e){ continue; }
+      if(st.isDirectory()) walk(full);
+      else if(name.toLowerCase().endsWith(".json")){
+        try{
+          const j = JSON.parse(fs.readFileSync(full, "utf8"));
+          if(j.type !== "album") continue;
+          out.push({
+            path: path.relative(ROOT, full).replace(/\\/g, "/"),
+            group: j.group || "", album: j.album || name.replace(/\.json$/i, ""),
+            cover: j.cover || "", theme: j.theme || "dark",
+            songs: Array.isArray(j.songs) ? j.songs : []
+          });
+        }catch(e){}
+      }
+    }
+  };
+  walk(path.join(ROOT, "data"));
+  return out;
+});
+
+ipcMain.handle("create-album", async (_e, args) => {
+  args = args || {};
+  try{
+    const albumName = String(args.album || "").trim();
+    if(!albumName) return { ok:false, error:"Falta el nombre del álbum." };
+    const albumFile = slug(albumName);
+    if(!albumFile) return { ok:false, error:"El nombre del álbum no es válido." };
+    const songs = (args.songs || []).map(String).filter(Boolean);
+    if(!songs.length) return { ok:false, error:"Elige al menos una canción." };
+
+    // carpeta del grupo (a partir de una canción suya, o del nombre)
+    const groupFolder = (args.sourcePath ? args.sourcePath.split("/")[1] : "") || slug(args.group || "");
+    if(!groupFolder) return { ok:false, error:"No se pudo determinar el grupo." };
+
+    const dir = path.join(ROOT, "data", groupFolder, "albums");
+    const dataPath = path.join(dir, albumFile + ".json");
+    if(fs.existsSync(dataPath)) return { ok:false, error:"Ya existe un álbum con ese nombre en ese grupo." };
+    fs.mkdirSync(dir, { recursive:true });
+
+    const album = {
+      type: "album",
+      group: String(args.group || "").trim() || groupFolder,
+      album: albumName,
+      cover: "",
+      theme: (args.theme === "light" ? "light" : "dark"),
+      instrumental: "",
+      songs
+    };
+    fs.writeFileSync(dataPath, JSON.stringify(album, null, 2), "utf8");
+
+    const relData = path.relative(ROOT, dataPath).replace(/\\/g, "/");
+    const res = { ok:true, path: relData, pushed:false };
+    try{
+      await git(["add", "--", relData]);
+      const staged = await git(["diff", "--cached", "--quiet", "--", relData]);
+      if(staged.code !== 0) await git(["commit", "-m", "Add album: " + album.group + " - " + albumName]);
+      let p = await git(["push"]);
+      if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+      res.pushed = (p.code === 0);
     }catch(e){ res.gitError = e.message; }
     return res;
   }catch(e){ return { ok:false, error:e.message }; }

@@ -1,0 +1,384 @@
+/* =========================================================
+   ALBUM DISTRIBUTION — suma los segundos de todas las canciones
+   de un álbum y lo presenta en varias diapositivas (grabable).
+   ========================================================= */
+(function(){
+  const $ = s => document.querySelector(s);
+  const desktop = (window.desktop && window.desktop.isDesktop) ? window.desktop : null;
+
+  const stage = $("#stage"), pfill = $("#pfill"), slidelbl = $("#slidelbl");
+  const TAU = Math.PI * 2;
+
+  // paleta para las canciones (barra apilada + leyenda)
+  const SONG_COLORS = ["#ff4d6d","#4dabf7","#ffa94d","#cc5de8","#20c997","#ffd43b",
+                       "#748ffc","#f783ac","#69db7c","#e8590c","#22b8cf","#9775fa"];
+
+  const fmt = t => { t = Math.max(0, t||0); const m=Math.floor(t/60), s=Math.floor(t%60); return m+":"+String(s).padStart(2,"0"); };
+  const fmtS = t => (Math.round((t||0)*100)/100).toFixed(2) + "s";
+  const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+  // ---- quién canta cuánto (mismo cálculo que el ranking/donut) ----
+  function buildIntervals(s){
+    const map = {}; (s.members||[]).forEach(m => map[m.name] = []);
+    const add = (n,a,b) => { if(map[n] && b>a) map[n].push([a,b]); };
+    (s.lyrics||[]).forEach(line => {
+      if(Array.isArray(line.voice)){
+        line.voice.forEach(seg => {
+          const who = seg[2] ? (Array.isArray(seg[2]) ? seg[2] : [seg[2]]) : line.members;
+          (who||[]).forEach(n => add(n, seg[0], seg[1]));
+        });
+      } else {
+        const a = line.voiceStart ?? line.start, b = line.voiceEnd ?? line.end;
+        (line.members||[]).forEach(n => add(n, a, b));
+      }
+    });
+    return map;
+  }
+  const totalSec = iv => iv.reduce((x,g)=> x + (g[1]-g[0]), 0);
+
+  async function loadJSON(path){
+    try{
+      if(desktop){ const r = await desktop.loadSong(path); return r && r.ok ? r.data : null; }
+      return await fetch(path).then(r => r.json());
+    }catch(e){ return null; }
+  }
+
+  // ===================== agregación del álbum =====================
+  function aggregate(album, songDatas){
+    const roster = {};       // name -> {name,color,image,total,per[i],ranks[i],rankCount{}}
+    const songs = [];        // por canción: {i,title,color,secs{},ranked[]}
+    const order = [];        // orden de aparición de miembros
+
+    songDatas.forEach((sd, i) => {
+      if(!sd) return;
+      const map = buildIntervals(sd);
+      const secs = {};
+      (sd.members||[]).forEach(m => {
+        if(!roster[m.name]){
+          roster[m.name] = { name:m.name, color:m.color||"#888", image:m.image||"",
+                             total:0, per:{}, ranks:{}, rankCount:{} };
+          order.push(m.name);
+        }
+        const R = roster[m.name];
+        if((!R.color || R.color==="#888") && m.color) R.color = m.color;
+        if(!R.image && m.image) R.image = m.image;
+        const sec = totalSec(map[m.name] || []);
+        secs[m.name] = sec; R.per[i] = sec; R.total += sec;
+      });
+      const ranked = (sd.members||[]).map(m => m.name)
+        .sort((a,b) => (secs[b]||0) - (secs[a]||0));
+      ranked.forEach((nm, idx) => {
+        const rank = idx + 1;
+        roster[nm].ranks[i] = rank;
+        roster[nm].rankCount[rank] = (roster[nm].rankCount[rank]||0) + 1;
+      });
+      songs.push({ i, title: sd.song || ("Canción " + (i+1)),
+                   color: SONG_COLORS[i % SONG_COLORS.length], secs, ranked,
+                   dur: sd.duration || 0 });
+    });
+
+    const members = order.map(n => roster[n]);
+    // por miembro: canción donde más y donde menos cantó (entre las que aparece)
+    members.forEach(m => {
+      const entries = Object.keys(m.per).map(k => [+k, m.per[k]]);
+      if(entries.length){
+        entries.sort((a,b) => b[1]-a[1]);
+        m.topSong = songs[entries[0][0]]; m.topSec = entries[0][1];
+        m.lowSong = songs[entries[entries.length-1][0]]; m.lowSec = entries[entries.length-1][1];
+      }
+      m.pct = 0;
+    });
+    const grand = members.reduce((a,m)=>a+m.total, 0) || 1;
+    members.forEach(m => m.pct = m.total/grand*100);
+
+    // evenness = entropía normalizada de los totales (0..1)
+    let H = 0; members.forEach(m => { const p = m.total/grand; if(p>0) H -= p*Math.log(p); });
+    const Hmax = Math.log(members.length || 1);
+    const evenness = Hmax > 0 ? H/Hmax : 1;
+
+    const maxRank = songs.reduce((mx,s)=> Math.max(mx, s.ranked.length), 0);
+    return { album, members, songs, grand, evenness, maxRank };
+  }
+
+  function evenLabel(e){
+    if(e >= 0.93) return "Muy repartido";
+    if(e >= 0.85) return "Equilibrado";
+    if(e >= 0.72) return "Algo desigual";
+    return "Desigual";
+  }
+
+  // ===================== construir diapositivas =====================
+  function makeSlide(kind, extraClass){
+    const el = document.createElement("section");
+    el.className = "slide " + (extraClass || "");
+    el.dataset.kind = kind;
+    stage.appendChild(el);
+    return el;
+  }
+
+  function buildSlides(A){
+    const slides = [];
+    const membersByTotal = [...A.members].sort((a,b)=> b.total - a.total);
+
+    // ---------- 1) PORTADA ----------
+    {
+      const el = makeSlide("cover", "cover-slide");
+      const art = A.album.cover
+        ? `<img class="cover-art" src="${esc(A.album.cover)}" alt="">`
+        : `<div class="cover-art cover-noart">💿</div>`;
+      const songs = A.songs.map((s,i) =>
+        `<div class="sg"><span class="n" style="background:${s.color}">${i+1}</span>${esc(s.title)}</div>`).join("");
+      el.innerHTML = `
+        ${art}
+        <div class="cover-info">
+          <div class="grp">${esc(A.album.group)}</div>
+          <div class="alb">${esc(A.album.album)}</div>
+          <div class="tag">Album Distribution</div>
+          <div class="songlist">${songs}</div>
+        </div>`;
+      slides.push({ el, dur:7 });
+    }
+
+    // ---------- 2) TOTAL DE SEGUNDOS (barras apiladas por canción) ----------
+    {
+      const el = makeSlide("total");
+      const rows = membersByTotal.map(m => {
+        const segs = A.songs.map(s => {
+          const sec = m.per[s.i] || 0;
+          const w = A.grand ? (sec / (membersByTotal[0].total || 1) * 100) : 0;
+          return { w, color:s.color };
+        });
+        return { m, segs };
+      });
+      el.innerHTML = `
+        <div class="slide-title">Total de segundos</div>
+        <div class="slide-sub">Todo el álbum · quién ha cantado más</div>
+        <div class="rows">${rows.map(r => `
+          <div class="trow" style="--accent:${r.m.color}">
+            <img class="ph" src="${esc(r.m.image)}" alt="">
+            <div class="nm">${esc(r.m.name)}</div>
+            <div class="stack">${r.segs.map(g => `<div class="seg" data-w="${g.w}" style="width:0;background:${g.color}"></div>`).join("")}</div>
+            <div class="fig"><div class="pct">${r.m.pct.toFixed(1)}%</div><div class="sec">${fmtS(r.m.total)}</div></div>
+          </div>`).join("")}
+        </div>
+        <div class="song-legend">${A.songs.map((s,i) =>
+          `<div class="li"><span class="sw" style="background:${s.color}"></span>${i+1}. ${esc(s.title)}</div>`).join("")}</div>`;
+      const enter = () => el.querySelectorAll(".seg").forEach(s => s.style.width = s.dataset.w + "%");
+      const reset = () => el.querySelectorAll(".seg").forEach(s => s.style.width = "0");
+      slides.push({ el, dur:9, enter, reset });
+    }
+
+    // ---------- 3) DONUT + evenness ----------
+    {
+      const el = makeSlide("donut", "donut-slide");
+      const CX=250, CY=250, R=180, ri=104;
+      const P = (rad,a)=>[(CX+rad*Math.sin(a)).toFixed(2),(CY-rad*Math.cos(a)).toFixed(2)];
+      const ring = (a0,a1)=>{ const large=(a1-a0)>Math.PI?1:0;
+        const[x0o,y0o]=P(R,a0),[x1o,y1o]=P(R,a1),[x1i,y1i]=P(ri,a1),[x0i,y0i]=P(ri,a0);
+        return `M ${x0o} ${y0o} A ${R} ${R} 0 ${large} 1 ${x1o} ${y1o} L ${x1i} ${y1i} A ${ri} ${ri} 0 ${large} 0 ${x0i} ${y0i} Z`; };
+      let cum = 0; const paths = membersByTotal.map(m => {
+        const frac = A.grand ? m.total/A.grand : 0;
+        const a0 = cum*TAU, a1 = (cum + Math.min(frac,0.99999))*TAU; cum += frac;
+        return frac>0 ? `<path d="${ring(a0,a1)}" fill="${m.color}"></path>` : "";
+      }).join("");
+      const legend = membersByTotal.map(m =>
+        `<div class="li"><span class="dot" style="background:${m.color}"></span>${esc(m.name)}
+          <span class="v">${m.pct.toFixed(1)}% · ${fmtS(m.total)}</span></div>`).join("");
+      el.innerHTML = `
+        <div class="slide-title">Reparto del álbum</div>
+        <div class="slide-sub">Donut de segundos totales · evenness</div>
+        <div class="donut-wrap">
+          <div class="donut-holder" style="position:relative">
+            <svg viewBox="0 0 500 500">${paths}</svg>
+            <div class="even-badge"><div class="num">${Math.round(A.evenness*100)}%</div><div class="lbl">${evenLabel(A.evenness)}</div></div>
+          </div>
+          <div class="donut-legend">${legend}</div>
+        </div>`;
+      slides.push({ el, dur:8 });
+    }
+
+    // ---------- 4) BUMP CHART (rankings por canción) ----------
+    {
+      const el = makeSlide("bump", "bump-slide");
+      el.innerHTML = `
+        <div class="slide-title">Ranking por canción</div>
+        <div class="slide-sub">Cómo quedó cada miembro en cada canción</div>
+        <div class="bump-wrap"></div>`;
+      const draw = () => {
+        const wrap = el.querySelector(".bump-wrap");
+        const W=1000, H=560, mL=48, mR=250, mT=26, mB=92;
+        const n = A.songs.length, maxR = Math.max(A.maxRank, 1);
+        const xAt = i => n>1 ? mL + i*(W-mL-mR)/(n-1) : mL + (W-mL-mR)/2;
+        const yAt = r => mT + (maxR>1 ? (r-1)*(H-mT-mB)/(maxR-1) : (H-mT-mB)/2);
+        let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">`;
+        // guías de rango
+        for(let r=1;r<=maxR;r++){ const y=yAt(r);
+          svg += `<line class="axis" x1="${mL}" y1="${y}" x2="${W-mR}" y2="${y}"></line>`;
+          svg += `<text class="rlab" x="${mL-12}" y="${y+5}" text-anchor="end">${r}</text>`; }
+        // etiquetas de canción (x)
+        A.songs.forEach((s,i)=>{ const x=xAt(i);
+          svg += `<text class="xlab" x="${x}" y="${H-mB+26}" text-anchor="middle">${esc(s.title)}</text>`; });
+        // una línea por miembro
+        [...A.members].sort((a,b)=>b.total-a.total).forEach(m => {
+          const pts = [];
+          A.songs.forEach((s,i)=>{ const r=m.ranks[i]; if(r) pts.push([xAt(i), yAt(r), i]); });
+          if(!pts.length) return;
+          const d = pts.map((p,k)=> (k?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+          // longitud aprox para animar el trazado
+          let len=0; for(let k=1;k<pts.length;k++){ len += Math.hypot(pts[k][0]-pts[k-1][0], pts[k][1]-pts[k-1][1]); }
+          svg += `<path class="bump-line" style="--len:${Math.max(len,1)}" stroke="${m.color}" d="${d}"></path>`;
+          pts.forEach(p => { svg += `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="7" fill="${m.color}"></circle>`; });
+          // foto + nombre al final (último punto)
+          const last = pts[pts.length-1];
+          const ex = W-mR+16, ey = last[1];
+          const cid = "clipbump" + m.name.replace(/[^a-z0-9]/gi, "");
+          svg += `<clipPath id="${cid}"><circle cx="${ex+22}" cy="${ey}" r="22"></circle></clipPath>`;
+          svg += `<circle cx="${ex+22}" cy="${ey}" r="24" fill="none" stroke="${m.color}" stroke-width="3"></circle>`;
+          svg += `<image href="${esc(m.image)}" x="${ex}" y="${ey-22}" width="44" height="44" clip-path="url(#${cid})" preserveAspectRatio="xMidYMid slice"></image>`;
+          svg += `<text x="${ex+54}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="18">${esc(m.name)}</text>`;
+        });
+        svg += `</svg>`;
+        wrap.innerHTML = svg;
+      };
+      const enter = () => { draw(); };            // redibuja para relanzar el trazado
+      const reset = () => { el.querySelector(".bump-wrap").innerHTML = ""; };
+      slides.push({ el, dur:10, enter, reset });
+    }
+
+    // ---------- 5) Nº DE VECES 1º, 2º, ... ----------
+    for(let place=1; place<=Math.max(A.maxRank,1); place++){
+      const el = makeSlide("places", "places-slide");
+      const data = A.members.map(m => ({ m, c: m.rankCount[place]||0 }))
+                            .sort((a,b)=> b.c - a.c);
+      const maxC = Math.max(1, ...data.map(d=>d.c));
+      el.innerHTML = `
+        <div class="slide-title">Número de veces</div>
+        <div class="place-big">${place}º puesto</div>
+        <div class="bars">${data.map(d => `
+          <div class="bar-col${d.c ? "" : " zero"}">
+            <div class="cnt" style="color:${d.c ? d.m.color : "var(--text3)"}">${d.c}</div>
+            <div class="bar" data-h="${d.c ? d.c/maxC*100 : 0}" style="height:0;background:${d.m.color}">
+              ${d.c ? `<img class="ph" src="${esc(d.m.image)}" alt="">` : ""}
+            </div>
+            <div class="nm">${esc(d.m.name)}</div>
+          </div>`).join("")}
+        </div>`;
+      const enter = () => el.querySelectorAll(".bar").forEach(b => { const h=+b.dataset.h; b.style.height = (h>0?Math.max(h,10):0) + "%"; });
+      const reset = () => el.querySelectorAll(".bar").forEach(b => b.style.height = "0");
+      slides.push({ el, dur:4.5, enter, reset });
+    }
+
+    // ---------- 6) FICHA PERSONAL por miembro ----------
+    membersByTotal.forEach(m => {
+      const el = makeSlide("member", "member-slide");
+      const top = m.topSong ? `<div class="song">${esc(m.topSong.title)}</div><div class="s">${fmtS(m.topSec)}</div>`
+                            : `<div class="song">—</div>`;
+      const low = m.lowSong ? `<div class="song">${esc(m.lowSong.title)}</div><div class="s">${fmtS(m.lowSec)}</div>`
+                            : `<div class="song">—</div>`;
+      el.innerHTML = `
+        <div class="mcard" style="--accent:${m.color}">
+          <img class="big-ph" src="${esc(m.image)}" alt="">
+          <div class="info">
+            <div class="nm">${esc(m.name)}</div>
+            <div class="tot">${fmtS(m.total)} en total · ${m.pct.toFixed(1)}% del álbum</div>
+            <div class="split">
+              <div class="box top"><div class="k">▲ Donde más cantó</div>${top}</div>
+              <div class="box low"><div class="k">▼ Donde menos cantó</div>${low}</div>
+            </div>
+          </div>
+        </div>`;
+      slides.push({ el, dur:5 });
+    });
+
+    return slides;
+  }
+
+  // ===================== reproductor de diapositivas =====================
+  let slides = [], idx = 0, playing = true, elapsed = 0, last = 0, instAudio = null;
+
+  function showSlide(i){
+    if(!slides.length) return;
+    idx = (i + slides.length) % slides.length;
+    slides.forEach((s,k) => {
+      const on = k === idx;
+      if(s.reset && !on) s.reset();
+      s.el.classList.toggle("active", on);
+    });
+    const cur = slides[idx];
+    if(cur.enter) requestAnimationFrame(() => requestAnimationFrame(cur.enter));
+    elapsed = 0; last = performance.now();
+    slidelbl.textContent = (idx+1) + " / " + slides.length;
+  }
+  const next = () => showSlide(idx+1);
+  const prev = () => showSlide(idx-1);
+
+  function tick(now){
+    const cur = slides[idx];
+    if(cur){
+      if(playing){ elapsed += (now - last)/1000; }
+      last = now;
+      const frac = Math.min(1, elapsed / (cur.dur || 6));
+      pfill.style.width = (frac*100) + "%";
+      if(playing && elapsed >= (cur.dur || 6) && idx < slides.length-1) next();
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function setPlaying(p){ playing = p; last = performance.now(); $("#playpause").textContent = p ? "⏸" : "▶"; }
+
+  // ===================== init =====================
+  async function start(albumPath){
+    const albumData = await loadJSON(albumPath);
+    if(!albumData || albumData.type !== "album"){
+      stage.innerHTML = '<div class="loading">No se pudo cargar el álbum.</div>'; return;
+    }
+    document.body.classList.toggle("light", albumData.theme === "light");
+    const songDatas = await Promise.all((albumData.songs||[]).map(loadJSON));
+    const A = aggregate(albumData, songDatas);
+    if(!A.members.length){ stage.innerHTML = '<div class="loading">El álbum no tiene datos de miembros.</div>'; return; }
+
+    const accent = A.members[0] ? A.members[0].color : "#7c5cff";
+    document.documentElement.style.setProperty("--accent", accent);
+
+    const loadingEl = $("#loading"); if(loadingEl) loadingEl.remove();
+    slides = buildSlides(A);
+    showSlide(0);
+    requestAnimationFrame(tick);
+
+    // instrumental de fondo opcional (bucle)
+    if(albumData.instrumental){
+      instAudio = new Audio(albumData.instrumental); instAudio.loop = true;
+      instAudio.play().catch(()=>{});
+    }
+
+    // controles
+    $("#next").onclick = next;
+    $("#prev").onclick = prev;
+    $("#playpause").onclick = () => setPlaying(!playing);
+    document.addEventListener("keydown", e => {
+      if(/^(input|select|textarea)$/i.test((e.target && e.target.tagName)||"")) return;
+      if(e.key === "ArrowRight"){ e.preventDefault(); next(); }
+      else if(e.key === "ArrowLeft"){ e.preventDefault(); prev(); }
+      else if(e.code === "Space"){ e.preventDefault(); setPlaying(!playing); }
+    });
+  }
+
+  (async () => {
+    const param = new URLSearchParams(location.search).get("album");
+    const sel = $("#albumSel");
+    if(desktop && desktop.listAlbums){
+      const list = (await desktop.listAlbums()) || [];
+      list.sort((a,b)=> (a.group+a.album).localeCompare(b.group+b.album));
+      sel.innerHTML = list.map(a => `<option value="${esc(a.path)}">${esc(a.group)} — ${esc(a.album)}</option>`).join("");
+      const path = param || (list[0] && list[0].path);
+      if(!path){ stage.innerHTML = '<div class="loading">No hay álbumes. Crea uno en la biblioteca.</div>'; sel.style.display="none"; return; }
+      sel.value = path;
+      sel.onchange = () => { location.href = "album.html?album=" + encodeURIComponent(sel.value); };
+      start(path);
+    } else {
+      sel.style.display = "none";
+      if(!param){ stage.innerHTML = '<div class="loading">Abre con ?album=data/&lt;grupo&gt;/albums/&lt;album&gt;.json</div>'; return; }
+      start(param);
+    }
+  })();
+})();
