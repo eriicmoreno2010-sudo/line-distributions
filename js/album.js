@@ -140,60 +140,30 @@
       slides.push({ el, dur:7 });
     }
 
-    // ---------- 2) TOTAL DE SEGUNDOS (barras apiladas por canción) ----------
-    {
-      const el = makeSlide("total");
-      const rows = membersByTotal.map(m => {
-        const segs = A.songs.map(s => {
-          const sec = m.per[s.i] || 0;
-          const w = A.grand ? (sec / (membersByTotal[0].total || 1) * 100) : 0;
-          return { w, color:s.color };
-        });
-        return { m, segs };
-      });
+    // ---------- 2) TOTAL SECONDS — una diapositiva por canción ----------
+    // Cada canción tiene su propio ranking (ordenado por los segundos de ESA canción),
+    // así los miembros cambian de posición según lo que cantan en cada una.
+    A.songs.forEach((song, si) => {
+      const el = makeSlide("total", "persong-slide");
+      const ranked = A.members.map(m => ({ m, sec: m.per[si] || 0 }))
+                              .sort((a,b) => b.sec - a.sec);
+      const songTotal = ranked.reduce((a,r)=>a+r.sec, 0) || 1;
+      const topSec = ranked[0] && ranked[0].sec ? ranked[0].sec : 1;
       el.innerHTML = `
         <div class="slide-title">Total seconds</div>
-        <div class="slide-sub">Adding up song by song · <span class="now-song"></span></div>
-        <div class="rows">${rows.map(r => `
+        <div class="slide-sub song-sub">${si+1}. ${esc(song.title)}</div>
+        <div class="rows">${ranked.map(r => `
           <div class="trow" style="--accent:${r.m.color}">
             <img class="ph" src="${esc(r.m.image)}" alt="">
             <div class="nm">${esc(r.m.name)}</div>
-            <div class="stack">${r.segs.map(g => `<div class="seg" data-w="${g.w}" style="width:0;background:${g.color}"></div>`).join("")}</div>
-            <div class="fig"><div class="pct">0.00%</div><div class="sec">0.00s</div></div>
+            <div class="stack"><div class="seg" data-w="${(r.sec/topSec*100).toFixed(2)}" style="width:0;background:${r.m.color}"></div></div>
+            <div class="fig"><div class="pct">${(r.sec/songTotal*100).toFixed(2)}%</div><div class="sec">${fmtS(r.sec)}</div></div>
           </div>`).join("")}
-        </div>
-        <div class="song-legend">${A.songs.map((s,i) =>
-          `<div class="li"><span class="sw" style="background:${s.color}"></span>${i+1}. ${esc(s.title)}</div>`).join("")}</div>`;
-      const nowEl = el.querySelector(".now-song");
-      const enter = () => {
-        const trows = [...el.querySelectorAll(".trow")];
-        const rd = trows.map(tr => ({ segs:[...tr.querySelectorAll(".seg")],
-          pct:tr.querySelector(".pct"), sec:tr.querySelector(".sec") }));
-        const nS = A.songs.length, running = rows.map(()=>0);
-        let k = 0;
-        const step = () => {
-          if(k >= nS) return;
-          rows.forEach((r,ri) => {
-            rd[ri].segs[k].style.width = rd[ri].segs[k].dataset.w + "%";
-            running[ri] += r.m.per[A.songs[k].i] || 0;
-          });
-          const g = running.reduce((a,b)=>a+b,0) || 1;
-          rows.forEach((r,ri) => { rd[ri].sec.textContent = fmtS(running[ri]);
-            rd[ri].pct.textContent = (running[ri]/g*100).toFixed(2) + "%"; });
-          if(nowEl) nowEl.textContent = (k+1) + ". " + A.songs[k].title;
-          k++; el._stepT = setTimeout(step, 1050);
-        };
-        step();
-      };
-      const reset = () => {
-        clearTimeout(el._stepT);
-        el.querySelectorAll(".seg").forEach(s => s.style.width = "0");
-        el.querySelectorAll(".trow .sec").forEach(s => s.textContent = "0.00s");
-        el.querySelectorAll(".trow .pct").forEach(s => s.textContent = "0.00%");
-        if(nowEl) nowEl.textContent = "";
-      };
-      slides.push({ el, dur: A.songs.length + 4, enter, reset });
-    }
+        </div>`;
+      const enter = () => el.querySelectorAll(".seg").forEach(s => s.style.width = s.dataset.w + "%");
+      const reset = () => el.querySelectorAll(".seg").forEach(s => s.style.width = "0");
+      slides.push({ el, dur:5, enter, reset });
+    });
 
     // ---------- 3) DONUT + evenness ----------
     {

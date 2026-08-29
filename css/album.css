@@ -51,6 +51,7 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .slide-title{ font-size:34px; font-weight:900; letter-spacing:1px; margin-bottom:6px; }
 .slide-sub{ font-size:15px; font-weight:700; color:var(--text2); letter-spacing:2px;
   text-transform:uppercase; margin-bottom:30px; }
+.slide-sub.song-sub{ font-size:24px; color:var(--text); letter-spacing:1px; text-transform:none; margin-bottom:22px; }
 
 /* ============ Slide: PORTADA ============ */
 .cover-slide{ flex-direction:row; align-items:center; gap:60px; padding:70px 100px; }
