@@ -140,29 +140,46 @@
       slides.push({ el, dur:7 });
     }
 
-    // ---------- 2) TOTAL SECONDS — una diapositiva por canción ----------
-    // Cada canción tiene su propio ranking (ordenado por los segundos de ESA canción),
-    // así los miembros cambian de posición según lo que cantan en cada una.
+    // ---------- 2) TOTAL SECONDS — una diapositiva por canción (bar chart race) ----------
+    // Izquierda: ranking de ESA canción. Derecha: total del álbum ACUMULADO hasta esa
+    // canción, ordenado por el total -> el líder del total va cambiando canción a canción.
+    const albumHead = (A.album.group ? esc(A.album.group) + " — " : "") + esc(A.album.album);
+    const rowsHTML = list => list.map(r => `
+      <div class="ts-row" style="--accent:${r.m.color}">
+        <img class="ph" src="${esc(r.m.image)}" alt="">
+        <div class="mid">
+          <div class="nm">${esc(r.m.name)}</div>
+          <div class="bar"><div class="fill" data-w="${r.w.toFixed(2)}"></div></div>
+        </div>
+        <div class="sec">${fmtS(r.sec)}</div>
+      </div>`).join("");
     A.songs.forEach((song, si) => {
-      const el = makeSlide("total", "persong-slide");
-      const ranked = A.members.map(m => ({ m, sec: m.per[si] || 0 }))
-                              .sort((a,b) => b.sec - a.sec);
-      const songTotal = ranked.reduce((a,r)=>a+r.sec, 0) || 1;
-      const topSec = ranked[0] && ranked[0].sec ? ranked[0].sec : 1;
+      const el = makeSlide("total", "race-slide");
+      const songRanked = A.members.map(m => ({ m, sec: m.per[si] || 0 }))
+                                  .sort((a,b) => b.sec - a.sec);
+      const topSong = songRanked[0] && songRanked[0].sec ? songRanked[0].sec : 1;
+      songRanked.forEach(r => r.w = r.sec / topSong * 100);
+      // total acumulado hasta esta canción (incluida)
+      const runTot = m => { let x=0; for(let j=0;j<=si;j++) x += m.per[j] || 0; return x; };
+      const totRanked = A.members.map(m => ({ m, sec: runTot(m) }))
+                                 .sort((a,b) => b.sec - a.sec);
+      const topTot = totRanked[0] && totRanked[0].sec ? totRanked[0].sec : 1;
+      totRanked.forEach(r => r.w = r.sec / topTot * 100);
       el.innerHTML = `
-        <div class="slide-title">Total seconds</div>
-        <div class="slide-sub song-sub">${si+1}. ${esc(song.title)}</div>
-        <div class="rows">${ranked.map(r => `
-          <div class="trow" style="--accent:${r.m.color}">
-            <img class="ph" src="${esc(r.m.image)}" alt="">
-            <div class="nm">${esc(r.m.name)}</div>
-            <div class="stack"><div class="seg" data-w="${(r.sec/topSec*100).toFixed(2)}" style="width:0;background:${r.m.color}"></div></div>
-            <div class="fig"><div class="pct">${(r.sec/songTotal*100).toFixed(2)}%</div><div class="sec">${fmtS(r.sec)}</div></div>
-          </div>`).join("")}
+        <div class="ts-cols">
+          <div class="ts-card">
+            <div class="ts-tag song-tag">${si+1}. ${esc(song.title)}</div>
+            <div class="ts-rows">${rowsHTML(songRanked)}</div>
+          </div>
+          <div class="ts-card">
+            <div class="ts-tag">${albumHead}</div>
+            <div class="ts-tag2">ALBUM DISTRIBUTION</div>
+            <div class="ts-rows">${rowsHTML(totRanked)}</div>
+          </div>
         </div>`;
-      const enter = () => el.querySelectorAll(".seg").forEach(s => s.style.width = s.dataset.w + "%");
-      const reset = () => el.querySelectorAll(".seg").forEach(s => s.style.width = "0");
-      slides.push({ el, dur:5, enter, reset });
+      const enter = () => el.querySelectorAll(".fill").forEach(f => f.style.width = f.dataset.w + "%");
+      const reset = () => el.querySelectorAll(".fill").forEach(f => f.style.width = "0");
+      slides.push({ el, dur:5.5, enter, reset });
     });
 
     // ---------- 3) DONUT + evenness ----------

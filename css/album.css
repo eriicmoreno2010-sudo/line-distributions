@@ -85,6 +85,25 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .song-legend .li{ display:flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:var(--text2); }
 .song-legend .li .sw{ width:13px; height:13px; border-radius:4px; }
 
+/* ============ Slide: TOTAL SECONDS (race: canción + total acumulado) ============ */
+.race-slide{ padding:40px 60px 40px; }
+.ts-cols{ flex:1; display:grid; grid-template-columns:1fr 1fr; gap:36px; min-height:0; }
+.ts-card{ background:var(--panel); border:1px solid var(--border); border-radius:20px;
+  padding:22px 30px; display:flex; flex-direction:column; min-height:0; }
+.ts-tag{ font-size:18px; font-weight:900; letter-spacing:1.5px; text-transform:uppercase; color:var(--text2); }
+.ts-tag.song-tag{ font-size:24px; letter-spacing:.5px; text-transform:none; color:var(--text); }
+.ts-tag2{ font-size:18px; font-weight:900; letter-spacing:1.5px; text-transform:uppercase; color:var(--text2); }
+.ts-rows{ flex:1; display:flex; flex-direction:column; margin-top:16px; min-height:0; }
+.ts-row{ flex:1; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:15px; }
+.ts-row .ph{ width:min(5.2vh,52px); height:min(5.2vh,52px); border-radius:50%; object-fit:cover;
+  border:3px solid var(--accent); flex:none; }
+.ts-row .mid{ min-width:0; }
+.ts-row .mid .nm{ font-size:min(2.4vh,21px); font-weight:900; color:var(--accent); line-height:1.1; }
+.ts-row .bar{ height:12px; border-radius:999px; background:var(--panel2); overflow:hidden; margin-top:6px; }
+.ts-row .fill{ height:100%; width:0; background:var(--accent); border-radius:999px;
+  transition:width .8s cubic-bezier(.4,0,.2,1); }
+.ts-row .sec{ font-size:min(2.4vh,21px); font-weight:900; font-variant-numeric:tabular-nums; }
+
 /* ============ Slide: DONUT + evenness ============ */
 /* Título arriba centrado (compacto); el donut llena todo lo de abajo a la izquierda. */
 .donut-slide{ align-items:center; padding:22px 56px 24px; }
