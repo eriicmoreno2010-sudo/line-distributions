@@ -15,7 +15,9 @@
   ],
   "thumbBg": "#c1152f",
   "clips": [
-    {},
+    {
+      "audio": "audio/team_3rdminialbumweonfirea1.mp3"
+    },
     {
       "start": 32.804659246892975,
       "end": 45.35746253014283
