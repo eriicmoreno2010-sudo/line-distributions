@@ -99,7 +99,7 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
   align-items:center; gap:15px; will-change:transform;
   transition:transform 1.4s cubic-bezier(.22,1,.36,1); }
 .ts-row.no-anim{ transition:none; }
-.ts-row .ph{ width:min(5.2vh,52px); height:min(5.2vh,52px); border-radius:50%; object-fit:cover;
+.ts-row .ph{ width:min(6.6vh,66px); height:min(6.6vh,66px); border-radius:50%; object-fit:cover;
   border:3px solid var(--accent); flex:none; }
 .ts-row .mid{ min-width:0; }
 .ts-row .mid .nm{ font-size:min(2.4vh,21px); font-weight:900; color:var(--accent); line-height:1.1; }
