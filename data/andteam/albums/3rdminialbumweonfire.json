@@ -63,9 +63,7 @@
     "MAKI": "#ff6fa3"
   },
   "bgAudio": {
-    "src": "audio/team_3rdminialbumweonfirebg.mp3",
-    "start": 0,
-    "end": 56.64
+    "src": "audio/team_3rdminialbumweonfirebg.mp3"
   },
   "raceColor": "#883030"
 }
