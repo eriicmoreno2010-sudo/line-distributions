@@ -54,28 +54,28 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .slide-sub.song-sub{ font-size:24px; color:var(--text); letter-spacing:1px; text-transform:none; margin-bottom:22px; }
 
 /* ============ Slide: PORTADA ============ */
-.cover-slide{ flex-direction:row; align-items:center; gap:min(6vw,80px); padding:70px min(8vw,110px); position:relative; overflow:hidden; }
+.cover-slide{ flex-direction:row; align-items:center; gap:min(6vw,90px); padding:60px min(6vw,90px); position:relative; overflow:hidden; }
 /* resplandor suave de fondo detrás de la portada */
-.cover-glow{ position:absolute; left:8%; top:50%; width:62vh; height:62vh; transform:translateY(-50%);
+.cover-glow{ position:absolute; left:6%; top:50%; width:78vh; height:78vh; transform:translateY(-50%);
   border-radius:50%; pointer-events:none;
-  background:radial-gradient(circle, rgba(124,92,255,.30), rgba(124,92,255,0) 62%); filter:blur(24px); }
+  background:radial-gradient(circle, rgba(124,92,255,.30), rgba(124,92,255,0) 62%); filter:blur(28px); }
 .cover-art-wrap{ position:relative; flex:none; }
-.cover-art{ width:min(52vh,520px); height:min(52vh,520px); border-radius:28px; object-fit:cover;
-  box-shadow:0 40px 90px -24px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.06) inset;
+.cover-art{ width:min(74vh,720px); height:min(74vh,720px); border-radius:30px; object-fit:cover;
+  box-shadow:0 46px 100px -26px rgba(0,0,0,.85), 0 0 0 1px rgba(255,255,255,.06) inset;
   background:var(--panel2); display:block; }
-.cover-noart{ display:flex; align-items:center; justify-content:center; font-size:90px;
+.cover-noart{ display:flex; align-items:center; justify-content:center; font-size:110px;
   color:var(--text3); border:2px dashed var(--border); }
-.cover-info{ display:flex; flex-direction:column; gap:6px; min-width:0; z-index:1; }
-.cover-info .tag{ align-self:flex-start; font-size:15px; font-weight:900; letter-spacing:4px; text-transform:uppercase;
-  color:var(--text2); background:var(--panel2); border:1px solid var(--border); border-radius:999px; padding:7px 16px; margin-bottom:10px; }
-.cover-info .grp{ font-size:24px; font-weight:800; letter-spacing:3px; color:var(--text2); text-transform:uppercase; }
-.cover-info .alb{ font-size:min(8vh,80px); font-weight:900; line-height:1.0; letter-spacing:-1px;
+.cover-info{ flex:1; display:flex; flex-direction:column; justify-content:center; gap:8px; min-width:0; z-index:1; }
+.cover-info .tag{ align-self:flex-start; font-size:17px; font-weight:900; letter-spacing:4px; text-transform:uppercase;
+  color:var(--text2); background:var(--panel2); border:1px solid var(--border); border-radius:999px; padding:8px 18px; margin-bottom:12px; }
+.cover-info .grp{ font-size:min(3.4vh,30px); font-weight:800; letter-spacing:3px; color:var(--text2); text-transform:uppercase; }
+.cover-info .alb{ font-size:min(10vh,104px); font-weight:900; line-height:1.0; letter-spacing:-1px;
   text-shadow:0 6px 30px rgba(0,0,0,.5); }
-.songlist{ margin-top:30px; display:grid; grid-template-columns:1fr 1fr; gap:12px 22px; max-width:820px; }
-.songlist .sg{ display:flex; align-items:center; gap:13px; font-size:18px; font-weight:800;
-  background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:10px 16px; }
-.songlist .sg .n{ width:28px; height:28px; border-radius:8px; flex:none; display:flex;
-  align-items:center; justify-content:center; font-size:13px; font-weight:900; color:#fff; box-shadow:0 2px 6px -1px rgba(0,0,0,.5); }
+.songlist{ margin-top:34px; display:grid; grid-template-columns:1fr 1fr; gap:16px 26px; }
+.songlist .sg{ display:flex; align-items:center; gap:15px; font-size:min(2.6vh,24px); font-weight:800;
+  background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:14px 20px; }
+.songlist .sg .n{ width:34px; height:34px; border-radius:9px; flex:none; display:flex;
+  align-items:center; justify-content:center; font-size:15px; font-weight:900; color:#fff; box-shadow:0 2px 6px -1px rgba(0,0,0,.5); }
 .songlist .sg .sgt{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
 /* ============ Slide: TOTAL SEGUNDOS (barras apiladas) ============ */
