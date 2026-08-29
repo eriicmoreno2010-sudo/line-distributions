@@ -54,18 +54,18 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .slide-sub.song-sub{ font-size:24px; color:var(--text); letter-spacing:1px; text-transform:none; margin-bottom:22px; }
 
 /* ============ Slide: PORTADA ============ */
-.cover-slide{ flex-direction:row; align-items:stretch; gap:min(6vw,90px); padding:56px min(6vw,90px); overflow:hidden; }
+.cover-slide{ --cov:min(74vh,720px); flex-direction:row; align-items:center; gap:min(6vw,90px); padding:56px min(6vw,90px); overflow:hidden; }
 /* resplandor suave de fondo detrás de la portada */
 .cover-glow{ position:absolute; left:6%; top:50%; width:78vh; height:78vh; transform:translateY(-50%);
   border-radius:50%; pointer-events:none;
   background:radial-gradient(circle, rgba(124,92,255,.30), rgba(124,92,255,0) 62%); filter:blur(28px); }
-.cover-art-wrap{ position:relative; flex:none; align-self:center; }
-.cover-art{ width:min(74vh,720px); height:min(74vh,720px); border-radius:30px; object-fit:cover;
+.cover-art-wrap{ position:relative; flex:none; }
+.cover-art{ width:var(--cov); height:var(--cov); border-radius:30px; object-fit:cover;
   box-shadow:0 46px 100px -26px rgba(0,0,0,.85), 0 0 0 1px rgba(255,255,255,.06) inset;
   background:var(--panel2); display:block; }
 .cover-noart{ display:flex; align-items:center; justify-content:center; font-size:110px;
   color:var(--text3); border:2px dashed var(--border); }
-.cover-info{ flex:1; display:flex; flex-direction:column; gap:8px; min-width:0; min-height:0; z-index:1; }
+.cover-info{ flex:1; height:var(--cov); display:flex; flex-direction:column; gap:8px; min-width:0; min-height:0; z-index:1; }
 .cover-info .tag{ align-self:flex-start; font-size:17px; font-weight:900; letter-spacing:4px; text-transform:uppercase;
   color:var(--text2); background:var(--panel2); border:1px solid var(--border); border-radius:999px; padding:8px 18px; margin-bottom:12px; }
 .cover-info .grp{ font-size:min(3.4vh,30px); font-weight:800; letter-spacing:3px; color:var(--text2); text-transform:uppercase; }
