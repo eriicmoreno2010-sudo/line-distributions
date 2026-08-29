@@ -93,16 +93,31 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .ts-tag{ font-size:18px; font-weight:900; letter-spacing:1.5px; text-transform:uppercase; color:var(--text2); }
 .ts-tag.song-tag{ font-size:24px; letter-spacing:.5px; text-transform:none; color:var(--text); }
 .ts-tag2{ font-size:18px; font-weight:900; letter-spacing:1.5px; text-transform:uppercase; color:var(--text2); }
-.ts-rows{ flex:1; display:flex; flex-direction:column; margin-top:16px; min-height:0; }
-.ts-row{ flex:1; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:15px; }
+.ts-rows{ flex:1; position:relative; margin-top:16px; min-height:0; }
+.ts-row{ position:absolute; left:0; right:0; top:0; display:grid; grid-template-columns:auto 1fr auto;
+  align-items:center; gap:15px; will-change:transform;
+  transition:transform .9s cubic-bezier(.22,1,.36,1); }
+.ts-row.no-anim{ transition:none; }
 .ts-row .ph{ width:min(5.2vh,52px); height:min(5.2vh,52px); border-radius:50%; object-fit:cover;
   border:3px solid var(--accent); flex:none; }
 .ts-row .mid{ min-width:0; }
 .ts-row .mid .nm{ font-size:min(2.4vh,21px); font-weight:900; color:var(--accent); line-height:1.1; }
 .ts-row .bar{ height:12px; border-radius:999px; background:var(--panel2); overflow:hidden; margin-top:6px; }
 .ts-row .fill{ height:100%; width:0; background:var(--accent); border-radius:999px;
-  transition:width .8s cubic-bezier(.4,0,.2,1); }
+  transition:width .9s cubic-bezier(.22,1,.36,1); }
+.ts-row.no-anim .fill{ transition:none; }
 .ts-row .sec{ font-size:min(2.4vh,21px); font-weight:900; font-variant-numeric:tabular-nums; }
+
+/* ============ Slide: AVERAGE por canción ============ */
+.avg-slide{ align-items:center; padding:44px 70px 44px; }
+.avg-rows{ flex:1; display:flex; flex-direction:column; width:min(920px,84%); align-self:center; min-height:0; }
+.avg-row{ flex:1; display:grid; grid-template-columns:46px min(6vh,60px) 1fr auto; align-items:center; gap:20px;
+  border-bottom:1px solid var(--border); }
+.avg-row:last-child{ border-bottom:none; }
+.avg-row .rk{ font-size:min(2.6vh,24px); font-weight:900; color:var(--text3); text-align:center; }
+.avg-row .ph{ width:min(6vh,60px); height:min(6vh,60px); border-radius:50%; object-fit:cover; border:3px solid var(--accent); }
+.avg-row .nm{ font-size:min(3.1vh,30px); font-weight:900; color:var(--accent); }
+.avg-row .sec{ font-size:min(3.1vh,30px); font-weight:900; font-variant-numeric:tabular-nums; }
 
 /* ============ Slide: DONUT + evenness ============ */
 /* Título arriba centrado (compacto); el donut llena todo lo de abajo a la izquierda. */
