@@ -44,7 +44,7 @@
     }
   ],
   "songColors": [
-    "#6b0014",
+    "#700015",
     "#4dabf7",
     "#ffa94d",
     "#cc5de8",
@@ -63,7 +63,9 @@
     "MAKI": "#ff6fa3"
   },
   "bgAudio": {
-    "src": "audio/team_3rdminialbumweonfirebg.mp3"
+    "src": "audio/team_3rdminialbumweonfirebg.mp3",
+    "start": 0,
+    "end": 12
   },
   "raceColor": "#883030"
 }
