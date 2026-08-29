@@ -54,7 +54,7 @@
 </div>
 
 <div id="tools">
-  <button id="back" class="ng">← Biblioteca</button>
+  <button id="back" class="ng" onclick="location.href='library.html'">← Biblioteca</button>
   <button id="pickphoto">🖼️ Foto grupal</button>
   <span class="lbl">Fondo</span>
   <input type="color" id="bg" value="#e8546b">
@@ -65,75 +65,6 @@
   <button id="save">💾 Guardar PNG</button>
 </div>
 
-<script>
-const P = new URLSearchParams(location.search);
-const ALBUM_URL = P.get("album") || "";
-const EXPORT = P.get("export");
-const desktop = (window.desktop && window.desktop.isDesktop) ? window.desktop : null;
-
-function fit(){
-  const s = Math.min(window.innerWidth/1280, window.innerHeight/720);
-  document.getElementById("thumb").style.transform = "scale("+s+")";
-  document.body.style.height = (720*s)+"px";
-}
-window.addEventListener("resize", fit); fit();
-
-const el = id => document.getElementById(id);
-let album = null;
-
-function paint(){
-  el("thumb").style.setProperty("--bg", album.thumbBg || "#e8546b");
-  el("atitle").textContent = album.album || "";
-  el("asub").textContent = ((album.group || "") + " " + (album.thumbTag || "1ST MINI ALBUM")).trim();
-  const p = el("photo");
-  const photo = album.thumbPhoto || album.cover;   // foto propia de la miniatura (independiente del disco)
-  if(photo){
-    p.innerHTML = '<img src="' + photo + '?v=' + Date.now() + '" alt="">';
-  } else {
-    p.innerHTML = '<div class="ph-empty">Elige la foto grupal →</div>';
-  }
-  // shrink very long titles so they fit
-  const len = (album.album || "").length;
-  el("atitle").style.fontSize = (len > 9 ? Math.max(50, 90 - (len - 9) * 5) : 90) + "px";
-}
-
-async function load(){
-  if(!ALBUM_URL){ document.body.innerHTML = "<p style='color:#fff;padding:40px'>Falta ?album=…</p>"; return; }
-  if(desktop){ const r = await desktop.loadSong(ALBUM_URL); album = (r && r.ok) ? r.data : null; }
-  else { try{ album = await fetch(ALBUM_URL).then(r => r.json()); }catch(e){} }
-  if(!album){ document.body.innerHTML = "<p style='color:#fff;padding:40px'>No se pudo cargar el álbum.</p>"; return; }
-  el("bg").value = album.thumbBg || "#e8546b";
-  el("ti").value = album.album || "";
-  el("tg").value = album.thumbTag || "1ST MINI ALBUM";
-  paint();
-
-  if(EXPORT || !desktop){ el("tools").style.display = "none"; return; }   // captura / navegador: sin barra
-
-  const save = async (silent) => { if(!silent) return; try{ await desktop.saveSong(ALBUM_URL, album); }catch(e){} };
-  el("bg").oninput  = () => { album.thumbBg = el("bg").value; paint(); };
-  el("bg").onchange = () => save(true);
-  el("ti").oninput  = () => { album.album = el("ti").value; paint(); };
-  el("ti").onchange = () => save(true);
-  el("tg").oninput  = () => { album.thumbTag = el("tg").value; paint(); };
-  el("tg").onchange = () => save(true);
-  el("pickphoto").onclick = async () => {
-    const b = el("pickphoto"); const t0 = b.textContent; b.disabled = true; b.textContent = "⏳…";
-    let res = null;
-    try{ res = await desktop.pickCover({ group: album.group, song: album.album + "_thumb" }); }catch(e){}
-    b.disabled = false; b.textContent = t0;
-    if(res && res.ok){ album.thumbPhoto = res.cover; paint(); save(true); }
-  };
-  el("back").onclick = () => { location.href = "library.html"; };
-  el("save").onclick = async (e) => {
-    const b = e.target; const t0 = b.textContent; b.textContent = "⏳ Guardando…"; b.disabled = true;
-    await save(true);
-    let res = null;
-    try{ res = await desktop.exportAlbumThumb({ album: ALBUM_URL, name: (album.album || "album").replace(/[^\w\-]+/g, "_") }); }catch(err){}
-    b.textContent = (res && res.ok) ? "✓ Guardada" : (res && res.canceled ? t0 : "✕ Error");
-    b.disabled = false; setTimeout(() => b.textContent = t0, 2200);
-  };
-}
-load();
-</script>
+<script src="js/album-thumb.js?v=1"></script>
 </body>
 </html>
