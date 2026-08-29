@@ -22,6 +22,7 @@ contextBridge.exposeInMainWorld("desktop", {
   groupMembers: (relPath) => ipcRenderer.invoke("group-members", relPath),
   savePhotos: (args) => ipcRenderer.invoke("save-photos", args),
   exportThumb: (args) => ipcRenderer.invoke("export-thumb", args),
+  exportAlbumThumb: (args) => ipcRenderer.invoke("export-album-thumb", args || {}),
   transcribeUrl: (args) => ipcRenderer.invoke("transcribe-url", args || {}),
   onTranscribeProgress: (cb) => ipcRenderer.on("transcribe-progress", (_e, m) => cb(m))
 });

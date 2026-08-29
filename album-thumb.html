@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Miniatura del álbum</title>
+<link rel="stylesheet" href="css/fonts.css?v=51">
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ background:#05050a; font-family:"Montserrat","Segoe UI",Arial,sans-serif; }
+
+  /* lienzo fijo 1280x720 (miniatura YouTube), escalado para previsualizar */
+  #thumb{
+    position:relative; width:1280px; height:720px; overflow:hidden; transform-origin:top left;
+    --bg:#e8546b;
+    background:radial-gradient(135% 105% at 50% -12%,
+      color-mix(in srgb, var(--bg) 60%, #fff), var(--bg) 74%);
+    color:#fff;
+  }
+  #head{ position:absolute; top:30px; left:40px; right:40px; text-align:center; z-index:2; }
+  #atitle{ font-size:90px; font-weight:900; line-height:.94; letter-spacing:1px; text-transform:uppercase;
+           color:color-mix(in srgb, var(--bg) 42%, #000); text-shadow:0 2px 0 rgba(255,255,255,.18); }
+  #asub{ font-size:27px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-top:8px;
+         color:color-mix(in srgb, var(--bg) 38%, #000); }
+  #adist{ font-size:23px; font-weight:900; letter-spacing:4px; text-transform:uppercase; margin-top:2px;
+          color:color-mix(in srgb, var(--bg) 48%, #000); }
+
+  #photo{ position:absolute; left:26px; right:26px; bottom:26px; top:210px; border-radius:22px; overflow:hidden;
+          background:rgba(0,0,0,.12); box-shadow:0 20px 55px -20px rgba(0,0,0,.55);
+          outline:4px solid rgba(255,255,255,.35); outline-offset:-4px; }
+  #photo img{ width:100%; height:100%; object-fit:cover; object-position:center 28%; display:block; }
+  #photo .ph-empty{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+                    color:rgba(255,255,255,.7); font-weight:800; font-size:22px; }
+
+  /* barra de edición (nunca sale en la imagen exportada) */
+  #tools{ position:fixed; top:10px; left:10px; z-index:999; display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+          background:rgba(10,10,16,.9); padding:9px 11px; border-radius:12px; }
+  #tools button{ border:0; border-radius:8px; padding:9px 12px; font-weight:800; font-size:13px; cursor:pointer;
+                 background:#7c5cff; color:#fff; font-family:"Segoe UI",Arial,sans-serif; }
+  #tools button.ng{ background:#22222e; color:#eee; }
+  #tools input[type=text]{ background:#1a1a26; border:1px solid #33334a; border-radius:8px; color:#fff;
+                           padding:8px 10px; font:700 13px "Segoe UI",Arial; }
+  #tools input[type=color]{ width:38px; height:34px; border:1px solid #33334a; border-radius:8px; background:#1a1a26; cursor:pointer; }
+  #tools .lbl{ color:#9a9ab0; font:700 12px "Segoe UI",Arial; }
+</style>
+</head>
+<body>
+<div id="thumb">
+  <div id="head">
+    <div id="atitle">—</div>
+    <div id="asub">—</div>
+    <div id="adist">ALBUM DISTRIBUTION</div>
+  </div>
+  <div id="photo"><div class="ph-empty">Elige la foto grupal →</div></div>
+</div>
+
+<div id="tools">
+  <button id="back" class="ng">← Biblioteca</button>
+  <button id="pickphoto">🖼️ Foto grupal</button>
+  <span class="lbl">Fondo</span>
+  <input type="color" id="bg" value="#e8546b">
+  <span class="lbl">Título</span>
+  <input type="text" id="ti" size="12">
+  <span class="lbl">Subtítulo</span>
+  <input type="text" id="tg" size="16">
+  <button id="save">💾 Guardar PNG</button>
+</div>
+
+<script>
+const P = new URLSearchParams(location.search);
+const ALBUM_URL = P.get("album") || "";
+const EXPORT = P.get("export");
+const desktop = (window.desktop && window.desktop.isDesktop) ? window.desktop : null;
+
+function fit(){
+  const s = Math.min(window.innerWidth/1280, window.innerHeight/720);
+  document.getElementById("thumb").style.transform = "scale("+s+")";
+  document.body.style.height = (720*s)+"px";
+}
+window.addEventListener("resize", fit); fit();
+
+const el = id => document.getElementById(id);
+let album = null;
+
+function paint(){
+  el("thumb").style.setProperty("--bg", album.thumbBg || "#e8546b");
+  el("atitle").textContent = album.album || "";
+  el("asub").textContent = ((album.group || "") + " " + (album.thumbTag || "1ST MINI ALBUM")).trim();
+  const p = el("photo");
+  if(album.cover){
+    p.innerHTML = '<img src="' + album.cover + '?v=' + Date.now() + '" alt="">';
+  } else {
+    p.innerHTML = '<div class="ph-empty">Elige la foto grupal →</div>';
+  }
+  // shrink very long titles so they fit
+  const len = (album.album || "").length;
+  el("atitle").style.fontSize = (len > 9 ? Math.max(50, 90 - (len - 9) * 5) : 90) + "px";
+}
+
+async function load(){
+  if(!ALBUM_URL){ document.body.innerHTML = "<p style='color:#fff;padding:40px'>Falta ?album=…</p>"; return; }
+  if(desktop){ const r = await desktop.loadSong(ALBUM_URL); album = (r && r.ok) ? r.data : null; }
+  else { try{ album = await fetch(ALBUM_URL).then(r => r.json()); }catch(e){} }
+  if(!album){ document.body.innerHTML = "<p style='color:#fff;padding:40px'>No se pudo cargar el álbum.</p>"; return; }
+  el("bg").value = album.thumbBg || "#e8546b";
+  el("ti").value = album.album || "";
+  el("tg").value = album.thumbTag || "1ST MINI ALBUM";
+  paint();
+
+  if(EXPORT || !desktop){ el("tools").style.display = "none"; return; }   // captura / navegador: sin barra
+
+  const save = async (silent) => { if(!silent) return; try{ await desktop.saveSong(ALBUM_URL, album); }catch(e){} };
+  el("bg").oninput  = () => { album.thumbBg = el("bg").value; paint(); };
+  el("bg").onchange = () => save(true);
+  el("ti").oninput  = () => { album.album = el("ti").value; paint(); };
+  el("ti").onchange = () => save(true);
+  el("tg").oninput  = () => { album.thumbTag = el("tg").value; paint(); };
+  el("tg").onchange = () => save(true);
+  el("pickphoto").onclick = async () => {
+    const b = el("pickphoto"); const t0 = b.textContent; b.disabled = true; b.textContent = "⏳…";
+    let res = null;
+    try{ res = await desktop.pickCover({ group: album.group, song: album.album + "_thumb" }); }catch(e){}
+    b.disabled = false; b.textContent = t0;
+    if(res && res.ok){ album.cover = res.cover; paint(); save(true); }
+  };
+  el("back").onclick = () => { location.href = "library.html"; };
+  el("save").onclick = async (e) => {
+    const b = e.target; const t0 = b.textContent; b.textContent = "⏳ Guardando…"; b.disabled = true;
+    await save(true);
+    let res = null;
+    try{ res = await desktop.exportAlbumThumb({ album: ALBUM_URL, name: (album.album || "album").replace(/[^\w\-]+/g, "_") }); }catch(err){}
+    b.textContent = (res && res.ok) ? "✓ Guardada" : (res && res.canceled ? t0 : "✕ Error");
+    b.disabled = false; setTimeout(() => b.textContent = t0, 2200);
+  };
+}
+load();
+</script>
+</body>
+</html>

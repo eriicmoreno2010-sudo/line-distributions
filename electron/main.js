@@ -583,6 +583,30 @@ ipcMain.handle("export-thumb", async (evt, args) => {
   finally{ if(win) win.destroy(); }
 });
 
+// Miniatura del ÁLBUM (album-thumb.html) -> PNG 1280x720.
+ipcMain.handle("export-album-thumb", async (evt, args) => {
+  args = args || {};
+  const album = args.album || "";
+  const base = (args.name || "album");
+  const def = path.join(app.getPath("pictures") || ROOT, base + "_albumthumb.png");
+  const { canceled, filePath } = await dialog.showSaveDialog({
+    title: "Guardar miniatura del álbum", defaultPath: def,
+    filters: [{ name: "Imagen PNG", extensions: ["png"] }]
+  });
+  if(canceled || !filePath) return { ok: false, canceled: true };
+  let win;
+  try{
+    win = new BrowserWindow({ width: 1280, height: 720, show: false, useContentSize: true,
+      webPreferences: { webSecurity: false, preload: path.join(__dirname, "preload.js") } });
+    await win.loadFile(path.join(ROOT, "album-thumb.html"), { search: "album=" + album + "&export=1" });
+    await new Promise(r => setTimeout(r, 1600));
+    const img = await win.webContents.capturePage({ x: 0, y: 0, width: 1280, height: 720 });
+    fs.writeFileSync(filePath, img.toPNG());
+    return { ok: true, out: filePath };
+  }catch(e){ return { ok: false, error: e.message }; }
+  finally{ if(win) win.destroy(); }
+});
+
 // =========================================================================
 // Transcriptor: YouTube -> audio (yt-dlp) -> Whisper.cpp (traduce a inglés) ->
 // texto limpio SIN tiempos, listo para copiar. Todo con binarios portátiles en
