@@ -122,6 +122,8 @@
   function buildSlides(A){
     const slides = [];
     const membersByTotal = [...A.members].sort((a,b)=> b.total - a.total);
+    // color de cada canción (elegido en el editor); usado en portada y race
+    const songColorOf = j => (A.album.songColors && A.album.songColors[j]) || SONG_COLORS[j % SONG_COLORS.length];
 
     // ---------- 1) PORTADA ----------
     {
@@ -130,13 +132,14 @@
         ? `<img class="cover-art" src="${esc(A.album.cover)}" alt="">`
         : `<div class="cover-art cover-noart">💿</div>`;
       const songs = A.songs.map((s,i) =>
-        `<div class="sg"><span class="n" style="background:${s.color}">${i+1}</span>${esc(s.title)}</div>`).join("");
+        `<div class="sg"><span class="n" style="background:${songColorOf(i)}">${i+1}</span><span class="sgt">${esc(s.title)}</span></div>`).join("");
       el.innerHTML = `
-        ${art}
+        <div class="cover-glow"></div>
+        <div class="cover-art-wrap">${art}</div>
         <div class="cover-info">
+          <div class="tag">ALBUM DISTRIBUTION</div>
           <div class="grp">${esc(A.album.group)}</div>
           <div class="alb">${esc(A.album.album)}</div>
-          <div class="tag">Album Distribution</div>
           <div class="songlist">${songs}</div>
         </div>`;
       slides.push({ el, dur:7 });
@@ -321,20 +324,23 @@
       let cum = 0; const paths = membersByTotal.map(m => {
         const frac = A.grand ? m.total/A.grand : 0;
         const a0 = cum*TAU, a1 = (cum + Math.min(frac,0.99999))*TAU; cum += frac;
-        return frac>0 ? `<path d="${ring(a0,a1)}" fill="${m.color}"></path>` : "";
+        return frac>0 ? `<path d="${ring(a0,a1)}" fill="${m.color}" stroke="#0a0a0f" stroke-width="4"></path>` : "";
       }).join("");
       const legend = membersByTotal.map(m =>
         `<div class="li"><span class="dot" style="background:${m.color}"></span>${esc(m.name)}
           <span class="v">${m.pct.toFixed(2)}% · ${fmtS(m.total)}</span></div>`).join("");
       el.innerHTML = `
         <div class="slide-title">Album distribution</div>
-        <div class="slide-sub">Total seconds per member · evenness</div>
+        <div class="slide-sub">Total seconds per member</div>
         <div class="donut-wrap">
           <div class="donut-holder" style="position:relative">
             <svg viewBox="0 0 500 500">${paths}</svg>
-            <div class="even-badge"><div class="num">${Math.round(A.evenness*100)}%</div><div class="lbl">${evenLabel(A.evenness)}</div></div>
           </div>
           <div class="donut-legend">${legend}</div>
+        </div>
+        <div class="even-corner">
+          <div class="ec-lbl">Evenness</div>
+          <div class="ec-box">${(A.evenness*100).toFixed(2)}%</div>
         </div>`;
       slides.push({ el, dur:8 });
     }
