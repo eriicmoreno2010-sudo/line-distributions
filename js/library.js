@@ -158,13 +158,27 @@
     const btn   = document.getElementById("newAlbum");
     const create = document.getElementById("alCreate");
 
+    let tickOrder = [];   // orden en que el usuario va marcando (= orden del álbum)
     function renderSongs(group){
+      tickOrder = [];
       const mine = songs.filter(s => s.group === group)
                         .sort((a,b) => a.song.localeCompare(b.song));
       list.innerHTML = mine.length
-        ? mine.map(s => `<label><input type="checkbox" value="${s.path}"> ${s.song}</label>`).join("")
+        ? mine.map(s => `<label><input type="checkbox" value="${s.path}"> <span class="ord"></span>${s.song}</label>`).join("")
         : '<div class="none">Este grupo no tiene canciones.</div>';
     }
+    // al marcar/desmarcar: mantener el orden de marcado y numerar
+    list.addEventListener("change", e => {
+      const cb = e.target; if(!cb || cb.type !== "checkbox") return;
+      if(cb.checked) tickOrder.push(cb.value);
+      else tickOrder = tickOrder.filter(v => v !== cb.value);
+      list.querySelectorAll("label").forEach(l => {
+        const v = l.querySelector("input").value;
+        const i = tickOrder.indexOf(v);
+        const o = l.querySelector(".ord");
+        if(o) o.textContent = i >= 0 ? (i+1) + ". " : "";
+      });
+    });
     function open(){
       const gs = Object.keys(groups).sort();
       if(!gs.length){ err.textContent = "Primero crea alguna canción."; }
@@ -182,7 +196,7 @@
     create.onclick = async () => {
       const album = document.getElementById("alName").value.trim();
       const group = gSel.value;
-      const chosen = [...list.querySelectorAll("input:checked")].map(i => i.value);
+      const chosen = tickOrder.slice();   // en el orden en que las marcaste
       if(!album){ err.textContent = "Pon el nombre del álbum."; return; }
       if(!chosen.length){ err.textContent = "Marca al menos una canción."; return; }
       create.disabled = true; create.textContent = "Creando…";

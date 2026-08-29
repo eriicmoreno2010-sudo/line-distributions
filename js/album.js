@@ -152,20 +152,46 @@
       });
       el.innerHTML = `
         <div class="slide-title">Total de segundos</div>
-        <div class="slide-sub">Todo el álbum · quién ha cantado más</div>
+        <div class="slide-sub">Se van sumando canción a canción · <span class="now-song"></span></div>
         <div class="rows">${rows.map(r => `
           <div class="trow" style="--accent:${r.m.color}">
             <img class="ph" src="${esc(r.m.image)}" alt="">
             <div class="nm">${esc(r.m.name)}</div>
             <div class="stack">${r.segs.map(g => `<div class="seg" data-w="${g.w}" style="width:0;background:${g.color}"></div>`).join("")}</div>
-            <div class="fig"><div class="pct">${r.m.pct.toFixed(1)}%</div><div class="sec">${fmtS(r.m.total)}</div></div>
+            <div class="fig"><div class="pct">0.0%</div><div class="sec">0.00s</div></div>
           </div>`).join("")}
         </div>
         <div class="song-legend">${A.songs.map((s,i) =>
           `<div class="li"><span class="sw" style="background:${s.color}"></span>${i+1}. ${esc(s.title)}</div>`).join("")}</div>`;
-      const enter = () => el.querySelectorAll(".seg").forEach(s => s.style.width = s.dataset.w + "%");
-      const reset = () => el.querySelectorAll(".seg").forEach(s => s.style.width = "0");
-      slides.push({ el, dur:9, enter, reset });
+      const nowEl = el.querySelector(".now-song");
+      const enter = () => {
+        const trows = [...el.querySelectorAll(".trow")];
+        const rd = trows.map(tr => ({ segs:[...tr.querySelectorAll(".seg")],
+          pct:tr.querySelector(".pct"), sec:tr.querySelector(".sec") }));
+        const nS = A.songs.length, running = rows.map(()=>0);
+        let k = 0;
+        const step = () => {
+          if(k >= nS) return;
+          rows.forEach((r,ri) => {
+            rd[ri].segs[k].style.width = rd[ri].segs[k].dataset.w + "%";
+            running[ri] += r.m.per[A.songs[k].i] || 0;
+          });
+          const g = running.reduce((a,b)=>a+b,0) || 1;
+          rows.forEach((r,ri) => { rd[ri].sec.textContent = fmtS(running[ri]);
+            rd[ri].pct.textContent = (running[ri]/g*100).toFixed(1) + "%"; });
+          if(nowEl) nowEl.textContent = (k+1) + ". " + A.songs[k].title;
+          k++; el._stepT = setTimeout(step, 1050);
+        };
+        step();
+      };
+      const reset = () => {
+        clearTimeout(el._stepT);
+        el.querySelectorAll(".seg").forEach(s => s.style.width = "0");
+        el.querySelectorAll(".trow .sec").forEach(s => s.textContent = "0.00s");
+        el.querySelectorAll(".trow .pct").forEach(s => s.textContent = "0.0%");
+        if(nowEl) nowEl.textContent = "";
+      };
+      slides.push({ el, dur: A.songs.length + 4, enter, reset });
     }
 
     // ---------- 3) DONUT + evenness ----------
@@ -206,36 +232,41 @@
         <div class="bump-wrap"></div>`;
       const draw = () => {
         const wrap = el.querySelector(".bump-wrap");
-        const W=1000, H=560, mL=48, mR=250, mT=26, mB=92;
+        // El bloque de fotos+nombres vive en su propia franja a la derecha del todo,
+        // separada del área de líneas, para no tapar los nombres de las canciones.
+        const W=1180, H=560, mL=44, mT=26, mB=86;
+        const xEnd = 780;                 // fin del área de líneas / etiquetas de canción
+        const pcx = 900, pr = 26;         // centro y radio de la foto (franja derecha)
         const n = A.songs.length, maxR = Math.max(A.maxRank, 1);
-        const xAt = i => n>1 ? mL + i*(W-mL-mR)/(n-1) : mL + (W-mL-mR)/2;
+        const xAt = i => n>1 ? mL + i*(xEnd-mL)/(n-1) : mL + (xEnd-mL)/2;
         const yAt = r => mT + (maxR>1 ? (r-1)*(H-mT-mB)/(maxR-1) : (H-mT-mB)/2);
         let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">`;
         // guías de rango
         for(let r=1;r<=maxR;r++){ const y=yAt(r);
-          svg += `<line class="axis" x1="${mL}" y1="${y}" x2="${W-mR}" y2="${y}"></line>`;
+          svg += `<line class="axis" x1="${mL}" y1="${y}" x2="${xEnd}" y2="${y}"></line>`;
           svg += `<text class="rlab" x="${mL-12}" y="${y+5}" text-anchor="end">${r}</text>`; }
-        // etiquetas de canción (x)
+        // etiquetas de canción (x) — la primera a la izquierda, la última a la derecha
         A.songs.forEach((s,i)=>{ const x=xAt(i);
-          svg += `<text class="xlab" x="${x}" y="${H-mB+26}" text-anchor="middle">${esc(s.title)}</text>`; });
+          const anch = i===0 ? "start" : (i===n-1 ? "end" : "middle");
+          svg += `<text class="xlab" x="${x}" y="${H-mB+28}" text-anchor="${anch}">${esc(s.title)}</text>`; });
         // una línea por miembro
         [...A.members].sort((a,b)=>b.total-a.total).forEach(m => {
           const pts = [];
           A.songs.forEach((s,i)=>{ const r=m.ranks[i]; if(r) pts.push([xAt(i), yAt(r), i]); });
           if(!pts.length) return;
-          const d = pts.map((p,k)=> (k?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
-          // longitud aprox para animar el trazado
-          let len=0; for(let k=1;k<pts.length;k++){ len += Math.hypot(pts[k][0]-pts[k-1][0], pts[k][1]-pts[k-1][1]); }
+          const ey = pts[pts.length-1][1];
+          // la línea se prolonga en horizontal hasta la foto de la derecha
+          const dPts = pts.concat([[pcx - pr - 6, ey]]);
+          const d = dPts.map((p,k)=> (k?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+          let len=0; for(let k=1;k<dPts.length;k++){ len += Math.hypot(dPts[k][0]-dPts[k-1][0], dPts[k][1]-dPts[k-1][1]); }
           svg += `<path class="bump-line" style="--len:${Math.max(len,1)}" stroke="${m.color}" d="${d}"></path>`;
           pts.forEach(p => { svg += `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="7" fill="${m.color}"></circle>`; });
-          // foto + nombre al final (último punto)
-          const last = pts[pts.length-1];
-          const ex = W-mR+16, ey = last[1];
+          // foto + nombre en la franja derecha (mismo alto que su último puesto)
           const cid = "clipbump" + m.name.replace(/[^a-z0-9]/gi, "");
-          svg += `<clipPath id="${cid}"><circle cx="${ex+22}" cy="${ey}" r="22"></circle></clipPath>`;
-          svg += `<circle cx="${ex+22}" cy="${ey}" r="24" fill="none" stroke="${m.color}" stroke-width="3"></circle>`;
-          svg += `<image href="${esc(m.image)}" x="${ex}" y="${ey-22}" width="44" height="44" clip-path="url(#${cid})" preserveAspectRatio="xMidYMid slice"></image>`;
-          svg += `<text x="${ex+54}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="18">${esc(m.name)}</text>`;
+          svg += `<clipPath id="${cid}"><circle cx="${pcx}" cy="${ey}" r="${pr}"></circle></clipPath>`;
+          svg += `<image href="${esc(m.image)}" x="${pcx-pr}" y="${ey-pr}" width="${pr*2}" height="${pr*2}" clip-path="url(#${cid})" preserveAspectRatio="xMidYMid slice"></image>`;
+          svg += `<circle cx="${pcx}" cy="${ey}" r="${pr}" fill="none" stroke="${m.color}" stroke-width="3"></circle>`;
+          svg += `<text x="${pcx+pr+12}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="19">${esc(m.name)}</text>`;
         });
         svg += `</svg>`;
         wrap.innerHTML = svg;
@@ -245,50 +276,61 @@
       slides.push({ el, dur:10, enter, reset });
     }
 
-    // ---------- 5) Nº DE VECES 1º, 2º, ... ----------
+    // ---------- 5) Nº DE VECES 1º, 2º, ... (una por puesto, tipo gráfica) ----------
     for(let place=1; place<=Math.max(A.maxRank,1); place++){
       const el = makeSlide("places", "places-slide");
       const data = A.members.map(m => ({ m, c: m.rankCount[place]||0 }))
                             .sort((a,b)=> b.c - a.c);
       const maxC = Math.max(1, ...data.map(d=>d.c));
+      const glines = []; for(let i=1;i<=maxC;i++) glines.push(`<div class="gl" style="bottom:${i/maxC*100}%"></div>`);
+      const ylabs  = []; for(let i=0;i<=maxC;i++) ylabs.push(`<span style="bottom:${i/maxC*100}%">${i}</span>`);
       el.innerHTML = `
         <div class="slide-title">Número de veces</div>
         <div class="place-big">${place}º puesto</div>
-        <div class="bars">${data.map(d => `
-          <div class="bar-col${d.c ? "" : " zero"}">
-            <div class="cnt" style="color:${d.c ? d.m.color : "var(--text3)"}">${d.c}</div>
-            <div class="bar" data-h="${d.c ? d.c/maxC*100 : 0}" style="height:0;background:${d.m.color}">
-              ${d.c ? `<img class="ph" src="${esc(d.m.image)}" alt="">` : ""}
+        <div class="pchart">
+          <div class="yax">${ylabs.join("")}</div>
+          <div class="plot">
+            ${glines.join("")}
+            <div class="cols">${data.map(d => `
+              <div class="bar-col${d.c ? "" : " zero"}">
+                <div class="cnt" style="color:${d.c ? d.m.color : "var(--text3)"}">${d.c}</div>
+                <div class="bar" data-h="${d.c ? d.c/maxC*100 : 0}" style="height:0;background:${d.m.color}">
+                  ${d.c ? `<img class="ph" src="${esc(d.m.image)}" alt="">` : ""}
+                </div>
+                <div class="nm">${esc(d.m.name)}</div>
+              </div>`).join("")}
             </div>
-            <div class="nm">${esc(d.m.name)}</div>
-          </div>`).join("")}
+          </div>
         </div>`;
-      const enter = () => el.querySelectorAll(".bar").forEach(b => { const h=+b.dataset.h; b.style.height = (h>0?Math.max(h,10):0) + "%"; });
+      const enter = () => el.querySelectorAll(".bar").forEach(b => { const h=+b.dataset.h; b.style.height = (h>0?Math.max(h,8):0) + "%"; });
       const reset = () => el.querySelectorAll(".bar").forEach(b => b.style.height = "0");
       slides.push({ el, dur:4.5, enter, reset });
     }
 
-    // ---------- 6) FICHA PERSONAL por miembro ----------
-    membersByTotal.forEach(m => {
-      const el = makeSlide("member", "member-slide");
-      const top = m.topSong ? `<div class="song">${esc(m.topSong.title)}</div><div class="s">${fmtS(m.topSec)}</div>`
-                            : `<div class="song">—</div>`;
-      const low = m.lowSong ? `<div class="song">${esc(m.lowSong.title)}</div><div class="s">${fmtS(m.lowSec)}</div>`
-                            : `<div class="song">—</div>`;
+    // ---------- 6) MOST LINES / LESS LINES (una sola diapositiva, todos) ----------
+    {
+      const el = makeSlide("mostless", "mostless-slide");
+      const most = [...A.members].filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
+      const less = [...A.members].filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
+      const rowH = (m, song, sec) => `
+        <div class="ml-row" style="--accent:${m.color}">
+          <img class="ph" src="${esc(m.image)}" alt="">
+          <div class="who"><div class="nm">${esc(m.name)}</div><div class="sg">${esc(song ? song.title : "—")}</div></div>
+          <div class="sec">${fmtS(sec)}</div>
+        </div>`;
       el.innerHTML = `
-        <div class="mcard" style="--accent:${m.color}">
-          <img class="big-ph" src="${esc(m.image)}" alt="">
-          <div class="info">
-            <div class="nm">${esc(m.name)}</div>
-            <div class="tot">${fmtS(m.total)} en total · ${m.pct.toFixed(1)}% del álbum</div>
-            <div class="split">
-              <div class="box top"><div class="k">▲ Donde más cantó</div>${top}</div>
-              <div class="box low"><div class="k">▼ Donde menos cantó</div>${low}</div>
-            </div>
+        <div class="ml-cols">
+          <div class="ml-col most">
+            <div class="ml-head">MOST LINES</div>
+            ${most.map(m => rowH(m, m.topSong, m.topSec)).join("")}
+          </div>
+          <div class="ml-col less">
+            <div class="ml-head">LESS LINES</div>
+            ${less.map(m => rowH(m, m.lowSong, m.lowSec)).join("")}
           </div>
         </div>`;
-      slides.push({ el, dur:5 });
-    });
+      slides.push({ el, dur:8 });
+    }
 
     return slides;
   }
