@@ -59,10 +59,14 @@
       <div class="meta">${(al.songs || []).length} canciones</div>
       <div class="actions">
         <button class="open">▶  Abrir</button>
+        <button class="edit">✎  Editar</button>
         <button class="thumb">🎬  Miniatura</button>
       </div>`;
     el.querySelector(".open").onclick = () => {
       location.href = "album.html?album=" + encodeURIComponent(al.path);
+    };
+    el.querySelector(".edit").onclick = () => {
+      location.href = "album-edit.html?album=" + encodeURIComponent(al.path);
     };
     el.querySelector(".thumb").onclick = () => {
       location.href = "album-thumb.html?album=" + encodeURIComponent(al.path);
