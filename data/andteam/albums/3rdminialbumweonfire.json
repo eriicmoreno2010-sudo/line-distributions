@@ -1,0 +1,16 @@
+{
+  "type": "album",
+  "group": "&TEAM",
+  "album": "3rd Mini Album 'WE ON FIRE'",
+  "cover": "",
+  "theme": "dark",
+  "instrumental": "",
+  "songs": [
+    "data/andteam/bewitched.json",
+    "data/andteam/bewitchedkoreanver.json",
+    "data/andteam/hotline.json",
+    "data/andteam/sakurairoyell.json",
+    "data/andteam/weonfire.json",
+    "data/andteam/weonfirekoreanver.json"
+  ]
+}
