@@ -85,12 +85,17 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .song-legend .li .sw{ width:13px; height:13px; border-radius:4px; }
 
 /* ============ Slide: DONUT + evenness ============ */
-.donut-slide{ align-items:center; padding:34px 56px 54px; }
-/* El donut ocupa todo el alto disponible (como el ranking); la leyenda al lado. */
-.donut-wrap{ flex:1; display:flex; align-items:stretch; justify-content:center; gap:min(5vw,70px); width:100%; min-height:0; }
-.donut-holder{ position:relative; height:100%; display:flex; align-items:center; justify-content:center; flex:none; }
-.donut-holder svg{ height:100%; width:auto; max-height:940px; }
-.donut-legend{ display:flex; flex-direction:column; justify-content:space-evenly; align-self:stretch; padding:8px 0; }
+/* Título arriba centrado (compacto); el donut llena todo lo de abajo a la izquierda. */
+.donut-slide{ align-items:center; padding:22px 56px 24px; }
+.donut-slide .slide-title{ text-align:center; margin-bottom:2px; }
+.donut-slide .slide-sub{ text-align:center; margin-bottom:0; }
+/* El donut ocupa toda la izquierda; la leyenda a la derecha. */
+.donut-wrap{ flex:1; display:flex; align-items:center; justify-content:space-between;
+  gap:min(4vw,56px); width:100%; min-height:0; padding:14px 6px 0; }
+.donut-holder{ position:relative; flex:1; height:100%; display:flex; align-items:center; justify-content:center; min-width:0; }
+.donut-holder svg{ height:100%; width:auto; max-height:1040px; max-width:100%; }
+.donut-legend{ display:flex; flex-direction:column; justify-content:space-evenly; align-self:stretch;
+  flex:none; width:min(40%,480px); padding:8px 0; }
 .donut-legend .li{ display:flex; align-items:center; gap:16px; font-size:min(3.4vh,36px); font-weight:800; }
 .donut-legend .li .dot{ width:24px; height:24px; border-radius:50%; flex:none; }
 .donut-legend .li .v{ color:var(--text2); font-weight:700; font-size:min(2.5vh,24px); margin-left:8px; }

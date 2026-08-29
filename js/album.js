@@ -159,7 +159,7 @@
             <img class="ph" src="${esc(r.m.image)}" alt="">
             <div class="nm">${esc(r.m.name)}</div>
             <div class="stack">${r.segs.map(g => `<div class="seg" data-w="${g.w}" style="width:0;background:${g.color}"></div>`).join("")}</div>
-            <div class="fig"><div class="pct">0.0%</div><div class="sec">0.00s</div></div>
+            <div class="fig"><div class="pct">0.00%</div><div class="sec">0.00s</div></div>
           </div>`).join("")}
         </div>
         <div class="song-legend">${A.songs.map((s,i) =>
@@ -179,7 +179,7 @@
           });
           const g = running.reduce((a,b)=>a+b,0) || 1;
           rows.forEach((r,ri) => { rd[ri].sec.textContent = fmtS(running[ri]);
-            rd[ri].pct.textContent = (running[ri]/g*100).toFixed(1) + "%"; });
+            rd[ri].pct.textContent = (running[ri]/g*100).toFixed(2) + "%"; });
           if(nowEl) nowEl.textContent = (k+1) + ". " + A.songs[k].title;
           k++; el._stepT = setTimeout(step, 1050);
         };
@@ -189,7 +189,7 @@
         clearTimeout(el._stepT);
         el.querySelectorAll(".seg").forEach(s => s.style.width = "0");
         el.querySelectorAll(".trow .sec").forEach(s => s.textContent = "0.00s");
-        el.querySelectorAll(".trow .pct").forEach(s => s.textContent = "0.0%");
+        el.querySelectorAll(".trow .pct").forEach(s => s.textContent = "0.00%");
         if(nowEl) nowEl.textContent = "";
       };
       slides.push({ el, dur: A.songs.length + 4, enter, reset });
@@ -210,7 +210,7 @@
       }).join("");
       const legend = membersByTotal.map(m =>
         `<div class="li"><span class="dot" style="background:${m.color}"></span>${esc(m.name)}
-          <span class="v">${m.pct.toFixed(1)}% · ${fmtS(m.total)}</span></div>`).join("");
+          <span class="v">${m.pct.toFixed(2)}% · ${fmtS(m.total)}</span></div>`).join("");
       el.innerHTML = `
         <div class="slide-title">Album distribution</div>
         <div class="slide-sub">Total seconds per member · evenness</div>
@@ -235,8 +235,8 @@
         const wrap = el.querySelector(".bump-wrap");
         // El bloque de fotos+nombres vive en su propia franja a la derecha del todo,
         // separada del área de líneas, para no tapar los nombres de las canciones.
-        const H=560, mL=44, mT=26, mB=124;
-        const xEnd = 800;                 // fin del área de líneas / etiquetas de canción
+        const H=560, mL=96, mT=26, mB=124;
+        const xEnd = 770;                 // fin del área de líneas / etiquetas de canción
         const pcx = 915, pr = 26;         // centro y radio de la foto (franja derecha)
         const nameX = pcx + pr + 14;
         // el ancho se adapta al nombre más largo, para que los nombres lleguen a la derecha sin cortarse
@@ -253,7 +253,7 @@
         // etiquetas de canción (x) — en DOS filas alternas para que no se solapen los títulos largos
         const yBase = H - mB + 30;
         A.songs.forEach((s,i)=>{ const x=xAt(i);
-          const anch = i===0 ? "start" : (i===n-1 ? "end" : "middle");
+          const anch = "middle";          // todas centradas bajo su punto (incl. 1ª y última)
           const y = yBase + (i % 2) * 30;
           svg += `<line class="axis" x1="${x}" y1="${H-mB+6}" x2="${x}" y2="${y-14}" opacity="0.4"></line>`;
           svg += `<text class="xlab" x="${x}" y="${y}" text-anchor="${anch}">${esc(s.title)}</text>`; });
