@@ -8,8 +8,8 @@
   "songs": [
     "data/andteam/weonfire.json",
     "data/andteam/bewitched.json",
-    "data/andteam/bewitchedkoreanver.json",
     "data/andteam/hotline.json",
+    "data/andteam/bewitchedkoreanver.json",
     "data/andteam/sakurairoyell.json",
     "data/andteam/weonfirekoreanver.json"
   ],
@@ -26,13 +26,13 @@
       "end": 45.406481056390284
     },
     {
-      "start": 32.804659246892975,
-      "end": 45.35746253014283
-    },
-    {
       "audio": "audio/team_3rdminialbumweonfirea3.mp3",
       "start": 49.510608514190324,
       "end": 62.09984443980709
+    },
+    {
+      "start": 32.804659246892975,
+      "end": 45.35746253014283
     },
     {
       "start": 63.26987590428492,
@@ -46,8 +46,8 @@
   "songColors": [
     "#ff4d00",
     "#700015",
-    "#e27495",
     "#f2830d",
+    "#e27495",
     "#fbb1f5",
     "#3d5dff"
   ],
