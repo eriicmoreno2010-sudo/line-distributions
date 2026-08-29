@@ -198,7 +198,7 @@
     // ---------- 3) DONUT + evenness ----------
     {
       const el = makeSlide("donut", "donut-slide");
-      const CX=250, CY=250, R=246, ri=150;   // radio casi al borde del viewBox: el donut llena el SVG
+      const CX=250, CY=250, R=246, ri=120;   // radio grande (llena el SVG) y agujero central más pequeño
       const P = (rad,a)=>[(CX+rad*Math.sin(a)).toFixed(2),(CY-rad*Math.cos(a)).toFixed(2)];
       const ring = (a0,a1)=>{ const large=(a1-a0)>Math.PI?1:0;
         const[x0o,y0o]=P(R,a0),[x1o,y1o]=P(R,a1),[x1i,y1i]=P(ri,a1),[x0i,y0i]=P(ri,a0);
