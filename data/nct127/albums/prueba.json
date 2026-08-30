@@ -9,5 +9,39 @@
     "data/nct127/piata.json",
     "data/nct127/127millionmiles.json",
     "data/nct127/getaway.json"
-  ]
+  ],
+  "clips": [
+    {},
+    {
+      "start": 0,
+      "end": 12
+    },
+    {}
+  ],
+  "songColors": [
+    "#ff4d6d",
+    "#4dabf7",
+    "#ffa94d"
+  ],
+  "raceColor": "#ffffff",
+  "versions": [
+    {
+      "name": "",
+      "songs": [
+        0,
+        1,
+        2
+      ],
+      "members": [
+        "JOHNNY",
+        "TAEYONG",
+        "YUTA",
+        "JAEHYUN",
+        "HAECHAN",
+        "DOYOUNG",
+        "JUNGWOO"
+      ]
+    }
+  ],
+  "bgAudio": {}
 }
