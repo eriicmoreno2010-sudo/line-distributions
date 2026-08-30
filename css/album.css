@@ -114,8 +114,8 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .ts-rows{ flex:1; position:relative; margin-top:16px; min-height:0; }
 /* columna de segundos con ancho FIJO -> la barra nunca se encoge aunque el número pase de 100 */
 .ts-row{ position:absolute; left:0; right:0; top:0; display:grid; grid-template-columns:auto 1fr 118px;
-  align-items:center; gap:15px; will-change:transform;
-  transition:transform 1.4s cubic-bezier(.22,1,.36,1); }
+  align-items:center; gap:15px; will-change:transform; overflow:hidden;
+  transition:transform 1.4s cubic-bezier(.22,1,.36,1), height 1.4s cubic-bezier(.22,1,.36,1), opacity .7s ease; }
 .ts-row.no-anim{ transition:none; }
 .ts-row .ph{ width:min(8.6vh,88px); height:min(8.6vh,88px); border-radius:50%; object-fit:cover;
   border:3px solid var(--accent); flex:none; }
@@ -182,7 +182,10 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 
 /* ============ Slide: Nº DE VECES Nº1/Nº2… (gráfica de barras) ============ */
 .places-slide{ align-items:center; }
-.place-big{ font-size:38px; font-weight:900; margin-bottom:18px; }
+/* título en UNA línea ("Number of times · 1st place") para dejar altura a la gráfica */
+.place-head{ display:flex; align-items:baseline; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom:20px; }
+.places-slide .slide-title{ margin-bottom:0; }
+.place-big{ font-size:38px; font-weight:900; margin-bottom:0; }
 .pchart{ flex:1; width:100%; display:flex; gap:14px; padding:6px 40px 0; min-height:0; }
 .yax{ position:relative; width:26px; margin-bottom:52px; flex:none; }
 .yax span{ position:absolute; right:0; transform:translateY(50%); font:800 14px var(--app-font); color:var(--text3); }
@@ -191,14 +194,16 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .plot .cols{ position:absolute; inset:0; display:flex; align-items:flex-end; justify-content:space-around; gap:22px; }
 .bar-col{ position:relative; flex:1; max-width:120px; height:100%;
   display:flex; flex-direction:column; align-items:center; justify-content:flex-end; }
-.bar-col .cnt{ font-size:26px; font-weight:900; margin-bottom:6px; }
-.bar-col .bar{ width:100%; max-width:84px; border-radius:12px 12px 0 0; background:var(--accent);
+/* el número flota justo encima de su barra (posición fija por JS) y NO ocupa altura,
+   así la barra puede llegar exactamente a su línea de la cuadrícula */
+.bar-col .cnt{ position:absolute; left:0; right:0; text-align:center; font-size:26px; font-weight:900;
+  padding-bottom:6px; pointer-events:none; }
+.bar-col .bar{ width:100%; max-width:84px; flex:none; border-radius:12px 12px 0 0; background:var(--accent);
   transition:height 1s cubic-bezier(.4,0,.2,1); display:flex; align-items:flex-start; justify-content:center; }
 .bar-col .bar .ph{ width:56px; height:56px; border-radius:50%; object-fit:cover; margin-top:8px;
   border:3px solid rgba(255,255,255,.85); }
 .bar-col .nm{ position:absolute; bottom:-30px; left:-6px; right:-6px; text-align:center;
   font-size:15px; font-weight:800; }
-.bar-col.zero .cnt{ margin-bottom:0; }
 
 /* ============ Slide: MOST LINES / LESS LINES ============ */
 .mostless-slide{ padding:46px 66px 46px; }
