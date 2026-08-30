@@ -43,8 +43,12 @@ const Ranking = {
         const rightEl = UI.elements.ranking;
         const leftEl  = document.getElementById("ranking-left");
         const n = this.members.length;
+        // Sub-unidad/solista: dimensionar como si fueran 8 (tarjetas normales) y colocar
+        // arriba (no enormes ni centradas). effN se usa para el tamaño de tarjeta.
+        this.subunit = !!(typeof SONG !== "undefined" && SONG && SONG.subunit);
+        const effN = this.subunit ? Math.max(n, 8) : n;
         // Small groups (<=7) have taller cards -> bigger names look better (CSS uses this)
-        document.body.classList.toggle("few-members", n <= 7);
+        document.body.classList.toggle("few-members", effN <= 7);
         // On phones there's no room for two side columns — always use a single
         // (scrollable) column, even for big groups.
         const mobile = window.matchMedia("(max-width:900px)").matches;
@@ -250,6 +254,8 @@ const Ranking = {
 
         this.columns.forEach(col => {
             const n = col.cap;
+            // en subunidad/solista: repartir como si hubiera 8 (tarjetas normales, arriba)
+            const div = this.subunit ? Math.max(n, 8) : n;
             if(isDesktop){
                 col.el.style.height = "";
                 const style = getComputedStyle(col.el);
@@ -257,7 +263,7 @@ const Ranking = {
                     parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
                 const availableHeight = col.el.clientHeight - verticalPadding;
                 col.cardH = Math.max(72,
-                    (availableHeight - this.gap * (n - 1)) / n);
+                    (availableHeight - this.gap * (div - 1)) / div);
             } else {
                 col.cardH = Math.max(72, ...this.members.map(m => m.element.offsetHeight || 92));
             }

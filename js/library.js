@@ -117,6 +117,7 @@
       document.getElementById("songName").value = "";
       document.getElementById("groupName").value = "";
       document.getElementById("membersTa").value = "";
+      document.getElementById("unitSelect").value = "group";
       modal.classList.add("show");
     }
 
@@ -134,7 +135,8 @@
     mCreate.onclick = async () => {
       const song = document.getElementById("songName").value.trim();
       if(!song){ mError.textContent = "Pon el nombre de la canción."; return; }
-      const args = { song, theme: document.getElementById("themeSelect").value };
+      const args = { song, theme: document.getElementById("themeSelect").value,
+                     subunit: document.getElementById("unitSelect").value === "subunit" };
       if(mode === "existing"){
         const g = sel.value;
         args.group = g; args.sourcePath = groups[g];
