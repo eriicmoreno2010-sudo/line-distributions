@@ -1,0 +1,71 @@
+{
+  "group": "NCT DREAM",
+  "song": "When I'm With You",
+  "video": "",
+  "duration": 0,
+  "theme": "light",
+  "members": [
+    {
+      "name": "MARK",
+      "image": "images/nctdream/whenimwithyou/mark.png",
+      "color": "#cb6ce6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/nctdream/whenimwithyou/renjun.png",
+      "color": "#fac142",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JENO",
+      "image": "images/nctdream/whenimwithyou/jeno.png",
+      "color": "#ff3131",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nctdream/whenimwithyou/haechan.png",
+      "color": "#1bb7e8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/nctdream/whenimwithyou/jaemin.png",
+      "color": "#61fdad",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/nctdream/whenimwithyou/chenle.png",
+      "color": "#22c429",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/nctdream/whenimwithyou/jisung.png",
+      "color": "#f12ba5",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
