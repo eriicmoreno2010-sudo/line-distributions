@@ -164,29 +164,28 @@
     const A = aggregate(albumData, songDatas);       // COMPLETA: bump, nº de veces, average, most/less, portada
     const easeOut = p => 1 - Math.pow(1-p, 3);
 
-    // Versiones (p.ej. OT7 / OT5, con/sin una canción) — SOLO afectan al race y al donut,
-    // que se muestran de una versión y transicionan fluidamente a la siguiente.
-    // La versión COMPLETA (todos) es automática y sale SIEMPRE la primera; en el editor
-    // solo se definen las versiones REDUCIDAS (p. ej. OT5, o sin una canción). Sin
-    // versiones reducidas -> una sola diapositiva completa sin badge.
+    // Versiones (p.ej. OT7 / OT5, con/sin una canción). La versión COMPLETA (todos) es
+    // automática y sale SIEMPRE la primera; en el editor solo se definen las REDUCIDAS.
+    // Cada versión reducida tiene un flag `allSlides`:
+    //   - OFF (versiones por MIEMBROS): el race y el donut TRANSICIONAN de la completa a
+    //     la reducida (misma diapositiva); el resto queda único.
+    //   - ON  (versiones por CANCIONES): race, donut Y el resto se DUPLICAN en diapositivas
+    //     separadas (completa y reducida), agrupadas por tipo.
+    const verBadgeHTML = name => `<div class="ver-badge"${name ? "" : ' style="display:none"'}>${esc(name||"")}</div>`;
     const rawV = (albumData.versions && albumData.versions.length) ? albumData.versions : null;
-    let versions;
+    const baseV = versionView(A, { name: albumData.baseName || "", memberSet:null, songSet:null });
+    let variantViews = [];
     if(rawV){
-      const baseV = versionView(A, { name: albumData.baseName || "", memberSet:null, songSet:null });
-      const variants = rawV.map(v => versionView(A, {
+      variantViews = rawV.map(v => versionView(A, {
         name: v.name || "",
         memberSet: (v.members && v.members.length) ? new Set(v.members) : null,
         songSet:   (v.songs   && v.songs.length)   ? new Set(v.songs)   : null
       }));
-      versions = [ baseV, ...variants ];
-      // Con varias versiones, TODAS deben verse (badge). Si alguna no tiene nombre, se le
-      // pone uno por defecto para que la reducida no pase desapercibida.
-      versions.forEach((v, i) => { if(!v.name) v.name = (i === 0) ? "Completa" : (versions.length === 2 ? "Reducida" : ("Versión " + (i+1))); });
-    } else {
-      versions = [ versionView(A, { name:"", memberSet:null, songSet:null }) ];
+      // nombres por defecto para que TODAS se vean con badge
+      [baseV, ...variantViews].forEach((v, i, arr) => { if(!v.name)
+        v.name = (i === 0) ? "Completa" : (arr.length === 2 ? "Reducida" : ("Versión " + (i+1))); });
     }
-    const multi = versions.length > 1;
-    const verBadgeHTML = name => `<div class="ver-badge"${name ? "" : ' style="display:none"'}>${esc(name||"")}</div>`;
+    const isAll = i => !!(rawV && rawV[i] && rawV[i].allSlides);
 
     // ---------- 1) PORTADA (versión completa) ----------
     {
@@ -208,25 +207,27 @@
       slides.push({ el, dur:7 });
     }
 
-    // ---------- Race y Donut: UNA diapositiva que recorre las versiones con transición ----------
-    raceSlide(versions);
-    donutSlide(versions);
+    // Conjunto que TRANSICIONA en el race/donut = completa + variantes por miembros (no allSlides)
+    const transitionVers = [ baseV, ...variantViews.filter((v,i) => !isAll(i)) ];
+    // Variantes por CANCIONES (allSlides): cada una tiene su PROPIA diapositiva de cada tipo.
+    const deck = [];
+    if(rawV) rawV.forEach((vc, i) => { if(vc.allSlides)
+      deck.push({ name: variantViews[i].name, view: variantViews[i], A: aggregateFiltered(albumData, songDatas, vc) }); });
+    const anyDeck = deck.length > 0;
+    // badge de la versión completa en las diapositivas duplicadas
+    const baseBadge = anyDeck ? baseV.name : "";
 
-    // ---------- Resto (bump, nº de veces, average, most/less) ----------
-    // Por defecto (versiones por MIEMBROS) el resto es ÚNICO (versión completa). Pero una
-    // versión marcada "allSlides" (para versiones por CANCIONES) duplica TAMBIÉN estas
-    // diapositivas con sus propios datos, agrupadas por tipo (completa y luego reducida).
-    const deckVariants = rawV
-      ? rawV.map((v,i) => ({ v, i })).filter(x => x.v.allSlides)
-             .map(x => ({ name: (versions[x.i+1] && versions[x.i+1].name) || x.v.name || "Reducida",
-                          A: aggregateFiltered(albumData, songDatas, x.v) }))
-      : [];
-    const baseBadge = deckVariants.length ? (albumData.baseName || "Completa") : "";
-
-    bumpSlide(A, baseBadge);      deckVariants.forEach(d => bumpSlide(d.A, d.name));
-    placesSlides(A, baseBadge);   deckVariants.forEach(d => placesSlides(d.A, d.name));
-    avgSlide(A, baseBadge);       deckVariants.forEach(d => avgSlide(d.A, d.name));
-    mostlessSlide(A, baseBadge);  deckVariants.forEach(d => mostlessSlide(d.A, d.name));
+    // ---------- RACE ----------  (completa/transición + una por cada versión de canciones)
+    raceSlide(transitionVers);
+    deck.forEach(d => raceSlide([d.view]));
+    // ---------- DONUT ----------
+    donutSlide(transitionVers);
+    deck.forEach(d => donutSlide([d.view]));
+    // ---------- Resto: completa (+ badge si hay versiones de canciones) y luego cada reducida ----------
+    bumpSlide(A, baseBadge);      deck.forEach(d => bumpSlide(d.A, d.name));
+    placesSlides(A, baseBadge);   deck.forEach(d => placesSlides(d.A, d.name));
+    avgSlide(A, baseBadge);       deck.forEach(d => avgSlide(d.A, d.name));
+    mostlessSlide(A, baseBadge);  deck.forEach(d => mostlessSlide(d.A, d.name));
 
     return slides;
 
@@ -539,7 +540,7 @@
           at += TW + DWELL; }
       };
       const reset = () => { el._gen++; };
-      const dur = multi ? (3.2 + (vers.length-1)*(1.1+3.2) + 2) : 8;
+      const dur = (vers.length > 1) ? (3.2 + (vers.length-1)*(1.1+3.2) + 2) : 8;
       slides.push({ el, dur, enter, reset });
     }
 
