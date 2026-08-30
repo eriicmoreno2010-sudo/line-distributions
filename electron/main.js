@@ -544,25 +544,29 @@ ipcMain.handle("cut-video", async (evt, args) => {
   const f3 = n => (Math.max(0, n)).toFixed(3);
   let a;
 
-  if(segs.length === 1 && !audio){
+  if(audio){
+    // AUDIO OFICIAL CONTINUO: el vídeo se recorta/une, pero el audio suena seguido
+    // (no se corta con los recortes). tiempo_audio = tiempo_editado + off, durante outDur.
+    let fc = ""; const vlabels = [];
+    segs.forEach((sg,i) => { fc += `[0:v]trim=${f3(sg.s)}:${f3(sg.e)},setpts=PTS-STARTPTS[v${i}];`; vlabels.push(`[v${i}]`); });
+    fc += (segs.length > 1) ? (vlabels.join("") + `concat=n=${segs.length}:v=1:a=0[v];`)
+                            : (`[v0]null[v];`);
+    fc += `[1:a]atrim=${f3(off)}:${f3(off + outDur)},asetpts=PTS-STARTPTS[a]`;
+    a = ["-y","-i",input,"-i",audio,"-filter_complex",fc,"-map","[v]","-map","[a]", ...vc, ...ac, ...tail];
+  } else if(segs.length === 1){
     // un solo trozo, sin audio externo -> corte simple (rápido, frame-exacto al recodificar)
     a = ["-y","-ss",f3(segs[0].s),"-i",input,"-t",f3(segs[0].e-segs[0].s),
          "-map","0:v:0","-map","0:a:0?", ...vc, ...ac, ...tail];
-  } else if(segs.length === 1 && audio){
-    a = ["-y","-ss",f3(segs[0].s),"-i",input,"-ss",f3(segs[0].s+off),"-i",audio,"-t",f3(segs[0].e-segs[0].s),
-         "-map","0:v:0","-map","1:a:0", ...vc, ...ac, "-shortest", ...tail];
   } else {
-    // varios trozos -> trim + concat en una pasada (recodificado)
+    // varios trozos, sin audio externo -> trim + concat (vídeo y su propio audio se cortan juntos)
     let fc = ""; const pairs = [];
     segs.forEach((sg,i) => {
       fc += `[0:v]trim=${f3(sg.s)}:${f3(sg.e)},setpts=PTS-STARTPTS[v${i}];`;
-      if(audio) fc += `[1:a]atrim=${f3(sg.s+off)}:${f3(sg.e+off)},asetpts=PTS-STARTPTS[a${i}];`;
-      else      fc += `[0:a]atrim=${f3(sg.s)}:${f3(sg.e)},asetpts=PTS-STARTPTS[a${i}];`;
+      fc += `[0:a]atrim=${f3(sg.s)}:${f3(sg.e)},asetpts=PTS-STARTPTS[a${i}];`;
       pairs.push(`[v${i}][a${i}]`);
     });
     fc += pairs.join("") + `concat=n=${segs.length}:v=1:a=1[v][a]`;
-    const inputs = audio ? ["-i",input,"-i",audio] : ["-i",input];
-    a = ["-y", ...inputs, "-filter_complex", fc, "-map","[v]","-map","[a]", ...vc, ...ac, ...tail];
+    a = ["-y","-i",input,"-filter_complex",fc,"-map","[v]","-map","[a]", ...vc, ...ac, ...tail];
   }
 
   send({ phase:"start", msg:"Recodificando (alta calidad)…" });

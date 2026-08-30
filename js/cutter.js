@@ -190,7 +190,7 @@
     const ch = audioBuf.getChannelData(0), sr = audioBuf.sampleRate, alen = audioBuf.duration, mid = H/2, E = editedDur();
     ctx.fillStyle = "rgba(255,255,255,.30)";
     for(let x=0; x<W; x++){
-      const te = (x + 0.5)/W * E, to = origFromEdited(te), at = to + audioOff;
+      const te = (x + 0.5)/W * E, at = te + audioOff;   // el audio oficial es CONTINUO sobre el vídeo editado
       if(at < 0 || at > alen) continue;
       const win = E/W;                                       // ventana de este pixel (s)
       const s0 = Math.max(0, Math.floor(at*sr)), s1 = Math.min(ch.length, Math.floor((at+win)*sr));
@@ -202,7 +202,8 @@
   function syncAudio(force){
     if(!audioPath) return;
     oaudio.muted = false; oaudio.volume = 1;
-    const target = (video.currentTime||0) + audioOff, alen = oaudio.duration || 1e9;
+    // el audio oficial suena CONTINUO sobre el vídeo editado: no se corta con los recortes
+    const target = curEdited() + audioOff, alen = oaudio.duration || 1e9;
     if(target < 0 || target > alen){ if(!oaudio.paused){ try{ oaudio.pause(); }catch(e){} } return; }
     if(force || Math.abs((oaudio.currentTime||0) - target) > 0.08){ try{ oaudio.currentTime = target; }catch(e){} }
     if(!video.paused && oaudio.paused){ oaudio.play().catch(()=>{}); }
