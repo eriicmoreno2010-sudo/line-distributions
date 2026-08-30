@@ -35,7 +35,12 @@
   .times .seldur{ color:var(--accent); }
   .timeline{ position:relative; height:56px; background:var(--panel2); border:1px solid var(--border);
     border-radius:10px; cursor:pointer; user-select:none; touch-action:none; }
-  #wave{ position:absolute; inset:0; width:100%; height:100%; border-radius:10px; z-index:1; opacity:.9; }
+  /* pista de audio separada, alineada con la del vídeo */
+  .audiolane{ position:relative; height:46px; background:var(--panel2); border:1px solid var(--border);
+    border-radius:10px; overflow:hidden; cursor:pointer; }
+  #wave{ position:absolute; inset:0; width:100%; height:100%; }
+  .audiolane .aph{ position:absolute; top:0; bottom:0; width:2px; margin-left:-1px; background:#fff; opacity:.85; pointer-events:none; }
+  .aud-tag{ position:absolute; left:9px; top:4px; font-size:11px; font-weight:800; color:var(--text2); pointer-events:none; z-index:2; }
   .sel{ position:absolute; top:0; bottom:0; z-index:2; background:color-mix(in srgb, var(--accent) 24%, transparent);
     border-left:3px solid var(--accent); border-right:3px solid var(--accent); box-sizing:border-box; cursor:grab; }
   .sel:active{ cursor:grabbing; }
@@ -107,11 +112,15 @@
       <span class="seldur">SEL <b id="tSel">0:00.00</b></span>
     </div>
     <div class="timeline" id="timeline">
-      <canvas id="wave"></canvas>
       <div class="sel" id="sel"></div>
       <div class="handle" id="hIn" style="left:0"></div>
       <div class="handle" id="hOut" style="left:100%"></div>
       <div class="playhead" id="ph" style="left:0"></div>
+    </div>
+    <div class="audiolane" id="audiolane" style="display:none">
+      <canvas id="wave"></canvas>
+      <span class="aud-tag">🎵 audio oficial</span>
+      <div class="aph" id="aph" style="left:0"></div>
     </div>
     <div class="controls">
       <button class="ng" id="play">▶</button>
@@ -126,10 +135,10 @@
       <div class="grp"><span class="lbl">FPS</span><input type="number" id="fps" value="30" min="1" max="120" step="1" title="Solo para el salto por frame"></div>
       <div class="grp"><span class="lbl">Calidad</span>
         <select id="crf">
-          <option value="14">Máxima (más grande)</option>
-          <option value="16" selected>Alta (recomendada)</option>
-          <option value="18">Buena</option>
-          <option value="20">Ligera (más pequeña)</option>
+          <option value="16">Máxima (más grande)</option>
+          <option value="19">Alta</option>
+          <option value="22" selected>Media — ligera (recomendada)</option>
+          <option value="25">Muy ligera (mucho más pequeña)</option>
         </select>
       </div>
     </div>
@@ -156,6 +165,6 @@
   <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
 </div>
 
-<script src="js/cutter.js?v=5"></script>
+<script src="js/cutter.js?v=6"></script>
 </body>
 </html>

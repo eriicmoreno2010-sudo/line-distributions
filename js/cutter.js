@@ -14,6 +14,7 @@
   const timeline = $("#timeline"), selEl = $("#sel"), hIn = $("#hIn"), hOut = $("#hOut"), ph = $("#ph");
   const exportBtn = $("#export");
   const oaudio = $("#oaudio"), waveCanvas = $("#wave"), offRange = $("#off"), offNum = $("#offNum");
+  const audiolane = $("#audiolane"), aph = $("#aph");
 
   let dur = 0, inT = 0, outT = 0, srcPath = "";
   let audioPath = "", audioBuf = null, audioOff = 0;   // audio oficial + desfase (audio = video + off)
@@ -38,6 +39,7 @@
     $("#tIn").textContent  = fmt(inT);
     $("#tOut").textContent = fmt(outT);
     $("#tSel").textContent = fmt(outT - inT);
+    aph.style.left = pct(video.currentTime || 0) + "%";
     positionHoles();
   }
 
@@ -181,7 +183,8 @@
   // ---- audio oficial: cargar, silenciar el vídeo, sincronizar y dibujar la onda ----
   function drawWave(){
     const ctx = waveCanvas.getContext("2d");
-    const W = timeline.clientWidth, H = timeline.clientHeight, dpr = window.devicePixelRatio || 1;
+    const W = audiolane.clientWidth, H = audiolane.clientHeight, dpr = window.devicePixelRatio || 1;
+    if(!W) return;
     waveCanvas.width = W*dpr; waveCanvas.height = H*dpr;
     waveCanvas.style.width = W+"px"; waveCanvas.style.height = H+"px";
     ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
@@ -213,6 +216,9 @@
   video.addEventListener("seeked", () => syncAudio(true));
   video.addEventListener("timeupdate", () => syncAudio(false));
   window.addEventListener("resize", drawWave);
+  // clic en la pista de audio = buscar en ese punto (mismo eje de tiempo que el vídeo)
+  audiolane.addEventListener("pointerdown", e => { if(!dur) return;
+    video.currentTime = timeAt(e.clientX); paint(); startDrag("seek")(e); });
 
   $("#pickAudio").onclick = async () => {
     const r = await desktop.pickCutAudio();
@@ -220,6 +226,7 @@
     audioPath = r.path;
     $("#audioName").textContent = "🎵 " + r.name;
     $("#offGrp").style.display = "";
+    audiolane.style.display = "";                      // muestra la pista de audio separada
     oaudio.src = fileUrl(r.path); oaudio.load();
     video.muted = true;                               // como en la web, se silencia el audio del vídeo
     audioBuf = null;
