@@ -315,8 +315,12 @@ Version: 3.0 — Lyrics
     position:absolute; right:0; bottom:0;
     width:max-content; max-width:none;   /* la tarjeta se ensancha para caber en 1 línea (la fuente NO cambia) */
     border-radius:18px; text-align:center;
-    border:1.5px solid color-mix(in srgb, var(--al-accent,#7c5cff) 60%, transparent);
-    background:color-mix(in srgb, var(--al-accent,#7c5cff) 12%, rgba(8,8,14,.55));
+    /* borde con DEGRADADO real (arcoíris en grupo, dos colores en dúo) usando padding-box/border-box */
+    border:2px solid transparent;
+    background:
+      linear-gradient(color-mix(in srgb, var(--al-accent,#7c5cff) 12%, rgba(8,8,14,.55)),
+                      color-mix(in srgb, var(--al-accent,#7c5cff) 12%, rgba(8,8,14,.55))) padding-box,
+      var(--al-border, var(--al-accent,#7c5cff)) border-box;
     /* el cristal difumina la parte de la letra central que queda por detrás */
     -webkit-backdrop-filter:blur(9px) saturate(1.1); backdrop-filter:blur(9px) saturate(1.1);
     box-shadow:0 24px 60px -24px #000,

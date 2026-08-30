@@ -432,6 +432,11 @@ const Lyrics = {
         const c = this.colorsFor(line);
         const box = document.createElement("div"); box.className = "al-box";
         box.style.setProperty("--al-accent", c.accent);
+        // borde: degradado real -> grupo = arcoíris de todos; dúo/coro = colores de los que cantan; solista = su color
+        const borderPaint = c.isGroupLine ? c.groupGradient
+                          : (c.isSharedLine ? c.sharedGradient
+                          : `linear-gradient(90deg, ${c.accent}, ${c.accent})`);
+        box.style.setProperty("--al-border", borderPaint);
         const paint = el => {
             if(c.isGroupLine){ el.style.background = c.groupGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
             else if(c.isSharedLine){ el.style.background = c.sharedGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
