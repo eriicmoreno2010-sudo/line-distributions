@@ -119,6 +119,9 @@
   video.addEventListener("loadedmetadata", () => {
     dur = video.duration || 0; inT = 0; outT = dur;
     exportBtn.disabled = false;
+    // el desfase del audio puede ser tan grande como el propio vídeo (ambos sentidos)
+    const lim = Math.max(20, Math.ceil(dur));
+    offRange.min = -lim; offRange.max = lim;
     paint();
     if(typeof drawWave === "function") drawWave();
   });
