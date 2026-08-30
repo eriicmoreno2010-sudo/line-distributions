@@ -17,7 +17,7 @@
 
   let dur = 0, inT = 0, outT = 0, srcPath = "";
   let audioPath = "", audioBuf = null, audioOff = 0;   // audio oficial + desfase (audio = video + off)
-  const mode = () => (document.querySelector('input[name="mode"]:checked') || {}).value || "keep";
+  let holes = [], holeEls = [];                          // huecos rojos DENTRO de lo azul (se eliminan)
 
   const fmt = t => { t = Math.max(0, t||0); const m = Math.floor(t/60), s = t - m*60;
     return m + ":" + (s<10?"0":"") + s.toFixed(2); };
@@ -38,6 +38,54 @@
     $("#tIn").textContent  = fmt(inT);
     $("#tOut").textContent = fmt(outT);
     $("#tSel").textContent = fmt(outT - inT);
+    positionHoles();
+  }
+
+  // ---- huecos rojos (trozos a quitar de dentro de lo azul) ----
+  const pctT = t => dur > 0 ? (t/dur*100) : 0;
+  function positionHoles(){
+    holes.forEach((h,i) => { const el = holeEls[i]; if(!el) return;
+      el.style.left = pctT(h.s) + "%"; el.style.width = pctT(h.e - h.s) + "%"; });
+  }
+  function dragMove(mv){ const up = () => { window.removeEventListener("pointermove", mv); window.removeEventListener("pointerup", up); };
+    window.addEventListener("pointermove", mv); window.addEventListener("pointerup", up); }
+  function makeHole(h){
+    const el = document.createElement("div"); el.className = "hole";
+    el.innerHTML = `<div class="hh hh-in" style="left:0"></div><div class="hh hh-out" style="left:100%"></div><div class="hx">✕</div>`;
+    timeline.appendChild(el);
+    el.addEventListener("pointerdown", e => { if(e.target !== el) return; e.preventDefault(); e.stopPropagation();
+      const base = { grabT: timeAt(e.clientX), s0: h.s, len: h.e - h.s };
+      dragMove(ev => { const d = timeAt(ev.clientX) - base.grabT;
+        h.s = clamp(base.s0 + d, inT, outT - base.len); h.e = h.s + base.len; positionHoles(); }); });
+    el.querySelector(".hh-in").addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation();
+      dragMove(ev => { h.s = clamp(timeAt(ev.clientX), inT, h.e - FRAME()); video.currentTime = h.s; positionHoles(); paint(); }); });
+    el.querySelector(".hh-out").addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation();
+      dragMove(ev => { h.e = clamp(timeAt(ev.clientX), h.s + FRAME(), outT); video.currentTime = h.e; positionHoles(); paint(); }); });
+    const hx = el.querySelector(".hx");
+    hx.addEventListener("pointerdown", e => e.stopPropagation());
+    hx.addEventListener("click", e => { e.stopPropagation(); const idx = holes.indexOf(h); if(idx>=0) holes.splice(idx,1); rebuildHoles(); });
+    return el;
+  }
+  function rebuildHoles(){
+    timeline.querySelectorAll(".hole").forEach(x => x.remove());
+    holeEls = holes.map(makeHole); positionHoles();
+  }
+  // lo que se conserva = [inT,outT] menos los huecos -> lista de trozos
+  function clampHoles(){ holes.forEach(h => { h.s = clamp(h.s, inT, outT); h.e = clamp(h.e, inT, outT); }); positionHoles(); }
+  function computeSegments(){
+    let pieces = [[inT, outT]];
+    const hs = holes.map(h => [clamp(Math.min(h.s,h.e), inT, outT), clamp(Math.max(h.s,h.e), inT, outT)])
+                    .filter(h => h[1]-h[0] > 0.02).sort((a,b)=>a[0]-b[0]);
+    for(const [hs0, he0] of hs){
+      const next = [];
+      for(const [s,e] of pieces){
+        if(he0 <= s || hs0 >= e){ next.push([s,e]); continue; }
+        if(hs0 > s) next.push([s, hs0]);
+        if(he0 < e) next.push([he0, e]);
+      }
+      pieces = next;
+    }
+    return pieces.filter(p => p[1]-p[0] > 0.02).map(p => ({ s:p[0], e:p[1] }));
   }
 
   // ---- elegir vídeo ----
@@ -69,8 +117,8 @@
   const onMove = e => {
     if(!drag || !dur) return;
     const t = timeAt(e.clientX);
-    if(drag === "in"){ inT = clamp(t, 0, outT - FRAME()); video.currentTime = inT; }
-    else if(drag === "out"){ outT = clamp(t, inT + FRAME(), dur); video.currentTime = outT; }
+    if(drag === "in"){ inT = clamp(t, 0, outT - FRAME()); video.currentTime = inT; clampHoles(); }
+    else if(drag === "out"){ outT = clamp(t, inT + FRAME(), dur); video.currentTime = outT; clampHoles(); }
     else if(drag === "move"){                        // mover el trozo marcado sin cambiar su duración
       const d = t - moveBase.grabT;
       inT = clamp(moveBase.in0 + d, 0, dur - moveBase.len);
@@ -121,9 +169,14 @@
     else if(e.key === "End"){ e.preventDefault(); $("#goOut").onclick(); }
   });
 
-  // ---- modo: quedarme con lo marcado / quitar el medio ----
-  document.querySelectorAll('input[name="mode"]').forEach(r =>
-    r.addEventListener("change", () => document.body.classList.toggle("remove", mode() === "remove")));
+  // ---- añadir un hueco (trozo a quitar de dentro de lo azul) ----
+  $("#addHole").onclick = () => { if(!dur) return;
+    const t = clamp(video.currentTime || 0, inT, outT);
+    const len = Math.min(3, Math.max(0.5, (outT - inT) / 6));
+    let s = clamp(t, inT, outT - 0.1), e = clamp(s + len, s + 0.1, outT);
+    if(e - s < 0.1){ s = clamp(outT - len, inT, outT - 0.1); e = outT; }
+    holes.push({ s, e }); rebuildHoles();
+  };
 
   // ---- audio oficial: cargar, silenciar el vídeo, sincronizar y dibujar la onda ----
   function drawWave(){
@@ -188,14 +241,13 @@
   });
   exportBtn.onclick = async () => {
     if(!dur || !srcPath) return;
-    const m = mode();
-    if(!(outT - inT > 0.02)){ alert("Marca un trozo válido (el fin debe ir después del inicio)."); return; }
-    if(m === "remove" && inT <= 0.02 && outT >= dur - 0.02){ alert("En modo 'quitar' eso eliminaría el vídeo entero."); return; }
+    const segments = computeSegments();
+    if(!segments.length){ alert("No queda nada que guardar. Revisa la franja azul y los huecos."); return; }
     ov.classList.add("show"); ovT.textContent = "Exportando…"; fill.style.width = "0%";
-    ovS.textContent = (m === "remove" ? "Quitando el trozo y uniendo el resto" : "Recodificando el recorte") + ", no cierres la app.";
+    ovS.textContent = (segments.length > 1 ? "Uniendo los trozos" : "Recodificando el recorte") + ", no cierres la app.";
     const res = await desktop.cutVideo({
-      input: srcPath, start: inT, end: outT, duration: dur, crf: +$("#crf").value,
-      mode: m, audio: audioPath || null, audioOffset: audioOff
+      input: srcPath, segments, crf: +$("#crf").value,
+      audio: audioPath || null, audioOffset: audioOff
     });
     ov.classList.remove("show");
     if(res && res.ok){

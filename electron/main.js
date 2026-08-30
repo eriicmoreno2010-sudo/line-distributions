@@ -506,36 +506,31 @@ ipcMain.handle("pick-cut-audio", async () => {
 });
 
 // Recorta recodificando (corte frame-exacto, sin depender de keyframes). Mantiene
-// resolución y FPS del original; vídeo H.264 (CRF) + audio AAC 320k. Opciones:
-//  - mode "keep"  : se queda con [start,end]
-//  - mode "remove": QUITA [start,end] y une [0,start]+[end,duration] (quitar la historia del medio)
-//  - audio (ruta) : usa ese audio OFICIAL en vez del audio del vídeo (con audioOffset:
-//                   tiempo_audio = tiempo_video + audioOffset)
+// resolución y FPS del original; vídeo H.264 (CRF) + audio AAC 320k.
+//  - segments: lista [{s,e}] de los TROZOS QUE SE CONSERVAN (en orden). Se concatenan.
+//              (así se cubre: recortar puntas, y quitar uno o varios huecos de dentro.)
+//  - audio (ruta): usa ese audio OFICIAL en vez del del vídeo (audioOffset: t_audio = t_video + off)
 ipcMain.handle("cut-video", async (evt, args) => {
   args = args || {};
   const send = m => { try{ evt.sender.send("cut-progress", m); }catch(e){} };
   const input = String(args.input || "");
-  const start = Math.max(0, +args.start || 0);
-  const end   = +args.end || 0;
-  const total = +args.duration || 0;              // duración completa del vídeo (para modo remove)
-  const mode  = args.mode === "remove" ? "remove" : "keep";
   const crf   = Math.min(28, Math.max(0, args.crf != null ? +args.crf : 16));
   const audio = args.audio ? String(args.audio) : "";
   const off   = +args.audioOffset || 0;
+  // trozos a conservar
+  let segs = Array.isArray(args.segments) ? args.segments
+             : [{ s: +args.start || 0, e: +args.end || 0 }];
+  segs = segs.map(sg => ({ s: Math.max(0, +sg.s || 0), e: +sg.e || 0 }))
+             .filter(sg => sg.e - sg.s > 0.02)
+             .sort((a,b) => a.s - b.s);
   if(!input || !fs.existsSync(input)) return { ok:false, error:"No se encuentra el vídeo de entrada." };
   if(audio && !fs.existsSync(audio)) return { ok:false, error:"No se encuentra el audio elegido." };
-  if(mode === "keep" && !(end - start > 0.02)) return { ok:false, error:"El final debe ir después del inicio." };
-  if(mode === "remove"){
-    if(!(total > 0)) return { ok:false, error:"No sé la duración del vídeo." };
-    if(!(end - start > 0.02)) return { ok:false, error:"Marca el trozo del medio a quitar." };
-    if(start <= 0.02 && end >= total - 0.02) return { ok:false, error:"Eso quitaría el vídeo entero." };
-  }
-  // duración final esperada (para el % de progreso)
-  const outDur = mode === "keep" ? (end - start) : (start + (total - end));
+  if(!segs.length) return { ok:false, error:"No queda nada que guardar (revisa lo marcado)." };
+  const outDur = segs.reduce((a,sg) => a + (sg.e - sg.s), 0);
 
   const dir  = path.dirname(input);
   const base = path.basename(input, path.extname(input));
-  const defOut = path.join(dir, base + (mode === "remove" ? "_recortado" : "_cut") + ".mp4");
+  const defOut = path.join(dir, base + "_cut.mp4");
   const save = await dialog.showSaveDialog({
     title: "Guardar recorte", defaultPath: defOut, filters: [{ name:"MP4", extensions:["mp4"] }]
   });
@@ -549,28 +544,25 @@ ipcMain.handle("cut-video", async (evt, args) => {
   const f3 = n => (Math.max(0, n)).toFixed(3);
   let a;
 
-  if(mode === "keep" && !audio){
-    a = ["-y","-ss",f3(start),"-i",input,"-t",f3(end-start),
+  if(segs.length === 1 && !audio){
+    // un solo trozo, sin audio externo -> corte simple (rápido, frame-exacto al recodificar)
+    a = ["-y","-ss",f3(segs[0].s),"-i",input,"-t",f3(segs[0].e-segs[0].s),
          "-map","0:v:0","-map","0:a:0?", ...vc, ...ac, ...tail];
-  } else if(mode === "keep" && audio){
-    a = ["-y","-ss",f3(start),"-i",input,"-ss",f3(start+off),"-i",audio,"-t",f3(end-start),
+  } else if(segs.length === 1 && audio){
+    a = ["-y","-ss",f3(segs[0].s),"-i",input,"-ss",f3(segs[0].s+off),"-i",audio,"-t",f3(segs[0].e-segs[0].s),
          "-map","0:v:0","-map","1:a:0", ...vc, ...ac, "-shortest", ...tail];
-  } else if(mode === "remove" && !audio){
-    const fc =
-      `[0:v]trim=0:${f3(start)},setpts=PTS-STARTPTS[v0];` +
-      `[0:a]atrim=0:${f3(start)},asetpts=PTS-STARTPTS[a0];` +
-      `[0:v]trim=${f3(end)},setpts=PTS-STARTPTS[v1];` +
-      `[0:a]atrim=${f3(end)},asetpts=PTS-STARTPTS[a1];` +
-      `[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]`;
-    a = ["-y","-i",input,"-filter_complex",fc,"-map","[v]","-map","[a]", ...vc, ...ac, ...tail];
-  } else { // remove + audio oficial
-    const fc =
-      `[0:v]trim=0:${f3(start)},setpts=PTS-STARTPTS[v0];` +
-      `[0:v]trim=${f3(end)},setpts=PTS-STARTPTS[v1];` +
-      `[1:a]atrim=${f3(0+off)}:${f3(start+off)},asetpts=PTS-STARTPTS[a0];` +
-      `[1:a]atrim=${f3(end+off)}:${f3(total+off)},asetpts=PTS-STARTPTS[a1];` +
-      `[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]`;
-    a = ["-y","-i",input,"-i",audio,"-filter_complex",fc,"-map","[v]","-map","[a]", ...vc, ...ac, ...tail];
+  } else {
+    // varios trozos -> trim + concat en una pasada (recodificado)
+    let fc = ""; const pairs = [];
+    segs.forEach((sg,i) => {
+      fc += `[0:v]trim=${f3(sg.s)}:${f3(sg.e)},setpts=PTS-STARTPTS[v${i}];`;
+      if(audio) fc += `[1:a]atrim=${f3(sg.s+off)}:${f3(sg.e+off)},asetpts=PTS-STARTPTS[a${i}];`;
+      else      fc += `[0:a]atrim=${f3(sg.s)}:${f3(sg.e)},asetpts=PTS-STARTPTS[a${i}];`;
+      pairs.push(`[v${i}][a${i}]`);
+    });
+    fc += pairs.join("") + `concat=n=${segs.length}:v=1:a=1[v][a]`;
+    const inputs = audio ? ["-i",input,"-i",audio] : ["-i",input];
+    a = ["-y", ...inputs, "-filter_complex", fc, "-map","[v]","-map","[a]", ...vc, ...ac, ...tail];
   }
 
   send({ phase:"start", msg:"Recodificando (alta calidad)…" });

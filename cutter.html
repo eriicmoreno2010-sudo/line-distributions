@@ -39,9 +39,16 @@
   .sel{ position:absolute; top:0; bottom:0; z-index:2; background:color-mix(in srgb, var(--accent) 24%, transparent);
     border-left:3px solid var(--accent); border-right:3px solid var(--accent); box-sizing:border-box; cursor:grab; }
   .sel:active{ cursor:grabbing; }
-  /* modo QUITAR: la franja marcada (lo que se elimina) se ve en rojo */
-  body.remove .sel{ background:color-mix(in srgb, #ff4d5e 26%, transparent);
-    border-left-color:#ff4d5e; border-right-color:#ff4d5e; }
+  /* huecos rojos: trozos DENTRO de lo azul que se eliminan */
+  .hole{ position:absolute; top:0; bottom:0; z-index:3; background:color-mix(in srgb, #ff4d5e 32%, transparent);
+    border-left:3px solid #ff4d5e; border-right:3px solid #ff4d5e; box-sizing:border-box; cursor:grab; }
+  .hole:active{ cursor:grabbing; }
+  .hole .hh{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize;
+    display:flex; align-items:center; justify-content:center; }
+  .hole .hh::after{ content:""; width:5px; height:70%; background:#ff4d5e; border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
+  .hole .hx{ position:absolute; top:-24px; left:50%; transform:translateX(-50%); width:20px; height:20px; border-radius:50%;
+    background:#ff4d5e; color:#fff; font:900 12px sans-serif; display:flex; align-items:center; justify-content:center;
+    cursor:pointer; z-index:7; box-shadow:0 1px 5px rgba(0,0,0,.6); }
   .handle{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize; z-index:4;
     display:flex; align-items:center; justify-content:center; }
   .handle::after{ content:""; width:5px; height:70%; background:var(--accent); border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
@@ -127,10 +134,9 @@
       </div>
     </div>
     <div class="controls">
-      <div class="grp"><span class="lbl">Modo</span>
-        <label class="mode"><input type="radio" name="mode" value="keep" checked> Quedarme con lo marcado</label>
-        <label class="mode"><input type="radio" name="mode" value="remove"> Quitar lo marcado (unir el resto)</label>
-      </div>
+      <span class="lbl" style="color:var(--accent)">▮ me quedo</span>
+      <button class="ng" id="addHole">➕  Quitar un trozo de dentro</button>
+      <span class="lbl" style="color:#ff4d5e">▮ se quita</span>
       <span class="spacer" style="flex:1"></span>
       <button class="ng" id="pickAudio">🎵  Poner audio oficial</button>
       <span id="audioName" class="kbd" style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></span>
@@ -139,7 +145,7 @@
         <input type="number" id="offNum" step="0.05" value="0" style="width:78px"><span class="lbl">s</span>
       </div>
     </div>
-    <div class="kbd">Atajos: <b>Espacio</b> reproducir · <b>← →</b> frame a frame · <b>I</b>/<b>O</b> marcar inicio/fin · <b>Inicio</b>/<b>Fin</b> saltar · con audio oficial se silencia el del vídeo</div>
+    <div class="kbd">La franja <b style="color:var(--accent)">azul</b> es lo que te quedas (mueve sus bordes para recortar puntas). Con <b>➕ Quitar un trozo</b> añades un hueco <b style="color:#ff4d5e">rojo</b> DENTRO que se elimina (puedes poner varios). Atajos: <b>Espacio</b> play · <b>← →</b> frame · <b>I/O</b> inicio/fin de lo azul · con audio oficial se silencia el del vídeo</div>
     <audio id="oaudio" preload="auto"></audio>
   </div>
 </main>
@@ -150,6 +156,6 @@
   <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
 </div>
 
-<script src="js/cutter.js?v=4"></script>
+<script src="js/cutter.js?v=5"></script>
 </body>
 </html>
