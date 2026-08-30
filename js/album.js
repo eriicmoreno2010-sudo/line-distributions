@@ -150,16 +150,23 @@
     const easeOut = p => 1 - Math.pow(1-p, 3);
 
     // Versiones (p.ej. OT7 / OT5, con/sin una canción) — SOLO afectan al race y al donut,
-    // que se muestran de una versión y transicionan fluidamente a la siguiente. Si no hay
-    // versiones definidas -> una sola (completa, sin badge).
-    const rawV = (albumData.versions && albumData.versions.length)
-      ? albumData.versions
-      : [ { name:"", songs:null, members:null } ];
-    const versions = rawV.map(v => versionView(A, {
-      name: v.name || "",
-      memberSet: (v.members && v.members.length) ? new Set(v.members) : null,
-      songSet:   (v.songs   && v.songs.length)   ? new Set(v.songs)   : null
-    }));
+    // que se muestran de una versión y transicionan fluidamente a la siguiente.
+    // La versión COMPLETA (todos) es automática y sale SIEMPRE la primera; en el editor
+    // solo se definen las versiones REDUCIDAS (p. ej. OT5, o sin una canción). Sin
+    // versiones reducidas -> una sola diapositiva completa sin badge.
+    const rawV = (albumData.versions && albumData.versions.length) ? albumData.versions : null;
+    let versions;
+    if(rawV){
+      const baseV = versionView(A, { name: albumData.baseName || "", memberSet:null, songSet:null });
+      const variants = rawV.map(v => versionView(A, {
+        name: v.name || "",
+        memberSet: (v.members && v.members.length) ? new Set(v.members) : null,
+        songSet:   (v.songs   && v.songs.length)   ? new Set(v.songs)   : null
+      }));
+      versions = [ baseV, ...variants ];
+    } else {
+      versions = [ versionView(A, { name:"", memberSet:null, songSet:null }) ];
+    }
     const multi = versions.length > 1;
     const verBadgeHTML = name => `<div class="ver-badge"${name ? "" : ' style="display:none"'}>${esc(name||"")}</div>`;
 

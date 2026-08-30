@@ -68,6 +68,10 @@
   .rc .nm{ font-weight:800; font-size:14px; flex:1; min-width:0; }
   #bgaudio{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px 18px; }
   /* versiones */
+  #basename-row{ margin-bottom:14px; }
+  #basename-row label{ display:flex; align-items:center; gap:10px; font-size:14px; font-weight:800; color:var(--text2); flex-wrap:wrap; }
+  #basename-row input{ flex:1; min-width:220px; max-width:340px; background:var(--panel); border:1px solid var(--border);
+    border-radius:9px; color:var(--text); padding:9px 12px; font:800 15px "Segoe UI",Arial; }
   #versions{ display:flex; flex-direction:column; gap:12px; }
   .vcard{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:14px 16px; }
   .vhead{ display:flex; gap:10px; align-items:center; margin-bottom:12px; }
@@ -106,10 +110,13 @@
 <h2 class="secthead">🎧 Música de fondo <small>· suena en todas las diapositivas menos el race</small></h2>
 <div id="bgaudio"></div>
 
-<h2 class="secthead">🎭 Versiones (OT) <small>· dos versiones del total, donut, bump y nº de veces (p. ej. OT7 y OT5, o con/sin una canción). Si no pones ninguna, sale una sola.</small></h2>
+<h2 class="secthead">🎭 Versiones (OT) <small>· la versión COMPLETA (con todos) sale automáticamente primero. Aquí defines SOLO las versiones REDUCIDAS (p. ej. OT5, o sin una canción): el race y el donut transicionan fluido de la completa a cada una. Si no pones ninguna, sale solo la completa.</small></h2>
+<div id="basename-row">
+  <label>Nombre de la versión completa (con todos): <input id="baseName" type="text" placeholder="p. ej. OT7"></label>
+</div>
 <div id="versions"></div>
-<button id="addver" class="ng" style="margin-top:12px">➕ Añadir versión</button>
+<button id="addver" class="ng" style="margin-top:12px">➕ Añadir versión reducida</button>
 
-<script src="js/album-edit.js?v=9"></script>
+<script src="js/album-edit.js?v=10"></script>
 </body>
 </html>

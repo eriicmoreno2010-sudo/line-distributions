@@ -199,6 +199,9 @@
   // versiones (OT7/OT5, con/sin canciones): cada una con nombre + qué canciones y qué miembros
   function buildVersions(songs){
     album.versions = album.versions || [];
+    const baseInput = el("#baseName");
+    if(baseInput){ baseInput.value = album.baseName || "";
+      baseInput.oninput = e => { album.baseName = e.target.value; save(); }; }
     const roster = [], seen = {};
     songs.forEach(sd => (sd && sd.members || []).forEach(m => { if(!seen[m.name]){ seen[m.name]=1; roster.push(m); } }));
     const host = el("#versions");
