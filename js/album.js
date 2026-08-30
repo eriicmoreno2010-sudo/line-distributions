@@ -575,14 +575,9 @@
         const fc = Math.max(0, ...A.members.map(m => Object.keys(m.per).length));
         const full    = A.members.filter(m => Object.keys(m.per).length >= fc).sort((a,b)=> b.total - a.total);
         const partial = A.members.filter(m => Object.keys(m.per).length <  fc).sort((a,b)=> b.total - a.total);
-        const F = full.length, P = partial.length, maxR = Math.max(F + P, 1);
+        const F = full.length, P = partial.length, maxR = Math.max(A.maxRank, F + P, 1);
         const xAt = i => n>1 ? mL + i*(xEnd-mL)/(n-1) : mL + (xEnd-mL)/2;
         const yAt = r => mT + (maxR>1 ? (r-1)*(H-mT-mB)/(maxR-1) : (H-mT-mB)/2);
-        // ranking de los COMPLETOS entre ellos por canción (1..F), ignorando a los parciales
-        const fullRank = {};
-        A.songs.forEach(s => { const ranked = full.filter(m => m.per[s.orig] != null)
-            .sort((a,b)=> (b.per[s.orig]||0) - (a.per[s.orig]||0));
-          fullRank[s.orig] = {}; ranked.forEach((m,i) => fullRank[s.orig][m.name] = i+1); });
         let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">`;
         // guías de rango
         for(let r=1;r<=maxR;r++){ const y=yAt(r);
@@ -594,10 +589,11 @@
           const y = yBase + (i % 2) * 30;
           svg += `<line class="axis" x1="${x}" y1="${H-mB+6}" x2="${x}" y2="${y-14}" opacity="0.4"></line>`;
           svg += `<text class="xlab" x="${x}" y="${y}" text-anchor="middle">${esc(s.title)}</text>`; });
-        // dibuja línea+puntos+foto de un miembro dados sus puntos [x,y,songIndex]
-        const drawMember = (m, pts) => {
+        // dibuja línea+puntos+foto de un miembro. photoY opcional: si se pasa, la línea baja
+        // en diagonal desde su último punto hasta la foto (para los parciales, que van al fondo).
+        const drawMember = (m, pts, photoY) => {
           if(!pts.length) return;
-          const ey = pts[pts.length-1][1];
+          const ey = (photoY != null) ? photoY : pts[pts.length-1][1];
           const dPts = pts.concat([[pcx - pr - 6, ey]]);
           const d = dPts.map((p,k)=> (k?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
           let len=0; for(let k=1;k<dPts.length;k++){ len += Math.hypot(dPts[k][0]-dPts[k-1][0], dPts[k][1]-dPts[k-1][1]); }
@@ -609,15 +605,16 @@
           svg += `<circle cx="${pcx}" cy="${ey}" r="${pr}" fill="none" stroke="${m.color}" stroke-width="3"></circle>`;
           svg += `<text x="${nameX}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="20">${esc(m.name)}</text>`;
         };
-        // COMPLETOS: línea con su ranking entre ellos (1..F)
+        // COMPLETOS: puntos en su puesto REAL de cada canción; foto a la derecha en su último puesto.
         full.forEach(m => { const pts = [];
-          A.songs.forEach((s,i)=>{ const r = fullRank[s.orig][m.name]; if(r) pts.push([xAt(i), yAt(r), i]); });
+          A.songs.forEach((s,i)=>{ const r = m.ranks[s.orig]; if(r) pts.push([xAt(i), yAt(r), i]); });
           drawMember(m, pts); });
-        // PARCIALES: fila fija al fondo (F+1, F+2, …), un punto en cada canción donde cantan
-        partial.forEach((m, pi) => { const y = yAt(F + pi + 1); const pts = [];
-          A.songs.forEach((s,i)=>{ if(m.per[s.orig] != null) pts.push([xAt(i), y, i]); });
-          if(!pts.length) pts.push([xAt(0), y, 0]);
-          drawMember(m, pts); });
+        // PARCIALES: punto en su puesto REAL de su canción (p. ej. 1 y 2), y luego una línea
+        // DIAGONAL abajo-derecha hasta su foto, que queda al fondo (F+1, F+2, …) debajo de los completos.
+        partial.forEach((m, pi) => { const pts = [];
+          A.songs.forEach((s,i)=>{ const r = m.ranks[s.orig]; if(r) pts.push([xAt(i), yAt(r), i]); });
+          if(!pts.length) pts.push([xAt(0), yAt(1), 0]);
+          drawMember(m, pts, yAt(F + pi + 1)); });
         svg += `</svg>`;
         wrap.innerHTML = svg;
       };
