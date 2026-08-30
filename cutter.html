@@ -42,9 +42,12 @@
     display:flex; align-items:center; justify-content:center; }
   .handle::after{ content:""; width:5px; height:70%; background:var(--accent); border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
   .playhead{ position:absolute; top:-6px; bottom:-6px; width:2px; margin-left:-1px; background:#fff;
-    box-shadow:0 0 0 1px rgba(0,0,0,.6); z-index:6; pointer-events:none; }
-  .playhead::after{ content:""; position:absolute; top:-2px; left:50%; transform:translateX(-50%);
-    width:12px; height:12px; border-radius:50%; background:#fff; box-shadow:0 1px 5px rgba(0,0,0,.6); }
+    box-shadow:0 0 0 1px rgba(0,0,0,.6); z-index:6; cursor:ew-resize; }
+  /* zona ancha invisible para poder agarrar la barrita fácilmente */
+  .playhead::before{ content:""; position:absolute; top:0; bottom:0; left:-8px; right:-8px; }
+  .playhead::after{ content:""; position:absolute; top:-3px; left:50%; transform:translateX(-50%);
+    width:15px; height:15px; border-radius:50%; background:#fff; box-shadow:0 1px 5px rgba(0,0,0,.6); }
+  .playhead:active{ cursor:grabbing; }
 
   .controls{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
   .controls .grp{ display:flex; align-items:center; gap:6px; }
@@ -126,6 +129,6 @@
   <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
 </div>
 
-<script src="js/cutter.js?v=2"></script>
+<script src="js/cutter.js?v=3"></script>
 </body>
 </html>

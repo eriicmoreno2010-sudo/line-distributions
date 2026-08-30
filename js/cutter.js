@@ -89,7 +89,11 @@
     moveBase = { grabT: timeAt(e.clientX), in0: inT, len: outT - inT };
     startDrag("move")(e);
   });
-  timeline.addEventListener("pointerdown", e => { if(!dur) return; if(e.target===hIn||e.target===hOut||e.target===selEl) return;
+  // arrastrar la barrita blanca (playhead) para desplazarse
+  ph.addEventListener("pointerdown", e => { if(!dur) return;
+    e.preventDefault(); e.stopPropagation();
+    video.currentTime = timeAt(e.clientX); startDrag("seek")(e); });
+  timeline.addEventListener("pointerdown", e => { if(!dur) return; if(e.target===hIn||e.target===hOut||e.target===selEl||e.target===ph) return;
     video.currentTime = timeAt(e.clientX); startDrag("seek")(e); });
 
   // ---- botones ----
