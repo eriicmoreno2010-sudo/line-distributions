@@ -14,12 +14,13 @@
   h1{ font-size:19px; font-weight:900; }
   h1 small{ color:var(--text2); font-weight:700; font-size:13px; margin-left:8px; }
   button{ border:0; border-radius:10px; padding:10px 14px; font:800 14px "Segoe UI",Arial; cursor:pointer; }
+  button:disabled{ opacity:.45; cursor:default; }
   .ng{ background:var(--panel2); color:var(--text); border:1px solid var(--border); }
-  .ng:hover{ background:#232333; }
+  .ng:hover:not(:disabled){ background:#232333; }
   .pri{ background:var(--accent); color:#fff; }
-  .pri:hover{ background:#6a49f2; }
-  .pri:disabled{ opacity:.5; cursor:default; }
-  .ng.active{ background:var(--accent); color:#fff; border-color:var(--accent); }
+  .pri:hover:not(:disabled){ background:#6a49f2; }
+  .danger{ background:#4a1f26; color:#ffd7dc; border:1px solid #7a2e3a; }
+  .danger:hover:not(:disabled){ background:#5e2731; }
   .spacer{ flex:1; }
 
   main{ flex:1; display:flex; flex-direction:column; min-height:0; padding:16px 22px; gap:14px; }
@@ -28,43 +29,36 @@
   video{ max-width:100%; max-height:100%; display:block; }
   .empty{ color:var(--text2); font-size:16px; font-weight:700; text-align:center; padding:40px; }
 
-  /* barra de tiempo tipo LosslessCut */
   .tl-wrap{ flex:none; display:flex; flex-direction:column; gap:10px; }
   .times{ display:flex; align-items:center; gap:18px; font-variant-numeric:tabular-nums; font-weight:800; font-size:14px; }
   .times .cur{ font-size:18px; }
   .times .sep{ color:var(--text2); }
-  .times .seldur{ color:var(--accent); }
+  .times .rmv{ color:#ff6b78; }
   .timeline{ position:relative; height:56px; background:var(--panel2); border:1px solid var(--border);
     border-radius:10px; cursor:pointer; user-select:none; touch-action:none; }
-  /* pista de audio separada, alineada con la del vídeo */
+  /* selección roja = la parte que vas a QUITAR */
+  .cut{ position:absolute; top:0; bottom:0; z-index:3; background:color-mix(in srgb, #ff4d5e 30%, transparent);
+    border-left:3px solid #ff4d5e; border-right:3px solid #ff4d5e; box-sizing:border-box; cursor:grab; }
+  .cut:active{ cursor:grabbing; }
+  .handle{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize; z-index:5;
+    display:flex; align-items:center; justify-content:center; }
+  .handle::after{ content:""; width:5px; height:70%; background:#ff4d5e; border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
+  /* marcas finas donde ya has cortado (uniones) */
+  .cutmark{ position:absolute; top:0; bottom:0; width:2px; margin-left:-1px; background:repeating-linear-gradient(
+    to bottom, #ffd43b 0 4px, transparent 4px 8px); z-index:2; pointer-events:none; }
+  .playhead{ position:absolute; top:-6px; bottom:-6px; width:2px; margin-left:-1px; background:#fff;
+    box-shadow:0 0 0 1px rgba(0,0,0,.6); z-index:6; cursor:ew-resize; }
+  .playhead::before{ content:""; position:absolute; top:0; bottom:0; left:-8px; right:-8px; }
+  .playhead::after{ content:""; position:absolute; top:-3px; left:50%; transform:translateX(-50%);
+    width:15px; height:15px; border-radius:50%; background:#fff; box-shadow:0 1px 5px rgba(0,0,0,.6); }
+  .playhead:active{ cursor:grabbing; }
+
+  /* pista de audio separada, alineada con la del vídeo (ya editado) */
   .audiolane{ position:relative; height:46px; background:var(--panel2); border:1px solid var(--border);
     border-radius:10px; overflow:hidden; cursor:pointer; }
   #wave{ position:absolute; inset:0; width:100%; height:100%; }
   .audiolane .aph{ position:absolute; top:0; bottom:0; width:2px; margin-left:-1px; background:#fff; opacity:.85; pointer-events:none; }
   .aud-tag{ position:absolute; left:9px; top:4px; font-size:11px; font-weight:800; color:var(--text2); pointer-events:none; z-index:2; }
-  .sel{ position:absolute; top:0; bottom:0; z-index:2; background:color-mix(in srgb, var(--accent) 24%, transparent);
-    border-left:3px solid var(--accent); border-right:3px solid var(--accent); box-sizing:border-box; cursor:grab; }
-  .sel:active{ cursor:grabbing; }
-  /* huecos rojos: trozos DENTRO de lo azul que se eliminan */
-  .hole{ position:absolute; top:0; bottom:0; z-index:3; background:color-mix(in srgb, #ff4d5e 32%, transparent);
-    border-left:3px solid #ff4d5e; border-right:3px solid #ff4d5e; box-sizing:border-box; cursor:grab; }
-  .hole:active{ cursor:grabbing; }
-  .hole .hh{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize;
-    display:flex; align-items:center; justify-content:center; }
-  .hole .hh::after{ content:""; width:5px; height:70%; background:#ff4d5e; border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
-  .hole .hx{ position:absolute; top:-24px; left:50%; transform:translateX(-50%); width:20px; height:20px; border-radius:50%;
-    background:#ff4d5e; color:#fff; font:900 12px sans-serif; display:flex; align-items:center; justify-content:center;
-    cursor:pointer; z-index:7; box-shadow:0 1px 5px rgba(0,0,0,.6); }
-  .handle{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize; z-index:4;
-    display:flex; align-items:center; justify-content:center; }
-  .handle::after{ content:""; width:5px; height:70%; background:var(--accent); border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
-  .playhead{ position:absolute; top:-6px; bottom:-6px; width:2px; margin-left:-1px; background:#fff;
-    box-shadow:0 0 0 1px rgba(0,0,0,.6); z-index:6; cursor:ew-resize; }
-  /* zona ancha invisible para poder agarrar la barrita fácilmente */
-  .playhead::before{ content:""; position:absolute; top:0; bottom:0; left:-8px; right:-8px; }
-  .playhead::after{ content:""; position:absolute; top:-3px; left:50%; transform:translateX(-50%);
-    width:15px; height:15px; border-radius:50%; background:#fff; box-shadow:0 1px 5px rgba(0,0,0,.6); }
-  .playhead:active{ cursor:grabbing; }
 
   .controls{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
   .controls .grp{ display:flex; align-items:center; gap:6px; }
@@ -74,10 +68,7 @@
   .controls select{ background:var(--panel2); border:1px solid var(--border); border-radius:8px; color:var(--text);
     padding:9px 10px; font:800 13px "Segoe UI",Arial; cursor:pointer; }
   .kbd{ color:var(--text2); font-size:12px; font-weight:700; }
-  .controls .mode{ display:flex; align-items:center; gap:6px; font-size:13px; font-weight:800; color:var(--text); cursor:pointer; }
-  .controls .mode input{ width:auto; }
 
-  /* overlay de exportación */
   #ov{ position:fixed; inset:0; background:rgba(8,8,12,.92); display:none; flex-direction:column;
     align-items:center; justify-content:center; gap:16px; z-index:100; padding:30px; text-align:center; }
   #ov.show{ display:flex; }
@@ -90,15 +81,15 @@
 <body>
 <header>
   <button class="ng" onclick="location.href='library.html'">←  Biblioteca</button>
-  <h1>✂️ Cortar vídeo <small>corte frame-exacto · recodifica manteniendo calidad, resolución y FPS</small></h1>
+  <h1>✂️ Cortar vídeo <small>selecciona una parte y quítala · la barra se acorta · calidad 1080p/FPS del original</small></h1>
   <span class="spacer"></span>
   <button id="pick" class="pri">🎬  Elegir vídeo</button>
-  <button id="export" class="pri" disabled>💾  Exportar recorte</button>
+  <button id="export" class="pri" disabled>💾  Exportar</button>
 </header>
 
 <main>
   <div class="stage">
-    <div class="empty" id="empty">Elige un vídeo del PC para recortarlo.<br>La calidad se mantiene (1080p, mismos FPS) y solo se recorta el trozo que marques.</div>
+    <div class="empty" id="empty">Elige un vídeo del PC para recortarlo.</div>
     <video id="video" style="display:none" playsinline></video>
   </div>
 
@@ -108,14 +99,12 @@
       <span class="sep">/</span>
       <span id="tDur">0:00.00</span>
       <span class="spacer" style="flex:1"></span>
-      <span>IN <b id="tIn">0:00.00</b></span>
-      <span>OUT <b id="tOut">0:00.00</b></span>
-      <span class="seldur">SEL <b id="tSel">0:00.00</b></span>
+      <span class="rmv" id="tSelWrap" style="display:none">Seleccionado a quitar: <b id="tSel">0:00.00</b></span>
     </div>
     <div class="timeline" id="timeline">
-      <div class="sel" id="sel"></div>
-      <div class="handle" id="hIn" style="left:0"></div>
-      <div class="handle" id="hOut" style="left:100%"></div>
+      <div class="cut" id="cut" style="display:none"></div>
+      <div class="handle" id="hA" style="display:none"></div>
+      <div class="handle" id="hB" style="display:none"></div>
       <div class="playhead" id="ph" style="left:0"></div>
     </div>
     <div class="audiolane" id="audiolane" style="display:none">
@@ -127,11 +116,11 @@
       <button class="ng" id="play">▶</button>
       <div class="grp"><button class="ng" id="prevF">⟨ frame</button><button class="ng" id="nextF">frame ⟩</button></div>
       <div class="grp">
-        <button class="ng" id="setIn">[ Marcar INICIO</button>
-        <button class="ng" id="setOut">Marcar FIN ]</button>
-        <button class="ng" id="goIn">⟲ ir a inicio</button>
-        <button class="ng" id="goOut">ir a fin ⟳</button>
+        <button class="ng" id="markIn">[ Marcar inicio</button>
+        <button class="ng" id="markOut">Marcar fin ]</button>
       </div>
+      <button class="danger" id="removeBtn" disabled>🗑  Quitar parte seleccionada</button>
+      <button class="ng" id="undo" disabled>↩  Deshacer</button>
       <span class="spacer" style="flex:1"></span>
       <div class="grp"><span class="lbl">FPS</span><input type="number" id="fps" value="30" min="1" max="120" step="1" title="Solo para el salto por frame"></div>
       <div class="grp"><span class="lbl">Calidad</span>
@@ -144,18 +133,15 @@
       </div>
     </div>
     <div class="controls">
-      <span class="lbl" style="color:var(--accent)">▮ me quedo</span>
-      <button class="ng" id="addHole">➕  Quitar un trozo de dentro</button>
-      <span class="lbl" style="color:#ff4d5e">▮ se quita</span>
-      <span class="spacer" style="flex:1"></span>
       <button class="ng" id="pickAudio">🎵  Poner audio oficial</button>
       <span id="audioName" class="kbd" style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></span>
       <div class="grp" id="offGrp" style="display:none"><span class="lbl">Desfase audio</span>
         <input type="range" id="off" min="-20" max="20" step="0.01" value="0" style="width:150px">
         <input type="number" id="offNum" step="0.05" value="0" style="width:78px"><span class="lbl">s</span>
       </div>
+      <span class="spacer" style="flex:1"></span>
+      <span class="kbd">Arrastra por la barra para <b>seleccionar</b> · o <b>[</b>/<b>]</b> marcar inicio/fin · un clic = ir a ese punto · <b>Espacio</b> play · <b>← →</b> frame</span>
     </div>
-    <div class="kbd">La franja <b style="color:var(--accent)">azul</b> es lo que te quedas (mueve sus bordes para recortar puntas). Con <b>➕ Quitar un trozo</b> añades un hueco <b style="color:#ff4d5e">rojo</b> DENTRO que se elimina (puedes poner varios). Atajos: <b>Espacio</b> play · <b>← →</b> frame · <b>I/O</b> inicio/fin de lo azul · con audio oficial se silencia el del vídeo</div>
     <audio id="oaudio" preload="auto"></audio>
   </div>
 </main>
@@ -163,9 +149,9 @@
 <div id="ov">
   <div class="t" id="ovT">Exportando…</div>
   <div id="bar"><div id="fill"></div></div>
-  <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
+  <div class="s" id="ovS">Recodificando, no cierres la app.</div>
 </div>
 
-<script src="js/cutter.js?v=10"></script>
+<script src="js/cutter.js?v=11"></script>
 </body>
 </html>

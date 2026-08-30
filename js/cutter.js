@@ -1,6 +1,8 @@
 /* =========================================================
-   CORTADOR DE VÍDEO (tipo LosslessCut) — corte frame-exacto
-   recodificando (mantiene resolución, FPS y calidad).
+   CORTADOR DE VÍDEO — modelo "la barra se acorta":
+   la línea de tiempo representa el vídeo YA EDITADO. Seleccionas
+   una parte y la QUITAS: desaparece de la barra y se une el resto.
+   Exporta recodificando (frame-exacto, 1080p/FPS del original).
    ========================================================= */
 (function(){
   const $ = s => document.querySelector(s);
@@ -11,181 +13,159 @@
   }
 
   const video = $("#video"), empty = $("#empty");
-  const timeline = $("#timeline"), selEl = $("#sel"), hIn = $("#hIn"), hOut = $("#hOut"), ph = $("#ph");
-  const exportBtn = $("#export");
+  const timeline = $("#timeline"), cutEl = $("#cut"), hA = $("#hA"), hB = $("#hB"), ph = $("#ph");
   const oaudio = $("#oaudio"), waveCanvas = $("#wave"), offRange = $("#off"), offNum = $("#offNum");
   const audiolane = $("#audiolane"), aph = $("#aph");
+  const exportBtn = $("#export"), removeBtn = $("#removeBtn"), undoBtn = $("#undo");
 
-  let dur = 0, inT = 0, outT = 0, srcPath = "";
-  let audioPath = "", audioBuf = null, audioOff = 0;   // audio oficial + desfase (audio = video + off)
-  let holes = [], holeEls = [];                          // huecos rojos DENTRO de lo azul (se eliminan)
-  const preview = true;                                   // el corte está SIEMPRE aplicado al editar (el playhead solo se mueve por lo que se conserva)
+  let dur = 0, srcPath = "";
+  let segs = [];                       // trozos CONSERVADOS en tiempo original: [{s,e}]
+  let selA = 0, selB = 0, hasSel = false;   // selección (a quitar) en tiempo EDITADO
+  let history = [];                    // para deshacer
+  let audioPath = "", audioBuf = null, audioOff = 0;
 
-  const fmt = t => { t = Math.max(0, t||0); const m = Math.floor(t/60), s = t - m*60;
-    return m + ":" + (s<10?"0":"") + s.toFixed(2); };
+  const fmt = t => { t = Math.max(0, t||0); const m = Math.floor(t/60), s = t - m*60; return m + ":" + (s<10?"0":"") + s.toFixed(2); };
   const fps = () => Math.max(1, +$("#fps").value || 30);
   const FRAME = () => 1 / fps();
   const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
   const fileUrl = p => "file:///" + encodeURI(String(p).replace(/\\/g, "/"));
 
+  // ----- mapeo tiempo editado <-> tiempo original -----
+  const editedDur = () => segs.reduce((a,s)=> a + (s.e - s.s), 0);
+  function origFromEdited(te){ const E = editedDur(); te = clamp(te, 0, E); let acc = 0;
+    for(const s of segs){ const len = s.e - s.s; if(te <= acc + len + 1e-9) return s.s + (te - acc); acc += len; }
+    const last = segs[segs.length-1]; return last ? last.e : 0; }
+  function editedFromOrig(to){ let acc = 0;
+    for(const s of segs){ if(to < s.s) return acc; if(to <= s.e) return acc + (to - s.s); acc += s.e - s.s; }
+    return acc; }
+  const curEdited = () => editedFromOrig(video.currentTime || 0);
+  const seekEdited = te => { video.currentTime = origFromEdited(clamp(te, 0, editedDur())); };
+  const segContaining = to => { for(const s of segs){ if(to >= s.s - 0.03 && to < s.e - 0.001) return s; } return null; };
+  const nextSegAfter = t => { let best = null; for(const s of segs){ if(s.s > t - 0.001 && (!best || s.s < best.s)) best = s; } return best; };
+  // quita [a,b] (editado) de segs -> nuevos trozos conservados
+  function removeEdited(a, b){
+    const oA = origFromEdited(a), oB = origFromEdited(b), next = [];
+    for(const s of segs){
+      if(oB <= s.s || oA >= s.e){ next.push(s); continue; }
+      if(oA > s.s) next.push({ s:s.s, e:oA });
+      if(oB < s.e) next.push({ s:oB, e:s.e });
+    }
+    return next.filter(s => s.e - s.s > 0.02);
+  }
+
+  const pctE = te => { const E = editedDur(); return E > 0 ? (te/E*100) : 0; };
+
   function paint(){
-    const pct = t => dur > 0 ? (t/dur*100) : 0;
-    hIn.style.left  = pct(inT) + "%";
-    hOut.style.left = pct(outT) + "%";
-    selEl.style.left = pct(inT) + "%";
-    selEl.style.width = pct(outT - inT) + "%";
-    ph.style.left = pct(video.currentTime || 0) + "%";
-    $("#tCur").textContent = fmt(video.currentTime || 0);
-    $("#tDur").textContent = fmt(dur);
-    $("#tIn").textContent  = fmt(inT);
-    $("#tOut").textContent = fmt(outT);
-    $("#tSel").textContent = fmt(outT - inT);
-    aph.style.left = pct(video.currentTime || 0) + "%";
-    positionHoles();
-  }
-
-  // ---- huecos rojos (trozos a quitar de dentro de lo azul) ----
-  const pctT = t => dur > 0 ? (t/dur*100) : 0;
-  function positionHoles(){
-    holes.forEach((h,i) => { const el = holeEls[i]; if(!el) return;
-      el.style.left = pctT(h.s) + "%"; el.style.width = pctT(h.e - h.s) + "%"; });
-  }
-  function dragMove(mv){ const up = () => { window.removeEventListener("pointermove", mv); window.removeEventListener("pointerup", up); };
-    window.addEventListener("pointermove", mv); window.addEventListener("pointerup", up); }
-  function makeHole(h){
-    const el = document.createElement("div"); el.className = "hole";
-    el.innerHTML = `<div class="hh hh-in" style="left:0"></div><div class="hh hh-out" style="left:100%"></div><div class="hx">✕</div>`;
-    timeline.appendChild(el);
-    el.addEventListener("pointerdown", e => { if(e.target !== el) return; e.preventDefault(); e.stopPropagation();
-      const base = { grabT: timeAt(e.clientX), s0: h.s, len: h.e - h.s };
-      dragMove(ev => { const d = timeAt(ev.clientX) - base.grabT;
-        h.s = clamp(base.s0 + d, inT, outT - base.len); h.e = h.s + base.len; positionHoles(); }); });
-    el.querySelector(".hh-in").addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation();
-      dragMove(ev => { h.s = clamp(timeAt(ev.clientX), inT, h.e - FRAME()); video.currentTime = h.s; positionHoles(); paint(); }); });
-    el.querySelector(".hh-out").addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation();
-      dragMove(ev => { h.e = clamp(timeAt(ev.clientX), h.s + FRAME(), outT); video.currentTime = h.e; positionHoles(); paint(); }); });
-    const hx = el.querySelector(".hx");
-    hx.addEventListener("pointerdown", e => e.stopPropagation());
-    hx.addEventListener("click", e => { e.stopPropagation(); const idx = holes.indexOf(h); if(idx>=0) holes.splice(idx,1); rebuildHoles(); });
-    return el;
-  }
-  function rebuildHoles(){
-    timeline.querySelectorAll(".hole").forEach(x => x.remove());
-    holeEls = holes.map(makeHole); positionHoles();
-  }
-  // lo que se conserva = [inT,outT] menos los huecos -> lista de trozos
-  function clampHoles(){ holes.forEach(h => { h.s = clamp(h.s, inT, outT); h.e = clamp(h.e, inT, outT); }); positionHoles(); }
-  // huecos ordenados; y utilidades para el modo previsualización (navegar SOLO por lo que se conserva)
-  const holesSorted = () => holes.map(h => [Math.min(h.s,h.e), Math.max(h.s,h.e)])
-                                 .filter(h => h[1]-h[0] > 0.02).sort((a,b)=>a[0]-b[0]);
-  const inHoleEnd = t => { for(const [s,e] of holesSorted()){ if(t >= s-0.001 && t < e) return e; } return -1; };
-  const snapKept = t => { t = clamp(t, inT, outT); const he = inHoleEnd(t); return he >= 0 ? Math.min(he, outT) : t; };
-  const seekTo = t => { video.currentTime = preview ? snapKept(t) : clamp(t, 0, dur); };
-  function previewLoop(){
-    if(preview && dur && !video.paused){
-      const t = video.currentTime;
-      if(t < inT - 0.05) video.currentTime = inT;
-      else if(t >= outT - 0.02){ video.pause(); video.currentTime = outT; }
-      else { const he = inHoleEnd(t); if(he >= 0) video.currentTime = Math.min(he, outT); }
+    const E = editedDur();
+    ph.style.left = pctE(curEdited()) + "%";
+    aph.style.left = pctE(curEdited()) + "%";
+    $("#tCur").textContent = fmt(curEdited());
+    $("#tDur").textContent = fmt(E);
+    cutEl.style.display = hasSel ? "" : "none";
+    hA.style.display = hasSel ? "" : "none";
+    hB.style.display = hasSel ? "" : "none";
+    $("#tSelWrap").style.display = hasSel ? "" : "none";
+    if(hasSel){
+      cutEl.style.left = pctE(selA) + "%"; cutEl.style.width = pctE(selB - selA) + "%";
+      hA.style.left = pctE(selA) + "%"; hB.style.left = pctE(selB) + "%";
+      $("#tSel").textContent = fmt(selB - selA);
     }
-    requestAnimationFrame(previewLoop);
   }
-  requestAnimationFrame(previewLoop);
-  function computeSegments(){
-    let pieces = [[inT, outT]];
-    const hs = holes.map(h => [clamp(Math.min(h.s,h.e), inT, outT), clamp(Math.max(h.s,h.e), inT, outT)])
-                    .filter(h => h[1]-h[0] > 0.02).sort((a,b)=>a[0]-b[0]);
-    for(const [hs0, he0] of hs){
-      const next = [];
-      for(const [s,e] of pieces){
-        if(he0 <= s || hs0 >= e){ next.push([s,e]); continue; }
-        if(hs0 > s) next.push([s, hs0]);
-        if(he0 < e) next.push([he0, e]);
-      }
-      pieces = next;
-    }
-    return pieces.filter(p => p[1]-p[0] > 0.02).map(p => ({ s:p[0], e:p[1] }));
+  function updateButtons(){
+    removeBtn.disabled = !(hasSel && selB - selA > 0.02);
+    undoBtn.disabled = !history.length;
+    exportBtn.disabled = !(dur && editedDur() > 0.02);
   }
+  function drawCutmarks(){
+    timeline.querySelectorAll(".cutmark").forEach(x => x.remove());
+    const E = editedDur(); let acc = 0;
+    for(let i=0; i<segs.length-1; i++){ acc += segs[i].e - segs[i].s;
+      const el = document.createElement("div"); el.className = "cutmark"; el.style.left = (acc/E*100) + "%"; timeline.appendChild(el); }
+  }
+  function layout(){ drawCutmarks(); drawWave(); }   // cuando cambian los trozos
 
-  // ---- elegir vídeo ----
+  // ----- elegir vídeo -----
   $("#pick").onclick = async () => {
     const r = await desktop.pickCutInput();
     if(!r || !r.ok) return;
-    srcPath = r.path;
-    video.src = fileUrl(r.path);
-    video.style.display = "block"; empty.style.display = "none";
-    video.load();
+    srcPath = r.path; video.src = fileUrl(r.path);
+    video.style.display = "block"; empty.style.display = "none"; video.load();
   };
   video.addEventListener("loadedmetadata", () => {
-    dur = video.duration || 0; inT = 0; outT = dur;
-    exportBtn.disabled = false;
-    // el desfase del audio puede ser tan grande como el propio vídeo (ambos sentidos)
-    const lim = Math.max(20, Math.ceil(dur));
-    offRange.min = -lim; offRange.max = lim;
-    paint();
-    if(typeof drawWave === "function") drawWave();
+    dur = video.duration || 0; segs = [{ s:0, e:dur }]; hasSel = false; history = [];
+    const lim = Math.max(20, Math.ceil(dur)); offRange.min = -lim; offRange.max = lim;
+    paint(); layout(); updateButtons();
   });
   video.addEventListener("timeupdate", paint);
   video.addEventListener("play",  () => $("#play").textContent = "⏸");
   video.addEventListener("pause", () => $("#play").textContent = "▶");
 
-  // ---- timeline: click para buscar, arrastrar manijas / playhead ----
-  const timeAt = clientX => {
-    const r = timeline.getBoundingClientRect();
-    return clamp((clientX - r.left) / r.width, 0, 1) * dur;
-  };
-  let drag = null;   // "in" | "out" | "seek" | "move"
-  let moveBase = null;   // para arrastrar la franja entera: {grabT, in0, len}
-  const onMove = e => {
-    if(!drag || !dur) return;
-    const t = timeAt(e.clientX);
-    if(drag === "in"){ inT = clamp(t, 0, outT - FRAME()); video.currentTime = inT; clampHoles(); }
-    else if(drag === "out"){ outT = clamp(t, inT + FRAME(), dur); video.currentTime = outT; clampHoles(); }
-    else if(drag === "move"){                        // mover el trozo marcado sin cambiar su duración
-      const d = t - moveBase.grabT;
-      inT = clamp(moveBase.in0 + d, 0, dur - moveBase.len);
-      outT = inT + moveBase.len;
-      video.currentTime = inT;
+  // ----- reproducción: salta los trozos quitados; para al final -----
+  function loop(){
+    if(dur && !video.paused){
+      const to = video.currentTime, seg = segContaining(to);
+      if(!seg){ const nx = nextSegAfter(to); if(nx) video.currentTime = nx.s; else video.pause(); }
+      else if(to >= seg.e - 0.03){ const nx = nextSegAfter(seg.e + 0.001); if(nx) video.currentTime = nx.s; else { video.pause(); video.currentTime = Math.max(0, seg.e - 0.03); } }
     }
-    else { seekTo(t); }
-    paint();
-  };
-  const endDrag = () => { drag = null; moveBase = null;
-    window.removeEventListener("pointermove", onMove); window.removeEventListener("pointerup", endDrag); };
-  const startDrag = kind => e => { e.preventDefault(); e.stopPropagation(); drag = kind;
-    window.addEventListener("pointermove", onMove); window.addEventListener("pointerup", endDrag); };
-  hIn.addEventListener("pointerdown", startDrag("in"));
-  hOut.addEventListener("pointerdown", startDrag("out"));
-  // arrastrar la franja azul entera (mueve inicio y fin juntos)
-  selEl.addEventListener("pointerdown", e => { if(!dur) return;
-    e.preventDefault(); e.stopPropagation();
-    moveBase = { grabT: timeAt(e.clientX), in0: inT, len: outT - inT };
-    startDrag("move")(e);
-  });
-  // arrastrar la barrita blanca (playhead) para desplazarse
-  ph.addEventListener("pointerdown", e => { if(!dur) return;
-    e.preventDefault(); e.stopPropagation();
-    seekTo(timeAt(e.clientX)); startDrag("seek")(e); });
-  timeline.addEventListener("pointerdown", e => { if(!dur) return; if(e.target===hIn||e.target===hOut||e.target===selEl||e.target===ph) return;
-    seekTo(timeAt(e.clientX)); startDrag("seek")(e); });
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
 
-  // ---- botones ----
-  const step = d => { if(!dur) return; video.pause(); seekTo((video.currentTime||0) + d); paint(); };
+  // ----- interacción con la barra -----
+  const timeAt = clientX => { const r = timeline.getBoundingClientRect(); return clamp((clientX - r.left)/r.width, 0, 1) * editedDur(); };
+  const onDrag = mv => { const up = () => { window.removeEventListener("pointermove", mv); window.removeEventListener("pointerup", up); };
+    window.addEventListener("pointermove", mv); window.addEventListener("pointerup", up); };
+
+  // arrastrar por la barra = seleccionar; clic simple = ir a ese punto
+  timeline.addEventListener("pointerdown", e => {
+    if(!dur) return;
+    if(e.target===hA || e.target===hB || e.target===cutEl || e.target===ph) return;
+    const downX = e.clientX, downT = timeAt(e.clientX); let moved = false;
+    onDrag(ev => {
+      if(!moved && Math.abs(ev.clientX - downX) < 5) return;
+      moved = true; const t = timeAt(ev.clientX);
+      selA = Math.min(downT, t); selB = Math.max(downT, t); hasSel = true; paint(); updateButtons();
+    });
+    const up = () => { window.removeEventListener("pointerup", up); if(!moved){ seekEdited(downT); paint(); } };
+    window.addEventListener("pointerup", up);
+  });
+  // arrastrar la barrita blanca = ir a ese punto
+  ph.addEventListener("pointerdown", e => { if(!dur) return; e.preventDefault(); e.stopPropagation();
+    seekEdited(timeAt(e.clientX)); onDrag(ev => { seekEdited(timeAt(ev.clientX)); paint(); }); });
+  // manijas de la selección
+  hA.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation();
+    onDrag(ev => { selA = clamp(timeAt(ev.clientX), 0, selB - 0.02); seekEdited(selA); paint(); updateButtons(); }); });
+  hB.addEventListener("pointerdown", e => { e.preventDefault(); e.stopPropagation();
+    onDrag(ev => { selB = clamp(timeAt(ev.clientX), selA + 0.02, editedDur()); seekEdited(selB); paint(); updateButtons(); }); });
+  // mover la selección entera
+  cutEl.addEventListener("pointerdown", e => { if(e.target !== cutEl) return; e.preventDefault(); e.stopPropagation();
+    const base = { grabT: timeAt(e.clientX), a0: selA, len: selB - selA };
+    onDrag(ev => { const d = timeAt(ev.clientX) - base.grabT; selA = clamp(base.a0 + d, 0, editedDur() - base.len); selB = selA + base.len; paint(); }); });
+  // clic en la pista de audio = ir a ese punto
+  audiolane.addEventListener("pointerdown", e => { if(!dur) return; seekEdited(timeAt(e.clientX)); paint();
+    onDrag(ev => { seekEdited(timeAt(ev.clientX)); paint(); }); });
+
+  // ----- botones -----
+  const step = d => { if(!dur) return; video.pause(); seekEdited(curEdited() + d); paint(); };
   const playPause = () => { if(!dur) return;
-    if(video.paused){
-      if(preview){ const t = video.currentTime;
-        if(t < inT || t >= outT - 0.05) video.currentTime = inT;      // al final (o antes) -> reinicia por el corte
-        else { const he = inHoleEnd(t); if(he >= 0) video.currentTime = Math.min(he, outT); } }
-      video.play();
-      if(audioPath){ syncAudio(true); oaudio.play().catch(()=>{}); }   // arranca el audio dentro del gesto de click
-    } else { video.pause(); if(audioPath){ try{ oaudio.pause(); }catch(e){} } } };
-  $("#play").onclick   = () => playPause();
+    if(video.paused){ if(curEdited() >= editedDur() - 0.05) seekEdited(0); video.play(); if(audioPath){ syncAudio(true); oaudio.play().catch(()=>{}); } }
+    else { video.pause(); if(audioPath) try{ oaudio.pause(); }catch(e){} } };
+  $("#play").onclick   = playPause;
   $("#prevF").onclick  = () => step(-FRAME());
   $("#nextF").onclick  = () => step(+FRAME());
-  $("#setIn").onclick  = () => { inT = clamp(video.currentTime||0, 0, outT - FRAME()); paint(); };
-  $("#setOut").onclick = () => { outT = clamp(video.currentTime||0, inT + FRAME(), dur); paint(); };
-  $("#goIn").onclick   = () => { video.currentTime = inT; paint(); };
-  $("#goOut").onclick  = () => { video.currentTime = outT; paint(); };
+  $("#markIn").onclick  = () => { const t = curEdited(); selA = t; if(!hasSel || selB <= selA) selB = editedDur(); hasSel = true; paint(); updateButtons(); };
+  $("#markOut").onclick = () => { const t = curEdited(); selB = t; if(!hasSel || selA >= selB) selA = 0; hasSel = true; paint(); updateButtons(); };
+  removeBtn.onclick = () => {
+    if(!hasSel || selB - selA <= 0.02) return;
+    const posBefore = clamp(selA, 0, editedDur());          // tras quitar, deja el cursor donde empezaba lo quitado
+    history.push(JSON.stringify(segs));
+    segs = removeEdited(selA, selB);
+    if(!segs.length) segs = [{ s:0, e:0 }];
+    hasSel = false;
+    seekEdited(Math.min(posBefore, editedDur()));
+    paint(); layout(); updateButtons();
+  };
+  undoBtn.onclick = () => { if(!history.length) return; segs = JSON.parse(history.pop()); hasSel = false; seekEdited(clamp(curEdited(),0,editedDur())); paint(); layout(); updateButtons(); };
 
   document.addEventListener("keydown", e => {
     if(/^(input|select|textarea)$/i.test((e.target && e.target.tagName)||"")) return;
@@ -193,107 +173,75 @@
     if(e.code === "Space"){ e.preventDefault(); playPause(); }
     else if(e.key === "ArrowLeft"){ e.preventDefault(); step(-FRAME()); }
     else if(e.key === "ArrowRight"){ e.preventDefault(); step(+FRAME()); }
-    else if(e.key === "i" || e.key === "I"){ $("#setIn").onclick(); }
-    else if(e.key === "o" || e.key === "O"){ $("#setOut").onclick(); }
-    else if(e.key === "Home"){ e.preventDefault(); $("#goIn").onclick(); }
-    else if(e.key === "End"){ e.preventDefault(); $("#goOut").onclick(); }
+    else if(e.key === "[" ){ $("#markIn").onclick(); }
+    else if(e.key === "]" ){ $("#markOut").onclick(); }
+    else if((e.key === "Delete" || e.key === "Backspace") && !removeBtn.disabled){ e.preventDefault(); removeBtn.onclick(); }
+    else if((e.ctrlKey||e.metaKey) && e.key.toLowerCase() === "z" && !undoBtn.disabled){ e.preventDefault(); undoBtn.onclick(); }
   });
 
-  // ---- añadir un hueco (trozo a quitar de dentro de lo azul) ----
-  $("#addHole").onclick = () => { if(!dur) return;
-    const t = clamp(video.currentTime || 0, inT, outT);
-    const len = Math.min(3, Math.max(0.5, (outT - inT) / 6));
-    let s = clamp(t, inT, outT - 0.1), e = clamp(s + len, s + 0.1, outT);
-    if(e - s < 0.1){ s = clamp(outT - len, inT, outT - 0.1); e = outT; }
-    holes.push({ s, e }); rebuildHoles();
-  };
-
-  // ---- audio oficial: cargar, silenciar el vídeo, sincronizar y dibujar la onda ----
+  // ----- audio oficial -----
   function drawWave(){
     const ctx = waveCanvas.getContext("2d");
     const W = audiolane.clientWidth, H = audiolane.clientHeight, dpr = window.devicePixelRatio || 1;
     if(!W) return;
-    waveCanvas.width = W*dpr; waveCanvas.height = H*dpr;
-    waveCanvas.style.width = W+"px"; waveCanvas.style.height = H+"px";
+    waveCanvas.width = W*dpr; waveCanvas.height = H*dpr; waveCanvas.style.width = W+"px"; waveCanvas.style.height = H+"px";
     ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
-    if(!audioBuf || !dur) return;
-    const ch = audioBuf.getChannelData(0), sr = audioBuf.sampleRate, alen = audioBuf.duration, mid = H/2;
+    if(!audioBuf) return;
+    const ch = audioBuf.getChannelData(0), sr = audioBuf.sampleRate, alen = audioBuf.duration, mid = H/2, E = editedDur();
     ctx.fillStyle = "rgba(255,255,255,.30)";
-    const spp = dur / W;                              // segundos por pixel (en tiempo de vídeo)
     for(let x=0; x<W; x++){
-      const at0 = x*spp + audioOff, at1 = at0 + spp;  // ventana de audio de este pixel
-      if(at1 < 0 || at0 > alen) continue;
-      const s0 = Math.max(0, Math.floor(at0*sr)), s1 = Math.min(ch.length, Math.floor(at1*sr));
-      let peak = 0; const stepN = Math.max(1, Math.floor((s1-s0)/10));
-      for(let i=s0; i<s1; i+=stepN){ const v = Math.abs(ch[i]||0); if(v>peak) peak = v; }
-      const h = Math.max(0.6, peak*mid*0.95);
-      ctx.fillRect(x, mid-h, 1, h*2);
+      const te = (x + 0.5)/W * E, to = origFromEdited(te), at = to + audioOff;
+      if(at < 0 || at > alen) continue;
+      const win = E/W;                                       // ventana de este pixel (s)
+      const s0 = Math.max(0, Math.floor(at*sr)), s1 = Math.min(ch.length, Math.floor((at+win)*sr));
+      let peak = 0; const stp = Math.max(1, Math.floor((s1-s0)/8));
+      for(let i=s0; i<s1; i+=stp){ const v = Math.abs(ch[i]||0); if(v>peak) peak = v; }
+      const h = Math.max(0.6, peak*mid*0.95); ctx.fillRect(x, mid-h, 1, h*2);
     }
   }
   function syncAudio(force){
     if(!audioPath) return;
     oaudio.muted = false; oaudio.volume = 1;
-    const target = (video.currentTime||0) + audioOff;
-    const alen = oaudio.duration || 1e9;
+    const target = (video.currentTime||0) + audioOff, alen = oaudio.duration || 1e9;
     if(target < 0 || target > alen){ if(!oaudio.paused){ try{ oaudio.pause(); }catch(e){} } return; }
     if(force || Math.abs((oaudio.currentTime||0) - target) > 0.08){ try{ oaudio.currentTime = target; }catch(e){} }
-    if(!video.paused && oaudio.paused){ oaudio.play().catch(()=>{}); }   // reanuda si el vídeo va sonando
+    if(!video.paused && oaudio.paused){ oaudio.play().catch(()=>{}); }
   }
   const setOff = v => { audioOff = +v || 0; offRange.value = audioOff; offNum.value = audioOff.toFixed(2); drawWave(); syncAudio(true); };
   offRange.oninput = () => setOff(offRange.value);
   offNum.oninput   = () => setOff(offNum.value);
-  video.addEventListener("play",  () => { if(audioPath){ syncAudio(true); oaudio.play().catch(()=>{}); } });
-  video.addEventListener("pause", () => { if(audioPath) try{ oaudio.pause(); }catch(e){} });
   video.addEventListener("seeked", () => syncAudio(true));
   video.addEventListener("timeupdate", () => syncAudio(false));
   window.addEventListener("resize", drawWave);
-  // clic en la pista de audio = buscar en ese punto (mismo eje de tiempo que el vídeo)
-  audiolane.addEventListener("pointerdown", e => { if(!dur) return;
-    seekTo(timeAt(e.clientX)); paint(); startDrag("seek")(e); });
-
 
   $("#pickAudio").onclick = async () => {
     const r = await desktop.pickCutAudio();
     if(!r || !r.ok) return;
-    audioPath = r.path;
-    $("#audioName").textContent = "🎵 " + r.name;
-    $("#offGrp").style.display = "";
-    audiolane.style.display = "";                      // muestra la pista de audio separada
-    oaudio.src = fileUrl(r.path); oaudio.load();
-    video.muted = true;                               // como en la web, se silencia el audio del vídeo
-    audioBuf = null;
-    try{
-      const ab = await fetch(fileUrl(r.path)).then(x => x.arrayBuffer());
-      const actx = new (window.AudioContext || window.webkitAudioContext)();
-      audioBuf = await actx.decodeAudioData(ab);
-      if(actx.close) actx.close();
+    audioPath = r.path; $("#audioName").textContent = "🎵 " + r.name; $("#offGrp").style.display = "";
+    audiolane.style.display = ""; oaudio.src = fileUrl(r.path); oaudio.load(); video.muted = true; audioBuf = null;
+    try{ const ab = await fetch(fileUrl(r.path)).then(x => x.arrayBuffer());
+      const actx = new (window.AudioContext || window.webkitAudioContext)(); audioBuf = await actx.decodeAudioData(ab); if(actx.close) actx.close();
     }catch(e){ audioBuf = null; }
     drawWave();
-    if(!video.paused){ syncAudio(true); oaudio.play().catch(()=>{}); }   // si ya estaba sonando, engancha el audio
+    if(!video.paused){ syncAudio(true); oaudio.play().catch(()=>{}); }
   };
 
-  // ---- exportar ----
+  // ----- exportar -----
   const ov = $("#ov"), fill = $("#fill"), ovT = $("#ovT"), ovS = $("#ovS");
-  desktop.onCutProgress(m => {
-    if(!m) return;
+  desktop.onCutProgress(m => { if(!m) return;
     if(m.phase === "start"){ fill.style.width = "0%"; ovS.textContent = m.msg || ovS.textContent; }
-    if(m.pct != null){ fill.style.width = m.pct + "%"; ovT.textContent = "Exportando… " + m.pct + "%"; }
-  });
+    if(m.pct != null){ fill.style.width = m.pct + "%"; ovT.textContent = "Exportando… " + m.pct + "%"; } });
   exportBtn.onclick = async () => {
     if(!dur || !srcPath) return;
-    const segments = computeSegments();
-    if(!segments.length){ alert("No queda nada que guardar. Revisa la franja azul y los huecos."); return; }
+    const segments = segs.filter(s => s.e - s.s > 0.02).map(s => ({ s:s.s, e:s.e }));
+    if(!segments.length){ alert("No queda nada que guardar."); return; }
     ov.classList.add("show"); ovT.textContent = "Exportando…"; fill.style.width = "0%";
     ovS.textContent = (segments.length > 1 ? "Uniendo los trozos" : "Recodificando el recorte") + ", no cierres la app.";
-    const res = await desktop.cutVideo({
-      input: srcPath, segments, crf: +$("#crf").value,
-      audio: audioPath || null, audioOffset: audioOff
-    });
+    const res = await desktop.cutVideo({ input: srcPath, segments, crf: +$("#crf").value, audio: audioPath || null, audioOffset: audioOff });
     ov.classList.remove("show");
-    if(res && res.ok){
-      const mb = res.size ? (res.size/1048576).toFixed(1) + " MB" : "";
-      alert("¡Listo! Recorte guardado en:\n" + res.out + (mb ? ("\n\nTamaño: " + mb) : ""));
-    } else if(res && res.canceled){ /* nada */ }
+    if(res && res.ok){ const mb = res.size ? (res.size/1048576).toFixed(1) + " MB" : "";
+      alert("¡Listo! Guardado en:\n" + res.out + (mb ? ("\n\nTamaño: " + mb) : "")); }
+    else if(res && res.canceled){ /* nada */ }
     else alert("Error al exportar: " + ((res && res.error) || "desconocido"));
   };
 })();
