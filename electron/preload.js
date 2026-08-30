@@ -17,6 +17,7 @@ contextBridge.exposeInMainWorld("desktop", {
   pickCover: (args) => ipcRenderer.invoke("pick-cover", args || {}),
   importPhoto: (args) => ipcRenderer.invoke("import-photo", args || {}),
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
+  deleteItem: (args) => ipcRenderer.invoke("delete-item", args || {}),
   saveSong: (relPath, data) => ipcRenderer.invoke("save-song", { path: relPath, data }),
   photoSources: (paths) => ipcRenderer.invoke("photo-sources", paths),
   groupMembers: (relPath) => ipcRenderer.invoke("group-members", relPath),

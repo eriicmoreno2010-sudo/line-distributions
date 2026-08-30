@@ -44,6 +44,17 @@ Autónomo: inyecta sus estilos y su markup.
       #intro-title .it-grp{ font-size:3.4vw; letter-spacing:1vw; }
       #intro-title .it-sub{ font-size:3vw; letter-spacing:1vw; }
     }
+    /* Si la canción es de tema CLARO, la intro también es clara (fondo blanco, texto oscuro) */
+    body.theme-light #intro-title{
+      background:
+        radial-gradient(120% 90% at 50% 38%, #ffffff 0%, transparent 60%),
+        radial-gradient(120% 90% at 50% 100%, #eceef4 0%, transparent 55%),
+        #f4f5f9;
+      color:#14151c;
+    }
+    body.theme-light #intro-title .it-grp{ color:#3a3d49; }
+    body.theme-light #intro-title .it-sub{ color:#5a5f6c; }
+    body.theme-light #intro-title .it-sng{ text-shadow:0 2vh 6vh rgba(0,0,0,.12); }
   `;
   document.head.appendChild(style);
 
@@ -64,6 +75,8 @@ Autónomo: inyecta sus estilos y su markup.
   fetch(SONG_URL).then(r=>r.json()).then(s=>{
     grpEl.textContent = s.group || "";
     sngEl.textContent = s.song  || "";
+    // tema claro/oscuro cuanto antes, para que la intro salga del color correcto
+    document.body.classList.toggle("theme-light", s.theme === "light");
   }).catch(()=>{
     grpEl.textContent = (document.getElementById("group-name")||{}).textContent?.trim() || "";
     sngEl.textContent = (document.getElementById("song-name")||{}).textContent?.trim() || "";

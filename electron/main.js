@@ -451,6 +451,32 @@ ipcMain.handle("save-song", async (_e, args) => {
   return res;
 });
 
+// Borrar una canción o álbum (su JSON). Seguridad: solo .json dentro de /data.
+// Hace git rm + commit + push para que la baja llegue también a GitHub.
+ipcMain.handle("delete-item", async (_e, args) => {
+  const rel = (args && args.path) || "";
+  const norm = rel.replace(/\\/g, "/");
+  if(!/^data\/.+\.json$/i.test(norm) || norm.indexOf("..") !== -1){
+    return { ok: false, error: "Ruta no permitida: " + rel };
+  }
+  const full = path.join(ROOT, rel);
+  try{
+    if(!fs.existsSync(full)) return { ok: false, error: "No existe el archivo." };
+    fs.unlinkSync(full);
+  }catch(e){ return { ok: false, error: e.message }; }
+
+  const res = { ok: true, pushed: false, gitError: null };
+  try{
+    await git(["rm", "-f", "--ignore-unmatch", "--", rel]);
+    const c = await git(["commit", "-m", "Delete " + (args.name || rel), "--", rel]);
+    if(c.code !== 0) res.gitError = c.err || c.out;
+    const p = await git(["push"]);
+    if(p.code === 0) res.pushed = true;
+    else res.gitError = (res.gitError ? res.gitError + " | " : "") + (p.err || p.out);
+  }catch(e){ res.gitError = e.message; }
+  return res;
+});
+
 // Member presets: reúne los miembros vistos en las OTRAS canciones del mismo
 // grupo (misma carpeta), con su color/focus/lift más frecuente. Sirve para que,
 // al re-añadir a alguien en el editor, salga con el preajuste que ya tenía.

@@ -32,6 +32,7 @@
         <button class="edit">✎  Editar</button>
         <button class="fotos">🖼  Fotos</button>
         <button class="thumb">🎬  Miniatura</button>
+        <button class="del danger">🗑  Borrar</button>
       </div>`;
     el.querySelector(".open").onclick = () => {
       location.href = "index.html?song=" + encodeURIComponent(song.path);
@@ -45,6 +46,7 @@
     el.querySelector(".thumb").onclick = () => {
       location.href = "thumb.html?song=" + encodeURIComponent(song.path);
     };
+    el.querySelector(".del").onclick = () => removeItem(el, song.path, song.song || "esta canción");
     return el;
   }
 
@@ -61,6 +63,7 @@
         <button class="open">▶  Abrir</button>
         <button class="edit">✎  Editar</button>
         <button class="thumb">🎬  Miniatura</button>
+        <button class="del danger">🗑  Borrar</button>
       </div>`;
     el.querySelector(".open").onclick = () => {
       location.href = "album.html?album=" + encodeURIComponent(al.path);
@@ -71,7 +74,18 @@
     el.querySelector(".thumb").onclick = () => {
       location.href = "album-thumb.html?album=" + encodeURIComponent(al.path);
     };
+    el.querySelector(".del").onclick = () => removeItem(el, al.path, (al.album || "este álbum") + " (álbum)");
     return el;
+  }
+
+  // Borrar canción o álbum (con confirmación). Elimina el JSON y hace push.
+  async function removeItem(cardEl, relPath, label){
+    if(!window.desktop || !window.desktop.deleteItem){ alert("Solo disponible en la app de escritorio."); return; }
+    if(!confirm(`¿Borrar "${label}"?\n\nSe elimina de la biblioteca y de GitHub. No se puede deshacer.\n(El vídeo y las fotos NO se borran.)`)) return;
+    const btn = cardEl.querySelector(".del"); const t0 = btn.textContent; btn.disabled = true; btn.textContent = "⏳ Borrando…";
+    const res = await window.desktop.deleteItem({ path: relPath, name: label });
+    if(res && res.ok){ cardEl.style.transition = "opacity .25s"; cardEl.style.opacity = "0"; setTimeout(() => cardEl.remove(), 250); }
+    else { btn.disabled = false; btn.textContent = t0; alert("No se pudo borrar: " + ((res && res.error) || "desconocido")); }
   }
 
   async function doExport(song){
