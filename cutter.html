@@ -36,7 +36,8 @@
   .timeline{ position:relative; height:56px; background:var(--panel2); border:1px solid var(--border);
     border-radius:10px; cursor:pointer; user-select:none; touch-action:none; }
   .sel{ position:absolute; top:0; bottom:0; background:color-mix(in srgb, var(--accent) 24%, transparent);
-    border-left:3px solid var(--accent); border-right:3px solid var(--accent); box-sizing:border-box; }
+    border-left:3px solid var(--accent); border-right:3px solid var(--accent); box-sizing:border-box; cursor:grab; }
+  .sel:active{ cursor:grabbing; }
   .handle{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize; z-index:4;
     display:flex; align-items:center; justify-content:center; }
   .handle::after{ content:""; width:5px; height:70%; background:var(--accent); border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
@@ -125,6 +126,6 @@
   <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
 </div>
 
-<script src="js/cutter.js?v=1"></script>
+<script src="js/cutter.js?v=2"></script>
 </body>
 </html>

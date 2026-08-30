@@ -61,21 +61,35 @@
     const r = timeline.getBoundingClientRect();
     return clamp((clientX - r.left) / r.width, 0, 1) * dur;
   };
-  let drag = null;   // "in" | "out" | "seek"
+  let drag = null;   // "in" | "out" | "seek" | "move"
+  let moveBase = null;   // para arrastrar la franja entera: {grabT, in0, len}
   const onMove = e => {
     if(!drag || !dur) return;
     const t = timeAt(e.clientX);
     if(drag === "in"){ inT = clamp(t, 0, outT - FRAME()); video.currentTime = inT; }
     else if(drag === "out"){ outT = clamp(t, inT + FRAME(), dur); video.currentTime = outT; }
+    else if(drag === "move"){                        // mover el trozo marcado sin cambiar su duración
+      const d = t - moveBase.grabT;
+      inT = clamp(moveBase.in0 + d, 0, dur - moveBase.len);
+      outT = inT + moveBase.len;
+      video.currentTime = inT;
+    }
     else { video.currentTime = t; }
     paint();
   };
-  const endDrag = () => { drag = null; window.removeEventListener("pointermove", onMove); window.removeEventListener("pointerup", endDrag); };
+  const endDrag = () => { drag = null; moveBase = null;
+    window.removeEventListener("pointermove", onMove); window.removeEventListener("pointerup", endDrag); };
   const startDrag = kind => e => { e.preventDefault(); e.stopPropagation(); drag = kind;
     window.addEventListener("pointermove", onMove); window.addEventListener("pointerup", endDrag); };
   hIn.addEventListener("pointerdown", startDrag("in"));
   hOut.addEventListener("pointerdown", startDrag("out"));
-  timeline.addEventListener("pointerdown", e => { if(!dur) return; if(e.target===hIn||e.target===hOut) return;
+  // arrastrar la franja azul entera (mueve inicio y fin juntos)
+  selEl.addEventListener("pointerdown", e => { if(!dur) return;
+    e.preventDefault(); e.stopPropagation();
+    moveBase = { grabT: timeAt(e.clientX), in0: inT, len: outT - inT };
+    startDrag("move")(e);
+  });
+  timeline.addEventListener("pointerdown", e => { if(!dur) return; if(e.target===hIn||e.target===hOut||e.target===selEl) return;
     video.currentTime = timeAt(e.clientX); startDrag("seek")(e); });
 
   // ---- botones ----
