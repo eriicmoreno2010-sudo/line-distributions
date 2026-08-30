@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cortar vídeo</title>
+<link rel="stylesheet" href="css/fonts.css?v=51">
+<style>
+  :root{ --bg:#0b0b10; --panel:#15151d; --panel2:#1b1b26; --border:#2a2a3a; --text:#f0f0f6; --text2:#9a9ab0; --accent:#7c5cff; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ height:100%; }
+  body{ background:var(--bg); color:var(--text); font-family:"Montserrat","Segoe UI",Arial,sans-serif;
+    display:flex; flex-direction:column; height:100vh; overflow:hidden; }
+  header{ display:flex; align-items:center; gap:14px; padding:14px 22px; border-bottom:1px solid var(--border); flex:none; }
+  h1{ font-size:19px; font-weight:900; }
+  h1 small{ color:var(--text2); font-weight:700; font-size:13px; margin-left:8px; }
+  button{ border:0; border-radius:10px; padding:10px 14px; font:800 14px "Segoe UI",Arial; cursor:pointer; }
+  .ng{ background:var(--panel2); color:var(--text); border:1px solid var(--border); }
+  .ng:hover{ background:#232333; }
+  .pri{ background:var(--accent); color:#fff; }
+  .pri:hover{ background:#6a49f2; }
+  .pri:disabled{ opacity:.5; cursor:default; }
+  .spacer{ flex:1; }
+
+  main{ flex:1; display:flex; flex-direction:column; min-height:0; padding:16px 22px; gap:14px; }
+  .stage{ flex:1; min-height:0; display:flex; align-items:center; justify-content:center;
+    background:#000; border:1px solid var(--border); border-radius:14px; overflow:hidden; position:relative; }
+  video{ max-width:100%; max-height:100%; display:block; }
+  .empty{ color:var(--text2); font-size:16px; font-weight:700; text-align:center; padding:40px; }
+
+  /* barra de tiempo tipo LosslessCut */
+  .tl-wrap{ flex:none; display:flex; flex-direction:column; gap:10px; }
+  .times{ display:flex; align-items:center; gap:18px; font-variant-numeric:tabular-nums; font-weight:800; font-size:14px; }
+  .times .cur{ font-size:18px; }
+  .times .sep{ color:var(--text2); }
+  .times .seldur{ color:var(--accent); }
+  .timeline{ position:relative; height:56px; background:var(--panel2); border:1px solid var(--border);
+    border-radius:10px; cursor:pointer; user-select:none; touch-action:none; }
+  .sel{ position:absolute; top:0; bottom:0; background:color-mix(in srgb, var(--accent) 24%, transparent);
+    border-left:3px solid var(--accent); border-right:3px solid var(--accent); box-sizing:border-box; }
+  .handle{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize; z-index:4;
+    display:flex; align-items:center; justify-content:center; }
+  .handle::after{ content:""; width:5px; height:70%; background:var(--accent); border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
+  .playhead{ position:absolute; top:-6px; bottom:-6px; width:2px; margin-left:-1px; background:#fff;
+    box-shadow:0 0 0 1px rgba(0,0,0,.6); z-index:6; pointer-events:none; }
+  .playhead::after{ content:""; position:absolute; top:-2px; left:50%; transform:translateX(-50%);
+    width:12px; height:12px; border-radius:50%; background:#fff; box-shadow:0 1px 5px rgba(0,0,0,.6); }
+
+  .controls{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .controls .grp{ display:flex; align-items:center; gap:6px; }
+  .controls .lbl{ color:var(--text2); font-size:12px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; }
+  .controls input[type=number]{ width:64px; background:var(--panel2); border:1px solid var(--border); border-radius:8px;
+    color:var(--text); padding:8px 8px; font:800 14px "Segoe UI",Arial; }
+  .controls select{ background:var(--panel2); border:1px solid var(--border); border-radius:8px; color:var(--text);
+    padding:9px 10px; font:800 13px "Segoe UI",Arial; cursor:pointer; }
+  .kbd{ color:var(--text2); font-size:12px; font-weight:700; }
+
+  /* overlay de exportación */
+  #ov{ position:fixed; inset:0; background:rgba(8,8,12,.92); display:none; flex-direction:column;
+    align-items:center; justify-content:center; gap:16px; z-index:100; padding:30px; text-align:center; }
+  #ov.show{ display:flex; }
+  #ov .t{ font-size:20px; font-weight:900; }
+  #ov .s{ color:var(--text2); font-size:14px; font-weight:700; max-width:640px; }
+  #bar{ width:min(560px,80%); height:12px; border-radius:999px; background:var(--panel2); overflow:hidden; border:1px solid var(--border); }
+  #fill{ height:100%; width:0; background:var(--accent); transition:width .2s linear; }
+</style>
+</head>
+<body>
+<header>
+  <button class="ng" onclick="location.href='library.html'">←  Biblioteca</button>
+  <h1>✂️ Cortar vídeo <small>corte frame-exacto · recodifica manteniendo calidad, resolución y FPS</small></h1>
+  <span class="spacer"></span>
+  <button id="pick" class="pri">🎬  Elegir vídeo</button>
+  <button id="export" class="pri" disabled>💾  Exportar recorte</button>
+</header>
+
+<main>
+  <div class="stage">
+    <div class="empty" id="empty">Elige un vídeo del PC para recortarlo.<br>La calidad se mantiene (1080p, mismos FPS) y solo se recorta el trozo que marques.</div>
+    <video id="video" style="display:none" playsinline></video>
+  </div>
+
+  <div class="tl-wrap">
+    <div class="times">
+      <span class="cur" id="tCur">0:00.00</span>
+      <span class="sep">/</span>
+      <span id="tDur">0:00.00</span>
+      <span class="spacer" style="flex:1"></span>
+      <span>IN <b id="tIn">0:00.00</b></span>
+      <span>OUT <b id="tOut">0:00.00</b></span>
+      <span class="seldur">SEL <b id="tSel">0:00.00</b></span>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="sel" id="sel"></div>
+      <div class="handle" id="hIn" style="left:0"></div>
+      <div class="handle" id="hOut" style="left:100%"></div>
+      <div class="playhead" id="ph" style="left:0"></div>
+    </div>
+    <div class="controls">
+      <button class="ng" id="play">▶</button>
+      <div class="grp"><button class="ng" id="prevF">⟨ frame</button><button class="ng" id="nextF">frame ⟩</button></div>
+      <div class="grp">
+        <button class="ng" id="setIn">[ Marcar INICIO</button>
+        <button class="ng" id="setOut">Marcar FIN ]</button>
+        <button class="ng" id="goIn">⟲ ir a inicio</button>
+        <button class="ng" id="goOut">ir a fin ⟳</button>
+      </div>
+      <span class="spacer" style="flex:1"></span>
+      <div class="grp"><span class="lbl">FPS</span><input type="number" id="fps" value="30" min="1" max="120" step="1" title="Solo para el salto por frame"></div>
+      <div class="grp"><span class="lbl">Calidad</span>
+        <select id="crf">
+          <option value="14">Máxima (más grande)</option>
+          <option value="16" selected>Alta (recomendada)</option>
+          <option value="18">Buena</option>
+          <option value="20">Ligera (más pequeña)</option>
+        </select>
+      </div>
+    </div>
+    <div class="kbd">Atajos: <b>Espacio</b> reproducir · <b>← →</b> frame a frame · <b>I</b>/<b>O</b> marcar inicio/fin · <b>Inicio</b>/<b>Fin</b> saltar</div>
+  </div>
+</main>
+
+<div id="ov">
+  <div class="t" id="ovT">Exportando…</div>
+  <div id="bar"><div id="fill"></div></div>
+  <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
+</div>
+
+<script src="js/cutter.js?v=1"></script>
+</body>
+</html>

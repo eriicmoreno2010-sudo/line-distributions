@@ -141,6 +141,8 @@
     if(donutBtn) donutBtn.onclick = () => { location.href = "donut.html"; };
     const transcribeBtn = document.getElementById("transcribeBtn");
     if(transcribeBtn) transcribeBtn.onclick = () => { location.href = "transcribe.html"; };
+    const cutterBtn = document.getElementById("cutterBtn");
+    if(cutterBtn) cutterBtn.onclick = () => { location.href = "cutter.html"; };
     const nowplayingBtn = document.getElementById("nowplayingBtn");
     if(nowplayingBtn) nowplayingBtn.onclick = () => { location.href = "nowplaying.html"; };
     document.getElementById("mCancel").onclick = () => modal.classList.remove("show");

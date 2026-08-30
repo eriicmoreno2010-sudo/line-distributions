@@ -12,7 +12,7 @@ const path = require("path");
 const fs = require("fs");
 const os = require("os");
 const { execFile, spawn } = require("child_process");
-const { runExport } = require("./export");
+const { runExport, findFfmpeg } = require("./export");
 
 const ROOT = path.join(__dirname, "..");
 
@@ -475,6 +475,74 @@ ipcMain.handle("delete-item", async (_e, args) => {
     else res.gitError = (res.gitError ? res.gitError + " | " : "") + (p.err || p.out);
   }catch(e){ res.gitError = e.message; }
   return res;
+});
+
+// ============ CORTADOR DE VÍDEO (tipo LosslessCut, recodificando) ============
+// Elegir un vídeo cualquiera del PC para recortar. Devuelve la ruta ABSOLUTA
+// (el visor lo carga por file:// gracias a webSecurity:false).
+ipcMain.handle("pick-cut-input", async () => {
+  try{
+    const { canceled, filePaths } = await dialog.showOpenDialog({
+      title: "Elegir vídeo para recortar",
+      properties: ["openFile"],
+      filters: [{ name:"Vídeo", extensions:["mp4","mov","mkv","webm","m4v","avi","ts"] }]
+    });
+    if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
+    return { ok:true, path: filePaths[0], name: path.basename(filePaths[0]) };
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
+// Recorta [start,end] recodificando (corte frame-exacto, sin depender de keyframes).
+// Mantiene resolución y FPS del original; vídeo H.264 (CRF alta calidad) + audio AAC 320k.
+ipcMain.handle("cut-video", async (evt, args) => {
+  args = args || {};
+  const send = m => { try{ evt.sender.send("cut-progress", m); }catch(e){} };
+  const input = String(args.input || "");
+  const start = Math.max(0, +args.start || 0);
+  const end   = +args.end || 0;
+  const dur   = end - start;
+  const crf   = Math.min(28, Math.max(0, args.crf != null ? +args.crf : 16));  // 16 = casi indistinguible
+  if(!input || !fs.existsSync(input)) return { ok:false, error:"No se encuentra el vídeo de entrada." };
+  if(!(dur > 0.02)) return { ok:false, error:"El final debe ir después del inicio." };
+
+  // ¿Dónde guardar? Diálogo con nombre por defecto junto al original.
+  const dir  = path.dirname(input);
+  const ext  = ".mp4";
+  const base = path.basename(input, path.extname(input));
+  const defOut = path.join(dir, base + "_cut" + ext);
+  const save = await dialog.showSaveDialog({
+    title: "Guardar recorte", defaultPath: defOut,
+    filters: [{ name:"MP4", extensions:["mp4"] }]
+  });
+  if(save.canceled || !save.filePath) return { ok:false, canceled:true };
+  const out = save.filePath;
+
+  const ff = findFfmpeg();
+  const a = [
+    "-y",
+    "-ss", start.toFixed(3),          // seek de entrada (rápido) — con recodificación es frame-exacto
+    "-i", input,
+    "-t", dur.toFixed(3),
+    "-map", "0:v:0", "-map", "0:a:0?",
+    "-c:v", "libx264", "-crf", String(crf), "-preset", "slow", "-pix_fmt", "yuv420p",
+    "-c:a", "aac", "-b:a", "320k",
+    "-movflags", "+faststart",
+    "-stats_period", "0.2",
+    out
+  ];
+  send({ phase:"start", msg:"Recodificando el recorte (alta calidad)…" });
+  try{
+    const r = await spawnStream(ff, a, line => {
+      // ffmpeg escribe "time=HH:MM:SS.xx" en stderr; calculamos el %
+      const m = /time=(\d+):(\d+):(\d+(?:\.\d+)?)/.exec(line);
+      if(m){ const t = (+m[1])*3600 + (+m[2])*60 + parseFloat(m[3]);
+        send({ phase:"run", pct: Math.max(0, Math.min(100, Math.round(t/dur*100))) }); }
+    });
+    if(r.code !== 0) return { ok:false, error:"ffmpeg " + r.code + ": " + (r.out||"").slice(-400) };
+    let size = 0; try{ size = fs.statSync(out).size; }catch(e){}
+    send({ phase:"done", pct:100 });
+    return { ok:true, out, size };
+  }catch(e){ return { ok:false, error:e.message }; }
 });
 
 // Member presets: reúne los miembros vistos en las OTRAS canciones del mismo
