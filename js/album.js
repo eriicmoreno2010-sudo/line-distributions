@@ -127,6 +127,21 @@
     return { name:v.name, members, songs, grand, evenness, albumMax };
   }
 
+  // Agregación COMPLETA pero restringida a las canciones/miembros de una versión
+  // (para diapositivas que se duplican por completo: bump, nº de veces, average, most/less).
+  // Reusa aggregate() sobre una lista de canciones filtrada, conservando el índice orig.
+  function aggregateFiltered(albumData, songDatas, vcfg){
+    const memberSet = (vcfg.members && vcfg.members.length) ? new Set(vcfg.members) : null;
+    const songSet   = (vcfg.songs   && vcfg.songs.length)   ? new Set(vcfg.songs)   : null;
+    const filtered = songDatas.map((sd, orig) => {
+      if(!sd) return null;
+      if(songSet && !songSet.has(orig)) return null;      // canción excluida
+      if(!memberSet) return sd;
+      return Object.assign({}, sd, { members: (sd.members||[]).filter(m => memberSet.has(m.name)) });
+    });
+    return aggregate(albumData, filtered);
+  }
+
   function evenLabel(e){
     if(e >= 0.93) return "Very even";
     if(e >= 0.85) return "Balanced";
@@ -196,16 +211,33 @@
     // ---------- Race y Donut: UNA diapositiva que recorre las versiones con transición ----------
     raceSlide(versions);
     donutSlide(versions);
-    // ---------- Bump y Nº de veces: UNA sola (versión completa) ----------
-    bumpSlide(A);
-    placesSlides(A);
 
-    // ---------- AVERAGE (versión completa) ----------
-    {
+    // ---------- Resto (bump, nº de veces, average, most/less) ----------
+    // Por defecto (versiones por MIEMBROS) el resto es ÚNICO (versión completa). Pero una
+    // versión marcada "allSlides" (para versiones por CANCIONES) duplica TAMBIÉN estas
+    // diapositivas con sus propios datos, agrupadas por tipo (completa y luego reducida).
+    const deckVariants = rawV
+      ? rawV.map((v,i) => ({ v, i })).filter(x => x.v.allSlides)
+             .map(x => ({ name: (versions[x.i+1] && versions[x.i+1].name) || x.v.name || "Reducida",
+                          A: aggregateFiltered(albumData, songDatas, x.v) }))
+      : [];
+    const baseBadge = deckVariants.length ? (albumData.baseName || "Completa") : "";
+
+    bumpSlide(A, baseBadge);      deckVariants.forEach(d => bumpSlide(d.A, d.name));
+    placesSlides(A, baseBadge);   deckVariants.forEach(d => placesSlides(d.A, d.name));
+    avgSlide(A, baseBadge);       deckVariants.forEach(d => avgSlide(d.A, d.name));
+    mostlessSlide(A, baseBadge);  deckVariants.forEach(d => mostlessSlide(d.A, d.name));
+
+    return slides;
+
+    // ============ funciones de diapositivas ============
+    // AVERAGE (average lines per song). badge opcional cuando se duplica por versión.
+    function avgSlide(Ax, badge){
       const el = makeSlide("avg", "avg-slide");
-      const nS = A.songs.length || 1;
-      const avg = [...A.members].map(m => ({ m, a: m.total / nS })).sort((x,y) => y.a - x.a);
+      const nS = Ax.songs.length || 1;
+      const avg = [...Ax.members].map(m => ({ m, a: m.total / nS })).sort((x,y) => y.a - x.a);
       el.innerHTML = `
+        ${verBadgeHTML(badge)}
         <div class="slide-title">Average lines per song</div>
         <div class="slide-sub song-sub">${albumHead}</div>
         <div class="avg-rows">${avg.map((r,i) => `
@@ -219,11 +251,11 @@
       slides.push({ el, dur:7 });
     }
 
-    // ---------- MOST LINES / LESS LINES (versión completa) ----------
-    {
+    // MOST LINES / LESS LINES. badge opcional cuando se duplica por versión.
+    function mostlessSlide(Ax, badge){
       const el = makeSlide("mostless", "mostless-slide");
-      const most = [...A.members].filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
-      const less = [...A.members].filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
+      const most = [...Ax.members].filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
+      const less = [...Ax.members].filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
       const rowH = (m, song, sec) => `
         <div class="ml-row" style="--accent:${m.color}">
           <img class="ph" src="${esc(m.image)}" alt="">
@@ -231,6 +263,7 @@
           <div class="sec">${fmtS(sec)}</div>
         </div>`;
       el.innerHTML = `
+        ${verBadgeHTML(badge)}
         <div class="ml-cols">
           <div class="ml-col most"><div class="ml-head">MOST LINES</div>${most.map(m => rowH(m, m.topSong, m.topSec)).join("")}</div>
           <div class="ml-col less"><div class="ml-head">LESS LINES</div>${less.map(m => rowH(m, m.lowSong, m.lowSec)).join("")}</div>
@@ -238,9 +271,6 @@
       slides.push({ el, dur:8 });
     }
 
-    return slides;
-
-    // ============ funciones de diapositivas ============
     // RACE (una sola diapositiva): reproduce la 1ª versión canción a canción y,
     // al acabar, transiciona fluidamente a cada versión siguiente (los miembros/canciones
     // que salen se van con la misma animación del race; el resto se reordena y reescala).
@@ -514,9 +544,10 @@
     }
 
     // ---------- 4) BUMP CHART (rankings por canción, versión completa) ----------
-    function bumpSlide(A){
+    function bumpSlide(A, badge){
       const el = makeSlide("bump", "bump-slide");
       el.innerHTML = `
+        ${verBadgeHTML(badge)}
         <div class="slide-title">Ranking per song</div>
         <div class="slide-sub">How each member placed in every song</div>
         <div class="bump-wrap"></div>`;
@@ -577,7 +608,7 @@
     // USE = % de la altura útil que ocupan las barras; el resto (arriba) deja hueco para
     // el número, de modo que una barra al máximo LLEGA a su línea (antes se quedaba corta
     // porque el número le robaba altura).
-    function placesSlides(A){
+    function placesSlides(A, badge){
     const USE = 88;
     for(let place=1; place<=Math.max(A.maxRank,1); place++){
       const el = makeSlide("places", "places-slide");
@@ -587,6 +618,7 @@
       const glines = []; for(let i=1;i<=maxC;i++) glines.push(`<div class="gl" style="bottom:${i/maxC*USE}%"></div>`);
       const ylabs  = []; for(let i=0;i<=maxC;i++) ylabs.push(`<span style="bottom:${i/maxC*USE}%">${i}</span>`);
       el.innerHTML = `
+        ${verBadgeHTML(badge)}
         <div class="place-head"><span class="slide-title">Number of times</span><span class="place-big">${ord(place)} place</span></div>
         <div class="pchart">
           <div class="yax">${ylabs.join("")}</div>

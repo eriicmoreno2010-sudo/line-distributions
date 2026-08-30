@@ -219,8 +219,12 @@
           <div class="vgrid">
             <div><div class="vlbl">Canciones</div><div class="vsongs"></div></div>
             <div><div class="vlbl">Miembros</div><div class="vmem"></div></div>
-          </div>`;
+          </div>
+          <label class="vall"><input type="checkbox" class="vallchk" ${v.allSlides?"checked":""}>
+            Duplicar TODAS las diapositivas (bump, nº de veces, average y most/less), no solo race y donut
+            <small>· actívalo para versiones por CANCIONES; déjalo apagado para versiones por miembros</small></label>`;
         host.appendChild(card);
+        card.querySelector(".vallchk").onchange = e => { v.allSlides = e.target.checked; save(); };
         const sc = card.querySelector(".vsongs");
         songs.forEach((sd,i) => {
           const on = v.songs.indexOf(i) !== -1;
