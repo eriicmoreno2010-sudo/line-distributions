@@ -19,6 +19,7 @@ contextBridge.exposeInMainWorld("desktop", {
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
   deleteItem: (args) => ipcRenderer.invoke("delete-item", args || {}),
   pickCutInput: () => ipcRenderer.invoke("pick-cut-input"),
+  pickCutAudio: () => ipcRenderer.invoke("pick-cut-audio"),
   cutVideo: (args) => ipcRenderer.invoke("cut-video", args || {}),
   onCutProgress: (cb) => ipcRenderer.on("cut-progress", (_e, m) => cb(m)),
   saveSong: (relPath, data) => ipcRenderer.invoke("save-song", { path: relPath, data }),

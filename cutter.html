@@ -35,9 +35,13 @@
   .times .seldur{ color:var(--accent); }
   .timeline{ position:relative; height:56px; background:var(--panel2); border:1px solid var(--border);
     border-radius:10px; cursor:pointer; user-select:none; touch-action:none; }
-  .sel{ position:absolute; top:0; bottom:0; background:color-mix(in srgb, var(--accent) 24%, transparent);
+  #wave{ position:absolute; inset:0; width:100%; height:100%; border-radius:10px; z-index:1; opacity:.9; }
+  .sel{ position:absolute; top:0; bottom:0; z-index:2; background:color-mix(in srgb, var(--accent) 24%, transparent);
     border-left:3px solid var(--accent); border-right:3px solid var(--accent); box-sizing:border-box; cursor:grab; }
   .sel:active{ cursor:grabbing; }
+  /* modo QUITAR: la franja marcada (lo que se elimina) se ve en rojo */
+  body.remove .sel{ background:color-mix(in srgb, #ff4d5e 26%, transparent);
+    border-left-color:#ff4d5e; border-right-color:#ff4d5e; }
   .handle{ position:absolute; top:-4px; bottom:-4px; width:16px; margin-left:-8px; cursor:ew-resize; z-index:4;
     display:flex; align-items:center; justify-content:center; }
   .handle::after{ content:""; width:5px; height:70%; background:var(--accent); border-radius:3px; box-shadow:0 0 0 2px rgba(0,0,0,.4); }
@@ -57,6 +61,8 @@
   .controls select{ background:var(--panel2); border:1px solid var(--border); border-radius:8px; color:var(--text);
     padding:9px 10px; font:800 13px "Segoe UI",Arial; cursor:pointer; }
   .kbd{ color:var(--text2); font-size:12px; font-weight:700; }
+  .controls .mode{ display:flex; align-items:center; gap:6px; font-size:13px; font-weight:800; color:var(--text); cursor:pointer; }
+  .controls .mode input{ width:auto; }
 
   /* overlay de exportación */
   #ov{ position:fixed; inset:0; background:rgba(8,8,12,.92); display:none; flex-direction:column;
@@ -94,6 +100,7 @@
       <span class="seldur">SEL <b id="tSel">0:00.00</b></span>
     </div>
     <div class="timeline" id="timeline">
+      <canvas id="wave"></canvas>
       <div class="sel" id="sel"></div>
       <div class="handle" id="hIn" style="left:0"></div>
       <div class="handle" id="hOut" style="left:100%"></div>
@@ -119,7 +126,21 @@
         </select>
       </div>
     </div>
-    <div class="kbd">Atajos: <b>Espacio</b> reproducir · <b>← →</b> frame a frame · <b>I</b>/<b>O</b> marcar inicio/fin · <b>Inicio</b>/<b>Fin</b> saltar</div>
+    <div class="controls">
+      <div class="grp"><span class="lbl">Modo</span>
+        <label class="mode"><input type="radio" name="mode" value="keep" checked> Quedarme con lo marcado</label>
+        <label class="mode"><input type="radio" name="mode" value="remove"> Quitar lo marcado (unir el resto)</label>
+      </div>
+      <span class="spacer" style="flex:1"></span>
+      <button class="ng" id="pickAudio">🎵  Poner audio oficial</button>
+      <span id="audioName" class="kbd" style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"></span>
+      <div class="grp" id="offGrp" style="display:none"><span class="lbl">Desfase audio</span>
+        <input type="range" id="off" min="-20" max="20" step="0.01" value="0" style="width:150px">
+        <input type="number" id="offNum" step="0.05" value="0" style="width:78px"><span class="lbl">s</span>
+      </div>
+    </div>
+    <div class="kbd">Atajos: <b>Espacio</b> reproducir · <b>← →</b> frame a frame · <b>I</b>/<b>O</b> marcar inicio/fin · <b>Inicio</b>/<b>Fin</b> saltar · con audio oficial se silencia el del vídeo</div>
+    <audio id="oaudio" preload="auto"></audio>
   </div>
 </main>
 
@@ -129,6 +150,6 @@
   <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
 </div>
 
-<script src="js/cutter.js?v=3"></script>
+<script src="js/cutter.js?v=4"></script>
 </body>
 </html>

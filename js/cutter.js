@@ -13,8 +13,11 @@
   const video = $("#video"), empty = $("#empty");
   const timeline = $("#timeline"), selEl = $("#sel"), hIn = $("#hIn"), hOut = $("#hOut"), ph = $("#ph");
   const exportBtn = $("#export");
+  const oaudio = $("#oaudio"), waveCanvas = $("#wave"), offRange = $("#off"), offNum = $("#offNum");
 
   let dur = 0, inT = 0, outT = 0, srcPath = "";
+  let audioPath = "", audioBuf = null, audioOff = 0;   // audio oficial + desfase (audio = video + off)
+  const mode = () => (document.querySelector('input[name="mode"]:checked') || {}).value || "keep";
 
   const fmt = t => { t = Math.max(0, t||0); const m = Math.floor(t/60), s = t - m*60;
     return m + ":" + (s<10?"0":"") + s.toFixed(2); };
@@ -49,8 +52,8 @@
   video.addEventListener("loadedmetadata", () => {
     dur = video.duration || 0; inT = 0; outT = dur;
     exportBtn.disabled = false;
-    $("#exportName") && ($("#exportName").textContent = "");
     paint();
+    if(typeof drawWave === "function") drawWave();
   });
   video.addEventListener("timeupdate", paint);
   video.addEventListener("play",  () => $("#play").textContent = "⏸");
@@ -118,6 +121,64 @@
     else if(e.key === "End"){ e.preventDefault(); $("#goOut").onclick(); }
   });
 
+  // ---- modo: quedarme con lo marcado / quitar el medio ----
+  document.querySelectorAll('input[name="mode"]').forEach(r =>
+    r.addEventListener("change", () => document.body.classList.toggle("remove", mode() === "remove")));
+
+  // ---- audio oficial: cargar, silenciar el vídeo, sincronizar y dibujar la onda ----
+  function drawWave(){
+    const ctx = waveCanvas.getContext("2d");
+    const W = timeline.clientWidth, H = timeline.clientHeight, dpr = window.devicePixelRatio || 1;
+    waveCanvas.width = W*dpr; waveCanvas.height = H*dpr;
+    waveCanvas.style.width = W+"px"; waveCanvas.style.height = H+"px";
+    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
+    if(!audioBuf || !dur) return;
+    const ch = audioBuf.getChannelData(0), sr = audioBuf.sampleRate, alen = audioBuf.duration, mid = H/2;
+    ctx.fillStyle = "rgba(255,255,255,.30)";
+    const spp = dur / W;                              // segundos por pixel (en tiempo de vídeo)
+    for(let x=0; x<W; x++){
+      const at0 = x*spp + audioOff, at1 = at0 + spp;  // ventana de audio de este pixel
+      if(at1 < 0 || at0 > alen) continue;
+      const s0 = Math.max(0, Math.floor(at0*sr)), s1 = Math.min(ch.length, Math.floor(at1*sr));
+      let peak = 0; const stepN = Math.max(1, Math.floor((s1-s0)/10));
+      for(let i=s0; i<s1; i+=stepN){ const v = Math.abs(ch[i]||0); if(v>peak) peak = v; }
+      const h = Math.max(0.6, peak*mid*0.95);
+      ctx.fillRect(x, mid-h, 1, h*2);
+    }
+  }
+  function syncAudio(force){
+    if(!audioPath) return;
+    const target = (video.currentTime||0) + audioOff;
+    if(target < 0){ try{ oaudio.pause(); }catch(e){} return; }
+    if(force || Math.abs((oaudio.currentTime||0) - target) > 0.08){ try{ oaudio.currentTime = target; }catch(e){} }
+  }
+  const setOff = v => { audioOff = +v || 0; offRange.value = audioOff; offNum.value = audioOff.toFixed(2); drawWave(); syncAudio(true); };
+  offRange.oninput = () => setOff(offRange.value);
+  offNum.oninput   = () => setOff(offNum.value);
+  video.addEventListener("play",  () => { if(audioPath){ syncAudio(true); oaudio.play().catch(()=>{}); } });
+  video.addEventListener("pause", () => { if(audioPath) try{ oaudio.pause(); }catch(e){} });
+  video.addEventListener("seeked", () => syncAudio(true));
+  video.addEventListener("timeupdate", () => syncAudio(false));
+  window.addEventListener("resize", drawWave);
+
+  $("#pickAudio").onclick = async () => {
+    const r = await desktop.pickCutAudio();
+    if(!r || !r.ok) return;
+    audioPath = r.path;
+    $("#audioName").textContent = "🎵 " + r.name;
+    $("#offGrp").style.display = "";
+    oaudio.src = fileUrl(r.path); oaudio.load();
+    video.muted = true;                               // como en la web, se silencia el audio del vídeo
+    audioBuf = null;
+    try{
+      const ab = await fetch(fileUrl(r.path)).then(x => x.arrayBuffer());
+      const actx = new (window.AudioContext || window.webkitAudioContext)();
+      audioBuf = await actx.decodeAudioData(ab);
+      if(actx.close) actx.close();
+    }catch(e){ audioBuf = null; }
+    drawWave();
+  };
+
   // ---- exportar ----
   const ov = $("#ov"), fill = $("#fill"), ovT = $("#ovT"), ovS = $("#ovS");
   desktop.onCutProgress(m => {
@@ -127,10 +188,15 @@
   });
   exportBtn.onclick = async () => {
     if(!dur || !srcPath) return;
+    const m = mode();
     if(!(outT - inT > 0.02)){ alert("Marca un trozo válido (el fin debe ir después del inicio)."); return; }
+    if(m === "remove" && inT <= 0.02 && outT >= dur - 0.02){ alert("En modo 'quitar' eso eliminaría el vídeo entero."); return; }
     ov.classList.add("show"); ovT.textContent = "Exportando…"; fill.style.width = "0%";
-    ovS.textContent = "Recodificando fotograma a fotograma, no cierres la app.";
-    const res = await desktop.cutVideo({ input: srcPath, start: inT, end: outT, crf: +$("#crf").value });
+    ovS.textContent = (m === "remove" ? "Quitando el trozo y uniendo el resto" : "Recodificando el recorte") + ", no cierres la app.";
+    const res = await desktop.cutVideo({
+      input: srcPath, start: inT, end: outT, duration: dur, crf: +$("#crf").value,
+      mode: m, audio: audioPath || null, audioOffset: audioOff
+    });
     ov.classList.remove("show");
     if(res && res.ok){
       const mb = res.size ? (res.size/1048576).toFixed(1) + " MB" : "";
