@@ -19,7 +19,7 @@
   let dur = 0, inT = 0, outT = 0, srcPath = "";
   let audioPath = "", audioBuf = null, audioOff = 0;   // audio oficial + desfase (audio = video + off)
   let holes = [], holeEls = [];                          // huecos rojos DENTRO de lo azul (se eliminan)
-  let preview = false;                                    // modo "ver el corte" (navega solo por lo que se conserva)
+  const preview = true;                                   // el corte está SIEMPRE aplicado al editar (el playhead solo se mueve por lo que se conserva)
 
   const fmt = t => { t = Math.max(0, t||0); const m = Math.floor(t/60), s = t - m*60;
     return m + ":" + (s<10?"0":"") + s.toFixed(2); };
@@ -251,13 +251,6 @@
   audiolane.addEventListener("pointerdown", e => { if(!dur) return;
     seekTo(timeAt(e.clientX)); paint(); startDrag("seek")(e); });
 
-  // ---- previsualizar el corte (navega solo por lo que se conserva; empieza en el IN) ----
-  $("#preview").onclick = () => {
-    preview = !preview;
-    $("#preview").classList.toggle("active", preview);
-    $("#preview").textContent = preview ? "✅  Previsualizando corte" : "👁  Previsualizar corte";
-    if(preview){ video.currentTime = snapKept(video.currentTime || 0); paint(); }
-  };
 
   $("#pickAudio").onclick = async () => {
     const r = await desktop.pickCutAudio();
