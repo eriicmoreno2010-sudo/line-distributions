@@ -234,7 +234,11 @@
     function avgSlide(Ax, badge){
       const el = makeSlide("avg", "avg-slide");
       const nS = Ax.songs.length || 1;
-      const avg = [...Ax.members].map(m => ({ m, a: m.total / nS })).sort((x,y) => y.a - x.a);
+      // solo miembros que cantan en TODAS las canciones (los invitados que solo cantan
+      // en 1-2 falsean el promedio, así que se excluyen)
+      const fc = Math.max(0, ...Ax.members.map(m => Object.keys(m.per).length));
+      const mem = Ax.members.filter(m => Object.keys(m.per).length >= fc);
+      const avg = mem.map(m => ({ m, a: m.total / nS })).sort((x,y) => y.a - x.a);
       el.innerHTML = `
         ${verBadgeHTML(badge)}
         <div class="slide-title">Average lines per song</div>
@@ -253,8 +257,11 @@
     // MOST LINES / LESS LINES. badge opcional cuando se duplica por versión.
     function mostlessSlide(Ax, badge){
       const el = makeSlide("mostless", "mostless-slide");
-      const most = [...Ax.members].filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
-      const less = [...Ax.members].filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
+      // solo miembros que cantan en TODAS las canciones (fuera los invitados de 1-2 canciones)
+      const fc = Math.max(0, ...Ax.members.map(m => Object.keys(m.per).length));
+      const mem = Ax.members.filter(m => Object.keys(m.per).length >= fc);
+      const most = mem.filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
+      const less = mem.filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
       const rowH = (m, song, sec) => `
         <div class="ml-row" style="--accent:${m.color}">
           <img class="ph" src="${esc(m.image)}" alt="">
@@ -561,9 +568,21 @@
         // el ancho se adapta al nombre más largo, para que los nombres lleguen a la derecha sin cortarse
         const maxNameLen = Math.max(4, ...A.members.map(m => m.name.length));
         const W = Math.ceil(nameX + maxNameLen * 12.5 + 24);
-        const n = A.songs.length, maxR = Math.max(A.maxRank, 1);
+        const n = A.songs.length;
+        // Miembros "completos" (cantan en el máximo de canciones) vs "parciales" (invitados
+        // que cantan en menos). Los parciales enredan las líneas y solapan fotos/nombres,
+        // así que van en FILAS FIJAS al fondo (F+1, F+2, …), ordenados entre ellos por segundos.
+        const fc = Math.max(0, ...A.members.map(m => Object.keys(m.per).length));
+        const full    = A.members.filter(m => Object.keys(m.per).length >= fc).sort((a,b)=> b.total - a.total);
+        const partial = A.members.filter(m => Object.keys(m.per).length <  fc).sort((a,b)=> b.total - a.total);
+        const F = full.length, P = partial.length, maxR = Math.max(F + P, 1);
         const xAt = i => n>1 ? mL + i*(xEnd-mL)/(n-1) : mL + (xEnd-mL)/2;
         const yAt = r => mT + (maxR>1 ? (r-1)*(H-mT-mB)/(maxR-1) : (H-mT-mB)/2);
+        // ranking de los COMPLETOS entre ellos por canción (1..F), ignorando a los parciales
+        const fullRank = {};
+        A.songs.forEach(s => { const ranked = full.filter(m => m.per[s.orig] != null)
+            .sort((a,b)=> (b.per[s.orig]||0) - (a.per[s.orig]||0));
+          fullRank[s.orig] = {}; ranked.forEach((m,i) => fullRank[s.orig][m.name] = i+1); });
         let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">`;
         // guías de rango
         for(let r=1;r<=maxR;r++){ const y=yAt(r);
@@ -572,29 +591,33 @@
         // etiquetas de canción (x) — en DOS filas alternas para que no se solapen los títulos largos
         const yBase = H - mB + 30;
         A.songs.forEach((s,i)=>{ const x=xAt(i);
-          const anch = "middle";          // todas centradas bajo su punto (incl. 1ª y última)
           const y = yBase + (i % 2) * 30;
           svg += `<line class="axis" x1="${x}" y1="${H-mB+6}" x2="${x}" y2="${y-14}" opacity="0.4"></line>`;
-          svg += `<text class="xlab" x="${x}" y="${y}" text-anchor="${anch}">${esc(s.title)}</text>`; });
-        // una línea por miembro
-        [...A.members].sort((a,b)=>b.total-a.total).forEach(m => {
-          const pts = [];
-          A.songs.forEach((s,i)=>{ const r=m.ranks[s.orig]; if(r) pts.push([xAt(i), yAt(r), i]); });
+          svg += `<text class="xlab" x="${x}" y="${y}" text-anchor="middle">${esc(s.title)}</text>`; });
+        // dibuja línea+puntos+foto de un miembro dados sus puntos [x,y,songIndex]
+        const drawMember = (m, pts) => {
           if(!pts.length) return;
           const ey = pts[pts.length-1][1];
-          // la línea se prolonga en horizontal hasta la foto de la derecha
           const dPts = pts.concat([[pcx - pr - 6, ey]]);
           const d = dPts.map((p,k)=> (k?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
           let len=0; for(let k=1;k<dPts.length;k++){ len += Math.hypot(dPts[k][0]-dPts[k-1][0], dPts[k][1]-dPts[k-1][1]); }
           svg += `<path class="bump-line" style="--len:${Math.max(len,1)}" stroke="${m.color}" d="${d}"></path>`;
           pts.forEach(p => { svg += `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="7" fill="${m.color}"></circle>`; });
-          // foto + nombre en la franja derecha (mismo alto que su último puesto)
           const cid = "clipbump" + m.name.replace(/[^a-z0-9]/gi, "");
           svg += `<clipPath id="${cid}"><circle cx="${pcx}" cy="${ey}" r="${pr}"></circle></clipPath>`;
           svg += `<image href="${esc(m.image)}" x="${pcx-pr}" y="${ey-pr}" width="${pr*2}" height="${pr*2}" clip-path="url(#${cid})" preserveAspectRatio="xMidYMid slice"></image>`;
           svg += `<circle cx="${pcx}" cy="${ey}" r="${pr}" fill="none" stroke="${m.color}" stroke-width="3"></circle>`;
           svg += `<text x="${nameX}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="20">${esc(m.name)}</text>`;
-        });
+        };
+        // COMPLETOS: línea con su ranking entre ellos (1..F)
+        full.forEach(m => { const pts = [];
+          A.songs.forEach((s,i)=>{ const r = fullRank[s.orig][m.name]; if(r) pts.push([xAt(i), yAt(r), i]); });
+          drawMember(m, pts); });
+        // PARCIALES: fila fija al fondo (F+1, F+2, …), un punto en cada canción donde cantan
+        partial.forEach((m, pi) => { const y = yAt(F + pi + 1); const pts = [];
+          A.songs.forEach((s,i)=>{ if(m.per[s.orig] != null) pts.push([xAt(i), y, i]); });
+          if(!pts.length) pts.push([xAt(0), y, 0]);
+          drawMember(m, pts); });
         svg += `</svg>`;
         wrap.innerHTML = svg;
       };
