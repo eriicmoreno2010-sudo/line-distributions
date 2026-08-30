@@ -27,23 +27,9 @@
       "lift": 3
     },
     {
-      "name": "DOYOUNG",
-      "image": "images/nct127/blingy/doyoung.png",
-      "color": "#1100ff",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "JAEHYUN",
       "image": "images/nct127/blingy/jaehyun.png",
       "color": "#bf9b00",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "JUNGWOO",
-      "image": "images/nct127/blingy/jungwoo.png",
-      "color": "#4d6593",
       "focus": 50,
       "lift": 3
     },
