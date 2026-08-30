@@ -67,6 +67,18 @@
   .rc img{ width:36px; height:36px; border-radius:50%; object-fit:cover; border:2px solid var(--accent); }
   .rc .nm{ font-weight:800; font-size:14px; flex:1; min-width:0; }
   #bgaudio{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px 18px; }
+  /* versiones */
+  #versions{ display:flex; flex-direction:column; gap:12px; }
+  .vcard{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:14px 16px; }
+  .vhead{ display:flex; gap:10px; align-items:center; margin-bottom:12px; }
+  .vname{ flex:1; background:var(--panel2); border:1px solid var(--border); border-radius:9px; color:var(--text); padding:9px 12px; font:800 15px "Segoe UI",Arial; }
+  .vdel{ padding:8px 12px; }
+  .vgrid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .vlbl{ color:var(--text2); font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
+  .vsongs, .vmem{ display:flex; flex-direction:column; gap:3px; max-height:220px; overflow:auto;
+    background:var(--panel2); border:1px solid var(--border); border-radius:9px; padding:8px 10px; }
+  .vsongs label, .vmem label{ display:flex; align-items:center; gap:8px; font-size:13px; font-weight:700; color:var(--text); cursor:pointer; }
+  .vsongs input, .vmem input{ width:auto; }
 </style>
 </head>
 <body>
@@ -94,6 +106,10 @@
 <h2 class="secthead">🎧 Música de fondo <small>· suena en todas las diapositivas menos el race</small></h2>
 <div id="bgaudio"></div>
 
-<script src="js/album-edit.js?v=8"></script>
+<h2 class="secthead">🎭 Versiones (OT) <small>· dos versiones del total, donut, bump y nº de veces (p. ej. OT7 y OT5, o con/sin una canción). Si no pones ninguna, sale una sola.</small></h2>
+<div id="versions"></div>
+<button id="addver" class="ng" style="margin-top:12px">➕ Añadir versión</button>
+
+<script src="js/album-edit.js?v=9"></script>
 </body>
 </html>

@@ -45,16 +45,23 @@
   }
 
   // ===================== agregación del álbum =====================
-  function aggregate(album, songDatas){
-    const roster = {};       // name -> {name,color,image,total,per[i],ranks[i],rankCount{}}
-    const songs = [];        // por canción: {i,title,color,secs{},ranked[]}
+  // opts.songs = índices originales a incluir (o null = todas); opts.members = nombres a incluir (o null = todos)
+  function aggregate(album, songDatas, opts){
+    opts = opts || {};
+    const songOK = i => !opts.songs || opts.songs.indexOf(i) !== -1;
+    const memOK  = n => !opts.members || opts.members.indexOf(n) !== -1;
+    const roster = {};       // name -> {name,color,image,total,per[ai],ranks[ai],rankCount{}}
+    const songs = [];        // por canción incluida: {i(ai),orig,title,color,secs{},ranked[]}
     const order = [];        // orden de aparición de miembros
+    let ai = 0;              // índice dentro de ESTA versión (0..)
 
     songDatas.forEach((sd, i) => {
-      if(!sd) return;
+      if(!sd || !songOK(i)) return;
+      const idx = ai++;
       const map = buildIntervals(sd);
       const secs = {};
       (sd.members||[]).forEach(m => {
+        if(!memOK(m.name)) return;
         if(!roster[m.name]){
           roster[m.name] = { name:m.name, color:m.color||"#888", image:m.image||"",
                              total:0, per:{}, ranks:{}, rankCount:{} };
@@ -64,18 +71,17 @@
         if((!R.color || R.color==="#888") && m.color) R.color = m.color;
         if(!R.image && m.image) R.image = m.image;
         const sec = totalSec(map[m.name] || []);
-        secs[m.name] = sec; R.per[i] = sec; R.total += sec;
+        secs[m.name] = sec; R.per[idx] = sec; R.total += sec;
       });
-      const ranked = (sd.members||[]).map(m => m.name)
+      const ranked = (sd.members||[]).map(m => m.name).filter(memOK)
         .sort((a,b) => (secs[b]||0) - (secs[a]||0));
-      ranked.forEach((nm, idx) => {
-        const rank = idx + 1;
-        roster[nm].ranks[i] = rank;
-        roster[nm].rankCount[rank] = (roster[nm].rankCount[rank]||0) + 1;
+      ranked.forEach((nm, r) => {
+        roster[nm].ranks[idx] = r + 1;
+        roster[nm].rankCount[r+1] = (roster[nm].rankCount[r+1]||0) + 1;
       });
-      songs.push({ i, title: sd.song || ("Canción " + (i+1)),
-                   color: SONG_COLORS[i % SONG_COLORS.length], secs, ranked,
-                   dur: sd.duration || 0,
+      songs.push({ i: idx, orig: i, title: sd.song || ("Canción " + (i+1)),
+                   color: (album.songColors && album.songColors[i]) || SONG_COLORS[i % SONG_COLORS.length],
+                   secs, ranked, dur: sd.duration || 0,
                    audio: sd.audio || "", instrumental: sd.instrumental || "",
                    clipStart: +sd.instrumentalStart || 0, clipEnd: +sd.instrumentalEnd || 0 });
     });
@@ -119,20 +125,27 @@
     return el;
   }
 
-  function buildSlides(A){
+  function buildSlides(albumData, songDatas){
     const slides = [];
-    const membersByTotal = [...A.members].sort((a,b)=> b.total - a.total);
-    // color de cada canción (elegido en el editor); usado en portada y race
-    const songColorOf = j => (A.album.songColors && A.album.songColors[j]) || SONG_COLORS[j % SONG_COLORS.length];
+    const songColorOf = j => (albumData.songColors && albumData.songColors[j]) || SONG_COLORS[j % SONG_COLORS.length];
+    const albumHead = (albumData.group ? esc(albumData.group) + " — " : "") + esc(albumData.album);
+    const Afull = aggregate(albumData, songDatas, {});
+    // Versiones (p.ej. OT7 / OT5, con/sin una canción). Si no hay -> una sola (completa).
+    const versions = (albumData.versions && albumData.versions.length)
+      ? albumData.versions.map(v => ({ name: v.name || "",
+          A: aggregate(albumData, songDatas, { songs: v.songs, members: v.members }) }))
+      : [ { name: "", A: Afull } ];
+    const verBadge = name => name ? `<div class="ver-badge">${esc(name)}</div>` : "";
 
-    // ---------- 1) PORTADA ----------
+    // ---------- 1) PORTADA (versión completa) ----------
     {
+      const A = Afull;
       const el = makeSlide("cover", "cover-slide");
       const art = A.album.cover
         ? `<img class="cover-art" src="${esc(A.album.cover)}" alt="">`
         : `<div class="cover-art cover-noart">💿</div>`;
       const songs = A.songs.map((s,i) =>
-        `<div class="sg"><span class="n" style="background:${songColorOf(i)}">${i+1}</span><span class="sgt">${esc(s.title)}</span></div>`).join("");
+        `<div class="sg"><span class="n" style="background:${s.color}">${i+1}</span><span class="sgt">${esc(s.title)}</span></div>`).join("");
       el.innerHTML = `
         <div class="cover-glow"></div>
         <div class="cover-art-wrap">${art}</div>
@@ -145,23 +158,67 @@
       slides.push({ el, dur:7 });
     }
 
-    // ---------- 2) TOTAL SECONDS — bar chart race (una sola diapositiva animada) ----------
-    // Izquierda: ranking de la canción actual. Derecha: total del álbum acumulado, que se
-    // reordena (los miembros se adelantan) canción a canción. Las barras del total se
-    // llenan al 100% cuando se alcanza el máximo final del álbum.
-    const albumHead = (A.album.group ? esc(A.album.group) + " — " : "") + esc(A.album.album);
-    {
+    // ---------- Diapositivas versionadas (agrupadas por tipo: total×vers, donut×vers, ...) ----------
+    versions.forEach(v => raceSlide(v.A, v.name));
+    versions.forEach(v => donutSlide(v.A, v.name));
+    versions.forEach(v => bumpSlide(v.A, v.name));
+    versions.forEach(v => placesSlides(v.A, v.name));
+
+    // ---------- AVERAGE (versión completa) ----------
+    { const A = Afull;
+      const el = makeSlide("avg", "avg-slide");
+      const nS = A.songs.length || 1;
+      const avg = [...A.members].map(m => ({ m, a: m.total / nS })).sort((x,y) => y.a - x.a);
+      el.innerHTML = `
+        <div class="slide-title">Average lines per song</div>
+        <div class="slide-sub song-sub">${albumHead}</div>
+        <div class="avg-rows">${avg.map((r,i) => `
+          <div class="avg-row" style="--accent:${r.m.color}">
+            <div class="rk">${i+1}</div>
+            <img class="ph" src="${esc(r.m.image)}" alt="">
+            <div class="nm">${esc(r.m.name)}</div>
+            <div class="sec">${fmtS(r.a)}</div>
+          </div>`).join("")}
+        </div>`;
+      slides.push({ el, dur:7 });
+    }
+
+    // ---------- MOST LINES / LESS LINES (versión completa) ----------
+    { const A = Afull;
+      const el = makeSlide("mostless", "mostless-slide");
+      const most = [...A.members].filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
+      const less = [...A.members].filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
+      const rowH = (m, song, sec) => `
+        <div class="ml-row" style="--accent:${m.color}">
+          <img class="ph" src="${esc(m.image)}" alt="">
+          <div class="who"><div class="nm">${esc(m.name)}</div><div class="sg">${esc(song ? song.title : "—")}</div></div>
+          <div class="sec">${fmtS(sec)}</div>
+        </div>`;
+      el.innerHTML = `
+        <div class="ml-cols">
+          <div class="ml-col most"><div class="ml-head">MOST LINES</div>${most.map(m => rowH(m, m.topSong, m.topSec)).join("")}</div>
+          <div class="ml-col less"><div class="ml-head">LESS LINES</div>${less.map(m => rowH(m, m.lowSong, m.lowSec)).join("")}</div>
+        </div>`;
+      slides.push({ el, dur:8 });
+    }
+
+    return slides;
+
+    // ============ funciones de diapositivas versionadas ============
+    function raceSlide(A, verName){
+      const membersByTotal = [...A.members].sort((a,b)=> b.total - a.total);
       const el = makeSlide("total", "race-slide");
       const nSongs = A.songs.length;
       const albumMax = (membersByTotal[0] && membersByTotal[0].total) || 1;   // 100% = máximo total del álbum
       const cumAt = (m, si) => { let x=0; for(let j=0;j<=si;j++) x += m.per[j]||0; return x; };
       const easeOut = p => 1 - Math.pow(1-p, 3);
-      // Colores del race: cada canción su color (elegido); nombres/aros de la derecha, color por miembro (elegido).
-      const songColor = j => (A.album.songColors && A.album.songColors[j]) || SONG_COLORS[j % SONG_COLORS.length];
+      // Colores del race: color guardado de cada canción (por índice de versión); nombres/aros de la derecha, color único elegido.
+      const songColor = idx => (A.songs[idx] && A.songs[idx].color) || SONG_COLORS[idx % SONG_COLORS.length];
       const memColor = {}; A.members.forEach(m => memColor[m.name] = m.color);
       const raceCol = A.album.raceColor || "#ffffff";   // color único de nombres+aros de la derecha
 
       el.innerHTML = `
+        ${verBadge(verName)}
         <div class="ts-cols">
           <div class="ts-card">
             <div class="ts-tag song-tag"></div>
@@ -223,7 +280,7 @@
       const FADE = 1.6, DEF_CLIP = 9, GAP = 0.8;
       const clip = si => {
         const s = A.songs[si];
-        const ac = (A.album.clips && A.album.clips[si]) || {};
+        const ac = (A.album.clips && A.album.clips[s.orig]) || {};
         // audio: el propio del álbum (album-edit) tiene prioridad; si no, el de la canción
         const src = ac.audio || s.audio || s.instrumental || "";
         let a = (ac.start != null ? ac.start : s.clipStart) || 0;
@@ -314,7 +371,8 @@
     }
 
     // ---------- 3) DONUT + evenness ----------
-    {
+    function donutSlide(A, verName){
+      const membersByTotal = [...A.members].sort((a,b)=> b.total - a.total);
       const el = makeSlide("donut", "donut-slide");
       const CX=250, CY=250, R=246, ri=120;   // radio grande (llena el SVG) y agujero central más pequeño
       const P = (rad,a)=>[(CX+rad*Math.sin(a)).toFixed(2),(CY-rad*Math.cos(a)).toFixed(2)];
@@ -330,6 +388,7 @@
         `<div class="li"><span class="dot" style="background:${m.color}"></span>${esc(m.name)}
           <span class="v">${m.pct.toFixed(2)}% · ${fmtS(m.total)}</span></div>`).join("");
       el.innerHTML = `
+        ${verBadge(verName)}
         <div class="slide-title">Album distribution</div>
         <div class="slide-sub">Total seconds per member</div>
         <div class="donut-wrap">
@@ -346,9 +405,10 @@
     }
 
     // ---------- 4) BUMP CHART (rankings por canción) ----------
-    {
+    function bumpSlide(A, verName){
       const el = makeSlide("bump", "bump-slide");
       el.innerHTML = `
+        ${verBadge(verName)}
         <div class="slide-title">Ranking per song</div>
         <div class="slide-sub">How each member placed in every song</div>
         <div class="bump-wrap"></div>`;
@@ -406,6 +466,7 @@
     }
 
     // ---------- 5) Nº DE VECES 1º, 2º, ... (una por puesto, tipo gráfica) ----------
+    function placesSlides(A, verName){
     for(let place=1; place<=Math.max(A.maxRank,1); place++){
       const el = makeSlide("places", "places-slide");
       const data = A.members.map(m => ({ m, c: m.rankCount[place]||0 }))
@@ -414,6 +475,7 @@
       const glines = []; for(let i=1;i<=maxC;i++) glines.push(`<div class="gl" style="bottom:${i/maxC*100}%"></div>`);
       const ylabs  = []; for(let i=0;i<=maxC;i++) ylabs.push(`<span style="bottom:${i/maxC*100}%">${i}</span>`);
       el.innerHTML = `
+        ${verBadge(verName)}
         <div class="slide-title">Number of times</div>
         <div class="place-big">${ord(place)} place</div>
         <div class="pchart">
@@ -435,53 +497,8 @@
       const reset = () => el.querySelectorAll(".bar").forEach(b => b.style.height = "0");
       slides.push({ el, dur:4.5, enter, reset });
     }
-
-    // ---------- 6) AVERAGE por canción (sin redondear) ----------
-    {
-      const el = makeSlide("avg", "avg-slide");
-      const nS = A.songs.length || 1;
-      const avg = [...A.members].map(m => ({ m, a: m.total / nS })).sort((x,y) => y.a - x.a);
-      el.innerHTML = `
-        <div class="slide-title">Average lines per song</div>
-        <div class="slide-sub song-sub">${albumHead}</div>
-        <div class="avg-rows">${avg.map((r,i) => `
-          <div class="avg-row" style="--accent:${r.m.color}">
-            <div class="rk">${i+1}</div>
-            <img class="ph" src="${esc(r.m.image)}" alt="">
-            <div class="nm">${esc(r.m.name)}</div>
-            <div class="sec">${fmtS(r.a)}</div>
-          </div>`).join("")}
-        </div>`;
-      slides.push({ el, dur:7 });
-    }
-
-    // ---------- 7) MOST LINES / LESS LINES (una sola diapositiva, todos) ----------
-    {
-      const el = makeSlide("mostless", "mostless-slide");
-      const most = [...A.members].filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
-      const less = [...A.members].filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
-      const rowH = (m, song, sec) => `
-        <div class="ml-row" style="--accent:${m.color}">
-          <img class="ph" src="${esc(m.image)}" alt="">
-          <div class="who"><div class="nm">${esc(m.name)}</div><div class="sg">${esc(song ? song.title : "—")}</div></div>
-          <div class="sec">${fmtS(sec)}</div>
-        </div>`;
-      el.innerHTML = `
-        <div class="ml-cols">
-          <div class="ml-col most">
-            <div class="ml-head">MOST LINES</div>
-            ${most.map(m => rowH(m, m.topSong, m.topSec)).join("")}
-          </div>
-          <div class="ml-col less">
-            <div class="ml-head">LESS LINES</div>
-            ${less.map(m => rowH(m, m.lowSong, m.lowSec)).join("")}
-          </div>
-        </div>`;
-      slides.push({ el, dur:8 });
-    }
-
-    return slides;
-  }
+    }  // cierra placesSlides
+  }  // cierra buildSlides
 
   // ===================== reproductor de diapositivas =====================
   let slides = [], idx = 0, playing = true, elapsed = 0, last = 0, instAudio = null;
@@ -567,14 +584,14 @@
     }
     document.body.classList.toggle("light", albumData.theme === "light");
     const songDatas = await Promise.all((albumData.songs||[]).map(loadJSON));
-    const A = aggregate(albumData, songDatas);
+    const A = aggregate(albumData, songDatas, {});
     if(!A.members.length){ stage.innerHTML = '<div class="loading">El álbum no tiene datos de miembros.</div>'; return; }
 
     const accent = A.members[0] ? A.members[0].color : "#7c5cff";
     document.documentElement.style.setProperty("--accent", accent);
 
     const loadingEl = $("#loading"); if(loadingEl) loadingEl.remove();
-    slides = buildSlides(A);
+    slides = buildSlides(albumData, songDatas);
     showSlide(0);
     requestAnimationFrame(tick);
 

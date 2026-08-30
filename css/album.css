@@ -48,6 +48,13 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 }
 .slide.active{ opacity:1; transform:none; pointer-events:auto; }
 
+/* etiqueta de versión (OT7 / OT5 / con-sin canción) arriba a la derecha */
+.ver-badge{ position:absolute; top:16px; right:26px; z-index:8;
+  font-size:16px; font-weight:900; letter-spacing:2px; text-transform:uppercase;
+  color:#fff; background:color-mix(in srgb, var(--accent,#7c5cff) 60%, #000);
+  border:1px solid color-mix(in srgb, var(--accent,#7c5cff) 70%, #fff);
+  border-radius:999px; padding:7px 20px; box-shadow:0 6px 20px -8px rgba(0,0,0,.7); }
+
 .slide-title{ font-size:34px; font-weight:900; letter-spacing:1px; margin-bottom:6px; }
 .slide-sub{ font-size:15px; font-weight:700; color:var(--text2); letter-spacing:2px;
   text-transform:uppercase; margin-bottom:30px; }

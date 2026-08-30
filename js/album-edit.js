@@ -4,6 +4,7 @@
   const ALBUM_URL = P.get("album") || "";
   const desktop = (window.desktop && window.desktop.isDesktop) ? window.desktop : null;
   const el = s => document.querySelector(s);
+  const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const fmt = t => { t = Math.max(0, t||0); const m=Math.floor(t/60), s=Math.floor(t%60); return m+":"+String(s).padStart(2,"0"); };
   const SONG_COLORS = ["#ff4d6d","#4dabf7","#ffa94d","#cc5de8","#20c997","#ffd43b","#748ffc","#f783ac","#69db7c","#e8590c","#22b8cf","#9775fa"];
 
@@ -195,6 +196,63 @@
     if(album.bgAudio.src) await buildWave(host, album.bgAudio.src, album.bgAudio, save);
   }
 
+  // versiones (OT7/OT5, con/sin canciones): cada una con nombre + qué canciones y qué miembros
+  function buildVersions(songs){
+    album.versions = album.versions || [];
+    const roster = [], seen = {};
+    songs.forEach(sd => (sd && sd.members || []).forEach(m => { if(!seen[m.name]){ seen[m.name]=1; roster.push(m); } }));
+    const host = el("#versions");
+    const render = () => {
+      host.innerHTML = "";
+      album.versions.forEach((v, vi) => {
+        if(!v.songs) v.songs = songs.map((s,i)=>i);
+        if(!v.members) v.members = roster.map(m=>m.name);
+        const card = document.createElement("div"); card.className = "vcard";
+        card.innerHTML = `
+          <div class="vhead">
+            <input class="vname" type="text" placeholder="Nombre (p. ej. OT7)" value="${esc(v.name||'')}">
+            <button class="vdel ng">✕ quitar</button>
+          </div>
+          <div class="vgrid">
+            <div><div class="vlbl">Canciones</div><div class="vsongs"></div></div>
+            <div><div class="vlbl">Miembros</div><div class="vmem"></div></div>
+          </div>`;
+        host.appendChild(card);
+        const sc = card.querySelector(".vsongs");
+        songs.forEach((sd,i) => {
+          const on = v.songs.indexOf(i) !== -1;
+          const l = document.createElement("label");
+          l.innerHTML = `<input type="checkbox" ${on?"checked":""}> ${esc(sd ? (sd.song||("Canción "+(i+1))) : ("Canción "+(i+1)))}`;
+          l.querySelector("input").onchange = e => {
+            if(e.target.checked){ if(v.songs.indexOf(i)===-1) v.songs.push(i); v.songs.sort((a,b)=>a-b); }
+            else v.songs = v.songs.filter(x=>x!==i);
+            save();
+          };
+          sc.appendChild(l);
+        });
+        const mc = card.querySelector(".vmem");
+        roster.forEach(m => {
+          const on = v.members.indexOf(m.name) !== -1;
+          const l = document.createElement("label");
+          l.innerHTML = `<input type="checkbox" ${on?"checked":""}> ${esc(m.name)}`;
+          l.querySelector("input").onchange = e => {
+            if(e.target.checked){ if(v.members.indexOf(m.name)===-1) v.members.push(m.name); }
+            else v.members = v.members.filter(x=>x!==m.name);
+            save();
+          };
+          mc.appendChild(l);
+        });
+        card.querySelector(".vname").oninput = e => { v.name = e.target.value; save(); };
+        card.querySelector(".vdel").onclick = () => { album.versions.splice(vi,1); save(); render(); };
+      });
+    };
+    el("#addver").onclick = () => {
+      album.versions.push({ name:"", songs: songs.map((s,i)=>i), members: roster.map(m=>m.name) });
+      save(); render();
+    };
+    render();
+  }
+
   async function load(){
     if(!ALBUM_URL){ document.body.innerHTML="<p style='padding:40px'>Falta ?album=…</p>"; return; }
     album = await loadJSON(ALBUM_URL);
@@ -212,6 +270,7 @@
     const songs = await Promise.all((album.songs||[]).map(loadJSON));
     for(let i=0;i<songs.length;i++){ if(songs[i]) await buildSong(i, songs[i]); }
     buildRaceColors();
+    buildVersions(songs);
     await buildBgAudio();
     updateRaceDur();
   }
