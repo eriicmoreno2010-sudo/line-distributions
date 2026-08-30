@@ -68,5 +68,28 @@
     "end": 83.48113287191616
   },
   "raceColor": "#883030",
-  "versions": []
+  "versions": [
+    {
+      "name": "",
+      "songs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "members": [
+        "K",
+        "FUMA",
+        "NICHOLAS",
+        "EJ",
+        "YUMA",
+        "JO",
+        "HARUA",
+        "TAKI",
+        "MAKI"
+      ]
+    }
+  ]
 }
