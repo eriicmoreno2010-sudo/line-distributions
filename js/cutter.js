@@ -177,7 +177,8 @@
         if(t < inT || t >= outT - 0.05) video.currentTime = inT;      // al final (o antes) -> reinicia por el corte
         else { const he = inHoleEnd(t); if(he >= 0) video.currentTime = Math.min(he, outT); } }
       video.play();
-    } else video.pause(); };
+      if(audioPath){ syncAudio(true); oaudio.play().catch(()=>{}); }   // arranca el audio dentro del gesto de click
+    } else { video.pause(); if(audioPath){ try{ oaudio.pause(); }catch(e){} } } };
   $("#play").onclick   = () => playPause();
   $("#prevF").onclick  = () => step(-FRAME());
   $("#nextF").onclick  = () => step(+FRAME());
@@ -231,9 +232,12 @@
   }
   function syncAudio(force){
     if(!audioPath) return;
+    oaudio.muted = false; oaudio.volume = 1;
     const target = (video.currentTime||0) + audioOff;
-    if(target < 0){ try{ oaudio.pause(); }catch(e){} return; }
+    const alen = oaudio.duration || 1e9;
+    if(target < 0 || target > alen){ if(!oaudio.paused){ try{ oaudio.pause(); }catch(e){} } return; }
     if(force || Math.abs((oaudio.currentTime||0) - target) > 0.08){ try{ oaudio.currentTime = target; }catch(e){} }
+    if(!video.paused && oaudio.paused){ oaudio.play().catch(()=>{}); }   // reanuda si el vídeo va sonando
   }
   const setOff = v => { audioOff = +v || 0; offRange.value = audioOff; offNum.value = audioOff.toFixed(2); drawWave(); syncAudio(true); };
   offRange.oninput = () => setOff(offRange.value);
@@ -272,6 +276,7 @@
       if(actx.close) actx.close();
     }catch(e){ audioBuf = null; }
     drawWave();
+    if(!video.paused){ syncAudio(true); oaudio.play().catch(()=>{}); }   // si ya estaba sonando, engancha el audio
   };
 
   // ---- exportar ----
