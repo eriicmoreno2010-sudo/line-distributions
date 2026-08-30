@@ -19,6 +19,7 @@
   let dur = 0, inT = 0, outT = 0, srcPath = "";
   let audioPath = "", audioBuf = null, audioOff = 0;   // audio oficial + desfase (audio = video + off)
   let holes = [], holeEls = [];                          // huecos rojos DENTRO de lo azul (se eliminan)
+  let preview = false;                                    // modo "ver el corte" (navega solo por lo que se conserva)
 
   const fmt = t => { t = Math.max(0, t||0); const m = Math.floor(t/60), s = t - m*60;
     return m + ":" + (s<10?"0":"") + s.toFixed(2); };
@@ -74,6 +75,22 @@
   }
   // lo que se conserva = [inT,outT] menos los huecos -> lista de trozos
   function clampHoles(){ holes.forEach(h => { h.s = clamp(h.s, inT, outT); h.e = clamp(h.e, inT, outT); }); positionHoles(); }
+  // huecos ordenados; y utilidades para el modo previsualización (navegar SOLO por lo que se conserva)
+  const holesSorted = () => holes.map(h => [Math.min(h.s,h.e), Math.max(h.s,h.e)])
+                                 .filter(h => h[1]-h[0] > 0.02).sort((a,b)=>a[0]-b[0]);
+  const inHoleEnd = t => { for(const [s,e] of holesSorted()){ if(t >= s-0.001 && t < e) return e; } return -1; };
+  const snapKept = t => { t = clamp(t, inT, outT); const he = inHoleEnd(t); return he >= 0 ? Math.min(he, outT) : t; };
+  const seekTo = t => { video.currentTime = preview ? snapKept(t) : clamp(t, 0, dur); };
+  function previewLoop(){
+    if(preview && dur && !video.paused){
+      const t = video.currentTime;
+      if(t < inT - 0.05) video.currentTime = inT;
+      else if(t >= outT - 0.02){ video.pause(); video.currentTime = outT; }
+      else { const he = inHoleEnd(t); if(he >= 0) video.currentTime = Math.min(he, outT); }
+    }
+    requestAnimationFrame(previewLoop);
+  }
+  requestAnimationFrame(previewLoop);
   function computeSegments(){
     let pieces = [[inT, outT]];
     const hs = holes.map(h => [clamp(Math.min(h.s,h.e), inT, outT), clamp(Math.max(h.s,h.e), inT, outT)])
@@ -127,7 +144,7 @@
       outT = inT + moveBase.len;
       video.currentTime = inT;
     }
-    else { video.currentTime = t; }
+    else { seekTo(t); }
     paint();
   };
   const endDrag = () => { drag = null; moveBase = null;
@@ -145,13 +162,20 @@
   // arrastrar la barrita blanca (playhead) para desplazarse
   ph.addEventListener("pointerdown", e => { if(!dur) return;
     e.preventDefault(); e.stopPropagation();
-    video.currentTime = timeAt(e.clientX); startDrag("seek")(e); });
+    seekTo(timeAt(e.clientX)); startDrag("seek")(e); });
   timeline.addEventListener("pointerdown", e => { if(!dur) return; if(e.target===hIn||e.target===hOut||e.target===selEl||e.target===ph) return;
-    video.currentTime = timeAt(e.clientX); startDrag("seek")(e); });
+    seekTo(timeAt(e.clientX)); startDrag("seek")(e); });
 
   // ---- botones ----
-  const step = d => { if(!dur) return; video.pause(); video.currentTime = clamp((video.currentTime||0) + d, 0, dur); paint(); };
-  $("#play").onclick   = () => { if(!dur) return; video.paused ? video.play() : video.pause(); };
+  const step = d => { if(!dur) return; video.pause(); seekTo((video.currentTime||0) + d); paint(); };
+  const playPause = () => { if(!dur) return;
+    if(video.paused){
+      if(preview){ const t = video.currentTime;
+        if(t < inT || t >= outT - 0.05) video.currentTime = inT;      // al final (o antes) -> reinicia por el corte
+        else { const he = inHoleEnd(t); if(he >= 0) video.currentTime = Math.min(he, outT); } }
+      video.play();
+    } else video.pause(); };
+  $("#play").onclick   = () => playPause();
   $("#prevF").onclick  = () => step(-FRAME());
   $("#nextF").onclick  = () => step(+FRAME());
   $("#setIn").onclick  = () => { inT = clamp(video.currentTime||0, 0, outT - FRAME()); paint(); };
@@ -162,7 +186,7 @@
   document.addEventListener("keydown", e => {
     if(/^(input|select|textarea)$/i.test((e.target && e.target.tagName)||"")) return;
     if(!dur) return;
-    if(e.code === "Space"){ e.preventDefault(); video.paused ? video.play() : video.pause(); }
+    if(e.code === "Space"){ e.preventDefault(); playPause(); }
     else if(e.key === "ArrowLeft"){ e.preventDefault(); step(-FRAME()); }
     else if(e.key === "ArrowRight"){ e.preventDefault(); step(+FRAME()); }
     else if(e.key === "i" || e.key === "I"){ $("#setIn").onclick(); }
@@ -218,7 +242,15 @@
   window.addEventListener("resize", drawWave);
   // clic en la pista de audio = buscar en ese punto (mismo eje de tiempo que el vídeo)
   audiolane.addEventListener("pointerdown", e => { if(!dur) return;
-    video.currentTime = timeAt(e.clientX); paint(); startDrag("seek")(e); });
+    seekTo(timeAt(e.clientX)); paint(); startDrag("seek")(e); });
+
+  // ---- previsualizar el corte (navega solo por lo que se conserva; empieza en el IN) ----
+  $("#preview").onclick = () => {
+    preview = !preview;
+    $("#preview").classList.toggle("active", preview);
+    $("#preview").textContent = preview ? "✅  Previsualizando corte" : "👁  Previsualizar corte";
+    if(preview){ video.currentTime = snapKept(video.currentTime || 0); paint(); }
+  };
 
   $("#pickAudio").onclick = async () => {
     const r = await desktop.pickCutAudio();

@@ -19,6 +19,7 @@
   .pri{ background:var(--accent); color:#fff; }
   .pri:hover{ background:#6a49f2; }
   .pri:disabled{ opacity:.5; cursor:default; }
+  .ng.active{ background:var(--accent); color:#fff; border-color:var(--accent); }
   .spacer{ flex:1; }
 
   main{ flex:1; display:flex; flex-direction:column; min-height:0; padding:16px 22px; gap:14px; }
@@ -124,6 +125,7 @@
     </div>
     <div class="controls">
       <button class="ng" id="play">▶</button>
+      <button class="ng" id="preview" title="Reproduce solo lo que te quedas, empezando por el corte y saltando los huecos (para cuadrar el audio)">👁  Previsualizar corte</button>
       <div class="grp"><button class="ng" id="prevF">⟨ frame</button><button class="ng" id="nextF">frame ⟩</button></div>
       <div class="grp">
         <button class="ng" id="setIn">[ Marcar INICIO</button>
@@ -165,6 +167,6 @@
   <div class="s" id="ovS">Recodificando fotograma a fotograma, no cierres la app.</div>
 </div>
 
-<script src="js/cutter.js?v=6"></script>
+<script src="js/cutter.js?v=7"></script>
 </body>
 </html>
