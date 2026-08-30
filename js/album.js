@@ -164,6 +164,9 @@
         songSet:   (v.songs   && v.songs.length)   ? new Set(v.songs)   : null
       }));
       versions = [ baseV, ...variants ];
+      // Con varias versiones, TODAS deben verse (badge). Si alguna no tiene nombre, se le
+      // pone uno por defecto para que la reducida no pase desapercibida.
+      versions.forEach((v, i) => { if(!v.name) v.name = (i === 0) ? "Completa" : (versions.length === 2 ? "Reducida" : ("Versión " + (i+1))); });
     } else {
       versions = [ versionView(A, { name:"", memberSet:null, songSet:null }) ];
     }
