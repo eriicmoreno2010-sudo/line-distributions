@@ -185,7 +185,6 @@
       [baseV, ...variantViews].forEach((v, i, arr) => { if(!v.name)
         v.name = (i === 0) ? "Completa" : (arr.length === 2 ? "Reducida" : ("Versión " + (i+1))); });
     }
-    const isAll = i => !!(rawV && rawV[i] && rawV[i].allSlides);
 
     // ---------- 1) PORTADA (versión completa) ----------
     {
@@ -207,27 +206,26 @@
       slides.push({ el, dur:7 });
     }
 
-    // Conjunto que TRANSICIONA en el race/donut = completa + variantes por miembros (no allSlides)
-    const transitionVers = [ baseV, ...variantViews.filter((v,i) => !isAll(i)) ];
-    // Variantes por CANCIONES (allSlides): cada una tiene su PROPIA diapositiva de cada tipo.
+    // TODAS las versiones (completa + reducidas). El RACE y el DONUT SIEMPRE se duplican en
+    // diapositivas separadas: una por versión. Esto pasa tanto con "Duplicar todas" OFF
+    // (entonces SOLO se duplican race y donut) como ON.
+    const allVers = rawV ? [ baseV, ...variantViews ] : [ baseV ];
+    // Variantes marcadas "allSlides" (versiones por CANCIONES): además duplican el resto.
     const deck = [];
     if(rawV) rawV.forEach((vc, i) => { if(vc.allSlides)
-      deck.push({ name: variantViews[i].name, view: variantViews[i], A: aggregateFiltered(albumData, songDatas, vc) }); });
-    const anyDeck = deck.length > 0;
-    // badge de la versión completa en las diapositivas duplicadas
-    const baseBadge = anyDeck ? baseV.name : "";
+      deck.push({ name: variantViews[i].name, A: aggregateFiltered(albumData, songDatas, vc) }); });
+    // badge de la versión completa en el resto de diapositivas (solo si hay versiones de canciones)
+    const restBadge = deck.length ? baseV.name : "";
 
-    // ---------- RACE ----------  (completa/transición + una por cada versión de canciones)
-    raceSlide(transitionVers);
-    deck.forEach(d => raceSlide([d.view]));
-    // ---------- DONUT ----------
-    donutSlide(transitionVers);
-    deck.forEach(d => donutSlide([d.view]));
-    // ---------- Resto: completa (+ badge si hay versiones de canciones) y luego cada reducida ----------
-    bumpSlide(A, baseBadge);      deck.forEach(d => bumpSlide(d.A, d.name));
-    placesSlides(A, baseBadge);   deck.forEach(d => placesSlides(d.A, d.name));
-    avgSlide(A, baseBadge);       deck.forEach(d => avgSlide(d.A, d.name));
-    mostlessSlide(A, baseBadge);  deck.forEach(d => mostlessSlide(d.A, d.name));
+    // ---------- RACE ----------  (una diapositiva por versión)
+    allVers.forEach(v => raceSlide([v]));
+    // ---------- DONUT ----------  (una diapositiva por versión)
+    allVers.forEach(v => donutSlide([v]));
+    // ---------- Resto: completa siempre; y cada versión de canciones (allSlides) ----------
+    bumpSlide(A, restBadge);      deck.forEach(d => bumpSlide(d.A, d.name));
+    placesSlides(A, restBadge);   deck.forEach(d => placesSlides(d.A, d.name));
+    avgSlide(A, restBadge);       deck.forEach(d => avgSlide(d.A, d.name));
+    mostlessSlide(A, restBadge);  deck.forEach(d => mostlessSlide(d.A, d.name));
 
     return slides;
 
