@@ -27,7 +27,9 @@
   "versions": [
     {
       "name": "NCT 127 (OT5)",
-      "songs": [],
+      "songs": [
+        0
+      ],
       "members": [
         "JOHNNY",
         "TAEYONG",
