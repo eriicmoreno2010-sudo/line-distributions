@@ -403,7 +403,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "",
       "romanization": "(yeah yeah yeah)",
       "english": "",
@@ -412,9 +414,33 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "",
       "romanization": "(yeah yeah yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "(I mean)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "(I mean)",
       "english": "",
       "adlib": true
     },
@@ -542,9 +568,22 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(yeah yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "(I mean)",
       "english": "",
       "adlib": true
     },
@@ -618,7 +657,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(And night)",
       "english": "",
@@ -627,7 +668,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "",
       "romanization": "(When I’m With You)",
       "english": "",
@@ -636,9 +679,20 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "",
       "romanization": "(ooh I’m so blind)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I mean)",
       "english": "",
       "adlib": true
     },
@@ -726,10 +780,21 @@
     {
       "start": 0,
       "end": 0,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(I’m not myself with you)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
       "members": [],
-      "original": "(I’m not myself with you)",
-      "romanization": "(i’m not myself with you)",
-      "english": "(I’m not myself with you)",
+      "original": "",
+      "romanization": "(I mean)",
+      "english": "",
       "adlib": true
     },
     {
