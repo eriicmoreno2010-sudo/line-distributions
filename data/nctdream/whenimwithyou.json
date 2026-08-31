@@ -806,8 +806,8 @@
       "start": 196.71,
       "end": 198.55,
       "members": [
-        "RENJUN",
-        "JAEMIN"
+        "JAEMIN",
+        "RENJUN"
       ],
       "original": "",
       "romanization": "I’m not myself",
@@ -892,7 +892,10 @@
     {
       "start": 204.89,
       "end": 206.78,
-      "members": [],
+      "members": [
+        "MARK",
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
