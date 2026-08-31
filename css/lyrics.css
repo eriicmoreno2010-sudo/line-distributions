@@ -317,9 +317,9 @@ Version: 3.0 — Lyrics
     border-radius:18px; text-align:center;
     /* borde con DEGRADADO real (arcoíris en grupo, dos colores en dúo) usando padding-box/border-box */
     border:2px solid transparent;
+    /* fondo NEUTRO (sin tinte del color); solo el BORDE lleva el color/degradado */
     background:
-      linear-gradient(color-mix(in srgb, var(--al-accent,#7c5cff) 12%, rgba(8,8,14,.55)),
-                      color-mix(in srgb, var(--al-accent,#7c5cff) 12%, rgba(8,8,14,.55))) padding-box,
+      linear-gradient(rgba(8,8,14,.55), rgba(8,8,14,.55)) padding-box,
       var(--al-border, var(--al-accent,#7c5cff)) border-box;
     /* el cristal difumina la parte de la letra central que queda por detrás */
     -webkit-backdrop-filter:blur(9px) saturate(1.1); backdrop-filter:blur(9px) saturate(1.1);
