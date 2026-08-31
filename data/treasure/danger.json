@@ -179,14 +179,14 @@
       ]
     },
     {
-      "start": 25.86,
-      "end": 28.82,
+      "start": 25.88,
+      "end": 27.64,
       "members": [
         "HARUTO"
       ],
-      "original": "하늘을 가르며 이름을, 날리다 이승을 전부 다 먹을까",
-      "romanization": "haneureul gareumyeo ireumeul nallida, iseungeul jeonbu da meogeulkka",
-      "english": "As I carve through the sky and make my name known, Should I devour this entire world?",
+      "original": "하늘을 가르며 이름을 날리다",
+      "romanization": "haneureul gareumyeo ireumeul nallida",
+      "english": "As I carve through the sky and make my name known",
       "adlib": false,
       "voice": [
         [
@@ -194,6 +194,15 @@
           29.03
         ]
       ]
+    },
+    {
+      "start": 27.69,
+      "end": 28.99,
+      "members": [],
+      "original": "이승을 전부 다 먹을까",
+      "romanization": "iseungeul jeonbu da meogeulkka",
+      "english": "Should I devour this entire world?",
+      "adlib": false
     },
     {
       "start": 28.95,
@@ -552,14 +561,14 @@
       ]
     },
     {
-      "start": 85.02,
-      "end": 87.94,
+      "start": 85.03,
+      "end": 86.68,
       "members": [
         "JUNGHWAN"
       ],
-      "original": "하늘을 가르며 이름을, 날리다 이승을 전부 다 먹을까",
-      "romanization": "haneureul gareumyeo ireumeul nallida, iseungeul jeonbu da meogeulkka",
-      "english": "As I carve through the sky and make my name known, Should I devour this entire world?",
+      "original": "하늘을 가르며 이름을",
+      "romanization": "haneureul gareumyeo ireumeul nallida",
+      "english": "As I carve through the sky and make my name known",
       "adlib": false,
       "voice": [
         [
@@ -567,6 +576,15 @@
           88.09
         ]
       ]
+    },
+    {
+      "start": 86.8,
+      "end": 88.1,
+      "members": [],
+      "original": "날리다 이승을 전부 다 먹을까",
+      "romanization": "iseungeul jeonbu da meogeulkka",
+      "english": "Should I devour this entire world?",
+      "adlib": false
     },
     {
       "start": 88.1,
