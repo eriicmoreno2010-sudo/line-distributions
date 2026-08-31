@@ -266,10 +266,15 @@ Self-contained: injects its own styles and markup.
     }, 900);
   }
 
+  let instTimer=0;
   function show(){ if(!built || ov.classList.contains("show")) return;
-    document.body.classList.add("results-up"); ov.classList.add("show"); autoReveal(); playInstrumental(); }
+    document.body.classList.add("results-up"); ov.classList.add("show"); autoReveal();
+    // el instrumental empieza cuando los resultados YA cubren toda la pantalla
+    // (tras la subida de 1s del overlay), no mientras están subiendo.
+    clearTimeout(instTimer);
+    instTimer = setTimeout(()=>{ if(ov.classList.contains("show")) playInstrumental(); }, 1050); }
   function hide(){ ov.classList.remove("show"); document.body.classList.remove("results-up");
-    if(revealTimer) clearInterval(revealTimer); reset(); stopInstrumental(); }
+    clearTimeout(instTimer); if(revealTimer) clearInterval(revealTimer); reset(); stopInstrumental(); }
 
   const video=document.getElementById("video");
   if(video) video.addEventListener("ended", show);
