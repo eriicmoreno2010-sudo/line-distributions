@@ -78,8 +78,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 7.75,
+      "end": 11.08,
       "members": [
         "HYUNSUK"
       ],
@@ -89,8 +89,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.22,
+      "end": 14.47,
       "members": [
         "HYUNSUK"
       ],
@@ -100,8 +100,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.6,
+      "end": 20.81,
       "members": [
         "DOYOUNG"
       ],
@@ -111,8 +111,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.98,
+      "end": 23.42,
       "members": [
         "YOSHI"
       ],
@@ -122,8 +122,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.55,
+      "end": 25.71,
       "members": [
         "YOSHI"
       ],
@@ -133,8 +133,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.86,
+      "end": 28.82,
       "members": [
         "HARUTO"
       ],
@@ -144,8 +144,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.95,
+      "end": 31.94,
       "members": [
         "JUNGHWAN"
       ],
@@ -155,8 +155,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 32.09,
+      "end": 35.95,
       "members": [
         "JUNGHWAN"
       ],
@@ -166,8 +166,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.09,
+      "end": 39.2,
       "members": [
         "ASAHI"
       ],
@@ -177,8 +177,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 39.47,
+      "end": 42.69,
       "members": [
         "ASAHI"
       ],
@@ -188,8 +188,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.84,
+      "end": 46.23,
       "members": [
         "JEONGWOO"
       ],
@@ -199,8 +199,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 46.42,
+      "end": 50.13,
       "members": [
         "JUNKYU"
       ],
@@ -210,8 +210,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 50.48,
+      "end": 53.9,
       "members": [
         "JUNGHWAN"
       ],
@@ -221,8 +221,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 54.05,
+      "end": 57.47,
       "members": [
         "JIHOON"
       ],
@@ -232,8 +232,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.62,
+      "end": 61.02,
       "members": [
         "JAEHYUK"
       ],
@@ -243,8 +243,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 61.19,
+      "end": 64.74,
       "members": [
         "DOYOUNG"
       ],
@@ -254,8 +254,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.55,
+      "end": 69.64,
       "members": [
         "HARUTO"
       ],
@@ -265,8 +265,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.78,
+      "end": 73.38,
       "members": [
         "HARUTO"
       ],
@@ -276,8 +276,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 73.7,
+      "end": 77.18,
       "members": [
         "DOYOUNG"
       ],
@@ -287,8 +287,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 77.4,
+      "end": 80.24,
       "members": [
         "YOSHI"
       ],
@@ -298,8 +298,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 80.37,
+      "end": 82.58,
       "members": [
         "HYUNSUK"
       ],
@@ -309,8 +309,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.7,
+      "end": 84.9,
       "members": [
         "HYUNSUK"
       ],
@@ -320,8 +320,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.02,
+      "end": 87.94,
       "members": [
         "JUNGHWAN"
       ],
@@ -331,8 +331,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.1,
+      "end": 91.1,
       "members": [
         "JUNKYU"
       ],
@@ -342,8 +342,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 91.21,
+      "end": 95.01,
       "members": [
         "JUNKYU"
       ],
@@ -353,8 +353,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 95.28,
+      "end": 98.36,
       "members": [
         "ASAHI"
       ],
@@ -364,8 +364,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 98.65,
+      "end": 101.84,
       "members": [
         "ASAHI"
       ],
@@ -375,8 +375,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 101.99,
+      "end": 105.36,
       "members": [
         "JIHOON"
       ],
@@ -386,8 +386,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 105.52,
+      "end": 109.31,
       "members": [
         "JUNGHWAN"
       ],
@@ -397,8 +397,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 109.51,
+      "end": 113.05,
       "members": [
         "HYUNSUK"
       ],
@@ -408,8 +408,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 113.21,
+      "end": 116.65,
       "members": [
         "JEONGWOO"
       ],
@@ -419,8 +419,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 116.81,
+      "end": 120.12,
       "members": [
         "ASAHI"
       ],
@@ -430,8 +430,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.27,
+      "end": 123.75,
       "members": [
         "JAEHYUK"
       ],
@@ -441,8 +441,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 123.9,
+      "end": 127.32,
       "members": [
         "TREASURE"
       ],
@@ -452,8 +452,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 127.53,
+      "end": 130.96,
       "members": [
         "TREASURE"
       ],
@@ -463,8 +463,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 131.11,
+      "end": 134.56,
       "members": [
         "JUNKYU"
       ],
@@ -474,8 +474,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.73,
+      "end": 139.25,
       "members": [
         "JIHOON"
       ],
