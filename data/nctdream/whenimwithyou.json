@@ -882,7 +882,17 @@
       "original": "",
       "romanization": "(yeah yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          153.64,
+          153.79
+        ],
+        [
+          153.85,
+          154.26
+        ]
+      ]
     },
     {
       "start": 157.71,
@@ -1035,7 +1045,13 @@
       "original": "",
       "romanization": "(And night)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          175.92,
+          178.14
+        ]
+      ]
     },
     {
       "start": 181.74,
@@ -1046,7 +1062,13 @@
       "original": "",
       "romanization": "(When I’m With You)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          181.79,
+          183.03
+        ]
+      ]
     },
     {
       "start": 183.37,
@@ -1057,7 +1079,13 @@
       "original": "",
       "romanization": "(ooh I’m so blind)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          183.36,
+          186.25
+        ]
+      ]
     },
     {
       "start": 194.65,
@@ -1204,7 +1232,13 @@
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          196.73,
+          198.52
+        ]
+      ]
     },
     {
       "start": 196.71,
@@ -1215,7 +1249,13 @@
       "original": "",
       "romanization": "(I’m not myself with you)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          196.71,
+          199.79
+        ]
+      ]
     },
     {
       "start": 202.81,
@@ -1299,7 +1339,13 @@
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          204.9,
+          206.67
+        ]
+      ]
     },
     {
       "start": 206.54,
