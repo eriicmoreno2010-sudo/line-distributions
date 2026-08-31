@@ -190,8 +190,8 @@
       "adlib": false,
       "voice": [
         [
-          25.88,
-          29.03
+          25.9,
+          27.6
         ]
       ]
     },
@@ -204,7 +204,13 @@
       "original": "이승을 전부 다 먹을까",
       "romanization": "iseungeul jeonbu da meogeulkka",
       "english": "Should I devour this entire world?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.68,
+          28.98
+        ]
+      ]
     },
     {
       "start": 28.95,
@@ -574,8 +580,8 @@
       "adlib": false,
       "voice": [
         [
-          85.03,
-          88.09
+          84.97,
+          86.74
         ]
       ]
     },
@@ -588,7 +594,13 @@
       "original": "날리다 이승을 전부 다 먹을까",
       "romanization": "iseungeul jeonbu da meogeulkka",
       "english": "Should I devour this entire world?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.78,
+          88.11
+        ]
+      ]
     },
     {
       "start": 88.1,
