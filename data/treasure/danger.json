@@ -83,10 +83,694 @@
       "members": [
         "HYUNSUK"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "발걸음아 살려",
+      "romanization": "balgeoreuma sallyeo",
+      "english": "My feet, save me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 빨리 달려",
+      "romanization": "deo ppalli dalryeo",
+      "english": "Run even faster",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Tongue is 샷건 Ay",
+      "romanization": "tongue is syatgeon ay",
+      "english": "Tongue like a shotgun, ay",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그녀들은 과녁",
+      "romanization": "geunyeodeureun gwanyeok",
+      "english": "They take aim",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "심장을 맞춰",
+      "romanization": "simjangeul matchwo",
+      "english": "And hit the heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fire fire fire bang",
+      "romanization": "fire fire fire bang",
+      "english": "Fire, fire, fire, bang",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm a sinner",
+      "romanization": "i’m a sinner",
+      "english": "I'm a sinner",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "양 손목은 Bling out",
+      "romanization": "yang sonmogeun bling out",
+      "english": "Both my wrists are blinged out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈에 박은 크리스탈 Yeah",
+      "romanization": "nune bakeun crystal yeah",
+      "english": "Crystals embedded in my eyes, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이번엔 어디로 갑니까",
+      "romanization": "ibeonen eodiro gamnikka",
+      "english": "Where are we going this time?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "곤방와 사와디캅",
+      "romanization": "gonbangwa sawadikap",
+      "english": "Gonbangwa, sawasdee ka",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세계를 날다가 지구를 떠날까 Whoa",
+      "romanization": "sesangeul naldaga jigureul tteonalka whoa",
+      "english": "Should we fly around the world and leave the Earth? Whoa",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하늘을 가르며 이름을",
+      "romanization": "haneureul gareumyeo ireumeul nallida",
+      "english": "As I carve through the sky and make my name known",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날리다 이승을 전부 다 먹을까",
+      "romanization": "iseungeul jeonbu da meogeulkka",
+      "english": "Should I devour this entire world?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Go go go",
+      "romanization": "go go go",
+      "english": "Go, go, go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "못 먹어도 뽑기 Go",
+      "romanization": "mot meogeodo ppobgi go",
+      "english": "Even if I don't get it, go for the draw",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "They go low we go high",
+      "romanization": "they go low we go high",
+      "english": "They go low, we go high",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah you know know know",
+      "romanization": "yeah you know know know",
+      "english": "Yeah, you know, know, know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "사랑은 눈먼 자들의 소유",
+      "romanization": "sarangeun nunmeon jadeurui soyu",
+      "english": "Love belongs to the blind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 목마른 욕심에 터진 홍수",
+      "romanization": "nae mokmareun yoksime teojin hongsu",
+      "english": "A flood bursting from my thirsty greed",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "What you want from me",
+      "romanization": "what you want from me",
+      "english": "What you want from me?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pay the price for me",
+      "romanization": "pay the price for me",
+      "english": "Pay the price for me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You’re never gonna let me go",
+      "romanization": "you’re never gonna let me go",
+      "english": "You're never gonna let me go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Go go yeah",
+      "romanization": "go go yeah",
+      "english": "Go, go, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That’s a heart attack",
+      "romanization": "that’s a heart attack",
+      "english": "That's a heart attack",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That’s a heart attack",
+      "romanization": "that’s a heart attack",
+      "english": "That's a heart attack",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "They yelling and yelling in fear",
+      "romanization": "they yelling and yelling in fear",
+      "english": "They're yelling and yelling in fear",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Horror I got what she want uh",
+      "romanization": "horror i got what she want uh",
+      "english": "Horror I got what she want, uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dynamite",
+      "romanization": "dynamite",
+      "english": "Dynamite",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dynamite",
+      "romanization": "dynamite",
+      "english": "Dynamite",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fame 그건 Frame",
+      "romanization": "fame geugeon frame",
+      "english": "Fame It's a frame",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "혹은 Paint 위에 Rain",
+      "romanization": "hogeun paint wie rain",
+      "english": "Or rain on paint",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "샤바샤바 하이 샤바",
+      "romanization": "syabasya ba hai syaba",
+      "english": "Shaba-shaba, high, shaba",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그저 Cake 위에 Flame",
+      "romanization": "geujeo cake wie flame",
+      "english": "Just a flame on top of cake",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "고개고개 끄덕 마지노선으로 줄넘기",
+      "romanization": "gogaegogae kkeudeok majinoseoneuro julneomgi",
+      "english": "Nod your head, head after head, Performing acrobatics",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "곡예 부려 허기진 내 날카로운 송곳니",
+      "romanization": "gogye bureoh gijin nae nalkaroun songgotni",
+      "english": "Jumping rope along the line my sharp fangs are hungry",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이번엔 어디로 갑니까",
+      "romanization": "ibeonen eodiro gamnikka",
+      "english": "Where are we going this time?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "곤방와 사와디캅",
+      "romanization": "gonbangwa sawadikap",
+      "english": "Gonbangwa, sawasdee ka",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세계를 날다가 지구를 떠날까 Whoa",
+      "romanization": "sesangeul naldaga jigureul tteonalka whoa",
+      "english": "Should we fly around the world and leave the Earth? Whoa",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하늘을 가르며 이름을",
+      "romanization": "haneureul gareumyeo ireumeul nallida",
+      "english": "As I carve through the sky and make my name known",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날리다 이승을 전부 다 먹을까",
+      "romanization": "iseungeul jeonbu da meogeulkka",
+      "english": "Should I devour this entire world?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Go go go",
+      "romanization": "go go go",
+      "english": "Go, go, go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "못 먹어도 뽑기 Go",
+      "romanization": "mot meogeodo ppobgi go",
+      "english": "Even if I don't get it, go for the draw",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "They go low we go high",
+      "romanization": "they go low we go high",
+      "english": "They go low, we go high",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah you know know know",
+      "romanization": "yeah you know know know",
+      "english": "Yeah, you know, know, know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "사랑은 눈먼 자들의 소유",
+      "romanization": "sarangeun nunmeon jadeurui soyu",
+      "english": "Love belongs to the blind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 목마른 욕심에 터진 홍수",
+      "romanization": "nae mokmareun yoksime teojin hongsu",
+      "english": "A flood bursting from my thirsty greed",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "What you want from me",
+      "romanization": "what you want from me",
+      "english": "What you want from me?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pay the price for me",
+      "romanization": "pay the price for me",
+      "english": "Pay the price for me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You’re never gonna let me go",
+      "romanization": "you’re never gonna let me go",
+      "english": "You're never gonna let me go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Go go yeah",
+      "romanization": "go go yeah",
+      "english": "Go, go, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That’s a heart attack",
+      "romanization": "that’s a heart attack",
+      "english": "That's a heart attack",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That’s a heart attack",
+      "romanization": "that’s a heart attack",
+      "english": "That's a heart attack",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "They yelling and yelling in fear",
+      "romanization": "they yelling and yelling in fear",
+      "english": "They're yelling and yelling in fear",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Horror I got what she want uh",
+      "romanization": "horror i got what she want uh",
+      "english": "Horror I got what she want, uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dynamite",
+      "romanization": "dynamite",
+      "english": "Dynamite",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dynamite",
+      "romanization": "dynamite",
+      "english": "Dynamite",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One two three four",
+      "romanization": "one two three four",
+      "english": "One, two, three, four",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Stop right there",
+      "romanization": "stop right there",
+      "english": "Stop right there",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Don’t tell me no no",
+      "romanization": "don’t tell me no no",
+      "english": "Don't tell me no, no",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Hands in the air",
+      "romanization": "hands in the air",
+      "english": "Hands in the air",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That’s a heart attack",
+      "romanization": "that’s a heart attack",
+      "english": "That's a heart attack",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That’s a heart attack",
+      "romanization": "that’s a heart attack",
+      "english": "That's a heart attack",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Danger",
+      "romanization": "danger",
+      "english": "Danger",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah I got that danger",
+      "romanization": "yeah i got that danger",
+      "english": "Yeah, I got that danger",
+      "adlib": false
     }
   ]
 }
