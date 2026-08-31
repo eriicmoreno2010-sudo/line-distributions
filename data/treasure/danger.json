@@ -198,7 +198,9 @@
     {
       "start": 27.69,
       "end": 28.99,
-      "members": [],
+      "members": [
+        "HARUTO"
+      ],
       "original": "이승을 전부 다 먹을까",
       "romanization": "iseungeul jeonbu da meogeulkka",
       "english": "Should I devour this entire world?",
@@ -580,7 +582,9 @@
     {
       "start": 86.8,
       "end": 88.1,
-      "members": [],
+      "members": [
+        "JUNGHWAN"
+      ],
       "original": "날리다 이승을 전부 다 먹을까",
       "romanization": "iseungeul jeonbu da meogeulkka",
       "english": "Should I devour this entire world?",
