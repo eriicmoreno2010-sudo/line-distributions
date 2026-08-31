@@ -58,7 +58,9 @@ const Player = {
         this.audio = aud;
         v.muted = true;                          // el sonido sale del mp3, no del vídeo
 
-        const sync = () => { try{ if(Math.abs(aud.currentTime - v.currentTime) > 0.25) aud.currentTime = v.currentTime; }catch(e){} };
+        const off = +((SONG && SONG.audioOffset) || 0);   // desfase elegido en el editor (+ retrasa, − adelanta)
+        const sync = () => { try{ const tgt = Math.max(0, v.currentTime + off);
+            if(Math.abs(aud.currentTime - tgt) > 0.25) aud.currentTime = tgt; }catch(e){} };
         v.addEventListener("play",  () => { sync(); aud.play().catch(() => {}); });
         v.addEventListener("pause", () => aud.pause());
         v.addEventListener("seeked", sync);

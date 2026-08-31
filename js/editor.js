@@ -21,8 +21,10 @@
   // ---- Audio del editor: si la canción tiene SONG.audio (mp3), se PRIORIZA ese
   // (silencia el vídeo y suena el mp3 sincronizado); si no, suena el vídeo. ----
   let edAudio = null;
+  const audioOff = () => +((song && song.audioOffset) || 0);   // desfase del audio limpio (s): + retrasa, − adelanta
   function attachAudioSync(){
-    const sync = () => { if(edAudio){ try{ if(Math.abs(edAudio.currentTime - video.currentTime) > 0.22) edAudio.currentTime = video.currentTime; }catch(e){} } };
+    const sync = () => { if(edAudio){ try{ const tgt = Math.max(0, video.currentTime + audioOff());
+      if(Math.abs(edAudio.currentTime - tgt) > 0.22) edAudio.currentTime = tgt; }catch(e){} } };
     video.addEventListener("play",  () => { if(edAudio){ sync(); edAudio.play().catch(() => {}); } });
     video.addEventListener("pause", () => { if(edAudio) edAudio.pause(); });
     video.addEventListener("seeked", sync);
@@ -36,10 +38,19 @@
     if(src){
       edAudio = new Audio(src); edAudio.preload = "auto";
       video.muted = true;                                   // prioriza el mp3
-      if(!video.paused){ try{ edAudio.currentTime = video.currentTime; edAudio.play().catch(() => {}); }catch(e){} }
+      if(!video.paused){ try{ edAudio.currentTime = Math.max(0, video.currentTime + audioOff()); edAudio.play().catch(() => {}); }catch(e){} }
     } else {
       video.muted = false;                                  // sin mp3 -> audio del vídeo
     }
+    syncAudioOffUI();
+  }
+  // muestra/oculta el control de desfase y refleja el valor guardado
+  function syncAudioOffUI(){
+    const wrap = $("#audiooffwrap"), inp = $("#audioOff");
+    if(!wrap || !inp) return;
+    const has = !!(song && song.audio);
+    wrap.style.display = has ? "inline-flex" : "none";
+    if(has) inp.value = (+((song && song.audioOffset) || 0)).toFixed(2);
   }
 
   async function init(){
@@ -589,6 +600,14 @@
       if(res && res.error) console.warn(res.error);
     }
     setTimeout(() => btn.textContent = t, 2800);
+  };
+
+  // Desfase del audio limpio respecto al vídeo (segundos). Se guarda en song.audioOffset
+  // y el visor lo aplica al reproducir. + = retrasa el audio, − = lo adelanta.
+  $("#audioOff").oninput = () => {
+    song.audioOffset = +$("#audioOff").value || 0;
+    if(edAudio){ try{ edAudio.currentTime = Math.max(0, video.currentTime + audioOff()); }catch(e){} }
+    save();
   };
 
   // ===== INSTRUMENTAL: popover con barra para marcar el trozo del donut =====
