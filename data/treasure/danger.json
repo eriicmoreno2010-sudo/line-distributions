@@ -86,7 +86,13 @@
       "original": "발걸음아 살려, 더 빨리 달려, Tongue is 샷건 Ay",
       "romanization": "balgeoreuma sallyeo, deo ppalli dalryeo, tongue is syatgeon ay",
       "english": "My feet, save me, Run even faster, Tongue like a shotgun, ay",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.72,
+          11.1
+        ]
+      ]
     },
     {
       "start": 11.22,
@@ -97,7 +103,13 @@
       "original": "그녀들은 과녁, 심장을 맞춰, Fire fire fire bang",
       "romanization": "geunyeodeureun gwanyeok, simjangeul matchwo, fire fire fire bang",
       "english": "They take aim, And hit the heart, Fire, fire, fire, bang",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.33,
+          14.7
+        ]
+      ]
     },
     {
       "start": 14.6,
@@ -108,7 +120,29 @@
       "original": "I'm a sinner, 양 손목은 Bling out, 눈에 박은 크리스탈 Yeah",
       "romanization": "i’m a sinner, yang sonmogeun bling out, nune bakeun crystal yeah",
       "english": "I'm a sinner, Both my wrists are blinged out, Crystals embedded in my eyes, yeah",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          14.7,
+          15.9
+        ],
+        [
+          16.04,
+          17.65
+        ],
+        [
+          17.81,
+          19.51
+        ],
+        [
+          19.66,
+          20.22
+        ],
+        [
+          20.39,
+          20.86
+        ]
+      ]
     },
     {
       "start": 20.98,
@@ -119,7 +153,13 @@
       "original": "이번엔 어디로 갑니까, 곤방와 사와디캅",
       "romanization": "ibeonen eodiro gamnikka, gonbangwa sawadikap",
       "english": "Where are we going this time?, Gonbangwa, sawasdee ka",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21.12,
+          23.6
+        ]
+      ]
     },
     {
       "start": 23.55,
@@ -130,7 +170,13 @@
       "original": "세계를 날다가 지구를 떠날까 Whoa",
       "romanization": "sesangeul naldaga jigureul tteonalka whoa",
       "english": "Should we fly around the world and leave the Earth? Whoa",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          23.59,
+          25.8
+        ]
+      ]
     },
     {
       "start": 25.86,
@@ -141,7 +187,13 @@
       "original": "하늘을 가르며 이름을, 날리다 이승을 전부 다 먹을까",
       "romanization": "haneureul gareumyeo ireumeul nallida, iseungeul jeonbu da meogeulkka",
       "english": "As I carve through the sky and make my name known, Should I devour this entire world?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.88,
+          29.03
+        ]
+      ]
     },
     {
       "start": 28.95,
@@ -152,7 +204,25 @@
       "original": "Go go go, 못 먹어도 뽑기 Go",
       "romanization": "go go go, mot meogeodo ppobgi go",
       "english": "Go, go, go, Even if I don't get it, go for the draw",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          29.03,
+          29.36
+        ],
+        [
+          29.54,
+          29.78
+        ],
+        [
+          29.98,
+          30.25
+        ],
+        [
+          30.4,
+          31.99
+        ]
+      ]
     },
     {
       "start": 32.09,
@@ -163,7 +233,17 @@
       "original": "",
       "romanization": "They go low we go high, Yeah you know know know",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          32.15,
+          32.88
+        ],
+        [
+          33.05,
+          35.93
+        ]
+      ]
     },
     {
       "start": 36.09,
@@ -174,7 +254,13 @@
       "original": "사랑은 눈먼 자들의 소유",
       "romanization": "sarangeun nunmeon jadeurui soyu",
       "english": "Love belongs to the blind",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          36.2,
+          39.19
+        ]
+      ]
     },
     {
       "start": 39.47,
@@ -185,7 +271,13 @@
       "original": "내 목마른 욕심에 터진 홍수",
       "romanization": "nae mokmareun yoksime teojin hongsu",
       "english": "A flood bursting from my thirsty greed",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          39.49,
+          42.74
+        ]
+      ]
     },
     {
       "start": 42.84,
@@ -196,7 +288,17 @@
       "original": "",
       "romanization": "What you want from me, Pay the price for me",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.87,
+          44.54
+        ],
+        [
+          44.69,
+          46.4
+        ]
+      ]
     },
     {
       "start": 46.42,
@@ -207,7 +309,25 @@
       "original": "",
       "romanization": "You’re never gonna let me go, Go go yeah",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          46.46,
+          48.53
+        ],
+        [
+          48.71,
+          49.01
+        ],
+        [
+          49.16,
+          49.48
+        ],
+        [
+          49.6,
+          50.37
+        ]
+      ]
     },
     {
       "start": 50.48,
@@ -218,7 +338,17 @@
       "original": "",
       "romanization": "Danger, That’s a heart attack, That's a heart attack",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          50.56,
+          51.31
+        ],
+        [
+          51.44,
+          54.05
+        ]
+      ]
     },
     {
       "start": 54.05,
@@ -229,7 +359,13 @@
       "original": "",
       "romanization": "Danger, They yelling and yelling in fear",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.1,
+          57.6
+        ]
+      ]
     },
     {
       "start": 57.62,
@@ -240,7 +376,17 @@
       "original": "",
       "romanization": "Danger, Horror I got what she want uh",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.68,
+          58.44
+        ],
+        [
+          58.59,
+          61.2
+        ]
+      ]
     },
     {
       "start": 61.19,
@@ -251,7 +397,25 @@
       "original": "",
       "romanization": "Dynamite, Danger, Dynamite, Danger",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.29,
+          62.02
+        ],
+        [
+          62.21,
+          62.93
+        ],
+        [
+          63.07,
+          63.8
+        ],
+        [
+          64.01,
+          64.72
+        ]
+      ]
     },
     {
       "start": 66.55,
@@ -262,7 +426,25 @@
       "original": "Fame 그건 Frame, 혹은 Paint 위에 Rain",
       "romanization": "fame geugeon frame, hogeun paint wie rain",
       "english": "Fame It's a frame, Or rain on paint",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.64,
+          67.01
+        ],
+        [
+          67.17,
+          67.95
+        ],
+        [
+          68.08,
+          68.74
+        ],
+        [
+          68.89,
+          69.75
+        ]
+      ]
     },
     {
       "start": 69.78,
@@ -273,7 +455,33 @@
       "original": "샤바샤바 하이 샤바, 그저 Cake 위에 Flame",
       "romanization": "syabasya ba hai syaba, geujeo cake wie flame",
       "english": "Shaba-shaba, high, shaba, Just a flame on top of cake",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.73,
+          70.54
+        ],
+        [
+          70.7,
+          71.45
+        ],
+        [
+          71.58,
+          71.86
+        ],
+        [
+          72.02,
+          72.32
+        ],
+        [
+          72.47,
+          72.76
+        ],
+        [
+          72.88,
+          73.41
+        ]
+      ]
     },
     {
       "start": 73.7,
@@ -284,7 +492,13 @@
       "original": "고개고개 끄덕 마지노선으로 줄넘기",
       "romanization": "gogaegogae kkeudeok majinoseoneuro julneomgi",
       "english": "Nod your head, head after head, Performing acrobatics",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          73.78,
+          77.21
+        ]
+      ]
     },
     {
       "start": 77.4,
@@ -295,7 +509,13 @@
       "original": "곡예 부려 허기진 내 날카로운 송곳니",
       "romanization": "gogye bureoh gijin nae nalkaroun songgotni",
       "english": "Jumping rope along the line my sharp fangs are hungry",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          77.42,
+          80.93
+        ]
+      ]
     },
     {
       "start": 80.37,
@@ -306,7 +526,13 @@
       "original": "이번엔 어디로 갑니까, 곤방와 사와디캅",
       "romanization": "ibeonen eodiro gamnikka, gonbangwa sawadikap",
       "english": "Where are we going this time?, Gonbangwa, sawasdee ka",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.32,
+          82.71
+        ]
+      ]
     },
     {
       "start": 82.7,
@@ -317,7 +543,13 @@
       "original": "세계를 날다가 지구를 떠날까 Whoa",
       "romanization": "sesangeul naldaga jigureul tteonalka whoa",
       "english": "Should we fly around the world and leave the Earth? Whoa",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          82.69,
+          84.81
+        ]
+      ]
     },
     {
       "start": 85.02,
@@ -328,7 +560,13 @@
       "original": "하늘을 가르며 이름을, 날리다 이승을 전부 다 먹을까",
       "romanization": "haneureul gareumyeo ireumeul nallida, iseungeul jeonbu da meogeulkka",
       "english": "As I carve through the sky and make my name known, Should I devour this entire world?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.03,
+          88.09
+        ]
+      ]
     },
     {
       "start": 88.1,
@@ -339,7 +577,25 @@
       "original": "Go go go, 못 먹어도 뽑기 Go",
       "romanization": "go go go, mot meogeodo ppobgi go",
       "english": "Go, go, go, Even if I don't get it, go for the draw",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          88.16,
+          88.46
+        ],
+        [
+          88.69,
+          88.93
+        ],
+        [
+          89.12,
+          89.35
+        ],
+        [
+          89.42,
+          91.15
+        ]
+      ]
     },
     {
       "start": 91.21,
@@ -350,7 +606,17 @@
       "original": "",
       "romanization": "They go low we go high, Yeah you know know know",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          91.24,
+          92.05
+        ],
+        [
+          92.2,
+          95.03
+        ]
+      ]
     },
     {
       "start": 95.28,
@@ -361,7 +627,13 @@
       "original": "사랑은 눈먼 자들의 소유",
       "romanization": "sarangeun nunmeon jadeurui soyu",
       "english": "Love belongs to the blind",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          95.29,
+          98.33
+        ]
+      ]
     },
     {
       "start": 98.65,
@@ -372,7 +644,13 @@
       "original": "내 목마른 욕심에 터진 홍수",
       "romanization": "nae mokmareun yoksime teojin hongsu",
       "english": "A flood bursting from my thirsty greed",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          98.57,
+          101.87
+        ]
+      ]
     },
     {
       "start": 101.99,
@@ -383,7 +661,17 @@
       "original": "",
       "romanization": "What you want from me, Pay the price for me",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101.98,
+          103.66
+        ],
+        [
+          103.81,
+          105.48
+        ]
+      ]
     },
     {
       "start": 105.52,
@@ -394,7 +682,29 @@
       "original": "",
       "romanization": "You’re never gonna let me go, Go go yeah",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.55,
+          106.31
+        ],
+        [
+          106.49,
+          107.7
+        ],
+        [
+          107.85,
+          108.1
+        ],
+        [
+          108.27,
+          108.54
+        ],
+        [
+          108.72,
+          109.41
+        ]
+      ]
     },
     {
       "start": 109.51,
@@ -405,7 +715,17 @@
       "original": "",
       "romanization": "Danger, That’s a heart attack, That’s a heart attack",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.59,
+          110.37
+        ],
+        [
+          110.52,
+          113.17
+        ]
+      ]
     },
     {
       "start": 113.21,
@@ -416,7 +736,13 @@
       "original": "",
       "romanization": "Danger, They yelling and yelling in fear",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.21,
+          116.73
+        ]
+      ]
     },
     {
       "start": 116.81,
@@ -427,7 +753,17 @@
       "original": "",
       "romanization": "Danger, Horror I got what she want uh",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.85,
+          117.55
+        ],
+        [
+          117.72,
+          120.34
+        ]
+      ]
     },
     {
       "start": 120.27,
@@ -438,7 +774,25 @@
       "original": "",
       "romanization": "Dynamite, Danger, Dynamite, Danger",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          120.33,
+          121.08
+        ],
+        [
+          121.27,
+          121.99
+        ],
+        [
+          122.18,
+          122.87
+        ],
+        [
+          123.1,
+          123.86
+        ]
+      ]
     },
     {
       "start": 123.9,
@@ -471,7 +825,17 @@
       "original": "",
       "romanization": "Danger, That’s a heart attack, That’s a heart attack",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          131.17,
+          131.93
+        ],
+        [
+          132.08,
+          134.64
+        ]
+      ]
     },
     {
       "start": 134.73,
@@ -482,7 +846,21 @@
       "original": "",
       "romanization": "Danger, Danger, Yeah I got that danger",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.75,
+          135.42
+        ],
+        [
+          135.63,
+          136.35
+        ],
+        [
+          136.5,
+          139.21
+        ]
+      ]
     },
     {
       "start": 3.32,
