@@ -401,8 +401,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.46,
+      "end": 59.14,
       "members": [
         "NCT DREAM"
       ],
@@ -412,8 +412,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 123.11,
+      "end": 124.68,
       "members": [
         "NCT DREAM"
       ],
@@ -423,8 +423,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 145.4,
+      "end": 146.01,
       "members": [
         "NCT DREAM"
       ],
@@ -434,8 +434,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 149.5,
+      "end": 150.28,
       "members": [
         "NCT DREAM"
       ],
@@ -566,8 +566,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 153.58,
+      "end": 154.33,
       "members": [
         "MARK"
       ],
@@ -577,8 +577,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 157.71,
+      "end": 158.57,
       "members": [
         "NCT DREAM"
       ],
@@ -665,8 +665,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 175.91,
+      "end": 178.25,
       "members": [
         "HAECHAN"
       ],
@@ -676,8 +676,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 181.74,
+      "end": 183.12,
       "members": [
         "RENJUN"
       ],
@@ -687,8 +687,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 183.37,
+      "end": 186.19,
       "members": [
         "RENJUN"
       ],
@@ -698,8 +698,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 194.65,
+      "end": 195.35,
       "members": [
         "NCT DREAM"
       ],
@@ -797,17 +797,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 196.71,
+      "end": 198.55,
+      "members": [
+        "RENJUN",
+        "JAEMIN"
+      ],
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 196.71,
+      "end": 199.6,
       "members": [
         "CHENLE"
       ],
@@ -817,8 +820,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 202.81,
+      "end": 203.5,
       "members": [
         "NCT DREAM"
       ],
@@ -881,8 +884,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 204.89,
+      "end": 206.78,
       "members": [],
       "original": "",
       "romanization": "I’m not myself",
