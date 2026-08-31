@@ -557,14 +557,14 @@
   // --- Elegir el vídeo (MV) desde el PC: se copia, se pone en el reproductor y se guarda ---
   $("#pickvideo").onclick = async () => {
     const btn = $("#pickvideo"); const t = btn.textContent;
-    btn.disabled = true; btn.textContent = "⏳ Copiando y subiendo vídeo…";
+    btn.disabled = true; btn.textContent = "⏳ Copiando vídeo…";
     const res = await window.desktop.pickVideo({ group: song.group, song: song.song });
     btn.disabled = false;
     if(res && res.canceled){ btn.textContent = t; return; }
     if(res && res.ok){
       song.video = res.video;
       video.src = song.video; video.load();            // se ve al instante en el editor
-      btn.textContent = res.pushed ? "✓ Vídeo puesto" : "✓ Vídeo (local, no subido)";
+      btn.textContent = "✓ Vídeo puesto (local)";
       save();                                           // guarda el JSON con el nuevo vídeo
     } else {
       btn.textContent = "✕ Error";

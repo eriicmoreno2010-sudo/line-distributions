@@ -321,18 +321,9 @@ ipcMain.handle("pick-video", async (_e, args) => {
     fs.mkdirSync(path.join(ROOT, "videos"), { recursive:true });
     const destRel = "videos/" + base + ext;
     fs.copyFileSync(srcFile, path.join(ROOT, destRel));
-
-    const res = { ok:true, video: destRel, pushed:false };
-    try{
-      await git(["add", "--", destRel]);
-      const staged = await git(["diff", "--cached", "--quiet", "--", destRel]);
-      if(staged.code !== 0) await git(["commit", "-m", "Add video: " + (args.song || destRel)]);
-      let p = await git(["push"]);
-      if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
-      res.pushed = (p.code === 0);
-      if(!res.pushed) res.gitError = p.err || p.out;
-    }catch(e){ res.gitError = e.message; }
-    return res;
+    // SOLO LOCAL: los vídeos NO se suben a GitHub (rápido, sin límite de 100 MB).
+    // Se copian a videos/ y la app los usa desde ahí; carpeta videos/ está en .gitignore.
+    return { ok:true, video: destRel, pushed:false, localOnly:true };
   }catch(e){ return { ok:false, error:e.message }; }
 });
 

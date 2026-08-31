@@ -3,8 +3,9 @@
 /*.mkv
 /*.webm
 
-# MV demasiado grande para GitHub (>100MB); se queda en local
-/videos/p1harmony_prettyboy.mp4
+# Vídeos SOLO EN LOCAL (Opción C): no se suben a GitHub — la app los usa desde videos/.
+# (Los vídeos ya subidos antes siguen en el repo; esto solo evita subir los nuevos.)
+/videos/
 
 # Imágenes de prueba
 /preview-*.png
@@ -19,6 +20,3 @@
 
 # transcripción (binarios y modelos, no subir)
 /tools/
-/videos/nct127_blingy.mp4
-/videos/ateez_bad.mp4
-/videos/nctdream_whenimwithyou.mp4
