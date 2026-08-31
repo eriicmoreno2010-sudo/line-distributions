@@ -10,49 +10,91 @@
       "image": "images/nctdream/whenimwithyou/mark.png",
       "color": "#cb6ce6",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.548,
+        "cy": 0.368,
+        "size": 0.4368,
+        "rot": 0
+      }
     },
     {
       "name": "RENJUN",
       "image": "images/nctdream/whenimwithyou/renjun.png",
       "color": "#fac142",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.452,
+        "cy": 0.386,
+        "size": 0.81,
+        "rot": 16
+      }
     },
     {
       "name": "JENO",
       "image": "images/nctdream/whenimwithyou/jeno.png",
       "color": "#ff3131",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.312,
+        "size": 0.84,
+        "rot": 0
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nctdream/whenimwithyou/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.456,
+        "cy": 0.388,
+        "size": 0.83,
+        "rot": 0
+      }
     },
     {
       "name": "JAEMIN",
       "image": "images/nctdream/whenimwithyou/jaemin.png",
       "color": "#61fdad",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.392,
+        "cy": 0.284,
+        "size": 0.705,
+        "rot": 24
+      }
     },
     {
       "name": "CHENLE",
       "image": "images/nctdream/whenimwithyou/chenle.png",
       "color": "#22c429",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.322,
+        "size": 0.74,
+        "rot": 348
+      }
     },
     {
       "name": "JISUNG",
       "image": "images/nctdream/whenimwithyou/jisung.png",
       "color": "#f12ba5",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.1878,
+        "size": 0.57,
+        "rot": 358
+      }
     }
   ],
   "lyrics": [
