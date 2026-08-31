@@ -468,27 +468,33 @@ const Lyrics = {
                 setTimeout(() => box.remove(), 420);
             }
         });
-        // ENTRAN: nuevos -> por ABAJO (bottom 0); empujan a los existentes hacia arriba.
+        // ENTRAN: crea los nuevos (invisibles); todavía sin colocar.
         ais.forEach(i => {
             const existing = Array.from(msg.querySelectorAll('.al-box[data-i="' + i + '"]'));
             if(existing.some(b => !b._leaving)) return;     // ya hay una activa para este ad-lib
             existing.forEach(b => b.remove());              // reaparece justo al salir -> recrear
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
-            box.style.opacity = "0";
+            box.style.opacity = "0"; box.style.transform = "translateY(0)"; box._fresh = true;
             msg.appendChild(box);
-            const h = box.offsetHeight || 90;   // fuente fija; la tarjeta se ensancha sola (CSS width:max-content)
-            // empuja las que ya están (que no se van) hacia arriba
-            Array.from(msg.children).forEach(b => {
-                if(b === box || b._leaving) return;
-                const nb = (parseFloat(b.dataset.bottom) || 0) + h + GAP;
-                b.dataset.bottom = nb; b.style.bottom = nb + "px";
-            });
-            box.dataset.bottom = "0";
-            box.style.bottom = (-h - 10) + "px";           // empieza debajo (fuera, recortado)
-            box.style.transform = "translateY(0)";
-            requestAnimationFrame(() => requestAnimationFrame(() => {
-                box.style.bottom = "0px"; box.style.opacity = "1";   // sube a su sitio
-            }));
+        });
+        // RECOLOCA TODA la pila de abajo hacia arriba. Así NUNCA se solapan, aunque
+        // entren VARIOS ad-libs a la vez (Renjun+Jaemin+Chenle) — cada uno tiene su hueco.
+        let acc = 0;
+        Array.from(msg.children).forEach(b => {
+            if(b._leaving) return;
+            const h = b.offsetHeight || 90;   // fuente fija; la tarjeta se ensancha sola (CSS width:max-content)
+            const target = acc;
+            if(b._fresh){
+                b._fresh = false;
+                b.style.bottom = (-h - 10) + "px";          // empieza debajo (recortado) y sube a su sitio
+                requestAnimationFrame(() => requestAnimationFrame(() => {
+                    b.style.bottom = target + "px"; b.style.opacity = "1";
+                }));
+            } else {
+                b.style.bottom = target + "px";             // se desplaza suave si su hueco cambió
+            }
+            b.dataset.bottom = String(target);
+            acc += h + GAP;
         });
     },
 
