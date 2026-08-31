@@ -68,5 +68,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/nctdream_whenimwithyou.mp3"
+  "audio": "audio/nctdream_whenimwithyou.mp3",
+  "audioOffset": 0.05
 }
