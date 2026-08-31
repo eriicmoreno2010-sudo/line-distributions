@@ -107,7 +107,17 @@
       "original": "",
       "romanization": "When I’m With You, Day and night",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.53,
+          10.75
+        ],
+        [
+          11.57,
+          13.02
+        ]
+      ]
     },
     {
       "start": 13.85,
@@ -118,7 +128,17 @@
       "original": "무지개를 닮은 넌, 날 빛나게 해",
       "romanization": "mujigaereul dalmeun neon, nal binnage hae",
       "english": "You're like a rainbow, You make me shine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.82,
+          15.78
+        ],
+        [
+          15.97,
+          17.41
+        ]
+      ]
     },
     {
       "start": 17.66,
@@ -129,7 +149,17 @@
       "original": "",
       "romanization": "When I’m With You, I’m so blind",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          17.71,
+          18.93
+        ],
+        [
+          19.77,
+          21.19
+        ]
+      ]
     },
     {
       "start": 21.79,
@@ -140,7 +170,17 @@
       "original": "난 너만 보여 어느새, 어지러워 Babe",
       "romanization": "nan neoman boyeo eoneusae, eojireowo babe",
       "english": "Somehow all I see is you, My head is spinning, Babe",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21.81,
+          23.95
+        ],
+        [
+          24.16,
+          25.63
+        ]
+      ]
     },
     {
       "start": 25.89,
@@ -151,7 +191,17 @@
       "original": "너의 두 눈을 보면, 살짝 멈칫해",
       "romanization": "neoui du nuneul bomyeon, saljjak meomchitae",
       "english": "When our eyes meet, I stop in my tracks",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.9,
+          27.41
+        ],
+        [
+          27.94,
+          29.21
+        ]
+      ]
     },
     {
       "start": 30.05,
@@ -162,7 +212,13 @@
       "original": "아까 준비했던 말도 잊게 돼",
       "romanization": "akka junbihaetdeon maldo itge dwae",
       "english": "I forget the words I prepared earlier",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          30.26,
+          33.63
+        ]
+      ]
     },
     {
       "start": 33.86,
@@ -173,7 +229,17 @@
       "original": "설렘이 점점 더 커져, 꿈을 본 듯해",
       "romanization": "seollemi jeomjeom deo keojyeo, kkumeul bon deushae",
       "english": "My heartbeat grows louder, It feels like I'm dreaming",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.01,
+          35.57
+        ],
+        [
+          36.15,
+          37.51
+        ]
+      ]
     },
     {
       "start": 38.29,
@@ -184,7 +250,13 @@
       "original": "내 맘에 일곱 가지 장면 담아내",
       "romanization": "nae mame ilgop gaji jangmyeon damanae",
       "english": "My heart's the theater for these seven scenes",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.42,
+          41.53
+        ]
+      ]
     },
     {
       "start": 43.03,
@@ -195,7 +267,13 @@
       "original": "말로 다 표현 못 할, 감정 속",
       "romanization": "maro da pyohyeon mot hal, gamjeong sok",
       "english": "Words aren't enough, To express these feelings I'm swimming in",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          43.07,
+          47.16
+        ]
+      ]
     },
     {
       "start": 47.23,
@@ -206,7 +284,13 @@
       "original": "커지는 끌림",
       "romanization": "keojineun kkeullim",
       "english": "More and more it's pulling me in",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          47.24,
+          49.64
+        ]
+      ]
     },
     {
       "start": 50.92,
@@ -215,7 +299,13 @@
       "original": "온 세상이 Black and white, 너만 빼고",
       "romanization": "on sesangi black and white, neoman ppaego",
       "english": "Whole world's Black and white, Except for you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.04,
+          55.39
+        ]
+      ]
     },
     {
       "start": 55.52,
@@ -226,7 +316,13 @@
       "original": "뻔한 느낌",
       "romanization": "ppeonhan neukkim",
       "english": "Everything else so trite",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          55.41,
+          58.01
+        ]
+      ]
     },
     {
       "start": 58.68,
@@ -237,7 +333,17 @@
       "original": "",
       "romanization": "When I’m With You, Day and night",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          58.69,
+          59.91
+        ],
+        [
+          60.75,
+          62.25
+        ]
+      ]
     },
     {
       "start": 63.01,
@@ -248,7 +354,17 @@
       "original": "무지개를 닮은 넌, 날 빛나게 해",
       "romanization": "mujigaereul dalmeun neon, nal binnage hae",
       "english": "You're like a rainbow, You make me shine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          63.07,
+          65.01
+        ],
+        [
+          65.16,
+          66.6
+        ]
+      ]
     },
     {
       "start": 66.86,
@@ -259,7 +375,17 @@
       "original": "",
       "romanization": "When I’m With You, I’m so blind",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.93,
+          68.21
+        ],
+        [
+          68.94,
+          70.44
+        ]
+      ]
     },
     {
       "start": 70.91,
@@ -270,7 +396,17 @@
       "original": "두 눈에 번져가는 색, 너라 부를래",
       "romanization": "du nune beonjyeoganeun saek, neora bureullae",
       "english": "This color flooding my eyes, Wanna say it's your aura",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          71.03,
+          73.17
+        ],
+        [
+          73.38,
+          74.76
+        ]
+      ]
     },
     {
       "start": 75.02,
@@ -281,7 +417,13 @@
       "original": "",
       "romanization": "When I’m With You",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          75.06,
+          76.26
+        ]
+      ]
     },
     {
       "start": 81.81,
@@ -293,7 +435,13 @@
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          81.85,
+          83.68
+        ]
+      ]
     },
     {
       "start": 83.35,
@@ -304,7 +452,13 @@
       "original": "",
       "romanization": "When I’m With You",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.36,
+          84.6
+        ]
+      ]
     },
     {
       "start": 90.01,
@@ -316,7 +470,13 @@
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.09,
+          91.85
+        ]
+      ]
     },
     {
       "start": 91.55,
@@ -327,7 +487,17 @@
       "original": "붉게 물드는 Feelings, 내 맘을 피워내",
       "romanization": "bulge mutdeuneun feelings, nae mameul piwonae",
       "english": "Feelings blush rosy, My heart's ablaze",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          91.62,
+          93.07
+        ],
+        [
+          93.54,
+          94.7
+        ]
+      ]
     },
     {
       "start": 95.83,
@@ -338,7 +508,13 @@
       "original": "모든 감각들을 깨워 Your scent",
       "romanization": "modeun gamgakdeureul kkaewo your scent",
       "english": "All senses awakening to your scent",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          95.9,
+          99.16
+        ]
+      ]
     },
     {
       "start": 99.59,
@@ -349,7 +525,17 @@
       "original": "시곗바늘도 멈춰, 고요해진 Place",
       "romanization": "sigyetbaneuldo meomchwo, goyohajeon place",
       "english": "Even the watch hands stop, The whole Place goes quiet",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          99.69,
+          101.17
+        ],
+        [
+          101.85,
+          103.26
+        ]
+      ]
     },
     {
       "start": 103.99,
@@ -360,7 +546,13 @@
       "original": "크게 울려 퍼진 심장 소리에",
       "romanization": "keuge ullyeo peojin simjang sorie",
       "english": "As my heartbeats echo loudly",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          104.09,
+          107.08
+        ]
+      ]
     },
     {
       "start": 108.7,
@@ -371,7 +563,13 @@
       "original": "어딘가 처음 본 듯한, 장면 속",
       "romanization": "eodinga cheoeum bon deushan, jangmyeon sok",
       "english": "In this scene, That feels new",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          108.74,
+          112.81
+        ]
+      ]
     },
     {
       "start": 112.84,
@@ -382,7 +580,13 @@
       "original": "신비로운 느낌",
       "romanization": "sinbiroun neukkim",
       "english": "A mysterious sensation",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          112.83,
+          115.68
+        ]
+      ]
     },
     {
       "start": 116.54,
@@ -393,7 +597,17 @@
       "original": "더 욕심나, Make you mine",
       "romanization": "deo yoksimna, make you mine",
       "english": "Makes me want you more, Make you mine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.67,
+          118.31
+        ],
+        [
+          118.52,
+          119.68
+        ]
+      ]
     },
     {
       "start": 119.69,
@@ -404,7 +618,13 @@
       "original": "투명히 날 담은 네 눈빛",
       "romanization": "tumyeonghi nal dameun ne nunbit",
       "english": "Your gaze is so clear I swim in it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.74,
+          123.72
+        ]
+      ]
     },
     {
       "start": 57.46,
@@ -459,7 +679,17 @@
       "original": "",
       "romanization": "When I’m With You, Day and night",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          124.31,
+          125.58
+        ],
+        [
+          126.33,
+          127.82
+        ]
+      ]
     },
     {
       "start": 128.57,
@@ -470,7 +700,17 @@
       "original": "무지개를 닮은 넌, 날 빛나게 해",
       "romanization": "mujigaereul dalmeun neon, nal binnage hae",
       "english": "You're like a rainbow, You make me shine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          128.67,
+          130.63
+        ],
+        [
+          130.81,
+          132.29
+        ]
+      ]
     },
     {
       "start": 132.55,
@@ -481,7 +721,17 @@
       "original": "",
       "romanization": "When I’m With You, I’m so blind",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          132.6,
+          133.78
+        ],
+        [
+          134.59,
+          135.99
+        ]
+      ]
     },
     {
       "start": 136.59,
@@ -492,7 +742,17 @@
       "original": "두 눈에 번져가는 색, 너라 부를래",
       "romanization": "du nune beonjyeoganeun saek, neora bureullae",
       "english": "This color flooding my eyes, Wanna say it's your aura",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.66,
+          138.89
+        ],
+        [
+          139.07,
+          140.46
+        ]
+      ]
     },
     {
       "start": 140.75,
@@ -503,7 +763,13 @@
       "original": "",
       "romanization": "When I’m With You",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          140.76,
+          141.89
+        ]
+      ]
     },
     {
       "start": 141.8,
@@ -514,7 +780,13 @@
       "original": "혼자보단 둘이 좋아, 둘이 보단 너가 좋아",
       "romanization": "honjabodan duri joa, duribodan neoga joa",
       "english": "Better two than one, Better you than other ones",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.82,
+          144.61
+        ]
+      ]
     },
     {
       "start": 144.64,
@@ -525,7 +797,13 @@
       "original": "",
       "romanization": "Know what I mean ",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          144.6,
+          145.44
+        ]
+      ]
     },
     {
       "start": 145.89,
@@ -536,7 +814,13 @@
       "original": "혼자보단 둘이 좋아, 둘이 보단 너가 좋아",
       "romanization": "honjabodan duri joa, duribodan neoga joa",
       "english": "Better two than one, Better you than other ones",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          145.86,
+          148.74
+        ]
+      ]
     },
     {
       "start": 148.76,
@@ -547,7 +831,13 @@
       "original": "",
       "romanization": "Know what I mean ",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          148.64,
+          149.6
+        ]
+      ]
     },
     {
       "start": 150.01,
@@ -558,7 +848,13 @@
       "original": "좋아 보다 좋은 건 Love",
       "romanization": "joa boda joeun geon love",
       "english": "Better than like is Love",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          149.97,
+          151.73
+        ]
+      ]
     },
     {
       "start": 152.02,
@@ -569,7 +865,13 @@
       "original": "",
       "romanization": "I know you know what I mean",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          152,
+          153.94
+        ]
+      ]
     },
     {
       "start": 153.58,
@@ -602,7 +904,13 @@
       "original": "혼자보단 둘이 좋아, 둘이 보단 너가 좋아",
       "romanization": "honjabodan duri joa, duribodan neoga joa",
       "english": "Better two than one, Better you than other ones",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.17,
+          157.02
+        ]
+      ]
     },
     {
       "start": 156.94,
@@ -613,7 +921,13 @@
       "original": "",
       "romanization": "Know what I mean ",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          156.93,
+          157.91
+        ]
+      ]
     },
     {
       "start": 158.66,
@@ -624,7 +938,13 @@
       "original": "I’m satisfied 맞닿은 Eyes, so shining bright",
       "romanization": "i’m satisfied majjatan eyes, so shining bright",
       "english": "I'm satisfied eyes locked, So shining bright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          158.68,
+          161.77
+        ]
+      ]
     },
     {
       "start": 161.81,
@@ -635,7 +955,17 @@
       "original": "날 설레게 해, 날 꿈꾸게 해 yeah",
       "romanization": "nal seollege hae, nal kkumkkuge hae yeah",
       "english": "Give me butterflies, Make me dream, yeah",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          161.83,
+          163.41
+        ],
+        [
+          163.86,
+          167.26
+        ]
+      ]
     },
     {
       "start": 165.57,
@@ -646,7 +976,17 @@
       "original": "예고도 없이 넌, 내게로 쏟아져 온 거야",
       "romanization": "yegodo eopsi neon, naegero ssodajyeo on geoya",
       "english": "Without warning you, Poured straight into my heart",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          165.39,
+          169.34
+        ],
+        [
+          169.49,
+          174.25
+        ]
+      ]
     },
     {
       "start": 172.04,
@@ -657,7 +997,13 @@
       "original": "더 완전해져, Cause I am with you",
       "romanization": "deo wanjeonhaejyeo, cause i am with you",
       "english": "And I am more complete, Cause I am with you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          172.02,
+          175.95
+        ]
+      ]
     },
     {
       "start": 173.72,
@@ -668,7 +1014,17 @@
       "original": "",
       "romanization": "When I’m With You, Day and night",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          173.62,
+          174.81
+        ],
+        [
+          175.62,
+          176.98
+        ]
+      ]
     },
     {
       "start": 175.91,
@@ -723,7 +1079,17 @@
       "original": "무지개를 닮은 넌, 날 빛나게 해",
       "romanization": "mujigaereul dalmeun neon nal binnage hae",
       "english": "You're like a rainbow, You make me shine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          177.92,
+          179.83
+        ],
+        [
+          179.98,
+          181.43
+        ]
+      ]
     },
     {
       "start": 181.78,
@@ -734,7 +1100,17 @@
       "original": "",
       "romanization": "When I’m With You, I’m so blind",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          181.8,
+          183
+        ],
+        [
+          183.84,
+          185.27
+        ]
+      ]
     },
     {
       "start": 185.85,
@@ -745,7 +1121,17 @@
       "original": "두 눈에 번져가는 색, 너라 부를래",
       "romanization": "du nune beonjyeoganeun saek, neora bureullae",
       "english": "This color flooding my eyes, Wanna say it's your aura",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          185.86,
+          188.08
+        ],
+        [
+          188.23,
+          189.6
+        ]
+      ]
     },
     {
       "start": 189.99,
@@ -756,7 +1142,13 @@
       "original": "",
       "romanization": "When I’m With You",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          189.96,
+          191.06
+        ]
+      ]
     },
     {
       "start": 191.04,
@@ -839,11 +1231,19 @@
     {
       "start": 198.44,
       "end": 199.28,
-      "members": [],
+      "members": [
+        "JISUNG"
+      ],
       "original": "",
       "romanization": "When I’m With You",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          198.22,
+          199.41
+        ]
+      ]
     },
     {
       "start": 199.4,
@@ -910,7 +1310,13 @@
       "original": "",
       "romanization": "When I’m With You",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          206.4,
+          207.68
+        ]
+      ]
     }
   ],
   "audio": "audio/nctdream_whenimwithyou.mp3",
