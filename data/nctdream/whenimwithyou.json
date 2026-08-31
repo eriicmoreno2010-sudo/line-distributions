@@ -102,12 +102,726 @@
       "start": 0,
       "end": 0,
       "members": [
+        "JAEMIN"
+      ],
+      "original": "",
+      "romanization": "When I’m With You, Day and night",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "무지개를 닮은 넌, 날 빛나게 해",
+      "romanization": "mujigaereul dalmeun neon, nal binnage hae",
+      "english": "You're like a rainbow, You make me shine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JENO"
+      ],
+      "original": "",
+      "romanization": "When I’m With You, I’m so blind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JENO"
+      ],
+      "original": "난 너만 보여 어느새, 어지러워 Babe",
+      "romanization": "nan neoman boyeo eoneusae, eojireowo babe",
+      "english": "Somehow all I see is you, My head is spinning, Babe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "너의 두 눈을 보면, 살짝 멈칫해",
+      "romanization": "neoui du nuneul bomyeon, saljjak meomchitae",
+      "english": "When our eyes meet, I stop in my tracks",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "아까 준비했던 말도 잊게 돼",
+      "romanization": "akka junbihaetdeon maldo itge dwae",
+      "english": "I forget the words I prepared earlier",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "설렘이 점점 더 커져, 꿈을 본 듯해",
+      "romanization": "seollemi jeomjeom deo keojyeo, kkumeul bon deushae",
+      "english": "My heartbeat grows louder, It feels like I'm dreaming",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "내 맘에 일곱 가지 장면 담아내",
+      "romanization": "nae mame ilgop gaji jangmyeon damanae",
+      "english": "My heart's the theater for these seven scenes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "말로 다 표현 못 할, 감정 속",
+      "romanization": "maro da pyohyeon mot hal, gamjeong sok",
+      "english": "Words aren't enough, To express these feelings I'm swimming in",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "커지는 끌림",
+      "romanization": "keojineun kkeullim",
+      "english": "More and more it's pulling me in",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "온 세상이 Black and white, 너만 빼고",
+      "romanization": "on sesangi black and white, neoman ppaego",
+      "english": "Whole world's Black and white, Except for you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "RENJUN"
+      ],
+      "original": "뻔한 느낌 (yeah yeah yeah)",
+      "romanization": "ppeonhan neukkim (yeah yeah yeah)",
+      "english": "Everything else so trite (yeah yeah yeah)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
         "MARK"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "When I’m With You, Day and night",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK"
+      ],
+      "original": "무지개를 닮은 넌, 날 빛나게 해",
+      "romanization": "mujigaereul dalmeun neon, nal binnage hae",
+      "english": "You're like a rainbow, You make me shine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "When I’m With You, I’m so blind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "두 눈에 번져가는 색, 너라 부를래",
+      "romanization": "du nune beonjyeoganeun saek, neora bureullae",
+      "english": "This color flooding my eyes, Wanna say it's your aura",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "When I’m With You",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m not myself",
+      "romanization": "i’m not myself",
+      "english": "I’m not myself",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "",
+      "romanization": "When I’m With You",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m not myself",
+      "romanization": "i’m not myself",
+      "english": "I’m not myself",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JENO"
+      ],
+      "original": "붉게 물드는 Feelings, 내 맘을 피워내",
+      "romanization": "bulge mutdeuneun feelings, nae mameul piwonae",
+      "english": "Feelings blush rosy, My heart's ablaze",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JENO"
+      ],
+      "original": "모든 감각들을 깨워 Your scent",
+      "romanization": "modeun gamgakdeureul kkaewo your scent",
+      "english": "All senses awakening to your scent",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK"
+      ],
+      "original": "시곗바늘도 멈춰, 고요해진 Place",
+      "romanization": "sigyetbaneuldo meomchwo, goyohajeon place",
+      "english": "Even the watch hands stop, The whole Place goes quiet",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK"
+      ],
+      "original": "크게 울려 퍼진 심장 소리에",
+      "romanization": "keuge ullyeo peojin simjang sorie",
+      "english": "As my heartbeats echo loudly",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "어딘가 처음 본 듯한, 장면 속",
+      "romanization": "eodinga cheoeum bon deushan, jangmyeon sok",
+      "english": "In this scene, That feels new",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "신비로운 느낌",
+      "romanization": "sinbiroun neukkim",
+      "english": "A mysterious sensation",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "더 욕심나, Make you mine",
+      "romanization": "deo yoksimna, make you mine",
+      "english": "Makes me want you more, Make you mine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "투명히 날 담은 네 눈빛",
+      "romanization": "tumyeonghi nal dameun ne nunbit",
+      "english": "Your gaze is so clear I swim in it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(yeah yeah yeah)",
+      "romanization": "(yeah yeah yeah)",
+      "english": "(yeah yeah yeah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "When I’m With You, Day and night",
+      "romanization": "when i’m with you, day and night",
+      "english": "When I’m With You, Day and night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Day and night, 무지개를 닮은 넌",
+      "romanization": "day and night, mujigaereul dalmeun neon",
+      "english": "Day and night, You're like a rainbow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 빛나게 해",
+      "romanization": "nal binnage hae",
+      "english": "You make me shine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I’m With You",
+      "romanization": "when i’m with you",
+      "english": "When I’m With You",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m so blind",
+      "romanization": "i’m so blind",
+      "english": "I’m so blind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두 눈에 번져가는 색",
+      "romanization": "du nune beonjyeoganeun saek",
+      "english": "This color flooding my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너라 부를래",
+      "romanization": "neora bureullae",
+      "english": "Wanna say it's your aura",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I’m With You",
+      "romanization": "when i’m with you",
+      "english": "When I’m With You",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "혼자보단 둘이 좋아",
+      "romanization": "honjabodan duri joa",
+      "english": "Better two than one",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "둘이 보단 너가 좋아",
+      "romanization": "duribodan neoga joa",
+      "english": "Better you than other ones",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Know what I mean (I mean)",
+      "romanization": "know what i mean (i mean)",
+      "english": "Know what I mean (I mean)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "혼자보단 둘이 좋아",
+      "romanization": "honjabodan duri joa",
+      "english": "Better two than one",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "둘이 보단 너가 좋아",
+      "romanization": "duribodan neoga joa",
+      "english": "Better you than other ones",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Know what I mean (I mean)",
+      "romanization": "know what i mean (i mean)",
+      "english": "Know what I mean (I mean)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "좋아 보다 좋은 건 Love",
+      "romanization": "joa boda joeun geon love",
+      "english": "Better than like is Love",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I know you know what I mean",
+      "romanization": "i know you know what i mean",
+      "english": "I know you know what I mean",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(yeah yeah)",
+      "romanization": "(yeah yeah)",
+      "english": "(yeah yeah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "혼자보단 둘이 좋아",
+      "romanization": "honjabodan duri joa",
+      "english": "Better two than one",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "둘이 보단 너가 좋아",
+      "romanization": "duribodan neoga joa",
+      "english": "Better you than other ones",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Know what I mean (I mean)",
+      "romanization": "know what i mean (i mean)",
+      "english": "Know what I mean (I mean)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m satisfied 맞닿은 Eyes",
+      "romanization": "i’m satisfied majjatan eyes",
+      "english": "I'm satisfied eyes locked",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "so shining bright",
+      "romanization": "so shining bright",
+      "english": "So shining bright",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 설레게 해",
+      "romanization": "nal seollege hae",
+      "english": "Give me butterflies",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 꿈꾸게 해 yeah",
+      "romanization": "nal kkumkkuge hae yeah",
+      "english": "Make me dream, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "예고도 없이 넌",
+      "romanization": "yegodo eopsi neon",
+      "english": "Without warning you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내게로 쏟아져 온 거야",
+      "romanization": "naegero ssodajyeo on geoya",
+      "english": "Poured straight into my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 완전해져",
+      "romanization": "deo wanjeonhaejyeo",
+      "english": "And I am more complete",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Cause I am with you",
+      "romanization": "cause i am with you",
+      "english": "Cause I am with you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I’m With You",
+      "romanization": "when i’m with you",
+      "english": "When I’m With You",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Day and night (And night)",
+      "romanization": "day and night",
+      "english": "Day and night (And night)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "무지개를 닮은 넌",
+      "romanization": "(and night)",
+      "english": "You're like a rainbow",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 빛나게 해",
+      "romanization": "mujigaereul dalmeun neon nal binnage hae",
+      "english": "You make me shine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I’m With You",
+      "romanization": "when i’m with you",
+      "english": "When I’m With You",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(When I’m With You)",
+      "romanization": "(when i’m with you)",
+      "english": "(When I’m With You)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m so blind (ooh I’m so blind)",
+      "romanization": "i’m so blind (ooh i’m so blind)",
+      "english": "I’m so blind (ooh I’m so blind)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두 눈에 번져가는 색",
+      "romanization": "du nune beonjyeoganeun saek",
+      "english": "This color flooding my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너라 부를래",
+      "romanization": "neora bureullae",
+      "english": "Wanna say it's your aura",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I’m With You",
+      "romanization": "when i’m with you",
+      "english": "When I’m With You",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(혼자보단 둘이 좋아",
+      "romanization": "(honjabodan duri joa",
+      "english": "(Better two than one",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "둘이 보단 너가 좋아",
+      "romanization": "duribodan neoga joa",
+      "english": "Better you than other ones",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Know what I mean (I mean))",
+      "romanization": "know what i mean (i mean))",
+      "english": "Know what I mean (I mean))",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m not myself",
+      "romanization": "i’m not myself",
+      "english": "I’m not myself",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(I’m not myself with you)",
+      "romanization": "(i’m not myself with you)",
+      "english": "(I’m not myself with you)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I’m With You",
+      "romanization": "when i’m with you",
+      "english": "When I’m With You",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m not myself",
+      "romanization": "i’m not myself",
+      "english": "I’m not myself",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "When I’m With You",
+      "romanization": "when i’m with you",
+      "english": "When I’m With You",
+      "adlib": false
     }
   ],
   "audio": "audio/nctdream_whenimwithyou.mp3",
