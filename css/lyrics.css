@@ -315,19 +315,23 @@ Version: 3.0 — Lyrics
     position:absolute; right:0; bottom:0;
     width:max-content; max-width:none;   /* la tarjeta se ensancha para caber en 1 línea (la fuente NO cambia) */
     border-radius:18px; text-align:center;
-    /* borde con DEGRADADO real (arcoíris en grupo, dos colores en dúo) usando padding-box/border-box */
-    border:2px solid transparent;
-    /* fondo NEUTRO (sin tinte del color); solo el BORDE lleva el color/degradado */
-    background:
-      linear-gradient(rgba(8,8,14,.55), rgba(8,8,14,.55)) padding-box,
-      var(--al-border, var(--al-accent,#7c5cff)) border-box;
+    /* fondo NEUTRO translúcido (cristal), SIN color del miembro */
+    background:rgba(10,10,16,.5);
     /* el cristal difumina la parte de la letra central que queda por detrás */
     -webkit-backdrop-filter:blur(9px) saturate(1.1); backdrop-filter:blur(9px) saturate(1.1);
-    box-shadow:0 24px 60px -24px #000,
-               0 0 34px -8px color-mix(in srgb, var(--al-accent,#7c5cff) 60%, transparent),
-               0 0 0 1px rgba(255,255,255,.05) inset;
+    box-shadow:0 24px 60px -24px #000, 0 0 0 1px rgba(255,255,255,.05) inset;
     /* sube fluido (bottom) al ser empujada; aparece/desaparece con opacity+transform */
     transition:bottom .42s cubic-bezier(.4,0,.2,1), opacity .32s ease, transform .42s cubic-bezier(.4,0,.2,1);
+}
+/* SOLO EL BORDE con color/degradado (arcoíris grupo, dos colores dúo, sólido solista):
+   se pinta un anillo con máscara para que el color quede únicamente en el contorno,
+   sin teñir el fondo, y respetando las esquinas redondeadas. */
+.al-box::before{
+    content:""; position:absolute; inset:0; border-radius:inherit; padding:2px; pointer-events:none;
+    background:var(--al-border, var(--al-accent,#7c5cff));
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
 }
 .al-box > .al-inner{ overflow:hidden; padding:14px 22px; }
 .al-box .al-name{ font-size:15px; font-weight:900; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; white-space:nowrap; }
