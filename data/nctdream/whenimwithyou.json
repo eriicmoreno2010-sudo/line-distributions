@@ -287,9 +287,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’m not myself",
-      "romanization": "i’m not myself",
-      "english": "I’m not myself",
+      "original": "",
+      "romanization": "I’m not myself",
+      "english": "",
       "adlib": false
     },
     {
@@ -307,9 +307,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’m not myself",
-      "romanization": "i’m not myself",
-      "english": "I’m not myself",
+      "original": "",
+      "romanization": "I’m not myself",
+      "english": "",
       "adlib": false
     },
     {
@@ -370,7 +370,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "신비로운 느낌",
       "romanization": "sinbiroun neukkim",
       "english": "A mysterious sensation",
@@ -402,9 +404,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(yeah yeah yeah)",
+      "original": "",
       "romanization": "(yeah yeah yeah)",
-      "english": "(yeah yeah yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(yeah yeah yeah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -479,9 +490,9 @@
       "members": [
         "MARK"
       ],
-      "original": "Know what I mean (I mean)",
-      "romanization": "know what i mean (i mean)",
-      "english": "Know what I mean (I mean)",
+      "original": "",
+      "romanization": "Know what I mean ",
+      "english": "",
       "adlib": false
     },
     {
@@ -501,9 +512,9 @@
       "members": [
         "JAEMIN"
       ],
-      "original": "Know what I mean (I mean)",
-      "romanization": "know what i mean (i mean)",
-      "english": "Know what I mean (I mean)",
+      "original": "",
+      "romanization": "Know what I mean ",
+      "english": "",
       "adlib": false
     },
     {
@@ -523,18 +534,18 @@
       "members": [
         "JISUNG"
       ],
-      "original": "I know you know what I mean",
-      "romanization": "i know you know what i mean",
-      "english": "I know you know what I mean",
+      "original": "",
+      "romanization": "I know you know what I mean",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(yeah yeah)",
+      "original": "",
       "romanization": "(yeah yeah)",
-      "english": "(yeah yeah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -554,208 +565,163 @@
       "members": [
         "JENO"
       ],
-      "original": "Know what I mean (I mean)",
-      "romanization": "know what i mean (i mean)",
-      "english": "Know what I mean (I mean)",
+      "original": "",
+      "romanization": "Know what I mean ",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’m satisfied 맞닿은 Eyes",
-      "romanization": "i’m satisfied majjatan eyes",
-      "english": "I'm satisfied eyes locked",
+      "original": "I’m satisfied 맞닿은 Eyes, so shining bright",
+      "romanization": "i’m satisfied majjatan eyes, so shining bright",
+      "english": "I'm satisfied eyes locked, So shining bright",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "so shining bright",
-      "romanization": "so shining bright",
-      "english": "So shining bright",
+      "original": "날 설레게 해, 날 꿈꾸게 해 yeah",
+      "romanization": "nal seollege hae, nal kkumkkuge hae yeah",
+      "english": "Give me butterflies, Make me dream, yeah",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "날 설레게 해",
-      "romanization": "nal seollege hae",
-      "english": "Give me butterflies",
+      "original": "예고도 없이 넌, 내게로 쏟아져 온 거야",
+      "romanization": "yegodo eopsi neon, naegero ssodajyeo on geoya",
+      "english": "Without warning you, Poured straight into my heart",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "날 꿈꾸게 해 yeah",
-      "romanization": "nal kkumkkuge hae yeah",
-      "english": "Make me dream, yeah",
+      "original": "더 완전해져, Cause I am with you",
+      "romanization": "deo wanjeonhaejyeo, cause i am with you",
+      "english": "And I am more complete, Cause I am with you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "예고도 없이 넌",
-      "romanization": "yegodo eopsi neon",
-      "english": "Without warning you",
+      "original": "",
+      "romanization": "When I’m With You, Day and night",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "내게로 쏟아져 온 거야",
-      "romanization": "naegero ssodajyeo on geoya",
-      "english": "Poured straight into my heart",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 완전해져",
-      "romanization": "deo wanjeonhaejyeo",
-      "english": "And I am more complete",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Cause I am with you",
-      "romanization": "cause i am with you",
-      "english": "Cause I am with you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "When I’m With You",
-      "romanization": "when i’m with you",
-      "english": "When I’m With You",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Day and night (And night)",
-      "romanization": "day and night",
-      "english": "Day and night (And night)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "무지개를 닮은 넌",
-      "romanization": "(and night)",
-      "english": "You're like a rainbow",
+      "original": "",
+      "romanization": "(And night)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "날 빛나게 해",
+      "original": "",
+      "romanization": "(When I’m With You)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(ooh I’m so blind)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "무지개를 닮은 넌, 날 빛나게 해",
       "romanization": "mujigaereul dalmeun neon nal binnage hae",
-      "english": "You make me shine",
+      "english": "You're like a rainbow, You make me shine",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "When I’m With You",
-      "romanization": "when i’m with you",
-      "english": "When I’m With You",
+      "original": "When I’m With You, I’m so blind",
+      "romanization": "when i’m with you, i’m so blind",
+      "english": "When I’m With You, I’m so blind",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(When I’m With You)",
-      "romanization": "(when i’m with you)",
-      "english": "(When I’m With You)",
+      "original": "두 눈에 번져가는 색, 너라 부를래",
+      "romanization": "du nune beonjyeoganeun saek, neora bureullae",
+      "english": "This color flooding my eyes, Wanna say it's your aura",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "When I’m With You",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
+      "romanization": "(honjabodan duri joa, duribodan neoga joa)",
+      "english": "(Better two than one, Better you than other ones)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Know what I mean)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
+      "romanization": "(honjabodan duri joa, duribodan neoga joa)",
+      "english": "(Better two than one, Better you than other ones)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Know what I mean)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I’m not myself",
+      "english": "",
       "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m so blind (ooh I’m so blind)",
-      "romanization": "i’m so blind (ooh i’m so blind)",
-      "english": "I’m so blind (ooh I’m so blind)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "두 눈에 번져가는 색",
-      "romanization": "du nune beonjyeoganeun saek",
-      "english": "This color flooding my eyes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너라 부를래",
-      "romanization": "neora bureullae",
-      "english": "Wanna say it's your aura",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "When I’m With You",
-      "romanization": "when i’m with you",
-      "english": "When I’m With You",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(혼자보단 둘이 좋아",
-      "romanization": "(honjabodan duri joa",
-      "english": "(Better two than one",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "둘이 보단 너가 좋아",
-      "romanization": "duribodan neoga joa",
-      "english": "Better you than other ones",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Know what I mean (I mean))",
-      "romanization": "know what i mean (i mean))",
-      "english": "Know what I mean (I mean))",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m not myself",
-      "romanization": "i’m not myself",
-      "english": "I’m not myself",
-      "adlib": false
     },
     {
       "start": 0,
@@ -770,27 +736,63 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "When I’m With You",
-      "romanization": "when i’m with you",
-      "english": "When I’m With You",
+      "original": "",
+      "romanization": "When I’m With You",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’m not myself",
-      "romanization": "i’m not myself",
-      "english": "I’m not myself",
+      "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
+      "romanization": "(honjabodan duri joa, duribodan neoga joa)",
+      "english": "(Better two than one, Better you than other ones)",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "When I’m With You",
-      "romanization": "when i’m with you",
-      "english": "When I’m With You",
+      "original": "",
+      "romanization": "(Know what I mean)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
+      "romanization": "(honjabodan duri joa, duribodan neoga joa)",
+      "english": "(Better two than one, Better you than other ones)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Know what I mean)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I’m not myself",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "When I’m With You",
+      "english": "",
       "adlib": false
     }
   ],
