@@ -10,70 +10,130 @@
       "image": "images/treasure/danger/hyunsuk.png",
       "color": "#f824c3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JIHOON",
       "image": "images/treasure/danger/jihoon.png",
       "color": "#b80983",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "YOSHI",
       "image": "images/treasure/danger/yoshi.png",
       "color": "#b8093e",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JUNKYU",
       "image": "images/treasure/danger/junkyu.png",
       "color": "#ff751f",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JAEHYUK",
       "image": "images/treasure/danger/jaehyuk.png",
       "color": "#cbdf28",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "ASAHI",
       "image": "images/treasure/danger/asahi.png",
       "color": "#0097b2",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "DOYOUNG",
       "image": "images/treasure/danger/doyoung.png",
       "color": "#3469cf",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "HARUTO",
       "image": "images/treasure/danger/haruto.png",
       "color": "#270dc4",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JEONGWOO",
       "image": "images/treasure/danger/jeongwoo.png",
       "color": "#8d0a8f",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JUNGHWAN",
       "image": "images/treasure/danger/junghwan.png",
       "color": "#fd61b5",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 21
+      }
     }
   ],
   "lyrics": [
