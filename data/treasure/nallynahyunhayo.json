@@ -633,6 +633,50 @@
       "romanization": "Move shake shake shake the roof, Move shake shake the roof",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 22.66,
+      "end": 22.93,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Uh",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 41.54,
+      "end": 41.88,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "Yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 82.8,
+      "end": 83.18,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Slay",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 97.06,
+      "end": 97.44,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "Yeah",
+      "english": "",
+      "adlib": true
     }
   ],
   "audio": "audio/treasure_nallynahyunhayo.mp3",
