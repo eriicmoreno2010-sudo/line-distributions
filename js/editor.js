@@ -22,15 +22,25 @@
   // (silencia el vídeo y suena el mp3 sincronizado); si no, suena el vídeo. ----
   let edAudio = null;
   const audioOff = () => +((song && song.audioOffset) || 0);   // desfase del audio limpio (s): + retrasa, − adelanta
+  // Sincroniza el mp3 con el vídeo respetando el desfase. Si el objetivo es < 0
+  // (con desfase negativo, el audio aún no ha "empezado") se PAUSA — antes se
+  // clavaba en 0 y, al pasar de 0,22 s de deriva, se reiniciaba (bug del -0,25).
+  function audioSync(force){
+    if(!edAudio) return;
+    const tgt = video.currentTime + audioOff();
+    if(tgt < 0){ if(!edAudio.paused){ try{ edAudio.pause(); }catch(e){} } return; }
+    try{
+      if(force || Math.abs(edAudio.currentTime - tgt) > 0.22) edAudio.currentTime = tgt;
+      if(!video.paused && edAudio.paused) edAudio.play().catch(() => {});   // reanuda al entrar en rango
+    }catch(e){}
+  }
   function attachAudioSync(){
-    const sync = () => { if(edAudio){ try{ const tgt = Math.max(0, video.currentTime + audioOff());
-      if(Math.abs(edAudio.currentTime - tgt) > 0.22) edAudio.currentTime = tgt; }catch(e){} } };
-    video.addEventListener("play",  () => { if(edAudio){ sync(); edAudio.play().catch(() => {}); } });
+    video.addEventListener("play",  () => audioSync(true));
     video.addEventListener("pause", () => { if(edAudio) edAudio.pause(); });
-    video.addEventListener("seeked", sync);
+    video.addEventListener("seeked", () => audioSync(true));
     video.addEventListener("ratechange", () => { if(edAudio) edAudio.playbackRate = video.playbackRate; });
     video.addEventListener("ended", () => { if(edAudio) edAudio.pause(); });
-    setInterval(() => { if(edAudio && !video.paused && !edAudio.paused) sync(); }, 1000);
+    setInterval(() => { if(!video.paused) audioSync(false); }, 500);   // corrige deriva y reanuda si volvió al rango
   }
   function applyEditorAudio(){
     if(edAudio){ try{ edAudio.pause(); }catch(e){} edAudio = null; }
@@ -38,7 +48,7 @@
     if(src){
       edAudio = new Audio(src); edAudio.preload = "auto";
       video.muted = true;                                   // prioriza el mp3
-      if(!video.paused){ try{ edAudio.currentTime = Math.max(0, video.currentTime + audioOff()); edAudio.play().catch(() => {}); }catch(e){} }
+      if(!video.paused) audioSync(true);
     } else {
       video.muted = false;                                  // sin mp3 -> audio del vídeo
     }
@@ -597,7 +607,7 @@
   // y el visor lo aplica al reproducir. + = retrasa el audio, − = lo adelanta.
   $("#audioOff").oninput = () => {
     song.audioOffset = +$("#audioOff").value || 0;
-    if(edAudio){ try{ edAudio.currentTime = Math.max(0, video.currentTime + audioOff()); }catch(e){} }
+    audioSync(true);
     save();
   };
 

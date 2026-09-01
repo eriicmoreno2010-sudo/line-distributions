@@ -59,15 +59,20 @@ const Player = {
         v.muted = true;                          // el sonido sale del mp3, no del vídeo
 
         const off = +((SONG && SONG.audioOffset) || 0);   // desfase elegido en el editor (+ retrasa, − adelanta)
-        const sync = () => { try{ const tgt = Math.max(0, v.currentTime + off);
-            if(Math.abs(aud.currentTime - tgt) > 0.25) aud.currentTime = tgt; }catch(e){} };
-        v.addEventListener("play",  () => { sync(); aud.play().catch(() => {}); });
+        // Si el objetivo es < 0 (desfase negativo: el audio aún no ha empezado) se PAUSA,
+        // no se clava en 0 (eso reiniciaba el audio a partir de -0,25).
+        const sync = (force) => { try{ const tgt = v.currentTime + off;
+            if(tgt < 0){ if(!aud.paused) aud.pause(); return; }
+            if(force || Math.abs(aud.currentTime - tgt) > 0.25) aud.currentTime = tgt;
+            if(!v.paused && aud.paused) aud.play().catch(() => {});   // reanuda al entrar en rango
+        }catch(e){} };
+        v.addEventListener("play",  () => sync(true));
         v.addEventListener("pause", () => aud.pause());
-        v.addEventListener("seeked", sync);
+        v.addEventListener("seeked", () => sync(true));
         v.addEventListener("ratechange", () => { aud.playbackRate = v.playbackRate; });
         v.addEventListener("ended", () => aud.pause());
-        // corrección de deriva mientras suena
-        setInterval(() => { if(!v.paused && !aud.paused) sync(); }, 1000);
+        // corrección de deriva + reanuda si volvió al rango
+        setInterval(() => { if(!v.paused) sync(false); }, 500);
     }
 
 };
