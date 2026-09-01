@@ -63,7 +63,9 @@ const Player = {
         // no se clava en 0 (eso reiniciaba el audio a partir de -0,25).
         const sync = (force) => { try{ const tgt = v.currentTime + off;
             if(tgt < 0){ if(!aud.paused) aud.pause(); return; }
-            if(force || Math.abs(aud.currentTime - tgt) > 0.25) aud.currentTime = tgt;
+            // reajusta solo si hace falta; con force igual respeta un margen para no dar
+            // un saltito innecesario al arrancar (que se oía "cortado" al principio)
+            if(Math.abs(aud.currentTime - tgt) > (force ? 0.06 : 0.25)) aud.currentTime = tgt;
             if(!v.paused && aud.paused) aud.play().catch(() => {});   // reanuda al entrar en rango
         }catch(e){} };
         v.addEventListener("play",  () => sync(true));

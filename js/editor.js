@@ -30,7 +30,8 @@
     const tgt = video.currentTime + audioOff();
     if(tgt < 0){ if(!edAudio.paused){ try{ edAudio.pause(); }catch(e){} } return; }
     try{
-      if(force || Math.abs(edAudio.currentTime - tgt) > 0.22) edAudio.currentTime = tgt;
+      // reajusta solo si hace falta; con force respeta un margen para no dar un saltito al arrancar
+      if(Math.abs(edAudio.currentTime - tgt) > (force ? 0.06 : 0.22)) edAudio.currentTime = tgt;
       if(!video.paused && edAudio.paused) edAudio.play().catch(() => {});   // reanuda al entrar en rango
     }catch(e){}
   }
