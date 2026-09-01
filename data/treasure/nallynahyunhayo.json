@@ -2,7 +2,7 @@
   "group": "TREASURE",
   "song": "난리나 (NALLY-NA) (HYUNHAYO)",
   "video": "videos/treasure_nallynahyunhayo.mp4",
-  "duration": 0,
+  "duration": 160.877007,
   "theme": "dark",
   "subunit": true,
   "members": [
@@ -40,5 +40,6 @@
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/treasure_nallynahyunhayo.mp3"
 }
