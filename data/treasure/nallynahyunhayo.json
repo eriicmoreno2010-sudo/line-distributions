@@ -30,15 +30,609 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.59,
+      "end": 11.52,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 11.77,
+      "end": 13.79,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 14.03,
+      "end": 15.96,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 16.2,
+      "end": 18.25,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "Ya we like to party, Ya we like to party",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 18.4,
+      "end": 20.45,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "고개 흔들어 미친 것 같이",
+      "romanization": "gogae heundeureo michin geot gachi",
+      "english": "Shake your head like you lost it",
+      "adlib": false
+    },
+    {
+      "start": 20.6,
+      "end": 22.58,
       "members": [
         "HYUNSUK"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "Who gon’ turn the place up like me",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 22.73,
+      "end": 24.99,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "우리 텐션 이미 정상 위",
+      "romanization": "uri tensyeon imi jeongsang wi",
+      "english": "We already on top with the energy",
+      "adlib": false
+    },
+    {
+      "start": 25.14,
+      "end": 27.13,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Who gon’ turn the bass up on 3 (1, 2, 3)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 27.31,
+      "end": 29.39,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "Hot spot 여기 모두 연결해 이 Music",
+      "romanization": "hot spot yeogi modu yeongyeolhae i music",
+      "english": "This a hotspot, music got us connected",
+      "adlib": false
+    },
+    {
+      "start": 29.51,
+      "end": 31.65,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "굳이 볼 필요 없어 저기 눈치",
+      "romanization": "gudi bol piryo eopseo jeogi nunchi",
+      "english": "Don’t check the vibe, just let it go",
+      "adlib": false
+    },
+    {
+      "start": 31.77,
+      "end": 33.79,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "숨지는 말아 Not dangerous",
+      "romanization": "sumjineun mara not dangerous",
+      "english": "No holding back, it ain’t dangerous",
+      "adlib": false
+    },
+    {
+      "start": 34.03,
+      "end": 35.53,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "우리 목소리처럼 올라 마치 주식",
+      "romanization": "uri moksori cheoreom olla machi jusik",
+      "english": "We rising up like stocks, voices going up too",
+      "adlib": false
+    },
+    {
+      "start": 35.68,
+      "end": 41.41,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Feel it in your chest, Bassline never rest, Movin' to the left",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 41.53,
+      "end": 44.38,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "(Now bring it back for finesse)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 44.56,
+      "end": 51.65,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "오늘 밤 난리나, Here we go",
+      "romanization": "oneul bam nallina, here we go",
+      "english": "Tonight NALLY-NA, Here we go",
+      "adlib": false
+    },
+    {
+      "start": 51.8,
+      "end": 53.87,
+      "members": [
+        "TREASURE"
+      ],
+      "original": "난리나 We about to shut this down what",
+      "romanization": "nallina we about to shut this down what",
+      "english": "NALLY-NA We about to shut this down what",
+      "adlib": false
+    },
+    {
+      "start": 54,
+      "end": 56.01,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 56.16,
+      "end": 58.23,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 58.39,
+      "end": 60.41,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 60.58,
+      "end": 62.27,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Ya we like to party, Ya we like to party",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 62.39,
+      "end": 64.28,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "Goin’ NALLY-NA in the place like what",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 64.47,
+      "end": 65.43,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Flex like what",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 65.61,
+      "end": 67.14,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Kill it on the daily, oh ya",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 67.32,
+      "end": 69.28,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 69.46,
+      "end": 71.63,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Ya we like to party, Ya we like to party",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 71.77,
+      "end": 73.55,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "(Stop, wait a minute)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 74.22,
+      "end": 76.29,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "Fresh stepper 나타남 여긴 난리나",
+      "romanization": "fresh stepper natanam yeogin nallina",
+      "english": "Fresh stepper show up, now it’s going wild",
+      "adlib": false
+    },
+    {
+      "start": 76.44,
+      "end": 78.49,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "장손 안 따져 우리가 올려 가치관",
+      "romanization": "jangson an ttajyeo uriga ollyeo gachigwan",
+      "english": "No rank, no titles, we set the standard",
+      "adlib": false
+    },
+    {
+      "start": 78.64,
+      "end": 81.56,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "360 완벽해 2 bust it down, She told me 내게 “뻑이 가”",
+      "romanization": "360 wanbyeokhae 2 bust it down, she told me naege “ppeogi ga”",
+      "english": "360, flawless, 2 bust it down, She told me “You blew my mind”",
+      "adlib": false
+    },
+    {
+      "start": 81.71,
+      "end": 82.8,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "붉게 만든 Korea",
+      "romanization": "bulge mandeun korea",
+      "english": "Got Korea lit up red",
+      "adlib": false
+    },
+    {
+      "start": 82.95,
+      "end": 85.11,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Whole squad leveled up and running this town, Callin’ shots",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 85.26,
+      "end": 87.28,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "못 느낀 영포티들 자리 비워 저리 가",
+      "romanization": "mot neukkim yeongpotideul jari biwo jeori ga",
+      "english": "Young 40s who don’t get it, step aside, get out of the way",
+      "adlib": false
+    },
+    {
+      "start": 87.43,
+      "end": 89.63,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "And I’m really bout my CREAM, double stuffed",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 89.78,
+      "end": 91.2,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "클수록 터져 Pop like a bubblegum",
+      "romanization": "keulsurok teojyeo pop like a bubblegum",
+      "english": "The bigger it gets, it pops like bubblegum",
+      "adlib": false
+    },
+    {
+      "start": 91.32,
+      "end": 96.83,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Feel it in your chest, Bassline never rest, Movin' to the left",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 97.01,
+      "end": 99.9,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "(Now bring it back for finesse)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 100.05,
+      "end": 107.23,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "오늘 밤 난리나, Here we go",
+      "romanization": "oneul bam nallina, here we go",
+      "english": "Tonight NALLY-NA, Here we go",
+      "adlib": false
+    },
+    {
+      "start": 107.36,
+      "end": 109.38,
+      "members": [
+        "TREASURE"
+      ],
+      "original": "난리나 We about to shut this down what",
+      "romanization": "nallina we about to shut this down what",
+      "english": "NALLY-NA We about to shut this down what",
+      "adlib": false
+    },
+    {
+      "start": 109.5,
+      "end": 111.6,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 111.75,
+      "end": 113.85,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 114.01,
+      "end": 116.02,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 116.15,
+      "end": 117.63,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Ya we like to party, Ya we like to party",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 117.77,
+      "end": 119.88,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "Goin’ NALLY-NA in the place like what",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 120.06,
+      "end": 120.96,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Flex like what",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 121.14,
+      "end": 122.74,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Kill it on the daily, oh ya",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 122.92,
+      "end": 124.87,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "난리 난리 난리나 We like to party",
+      "romanization": "nalli nalli nallina we like to party",
+      "english": "NALLY NALLY NALLY-NA We like to party",
+      "adlib": false
+    },
+    {
+      "start": 125.02,
+      "end": 127.07,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Ya we like to party, Ya we like to party",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 127.25,
+      "end": 130.89,
+      "members": [
+        "TREASURE"
+      ],
+      "original": "",
+      "romanization": "Move shake shake shake the roof, Move shake shake the roof",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 131.7,
+      "end": 135.25,
+      "members": [
+        "TREASURE"
+      ],
+      "original": "",
+      "romanization": "Move shake shake shake the roof, Move shake shake the roof",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 138.42,
+      "end": 142.01,
+      "members": [
+        "TREASURE"
+      ],
+      "original": "",
+      "romanization": "Move shake shake shake the roof, Move shake shake the roof",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 142.88,
+      "end": 146.46,
+      "members": [
+        "TREASURE"
+      ],
+      "original": "",
+      "romanization": "Move shake shake shake the roof, Move shake shake the roof",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 146.75,
+      "end": 148.75,
+      "members": [
+        "HARUTO"
+      ],
+      "original": "",
+      "romanization": "Goin’ NALLY-NA in the place like what",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 148.93,
+      "end": 149.86,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "Flex like what",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 150.04,
+      "end": 151.64,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "Kill it on the daily, oh ya",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 151.79,
+      "end": 155.34,
+      "members": [
+        "TREASURE"
+      ],
+      "original": "",
+      "romanization": "Move shake shake shake the roof, Move shake shake the roof",
+      "english": "",
+      "adlib": false
     }
   ],
   "audio": "audio/treasure_nallynahyunhayo.mp3",
