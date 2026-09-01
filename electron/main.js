@@ -101,7 +101,8 @@ ipcMain.handle("export-video", async (evt, args) => {
 
   const web = evt.sender;
   try{
-    await runExport({ out: filePath, root: ROOT, song: args.song || null, scale: args.scale || (4 / 3) },
+    // 1080p por defecto (scale 1 = 1920×1080). El usuario lo quiere en 1080p, no 4K/1440p.
+    await runExport({ out: filePath, root: ROOT, song: args.song || null, scale: args.scale || 1 },
       p => web.send("export-progress", p));
     return { ok: true, out: filePath };
   }catch(e){
