@@ -27,7 +27,9 @@
       "end": 66.3855077327954
     },
     {
-      "audio": "audio/treasure_4thminialbumnewwava4.mp3"
+      "audio": "audio/treasure_4thminialbumnewwava4.mp3",
+      "start": 0,
+      "end": 65.5408518132072
     }
   ],
   "songColors": [
