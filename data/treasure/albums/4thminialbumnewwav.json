@@ -1,0 +1,14 @@
+{
+  "type": "album",
+  "group": "TREASURE",
+  "album": "4th Mini Album 'NEW WAV'",
+  "cover": "",
+  "theme": "dark",
+  "instrumental": "",
+  "songs": [
+    "data/treasure/ifi.json",
+    "data/treasure/zoomzoom.json",
+    "data/treasure/nallynahyunhayo.json",
+    "data/treasure/danger.json"
+  ]
+}
