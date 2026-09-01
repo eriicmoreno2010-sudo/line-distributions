@@ -19,7 +19,7 @@
     },
     {
       "audio": "audio/treasure_4thminialbumnewwava2.mp3",
-      "start": 48.837106288258205,
+      "start": 0,
       "end": 61.45335874605824
     },
     {
@@ -63,7 +63,9 @@
     }
   ],
   "bgAudio": {
-    "src": "audio/treasure_4thminialbumnewwavbg.mp3"
+    "src": "audio/treasure_4thminialbumnewwavbg.mp3",
+    "start": 0,
+    "end": 12
   },
   "baseName": "WITH SUB-UNITS"
 }
