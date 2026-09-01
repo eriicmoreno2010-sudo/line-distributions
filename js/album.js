@@ -563,7 +563,10 @@
         // separada del área de líneas, para no tapar los nombres de las canciones.
         const H=560, mL=96, mT=26, mB=124;
         const xEnd = 770;                 // fin del área de líneas / etiquetas de canción
-        const pcx = 915, pr = 26;         // centro y radio de la foto (franja derecha)
+        // radio de la foto adaptativo: con muchos miembros (SEVENTEEN 13+) se encoge para que
+        // las fotos de la derecha no se solapen; con pocos, tope de 26.
+        const pcx = 915;
+        const pr = Math.max(12, Math.min(26, Math.floor((H-mT-mB) / Math.max(A.members.length-1, 1) / 2) - 4));
         const nameX = pcx + pr + 14;
         // el ancho se adapta al nombre más largo, para que los nombres lleguen a la derecha sin cortarse
         const maxNameLen = Math.max(4, ...A.members.map(m => m.name.length));
@@ -744,6 +747,8 @@
 
     const accent = A.members[0] ? A.members[0].color : "#7c5cff";
     document.documentElement.style.setProperty("--accent", accent);
+    // nº de miembros -> el CSS encoge fotos/fuentes para que quepan (10, 13, los que sean), en 1 columna
+    stage.style.setProperty("--nm", A.members.length || 1);
 
     const loadingEl = $("#loading"); if(loadingEl) loadingEl.remove();
     slides = buildSlides(albumData, songDatas);

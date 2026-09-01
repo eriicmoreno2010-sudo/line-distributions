@@ -226,32 +226,3 @@ Version: 4.0 — Ranking (transform leaderboard)
     /* .member-name aqui tampoco manda (lo pisa style.css). Solo fotos. */
     .member-photo-wrap{ width:58px; height:58px; }
 }
-
-/* =========================================================
-   PRUEBA de diseño (SOLO Moonlight test, body.rank-preview):
-   ranking "flotante" estilo referencia — sin caja, foto circular,
-   nombre y número en color del miembro, barrita fina bajo el nombre.
-   NO es definitivo; se activa solo en data/nctdream/moonlight.json.
-   ========================================================= */
-body.rank-preview .member,
-body.rank-preview .member.active,
-body.rank-preview .member.done,
-body.rank-preview .member.ready{
-    background:none !important; border:none !important; box-shadow:none !important;
-    grid-template-columns:4px auto 1fr !important;   /* quita el hueco del nº de puesto */
-}
-body.rank-preview .member-rank{ visibility:hidden; width:0; }   /* sin número de puesto */
-/* nombre y número SIEMPRE en el color del miembro */
-body.rank-preview .member-name{ color:var(--accent) !important; font-weight:900; }
-body.rank-preview .member-time{ color:var(--accent) !important; }
-/* aro de la foto en su color; brillo al cantar */
-body.rank-preview .member-photo-wrap{ border-color:var(--accent) !important; }
-body.rank-preview .member.active .member-photo-wrap{
-    box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 55%, transparent),
-               0 0 22px -2px var(--accent) !important;
-}
-/* barrita fina bajo el nombre, solo el relleno en color (sin pista de fondo visible) */
-body.rank-preview .member-bar{ height:8px; max-width:230px;
-    background:transparent !important; border:none !important; box-shadow:none !important; }
-body.rank-preview .member-progress{ background:var(--accent) !important; box-shadow:0 0 8px -2px var(--accent); }
-body.rank-preview .member-info{ gap:7px; }
