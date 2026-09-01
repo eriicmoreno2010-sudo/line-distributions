@@ -14,13 +14,6 @@
       "lift": 3
     },
     {
-      "name": "JIHOON",
-      "image": "images/treasure/nallynahyunhayo/jihoon.png",
-      "color": "#b80983",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "YOSHI",
       "image": "images/treasure/nallynahyunhayo/yoshi.png",
       "color": "#b8093e",
@@ -28,51 +21,9 @@
       "lift": 3
     },
     {
-      "name": "JUNKYU",
-      "image": "images/treasure/nallynahyunhayo/junkyu.png",
-      "color": "#ff751f",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "JAEHYUK",
-      "image": "images/treasure/nallynahyunhayo/jaehyuk.png",
-      "color": "#cbdf28",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "ASAHI",
-      "image": "images/treasure/nallynahyunhayo/asahi.png",
-      "color": "#0097b2",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "DOYOUNG",
-      "image": "images/treasure/nallynahyunhayo/doyoung.png",
-      "color": "#3469cf",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "HARUTO",
       "image": "images/treasure/nallynahyunhayo/haruto.png",
       "color": "#270dc4",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "JEONGWOO",
-      "image": "images/treasure/nallynahyunhayo/jeongwoo.png",
-      "color": "#8d0a8f",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "JUNGHWAN",
-      "image": "images/treasure/nallynahyunhayo/junghwan.png",
-      "color": "#fd61b5",
       "focus": 50,
       "lift": 3
     }
