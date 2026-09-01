@@ -234,10 +234,10 @@
     function avgSlide(Ax, badge){
       const el = makeSlide("avg", "avg-slide");
       const nS = Ax.songs.length || 1;
-      // solo miembros que cantan en TODAS las canciones (los invitados que solo cantan
-      // en 1-2 falsean el promedio, así que se excluyen)
-      const fc = Math.max(0, ...Ax.members.map(m => Object.keys(m.per).length));
-      const mem = Ax.members.filter(m => Object.keys(m.per).length >= fc);
+      // incluye a TODOS menos los invitados que cantan en menos de la MITAD de las canciones
+      // (así se van los invitados de 1/3 como NCT127, pero se quedan los 7 de 3/4 de TREASURE)
+      const half = nS / 2;
+      const mem = Ax.members.filter(m => Object.keys(m.per).length >= half);
       const avg = mem.map(m => ({ m, a: m.total / nS })).sort((x,y) => y.a - x.a);
       el.innerHTML = `
         ${verBadgeHTML(badge)}
@@ -257,9 +257,9 @@
     // MOST LINES / LESS LINES. badge opcional cuando se duplica por versión.
     function mostlessSlide(Ax, badge){
       const el = makeSlide("mostless", "mostless-slide");
-      // solo miembros que cantan en TODAS las canciones (fuera los invitados de 1-2 canciones)
-      const fc = Math.max(0, ...Ax.members.map(m => Object.keys(m.per).length));
-      const mem = Ax.members.filter(m => Object.keys(m.per).length >= fc);
+      // incluye a TODOS menos los invitados que cantan en menos de la MITAD de las canciones
+      const half = (Ax.songs.length || 1) / 2;
+      const mem = Ax.members.filter(m => Object.keys(m.per).length >= half);
       const most = mem.filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
       const less = mem.filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
       const rowH = (m, song, sec) => `
