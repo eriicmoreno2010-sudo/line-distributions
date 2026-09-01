@@ -72,7 +72,7 @@
         <button class="sec" id="pasteAll" disabled>📌 Pegar a todos</button>
       </div>
       <div class="btns">
-        <button class="sec" id="importFrames">📥 Encuadres de otra canción</button>
+        <button class="sec" id="importFrames">📥 Fotos + encuadres de otra canción</button>
       </div>
       <div class="btns">
         <button id="save">💾 Guardar y subir</button>
@@ -93,8 +93,8 @@
 
 <div id="impmodal" style="position:fixed;inset:0;background:rgba(8,8,12,.8);display:none;align-items:center;justify-content:center;z-index:300">
   <div style="background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px 24px;width:min(480px,92vw);display:flex;flex-direction:column;gap:12px">
-    <div style="font-weight:900;font-size:17px">📥 Importar encuadres de otra canción</div>
-    <div class="hint" style="text-align:left;margin:0">Copia el recorte/zoom de cada miembro desde otra canción (mismo grupo). Se aplica a los miembros con el <b>mismo nombre</b>. Después pulsa <b>💾 Guardar y subir</b>.</div>
+    <div style="font-weight:900;font-size:17px">📥 Importar fotos + encuadres de otra canción</div>
+    <div class="hint" style="text-align:left;margin:0">Trae la <b>foto y</b> el recorte/zoom de cada miembro desde otra canción (mismo grupo), por <b>mismo nombre</b>. Después pulsa <b>💾 Guardar y subir</b>.</div>
     <select id="impsel" style="width:100%"></select>
     <div style="display:flex;gap:10px;justify-content:flex-end">
       <button class="sec" id="impcancel">Cancelar</button>
@@ -266,14 +266,32 @@ document.getElementById("impcancel").onclick = ()=> impmodal.style.display = "no
 impmodal.addEventListener("click", e=>{ if(e.target===impmodal) impmodal.style.display="none"; });
 document.getElementById("impgo").onclick = async ()=>{
     const src = document.getElementById("impsel").value; if(!src) return;
+    const btn = document.getElementById("impgo"); const t0 = btn.textContent; btn.disabled = true; btn.textContent = "⏳ Importando…";
     let res = null; try{ res = await window.desktop.loadSong(src); }catch(e){}
-    if(!res || !res.ok){ alert("No se pudo cargar esa canción."); return; }
-    const map = {}; (res.data.members||[]).forEach(m=>{ if(m.frame) map[m.name.toLowerCase()] = m.frame; });
-    let n = 0;
-    members.forEach(m=>{ const f = map[m.name.toLowerCase()];
-        if(f && m.iw){ applyFrame(m, f); m.dirty = true; clampCrop(m); if(m.thumbCtx) drawInto(m.thumbCtx, 64, m); n++; } });
+    if(!res || !res.ok){ btn.disabled=false; btn.textContent=t0; alert("No se pudo cargar esa canción."); return; }
+    // miembros de la OTRA canción por nombre (con su foto y su encuadre)
+    const om = {}; (res.data.members||[]).forEach(m=>{ om[m.name.toLowerCase()] = m; });
+    let n = 0, copied = 0;
+    for(const m of members){
+        const o = om[m.name.toLowerCase()];
+        if(!o || !o.frame) continue;
+        // 1) traer la FOTO de la otra canción a esta (adopta su original)
+        let cp = null;
+        if(o.image && window.desktop.copyPhoto){ try{ cp = await window.desktop.copyPhoto({ from:o.image, to:m.path }); }catch(e){} }
+        if(cp && cp.ok){
+            await new Promise(done=>{ const img = new Image();
+                img.onload = () => { m.img = img; m.iw = img.naturalWidth; m.ih = img.naturalHeight;
+                    applyFrame(m, o.frame); m.dirty = true; clampCrop(m); if(m.thumbCtx) drawInto(m.thumbCtx, 64, m); n++; copied++; done(); };
+                img.onerror = () => done();
+                img.src = cp.src + "?t=" + Date.now(); });
+        } else if(m.iw){
+            // no se pudo copiar la foto -> al menos aplica el encuadre a la foto actual
+            applyFrame(m, o.frame); m.dirty = true; clampCrop(m); if(m.thumbCtx) drawInto(m.thumbCtx, 64, m); n++;
+        }
+    }
+    btn.disabled = false; btn.textContent = t0;
     impmodal.style.display = "none"; render();
-    alert(n ? ("Encuadres importados en " + n + " miembro(s). Revisa y pulsa 💾 Guardar y subir.")
+    alert(n ? ("Importadas fotos + encuadres de " + n + " miembro(s)" + (copied<n ? " (" + (n-copied) + " sin foto, solo encuadre)" : "") + ". Revisa y pulsa 💾 Guardar y subir.")
             : "Esa canción no tiene encuadres guardados. Ábrela, encuadra las fotos y guarda; luego ya se pueden importar.");
 };
 

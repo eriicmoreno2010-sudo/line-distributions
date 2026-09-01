@@ -16,6 +16,7 @@ contextBridge.exposeInMainWorld("desktop", {
   pickAudio: (args) => ipcRenderer.invoke("pick-audio", args || {}),
   pickCover: (args) => ipcRenderer.invoke("pick-cover", args || {}),
   importPhoto: (args) => ipcRenderer.invoke("import-photo", args || {}),
+  copyPhoto: (args) => ipcRenderer.invoke("copy-photo", args || {}),
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
   deleteItem: (args) => ipcRenderer.invoke("delete-item", args || {}),
   pickCutInput: () => ipcRenderer.invoke("pick-cut-input"),

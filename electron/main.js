@@ -412,6 +412,29 @@ ipcMain.handle("import-photo", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// Copiar la foto de OTRA canción (su original pristino de _src) a la canción actual,
+// para importar "fotos + encuadres" de otra canción (mismo miembro). Devuelve el file://
+// del nuevo _src para que el visor la cargue y aplique el encuadre importado.
+ipcMain.handle("copy-photo", async (_e, args) => {
+  try{
+    const fromRel = String((args && args.from) || "").replace(/\\/g, "/");
+    const toRel   = String((args && args.to)   || "").replace(/\\/g, "/");
+    if(!/^images\/.+/.test(fromRel) || !/^images\/.+/.test(toRel) || fromRel.indexOf("..") !== -1 || toRel.indexOf("..") !== -1)
+      return { ok:false, error:"ruta no permitida" };
+    const fromAbs = path.join(ROOT, fromRel);
+    const fromPristine = path.join(path.dirname(fromAbs), "_src", path.basename(fromAbs));
+    const srcFile = fs.existsSync(fromPristine) ? fromPristine : fromAbs;   // prioriza el original sin recortar
+    if(!fs.existsSync(srcFile)) return { ok:false, error:"no existe la foto de origen" };
+    const toAbs = path.join(ROOT, toRel);
+    const toDir = path.dirname(toAbs), base = path.basename(toAbs);
+    const toSrcDir = path.join(toDir, "_src");
+    fs.mkdirSync(toSrcDir, { recursive:true });
+    fs.copyFileSync(srcFile, path.join(toSrcDir, base));   // adopta el original en el _src de esta canción
+    fs.copyFileSync(srcFile, toAbs);                       // display (se re-hornea al Guardar)
+    return { ok:true, src: "file:///" + path.join(toSrcDir, base).replace(/\\/g, "/") };
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }
