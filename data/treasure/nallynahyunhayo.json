@@ -996,7 +996,13 @@
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          22.64,
+          22.91
+        ]
+      ]
     },
     {
       "start": 41.54,
@@ -1007,7 +1013,13 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          41.5,
+          41.91
+        ]
+      ]
     },
     {
       "start": 82.8,
@@ -1018,7 +1030,13 @@
       "original": "",
       "romanization": "Slay",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          82.87,
+          83.16
+        ]
+      ]
     },
     {
       "start": 97.06,
@@ -1029,7 +1047,13 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          97.07,
+          97.43
+        ]
+      ]
     }
   ],
   "audio": "audio/treasure_nallynahyunhayo.mp3",
