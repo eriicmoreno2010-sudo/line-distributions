@@ -569,15 +569,15 @@
         const maxNameLen = Math.max(4, ...A.members.map(m => m.name.length));
         const W = Math.ceil(nameX + maxNameLen * 12.5 + 24);
         const n = A.songs.length;
-        // Miembros "completos" (cantan en el máximo de canciones) vs "parciales" (invitados
-        // que cantan en menos). Los parciales enredan las líneas y solapan fotos/nombres,
-        // así que van en FILAS FIJAS al fondo (F+1, F+2, …), ordenados entre ellos por segundos.
-        const fc = Math.max(0, ...A.members.map(m => Object.keys(m.per).length));
-        const full    = A.members.filter(m => Object.keys(m.per).length >= fc).sort((a,b)=> b.total - a.total);
-        const partial = A.members.filter(m => Object.keys(m.per).length <  fc).sort((a,b)=> b.total - a.total);
-        const F = full.length, P = partial.length, maxR = Math.max(A.maxRank, F + P, 1);
+        const maxR = Math.max(A.maxRank, 1);
         const xAt = i => n>1 ? mL + i*(xEnd-mL)/(n-1) : mL + (xEnd-mL)/2;
         const yAt = r => mT + (maxR>1 ? (r-1)*(H-mT-mB)/(maxR-1) : (H-mT-mB)/2);
+        // Franja derecha: TODAS las fotos en filas propias, repartidas uniformemente y
+        // ordenadas por segundos totales (mejor arriba). Así NUNCA se solapan, sin importar
+        // quién cante en cada canción (p. ej. sub-units que cantan más/menos canciones).
+        const order = [...A.members].sort((a,b)=> b.total - a.total);
+        const N = order.length;
+        const pyAt = k => mT + (N>1 ? k*(H-mT-mB)/(N-1) : (H-mT-mB)/2);
         let svg = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">`;
         // guías de rango
         for(let r=1;r<=maxR;r++){ const y=yAt(r);
@@ -589,11 +589,9 @@
           const y = yBase + (i % 2) * 30;
           svg += `<line class="axis" x1="${x}" y1="${H-mB+6}" x2="${x}" y2="${y-14}" opacity="0.4"></line>`;
           svg += `<text class="xlab" x="${x}" y="${y}" text-anchor="middle">${esc(s.title)}</text>`; });
-        // dibuja línea+puntos+foto de un miembro. photoY opcional: si se pasa, la línea baja
-        // en diagonal desde su último punto hasta la foto (para los parciales, que van al fondo).
+        // dibuja línea (puestos reales por canción) + diagonal hasta su foto en la franja derecha
         const drawMember = (m, pts, photoY) => {
-          if(!pts.length) return;
-          const ey = (photoY != null) ? photoY : pts[pts.length-1][1];
+          const ey = photoY;
           const dPts = pts.concat([[pcx - pr - 6, ey]]);
           const d = dPts.map((p,k)=> (k?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
           let len=0; for(let k=1;k<dPts.length;k++){ len += Math.hypot(dPts[k][0]-dPts[k-1][0], dPts[k][1]-dPts[k-1][1]); }
@@ -605,16 +603,12 @@
           svg += `<circle cx="${pcx}" cy="${ey}" r="${pr}" fill="none" stroke="${m.color}" stroke-width="3"></circle>`;
           svg += `<text x="${nameX}" y="${ey+6}" fill="${m.color}" font-weight="900" font-size="20">${esc(m.name)}</text>`;
         };
-        // COMPLETOS: puntos en su puesto REAL de cada canción; foto a la derecha en su último puesto.
-        full.forEach(m => { const pts = [];
+        order.forEach((m, k) => {
+          const pts = [];
           A.songs.forEach((s,i)=>{ const r = m.ranks[s.orig]; if(r) pts.push([xAt(i), yAt(r), i]); });
-          drawMember(m, pts); });
-        // PARCIALES: punto en su puesto REAL de su canción (p. ej. 1 y 2), y luego una línea
-        // DIAGONAL abajo-derecha hasta su foto, que queda al fondo (F+1, F+2, …) debajo de los completos.
-        partial.forEach((m, pi) => { const pts = [];
-          A.songs.forEach((s,i)=>{ const r = m.ranks[s.orig]; if(r) pts.push([xAt(i), yAt(r), i]); });
-          if(!pts.length) pts.push([xAt(0), yAt(1), 0]);
-          drawMember(m, pts, yAt(F + pi + 1)); });
+          if(!pts.length) pts.push([xAt(n-1), pyAt(k), n-1]);   // sin datos: parte de su propia fila
+          drawMember(m, pts, pyAt(k));
+        });
         svg += `</svg>`;
         wrap.innerHTML = svg;
       };
@@ -656,7 +650,7 @@
         </div>`;
       const enter = () => el.querySelectorAll(".bar").forEach(b => { const h=+b.dataset.h; b.style.height = (h>0?Math.max(h,6):0) + "%"; });
       const reset = () => el.querySelectorAll(".bar").forEach(b => b.style.height = "0");
-      slides.push({ el, dur:4.5, enter, reset });
+      slides.push({ el, dur:2.5, enter, reset });   // más corto: cada puesto dura 2s menos
     }
     }  // cierra placesSlides
   }  // cierra buildSlides
