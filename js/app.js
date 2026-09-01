@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Optional per-song light theme (e.g. Moonlight test): white panels + light bg.
         document.body.classList.toggle("theme-light", SONG.theme === "light");
 
+        // PRUEBA de diseño (solo en Moonlight test): ranking "flotante" sin caja
+        // (foto + nombre en color + barrita + número), estilo referencia. No es definitivo.
+        document.body.classList.toggle("rank-preview", /nctdream\/moonlight/i.test(songUrl));
+
         loadSongInformation();
 
         loadVideo();
