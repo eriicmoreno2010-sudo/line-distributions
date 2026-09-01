@@ -9,70 +9,130 @@
       "image": "images/treasure/ifi/hyunsuk.png",
       "color": "#f824c3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JIHOON",
       "image": "images/treasure/ifi/jihoon.png",
       "color": "#b80983",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "YOSHI",
       "image": "images/treasure/ifi/yoshi.png",
       "color": "#b8093e",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JUNKYU",
       "image": "images/treasure/ifi/junkyu.png",
       "color": "#ff751f",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JAEHYUK",
       "image": "images/treasure/ifi/jaehyuk.png",
       "color": "#cbdf28",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "ASAHI",
       "image": "images/treasure/ifi/asahi.png",
       "color": "#0097b2",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "DOYOUNG",
       "image": "images/treasure/ifi/doyoung.png",
       "color": "#3469cf",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "HARUTO",
       "image": "images/treasure/ifi/haruto.png",
       "color": "#270dc4",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JEONGWOO",
       "image": "images/treasure/ifi/jeongwoo.png",
       "color": "#8d0a8f",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "JUNGHWAN",
       "image": "images/treasure/ifi/junghwan.png",
       "color": "#fd61b5",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 1,
+        "rot": 21
+      }
     }
   ],
   "lyrics": [
