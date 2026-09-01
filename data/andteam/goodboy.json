@@ -1,0 +1,86 @@
+{
+  "group": "&TEAM",
+  "song": "Good Boy",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "K",
+      "image": "images/andteam/goodboy/k.png",
+      "color": "#c80032",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "FUMA",
+      "image": "images/andteam/goodboy/fuma.png",
+      "color": "#1a2e6b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "NICHOLAS",
+      "image": "images/andteam/goodboy/nicholas.png",
+      "color": "#e6e6ec",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "EJ",
+      "image": "images/andteam/goodboy/ej.png",
+      "color": "#d9a900",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUMA",
+      "image": "images/andteam/goodboy/yuma.png",
+      "color": "#7a32c8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JO",
+      "image": "images/andteam/goodboy/jo.png",
+      "color": "#2fa673",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HARUA",
+      "image": "images/andteam/goodboy/harua.png",
+      "color": "#7ec8e3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAKI",
+      "image": "images/andteam/goodboy/taki.png",
+      "color": "#ff7a00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MAKI",
+      "image": "images/andteam/goodboy/maki.png",
+      "color": "#ff6fa3",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "K"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
