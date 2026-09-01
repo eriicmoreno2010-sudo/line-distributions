@@ -62,6 +62,8 @@
       "allSlides": true
     }
   ],
-  "bgAudio": {},
+  "bgAudio": {
+    "src": "audio/treasure_4thminialbumnewwavbg.mp3"
+  },
   "baseName": "WITH SUB-UNITS"
 }
