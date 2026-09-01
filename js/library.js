@@ -1,4 +1,4 @@
-/* Library home screen (desktop app). Lists songs, opens the viewer, exports 4K. */
+/* Library home screen (desktop app). Lists songs, opens the viewer, exports 1080p. */
 (function(){
   const grid = document.getElementById("grid");
   const overlay = document.getElementById("overlay");
@@ -32,6 +32,7 @@
         <button class="edit">✎  Editar</button>
         <button class="fotos">🖼  Fotos</button>
         <button class="thumb">🎬  Miniatura</button>
+        <button class="exp">⬇  Exportar 1080p</button>
         <button class="del danger">🗑  Borrar</button>
       </div>`;
     el.querySelector(".open").onclick = () => {
@@ -46,6 +47,7 @@
     el.querySelector(".thumb").onclick = () => {
       location.href = "thumb.html?song=" + encodeURIComponent(song.path);
     };
+    el.querySelector(".exp").onclick = () => doExport(song);
     el.querySelector(".del").onclick = () => removeItem(el, song.path, song.song || "esta canción");
     return el;
   }
@@ -94,7 +96,7 @@
     fill.style.width = "0%";
     const res = await window.desktop.exportVideo({ song: song.path, name: (song.song || "video").replace(/[^\w\-]+/g, "_") });
     overlay.classList.remove("show");
-    if(res && res.ok) alert("¡Listo! Vídeo 4K guardado en:\n" + res.out);
+    if(res && res.ok) alert("¡Listo! Vídeo 1080p guardado en:\n" + res.out);
     else if(res && res.canceled){ /* nada */ }
     else alert("Error al exportar: " + ((res && res.error) || "desconocido"));
   }

@@ -24,7 +24,7 @@
   .avatars{ display:flex; }
   .avatars img{ width:40px; height:40px; border-radius:50%; object-fit:cover; border:2px solid var(--panel); margin-left:-10px; background:var(--panel2); }
   .avatars img:first-child{ margin-left:0; }
-  .actions{ display:flex; gap:10px; margin-top:4px; }
+  .actions{ display:flex; flex-wrap:wrap; gap:10px; margin-top:4px; }
   button{ flex:1; padding:11px 14px; font:800 14px "Segoe UI",sans-serif; border:0; border-radius:10px; cursor:pointer; }
   .open{ background:var(--panel2); color:var(--text); border:1px solid var(--border); }
   .open:hover{ background:#232333; }
@@ -96,7 +96,7 @@
   <header>
     <div>
       <h1>Line <span>Distributions</span></h1>
-      <div class="sub">Biblioteca de canciones — abre para ver, o exporta el vídeo en 4K.</div>
+      <div class="sub">Biblioteca de canciones — abre para ver, o exporta el vídeo en 1080p.</div>
     </div>
     <div class="headbtns">
       <button id="transcribeBtn" class="newbtn ng">🎙️  Transcribir</button>
@@ -189,7 +189,7 @@
   </div>
 
   <div id="overlay">
-    <div id="ovtitle">Exportando vídeo 4K…</div>
+    <div id="ovtitle">Exportando vídeo 1080p…</div>
     <div id="bar"><div id="fill"></div></div>
     <div id="ovsub">Renderizando fotograma a fotograma. Puede tardar varios minutos. No cierres la app.</div>
   </div>
