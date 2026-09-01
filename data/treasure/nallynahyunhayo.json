@@ -41,5 +41,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/treasure_nallynahyunhayo.mp3"
+  "audio": "audio/treasure_nallynahyunhayo.mp3",
+  "audioOffset": 0.05
 }
