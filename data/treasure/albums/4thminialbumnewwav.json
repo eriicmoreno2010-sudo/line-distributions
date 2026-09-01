@@ -12,7 +12,9 @@
     "data/treasure/danger.json"
   ],
   "clips": [
-    {},
+    {
+      "audio": "audio/treasure_4thminialbumnewwava1.mp3"
+    },
     {},
     {
       "start": 53.79671431552588,
