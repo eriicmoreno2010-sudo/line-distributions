@@ -1202,6 +1202,28 @@
       "romanization": "zoom zoom",
       "english": "ZOOM ZOOM",
       "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "(Uh huh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "YOSHI"
+      ],
+      "original": "",
+      "romanization": "(Uh huh)",
+      "english": "",
+      "adlib": true
     }
   ]
 }
