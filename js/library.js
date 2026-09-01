@@ -32,7 +32,6 @@
         <button class="edit">✎  Editar</button>
         <button class="fotos">🖼  Fotos</button>
         <button class="thumb">🎬  Miniatura</button>
-        <button class="exp">⬇  Exportar 1080p</button>
         <button class="del danger">🗑  Borrar</button>
       </div>`;
     el.querySelector(".open").onclick = () => {
@@ -47,7 +46,6 @@
     el.querySelector(".thumb").onclick = () => {
       location.href = "thumb.html?song=" + encodeURIComponent(song.path);
     };
-    el.querySelector(".exp").onclick = () => doExport(song);
     el.querySelector(".del").onclick = () => removeItem(el, song.path, song.song || "esta canción");
     return el;
   }
