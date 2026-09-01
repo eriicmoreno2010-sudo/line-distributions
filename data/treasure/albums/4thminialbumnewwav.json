@@ -13,7 +13,9 @@
   ],
   "clips": [
     {
-      "audio": "audio/treasure_4thminialbumnewwava1.mp3"
+      "audio": "audio/treasure_4thminialbumnewwava1.mp3",
+      "start": 0,
+      "end": 83.7690950774439
     },
     {},
     {
