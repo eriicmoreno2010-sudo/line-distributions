@@ -1324,7 +1324,13 @@
       "original": "",
       "romanization": "(Uh huh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          12.7,
+          13.32
+        ]
+      ]
     },
     {
       "start": 15.43,
@@ -1333,7 +1339,13 @@
       "original": "",
       "romanization": "(Uh huh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          15.42,
+          16.01
+        ]
+      ]
     },
     {
       "start": 68.59,
@@ -1342,7 +1354,13 @@
       "original": "",
       "romanization": "(So fast)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          68.59,
+          69.55
+        ]
+      ]
     },
     {
       "start": 69.92,
@@ -1351,7 +1369,13 @@
       "original": "",
       "romanization": "(So fast)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          69.96,
+          70.86
+        ]
+      ]
     },
     {
       "start": 128.62,
@@ -1360,7 +1384,13 @@
       "original": "",
       "romanization": "(So fast)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          128.63,
+          129.5
+        ]
+      ]
     },
     {
       "start": 129.95,
@@ -1369,7 +1399,13 @@
       "original": "",
       "romanization": "(So fast)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          129.98,
+          130.88
+        ]
+      ]
     },
     {
       "start": 149.28,
@@ -1378,7 +1414,13 @@
       "original": "",
       "romanization": "I beat it",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          149.27,
+          149.91
+        ]
+      ]
     },
     {
       "start": 154.41,
@@ -1387,7 +1429,17 @@
       "original": "",
       "romanization": "Yeah, alright",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          154.5,
+          154.89
+        ],
+        [
+          155.09,
+          155.53
+        ]
+      ]
     },
     {
       "start": 157.04,
@@ -1396,7 +1448,17 @@
       "original": "",
       "romanization": "Okay, uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          157.11,
+          157.52
+        ],
+        [
+          157.96,
+          158.32
+        ]
+      ]
     },
     {
       "start": 159.82,
@@ -1405,7 +1467,13 @@
       "original": "",
       "romanization": "Alright, alright, gotta",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          159.82,
+          161.28
+        ]
+      ]
     },
     {
       "start": 165.14,
@@ -1414,7 +1482,13 @@
       "original": "",
       "romanization": "Yeah, we be zoomin', zoomin'",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          165.2,
+          166.5
+        ]
+      ]
     },
     {
       "start": 170.77,
@@ -1423,7 +1497,17 @@
       "original": "",
       "romanization": "Yeah, uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          170.91,
+          171.28
+        ],
+        [
+          171.62,
+          171.87
+        ]
+      ]
     },
     {
       "start": 61.45,
@@ -1432,7 +1516,13 @@
       "original": "",
       "romanization": "3 to the 4",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          61.51,
+          62.7
+        ]
+      ]
     },
     {
       "start": 63.79,
@@ -1441,7 +1531,17 @@
       "original": "",
       "romanization": "Can't stop anymore",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          63.83,
+          64.45
+        ],
+        [
+          64.6,
+          65.58
+        ]
+      ]
     },
     {
       "start": 121.47,
@@ -1450,7 +1550,13 @@
       "original": "",
       "romanization": "3 to the 4",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          121.48,
+          122.69
+        ]
+      ]
     },
     {
       "start": 123.84,
@@ -1459,7 +1565,17 @@
       "original": "",
       "romanization": "Can't stop anymore",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          123.8,
+          124.44
+        ],
+        [
+          124.59,
+          125.61
+        ]
+      ]
     },
     {
       "start": 133.41,
@@ -1468,16 +1584,28 @@
       "original": "",
       "romanization": "Yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          133.41,
+          133.74
+        ]
+      ]
     },
     {
       "start": 135.07,
       "end": 136.47,
       "members": [],
       "original": "",
-      "romanization": "How far I go",
+      "romanization": "How far I'll go",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          135.06,
+          136.5
+        ]
+      ]
     }
   ]
 }
