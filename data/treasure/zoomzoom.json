@@ -94,7 +94,13 @@
       "original": "",
       "romanization": "T I T A N, I hit the gas and get there fast, I got that",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          8.29,
+          10.99
+        ]
+      ]
     },
     {
       "start": 10.98,
@@ -103,7 +109,13 @@
       "original": "",
       "romanization": "Top speed, Make it pop please ",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.03,
+          12.74
+        ]
+      ]
     },
     {
       "start": 13.29,
@@ -112,7 +124,13 @@
       "original": "Never stop me, 시선을 납치",
       "romanization": "never stop me, shiseoneul napchi",
       "english": "Never stop me, I steal your gaze",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.36,
+          15.5
+        ]
+      ]
     },
     {
       "start": 15.89,
@@ -121,7 +139,13 @@
       "original": "",
       "romanization": "Ok I’m loaded locked, On what I want",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          15.98,
+          17.68
+        ]
+      ]
     },
     {
       "start": 17.75,
@@ -130,7 +154,13 @@
       "original": "바로 백발백중 Ma show",
       "romanization": "baro baekbalbaekjung ma show",
       "english": "Right on target every time ma show",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          17.71,
+          19.09
+        ]
+      ]
     },
     {
       "start": 19.14,
@@ -139,7 +169,13 @@
       "original": "터져 Spark 넌 느낌 와",
       "romanization": "teojyeo spark neon neukkim wa",
       "english": "Spark explodes you can feel it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          19.21,
+          20.46
+        ]
+      ]
     },
     {
       "start": 20.31,
@@ -148,7 +184,13 @@
       "original": "몸이 먼저 알아 She got flow",
       "romanization": "momi meonjeo ara she got flow",
       "english": "Your body knows it first, she got flow",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          20.39,
+          21.92
+        ]
+      ]
     },
     {
       "start": 21.89,
@@ -157,7 +199,13 @@
       "original": "Oh, I got loyalty 너에게만 (YÆ) for sure",
       "romanization": "oh, i got loyalty neoege man (yæ) for sure",
       "english": "Oh, I got loyalty only for you (YÆ), for sure",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21.98,
+          25.34
+        ]
+      ]
     },
     {
       "start": 25.27,
@@ -166,7 +214,13 @@
       "original": "네가 원할 모든 걸 담은 난 네 / 1 of 1",
       "romanization": "nega wonhal modeun geol dameun nan ne / 1 of 1",
       "english": "Everything you could ever want I’ve got it all I’m your one / 1 of 1",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.29,
+          28.09
+        ]
+      ]
     },
     {
       "start": 27.96,
@@ -175,7 +229,13 @@
       "original": "",
       "romanization": "I like it the way that she walking, So elegant steppin’ on stars",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.91,
+          30.09
+        ]
+      ]
     },
     {
       "start": 30.13,
@@ -184,7 +244,13 @@
       "original": "박자를 맞추자 뜨거운 밤, Baby you know what it is?",
       "romanization": "bakjareul matchuja tteugeoun bam, baby you know what it is?",
       "english": "Let’s match the rhythm a hot night, Baby, you know what it is?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          30.15,
+          32.54
+        ]
+      ]
     },
     {
       "start": 32.41,
@@ -193,7 +259,13 @@
       "original": "",
       "romanization": "Baby, Just let go, Feel it in your soul",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          32.51,
+          35.18
+        ]
+      ]
     },
     {
       "start": 35.19,
@@ -202,7 +274,13 @@
       "original": "",
       "romanization": "Gotta lose control, We could fly forever",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.21,
+          38.27
+        ]
+      ]
     },
     {
       "start": 38.19,
@@ -211,7 +289,13 @@
       "original": "",
       "romanization": "Just let go, Feel it in your soul",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.26,
+          40.65
+        ]
+      ]
     },
     {
       "start": 40.64,
@@ -220,7 +304,13 @@
       "original": "",
       "romanization": "Gotta lose control, Cause it’s now or never",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          40.66,
+          43.76
+        ]
+      ]
     },
     {
       "start": 43.68,
@@ -229,7 +319,21 @@
       "original": "난 끝없이 달려, Run run run run run",
       "romanization": "nan kkeuteopsi dalryeo, run run run run run",
       "english": "I keep running endlessly, Run, run, run, run, run",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          43.76,
+          44.43
+        ],
+        [
+          44.78,
+          45.76
+        ],
+        [
+          46.06,
+          48.16
+        ]
+      ]
     },
     {
       "start": 46.43,
@@ -247,7 +351,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          48.76,
+          49.88
+        ]
+      ]
     },
     {
       "start": 49.54,
@@ -256,7 +366,13 @@
       "original": "",
       "romanization": "Hey ya oh Hey ya oh Hey ya",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.52,
+          51.34
+        ]
+      ]
     },
     {
       "start": 51.54,
@@ -265,7 +381,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.59,
+          52.6
+        ]
+      ]
     },
     {
       "start": 52.3,
@@ -274,7 +396,13 @@
       "original": "",
       "romanization": "Got me falling so fast for ya",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.24,
+          54.06
+        ]
+      ]
     },
     {
       "start": 54.3,
@@ -283,7 +411,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.28,
+          55.32
+        ]
+      ]
     },
     {
       "start": 54.92,
@@ -292,7 +426,13 @@
       "original": "",
       "romanization": "Hey ya oh Hey ya oh Hey ya",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.98,
+          56.84
+        ]
+      ]
     },
     {
       "start": 57.04,
@@ -301,7 +441,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.05,
+          58.03
+        ]
+      ]
     },
     {
       "start": 57.65,
@@ -310,7 +456,13 @@
       "original": "",
       "romanization": "When you get me like that, Gotta go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.74,
+          59.75
+        ]
+      ]
     },
     {
       "start": 59.73,
@@ -319,7 +471,17 @@
       "original": "",
       "romanization": "From the 1 to the 2 to the 3 to the 4",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.76,
+          61.06
+        ],
+        [
+          61.18,
+          62.53
+        ]
+      ]
     },
     {
       "start": 62.66,
@@ -328,7 +490,17 @@
       "original": "난 다음 단계 위로 Can’t stop anymore",
       "romanization": "nan daeum dangye wiro can’t stop anymore",
       "english": "I’m moving up to the next level can’t stop anymore",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          62.69,
+          64.45
+        ],
+        [
+          64.6,
+          65.33
+        ]
+      ]
     },
     {
       "start": 65.2,
@@ -337,7 +509,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          65.21,
+          66.25
+        ]
+      ]
     },
     {
       "start": 66.1,
@@ -346,7 +524,13 @@
       "original": "",
       "romanization": "I’m falling falling falling so fast",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.07,
+          68
+        ]
+      ]
     },
     {
       "start": 67.95,
@@ -355,7 +539,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM ",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          67.94,
+          68.84
+        ]
+      ]
     },
     {
       "start": 69.21,
@@ -364,7 +554,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM ",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.25,
+          70.26
+        ]
+      ]
     },
     {
       "start": 71.01,
@@ -373,7 +569,13 @@
       "original": "Overdrive, I’m in my zone, 남다른 기세, 각오",
       "romanization": "overdrive, i’m in my zone, namdareun gise, gakuo",
       "english": "Overdrive, I’m in my zone, An unmatched momentum, I’m determined",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          71,
+          73.7
+        ]
+      ]
     },
     {
       "start": 73.75,
@@ -382,7 +584,21 @@
       "original": "",
       "romanization": "Push the limit watch me go, Go go go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          73.77,
+          75.24
+        ],
+        [
+          75.34,
+          75.76
+        ],
+        [
+          75.83,
+          76.06
+        ]
+      ]
     },
     {
       "start": 76.3,
@@ -391,7 +607,13 @@
       "original": "Said woah heavy, 세팅, 개시, Ready, Setty, Gone",
       "romanization": "said woah heavy, seting, gaesi ready, setty, gone",
       "english": "Said woah heavy, Setup, launch, ready, set, go",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          76.31,
+          78.88
+        ]
+      ]
     },
     {
       "start": 78.83,
@@ -400,7 +622,13 @@
       "original": "못 멈춰, Get me going, Get me going and I, Go go go go",
       "romanization": "mot meomchwo, get me going, get me going and i, go go go go",
       "english": "Can’t stop, Get me going, Get me going and I, Go, go, go, go",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          78.87,
+          81.92
+        ]
+      ]
     },
     {
       "start": 81.89,
@@ -409,16 +637,28 @@
       "original": "Hey, Girl I don’t play, 내 마음은 거짓말 안 해",
       "romanization": "hey girl, i don’t play, nae maeumeun geojinmal an hae",
       "english": "Hey girl, I don’t play, My heart doesn’t lie",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          81.93,
+          85.18
+        ]
+      ]
     },
     {
       "start": 85.17,
       "end": 87.19,
       "members": [],
       "original": "I wanna say, 난 준비돼 있어",
-      "romanization": "i wanna say, nan junbi dwae isseo",
+      "romanization": "i wanna say, nan junbidwae isseo",
       "english": "I wanna say, I’m ready",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.22,
+          87.21
+        ]
+      ]
     },
     {
       "start": 87.38,
@@ -427,7 +667,13 @@
       "original": "Blindly, My 쇼피스 전부 다 버림, 네 존재가 이미 내 Outfit",
       "romanization": "blindly, my shopiseu jeonbu da beorim, ne jonjaega imi nae outfit",
       "english": "Blindly, I throw away all my showpieces, Your existence is already my outfit",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          87.42,
+          90.58
+        ]
+      ]
     },
     {
       "start": 90.69,
@@ -436,7 +682,13 @@
       "original": "넘어서 Skin, 아니 심장임, So fantasy",
       "romanization": "neomeoseo skin, ani simjangim, so fantasy",
       "english": "Beyond my skin, No, it’s my heart, So fantasy",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.63,
+          92.83
+        ]
+      ]
     },
     {
       "start": 92.55,
@@ -445,7 +697,13 @@
       "original": "",
       "romanization": "Baby, Just let go, Feel it in your soul",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          92.43,
+          95.23
+        ]
+      ]
     },
     {
       "start": 95.2,
@@ -454,7 +712,13 @@
       "original": "",
       "romanization": "Gotta lose control, We could fly forever",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          95.22,
+          98.26
+        ]
+      ]
     },
     {
       "start": 98.26,
@@ -463,7 +727,13 @@
       "original": "",
       "romanization": "Just let go, Feel it in your soul",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          98.31,
+          100.67
+        ]
+      ]
     },
     {
       "start": 100.75,
@@ -472,7 +742,13 @@
       "original": "",
       "romanization": "Gotta lose control, Cause it’s now or never",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          100.68,
+          103.79
+        ]
+      ]
     },
     {
       "start": 103.74,
@@ -481,7 +757,21 @@
       "original": "난 끝없이 달려, Run run run run run",
       "romanization": "nan kkeuteopsi dalryeo, run run run run run",
       "english": "I keep running endlessly, Run, run, run, run, run",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          103.73,
+          104.41
+        ],
+        [
+          104.72,
+          105.73
+        ],
+        [
+          106.09,
+          108.11
+        ]
+      ]
     },
     {
       "start": 106.45,
@@ -499,7 +789,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          108.79,
+          109.77
+        ]
+      ]
     },
     {
       "start": 109.55,
@@ -508,7 +804,13 @@
       "original": "",
       "romanization": "Hey ya oh Hey ya oh Hey ya",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.54,
+          111.35
+        ]
+      ]
     },
     {
       "start": 111.56,
@@ -517,7 +819,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          111.59,
+          112.58
+        ]
+      ]
     },
     {
       "start": 112.3,
@@ -526,7 +834,13 @@
       "original": "",
       "romanization": "Got me falling so fast for ya",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          112.3,
+          114.21
+        ]
+      ]
     },
     {
       "start": 114.29,
@@ -535,7 +849,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          114.39,
+          115.38
+        ]
+      ]
     },
     {
       "start": 115.03,
@@ -544,7 +864,13 @@
       "original": "",
       "romanization": "Hey ya oh Hey ya oh Hey ya",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          115.02,
+          116.84
+        ]
+      ]
     },
     {
       "start": 117.03,
@@ -553,7 +879,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          117.02,
+          118.09
+        ]
+      ]
     },
     {
       "start": 117.71,
@@ -562,7 +894,13 @@
       "original": "",
       "romanization": "When you get me like that, Gotta go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          117.73,
+          119.73
+        ]
+      ]
     },
     {
       "start": 119.7,
@@ -571,7 +909,17 @@
       "original": "",
       "romanization": "From the 1 to the 2 to the 3 to the 4",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.73,
+          121.02
+        ],
+        [
+          121.14,
+          122.5
+        ]
+      ]
     },
     {
       "start": 122.67,
@@ -580,7 +928,17 @@
       "original": "난 다음 단계 위로 Can’t stop anymore",
       "romanization": "nan daeum dangye wiro can’t stop anymore",
       "english": "I’m moving up to the next level can’t stop anymore",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          122.7,
+          124.45
+        ],
+        [
+          124.6,
+          125.21
+        ]
+      ]
     },
     {
       "start": 125.22,
@@ -589,7 +947,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          125.2,
+          126.33
+        ]
+      ]
     },
     {
       "start": 126.15,
@@ -598,7 +962,13 @@
       "original": "",
       "romanization": "I’m falling falling falling so fast",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          126.1,
+          128.18
+        ]
+      ]
     },
     {
       "start": 127.98,
@@ -607,7 +977,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          127.9,
+          128.77
+        ]
+      ]
     },
     {
       "start": 129.2,
@@ -616,7 +992,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.27,
+          130.23
+        ]
+      ]
     },
     {
       "start": 130.83,
@@ -625,7 +1007,17 @@
       "original": "",
       "romanization": "So take out them brakes, I'm not gonna stop",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          130.85,
+          132.06
+        ],
+        [
+          132.21,
+          133.31
+        ]
+      ]
     },
     {
       "start": 133.6,
@@ -634,7 +1026,13 @@
       "original": "",
       "romanization": "One million miles, That’s how far I’ll go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.62,
+          136.1
+        ]
+      ]
     },
     {
       "start": 136.12,
@@ -643,7 +1041,13 @@
       "original": "",
       "romanization": "Heart wants what it wants, I can hear it calling",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.11,
+          139.19
+        ]
+      ]
     },
     {
       "start": 139.21,
@@ -652,7 +1056,17 @@
       "original": "",
       "romanization": "Know she’s the one, Baby I’m so all in",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          139.18,
+          141.12
+        ],
+        [
+          141.27,
+          142.05
+        ]
+      ]
     },
     {
       "start": 141.55,
@@ -661,7 +1075,13 @@
       "original": "",
       "romanization": "I go from zero to a hundred in a minute",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.39,
+          143.61
+        ]
+      ]
     },
     {
       "start": 143.75,
@@ -670,7 +1090,13 @@
       "original": "넌 선을 넘었어, 내 감정엔 없어 Limit",
       "romanization": "neon seoneul neomeosseo, nae gamjeongen eopseo limit",
       "english": "You crossed the line, There’s no limit to my emotions",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          143.79,
+          146.33
+        ]
+      ]
     },
     {
       "start": 146.49,
@@ -679,7 +1105,13 @@
       "original": "만들어 Too hot, 우리 둘만 아는 비밀",
       "romanization": "mandeureo too hot, uri dulman aneun bimil",
       "english": "Make it too hot, A secret only the two of us know",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          146.51,
+          149.13
+        ]
+      ]
     },
     {
       "start": 149.18,
@@ -688,7 +1120,13 @@
       "original": "",
       "romanization": "I wanna pop pop, Baby let’s get down to business",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          149.26,
+          152.14
+        ]
+      ]
     },
     {
       "start": 152.37,
@@ -697,7 +1135,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          152.42,
+          153.52
+        ]
+      ]
     },
     {
       "start": 152.86,
@@ -715,7 +1159,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          155.24,
+          156.34
+        ]
+      ]
     },
     {
       "start": 155.58,
@@ -733,7 +1183,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          157.88,
+          159.03
+        ]
+      ]
     },
     {
       "start": 158.33,
@@ -751,7 +1207,13 @@
       "original": "",
       "romanization": "Gotta gotta blast off, Hit the gas and go wild",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.69,
+          163.79
+        ]
+      ]
     },
     {
       "start": 163.34,
@@ -760,7 +1222,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          163.37,
+          164.44
+        ]
+      ]
     },
     {
       "start": 163.71,
@@ -778,7 +1246,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          166.07,
+          167.23
+        ]
+      ]
     },
     {
       "start": 166.47,
@@ -796,7 +1270,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          168.83,
+          170.04
+        ]
+      ]
     },
     {
       "start": 169.24,
@@ -814,7 +1294,13 @@
       "original": "",
       "romanization": "We gotta gotta gotta go fast",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          172.5,
+          174.46
+        ]
+      ]
     },
     {
       "start": 174.28,
@@ -823,7 +1309,13 @@
       "original": "",
       "romanization": "ZOOM ZOOM",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          174.26,
+          175.37
+        ]
+      ]
     },
     {
       "start": 12.71,
