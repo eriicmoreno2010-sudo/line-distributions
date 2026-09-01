@@ -1,0 +1,93 @@
+{
+  "group": "TREASURE",
+  "song": "ZOOM ZOOM",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "HYUNSUK",
+      "image": "images/treasure/zoomzoom/hyunsuk.png",
+      "color": "#f824c3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JIHOON",
+      "image": "images/treasure/zoomzoom/jihoon.png",
+      "color": "#b80983",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YOSHI",
+      "image": "images/treasure/zoomzoom/yoshi.png",
+      "color": "#b8093e",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNKYU",
+      "image": "images/treasure/zoomzoom/junkyu.png",
+      "color": "#ff751f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUK",
+      "image": "images/treasure/zoomzoom/jaehyuk.png",
+      "color": "#cbdf28",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ASAHI",
+      "image": "images/treasure/zoomzoom/asahi.png",
+      "color": "#0097b2",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DOYOUNG",
+      "image": "images/treasure/zoomzoom/doyoung.png",
+      "color": "#3469cf",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HARUTO",
+      "image": "images/treasure/zoomzoom/haruto.png",
+      "color": "#270dc4",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JEONGWOO",
+      "image": "images/treasure/zoomzoom/jeongwoo.png",
+      "color": "#8d0a8f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNGHWAN",
+      "image": "images/treasure/zoomzoom/junghwan.png",
+      "color": "#fd61b5",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HYUNSUK"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
