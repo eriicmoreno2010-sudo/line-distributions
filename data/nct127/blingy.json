@@ -10,35 +10,65 @@
       "image": "images/nct127/blingy/johnny.png",
       "color": "#31b287",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.504,
+        "cy": 0.268,
+        "size": 0.44,
+        "rot": 0
+      }
     },
     {
       "name": "TAEYONG",
       "image": "images/nct127/blingy/taeyong.png",
       "color": "#c80404",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.552,
+        "cy": 0.468,
+        "size": 0.455,
+        "rot": 331
+      }
     },
     {
       "name": "YUTA",
       "image": "images/nct127/blingy/yuta.png",
       "color": "#dd7f10",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.506,
+        "cy": 0.328,
+        "size": 0.37,
+        "rot": 347
+      }
     },
     {
       "name": "JAEHYUN",
       "image": "images/nct127/blingy/jaehyun.png",
       "color": "#bf9b00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.458,
+        "cy": 0.37,
+        "size": 0.4934,
+        "rot": 0
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nct127/blingy/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.468,
+        "cy": 0.356,
+        "size": 0.2767,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
