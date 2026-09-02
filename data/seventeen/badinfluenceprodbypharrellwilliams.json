@@ -1,0 +1,58 @@
+{
+  "group": "SEVENTEEN",
+  "song": "Bad Influence (Prod. by Pharrell Williams)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "JEONGHAN",
+      "image": "images/seventeen/badinfluenceprodbypharrellwilliams/jeonghan.png",
+      "color": "#ff0c0c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JOSHUA",
+      "image": "images/seventeen/badinfluenceprodbypharrellwilliams/joshua.png",
+      "color": "#a001c8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOOZI",
+      "image": "images/seventeen/badinfluenceprodbypharrellwilliams/woozi.png",
+      "color": "#fa7304",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DK",
+      "image": "images/seventeen/badinfluenceprodbypharrellwilliams/dk.png",
+      "color": "#0002e6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SEUNGKWAN",
+      "image": "images/seventeen/badinfluenceprodbypharrellwilliams/seungkwan.png",
+      "color": "#ffea2d",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JEONGHAN"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
