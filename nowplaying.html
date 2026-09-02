@@ -19,6 +19,14 @@
            border-radius:9px; padding:9px 12px; font-weight:700; font-size:14px; text-decoration:none; cursor:pointer; }
   #topbar .sp{ flex:1; }
   #topbar .tip{ color:#5d6c92; font-size:12px; }
+  #topbar .grp{ display:flex; align-items:center; gap:7px; background:rgba(20,24,40,.7);
+           border:1px solid rgba(180,210,255,.25); border-radius:9px; padding:6px 10px; }
+  #topbar .grp .mini{ color:#9fb0d8; font-size:11px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; }
+  #topbar .grp input[type=range]{ width:120px; accent-color:#7cc5ff; }
+  #topbar .grp input[type=number]{ width:56px; background:rgba(10,14,26,.8); color:#dfe6ff;
+           border:1px solid rgba(180,210,255,.25); border-radius:7px; padding:6px 6px; font-weight:800; font-size:13px; }
+  #topbar .grp input[type=color]{ width:30px; height:26px; padding:0; border:1px solid rgba(180,210,255,.35);
+           border-radius:6px; background:none; cursor:pointer; }
   body.clean #topbar{ display:none; }
 
   #bg{ position:absolute; inset:0; overflow:hidden; z-index:0;
@@ -76,6 +84,17 @@
   <a id="back" href="library.html">← Biblioteca</a>
   <select id="songSel" title="Elegir canción"></select>
   <button id="pickcover" title="Elegir la portada de esta canción">🖼️ Portada</button>
+  <button id="pickaudio" title="Elegir el audio (mp3) de esta canción">🎵 Audio</button>
+  <span class="grp" id="offGrp" title="Retrasa el audio para que cuadre con las barras al grabar con OBS (si el audio suena adelantado, súbelo)">
+    <span class="mini">Desfase audio</span>
+    <input type="range" id="off" min="0" max="0.6" step="0.005" value="0">
+    <input type="number" id="offNum" min="0" max="0.6" step="0.01" value="0"><span class="mini">s</span>
+  </span>
+  <span class="grp" title="Colores del visualizador">
+    <span class="mini">Colores</span>
+    <input type="color" id="c1" value="#25e0f2" title="Color 1">
+    <input type="color" id="c2" value="#ff2fb0" title="Color 2">
+  </span>
   <span class="sp"></span>
   <span class="tip">▶ para reproducir · tecla <b>R</b> oculta esta barra y el ratón (para grabar)</span>
 </div>
@@ -112,7 +131,7 @@
   const aud = $("aud"), cover = $("cover"), fill = $("fill"), knob = $("knob"), msg = $("msg");
   const fmt = s => { s = Math.max(0, s|0); return (s/60|0) + ":" + String(s%60).padStart(2,"0"); };
   const D = window.desktop;
-  let SONG = null, curPath = null;
+  let SONG = null, curPath = null, curDelay = 0;
 
   // ---- cargar canción (audio + portada + título) ----
   async function loadByPath(path){
@@ -137,6 +156,23 @@
       aud.src = audioSrc + (audioSrc.indexOf("?") < 0 ? "?" : "&") + "v=" + (data.duration || 0);
     }
     $("cur").textContent = "0:00"; $("dur").textContent = "0:00"; fill.style.width = "0%"; knob.style.left = "0%";
+    // aplicar ajustes guardados de ESTA canción (colores + desfase del audio)
+    applyColor("--c1", data.npC1 || "#25e0f2", $("c1"));
+    applyColor("--c2", data.npC2 || "#ff2fb0", $("c2"));
+    curDelay = +data.npAudioDelay || 0;
+    $("off").value = curDelay; $("offNum").value = curDelay.toFixed(2);
+    if(delayNode) delayNode.delayTime.value = curDelay;
+  }
+
+  // ---- guardar ajustes en el JSON de la canción (con antirrebote) ----
+  let saveT = null;
+  function saveSoon(){
+    if(!SONG || !curPath || !D || !D.saveSong) return;
+    clearTimeout(saveT); saveT = setTimeout(() => { try{ D.saveSong(curPath, SONG); }catch(e){} }, 500);
+  }
+  function applyColor(varName, val, input){
+    document.documentElement.style.setProperty(varName, val);
+    if(input) input.value = val;
   }
 
   // ---- selector de canciones (escritorio) ----
@@ -154,13 +190,19 @@
   }
 
   // ---- Web Audio (barras reactivas) ----
-  let ctx, analyser, freq, srcNode, beat = 0;
+  let ctx, analyser, freq, srcNode, delayNode, beat = 0;
   function initAudio(){ if(ctx) return;
     ctx = new (window.AudioContext || window.webkitAudioContext)();
     srcNode = ctx.createMediaElementSource(aud);
     analyser = ctx.createAnalyser(); analyser.fftSize = 2048; analyser.smoothingTimeConstant = 0.6;
     freq = new Uint8Array(analyser.frequencyBinCount);
-    srcNode.connect(analyser); analyser.connect(ctx.destination);
+    // El analizador (barras) lee la señal ANTES del retraso; el sonido pasa por
+    // delayNode antes de salir → puedes RETRASAR el audio sin mover las barras,
+    // para que cuadren los beats al grabar con OBS (si el audio suena adelantado).
+    delayNode = ctx.createDelay(1.0);
+    delayNode.delayTime.value = curDelay;
+    srcNode.connect(analyser);                    // solo lectura (no va a destino)
+    srcNode.connect(delayNode); delayNode.connect(ctx.destination);
   }
   async function play(){ if(!aud.getAttribute("src")) return; initAudio(); if(ctx.state === "suspended") await ctx.resume(); try{ await aud.play(); }catch(e){} }
   $("play").onclick = () => aud.paused ? play() : aud.pause();
@@ -187,6 +229,40 @@
       cover.src = res.cover + "?t=" + Date.now();          // se ve al instante
       pickBtn.textContent = "✓ Portada"; setTimeout(() => pickBtn.textContent = t, 1800);
     } else { alert("No se pudo poner la portada."); }
+  };
+
+  // ---- Colores del visualizador (se guardan por canción) ----
+  $("c1").oninput = () => { document.documentElement.style.setProperty("--c1", $("c1").value);
+    if(SONG){ SONG.npC1 = $("c1").value; saveSoon(); } };
+  $("c2").oninput = () => { document.documentElement.style.setProperty("--c2", $("c2").value);
+    if(SONG){ SONG.npC2 = $("c2").value; saveSoon(); } };
+
+  // ---- Desfase del audio (retrasa el sonido, no las barras) ----
+  function setDelay(v){
+    v = Math.max(0, Math.min(0.6, +v || 0)); curDelay = v;
+    $("off").value = v; $("offNum").value = v.toFixed(2);
+    if(delayNode) delayNode.delayTime.value = v;
+    if(SONG){ SONG.npAudioDelay = v; saveSoon(); }
+  }
+  $("off").oninput    = () => setDelay($("off").value);
+  $("offNum").oninput = () => setDelay($("offNum").value);
+
+  // ---- Elegir el audio (mp3) de esta canción ----
+  const audioBtn = $("pickaudio");
+  if(!(D && D.pickAudio)) audioBtn.style.display = "none";
+  else audioBtn.onclick = async () => {
+    if(!SONG || !curPath){ alert("Elige primero una canción."); return; }
+    const t = audioBtn.textContent; audioBtn.disabled = true; audioBtn.textContent = "⏳ Copiando…";
+    let res = null; try{ res = await D.pickAudio({ group: SONG.group, song: SONG.song }); }catch(e){}
+    audioBtn.disabled = false; audioBtn.textContent = t;
+    if(res && res.canceled) return;
+    if(res && res.ok && res.audio){
+      SONG.audio = res.audio;
+      try{ await D.saveSong(curPath, SONG); }catch(e){}
+      msg.textContent = "";
+      aud.src = res.audio + (res.audio.indexOf("?") < 0 ? "?" : "&") + "v=" + Date.now();
+      audioBtn.textContent = "✓ Audio"; setTimeout(() => audioBtn.textContent = t, 1800);
+    } else { alert("No se pudo poner el audio."); }
   };
 
   // ---- canvas: barras reactivas cian->magenta ----
