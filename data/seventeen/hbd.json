@@ -102,5 +102,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/seventeen_hbd.mp3"
+  "audio": "audio/seventeen_hbd.mp3",
+  "cover": "covers/seventeen_hbd.png"
 }
