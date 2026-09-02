@@ -848,20 +848,36 @@
     {
       "start": 13.45,
       "end": 14.23,
-      "members": [],
+      "members": [
+        "WOOZI"
+      ],
       "original": "멋대로",
       "romanization": "meotdaero",
       "english": "Control",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          13.46,
+          14.21
+        ]
+      ]
     },
     {
       "start": 88.98,
       "end": 89.33,
-      "members": [],
+      "members": [
+        "VERNON"
+      ],
       "original": "",
       "romanization": "Uh",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          88.95,
+          89.33
+        ]
+      ]
     }
   ],
   "audio": "audio/seventeen_thunder.mp3",
