@@ -110,6 +110,20 @@
       "members": [
         "JAEHYUN"
       ],
+      "voice": [
+        [
+          36.25,
+          36.81
+        ],
+        [
+          36.99,
+          38.24
+        ],
+        [
+          38.45,
+          41.27
+        ]
+      ],
       "original": "높이 나는 새도 Drop it, Back to back to back, 끌어당겨 내 올가미",
       "romanization": "nopi naneun saedo drop it, back to back to back, kkeureodanggyeo nae olgami",
       "english": "Even birds flying high, they Drop it, Back to back to back, Draw ’em in with my snare",
@@ -120,6 +134,12 @@
       "end": 46.14,
       "members": [
         "HAECHAN"
+      ],
+      "voice": [
+        [
+          41.48,
+          46.14
+        ]
       ],
       "original": "하나둘씩 태워 내 비행기는 808, 구름이 내 Wave",
       "romanization": "hanadulssik taewo nae bihaenggineun 808, gureumi nae wave",
@@ -132,6 +152,12 @@
       "members": [
         "HAECHAN"
       ],
+      "voice": [
+        [
+          46.35,
+          48.33
+        ]
+      ],
       "original": "헤엄치는 Killer whales",
       "romanization": "heomyeochineun killer whales",
       "english": "The swimming Killer whales",
@@ -142,6 +168,12 @@
       "end": 52.24,
       "members": [
         "TAEYONG"
+      ],
+      "voice": [
+        [
+          48.25,
+          52.32
+        ]
       ],
       "original": "127 Mob 빠르게보다는 멀리 가, 시끄럽게 울어 Make it loud",
       "romanization": "127 mob ppareugebodaneun meolli ga, sikkeureopge ure make it loud",
@@ -154,8 +186,14 @@
       "members": [
         "TAEYONG"
       ],
+      "voice": [
+        [
+          52.35,
+          53.89
+        ]
+      ],
       "original": "",
-      "romanization": "Double the heat, and I double the hype (Right)",
+      "romanization": "Double the heat, and I double the hype",
       "english": "",
       "adlib": false
     },
@@ -164,6 +202,12 @@
       "end": 56.55,
       "members": [
         "JOHNNY"
+      ],
+      "voice": [
+        [
+          54.46,
+          56.66
+        ]
       ],
       "original": "잠은 글렀지, Yeah we keep on buzzin’",
       "romanization": "jameun geulleotji, yeah we keep on buzzin’",
@@ -175,6 +219,12 @@
       "end": 59.64,
       "members": [
         "JOHNNY"
+      ],
+      "voice": [
+        [
+          56.75,
+          59.93
+        ]
       ],
       "original": "네 밤을 모두 훔쳐, 속이 꽤 타겠지 Burnin’",
       "romanization": "ne bameul modu humchyeo, sogi kkwae tagetji burnin’",
