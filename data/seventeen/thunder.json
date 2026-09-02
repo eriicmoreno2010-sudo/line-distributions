@@ -11,84 +11,156 @@
       "image": "images/seventeen/thunder/scoups.png",
       "color": "#0557b8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.402,
+        "size": 0.9,
+        "rot": 0
+      }
     },
     {
       "name": "JOSHUA",
       "image": "images/seventeen/thunder/joshua.png",
       "color": "#a001c8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.406,
+        "size": 0.9,
+        "rot": 0
+      }
     },
     {
       "name": "JUN",
       "image": "images/seventeen/thunder/jun.png",
       "color": "#53a303",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.4,
+        "size": 0.89,
+        "rot": 0
+      }
     },
     {
       "name": "HOSHI",
       "image": "images/seventeen/thunder/hoshi.png",
       "color": "#ba0303",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.394,
+        "size": 0.9,
+        "rot": 0
+      }
     },
     {
       "name": "WONWOO",
       "image": "images/seventeen/thunder/wonwoo.png",
       "color": "#5a05d3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.392,
+        "size": 0.895,
+        "rot": 0
+      }
     },
     {
       "name": "WOOZI",
       "image": "images/seventeen/thunder/woozi.png",
       "color": "#fa7304",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.398,
+        "size": 0.88,
+        "rot": 0
+      }
     },
     {
       "name": "DK",
       "image": "images/seventeen/thunder/dk.png",
       "color": "#0002e6",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.388,
+        "size": 0.895,
+        "rot": 0
+      }
     },
     {
       "name": "MINGYU",
       "image": "images/seventeen/thunder/mingyu.png",
       "color": "#01a68d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.388,
+        "size": 0.875,
+        "rot": 0
+      }
     },
     {
       "name": "THE8",
       "image": "images/seventeen/thunder/the8.png",
       "color": "#00de81",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.38,
+        "size": 0.895,
+        "rot": 0
+      }
     },
     {
       "name": "SEUNGKWAN",
       "image": "images/seventeen/thunder/seungkwan.png",
       "color": "#ffea2d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.386,
+        "size": 0.895,
+        "rot": 0
+      }
     },
     {
       "name": "VERNON",
       "image": "images/seventeen/thunder/vernon.png",
       "color": "#2ec601",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 0.895,
+        "rot": 0
+      }
     },
     {
       "name": "DINO",
       "image": "images/seventeen/thunder/dino.png",
       "color": "#f76ce9",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.416,
+        "size": 0.895,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
