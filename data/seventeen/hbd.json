@@ -101,13 +101,41 @@
       "original": "내일 없는 매일을 살고 있잖아",
       "romanization": "naeil eomneun maeireul salgo itjana",
       "english": "I'm living every day as if there were no tomorrow",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          0.62,
+          1.2
+        ],
+        [
+          1.44,
+          2.11
+        ],
+        [
+          2.31,
+          4.05
+        ]
+      ]
     },
     {
       "start": 4.11,
       "end": 7.63,
       "members": [
         "MINGYU"
+      ],
+      "voice": [
+        [
+          4.13,
+          4.74
+        ],
+        [
+          4.98,
+          5.5
+        ],
+        [
+          5.66,
+          7.69
+        ]
       ],
       "original": "오늘 하룬 살고픈 대로 살 거야",
       "romanization": "oneul harun salgopeun daero sal geoya",
@@ -120,6 +148,27 @@
       "members": [
         "MINGYU"
       ],
+      "voice": [
+        [
+          7.96,
+          9.5
+        ],
+        [
+          9.76,
+          10.35
+        ],
+        [
+          10.47,
+          11.2
+        ],
+        [
+          10.9,
+          12.81,
+          [
+            "THE8"
+          ]
+        ]
+      ],
       "original": "촛불 켜고서 소원을 빌어 다 **이뤄질 거야@THE8**",
       "romanization": "chotbul kyeogeoseo sowoneul bireo **da irwojil geoya@THE8**",
       "english": "I'll light the candles and make a wish, **It'll all come true@THE8**",
@@ -130,6 +179,12 @@
       "end": 14.46,
       "members": [
         "S.COUPS"
+      ],
+      "voice": [
+        [
+          12.82,
+          15.1
+        ]
       ],
       "original": "",
       "romanization": "Happy birthday to you",
@@ -142,6 +197,12 @@
       "members": [
         "VERNON"
       ],
+      "voice": [
+        [
+          14.62,
+          17.82
+        ]
+      ],
       "original": "마음처럼 되는 건 이 세상엔 없었어",
       "romanization": "maeumcheoreom doeneun geon i sesangen eopseosseo",
       "english": "Nothing in this world ever went the way I wanted",
@@ -152,6 +213,16 @@
       "end": 21.03,
       "members": [
         "VERNON"
+      ],
+      "voice": [
+        [
+          18.04,
+          18.59
+        ],
+        [
+          18.77,
+          21.03
+        ]
       ],
       "original": "골치 아픈 얘긴 껌딱지 같잖아",
       "romanization": "golchi apeun yaegin kkeomttakji gatjana",
@@ -164,6 +235,16 @@
       "members": [
         "VERNON"
       ],
+      "voice": [
+        [
+          21.5,
+          22.67
+        ],
+        [
+          22.84,
+          24.72
+        ]
+      ],
       "original": "힘내라는 말 위로 되지 않아 꺼져",
       "romanization": "himnaeraneun mal wiro doeji ana kkeojyeo",
       "english": "Telling me to cheer up doesn't comfort me",
@@ -174,6 +255,16 @@
       "end": 27.64,
       "members": [
         "VERNON"
+      ],
+      "voice": [
+        [
+          24.75,
+          26.09
+        ],
+        [
+          26.27,
+          28
+        ]
       ],
       "original": "말 같잖은 소린 그만해 해 해",
       "romanization": "mal gatjanheun sorin geumanhae hae hae",
@@ -186,6 +277,16 @@
       "members": [
         "THE8"
       ],
+      "voice": [
+        [
+          27.77,
+          29.22
+        ],
+        [
+          29.54,
+          31.16
+        ]
+      ],
       "original": "손가락질 진절머리 났어",
       "romanization": "songarakjil jinjeolmeori nasseo",
       "english": "I'm sick and tired of people pointing fingers",
@@ -196,6 +297,12 @@
       "end": 34.61,
       "members": [
         "THE8"
+      ],
+      "voice": [
+        [
+          31.27,
+          34.73
+        ]
       ],
       "original": "맘 같아선 한 대 치고 싶어",
       "romanization": "mam gataseon han dae chigo sipeo",
@@ -208,6 +315,16 @@
       "members": [
         "JOSHUA"
       ],
+      "voice": [
+        [
+          34.81,
+          36.17
+        ],
+        [
+          36.44,
+          38
+        ]
+      ],
       "original": "그래도 난 다시 태어나도",
       "romanization": "geuraedo nan dasi taeeonado",
       "english": "But even if I were born again",
@@ -218,6 +335,16 @@
       "end": 42.19,
       "members": [
         "JOSHUA"
+      ],
+      "voice": [
+        [
+          38.22,
+          40.5
+        ],
+        [
+          40.68,
+          42.19
+        ]
       ],
       "original": "지금의 나로 살고 싶어 어 어",
       "romanization": "jigeumui naro salgo sipeo eo eo",
@@ -230,6 +357,20 @@
       "members": [
         "SEUNGKWAN"
       ],
+      "voice": [
+        [
+          42.45,
+          43
+        ],
+        [
+          43.3,
+          43.82
+        ],
+        [
+          44,
+          45.83
+        ]
+      ],
       "original": "내일 없는 매일을 살고 있잖아",
       "romanization": "naeil eomneun maeireul salgo itjana",
       "english": "I'm living every day as if there were no tomorrow",
@@ -240,6 +381,20 @@
       "end": 49.45,
       "members": [
         "SEUNGKWAN"
+      ],
+      "voice": [
+        [
+          45.93,
+          46.48
+        ],
+        [
+          46.77,
+          47.33
+        ],
+        [
+          47.48,
+          49.48
+        ]
       ],
       "original": "오늘 하룬 살고픈 대로 살 거야",
       "romanization": "oneul harun salgopeun daero sal geoya",
@@ -252,6 +407,27 @@
       "members": [
         "SEUNGKWAN"
       ],
+      "voice": [
+        [
+          49.77,
+          51.32
+        ],
+        [
+          51.51,
+          52.03
+        ],
+        [
+          52.19,
+          52.94
+        ],
+        [
+          52.61,
+          54.58,
+          [
+            "DINO"
+          ]
+        ]
+      ],
       "original": "촛불 켜고서 소원을 빌어 **다 이뤄질 거야@DINO**",
       "romanization": "chotbul kyeogeoseo sowoneul bireo **da irwojil geoya@DINO**",
       "english": "I'll light the candles and make a wish, **It'll all come true@DINO**",
@@ -262,6 +438,12 @@
       "end": 56.73,
       "members": [
         "WONWOO"
+      ],
+      "voice": [
+        [
+          54.57,
+          56.83
+        ]
       ],
       "original": "",
       "romanization": "Happy birthday to you",
@@ -274,6 +456,16 @@
       "members": [
         "DK"
       ],
+      "voice": [
+        [
+          61.52,
+          63.74
+        ],
+        [
+          63.89,
+          65.57
+        ]
+      ],
       "original": "",
       "romanization": "Happy birthday to you you you you",
       "english": "",
@@ -284,6 +476,12 @@
       "end": 70.11,
       "members": [
         "THE8"
+      ],
+      "voice": [
+        [
+          68.44,
+          70.71
+        ]
       ],
       "original": "",
       "romanization": "Happy birthday to you",
@@ -296,6 +494,12 @@
       "members": [
         "S.COUPS"
       ],
+      "voice": [
+        [
+          70.26,
+          73.49
+        ]
+      ],
       "original": "착해빠진 멍청이라 욕먹으면 어때",
       "romanization": "chakhaeppajin meongcheongira yokmeogeumyeon eottae",
       "english": "So what if people call me a foolish idiot for being too nice?",
@@ -306,6 +510,12 @@
       "end": 76.98,
       "members": [
         "S.COUPS"
+      ],
+      "voice": [
+        [
+          73.71,
+          77.01
+        ]
       ],
       "original": "하나부터 열까지 강요받는 세상에",
       "romanization": "hanabuteo yeolkkaji gangyobatneun sesange",
@@ -318,6 +528,12 @@
       "members": [
         "DINO"
       ],
+      "voice": [
+        [
+          77.2,
+          80.4
+        ]
+      ],
       "original": "뜨거워진 내 맘을 얕잡아봐선 안 돼",
       "romanization": "tteugeowojin nae mameul yatjapabwaseon an dwae",
       "english": "You shouldn't underestimate my burning heart",
@@ -328,6 +544,16 @@
       "end": 83.96,
       "members": [
         "DINO"
+      ],
+      "voice": [
+        [
+          80.39,
+          82.25
+        ],
+        [
+          82.43,
+          83.73
+        ]
       ],
       "original": "끝날 때까지 끝까지 run run run",
       "romanization": "kkeutnal ttaekkaji kkeutkkaji run run run",
@@ -340,6 +566,16 @@
       "members": [
         "WONWOO"
       ],
+      "voice": [
+        [
+          84.12,
+          85.7
+        ],
+        [
+          87.59,
+          89.18
+        ]
+      ],
       "original": "맘대로 내 맘대로, 오늘은 내 맘대로",
       "romanization": "mamdaero nae mamdaero, oneureun nae mamdaero",
       "english": "My way, my own way, Today, my way",
@@ -350,6 +586,27 @@
       "end": 96.13,
       "members": [
         "WONWOO"
+      ],
+      "voice": [
+        [
+          91.44,
+          92.95
+        ],
+        [
+          93.16,
+          93.74
+        ],
+        [
+          93.89,
+          94.68
+        ],
+        [
+          94.35,
+          96.28,
+          [
+            "JUN"
+          ]
+        ]
       ],
       "original": "촛불 켜고서 소원을 빌어 **다 이뤄질 거야@JUN**",
       "romanization": "chotbul kyeogeoseo sowoneul bireo **da irwojil geoya@JUN**",
@@ -362,6 +619,12 @@
       "members": [
         "HOSHI"
       ],
+      "voice": [
+        [
+          96.31,
+          98.51
+        ]
+      ],
       "original": "",
       "romanization": "Happy birthday to you",
       "english": "",
@@ -372,6 +635,16 @@
       "end": 107.25,
       "members": [
         "DK"
+      ],
+      "voice": [
+        [
+          103.22,
+          105.42
+        ],
+        [
+          105.63,
+          107.16
+        ]
       ],
       "original": "",
       "romanization": "Happy birthday to you you you you",
@@ -384,6 +657,12 @@
       "members": [
         "JOSHUA"
       ],
+      "voice": [
+        [
+          110.17,
+          112.54
+        ]
+      ],
       "original": "",
       "romanization": "Happy birthday to you",
       "english": "",
@@ -394,6 +673,24 @@
       "end": 119.45,
       "members": [
         "WOOZI"
+      ],
+      "voice": [
+        [
+          112.8,
+          114.19
+        ],
+        [
+          114.49,
+          116
+        ],
+        [
+          116.27,
+          117.65
+        ],
+        [
+          117.83,
+          119.42
+        ]
       ],
       "original": "오늘은 날 위한 나만의 celebration night",
       "romanization": "oneureun nal wihan namaneui celebration night",
@@ -406,6 +703,16 @@
       "members": [
         "WOOZI"
       ],
+      "voice": [
+        [
+          119.67,
+          121.79
+        ],
+        [
+          121.94,
+          124.05
+        ]
+      ],
       "original": "멈추지 않을 거야",
       "romanization": "meomchuji aneul geoya",
       "english": "I won't stop",
@@ -416,6 +723,12 @@
       "end": 126.45,
       "members": [
         "DK"
+      ],
+      "voice": [
+        [
+          124.1,
+          126.5
+        ]
       ],
       "original": "",
       "romanization": "It’s like HAPPY BURSTDAY yeah",
@@ -428,6 +741,16 @@
       "members": [
         "DK"
       ],
+      "voice": [
+        [
+          126.93,
+          128.23
+        ],
+        [
+          128.84,
+          131.7
+        ]
+      ],
       "original": "이렇게 계속 불 불 불 지필래",
       "romanization": "ireoke gyesok bul bul bul jipillae",
       "english": "I wanna keep lighting it up, up, up like this",
@@ -438,6 +761,20 @@
       "end": 138.7,
       "members": [
         "JUN"
+      ],
+      "voice": [
+        [
+          132.21,
+          133.48
+        ],
+        [
+          133.86,
+          135.3
+        ],
+        [
+          135.83,
+          138.71
+        ]
       ],
       "original": "I don’t care 어지럽게 오늘 밤은 미쳐버릴래",
       "romanization": "i don't care eojireopge oneul bameun michyeobeorillae",
@@ -450,6 +787,12 @@
       "members": [
         "JUN"
       ],
+      "voice": [
+        [
+          139.11,
+          139.81
+        ]
+      ],
       "original": "",
       "romanization": "Let’s go",
       "english": "",
@@ -460,6 +803,16 @@
       "end": 143.48,
       "members": [
         "HOSHI"
+      ],
+      "voice": [
+        [
+          140.2,
+          141.13
+        ],
+        [
+          141.51,
+          143.38
+        ]
       ],
       "original": "Boom Brr Like it 오늘 밤은 미쳐 like this",
       "romanization": "boom brr like it oneul bameun michyeo like this",
@@ -472,6 +825,12 @@
       "members": [
         "HOSHI"
       ],
+      "voice": [
+        [
+          143.71,
+          144.59
+        ]
+      ],
       "original": "",
       "romanization": "Boom Brr Like it",
       "english": "",
@@ -482,6 +841,16 @@
       "end": 150.42,
       "members": [
         "S.COUPS"
+      ],
+      "voice": [
+        [
+          147.11,
+          148.13
+        ],
+        [
+          148.49,
+          150.43
+        ]
       ],
       "original": "Boom Brr Like it 오늘 밤은 미쳐 like this",
       "romanization": "boom brr like it oneul bameun michyeo like this",
@@ -494,6 +863,12 @@
       "members": [
         "S.COUPS"
       ],
+      "voice": [
+        [
+          150.64,
+          151.6
+        ]
+      ],
       "original": "",
       "romanization": "Boom Brr Like it",
       "english": "",
@@ -504,6 +879,12 @@
       "end": 154.39,
       "members": [
         "MINGYU"
+      ],
+      "voice": [
+        [
+          151.96,
+          154.29
+        ]
       ],
       "original": "",
       "romanization": "Happy birthday to you",
