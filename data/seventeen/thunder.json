@@ -100,13 +100,337 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 6.75,
+      "end": 9.95,
+      "members": [],
+      "original": "떨어져 flash 온몸이 crash",
+      "romanization": "tteoreojyeo flash, onmomi crash",
+      "english": "Falling, flash, whole-body crash",
+      "adlib": false
+    },
+    {
+      "start": 10.39,
+      "end": 13.36,
+      "members": [],
+      "original": "회로가 미쳐버렸어 제멋대로",
+      "romanization": "hoeroga michyeobeoryeosseo jemeotdaero",
+      "english": "Circuits going crazy, out of control",
+      "adlib": false
+    },
+    {
+      "start": 14.06,
+      "end": 17.21,
+      "members": [],
+      "original": "Now I'm funked up 액셀 밟어",
+      "romanization": "now i'm funked up, aeksel balbeo",
+      "english": "Now I’m funked up, step on the gas",
+      "adlib": false
+    },
+    {
+      "start": 17.79,
+      "end": 21.52,
       "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "Everybody say ‘Whoa’ ‘Whoa’",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 22.45,
+      "end": 26.37,
+      "members": [],
+      "original": "Uh 매일 이러면 좋아 달라진 DNA",
+      "romanization": "uh, maeil ireomyeon joa, dallajin dna",
+      "english": "Uh, hope it's like this every day, different DNA",
+      "adlib": false
+    },
+    {
+      "start": 26.58,
+      "end": 29.41,
+      "members": [],
+      "original": "신남은 덤이야 아, 기분 어떡해",
+      "romanization": "sinnameun deomiya, ah, gibun eotteokae",
+      "english": "Excitement’s a bonus, ah, what a feeling",
+      "adlib": false
+    },
+    {
+      "start": 29.56,
+      "end": 32.8,
+      "members": [],
+      "original": "달라진 동공을 희한하다고 다 놀려대면 어때",
+      "romanization": "dallajin donggongeul huihanhadago da nollyeodaemyeon eottae",
+      "english": "So what if they mock me, say my changed pupils are weird",
+      "adlib": false
+    },
+    {
+      "start": 33.27,
+      "end": 36.16,
+      "members": [],
+      "original": "이게 꿈이라면 그게 더 아쉬울 것만 같은데",
+      "romanization": "ige kkumiramyeon geuge deo aswiul geonman gateunde",
+      "english": "What a shame if this all turns out to be a dream",
+      "adlib": false
+    },
+    {
+      "start": 36.28,
+      "end": 43.26,
+      "members": [],
+      "original": "다 모여봐 날뛰어 보자, 우리 밤은 뜨거우니까",
+      "romanization": "da moyeobwa, nalttwieoboja, uri bameun tteugeounikka",
+      "english": "Gather around, let’s all go wild, Cause our night's getting hotter",
+      "adlib": false
+    },
+    {
+      "start": 43.71,
+      "end": 47.26,
+      "members": [],
+      "original": "친구들 Ring Ring 영감도 Ring Ring",
+      "romanization": "chingudeul ring rin, yeonggamdo ring ring",
+      "english": "Friends Ring Ring, inspiration Ring Ring",
+      "adlib": false
+    },
+    {
+      "start": 47.74,
+      "end": 51.43,
+      "members": [],
+      "original": "떠올라 마치 번개처럼 번쩍",
+      "romanization": "tteoolla machi beongaecheoreom beonjjeok",
+      "english": "Rising up and flashing like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 51.55,
+      "end": 58.75,
+      "members": [],
+      "original": "ALO ALO T.H.U.N.D.E.R, ALO ALO 번개처럼 찾아왔다",
+      "romanization": "alo, alo, t.h.u.n.d.e.r, alo, alo, beongaecheoreom chajawatda",
+      "english": "ALO ALO T.H.U.N.D.E.R, ALO ALO, it’s here like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 58.88,
+      "end": 62.45,
+      "members": [],
+      "original": "",
+      "romanization": "ALO ALO T.H.U.N.D.E.R",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 62.58,
+      "end": 65.98,
+      "members": [],
+      "original": "ALO ALO 떠올라 마치 번개처럼 번쩍",
+      "romanization": "alo, alo, tteoolla machi beongaecheoreom beonjjeok",
+      "english": "ALO ALO, rising up and flashing a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 66.14,
+      "end": 69.63,
+      "members": [],
+      "original": "계속 걸려 오는 전화벨 소리",
+      "romanization": "gyesok geollyeo oneun jeonhwabel sori",
+      "english": "Keeps ringing, phone keeps ringing",
+      "adlib": false
+    },
+    {
+      "start": 69.78,
+      "end": 73.32,
+      "members": [],
+      "original": "번개처럼 계속 찌릿찌릿 따끔해요",
+      "romanization": "beongaecheoreom gyesok jjiritjjirit ttakkeumhaeyo",
+      "english": "Keeps zapping, bzzzt like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 73.48,
+      "end": 77.02,
+      "members": [],
+      "original": "계속 걸려 오는 전화벨 소리",
+      "romanization": "gyesok geollyeo oneun jeonhwabel sori",
+      "english": "Keeps ringing, phone keeps ringing",
+      "adlib": false
+    },
+    {
+      "start": 77.17,
+      "end": 81.27,
+      "members": [],
+      "original": "번개처럼 계속 찌릿찌릿 따끔해요",
+      "romanization": "beongaecheoreom gyesok jjiritjjirit ttakkeumhaeyo",
+      "english": "Keeps zapping, bzzzt like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 84.1,
+      "end": 85.08,
+      "members": [],
+      "original": "찌릿찌릿 like",
+      "romanization": "jjiritjjirit like",
+      "english": "Bzzzt like",
+      "adlib": false
+    },
+    {
+      "start": 88.95,
+      "end": 92.85,
+      "members": [],
+      "original": "소문이 참 빨라 또 시끌벅적해",
+      "romanization": "uh, somuni cham ppalla, tto sikkeulbeokjeokae",
+      "english": "Rumors spread like fire, chatter everywhere",
+      "adlib": false
+    },
+    {
+      "start": 93.05,
+      "end": 95.97,
+      "members": [],
+      "original": "몰려드는 인파 아, 기분 어떡해",
+      "romanization": "mollyeodeuneun inpa, ah, gibun eotteokae",
+      "english": "Now they’re crowding around, ah, what a feeling",
+      "adlib": false
+    },
+    {
+      "start": 96.12,
+      "end": 99.29,
+      "members": [],
+      "original": "우리는 뜬구름 운전하지 않아 걱정 마시게",
+      "romanization": "urineun tteungureum unjeonhaji ana, geokjeong masige",
+      "english": "We don't chase shadows when we drive, don't worry",
+      "adlib": false
+    },
+    {
+      "start": 99.77,
+      "end": 102.6,
+      "members": [],
+      "original": "시간을 정확히 열일곱 시 열일곱 분 맞춰 놓게",
+      "romanization": "siganeul jeonghwaki yeorilgop si yeorilgop bun matchwo noke",
+      "english": "Let’s mark the exact time, 17:17",
+      "adlib": false
+    },
+    {
+      "start": 102.75,
+      "end": 109.64,
+      "members": [],
+      "original": "다 모여봐 날뛰어 보자, 우리 밤은 뜨거우니까",
+      "romanization": "da moyeobwa, nalttwieo boja, uri bameun tteugeounikka",
+      "english": "Gather around, let’s all go wild, Cause our night's getting hotter",
+      "adlib": false
+    },
+    {
+      "start": 110.05,
+      "end": 113.71,
+      "members": [],
+      "original": "그때 마침 Ring Ring 영감도 Ring Ring",
+      "romanization": "geuttae machim ring ring yeonggamdo ring ring",
+      "english": "At that moment, Ring Ring, inspiration Ring Ring",
+      "adlib": false
+    },
+    {
+      "start": 114.48,
+      "end": 117.94,
+      "members": [],
+      "original": "떠올라 마치 번개처럼 번쩍",
+      "romanization": "tteoolla machi beongaecheoreom beonjjeok",
+      "english": "Rising up and flashing like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 118.06,
+      "end": 125.29,
+      "members": [],
+      "original": "ALO ALO T.H.U.N.D.E.R, ALO ALO 번개처럼 찾아왔다",
+      "romanization": "alo, alo, t.h.u.n.d.e.r, alo, alo, beongaecheoreom chajawatda",
+      "english": "ALO ALO T.H.U.N.D.E.R, ALO ALO, it’s here like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 125.42,
+      "end": 128.96,
+      "members": [],
+      "original": "",
+      "romanization": "ALO ALO T.H.U.N.D.E.R",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 129.12,
+      "end": 132.41,
+      "members": [],
+      "original": "ALO ALO 떠올라 마치 번개처럼 번쩍",
+      "romanization": "alo, alo, tteoolla machi beongaecheoreom beonjjeok",
+      "english": "ALO ALO, rising up and flashing like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 132.56,
+      "end": 136.05,
+      "members": [],
+      "original": "계속 걸려 오는 전화벨 소리",
+      "romanization": "gyesok geollyeo oneun jeonhwabel sori",
+      "english": "Keeps ringing, phone keeps ringing",
+      "adlib": false
+    },
+    {
+      "start": 136.2,
+      "end": 139.83,
+      "members": [],
+      "original": "번개처럼 계속 찌릿찌릿 따끔해요",
+      "romanization": "beongaecheoreom gyesok jjiritjjirit ttakkeumhaeyo",
+      "english": "Keeps zapping, bzzzt like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 139.98,
+      "end": 143.44,
+      "members": [],
+      "original": "계속 걸려 오는 전화벨 소리",
+      "romanization": "gyesok geollyeo oneun jeonhwabel sori",
+      "english": "Keeps ringing, phone keeps ringing",
+      "adlib": false
+    },
+    {
+      "start": 143.6,
+      "end": 147.71,
+      "members": [],
+      "original": "번개처럼 계속 찌릿찌릿 따끔해요",
+      "romanization": "beongaecheoreom gyesok jjiritjjirit ttakkeumhaeyo",
+      "english": "Keeps zapping, bzzzt like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 153.32,
+      "end": 155.17,
+      "members": [],
+      "original": "(찌릿찌릿 찌릿찌릿 like)",
+      "romanization": "(jjiritjjirit, jjiritjjirit like)",
+      "english": "(Bzzzt bzzzt like)",
+      "adlib": false
+    },
+    {
+      "start": 158.78,
+      "end": 162.41,
+      "members": [],
+      "original": "떠올라 마치 번개처럼 번쩍",
+      "romanization": "tteoolla machi beongae cheoreom beonjjeok",
+      "english": "Rising up and flashing like a thunderbolt",
+      "adlib": false
+    },
+    {
+      "start": 13.45,
+      "end": 14.23,
+      "members": [],
+      "original": "멋대로",
+      "romanization": "meotdaero",
+      "english": "Control",
+      "adlib": true
+    },
+    {
+      "start": 88.98,
+      "end": 89.33,
+      "members": [],
+      "original": "",
+      "romanization": "Uh",
+      "english": "",
+      "adlib": true
     }
   ],
   "audio": "audio/seventeen_thunder.mp3",
