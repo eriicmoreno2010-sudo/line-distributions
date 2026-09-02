@@ -43,498 +43,292 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.76,
+      "end": 12.3,
       "members": [],
-      "original": "(I’ma blingy blingy blingy)",
-      "romanization": "(i’ma blingy blingy blingy)",
-      "english": "(I’ma blingy blingy blingy)",
+      "original": "",
+      "romanization": "(I’ma blingy blingy blingy)",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "터진 불꽃 아래",
-      "romanization": "teojin bulkkot arae",
-      "english": "Under bursting sparks",
+      "start": 12.56,
+      "end": 14.89,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "터진 불꽃 아래, Feelin’ real blingy",
+      "romanization": "teojin bulkkot arae, feelin’ real blingy",
+      "english": "Under bursting sparks, Feelin' real blingy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Feelin’ real blingy",
-      "romanization": "feelin’ real blingy",
-      "english": "Feelin' real blingy",
+      "start": 15.61,
+      "end": 17.9,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "Bringin’ that bounce, make the whole club shimmy",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bringin’ that bounce",
-      "romanization": "bringin’ that bounce",
-      "english": "Bringin’ that bounce",
+      "start": 18.65,
+      "end": 23.9,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "Ooh blingy eyes on my city, I’ma big dawg, 불을 지펴 더 Heat it",
+      "romanization": "ooh blingy eyes on my city, i’ma big dawg, bureul jipyeo deo heat it",
+      "english": "Ooh blingy eyes on my city, I’ma big dawg, Fire it up higher, Heat it",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "make the whole club shimmy",
-      "romanization": "make the whole club shimmy",
-      "english": "make the whole club shimmy",
+      "start": 24.57,
+      "end": 30.34,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "Ooh blingy 심장이 뛰지, 피어오른 Flame, yeah you might get dizzy",
+      "romanization": "ooh blingy simjangi ttwiji, pieoreureun flame, yeah you might get dizzy",
+      "english": "Ooh blingy, heart starts beating, Rising Flame, yeah you might get dizzy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 34.76,
+      "end": 36.13,
       "members": [],
-      "original": "Ooh blingy eyes on my city",
-      "romanization": "ooh blingy eyes on my city",
-      "english": "Ooh blingy eyes on my city",
+      "original": "",
+      "romanization": "(I’ma blingy blingy blingy)",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’ma big dawg",
-      "romanization": "i’ma big dawg",
-      "english": "I’ma big dawg",
+      "start": 36.28,
+      "end": 41.18,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "높이 나는 새도 Drop it, Back to back to back, 끌어당겨 내 올가미",
+      "romanization": "nopi naneun saedo drop it, back to back to back, kkeureodanggyeo nae olgami",
+      "english": "Even birds flying high, they Drop it, Back to back to back, Draw ’em in with my snare",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "불을 지펴 더 Heat it",
-      "romanization": "bureul jipyeo deo heat it",
-      "english": "Fire it up higher, Heat it",
+      "start": 41.45,
+      "end": 46.14,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "하나둘씩 태워 내 비행기는 808, 구름이 내 Wave",
+      "romanization": "hanadulssik taewo nae bihaenggineun 808, gureumi nae wave",
+      "english": "Burn 'em one by one, My plane runs on 808, Clouds are my Wave",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh blingy 심장이 뛰지",
-      "romanization": "ooh blingy simjangi ttwiji",
-      "english": "Ooh blingy, heart starts beating",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "피어오른 Flame",
-      "romanization": "pieoreureun flame",
-      "english": "Rising Flame",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "yeah you might get dizzy",
-      "romanization": "yeah you might get dizzy",
-      "english": "yeah you might get dizzy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I’ma blingy blingy blingy)",
-      "romanization": "(i’ma blingy blingy blingy)",
-      "english": "(I’ma blingy blingy blingy)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "높이 나는 새도 Drop it",
-      "romanization": "nopi naneun saedo drop it",
-      "english": "Even birds flying high, they Drop it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Back to back to back",
-      "romanization": "back to back to back",
-      "english": "Back to back to back",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "끌어당겨 내 올가미",
-      "romanization": "kkeureodanggyeo nae olgami",
-      "english": "Draw ’em in with my snare",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "하나둘씩 태워 내 비행기는 808",
-      "romanization": "hanadulssik taewo nae bihaenggineun 808",
-      "english": "Burn 'em one by one, My plane runs on 808",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "구름이 내 Wave",
-      "romanization": "gureumi nae wave",
-      "english": "Clouds are my Wave",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 46.35,
+      "end": 48.07,
+      "members": [
+        "HAECHAN"
+      ],
       "original": "헤엄치는 Killer whales",
       "romanization": "heomyeochineun killer whales",
       "english": "The swimming Killer whales",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "127 Mob 빠르게보다는 멀리 가",
-      "romanization": "127 mob ppareugebodaneun meolli ga",
-      "english": "127 Mob, We go far, not just fast",
+      "start": 48.22,
+      "end": 52.24,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "127 Mob 빠르게보다는 멀리 가, 시끄럽게 울어 Make it loud",
+      "romanization": "127 mob ppareugebodaneun meolli ga, sikkeureopge ure make it loud",
+      "english": "127 Mob, We go far, not just fast, Ring it louder, Make it loud",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "시끄럽게 울어 Make it loud",
-      "romanization": "sikkeureopge ure make it loud",
-      "english": "Ring it louder, Make it loud",
+      "start": 52.36,
+      "end": 54.2,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "Double the heat, and I double the hype (Right)",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Double the heat",
-      "romanization": "double the heat",
-      "english": "Double the heat",
+      "start": 54.44,
+      "end": 56.55,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "잠은 글렀지, Yeah we keep on buzzin’",
+      "romanization": "jameun geulleotji, yeah we keep on buzzin’",
+      "english": "No sleep tonight, Yeah we keep on buzzin'",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "and I double the hype (Right)",
-      "romanization": "and i double the hype (right)",
-      "english": "and I double the hype (Right)",
+      "start": 56.71,
+      "end": 59.64,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "네 밤을 모두 훔쳐, 속이 꽤 타겠지 Burnin’",
+      "romanization": "ne bameul modu humchyeo, sogi kkwae tagetji burnin’",
+      "english": "Steal your whole night, You’ll be burnin' inside, Burnin’",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잠은 글렀지",
-      "romanization": "jameun geulleotji",
-      "english": "No sleep tonight",
+      "start": 59.82,
+      "end": 67.03,
+      "members": [
+        "YUTA"
+      ],
+      "original": "Keep it classy, 깊게 박힌 나의 심지, 네 목소린 작은 불씨",
+      "romanization": "keep it classy, gipge bakhin naui simji, ne moksorin jageun bulssi",
+      "english": "Keep it classy, My fuse is buried deep, Your voice is a little spark",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Yeah we keep on buzzin’",
-      "romanization": "yeah we keep on buzzin’",
-      "english": "Yeah we keep on buzzin'",
+      "start": 67.19,
+      "end": 72.12,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "더 크게 타오를 때, 펼쳐진 세상을 What you call that",
+      "romanization": "deo keuge taoreul ttae, pyeolchyeojin sesangeul what you call that",
+      "english": "When it burns up brighter, The world unfolds, What you call that",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네 밤을 모두 훔쳐",
-      "romanization": "ne bameul modu humchyeo",
-      "english": "Steal your whole night",
+      "start": 72.24,
+      "end": 73.61,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "What you call that",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 73.76,
+      "end": 75.28,
       "members": [],
-      "original": "속이 꽤 타겠지 Burnin’",
-      "romanization": "sogi kkwae tagetji burnin’",
-      "english": "You’ll be burnin' inside, Burnin’",
+      "original": "",
+      "romanization": "(I’ma blingy blingy blingy)",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Keep it classy",
-      "romanization": "keep it classy",
-      "english": "Keep it classy",
+      "start": 75.56,
+      "end": 77.9,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "터진 불꽃 아래, Feelin’ real blingy",
+      "romanization": "teojin bulkkot arae, feelin’ real blingy",
+      "english": "Under bursting sparks, Feelin' real blingy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "깊게 박힌 나의 심지",
-      "romanization": "gipge bakhin naui simji",
-      "english": "My fuse is buried deep",
+      "start": 78.58,
+      "end": 80.91,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "Bringin’ that bounce, make the whole club shimmy",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네 목소린 작은 불씨",
-      "romanization": "ne moksorin jageun bulssi",
-      "english": "Your voice is a little spark",
+      "start": 81.61,
+      "end": 86.89,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "Ooh blingy eyes on my city, I’ma big dawg, 불을 지펴 더 Heat it",
+      "romanization": "ooh blingy eyes on my city, i’ma big dawg, bureul jipyeo deo heat it",
+      "english": "Ooh blingy eyes on my city, I’ma big dawg, Fire it up higher, Heat it",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 크게 타오를 때",
-      "romanization": "deo keuge taoreul ttae",
-      "english": "When it burns up brighter",
+      "start": 87.59,
+      "end": 93.32,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "Ooh blingy 심장이 뛰지, 피어오른 Flame, yeah you might get dizzy",
+      "romanization": "ooh blingy simjangi ttwiji, pieoreureun flame, yeah you might get dizzy",
+      "english": "Ooh blingy, heart starts beating, Rising Flame, yeah you might get dizzy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.79,
+      "end": 99.13,
       "members": [],
-      "original": "펼쳐진 세상을 What you call that",
-      "romanization": "pyeolchyeojin sesangeul what you call that",
-      "english": "The world unfolds, What you call that",
+      "original": "",
+      "romanization": "(I’ma blingy blingy blingy)",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "What you call that",
-      "romanization": "what you call that",
-      "english": "What you call that",
+      "start": 99.29,
+      "end": 102.14,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "너의 다른 기억들을, 지워버린 Men In black",
+      "romanization": "neoui dareun gieokdeureul, jiweobeorin men in black",
+      "english": "Erase your other, Memories Men in black",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I’ma blingy blingy blingy)",
-      "romanization": "(i’ma blingy blingy blingy)",
-      "english": "(I’ma blingy blingy blingy)",
+      "start": 102.3,
+      "end": 105.09,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "나를 향한 눈들은, 쏟아지는 Avalanche",
+      "romanization": "nareul hyanghan nundeureun, ssodajineun avalanche",
+      "english": "All eyes on me, Like an Avalanche",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "터진 불꽃 아래",
-      "romanization": "teojin bulkkot arae",
-      "english": "Under bursting sparks",
+      "start": 105.24,
+      "end": 108.05,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "모두 얼어버리네, 부러지는 온도계",
+      "romanization": "modu eoreobeorine, bureojineun ondogae",
+      "english": "Everybody freezes up, Thermometer starts to break",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Feelin’ real blingy",
-      "romanization": "feelin’ real blingy",
-      "english": "Feelin' real blingy",
+      "start": 108.22,
+      "end": 111.26,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "Flip it around, 타오르는 빙하",
+      "romanization": "flip it around, taoreuneun bingha",
+      "english": "Flip it around, A glacier burning up",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bringin’ that bounce",
-      "romanization": "bringin’ that bounce",
-      "english": "Bringin’ that bounce",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "make the whole club shimmy",
-      "romanization": "make the whole club shimmy",
-      "english": "make the whole club shimmy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh blingy eyes on my city",
-      "romanization": "ooh blingy eyes on my city",
-      "english": "Ooh blingy eyes on my city",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’ma big dawg",
-      "romanization": "i’ma big dawg",
-      "english": "I’ma big dawg",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "불을 지펴 더 Heat it",
-      "romanization": "bureul jipyeo deo heat it",
-      "english": "Fire it up higher, Heat it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh blingy 심장이 뛰지",
-      "romanization": "ooh blingy simjangi ttwiji",
-      "english": "Ooh blingy, heart starts beating",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "피어오른 Flame",
-      "romanization": "pieoreureun flame",
-      "english": "Rising Flame",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "yeah you might get dizzy",
-      "romanization": "yeah you might get dizzy",
-      "english": "yeah you might get dizzy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I’ma blingy blingy blingy)",
-      "romanization": "(i’ma blingy blingy blingy)",
-      "english": "(I’ma blingy blingy blingy)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너의 다른 기억들을",
-      "romanization": "neoui dareun gieokdeureul",
-      "english": "Erase your other",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "지워버린 Men In black",
-      "romanization": "jiweobeorin men in black",
-      "english": "Memories Men in black",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "나를 향한 눈들은",
-      "romanization": "nareul hyanghan nundeureun",
-      "english": "All eyes on me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "쏟아지는 Avalanche",
-      "romanization": "ssodajineun avalanche",
-      "english": "Like an Avalanche",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "모두 얼어버리네",
-      "romanization": "modu eoreobeorine",
-      "english": "Everybody freezes up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "부러지는 온도계",
-      "romanization": "bureojineun ondogae",
-      "english": "Thermometer starts to break",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Flip it around",
-      "romanization": "flip it around",
-      "english": "Flip it around",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "타오르는 빙하",
-      "romanization": "taoreuneun bingha",
-      "english": "A glacier burning up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "밖으로 불러 모아 더",
-      "romanization": "bakkeuro bulleo moa deo",
-      "english": "Call them out, bring 'em in",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Many many)",
-      "romanization": "(many many)",
-      "english": "(Many many)",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "달궈진 판을 키워 더",
-      "romanization": "dalguojin paneul kiwo deo",
-      "english": "Turn the heat up more",
+      "start": 111.93,
+      "end": 116.86,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "밖으로 불러 모아 더, 달궈진 판을 키워 더",
+      "romanization": "bakkeuro bulleo moa deo, dalguojin paneul kiwo deo",
+      "english": "Call them out, bring 'em in, Turn the heat up more",
       "adlib": false
     },
     {
@@ -547,246 +341,132 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 117.98,
+      "end": 119.74,
+      "members": [
+        "JOHNNY"
+      ],
       "original": "열기로 태워 Like the sun",
       "romanization": "yeolgiro taewo like the sun",
       "english": "Burn it with heat Like the sun",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Get it hot",
-      "romanization": "get it hot",
-      "english": "Get it hot",
+      "start": 119.89,
+      "end": 122.7,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "Get it hot, 빛을 쏘아 내려 Top-down",
+      "romanization": "get it hot, bicheul sswa naeryeo top-down",
+      "english": "Get it hot, Beam the light down, Top-down",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "빛을 쏘아 내려 Top-down",
-      "romanization": "bicheul sswa naeryeo top-down",
-      "english": "Beam the light down, Top-down",
+      "start": 122.84,
+      "end": 130.03,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "Keep it classy, 깊은 어둠마저 Flashy, 숨을 고른 것도 잠시",
+      "romanization": "keep it classy, gipeun eodummado flashy, sumeul gireun geotdo jamsi",
+      "english": "Keep it classy, Even deep darkness gets Flashy, Only a moment to catch my breath",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Keep it classy",
-      "romanization": "keep it classy",
-      "english": "Keep it classy",
+      "start": 130.19,
+      "end": 135.11,
+      "members": [
+        "YUTA"
+      ],
+      "original": "더 붉게 타오를 때, 어둠을 몰아내 What you call that",
+      "romanization": "deo bulge taoreul ttae, eodumeul moranae what you call that",
+      "english": "When it burns a deeper red, Drive the darkness out What you call that",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "깊은 어둠마저 Flashy",
-      "romanization": "gipeun eodummado flashy",
-      "english": "Even deep darkness gets Flashy",
+      "start": 135.24,
+      "end": 136.75,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "What you call that",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 136.81,
+      "end": 138.33,
       "members": [],
-      "original": "숨을 고른 것도 잠시",
-      "romanization": "sumeul gireun geotdo jamsi",
-      "english": "Only a moment to catch my breath",
+      "original": "",
+      "romanization": "(I’ma blingy blingy blingy)",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 붉게 타오를 때",
-      "romanization": "deo bulge taoreul ttae",
-      "english": "When it burns a deeper red",
+      "start": 138.57,
+      "end": 140.93,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "터진 불꽃 아래, Feelin’ real blingy",
+      "romanization": "teojin bulkkot arae, feelin’ real blingy",
+      "english": "Under bursting sparks, Feelin' real blingy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어둠을 몰아내 What you call that",
-      "romanization": "eodumeul moranae what you call that",
-      "english": "Drive the darkness out What you call that",
+      "start": 141.62,
+      "end": 143.9,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "Bringin’ that bounce, make the whole club shimmy",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "What you call that",
-      "romanization": "what you call that",
-      "english": "What you call that",
+      "start": 144.6,
+      "end": 149.87,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "Ooh blingy eyes on my city, I’ma big dawg, 불을 지펴 더 Heat it",
+      "romanization": "ooh blingy eyes on my city, i’ma big dawg, bureul jipyeo deo heat it",
+      "english": "Ooh blingy eyes on my city, I’ma big dawg, Fire it up higher, Heat it",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I’ma blingy blingy blingy)",
-      "romanization": "(i’ma blingy blingy blingy)",
-      "english": "(I’ma blingy blingy blingy)",
+      "start": 150.6,
+      "end": 156.28,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "Ooh blingy 심장이 뛰지, 피어오른 Flame, yeah you might get dizzy",
+      "romanization": "ooh blingy simjangi ttwiji, pieoreureun flame, yeah you might get dizzy",
+      "english": "Ooh blingy, heart starts beating, Rising Flame, yeah you might get dizzy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 160.77,
+      "end": 162.32,
       "members": [],
-      "original": "터진 불꽃 아래",
-      "romanization": "teojin bulkkot arae",
-      "english": "Under bursting sparks",
+      "original": "",
+      "romanization": "(I’ma blingy blingy blingy)",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Feelin’ real blingy",
-      "romanization": "feelin’ real blingy",
-      "english": "Feelin' real blingy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bringin’ that bounce",
-      "romanization": "bringin’ that bounce",
-      "english": "Bringin’ that bounce",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "make the whole club shimmy",
-      "romanization": "make the whole club shimmy",
-      "english": "make the whole club shimmy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh blingy eyes on my city",
-      "romanization": "ooh blingy eyes on my city",
-      "english": "Ooh blingy eyes on my city",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’ma big dawg",
-      "romanization": "i’ma big dawg",
-      "english": "I’ma big dawg",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "불을 지펴 더 Heat it",
-      "romanization": "bureul jipyeo deo heat it",
-      "english": "Fire it up higher, Heat it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh blingy 심장이 뛰지",
-      "romanization": "ooh blingy simjangi ttwiji",
-      "english": "Ooh blingy, heart starts beating",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Got me feelin’ real blingy blingy)",
-      "romanization": "(got me feelin’ real blingy blingy)",
-      "english": "(Got me feelin’ real blingy blingy)",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "피어오른 Flame",
-      "romanization": "pieoreureun flame",
-      "english": "Rising Flame",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "yeah you might get dizzy",
-      "romanization": "yeah you might get dizzy",
-      "english": "yeah you might get dizzy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I’ma blingy blingy blingy)",
-      "romanization": "(i’ma blingy blingy blingy)",
-      "english": "(I’ma blingy blingy blingy)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "It’s a free fire",
-      "romanization": "it’s a free fire",
-      "english": "It’s a free fire",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bring the raw heat",
-      "romanization": "bring the raw heat",
-      "english": "Bring the raw heat",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Bring the heat)",
-      "romanization": "(bring the heat)",
-      "english": "(Bring the heat)",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "거친 Blast eyes",
-      "romanization": "geochin blast eyes",
-      "english": "Wild Blast eyes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "옮겨붙지",
-      "romanization": "옮겨붙지",
-      "english": "Catching on",
+      "start": 162.62,
+      "end": 167.84,
+      "members": [
+        "TAEYONG",
+        "YUTA"
+      ],
+      "original": "It’s a free fire, Bring the raw heat, 거친 Blast eyes, 옮겨붙지",
+      "romanization": "it’s a free fire, bring the raw heat, geochin blast eyes, omgyeobutji",
+      "english": "It’s a free fire, Bring the raw heat, Wild Blast eyes, Catching on",
       "adlib": false
     },
     {
@@ -799,66 +479,26 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "높아지는 온도 Gauge",
-      "romanization": "nopajineun ondo gauge",
-      "english": "Rising temperature Gauge",
+      "start": 170.17,
+      "end": 174.33,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "높아지는 온도 Gauge, What you call that",
+      "romanization": "nopajineun ondo gauge, what you call that",
+      "english": "Rising temperature Gauge, What you call that",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "What you call that",
-      "romanization": "what you call that",
-      "english": "What you call that",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "It’s a free vibe",
-      "romanization": "it’s a free vibe",
-      "english": "It’s a free vibe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bring the mad heat",
-      "romanization": "bring the mad heat",
-      "english": "Bring the mad heat",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Bring the heat)",
-      "romanization": "(bring the heat)",
-      "english": "(Bring the heat)",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Drop the beat bomb",
-      "romanization": "drop the beat bomb",
-      "english": "Drop the beat bomb",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "새로운 Scene",
-      "romanization": "saeroun scene",
-      "english": "A brand-new Scene",
+      "start": 174.61,
+      "end": 179.91,
+      "members": [
+        "JOHNNY",
+        "JAEHYUN"
+      ],
+      "original": "It’s a free vibe, Bring the mad heat, Drop the beat bomb, 새로운 Scene",
+      "romanization": "it’s a free vibe, bring the mad heat, drop the beat bomb, saeroun scene",
+      "english": "It’s a free vibe, Bring the mad heat, Drop the beat bomb, A brand-new Scene",
       "adlib": false
     },
     {
@@ -871,21 +511,14 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "가빠 오는 너의 Breath",
-      "romanization": "gappa oneun neoui breath",
-      "english": "I feel your racing Breath",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "What you call that",
-      "romanization": "what you call that",
-      "english": "What you call that",
+      "start": 182.12,
+      "end": 186.38,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "가빠 오는 너의 Breath, What you call that",
+      "romanization": "gappa oneun neoui breath, what you call that",
+      "english": "I feel your racing Breath, What you call that",
       "adlib": false
     },
     {
@@ -898,39 +531,47 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Blingy",
-      "romanization": "blingy",
-      "english": "Blingy",
+      "start": 188.85,
+      "end": 189.52,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Blingy",
-      "romanization": "blingy",
-      "english": "Blingy",
+      "start": 191.86,
+      "end": 192.52,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Blingy",
-      "romanization": "blingy",
-      "english": "Blingy",
+      "start": 194.87,
+      "end": 195.56,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’ma blingy blingy blingy",
-      "romanization": "i’ma blingy blingy blingy",
-      "english": "I’ma blingy blingy blingy",
+      "start": 196.73,
+      "end": 198.72,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "I’ma blingy blingy blingy",
+      "english": "",
       "adlib": false
     }
   ]
