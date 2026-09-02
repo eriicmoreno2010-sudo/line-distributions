@@ -109,5 +109,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/seventeen_thunder.mp3"
+  "audio": "audio/seventeen_thunder.mp3",
+  "audioOffset": 0.05
 }
