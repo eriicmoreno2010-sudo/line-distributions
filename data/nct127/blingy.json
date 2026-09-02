@@ -181,8 +181,8 @@
       "adlib": false
     },
     {
-      "start": 52.36,
-      "end": 54.2,
+      "start": 52.4,
+      "end": 53.89,
       "members": [
         "TAEYONG"
       ],
@@ -237,6 +237,24 @@
       "members": [
         "YUTA"
       ],
+      "voice": [
+        [
+          59.89,
+          60.2
+        ],
+        [
+          60.33,
+          61.2
+        ],
+        [
+          62.1,
+          64.13
+        ],
+        [
+          65.14,
+          67.31
+        ]
+      ],
       "original": "Keep it classy, 깊게 박힌 나의 심지, 네 목소린 작은 불씨",
       "romanization": "keep it classy, gipge bakhin naui simji, ne moksorin jageun bulssi",
       "english": "Keep it classy, My fuse is buried deep, Your voice is a little spark",
@@ -248,6 +266,16 @@
       "members": [
         "HAECHAN"
       ],
+      "voice": [
+        [
+          67.22,
+          68.98
+        ],
+        [
+          69.28,
+          72.27
+        ]
+      ],
       "original": "더 크게 타오를 때, 펼쳐진 세상을 What you call that",
       "romanization": "deo keuge taoreul ttae, pyeolchyeojin sesangeul what you call that",
       "english": "When it burns up brighter, The world unfolds, What you call that",
@@ -258,6 +286,12 @@
       "end": 73.61,
       "members": [
         "HAECHAN"
+      ],
+      "voice": [
+        [
+          72.27,
+          73.69
+        ]
       ],
       "original": "",
       "romanization": "What you call that",
@@ -332,6 +366,12 @@
       "members": [
         "TAEYONG"
       ],
+      "voice": [
+        [
+          99.28,
+          102.24
+        ]
+      ],
       "original": "너의 다른 기억들을, 지워버린 Men In black",
       "romanization": "neoui dareun gieokdeureul, jiweobeorin men in black",
       "english": "Erase your other, Memories Men in black",
@@ -342,6 +382,12 @@
       "end": 105.09,
       "members": [
         "TAEYONG"
+      ],
+      "voice": [
+        [
+          102.27,
+          105.26
+        ]
       ],
       "original": "나를 향한 눈들은, 쏟아지는 Avalanche",
       "romanization": "nareul hyanghan nundeureun, ssodajineun avalanche",
@@ -354,6 +400,16 @@
       "members": [
         "TAEYONG"
       ],
+      "voice": [
+        [
+          105.27,
+          106.65
+        ],
+        [
+          106.83,
+          108.18
+        ]
+      ],
       "original": "모두 얼어버리네, 부러지는 온도계",
       "romanization": "modu eoreobeorine, bureojineun ondogae",
       "english": "Everybody freezes up, Thermometer starts to break",
@@ -365,6 +421,28 @@
       "members": [
         "TAEYONG"
       ],
+      "voice": [
+        [
+          108.28,
+          108.46
+        ],
+        [
+          108.65,
+          108.83
+        ],
+        [
+          109.08,
+          109.26
+        ],
+        [
+          109.49,
+          109.64
+        ],
+        [
+          109.79,
+          111.25
+        ]
+      ],
       "original": "Flip it around, 타오르는 빙하",
       "romanization": "flip it around, taoreuneun bingha",
       "english": "Flip it around, A glacier burning up",
@@ -375,6 +453,16 @@
       "end": 116.86,
       "members": [
         "JOHNNY"
+      ],
+      "voice": [
+        [
+          112.1,
+          113.89
+        ],
+        [
+          115,
+          116.95
+        ]
       ],
       "original": "밖으로 불러 모아 더, 달궈진 판을 키워 더",
       "romanization": "bakkeuro bulleo moa deo, dalguojin paneul kiwo deo",
@@ -563,6 +651,12 @@
       "members": [
         "JOHNNY"
       ],
+      "voice": [
+        [
+          118,
+          119.88
+        ]
+      ],
       "original": "열기로 태워 Like the sun",
       "romanization": "yeolgiro taewo like the sun",
       "english": "Burn it with heat Like the sun",
@@ -573,6 +667,12 @@
       "end": 122.7,
       "members": [
         "HAECHAN"
+      ],
+      "voice": [
+        [
+          119.87,
+          122.75
+        ]
       ],
       "original": "Get it hot, 빛을 쏘아 내려 Top-down",
       "romanization": "get it hot, bicheul sswa naeryeo top-down",
@@ -585,6 +685,24 @@
       "members": [
         "JAEHYUN"
       ],
+      "voice": [
+        [
+          122.91,
+          123.25
+        ],
+        [
+          123.4,
+          124.43
+        ],
+        [
+          125.11,
+          127.35
+        ],
+        [
+          128.08,
+          130.18
+        ]
+      ],
       "original": "Keep it classy, 깊은 어둠마저 Flashy, 숨을 고른 것도 잠시",
       "romanization": "keep it classy, gipeun eodummado flashy, sumeul gireun geotdo jamsi",
       "english": "Keep it classy, Even deep darkness gets Flashy, Only a moment to catch my breath",
@@ -596,6 +714,16 @@
       "members": [
         "YUTA"
       ],
+      "voice": [
+        [
+          130.17,
+          132.09
+        ],
+        [
+          132.3,
+          135.26
+        ]
+      ],
       "original": "더 붉게 타오를 때, 어둠을 몰아내 What you call that",
       "romanization": "deo bulge taoreul ttae, eodumeul moranae what you call that",
       "english": "When it burns a deeper red, Drive the darkness out What you call that",
@@ -606,6 +734,12 @@
       "end": 136.75,
       "members": [
         "YUTA"
+      ],
+      "voice": [
+        [
+          135.25,
+          136.76
+        ]
       ],
       "original": "",
       "romanization": "What you call that",
@@ -681,6 +815,16 @@
         "TAEYONG",
         "YUTA"
       ],
+      "voice": [
+        [
+          162.66,
+          164.88
+        ],
+        [
+          165.57,
+          167.88
+        ]
+      ],
       "original": "It’s a free fire, Bring the raw heat, 거친 Blast eyes, 옮겨붙지",
       "romanization": "it’s a free fire, bring the raw heat, geochin blast eyes, omgyeobutji",
       "english": "It’s a free fire, Bring the raw heat, Wild Blast eyes, Catching on",
@@ -725,6 +869,16 @@
       "members": [
         "HAECHAN"
       ],
+      "voice": [
+        [
+          170.14,
+          171.76
+        ],
+        [
+          172.71,
+          174.42
+        ]
+      ],
       "original": "높아지는 온도 Gauge, What you call that",
       "romanization": "nopajineun ondo gauge, what you call that",
       "english": "Rising temperature Gauge, What you call that",
@@ -736,6 +890,16 @@
       "members": [
         "JOHNNY",
         "JAEHYUN"
+      ],
+      "voice": [
+        [
+          174.6,
+          176.82
+        ],
+        [
+          177.62,
+          179.88
+        ]
       ],
       "original": "It’s a free vibe, Bring the mad heat, Drop the beat bomb, 새로운 Scene",
       "romanization": "it’s a free vibe, bring the mad heat, drop the beat bomb, saeroun scene",
@@ -758,6 +922,16 @@
       "end": 186.38,
       "members": [
         "HAECHAN"
+      ],
+      "voice": [
+        [
+          182.14,
+          183.69
+        ],
+        [
+          184.74,
+          186.39
+        ]
       ],
       "original": "가빠 오는 너의 Breath, What you call that",
       "romanization": "gappa oneun neoui breath, what you call that",
@@ -803,6 +977,12 @@
       "members": [
         "TAEYONG"
       ],
+      "voice": [
+        [
+          191.88,
+          192.51
+        ]
+      ],
       "original": "",
       "romanization": "Blingy",
       "english": "",
@@ -824,6 +1004,12 @@
       "end": 198.72,
       "members": [
         "JAEHYUN"
+      ],
+      "voice": [
+        [
+          196.73,
+          198.56
+        ]
       ],
       "original": "",
       "romanization": "I’ma blingy blingy blingy",
