@@ -332,12 +332,179 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Heat it heat it)",
-      "romanization": "(heat it heat it)",
-      "english": "(Heat it heat it)",
+      "start": 19.36,
+      "end": 19.8,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 20.92,
+      "end": 21.25,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "Hah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 25.41,
+      "end": 25.8,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 53.92,
+      "end": 54.25,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "(Right)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 82.4,
+      "end": 82.76,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 83.88,
+      "end": 84.26,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "Hah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 88.39,
+      "end": 88.74,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 113.89,
+      "end": 114.73,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "(Many many)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 116.86,
+      "end": 117.64,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "(Heat it heat it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 143.91,
+      "end": 144.75,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "Oh yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 145.39,
+      "end": 145.77,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 146.95,
+      "end": 147.27,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "Hah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 151.41,
+      "end": 151.77,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "Blingy",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 151.4,
+      "end": 153.83,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "(Got me feelin real Blingy Blingy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 149.89,
+      "end": 150.7,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "Woo",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 161.89,
+      "end": 162.58,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "Bring the heat",
+      "english": "",
       "adlib": true
     },
     {
@@ -470,12 +637,36 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 164.83,
+      "end": 165.62,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "(Bring the heat)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 167.87,
+      "end": 168.62,
+      "members": [
+        "NCT 127"
+      ],
       "original": "(더 깊이)",
       "romanization": "(deo gipi)",
       "english": "(deeper in)",
+      "adlib": true
+    },
+    {
+      "start": 178.77,
+      "end": 180.23,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "새로운 Scene",
+      "romanization": "saeroun scene",
+      "english": "A brand-new Scene",
       "adlib": true
     },
     {
@@ -502,12 +693,14 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(What I mean)",
-      "romanization": "(what i mean)",
-      "english": "(What I mean)",
+      "start": 179.89,
+      "end": 180.61,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "(What I mean)",
+      "english": "",
       "adlib": true
     },
     {
@@ -522,12 +715,25 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Bring the heat)",
-      "romanization": "(bring the heat)",
-      "english": "(Bring the heat)",
+      "start": 176.91,
+      "end": 177.64,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "(Bring the heat)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 185.9,
+      "end": 186.6,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "",
+      "romanization": "(Bring the heat)",
+      "english": "",
       "adlib": true
     },
     {
