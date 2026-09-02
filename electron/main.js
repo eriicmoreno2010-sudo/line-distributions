@@ -788,7 +788,9 @@ function parseSubs(raw){
     if(/^\d+$/.test(l)) continue;                 // índice de cue (SRT)
     if(l.includes("-->")) continue;               // línea de tiempos
     if(/^(WEBVTT|Kind:|Language:|NOTE\b)/i.test(l)) continue;
-    l = l.replace(/<[^>]+>/g, "").replace(/\{[^}]+\}/g, "").trim(); // quitar etiquetas
+    l = l.replace(/<[^>]+>/g, "").replace(/\{[^}]+\}/g, "");   // quitar etiquetas
+    // códigos de subtítulos ASS/SSA: \N y \n = salto de línea, \h = espacio duro
+    l = l.replace(/\\[Nn]/g, " ").replace(/\\h/g, " ").replace(/\s{2,}/g, " ").trim();
     if(l) out.push(l);
   }
   const dedup = [];
