@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "HBD",
   "video": "videos/seventeen_hbd.mp4",
-  "duration": 0,
+  "duration": 158.466633,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -93,13 +93,488 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 0.62,
+      "end": 3.99,
+      "members": [
+        "MINGYU"
+      ],
+      "original": "내일 없는 매일을 살고 있잖아",
+      "romanization": "naeil eomneun maeireul salgo itjana",
+      "english": "I'm living every day as if there were no tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 4.11,
+      "end": 7.63,
+      "members": [
+        "MINGYU"
+      ],
+      "original": "오늘 하룬 살고픈 대로 살 거야",
+      "romanization": "oneul harun salgopeun daero sal geoya",
+      "english": "Today, I'll live the day however I want",
+      "adlib": false
+    },
+    {
+      "start": 7.98,
+      "end": 12.65,
+      "members": [
+        "MINGYU"
+      ],
+      "original": "촛불 켜고서 소원을 빌어 다 **이뤄질 거야@THE8**",
+      "romanization": "chotbul kyeogeoseo sowoneul bireo **da irwojil geoya@THE8**",
+      "english": "I'll light the candles and make a wish, **It'll all come true@THE8**",
+      "adlib": false
+    },
+    {
+      "start": 12.8,
+      "end": 14.46,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "Happy birthday to you",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 14.61,
+      "end": 17.81,
+      "members": [
+        "VERNON"
+      ],
+      "original": "마음처럼 되는 건 이 세상엔 없었어",
+      "romanization": "maeumcheoreom doeneun geon i sesangen eopseosseo",
+      "english": "Nothing in this world ever went the way I wanted",
+      "adlib": false
+    },
+    {
+      "start": 17.99,
+      "end": 21.03,
+      "members": [
+        "VERNON"
+      ],
+      "original": "골치 아픈 얘긴 껌딱지 같잖아",
+      "romanization": "golchi apeun yaegin kkeomttakji gatjana",
+      "english": "Those troublesome stories are like gum stuck to me",
+      "adlib": false
+    },
+    {
+      "start": 21.51,
+      "end": 24.37,
+      "members": [
+        "VERNON"
+      ],
+      "original": "힘내라는 말 위로 되지 않아 꺼져",
+      "romanization": "himnaeraneun mal wiro doeji ana kkeojyeo",
+      "english": "Telling me to cheer up doesn't comfort me",
+      "adlib": false
+    },
+    {
+      "start": 24.52,
+      "end": 27.64,
+      "members": [
+        "VERNON"
+      ],
+      "original": "말 같잖은 소린 그만해 해 해",
+      "romanization": "mal gatjanheun sorin geumanhae hae hae",
+      "english": "So screw it, Stop saying things that don't even make sense, hey hey",
+      "adlib": false
+    },
+    {
+      "start": 27.76,
+      "end": 31.25,
+      "members": [
+        "THE8"
+      ],
+      "original": "손가락질 진절머리 났어",
+      "romanization": "songarakjil jinjeolmeori nasseo",
+      "english": "I'm sick and tired of people pointing fingers",
+      "adlib": false
+    },
+    {
+      "start": 31.37,
+      "end": 34.61,
+      "members": [
+        "THE8"
+      ],
+      "original": "맘 같아선 한 대 치고 싶어",
+      "romanization": "mam gataseon han dae chigo sipeo",
+      "english": "If I had it my way, I'd like to punch them once",
+      "adlib": false
+    },
+    {
+      "start": 34.79,
+      "end": 38.01,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "그래도 난 다시 태어나도",
+      "romanization": "geuraedo nan dasi taeeonado",
+      "english": "But even if I were born again",
+      "adlib": false
+    },
+    {
+      "start": 38.2,
+      "end": 42.19,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "지금의 나로 살고 싶어 어 어",
+      "romanization": "jigeumui naro salgo sipeo eo eo",
+      "english": "I'd still want to live as the person I am now, oh oh",
+      "adlib": false
+    },
+    {
+      "start": 42.34,
+      "end": 45.68,
+      "members": [
+        "SEUNGKWAN"
+      ],
+      "original": "내일 없는 매일을 살고 있잖아",
+      "romanization": "naeil eomneun maeireul salgo itjana",
+      "english": "I'm living every day as if there were no tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 45.84,
+      "end": 49.45,
+      "members": [
+        "SEUNGKWAN"
+      ],
+      "original": "오늘 하룬 살고픈 대로 살 거야",
+      "romanization": "oneul harun salgopeun daero sal geoya",
+      "english": "Today, I'll live the day however I want",
+      "adlib": false
+    },
+    {
+      "start": 49.75,
+      "end": 54.39,
+      "members": [
+        "SEUNGKWAN"
+      ],
+      "original": "촛불 켜고서 소원을 빌어 **다 이뤄질 거야@DINO**",
+      "romanization": "chotbul kyeogeoseo sowoneul bireo **da irwojil geoya@DINO**",
+      "english": "I'll light the candles and make a wish, **It'll all come true@DINO**",
+      "adlib": false
+    },
+    {
+      "start": 54.54,
+      "end": 56.73,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "Happy birthday to you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 61.43,
+      "end": 65.46,
+      "members": [
+        "DK"
+      ],
+      "original": "",
+      "romanization": "Happy birthday to you you you you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 68.46,
+      "end": 70.11,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Happy birthday to you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 70.26,
+      "end": 73.49,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "착해빠진 멍청이라 욕먹으면 어때",
+      "romanization": "chakhaeppajin meongcheongira yokmeogeumyeon eottae",
+      "english": "So what if people call me a foolish idiot for being too nice?",
+      "adlib": false
+    },
+    {
+      "start": 73.67,
+      "end": 76.98,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "하나부터 열까지 강요받는 세상에",
+      "romanization": "hanabuteo yeolkkaji gangyobatneun sesange",
+      "english": "In a world where everything from one to ten is forced upon you",
+      "adlib": false
+    },
+    {
+      "start": 77.16,
+      "end": 80.31,
+      "members": [
+        "DINO"
+      ],
+      "original": "뜨거워진 내 맘을 얕잡아봐선 안 돼",
+      "romanization": "tteugeowojin nae mameul yatjapabwaseon an dwae",
+      "english": "You shouldn't underestimate my burning heart",
+      "adlib": false
+    },
+    {
+      "start": 80.43,
+      "end": 83.96,
+      "members": [
+        "DINO"
+      ],
+      "original": "끝날 때까지 끝까지 run run run",
+      "romanization": "kkeutnal ttaekkaji kkeutkkaji run run run",
+      "english": "Until it ends, all the way to the end, Run run run",
+      "adlib": false
+    },
+    {
+      "start": 84.08,
+      "end": 89.16,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "맘대로 내 맘대로, 오늘은 내 맘대로",
+      "romanization": "mamdaero nae mamdaero, oneureun nae mamdaero",
+      "english": "My way, my own way, Today, my way",
+      "adlib": false
+    },
+    {
+      "start": 91.44,
+      "end": 96.13,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "촛불 켜고서 소원을 빌어 **다 이뤄질 거야@JUN**",
+      "romanization": "chotbul kyeogeoseo sowoneul bireo **da irwojil geoya@JUN**",
+      "english": "I'll light the candles and make a wish, **It'll all come true@JUN**",
+      "adlib": false
+    },
+    {
+      "start": 96.26,
+      "end": 98.57,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "Happy birthday to you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 103.24,
+      "end": 107.25,
+      "members": [
+        "DK"
+      ],
+      "original": "",
+      "romanization": "Happy birthday to you you you you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 110.16,
+      "end": 112.53,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "",
+      "romanization": "Happy birthday to you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 112.74,
+      "end": 119.45,
+      "members": [
+        "WOOZI"
+      ],
+      "original": "오늘은 날 위한 나만의 celebration night",
+      "romanization": "oneureun nal wihan namaneui celebration night",
+      "english": "Tonight is my own celebration night, just for me",
+      "adlib": false
+    },
+    {
+      "start": 119.69,
+      "end": 123.99,
+      "members": [
+        "WOOZI"
+      ],
+      "original": "멈추지 않을 거야",
+      "romanization": "meomchuji aneul geoya",
+      "english": "I won't stop",
+      "adlib": false
+    },
+    {
+      "start": 124.14,
+      "end": 126.45,
+      "members": [
+        "DK"
+      ],
+      "original": "",
+      "romanization": "It’s like HAPPY BURSTDAY yeah",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 126.88,
+      "end": 131.63,
+      "members": [
+        "DK"
+      ],
+      "original": "이렇게 계속 불 불 불 지필래",
+      "romanization": "ireoke gyesok bul bul bul jipillae",
+      "english": "I wanna keep lighting it up, up, up like this",
+      "adlib": false
+    },
+    {
+      "start": 132.08,
+      "end": 138.7,
+      "members": [
+        "JUN"
+      ],
+      "original": "I don’t care 어지럽게 오늘 밤은 미쳐버릴래",
+      "romanization": "i don't care eojireopge oneul bameun michyeobeorillae",
+      "english": "I don't care, Tonight, I wanna go crazy",
+      "adlib": false
+    },
+    {
+      "start": 139.12,
+      "end": 139.81,
+      "members": [
+        "JUN"
+      ],
+      "original": "",
+      "romanization": "Let’s go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 140.19,
+      "end": 143.48,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "Boom Brr Like it 오늘 밤은 미쳐 like this",
+      "romanization": "boom brr like it oneul bameun michyeo like this",
+      "english": "Boom Brr Like It, Tonight, I'm going crazy like this",
+      "adlib": false
+    },
+    {
+      "start": 143.67,
+      "end": 144.65,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "Boom Brr Like it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 147.13,
+      "end": 150.42,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "Boom Brr Like it 오늘 밤은 미쳐 like this",
+      "romanization": "boom brr like it oneul bameun michyeo like this",
+      "english": "Boom Brr Like It, Tonight, I'm going crazy like this",
+      "adlib": false
+    },
+    {
+      "start": 150.63,
+      "end": 151.68,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "Boom Brr Like it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 151.94,
+      "end": 154.39,
+      "members": [
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "Happy birthday to you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 63.33,
+      "end": 65.7,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "you you you you",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 85.87,
+      "end": 87.11,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "Yeah yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 89.11,
+      "end": 89.35,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "Yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 89.32,
+      "end": 90.53,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "Yeah yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 104.96,
+      "end": 107.21,
+      "members": [
+        "WOOZI"
+      ],
+      "original": "",
+      "romanization": "you you you you",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 144.94,
+      "end": 146.71,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "(hey hey hey hey)",
+      "english": "",
+      "adlib": true
     }
   ],
   "audio": "audio/seventeen_hbd.mp3",
