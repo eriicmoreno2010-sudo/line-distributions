@@ -31,7 +31,7 @@
   #donutwrap{ flex:1 1 auto; height:100%; display:flex; align-items:center; justify-content:center; }
   /* tamaño fijo y cuadrado: la geometría (incl. la porción que sobresale) cabe entera
      dentro del viewBox, así que nada desborda ni recoloca (evita el micro-salto). */
-  #donut{ height:min(84vh,50vw); width:min(84vh,50vw); flex:none; }  /* donut grande */
+  #donut{ height:min(92vh,58vw); width:min(92vh,58vw); flex:none; }  /* donut MÁS grande */
   #donut path{ stroke:var(--bg); stroke-width:1.5; }
   #centerlbl{ font-weight:900; fill:var(--text); text-anchor:middle; }
   #centersub{ fill:var(--text2); text-anchor:middle; font-weight:700; }
@@ -74,6 +74,6 @@
   </div>
 
   <video id="vid" style="display:none"></video>
-<script src="js/donut.js"></script>
+<script src="js/donut.js?v=2"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@
 (function(){
   const $ = s => document.querySelector(s);
   const TAU = Math.PI * 2;
-  const CX = 250, CY = 250, R = 175, r = 98, POP_R = 16;   // POP: solo crece el radio EXTERIOR (sobresale por arriba); el interior no se mueve
+  const CX = 250, CY = 250, R = 205, r = 118, POP_R = 16;  // donut MÁS GRANDE (llena mejor el viewBox 500). POP: solo crece el radio EXTERIOR (sobresale por arriba); el interior no se mueve
+  const GAP = 0.03;   // separación angular UNIFORME entre porciones (rad); misma distancia entre todas, no depende del tamaño
 
   const svgNS = "http://www.w3.org/2000/svg";
   const slicesG = $("#slices"), legendEl = $("#legend");
@@ -120,7 +121,11 @@
       const frac = total > 0 ? secs[i]/total : 0;
       const a0 = cum*TAU, a1 = (cum + Math.min(frac, 0.99999))*TAU; cum += frac;
       const outerR = R + m.pop*POP_R;                 // crece hacia fuera; r (interior) fijo
-      m.path.setAttribute("d", frac > 0 ? ringSlice(CX,CY,r,outerR,a0,a1) : "");
+      // separación UNIFORME: recorta el MISMO ángulo (GAP/2) a cada lado de cada
+      // porción → el hueco entre porciones vecinas es siempre GAP, sin importar
+      // su tamaño (antes solo había un borde y la POP creaba huecos desiguales).
+      const pad = Math.min(GAP/2, (a1 - a0) * 0.4);
+      m.path.setAttribute("d", frac > 0 ? ringSlice(CX,CY,r,outerR,a0+pad,a1-pad) : "");
       m.path.setAttribute("opacity", frac > 0 ? 1 : 0);
       m.val.innerHTML = secs[i].toFixed(2) + "s &nbsp; <b>" + (total>0 ? (secs[i]/total*100).toFixed(2) : "0.00") + "%</b>";
       m.row.classList.toggle("sing", on);

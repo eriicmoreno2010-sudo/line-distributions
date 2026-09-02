@@ -30,6 +30,30 @@ function joinNames(names){
     return names.slice(0, -1).join(", ") + "  &  " + names[names.length - 1];
 }
 
+/* Nombres de los cantantes marcados con @ dentro de un **trozo** de la línea
+   (p. ej. "**ALO ALO@JUN**" → ["JUN"]). Solo miembros reales, sin "todos/all".
+   Sirve para mostrarlos junto al miembro de la línea como "JUN / THE8" (con "/"
+   para distinguirlo de "JUN & THE8", que es cuando dos cantan la línea entera). */
+function partialSingers(line){
+    if(typeof SONG === "undefined" || !SONG || !SONG.members) return [];
+    const found = [];
+    [line.original, line.romanization, line.english].forEach(t => {
+        if(typeof t !== "string") return;
+        const parts = t.split("**");
+        for(let i = 1; i < parts.length; i += 2){        // impares = trozos marcados
+            const chunk = parts[i];
+            const at = chunk.lastIndexOf("@");
+            if(at <= 0) continue;
+            chunk.slice(at + 1).split(",").map(s => s.trim()).filter(Boolean).forEach(n => {
+                if(/^(all|todos|grupo)$/i.test(n)) return;
+                const m = SONG.members.find(mm => mm.name.toLowerCase() === n.toLowerCase());
+                if(m && !found.some(x => x.toLowerCase() === m.name.toLowerCase())) found.push(m.name);
+            });
+        }
+    });
+    return found;
+}
+
 /* Shrink a lyric line's font until it fits on ONE row (detected by height). */
 function fitField(el){
     if(!el || !(el.textContent || "").trim()) return;
@@ -276,7 +300,9 @@ const Lyrics = {
         const c = this.colorsFor(line);
         this.centralTextCleared = false;
 
-        const membersKey = line.members.join("|");
+        const linePartials = partialSingers(line)
+            .filter(n => !line.members.some(m => m.toLowerCase() === n.toLowerCase()));
+        const membersKey = line.members.join("|") + "@@" + linePartials.join("|");
         const sameName = this.lastCentralMembers === membersKey;
         this.lastCentralMembers = membersKey;
 
@@ -333,7 +359,23 @@ const Lyrics = {
 
             if(!sameName){
                 clearPaint(e.member);
-                if(c.hasPartial){
+                const colOf = name => {
+                    const m = SONG.members.find(mm => mm.name.toLowerCase() === name.toLowerCase());
+                    return m ? m.color : c.accent;
+                };
+                if(linePartials.length){
+                    // "JUN / THE8": el/los cantante(s) del @ (cada uno en su color) +
+                    // "/" + el/los miembro(s) de la línea (su color). El "/" lo
+                    // distingue del "&" (dos cantando la línea entera).
+                    e.member.style.background = ""; e.member.style.webkitBackgroundClip = "";
+                    e.member.style.backgroundClip = ""; e.member.style.color = "";
+                    e.member.style.textShadow = "";        // sólido -> sombra/contorno normal
+                    const span = (n) => `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
+                    const part = linePartials.map(span).join('<span style="color:inherit"> &amp; </span>');
+                    const main = line.members.map(span).join('<span style="color:inherit">  &amp;  </span>');
+                    e.member.innerHTML = part +
+                        '<span style="opacity:.6;font-weight:800;padding:0 .18em"> / </span>' + main;
+                } else if(c.hasPartial){
                     e.member.textContent = joinNames(line.members);
                     e.member.style.background = c.sharedGradient;
                     e.member.style.webkitBackgroundClip = "text";
