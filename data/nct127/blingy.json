@@ -475,6 +475,12 @@
       "members": [
         "TAEYONG"
       ],
+      "voice": [
+        [
+          19.42,
+          19.86
+        ]
+      ],
       "original": "",
       "romanization": "Blingy",
       "english": "",
@@ -489,7 +495,13 @@
       "original": "",
       "romanization": "Hah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          20.95,
+          21.27
+        ]
+      ]
     },
     {
       "start": 25.41,
@@ -500,7 +512,13 @@
       "original": "",
       "romanization": "Blingy",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          25.43,
+          25.84
+        ]
+      ]
     },
     {
       "start": 53.92,
@@ -511,7 +529,13 @@
       "original": "",
       "romanization": "(Right)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          53.91,
+          54.2
+        ]
+      ]
     },
     {
       "start": 82.4,
@@ -522,7 +546,13 @@
       "original": "",
       "romanization": "Blingy",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          82.43,
+          82.75
+        ]
+      ]
     },
     {
       "start": 83.88,
@@ -533,7 +563,13 @@
       "original": "",
       "romanization": "Hah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          83.96,
+          84.25
+        ]
+      ]
     },
     {
       "start": 88.39,
@@ -544,7 +580,13 @@
       "original": "",
       "romanization": "Blingy",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          88.41,
+          88.82
+        ]
+      ]
     },
     {
       "start": 113.89,
@@ -577,7 +619,13 @@
       "original": "",
       "romanization": "Oh yeah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          143.92,
+          144.71
+        ]
+      ]
     },
     {
       "start": 145.39,
@@ -588,7 +636,13 @@
       "original": "",
       "romanization": "Blingy",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          145.43,
+          145.8
+        ]
+      ]
     },
     {
       "start": 146.95,
@@ -599,7 +653,13 @@
       "original": "",
       "romanization": "Hah",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          146.92,
+          147.22
+        ]
+      ]
     },
     {
       "start": 151.41,
@@ -610,7 +670,13 @@
       "original": "",
       "romanization": "Blingy",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          151.42,
+          151.81
+        ]
+      ]
     },
     {
       "start": 151.4,
@@ -621,7 +687,13 @@
       "original": "",
       "romanization": "(Got me feelin real Blingy Blingy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          151.42,
+          153.81
+        ]
+      ]
     },
     {
       "start": 149.89,
@@ -632,7 +704,13 @@
       "original": "",
       "romanization": "Woo",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          149.9,
+          150.75
+        ]
+      ]
     },
     {
       "start": 161.89,
@@ -643,7 +721,13 @@
       "original": "",
       "romanization": "Bring the heat",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          161.91,
+          162.61
+        ]
+      ]
     },
     {
       "start": 117.98,
@@ -861,7 +945,13 @@
       "original": "새로운 Scene",
       "romanization": "saeroun scene",
       "english": "A brand-new Scene",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          178.76,
+          180.18
+        ]
+      ]
     },
     {
       "start": 170.17,
