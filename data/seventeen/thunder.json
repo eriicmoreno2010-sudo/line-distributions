@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "THUNDER",
   "video": "videos/seventeen_thunder.mp4",
-  "duration": 0,
+  "duration": 164.6645,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -108,5 +108,6 @@
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/seventeen_thunder.mp3"
 }
