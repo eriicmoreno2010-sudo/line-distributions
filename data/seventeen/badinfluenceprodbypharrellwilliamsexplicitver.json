@@ -316,7 +316,7 @@
       "start": 41.01,
       "end": 41.88,
       "members": [
-        "WONWOO"
+        "VERNON"
       ],
       "original": "",
       "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
@@ -333,7 +333,7 @@
       "start": 32.01,
       "end": 32.91,
       "members": [
-        "WONWOO"
+        "VERNON"
       ],
       "original": "",
       "romanization": "Let’s go out",
@@ -489,7 +489,9 @@
     {
       "start": 49.41,
       "end": 52.53,
-      "members": [],
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -868,7 +870,7 @@
       "original": "",
       "romanization": "Sometimes you wanna luck up",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           99.08,
@@ -886,7 +888,7 @@
       "original": "",
       "romanization": "You get frustrated, call me stuck up",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           103.04,
@@ -904,7 +906,7 @@
       "original": "",
       "romanization": "But once you bring the plug up",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           107.01,
