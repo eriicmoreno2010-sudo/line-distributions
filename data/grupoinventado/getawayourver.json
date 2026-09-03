@@ -820,7 +820,7 @@
       "original": "하루 비워둬, That’s all it takes",
       "romanization": "haru biwodwo, that’s all it takes",
       "english": "Clear your day, That’s all it takes",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 94,
@@ -848,7 +848,7 @@
       "original": "Pull up in my coupe, 데리러 갈게",
       "romanization": "pull up in my coupe, derireo galge",
       "english": "Pull up in my coupe, I’ll come pick you up",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 104.92,
@@ -881,7 +881,7 @@
       "original": "We don’t need a passport, 떠나 가볍게",
       "romanization": "we don’t need a passport, tteona gabyeopge",
       "english": "We don’t need a passport, Let’s leave without a care",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 125.53,
@@ -903,7 +903,7 @@
       "original": "",
       "romanization": "It’s a joyride with no GPS",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 144.42,
@@ -920,7 +920,7 @@
       "original": "",
       "romanization": "Pick up the pace, Da da da da da la da la da",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 148.98,
@@ -954,7 +954,7 @@
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 153.16,
@@ -988,7 +988,7 @@
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 158.19,
@@ -1026,7 +1026,7 @@
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": true
+      "adlib": false
     }
   ]
 }
