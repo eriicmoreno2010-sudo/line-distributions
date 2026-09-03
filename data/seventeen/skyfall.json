@@ -30,7 +30,17 @@
       "original": "",
       "romanization": "Like a feather, I wanna let go",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.99,
+          9.72
+        ],
+        [
+          10.93,
+          12.31
+        ]
+      ]
     },
     {
       "start": 14.71,
@@ -41,7 +51,17 @@
       "original": "갇혀있는, 창 틈새로 본",
       "romanization": "gadhyeoinneun, chang teumsaero bon",
       "english": "Through the gap between, The window bars, I see",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          14.76,
+          16.4
+        ],
+        [
+          17.7,
+          19.2
+        ]
+      ]
     },
     {
       "start": 21.58,
@@ -52,7 +72,21 @@
       "original": "파란 벽지, 구름 하나둘",
       "romanization": "paran byeokji, gureum hanadul",
       "english": "Blue wallpaper, Clouds growing darker",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21.67,
+          23.37
+        ],
+        [
+          24.81,
+          26
+        ],
+        [
+          26.29,
+          26.99
+        ]
+      ]
     },
     {
       "start": 28.4,
@@ -63,7 +97,17 @@
       "original": "짙어지네, Tearing it down",
       "romanization": "jiteojine, tearing it down",
       "english": "One by one, Tearing it down",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.42,
+          30.25
+        ],
+        [
+          31.61,
+          32.87
+        ]
+      ]
     },
     {
       "start": 36,
@@ -74,7 +118,25 @@
       "original": "Where to go, 귀에 익은 목소리",
       "romanization": "where to go, gwie ikkeun moksori",
       "english": "Where to go, A familiar voice",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.96,
+          36.63
+        ],
+        [
+          36.89,
+          37.39
+        ],
+        [
+          37.74,
+          38.25
+        ],
+        [
+          38.89,
+          41.71
+        ]
+      ]
     },
     {
       "start": 42.33,
@@ -85,7 +147,21 @@
       "original": "다시 날 던져",
       "romanization": "dasi nal deonjyeo",
       "english": "Throws me down again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.28,
+          43.29
+        ],
+        [
+          45.83,
+          46.5
+        ],
+        [
+          46.69,
+          47.28
+        ]
+      ]
     },
     {
       "start": 48.71,
@@ -96,7 +172,13 @@
       "original": "",
       "romanization": "Sky fallin’ easy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          48.76,
+          50.41
+        ]
+      ]
     },
     {
       "start": 52.04,
@@ -116,7 +198,25 @@
       "original": "나의 눈에 비친, 飞鸟不留下痕迹",
       "romanization": "naui nune bichin, feijo bul liu xia liu xia hen ji",
       "english": "Reflected in my eyes, Birds in flight leave no traces",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          55.66,
+          57.23
+        ],
+        [
+          58.88,
+          60.1
+        ],
+        [
+          60.25,
+          60.55
+        ],
+        [
+          60.7,
+          61.2
+        ]
+      ]
     },
     {
       "start": 62.53,
@@ -127,7 +227,17 @@
       "original": "",
       "romanization": "Steppin’ on the ceiling, Lookin’ for a reason",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          62.47,
+          64.03
+        ],
+        [
+          65.94,
+          67.51
+        ]
+      ]
     },
     {
       "start": 69.31,
@@ -138,7 +248,25 @@
       "original": "눈을 감아 깊이, 소음 속에 잠들지",
       "romanization": "nuneul gama gipi, soeum soge jamdeulji",
       "english": "I close my eyes, And fall asleep deep within the noise",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.39,
+          71
+        ],
+        [
+          72.54,
+          73.79
+        ],
+        [
+          73.97,
+          74.27
+        ],
+        [
+          74.4,
+          74.83
+        ]
+      ]
     },
     {
       "start": 76.2,
@@ -149,7 +277,13 @@
       "original": "빛바랜 상철 끌어안고 입 맞춰",
       "romanization": "bitbaraen sangcheol kkeureoango ip matchwo",
       "english": "I embrace the faded wound and kiss it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          76.17,
+          80.86
+        ]
+      ]
     },
     {
       "start": 83.04,
@@ -160,7 +294,13 @@
       "original": "희미하게 비치는 줄기의 단서",
       "romanization": "huimihage bichineun julgiui danseo",
       "english": "A clue from the stem faintly shining through",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.04,
+          87.65
+        ]
+      ]
     },
     {
       "start": 89.74,
@@ -171,7 +311,37 @@
       "original": "어제 받아둔 전화에게, Now it’s time to say goodbye",
       "romanization": "eoje badadun jeonhwaege, now it’s time to say goodbye",
       "english": "To the phone call I received yesterday, Now it’s time to say goodbye",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.74,
+          91.11
+        ],
+        [
+          91.29,
+          92
+        ],
+        [
+          92.2,
+          92.88
+        ],
+        [
+          93.4,
+          93.99
+        ],
+        [
+          94.14,
+          95.22
+        ],
+        [
+          95.37,
+          95.67
+        ],
+        [
+          95.82,
+          96.29
+        ]
+      ]
     },
     {
       "start": 96.52,
@@ -182,7 +352,33 @@
       "original": "금세 돌아온 그 한마디, That is always up to you",
       "romanization": "geumse dorawoon geu hanmadi, that is always up to you",
       "english": "That one phrase that came back so quickly, That is always up to you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.55,
+          97.89
+        ],
+        [
+          98.1,
+          98.77
+        ],
+        [
+          99.01,
+          99.66
+        ],
+        [
+          100.21,
+          100.77
+        ],
+        [
+          100.92,
+          102.08
+        ],
+        [
+          102.24,
+          103.17
+        ]
+      ]
     },
     {
       "start": 104.51,
@@ -193,7 +389,25 @@
       "original": "Where to go, 귀에 익은 목소리",
       "romanization": "where to go, gwie ikkeun moksori",
       "english": "Where to go, A familiar voice",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          104.54,
+          105.2
+        ],
+        [
+          105.47,
+          106.05
+        ],
+        [
+          106.26,
+          106.93
+        ],
+        [
+          107.44,
+          110.26
+        ]
+      ]
     },
     {
       "start": 110.91,
@@ -204,7 +418,21 @@
       "original": "다시 날 던져",
       "romanization": "dasi nal deonjyeo",
       "english": "Throws me down again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          110.88,
+          111.81
+        ],
+        [
+          114.31,
+          115.07
+        ],
+        [
+          115.25,
+          115.83
+        ]
+      ]
     },
     {
       "start": 117.31,
@@ -215,7 +443,13 @@
       "original": "",
       "romanization": "Sky fallin’ easy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          117.29,
+          118.96
+        ]
+      ]
     },
     {
       "start": 120.48,
@@ -235,7 +469,25 @@
       "original": "나의 눈에 비친, 飞鸟不留下痕迹",
       "romanization": "naui nune bichin, feijo bul liu xia liu xia hen ji",
       "english": "Reflected in my eyes, Birds in flight leave no traces",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          124.22,
+          125.75
+        ],
+        [
+          127.42,
+          128.64
+        ],
+        [
+          128.8,
+          129.09
+        ],
+        [
+          129.25,
+          129.8
+        ]
+      ]
     },
     {
       "start": 131.02,
@@ -246,7 +498,17 @@
       "original": "",
       "romanization": "Steppin’ on the ceiling, Lookin’ for a reason",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          131.04,
+          132.56
+        ],
+        [
+          134.47,
+          136.08
+        ]
+      ]
     },
     {
       "start": 137.95,
@@ -257,7 +519,25 @@
       "original": "눈을 감아 깊이, 소음 속에 잠들지",
       "romanization": "nuneul gama gipi, soeum soge jamdeulji",
       "english": "I close my eyes, And fall asleep deep within the noise",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          137.95,
+          139.53
+        ],
+        [
+          141.12,
+          142.36
+        ],
+        [
+          142.52,
+          142.78
+        ],
+        [
+          142.94,
+          143.46
+        ]
+      ]
     }
   ],
   "audio": "audio/seventeen_skyfall.mp3",
