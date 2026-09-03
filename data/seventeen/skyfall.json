@@ -268,5 +268,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/seventeen_skyfall.mp3"
+  "audio": "audio/seventeen_skyfall.mp3",
+  "cover": "covers/seventeen_skyfall.png"
 }
