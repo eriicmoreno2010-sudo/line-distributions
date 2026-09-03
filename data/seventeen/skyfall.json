@@ -11,7 +11,13 @@
       "image": "images/seventeen/skyfall/the8.png",
       "color": "#00de81",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.416,
+        "size": 0.895,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
