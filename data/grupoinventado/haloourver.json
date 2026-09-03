@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Halo (OUR VER.)",
   "video": "videos/grupoinventado_haloourver.mp4",
-  "duration": 0,
+  "duration": 160.233333,
   "theme": "light",
   "subunit": false,
   "members": [
@@ -42,10 +42,325 @@
       "members": [
         "ARNAU"
       ],
+      "original": "深夜情绪反复过载",
+      "romanization": "shēnyè qíngxù fǎnfù guòzài",
+      "english": "Late-night emotions keep overflowing again and again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "屏幕闪烁黑白色块",
+      "romanization": "píngmù shǎnshuò hēibáisèk uài",
+      "english": "The screen flickers with black-and-white patches",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "将我藏进喧嚣人海",
+      "romanization": "jiāng wǒ cáng jìn xuānxiāo rénhǎi",
+      "english": "I hide myself among the noisy crowd",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "吵闹掩饰了独白",
+      "romanization": "chǎonào yǎnshì le dúbái",
+      "english": "The noise disguises my inner monologue",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "脚步还在原地重复徘徊",
+      "romanization": "jiǎobù hái zài yuándì chóngfù páihuái",
+      "english": "My footsteps keep wandering in circles, repeating the same path",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "黑色的迷雾中 我独自等待",
+      "romanization": "hēisè de míwù zhōng wǒ dúzì děngdài",
+      "english": "Alone, I wait in the black fog",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "该对谁坦白",
+      "romanization": "gāi duì shéi tǎnbái",
+      "english": "Who should I confess this to?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "那看不见的未来 no no no no",
+      "romanization": "nà kàn bù jiàn de wèilái no no no no",
+      "english": "That invisible future no no no no",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "我站在十字路口, 手足无措 no no",
+      "romanization": "wǒ zhàn zài shízì lùkǒu, shǒuzú wúcuò no no",
+      "english": "I stand at the crossroads, At a loss, not knowing what to do no no",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "我所有挣扎与忧愁, 星光下化为乌有",
+      "romanization": "wǒ suǒyǒu zhēngzhá yǔ yōuchóu, xīngguāng xià huà wéi wūyǒu",
+      "english": "All my struggles and worries, Disappear beneath the starlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "当我在不安中不断漂流",
+      "romanization": "dāng wǒ zài bù'ān zhōng bùduàn piāoliú",
+      "english": "When I keep drifting in my anxiety",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "我会望向你明亮的眼眸",
+      "romanization": "wǒ huì wàngxiàng nǐ míngliàng de yǎnmóu",
+      "english": "I'll look into your bright eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "夜空的星斗",
+      "romanization": "yèkōng de xīngdǒu",
+      "english": "The stars in the night sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "一切都指引我走向你 in your halo",
+      "romanization": "yíqiè dōu zhǐyǐn wǒ zǒuxiàng nǐ in your halo",
+      "english": "Everything guides me toward you, in your halo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Halo, Halo, ooh, 照亮我一直往前走",
+      "romanization": "halo, halo, ooh, zhàoliàng wǒ yìzhí wǎng qián zǒu",
+      "english": "Halo, halo, ooh, You light the way and keep me moving forward",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Halo, Halo, ooh, 有你我终于敢自由",
+      "romanization": "halo, halo, ooh, yǒu nǐ wǒ zhōngyú gǎn zìyóu",
+      "english": "Halo, halo, ooh, With you, I finally dare to be free",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "像一阵风, 吹散了所有阴霾 baby",
+      "romanization": "xiàng yí zhèn fēng, chuī sàn le suǒyǒu yīnmái baby",
+      "english": "Like a gust of wind, Blowing away all the gloom, baby",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "像一束光, 黑白的城市也有了色彩",
+      "romanization": "xiàng yí shù guāng, hēibái de chéngshì yě yǒu le sècǎi",
+      "english": "Like a ray of light, Even the black-and-white city becomes colorful",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "迷茫都被温柔替代",
+      "romanization": "mímáng dōu bèi wēnróu tìdài",
+      "english": "All my confusion is replaced by tenderness",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "你懂我的每次开怀",
+      "romanization": "nǐ dǒng wǒ de měi cì kāihuái",
+      "english": "You understand every time I laugh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "当黑夜重返",
+      "romanization": "dāng hēiyè chóngfǎn",
+      "english": "When the darkness returns",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "这次 这次我不想离开",
+      "romanization": "zhè cì zhè cì wǒ bù xiǎng líkāi",
+      "english": "This time, this time, I don't want to leave",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "我站在十字路口, 手足无措 no no",
+      "romanization": "wǒ zhàn zài shízì lùkǒu, shǒuzú wúcuò no no",
+      "english": "I stand at the crossroads, At a loss, not knowing what to do no no",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "我所有挣扎与忧愁",
+      "romanization": "wǒ suǒyǒu zhēngzhá yǔ yōuchóu",
+      "english": "All my struggles and worries",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "星光下化为乌有",
+      "romanization": "xīngguāng xià huà wéi wūyǒu",
+      "english": "Disappear beneath the starlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "当我在不安中不断漂流",
+      "romanization": "dāng wǒ zài bù'ān zhōng bùduàn piāoliú",
+      "english": "When I keep drifting in my anxiety",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "我会望向你明亮的眼眸",
+      "romanization": "wǒ huì wàngxiàng nǐ míngliàng de yǎnmóu",
+      "english": "I'll look into your bright eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "夜空的星斗",
+      "romanization": "yèkōng de xīngdǒu",
+      "english": "The stars in the night sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "一切都指引我走向你 in your halo",
+      "romanization": "yíqiè dōu zhǐyǐn wǒ zǒuxiàng nǐ in your halo",
+      "english": "Everything guides me toward you, in your halo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "当我在不安中不断漂流",
+      "romanization": "dāng wǒ zài bù'ān zhōng bùduàn piāoliú",
+      "english": "When I keep drifting in my anxiety",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "我会望向你明亮的眼眸",
+      "romanization": "wǒ huì wàngxiàng nǐ míngliàng de yǎnmóu",
+      "english": "I'll look into your bright eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "夜空的星斗",
+      "romanization": "yèkōng de xīngdǒu",
+      "english": "The stars in the night sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "一切都指引我走向你 in your halo",
+      "romanization": "yíqiè dōu zhǐyǐn wǒ zǒuxiàng nǐ in your halo",
+      "english": "Everything guides me toward you, in your halo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Halo, Halo, ooh, 照亮我一直往前走",
+      "romanization": "halo, halo, ooh, zhàoliàng wǒ yìzhí wǎng qián zǒu",
+      "english": "Halo, halo, ooh, You light the way and keep me moving forward",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Halo, Halo, ooh, 有你我终于敢自由",
+      "romanization": "halo, halo, ooh, yǒu nǐ wǒ zhōngyú gǎn zìyóu",
+      "english": "Halo, halo, ooh, With you, I finally dare to be free",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "Halo, halo, ooh, Halo, halo, ooh",
       "english": "",
-      "adlib": ""
+      "adlib": false
     }
   ],
   "cover": "covers/grupoinventado_haloourver.jpg",
