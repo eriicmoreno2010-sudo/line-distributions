@@ -836,7 +836,7 @@
       "end": 150.23,
       "members": [
         "HAECHAN",
-        "ARNAU"
+        "MARC"
       ],
       "voice": [
         [
@@ -887,7 +887,7 @@
       "end": 154.44,
       "members": [
         "NCT 127",
-        "ARNAU"
+        "MARC"
       ],
       "original": "(데리러 갈게)",
       "romanization": "(derireo galge)",
@@ -916,7 +916,7 @@
       "end": 158.33,
       "members": [
         "NCT 127",
-        "MARC"
+        "ARNAU"
       ],
       "voice": [
         [
@@ -1068,6 +1068,57 @@
       "romanization": "Da da da da da la da la da",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 3.24,
+      "end": 6.13,
+      "members": [
+        "BIEL"
+      ],
+      "original": "",
+      "romanization": "(Da da da da da la da la da)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          3.18,
+          6.14
+        ]
+      ]
+    },
+    {
+      "start": 6.5,
+      "end": 7.63,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "(Yeah a driving show)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          6.44,
+          7.63
+        ]
+      ]
+    },
+    {
+      "start": 174.84,
+      "end": 176.02,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "(Yeah a driving show)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          174.98,
+          176.12
+        ]
+      ]
     }
   ]
 }
