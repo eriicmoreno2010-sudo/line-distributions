@@ -1,0 +1,107 @@
+{
+  "group": "SEVENTEEN",
+  "song": "Skyfall",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": true,
+  "members": [
+    {
+      "name": "S.COUPS",
+      "image": "images/seventeen/skyfall/scoups.png",
+      "color": "#0557b8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JOSHUA",
+      "image": "images/seventeen/skyfall/joshua.png",
+      "color": "#a001c8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUN",
+      "image": "images/seventeen/skyfall/jun.png",
+      "color": "#53a303",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HOSHI",
+      "image": "images/seventeen/skyfall/hoshi.png",
+      "color": "#ba0303",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WONWOO",
+      "image": "images/seventeen/skyfall/wonwoo.png",
+      "color": "#5a05d3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOOZI",
+      "image": "images/seventeen/skyfall/woozi.png",
+      "color": "#fa7304",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DK",
+      "image": "images/seventeen/skyfall/dk.png",
+      "color": "#0002e6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MINGYU",
+      "image": "images/seventeen/skyfall/mingyu.png",
+      "color": "#01a68d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "THE8",
+      "image": "images/seventeen/skyfall/the8.png",
+      "color": "#00de81",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SEUNGKWAN",
+      "image": "images/seventeen/skyfall/seungkwan.png",
+      "color": "#ffea2d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "VERNON",
+      "image": "images/seventeen/skyfall/vernon.png",
+      "color": "#2ec601",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DINO",
+      "image": "images/seventeen/skyfall/dino.png",
+      "color": "#f76ce9",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
