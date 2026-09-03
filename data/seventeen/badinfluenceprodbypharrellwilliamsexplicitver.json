@@ -489,13 +489,11 @@
     {
       "start": 49.41,
       "end": 52.53,
-      "members": [
-        "SEUNGKWAN"
-      ],
+      "members": [],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           49.32,
@@ -528,12 +526,12 @@
       "start": 53.26,
       "end": 56.49,
       "members": [
-        "SEUNGKWAN"
+        "S.COUPS"
       ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           53.26,
@@ -566,12 +564,12 @@
       "start": 57.27,
       "end": 60.58,
       "members": [
-        "DK"
+        "S.COUPS"
       ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           57.26,
@@ -626,7 +624,7 @@
       "original": "",
       "romanization": "(bad influence)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           66.02,
