@@ -137,9 +137,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 12.57,
+      "end": 16.06,
+      "members": [
+        "VERNON"
+      ],
       "original": "",
       "romanization": "(Good time, good time, good, good, good)",
       "english": "",
@@ -190,9 +192,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 28.6,
+      "end": 31.96,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "(Good time, good time, good, good, good)",
       "english": "",
@@ -210,13 +214,35 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.03,
+      "end": 33.98,
       "members": [
         "WONWOO"
       ],
       "original": "",
       "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 37.05,
+      "end": 37.92,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 41,
+      "end": 41.82,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(chase the fade)",
       "english": "",
       "adlib": true
     },
@@ -232,29 +258,11 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Bust the scene",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
       "members": [
-        "WONWOO"
+        "VERNON"
       ],
       "original": "",
-      "romanization": "(let’s go out)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Flip the vibe, chase the fade (chase the fade)",
+      "romanization": "Bust the scene, Flip the vibe, chase the fade",
       "english": "",
       "adlib": false
     },
@@ -268,9 +276,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 45.02,
+      "end": 45.92,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
       "romanization": "(talkin’ bout)",
       "english": "",
@@ -286,9 +296,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 48.69,
+      "end": 51.11,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -304,9 +316,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 52.61,
+      "end": 55.06,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -322,9 +336,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 56.58,
+      "end": 59.07,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -340,11 +356,35 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 60.54,
+      "end": 63.13,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 64.83,
+      "end": 65.97,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Okay okay",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(bad influence)",
       "english": "",
       "adlib": true
     },
@@ -394,20 +434,112 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 78.58,
+      "end": 82.65,
+      "members": [
+        "VERNON"
+      ],
       "original": "",
       "romanization": "(Good time, good time, good, good, good time)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 80.61,
+      "end": 82.52,
+      "members": [
+        "THE8"
+      ],
       "original": "",
       "romanization": "(good, good, good time)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 82.58,
+      "end": 84.51,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 86.62,
+      "end": 90.34,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 90.49,
+      "end": 94.35,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 94.54,
+      "end": 96.42,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 94.81,
+      "end": 95.45,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Yeah yeah",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 99.05,
+      "end": 99.95,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 102.99,
+      "end": 103.93,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 106.96,
+      "end": 107.86,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(chase the fade)",
       "english": "",
       "adlib": true
     },
@@ -511,9 +643,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 111.03,
+      "end": 111.94,
+      "members": [
+        "VERNON"
+      ],
       "original": "",
       "romanization": "(talkin’ bout)",
       "english": "",
@@ -529,9 +663,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 114.57,
+      "end": 117.08,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -547,9 +683,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 118.5,
+      "end": 121.07,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -565,9 +703,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 122.54,
+      "end": 125.02,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -583,9 +723,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 126.5,
+      "end": 129.06,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
@@ -637,11 +779,46 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 144.55,
+      "end": 148.01,
+      "members": [
+        "JOSHUA"
+      ],
       "original": "",
       "romanization": "(Good time, good time, good, good, good)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 151.14,
+      "end": 152.01,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(bad influence)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 153.57,
+      "end": 155.13,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Better without it",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 158.59,
+      "end": 160.58,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Wanna have a good time",
       "english": "",
       "adlib": true
     },
@@ -682,9 +859,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 160.58,
+      "end": 164.64,
+      "members": [
+        "JOSHUA"
+      ],
       "original": "",
       "romanization": "(Good time, good time, good, good, good time)",
       "english": "",
