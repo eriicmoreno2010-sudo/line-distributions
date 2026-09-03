@@ -1,0 +1,65 @@
+{
+  "group": "GRUPO INVENTADO",
+  "song": "Halo (OUR VER.)",
+  "video": "",
+  "duration": 0,
+  "theme": "light",
+  "subunit": false,
+  "members": [
+    {
+      "name": "ARNAU",
+      "image": "images/grupoinventado/haloourver/arnau.png",
+      "color": "#f08c00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "IRENE",
+      "image": "images/grupoinventado/haloourver/irene.png",
+      "color": "#f92fde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MARC",
+      "image": "images/grupoinventado/haloourver/marc.png",
+      "color": "#2320fe",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "BIEL",
+      "image": "images/grupoinventado/haloourver/biel.png",
+      "color": "#ff2424",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MICHELLE",
+      "image": "images/grupoinventado/haloourver/michelle.png",
+      "color": "#ffee33",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERIC",
+      "image": "images/grupoinventado/haloourver/eric.png",
+      "color": "#ffaa33",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
