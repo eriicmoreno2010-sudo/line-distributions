@@ -358,12 +358,7 @@
       "romanization": "(chase the fade)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          37.99,
-          40.93
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 41.83,
@@ -433,12 +428,7 @@
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          45.99,
-          47.96
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 49.29,
@@ -462,12 +452,7 @@
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          49.32,
-          52.61
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 53.3,
@@ -491,12 +476,7 @@
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          53.26,
-          56.72
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 57.33,
@@ -520,12 +500,7 @@
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          57.26,
-          60.7
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 61.24,
@@ -561,12 +536,7 @@
       "romanization": "(bad influence)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          66.02,
-          69.27
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 69.69,
@@ -1191,20 +1161,7 @@
       "romanization": "(Good time, good time, good, good, good)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          144.51,
-          146.92
-        ],
-        [
-          147.11,
-          147.39
-        ],
-        [
-          147.58,
-          147.96
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 148.01,
@@ -1335,24 +1292,7 @@
       "romanization": "(Good time, good time, good, good, good time)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          160.61,
-          162.95
-        ],
-        [
-          163.1,
-          163.43
-        ],
-        [
-          163.58,
-          163.94
-        ],
-        [
-          164.11,
-          164.64
-        ]
-      ]
+      "voice": []
     }
   ]
 }
