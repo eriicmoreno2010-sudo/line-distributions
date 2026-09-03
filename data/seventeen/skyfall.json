@@ -7,86 +7,9 @@
   "subunit": true,
   "members": [
     {
-      "name": "S.COUPS",
-      "image": "images/seventeen/skyfall/scoups.png",
-      "color": "#0557b8",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "JOSHUA",
-      "image": "images/seventeen/skyfall/joshua.png",
-      "color": "#a001c8",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "JUN",
-      "image": "images/seventeen/skyfall/jun.png",
-      "color": "#53a303",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "HOSHI",
-      "image": "images/seventeen/skyfall/hoshi.png",
-      "color": "#ba0303",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "WONWOO",
-      "image": "images/seventeen/skyfall/wonwoo.png",
-      "color": "#5a05d3",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "WOOZI",
-      "image": "images/seventeen/skyfall/woozi.png",
-      "color": "#fa7304",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "DK",
-      "image": "images/seventeen/skyfall/dk.png",
-      "color": "#0002e6",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "MINGYU",
-      "image": "images/seventeen/skyfall/mingyu.png",
-      "color": "#01a68d",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "THE8",
       "image": "images/seventeen/skyfall/the8.png",
       "color": "#00de81",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "SEUNGKWAN",
-      "image": "images/seventeen/skyfall/seungkwan.png",
-      "color": "#ffea2d",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "VERNON",
-      "image": "images/seventeen/skyfall/vernon.png",
-      "color": "#2ec601",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "DINO",
-      "image": "images/seventeen/skyfall/dino.png",
-      "color": "#f76ce9",
       "focus": 50,
       "lift": 3
     }
@@ -95,13 +18,254 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "S.COUPS"
-      ],
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "Like a feather, I wanna let go",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갇혀있는, 창 틈새로 본",
+      "romanization": "gadhyeoinneun, chang teumsaero bon",
+      "english": "Through the gap between, The window bars, I see",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "파란 벽지, 구름 하나둘",
+      "romanization": "paran byeokji, gureum hanadul",
+      "english": "Blue wallpaper, Clouds growing darker",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "짙어지네, Tearing it down",
+      "romanization": "jiteojine, tearing it down",
+      "english": "One by one, Tearing it down",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Where to go, 귀에 익은 목소리",
+      "romanization": "where to go, gwie ikkeun moksori",
+      "english": "Where to go, A familiar voice",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 날 던져",
+      "romanization": "dasi nal deonjyeo",
+      "english": "Throws me down again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Sky fallin’ easy",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Lookin’ forward",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나의 눈에 비친, 飞鸟不留下痕迹",
+      "romanization": "naui nune bichin, feijo bul liu xia liu xia hen ji",
+      "english": "Reflected in my eyes, Birds in flight leave no traces",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Steppin’ on the ceiling, Lookin’ for a reason",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈을 감아 깊이, 소음 속에 잠들지",
+      "romanization": "nuneul gama gipi, soeum soge jamdeulji",
+      "english": "I close my eyes, And fall asleep deep within the noise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "빛바랜 상철 끌어안고 입 맞춰",
+      "romanization": "bitbaraen sangcheol kkeureoango ip matchwo",
+      "english": "I embrace the faded wound and kiss it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "희미하게 비치는 줄기의 단서",
+      "romanization": "huimihage bichineun julgiui danseo",
+      "english": "A clue from the stem faintly shining through",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어제 받아둔 전화에게",
+      "romanization": "eoje badadun jeonhwaege",
+      "english": "To the phone call I received yesterday",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Now it’s time to say goodbye",
+      "romanization": "now it’s time to say goodbye",
+      "english": "Now it’s time to say goodbye",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "금세 돌아온 그 한마디",
+      "romanization": "geumse dorawoon geu hanmadi",
+      "english": "That one phrase that came back so quickly",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That is always up to you",
+      "romanization": "that is always up to you",
+      "english": "That is always up to you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Where to go",
+      "romanization": "where to go",
+      "english": "Where to go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "귀에 익은 목소리",
+      "romanization": "gwie ikkeun moksori",
+      "english": "A familiar voice",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 날 던져",
+      "romanization": "dasi nal deonjyeo",
+      "english": "Throws me down again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sky fallin’ easy",
+      "romanization": "sky fallin’ easy",
+      "english": "Sky fallin’ easy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Lookin’ forward",
+      "romanization": "lookin’ forward",
+      "english": "Lookin’ forward",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나의 눈에 비친",
+      "romanization": "naui nune bichin",
+      "english": "Reflected in my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "飞鸟不留下痕迹",
+      "romanization": "feijo bul liu xia liu xia hen ji",
+      "english": "Birds in flight leave no traces",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Steppin’ on the ceiling",
+      "romanization": "steppin’ on the ceiling",
+      "english": "Steppin’ on the ceiling",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Lookin’ for a reason",
+      "romanization": "lookin’ for a reason",
+      "english": "Lookin’ for a reason",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈을 감아 깊이",
+      "romanization": "nuneul gama gipi",
+      "english": "I close my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "소음 속에 잠들지",
+      "romanization": "soeum soge jamdeulji",
+      "english": "And fall asleep deep within the noise",
+      "adlib": false
     }
   ]
 }
