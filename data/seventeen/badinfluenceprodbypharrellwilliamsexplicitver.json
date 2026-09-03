@@ -313,8 +313,8 @@
       ]
     },
     {
-      "start": 41.01,
-      "end": 41.88,
+      "start": 34.04,
+      "end": 37.01,
       "members": [
         "VERNON"
       ],
@@ -330,8 +330,8 @@
       ]
     },
     {
-      "start": 32.01,
-      "end": 32.91,
+      "start": 32.04,
+      "end": 32.96,
       "members": [
         "VERNON"
       ],
@@ -347,8 +347,8 @@
       ]
     },
     {
-      "start": 33.99,
-      "end": 36.9,
+      "start": 37.99,
+      "end": 40.95,
       "members": [
         "VERNON"
       ],
@@ -432,8 +432,8 @@
       ]
     },
     {
-      "start": 69.09,
-      "end": 69.91,
+      "start": 46.04,
+      "end": 47.97,
       "members": [
         "VERNON"
       ],
@@ -452,12 +452,12 @@
       "start": 46.06,
       "end": 47.96,
       "members": [
-        "VERNON"
+        "S.COUPS"
       ],
       "original": "",
       "romanization": "(Bad influence, you had to do it)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           45.99,
@@ -466,8 +466,8 @@
       ]
     },
     {
-      "start": 48.58,
-      "end": 51.09,
+      "start": 49.29,
+      "end": 52.65,
       "members": [
         "SEUNGKWAN"
       ],
@@ -504,8 +504,8 @@
       ]
     },
     {
-      "start": 52.54,
-      "end": 55.12,
+      "start": 53.3,
+      "end": 56.6,
       "members": [
         "SEUNGKWAN"
       ],
@@ -542,8 +542,8 @@
       ]
     },
     {
-      "start": 56.56,
-      "end": 59.05,
+      "start": 57.33,
+      "end": 60.6,
       "members": [
         "DK"
       ],
@@ -580,8 +580,8 @@
       ]
     },
     {
-      "start": 60.51,
-      "end": 63.13,
+      "start": 61.24,
+      "end": 64.78,
       "members": [
         "DK"
       ],
@@ -601,10 +601,10 @@
       ]
     },
     {
-      "start": 61.26,
-      "end": 64.78,
+      "start": 65.99,
+      "end": 69.26,
       "members": [
-        "DK"
+        "WONWOO"
       ],
       "original": "",
       "romanization": "And I had time to think about it",
@@ -635,8 +635,8 @@
       ]
     },
     {
-      "start": 69.74,
-      "end": 72.87,
+      "start": 69.69,
+      "end": 73.05,
       "members": [
         "WONWOO"
       ],
@@ -861,8 +861,8 @@
       ]
     },
     {
-      "start": 99.02,
-      "end": 99.87,
+      "start": 84.27,
+      "end": 86.03,
       "members": [
         "WOOZI",
         "MINGYU"
@@ -879,8 +879,8 @@
       ]
     },
     {
-      "start": 103.04,
-      "end": 103.85,
+      "start": 87.76,
+      "end": 90.1,
       "members": [
         "WOOZI",
         "MINGYU"
@@ -897,8 +897,8 @@
       ]
     },
     {
-      "start": 107.06,
-      "end": 107.9,
+      "start": 92.26,
+      "end": 94.01,
       "members": [
         "WOOZI",
         "MINGYU"
@@ -936,8 +936,7 @@
       "start": 87.83,
       "end": 90.06,
       "members": [
-        "WOOZI",
-        "MINGYU"
+        "S.COUPS"
       ],
       "original": "",
       "romanization": "Let’s go out",
@@ -954,13 +953,12 @@
       "start": 92.24,
       "end": 94.03,
       "members": [
-        "WOOZI",
-        "MINGYU"
+        "VERNON"
       ],
       "original": "",
       "romanization": "(let’s go out)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           92.23,
@@ -972,8 +970,7 @@
       "start": 96.54,
       "end": 97.86,
       "members": [
-        "WOOZI",
-        "MINGYU"
+        "S.COUPS"
       ],
       "original": "",
       "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
@@ -990,12 +987,12 @@
       "start": 98.05,
       "end": 98.94,
       "members": [
-        "S.COUPS"
+        "VERNON"
       ],
       "original": "",
       "romanization": "(let’s go out)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           98.08,
@@ -1024,12 +1021,12 @@
       "start": 103.99,
       "end": 106.91,
       "members": [
-        "S.COUPS"
+        "VERNON"
       ],
       "original": "",
       "romanization": "(chase the fade)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           103.98,
