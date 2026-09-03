@@ -100,16 +100,7 @@
       "members": [
         "GRUPO INVENTADO"
       ],
-      "voice": [
-        [
-          31.38,
-          32.24
-        ],
-        [
-          32.4,
-          33.7
-        ]
-      ],
+      "voice": [],
       "original": "",
       "romanization": "It’s a joyride with no GPS",
       "english": "",
@@ -403,16 +394,7 @@
       "members": [
         "GRUPO INVENTADO"
       ],
-      "voice": [
-        [
-          136.34,
-          138.5
-        ],
-        [
-          138.94,
-          140.58
-        ]
-      ],
+      "voice": [],
       "original": "하루 비워둬, That’s all it takes",
       "romanization": "haru biwodwo, that’s all it takes",
       "english": "Clear your day, That’s all it takes",
@@ -424,12 +406,7 @@
       "members": [
         "GRUPO INVENTADO"
       ],
-      "voice": [
-        [
-          144.43,
-          146.17
-        ]
-      ],
+      "voice": [],
       "original": "Pull up in my coupe, 데리러 갈게",
       "romanization": "pull up in my coupe, derireo galge",
       "english": "Pull up in my coupe, I’ll come pick you up",
@@ -608,12 +585,8 @@
       ],
       "voice": [
         [
-          124.23,
-          125.49
-        ],
-        [
-          126.17,
-          128.14
+          126.05,
+          128.13
         ]
       ],
       "original": "도망갈까 내일로",
@@ -630,16 +603,16 @@
       ],
       "voice": [
         [
-          128.69,
-          129.1
+          128.68,
+          129.09
         ],
         [
-          129.22,
-          129.78
+          129.24,
+          129.82
         ],
         [
           130.5,
-          131.78
+          131.77
         ]
       ],
       "original": "Take the road, 여유만 가득 실은 채로",
@@ -656,16 +629,20 @@
       ],
       "voice": [
         [
-          131.83,
-          133.38
+          131.85,
+          133.28
         ],
         [
-          133.5,
-          133.88
+          133.46,
+          133.84
         ],
         [
-          134.02,
-          136.17
+          134,
+          135.5
+        ],
+        [
+          135.65,
+          136.21
         ]
       ],
       "original": "한 템포 느린 태도, 그게 우리 Dress code",
@@ -729,7 +706,7 @@
       "start": 77.72,
       "end": 78.18,
       "members": [
-        "NCT 127"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "(Hey)",
@@ -740,18 +717,25 @@
       "start": 93.96,
       "end": 95.07,
       "members": [
-        "NCT 127"
+        "NCT 127",
+        "ERIC"
       ],
       "original": "",
       "romanization": "(Hmm yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          93.96,
+          95.03
+        ]
+      ]
     },
     {
       "start": 96.61,
       "end": 98.01,
       "members": [
-        "NCT 127"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "(You)",
@@ -762,7 +746,7 @@
       "start": 104.9,
       "end": 106.01,
       "members": [
-        "NCT 127"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "(Away)",
@@ -773,24 +757,19 @@
       "start": 107.67,
       "end": 108.76,
       "members": [
-        "JAEHYUN"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "(Left or right)",
       "english": "",
       "adlib": true,
-      "voice": [
-        [
-          161.64,
-          163.02
-        ]
-      ]
+      "voice": []
     },
     {
       "start": 121.36,
       "end": 122.29,
       "members": [
-        "NCT 127"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "(Take it up)",
@@ -801,7 +780,7 @@
       "start": 125.37,
       "end": 126.59,
       "members": [
-        "NCT 127"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "(This ain’t enough)",
@@ -812,7 +791,7 @@
       "start": 128.16,
       "end": 128.66,
       "members": [
-        "NCT 127"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "(Hey)",
@@ -823,7 +802,8 @@
       "start": 144.48,
       "end": 146.22,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "BIEL"
       ],
       "original": "(새로운 Main course)",
       "romanization": "(saeroun main course)",
@@ -831,8 +811,8 @@
       "adlib": true,
       "voice": [
         [
-          3.24,
-          6.12
+          144.45,
+          146.25
         ]
       ]
     },
@@ -851,12 +831,13 @@
       "start": 149.01,
       "end": 150.23,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "ARNAU"
       ],
       "voice": [
         [
-          93.99,
-          95.01
+          148.94,
+          150.25
         ]
       ],
       "original": "",
@@ -879,7 +860,18 @@
       "start": 150.3,
       "end": 153.44,
       "members": [
-        "NCT 127"
+        "NCT 127",
+        "ERIC"
+      ],
+      "voice": [
+        [
+          150.31,
+          151.26
+        ],
+        [
+          151.41,
+          153.3
+        ]
       ],
       "original": "(My coupe 데리러 갈게)",
       "romanization": "(my coupe derireo galge)",
@@ -890,12 +882,19 @@
       "start": 153.21,
       "end": 154.44,
       "members": [
-        "NCT 127"
+        "NCT 127",
+        "ARNAU"
       ],
       "original": "(데리러 갈게)",
       "romanization": "(derireo galge)",
       "english": "(I’ll come pick you up)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          153.15,
+          154.42
+        ]
+      ]
     },
     {
       "start": 153.33,
@@ -912,7 +911,14 @@
       "start": 157.28,
       "end": 158.33,
       "members": [
-        "NCT 127"
+        "NCT 127",
+        "MARC"
+      ],
+      "voice": [
+        [
+          157.4,
+          158.5
+        ]
       ],
       "original": "",
       "romanization": "(Just get away)",
@@ -934,7 +940,7 @@
       "start": 161.71,
       "end": 166.11,
       "members": [
-        "JOHNNY"
+        "GRUPO INVENTADO"
       ],
       "voice": [
         [
@@ -943,7 +949,7 @@
         ]
       ],
       "original": "",
-      "romanization": "Pick up the pace, Da da da da da la da la da",
+      "romanization": "**Pick up the pace@MICHELLE**, Da da da da da la da la da",
       "english": "",
       "adlib": false
     },
@@ -951,12 +957,13 @@
       "start": 158.17,
       "end": 161.86,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "ERIC"
       ],
       "voice": [
         [
-          149,
-          150.34
+          158.19,
+          161.87
         ]
       ],
       "original": "",
@@ -985,12 +992,17 @@
       "start": 164.89,
       "end": 166.52,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MICHELLE"
       ],
       "voice": [
         [
-          153.23,
-          154.43
+          164.82,
+          165.48
+        ],
+        [
+          166.04,
+          166.65
         ]
       ],
       "original": "",
@@ -1019,12 +1031,13 @@
       "start": 168.95,
       "end": 170.76,
       "members": [
-        "YUTA"
+        "YUTA",
+        "IRENE"
       ],
       "voice": [
         [
-          158.19,
-          161.96
+          168.96,
+          170.76
         ]
       ],
       "original": "",
@@ -1035,11 +1048,19 @@
     {
       "start": 174.4,
       "end": 175.63,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "original": "",
       "romanization": "(That’s it that’s it)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          174.51,
+          175.72
+        ]
+      ]
     },
     {
       "start": 175.08,
