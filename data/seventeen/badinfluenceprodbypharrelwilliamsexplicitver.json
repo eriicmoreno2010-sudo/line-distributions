@@ -101,7 +101,13 @@
       "original": "",
       "romanization": "And I had time to think about it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          0.07,
+          3.33
+        ]
+      ]
     },
     {
       "start": 3.72,
@@ -112,7 +118,17 @@
       "original": "",
       "romanization": "It’s too much bullshit that surround it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          3.71,
+          5.4
+        ],
+        [
+          5.55,
+          7.01
+        ]
+      ]
     },
     {
       "start": 7.12,
@@ -123,7 +139,13 @@
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.06,
+          8.8
+        ]
+      ]
     },
     {
       "start": 9.72,
@@ -134,7 +156,13 @@
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.77,
+          12.57
+        ]
+      ]
     },
     {
       "start": 12.57,
@@ -156,7 +184,13 @@
       "original": "",
       "romanization": "And I had time to think about it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.01,
+          19.33
+        ]
+      ]
     },
     {
       "start": 19.74,
@@ -167,7 +201,13 @@
       "original": "",
       "romanization": "But life would be so much better without it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          19.8,
+          23.06
+        ]
+      ]
     },
     {
       "start": 23.01,
@@ -178,7 +218,13 @@
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          23.08,
+          24.78
+        ]
+      ]
     },
     {
       "start": 25.73,
@@ -189,7 +235,13 @@
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.76,
+          28.56
+        ]
+      ]
     },
     {
       "start": 28.6,
@@ -211,7 +263,13 @@
       "original": "",
       "romanization": "Let’s go out ",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          32.01,
+          32.97
+        ]
+      ]
     },
     {
       "start": 33.03,
@@ -255,7 +313,13 @@
       "original": "",
       "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.06,
+          37
+        ]
+      ]
     },
     {
       "start": 37.99,
@@ -266,7 +330,13 @@
       "original": "",
       "romanization": "Bust the scene, Flip the vibe, chase the fade",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.03,
+          40.97
+        ]
+      ]
     },
     {
       "start": 41.73,
@@ -277,7 +347,13 @@
       "original": "",
       "romanization": "And be the section everybody talkin’ bout",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          41.76,
+          44.9
+        ]
+      ]
     },
     {
       "start": 45.02,
@@ -299,7 +375,13 @@
       "original": "",
       "romanization": "Only fun shit is allowed",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          46.02,
+          47.93
+        ]
+      ]
     },
     {
       "start": 48.69,
@@ -321,7 +403,13 @@
       "original": "",
       "romanization": "An ordinary time ain’t enough for you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.29,
+          52.65
+        ]
+      ]
     },
     {
       "start": 52.61,
@@ -343,7 +431,13 @@
       "original": "",
       "romanization": "You wanna have a good, good night",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          53.3,
+          56.62
+        ]
+      ]
     },
     {
       "start": 56.58,
@@ -365,7 +459,13 @@
       "original": "",
       "romanization": "It’s 4 in the morning, what the fuck we doin’?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.3,
+          60.61
+        ]
+      ]
     },
     {
       "start": 60.54,
@@ -409,7 +509,13 @@
       "original": "",
       "romanization": "You turn and say, “a good, good time!”",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.23,
+          64.85
+        ]
+      ]
     },
     {
       "start": 65.98,
@@ -420,7 +526,13 @@
       "original": "",
       "romanization": "And I had time to think about it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.04,
+          69.31
+        ]
+      ]
     },
     {
       "start": 69.79,
@@ -431,7 +543,13 @@
       "original": "",
       "romanization": "But life would be so much better without it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.76,
+          73.08
+        ]
+      ]
     },
     {
       "start": 72.99,
@@ -442,7 +560,13 @@
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          73.08,
+          74.69
+        ]
+      ]
     },
     {
       "start": 75.81,
@@ -453,7 +577,13 @@
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          75.75,
+          78.61
+        ]
+      ]
     },
     {
       "start": 78.58,
@@ -575,7 +705,13 @@
       "original": "",
       "romanization": "Sometimes you wanna luck up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          84.27,
+          86.07
+        ]
+      ]
     },
     {
       "start": 87.77,
@@ -587,7 +723,13 @@
       "original": "",
       "romanization": "You get frustrated, call me stuck up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          87.75,
+          90.09
+        ]
+      ]
     },
     {
       "start": 92.26,
@@ -599,7 +741,13 @@
       "original": "",
       "romanization": "But once you bring the plug up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          92.22,
+          94.1
+        ]
+      ]
     },
     {
       "start": 96.54,
@@ -611,7 +759,13 @@
       "original": "",
       "romanization": "Makes me wanna get fucked up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.56,
+          98.1
+        ]
+      ]
     },
     {
       "start": 98.02,
@@ -622,7 +776,13 @@
       "original": "",
       "romanization": "Let’s go out",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          98.04,
+          99
+        ]
+      ]
     },
     {
       "start": 100.07,
@@ -633,7 +793,13 @@
       "original": "",
       "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          100,
+          102.96
+        ]
+      ]
     },
     {
       "start": 104.02,
@@ -644,7 +810,13 @@
       "original": "",
       "romanization": "Bust the scene, Flip the vibe, chase the fade",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          103.99,
+          106.94
+        ]
+      ]
     },
     {
       "start": 107.75,
@@ -655,7 +827,13 @@
       "original": "",
       "romanization": "And be the section everybody talkin’ bout",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.75,
+          110.93
+        ]
+      ]
     },
     {
       "start": 111.03,
@@ -677,7 +855,13 @@
       "original": "",
       "romanization": "Only fun shit is allowed",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          112.04,
+          114.03
+        ]
+      ]
     },
     {
       "start": 114.57,
@@ -699,7 +883,13 @@
       "original": "",
       "romanization": "An ordinary time ain’t enough for you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          115.35,
+          118.59
+        ]
+      ]
     },
     {
       "start": 118.5,
@@ -721,7 +911,13 @@
       "original": "",
       "romanization": "You wanna have a good, good night",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.33,
+          122.7
+        ]
+      ]
     },
     {
       "start": 122.54,
@@ -743,7 +939,13 @@
       "original": "",
       "romanization": "It’s 4 in the morning, what the fuck we doin’?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          123.24,
+          126.55
+        ]
+      ]
     },
     {
       "start": 126.5,
@@ -765,7 +967,13 @@
       "original": "",
       "romanization": "You turn and say, “a good, good time!”",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          127.29,
+          130.78
+        ]
+      ]
     },
     {
       "start": 132.1,
@@ -776,7 +984,13 @@
       "original": "",
       "romanization": "And I had time to think about it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          132.04,
+          135.38
+        ]
+      ]
     },
     {
       "start": 135.79,
@@ -787,7 +1001,17 @@
       "original": "",
       "romanization": "It’s too much bullshit that surround it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          135.83,
+          137.51
+        ],
+        [
+          137.63,
+          139.08
+        ]
+      ]
     },
     {
       "start": 139.07,
@@ -798,7 +1022,13 @@
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          139.07,
+          140.66
+        ]
+      ]
     },
     {
       "start": 141.76,
@@ -809,7 +1039,13 @@
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.76,
+          144.56
+        ]
+      ]
     },
     {
       "start": 144.55,
@@ -864,7 +1100,13 @@
       "original": "",
       "romanization": "And I had time to think about it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          148.07,
+          151.35
+        ]
+      ]
     },
     {
       "start": 151.73,
@@ -875,7 +1117,13 @@
       "original": "",
       "romanization": "But life would be so much better without it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          151.8,
+          155.12
+        ]
+      ]
     },
     {
       "start": 155.12,
@@ -886,7 +1134,13 @@
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          155.09,
+          156.82
+        ]
+      ]
     },
     {
       "start": 157.81,
@@ -897,7 +1151,13 @@
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          157.76,
+          160.59
+        ]
+      ]
     },
     {
       "start": 160.58,
