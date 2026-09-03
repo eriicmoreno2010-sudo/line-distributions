@@ -14,13 +14,6 @@
       "lift": 3
     },
     {
-      "name": "IRENE",
-      "image": "images/grupoinventado/haloourver/irene.png",
-      "color": "#f92fde",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "MARC",
       "image": "images/grupoinventado/haloourver/marc.png",
       "color": "#2320fe",
@@ -31,13 +24,6 @@
       "name": "BIEL",
       "image": "images/grupoinventado/haloourver/biel.png",
       "color": "#ff2424",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "MICHELLE",
-      "image": "images/grupoinventado/haloourver/michelle.png",
-      "color": "#ffee33",
       "focus": 50,
       "lift": 3
     },
