@@ -93,8 +93,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 0.02,
+      "end": 3.31,
       "members": [
         "DINO"
       ],
@@ -104,8 +104,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 3.72,
+      "end": 6.98,
       "members": [
         "DINO"
       ],
@@ -115,8 +115,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 7.12,
+      "end": 8.79,
       "members": [
         "DINO"
       ],
@@ -126,8 +126,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.72,
+      "end": 12.49,
       "members": [
         "JUN"
       ],
@@ -148,8 +148,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 16.04,
+      "end": 19.33,
       "members": [
         "HOSHI"
       ],
@@ -159,8 +159,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 19.74,
+      "end": 22.89,
       "members": [
         "HOSHI"
       ],
@@ -170,8 +170,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.01,
+      "end": 24.72,
       "members": [
         "HOSHI"
       ],
@@ -181,8 +181,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.73,
+      "end": 28.44,
       "members": [
         "MINGYU"
       ],
@@ -203,8 +203,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 32.01,
+      "end": 32.94,
       "members": [
         "VERNON"
       ],
@@ -247,17 +247,19 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 34.01,
+      "end": 36.96,
+      "members": [
+        "VERNON"
+      ],
       "original": "",
       "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 37.99,
+      "end": 40.97,
       "members": [
         "VERNON"
       ],
@@ -267,9 +269,11 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 41.73,
+      "end": 44.99,
+      "members": [
+        "VERNON"
+      ],
       "original": "",
       "romanization": "And be the section everybody talkin’ bout",
       "english": "",
@@ -287,9 +291,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 46.03,
+      "end": 47.96,
+      "members": [
+        "VERNON"
+      ],
       "original": "",
       "romanization": "Only fun shit is allowed",
       "english": "",
@@ -307,9 +313,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 49.32,
+      "end": 52.58,
+      "members": [
+        "SEUNGKWAN"
+      ],
       "original": "",
       "romanization": "An ordinary time ain’t enough for you",
       "english": "",
@@ -327,9 +335,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 53.29,
+      "end": 56.65,
+      "members": [
+        "SEUNGKWAN"
+      ],
       "original": "",
       "romanization": "You wanna have a good, good night",
       "english": "",
@@ -347,9 +357,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 57.38,
+      "end": 60.56,
+      "members": [
+        "DK"
+      ],
       "original": "",
       "romanization": "It’s 4 in the morning, what the fuck we doin’?",
       "english": "",
@@ -389,45 +401,55 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 61.28,
+      "end": 64.82,
+      "members": [
+        "DK"
+      ],
       "original": "",
       "romanization": "You turn and say, “a good, good time!”",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 65.98,
+      "end": 69.21,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
-      "romanization": "And I had time to think about it (bad influence)",
+      "romanization": "And I had time to think about it",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 69.79,
+      "end": 72.84,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
       "romanization": "But life would be so much better without it",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 72.99,
+      "end": 74.63,
+      "members": [
+        "WONWOO"
+      ],
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 75.81,
+      "end": 78.52,
+      "members": [
+        "MINGYU"
+      ],
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
@@ -544,99 +566,92 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 84.27,
+      "end": 86.01,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
       "original": "",
       "romanization": "Sometimes you wanna luck up",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 87.77,
+      "end": 90.09,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
       "original": "",
       "romanization": "You get frustrated, call me stuck up",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 92.26,
+      "end": 94.09,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
       "original": "",
       "romanization": "But once you bring the plug up",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 96.54,
+      "end": 97.91,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
       "original": "",
       "romanization": "Makes me wanna get fucked up",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 98.02,
+      "end": 99.07,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
-      "romanization": "Let’s go out (let’s go out)",
+      "romanization": "Let’s go out",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 100.07,
+      "end": 102.97,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
-      "romanization": "Let’s go ‘round",
+      "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 104.02,
+      "end": 106.97,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
-      "romanization": "What ya doin’ now?",
+      "romanization": "Bust the scene, Flip the vibe, chase the fade",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Let’s go out (let’s go out)",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Bust the scene",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Flip the vibe, chase the fade (chase the fade)",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 107.75,
+      "end": 110.96,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "And be the section everybody talkin’ bout",
       "english": "",
@@ -654,9 +669,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 112.01,
+      "end": 113.98,
+      "members": [
+        "S.COUPS"
+      ],
       "original": "",
       "romanization": "Only fun shit is allowed",
       "english": "",
@@ -674,9 +691,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 115.28,
+      "end": 118.56,
+      "members": [
+        "SEUNGKWAN"
+      ],
       "original": "",
       "romanization": "An ordinary time ain’t enough for you",
       "english": "",
@@ -694,9 +713,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 119.29,
+      "end": 122.61,
+      "members": [
+        "SEUNGKWAN"
+      ],
       "original": "",
       "romanization": "You wanna have a good, good night",
       "english": "",
@@ -714,9 +735,11 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 123.25,
+      "end": 126.51,
+      "members": [
+        "DK"
+      ],
       "original": "",
       "romanization": "It’s 4 in the morning, what the fuck we doin’?",
       "english": "",
@@ -734,45 +757,55 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 127.27,
+      "end": 130.82,
+      "members": [
+        "DK"
+      ],
       "original": "",
-      "romanization": "You turn and say,“a good, good time!”",
+      "romanization": "You turn and say, “a good, good time!”",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 132.1,
+      "end": 135.42,
+      "members": [
+        "JOSHUA"
+      ],
       "original": "",
-      "romanization": "And I had time to think about it (bad influence)",
+      "romanization": "And I had time to think about it",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 135.79,
+      "end": 138.92,
+      "members": [
+        "JOSHUA"
+      ],
       "original": "",
       "romanization": "It’s too much bullshit that surround it",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 139.07,
+      "end": 140.63,
+      "members": [
+        "JOSHUA"
+      ],
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 141.76,
+      "end": 144.36,
+      "members": [
+        "JUN"
+      ],
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
@@ -823,36 +856,44 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 148.04,
+      "end": 151.29,
+      "members": [
+        "THE8"
+      ],
       "original": "",
-      "romanization": "And I had time to think about it (bad influence)",
+      "romanization": "And I had time to think about it",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 151.73,
+      "end": 154.97,
+      "members": [
+        "THE8"
+      ],
       "original": "",
       "romanization": "But life would be so much better without it",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 155.12,
+      "end": 156.69,
+      "members": [
+        "THE8"
+      ],
       "original": "",
       "romanization": "I don’t want it at all",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 157.81,
+      "end": 160.59,
+      "members": [
+        "THE8"
+      ],
       "original": "",
       "romanization": "But hey, I wanna have a good time",
       "english": "",
