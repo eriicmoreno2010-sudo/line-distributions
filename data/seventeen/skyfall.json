@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "Skyfall",
   "video": "videos/seventeen_skyfall.mp4",
-  "duration": 0,
+  "duration": 182.099966,
   "theme": "dark",
   "subunit": true,
   "members": [
@@ -22,71 +22,85 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 7.96,
+      "end": 12.34,
+      "members": [
+        "THE8"
+      ],
       "original": "",
       "romanization": "Like a feather, I wanna let go",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 14.71,
+      "end": 19.24,
+      "members": [
+        "THE8"
+      ],
       "original": "갇혀있는, 창 틈새로 본",
       "romanization": "gadhyeoinneun, chang teumsaero bon",
       "english": "Through the gap between, The window bars, I see",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 21.58,
+      "end": 27.07,
+      "members": [
+        "THE8"
+      ],
       "original": "파란 벽지, 구름 하나둘",
       "romanization": "paran byeokji, gureum hanadul",
       "english": "Blue wallpaper, Clouds growing darker",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 28.4,
+      "end": 33.07,
+      "members": [
+        "THE8"
+      ],
       "original": "짙어지네, Tearing it down",
       "romanization": "jiteojine, tearing it down",
       "english": "One by one, Tearing it down",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 36,
+      "end": 41.8,
+      "members": [
+        "THE8"
+      ],
       "original": "Where to go, 귀에 익은 목소리",
       "romanization": "where to go, gwie ikkeun moksori",
       "english": "Where to go, A familiar voice",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 42.33,
+      "end": 47.26,
+      "members": [
+        "THE8"
+      ],
       "original": "다시 날 던져",
       "romanization": "dasi nal deonjyeo",
       "english": "Throws me down again",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 48.71,
+      "end": 50.48,
+      "members": [
+        "THE8"
+      ],
       "original": "",
       "romanization": "Sky fallin’ easy",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.04,
+      "end": 53,
       "members": [],
       "original": "",
       "romanization": "Lookin’ forward",
@@ -94,183 +108,155 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 55.65,
+      "end": 61.22,
+      "members": [
+        "THE8"
+      ],
       "original": "나의 눈에 비친, 飞鸟不留下痕迹",
       "romanization": "naui nune bichin, feijo bul liu xia liu xia hen ji",
       "english": "Reflected in my eyes, Birds in flight leave no traces",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 62.53,
+      "end": 67.52,
+      "members": [
+        "THE8"
+      ],
       "original": "",
       "romanization": "Steppin’ on the ceiling, Lookin’ for a reason",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 69.31,
+      "end": 75.02,
+      "members": [
+        "THE8"
+      ],
       "original": "눈을 감아 깊이, 소음 속에 잠들지",
       "romanization": "nuneul gama gipi, soeum soge jamdeulji",
       "english": "I close my eyes, And fall asleep deep within the noise",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 76.2,
+      "end": 80.96,
+      "members": [
+        "THE8"
+      ],
       "original": "빛바랜 상철 끌어안고 입 맞춰",
       "romanization": "bitbaraen sangcheol kkeureoango ip matchwo",
       "english": "I embrace the faded wound and kiss it",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 83.04,
+      "end": 87.68,
+      "members": [
+        "THE8"
+      ],
       "original": "희미하게 비치는 줄기의 단서",
       "romanization": "huimihage bichineun julgiui danseo",
       "english": "A clue from the stem faintly shining through",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어제 받아둔 전화에게",
-      "romanization": "eoje badadun jeonhwaege",
-      "english": "To the phone call I received yesterday",
+      "start": 89.74,
+      "end": 96.34,
+      "members": [
+        "THE8"
+      ],
+      "original": "어제 받아둔 전화에게, Now it’s time to say goodbye",
+      "romanization": "eoje badadun jeonhwaege, now it’s time to say goodbye",
+      "english": "To the phone call I received yesterday, Now it’s time to say goodbye",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Now it’s time to say goodbye",
-      "romanization": "now it’s time to say goodbye",
-      "english": "Now it’s time to say goodbye",
+      "start": 96.52,
+      "end": 103.24,
+      "members": [
+        "THE8"
+      ],
+      "original": "금세 돌아온 그 한마디, That is always up to you",
+      "romanization": "geumse dorawoon geu hanmadi, that is always up to you",
+      "english": "That one phrase that came back so quickly, That is always up to you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "금세 돌아온 그 한마디",
-      "romanization": "geumse dorawoon geu hanmadi",
-      "english": "That one phrase that came back so quickly",
+      "start": 104.51,
+      "end": 110.47,
+      "members": [
+        "THE8"
+      ],
+      "original": "Where to go, 귀에 익은 목소리",
+      "romanization": "where to go, gwie ikkeun moksori",
+      "english": "Where to go, A familiar voice",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "That is always up to you",
-      "romanization": "that is always up to you",
-      "english": "That is always up to you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Where to go",
-      "romanization": "where to go",
-      "english": "Where to go",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "귀에 익은 목소리",
-      "romanization": "gwie ikkeun moksori",
-      "english": "A familiar voice",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 110.91,
+      "end": 115.81,
+      "members": [
+        "THE8"
+      ],
       "original": "다시 날 던져",
       "romanization": "dasi nal deonjyeo",
       "english": "Throws me down again",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Sky fallin’ easy",
-      "romanization": "sky fallin’ easy",
-      "english": "Sky fallin’ easy",
+      "start": 117.31,
+      "end": 119.03,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Sky fallin’ easy",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.48,
+      "end": 121.58,
       "members": [],
-      "original": "Lookin’ forward",
-      "romanization": "lookin’ forward",
-      "english": "Lookin’ forward",
+      "original": "",
+      "romanization": "Lookin’ forward",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "나의 눈에 비친",
-      "romanization": "naui nune bichin",
-      "english": "Reflected in my eyes",
+      "start": 124.21,
+      "end": 129.77,
+      "members": [
+        "THE8"
+      ],
+      "original": "나의 눈에 비친, 飞鸟不留下痕迹",
+      "romanization": "naui nune bichin, feijo bul liu xia liu xia hen ji",
+      "english": "Reflected in my eyes, Birds in flight leave no traces",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "飞鸟不留下痕迹",
-      "romanization": "feijo bul liu xia liu xia hen ji",
-      "english": "Birds in flight leave no traces",
+      "start": 131.02,
+      "end": 136.07,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Steppin’ on the ceiling, Lookin’ for a reason",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Steppin’ on the ceiling",
-      "romanization": "steppin’ on the ceiling",
-      "english": "Steppin’ on the ceiling",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Lookin’ for a reason",
-      "romanization": "lookin’ for a reason",
-      "english": "Lookin’ for a reason",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "눈을 감아 깊이",
-      "romanization": "nuneul gama gipi",
-      "english": "I close my eyes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "소음 속에 잠들지",
-      "romanization": "soeum soge jamdeulji",
-      "english": "And fall asleep deep within the noise",
+      "start": 137.95,
+      "end": 143.56,
+      "members": [
+        "THE8"
+      ],
+      "original": "눈을 감아 깊이, 소음 속에 잠들지",
+      "romanization": "nuneul gama gipi, soeum soge jamdeulji",
+      "english": "I close my eyes, And fall asleep deep within the noise",
       "adlib": false
     }
   ],
