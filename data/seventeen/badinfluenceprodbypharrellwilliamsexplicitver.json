@@ -333,12 +333,12 @@
       "start": 32.01,
       "end": 32.91,
       "members": [
-        "VERNON"
+        "WONWOO"
       ],
       "original": "",
-      "romanization": "(let’s go out)",
+      "romanization": "Let’s go out",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           32.02,
@@ -367,12 +367,12 @@
       "start": 37.97,
       "end": 40.93,
       "members": [
-        "VERNON"
+        "WONWOO"
       ],
       "original": "",
       "romanization": "(chase the fade)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           37.99,
@@ -435,12 +435,12 @@
       "start": 69.09,
       "end": 69.91,
       "members": [
-        "S.COUPS"
+        "VERNON"
       ],
       "original": "",
       "romanization": "Only fun shit is allowed",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           69.09,
@@ -469,12 +469,12 @@
       "start": 48.58,
       "end": 51.09,
       "members": [
-        "S.COUPS"
+        "SEUNGKWAN"
       ],
       "original": "",
       "romanization": "An ordinary time ain’t enough for you",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           48.56,
@@ -507,12 +507,12 @@
       "start": 52.54,
       "end": 55.12,
       "members": [
-        "S.COUPS"
+        "SEUNGKWAN"
       ],
       "original": "",
       "romanization": "You wanna have a good, good night",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           52.52,
@@ -545,12 +545,12 @@
       "start": 56.56,
       "end": 59.05,
       "members": [
-        "S.COUPS"
+        "DK"
       ],
       "original": "",
       "romanization": "It’s 4 in the morning, what the fuck we doin’?",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           56.53,
@@ -583,12 +583,12 @@
       "start": 60.51,
       "end": 63.13,
       "members": [
-        "S.COUPS"
+        "DK"
       ],
       "original": "",
       "romanization": "You turn and say, “a good, good time!”",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           60.52,
@@ -864,7 +864,8 @@
       "start": 99.02,
       "end": 99.87,
       "members": [
-        "VERNON"
+        "WOOZI",
+        "MINGYU"
       ],
       "original": "",
       "romanization": "Sometimes you wanna luck up",
@@ -881,7 +882,8 @@
       "start": 103.04,
       "end": 103.85,
       "members": [
-        "VERNON"
+        "WOOZI",
+        "MINGYU"
       ],
       "original": "",
       "romanization": "You get frustrated, call me stuck up",
@@ -898,7 +900,8 @@
       "start": 107.06,
       "end": 107.9,
       "members": [
-        "VERNON"
+        "WOOZI",
+        "MINGYU"
       ],
       "original": "",
       "romanization": "But once you bring the plug up",
@@ -1224,12 +1227,12 @@
       "start": 135.06,
       "end": 135.88,
       "members": [
-        "S.COUPS"
+        "DK"
       ],
       "original": "",
-      "romanization": "You turn and say,“a good, good time!”",
+      "romanization": "You turn and say, “a good, good time!”",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           135.08,
@@ -1351,12 +1354,12 @@
       "start": 151.09,
       "end": 151.92,
       "members": [
-        "S.COUPS"
+        "JOSHUA"
       ],
       "original": "",
       "romanization": "And I had time to think about it",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           151.08,
@@ -1368,7 +1371,7 @@
       "start": 153.59,
       "end": 155.09,
       "members": [
-        "THE8"
+        "S.COUPS"
       ],
       "original": "",
       "romanization": "(bad influence)",
