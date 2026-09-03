@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Getaway (OUR VER.)",
   "video": "videos/grupoinventado_getawayourver.mp4",
-  "duration": 0,
+  "duration": 186.154376,
   "theme": "light",
   "subunit": false,
   "members": [
@@ -51,10 +51,354 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.63,
+      "end": 14.21,
       "members": [
-        "ARNAU"
+        "NCT 127"
+      ],
+      "original": "하루 비워둬, That’s all it takes",
+      "romanization": "haru biwodwo, that’s all it takes",
+      "english": "Clear your day, That’s all it takes",
+      "adlib": false,
+      "voice": []
+    },
+    {
+      "start": 14.34,
+      "end": 18.58,
+      "members": [
+        "NCT 127"
+      ],
+      "original": "Pull up in my coupe, 데리러 갈게",
+      "romanization": "pull up in my coupe, derireo galge",
+      "english": "Pull up in my coupe, I’ll come pick you up",
+      "adlib": false
+    },
+    {
+      "start": 18.7,
+      "end": 22.77,
+      "members": [
+        "NCT 127"
+      ],
+      "voice": [
+        [
+          27.12,
+          28.04
+        ],
+        [
+          28.23,
+          29.21
+        ]
+      ],
+      "original": "We don’t need a passport, 떠나 가볍게",
+      "romanization": "we don’t need a passport, tteona gabyeopge",
+      "english": "We don’t need a passport, Let’s leave without a care",
+      "adlib": false
+    },
+    {
+      "start": 22.93,
+      "end": 26.91,
+      "members": [
+        "NCT 127"
+      ],
+      "voice": [
+        [
+          31.38,
+          32.24
+        ],
+        [
+          32.4,
+          33.7
+        ]
+      ],
+      "original": "",
+      "romanization": "It’s a joyride with no GPS",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 27.06,
+      "end": 31.13,
+      "members": [
+        "JOHNNY"
+      ],
+      "voice": [
+        [
+          27.15,
+          28.01
+        ],
+        [
+          28.17,
+          31.11
+        ]
+      ],
+      "original": "Airplane mode, 온종일 켜둬 그냥 냅둬 남은 일",
+      "romanization": "airplane mode, onjongil kyeodwo geunyang naepdwo nameun il",
+      "english": "Airplane mode, Leave it on all day, just forget about the work left behind",
+      "adlib": false
+    },
+    {
+      "start": 31.29,
+      "end": 35.29,
+      "members": [
+        "JOHNNY"
+      ],
+      "voice": [
+        [
+          31.33,
+          32.23
+        ],
+        [
+          32.4,
+          35.38
+        ]
+      ],
+      "original": "Home sweet home 잠시 뒤로 해, 식혀둘래 머리는 Chill",
+      "romanization": "home sweet home jamsi dwiro hae, sikyeodullae meorineun chill",
+      "english": "Put home sweet home aside for a while, Let your head cool down, chill",
+      "adlib": false
+    },
+    {
+      "start": 35.47,
+      "end": 39.47,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          35.56,
+          39.57
+        ]
+      ],
+      "original": "팻말은 뒤집어 Take a day off, 페달을 밟아 Imma drive",
+      "romanization": "paetmareun dwijibeo take a day off, pedareul balba imma drive",
+      "english": "Turn the sign around, take a day off, Step on the pedal, Imma drive",
+      "adlib": false
+    },
+    {
+      "start": 39.48,
+      "end": 43.65,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          39.47,
+          43.63
+        ]
+      ],
+      "original": "또 왼손엔 한 잔의 Cherry coke, 딱 오늘만 쉬어 It’s alright",
+      "romanization": "tto oensoneneun han janui cherry coke, ttak oneulman swieo it’s alright",
+      "english": "And in my left hand, a glass of Cherry Coke, Just take today off, it’s alright",
+      "adlib": false
+    },
+    {
+      "start": 43.64,
+      "end": 44.83,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          43.69,
+          44.83
+        ]
+      ],
+      "original": "",
+      "romanization": "Go for a ride",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 45.04,
+      "end": 48.88,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          45.02,
+          48.83
+        ]
+      ],
+      "original": "지도에도 없는 Route, 누구나 아는 쉬운 길은, 전부 벗어나",
+      "romanization": "jidoedo eomneun route, nuguna aneun swiun gireun, jeonbu beoseona",
+      "english": "A route that isn’t even on the map, Leave behind, All the easy roads everyone knows",
+      "adlib": false
+    },
+    {
+      "start": 49.16,
+      "end": 52.2,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          49.11,
+          52.19
+        ]
+      ],
+      "original": "낯설은 Avenue, 기꺼이 헤매볼까",
+      "romanization": "natseoreun avenue, gikkeoi hemaebolkka",
+      "english": "An unfamiliar avenue, Shall we willingly get lost?",
+      "adlib": false
+    },
+    {
+      "start": 52.33,
+      "end": 56.3,
+      "members": [
+        "YUTA"
+      ],
+      "voice": [
+        [
+          52.41,
+          56.53
+        ]
+      ],
+      "original": "Gotta take a five 때론 필요해, 예정에 없던 Siesta",
+      "romanization": "gotta take a five ttaeron piryohae, yejeonge eopdeon siesta",
+      "english": "Gotta take a five, sometimes you need it, An unscheduled siesta",
+      "adlib": false
+    },
+    {
+      "start": 56.46,
+      "end": 60.81,
+      "members": [
+        "YUTA"
+      ],
+      "voice": [
+        [
+          56.6,
+          60.96
+        ]
+      ],
+      "original": "우린 자유롭고 나른해, 어쩌면 이게 Driver’s high",
+      "romanization": "urin jayuropgo nareunhae, eojjeomyeon ige driver’s high",
+      "english": "We’re free and lazy, Maybe this is what they call a driver’s high",
+      "adlib": false
+    },
+    {
+      "start": 61.27,
+      "end": 64.21,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          61.34,
+          62.44
+        ],
+        [
+          63.19,
+          64.51
+        ]
+      ],
+      "original": "Take the road, 여유만 가득 실은 채로",
+      "romanization": "take the road, yeoyuman gadeuk sireun chaero",
+      "english": "Take the road, With nothing but leisure packed inside",
+      "adlib": false
+    },
+    {
+      "start": 64.34,
+      "end": 68.58,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          64.46,
+          66.03
+        ],
+        [
+          66.15,
+          66.5
+        ],
+        [
+          66.65,
+          67.12
+        ],
+        [
+          67.27,
+          67.58
+        ],
+        [
+          67.73,
+          68.08
+        ],
+        [
+          68.21,
+          68.64
+        ]
+      ],
+      "original": "한 템포 느린 태도, 그게 우리 Dress code",
+      "romanization": "han tempo neurin taedo, geuge uri dress code",
+      "english": "An attitude one tempo slower, That’s our dress code",
+      "adlib": false
+    },
+    {
+      "start": 68.74,
+      "end": 72.86,
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          69.02,
+          71.02
+        ],
+        [
+          71.6,
+          73.16
+        ]
+      ],
+      "original": "We don’t need a way home, 내 직감만을 쫓아가",
+      "romanization": "we don’t need a way home, nae jiggammaneul jjotaga",
+      "english": "We don’t need a way home, I’ll just follow my instincts",
+      "adlib": false
+    },
+    {
+      "start": 72.98,
+      "end": 77.19,
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          73.19,
+          74.35
+        ],
+        [
+          74.53,
+          74.86
+        ],
+        [
+          75,
+          76.47
+        ],
+        [
+          76.62,
+          77.55
+        ]
+      ],
+      "original": "헤맨다 해도, 그게 새로운 Main course",
+      "romanization": "hemanda haedo, geuge saeroun main course",
+      "english": "Even if we get lost, That’ll be our new main course",
+      "adlib": false
+    },
+    {
+      "start": 78.14,
+      "end": 81.76,
+      "members": [
+        "NCT 127"
+      ],
+      "voice": [
+        [
+          136.34,
+          138.5
+        ],
+        [
+          138.94,
+          140.58
+        ]
       ],
       "original": "하루 비워둬, That’s all it takes",
       "romanization": "haru biwodwo, that’s all it takes",
@@ -62,508 +406,627 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 81.92,
+      "end": 85.96,
+      "members": [
+        "NCT 127"
+      ],
+      "voice": [
+        [
+          144.43,
+          146.17
+        ]
+      ],
       "original": "Pull up in my coupe, 데리러 갈게",
       "romanization": "pull up in my coupe, derireo galge",
       "english": "Pull up in my coupe, I’ll come pick you up",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 86.08,
+      "end": 90.41,
+      "members": [
+        "NCT 127"
+      ],
       "original": "We don’t need a passport, 떠나 가볍게",
       "romanization": "we don’t need a passport, tteona gabyeopge",
       "english": "We don’t need a passport, Let’s leave without a care",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 90.59,
+      "end": 94.71,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "It’s a joyride with no GPS",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Airplane mode, 온종일 켜둬 그냥 냅둬 남은 일",
-      "romanization": "airplane mode, onjongil kyeodwo geunyang naepdwo nameun il",
-      "english": "Airplane mode, Leave it on all day, just forget about the work left behind",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Home sweet home 잠시 뒤로 해, 식혀둘래 머리는 Chill",
-      "romanization": "home sweet home jamsi dwiro hae, sikyeodullae meorineun chill",
-      "english": "Put home sweet home aside for a while, Let your head cool down, chill",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "팻말은 뒤집어 Take a day off, 페달을 밟아 Imma drive",
-      "romanization": "paetmareun dwijibeo take a day off, pedareul balba imma drive",
-      "english": "Turn the sign around, take a day off, Step on the pedal, Imma drive",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "또 왼손엔 한 잔의 Cherry coke, 딱 오늘만 쉬어 It’s alright",
-      "romanization": "tto oensoneneun han janui cherry coke, ttak oneulman swieo it’s alright",
-      "english": "And in my left hand, a glass of Cherry Coke, Just take today off, it’s alright",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Go for a ride",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "지도에도 없는 Route, 누구나 아는 쉬운 길은, 전부 벗어나",
-      "romanization": "jidoedo eomneun route, nuguna aneun swiun gireun, jeonbu beoseona",
-      "english": "A route that isn’t even on the map, Leave behind, All the easy roads everyone knows",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "낯설은 Avenue, 기꺼이 헤매볼까",
-      "romanization": "natseoreun avenue, gikkeoi hemaebolkka",
-      "english": "An unfamiliar avenue, Shall we willingly get lost?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Gotta take a five 때론 필요해, 예정에 없던 Siesta",
-      "romanization": "gotta take a five ttaeron piryohae, yejeonge eopdeon siesta",
-      "english": "Gotta take a five, sometimes you need it, An unscheduled siesta",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "우린 자유롭고 나른해, 어쩌면 이게 Driver’s high",
-      "romanization": "urin jayuropgo nareunhae, eojjeomyeon ige driver’s high",
-      "english": "We’re free and lazy, Maybe this is what they call a driver’s high",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Take the road, 여유만 가득 실은 채로",
-      "romanization": "take the road, yeoyuman gadeuk sireun chaero",
-      "english": "Take the road, With nothing but leisure packed inside",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "한 템포 느린 태도, 그게 우리 Dress code",
-      "romanization": "han tempo neurin taedo, geuge uri dress code",
-      "english": "An attitude one tempo slower, That’s our dress code",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We don’t need a way home, 내 직감만을 쫓아가",
-      "romanization": "we don’t need a way home, nae jiggammaneul jjotaga",
-      "english": "We don’t need a way home, I’ll just follow my instincts",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "헤맨다 해도, 그게 새로운 Main course",
-      "romanization": "hemanda haedo, geuge saeroun main course",
-      "english": "Even if we get lost, That’ll be our new main course",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "하루 비워둬, That’s all it takes",
-      "romanization": "haru biwodwo, that’s all it takes",
-      "english": "Clear your day, That’s all it takes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Pull up in my coupe, 데리러 갈게",
-      "romanization": "pull up in my coupe, derireo galge",
-      "english": "Pull up in my coupe, I’ll come pick you up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We don’t need a passport, 떠나 가볍게",
-      "romanization": "we don’t need a passport, tteona gabyeopge",
-      "english": "We don’t need a passport, Let’s leave without a care",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "It’s a joyride with no GPS",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 95.2,
+      "end": 99.32,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          95.32,
+          97.19
+        ],
+        [
+          97.38,
+          99.32
+        ]
+      ],
       "original": "단숨에 지구 위를, 몇 바퀴를 도는 기분",
       "romanization": "dansume jigu wireul, myeot bakwireul doneun gibun",
       "english": "In an instant, around the Earth, Feels like going around it a few times",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 99.67,
+      "end": 103.27,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          99.75,
+          101.16
+        ],
+        [
+          101.54,
+          103.51
+        ]
+      ],
       "original": "Free and crazy, With my crew all in the backseat",
       "romanization": "free and crazy, with my crew all in the backseat",
       "english": "Free and crazy, With my crew all in the backseat",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 103.39,
+      "end": 107.51,
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          103.68,
+          105.53
+        ],
+        [
+          105.83,
+          107.53
+        ]
+      ],
       "original": "Take take take it way up, 목적지마저 랜덤",
       "romanization": "take take take it way up, mokjeokjimajeo raendeom",
       "english": "Take take take it way up, Even the destination is random",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 107.76,
+      "end": 111.87,
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          107.92,
+          112.05
+        ]
+      ],
       "original": "무계획이 내 Masterplan, Lemme shuffle all my playlist",
-      "romanization": "mugyehoek i nae masterplan, lemme shuffle all my playlist",
+      "romanization": "mugyehoeki nae masterplan, lemme shuffle all my playlist",
       "english": "Having no plan is my masterplan, Lemme shuffle all my playlist",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 111.95,
+      "end": 115.97,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          111.86,
+          115.93
+        ]
+      ],
       "original": "괜한 걱정 접어둬 우린, 필요하지 원근법이",
       "romanization": "gwaenhan geokjeong jeobeodwo urin, piryo haji wongeunbeobi",
       "english": "Put away all those unnecessary worries, We don’t need perspective",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 116.12,
+      "end": 119.97,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          116.12,
+          120.13
+        ]
+      ],
       "original": "뻔한 하루와 멀어진 뒤, 벗어나 긴말 없이",
       "romanization": "ppeonhan haruwa meoreojin dwi, beoseona ginmal eopsi",
       "english": "After getting away from the obvious everyday life, We break free without saying much",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 120.12,
+      "end": 124.04,
+      "members": [
+        "JOHNNY"
+      ],
+      "voice": [
+        [
+          120.06,
+          121.3
+        ],
+        [
+          122.21,
+          124.19
+        ]
+      ],
       "original": "Let’s take it up, 해질 때까지 달려도, This ain’t enough",
       "romanization": "let’s take it up, haejil ttaekkaji dallyeodo, this ain’t enough",
       "english": "Let’s take it up, Even if we drive until sunset, This ain’t enough",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "도망갈까 내일로 (Hey)",
-      "romanization": "domangalkka naeillo hey",
-      "english": "Should we escape into tomorrow? (hey)",
+      "start": 124.16,
+      "end": 128.3,
+      "members": [
+        "JOHNNY"
+      ],
+      "voice": [
+        [
+          124.23,
+          125.49
+        ],
+        [
+          126.17,
+          128.14
+        ]
+      ],
+      "original": "도망갈까 내일로",
+      "romanization": "domangalkka naeillo",
+      "english": "Should we escape into tomorrow?",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 128.71,
+      "end": 131.59,
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          128.69,
+          129.1
+        ],
+        [
+          129.22,
+          129.78
+        ],
+        [
+          130.5,
+          131.78
+        ]
+      ],
       "original": "Take the road, 여유만 가득 실은 채로",
       "romanization": "take the road, yeoyuman gadeuk sireun chaero",
       "english": "Take the road, With nothing but leisure packed inside",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 131.72,
+      "end": 136.13,
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          131.83,
+          133.38
+        ],
+        [
+          133.5,
+          133.88
+        ],
+        [
+          134.02,
+          136.17
+        ]
+      ],
       "original": "한 템포 느린 태도, 그게 우리 Dress code",
       "romanization": "han tempo neurin taedo, geuge uri dress code",
       "english": "An attitude one tempo slower, That’s our dress code",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 136.29,
+      "end": 140.17,
+      "members": [
+        "YUTA"
+      ],
+      "voice": [
+        [
+          136.39,
+          138.51
+        ],
+        [
+          138.94,
+          140.56
+        ]
+      ],
       "original": "We don’t need a way home, 내 직감만을 쫓아가",
       "romanization": "we don’t need a way home, nae jiggammaneul jjotaga",
       "english": "We don’t need a way home, I’ll just follow my instincts",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 140.3,
+      "end": 144.74,
+      "members": [
+        "YUTA"
+      ],
+      "voice": [
+        [
+          140.47,
+          141.81
+        ],
+        [
+          141.99,
+          142.32
+        ],
+        [
+          142.44,
+          143.91
+        ],
+        [
+          144.03,
+          144.81
+        ]
+      ],
       "original": "헤맨다 해도, 그게 새로운 Main course",
       "romanization": "hemanda haedo, geuge saeroun main course",
       "english": "Even if we get lost, That’ll be our new main course",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 145.47,
+      "end": 149.08,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(Hey)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 149.23,
+      "end": 153.26,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(Hmm yeah)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 153.42,
+      "end": 157.71,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(You)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 158.2,
+      "end": 161.48,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(Away)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 161.63,
+      "end": 166.18,
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "(Left or right)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          161.64,
+          163.02
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 166.53,
+      "end": 170.41,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(Take it up)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 170.81,
+      "end": 174.57,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(This ain’t enough)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 175.01,
+      "end": 178.82,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(Hey)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 3.1,
+      "end": 6.1,
+      "members": [
+        "TAEYONG"
+      ],
       "original": "(새로운 Main course)",
       "romanization": "(saeroun main course)",
       "english": "(A new main course)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          3.24,
+          6.12
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 77.67,
+      "end": 78.26,
+      "members": [
+        "NCT 127"
+      ],
       "original": "하루 비워둬, That’s all it takes",
       "romanization": "haru biwodwo, that’s all it takes",
       "english": "Clear your day, That’s all it takes",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 94,
+      "end": 95.02,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          93.99,
+          95.01
+        ]
+      ],
       "original": "",
       "romanization": "(That’s all it takes)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 96.57,
+      "end": 98.06,
+      "members": [
+        "NCT 127"
+      ],
       "original": "Pull up in my coupe, 데리러 갈게",
       "romanization": "pull up in my coupe, derireo galge",
       "english": "Pull up in my coupe, I’ll come pick you up",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 104.92,
+      "end": 105.89,
+      "members": [
+        "NCT 127"
+      ],
       "original": "(My coupe 데리러 갈게)",
       "romanization": "(my coupe derireo galge)",
       "english": "(My coupe, I’ll come pick you up)",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 107.58,
+      "end": 108.72,
+      "members": [
+        "NCT 127"
+      ],
       "original": "(데리러 갈게)",
       "romanization": "(derireo galge)",
       "english": "(I’ll come pick you up)",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 121.31,
+      "end": 122.35,
+      "members": [
+        "NCT 127"
+      ],
       "original": "We don’t need a passport, 떠나 가볍게",
       "romanization": "we don’t need a passport, tteona gabyeopge",
       "english": "We don’t need a passport, Let’s leave without a care",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 125.53,
+      "end": 126.48,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "(Just get away)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 128.17,
+      "end": 128.78,
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
       "romanization": "It’s a joyride with no GPS",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 144.42,
+      "end": 146.13,
+      "members": [
+        "JOHNNY"
+      ],
+      "voice": [
+        [
+          144.46,
+          146.23
+        ]
+      ],
       "original": "",
       "romanization": "Pick up the pace, Da da da da da la da la da",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 148.98,
+      "end": 150.25,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          149,
+          150.34
+        ]
+      ],
       "original": "",
       "romanization": "(Oh my god for real)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 150.3,
+      "end": 153.22,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          150.32,
+          153.3
+        ]
+      ],
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 153.16,
+      "end": 154.4,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          153.23,
+          154.43
+        ]
+      ],
       "original": "",
       "romanization": "(Okay okay okay)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 157.36,
+      "end": 158.57,
+      "members": [
+        "TAEYONG"
+      ],
+      "voice": [
+        [
+          157.37,
+          158.5
+        ]
+      ],
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 158.19,
+      "end": 162.03,
+      "members": [
+        "YUTA"
+      ],
+      "voice": [
+        [
+          158.19,
+          161.96
+        ]
+      ],
       "original": "",
       "romanization": "(That’s it that’s it)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 164.79,
+      "end": 166.56,
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          164.91,
+          165.48
+        ],
+        [
+          165.99,
+          166.52
+        ]
+      ],
       "original": "",
       "romanization": "Da da da da da la da la da",
       "english": "",
-      "adlib": false
+      "adlib": true
     }
   ]
 }
