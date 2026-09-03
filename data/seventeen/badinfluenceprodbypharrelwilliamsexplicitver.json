@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "Bad Influence (Prod. by Pharrel Williams) (Explicit Ver.)",
   "video": "videos/seventeen_badinfluenceprodbypharrelwilliamsexplicitver.mp4",
-  "duration": 0,
+  "duration": 167.500667,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -96,12 +96,599 @@
       "start": 0,
       "end": 0,
       "members": [
-        "S.COUPS"
+        "DINO"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "And I had time to think about it",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DINO"
+      ],
+      "original": "",
+      "romanization": "It’s too much bullshit that surround it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DINO"
+      ],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUN"
+      ],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "And I had time to think about it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "But life would be so much better without it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "Let’s go out ",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Bust the scene",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Flip the vibe, chase the fade (chase the fade)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "And be the section everybody talkin’ bout",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(talkin’ bout)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Only fun shit is allowed",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "An ordinary time ain’t enough for you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You wanna have a good, good night",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "It’s 4 in the morning, what the fuck we doin’?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You turn and say, “a good, good time!”",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "And I had time to think about it (bad influence)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But life would be so much better without it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(good, good, good time)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Sometimes you wanna luck up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You get frustrated, call me stuck up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But once you bring the plug up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Makes me wanna get fucked up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let’s go out (let’s go out)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let’s go ‘round",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "What ya doin’ now?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let’s go out (let’s go out)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Bust the scene",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Flip the vibe, chase the fade (chase the fade)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "And be the section everybody talkin’ bout",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(talkin’ bout)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Only fun shit is allowed",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "An ordinary time ain’t enough for you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You wanna have a good, good night",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "It’s 4 in the morning, what the fuck we doin’?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "You turn and say,“a good, good time!”",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "And I had time to think about it (bad influence)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "It’s too much bullshit that surround it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "And I had time to think about it (bad influence)",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But life would be so much better without it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true
     }
   ]
 }
