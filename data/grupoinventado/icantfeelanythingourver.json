@@ -135,18 +135,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "ooh Now I try hard to escape",
-      "english": "",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "길었던 밤의 저편에",
-      "romanization": "gireotdeon bame jeopyeone",
-      "english": "Beyond the long night",
+      "original": "ooh Now I try hard to escape, 길었던 밤의 저편에",
+      "romanization": "ooh now i try hard to escape, gireotdeon bame jeopyeone",
+      "english": "Ooh Now I try hard to escape, Beyond the long night",
       "adlib": false
     },
     {
@@ -198,18 +189,63 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ooh Though I'm)",
-      "romanization": "(ooh though i'm)",
-      "english": "(Ooh, though I’m)",
+      "original": "",
+      "romanization": "(ooh Though I'm)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I'm still confused, Wishin’ that I could just get through",
-      "romanization": "i'm still confused, wishin’ that i could just get through",
-      "english": "I’m still confused, Wishin’ that I could just get through",
+      "original": "",
+      "romanization": "(Still confused)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Just get through, Erased from my mind)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t feel)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t feel)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I'm still confused, Wishin’ that I could just get through, Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
       "adlib": false
     },
     {
@@ -225,7 +261,16 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Erased from my mind",
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind ",
       "romanization": "erased from my mind",
       "english": "Erased from my mind",
       "adlib": false
@@ -234,45 +279,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Erased from my mind (I can’t feel)",
-      "romanization": "erased from my mind (i can’t feel)",
-      "english": "Erased from my mind (I can’t feel)",
+      "original": "",
+      "romanization": "Erased from my mind",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Erased from my mind",
-      "romanization": "erased from my mind",
-      "english": "Erased from my mind",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Erased from my mind (I can’t feel)",
-      "romanization": "erased from my mind (i can’t feel)",
-      "english": "Erased from my mind (I can’t feel)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Erased from my mind",
-      "romanization": "erased from my mind",
-      "english": "Erased from my mind",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Escape from reality and dream beyond",
-      "romanization": "escape from reality and dream beyond",
-      "english": "Escape from reality and dream beyond",
+      "original": "",
+      "romanization": "Escape from reality and dream beyond",
+      "english": "",
       "adlib": false
     }
   ]
