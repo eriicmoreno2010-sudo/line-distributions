@@ -54,7 +54,8 @@
       "start": 15.05,
       "end": 17.87,
       "members": [
-        "MARK"
+        "MARK",
+        "BIEL"
       ],
       "original": "",
       "romanization": "I might’ve been afraid to be brave, Come on",
@@ -71,7 +72,8 @@
       "start": 18.14,
       "end": 20.99,
       "members": [
-        "MARK"
+        "MARK",
+        "BIEL"
       ],
       "original": "가본 적 없는 Place 낯선 Way, Come on",
       "romanization": "gabon jeok eomneun place natseon way, come on",
@@ -88,7 +90,8 @@
       "start": 21.26,
       "end": 25.87,
       "members": [
-        "MARK"
+        "MARK",
+        "BIEL"
       ],
       "original": "아득한 벽 앞에 멈춘 채, Come on come on",
       "romanization": "adeukhan byeok ape meomchun chae, come on come on",
@@ -117,7 +120,8 @@
       "start": 26.02,
       "end": 34.34,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "ERIC"
       ],
       "original": "Cause I'm lost and confused, 어둠 속에 빠져 난 지금",
       "romanization": "cause i'm lost and confused, eodum soge ppajyeo nan jigeum",
@@ -138,7 +142,8 @@
       "start": 34.49,
       "end": 37.63,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "ERIC"
       ],
       "original": "아득해져 가",
       "romanization": "adeukhae jyeo ga",
@@ -155,7 +160,8 @@
       "start": 37.76,
       "end": 39.67,
       "members": [
-        "RENJUN"
+        "RENJUN",
+        "ARNAU"
       ],
       "original": "",
       "romanization": "Erased from my mind",
@@ -194,7 +200,7 @@
       "original": "",
       "romanization": "(I can’t feel)",
       "english": "",
-      "adlib": false,
+      "adlib": true,
       "voice": [
         [
           50.14,
@@ -353,7 +359,7 @@
       "original": "Fadin’ out 작아져만 가",
       "romanization": "fadin’ out jagajyeoman ga",
       "english": "They’re getting smaller and smaller",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 74.49,
