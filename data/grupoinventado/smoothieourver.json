@@ -52,18 +52,18 @@
   "lyrics": [
     {
       "start": 0,
-      "end": 0,
+      "end": 7.45,
       "members": [
         "ARNAU"
       ],
       "original": "Smoothie yes sir umm",
-      "romanization": "smoothie yes, sir umm",
+      "romanization": "smoothie yes sir umm",
       "english": "Smoothie yes sir umm",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 8.47,
+      "end": 9.08,
       "members": [],
       "original": "",
       "romanization": "Listen",
@@ -71,8 +71,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.35,
+      "end": 11.32,
       "members": [],
       "original": "Good boy, 이제 더는 없어 I’mma bad",
       "romanization": "good boy, ije deoneun eopseo i'mma bad",
@@ -80,17 +80,17 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.51,
+      "end": 13.58,
       "members": [],
       "original": "Soft하게 Twist, Give you just a lil’ taste ha",
-      "romanization": "softhage twist, give you just a little taste, ha",
+      "romanization": "softhage twist, give you just a little taste ha",
       "english": "Softly Twist, Give you just a lil' taste ha",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 13.99,
+      "end": 15.98,
       "members": [],
       "original": "가차 없이 비틀어 논 다음",
       "romanization": "gacha eopsi biteureo non daeum",
@@ -98,8 +98,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 16.16,
+      "end": 18.04,
       "members": [],
       "original": "삼켜 Sip, Watch how I blend it up",
       "romanization": "samkyeo sip, watch how i blend it up",
@@ -107,8 +107,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.1,
+      "end": 20.12,
       "members": [],
       "original": "가릴 것이 없어, 우린 목이 말라 마침",
       "romanization": "garil geosi eopseo, urin mogi malla machim",
@@ -116,8 +116,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.27,
+      "end": 22.43,
       "members": [],
       "original": "보여줄게, 네가 바란 무자비한 방식",
       "romanization": "boyeojulge, nega baran mujabihan bangsik",
@@ -125,8 +125,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 22.61,
+      "end": 26.41,
       "members": [],
       "original": "Strawberry sweet cinnamon, 어서 Pop that corn 터트려봐",
       "romanization": "strawberry sweet cinnamon, eoseo pop that corn teoteuryeobwa",
@@ -134,8 +134,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.54,
+      "end": 28.87,
       "members": [],
       "original": "You should know what you missin’, 수준대로 Guessin’",
       "romanization": "you should know what you missin', sujundaero guessin'",
@@ -143,8 +143,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 29.02,
+      "end": 30.72,
       "members": [],
       "original": "Freeze like ice, 단 한 번에 Crushin’",
       "romanization": "freeze like ice, dan han beone crushin'",
@@ -152,8 +152,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 30.87,
+      "end": 32.98,
       "members": [],
       "original": "날것 그대로인 Action, 껍질째로 밟아 우선",
       "romanization": "nalgeot geudaeroin action, kkeopjiljjaero balba useon",
@@ -161,8 +161,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.11,
+      "end": 34.86,
       "members": [],
       "original": "수도 없이 견딘 상처, 위로 들이부어 실컷",
       "romanization": "sudo eopsi gyeondin sangcheo, wiro deuribueo silkeot",
@@ -170,8 +170,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 35.05,
+      "end": 39.16,
       "members": [],
       "original": "끈적하게 날, 타고 흘러내린 Trauma",
       "romanization": "kkeunjeokage nal, tago heulleonaerin trauma",
@@ -179,8 +179,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 39.31,
+      "end": 43.2,
       "members": [],
       "original": "씹어 삼켜 바닥까지, Cuz you’re my",
       "romanization": "ssibeo samkyeo badakkkaji, 'cuz you're my",
@@ -188,8 +188,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 43.66,
+      "end": 44.13,
       "members": [],
       "original": "",
       "romanization": "Smoothie",
@@ -197,8 +197,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 44.28,
+      "end": 47.33,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -206,8 +206,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.48,
+      "end": 48.44,
       "members": [],
       "original": "다 털어 갈아 넣어",
       "romanization": "da teoreo gara neoeo",
@@ -215,8 +215,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 48.61,
+      "end": 51.73,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -224,8 +224,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.86,
+      "end": 52.93,
       "members": [],
       "original": "Dirty taste 들이켜",
       "romanization": "dirty taste deurikyeo",
@@ -233,8 +233,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 53.04,
+      "end": 56.1,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -242,8 +242,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 56.25,
+      "end": 57.21,
       "members": [],
       "original": "가볍게 씹어 삼켜",
       "romanization": "gabyeopge ssibeo samkyeo",
@@ -251,8 +251,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.36,
+      "end": 59.46,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie, Smoothie Smoothie",
@@ -260,8 +260,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.37,
+      "end": 66.01,
       "members": [],
       "original": "",
       "romanization": "Sip it sip it down like Smoothie",
@@ -269,8 +269,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.73,
+      "end": 70.17,
       "members": [],
       "original": "",
       "romanization": "Sip it sip it down like Smoothie",
@@ -278,8 +278,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 70.32,
+      "end": 74.46,
       "members": [],
       "original": "때려 넣어 Doubt and fake, 쏟아부어 모든 Pain",
       "romanization": "ttaeryeo neoeo doubt and fake, ssodabueo modeun pain",
@@ -287,8 +287,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.01,
+      "end": 78.98,
       "members": [],
       "original": "Shower that in all this ice, 결국엔 녹아 Fade out",
       "romanization": "shower that in all this ice, gyeolgugen noga fade out",
@@ -296,8 +296,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.11,
+      "end": 82.21,
       "members": [],
       "original": "어디 더 던져봐 Stuff, Syrup and sugar like buff",
       "romanization": "eodi deo deonjyeobwa stuff, syrup and sugar like buff",
@@ -305,8 +305,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.37,
+      "end": 86.39,
       "members": [],
       "original": "",
       "romanization": "We make it easy, I’m gonna take it all",
@@ -314,8 +314,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 86.55,
+      "end": 87.93,
       "members": [],
       "original": "",
       "romanization": "Ayo Check it huh",
@@ -323,8 +323,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.09,
+      "end": 89.71,
       "members": [],
       "original": "재료는 차고 넘쳐, 새로 만든 Menu",
       "romanization": "jaeryoneun chago neomchyeo, saero mandeun menu",
@@ -332,8 +332,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 89.82,
+      "end": 92.27,
       "members": [],
       "original": "So delicious vicious, 뭐래도 I deserve, I’mma killa huh",
       "romanization": "so delicious vicious, mworaedo i deserve, i'mma killa huh",
@@ -341,8 +341,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 92.45,
+      "end": 94.27,
       "members": [],
       "original": "What a commotion, 튀어 오른 찌꺼긴 옷에 묻어",
       "romanization": "what a commotion, twieo oreun jjikkeoginose mudeo",
@@ -350,8 +350,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 94.42,
+      "end": 96.42,
       "members": [],
       "original": "그냥 버려 난 이미, Don’t need permission, You just watch it",
       "romanization": "geunyang beoryeo nan imi, don't need permission, you just watch it",
@@ -359,8 +359,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 96.54,
+      "end": 98.55,
       "members": [],
       "original": "",
       "romanization": "Shakin’ stirrin’ drinkin’ up",
@@ -368,8 +368,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 98.73,
+      "end": 100.26,
       "members": [],
       "original": "",
       "romanization": "(ho! Give us some more)",
@@ -377,8 +377,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 100.39,
+      "end": 102.09,
       "members": [],
       "original": "",
       "romanization": "Hot and spicy Mix it up",
@@ -386,8 +386,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 102.24,
+      "end": 104.89,
       "members": [],
       "original": "Wait stop 입은 다물고 봐, I’m ridin’ that new wave",
       "romanization": "wait, stop ibeun damulgo bwa, i'm ridin' that new wave",
@@ -395,8 +395,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 105.07,
+      "end": 107.38,
       "members": [],
       "original": "You should know what you missin’, 취향대로 Guessin’",
       "romanization": "you should know what you missin', chwihyangdaero guessin'",
@@ -404,8 +404,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 107.5,
+      "end": 109.37,
       "members": [],
       "original": "Freeze like ice, 더 거칠게 Mess up",
       "romanization": "freeze like ice, deo geochilge mess up",
@@ -485,8 +485,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 109.52,
+      "end": 111.48,
       "members": [],
       "original": "훤히 드러나는 Action, 배배 꼬여버린 시선",
       "romanization": "hwonhi deureonaneun action, baebae kkoyeobeorin siseon",
@@ -494,8 +494,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 111.6,
+      "end": 113.39,
       "members": [],
       "original": "밟아버리는 게 Mission, 우린 Special한 Edition",
       "romanization": "balbabeorineun ge mission, urin specialhan edition",
@@ -503,8 +503,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 113.52,
+      "end": 117.76,
       "members": [],
       "original": "끈적하게 날, 뒤덮었던 흉터를 봐",
       "romanization": "kkeunjeokage nal, dwideopeotdeon hyungteoreul bwa",
@@ -512,8 +512,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 117.89,
+      "end": 121.78,
       "members": [],
       "original": "흔적 없이 끝을 내지, Watch me now",
       "romanization": "heunjeok eopsi kkeuteul naeji, watch me now",
@@ -521,8 +521,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 122.19,
+      "end": 122.62,
       "members": [],
       "original": "",
       "romanization": "Smoothie",
@@ -530,8 +530,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 122.77,
+      "end": 125.92,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -539,8 +539,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 126.06,
+      "end": 127.02,
       "members": [],
       "original": "다 털어 갈아 넣어",
       "romanization": "da teoreo gara neoeo",
@@ -548,8 +548,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 127.14,
+      "end": 130.28,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -557,8 +557,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.43,
+      "end": 131.42,
       "members": [],
       "original": "Dirty taste 들이켜",
       "romanization": "dirty taste deurikyeo",
@@ -566,8 +566,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 131.54,
+      "end": 134.62,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -575,8 +575,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.8,
+      "end": 135.7,
       "members": [],
       "original": "가볍게 씹어 삼켜",
       "romanization": "gabyeopge ssibeo samkyeo",
@@ -584,8 +584,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 135.86,
+      "end": 137.99,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie, Smoothie Smoothie",
@@ -593,8 +593,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 141.35,
+      "end": 144.71,
       "members": [],
       "original": "얼마든지 괴로워도 괜찮아",
       "romanization": "eolmadeunji goerowodo gwaenchana",
@@ -602,8 +602,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 145.69,
+      "end": 148.8,
       "members": [],
       "original": "달콤함만 기대한 적 없어 난",
       "romanization": "dalkomhamman gidaehan jeok eopseo nan",
@@ -611,8 +611,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 148.92,
+      "end": 153.11,
       "members": [],
       "original": "모든 고통이, 전부 녹아 흐른 뒤",
       "romanization": "modeun gotongi, jeonbu noga heureun dwi",
@@ -620,8 +620,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 153.29,
+      "end": 157.83,
       "members": [],
       "original": "다시 채워지는 새로운 나",
       "romanization": "dasi chaewojineun saeroun na",
@@ -629,8 +629,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 157.95,
+      "end": 159.62,
       "members": [],
       "original": "",
       "romanization": "Sip it down real smooth you know",
@@ -638,8 +638,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 159.89,
+      "end": 163.08,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -656,8 +656,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 163.24,
+      "end": 164.08,
       "members": [],
       "original": "다 털어 갈아 넣어",
       "romanization": "da teoreo gara neoeo",
@@ -665,8 +665,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 164.23,
+      "end": 167.37,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -683,8 +683,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.53,
+      "end": 168.47,
       "members": [],
       "original": "Dirty taste 들이켜",
       "romanization": "dirty taste deurikyeo",
@@ -701,8 +701,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 168.63,
+      "end": 171.74,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
@@ -710,8 +710,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 171.89,
+      "end": 172.85,
       "members": [],
       "original": "가볍게 씹어 삼켜",
       "romanization": "gabyeopge ssibeo samkyeo",
@@ -737,8 +737,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 173.02,
+      "end": 174.98,
       "members": [],
       "original": "",
       "romanization": "Smoothie Smoothie, Smoothie Smoothie",
@@ -746,8 +746,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 176.77,
+      "end": 178.82,
       "members": [],
       "original": "끈적하게 날",
       "romanization": "kkeunjeokage nal",
@@ -755,8 +755,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 179.98,
+      "end": 181.68,
       "members": [],
       "original": "",
       "romanization": "Sip it sip it down like Smoothie",
@@ -764,12 +764,21 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 184.38,
+      "end": 185.49,
       "members": [],
-      "original": "Sip it sip it down like",
-      "romanization": "sip it, sip it down like",
-      "english": "Sip it sip it down like",
+      "original": "",
+      "romanization": "Sip it sip it down like",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 185.5,
+      "end": 186.06,
+      "members": [],
+      "original": "",
+      "romanization": "Smoothie",
+      "english": "",
       "adlib": false
     }
   ]
