@@ -805,7 +805,13 @@
       "original": "",
       "romanization": "(Ha ha)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          5.28,
+          5.74
+        ]
+      ]
     },
     {
       "start": 27.66,
@@ -814,7 +820,13 @@
       "original": "",
       "romanization": "(Hey)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          27.62,
+          27.96
+        ]
+      ]
     },
     {
       "start": 28.74,
@@ -823,7 +835,13 @@
       "original": "",
       "romanization": "(Hey)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          28.7,
+          29.09
+        ]
+      ]
     },
     {
       "start": 30.33,
@@ -832,7 +850,13 @@
       "original": "",
       "romanization": "(Brrah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          30.31,
+          31.11
+        ]
+      ]
     },
     {
       "start": 108.58,
@@ -841,7 +865,13 @@
       "original": "(거칠게 Mess up yeah)",
       "romanization": "(geochilge mess up yeah)",
       "english": "(Rough that Mess up yeah)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          108.64,
+          111.98
+        ]
+      ]
     },
     {
       "start": 115.21,
@@ -850,7 +880,13 @@
       "original": "(끈적하게 날 뒤덮)",
       "romanization": "(kkeunjeokage nal dwideop)",
       "english": "(Felt sticky on me)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          115.18,
+          117.03
+        ]
+      ]
     },
     {
       "start": 134.74,
@@ -859,7 +895,13 @@
       "original": "(가볍게 씹어 삼켜 Smoothie)",
       "romanization": "(gabyeopge ssibeo samkyeo smoothie)",
       "english": "(Chew a bit and swallow it Smoothie)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          134.79,
+          136.74
+        ]
+      ]
     },
     {
       "start": 152.54,
@@ -868,7 +910,13 @@
       "original": "(흘러간 뒤)",
       "romanization": "(heulleogan dwi)",
       "english": "(After it flows)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          152.52,
+          153.44
+        ]
+      ]
     },
     {
       "start": 109.52,
@@ -1219,7 +1267,13 @@
       "original": "",
       "romanization": "(Sip it down yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          161.47,
+          164.18
+        ]
+      ]
     },
     {
       "start": 163.24,
@@ -1250,7 +1304,17 @@
       "original": "",
       "romanization": "(Pour it like Smoothie yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          165.8,
+          166.96
+        ],
+        [
+          167.2,
+          168.5
+        ]
+      ]
     },
     {
       "start": 167.53,
@@ -1270,7 +1334,13 @@
       "original": "(Dirty taste 들이켜 Smoothie)",
       "romanization": "(dirty taste deurikyeo smoothie)",
       "english": "(Dirty taste drink it up Smoothie)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          167.53,
+          169.78
+        ]
+      ]
     },
     {
       "start": 168.63,
@@ -1301,7 +1371,13 @@
       "original": "(가볍게 씹어 삼켜 Smoothie)",
       "romanization": "(gabyeopge ssibeo samkyeo smoothie)",
       "english": "(Chew a bit 'n' swallow it Smoothie)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          171.9,
+          173.54
+        ]
+      ]
     },
     {
       "start": 174.84,
@@ -1310,7 +1386,13 @@
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          174.83,
+          175.5
+        ]
+      ]
     },
     {
       "start": 173.02,
