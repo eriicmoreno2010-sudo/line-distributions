@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "icantfeelanything (OUR VER.)",
-  "video": "",
+  "video": "videos/grupoinventado_icantfeelanythingourver.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": false,
@@ -56,10 +56,316 @@
       "members": [
         "ARNAU"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "I might’ve been afraid to be brave",
+      "romanization": "i might’ve been afraid to be brave",
+      "english": "I might’ve been afraid to be brave",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Come on",
+      "romanization": "come on",
+      "english": "Come on",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가본 적 없는 Place 낯선 Way",
+      "romanization": "gabon jeok eomneun place natseon way",
+      "english": "A place I’ve never been to An unfamiliar way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Come on",
+      "romanization": "come on",
+      "english": "Come on",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아득한 벽 앞에 멈춘 채",
+      "romanization": "adeukhan byeok ape meomchun chae",
+      "english": "Standing still before a distant wall",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Come on come on",
+      "romanization": "come on come on",
+      "english": "Come on, come on",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Cause I'm lost and confused",
+      "romanization": "cause i'm lost and confused",
+      "english": "’Cause I’m lost and confused",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어둠 속에 빠져 난 지금",
+      "romanization": "eodum soge ppajyeo nan jigeum",
+      "english": "I’m falling into the darkness",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아득해져 가",
+      "romanization": "adeukhae jyeo ga",
+      "english": "It’s getting more distant now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind",
+      "romanization": "erased from my mind",
+      "english": "Erased from my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind (I can’t feel)",
+      "romanization": "erased from my mind (i can’t feel)",
+      "english": "Erased from my mind (I can’t feel)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind",
+      "romanization": "erased from my mind",
+      "english": "Erased from my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "ooh Now I try hard to escape",
+      "romanization": "ooh now i try hard to escape",
+      "english": "Ooh Now I try hard to escape",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "길었던 밤의 저편에",
+      "romanization": "gireotdeon bame jeopyeone",
+      "english": "Beyond the long night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두려움을 딛어",
+      "romanization": "duryeoumeul dideo",
+      "english": "I overcome my fear",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "자신을 믿어",
+      "romanization": "jasineul mideo",
+      "english": "I believe in myself",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "새로운 세상을",
+      "romanization": "saeroun sesangeul",
+      "english": "Toward a new world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "향해 Speed up",
+      "romanization": "hyanghae speed up",
+      "english": "Speed up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "ay ay 새벽을 건너",
+      "romanization": "ay ay saebyeogeul geonneo",
+      "english": "Ay, ay Crossing through the dawn",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Now I fly high 더 높이",
+      "romanization": "now i fly high deo nopi",
+      "english": "Now I fly high Higher",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 붙잡던 어둠은",
+      "romanization": "nal butjapdeon eodumeun",
+      "english": "The darkness that held me back",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다 흩어지듯이",
+      "romanization": "da heuteojideusi",
+      "english": "Scatters away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Lookin’ up higher in the sky",
+      "romanization": "lookin’ up higher in the sky",
+      "english": "Lookin’ up higher in the sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어제의 두려움은 다",
+      "romanization": "eojeui duryeoumeun da",
+      "english": "Yesterday’s fears are all fading out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fadin’ out 작아져만 가",
+      "romanization": "fadin’ out jagajyeoman ga",
+      "english": "They’re getting smaller and smaller",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(ooh Though I'm)",
+      "romanization": "(ooh though i'm)",
+      "english": "(Ooh, though I’m)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm still confused",
+      "romanization": "i'm still confused",
+      "english": "I’m still confused",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Wishin’ that I could just get through",
+      "romanization": "wishin’ that i could just get through",
+      "english": "Wishin’ that I could just get through",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind",
+      "romanization": "erased from my mind",
+      "english": "Erased from my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind",
+      "romanization": "erased from my mind",
+      "english": "Erased from my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind (I can’t feel)",
+      "romanization": "erased from my mind (i can’t feel)",
+      "english": "Erased from my mind (I can’t feel)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind",
+      "romanization": "erased from my mind",
+      "english": "Erased from my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind (I can’t feel)",
+      "romanization": "erased from my mind (i can’t feel)",
+      "english": "Erased from my mind (I can’t feel)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Erased from my mind",
+      "romanization": "erased from my mind",
+      "english": "Erased from my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Escape from reality and dream beyond",
+      "romanization": "escape from reality and dream beyond",
+      "english": "Escape from reality and dream beyond",
+      "adlib": false
     }
   ]
 }
