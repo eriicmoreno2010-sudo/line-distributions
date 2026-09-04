@@ -9,7 +9,7 @@
     {
       "name": "ARNAU",
       "image": "images/grupoinventado/smoothieourver/arnau.png",
-      "color": "#f08c00",
+      "color": "#ff7300",
       "focus": 50,
       "lift": 3
     },
@@ -44,7 +44,7 @@
     {
       "name": "ERIC",
       "image": "images/grupoinventado/smoothieourver/eric.png",
-      "color": "#ffaa33",
+      "color": "#fb9118",
       "focus": 50,
       "lift": 3
     }
