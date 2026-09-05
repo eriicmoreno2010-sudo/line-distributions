@@ -651,7 +651,13 @@
       "original": "",
       "romanization": "(Ay)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          16.56,
+          17.98
+        ]
+      ]
     },
     {
       "start": 81.68,
@@ -660,7 +666,13 @@
       "original": "",
       "romanization": "(Ay)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          81.68,
+          83.07
+        ]
+      ]
     },
     {
       "start": 82.75,
@@ -669,7 +681,13 @@
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          82.98,
+          85.25
+        ]
+      ]
     },
     {
       "start": 86.85,
@@ -678,7 +696,13 @@
       "original": "",
       "romanization": "(Woo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          86.91,
+          89.28
+        ]
+      ]
     },
     {
       "start": 91.09,
@@ -687,7 +711,13 @@
       "original": "",
       "romanization": "(Ah hoo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          91.17,
+          93.4
+        ]
+      ]
     },
     {
       "start": 93.38,
@@ -696,7 +726,13 @@
       "original": "",
       "romanization": "(Hey)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          93.36,
+          94.15
+        ]
+      ]
     },
     {
       "start": 97.95,
@@ -705,7 +741,13 @@
       "original": "",
       "romanization": "(Ay)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          97.9,
+          99.32
+        ]
+      ]
     },
     {
       "start": 107.37,
@@ -714,7 +756,13 @@
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          107.34,
+          109.48
+        ]
+      ]
     },
     {
       "start": 111.48,
@@ -723,7 +771,13 @@
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          111.43,
+          113.05
+        ]
+      ]
     },
     {
       "start": 146.74,
@@ -732,7 +786,13 @@
       "original": "",
       "romanization": "(Ay)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          146.73,
+          148.08
+        ]
+      ]
     },
     {
       "start": 147.91,
@@ -741,7 +801,13 @@
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          147.81,
+          150.3
+        ]
+      ]
     },
     {
       "start": 151.99,
@@ -750,7 +816,13 @@
       "original": "",
       "romanization": "(Woo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          152.04,
+          154.35
+        ]
+      ]
     },
     {
       "start": 156.27,
@@ -759,7 +831,13 @@
       "original": "",
       "romanization": "(Ah hoo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          156.21,
+          158.35
+        ]
+      ]
     },
     {
       "start": 158.44,
@@ -768,7 +846,13 @@
       "original": "",
       "romanization": "(Hey)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          158.43,
+          159.18
+        ]
+      ]
     },
     {
       "start": 163,
@@ -777,7 +861,13 @@
       "original": "",
       "romanization": "(Ay)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          163.02,
+          164.39
+        ]
+      ]
     }
   ],
   "audio": "audio/grupoinventado_setsunahanabi.mp3",
