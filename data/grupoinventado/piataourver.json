@@ -779,7 +779,21 @@
       "original": "Ready to pop off!, 숨이 차올라, 크게 휘둘러 My mic",
       "romanization": "ready to pop off!, sumi chaolla, keuge hwidulleo my mic",
       "english": "Ready to pop off!, I'm out of breath, Swing my mic hard",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          132.16,
+          133.31
+        ],
+        [
+          133.5,
+          134.82
+        ],
+        [
+          135.14,
+          136.6
+        ]
+      ]
     },
     {
       "start": 136.89,
@@ -791,7 +805,21 @@
       "original": "Like Piñata, 셋을 세면 Strike, 지금부터 Showtime",
       "romanization": "like piñata, seteul semyeon strike, jigeumbuteo showtime",
       "english": "Like Piñata, When I count to three, strike, Showtime starts right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.96,
+          138.1
+        ],
+        [
+          138.3,
+          139.63
+        ],
+        [
+          139.97,
+          141.52
+        ]
+      ]
     },
     {
       "start": 15.26,
