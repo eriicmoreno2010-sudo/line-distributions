@@ -51,15 +51,411 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 0.25,
+      "end": 3.98,
       "members": [
         "ARNAU"
       ],
+      "original": "セツナハナビ 瞬けば",
+      "romanization": "setsuna hanabi matakeba",
+      "english": "When a momentary firework sparks",
+      "adlib": false
+    },
+    {
+      "start": 4.13,
+      "end": 8.12,
+      "members": [],
+      "original": "すぐに散る運命 just like you and I",
+      "romanization": "sugu ni chiru unmei just like you and i",
+      "english": "It's destined to fade soon, just like you and I",
+      "adlib": false
+    },
+    {
+      "start": 8.32,
+      "end": 16.51,
+      "members": [],
+      "original": "ひと夏の愛 oh I, oh I, セツナハナビ stay",
+      "romanization": "hito natsu no ai oh i, oh i, setsuna hanabi stay",
+      "english": "A summer love oh I, oh I, A momentary firework, stay",
+      "adlib": false
+    },
+    {
+      "start": 33.64,
+      "end": 36.84,
+      "members": [],
+      "original": "茹だるような夏の暑さに",
+      "romanization": "udaru you na natsu no atsusa ni",
+      "english": "The scorching heat of the summer",
+      "adlib": false
+    },
+    {
+      "start": 37.69,
+      "end": 40.95,
+      "members": [],
+      "original": "この愛し方はよく似ている",
+      "romanization": "kono aishikata wa yoku nite iru",
+      "english": "It's just like the way we love each other",
+      "adlib": false
+    },
+    {
+      "start": 41.25,
+      "end": 45.17,
+      "members": [],
+      "original": "破裂しそうな光を待って",
+      "romanization": "haretsu shisou na hikari o matte",
+      "english": "Waiting for a spark that might burst any moment",
+      "adlib": false
+    },
+    {
+      "start": 45.35,
+      "end": 48.58,
+      "members": [],
+      "original": "残された時間数えてる",
+      "romanization": "nokosareta jikan kazoeteru",
+      "english": "Counting the time we have left",
+      "adlib": false
+    },
+    {
+      "start": 48.88,
+      "end": 51.31,
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "How many, how many, how many times left",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 51.43,
+      "end": 53.83,
+      "members": [],
+      "original": "最後の夜にふたり",
+      "romanization": "saigo no yoru ni futari",
+      "english": "Together on the last night",
+      "adlib": false
+    },
+    {
+      "start": 53.98,
+      "end": 57.84,
+      "members": [],
+      "original": "見上げた咲いては落ちる花火",
+      "romanization": "miageta saite wa ochiru hanabi",
+      "english": "We look up at the fireworks that bloom and wither",
+      "adlib": false
+    },
+    {
+      "start": 57.99,
+      "end": 63.07,
+      "members": [],
+      "original": "きっと僕じゃだめなのに夜空に祈る",
+      "romanization": "kitto boku ja dame na no ni yozora ni inoru",
+      "english": "Even though I know I'm not meant to be, I still pray to the night sky",
+      "adlib": false
+    },
+    {
+      "start": 63.2,
+      "end": 65.16,
+      "members": [],
+      "original": "",
+      "romanization": "Don’t let me, don’t let me go please",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 65.38,
+      "end": 69.07,
+      "members": [],
+      "original": "セツナハナビ 瞬けば",
+      "romanization": "setsuna hanabi matakeba",
+      "english": "When a momentary firework sparks",
+      "adlib": false
+    },
+    {
+      "start": 69.25,
+      "end": 73.17,
+      "members": [],
+      "original": "すぐに散る運命 just like you and I",
+      "romanization": "sugu ni chiru unmei just like you and i",
+      "english": "It's destined to fade soon, just like you and I",
+      "adlib": false
+    },
+    {
+      "start": 73.35,
+      "end": 81.56,
+      "members": [],
+      "original": "ひと夏の愛 oh I, oh I, セツナハナビ stay",
+      "romanization": "hito natsu no ai oh i, oh i, setsuna hanabi stay",
+      "english": "A summer love oh I, oh I, A momentary firework, stay",
+      "adlib": false
+    },
+    {
+      "start": 85.2,
+      "end": 91.79,
+      "members": [],
+      "original": "戻れない, あの日のふたり",
+      "romanization": "modorenai, ano hi no futari",
+      "english": "We can't go back, To the two of us that day",
+      "adlib": false
+    },
+    {
+      "start": 93.85,
+      "end": 97.8,
+      "members": [],
+      "original": "セツナハナビ stay",
+      "romanization": "setsuna hanabi stay",
+      "english": "A momentary firework, stay",
+      "adlib": false
+    },
+    {
+      "start": 99.33,
+      "end": 103.19,
+      "members": [],
+      "original": "濡れた心を灯す火などない",
+      "romanization": "nureta kokoro o tomosu hi nado nai",
+      "english": "There is no spark that lights our wet hearts",
+      "adlib": false
+    },
+    {
+      "start": 103.38,
+      "end": 107.15,
+      "members": [],
+      "original": "拭えない後悔 over, over, over now",
+      "romanization": "nuguenai koukai over, over, over now",
+      "english": "A regret I can't erase, over, over, over now",
+      "adlib": false
+    },
+    {
+      "start": 109.56,
+      "end": 113.76,
+      "members": [],
+      "original": "「行かないで」, 今更",
+      "romanization": "“ikanaide”, ima sara",
+      "english": "\"Please don't leave\", It's too late now",
+      "adlib": false
+    },
+    {
+      "start": 113.95,
+      "end": 116.32,
+      "members": [],
+      "original": "",
+      "romanization": "How many, how many, how many times left",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 116.47,
+      "end": 118.84,
+      "members": [],
+      "original": "ピークもいつしか過ぎ",
+      "romanization": "piiku mo itsushika sugi",
+      "english": "The peak has already passed",
+      "adlib": false
+    },
+    {
+      "start": 119,
+      "end": 122.92,
+      "members": [],
+      "original": "気づけばもう近づいてる ending",
+      "romanization": "kizukeba mou chikazuiteru ending",
+      "english": "By the time I realized, we're already close to the ending",
+      "adlib": false
+    },
+    {
+      "start": 123.1,
+      "end": 128.03,
+      "members": [],
+      "original": "ずっと忘れられない scene 再生してしまう",
+      "romanization": "zutto wasurerarenai scene saisei shite shimau",
+      "english": "I find myself replaying a scene I'll never forget",
+      "adlib": false
+    },
+    {
+      "start": 128.18,
+      "end": 130.21,
+      "members": [],
+      "original": "",
+      "romanization": "Don’t let me, don’t let me go please",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 130.42,
+      "end": 134.02,
+      "members": [],
+      "original": "セツナハナビ 瞬けば",
+      "romanization": "setsuna hanabi matakeba",
+      "english": "When a momentary firework sparks",
+      "adlib": false
+    },
+    {
+      "start": 134.27,
+      "end": 138.3,
+      "members": [],
+      "original": "すぐに散る運命 just like you and I",
+      "romanization": "sugu ni chiru unmei just like you and i",
+      "english": "It's destined to fade soon, just like you and I",
+      "adlib": false
+    },
+    {
+      "start": 138.6,
+      "end": 148.06,
+      "members": [],
+      "original": "ひと夏の愛 oh I, oh I, セツナハナビ stay",
+      "romanization": "hito natsu no ai oh i, oh i, setsuna hanabi stay",
+      "english": "A summer love oh I, oh I, A momentary firework, stay",
+      "adlib": false
+    },
+    {
+      "start": 150.28,
+      "end": 157.05,
+      "members": [],
+      "original": "戻れない, あの日のふたり",
+      "romanization": "modorenai, ano hi no futari",
+      "english": "We can't go back, To the two of us that day",
+      "adlib": false
+    },
+    {
+      "start": 158.9,
+      "end": 162.89,
+      "members": [],
+      "original": "セツナハナビ stay",
+      "romanization": "setsuna hanabi stay",
+      "english": "A momentary firework, stay",
+      "adlib": false
+    },
+    {
+      "start": 16.58,
+      "end": 17.85,
+      "members": [],
+      "original": "",
+      "romanization": "(Ay)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 81.68,
+      "end": 83.03,
+      "members": [],
+      "original": "",
+      "romanization": "(Ay)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 82.75,
+      "end": 85.31,
+      "members": [],
+      "original": "",
+      "romanization": "(Mmm)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 86.85,
+      "end": 89.37,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 91.09,
+      "end": 93.37,
+      "members": [],
+      "original": "",
+      "romanization": "(Ah hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 93.38,
+      "end": 94.13,
+      "members": [],
+      "original": "",
+      "romanization": "(Hey)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 97.95,
+      "end": 99.31,
+      "members": [],
+      "original": "",
+      "romanization": "(Ay)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 107.37,
+      "end": 109.48,
+      "members": [],
+      "original": "",
+      "romanization": "(Mmm)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 111.48,
+      "end": 113.28,
+      "members": [],
+      "original": "",
+      "romanization": "(Mmm)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 146.74,
+      "end": 148.02,
+      "members": [],
+      "original": "",
+      "romanization": "(Ay)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 147.91,
+      "end": 150.31,
+      "members": [],
+      "original": "",
+      "romanization": "(Mmm)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 151.99,
+      "end": 154.33,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 156.27,
+      "end": 158.46,
+      "members": [],
+      "original": "",
+      "romanization": "(Ah hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 158.44,
+      "end": 159.23,
+      "members": [],
+      "original": "",
+      "romanization": "(Hey)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 163,
+      "end": 164.37,
+      "members": [],
+      "original": "",
+      "romanization": "(Ay)",
+      "english": "",
+      "adlib": true
     }
   ],
   "audio": "audio/grupoinventado_setsunahanabi.mp3",
