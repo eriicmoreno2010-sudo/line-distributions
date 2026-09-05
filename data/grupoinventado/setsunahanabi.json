@@ -53,7 +53,9 @@
     {
       "start": 0.25,
       "end": 3.98,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "original": "セツナハナビ 瞬けば",
       "romanization": "setsuna hanabi matakeba",
       "english": "When a momentary firework sparks",
@@ -72,7 +74,9 @@
     {
       "start": 4.13,
       "end": 8.12,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "voice": [
         [
           4.14,
@@ -91,7 +95,9 @@
     {
       "start": 8.32,
       "end": 16.51,
-      "members": [],
+      "members": [
+        "MICHELLE"
+      ],
       "voice": [
         [
           8.46,
@@ -126,7 +132,9 @@
     {
       "start": 33.64,
       "end": 36.84,
-      "members": [],
+      "members": [
+        "MARC"
+      ],
       "voice": [
         [
           33.69,
@@ -141,7 +149,9 @@
     {
       "start": 37.69,
       "end": 40.95,
-      "members": [],
+      "members": [
+        "MARC"
+      ],
       "voice": [
         [
           37.66,
@@ -156,7 +166,9 @@
     {
       "start": 41.25,
       "end": 45.17,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "voice": [
         [
           41.23,
@@ -175,7 +187,9 @@
     {
       "start": 45.35,
       "end": 48.58,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "voice": [
         [
           45.35,
@@ -194,7 +208,9 @@
     {
       "start": 48.88,
       "end": 51.31,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "voice": [
         [
           48.92,
@@ -209,7 +225,9 @@
     {
       "start": 51.43,
       "end": 53.83,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "voice": [
         [
           51.47,
@@ -224,7 +242,9 @@
     {
       "start": 53.98,
       "end": 57.84,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "voice": [
         [
           53.97,
@@ -243,7 +263,9 @@
     {
       "start": 57.99,
       "end": 63.07,
-      "members": [],
+      "members": [
+        "ARNAU"
+      ],
       "voice": [
         [
           58.05,
@@ -266,7 +288,9 @@
     {
       "start": 63.2,
       "end": 65.16,
-      "members": [],
+      "members": [
+        "ARNAU"
+      ],
       "voice": [
         [
           63.11,
@@ -281,7 +305,9 @@
     {
       "start": 65.38,
       "end": 69.07,
-      "members": [],
+      "members": [
+        "MICHELLE"
+      ],
       "voice": [
         [
           65.37,
@@ -300,7 +326,9 @@
     {
       "start": 69.25,
       "end": 73.17,
-      "members": [],
+      "members": [
+        "MICHELLE"
+      ],
       "voice": [
         [
           69.21,
@@ -319,7 +347,9 @@
     {
       "start": 73.35,
       "end": 81.56,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "voice": [
         [
           73.51,
@@ -354,7 +384,9 @@
     {
       "start": 85.2,
       "end": 91.79,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "voice": [
         [
           85.22,
@@ -373,7 +405,9 @@
     {
       "start": 93.85,
       "end": 97.8,
-      "members": [],
+      "members": [
+        "ARNAU"
+      ],
       "voice": [
         [
           93.9,
@@ -396,7 +430,9 @@
     {
       "start": 99.33,
       "end": 103.19,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "voice": [
         [
           99.24,
@@ -411,7 +447,9 @@
     {
       "start": 103.38,
       "end": 107.15,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "voice": [
         [
           103.49,
@@ -426,7 +464,9 @@
     {
       "start": 109.56,
       "end": 113.76,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "voice": [
         [
           109.61,
@@ -445,7 +485,9 @@
     {
       "start": 113.95,
       "end": 116.32,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "voice": [
         [
           113.98,
@@ -460,7 +502,9 @@
     {
       "start": 116.47,
       "end": 118.84,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "voice": [
         [
           116.49,
@@ -475,7 +519,9 @@
     {
       "start": 119,
       "end": 122.92,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "voice": [
         [
           119.04,
@@ -494,7 +540,9 @@
     {
       "start": 123.1,
       "end": 128.03,
-      "members": [],
+      "members": [
+        "MARC"
+      ],
       "voice": [
         [
           123.11,
@@ -517,7 +565,9 @@
     {
       "start": 128.18,
       "end": 130.21,
-      "members": [],
+      "members": [
+        "MARC"
+      ],
       "voice": [
         [
           128.23,
@@ -532,7 +582,9 @@
     {
       "start": 130.42,
       "end": 134.02,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "voice": [
         [
           130.44,
@@ -551,7 +603,9 @@
     {
       "start": 134.27,
       "end": 138.3,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "voice": [
         [
           134.26,
@@ -570,7 +624,9 @@
     {
       "start": 138.6,
       "end": 148.06,
-      "members": [],
+      "members": [
+        "ARNAU"
+      ],
       "voice": [
         [
           138.62,
@@ -605,7 +661,9 @@
     {
       "start": 150.28,
       "end": 157.05,
-      "members": [],
+      "members": [
+        "MICHELLE"
+      ],
       "voice": [
         [
           150.33,
@@ -624,7 +682,9 @@
     {
       "start": 158.9,
       "end": 162.89,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "voice": [
         [
           158.96,
@@ -647,7 +707,9 @@
     {
       "start": 16.58,
       "end": 17.85,
-      "members": [],
+      "members": [
+        "MICHELLE"
+      ],
       "original": "",
       "romanization": "(Ay)",
       "english": "",
@@ -662,7 +724,9 @@
     {
       "start": 81.68,
       "end": 83.03,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "original": "",
       "romanization": "(Ay)",
       "english": "",
@@ -677,7 +741,9 @@
     {
       "start": 82.75,
       "end": 85.31,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
@@ -692,7 +758,9 @@
     {
       "start": 86.85,
       "end": 89.37,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -707,7 +775,9 @@
     {
       "start": 91.09,
       "end": 93.37,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Ah hoo)",
       "english": "",
@@ -722,7 +792,9 @@
     {
       "start": 93.38,
       "end": 94.13,
-      "members": [],
+      "members": [
+        "MARC"
+      ],
       "original": "",
       "romanization": "(Hey)",
       "english": "",
@@ -737,7 +809,9 @@
     {
       "start": 97.95,
       "end": 99.31,
-      "members": [],
+      "members": [
+        "ARNAU"
+      ],
       "original": "",
       "romanization": "(Ay)",
       "english": "",
@@ -752,7 +826,9 @@
     {
       "start": 107.37,
       "end": 109.48,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
@@ -767,7 +843,9 @@
     {
       "start": 111.48,
       "end": 113.28,
-      "members": [],
+      "members": [
+        "IRENE"
+      ],
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
@@ -782,7 +860,9 @@
     {
       "start": 146.74,
       "end": 148.02,
-      "members": [],
+      "members": [
+        "ARNAU"
+      ],
       "original": "",
       "romanization": "(Ay)",
       "english": "",
@@ -797,7 +877,9 @@
     {
       "start": 147.91,
       "end": 150.31,
-      "members": [],
+      "members": [
+        "MICHELLE"
+      ],
       "original": "",
       "romanization": "(Mmm)",
       "english": "",
@@ -812,7 +894,9 @@
     {
       "start": 151.99,
       "end": 154.33,
-      "members": [],
+      "members": [
+        "MICHELLE"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -827,7 +911,9 @@
     {
       "start": 156.27,
       "end": 158.46,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Ah hoo)",
       "english": "",
@@ -842,7 +928,9 @@
     {
       "start": 158.44,
       "end": 159.23,
-      "members": [],
+      "members": [
+        "MARC"
+      ],
       "original": "",
       "romanization": "(Hey)",
       "english": "",
@@ -857,7 +945,9 @@
     {
       "start": 163,
       "end": 164.37,
-      "members": [],
+      "members": [
+        "ERIC"
+      ],
       "original": "",
       "romanization": "(Ay)",
       "english": "",
