@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "セツナハナビ (Setsuna Hanabi)",
   "video": "videos/grupoinventado_setsunahanabi.mp4",
-  "duration": 0,
+  "duration": 174.208333,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -61,5 +61,6 @@
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/grupoinventado_setsunahanabi.mp3"
 }
