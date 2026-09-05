@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Piñata (OUR VER.)",
   "video": "videos/grupoinventado_piataourver.mp4",
-  "duration": 0,
+  "duration": 152.207667,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -51,380 +51,831 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 6.42,
+      "end": 8.42,
       "members": [
-        "ARNAU"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "Back in the town, 여기 드디어",
       "romanization": "back in the town, yeogi deudieo",
       "english": "Back in the town, Finally my feet",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          6.43,
+          8.37
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 8.56,
+      "end": 10.84,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "지면 위에 발을 딛어, 내 집이야",
       "romanization": "jimyeon wie bareul dideo, nae jibiya",
       "english": "Touch the ground, This is my home",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          8.61,
+          10.84
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 10.99,
+      "end": 13.25,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "내 말 끝나기 무섭게, 모두 Hit me up",
       "romanization": "nae mal kkeunnagi museopge, modu hit me up",
       "english": "Everyone hits me up, Before I can even finish talking",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.03,
+          13.28
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 13.42,
+      "end": 15.16,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "준비해 We gon' turn it up",
       "romanization": "junbihae we gon' turn it up",
       "english": "Get ready, we gon' turn it up",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.48,
+          15.13
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 16.33,
+      "end": 18.41,
+      "members": [
+        "HAECHAN",
+        "IRENE"
+      ],
       "original": "We’re so hot 가끔은 해가 숨어",
       "romanization": "we’re so hot gakkeumeun haega sumeo",
       "english": "We're so hot Sometimes the sun hides away",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.36,
+          18.33
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 18.53,
+      "end": 20.89,
+      "members": [
+        "HAECHAN",
+        "IRENE"
+      ],
       "original": "네가 알고 있던 화끈함은 잊어",
       "romanization": "nega algo itdeon hwakkeunhameun ijeo",
       "english": "Forget the heat you thought you knew",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          18.52,
+          21.07
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 21.04,
+      "end": 25.72,
+      "members": [
+        "JOHNNY",
+        "BIEL"
+      ],
       "original": "When I hit the stage, Yeah I’m back again, Say my name 더 크게",
       "romanization": "when i hit the stage, yeah i’m back again, say my name deo keuge",
       "english": "When I hit the stage, Yeah, I'm back again, Say my name, louder",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21.05,
+          22.12
+        ],
+        [
+          22.29,
+          23.27
+        ],
+        [
+          23.45,
+          24.5
+        ],
+        [
+          24.68,
+          25.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 25.87,
+      "end": 32.15,
+      "members": [
+        "JAEHYUN",
+        "ARNAU"
+      ],
       "original": "주저하지 마 더 거침없이 Blow",
       "romanization": "jujeohaji ma deo geochim eopsi blow",
       "english": "Don't hesitate, blow it without holding back",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.88,
+          28.77
+        ],
+        [
+          29.15,
+          31.02
+        ],
+        [
+          31.32,
+          31.98
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 32.73,
+      "end": 35.05,
+      "members": [
+        "YUTA",
+        "MARC"
+      ],
       "original": "어떤 순간도 We can’t go wrong",
       "romanization": "eotteon sungando we can’t go wrong",
       "english": "Whatever the moment, we can't go wrong",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          32.78,
+          35.35
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 35.2,
+      "end": 39.73,
+      "members": [
+        "TAEYONG",
+        "ERIC"
+      ],
       "original": "Ready to pop off!, 다 쏟아내 봐, 느낌은 완전 Jackpot",
       "romanization": "ready to pop off!, da ssodanae bwa, neukkimeun wanjeon jackpot",
       "english": "Ready to pop off!, Let it all out, The feeling is a total jackpot",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.24,
+          36.38
+        ],
+        [
+          36.56,
+          37.81
+        ],
+        [
+          38.14,
+          39.58
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 39.91,
+      "end": 44.58,
+      "members": [
+        "TAEYONG",
+        "ERIC"
+      ],
       "original": "Like Piñata, 셋을 세면 Strike, 소리 질러 Right now",
       "romanization": "like piñata, seteul semyeon strike, sori jilleo right now",
       "english": "Like Piñata, When I count to three, strike, Scream out loud, right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          39.86,
+          41.13
+        ],
+        [
+          41.33,
+          42.68
+        ],
+        [
+          42.96,
+          44.54
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 44.77,
+      "end": 49.37,
+      "members": [
+        "YUTA",
+        "ARNAU"
+      ],
       "original": "Ready to pop off!, 숨이 차올라, 크게 휘둘러 My mic",
       "romanization": "ready to pop off!, sumi chaolla, keuge hwidulleo my mic",
       "english": "Ready to pop off!, I'm out of breath, Swing my mic hard",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.72,
+          46.02
+        ],
+        [
+          46.22,
+          47.5
+        ],
+        [
+          47.83,
+          49.28
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 49.52,
+      "end": 54.28,
+      "members": [
+        "YUTA",
+        "ARNAU"
+      ],
       "original": "Like Piñata, 셋을 세면 Strike, 지금부터 Showtime",
       "romanization": "like piñata, seteul semyeon strike, jigeumbuteo showtime",
       "english": "Like Piñata, When I count to three, strike, Showtime starts right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.61,
+          50.83
+        ],
+        [
+          51,
+          52.36
+        ],
+        [
+          52.65,
+          54.25
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 54.46,
+      "end": 58.61,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
       "original": "",
       "romanization": "Come on!, One time one time one time",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 58.77,
+      "end": 62.06,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
       "original": "터져 Confetti, One time one time",
       "romanization": "teojyeo confetti, one time one time",
       "english": "Confetti explodes, One time, one time",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 62.98,
+      "end": 64.08,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
       "original": "",
       "romanization": "Like Piñata",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 64.22,
+      "end": 66.91,
+      "members": [
+        "JAEHYUN",
+        "IRENE"
+      ],
       "original": "It's like that 다들 눈을 못 떼",
       "romanization": "it's like that dadeul nuneul mot tte",
       "english": "It's like that No one can take their eyes off us",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          64.23,
+          65.31
+        ],
+        [
+          65.48,
+          66.92
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 67.04,
+      "end": 69.55,
+      "members": [
+        "JAEHYUN",
+        "IRENE"
+      ],
       "original": "이렇게 빛나는 걸 처음 본 듯해",
       "romanization": "ireoke binnaneun geol cheoeum bon deut hae",
       "english": "As if they're seeing something this dazzling for the first time",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          67.01,
+          69.57
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 69.7,
+      "end": 73.9,
+      "members": [
+        "HAECHAN",
+        "MICHELLE"
+      ],
       "original": "변함이 없어 We’re still louder, 손대는 것이 곧 Piñata",
       "romanization": "byeonhami eopseo we’re still louder, sondaeneun geosi got piñata",
       "english": "Nothing has changed We're still louder, Anything we touch becomes a Piñata",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.68,
+          72.04
+        ],
+        [
+          72.19,
+          74.45
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 74.05,
+      "end": 75.94,
+      "members": [
+        "YUTA",
+        "ARNAU"
+      ],
       "original": "그저 계속 망설임 없이",
       "romanization": "geujeo gyesok mangseorim eopsi",
       "english": "I just keep going without hesitation",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.03,
+          75.99
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 76.12,
+      "end": 78.4,
+      "members": [
+        "YUTA",
+        "ARNAU"
+      ],
       "original": "Told you ‘I’m back again’, 걸어 다녀 Street",
       "romanization": "told you ‘i’m back again’, georeo danyeo street",
       "english": "Told you, \"I'm back again\", Walking down the street",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          76.15,
+          78.44
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 78.59,
+      "end": 80.81,
+      "members": [
+        "YUTA",
+        "ARNAU"
+      ],
       "original": "바닥나는 Patience, 차오르는 Feel",
       "romanization": "badangnaneun patience, chaoreuneun feel",
       "english": "Patience running out, The feeling building up",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          78.62,
+          80.78
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 80.99,
+      "end": 83.85,
+      "members": [
+        "JOHNNY",
+        "BIEL"
+      ],
       "original": "",
       "romanization": "Now I got what you need, what you need what you need",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          81,
+          83.79
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 83.99,
+      "end": 90.3,
+      "members": [
+        "HAECHAN",
+        "ERIC"
+      ],
       "original": "주저하지 마 더 거침없이 Blow",
       "romanization": "jujeohaji ma deo geochim eopsi blow",
       "english": "Don't hesitate, blow it without holding back",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          84.01,
+          86.81
+        ],
+        [
+          87.28,
+          89.19
+        ],
+        [
+          89.54,
+          90.24
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 90.97,
+      "end": 93.22,
+      "members": [
+        "TAEYONG",
+        "ARNAU"
+      ],
       "original": "어떤 순간도 We can’t go wrong",
       "romanization": "eotteon sungando we can’t go wrong",
       "english": "Whatever the moment, we can't go wrong",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.97,
+          93.49
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 93.37,
+      "end": 97.95,
+      "members": [
+        "JAEHYUN",
+        "MARC"
+      ],
       "original": "Ready to pop off!, 다 쏟아내 봐, 느낌은 완전 Jackpot",
       "romanization": "ready to pop off!, da ssodanae bwa, neukkimeun wanjeon jackpot",
       "english": "Ready to pop off!, Let it all out, The feeling is a total jackpot",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          93.35,
+          94.51
+        ],
+        [
+          94.73,
+          96
+        ],
+        [
+          96.35,
+          97.85
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 98.12,
+      "end": 102.8,
+      "members": [
+        "JAEHYUN",
+        "MARC"
+      ],
       "original": "Like Piñata, 셋을 세면 Strike, 소리 질러 Right now",
       "romanization": "like piñata, seteul semyeon strike, sori jilleo right now",
       "english": "Like Piñata, When I count to three, strike, Scream out loud, right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          98.1,
+          99.35
+        ],
+        [
+          99.53,
+          100.86
+        ],
+        [
+          101.16,
+          102.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 102.98,
+      "end": 107.6,
+      "members": [
+        "JOHNNY",
+        "BIEL"
+      ],
       "original": "Ready to pop off!, 숨이 차올라, 크게 휘둘러 My mic",
       "romanization": "ready to pop off!, sumi chaolla, keuge hwidulleo my mic",
       "english": "Ready to pop off!, I'm out of breath, Swing my mic hard",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          102.94,
+          104.18
+        ],
+        [
+          104.42,
+          105.74
+        ],
+        [
+          106.06,
+          107.51
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 107.75,
+      "end": 112.55,
+      "members": [
+        "JOHNNY",
+        "BIEL"
+      ],
       "original": "Like Piñata, 셋을 세면 Strike, 지금부터 Showtime",
       "romanization": "like piñata, seteul semyeon strike, jigeumbuteo showtime",
       "english": "Like Piñata, When I count to three, strike, Showtime starts right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.87,
+          109.02
+        ],
+        [
+          109.23,
+          110.58
+        ],
+        [
+          110.88,
+          112.53
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 113.85,
+      "end": 115.59,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "축제는 끝나지 않아 영원히",
       "romanization": "chukjeneun kkeunnaji ana yeongwonhi",
       "english": "The party never ends, forever",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.89,
+          115.6
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 115.78,
+      "end": 118.11,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "",
       "romanization": "Oh you better want it, want it like crazy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          115.87,
+          116.2
+        ],
+        [
+          116.36,
+          118.11
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 118.3,
+      "end": 122.36,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "터지는 순간이 시작인 Party, So come and get some!, C’mon!",
       "romanization": "teojineun sungani sijagin party, so come and get some!, c’mon!",
       "english": "The moment it explodes is when the party begins, So come and get some!, C'mon!",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          118.72,
+          120.87
+        ],
+        [
+          121.05,
+          122.04
+        ],
+        [
+          122.22,
+          122.71
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 122.51,
+      "end": 127,
+      "members": [
+        "HAECHAN",
+        "MICHELLE"
+      ],
       "original": "Ready to pop off!, 다 쏟아내 봐, 느낌은 완전 Jackpot",
       "romanization": "ready to pop off!, da ssodanae bwa, neukkimeun wanjeon jackpot",
       "english": "Ready to pop off!, Let it all out, The feeling is a total jackpot",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          122.5,
+          123.65
+        ],
+        [
+          123.81,
+          125.14
+        ],
+        [
+          125.43,
+          126.97
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 127.18,
+      "end": 131.92,
+      "members": [
+        "HAECHAN",
+        "MICHELLE"
+      ],
       "original": "Like Piñata, 셋을 세면 Strike, 소리 질러 Right now",
       "romanization": "like piñata, seteul semyeon strike, sori jilleo right now",
       "english": "Like Piñata, When I count to three, strike, Scream out loud, right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          127.27,
+          128.43
+        ],
+        [
+          128.61,
+          129.94
+        ],
+        [
+          130.27,
+          131.83
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 132.07,
+      "end": 136.74,
+      "members": [
+        "NCT 127",
+        "IRENE"
+      ],
       "original": "Ready to pop off!, 숨이 차올라, 크게 휘둘러 My mic",
       "romanization": "ready to pop off!, sumi chaolla, keuge hwidulleo my mic",
       "english": "Ready to pop off!, I'm out of breath, Swing my mic hard",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 136.89,
+      "end": 141.64,
+      "members": [
+        "NCT 127",
+        "IRENE"
+      ],
       "original": "Like Piñata, 셋을 세면 Strike, 지금부터 Showtime",
       "romanization": "like piñata, seteul semyeon strike, jigeumbuteo showtime",
       "english": "Like Piñata, When I count to three, strike, Showtime starts right now",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 15.26,
+      "end": 16.32,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "",
       "romanization": "(Huh huh huh huh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          15.27,
+          15.69
+        ],
+        [
+          15.83,
+          15.98
+        ],
+        [
+          16.13,
+          16.26
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 118.34,
+      "end": 118.62,
+      "members": [
+        "TAEYONG",
+        "MARC"
+      ],
       "original": "",
       "romanization": "(Uh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          118.36,
+          118.59
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 140.01,
+      "end": 142.23,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
       "original": "",
       "romanization": "(Shake it shake it shake it up)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 141.79,
+      "end": 145.95,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
       "original": "",
       "romanization": "Come on!, One time one time one time",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 146.13,
+      "end": 149.38,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
       "original": "터져 Confetti, One time one time",
       "romanization": "teojyeo confetti, one time one time",
       "english": "Confetti explodes, One time, one time",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 150.28,
+      "end": 151.42,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
       "original": "",
       "romanization": "Like Piñata",
       "english": "",
