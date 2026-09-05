@@ -677,7 +677,7 @@
         "MARC"
       ],
       "original": "",
-      "romanization": "Oh you better want it, want it like crazy",
+      "romanization": "**Oh@ARNAU** you better want it, want it like crazy",
       "english": "",
       "adlib": false,
       "voice": [
@@ -688,6 +688,13 @@
         [
           116.36,
           118.11
+        ],
+        [
+          115.91,
+          116.15,
+          [
+            "ARNAU"
+          ]
         ]
       ]
     },
@@ -873,7 +880,7 @@
       "end": 118.62,
       "members": [
         "TAEYONG",
-        "MARC"
+        "ARNAU"
       ],
       "original": "",
       "romanization": "(Uh)",
