@@ -62,5 +62,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/grupoinventado_setsunahanabi.mp3"
+  "audio": "audio/grupoinventado_setsunahanabi.mp3",
+  "audioOffset": -0.05
 }
