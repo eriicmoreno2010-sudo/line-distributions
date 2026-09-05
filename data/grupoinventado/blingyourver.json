@@ -1,0 +1,65 @@
+{
+  "group": "GRUPO INVENTADO",
+  "song": "Blingy (OUR VER.)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "ARNAU",
+      "image": "images/grupoinventado/blingyourver/arnau.png",
+      "color": "#f08c00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "IRENE",
+      "image": "images/grupoinventado/blingyourver/irene.png",
+      "color": "#f92fde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MARC",
+      "image": "images/grupoinventado/blingyourver/marc.png",
+      "color": "#2320fe",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "BIEL",
+      "image": "images/grupoinventado/blingyourver/biel.png",
+      "color": "#ff2424",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MICHELLE",
+      "image": "images/grupoinventado/blingyourver/michelle.png",
+      "color": "#ffee33",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERIC",
+      "image": "images/grupoinventado/blingyourver/eric.png",
+      "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
