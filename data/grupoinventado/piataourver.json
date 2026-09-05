@@ -698,9 +698,9 @@
         "TAEYONG",
         "MARC"
       ],
-      "original": "터지는 순간이 시작인 Party, So come and get some!, C’mon!",
-      "romanization": "teojineun sungani sijagin party, so come and get some!, c’mon!",
-      "english": "The moment it explodes is when the party begins, So come and get some!, C'mon!",
+      "original": "터지는 순간이 시작인 Party, **So come and get some!, C’mon!@ARNAU**",
+      "romanization": "teojineun sungani sijagin party, **so come and get some!, c’mon!@ARNAU**",
+      "english": "The moment it explodes is when the party begins, **So come and get some!, C'mon!@ARNAU**",
       "adlib": false,
       "voice": [
         [
@@ -709,11 +709,32 @@
         ],
         [
           121.05,
-          122.04
+          122.04,
+          [
+            "ARNAU"
+          ]
         ],
         [
           122.22,
           122.71
+        ],
+        [
+          120.46,
+          120.9,
+          [
+            "ARNAU"
+          ]
+        ],
+        [
+          121.09,
+          122.05
+        ],
+        [
+          122.23,
+          122.76,
+          [
+            "ARNAU"
+          ]
         ]
       ]
     },
