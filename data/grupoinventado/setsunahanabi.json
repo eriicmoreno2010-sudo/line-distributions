@@ -1,0 +1,65 @@
+{
+  "group": "GRUPO INVENTADO",
+  "song": "セツナハナビ (Setsuna Hanabi)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "ARNAU",
+      "image": "images/grupoinventado/setsunahanabi/arnau.png",
+      "color": "#f08c00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "IRENE",
+      "image": "images/grupoinventado/setsunahanabi/irene.png",
+      "color": "#f92fde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MARC",
+      "image": "images/grupoinventado/setsunahanabi/marc.png",
+      "color": "#2320fe",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "BIEL",
+      "image": "images/grupoinventado/setsunahanabi/biel.png",
+      "color": "#ff2424",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MICHELLE",
+      "image": "images/grupoinventado/setsunahanabi/michelle.png",
+      "color": "#ffee33",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERIC",
+      "image": "images/grupoinventado/setsunahanabi/eric.png",
+      "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
