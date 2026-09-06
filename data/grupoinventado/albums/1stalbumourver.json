@@ -28,9 +28,7 @@
       "end": 12
     },
     {
-      "audio": "audio/grupoinventado_1stalbumourvera3.mp3"
-    },
-    {
+      "audio": "audio/grupoinventado_1stalbumourvera3.mp3",
       "start": 0,
       "end": 12
     },
@@ -38,9 +36,15 @@
       "start": 0,
       "end": 12
     },
+    {
+      "start": 0,
+      "end": 12
+    },
     {},
     {},
-    {},
+    {
+      "audio": "audio/grupoinventado_1stalbumourvera8.mp3"
+    },
     {
       "audio": "audio/grupoinventado_1stalbumourvera9.mp3",
       "start": 0,
