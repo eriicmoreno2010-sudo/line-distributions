@@ -3,6 +3,7 @@
   "song": "Candy",
   "video": "videos/candy.mp3",
   "duration": 183.83,
+  "subunit": true,
   "members": [
     {
       "name": "JEONGHAN",

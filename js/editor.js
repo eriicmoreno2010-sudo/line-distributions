@@ -87,6 +87,7 @@
     buildWordPal();
     buildColors();
     syncInstSeg();
+    if($("#subunit")) $("#subunit").checked = !!song.subunit;   // solista / sub-unidad
     requestAnimationFrame(tick);
   }
 
@@ -780,6 +781,7 @@
   instHead.addEventListener("pointerdown", (e) => { e.preventDefault(); e.stopPropagation(); beginScrub(e.clientX); });
 
   $("#instFade").onchange = () => { song.instrumentalFade = $("#instFade").checked; save(); };
+  if($("#subunit")) $("#subunit").onchange = () => { song.subunit = $("#subunit").checked; save(); };
 
   // Per-word colour marking. Select a word in a lyric box, then:
   //   🌈  -> the whole group sings it (**word**)

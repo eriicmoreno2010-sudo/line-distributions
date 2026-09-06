@@ -246,8 +246,9 @@ Self-contained: injects its own styles and markup.
     if(ranked.length > 10){
       list.classList.add("two-col");
       list.style.setProperty("--rows", Math.ceil(ranked.length/2));
-    } else if(ranked.length < 8){
-      // solista / sub-unidad: filas del tamaño de 8 personas, centradas
+    } else if(SONG.subunit){
+      // SOLO si marcas la canción como solista / sub-unidad: filas del tamaño de
+      // 8 personas y centradas. Si no lo marcas, las filas se estiran (por defecto).
       list.classList.add("few");
     }
 
