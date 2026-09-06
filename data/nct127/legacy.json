@@ -1,0 +1,72 @@
+{
+  "group": "NCT 127",
+  "song": "Legacy",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "JOHNNY",
+      "image": "images/nct127/legacy/johnny.png",
+      "color": "#31b287",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAEYONG",
+      "image": "images/nct127/legacy/taeyong.png",
+      "color": "#c80404",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUTA",
+      "image": "images/nct127/legacy/yuta.png",
+      "color": "#dd7f10",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DOYOUNG",
+      "image": "images/nct127/legacy/doyoung.png",
+      "color": "#1100ff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUN",
+      "image": "images/nct127/legacy/jaehyun.png",
+      "color": "#bf9b00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNGWOO",
+      "image": "images/nct127/legacy/jungwoo.png",
+      "color": "#4d6593",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nct127/legacy/haechan.png",
+      "color": "#1bb7e8",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
