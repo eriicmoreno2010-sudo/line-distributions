@@ -80,6 +80,8 @@
   "raceColor": "#00b4f0",
   "versions": [],
   "bgAudio": {
-    "src": "audio/grupoinventado_1stalbumourverbg.mp3"
+    "src": "audio/grupoinventado_1stalbumourverbg.mp3",
+    "start": 0,
+    "end": 110.2550087182341
   }
 }
