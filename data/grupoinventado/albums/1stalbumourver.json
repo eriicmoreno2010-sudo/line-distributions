@@ -1,0 +1,20 @@
+{
+  "type": "album",
+  "group": "GRUPO INVENTADO",
+  "album": "1st Album (OUR VER.)",
+  "cover": "",
+  "theme": "dark",
+  "instrumental": "",
+  "songs": [
+    "data/grupoinventado/getawayourver.json",
+    "data/grupoinventado/haloourver.json",
+    "data/grupoinventado/smoothieourver.json",
+    "data/grupoinventado/icantfeelanythingourver.json",
+    "data/grupoinventado/setsunahanabi.json",
+    "data/grupoinventado/piataourver.json",
+    "data/grupoinventado/ifi.json",
+    "data/grupoinventado/blingyourver.json",
+    "data/grupoinventado/whenimwithyouourver.json",
+    "data/grupoinventado/legacy.json"
+  ]
+}
