@@ -16,5 +16,46 @@
     "data/grupoinventado/blingyourver.json",
     "data/grupoinventado/whenimwithyouourver.json",
     "data/grupoinventado/legacy.json"
-  ]
+  ],
+  "clips": [
+    {},
+    {
+      "start": 0,
+      "end": 12
+    },
+    {},
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {},
+    {},
+    {},
+    {
+      "audio": "audio/grupoinventado_1stalbumourvera9.mp3"
+    },
+    {
+      "start": 0,
+      "end": 12
+    }
+  ],
+  "songColors": [
+    "#ff4d6d",
+    "#4dabf7",
+    "#ffa94d",
+    "#cc5de8",
+    "#20c997",
+    "#ffd43b",
+    "#748ffc",
+    "#f783ac",
+    "#69db7c",
+    "#e8590c"
+  ],
+  "raceColor": "#ffffff",
+  "versions": [],
+  "bgAudio": {}
 }
