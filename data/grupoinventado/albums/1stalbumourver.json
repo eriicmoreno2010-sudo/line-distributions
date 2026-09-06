@@ -18,25 +18,29 @@
     "data/grupoinventado/legacy.json"
   ],
   "clips": [
-    {},
     {
-      "start": 0,
-      "end": 12
-    },
-    {},
-    {
-      "start": 0,
-      "end": 12
+      "audio": "audio/grupoinventado_1stalbumourvera1.mp3"
     },
     {
       "start": 0,
       "end": 12
     },
     {},
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {},
     {},
     {},
     {
-      "audio": "audio/grupoinventado_1stalbumourvera9.mp3"
+      "audio": "audio/grupoinventado_1stalbumourvera9.mp3",
+      "start": 0,
+      "end": 12
     },
     {
       "start": 0,
