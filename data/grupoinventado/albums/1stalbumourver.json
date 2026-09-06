@@ -104,9 +104,7 @@
     }
   ],
   "bgAudio": {
-    "src": "audio/grupoinventado_1stalbumourverbg.mp3",
-    "start": 0,
-    "end": 136.16691536820628
+    "src": "audio/grupoinventado_1stalbumourverbg.mp3"
   },
   "baseName": "WITH SUB-UNITS"
 }
