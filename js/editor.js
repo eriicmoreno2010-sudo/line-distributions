@@ -18,6 +18,42 @@
   const abbr = n => n.slice(0,3).toUpperCase();
   const isAdlib = l => l.adlib === true || (typeof l.adlib === "string" && l.adlib.trim() !== "");
 
+  // --- Diálogos PROPIOS (modal HTML), no los nativos de Electron ---
+  // Los confirm y alert nativos de Windows roban el foco del teclado a la
+  // ventana y no lo devuelven: tras un aviso ya no podías escribir hasta
+  // minimizar/reactivar la app. Estos modales viven dentro de la página, así
+  // que el foco nunca sale de la ventana. Devuelven una promesa.
+  function uiDialog(message, isConfirm){
+    return new Promise(resolve => {
+      const ov = document.createElement("div");
+      ov.style.cssText = "position:fixed;inset:0;background:rgba(8,8,12,.85);display:flex;align-items:center;justify-content:center;z-index:99999;padding:24px";
+      const box = document.createElement("div");
+      box.style.cssText = "background:var(--panel,#15151d);border:1px solid var(--border,#2a2a3a);border-radius:16px;padding:22px 24px;max-width:540px;width:100%;box-shadow:0 24px 70px -20px #000;display:flex;flex-direction:column;gap:16px";
+      const msg = document.createElement("div");
+      msg.style.cssText = "font-size:15px;font-weight:700;line-height:1.5;white-space:pre-wrap;color:var(--text,#f0f0f6)";
+      msg.textContent = message;
+      const actions = document.createElement("div");
+      actions.style.cssText = "display:flex;gap:10px;justify-content:flex-end";
+      const close = val => { ov.remove(); document.removeEventListener("keydown", onKey, true); resolve(val); };
+      if(isConfirm){
+        const cancel = document.createElement("button"); cancel.textContent = "Cancelar";
+        cancel.onclick = () => close(false); actions.appendChild(cancel);
+      }
+      const ok = document.createElement("button"); ok.className = "primary";
+      ok.textContent = isConfirm ? "Sí" : "Vale"; ok.onclick = () => close(true); actions.appendChild(ok);
+      box.append(msg, actions); ov.appendChild(box); document.body.appendChild(ov);
+      ok.focus();
+      const onKey = e => {
+        if(e.key === "Enter"){ e.preventDefault(); e.stopPropagation(); close(true); }
+        else if(e.key === "Escape"){ e.preventDefault(); e.stopPropagation(); close(!isConfirm); }
+      };
+      document.addEventListener("keydown", onKey, true);
+      ov.addEventListener("click", e => { if(e.target === ov) close(!isConfirm); });
+    });
+  }
+  const uiConfirm = m => uiDialog(m, true);
+  const uiAlert   = m => uiDialog(m, false);
+
   // ---- Audio del editor: si la canción tiene SONG.audio (mp3), se PRIORIZA ese
   // (silencia el vídeo y suena el mp3 sincronizado); si no, suena el vídeo. ----
   let edAudio = null;
@@ -188,8 +224,8 @@
     const mg = document.createElement("button"); mg.textContent="unir ↓"; mg.title="juntar con la siguiente línea";
     mg.onclick = () => mergeDown(i);
     const del = document.createElement("button"); del.textContent="✕"; del.title="borrar línea";
-    del.onclick = () => {
-      if(!confirm("¿Borrar esta línea?\n\n" + (l.romanization || l.original || "(vacía)"))) return;
+    del.onclick = async () => {
+      if(!await uiConfirm("¿Borrar esta línea?\n\n" + (l.romanization || l.original || "(vacía)"))) return;
       song.lyrics.splice(i,1); if(sel>=song.lyrics.length) sel=song.lyrics.length-1; renderLines();
     };
     rb.append(ins, mg, del);
@@ -203,7 +239,8 @@
     // rebuild just this row (after todos toggle changes member set)
     const fresh = makeRow(song.lyrics[i], i);
     row.replaceWith(fresh);
-    highlightSel();
+    highlightSel(false);   // re-aplica la clase .sel SIN hacer scroll (si no, al
+                           // pulsar TODOS saltaba a la línea seleccionada)
   }
   function syncTodos(row, i){
     const l = song.lyrics[i];
@@ -241,8 +278,9 @@
     renderLines();
   }
 
-  function highlightSel(){
+  function highlightSel(scroll){
     [...listEl.children].forEach((r,idx)=> r.classList.toggle("sel", idx===sel));
+    if(scroll === false) return;                    // re-aplicar .sel sin desplazar
     const r = listEl.children[sel];
     if(r) r.scrollIntoView({ block:"nearest" });
   }
@@ -295,7 +333,7 @@
     document.querySelectorAll(".segmenu").forEach(e => e.remove());
     const l = song.lyrics[i];
     const segs = voiceSegs(l).filter(s => s.length >= 2 && isFinite(s[1]) && s[1] > s[0]);
-    if(!segs.length){ alert("Esta línea no tiene trozos de voz todavía. En modo VOZ, marca los trozos con S primero."); return; }
+    if(!segs.length){ uiAlert("Esta línea no tiene trozos de voz todavía. En modo VOZ, marca los trozos con S primero."); return; }
     const menu = document.createElement("div"); menu.className = "segmenu";
     const title = document.createElement("div"); title.className = "sm-title";
     title.textContent = "¿Quién canta cada trozo?  (por defecto = " + (joinNamesAbbr(l) || "línea") + ")";
@@ -448,7 +486,7 @@
     let songs = [];
     try{ songs = await window.desktop.listSongs(); }catch(e){}
     const others = (songs || []).filter(s => s.path !== songPath);
-    if(!others.length){ alert("No hay otras canciones de donde importar."); return; }
+    if(!others.length){ uiAlert("No hay otras canciones de donde importar."); return; }
     // primero las del mismo grupo
     others.sort((a, b) => (a.group === song.group ? -1 : 1) - (b.group === song.group ? -1 : 1)
                           || (a.group + a.song).localeCompare(b.group + b.song));
@@ -461,9 +499,9 @@
   $("#importGo").onclick = async () => {
     const src = $("#importSel").value; if(!src) return;
     let res = null; try{ res = await window.desktop.loadSong(src); }catch(e){}
-    if(!res || !res.ok){ alert("No se pudo cargar esa canción."); return; }
+    if(!res || !res.ok){ uiAlert("No se pudo cargar esa canción."); return; }
     const srcLyrics = (res.data && res.data.lyrics) || [];
-    if(!srcLyrics.length){ alert("La canción de origen no tiene líneas."); return; }
+    if(!srcLyrics.length){ uiAlert("La canción de origen no tiene líneas."); return; }
     const cur = song.lyrics || [];
     const curN = cur.length, srcN = srcLyrics.length;
     const withText = $("#importText") ? $("#importText").checked : false;
@@ -472,14 +510,14 @@
     // "también la letra" está marcada, copia además el TEXTO (original/rom/inglés)
     // y, si el origen tiene MÁS líneas, las añade enteras al final.
     if(curN !== srcN){
-      if(!confirm("⚠ El nº de líneas NO coincide:\n· Esta canción: " + curN + "\n· Origen: " + srcN + "\n\n" +
+      if(!await uiConfirm("⚠ El nº de líneas NO coincide:\n· Esta canción: " + curN + "\n· Origen: " + srcN + "\n\n" +
         (withText
           ? ("Se importarán tiempos y LETRA de las " + Math.min(curN, srcN) + " primeras" +
              (srcN>curN ? ("; además se AÑADIRÁN las " + (srcN-curN) + " líneas de más.") : "; el resto se queda como está."))
           : ("Se importarán los tiempos de las primeras " + Math.min(curN, srcN) + " líneas; el resto lo retocas tú.")) +
         "\n\n¿Continuar?")) return;
     } else {
-      if(curN && !confirm("Se importarán tiempos, segmentos de voz y miembros" + (withText ? " y la LETRA (texto)" : " (tu TEXTO se mantiene)") +
+      if(curN && !await uiConfirm("Se importarán tiempos, segmentos de voz y miembros" + (withText ? " y la LETRA (texto)" : " (tu TEXTO se mantiene)") +
         " de \"" + (res.data.song || "") + "\" a estas " + curN + " líneas.\n\n¿Continuar?")) return;
     }
     const n = Math.min(curN, srcN);
@@ -504,8 +542,8 @@
     song.lyrics = cur;
     $("#importmodal").classList.remove("show");
     renderLines(); updateTapUI();
-    if(!withText && curN !== srcN) alert("Importados los tiempos de " + n + " líneas. Revisa el resto (había " + (curN>srcN?("sobran "+(curN-srcN)):("faltan "+(srcN-curN))) + " líneas de diferencia).");
-    else if(withText && curN > srcN) alert("Importadas " + n + " líneas con letra. Te sobran " + (curN-srcN) + " líneas antiguas al final; bórralas si no van.");
+    if(!withText && curN !== srcN) uiAlert("Importados los tiempos de " + n + " líneas. Revisa el resto (había " + (curN>srcN?("sobran "+(curN-srcN)):("faltan "+(srcN-curN))) + " líneas de diferencia).");
+    else if(withText && curN > srcN) uiAlert("Importadas " + n + " líneas con letra. Te sobran " + (curN-srcN) + " líneas antiguas al final; bórralas si no van.");
   };
   // Reaplica la regla: AD-LIB solo si la línea va entre paréntesis ( )
   $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");
@@ -514,7 +552,7 @@
   // Previsualizar: construye la tabla desde los textareas
   $("#paPreviewBtn").onclick = () => {
     pv = { O: rawOf("#paOrig"), R: rawOf("#paRom"), E: rawOf("#paEng") };
-    if(!pv.O.some(Boolean) && !pv.R.some(Boolean) && !pv.E.some(Boolean)){ alert("Pega al menos una línea de letra."); pv = null; return; }
+    if(!pv.O.some(Boolean) && !pv.R.some(Boolean) && !pv.E.some(Boolean)){ uiAlert("Pega al menos una línea de letra."); pv = null; return; }
     renderPreview();
   };
 
@@ -546,21 +584,21 @@
     pp.querySelectorAll("button.del").forEach(b => b.onclick = () => { pv[b.dataset.c].splice(+b.dataset.i, 1); renderPreview(); });
   }
 
-  $("#paGen").onclick = () => {
+  $("#paGen").onclick = async () => {
     let so, sr, se;
     if(pv){                                   // usa lo que has cuadrado en la vista
       so = pv.O.slice(); sr = pv.R.slice(); se = pv.E.slice();
     } else {                                  // sin vista: empareja respetando blancos si el nº coincide
       const rawO = rawOf("#paOrig"), rawR = rawOf("#paRom"), rawE = rawOf("#paEng");
       const pO = rawO.some(Boolean), pR = rawR.some(Boolean), pE = rawE.some(Boolean);
-      if(!pO && !pR && !pE){ alert("Pega al menos una línea de letra."); return; }
+      if(!pO && !pR && !pE){ uiAlert("Pega al menos una línea de letra."); return; }
       const rc = [pO ? rawO.length : null, pR ? rawR.length : null, pE ? rawE.length : null].filter(x => x != null);
       if(new Set(rc).size === 1){ so = rawO; sr = rawR; se = rawE; }
       else {
         so = rawO.filter(Boolean); sr = rawR.filter(Boolean); se = rawE.filter(Boolean);
         const counts = [so.length, sr.length, se.length].filter(x => x > 0);
         if(new Set(counts).size > 1 &&
-           !confirm("⚠ Las columnas tienen DISTINTO número de líneas (O:" + so.length + " R:" + sr.length + " E:" + se.length + ").\n\nUsa 👁 Previsualizar y cuadrar para alinearlas a mano.\n\n¿Generar igualmente?")) return;
+           !await uiConfirm("⚠ Las columnas tienen DISTINTO número de líneas (O:" + so.length + " R:" + sr.length + " E:" + se.length + ").\n\nUsa 👁 Previsualizar y cuadrar para alinearlas a mano.\n\n¿Generar igualmente?")) return;
       }
     }
     const provO = so.some(Boolean), provR = sr.some(Boolean), provE = se.some(Boolean);
@@ -583,7 +621,7 @@
     const msg = allThree
       ? ("Esto REEMPLAZA las " + old.length + " líneas actuales por " + rows.length + " líneas nuevas.\n\n¿Continuar?")
       : ("Se rellenará SOLO: " + cols.join(", ") + ".\nLas demás columnas y los miembros/tiempos por línea se MANTIENEN.\n\n¿Continuar?");
-    if(hasData && !confirm(msg)) return;
+    if(hasData && !await uiConfirm(msg)) return;
     song.lyrics = rows; sel = 0; awaitingEnd = false;
     pv = null; $("#paPreview").classList.remove("show");
     $("#pastemodal").classList.remove("show");
@@ -849,8 +887,8 @@
   function slugParts(){ const p = String(songPath).replace(/\\/g,"/").split("/");
     return { g: p[p.length-2] || "grupo", s: (p[p.length-1] || "cancion").replace(/\.json$/i,"") }; }
 
-  function removeMember(name){
-    if(!confirm("¿Quitar a " + name + " de esta canción?\n(no afecta a otras canciones)")) return;
+  async function removeMember(name){
+    if(!await uiConfirm("¿Quitar a " + name + " de esta canción?\n(no afecta a otras canciones)")) return;
     song.members = (song.members || []).filter(m => m.name !== name);
     (song.lyrics || []).forEach(l => {
       if(Array.isArray(l.members)) l.members = l.members.filter(n => n !== name);
@@ -864,7 +902,7 @@
   // canon = orden canónico del grupo (nombres) para insertar en su sitio
   function addMember(preset, canon){
     const name = (preset.name || "").trim(); if(!name) return;
-    if((song.members || []).some(m => m.name.toLowerCase() === name.toLowerCase())){ alert("Ese miembro ya está en la canción."); return; }
+    if((song.members || []).some(m => m.name.toLowerCase() === name.toLowerCase())){ uiAlert("Ese miembro ya está en la canción."); return; }
     const { g, s } = slugParts();
     const base = name.toLowerCase().replace(/[^a-z0-9]+/g, "");
     const nm = { name, image: "images/" + g + "/" + s + "/" + base + ".png",
