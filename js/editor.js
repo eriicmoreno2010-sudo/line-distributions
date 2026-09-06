@@ -223,14 +223,21 @@
   }
   function joinTxt(a,b){ a=(a||"").trim(); b=(b||"").trim(); if(!a) return b; if(!b) return a; return a.replace(/[,;·]\s*$/,"") + ", " + b; }
   function mergeDown(i){
-    if(i+1 >= song.lyrics.length) return;
-    const a = song.lyrics[i], b = song.lyrics[i+1];
+    const a = song.lyrics[i]; if(!a) return;
+    // Une con la siguiente línea DEL MISMO TIPO (central con central, ad-lib con
+    // ad-lib), saltándose las del otro tipo. Antes unía con song.lyrics[i+1] a
+    // secas, y si en medio había un AD-LIB (oculto en el modo central) se lo
+    // tragaba por error. Cada pasada (central / ad-lib) va por su lado.
+    let j = -1;
+    for(let k = i + 1; k < song.lyrics.length; k++){ if(isAdlib(song.lyrics[k]) === isAdlib(a)){ j = k; break; } }
+    if(j < 0) return;                       // no hay otra línea del mismo tipo debajo
+    const b = song.lyrics[j];
     a.original = joinTxt(a.original,b.original);
     a.romanization = joinTxt(a.romanization,b.romanization);
     a.english = joinTxt(a.english,b.english);
     a.members = Array.from(new Set([...(a.members||[]), ...(b.members||[])]));
     if(+b.end) a.end = +b.end;
-    song.lyrics.splice(i+1,1);
+    song.lyrics.splice(j,1);
     renderLines();
   }
 
