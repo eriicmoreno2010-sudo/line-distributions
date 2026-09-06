@@ -1102,5 +1102,6 @@
       "adlib": false
     }
   ],
-  "cover": "covers/nct127_legacy.jpg"
+  "cover": "covers/nct127_legacy.jpg",
+  "audio": "audio/nct127_legacy.mp3"
 }
