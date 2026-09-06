@@ -458,14 +458,21 @@
     if(!srcLyrics.length){ alert("La canción de origen no tiene líneas."); return; }
     const cur = song.lyrics || [];
     const curN = cur.length, srcN = srcLyrics.length;
+    const withText = $("#importText") ? $("#importText").checked : false;
 
-    // Importa SOLO tiempos + segmentos de voz + miembros + adlib, línea a línea,
-    // MANTENIENDO el texto actual (pon la letra primero, luego importa los tiempos).
+    // Importa tiempos + segmentos de voz + miembros + adlib línea a línea. Si
+    // "también la letra" está marcada, copia además el TEXTO (original/rom/inglés)
+    // y, si el origen tiene MÁS líneas, las añade enteras al final.
     if(curN !== srcN){
       if(!confirm("⚠ El nº de líneas NO coincide:\n· Esta canción: " + curN + "\n· Origen: " + srcN + "\n\n" +
-        "Se importarán los tiempos de las primeras " + Math.min(curN, srcN) + " líneas que coincidan; el resto lo retocas tú.\n\n¿Continuar?")) return;
+        (withText
+          ? ("Se importarán tiempos y LETRA de las " + Math.min(curN, srcN) + " primeras" +
+             (srcN>curN ? ("; además se AÑADIRÁN las " + (srcN-curN) + " líneas de más.") : "; el resto se queda como está."))
+          : ("Se importarán los tiempos de las primeras " + Math.min(curN, srcN) + " líneas; el resto lo retocas tú.")) +
+        "\n\n¿Continuar?")) return;
     } else {
-      if(curN && !confirm("Se importarán los tiempos, segmentos de voz y miembros de \"" + (res.data.song || "") + "\" a estas " + curN + " líneas (tu TEXTO se mantiene).\n\n¿Continuar?")) return;
+      if(curN && !confirm("Se importarán tiempos, segmentos de voz y miembros" + (withText ? " y la LETRA (texto)" : " (tu TEXTO se mantiene)") +
+        " de \"" + (res.data.song || "") + "\" a estas " + curN + " líneas.\n\n¿Continuar?")) return;
     }
     const n = Math.min(curN, srcN);
     for(let i = 0; i < n; i++){
@@ -476,11 +483,21 @@
       if("voiceEnd" in s) cur[i].voiceEnd = s.voiceEnd;
       cur[i].members = Array.isArray(s.members) ? s.members.slice() : [];
       cur[i].adlib = s.adlib;
-      // el texto (original/romanization/english) NO se toca
+      if(withText){                                   // traer también el texto
+        cur[i].original = s.original || "";
+        cur[i].romanization = s.romanization || "";
+        cur[i].english = s.english || "";
+      }
     }
+    // Si pedimos la letra y el origen tiene más líneas, las añadimos enteras.
+    if(withText && srcN > curN){
+      for(let i = curN; i < srcN; i++) cur.push(JSON.parse(JSON.stringify(srcLyrics[i])));
+    }
+    song.lyrics = cur;
     $("#importmodal").classList.remove("show");
     renderLines(); updateTapUI();
-    if(curN !== srcN) alert("Importados los tiempos de " + n + " líneas. Revisa el resto (había " + (curN>srcN?("sobran "+(curN-srcN)):("faltan "+(srcN-curN))) + " líneas de diferencia).");
+    if(!withText && curN !== srcN) alert("Importados los tiempos de " + n + " líneas. Revisa el resto (había " + (curN>srcN?("sobran "+(curN-srcN)):("faltan "+(srcN-curN))) + " líneas de diferencia).");
+    else if(withText && curN > srcN) alert("Importadas " + n + " líneas con letra. Te sobran " + (curN-srcN) + " líneas antiguas al final; bórralas si no van.");
   };
   // Reaplica la regla: AD-LIB solo si la línea va entre paréntesis ( )
   $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");

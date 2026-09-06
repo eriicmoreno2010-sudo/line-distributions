@@ -54,6 +54,20 @@ function partialSingers(line){
     return found;
 }
 
+/* Nombres a MOSTRAR de una línea: solo los que son del grupo actual (el propio
+   grupo o un miembro real). Así, en el "grupo inventado" (cuyas líneas heredaron
+   nombres reales como HARUTO/HYUNSUK al importar los tiempos) NO se muestran los
+   nombres de los cantantes de verdad. En un grupo normal no cambia nada porque
+   todos los nombres ya son miembros. */
+function displayMembers(line){
+    const ms = (line && line.members) || [];
+    if(typeof SONG === "undefined" || !SONG) return ms;
+    return ms.filter(n =>
+        n === SONG.group ||
+        (SONG.members || []).some(m => m.name.toLowerCase() === String(n).toLowerCase())
+    );
+}
+
 /* Shrink a lyric line's font until it fits on ONE row (detected by height). */
 function fitField(el){
     if(!el || !(el.textContent || "").trim()) return;
@@ -300,9 +314,10 @@ const Lyrics = {
         const c = this.colorsFor(line);
         this.centralTextCleared = false;
 
+        const shownMembers = displayMembers(line);
         const linePartials = partialSingers(line)
-            .filter(n => !line.members.some(m => m.toLowerCase() === n.toLowerCase()));
-        const membersKey = line.members.join("|") + "@@" + linePartials.join("|");
+            .filter(n => !shownMembers.some(m => m.toLowerCase() === n.toLowerCase()));
+        const membersKey = shownMembers.join("|") + "@@" + linePartials.join("|");
         const sameName = this.lastCentralMembers === membersKey;
         this.lastCentralMembers = membersKey;
 
@@ -372,18 +387,18 @@ const Lyrics = {
                     e.member.style.textShadow = "";        // sólido -> sombra/contorno normal
                     const span = (n) => `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
                     const part = linePartials.map(span).join('<span style="color:inherit"> &amp; </span>');
-                    const main = line.members.map(span).join('<span style="color:inherit">  &amp;  </span>');
+                    const main = shownMembers.map(span).join('<span style="color:inherit">  &amp;  </span>');
                     e.member.innerHTML = part +
                         '<span style="opacity:.6;font-weight:800;padding:0 .18em"> / </span>' + main;
                 } else if(c.hasPartial){
-                    e.member.textContent = joinNames(line.members);
+                    e.member.textContent = joinNames(shownMembers);
                     e.member.style.background = c.sharedGradient;
                     e.member.style.webkitBackgroundClip = "text";
                     e.member.style.backgroundClip = "text";
                     e.member.style.color = "transparent";
                     e.member.style.textShadow = "none";   // degradado -> sin sombra oscura
                 } else {
-                    e.member.textContent = joinNames(line.members);
+                    e.member.textContent = joinNames(shownMembers);
                     e.member.style.color = c.accent;
                     e.member.style.textShadow = "";        // sólido -> sombra normal
                 }
@@ -485,7 +500,7 @@ const Lyrics = {
             else el.style.color = c.accent;
         };
         const inner = document.createElement("div"); inner.className = "al-inner";   // lo que colapsa el grid-rows
-        const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(line.members);
+        const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(displayMembers(line));
         paint(nm); inner.appendChild(nm);
         const raw = [line.original, line.romanization, line.english].map(x => (x || "").trim());
         const uniq = raw.filter((x, i) => x && raw.indexOf(x) === i);

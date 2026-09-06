@@ -225,11 +225,15 @@
   <div id="importmodal">
     <div class="pbox">
       <div class="ptitle">⏱️ Importar tiempos y reparto de otra canción</div>
-      <div class="phint"><b>Pon primero la letra</b> (📋 Pegar letra) y luego importa aquí: copia <b>solo los tiempos, segmentos de voz y miembros</b> línea a línea (tu texto se mantiene). Ideal para la misma canción en otro idioma. Debe tener el <b>mismo nº de casillas</b>; si no, te avisa y retocas. Elige la canción de origen (mismo grupo):</div>
+      <div class="phint">Copia <b>tiempos, segmentos de voz y miembros</b> línea a línea. Marca la casilla de abajo para traer <b>también la letra</b> (texto original/romanización/inglés). Elige la canción de origen (mismo grupo):</div>
       <select id="importSel" style="width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:11px 13px;font-size:15px;font-weight:700"></select>
+      <label style="display:flex;align-items:center;gap:9px;font-size:14px;font-weight:700;color:var(--text);cursor:pointer;margin-top:4px">
+        <input type="checkbox" id="importText" checked style="width:17px;height:17px;cursor:pointer">
+        Importar también la letra (texto). Si la de origen tiene más líneas, se añaden.
+      </label>
       <div class="pactions">
         <button id="importCancel">Cancelar</button>
-        <button id="importGo" class="primary">Importar tiempos</button>
+        <button id="importGo" class="primary">Importar</button>
       </div>
     </div>
   </div>
@@ -252,6 +256,6 @@
     </div>
   </div>
 
-<script src="js/editor.js"></script>
+<script src="js/editor.js?v=2"></script>
 </body>
 </html>

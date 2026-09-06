@@ -19,6 +19,14 @@ Self-contained: injects its own styles and markup.
     return `M ${p1.x} ${p1.y} A ${R} ${R} 0 ${large} 1 ${p2.x} ${p2.y} `
          + `L ${p3.x} ${p3.y} A ${RIN} ${RIN} 0 ${large} 0 ${p4.x} ${p4.y} Z`;
   }
+  // Anillo COMPLETO (un solo miembro = 100%): un arco de 360° es degenerado
+  // (mismo punto de inicio y fin) y no se dibuja, por eso el donut no salía en
+  // canciones de un solista. Se dibuja con dos semicírculos + agujero (evenodd).
+  function fullRing(){
+    const oT=polar(R,0),oB=polar(R,180),iT=polar(RIN,0),iB=polar(RIN,180);
+    return `M ${oT.x} ${oT.y} A ${R} ${R} 0 1 1 ${oB.x} ${oB.y} A ${R} ${R} 0 1 1 ${oT.x} ${oT.y} Z `
+         + `M ${iT.x} ${iT.y} A ${RIN} ${RIN} 0 1 0 ${iB.x} ${iB.y} A ${RIN} ${RIN} 0 1 0 ${iT.x} ${iT.y} Z`;
+  }
   function totalsFrom(song){
     const t={}; song.members.forEach(m=>t[m.name]=0);
     const add=(n,s,e)=>{ if(t[n]!==undefined && e>s) t[n]+=(e-s); };
@@ -99,6 +107,10 @@ Self-contained: injects its own styles and markup.
       grid-auto-flow:column; gap:1vh 1.4vh;
     }
     #results-overlay #ro-list.two-col .row{ flex:none; }
+    /* Solista o sub-unidad (menos de 8): las tarjetas NO se estiran para llenar el
+       panel; cada una toma la altura de "1 de 8" y la pila se CENTRA vertical. */
+    #results-overlay #ro-list.few{ justify-content:center; }
+    #results-overlay #ro-list.few .row{ flex:none; height:calc((100% - 7vh) / 8); }
 
     /* Mobile: stack the donut above the ranking and let it scroll */
     @media(max-width:900px){
@@ -209,7 +221,8 @@ Self-contained: injects its own styles and markup.
     ranked.forEach(m=>{
       const span=m.pct/100*360;
       const path=document.createElementNS("http://www.w3.org/2000/svg","path");
-      path.setAttribute("d",sector(ang,ang+span));
+      if(span>=359.999){ path.setAttribute("d",fullRing()); path.setAttribute("fill-rule","evenodd"); }
+      else path.setAttribute("d",sector(ang,ang+span));
       path.setAttribute("class","seg"); path.style.setProperty("--c",m.color);
       svg.appendChild(path); m.seg=path; ang+=span;
     });
@@ -233,6 +246,9 @@ Self-contained: injects its own styles and markup.
     if(ranked.length > 10){
       list.classList.add("two-col");
       list.style.setProperty("--rows", Math.ceil(ranked.length/2));
+    } else if(ranked.length < 8){
+      // solista / sub-unidad: filas del tamaño de 8 personas, centradas
+      list.classList.add("few");
     }
 
     // Fit the avatar to the row height so it never overflows/touches the card
