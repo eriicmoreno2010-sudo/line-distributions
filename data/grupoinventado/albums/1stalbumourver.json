@@ -78,7 +78,31 @@
     "#e90ca3"
   ],
   "raceColor": "#00b4f0",
-  "versions": [],
+  "versions": [
+    {
+      "name": "",
+      "songs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "members": [
+        "ARNAU",
+        "IRENE",
+        "MARC",
+        "BIEL",
+        "MICHELLE",
+        "ERIC"
+      ]
+    }
+  ],
   "bgAudio": {
     "src": "audio/grupoinventado_1stalbumourverbg.mp3",
     "start": 0,
