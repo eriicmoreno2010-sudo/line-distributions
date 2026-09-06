@@ -369,7 +369,8 @@
           19.87,
           21.06
         ]
-      ]
+      ],
+      "adlib": true
     },
     {
       "start": 21.06,
@@ -562,7 +563,7 @@
       "original": "",
       "romanization": "I want noise that heat, 7CHILL go dumb, YÆ ain’t no one check me",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           41.46,
