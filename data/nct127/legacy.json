@@ -74,154 +74,286 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "JOHNNY"
-      ],
+      "start": 10.26,
+      "end": 11.56,
+      "members": [],
       "original": "",
       "romanization": "Ay what’s up Seoul",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          10.31,
+          10.75
+        ],
+        [
+          10.9,
+          11.74
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.71,
+      "end": 13.63,
       "members": [],
       "original": "Legacy 도시 위 Melody",
       "romanization": "legacy dosi wi melody",
       "english": "Legacy, melody over the city",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.69,
+          13.81
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 13.78,
+      "end": 16.43,
       "members": [],
       "original": "정신없게 해 Are you scared?, Now you’d better see",
       "romanization": "jeongsineopge hae are you scared?, now you’d better see",
       "english": "Making me lose my mind, are you scared?, Now you’d better see",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.88,
+          16.64
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 13.49,
+      "end": 13.84,
+      "members": [],
+      "original": "",
+      "romanization": "(Yo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          13.49,
+          13.79
+        ]
+      ]
+    },
+    {
+      "start": 16.14,
+      "end": 16.72,
       "members": [],
       "original": "",
       "romanization": "(You’d better)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          16.14,
+          16.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 21.22,
+      "end": 21.63,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          21.28,
+          21.63
+        ]
+      ]
+    },
+    {
+      "start": 16.61,
+      "end": 19.32,
       "members": [],
       "original": "검은 밤 끝에, 작은 Light little remedy",
       "romanization": "geomeun bam kkeute, jageun light little remedy",
       "english": "At the end of the dark night, A little light, little remedy",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.66,
+          18.39
+        ],
+        [
+          18.51,
+          19.51
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 19.47,
+      "end": 22.12,
       "members": [],
       "original": "빗방울 쏟아 내린 다음, Feel the gravity",
       "romanization": "bitbangul ssoda naerin daeum, feel the gravity",
       "english": "After the raindrops pour down, Feel the gravity",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          19.5,
+          22.37
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 22.3,
+      "end": 23.68,
       "members": [],
       "original": "어둠에 Neon flash",
       "romanization": "eodume neon flash",
       "english": "Neon flashes in the darkness",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          22.34,
+          23.7
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.83,
+      "end": 24.95,
       "members": [],
       "original": "서울의 Signal flash",
       "romanization": "seourui signal flash",
       "english": "Seoul’s signal flashes",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          23.79,
+          25.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.13,
+      "end": 26.45,
       "members": [],
       "original": "초록빛 따라 Dash",
       "romanization": "chorokbit ttara dash",
       "english": "Dash following the green light",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.16,
+          26.57
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.59,
+      "end": 27.68,
       "members": [],
       "original": "",
       "romanization": "Never gon’ hold me back",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          26.62,
+          27.72
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 27.86,
+      "end": 30.56,
       "members": [],
       "original": "어려운 길 그려낸 Past, Imma go do the most",
       "romanization": "eoryeoun gil geuryeonaen past, imma go do the most",
       "english": "A difficult path drawn from the past, Imma go do the most",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.04,
+          30.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 30.8,
+      "end": 33.99,
       "members": [],
       "original": "Planted the seeds, 혼란 속에 한강 위 새긴 Chord",
       "romanization": "planted the seeds, honran soge hangang wi saegin chord",
       "english": "Planted the seeds, In the chaos, I carved a chord over the Han River",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          30.83,
+          33.95
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 34.74,
+      "end": 37.48,
       "members": [],
       "original": "잠에 들지 않는, 도시 속에 Thunder",
       "romanization": "jame deulji anneun, dosi soge thunder",
       "english": "Thunder in a city, That never sleeps",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.72,
+          37.55
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 37.66,
+      "end": 40.31,
       "members": [],
       "original": "낯선 파동 뒤로, 선명해진 Color",
       "romanization": "natseon padong dwiro, seonmyeonghaejin color",
       "english": "Colors becoming vivid, Behind unfamiliar waves",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          37.6,
+          40.32
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 40.43,
+      "end": 42.74,
       "members": [],
       "original": "새로운 감각이, 남겨질 이 Culture",
       "romanization": "saeroun gamsagi, namgyeojil i culture",
       "english": "This culture that will leave, Behind a new sensation",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          40.43,
+          42.95
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.89,
+      "end": 45.57,
       "members": [],
       "original": "Yeah 발자국을 따라, 빛이 되는 Future",
       "romanization": "yeah baljagugeul ttara, bichi doeneun future",
       "english": "Yeah, following our footsteps, The future becomes light",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.96,
+          45.76
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 45.73,
+      "end": 46.42,
       "members": [],
       "original": "",
       "romanization": "(Legacy)",
@@ -229,17 +361,39 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 46.42,
+      "end": 50.73,
       "members": [],
       "original": "도화선에 Raindrop, 태양 빛을 깨워, 한강 위를 감싸",
       "romanization": "dohwaseone raindrop, taeyang bicheul kkaewo, hangang wireul gamssa",
       "english": "Raindrop on the fuse, Awakening the sunlight, Wrapping around the Han River",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          46.5,
+          47.43
+        ],
+        [
+          47.58,
+          47.82
+        ],
+        [
+          47.97,
+          48.84
+        ],
+        [
+          49,
+          49.26
+        ],
+        [
+          49.38,
+          50.83
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 50.7,
+      "end": 52.14,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -247,17 +401,43 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.15,
+      "end": 56.34,
       "members": [],
       "original": "땅을 딛고 깨어나, 초록빛을 따라, 남산 위는 밝아",
       "romanization": "ttangeul ditgo kkaeeona, chorokbicheul ttara, namsan wineun balga",
       "english": "Plant my feet and awaken, Following the green light, Namsan shines bright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.16,
+          53.09
+        ],
+        [
+          53.24,
+          53.51
+        ],
+        [
+          53.63,
+          54.54
+        ],
+        [
+          54.72,
+          54.93
+        ],
+        [
+          55.05,
+          55.95
+        ],
+        [
+          56.11,
+          56.43
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 56.41,
+      "end": 57.83,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -265,8 +445,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.21,
+      "end": 60.62,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -274,17 +454,27 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.81,
+      "end": 62.28,
       "members": [],
       "original": "도화선에 Raindrop, Keep it going worldwide",
       "romanization": "dohwaseone raindrop, keep it going worldwide",
       "english": "Raindrop on the fuse, Keep it going worldwide",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.83,
+          59.26
+        ],
+        [
+          60.65,
+          62.18
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.06,
+      "end": 63.47,
       "members": [],
       "original": "",
       "romanization": "(Energy energy)",
@@ -292,26 +482,38 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 63.49,
+      "end": 66.18,
       "members": [],
       "original": "땅을 딛고 깨어나, 새 좌표를 열어놔",
       "romanization": "ttangeul ditgo kkaeeona, sae jwapyoreul yeoreonwa",
       "english": "Plant my feet and awaken, Opening up new coordinates",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          63.51,
+          66.33
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.3,
+      "end": 67.8,
       "members": [],
       "original": "암전 속의 Neon sign",
       "romanization": "amjeon sogui neon sign",
       "english": "A neon sign in the blackout",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.38,
+          67.83
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 67.74,
+      "end": 69.12,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -319,134 +521,285 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 93.61,
+      "end": 98.01,
       "members": [],
       "original": "(올라가 더 높이, Betcha like what you see yeah)",
       "romanization": "(ollaga deo nopi, betcha like what you see yeah)",
       "english": "(Going higher and higher, Betcha like what you see, yeah)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          93.66,
+          94.99
+        ],
+        [
+          95.14,
+          97.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 102.89,
+      "end": 105.84,
+      "members": [],
+      "original": "(새로운 이름들이, 만들어낸 Culture)",
+      "romanization": "(saeroun ireumdeuri, mandeureonaen culture)",
+      "english": "(A culture created, By these new names)",
+      "adlib": true,
+      "voice": [
+        [
+          102.87,
+          105.74
+        ]
+      ]
+    },
+    {
+      "start": 74.16,
+      "end": 76.21,
       "members": [],
       "original": "Strobe light, 음악이 터져 It’s go time",
       "romanization": "strobe light, eumagi teojyeo it’s go time",
       "english": "Strobe light, The music explodes, it’s go time",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.19,
+          74.46
+        ],
+        [
+          74.61,
+          74.85
+        ],
+        [
+          74.97,
+          75.88
+        ],
+        [
+          76.04,
+          76.16
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 76.36,
+      "end": 79,
       "members": [],
       "original": "새로운 길 We on low ride, 한강대로 위로 Green light",
       "romanization": "saeroun gil we on low ride, hangangdaero wiro green light",
       "english": "A new road, we on low ride, Green light over Hangang-daero",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          76.34,
+          77.29
+        ],
+        [
+          77.44,
+          78.71
+        ],
+        [
+          78.87,
+          79.19
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.15,
+      "end": 81.86,
       "members": [],
       "original": "Out in the open and I don’t hide, 좌표를 찍어 We worldwide",
       "romanization": "out in the open and i don’t hide, jwapyoreul jjigeo we worldwide",
       "english": "Out in the open and I don’t hide, Mark the coordinates, we worldwide",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          79.2,
+          80.16
+        ],
+        [
+          80.32,
+          80.55
+        ],
+        [
+          80.71,
+          81.55
+        ],
+        [
+          81.7,
+          81.99
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.98,
+      "end": 84.59,
       "members": [],
       "original": "카메라 켜져 It’s showtime, 이 세계 너머로 Both sides",
       "romanization": "kamera kyeojyeo it’s showtime, i segye neomeoro both sides",
       "english": "The camera’s on, it’s showtime, Beyond this world, both sides",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          82.02,
+          82.95
+        ],
+        [
+          83.1,
+          83.31
+        ],
+        [
+          83.49,
+          85.44
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 84.77,
+      "end": 85.36,
       "members": [],
       "original": "",
       "romanization": "What you say?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          84.83,
+          85.72
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.51,
+      "end": 87.84,
       "members": [],
       "original": "Slide with the beat, 발밑에 Melody",
       "romanization": "slide with the beat, balmite melody",
       "english": "Slide with the beat, Melody beneath my feet",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.52,
+          86.51
+        ],
+        [
+          86.66,
+          87.96
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 87.99,
+      "end": 90.7,
       "members": [],
       "original": "숨죽인 밤 위로, We light up the street",
       "romanization": "sumjug in bam wiro, we light up the street",
       "english": "We light up the street, Over the silent night",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          88.05,
+          90.74
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 90.82,
+      "end": 93.55,
       "members": [],
       "original": "",
       "romanization": "You could try, but these guys ain’t flyer than me",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.9,
+          93.52
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 93.71,
+      "end": 96.5,
       "members": [],
       "original": "올라가 더 높이, Betcha like what you see",
       "romanization": "ollaga deo nopi, betcha like what you see",
       "english": "Going higher and higher, Betcha like what you see",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          93.74,
+          95.01
+        ],
+        [
+          95.15,
+          96.51
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.17,
+      "end": 99.9,
       "members": [],
       "original": "밝게 타오르는, 도시 속에 Thunder",
       "romanization": "balge taoreuneun, dosi soge thunder",
       "english": "Thunder in the brightly, Burning city",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          97.21,
+          100.01
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 100.05,
+      "end": 102.75,
       "members": [],
       "original": "지난 자리마다, 선명해진 Color",
       "romanization": "jinan jarimadama, seonmyeonghaejin color",
       "english": "Colors becoming vivid, Everywhere we’ve been",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          100.01,
+          102.83
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 102.88,
+      "end": 105.22,
       "members": [],
       "original": "새로운 이름들이, 만들어낸 Culture",
       "romanization": "saeroun ireumdeuri, mandeureonaen culture",
       "english": "A culture created, By these new names",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          102.9,
+          105.46
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 105.35,
+      "end": 108.09,
       "members": [],
       "original": "Yeah 발자국을 따라 빛이",
       "romanization": "yeah baljagugeul ttara bichi",
       "english": "Yeah, following our footsteps, the light becomes",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.38,
+          108.28
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 108.26,
+      "end": 108.95,
       "members": [],
       "original": "",
       "romanization": "(Legacy)",
@@ -454,17 +807,35 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 108.94,
+      "end": 113.19,
       "members": [],
       "original": "도화선에 Raindrop, 태양 빛을 깨워, 한강 위를 감싸",
       "romanization": "dohwaseone raindrop, taeyang bicheul kkaewo, hangang wireul gamssa",
       "english": "Raindrop on the fuse, Awakening the sunlight, Wrapping around the Han River",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          108.97,
+          110.3
+        ],
+        [
+          110.42,
+          111.32
+        ],
+        [
+          111.47,
+          111.68
+        ],
+        [
+          111.81,
+          113.25
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 113.22,
+      "end": 114.59,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -472,17 +843,43 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 114.55,
+      "end": 118.87,
       "members": [],
       "original": "땅을 딛고 깨어나, 초록빛을 따라, 남산 위는 밝아",
       "romanization": "ttangeul ditgo kkaeeona, chorokbicheul ttara, namsan wineun balga",
       "english": "Plant my feet and awaken, Following the green light, Namsan shines bright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          114.55,
+          115.6
+        ],
+        [
+          115.75,
+          115.96
+        ],
+        [
+          116.11,
+          117.04
+        ],
+        [
+          117.2,
+          117.35
+        ],
+        [
+          117.5,
+          118.44
+        ],
+        [
+          118.59,
+          118.89
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 118.88,
+      "end": 120.24,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -490,8 +887,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.69,
+      "end": 123.07,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -499,17 +896,27 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.25,
+      "end": 124.69,
       "members": [],
       "original": "도화선에 Raindrop, Keep it going worldwide",
       "romanization": "dohwaseone raindrop, keep it going worldwide",
       "english": "Raindrop on the fuse, Keep it going worldwide",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          120.33,
+          121.74
+        ],
+        [
+          123.16,
+          124.71
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 124.54,
+      "end": 125.93,
       "members": [],
       "original": "",
       "romanization": "(Energy energy)",
@@ -517,26 +924,38 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 125.96,
+      "end": 128.64,
       "members": [],
       "original": "땅을 딛고 깨어나, 새 좌표를 열어놔",
       "romanization": "ttangeul ditgo kkaeeona, sae jwapyoreul yeoreonwa",
       "english": "Plant my feet and awaken, Opening up new coordinates",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          125.96,
+          128.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 128.79,
+      "end": 130.29,
       "members": [],
       "original": "암전 속의 Neon sign",
       "romanization": "amjeon sogui neon sign",
       "english": "A neon sign in the blackout",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          128.85,
+          130.3
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.21,
+      "end": 131.71,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -544,80 +963,128 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 131.68,
+      "end": 133.9,
       "members": [],
       "original": "City lights 혼자였던 밤은",
       "romanization": "city lights honjayeotdeon bameun",
       "english": "City lights, the nights when I was alone",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          131.68,
+          133.96
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.27,
+      "end": 136.51,
       "members": [],
       "original": "It’s our time 의심 따윈 없기에",
       "romanization": "it’s our time uisim ttawin eopgie",
       "english": "It’s our time, because there’s no room for doubt",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.31,
+          136.7
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 136.63,
+      "end": 138.64,
       "members": [],
       "original": "",
       "romanization": "Seen it from the start, Feel it in my heart",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.65,
+          138.85
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 138.82,
+      "end": 141.81,
       "members": [],
       "original": "끝내 사라지지 않아",
       "romanization": "kkeutnae sarajiji ana",
       "english": "It will never disappear",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          138.78,
+          142.38
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 141.96,
+      "end": 144.94,
       "members": [],
       "original": "어둠 속에 너와 나, 둘은 똑같은 Doppelganger",
       "romanization": "eodum soge neowa na, duleun ttokgateun doppelganger",
       "english": "In the darkness, You and I are identical doppelgängers",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.98,
+          145.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 145.09,
+      "end": 147.8,
       "members": [],
       "original": "우린 나타나면, 판을 바꿔 Bangaranga",
       "romanization": "urin natanamyeon, paneul bakkwo bangaranga",
       "english": "When we appear, We change the whole game, bangaranga",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          145.14,
+          148.06
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 147.95,
+      "end": 150.68,
       "members": [],
       "original": "새겨지는 Energy, 서울 위의 Melody",
       "romanization": "saegyeojineun energy, seoul wie melody",
       "english": "Energy being carved in, Melody over Seoul",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          147.94,
+          150.87
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 150.88,
+      "end": 154.25,
       "members": [],
       "original": "",
       "romanization": "Everybody knows that we gon’, Live inside their memory yeah",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          150.83,
+          155.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 153.67,
+      "end": 154.39,
       "members": [],
       "original": "",
       "romanization": "(Legacy)",
@@ -625,35 +1092,65 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 155.83,
+      "end": 156.58,
       "members": [],
       "original": "",
       "romanization": "(Oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          155.82,
+          156.66
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 158.26,
+      "end": 160.2,
       "members": [],
       "original": "(위를 감싸)",
       "romanization": "(wireul gamssa)",
       "english": "(Wrapping around)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          158.24,
+          160.23
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 154.37,
+      "end": 158.58,
       "members": [],
       "original": "도화선에 Raindrop, 태양 빛을 깨워, 한강 위를 감싸",
       "romanization": "dohwaseone raindrop, taeyang bicheul kkaewo, hangang wireul gamssa",
       "english": "Raindrop on the fuse, Awakening the sunlight, Wrapping around the Han River",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.41,
+          155.31
+        ],
+        [
+          155.49,
+          155.67
+        ],
+        [
+          155.82,
+          157.15
+        ],
+        [
+          157.27,
+          158.63
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 158.66,
+      "end": 160.01,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -661,26 +1158,54 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 160.02,
+      "end": 164.31,
       "members": [],
       "original": "땅을 딛고 깨어나, 초록빛을 따라, 남산 위는 밝아",
       "romanization": "ttangeul ditgo kkaeeona, chorokbicheul ttara, namsan wineun balga",
       "english": "Plant my feet and awaken, Following the green light, Namsan shines bright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.03,
+          161.01
+        ],
+        [
+          161.2,
+          161.38
+        ],
+        [
+          161.53,
+          162.43
+        ],
+        [
+          162.64,
+          162.82
+        ],
+        [
+          163,
+          164.24
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 162.92,
+      "end": 167.23,
       "members": [],
       "original": "(남산 위는 밝아 Legacy yeah)",
       "romanization": "(namsan wineun balga legacy yeah)",
       "english": "(Namsan shines bright, legacy, yeah)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          162.86,
+          167.13
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 164.31,
+      "end": 165.78,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -688,17 +1213,23 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.23,
+      "end": 169.27,
       "members": [],
       "original": "",
       "romanization": "(Oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          167.19,
+          169.27
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.18,
+      "end": 168.57,
       "members": [],
       "original": "",
       "romanization": "(Legacy legacy)",
@@ -706,26 +1237,42 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 169.7,
+      "end": 172.06,
       "members": [],
       "original": "",
       "romanization": "(Oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          169.66,
+          171.93
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 165.75,
+      "end": 170.22,
       "members": [],
       "original": "온 세상에 새겨놔, Keep it going worldwide",
       "romanization": "on sesange saegyeonwa, keep it going worldwide",
       "english": "Carve it into the whole world, Keep it going worldwide",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          165.72,
+          167.16
+        ],
+        [
+          168.54,
+          170.07
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 169.97,
+      "end": 171.47,
       "members": [],
       "original": "",
       "romanization": "(Energy energy)",
@@ -733,40 +1280,64 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 174.22,
+      "end": 177.27,
       "members": [],
       "original": "(암전 속의 Neon sign, Legacy legacy)",
       "romanization": "(amjeon sogui neon sign, legacy legacy)",
       "english": "(A neon sign in the blackout, Legacy legacy)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          174.22,
+          177.27
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 171.37,
+      "end": 174.09,
       "members": [],
       "original": "Seoul city we don’t stop, 새 좌표를 열어놔",
       "romanization": "seoul city we don’t stop, sae jwapyoreul yeoreonwa",
       "english": "Seoul city, we don’t stop, Opening up new coordinates",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          171.41,
+          174.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 174.25,
+      "end": 175.66,
       "members": [],
       "original": "암전 속의 Neon sign",
       "romanization": "amjeon sogui neon sign",
       "english": "A neon sign in the blackout",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          174.25,
+          175.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 175.68,
+      "end": 177.19,
       "members": [],
       "original": "",
       "romanization": "Legacy legacy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          175.65,
+          177.18
+        ]
+      ]
     }
   ],
   "cover": "covers/nct127_legacy.jpg",
