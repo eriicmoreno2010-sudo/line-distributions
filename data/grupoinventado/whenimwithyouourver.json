@@ -1195,7 +1195,13 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          191.08,
+          193.88
+        ]
+      ]
     },
     {
       "start": 193.81,
@@ -1207,7 +1213,13 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          193.84,
+          194.7
+        ]
+      ]
     },
     {
       "start": 195.1,
@@ -1219,7 +1231,13 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          195.05,
+          197.93
+        ]
+      ]
     },
     {
       "start": 197.99,
@@ -1231,7 +1249,13 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          197.93,
+          198.95
+        ]
+      ]
     },
     {
       "start": 196.71,
@@ -1309,7 +1333,13 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          199.32,
+          202.04
+        ]
+      ]
     },
     {
       "start": 202.12,
@@ -1321,7 +1351,13 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          202.05,
+          202.9
+        ]
+      ]
     },
     {
       "start": 203.35,
@@ -1333,7 +1369,13 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          203.34,
+          206.11
+        ]
+      ]
     },
     {
       "start": 206.27,
@@ -1345,7 +1387,13 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          206.16,
+          207.1
+        ]
+      ]
     },
     {
       "start": 204.89,
