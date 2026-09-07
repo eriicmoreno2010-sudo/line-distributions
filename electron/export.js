@@ -9,7 +9,7 @@ animations — ranking glide, lyric fades, halos — progress one real step, the
 without faking anything. Audio is muxed from the clean official track. Perfect sync.
 =========================================
 */
-const { spawn } = require("child_process");
+const { spawn, execFileSync } = require("child_process");
 const path = require("path");
 const fs = require("fs");
 // puppeteer-core is ESM-only -> dynamic import.
@@ -47,6 +47,21 @@ function findFfmpeg(){
   return "ffmpeg"; // last resort: rely on PATH
 }
 
+// FPS reales del vídeo (con ffprobe, que va junto a ffmpeg). Devuelve el número
+// o null si no se puede leer. Sirve para sacar la salida a EXACTAMENTE el doble.
+function sourceFps(videoAbs, ffmpegPath){
+  try{
+    const ffprobe = ffmpegPath.replace(/ffmpeg(\.exe)?$/i, "ffprobe$1");
+    const out = execFileSync(ffprobe,
+      ["-v","error","-select_streams","v:0","-show_entries","stream=avg_frame_rate","-of","default=nk=1:nw=1", videoAbs],
+      { encoding:"utf8" }).trim();
+    const [n, d] = out.split("/").map(Number);
+    const f = d ? n / d : n;
+    if(isFinite(f) && f > 0) return f;
+  }catch(e){}
+  return null;
+}
+
 function fileUrl(root, song){
   let u = "file:///" + path.join(root, "index.html").replace(/\\/g, "/");
   if(song) u += "?song=" + encodeURIComponent(song);
@@ -58,8 +73,7 @@ async function runExport(opts, onProgress){
   const chrome = opts.chrome || findChrome();
   if(!chrome) throw new Error("No se encontró Chrome/Edge para el render.");
   const scale = opts.scale || 1;                 // 1 = 1080p, 2 = 4K
-  const fps = opts.fps || (48000 / 1001);        // 2x MV fps (47.952) — smoother UI, clean MV (exact 2x)
-  const budget = 1000 / fps;                     // ms of virtual time per frame
+  let fps = opts.fps || null;                    // se decide tras leer los FPS del MV (2× exacto)
   const resultsHold = (opts.resultsHold != null) ? opts.resultsHold : 12;
 
   const puppeteer = (await import("puppeteer-core")).default;
@@ -91,8 +105,16 @@ async function runExport(opts, onProgress){
     const info = await page.evaluate(() => ({ dur: SONG.duration, video: SONG.video }));
     const startT = Math.max(0, opts.start || 0);                       // render a mid-song window
     const dur = Math.min(opts.maxDur || (info.dur - startT), info.dur - startT);
-    const songFrames = Math.round(dur * fps);
     const videoAbs = path.join(opts.root, info.video.replace(/\//g, path.sep));
+    // FPS de salida = EXACTAMENTE 2× los FPS reales del MV (MV limpio, cada frame
+    // se ve 2 veces) salvo que se fije con --fps. MV de 30fps -> 60fps (fluido y
+    // perfecto en pantallas de 60Hz). Se acota a [30,60]. Si no se puede leer, 47.952.
+    if(!fps){
+      const src = sourceFps(videoAbs, (opts.ffmpeg || findFfmpeg()));
+      fps = src ? Math.max(30, Math.min(60, src * 2)) : (48000 / 1001);
+    }
+    const budget = 1000 / fps;                     // ms of virtual time per frame
+    const songFrames = Math.round(dur * fps);
 
     // hide only the UI chrome — DON'T freeze animations (the virtual clock drives them)
     await page.addStyleTag({ content:

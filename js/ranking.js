@@ -171,6 +171,24 @@ const Ranking = {
             }
             m._curScale = cs;
             if(m.element) m.element.style.setProperty("--card-scale", cs.toFixed(4));
+
+            // Énfasis (tamaño de nombre+tiempo) — también JS aquí: con la transición
+            // de transform desactivada en det, el paso 1.14→1.0 al DEJAR de cantar
+            // se teletransportaba (tirón). Ahora se anima suave, frame a frame.
+            const em = m.active ? 1.14 : 1.0;
+            if(m._emphTo !== em){
+                m._emphFrom  = (m._curEmph != null) ? m._curEmph : em;
+                m._emphTo    = em;
+                m._emphStart = t;
+            }
+            let ce = em;
+            if(m._emphStart != null){
+                let w = (t - m._emphStart) / DUR;
+                if(w < 0) w = 0; else if(w > 1) w = 1;
+                ce = m._emphFrom + (m._emphTo - m._emphFrom) * easeOutBack(w);
+            }
+            m._curEmph = ce;
+            if(m.element) m.element.style.setProperty("--emph", ce.toFixed(4));
         });
     },
 
@@ -199,7 +217,10 @@ const Ranking = {
         if(this.det && !this._detStyle){
             const st = document.createElement("style");
             st.textContent = "#ranking .member.ready{transition:box-shadow .18s var(--ease)," +
-                "background-color .18s var(--ease),border-color .18s var(--ease) !important}";
+                "background-color .18s var(--ease),border-color .18s var(--ease) !important}" +
+                // El énfasis (scale) de nombre/tiempo lo drivea JS (tweenTick) en export;
+                // la transición CSS de transform se teletransporta bajo el reloj virtual.
+                "#ranking .member-name,#ranking .member-time{transition:color .15s var(--ease) !important}";
             document.head.appendChild(st);
             this._detStyle = true;
         }

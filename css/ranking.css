@@ -67,6 +67,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member.active{
     --card-scale:1.04;
+    --emph:1.14;                     /* nombre+tiempo se agrandan al cantar (vía var, animable) */
     --sing:color-mix(in srgb, var(--accent) 100%, #fff);
     --ring:var(--sing);
     background:
@@ -157,6 +158,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     overflow:hidden;
     text-overflow:ellipsis;
     transform-origin:left center;
+    transform:scale(var(--emph,1));   /* énfasis al cantar; se anima por CSS (vivo) o por JS (export) */
     transition:color .15s var(--ease), transform .15s var(--ease);
 }
 .member.has-sung .member-name{ color:var(--accent); }
@@ -168,6 +170,7 @@ Version: 4.0 — Ranking (transform leaderboard)
     font-variant-numeric:tabular-nums;
     flex-shrink:0;
     transform-origin:right center;
+    transform:scale(var(--emph,1));   /* énfasis al cantar; se anima por CSS (vivo) o por JS (export) */
     transition:color .15s var(--ease), transform .15s var(--ease);
 }
 .member.active .member-rank{ color:var(--sing); }
@@ -175,12 +178,11 @@ Version: 4.0 — Ranking (transform leaderboard)
 .member.active .member-name{
     color:var(--sing);
     font-weight:900;
-    transform:scale(1.14);
+    /* el tamaño lo controla --emph (arriba), animable en CSS y en JS */
 }
 .member.active .member-time{
     color:var(--sing);
     font-weight:900;
-    transform:scale(1.14);
 }
 .member.active .member-bar{
     background:color-mix(in srgb, #000 25%, transparent);
