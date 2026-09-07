@@ -959,6 +959,366 @@
       "romanization": "Rock rock it, Pretty Boy bumping",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 4.88,
+      "end": 9.28,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Ah yeah yeah yeah, ah yeah yeah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          4.86,
+          6.65
+        ],
+        [
+          7.24,
+          9.23
+        ]
+      ]
+    },
+    {
+      "start": 58.12,
+      "end": 58.68,
+      "members": [
+        "JONGSEOB"
+      ],
+      "original": "",
+      "romanization": "(Call me)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          58.14,
+          58.73
+        ]
+      ]
+    },
+    {
+      "start": 60.38,
+      "end": 61.06,
+      "members": [
+        "JONGSEOB"
+      ],
+      "original": "",
+      "romanization": "(Push me)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          60.47,
+          61.02
+        ]
+      ]
+    },
+    {
+      "start": 70.76,
+      "end": 71.13,
+      "members": [
+        "INTAK"
+      ],
+      "original": "",
+      "romanization": "(Sheesh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          70.78,
+          71.13
+        ]
+      ]
+    },
+    {
+      "start": 96.56,
+      "end": 97.45,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          96.67,
+          97.51
+        ]
+      ]
+    },
+    {
+      "start": 98.41,
+      "end": 99.45,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          98.37,
+          99.37
+        ]
+      ]
+    },
+    {
+      "start": 100.68,
+      "end": 101.81,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          100.69,
+          101.77
+        ]
+      ]
+    },
+    {
+      "start": 129.24,
+      "end": 130.63,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(No)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          129.27,
+          130.62
+        ]
+      ]
+    },
+    {
+      "start": 133.37,
+      "end": 135.01,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          133.35,
+          134.97
+        ]
+      ]
+    },
+    {
+      "start": 143.1,
+      "end": 144.31,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Pretty Boy bumping)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          143.11,
+          144.26
+        ]
+      ]
+    },
+    {
+      "start": 146.04,
+      "end": 146.86,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          145.98,
+          146.85
+        ]
+      ]
+    },
+    {
+      "start": 147.82,
+      "end": 148.66,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          147.76,
+          148.58
+        ]
+      ]
+    },
+    {
+      "start": 149.9,
+      "end": 150.75,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          149.79,
+          150.63
+        ]
+      ]
+    },
+    {
+      "start": 154.6,
+      "end": 155.86,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Oh wait let's go)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          154.62,
+          155.84
+        ]
+      ]
+    },
+    {
+      "start": 157.13,
+      "end": 158.34,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Say my name)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          157.13,
+          158.31
+        ]
+      ]
+    },
+    {
+      "start": 159.86,
+      "end": 161.08,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          159.84,
+          160.88
+        ]
+      ]
+    },
+    {
+      "start": 163.12,
+      "end": 165.17,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(I'm a Pretty Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          163.06,
+          164.28
+        ],
+        [
+          164.58,
+          165.16
+        ]
+      ]
+    },
+    {
+      "start": 166.29,
+      "end": 167.83,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Love that Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          166.27,
+          166.8
+        ],
+        [
+          166.95,
+          167.79
+        ]
+      ]
+    },
+    {
+      "start": 168.7,
+      "end": 170.27,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Love that Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          168.67,
+          169.14
+        ],
+        [
+          169.3,
+          170.11
+        ]
+      ]
+    },
+    {
+      "start": 170.98,
+      "end": 172.53,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Love that Pretty Boy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          170.99,
+          171.48
+        ],
+        [
+          171.63,
+          172.56
+        ]
+      ]
     }
   ],
   "audio": "audio/p1harmony_prettyboy.mp3",
