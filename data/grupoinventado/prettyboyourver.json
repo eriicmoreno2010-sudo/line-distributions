@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "Pretty Boy (OUR VER.)",
-  "video": "",
+  "video": "videos/grupoinventado_prettyboyourver.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": true,
@@ -10,13 +10,6 @@
       "name": "ARNAU",
       "image": "images/grupoinventado/prettyboyourver/arnau.png",
       "color": "#f08c00",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "IRENE",
-      "image": "images/grupoinventado/prettyboyourver/irene.png",
-      "color": "#f92fde",
       "focus": 50,
       "lift": 3
     },
@@ -31,13 +24,6 @@
       "name": "BIEL",
       "image": "images/grupoinventado/prettyboyourver/biel.png",
       "color": "#ff2424",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "MICHELLE",
-      "image": "images/grupoinventado/prettyboyourver/michelle.png",
-      "color": "#ffee33",
       "focus": 50,
       "lift": 3
     },
