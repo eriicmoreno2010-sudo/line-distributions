@@ -61,15 +61,21 @@ const Player = {
         const off = +((SONG && SONG.audioOffset) || 0);   // desfase elegido en el editor (+ retrasa, − adelanta)
         // Si el objetivo es < 0 (desfase negativo: el audio aún no ha empezado) se PAUSA,
         // no se clava en 0 (eso reiniciaba el audio a partir de -0,25).
-        const sync = (force) => { try{ const tgt = v.currentTime + off;
-            if(tgt < 0){ if(!aud.paused) aud.pause(); return; }
-            // Si el mp3 ya llegó a su final, NO reiniciar ni reintentar (antes el
-            // sync cada 0,5s podía volver a darle play y sonaba "reiniciado").
+        const sync = (force) => { try{
+            // Si ya hay un seek en curso, NO encadenar otro: eso provocaba el bucle
+            // de "se reinicia cada 0,5s y no avanza" (cada corrección disparaba otra
+            // antes de terminar la anterior).
+            if(aud.seeking) return;
+            const tgt = v.currentTime + off;
             const dur = aud.duration;
-            if(isFinite(dur) && dur > 0 && tgt >= dur - 0.05){ if(!aud.paused) aud.pause(); return; }
-            // reajusta solo si hace falta; con force igual respeta un margen para no dar
-            // un saltito innecesario al arrancar (que se oía "cortado" al principio)
-            if(Math.abs(aud.currentTime - tgt) > (force ? 0.06 : 0.25)) aud.currentTime = tgt;
+            // Fin del mp3 (o mp3 más corto que el vídeo): PARAR y no reintentar.
+            // Antes el sync periódico volvía a darle play cerca del final y se oía
+            // "reiniciado" en bucle al acabar el audio oficial.
+            if(aud.ended || (isFinite(dur) && dur > 0 && tgt >= dur - 0.15)){ if(!aud.paused) aud.pause(); return; }
+            if(tgt < 0){ if(!aud.paused) aud.pause(); return; }   // desfase negativo: aún no ha empezado
+            // Corrige solo desfases GRANDES (con force —play/seek— ajusta fino). El
+            // margen amplio evita reseeks constantes por micro-derivas.
+            if(Math.abs(aud.currentTime - tgt) > (force ? 0.08 : 0.5)) aud.currentTime = tgt;
             if(!v.paused && aud.paused) aud.play().catch(() => {});   // reanuda al entrar en rango
         }catch(e){} };
         v.addEventListener("play",  () => sync(true));
@@ -77,8 +83,8 @@ const Player = {
         v.addEventListener("seeked", () => sync(true));
         v.addEventListener("ratechange", () => { aud.playbackRate = v.playbackRate; });
         v.addEventListener("ended", () => aud.pause());
-        // corrección de deriva + reanuda si volvió al rango
-        setInterval(() => { if(!v.paused) sync(false); }, 500);
+        // corrección de deriva suave (cada 1s, no 0,5s -> menos reseeks)
+        setInterval(() => { if(!v.paused) sync(false); }, 1000);
     }
 
 };

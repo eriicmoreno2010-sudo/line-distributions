@@ -78,10 +78,10 @@ Self-contained: injects its own styles and markup.
       color:var(--ev,#888); font-size:4vh; font-weight:900; font-variant-numeric:tabular-nums;
       transition:color .5s ease, background-color .5s ease, border-color .5s ease;
     }
-    #results-overlay #ro-list{ flex:1 1 auto; height:100%; display:flex; flex-direction:column; gap:1vh; min-width:0; }
+    #results-overlay #ro-list{ flex:1 1 auto; height:100%; display:flex; flex-direction:column; gap:.7vh; min-width:0; }
     #results-overlay .row{
       flex:1 1 0; min-height:0; display:grid; grid-template-columns:var(--rphoto,9vh) 1fr auto; align-items:center; gap:1.6vh;
-      background:#15151d; border:.42vh solid #2b2b3a; border-radius:1.4vh; padding:1vh 1.8vh;
+      background:#15151d; border:.42vh solid #2b2b3a; border-radius:1.4vh; padding:.5vh 1.8vh;
       opacity:.5; transition:opacity .45s ease, background-color .45s ease, border-color .45s ease, box-shadow .45s ease;
     }
     #results-overlay .row .photo{ width:var(--rphoto,9vh); height:var(--rphoto,9vh); border-radius:50%; object-fit:cover; object-position:center 45%;
@@ -247,10 +247,9 @@ Self-contained: injects its own styles and markup.
       m.fill.style.width=m.fillW+"%";
     });
 
-    // 9+ members: dos columnas (como el ranking). Antes era >10, y con 9-10 en una
-    // sola columna las fotos salían muy pequeñas (filas muy bajas). En dos columnas
-    // las filas son más altas y las fotos se ven grandes.
-    if(ranked.length > 8){
+    // >10 members: dos columnas. Con 9-10 se queda en UNA columna (el usuario lo
+    // quiere así); las fotos se agrandan recortando el relleno/hueco de las filas.
+    if(ranked.length > 10){
       list.classList.add("two-col");
       list.style.setProperty("--rows", Math.ceil(ranked.length/2));
     } else if(SONG.subunit){
@@ -266,7 +265,7 @@ Self-contained: injects its own styles and markup.
       const cs = getComputedStyle(row);
       const avail = row.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
       if(avail > 0){
-        const size = Math.max(40, Math.min(0.11 * window.innerHeight, avail - 8));
+        const size = Math.max(40, Math.min(0.11 * window.innerHeight, avail - 4));
         list.style.setProperty("--rphoto", Math.round(size) + "px");
       }
     };
