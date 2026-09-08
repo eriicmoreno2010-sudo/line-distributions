@@ -854,7 +854,13 @@
       "original": "어느새 또 해제돼 Like a puppy, no way!",
       "romanization": "eoneusae tto haejedwae like a puppy, no way!",
       "english": "Before I know it, I’m unleashed again like a puppy, no way!",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.71,
+          136.06
+        ]
+      ]
     },
     {
       "start": 136.05,
@@ -865,7 +871,13 @@
       "original": "내 자존심이 왠지 Growl but I step on it",
       "romanization": "nae jajonsimi waenji growl but i step on it",
       "english": "For some reason, my pride goes “growl” but I step on it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.02,
+          138.17
+        ]
+      ]
     },
     {
       "start": 138.17,
@@ -876,7 +888,13 @@
       "original": "내 모든 법칙을 깨 난 이미 On your plate",
       "romanization": "nae modeun beopchigeul kkae nan imi on your plate",
       "english": "I break all my own rules I’m already on your plate",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          138.16,
+          140.55
+        ]
+      ]
     },
     {
       "start": 140.46,
@@ -887,7 +905,13 @@
       "original": "놀아나 네 손에 Ain’t nothing left for me",
       "romanization": "norana ne sone ain’t nothing left for me",
       "english": "Playing into your hands ain’t nothing left for me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          140.5,
+          142.58
+        ]
+      ]
     },
     {
       "start": 142.62,
