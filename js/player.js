@@ -62,31 +62,41 @@ const Player = {
         let ctx=null, buf=null, node=null, startCtx=0, startOff=0, ready=false;
         const stop = () => { if(node){ try{ node.onended=null; node.stop(0); }catch(e){} node=null; } };
         const pos  = () => node ? startOff + (ctx.currentTime - startCtx) * (node.playbackRate.value||1) : null;
-        const startAt = (offset) => {
+        // want = posición objetivo del mp3 (= tiempo de vídeo + desfase). Puede ser
+        // NEGATIVA (desfase negativo: el mp3 aún no entra); en ese caso PROGRAMAMOS
+        // el arranque para el instante EXACTO en que el vídeo llegue, empezando el
+        // mp3 desde su principio (0). Así una canción retrasada ya no empieza "ya
+        // empezada" (antes el chequeo cada 0,5s la enganchaba tarde y avanzada).
+        const startAt = (want) => {
             stop();
-            if(!buf || offset < 0 || offset >= buf.duration) return;
+            if(!buf || want >= buf.duration) return;             // pasado el final del mp3
+            const rate = v.playbackRate || 1;
             const s = ctx.createBufferSource();
-            s.buffer = buf; s.playbackRate.value = v.playbackRate || 1;
-            // Fundido de entrada de ~18 ms: arrancar el buffer de golpe produce un
-            // "clic"/chasquido al principio; la rampa de volumen lo elimina sin
-            // que se note (mid-play ya iba perfecto y en sincronía).
+            s.buffer = buf; s.playbackRate.value = rate;
             const g = ctx.createGain();
             const now = ctx.currentTime;
-            g.gain.setValueAtTime(0.0001, now);
-            g.gain.linearRampToValueAtTime(1, now + 0.018);
+            let whenCtx, offInBuf;
+            if(want >= 0){ whenCtx = now; offInBuf = want; }             // entra ya, en la posición want
+            else { whenCtx = now + (-want) / rate; offInBuf = 0; }       // entra luego, desde el principio
+            // fundido de entrada de ~18 ms (anti-clic), anclado al momento real de arranque
+            g.gain.setValueAtTime(0.0001, whenCtx);
+            g.gain.linearRampToValueAtTime(1, whenCtx + 0.018);
             s.connect(g); g.connect(ctx.destination);
-            startCtx = now; startOff = offset;
-            try{ s.start(0, offset); }catch(e){ return; }
+            startCtx = whenCtx; startOff = offInBuf;
+            try{ s.start(whenCtx, offInBuf); }catch(e){ return; }
             node = s;
         };
         // Deja el mp3 sonando EXACTO donde va el vídeo. No hace nada si ya está bien.
         const resync = () => {
             if(v.paused || !ready || !ctx || ctx.state !== "running") return;
             const want = v.currentTime + off;
-            if(want < 0 || want >= buf.duration){ stop(); return; }   // fuera de rango
+            if(want >= buf.duration){ stop(); return; }               // pasado el final del mp3
             v.muted = true;
-            if(!node){ startAt(want); return; }                       // no suena -> arranca (limpio)
-            if(Math.abs((pos() ?? want) - want) > 0.20) startAt(want); // deriva grande -> reengancha
+            if(!node){ startAt(want); return; }                       // programa/arranca (limpio, desde el principio si toca)
+            if(ctx.currentTime >= startCtx){                          // ya sonando de verdad -> corrige deriva
+                const p = startOff + (ctx.currentTime - startCtx) * (node.playbackRate.value || 1);
+                if(Math.abs(p - want) > 0.20) startAt(want);
+            }
         };
 
         v.muted = true;
