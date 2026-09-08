@@ -63,13 +63,54 @@
   // clavaba en 0 y, al pasar de 0,22 s de deriva, se reiniciaba (bug del -0,25).
   function audioSync(force){
     if(!edAudio) return;
+    if(edAudio.seeking) return;                 // no encadenar seeks (evita cortes/reinicios)
     const tgt = video.currentTime + audioOff();
     if(tgt < 0){ if(!edAudio.paused){ try{ edAudio.pause(); }catch(e){} } return; }
     try{
       // reajusta solo si hace falta; con force respeta un margen para no dar un saltito al arrancar
-      if(Math.abs(edAudio.currentTime - tgt) > (force ? 0.06 : 0.22)) edAudio.currentTime = tgt;
+      if(Math.abs(edAudio.currentTime - tgt) > (force ? 0.06 : 0.4)) edAudio.currentTime = tgt;
       if(!video.paused && edAudio.paused) edAudio.play().catch(() => {});   // reanuda al entrar en rango
     }catch(e){}
+  }
+
+  // Arranque LIMPIO y sincronizado del play. El "empieza tarde y cortado" pasa
+  // porque, tras mover el vídeo, el mp3 tiene que hacer un SEEK y descodificar esa
+  // posición; si le das a play antes de que termine, suena cortado. Aquí primero
+  // dejamos el audio LISTO en el punto exacto y luego arrancamos vídeo+audio JUNTOS.
+  let playToken = 0;
+  function startPlayback(){
+    if(!video) return;
+    if(!edAudio){ video.play().catch(()=>{}); return; }          // sin mp3: audio del propio vídeo
+    const tgt = video.currentTime + audioOff();
+    if(tgt < 0){ video.play().catch(()=>{}); return; }           // desfase negativo: el audio aún no entra
+    const token = ++playToken;
+    let started = false;
+    const go = () => {
+      if(started || token !== playToken) return; started = true; cleanup();
+      // los dos en el mismo instante
+      video.play().catch(()=>{}); edAudio.play().catch(()=>{});
+    };
+    const onReady = () => { if(edAudio.readyState >= 3) go(); };  // HAVE_FUTURE_DATA: ya puede sonar sin cortarse
+    function cleanup(){
+      edAudio.removeEventListener("seeked", onReady);
+      edAudio.removeEventListener("canplay", go);
+      edAudio.removeEventListener("canplaythrough", go);
+    }
+    edAudio.addEventListener("seeked", onReady);
+    edAudio.addEventListener("canplay", go);
+    edAudio.addEventListener("canplaythrough", go);
+    if(Math.abs(edAudio.currentTime - tgt) > 0.03){
+      try{ edAudio.currentTime = tgt; }catch(e){}                // dispara el seek; esperamos a que esté listo
+    } else if(edAudio.readyState >= 3){
+      go();                                                      // ya estaba en su sitio y listo -> instantáneo
+    }
+    // Seguridad: si no llega ningún evento (audio ya cacheado, etc.), arranca igual (máx ~200ms)
+    setTimeout(go, 200);
+  }
+  function playPause(){
+    if(!video) return;
+    if(video.paused) startPlayback();
+    else video.pause();                                          // el listener 'pause' ya pausa el mp3
   }
   function attachAudioSync(){
     video.addEventListener("play",  () => audioSync(true));
@@ -461,7 +502,7 @@
   // controls
   $("#back").onclick = ()=>{ location.href = "library.html"; };
   $("#save").onclick = save;
-  $("#playpause").onclick = ()=>{ video.paused ? video.play() : video.pause(); };
+  $("#playpause").onclick = ()=>{ playPause(); };
   $("#back2").onclick = ()=> video.currentTime = Math.max(0, video.currentTime-2);
   $("#fwd2").onclick = ()=> video.currentTime += 2;
   $("#markstart").onclick = tapS;
@@ -998,7 +1039,7 @@
     if(isEditable(e.target) || isEditable(document.activeElement) || e.isComposing || e.keyCode === 229) return;
     if(e.key==="s"||e.key==="S"){ e.preventDefault(); tapS(); }
     else if(e.key==="Enter"){ e.preventDefault(); tapEnter(); }
-    else if(e.key==="k"||e.key==="K"){ e.preventDefault(); video.paused?video.play():video.pause(); }
+    else if(e.key==="k"||e.key==="K"){ e.preventDefault(); playPause(); }
     else if(e.key==="j"||e.key==="J"){ e.preventDefault(); video.currentTime=Math.max(0,video.currentTime-2); }
     else if(e.key==="l"||e.key==="L"){ e.preventDefault(); video.currentTime+=2; }
     else if(e.key==="ArrowDown"){ e.preventDefault(); if(sel<song.lyrics.length-1){sel++; awaitingEnd=false; highlightSel(); updateTapUI();} }
