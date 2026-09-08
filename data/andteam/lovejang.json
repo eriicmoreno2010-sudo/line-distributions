@@ -85,5 +85,6 @@
   ],
   "cover": "covers/team_lovejang.jpg",
   "audio": "audio/team_lovejang.mp3",
-  "npC1": "#ea4859"
+  "npC1": "#ea4859",
+  "npC2": "#ff2ee3"
 }
