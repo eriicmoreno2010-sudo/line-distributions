@@ -67,8 +67,15 @@ const Player = {
             if(!buf || offset < 0 || offset >= buf.duration) return;
             const s = ctx.createBufferSource();
             s.buffer = buf; s.playbackRate.value = v.playbackRate || 1;
-            s.connect(ctx.destination);
-            startCtx = ctx.currentTime; startOff = offset;
+            // Fundido de entrada de ~18 ms: arrancar el buffer de golpe produce un
+            // "clic"/chasquido al principio; la rampa de volumen lo elimina sin
+            // que se note (mid-play ya iba perfecto y en sincronía).
+            const g = ctx.createGain();
+            const now = ctx.currentTime;
+            g.gain.setValueAtTime(0.0001, now);
+            g.gain.linearRampToValueAtTime(1, now + 0.018);
+            s.connect(g); g.connect(ctx.destination);
+            startCtx = now; startOff = offset;
             try{ s.start(0, offset); }catch(e){ return; }
             node = s;
         };
