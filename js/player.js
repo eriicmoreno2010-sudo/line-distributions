@@ -102,15 +102,32 @@ const Player = {
             .then(d => { buf = d; ready = true; resync(); })
             .catch(() => { ready = false; v.muted = false; });        // si falla, audio del vídeo
 
-        v.addEventListener("play",    unlock);
-        v.addEventListener("playing", () => { if(!ready){ v.muted = false; return; } unlock(); resync(); });
+        // ARRANQUE SIN SKIP: al darle a play, pausamos el vídeo un instante,
+        // preparamos el mp3 EXACTO en el punto y arrancamos vídeo+audio a la vez
+        // desde ahí. Así el audio nunca empieza "ya empezado" (antes enganchaba en
+        // una posición ya avanzada porque el contexto tardaba un poco en arrancar).
+        let selfPlay = false;
+        v.addEventListener("play", () => {
+            if(selfPlay){ selfPlay = false; return; }   // este 'play' lo lanzamos nosotros
+            const P = v.currentTime;                    // punto exacto donde arrancar
+            v.pause(); unlock();
+            const t0 = performance.now();
+            const go = () => {
+                if(!ready || !ctx || ctx.state !== "running"){
+                    if(performance.now() - t0 < 800){ setTimeout(go, 15); return; }
+                    v.muted = false; selfPlay = true; v.play().catch(()=>{}); return;   // respaldo: audio del vídeo
+                }
+                v.muted = true; startAt(P + off);       // mp3 desde P
+                selfPlay = true; v.play().catch(()=>{}); // vídeo desde P, a la vez
+            };
+            (ctx && ctx.resume) ? ctx.resume().then(go, go) : go();
+        });
+        v.addEventListener("playing", () => { if(!ready) v.muted = false; });
         v.addEventListener("pause",   stop);
         v.addEventListener("ended",   stop);
-        v.addEventListener("seeked",  () => { if(!v.paused) resync(); });
+        v.addEventListener("seeked",  () => { if(!v.paused) resync(); });   // reengancha al mover (ya reproduciendo)
         v.addEventListener("ratechange", () => { if(!v.paused) resync(); });
-        setInterval(resync, 500);                                     // arranque/deriva de respaldo
-        // Modo auto/sin gesto: si tras 1,2 s el contexto no arranca, usa el audio del vídeo
-        setTimeout(() => { if(ready && ctx.state !== "running" && !v.paused) v.muted = false; }, 1200);
+        setInterval(resync, 500);                                            // corrección de deriva
 
         // ---- Indicador de DIAGNÓSTICO (pulsa F2 para mostrar/ocultar) ----
         // Dice si suena el MP3 (Web Audio) o el audio del vídeo, el estado del
