@@ -84,5 +84,6 @@
     }
   ],
   "cover": "covers/team_lovejang.jpg",
-  "audio": "audio/team_lovejang.mp3"
+  "audio": "audio/team_lovejang.mp3",
+  "npC1": "#f226a7"
 }
