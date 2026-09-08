@@ -104,6 +104,29 @@ const Player = {
         setInterval(resync, 500);                                     // arranque/deriva de respaldo
         // Modo auto/sin gesto: si tras 1,2 s el contexto no arranca, usa el audio del vídeo
         setTimeout(() => { if(ready && ctx.state !== "running" && !v.paused) v.muted = false; }, 1200);
+
+        // ---- Indicador de DIAGNÓSTICO (pulsa F2 para mostrar/ocultar) ----
+        // Dice si suena el MP3 (Web Audio) o el audio del vídeo, el estado del
+        // contexto y el desfase real entre el audio y el vídeo. No sale en la
+        // grabación salvo que lo actives tú.
+        const dbg = document.createElement("div");
+        dbg.style.cssText = "position:fixed;top:8px;left:8px;z-index:99999;display:none;"+
+          "background:rgba(0,0,0,.82);color:#0f0;font:700 13px/1.5 monospace;padding:8px 11px;"+
+          "border-radius:8px;white-space:pre;pointer-events:none";
+        document.body.appendChild(dbg);
+        let dbgOn = false;
+        window.addEventListener("keydown", e => { if(e.key === "F2"){ dbgOn = !dbgOn; dbg.style.display = dbgOn ? "block" : "none"; } });
+        setInterval(() => {
+          if(!dbgOn) return;
+          const p = pos(), want = v.currentTime + off;
+          const mode = (!ready) ? "cargando…" : (node ? "MP3 (Web Audio)" : (v.muted ? "MP3 (parado)" : "AUDIO DEL VÍDEO (respaldo)"));
+          dbg.textContent =
+            "audio: " + mode + "\n" +
+            "contexto: " + (ctx ? ctx.state : "—") + "   descodificado: " + (ready ? "sí" : "no") + "\n" +
+            "vídeo mute: " + v.muted + "   sonando: " + (node ? "sí" : "no") + "\n" +
+            "pos audio: " + (p==null?"—":p.toFixed(3)) + "  quiere: " + want.toFixed(3) +
+            "  desfase: " + (p==null?"—":((p-want)*1000).toFixed(0)+" ms");
+        }, 100);
     }
 
 };
