@@ -11,63 +11,117 @@
       "image": "images/andteam/empty/k.png",
       "color": "#c80032",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.456,
+        "cy": 0.438,
+        "size": 0.2667,
+        "rot": 0
+      }
     },
     {
       "name": "FUMA",
       "image": "images/andteam/empty/fuma.png",
       "color": "#1a2e6b",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.625,
+        "cy": 0.25,
+        "size": 0.75,
+        "rot": 0
+      }
     },
     {
       "name": "NICHOLAS",
       "image": "images/andteam/empty/nicholas.png",
       "color": "#e6e6ec",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.512,
+        "cy": 0.252,
+        "size": 0.535,
+        "rot": 42
+      }
     },
     {
       "name": "EJ",
       "image": "images/andteam/empty/ej.png",
       "color": "#d9a900",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.3475,
+        "size": 0.4634,
+        "rot": 0
+      }
     },
     {
       "name": "YUMA",
       "image": "images/andteam/empty/yuma.png",
       "color": "#7a32c8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5975,
+        "cy": 0.328,
+        "size": 0.805,
+        "rot": 0
+      }
     },
     {
       "name": "JO",
       "image": "images/andteam/empty/jo.png",
       "color": "#2fa673",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.455,
+        "cy": 0.3034,
+        "size": 0.91,
+        "rot": 0
+      }
     },
     {
       "name": "HARUA",
       "image": "images/andteam/empty/harua.png",
       "color": "#7ec8e3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.512,
+        "cy": 0.256,
+        "size": 0.3034,
+        "rot": 307
+      }
     },
     {
       "name": "TAKI",
       "image": "images/andteam/empty/taki.png",
       "color": "#ff7a00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.8216,
+        "cy": 0.298,
+        "size": 0.3567,
+        "rot": 291
+      }
     },
     {
       "name": "MAKI",
       "image": "images/andteam/empty/maki.png",
       "color": "#ff6fa3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.362,
+        "cy": 0.224,
+        "size": 0.595,
+        "rot": 26
+      }
     }
   ],
   "lyrics": [
