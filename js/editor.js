@@ -54,83 +54,91 @@
   const uiConfirm = m => uiDialog(m, true);
   const uiAlert   = m => uiDialog(m, false);
 
-  // ---- Audio del editor: si la canción tiene SONG.audio (mp3), se PRIORIZA ese
-  // (silencia el vídeo y suena el mp3 sincronizado); si no, suena el vídeo. ----
-  let edAudio = null;
-  const audioOff = () => +((song && song.audioOffset) || 0);   // desfase del audio limpio (s): + retrasa, − adelanta
-  // Sincroniza el mp3 con el vídeo respetando el desfase. Si el objetivo es < 0
-  // (con desfase negativo, el audio aún no ha "empezado") se PAUSA — antes se
-  // clavaba en 0 y, al pasar de 0,22 s de deriva, se reiniciaba (bug del -0,25).
-  function audioSync(force){
-    if(!edAudio) return;
-    if(edAudio.seeking) return;                 // no encadenar seeks (evita cortes/reinicios)
-    const tgt = video.currentTime + audioOff();
-    if(tgt < 0){ if(!edAudio.paused){ try{ edAudio.pause(); }catch(e){} } return; }
-    try{
-      // reajusta solo si hace falta; con force respeta un margen para no dar un saltito al arrancar
-      if(Math.abs(edAudio.currentTime - tgt) > (force ? 0.06 : 0.4)) edAudio.currentTime = tgt;
-      if(!video.paused && edAudio.paused) edAudio.play().catch(() => {});   // reanuda al entrar en rango
-    }catch(e){}
+  // ---- Audio del editor con WEB AUDIO API ----
+  // Un <audio> normal arranca con latencia impredecible y, tras mover el vídeo,
+  // descodifica la nueva posición tarde -> el mp3 empezaba tarde y cortado. Con
+  // Web Audio el mp3 se descodifica UNA vez a memoria y luego arranca EXACTO en
+  // cualquier posición, al instante y sin cortes. Perfecto para cuadrar tiempos.
+  let audioCtx=null, audioBuf=null, audioSrc=null, srcStartCtx=0, srcOffset=0, audioReady=false, audioToken=0;
+  const audioOff = () => +((song && song.audioOffset) || 0);   // desfase (s): + retrasa, − adelanta
+
+  function stopSrc(){ if(audioSrc){ try{ audioSrc.onended=null; audioSrc.stop(0); }catch(e){} audioSrc=null; } }
+  // posición actual (seg) dentro del mp3, según el reloj de Web Audio
+  function audioPos(){ if(!audioSrc||!audioCtx) return null;
+    return srcOffset + (audioCtx.currentTime - srcStartCtx) * (audioSrc.playbackRate.value||1); }
+  // arranca el mp3 EXACTO en 'offset' (seg), al instante
+  function startSrcAt(offset){
+    if(!audioCtx || !audioBuf) return;
+    stopSrc();
+    if(offset < 0 || offset >= audioBuf.duration) return;      // fuera de rango: no suena
+    const s = audioCtx.createBufferSource();
+    s.buffer = audioBuf; s.playbackRate.value = video.playbackRate || 1;
+    s.connect(audioCtx.destination);
+    srcStartCtx = audioCtx.currentTime; srcOffset = offset;
+    try{ s.start(0, offset); }catch(e){ return; }
+    audioSrc = s;
+  }
+  // reengancha el mp3 a la posición del vídeo (solo si está sonando)
+  function audioReengage(){ if(!video.paused && audioReady) startSrcAt(video.currentTime + audioOff()); }
+
+  function attachAudioSync(){
+    video.addEventListener("pause", stopSrc);
+    video.addEventListener("ended", stopSrc);
+    video.addEventListener("seeked", audioReengage);
+    video.addEventListener("ratechange", audioReengage);
+    // corrección de deriva (rara: los dos relojes van en tiempo real). Si algo se
+    // desvía > 0,12 s, reengancha al instante (sin seek ni corte).
+    setInterval(() => {
+      if(video.paused || !audioSrc || !audioBuf) return;
+      const want = video.currentTime + audioOff();
+      if(want < 0 || want >= audioBuf.duration){ stopSrc(); return; }
+      const pos = audioPos(); if(pos == null) return;
+      if(Math.abs(pos - want) > 0.12) startSrcAt(want);
+    }, 700);
   }
 
-  // Arranque LIMPIO y sincronizado del play. El "empieza tarde y cortado" pasa
-  // porque, tras mover el vídeo, el mp3 tiene que hacer un SEEK y descodificar esa
-  // posición; si le das a play antes de que termine, suena cortado. Aquí primero
-  // dejamos el audio LISTO en el punto exacto y luego arrancamos vídeo+audio JUNTOS.
+  async function applyEditorAudio(){
+    stopSrc(); audioReady=false; audioBuf=null;
+    const src = song && song.audio;
+    if(!src){ video.muted=false; syncAudioOffUI(); return; }   // sin mp3 -> audio del vídeo
+    video.muted = true;                                        // prioriza el mp3
+    const tok = ++audioToken;
+    try{
+      if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const bytes = await fetch(src).then(r => r.arrayBuffer());
+      const decoded = await audioCtx.decodeAudioData(bytes.slice(0));
+      if(tok !== audioToken) return;                           // cambió de canción mientras cargaba
+      audioBuf = decoded; audioReady = true;
+      video.muted = true;                                      // por si sonaba el vídeo como respaldo mientras cargaba
+      audioReengage();                                         // por si ya estaba reproduciéndose
+    }catch(e){
+      audioBuf=null; audioReady=false; video.muted=false;      // si falla la decodificación, usa el audio del vídeo
+    }
+    syncAudioOffUI();
+  }
+
+  // Arranque LIMPIO: lanza el vídeo y engancha el mp3 EXACTO en su posición. Lo
+  // alineamos al arranque REAL del vídeo (evento 'playing') para que no quede ni
+  // un pelín adelantado por la latencia de arranque del vídeo.
   let playToken = 0;
   function startPlayback(){
     if(!video) return;
-    if(!edAudio){ video.play().catch(()=>{}); return; }          // sin mp3: audio del propio vídeo
-    const tgt = video.currentTime + audioOff();
-    if(tgt < 0){ video.play().catch(()=>{}); return; }           // desfase negativo: el audio aún no entra
-    const token = ++playToken;
-    let started = false;
-    const go = () => {
-      if(started || token !== playToken) return; started = true; cleanup();
-      // los dos en el mismo instante
-      video.play().catch(()=>{}); edAudio.play().catch(()=>{});
-    };
-    const onReady = () => { if(edAudio.readyState >= 3) go(); };  // HAVE_FUTURE_DATA: ya puede sonar sin cortarse
-    function cleanup(){
-      edAudio.removeEventListener("seeked", onReady);
-      edAudio.removeEventListener("canplay", go);
-      edAudio.removeEventListener("canplaythrough", go);
-    }
-    edAudio.addEventListener("seeked", onReady);
-    edAudio.addEventListener("canplay", go);
-    edAudio.addEventListener("canplaythrough", go);
-    if(Math.abs(edAudio.currentTime - tgt) > 0.03){
-      try{ edAudio.currentTime = tgt; }catch(e){}                // dispara el seek; esperamos a que esté listo
-    } else if(edAudio.readyState >= 3){
-      go();                                                      // ya estaba en su sitio y listo -> instantáneo
-    }
-    // Seguridad: si no llega ningún evento (audio ya cacheado, etc.), arranca igual (máx ~200ms)
-    setTimeout(go, 200);
+    const tok = ++playToken;
+    if(!audioReady){ video.muted=false; video.play().catch(()=>{}); return; }   // mp3 aún no listo -> audio del vídeo
+    if(audioCtx && audioCtx.state === "suspended"){ try{ audioCtx.resume(); }catch(e){} }
+    video.muted = true;
+    let done=false;
+    const fire = () => { if(done || tok!==playToken || video.paused) return; done=true;
+      video.removeEventListener("playing", fire);
+      startSrcAt(video.currentTime + audioOff()); };
+    video.addEventListener("playing", fire);
+    video.play().catch(()=>{});
+    setTimeout(fire, 140);   // por si 'playing' no llega
   }
   function playPause(){
     if(!video) return;
     if(video.paused) startPlayback();
-    else video.pause();                                          // el listener 'pause' ya pausa el mp3
-  }
-  function attachAudioSync(){
-    video.addEventListener("play",  () => audioSync(true));
-    video.addEventListener("pause", () => { if(edAudio) edAudio.pause(); });
-    video.addEventListener("seeked", () => audioSync(true));
-    video.addEventListener("ratechange", () => { if(edAudio) edAudio.playbackRate = video.playbackRate; });
-    video.addEventListener("ended", () => { if(edAudio) edAudio.pause(); });
-    setInterval(() => { if(!video.paused) audioSync(false); }, 500);   // corrige deriva y reanuda si volvió al rango
-  }
-  function applyEditorAudio(){
-    if(edAudio){ try{ edAudio.pause(); }catch(e){} edAudio = null; }
-    const src = song && song.audio;
-    if(src){
-      edAudio = new Audio(src); edAudio.preload = "auto";
-      video.muted = true;                                   // prioriza el mp3
-      if(!video.paused) audioSync(true);
-    } else {
-      video.muted = false;                                  // sin mp3 -> audio del vídeo
-    }
-    syncAudioOffUI();
+    else video.pause();                                          // el listener 'pause' ya para el mp3
   }
   // muestra/oculta el control de desfase y refleja el valor guardado
   function syncAudioOffUI(){
@@ -712,7 +720,7 @@
   // y el visor lo aplica al reproducir. + = retrasa el audio, − = lo adelanta.
   $("#audioOff").oninput = () => {
     song.audioOffset = +$("#audioOff").value || 0;
-    audioSync(true);
+    audioReengage();                 // aplica el nuevo desfase al instante si está sonando
     save();
   };
 
