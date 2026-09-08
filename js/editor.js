@@ -104,7 +104,12 @@
     video.muted = true;                                        // prioriza el mp3
     const tok = ++audioToken;
     try{
-      if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      if(!audioCtx){
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        // desbloquea el contexto en la primera interacción (requisito del navegador)
+        const unlock = () => { if(audioCtx.state === "suspended") audioCtx.resume(); };
+        ["pointerdown","keydown","click","touchstart"].forEach(ev => window.addEventListener(ev, unlock, true));
+      }
       const bytes = await fetch(src).then(r => r.arrayBuffer());
       const decoded = await audioCtx.decodeAudioData(bytes.slice(0));
       if(tok !== audioToken) return;                           // cambió de canción mientras cargaba

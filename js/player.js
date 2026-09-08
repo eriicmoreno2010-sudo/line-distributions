@@ -72,32 +72,33 @@ const Player = {
             try{ s.start(0, offset); }catch(e){ return; }
             node = s;
         };
-        const reengage = () => { if(!v.paused && ready){
-            if(ctx.state === "suspended"){ ctx.resume().then(() => { if(!v.paused) startAt(v.currentTime + off); }); }
-            else startAt(v.currentTime + off);
-        } };
+        // engancha el mp3 a la posición REAL del vídeo (mutea el vídeo). Reanuda el
+        // AudioContext si hiciera falta (aunque normalmente ya está desbloqueado).
+        const play = () => {
+            if(!ready || v.paused) return;
+            const go = () => { if(v.paused) return; v.muted = true; startAt(v.currentTime + off); };
+            if(ctx.state === "suspended") ctx.resume().then(go, go); else go();
+        };
 
         v.muted = true;                          // el sonido sale del mp3, no del vídeo
         ctx = new (window.AudioContext || window.webkitAudioContext)();
+        // CLAVE: el navegador solo deja arrancar el AudioContext dentro de un GESTO
+        // del usuario. El evento 'playing' del vídeo llega DESPUÉS del clic (ya no
+        // cuenta como gesto) -> el mp3 no sonaba hasta mover la barra. Lo desbloqueamos
+        // en la primera interacción (clic/tecla/toque) para que siempre esté listo.
+        const unlock = () => { if(ctx.state === "suspended"){ ctx.resume().then(() => { if(!v.paused) play(); }); } };
+        ["pointerdown","keydown","click","touchstart"].forEach(ev => window.addEventListener(ev, unlock, true));
+
         fetch(src).then(r => r.arrayBuffer()).then(b => ctx.decodeAudioData(b.slice(0)))
-            .then(decoded => { buf = decoded; ready = true; reengage(); })
+            .then(decoded => { buf = decoded; ready = true; play(); })
             .catch(() => { ready = false; v.muted = false; });   // si falla, usa el audio del vídeo
 
-        // 'playing' = el vídeo ya está reproduciendo de verdad: enganchamos el mp3
-        // EXACTO en la posición real del vídeo (sin latencia, sin cortes).
-        v.addEventListener("playing", () => {
-            if(!ready){ v.muted = false; return; }   // mp3 aún no listo -> audio del vídeo
-            if(ctx.state === "suspended"){
-                ctx.resume().then(() => { if(!v.paused){ v.muted = true; startAt(v.currentTime + off); } });
-                // sin gesto de usuario (modo auto) el contexto no arranca -> tras un
-                // momento, si sigue suspendido, usa el audio del propio vídeo
-                setTimeout(() => { if(ctx.state === "suspended" && !v.paused) v.muted = false; }, 400);
-            } else { v.muted = true; startAt(v.currentTime + off); }
-        });
+        // 'playing' = el vídeo ya reproduce de verdad -> mp3 EXACTO en su posición.
+        v.addEventListener("playing", () => { if(!ready){ v.muted = false; return; } play(); });
         v.addEventListener("pause",  stop);
         v.addEventListener("ended",  stop);
-        v.addEventListener("seeked", reengage);
-        v.addEventListener("ratechange", reengage);
+        v.addEventListener("seeked", () => { if(!v.paused) play(); });
+        v.addEventListener("ratechange", () => { if(!v.paused) play(); });
         // corrección de deriva (rara): si se desvía > 0,12 s, reengancha al instante
         setInterval(() => {
             if(v.paused || !node || !buf) return;
