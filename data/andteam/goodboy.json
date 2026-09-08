@@ -126,8 +126,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.76,
+      "end": 13.7,
       "members": [
         "&TEAM"
       ],
@@ -137,8 +137,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.17,
+      "end": 15.75,
       "members": [
         "&TEAM"
       ],
@@ -148,8 +148,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 15.87,
+      "end": 18.07,
       "members": [
         "&TEAM"
       ],
@@ -159,8 +159,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.2,
+      "end": 21.34,
       "members": [
         "&TEAM"
       ],
@@ -170,8 +170,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 21.46,
+      "end": 22.43,
       "members": [
         "&TEAM"
       ],
@@ -181,8 +181,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 22.61,
+      "end": 25.73,
       "members": [
         "&TEAM"
       ],
@@ -192,8 +192,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.88,
+      "end": 26.79,
       "members": [
         "&TEAM"
       ],
@@ -203,107 +203,250 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 26.94,
+      "end": 31.27,
+      "members": [
+        "MAKI"
+      ],
       "original": "길들일 수가 없지, 타고난 A to Z, It’s a wild one",
       "romanization": "gildeuril suga eopji, tagonan a to z, it’s a wild one",
       "english": "I can’t be tamed, Born this way from A to Z, It’s a wild one",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.04,
+          28.53
+        ],
+        [
+          28.71,
+          30.16
+        ],
+        [
+          30.37,
+          31.31
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 31.45,
+      "end": 32.93,
+      "members": [
+        "EJ"
+      ],
       "original": "끝에 몰릴수록 노리지",
       "romanization": "kkeute mollilsurok noriji",
       "english": "The more I’m pushed to the edge, the more I hunt",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.49,
+          33
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 33.11,
+      "end": 35.63,
+      "members": [
+        "EJ"
+      ],
       "original": "",
       "romanization": "Eyes on the prey, I’m just tryna be an icon",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.16,
+          34.14
+        ],
+        [
+          34.3,
+          35.8
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 36.28,
+      "end": 38.06,
+      "members": [
+        "JO"
+      ],
       "original": "방심한 순간 One quick bite",
       "romanization": "bangsimhan sungan one quick bite",
       "english": "The moment you let your guard down one quick bite",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          36.33,
+          37.26
+        ],
+        [
+          37.36,
+          38.02
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 38.38,
+      "end": 40.11,
+      "members": [
+        "JO"
+      ],
       "original": "쉽게 길들일 생각 마",
       "romanization": "swipge gildeuril saenggak ma",
       "english": "Don’t think you can tame me easily",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.4,
+          39.53
+        ],
+        [
+          39.65,
+          40.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 40.62,
+      "end": 42.41,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "제멋대로 넌 Grooming my heart",
       "romanization": "jemeotdaero neon grooming my heart",
       "english": "In your own way, you’re grooming my heart",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          40.6,
+          42.56
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 42.77,
+      "end": 44.39,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "",
       "romanization": "So is it really really really my fault?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.73,
+          44.63
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 44.51,
+      "end": 49.36,
+      "members": [
+        "YUMA"
+      ],
       "original": "차갑고 거친, 날 가지고 놀지 Alright",
       "romanization": "chagapgo geochin, nal gajigo nolji alright",
       "english": "Cold and rough, You play with me alright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.51,
+          44.95
+        ],
+        [
+          45.13,
+          46.06
+        ],
+        [
+          46.24,
+          47.17
+        ],
+        [
+          47.35,
+          48.3
+        ],
+        [
+          48.45,
+          49.39
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 49.51,
+      "end": 53.72,
+      "members": [
+        "YUMA"
+      ],
       "original": "“Be a good boy”, 넌 내 목줄을 조여와",
       "romanization": "“be a good boy”, neon nae mokjureul joyeowa",
       "english": "“Be a good boy”, You tighten my leash",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.57,
+          50.06
+        ],
+        [
+          50.18,
+          50.56
+        ],
+        [
+          50.77,
+          51.09
+        ],
+        [
+          51.27,
+          51.69
+        ],
+        [
+          51.81,
+          53.85
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 53.87,
+      "end": 58.26,
+      "members": [
+        "HARUA"
+      ],
       "original": "넌 그저 웃지, 구겨진 자존심 Alright",
       "romanization": "neon geujeo utji, gugyeojin jajonsim alright",
       "english": "You just smile, At my crumpled pride alright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          53.74,
+          54.98
+        ],
+        [
+          55.16,
+          56.12
+        ],
+        [
+          56.27,
+          58.43
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 58.39,
+      "end": 62.82,
+      "members": [
+        "TAKI"
+      ],
       "original": "“Be a good boy”, 다시 목줄을 조여와",
       "romanization": "“be a good boy”, dasi mokjureul joyeowa",
       "english": "“Be a good boy”, You tighten the leash again",
-      "adlib": false
+      "adlib": false,
+      "voice": []
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.97,
+      "end": 66.98,
       "members": [
         "&TEAM"
       ],
@@ -313,8 +456,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 67.56,
+      "end": 69.14,
       "members": [
         "&TEAM"
       ],
@@ -324,8 +467,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.32,
+      "end": 71.31,
       "members": [
         "&TEAM"
       ],
@@ -335,8 +478,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.52,
+      "end": 74.65,
       "members": [
         "&TEAM"
       ],
@@ -346,8 +489,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 74.8,
+      "end": 75.86,
       "members": [
         "&TEAM"
       ],
@@ -357,8 +500,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 76.03,
+      "end": 79.1,
       "members": [
         "&TEAM"
       ],
@@ -368,8 +511,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.25,
+      "end": 80.07,
       "members": [
         "&TEAM"
       ],
@@ -379,98 +522,250 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 80.22,
+      "end": 81.99,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "가시 돋친 내가 재밌다는 듯이",
       "romanization": "gasi dotchin naega jaemitdaneun deusi",
       "english": "As if you find my thorn-covered self amusing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.39,
+          82.09
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 82.17,
+      "end": 84.24,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "찔리고 상처가 나도 그대로 안아주지",
       "romanization": "jjilligo sangcheoga nado geudaero anajugi",
       "english": "Even when I get pricked and wounded, you hold me just the same",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          82.23,
+          84.3
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 84.4,
+      "end": 86.22,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "나는 네 품 안에 길들여진 어린아이",
       "romanization": "naneun ne pum ane gildeuryeojin eorinai",
       "english": "I’m a child tamed in your arms",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          84.49,
+          86.54
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 86.38,
+      "end": 88.66,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "난 거친 늑대, 너는 나를 울게 하는 달빛",
       "romanization": "nan geochin neokdae, neoneun nareul ulge haneun dalbit",
       "english": "I’m a wild wolf, and you’re the moonlight that makes me cry",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.62,
+          88.8
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 89.53,
+      "end": 93.44,
+      "members": [
+        "YUMA"
+      ],
       "original": "Oooh 너의 한마디, Oooh 난 꼬리를 Swing",
       "romanization": "oooh neoui hanmadi, oooh nan kkorireul swing",
       "english": "Oooh, one word from you, Oooh, I’ll swing my tail",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.5,
+          91.21
+        ],
+        [
+          91.7,
+          93.46
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 93.96,
+      "end": 97.77,
+      "members": [
+        "TAKI"
+      ],
       "original": "Oooh 옳지, 착하지, Oooh Begging for a treat",
       "romanization": "oooh olchi, chakaji, oooh begging for a treat",
       "english": "Oooh, that’s right, good boy, Oooh, begging for a treat",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          93.96,
+          95.69
+        ],
+        [
+          96.1,
+          97.97
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 97.89,
+      "end": 102.7,
+      "members": [
+        "K"
+      ],
       "original": "넌 선을 넘지, 어쩜 겁도 없이 So what",
       "romanization": "neon seoneul neomji, eojjeom geopdo eopsi so what",
       "english": "You cross the line, Somehow, without any fear so what?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          97.86,
+          98.27
+        ],
+        [
+          98.43,
+          99.38
+        ],
+        [
+          99.54,
+          100.47
+        ],
+        [
+          100.62,
+          102.64
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 102.85,
+      "end": 107,
+      "members": [
+        "K"
+      ],
       "original": "Call me good boy, 원해 그 한 마디를 난",
       "romanization": "call me good boy, wonhae geu hanmadireul nan",
       "english": "Call me good boy, I want to hear those words",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          102.86,
+          103.88
+        ],
+        [
+          104.03,
+          104.39
+        ],
+        [
+          104.57,
+          104.92
+        ],
+        [
+          105.1,
+          107.12
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 107.05,
+      "end": 111.53,
+      "members": [
+        "FUMA"
+      ],
       "original": "I can’t do nothing, 내 세상을 뒤집어놔",
       "romanization": "i can’t do nothing, nae sesangeul dwijibeonwa",
       "english": "I can’t do nothing, You turn my whole world upside down",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.12,
+          109.43
+        ],
+        [
+          109.61,
+          110.54
+        ],
+        [
+          110.69,
+          111.66
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 111.68,
+      "end": 115.89,
+      "members": [
+        "FUMA"
+      ],
       "original": "“Be a good boy”, 계속 길들여줘 All night",
       "romanization": "“be a good boy”, gyesok gildeuryeojwo all night",
       "english": "“Be a good boy”, Keep taming me all night",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          111.69,
+          112.27
+        ],
+        [
+          112.42,
+          112.83
+        ],
+        [
+          112.98,
+          113.32
+        ],
+        [
+          113.47,
+          116.08
+        ],
+        [
+          58.41,
+          58.86
+        ],
+        [
+          59.04,
+          59.45
+        ],
+        [
+          59.64,
+          59.96
+        ],
+        [
+          60.17,
+          60.55
+        ],
+        [
+          60.7,
+          62.72
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 116.05,
+      "end": 120.32,
       "members": [
         "&TEAM"
       ],
@@ -480,8 +775,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.89,
+      "end": 122.44,
       "members": [
         "&TEAM"
       ],
@@ -491,8 +786,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 122.6,
+      "end": 124.63,
       "members": [
         "&TEAM"
       ],
@@ -502,8 +797,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 124.83,
+      "end": 128.02,
       "members": [
         "&TEAM"
       ],
@@ -513,8 +808,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 128.14,
+      "end": 129.02,
       "members": [
         "&TEAM"
       ],
@@ -524,8 +819,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 129.17,
+      "end": 132.44,
       "members": [
         "&TEAM"
       ],
@@ -535,8 +830,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 132.59,
+      "end": 133.37,
       "members": [
         "&TEAM"
       ],
@@ -546,44 +841,52 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 133.56,
+      "end": 135.93,
+      "members": [
+        "MAKI"
+      ],
       "original": "어느새 또 해제돼 Like a puppy, no way!",
       "romanization": "eoneusae tto haejedwae like a puppy, no way!",
       "english": "Before I know it, I’m unleashed again like a puppy, no way!",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 136.05,
+      "end": 138.16,
+      "members": [
+        "MAKI"
+      ],
       "original": "내 자존심이 왠지 Growl but I step on it",
       "romanization": "nae jajonsimi waenji growl but i step on it",
       "english": "For some reason, my pride goes “growl” but I step on it",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 138.17,
+      "end": 140.3,
+      "members": [
+        "JO"
+      ],
       "original": "내 모든 법칙을 깨 난 이미 On your plate",
       "romanization": "nae modeun beopchigeul kkae nan imi on your plate",
       "english": "I break all my own rules I’m already on your plate",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 140.46,
+      "end": 142.47,
+      "members": [
+        "JO"
+      ],
       "original": "놀아나 네 손에 Ain’t nothing left for me",
       "romanization": "norana ne sone ain’t nothing left for me",
       "english": "Playing into your hands ain’t nothing left for me",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 142.62,
+      "end": 145.73,
       "members": [
         "&TEAM"
       ],
@@ -593,8 +896,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 145.88,
+      "end": 146.93,
       "members": [
         "&TEAM"
       ],
@@ -604,8 +907,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 147.17,
+      "end": 150.21,
       "members": [
         "&TEAM"
       ],
@@ -615,8 +918,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 150.33,
+      "end": 151.51,
       "members": [
         "&TEAM"
       ],
@@ -624,6 +927,102 @@
       "romanization": "(Good) Boy",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 91.21,
+      "end": 91.9,
+      "members": [
+        "NICHOLAS"
+      ],
+      "original": "(한마디)",
+      "romanization": "(hanmadi)",
+      "english": "(One word)",
+      "adlib": true,
+      "voice": [
+        [
+          91.22,
+          91.98
+        ]
+      ]
+    },
+    {
+      "start": 93.4,
+      "end": 94.19,
+      "members": [
+        "NICHOLAS"
+      ],
+      "original": "(꼬리를 Swing)",
+      "romanization": "(kkorireul swing)",
+      "english": "(Swing my tail)",
+      "adlib": true,
+      "voice": [
+        [
+          93.38,
+          94.16
+        ]
+      ]
+    },
+    {
+      "start": 95.62,
+      "end": 96.23,
+      "members": [
+        "NICHOLAS"
+      ],
+      "original": "(-지 -지)",
+      "romanization": "(-ji -ji)",
+      "english": "(-oy -oy)",
+      "adlib": true,
+      "voice": [
+        [
+          95.63,
+          96.18
+        ]
+      ]
+    },
+    {
+      "start": 81.77,
+      "end": 82.1,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          81.77,
+          82.09
+        ]
+      ]
+    },
+    {
+      "start": 83.92,
+      "end": 84.36,
+      "members": [],
+      "original": "(주지)",
+      "romanization": "(jugi)",
+      "english": "(Same)",
+      "adlib": true,
+      "voice": [
+        [
+          84.01,
+          84.42
+        ]
+      ]
+    },
+    {
+      "start": 87,
+      "end": 87.5,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          87.03,
+          87.47
+        ]
+      ]
     }
   ],
   "cover": "covers/team_goodboy.jpg",
