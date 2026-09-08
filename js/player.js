@@ -49,32 +49,61 @@ const Player = {
 
     },
 
+    // Audio limpio (mp3) con WEB AUDIO API. El <audio> normal, al darle a play,
+    // hace un seek y descodifica esa posición tarde -> el principio se oía CORTADO.
+    // Con Web Audio el mp3 se descodifica UNA vez a memoria y arranca EXACTO en la
+    // posición, al instante y SIN cortes. Clave para grabar con OBS.
     setupAudio() {
         const src = (typeof SONG !== "undefined" && SONG && (SONG.audio || SONG.mp3)) || "";
         if(!src) return;                         // sin campo audio -> usa el audio del vídeo (como siempre)
         const v = this.video;
-        const aud = new Audio(src + (src.indexOf("?") < 0 ? "?" : "&") + "v=" + (SONG.duration || 0));
-        aud.preload = "auto";
-        this.audio = aud;
-        v.muted = true;                          // el sonido sale del mp3, no del vídeo
+        const off = +((SONG && SONG.audioOffset) || 0);   // desfase (+ retrasa, − adelanta)
 
-        const off = +((SONG && SONG.audioOffset) || 0);   // desfase elegido en el editor (+ retrasa, − adelanta)
-        // Si el objetivo es < 0 (desfase negativo: el audio aún no ha empezado) se PAUSA,
-        // no se clava en 0 (eso reiniciaba el audio a partir de -0,25).
-        const sync = (force) => { try{ const tgt = v.currentTime + off;
-            if(tgt < 0){ if(!aud.paused) aud.pause(); return; }
-            // reajusta solo si hace falta; con force igual respeta un margen para no dar
-            // un saltito innecesario al arrancar (que se oía "cortado" al principio)
-            if(Math.abs(aud.currentTime - tgt) > (force ? 0.06 : 0.25)) aud.currentTime = tgt;
-            if(!v.paused && aud.paused) aud.play().catch(() => {});   // reanuda al entrar en rango
-        }catch(e){} };
-        v.addEventListener("play",  () => sync(true));
-        v.addEventListener("pause", () => aud.pause());
-        v.addEventListener("seeked", () => sync(true));
-        v.addEventListener("ratechange", () => { aud.playbackRate = v.playbackRate; });
-        v.addEventListener("ended", () => aud.pause());
-        // corrección de deriva + reanuda si volvió al rango
-        setInterval(() => { if(!v.paused) sync(false); }, 500);
+        let ctx=null, buf=null, node=null, startCtx=0, startOff=0, ready=false;
+        const stop = () => { if(node){ try{ node.onended=null; node.stop(0); }catch(e){} node=null; } };
+        const pos  = () => node ? startOff + (ctx.currentTime - startCtx) * (node.playbackRate.value||1) : null;
+        const startAt = (offset) => {
+            stop();
+            if(!buf || offset < 0 || offset >= buf.duration) return;
+            const s = ctx.createBufferSource();
+            s.buffer = buf; s.playbackRate.value = v.playbackRate || 1;
+            s.connect(ctx.destination);
+            startCtx = ctx.currentTime; startOff = offset;
+            try{ s.start(0, offset); }catch(e){ return; }
+            node = s;
+        };
+        // Deja el mp3 sonando EXACTO donde va el vídeo. No hace nada si ya está bien.
+        const resync = () => {
+            if(v.paused || !ready || !ctx || ctx.state !== "running") return;
+            const want = v.currentTime + off;
+            if(want < 0 || want >= buf.duration){ stop(); return; }   // fuera de rango
+            v.muted = true;
+            if(!node){ startAt(want); return; }                       // no suena -> arranca (limpio)
+            if(Math.abs((pos() ?? want) - want) > 0.20) startAt(want); // deriva grande -> reengancha
+        };
+
+        v.muted = true;
+        ctx = new (window.AudioContext || window.webkitAudioContext)();
+        // Desbloqueo del contexto (los navegadores solo lo permiten en un gesto).
+        // TRIPLE red: (1) primera interacción, (2) evento 'play', (3) cuando el
+        // contexto pase a "running" reenganchamos. Así nunca se queda mudo ni tarde.
+        const unlock = () => { if(ctx.state === "suspended") ctx.resume().catch(()=>{}); };
+        ["pointerdown","keydown","click","touchstart"].forEach(ev => window.addEventListener(ev, unlock, true));
+        ctx.onstatechange = () => { if(ctx.state === "running") resync(); };
+
+        fetch(src).then(r => r.arrayBuffer()).then(b => ctx.decodeAudioData(b.slice(0)))
+            .then(d => { buf = d; ready = true; resync(); })
+            .catch(() => { ready = false; v.muted = false; });        // si falla, audio del vídeo
+
+        v.addEventListener("play",    unlock);
+        v.addEventListener("playing", () => { if(!ready){ v.muted = false; return; } unlock(); resync(); });
+        v.addEventListener("pause",   stop);
+        v.addEventListener("ended",   stop);
+        v.addEventListener("seeked",  () => { if(!v.paused) resync(); });
+        v.addEventListener("ratechange", () => { if(!v.paused) resync(); });
+        setInterval(resync, 500);                                     // arranque/deriva de respaldo
+        // Modo auto/sin gesto: si tras 1,2 s el contexto no arranca, usa el audio del vídeo
+        setTimeout(() => { if(ready && ctx.state !== "running" && !v.paused) v.muted = false; }, 1200);
     }
 
 };
