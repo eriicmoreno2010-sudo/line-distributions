@@ -126,19 +126,17 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "K"
-      ],
+      "start": 19.01,
+      "end": 24.09,
+      "members": [],
       "original": "날 보는 네 눈에 열린, Another world",
       "romanization": "nal boneun ne nune yeollin, another world",
       "english": "In your eyes as you look at me, Another world",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 24.24,
+      "end": 29.89,
       "members": [],
       "original": "덧날 뿐인 흉터들까지, You save my soul",
       "romanization": "deotnal ppunin hyangteodeulkkaji, you save my soul",
@@ -146,8 +144,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 30.1,
+      "end": 36.5,
       "members": [],
       "original": "첫 마주쳤던 Angel eyes, 또 애틋한 Your paradise",
       "romanization": "cheot majuchyeotdeon angel eyes, tto aeteuthan your paradise",
@@ -155,8 +153,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.68,
+      "end": 42,
       "members": [],
       "original": "그 안 눈을 떠 버린, 갈망들이 지독해",
       "romanization": "geu an nuneul tteo beorin, galmangdeuri jidokhae",
@@ -164,8 +162,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 43.42,
+      "end": 49.28,
       "members": [],
       "original": "네 눈빛 만으로, 난 이미 Can’t escape",
       "romanization": "ne nunbit maneuro, nan imi can’t escape",
@@ -173,8 +171,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 49.36,
+      "end": 52.99,
       "members": [],
       "original": "You’re supernatural, 내게",
       "romanization": "you’re supernatural, naege",
@@ -182,8 +180,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 54.2,
+      "end": 59.55,
       "members": [],
       "original": "Take me down, 더 깊이 새겨지게",
       "romanization": "take me down, deo gipi saegyeojige",
@@ -191,8 +189,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 60.16,
+      "end": 65.22,
       "members": [],
       "original": "Tame me now, 너로 날 물들이게",
       "romanization": "tame me now, neoro nal muldeurige",
@@ -200,8 +198,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 65.95,
+      "end": 71.62,
       "members": [],
       "original": "남겨줘 내 상처 위, 네 것이라는 표식",
       "romanization": "namgyeojwo nae sangcheo wi, ne geosiraneun pyosik",
@@ -209,8 +207,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.86,
+      "end": 77.03,
       "members": [],
       "original": "Eye to eye, 영원히 너를 Mark on me",
       "romanization": "eye to eye, yeongwonhi neoreul mark on me",
@@ -218,8 +216,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 77.64,
+      "end": 82.68,
       "members": [],
       "original": "널 보는 내 맘의 열긴, 식지 않고",
       "romanization": "neol boneun nae mame yeolgin, sikji anko",
@@ -227,8 +225,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.83,
+      "end": 88.45,
       "members": [],
       "original": "널 새기는 고통은 나를, 살게 하고",
       "romanization": "neol saegineun gopteun nareul, salge hago",
@@ -236,8 +234,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.63,
+      "end": 95.07,
       "members": [],
       "original": "내 본능마저 잊게 한, 넌 나의 모든 Paradigm",
       "romanization": "nae bonneungmajeo itge han, neon naui modeun paradigm",
@@ -245,8 +243,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 95.22,
+      "end": 100.51,
       "members": [],
       "original": "날 새롭게 길들인, 너의 눈빛, 손짓, Breath",
       "romanization": "nal saeropge gildeurin, neoui nunbit, sonjit, breath",
@@ -254,8 +252,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 101.98,
+      "end": 107.74,
       "members": [],
       "original": "네 숨결 하나로, 날 무너지게 해",
       "romanization": "ne sumgyeol hanaro, nal muneojige hae",
@@ -263,8 +261,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 107.9,
+      "end": 111.5,
       "members": [],
       "original": "그대로 이끌려, It’s fate",
       "romanization": "geudaero ikkeullyeo, it’s fate",
@@ -272,8 +270,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 112.8,
+      "end": 118.1,
       "members": [],
       "original": "Take me down, 어둠이 서린 밤에",
       "romanization": "take me down, eodumi seorin bame",
@@ -281,8 +279,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 118.65,
+      "end": 123.84,
       "members": [],
       "original": "Tame me now, 둘만의 춤을 추게",
       "romanization": "tame me now, dulmanui chumeul chuge",
@@ -290,8 +288,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 124.51,
+      "end": 130.09,
       "members": [],
       "original": "남겨줘 내 상처 위, 네 것이라는 표식",
       "romanization": "namgyeojwo nae sangcheo wi, ne geosiraneun pyosik",
@@ -299,8 +297,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.39,
+      "end": 135.59,
       "members": [],
       "original": "Eye to eye, 영원히 너를 Mark on me",
       "romanization": "eye to eye, yeongwonhi neoreul mark on me",
@@ -308,8 +306,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 144.81,
+      "end": 147.24,
       "members": [],
       "original": "영원히 너를 Mark on me",
       "romanization": "yeongwonhi neoreul mark on me",
@@ -317,8 +315,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 157.95,
+      "end": 160.49,
       "members": [],
       "original": "영원히 너를 Mark on me",
       "romanization": "yeongwonhi neoreul mark on me",
