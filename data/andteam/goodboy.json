@@ -11,63 +11,117 @@
       "image": "images/andteam/goodboy/k.png",
       "color": "#c80032",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.562,
+        "cy": 0.392,
+        "size": 0.39,
+        "rot": 0
+      }
     },
     {
       "name": "FUMA",
       "image": "images/andteam/goodboy/fuma.png",
       "color": "#1a2e6b",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.582,
+        "cy": 0.308,
+        "size": 0.1534,
+        "rot": 0
+      }
     },
     {
       "name": "NICHOLAS",
       "image": "images/andteam/goodboy/nicholas.png",
       "color": "#e6e6ec",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.76,
+        "cy": 0.292,
+        "size": 0.44,
+        "rot": 323
+      }
     },
     {
       "name": "EJ",
       "image": "images/andteam/goodboy/ej.png",
       "color": "#d9a900",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3,
+        "cy": 0.294,
+        "size": 0.6,
+        "rot": 0
+      }
     },
     {
       "name": "YUMA",
       "image": "images/andteam/goodboy/yuma.png",
       "color": "#7a32c8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.416,
+        "cy": 0.324,
+        "size": 0.1037,
+        "rot": 340
+      }
     },
     {
       "name": "JO",
       "image": "images/andteam/goodboy/jo.png",
       "color": "#2fa673",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.48,
+        "cy": 0.23,
+        "size": 0.3123,
+        "rot": 0
+      }
     },
     {
       "name": "HARUA",
       "image": "images/andteam/goodboy/harua.png",
       "color": "#7ec8e3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.382,
+        "cy": 0.322,
+        "size": 0.64,
+        "rot": 17
+      }
     },
     {
       "name": "TAKI",
       "image": "images/andteam/goodboy/taki.png",
       "color": "#ff7a00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.352,
+        "cy": 0.19,
+        "size": 0.2534,
+        "rot": 24
+      }
     },
     {
       "name": "MAKI",
       "image": "images/andteam/goodboy/maki.png",
       "color": "#ff6fa3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.502,
+        "cy": 0.35,
+        "size": 0.3898,
+        "rot": 29
+      }
     }
   ],
   "lyrics": [
