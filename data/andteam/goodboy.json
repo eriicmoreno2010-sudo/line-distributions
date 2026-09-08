@@ -137,5 +137,7 @@
       "adlib": ""
     }
   ],
-  "cover": "covers/team_goodboy.jpg"
+  "cover": "covers/team_goodboy.jpg",
+  "npC1": "#006770",
+  "audio": "audio/team_goodboy.mp3"
 }
