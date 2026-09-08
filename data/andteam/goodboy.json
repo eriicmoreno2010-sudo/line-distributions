@@ -139,5 +139,6 @@
   ],
   "cover": "covers/team_goodboy.jpg",
   "npC1": "#ff006f",
-  "audio": "audio/team_goodboy.mp3"
+  "audio": "audio/team_goodboy.mp3",
+  "npC2": "#2e58ff"
 }
