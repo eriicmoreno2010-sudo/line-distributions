@@ -74,13 +74,11 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "K"
-      ],
+      "members": [],
       "original": "(Love, love, love 장)",
       "romanization": "love, love, love jang",
       "english": "Love, love, love letter",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 0,
@@ -89,7 +87,7 @@
       "original": "(Love, love, love 장)",
       "romanization": "love, love, love jang",
       "english": "Love, love, love letter",
-      "adlib": true
+      "adlib": false
     },
     {
       "start": 0,
