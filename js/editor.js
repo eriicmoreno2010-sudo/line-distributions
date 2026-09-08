@@ -54,96 +54,42 @@
   const uiConfirm = m => uiDialog(m, true);
   const uiAlert   = m => uiDialog(m, false);
 
-  // ---- Audio del editor con WEB AUDIO API ----
-  // Un <audio> normal arranca con latencia impredecible y, tras mover el vídeo,
-  // descodifica la nueva posición tarde -> el mp3 empezaba tarde y cortado. Con
-  // Web Audio el mp3 se descodifica UNA vez a memoria y luego arranca EXACTO en
-  // cualquier posición, al instante y sin cortes. Perfecto para cuadrar tiempos.
-  let audioCtx=null, audioBuf=null, audioSrc=null, srcStartCtx=0, srcOffset=0, audioReady=false, audioToken=0;
-  const audioOff = () => +((song && song.audioOffset) || 0);   // desfase (s): + retrasa, − adelanta
-
-  function stopSrc(){ if(audioSrc){ try{ audioSrc.onended=null; audioSrc.stop(0); }catch(e){} audioSrc=null; } }
-  // posición actual (seg) dentro del mp3, según el reloj de Web Audio
-  function audioPos(){ if(!audioSrc||!audioCtx) return null;
-    return srcOffset + (audioCtx.currentTime - srcStartCtx) * (audioSrc.playbackRate.value||1); }
-  // arranca el mp3 EXACTO en 'offset' (seg), al instante
-  function startSrcAt(offset){
-    if(!audioCtx || !audioBuf) return;
-    stopSrc();
-    if(offset < 0 || offset >= audioBuf.duration) return;      // fuera de rango: no suena
-    const s = audioCtx.createBufferSource();
-    s.buffer = audioBuf; s.playbackRate.value = video.playbackRate || 1;
-    s.connect(audioCtx.destination);
-    srcStartCtx = audioCtx.currentTime; srcOffset = offset;
-    try{ s.start(0, offset); }catch(e){ return; }
-    audioSrc = s;
-  }
-  // reengancha el mp3 a la posición del vídeo (solo si está sonando)
-  function audioReengage(){ if(!video.paused && audioReady) startSrcAt(video.currentTime + audioOff()); }
-
-  function attachAudioSync(){
-    video.addEventListener("pause", stopSrc);
-    video.addEventListener("ended", stopSrc);
-    video.addEventListener("seeked", audioReengage);
-    video.addEventListener("ratechange", audioReengage);
-    // corrección de deriva (rara: los dos relojes van en tiempo real). Si algo se
-    // desvía > 0,12 s, reengancha al instante (sin seek ni corte).
-    setInterval(() => {
-      if(video.paused || !audioSrc || !audioBuf) return;
-      const want = video.currentTime + audioOff();
-      if(want < 0 || want >= audioBuf.duration){ stopSrc(); return; }
-      const pos = audioPos(); if(pos == null) return;
-      if(Math.abs(pos - want) > 0.12) startSrcAt(want);
-    }, 700);
-  }
-
-  async function applyEditorAudio(){
-    stopSrc(); audioReady=false; audioBuf=null;
-    const src = song && song.audio;
-    if(!src){ video.muted=false; syncAudioOffUI(); return; }   // sin mp3 -> audio del vídeo
-    video.muted = true;                                        // prioriza el mp3
-    const tok = ++audioToken;
+  // ---- Audio del editor: si la canción tiene SONG.audio (mp3), se PRIORIZA ese
+  // (silencia el vídeo y suena el mp3 sincronizado); si no, suena el vídeo. ----
+  let edAudio = null;
+  const audioOff = () => +((song && song.audioOffset) || 0);   // desfase del audio limpio (s): + retrasa, − adelanta
+  // Sincroniza el mp3 con el vídeo respetando el desfase. Si el objetivo es < 0
+  // (con desfase negativo, el audio aún no ha "empezado") se PAUSA — antes se
+  // clavaba en 0 y, al pasar de 0,22 s de deriva, se reiniciaba (bug del -0,25).
+  function audioSync(force){
+    if(!edAudio) return;
+    const tgt = video.currentTime + audioOff();
+    if(tgt < 0){ if(!edAudio.paused){ try{ edAudio.pause(); }catch(e){} } return; }
     try{
-      if(!audioCtx){
-        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        // desbloquea el contexto en la primera interacción (requisito del navegador)
-        const unlock = () => { if(audioCtx.state === "suspended") audioCtx.resume(); };
-        ["pointerdown","keydown","click","touchstart"].forEach(ev => window.addEventListener(ev, unlock, true));
-      }
-      const bytes = await fetch(src).then(r => r.arrayBuffer());
-      const decoded = await audioCtx.decodeAudioData(bytes.slice(0));
-      if(tok !== audioToken) return;                           // cambió de canción mientras cargaba
-      audioBuf = decoded; audioReady = true;
-      video.muted = true;                                      // por si sonaba el vídeo como respaldo mientras cargaba
-      audioReengage();                                         // por si ya estaba reproduciéndose
-    }catch(e){
-      audioBuf=null; audioReady=false; video.muted=false;      // si falla la decodificación, usa el audio del vídeo
+      // reajusta solo si hace falta; con force respeta un margen para no dar un saltito al arrancar
+      if(Math.abs(edAudio.currentTime - tgt) > (force ? 0.06 : 0.22)) edAudio.currentTime = tgt;
+      if(!video.paused && edAudio.paused) edAudio.play().catch(() => {});   // reanuda al entrar en rango
+    }catch(e){}
+  }
+  function attachAudioSync(){
+    video.addEventListener("play",  () => audioSync(true));
+    video.addEventListener("pause", () => { if(edAudio) edAudio.pause(); });
+    video.addEventListener("seeked", () => audioSync(true));
+    video.addEventListener("ratechange", () => { if(edAudio) edAudio.playbackRate = video.playbackRate; });
+    video.addEventListener("ended", () => { if(edAudio) edAudio.pause(); });
+    setInterval(() => { if(!video.paused) audioSync(false); }, 500);   // corrige deriva y reanuda si volvió al rango
+  }
+  function applyEditorAudio(){
+    if(edAudio){ try{ edAudio.pause(); }catch(e){} edAudio = null; }
+    const src = song && song.audio;
+    if(src){
+      edAudio = new Audio(src); edAudio.preload = "auto";
+      video.muted = true;                                   // prioriza el mp3
+      if(!video.paused) audioSync(true);
+    } else {
+      video.muted = false;                                  // sin mp3 -> audio del vídeo
     }
     syncAudioOffUI();
-  }
-
-  // Arranque LIMPIO: lanza el vídeo y engancha el mp3 EXACTO en su posición. Lo
-  // alineamos al arranque REAL del vídeo (evento 'playing') para que no quede ni
-  // un pelín adelantado por la latencia de arranque del vídeo.
-  let playToken = 0;
-  function startPlayback(){
-    if(!video) return;
-    const tok = ++playToken;
-    if(!audioReady){ video.muted=false; video.play().catch(()=>{}); return; }   // mp3 aún no listo -> audio del vídeo
-    if(audioCtx && audioCtx.state === "suspended"){ try{ audioCtx.resume(); }catch(e){} }
-    video.muted = true;
-    let done=false;
-    const fire = () => { if(done || tok!==playToken || video.paused) return; done=true;
-      video.removeEventListener("playing", fire);
-      startSrcAt(video.currentTime + audioOff()); };
-    video.addEventListener("playing", fire);
-    video.play().catch(()=>{});
-    setTimeout(fire, 140);   // por si 'playing' no llega
-  }
-  function playPause(){
-    if(!video) return;
-    if(video.paused) startPlayback();
-    else video.pause();                                          // el listener 'pause' ya para el mp3
   }
   // muestra/oculta el control de desfase y refleja el valor guardado
   function syncAudioOffUI(){
@@ -515,7 +461,7 @@
   // controls
   $("#back").onclick = ()=>{ location.href = "library.html"; };
   $("#save").onclick = save;
-  $("#playpause").onclick = ()=>{ playPause(); };
+  $("#playpause").onclick = ()=>{ video.paused ? video.play() : video.pause(); };
   $("#back2").onclick = ()=> video.currentTime = Math.max(0, video.currentTime-2);
   $("#fwd2").onclick = ()=> video.currentTime += 2;
   $("#markstart").onclick = tapS;
@@ -725,7 +671,7 @@
   // y el visor lo aplica al reproducir. + = retrasa el audio, − = lo adelanta.
   $("#audioOff").oninput = () => {
     song.audioOffset = +$("#audioOff").value || 0;
-    audioReengage();                 // aplica el nuevo desfase al instante si está sonando
+    audioSync(true);
     save();
   };
 
@@ -1052,7 +998,7 @@
     if(isEditable(e.target) || isEditable(document.activeElement) || e.isComposing || e.keyCode === 229) return;
     if(e.key==="s"||e.key==="S"){ e.preventDefault(); tapS(); }
     else if(e.key==="Enter"){ e.preventDefault(); tapEnter(); }
-    else if(e.key==="k"||e.key==="K"){ e.preventDefault(); playPause(); }
+    else if(e.key==="k"||e.key==="K"){ e.preventDefault(); video.paused?video.play():video.pause(); }
     else if(e.key==="j"||e.key==="J"){ e.preventDefault(); video.currentTime=Math.max(0,video.currentTime-2); }
     else if(e.key==="l"||e.key==="L"){ e.preventDefault(); video.currentTime+=2; }
     else if(e.key==="ArrowDown"){ e.preventDefault(); if(sel<song.lyrics.length-1){sel++; awaitingEnd=false; highlightSel(); updateTapUI();} }
