@@ -61,7 +61,6 @@ const Player = {
 
         let ctx=null, buf=null, node=null, startCtx=0, startOff=0, ready=false;
         const stop = () => { if(node){ try{ node.onended=null; node.stop(0); }catch(e){} node=null; } };
-        const pos  = () => node ? startOff + (ctx.currentTime - startCtx) * (node.playbackRate.value||1) : null;
         // want = posición objetivo del mp3 (= tiempo de vídeo + desfase). Puede ser
         // NEGATIVA (desfase negativo: el mp3 aún no entra); en ese caso PROGRAMAMOS
         // el arranque para el instante EXACTO en que el vídeo llegue, empezando el
@@ -138,29 +137,6 @@ const Player = {
         v.addEventListener("seeked",  () => { if(!v.paused) resync(); });   // reengancha al mover (ya reproduciendo)
         v.addEventListener("ratechange", () => { if(!v.paused) resync(); });
         setInterval(resync, 500);                                            // corrección de deriva
-
-        // ---- Indicador de DIAGNÓSTICO (pulsa F2 para mostrar/ocultar) ----
-        // Dice si suena el MP3 (Web Audio) o el audio del vídeo, el estado del
-        // contexto y el desfase real entre el audio y el vídeo. No sale en la
-        // grabación salvo que lo actives tú.
-        const dbg = document.createElement("div");
-        dbg.style.cssText = "position:fixed;top:8px;left:8px;z-index:99999;display:none;"+
-          "background:rgba(0,0,0,.82);color:#0f0;font:700 13px/1.5 monospace;padding:8px 11px;"+
-          "border-radius:8px;white-space:pre;pointer-events:none";
-        document.body.appendChild(dbg);
-        let dbgOn = false;
-        window.addEventListener("keydown", e => { if(e.key === "F2"){ dbgOn = !dbgOn; dbg.style.display = dbgOn ? "block" : "none"; } });
-        setInterval(() => {
-          if(!dbgOn) return;
-          const p = pos(), want = v.currentTime + off;
-          const mode = (!ready) ? "cargando…" : (node ? "MP3 (Web Audio)" : (v.muted ? "MP3 (parado)" : "AUDIO DEL VÍDEO (respaldo)"));
-          dbg.textContent =
-            "audio: " + mode + "\n" +
-            "contexto: " + (ctx ? ctx.state : "—") + "   descodificado: " + (ready ? "sí" : "no") + "\n" +
-            "vídeo mute: " + v.muted + "   sonando: " + (node ? "sí" : "no") + "\n" +
-            "pos audio: " + (p==null?"—":p.toFixed(3)) + "  quiere: " + want.toFixed(3) +
-            "  desfase: " + (p==null?"—":((p-want)*1000).toFixed(0)+" ms");
-        }, 100);
     }
 
 };

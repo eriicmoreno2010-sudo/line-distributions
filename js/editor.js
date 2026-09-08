@@ -54,41 +54,88 @@
   const uiConfirm = m => uiDialog(m, true);
   const uiAlert   = m => uiDialog(m, false);
 
-  // ---- Audio del editor: si la canción tiene SONG.audio (mp3), se PRIORIZA ese
-  // (silencia el vídeo y suena el mp3 sincronizado); si no, suena el vídeo. ----
-  let edAudio = null;
-  const audioOff = () => +((song && song.audioOffset) || 0);   // desfase del audio limpio (s): + retrasa, − adelanta
-  // Sincroniza el mp3 con el vídeo respetando el desfase. Si el objetivo es < 0
-  // (con desfase negativo, el audio aún no ha "empezado") se PAUSA — antes se
-  // clavaba en 0 y, al pasar de 0,22 s de deriva, se reiniciaba (bug del -0,25).
-  function audioSync(force){
-    if(!edAudio) return;
-    const tgt = video.currentTime + audioOff();
-    if(tgt < 0){ if(!edAudio.paused){ try{ edAudio.pause(); }catch(e){} } return; }
-    try{
-      // reajusta solo si hace falta; con force respeta un margen para no dar un saltito al arrancar
-      if(Math.abs(edAudio.currentTime - tgt) > (force ? 0.06 : 0.22)) edAudio.currentTime = tgt;
-      if(!video.paused && edAudio.paused) edAudio.play().catch(() => {});   // reanuda al entrar en rango
-    }catch(e){}
+  // ---- Audio del editor con WEB AUDIO API (mismo motor que el visor) ----
+  // El mp3 se descodifica UNA vez a memoria y arranca EXACTO en el punto, al
+  // instante y sin cortes. Con desfase negativo, el arranque se PROGRAMA para el
+  // instante exacto en que el vídeo llega, empezando el mp3 desde su principio.
+  let audioCtx=null, audioBuf=null, audioNode=null, aStartCtx=0, aStartOff=0, audioReady=false, audioTok=0;
+  const audioOff = () => +((song && song.audioOffset) || 0);   // desfase (s, dinámico): + retrasa, − adelanta
+
+  function aStop(){ if(audioNode){ try{ audioNode.onended=null; audioNode.stop(0); }catch(e){} audioNode=null; } }
+  function aStartAt(want){          // want = posición objetivo del mp3 (puede ser < 0)
+    aStop();
+    if(!audioBuf || want >= audioBuf.duration) return;
+    const rate = video.playbackRate || 1;
+    const s = audioCtx.createBufferSource(); s.buffer = audioBuf; s.playbackRate.value = rate;
+    const g = audioCtx.createGain(); const now = audioCtx.currentTime;
+    let whenCtx, offInBuf;
+    if(want >= 0){ whenCtx = now; offInBuf = want; }             // entra ya
+    else { whenCtx = now + (-want) / rate; offInBuf = 0; }       // entra luego, desde el principio
+    g.gain.setValueAtTime(0.0001, whenCtx); g.gain.linearRampToValueAtTime(1, whenCtx + 0.018);  // anti-clic
+    s.connect(g); g.connect(audioCtx.destination);
+    aStartCtx = whenCtx; aStartOff = offInBuf;
+    try{ s.start(whenCtx, offInBuf); }catch(e){ return; }
+    audioNode = s;
   }
-  function attachAudioSync(){
-    video.addEventListener("play",  () => audioSync(true));
-    video.addEventListener("pause", () => { if(edAudio) edAudio.pause(); });
-    video.addEventListener("seeked", () => audioSync(true));
-    video.addEventListener("ratechange", () => { if(edAudio) edAudio.playbackRate = video.playbackRate; });
-    video.addEventListener("ended", () => { if(edAudio) edAudio.pause(); });
-    setInterval(() => { if(!video.paused) audioSync(false); }, 500);   // corrige deriva y reanuda si volvió al rango
-  }
-  function applyEditorAudio(){
-    if(edAudio){ try{ edAudio.pause(); }catch(e){} edAudio = null; }
-    const src = song && song.audio;
-    if(src){
-      edAudio = new Audio(src); edAudio.preload = "auto";
-      video.muted = true;                                   // prioriza el mp3
-      if(!video.paused) audioSync(true);
-    } else {
-      video.muted = false;                                  // sin mp3 -> audio del vídeo
+  function aResync(){
+    if(!video || video.paused || !audioReady || !audioCtx || audioCtx.state !== "running") return;
+    const want = video.currentTime + audioOff();
+    if(want >= audioBuf.duration){ aStop(); return; }
+    video.muted = true;
+    if(!audioNode){ aStartAt(want); return; }
+    if(audioCtx.currentTime >= aStartCtx){
+      const p = aStartOff + (audioCtx.currentTime - aStartCtx) * (audioNode.playbackRate.value || 1);
+      if(Math.abs(p - want) > 0.20) aStartAt(want);
     }
+  }
+  // reengancha (lo usa el control de "Desfase audio" para aplicarlo al instante)
+  function audioReengage(){ if(!video.paused) aResync(); }
+
+  function attachAudioSync(){
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const unlock = () => { if(audioCtx.state === "suspended") audioCtx.resume().catch(()=>{}); };
+    ["pointerdown","keydown","click","touchstart"].forEach(ev => window.addEventListener(ev, unlock, true));
+    audioCtx.onstatechange = () => { if(audioCtx.state === "running") aResync(); };
+    // ARRANQUE SIN SKIP: al darle a play, pausa un instante, prepara el mp3 en el
+    // punto exacto y arranca vídeo+audio juntos.
+    let selfPlay = false;
+    video.addEventListener("play", () => {
+      if(selfPlay){ selfPlay = false; return; }
+      if(!audioReady){ video.muted = false; return; }     // sin mp3 listo -> audio del vídeo
+      const P = video.currentTime;
+      video.pause(); unlock();
+      const t0 = performance.now();
+      const go = () => {
+        if(!audioReady || audioCtx.state !== "running"){
+          if(performance.now() - t0 < 800){ setTimeout(go, 15); return; }
+          video.muted = false; selfPlay = true; video.play().catch(()=>{}); return;
+        }
+        video.muted = true; aStartAt(P + audioOff());
+        selfPlay = true; video.play().catch(()=>{});
+      };
+      audioCtx.resume().then(go, go);
+    });
+    video.addEventListener("pause", aStop);
+    video.addEventListener("ended", aStop);
+    video.addEventListener("seeked", () => { if(!video.paused) aResync(); });
+    video.addEventListener("ratechange", () => { if(!video.paused) aResync(); });
+    setInterval(aResync, 500);   // corrección de deriva
+  }
+
+  async function applyEditorAudio(){
+    aStop(); audioReady = false; audioBuf = null;
+    const src = song && song.audio;
+    if(!src){ video.muted = false; syncAudioOffUI(); return; }   // sin mp3 -> audio del vídeo
+    video.muted = true;
+    const tok = ++audioTok;
+    try{
+      if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const bytes = await fetch(src).then(r => r.arrayBuffer());
+      const decoded = await audioCtx.decodeAudioData(bytes.slice(0));
+      if(tok !== audioTok) return;                              // cambió de canción mientras cargaba
+      audioBuf = decoded; audioReady = true;
+      if(!video.paused){ video.muted = true; aResync(); }
+    }catch(e){ audioBuf = null; audioReady = false; video.muted = false; }   // si falla, audio del vídeo
     syncAudioOffUI();
   }
   // muestra/oculta el control de desfase y refleja el valor guardado
@@ -671,7 +718,7 @@
   // y el visor lo aplica al reproducir. + = retrasa el audio, − = lo adelanta.
   $("#audioOff").oninput = () => {
     song.audioOffset = +$("#audioOff").value || 0;
-    audioSync(true);
+    audioReengage();                 // aplica el desfase al instante si está sonando
     save();
   };
 
