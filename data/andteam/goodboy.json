@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "Good Boy",
   "video": "videos/team_goodboy.mp4",
-  "duration": 0,
+  "duration": 154.483333,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -140,5 +140,6 @@
   "cover": "covers/team_goodboy.jpg",
   "npC1": "#ff006f",
   "audio": "audio/team_goodboy.mp3",
-  "npC2": "#2e58ff"
+  "npC2": "#2e58ff",
+  "audioOffset": 0.05
 }
