@@ -131,10 +131,739 @@
       "members": [
         "K"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "Always I’m ready to go",
+      "romanization": "always i’m ready to go",
+      "english": "Always, I’m ready to go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always I move like a beast",
+      "romanization": "always i move like a beast",
+      "english": "Always, I move like a beast",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨통을 물고 흔들어 놔",
+      "romanization": "sumtongeul mulgo heundeureo nwa",
+      "english": "Bite down on my throat and shake me up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Outta control 네 손에 쥐어진 Leash",
+      "romanization": "outta control ne sone jwieojin leash",
+      "english": "Outta control a leash held in your hand",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "길들일 수가 없지",
+      "romanization": "gildeuril suga eopji",
+      "english": "I can’t be tamed",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "타고난 A to Z",
+      "romanization": "tagonan a to z",
+      "english": "Born this way from A to Z",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It’s a wild one",
+      "romanization": "it’s a wild one",
+      "english": "It’s a wild one",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝에 몰릴수록 노리지",
+      "romanization": "kkeute mollilsurok noriji",
+      "english": "The more I’m pushed to the edge, the more I hunt",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Eyes on the prey",
+      "romanization": "eyes on the prey",
+      "english": "Eyes on the prey",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m just tryna be an icon",
+      "romanization": "i’m just tryna be an icon",
+      "english": "I’m just tryna be an icon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "방심한 순간 One quick bite",
+      "romanization": "bangsimhan sungan one quick bite",
+      "english": "The moment you let your guard down one quick bite",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "쉽게 길들일 생각 마",
+      "romanization": "swipge gildeuril saenggak ma",
+      "english": "Don’t think you can tame me easily",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "제멋대로 넌 Grooming my heart",
+      "romanization": "jemeotdaero neon grooming my heart",
+      "english": "In your own way, you’re grooming my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So is it really really really my fault?",
+      "romanization": "so is it really really really my fault?",
+      "english": "So is it really, really, really my fault?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "차갑고 거친",
+      "romanization": "chagapgo geochin",
+      "english": "Cold and rough",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 가지고 놀지 Alright",
+      "romanization": "nal gajigo nolji",
+      "english": "You play with me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "“Be a good boy”",
+      "romanization": "alright “be a good boy”",
+      "english": "Alright, “Be a good boy”",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 내 목줄을 조여와",
+      "romanization": "neon nae mokjureul joyeowa",
+      "english": "You tighten my leash",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 그저 웃지",
+      "romanization": "neon geujeo utji",
+      "english": "You just smile",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "구겨진 자존심 Alright",
+      "romanization": "gugyeojin jajonsim",
+      "english": "At my crumpled pride",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "“Be a good boy”",
+      "romanization": "alright “be a good boy”",
+      "english": "Alright, “Be a good boy”",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 목줄을 조여와",
+      "romanization": "dasi mokjureul joyeowa",
+      "english": "You tighten the leash again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always I’m ready to go",
+      "romanization": "always i’m ready to go",
+      "english": "Always, I’m ready to go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always I move like a beast",
+      "romanization": "always i move like a beast",
+      "english": "Always, I move like a beast",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨통을 물고 흔들어 놔",
+      "romanization": "sumtongeul mulgo heundeureo nwa",
+      "english": "Bite down on my throat and shake me up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Outta control 네 손에 쥐어진 Leash",
+      "romanization": "outta control ne sone jwieojin leash",
+      "english": "Outta control a leash held in your hand",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가시 돋친 내가 재밌다는 듯이",
+      "romanization": "gasi dotchin naega jaemitdaneun deusi",
+      "english": "As if you find my thorn-covered self amusing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "찔리고 상처가 나도 그대로 안아주지",
+      "romanization": "jjilligo sangcheoga nado geudaero anajugi",
+      "english": "Even when I get pricked and wounded, you hold me just the same",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나는 네 품 안에 길들여진 어린아이",
+      "romanization": "naneun ne pum ane gildeuryeojin eorinai",
+      "english": "I’m a child tamed in your arms",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "난 거친 늑대, 너는 나를 울게 하는 달빛",
+      "romanization": "nan geochin neokdae, neoneun nareul ulge haneun dalbit",
+      "english": "I’m a wild wolf, and you’re the moonlight that makes me cry",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oooh 너의 한마디",
+      "romanization": "oooh neoui hanmadi",
+      "english": "Oooh, one word from you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oooh 난 꼬리를 Swing",
+      "romanization": "oooh nan kkorireul swing",
+      "english": "Oooh, I’ll swing my tail",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oooh 옳지, 착하지",
+      "romanization": "oooh olchi, chakaji",
+      "english": "Oooh, that’s right, good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oooh Begging for a treat",
+      "romanization": "oooh begging for a treat",
+      "english": "Oooh, begging for a treat",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 선을 넘지",
+      "romanization": "neon seoneul neomji",
+      "english": "You cross the line",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어쩜 겁도 없이 So what",
+      "romanization": "eojjeom geopdo eopsi so what",
+      "english": "Somehow, without any fear so what?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Call me good boy",
+      "romanization": "call me good boy",
+      "english": "Call me good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "원해 그 한 마디를 난",
+      "romanization": "wonhae geu hanmadireul nan",
+      "english": "I want to hear those words",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I can’t do nothing",
+      "romanization": "i can’t do nothing",
+      "english": "I can’t do nothing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 세상을 뒤집어놔",
+      "romanization": "nae sesangeul dwijibeonwa",
+      "english": "You turn my whole world upside down",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "“Be a good boy”",
+      "romanization": "“be a good boy”",
+      "english": "“Be a good boy”",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "계속 길들여줘 All night",
+      "romanization": "gyesok gildeuryeojwo all night",
+      "english": "Keep taming me all night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always I’m ready to go",
+      "romanization": "always i’m ready to go",
+      "english": "Always, I’m ready to go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always I move like a beast",
+      "romanization": "always i move like a beast",
+      "english": "Always, I move like a beast",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨통을 물고 흔들어 놔",
+      "romanization": "sumtongeul mulgo heundeureo nwa",
+      "english": "Bite down on my throat and shake me up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Outta control 네 손에 쥐어진 Leash",
+      "romanization": "outta control ne sone jwieojin leash",
+      "english": "Outta control a leash held in your hand",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어느새 또 해제돼 Like a puppy, no way!",
+      "romanization": "eoneusae tto haejedwae like a puppy, no way!",
+      "english": "Before I know it, I’m unleashed again like a puppy, no way!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 자존심이 왠지 Growl but I step on it",
+      "romanization": "nae jajonsimi waenji growl but i step on it",
+      "english": "For some reason, my pride goes “growl” but I step on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 모든 법칙을 깨 난 이미 On your plate",
+      "romanization": "nae modeun beopchigeul kkae nan imi on your plate",
+      "english": "I break all my own rules I’m already on your plate",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "놀아나 네 손에 Ain’t nothing left for me",
+      "romanization": "norana ne sone ain’t nothing left for me",
+      "english": "Playing into your hands ain’t nothing left for me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Hop on it",
+      "romanization": "whoo hop on it",
+      "english": "Whoo, hop on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Jump on it",
+      "romanization": "whoo jump on it",
+      "english": "Whoo, jump on it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Whoo) Step on it",
+      "romanization": "whoo step on it",
+      "english": "Whoo, step on it,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Good) Boy",
+      "romanization": "good boy",
+      "english": "good boy",
+      "adlib": false
     }
   ],
   "cover": "covers/team_goodboy.jpg",
