@@ -71,6 +71,7 @@
     // instrumental opcional: si existe, suena el mp3 (y muteamos el vídeo)
     instSrc = s.instrumental || s.resultsAudio || "";
     instAudio = instSrc ? new Audio(instSrc) : null;
+    if(instAudio) instAudio.loop = false;               // nunca en bucle
 
     // clock: prefer the MV video (audio + time); else a manual timer over duration
     clock.playing = false; clock.t = 0; clock.seeking = false; clock.dur = s.duration || 0;

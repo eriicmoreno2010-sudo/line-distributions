@@ -176,9 +176,14 @@ Self-contained: injects its own styles and markup.
   fetch(SONG_URL).then(r=>r.json()).then(SONG=>{ buildResults(SONG); built=true; })
     .catch(e=>console.error("results-overlay:", e));
 
+  let instDone=false;
   function playInstrumental(){
-    if(!instSrc) return;
-    if(!instAudio){ instAudio=new Audio(instSrc); instAudio.preload="auto"; }
+    if(!instSrc || instDone) return;             // suena UNA sola vez por pantalla de resultados
+    if(!instAudio){
+      instAudio=new Audio(instSrc); instAudio.preload="auto";
+      instAudio.loop=false;                      // nunca en bucle
+      instAudio.onended=()=>{ instDone=true; try{ instAudio.pause(); }catch(e){} };  // al acabar NO se reinicia
+    }
     try{ instAudio.currentTime=instStart; instAudio.volume=1; instAudio.play().catch(()=>{}); }catch(e){}
     requestAnimationFrame(instVolLoop);
   }
@@ -187,7 +192,7 @@ Self-contained: injects its own styles and markup.
   function instVolLoop(){
     if(!instAudio || instAudio.paused) return;
     const FADE=1.5, ct=instAudio.currentTime;
-    if(instEnd>instStart && ct>=instEnd){ try{ instAudio.pause(); }catch(e){} return; }
+    if(instEnd>instStart && ct>=instEnd){ instDone=true; try{ instAudio.pause(); }catch(e){} return; }
     instAudio.volume = (instFade && instEnd>instStart && instEnd-ct < FADE)
       ? Math.max(0, (instEnd-ct)/FADE) : 1;
     requestAnimationFrame(instVolLoop);
@@ -242,8 +247,10 @@ Self-contained: injects its own styles and markup.
       m.fill.style.width=m.fillW+"%";
     });
 
-    // >10 members: lay the list out in two thick columns (like the ranking)
-    if(ranked.length > 10){
+    // 9+ members: dos columnas (como el ranking). Antes era >10, y con 9-10 en una
+    // sola columna las fotos salían muy pequeñas (filas muy bajas). En dos columnas
+    // las filas son más altas y las fotos se ven grandes.
+    if(ranked.length > 8){
       list.classList.add("two-col");
       list.style.setProperty("--rows", Math.ceil(ranked.length/2));
     } else if(SONG.subunit){
@@ -259,7 +266,7 @@ Self-contained: injects its own styles and markup.
       const cs = getComputedStyle(row);
       const avail = row.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
       if(avail > 0){
-        const size = Math.max(40, Math.min(0.09 * window.innerHeight, avail - 8));
+        const size = Math.max(40, Math.min(0.11 * window.innerHeight, avail - 8));
         list.style.setProperty("--rphoto", Math.round(size) + "px");
       }
     };
@@ -291,7 +298,7 @@ Self-contained: injects its own styles and markup.
     clearTimeout(instTimer);
     instTimer = setTimeout(()=>{ if(ov.classList.contains("show")) playInstrumental(); }, 1050); }
   function hide(){ ov.classList.remove("show"); document.body.classList.remove("results-up");
-    clearTimeout(instTimer); if(revealTimer) clearInterval(revealTimer); reset(); stopInstrumental(); }
+    clearTimeout(instTimer); if(revealTimer) clearInterval(revealTimer); reset(); stopInstrumental(); instDone=false; }
 
   const video=document.getElementById("video");
   if(video) video.addEventListener("ended", show);

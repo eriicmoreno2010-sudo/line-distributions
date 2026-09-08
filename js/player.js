@@ -63,6 +63,10 @@ const Player = {
         // no se clava en 0 (eso reiniciaba el audio a partir de -0,25).
         const sync = (force) => { try{ const tgt = v.currentTime + off;
             if(tgt < 0){ if(!aud.paused) aud.pause(); return; }
+            // Si el mp3 ya llegó a su final, NO reiniciar ni reintentar (antes el
+            // sync cada 0,5s podía volver a darle play y sonaba "reiniciado").
+            const dur = aud.duration;
+            if(isFinite(dur) && dur > 0 && tgt >= dur - 0.05){ if(!aud.paused) aud.pause(); return; }
             // reajusta solo si hace falta; con force igual respeta un margen para no dar
             // un saltito innecesario al arrancar (que se oía "cortado" al principio)
             if(Math.abs(aud.currentTime - tgt) > (force ? 0.06 : 0.25)) aud.currentTime = tgt;
