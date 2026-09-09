@@ -134,7 +134,17 @@
       "original": "어둠이 편한, 나의 세상",
       "romanization": "eodumi pyeonhan, naui sesang",
       "english": "The world I find comfort in, Is darkness",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.85,
+          9.41
+        ],
+        [
+          9.67,
+          11
+        ]
+      ]
     },
     {
       "start": 11.24,
@@ -145,7 +155,17 @@
       "original": "웅크린 내 몸 위로",
       "romanization": "ungkurin nae mom wiro",
       "english": "Over my curled-up body",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.28,
+          12.47
+        ],
+        [
+          12.59,
+          14.03
+        ]
+      ]
     },
     {
       "start": 14.53,
@@ -156,7 +176,17 @@
       "original": "두려움 없이, 또 깃털처럼",
       "romanization": "duryeoum eopsi, tto giteolcheoreom",
       "english": "A hand that, without fear, Brushed my scars like feathers",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          14.57,
+          16.19
+        ],
+        [
+          16.37,
+          17.87
+        ]
+      ]
     },
     {
       "start": 18.02,
@@ -167,7 +197,13 @@
       "original": "흉터를 쓸던 손길",
       "romanization": "hyangteoreul sseuldeon songil",
       "english": "Back then, when you faced me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          17.98,
+          20.75
+        ]
+      ]
     },
     {
       "start": 21.53,
@@ -178,7 +214,13 @@
       "original": "괴물 같은 날 잊은 채, 마주하던 그때",
       "romanization": "goemul gateun nal ijeun chae, majuhadeon geuttae",
       "english": "Without seeing me as, The monster I was",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21.57,
+          28
+        ]
+      ]
     },
     {
       "start": 28.16,
@@ -189,7 +231,17 @@
       "original": "내 심장이 막 벅차올라, But it doesn’t feel right",
       "romanization": "nae simjangi mak beokchaolla, but it doesn’t feel right",
       "english": "My heart suddenly fills with emotion, But it doesn’t feel right",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.11,
+          31.1
+        ],
+        [
+          31.25,
+          33.62
+        ]
+      ]
     },
     {
       "start": 35.74,
@@ -200,7 +252,21 @@
       "original": "네가 없인 Empty, 다치고 해진, 날 안아줘",
       "romanization": "nega eopsin empty, dachigo haejin, nal anajwo",
       "english": "Without you, I’m empty, Hold me, Wounded and worn out",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.7,
+          38.52
+        ],
+        [
+          39.19,
+          41.95
+        ],
+        [
+          42.28,
+          45.27
+        ]
+      ]
     },
     {
       "start": 45.64,
@@ -211,7 +277,13 @@
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.69,
+          48.43
+        ]
+      ]
     },
     {
       "start": 49.19,
@@ -222,7 +294,21 @@
       "original": "서툰 고백 대신, 다짐을 했지, That I’m yours",
       "romanization": "seotun gobaek daesin, dajimeul haetji, that i’m yours",
       "english": "Instead of a clumsy confession, I made a promise, That I’m yours",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.19,
+          52.16
+        ],
+        [
+          52.77,
+          55.48
+        ],
+        [
+          55.78,
+          58.71
+        ]
+      ]
     },
     {
       "start": 58.96,
@@ -233,7 +319,13 @@
       "original": "",
       "romanization": "So I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.04,
+          61.86
+        ]
+      ]
     },
     {
       "start": 61.91,
@@ -244,7 +336,17 @@
       "original": "덮쳐오는 밤 떠오른 달",
       "romanization": "deopchyeooneun bam tteooreun dal",
       "english": "The night that comes crashing down, the moon that rises",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.93,
+          63.52
+        ],
+        [
+          63.7,
+          65.12
+        ]
+      ]
     },
     {
       "start": 65.31,
@@ -255,7 +357,13 @@
       "original": "흉측한 내 그림자",
       "romanization": "hyungcheuthan nae geurimja",
       "english": "My grotesque shadow",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          65.33,
+          68.56
+        ]
+      ]
     },
     {
       "start": 68.63,
@@ -266,7 +374,17 @@
       "original": "내 칼날 같은 이 나약함이",
       "romanization": "nae kallal gateun i nayakhami",
       "english": "I don’t know if this weakness of mine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          68.69,
+          70.37
+        ],
+        [
+          70.52,
+          71.9
+        ]
+      ]
     },
     {
       "start": 72.06,
@@ -277,7 +395,13 @@
       "original": "널 다치게 할지 몰라",
       "romanization": "neol dachige halji molla",
       "english": "Sharp as a blade, might hurt you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.09,
+          75.28
+        ]
+      ]
     },
     {
       "start": 75.63,
@@ -288,7 +412,17 @@
       "original": "I’m just a freak, 구멍 난 맘 채우듯 내 앞에",
       "romanization": "i’m just a freak, gumeong nan mam chaeudeut nae ape",
       "english": "I’m just a freak, As if you were filling the hole in my heart",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          75.62,
+          79.31
+        ],
+        [
+          79.46,
+          82.22
+        ]
+      ]
     },
     {
       "start": 82.25,
@@ -299,7 +433,17 @@
       "original": "넌 천사처럼 나타나, 이건 구원일까",
       "romanization": "neon cheonsacheoreom natana, igeon guwonilkka",
       "english": "You appeared before me like an angel, Could this be salvation?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          82.23,
+          85.22
+        ],
+        [
+          85.4,
+          87.53
+        ]
+      ]
     },
     {
       "start": 89.75,
@@ -310,7 +454,21 @@
       "original": "네가 없인 Empty, 다치고 해진, 날 감싸줘",
       "romanization": "nega eopsin empty, dachigo haejin, nal gamssajwo",
       "english": "Without you, I’m empty, Embrace me, Wounded and worn out",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.76,
+          92.66
+        ],
+        [
+          93.39,
+          96.13
+        ],
+        [
+          96.37,
+          99.27
+        ]
+      ]
     },
     {
       "start": 99.72,
@@ -321,7 +479,13 @@
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          99.63,
+          102.63
+        ]
+      ]
     },
     {
       "start": 103.27,
@@ -332,7 +496,21 @@
       "original": "My only remedy, 있어줘 여기, 내 곁에서",
       "romanization": "my only remedy, isseojwo yeogi, nae gyeoteseo",
       "english": "My only remedy, Stay here, By my side",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          103.3,
+          106.24
+        ],
+        [
+          106.91,
+          109.5
+        ],
+        [
+          109.82,
+          112.79
+        ]
+      ]
     },
     {
       "start": 113.13,
@@ -343,7 +521,13 @@
       "original": "",
       "romanization": "So I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.18,
+          115.94
+        ]
+      ]
     },
     {
       "start": 116.99,
@@ -354,7 +538,13 @@
       "original": "",
       "romanization": "Keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          117.08,
+          119.27
+        ]
+      ]
     },
     {
       "start": 119.88,
@@ -365,7 +555,13 @@
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.97,
+          122.76
+        ]
+      ]
     },
     {
       "start": 123.37,
@@ -376,7 +572,13 @@
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          123.33,
+          127.21
+        ]
+      ]
     },
     {
       "start": 130.16,
@@ -387,7 +589,21 @@
       "original": "네가 없인 Empty, 다치고 해진, 날 안아줘",
       "romanization": "nega eopsin empty, dachigo haejin, nal anajwo",
       "english": "Without you, I’m empty, Hold me, Wounded and worn out",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          130.3,
+          133.32
+        ],
+        [
+          133.84,
+          136.64
+        ],
+        [
+          136.85,
+          139.84
+        ]
+      ]
     },
     {
       "start": 140.25,
@@ -398,7 +614,13 @@
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          140.17,
+          143.03
+        ]
+      ]
     },
     {
       "start": 143.86,
@@ -409,7 +631,21 @@
       "original": "네 이름을 새길, 이 생의 Ending, Yeah I’m yours",
       "romanization": "ne ireumeul saegil, i saengui ending, yeah i’m yours",
       "english": "The ending of this life, Where I’ll carve your name, Yeah I’m yours",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          143.84,
+          146.67
+        ],
+        [
+          147.42,
+          149.98
+        ],
+        [
+          150.3,
+          153.36
+        ]
+      ]
     },
     {
       "start": 153.74,
@@ -420,7 +656,13 @@
       "original": "",
       "romanization": "So I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          153.69,
+          156.45
+        ]
+      ]
     },
     {
       "start": 160.53,
@@ -431,7 +673,13 @@
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.44,
+          163.26
+        ]
+      ]
     },
     {
       "start": 170.65,
@@ -442,7 +690,13 @@
       "original": "",
       "romanization": "So I keep coming back..",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          170.73,
+          174.29
+        ]
+      ]
     },
     {
       "start": 141.54,
