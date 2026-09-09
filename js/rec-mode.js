@@ -68,6 +68,15 @@ Recording mode — for clean screen capture.
         const v = video(); if(v){ v.paused ? v.play() : v.pause(); }
       }
     });
+    // En grabación los controles están ocultos, así que un clic en el vídeo no hacía
+    // nada. Ahora, mientras grabas, hacer clic en el vídeo reproduce/pausa (sin salir
+    // del modo grabación ni tener que pulsar R).
+    const v = video();
+    if(v) v.addEventListener("click", e => {
+      if(!on) return;                                   // fuera de grabación, controles nativos normales
+      e.preventDefault();
+      v.paused ? v.play() : v.pause();
+    });
   }
 
   if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
