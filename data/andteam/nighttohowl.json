@@ -1169,5 +1169,6 @@
   "audioOffset": -0.25,
   "instrumental": "audio/team_nighttohowl_inst.mp3",
   "instrumentalStart": 44.60707382584135,
-  "instrumentalEnd": 55.48647101045673
+  "instrumentalEnd": 55.48647101045673,
+  "instrumentalFade": true
 }
