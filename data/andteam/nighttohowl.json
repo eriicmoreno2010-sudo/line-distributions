@@ -486,7 +486,13 @@
       "original": "",
       "romanization": "(All day!)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          82.59,
+          83.63
+        ]
+      ]
     },
     {
       "start": 88.13,
@@ -497,7 +503,17 @@
       "original": "",
       "romanization": "(That’s right!)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          88.09,
+          88.5
+        ],
+        [
+          88.83,
+          89.15
+        ]
+      ]
     },
     {
       "start": 97.45,
@@ -508,7 +524,13 @@
       "original": "(싶지 않은 내 본능)",
       "romanization": "(sipji aneun nae bonneung)",
       "english": "(To hide this instinct of mine)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          97.39,
+          99.58
+        ]
+      ]
     },
     {
       "start": 112.42,
@@ -862,7 +884,13 @@
       "original": "",
       "romanization": "(In the twilight)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          147.46,
+          150.34
+        ]
+      ]
     },
     {
       "start": 156.75,
