@@ -815,8 +815,8 @@
       ]
     },
     {
-      "start": 131.71,
-      "end": 134.25,
+      "start": 131.79,
+      "end": 134.1,
       "members": [
         "&TEAM"
       ],
@@ -826,8 +826,8 @@
       "adlib": false
     },
     {
-      "start": 134.43,
-      "end": 135.88,
+      "start": 134.25,
+      "end": 135.86,
       "members": [
         "EJ"
       ],
@@ -977,7 +977,13 @@
       "original": "(넌 왜)",
       "romanization": "(neon wae)",
       "english": "(Why does)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          29.45,
+          30.06
+        ]
+      ]
     },
     {
       "start": 32.8,
@@ -988,7 +994,13 @@
       "original": "",
       "romanization": "(Oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          32.71,
+          33.52
+        ]
+      ]
     },
     {
       "start": 33.85,
@@ -999,7 +1011,13 @@
       "original": "",
       "romanization": "(No way)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          33.89,
+          34.53
+        ]
+      ]
     },
     {
       "start": 90.57,
@@ -1010,7 +1028,13 @@
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          90.57,
+          91.07
+        ]
+      ]
     },
     {
       "start": 95.22,
@@ -1021,7 +1045,13 @@
       "original": "(까지도)",
       "romanization": "(kkajido)",
       "english": "(-thing)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          95.15,
+          96.56
+        ]
+      ]
     },
     {
       "start": 103.79,
@@ -1032,7 +1062,13 @@
       "original": "(-도 몰)",
       "romanization": "(-do moreu)",
       "english": "(Can't help)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          103.89,
+          105.2
+        ]
+      ]
     },
     {
       "start": 0,
@@ -1054,7 +1090,13 @@
       "original": "",
       "romanization": "(Let's go)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          115.7,
+          116.49
+        ]
+      ]
     },
     {
       "start": 118.14,
@@ -1065,7 +1107,13 @@
       "original": "",
       "romanization": "(Feel me now)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          118.05,
+          119.29
+        ]
+      ]
     },
     {
       "start": 120.01,
@@ -1076,7 +1124,13 @@
       "original": "",
       "romanization": "(Oh yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          120,
+          120.88
+        ]
+      ]
     },
     {
       "start": 124.38,
@@ -1087,7 +1141,13 @@
       "original": "",
       "romanization": "(Oh hoo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          124.32,
+          125.34
+        ]
+      ]
     },
     {
       "start": 126.84,
@@ -1098,7 +1158,17 @@
       "original": "",
       "romanization": "(Hoo hoo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          126.8,
+          127.24
+        ],
+        [
+          127.39,
+          129.01
+        ]
+      ]
     },
     {
       "start": 133.89,
@@ -1109,7 +1179,13 @@
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          133.95,
+          135.34
+        ]
+      ]
     },
     {
       "start": 135.82,
@@ -1120,7 +1196,13 @@
       "original": "",
       "romanization": "(Ah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          135.82,
+          136.67
+        ]
+      ]
     },
     {
       "start": 137.42,
@@ -1131,7 +1213,13 @@
       "original": "",
       "romanization": "(Ah ah ah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          137.74,
+          140.51
+        ]
+      ]
     },
     {
       "start": 144.35,
@@ -1142,7 +1230,13 @@
       "original": "",
       "romanization": "(Woo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          144.31,
+          145.15
+        ]
+      ]
     },
     {
       "start": 146.12,
@@ -1153,7 +1247,13 @@
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          146.06,
+          147.63
+        ]
+      ]
     }
   ],
   "cover": "covers/team_lovejang.jpg",
