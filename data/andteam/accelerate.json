@@ -139,5 +139,6 @@
   ],
   "cover": "covers/team_accelerate.jpg",
   "audio": "audio/team_accelerate.mp3",
-  "npC1": "#bb00ff"
+  "npC1": "#bb00ff",
+  "npC2": "#2ef1ff"
 }
