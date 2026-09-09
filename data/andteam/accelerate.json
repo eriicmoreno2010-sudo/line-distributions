@@ -1151,5 +1151,6 @@
   "audioOffset": -0.4,
   "instrumental": "audio/team_accelerate_inst.mp3",
   "instrumentalStart": 44.72570082556089,
-  "instrumentalEnd": 138.213878
+  "instrumentalEnd": 138.213878,
+  "instrumentalFade": true
 }
