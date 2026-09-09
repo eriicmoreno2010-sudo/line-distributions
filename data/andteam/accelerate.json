@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "Accelerate",
   "video": "videos/team_accelerate.mp4",
-  "duration": 0,
+  "duration": 138.882683,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -140,5 +140,6 @@
   "cover": "covers/team_accelerate.jpg",
   "audio": "audio/team_accelerate.mp3",
   "npC1": "#bb00ff",
-  "npC2": "#2ef1ff"
+  "npC2": "#2ef1ff",
+  "audioOffset": -0.05
 }
