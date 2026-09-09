@@ -126,382 +126,697 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.36,
+      "end": 11.81,
       "members": [
         "HARUA"
       ],
       "original": "(Love, love, love 장)",
       "romanization": "(love, love, love jang)",
-      "english": "Love, love, love letter",
-      "adlib": false
+      "english": "(Love, love, love letter)",
+      "adlib": false,
+      "voice": [
+        [
+          10.35,
+          11.8
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 19.08,
+      "end": 20.41,
       "members": [
         "TAKI"
       ],
       "original": "(Love, love, love 장)",
       "romanization": "(love, love, love jang)",
-      "english": "Love, love, love letter",
-      "adlib": false
+      "english": "(Love, love, love letter)",
+      "adlib": false,
+      "voice": [
+        [
+          19.1,
+          20.49
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.91,
+      "end": 23.71,
       "members": [
         "NICHOLAS"
       ],
       "original": "한 번쯤은 난 상상해",
       "romanization": "han beonjjeumeun nan sangsanghae",
       "english": "At least once, I imagine it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21,
+          22.19
+        ],
+        [
+          22.37,
+          23.71
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.38,
+      "end": 28.41,
       "members": [
         "NICHOLAS"
       ],
       "original": "어젯밤에 내 꿈속에",
       "romanization": "eojetbame nae kkumsoge",
       "english": "Last night, in my dream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.36,
+          26.61
+        ],
+        [
+          26.76,
+          28.46
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.83,
+      "end": 32.83,
       "members": [
         "JO"
       ],
       "original": "넌 왜 다 알고 있는 것 같아",
       "romanization": "neon wae da algo inneun geot gata",
       "english": "Why does it feel like you already know everything?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.97,
+          29.53
+        ],
+        [
+          29.96,
+          32.82
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.25,
+      "end": 37.74,
       "members": [
         "JO"
       ],
       "original": "No way 준비한 맘이 떨리게 Yeah",
       "romanization": "no way junbihan mami tteolrige yeah",
       "english": "No way yeah, my prepared heart starts trembling",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.24,
+          34.01
+        ],
+        [
+          34.33,
+          37.91
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 37.94,
+      "end": 41.89,
       "members": [
         "EJ"
       ],
       "original": "내가 느리대 모두가 내게 말해",
       "romanization": "naega neuridae moduga naege malhae",
       "english": "Everyone tells me I’m slow",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          37.79,
+          41.82
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.53,
+      "end": 46.43,
       "members": [
         "EJ"
       ],
       "original": "혹시 이런 나 답답해? 겁이 날 때",
       "romanization": "hoksi ireon na dapdaphae? geobi nal ttae",
       "english": "Am I frustrating because I’m like this? When I’m afraid",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.44,
+          44.44
+        ],
+        [
+          44.68,
+          46.39
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 46.63,
+      "end": 50.76,
       "members": [
         "YUMA"
       ],
       "original": "너의 웃음과 다정한 네 말투가",
       "romanization": "neoui useumgwa dajeonghan ne maltuga",
       "english": "Your smile and your gentle way of speaking",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          46.67,
+          50.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 50.97,
+      "end": 53.11,
       "members": [
         "TAKI"
       ],
       "original": "거짓말처럼 내게 번져가",
       "romanization": "geojinmari cheoreom naege beonjyeoga",
       "english": "Spread through me like a lie",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.01,
+          53.23
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 53.29,
+      "end": 55.29,
       "members": [
         "TAKI"
       ],
       "original": "",
       "romanization": "Got me feeling right, wow",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          53.28,
+          54.55
+        ],
+        [
+          54.73,
+          55.17
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 55.95,
+      "end": 59.65,
       "members": [
         "FUMA"
       ],
       "original": "한 글자 글자마다 Yeah",
       "romanization": "han geulja geuljamada yeah",
       "english": "With every single letter, yeah",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          55.88,
+          56.31
+        ],
+        [
+          56.47,
+          56.87
+        ],
+        [
+          57.03,
+          57.38
+        ],
+        [
+          57.54,
+          58.5
+        ],
+        [
+          58.65,
+          59.67
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.66,
+      "end": 64.07,
       "members": [
         "HARUA"
       ],
       "original": "썼다 또 지웠다 내 맘을 채워가",
       "romanization": "sseotda tto jiwotda nae mameul chaewoga",
       "english": "I write it, then erase it again filling up my heart",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.7,
+          61.4
+        ],
+        [
+          61.9,
+          64.07
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.65,
+      "end": 68.34,
       "members": [
         "MAKI"
       ],
       "original": "수없이 많은 말들 중에",
       "romanization": "sueopsi maneun maldeul junge",
       "english": "Among countless words",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          64.6,
+          65.01
+        ],
+        [
+          65.16,
+          65.58
+        ],
+        [
+          65.73,
+          66.14
+        ],
+        [
+          66.29,
+          68.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.49,
+      "end": 71.06,
       "members": [
         "K"
       ],
       "original": "가장 예쁜 말을 고를게",
       "romanization": "gajang yeppeun mareul goreulge",
       "english": "I’ll choose the prettiest ones",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          68.48,
+          71.11
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.21,
+      "end": 72.66,
       "members": [
         "K"
       ],
       "original": "준비됐어 Just follow",
       "romanization": "junbidwaesseo just follow",
       "english": "I’m ready just follow",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          71.17,
+          72.88
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.81,
+      "end": 76.9,
       "members": [
         "YUMA"
       ],
       "original": "Can you feel me now, 노트 위에 적힌 마음",
       "romanization": "can you feel me now, noteu wie jeogin maeum",
       "english": "Can you feel me now?, The feelings written on the notebook",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.86,
+          73.22
+        ],
+        [
+          73.42,
+          73.73
+        ],
+        [
+          73.88,
+          74.57
+        ],
+        [
+          75.01,
+          76.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 77.11,
+      "end": 81.08,
       "members": [
         "YUMA"
       ],
       "original": "네게로 살며시, 아주 조금씩 천천히",
       "romanization": "negero salmyeosi, aju jogeumssik cheoncheonhi",
       "english": "Slowly, gently, Little by little, toward you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          77.21,
+          78.88
+        ],
+        [
+          79.06,
+          81.06
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.53,
+      "end": 85.42,
       "members": [
         "HARUA"
       ],
       "original": "Take me to your heart, 페이지를 넘기면",
       "romanization": "take me to your heart, peijireul neomgimyeon",
       "english": "Take me to your heart, When you turn the pages",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          81.55,
+          81.96
+        ],
+        [
+          82.12,
+          82.42
+        ],
+        [
+          82.57,
+          83.29
+        ],
+        [
+          83.47,
+          85.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.89,
+      "end": 90.34,
       "members": [
         "HARUA"
       ],
-      "original": "너와 나로 완성될",
-      "romanization": "neowa naro wanseongdoel",
-      "english": "It will be completed with you and me",
-      "adlib": false
+      "original": "너와 나로 완성될, Love, love, love 러브장",
+      "romanization": "neowa naro wanseongdoel, love, love, love reobeujang",
+      "english": "It will be completed with you and me, Love, love, love love letter",
+      "adlib": false,
+      "voice": [
+        [
+          85.91,
+          88.14
+        ],
+        [
+          88.37,
+          88.61
+        ],
+        [
+          88.77,
+          89
+        ],
+        [
+          89.11,
+          89.29
+        ],
+        [
+          89.36,
+          90.35
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "HARUA"
-      ],
-      "original": "Love, love, love 러브장",
-      "romanization": "love, love, love reobeujang",
-      "english": "Love, love, love love letter",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 91.95,
+      "end": 95.35,
       "members": [
         "JO"
       ],
       "original": "너의 취향 너의 고민까지도",
       "romanization": "neoui chwihyang neoui gominkkajido",
       "english": "I’m curious about everything",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          91.89,
+          95.31
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 96.28,
+      "end": 99.17,
       "members": [
         "JO"
       ],
       "original": "빠짐없이 전부 궁금한데",
       "romanization": "ppajimeopsi jeonbu gunggeumhande",
       "english": "From your tastes to even your worries",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.28,
+          99.25
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 99.27,
+      "end": 100.08,
       "members": [
         "NICHOLAS"
       ],
       "original": "",
       "romanization": "Oh, girl...",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          99.3,
+          100.09
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 100.58,
+      "end": 104.57,
       "members": [
         "MAKI"
       ],
       "original": "Everytime I write your name, 나도 몰래",
       "romanization": "everytime i write your name, nado moreuge",
       "english": "Every time I write your name, I can’t help it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          100.57,
+          104.67
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 104.9,
+      "end": 107.21,
       "members": [
         "MAKI"
       ],
       "original": "계속 웃게 돼 넌 마법 같아",
       "romanization": "gyesok utge dwae neon beopbeop gata",
       "english": "I keep smiling you’re like magic",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.06,
+          107.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 107.36,
+      "end": 109.39,
       "members": [
         "EJ"
       ],
       "original": "다음 장 그 다음 장 넘길 때마다",
       "romanization": "daeum jang geu daeum jang neomgil ttaemada",
       "english": "Every time I turn the next page, and the one after that",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.4,
+          109.6
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 109.57,
+      "end": 111.54,
       "members": [
         "EJ"
       ],
       "original": "Feeling high & feeling low 들었다 놨다",
       "romanization": "feeling high & feeling low deureotda nwatda",
       "english": "Feeling high & feeling low you take me up and bring me down",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.62,
+          111.79
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 111.72,
+      "end": 113.91,
       "members": [
         "NICHOLAS"
       ],
       "original": "어디서도 못 봐 이건 Masterpiece",
       "romanization": "eodiseodo mot bwa igeon masterpiece",
       "english": "You won’t find this anywhere else this is a masterpiece",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          111.78,
+          114.04
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 114.06,
+      "end": 116.03,
       "members": [
         "NICHOLAS"
       ],
       "original": "다음 에피소드엔 어떤 우리일까?",
       "romanization": "daeum episodeen eotteon urilkkka?",
       "english": "I wonder what kind of us will be in the next episode",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          114.03,
+          116.23
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 116.21,
+      "end": 120.42,
       "members": [
         "K"
       ],
       "original": "Can you feel me now, 노트 위에 적힌 마음",
       "romanization": "can you feel me now, noteu wie jeogin maeum",
       "english": "Can you feel me now?, The feelings written on the notebook",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.46,
+          116.82
+        ],
+        [
+          117.03,
+          117.32
+        ],
+        [
+          117.47,
+          118.14
+        ],
+        [
+          118.64,
+          120.4
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.8,
+      "end": 124.67,
       "members": [
         "K"
       ],
       "original": "네게로 살며시, 아주 조금씩 천천히",
       "romanization": "negero salmyeosi, aju jogeumssik cheoncheonhi",
       "english": "Slowly, gently, Little by little, toward you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          120.82,
+          122.53
+        ],
+        [
+          122.73,
+          124.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 125.2,
+      "end": 129.09,
       "members": [
         "FUMA"
       ],
       "original": "Take me to your heart, 페이지를 넘기면",
       "romanization": "take me to your heart, peijireul neomgimyeon",
       "english": "Take me to your heart, When you turn the pages",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          125.11,
+          125.56
+        ],
+        [
+          125.74,
+          126.03
+        ],
+        [
+          126.18,
+          126.88
+        ],
+        [
+          127.09,
+          129.23
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 129.53,
+      "end": 131.56,
       "members": [
         "FUMA"
       ],
       "original": "너와 나로 완성될",
       "romanization": "neowa naro wanseongdoel",
       "english": "It will be completed with you and me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.56,
+          131.7
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 131.71,
+      "end": 134.25,
       "members": [
         "&TEAM"
       ],
@@ -511,81 +826,213 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.43,
+      "end": 135.88,
       "members": [
         "EJ"
       ],
       "original": "",
       "romanization": "Hands up, run to your love",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.21,
+          135.94
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 136.09,
+      "end": 138.05,
       "members": [
         "EJ"
       ],
       "original": "",
       "romanization": "Hands up, we gon’ keep it up",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.07,
+          138.04
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 138.23,
+      "end": 140.59,
       "members": [
         "TAKI"
       ],
-      "original": "Baby what’s up, Baby baby what’s up",
-      "romanization": "baby what’s up, baby baby what’s up",
-      "english": "Baby, what’s up?, Baby, baby, what’s up?",
-      "adlib": false
+      "original": "",
+      "romanization": "Baby what’s up, Baby baby what’s up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          138.29,
+          140.62
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 142.91,
+      "end": 146.46,
       "members": [
         "K"
       ],
       "original": "Hands up, run to your love, 마지막 페이지로",
       "romanization": "hands up, run to your love, majimak peijiro",
       "english": "Hands up, run to your love, To the last page",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          142.89,
+          144.57
+        ],
+        [
+          144.78,
+          146.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 146.94,
+      "end": 148.91,
       "members": [
         "JO"
       ],
-      "original": "Baby what’s up, Baby baby what’s up",
-      "romanization": "baby what’s up, baby baby what’s up",
-      "english": "Baby, what’s up?, Baby, baby, what’s up?",
-      "adlib": false
+      "original": "",
+      "romanization": "Baby what’s up, Baby baby what’s up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          146.95,
+          149.38
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 149.09,
+      "end": 151.16,
       "members": [
         "HARUA"
       ],
       "original": "너로 채워갈게",
       "romanization": "neoro chaewogalge",
       "english": "I’ll fill it all with you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          149.15,
+          149.56
+        ],
+        [
+          149.77,
+          150.03
+        ],
+        [
+          150.19,
+          151.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 151.29,
+      "end": 157.46,
       "members": [
         "YUMA"
       ],
       "original": "Can you feel me now, 이 노트 위에 적힌 마음 Yeah",
       "romanization": "can you feel me now, i noteu wie jeogin maeum yeah",
       "english": "Can you feel me now?, The feelings written on this notebook yeah",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          151.38,
+          151.76
+        ],
+        [
+          151.91,
+          153.09
+        ],
+        [
+          153.3,
+          155.59
+        ],
+        [
+          156.28,
+          157.45
+        ]
+      ]
+    },
+    {
+      "start": 29.46,
+      "end": 30.11,
+      "members": [
+        "JO"
+      ],
+      "original": "(넌 왜)",
+      "romanization": "(neon wae)",
+      "english": "(Why does)",
+      "adlib": true
+    },
+    {
+      "start": 32.8,
+      "end": 33.52,
+      "members": [
+        "JO"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 33.85,
+      "end": 34.49,
+      "members": [
+        "JO"
+      ],
+      "original": "",
+      "romanization": "(No way)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 90.57,
+      "end": 90.95,
+      "members": [
+        "JO"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 95.22,
+      "end": 96.62,
+      "members": [
+        "JO"
+      ],
+      "original": "(까지도)",
+      "romanization": "(kkajido)",
+      "english": "(-thing)",
+      "adlib": true
+    },
+    {
+      "start": 103.79,
+      "end": 105.21,
+      "members": [
+        "MAKI"
+      ],
+      "original": "(-도 몰)",
+      "romanization": "(-do moreu)",
+      "english": "(Can't help)",
+      "adlib": true
     },
     {
       "start": 0,
@@ -599,10 +1046,10 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 115.7,
+      "end": 116.45,
       "members": [
-        "MAKI"
+        "K"
       ],
       "original": "",
       "romanization": "(Let's go)",
@@ -610,8 +1057,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 118.14,
+      "end": 119.41,
       "members": [
         "YUMA"
       ],
@@ -621,8 +1068,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.01,
+      "end": 120.89,
       "members": [
         "YUMA"
       ],
@@ -632,8 +1079,19 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 124.38,
+      "end": 125.31,
+      "members": [
+        "YUMA"
+      ],
+      "original": "",
+      "romanization": "(Oh hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 126.84,
+      "end": 128.95,
       "members": [
         "MAKI"
       ],
@@ -643,8 +1101,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 133.89,
+      "end": 135.72,
       "members": [
         "NICHOLAS"
       ],
@@ -654,8 +1112,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 135.82,
+      "end": 136.63,
       "members": [
         "NICHOLAS"
       ],
@@ -665,8 +1123,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 137.42,
+      "end": 140.51,
       "members": [
         "NICHOLAS"
       ],
@@ -676,10 +1134,10 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 144.35,
+      "end": 145.22,
       "members": [
-        "YUMA"
+        "HARUA"
       ],
       "original": "",
       "romanization": "(Woo)",
@@ -687,10 +1145,10 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 146.12,
+      "end": 147.68,
       "members": [
-        "YUMA"
+        "HARUA"
       ],
       "original": "",
       "romanization": "(Yeah)",
