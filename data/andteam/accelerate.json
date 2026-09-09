@@ -1148,5 +1148,6 @@
   "audio": "audio/team_accelerate.mp3",
   "npC1": "#bb00ff",
   "npC2": "#2ef1ff",
-  "audioOffset": -0.4
+  "audioOffset": -0.4,
+  "instrumental": "audio/team_accelerate_inst.mp3"
 }
