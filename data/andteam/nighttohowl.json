@@ -134,7 +134,13 @@
       "original": "툭 걸친 달빛은 My jacket",
       "romanization": "tuk geochin dalbicheun my jacket",
       "english": "The moonlight casually draped over me, my jacket",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          17.33,
+          19.84
+        ]
+      ]
     },
     {
       "start": 20.03,
@@ -145,7 +151,13 @@
       "original": "Dress up 이미 충분해",
       "romanization": "dress up imi chungbunhae",
       "english": "Dress up, it’s already enough",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          20.11,
+          22.33
+        ]
+      ]
     },
     {
       "start": 22.69,
@@ -156,7 +168,13 @@
       "original": "본능적 떨림은 처음인 이 느낌",
       "romanization": "bonneungjeok tteollimeun cheoeumin i neukkim",
       "english": "This instinctive trembling, this feeling I’ve never felt before",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          22.69,
+          25.42
+        ]
+      ]
     },
     {
       "start": 25.54,
@@ -167,7 +185,13 @@
       "original": "내 마음은 뭘까",
       "romanization": "nae maeumeun mwolkka",
       "english": "What could my heart be feeling?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.42,
+          26.69
+        ]
+      ]
     },
     {
       "start": 27.62,
@@ -178,7 +202,21 @@
       "original": "I’m like Ohh, 밤이 새도록 Let's get crazy, 운명일 테지",
       "romanization": "i’m like ohh, bami saedorok let’s get crazy, unmyeongil teji",
       "english": "I’m like, ohh, Let’s get crazy until dawn, It must be fate",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.56,
+          27.94
+        ],
+        [
+          28.09,
+          32.26
+        ],
+        [
+          32.41,
+          33.59
+        ]
+      ]
     },
     {
       "start": 33.61,
@@ -189,7 +227,17 @@
       "original": "Ohh, 오늘은 말야, 솔직한 맘을 내게 Shout it for you, so",
       "romanization": "ohh, oneureun marya, soljikhan mameul naege shout it for you, so",
       "english": "Ohh, Tonight tell me, Your honest feelings shout it for you, so",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.69,
+          36.49
+        ],
+        [
+          36.64,
+          39.17
+        ]
+      ]
     },
     {
       "start": 39.22,
@@ -200,7 +248,13 @@
       "original": "Something chemical, So incredible, 바로 지금야",
       "romanization": "something chemical, so incredible, baro jigeumya",
       "english": "Something chemical, So incredible, It’s right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          39.23,
+          43.63
+        ]
+      ]
     },
     {
       "start": 43.91,
@@ -211,7 +265,13 @@
       "original": "내 손을 잡아 힘껏 외쳐",
       "romanization": "nae soneul jaba himkkeot oechyeo",
       "english": "Take my hand and shout with all your strength",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.18,
+          47.46
+        ]
+      ]
     },
     {
       "start": 47.54,
@@ -222,7 +282,13 @@
       "original": "",
       "romanization": "A night to howl, I’m calling ah you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          47.45,
+          51.28
+        ]
+      ]
     },
     {
       "start": 53.04,
@@ -233,7 +299,13 @@
       "original": "온 세상을 채워 You’re my full moon",
       "romanization": "on sesangeul chaewo you’re my full moon",
       "english": "Fill the whole world you’re my full moon",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          53.15,
+          55.94
+        ]
+      ]
     },
     {
       "start": 55.84,
@@ -244,7 +316,13 @@
       "original": "너를 향한 설렘, 더 가득 담아 Falling to you",
       "romanization": "neoreul hyanghan seollem, deo gadeuk dama falling to you",
       "english": "All the excitement I feel for you, I’ll fill it up even more falling to you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          55.86,
+          62.28
+        ]
+      ]
     },
     {
       "start": 64.21,
@@ -255,7 +333,13 @@
       "original": "이 밤 오직 너를 위한 선물",
       "romanization": "i bam ojik neoreul wihan seonmul",
       "english": "A gift meant only for you tonight",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          64.18,
+          67.12
+        ]
+      ]
     },
     {
       "start": 26.71,
@@ -299,7 +383,13 @@
       "original": "",
       "romanization": "Night howl!",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.35,
+          70.33
+        ]
+      ]
     },
     {
       "start": 67.23,
@@ -321,7 +411,13 @@
       "original": "",
       "romanization": "Night howl!",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.12,
+          72.93
+        ]
+      ]
     },
     {
       "start": 69.97,
@@ -354,7 +450,21 @@
       "original": "더 크게 외쳐",
       "romanization": "deo keuge oechyeo",
       "english": "Shout it louder",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.88,
+          75.63
+        ],
+        [
+          75.81,
+          76.13
+        ],
+        [
+          76.29,
+          76.84
+        ]
+      ]
     },
     {
       "start": 76.98,
@@ -442,7 +552,13 @@
       "original": "심장 속은 No brakes, Girl you make my heart shake",
       "romanization": "simjang sogeun no brakes, girl you make my heart shake",
       "english": "No brakes in my heart, Girl, you make my heart shake",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          77.94,
+          80.82
+        ]
+      ]
     },
     {
       "start": 80.8,
@@ -453,7 +569,13 @@
       "original": "아낌없이 다 줄 거야",
       "romanization": "akkimeopsi da jul geoya",
       "english": "I’ll give you everything without holding back",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.86,
+          82.65
+        ]
+      ]
     },
     {
       "start": 83.6,
@@ -464,7 +586,13 @@
       "original": "터지는 Night howl, 너를 향한 Big shout",
       "romanization": "teojineun night howl, neoreul hyanghan big shout",
       "english": "A bursting Night howl, A Big shout for you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.61,
+          86.35
+        ]
+      ]
     },
     {
       "start": 86.34,
@@ -475,7 +603,13 @@
       "original": "어디든 밝게 빛날 거야",
       "romanization": "eodideun balkge binnal geoya",
       "english": "I’ll shine brightly wherever I go",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.22,
+          88.09
+        ]
+      ]
     },
     {
       "start": 88.62,
@@ -486,7 +620,13 @@
       "original": "좀 더 솔직해도 좋을 걸",
       "romanization": "jom deo soljikhaedo joeul geol",
       "english": "It’d be nice to be a little more honest",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          88.66,
+          91.31
+        ]
+      ]
     },
     {
       "start": 91.39,
@@ -497,7 +637,13 @@
       "original": "",
       "romanization": "Nobody does it, does it like you do",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          91.45,
+          93.93
+        ]
+      ]
     },
     {
       "start": 94.19,
@@ -508,7 +654,13 @@
       "original": "숨기지 않아 네 앞에선",
       "romanization": "sumgiji ana ne apeseon",
       "english": "I don’t hide it in front of you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          94.17,
+          96.82
+        ]
+      ]
     },
     {
       "start": 96.91,
@@ -519,7 +671,17 @@
       "original": "감추고 싶지 않은 내 본능, 어때?",
       "romanization": "gamchugo sipji aneun nae bonneung, eottae?",
       "english": "I don’t want to hide this instinct of mine, What do you think?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.93,
+          99.58
+        ],
+        [
+          99.76,
+          100.26
+        ]
+      ]
     },
     {
       "start": 100.25,
@@ -530,7 +692,13 @@
       "original": "Something magical, 너와 있으면, 놀라울 뿐야",
       "romanization": "something magical, neowa isseumyeon, nollawoul ppunya",
       "english": "Something magical, When I’m with you, It’s simply incredible",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          100.22,
+          104.68
+        ]
+      ]
     },
     {
       "start": 105.2,
@@ -541,7 +709,13 @@
       "original": "내 손을 잡아 힘껏 외쳐",
       "romanization": "nae soneul jaba himkkeot oechyeo",
       "english": "Take my hand and shout with all your strength",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.18,
+          108.46
+        ]
+      ]
     },
     {
       "start": 108.52,
@@ -552,7 +726,13 @@
       "original": "",
       "romanization": "A night to howl, I’m calling ah you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          108.45,
+          112.3
+        ]
+      ]
     },
     {
       "start": 114.1,
@@ -563,7 +743,13 @@
       "original": "온 세상을 채워 You’re my full moon",
       "romanization": "on sesangeul chaewo you’re my full moon",
       "english": "Fill the whole world you’re my full moon",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          114.18,
+          116.92
+        ]
+      ]
     },
     {
       "start": 116.89,
@@ -574,7 +760,13 @@
       "original": "너를 향한 설렘",
       "romanization": "neoreul hyanghan seollem",
       "english": "All the excitement I feel for you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.89,
+          119.51
+        ]
+      ]
     },
     {
       "start": 119.49,
@@ -585,7 +777,13 @@
       "original": "더 가득 담아 Falling to you",
       "romanization": "deo gadeuk dama falling to you",
       "english": "I’ll fill it up even more falling to you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.54,
+          123.39
+        ]
+      ]
     },
     {
       "start": 124.84,
@@ -596,7 +794,13 @@
       "original": "더 크게 외쳐",
       "romanization": "deo keuge oechyeo",
       "english": "Shout it louder",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          124.87,
+          126.83
+        ]
+      ]
     },
     {
       "start": 128.97,
@@ -607,7 +811,13 @@
       "original": "유난히 아름답던 달 빛 아래",
       "romanization": "yunanhi areumdapdeon dalbit arae",
       "english": "Under the exceptionally beautiful moonlight",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          128.89,
+          134.32
+        ]
+      ]
     },
     {
       "start": 134.52,
@@ -618,7 +828,13 @@
       "original": "수줍게 웃던 너와 나",
       "romanization": "sujupge utdeon neowa na",
       "english": "You and I, smiling shyly",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.5,
+          139.19
+        ]
+      ]
     },
     {
       "start": 141.85,
@@ -629,7 +845,13 @@
       "original": "",
       "romanization": "In the twilight, In the twilight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.9,
+          147.39
+        ]
+      ]
     },
     {
       "start": 147.44,
@@ -673,7 +895,13 @@
       "original": "밤새 울려 퍼질, 널 향한 Howl",
       "romanization": "bamsae ullyeo peojil, neol hyanghan howl",
       "english": "The Howl for you, That will echo throughout the night",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          150.17,
+          154.59
+        ]
+      ]
     },
     {
       "start": 154.58,
@@ -684,7 +912,13 @@
       "original": "",
       "romanization": "I'm calling ah you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.58,
+          156.69
+        ]
+      ]
     },
     {
       "start": 158.51,
@@ -695,7 +929,13 @@
       "original": "우릴 향해 쏟아지는 Full moon",
       "romanization": "uril hyanghae ssodajineun full moon",
       "english": "A full moon pouring down upon us",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          158.51,
+          161.3
+        ]
+      ]
     },
     {
       "start": 161.28,
@@ -706,7 +946,13 @@
       "original": "오늘 밤도 Perfect",
       "romanization": "oneul bamdo perfect",
       "english": "Tonight is Perfect too",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          161.33,
+          163.87
+        ]
+      ]
     },
     {
       "start": 163.96,
@@ -717,7 +963,13 @@
       "original": "",
       "romanization": "A night to howl, I'm falling to you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          163.96,
+          167.73
+        ]
+      ]
     },
     {
       "start": 169.66,
@@ -728,7 +980,13 @@
       "original": "고백할게 내 맘 전부 줄래",
       "romanization": "gobaekhalge nae mam jeonbu jullae",
       "english": "I’ll confess it all will you let me give you my whole heart?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          169.64,
+          172.52
+        ]
+      ]
     },
     {
       "start": 172.72,
@@ -750,7 +1008,13 @@
       "original": "",
       "romanization": "Night howl!",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          174.8,
+          175.65
+        ]
+      ]
     },
     {
       "start": 175.44,
@@ -772,7 +1036,13 @@
       "original": "",
       "romanization": "Night howl!",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          177.59,
+          178.46
+        ]
+      ]
     },
     {
       "start": 178.21,
@@ -794,7 +1064,21 @@
       "original": "더 크게 외쳐",
       "romanization": "deo keuge oechyeo",
       "english": "Shout it louder",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          180.31,
+          181.12
+        ],
+        [
+          181.27,
+          181.63
+        ],
+        [
+          181.78,
+          182.3
+        ]
+      ]
     },
     {
       "start": 182.38,
@@ -805,7 +1089,13 @@
       "original": "",
       "romanization": "I’m calling you tonight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          182.23,
+          183.47
+        ]
+      ]
     },
     {
       "start": 183.52,
@@ -816,7 +1106,21 @@
       "original": "크게 외쳐",
       "romanization": "keuge oechyeo",
       "english": "Shout it loud",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          183.53,
+          183.91
+        ],
+        [
+          184.06,
+          184.39
+        ],
+        [
+          184.54,
+          185
+        ]
+      ]
     },
     {
       "start": 185.19,
