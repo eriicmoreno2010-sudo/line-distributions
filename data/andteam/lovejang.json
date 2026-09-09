@@ -1266,5 +1266,6 @@
   "audio": "audio/team_lovejang.mp3",
   "npC1": "#ea4859",
   "npC2": "#f08ee3",
-  "audioOffset": -0.55
+  "audioOffset": -0.55,
+  "instrumental": "audio/team_lovejang_inst.mp3"
 }
