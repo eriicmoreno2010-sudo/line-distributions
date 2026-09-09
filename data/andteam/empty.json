@@ -551,5 +551,6 @@
       "adlib": false
     }
   ],
-  "cover": "covers/team_empty.jpg"
+  "cover": "covers/team_empty.jpg",
+  "audio": "audio/team_empty.mp3"
 }
