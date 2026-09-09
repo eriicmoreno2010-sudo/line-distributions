@@ -84,5 +84,6 @@
     }
   ],
   "cover": "covers/team_nighttohowl.jpg",
-  "npC1": "#858585"
+  "npC1": "#858585",
+  "npC2": "#ffee2e"
 }
