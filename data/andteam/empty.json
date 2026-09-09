@@ -126,8 +126,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 7.81,
+      "end": 11.06,
       "members": [
         "NICHOLAS"
       ],
@@ -137,8 +137,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.24,
+      "end": 14.03,
       "members": [
         "NICHOLAS"
       ],
@@ -148,8 +148,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.53,
+      "end": 17.78,
       "members": [
         "EJ"
       ],
@@ -159,8 +159,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.02,
+      "end": 20.76,
       "members": [
         "EJ"
       ],
@@ -170,8 +170,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 21.53,
+      "end": 28.12,
       "members": [
         "TAKI"
       ],
@@ -181,8 +181,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.16,
+      "end": 33.7,
       "members": [
         "JO"
       ],
@@ -192,207 +192,253 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 35.74,
+      "end": 45.4,
+      "members": [
+        "MAKI"
+      ],
       "original": "네가 없인 Empty, 다치고 해진, 날 안아줘",
       "romanization": "nega eopsin empty, dachigo haejin, nal anajwo",
       "english": "Without you, I’m empty, Hold me, Wounded and worn out",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 45.64,
+      "end": 48.51,
+      "members": [
+        "MAKI"
+      ],
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 49.19,
+      "end": 58.66,
+      "members": [
+        "YUMA"
+      ],
       "original": "서툰 고백 대신, 다짐을 했지, That I’m yours",
       "romanization": "seotun gobaek daesin, dajimeul haetji, that i’m yours",
       "english": "Instead of a clumsy confession, I made a promise, That I’m yours",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 58.96,
+      "end": 61.87,
+      "members": [
+        "YUMA"
+      ],
       "original": "",
       "romanization": "So I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 61.91,
+      "end": 65.13,
+      "members": [
+        "TAKI"
+      ],
       "original": "덮쳐오는 밤 떠오른 달",
       "romanization": "deopchyeooneun bam tteooreun dal",
       "english": "The night that comes crashing down, the moon that rises",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 65.31,
+      "end": 68.47,
+      "members": [
+        "TAKI"
+      ],
       "original": "흉측한 내 그림자",
       "romanization": "hyungcheuthan nae geurimja",
       "english": "My grotesque shadow",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 68.63,
+      "end": 71.9,
+      "members": [
+        "FUMA"
+      ],
       "original": "내 칼날 같은 이 나약함이",
       "romanization": "nae kallal gateun i nayakhami",
       "english": "I don’t know if this weakness of mine",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 72.06,
+      "end": 75.28,
+      "members": [
+        "FUMA"
+      ],
       "original": "널 다치게 할지 몰라",
       "romanization": "neol dachige halji molla",
       "english": "Sharp as a blade, might hurt you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 75.63,
+      "end": 82.07,
+      "members": [
+        "JO"
+      ],
       "original": "I’m just a freak, 구멍 난 맘 채우듯 내 앞에",
       "romanization": "i’m just a freak, gumeong nan mam chaeudeut nae ape",
       "english": "I’m just a freak, As if you were filling the hole in my heart",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 82.25,
+      "end": 87.51,
+      "members": [
+        "EJ"
+      ],
       "original": "넌 천사처럼 나타나, 이건 구원일까",
       "romanization": "neon cheonsacheoreom natana, igeon guwonilkka",
       "english": "You appeared before me like an angel, Could this be salvation?",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 89.75,
+      "end": 99.35,
+      "members": [
+        "K"
+      ],
       "original": "네가 없인 Empty, 다치고 해진, 날 감싸줘",
       "romanization": "nega eopsin empty, dachigo haejin, nal gamssajwo",
       "english": "Without you, I’m empty, Embrace me, Wounded and worn out",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 99.72,
+      "end": 102.66,
+      "members": [
+        "K"
+      ],
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 103.27,
+      "end": 112.81,
+      "members": [
+        "HARUA"
+      ],
       "original": "My only remedy, 있어줘 여기, 내 곁에서",
       "romanization": "my only remedy, isseojwo yeogi, nae gyeoteseo",
       "english": "My only remedy, Stay here, By my side",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 113.13,
+      "end": 116.03,
+      "members": [
+        "HARUA"
+      ],
       "original": "",
       "romanization": "So I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 116.99,
+      "end": 119.39,
+      "members": [
+        "MAKI"
+      ],
       "original": "",
       "romanization": "Keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 119.88,
+      "end": 122.81,
+      "members": [
+        "MAKI"
+      ],
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 123.37,
+      "end": 127.22,
+      "members": [
+        "MAKI"
+      ],
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 130.16,
+      "end": 139.98,
+      "members": [
+        "YUMA"
+      ],
       "original": "네가 없인 Empty, 다치고 해진, 날 안아줘",
       "romanization": "nega eopsin empty, dachigo haejin, nal anajwo",
       "english": "Without you, I’m empty, Hold me, Wounded and worn out",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 140.25,
+      "end": 143.18,
+      "members": [
+        "YUMA"
+      ],
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 143.86,
+      "end": 153.45,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "네 이름을 새길, 이 생의 Ending, Yeah I’m yours",
       "romanization": "ne ireumeul saegil, i saengui ending, yeah i’m yours",
       "english": "The ending of this life, Where I’ll carve your name, Yeah I’m yours",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 153.74,
+      "end": 156.67,
+      "members": [
+        "NICHOLAS"
+      ],
       "original": "",
       "romanization": "So I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 160.53,
+      "end": 163.32,
+      "members": [
+        "K"
+      ],
       "original": "",
       "romanization": "Yeah I keep coming back for more",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 170.65,
+      "end": 174.34,
+      "members": [
+        "HARUA"
+      ],
       "original": "",
       "romanization": "So I keep coming back..",
       "english": "",
@@ -416,7 +462,7 @@
         "FUMA"
       ],
       "original": "",
-      "romanization": "(Ending, Yeah I'm yours)",
+      "romanization": "(I’m yours, yeah)",
       "english": "",
       "adlib": true
     },
