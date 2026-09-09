@@ -2,7 +2,7 @@
   "group": "&TEAM",
   "song": "Night to howl!",
   "video": "videos/team_nighttohowl.mp4",
-  "duration": 0,
+  "duration": 193.233333,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -74,17 +74,637 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "K"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "툭 걸친 달빛은 My jacket",
+      "romanization": "tuk geochin dalbicheun my jacket",
+      "english": "The moonlight casually draped over me, my jacket",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dress up 이미 충분해",
+      "romanization": "dress up imi chungbunhae",
+      "english": "Dress up, it’s already enough",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "본능적 떨림은 처음인 이 느낌",
+      "romanization": "bonneungjeok tteollimeun cheoeumin i neukkim",
+      "english": "This instinctive trembling, this feeling I’ve never felt before",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 마음은 뭘까 (Want to say)",
+      "romanization": "nae maeumeun mwolkka want to say",
+      "english": "What could my heart be feeling? Want to say",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m like Ohh",
+      "romanization": "i’m like ohh",
+      "english": "I’m like, ohh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "밤이 새도록 Let's get crazy",
+      "romanization": "bami saedorok let’s get crazy",
+      "english": "Let’s get crazy until dawn",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "운명일 테지",
+      "romanization": "unmyeongil teji",
+      "english": "It must be fate",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ohh",
+      "romanization": "ohh",
+      "english": "Ohh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "오늘은 말야",
+      "romanization": "oneureun marya",
+      "english": "Tonight tell me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "솔직한 맘을 내게 Shout it for you, so",
+      "romanization": "soljikhan mameul naege shout it for you, so",
+      "english": "Your honest feelings shout it for you, so",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Something chemical",
+      "romanization": "something chemical",
+      "english": "Something chemical",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So incredible",
+      "romanization": "so incredible",
+      "english": "So incredible",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "바로 지금야",
+      "romanization": "baro jigeumya",
+      "english": "It’s right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 손을 잡아 힘껏 외쳐",
+      "romanization": "nae soneul jaba himkkeot oechyeo",
+      "english": "Take my hand and shout with all your strength",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "A night to howl",
+      "romanization": "a night to howl",
+      "english": "A night to howl",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m calling ah you (Awoo)",
+      "romanization": "i’m calling ah you awoo",
+      "english": "I’m calling, ah, you Awoo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "온 세상을 채워 You’re my full moon",
+      "romanization": "on sesangeul chaewo you’re my full moon",
+      "english": "Fill the whole world you’re my full moon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너를 향한 설렘",
+      "romanization": "neoreul hyanghan seollem",
+      "english": "All the excitement I feel for you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 가득 담아 Falling to you (Awoo)",
+      "romanization": "deo gadeuk dama falling to you awoo",
+      "english": "I’ll fill it up even more falling to you awoo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 밤 오직 너를 위한 선물",
+      "romanization": "i bam ojik neoreul wihan seonmul",
+      "english": "A gift meant only for you tonight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Ooh Awoo)",
+      "romanization": "ooh awoo",
+      "english": "Ooh, awoo",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Night howl!",
+      "romanization": "night howl!",
+      "english": "Night howl!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Ooh Awoo)",
+      "romanization": "ooh awoo",
+      "english": "Ooh, awoo",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Night howl!",
+      "romanization": "night howl!",
+      "english": "Night howl!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Ooh Awoo)",
+      "romanization": "ooh awoo",
+      "english": "Ooh, awoo",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 크게 외쳐",
+      "romanization": "deo keuge oechyeo",
+      "english": "Shout it louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Awoo",
+      "romanization": "awoo",
+      "english": "Awoo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "심장 속은 No brakes",
+      "romanization": "simjang sogeun no brakes",
+      "english": "No brakes in my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Girl you make my heart shake",
+      "romanization": "girl you make my heart shake",
+      "english": "Girl, you make my heart shake",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아낌없이 다 줄 거야 (All day!)",
+      "romanization": "akkimeopsi da jul geoya all day!",
+      "english": "I’ll give you everything without holding back (All day!)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터지는 Night howl",
+      "romanization": "teojineun night howl",
+      "english": "A bursting Night howl",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너를 향한 Big shout",
+      "romanization": "neoreul hyanghan big shout",
+      "english": "A Big shout for you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어디든 밝게 빛날 거야 (That’s right!)",
+      "romanization": "eodideun balkge binnal geoya that’s right!",
+      "english": "I’ll shine brightly wherever I go (That’s right!)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "좀 더 솔직해도 좋을 걸",
+      "romanization": "jom deo soljikhaedo joeul geol",
+      "english": "It’d be nice to be a little more honest",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Nobody does it, does it like you do",
+      "romanization": "nobody does it, does it like you do",
+      "english": "Nobody does it, does it like you do",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨기지 않아 네 앞에선",
+      "romanization": "sumgiji ana ne apeseon",
+      "english": "I don’t hide it in front of you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "감추고 싶지 않은 내 본능",
+      "romanization": "gamchugo sipji aneun nae bonneung",
+      "english": "I don’t want to hide this instinct of mine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어때?",
+      "romanization": "eottae?",
+      "english": "What do you think?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Something magical",
+      "romanization": "something magical",
+      "english": "Something magical",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너와 있으면",
+      "romanization": "neowa isseumyeon",
+      "english": "When I’m with you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "놀라울 뿐야",
+      "romanization": "nollawoul ppunya",
+      "english": "It’s simply incredible",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 손을 잡아 힘껏 외쳐",
+      "romanization": "nae soneul jaba himkkeot oechyeo",
+      "english": "Take my hand and shout with all your strength",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "A night to howl",
+      "romanization": "a night to howl",
+      "english": "A night to howl",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m calling ah you (Awoo)",
+      "romanization": "i’m calling ah you awoo",
+      "english": "I’m calling, ah, you Awoo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "온 세상을 채워 You’re my full moon",
+      "romanization": "on sesangeul chaewo you’re my full moon",
+      "english": "Fill the whole world you’re my full moon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너를 향한 설렘",
+      "romanization": "neoreul hyanghan seollem",
+      "english": "All the excitement I feel for you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 가득 담아 Falling to you (Awoo)",
+      "romanization": "deo gadeuk dama falling to you (awoo)",
+      "english": "I’ll fill it up even more falling to you (Awoo)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 크게 외쳐 (Awoo)",
+      "romanization": "deo keuge oechyeo (awoo)",
+      "english": "Shout it louder (Awoo)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "유난히 아름답던 달 빛 아래",
+      "romanization": "yunanhi areumdapdeon dalbit arae",
+      "english": "Under the exceptionally beautiful moonlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "수줍게 웃던 너와 나",
+      "romanization": "sujupge utdeon neowa na",
+      "english": "You and I, smiling shyly",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "In the twilight",
+      "romanization": "in the twilight",
+      "english": "In the twilight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(In the twilight)",
+      "romanization": "in the twilight",
+      "english": "In the twilight",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "In the twilight",
+      "romanization": "in the twilight",
+      "english": "In the twilight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "밤새 울려 퍼질",
+      "romanization": "bamsae ullyeo peojil",
+      "english": "The Howl for you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "널 향한 Howl",
+      "romanization": "neol hyanghan howl",
+      "english": "That will echo throughout the night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm calling ah you (Awoo)",
+      "romanization": "i’m calling ah you (awoo)",
+      "english": "I’m calling, ah, you (Awoo)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우릴 향해 쏟아지는 Full moon",
+      "romanization": "uril hyanghae ssodajineun full moon",
+      "english": "A full moon pouring down upon us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "오늘 밤도 Perfect",
+      "romanization": "oneul bamdo perfect",
+      "english": "Tonight is Perfect too",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "A night to howl",
+      "romanization": "a night to howl",
+      "english": "A night to howl",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm falling to you (Awoo)",
+      "romanization": "i’m falling to you (awoo)",
+      "english": "I’m falling to you (Awoo)",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "고백할게 내 맘 전부 줄래",
+      "romanization": "gobaekhalge nae mam jeonbu jullae",
+      "english": "I’ll confess it all will you let me give you my whole heart?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Ooh Awoo)",
+      "romanization": "ooh awoo",
+      "english": "Ooh, awoo",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Night howl!",
+      "romanization": "night howl!",
+      "english": "Night howl!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Ooh Awoo)",
+      "romanization": "ooh awoo",
+      "english": "Ooh, awoo",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Night howl!",
+      "romanization": "night howl!",
+      "english": "Night howl!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Ooh Awoo)",
+      "romanization": "ooh awoo",
+      "english": "Ooh, awoo",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 크게 외쳐",
+      "romanization": "deo keuge oechyeo",
+      "english": "Shout it louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m calling you tonight",
+      "romanization": "i’m calling you tonight",
+      "english": "I’m calling you tonight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "크게 외쳐",
+      "romanization": "keuge oechyeo",
+      "english": "Shout it loud",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Awoo",
+      "romanization": "awoo",
+      "english": "Awoo",
+      "adlib": false
     }
   ],
   "cover": "covers/team_nighttohowl.jpg",
   "npC1": "#858585",
   "npC2": "#ffee2e",
-  "audio": "audio/team_nighttohowl.mp3"
+  "audio": "audio/team_nighttohowl.mp3",
+  "audioOffset": -0.05
 }
