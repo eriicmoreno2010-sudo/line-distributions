@@ -1071,15 +1071,21 @@
       ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 140.97,
+      "end": 142.62,
       "members": [
         "TAKI"
       ],
       "original": "",
       "romanization": "(Baby, baby, what’s up?)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          140.99,
+          142.61
+        ]
+      ]
     },
     {
       "start": 115.7,
