@@ -258,8 +258,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.71,
+      "end": 27.78,
       "members": [
         "&TEAM"
       ],
@@ -269,8 +269,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.33,
+      "end": 52.98,
       "members": [
         "&TEAM"
       ],
@@ -280,8 +280,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.33,
+      "end": 64.06,
       "members": [
         "&TEAM"
       ],
@@ -302,8 +302,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 67.23,
+      "end": 69.1,
       "members": [
         "&TEAM"
       ],
@@ -324,8 +324,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.97,
+      "end": 71.99,
       "members": [
         "&TEAM"
       ],
@@ -335,8 +335,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.71,
+      "end": 74.76,
       "members": [
         "&TEAM"
       ],
@@ -357,8 +357,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 76.98,
+      "end": 78.53,
       "members": [
         "&TEAM"
       ],
@@ -368,8 +368,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.5,
+      "end": 83.54,
       "members": [
         "EJ"
       ],
@@ -379,8 +379,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.13,
+      "end": 89.17,
       "members": [
         "JO"
       ],
@@ -390,8 +390,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.45,
+      "end": 99.55,
       "members": [
         "MAKI"
       ],
@@ -401,8 +401,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 112.42,
+      "end": 114.06,
       "members": [
         "&TEAM"
       ],
@@ -412,8 +412,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 123.49,
+      "end": 125.07,
       "members": [
         "&TEAM"
       ],
@@ -423,8 +423,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 127.01,
+      "end": 128.99,
       "members": [
         "&TEAM"
       ],
@@ -632,8 +632,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 147.44,
+      "end": 150.32,
       "members": [
         "MAKI"
       ],
@@ -643,8 +643,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 156.75,
+      "end": 158.43,
       "members": [
         "&TEAM"
       ],
@@ -654,8 +654,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.88,
+      "end": 169.55,
       "members": [
         "&TEAM"
       ],
@@ -731,8 +731,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 172.72,
+      "end": 174.54,
       "members": [
         "&TEAM"
       ],
@@ -753,8 +753,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 175.44,
+      "end": 177.43,
       "members": [
         "&TEAM"
       ],
@@ -775,8 +775,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 178.21,
+      "end": 180.06,
       "members": [
         "&TEAM"
       ],
@@ -819,24 +819,13 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 185.19,
+      "end": 187.18,
       "members": [
         "&TEAM"
       ],
       "original": "",
       "romanization": "(Awoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "&TEAM"
-      ],
-      "original": "",
-      "romanization": "(Ooh Awoo)",
       "english": "",
       "adlib": true
     }
