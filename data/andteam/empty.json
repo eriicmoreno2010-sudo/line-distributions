@@ -747,5 +747,6 @@
   "audio": "audio/team_empty.mp3",
   "npC1": "#000000",
   "npC2": "#ffffff",
-  "audioOffset": -0.3
+  "audioOffset": -0.3,
+  "instrumental": "audio/team_empty_inst.mp3"
 }
