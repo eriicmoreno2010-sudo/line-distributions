@@ -126,15 +126,1022 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.09,
+      "end": 12.06,
       "members": [
         "K"
       ],
+      "original": "여긴 어딜까, 이젠 막다른 Runway",
+      "romanization": "yeogin eodilkka, ijen makdareun runway",
+      "english": "Where are we?, Now it’s a dead-end Runway",
+      "adlib": false,
+      "voice": [
+        [
+          9.15,
+          12.05
+        ]
+      ]
+    },
+    {
+      "start": 12.53,
+      "end": 16.87,
+      "members": [
+        "K"
+      ],
+      "voice": [
+        [
+          12.67,
+          16.94
+        ]
+      ],
+      "original": "비틀대는 두 다리와, 멎을 듯한 Heart",
+      "romanization": "biteuldaeneun du dariwa, meojeul deuthan heart",
+      "english": "With my two unsteady legs, And a Heart that feels like it might stop",
+      "adlib": false
+    },
+    {
+      "start": 17.82,
+      "end": 20.74,
+      "members": [
+        "YUMA"
+      ],
+      "voice": [
+        [
+          17.99,
+          20.83
+        ]
+      ],
+      "original": "끝을 예감했던, 바로 그 순간 내게",
+      "romanization": "kkeuteul yegamhaetdeon, baro geu sungan naege",
+      "english": "At that very moment, When I sensed the end",
+      "adlib": false
+    },
+    {
+      "start": 21.49,
+      "end": 25.99,
+      "members": [
+        "YUMA"
+      ],
+      "voice": [
+        [
+          21.58,
+          24.33
+        ],
+        [
+          24.51,
+          26.13
+        ]
+      ],
+      "original": "드리운 너의 푸른 눈동자, 나를 깨운 손길",
+      "romanization": "deurieun neoui pureun nundongja, nareul kkaeun songil",
+      "english": "Your blue eyes were cast upon me, A touch that woke me up",
+      "adlib": false
+    },
+    {
+      "start": 26.14,
+      "end": 34.44,
+      "members": [
+        "JO"
+      ],
+      "voice": [
+        [
+          26.16,
+          30.03
+        ],
+        [
+          30.29,
+          34.53
+        ]
+      ],
+      "original": "It's been way too long, 날 선택해 준 너",
+      "romanization": "it’s been way too long, nal seontaekhae jun neo",
+      "english": "It’s been way too long, You, who chose me",
+      "adlib": false
+    },
+    {
+      "start": 34.59,
+      "end": 38.59,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          34.81,
+          36.43
+        ],
+        [
+          36.99,
+          38.61
+        ]
+      ],
+      "original": "험한 세상도, 막지 못한 채",
+      "romanization": "heomhan sesangdo, makji mothan chae",
+      "english": "Even the harsh world, Couldn’t stop us",
+      "adlib": false
+    },
+    {
+      "start": 39.09,
+      "end": 42.28,
+      "members": [
+        "MAKI"
+      ],
+      "voice": [
+        [
+          39.18,
+          42.27
+        ]
+      ],
+      "original": "우린 예정된 여정을 떠났지",
+      "romanization": "urin yejeongdoen yeojeongeul tteonatji",
+      "english": "We left on the journey that was meant for us",
+      "adlib": false
+    },
+    {
+      "start": 42.29,
+      "end": 43.87,
+      "members": [
+        "MAKI"
+      ],
+      "voice": [
+        [
+          42.3,
+          43.94
+        ]
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "I will get you there",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 44.19,
+      "end": 45.2,
+      "members": [
+        "JO"
+      ],
+      "voice": [
+        [
+          44.3,
+          45.21
+        ]
+      ],
+      "original": "너를 싣고 달려",
+      "romanization": "neoreul sitgo dallyeo",
+      "english": "I’ll drive with you on board",
+      "adlib": false
+    },
+    {
+      "start": 45.4,
+      "end": 47.43,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          45.43,
+          46.34
+        ],
+        [
+          46.54,
+          47.42
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate, Don’t hesitate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 47.61,
+      "end": 49.63,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          47.57,
+          49.67
+        ]
+      ],
+      "original": "전속력으로, I won’t hit the brakes",
+      "romanization": "jeonsokryeogeuro, i won’t hit the brakes",
+      "english": "At full speed, I won’t hit the brakes",
+      "adlib": false
+    },
+    {
+      "start": 49.81,
+      "end": 51.85,
+      "members": [
+        "FUMA"
+      ],
+      "voice": [
+        [
+          49.83,
+          50.7
+        ],
+        [
+          50.88,
+          51.76
+        ]
+      ],
+      "original": "Accelerate, 꽉 잡아 Bae",
+      "romanization": "accelerate, kkwak jaba bae",
+      "english": "Accelerate, Hold on tight, Bae",
+      "adlib": false
+    },
+    {
+      "start": 52.03,
+      "end": 54.05,
+      "members": [
+        "FUMA"
+      ],
+      "voice": [
+        [
+          51.97,
+          52.91
+        ],
+        [
+          53.09,
+          54.06
+        ]
+      ],
+      "original": "Don’t hesitate, 너를 싣고 달려",
+      "romanization": "don’t hesitate, neoreul sitgo dallyeo",
+      "english": "Don’t hesitate, I’ll drive with you on board",
+      "adlib": false
+    },
+    {
+      "start": 54.26,
+      "end": 56.3,
+      "members": [
+        "HARUA"
+      ],
+      "voice": [
+        [
+          54.22,
+          55.19
+        ],
+        [
+          55.37,
+          56.3
+        ]
+      ],
+      "original": "Accelerate, 둘만의 Race",
+      "romanization": "accelerate, dulmanui race",
+      "english": "Accelerate, A Race for just the two of us",
+      "adlib": false
+    },
+    {
+      "start": 56.48,
+      "end": 58.5,
+      "members": [
+        "HARUA"
+      ],
+      "voice": [
+        [
+          56.46,
+          58.48
+        ]
+      ],
+      "original": "이 느낌대로, 날 믿어 Bae",
+      "romanization": "i neukkimdaero, nal mideo bae",
+      "english": "Just go with this feeling, Trust me, Bae",
+      "adlib": false
+    },
+    {
+      "start": 58.66,
+      "end": 60.61,
+      "members": [
+        "YUMA"
+      ],
+      "voice": [
+        [
+          58.71,
+          59.69
+        ],
+        [
+          59.84,
+          60.74
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate, I’ll keep you safe",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 60.79,
+      "end": 62.78,
+      "members": [
+        "YUMA"
+      ],
+      "voice": [
+        [
+          60.99,
+          61.89
+        ],
+        [
+          62.1,
+          62.97
+        ]
+      ],
+      "original": "",
+      "romanization": "Don’t hesitate, Accelerate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 62.8,
+      "end": 66.54,
+      "members": [
+        "EJ"
+      ],
+      "voice": [
+        [
+          62.91,
+          63.44
+        ],
+        [
+          63.6,
+          65.7
+        ],
+        [
+          65.85,
+          66.79
+        ]
+      ],
+      "original": "Get, get it going, 불붙은 Love touch emotion",
+      "romanization": "get, get it going, bulbuteun love touch emotion",
+      "english": "Get, get it going, A Love touch, emotion, burning up",
+      "adlib": false
+    },
+    {
+      "start": 66.72,
+      "end": 71.11,
+      "members": [
+        "EJ"
+      ],
+      "voice": [
+        [
+          66.77,
+          67.89
+        ],
+        [
+          68.05,
+          69.75
+        ],
+        [
+          69.9,
+          70.23
+        ],
+        [
+          70.38,
+          71.31
+        ]
+      ],
+      "original": "이미 난 정했거든, 너라는 Destination",
+      "romanization": "imi nan jeonghaetgeodeun, neoraneun destination",
+      "english": "I’ve already decided, My Destination is you",
+      "adlib": false
+    },
+    {
+      "start": 71.26,
+      "end": 73.36,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          71.49,
+          73.52
+        ]
+      ],
+      "original": "날 믿고 네 몸을 맡겨 봐",
+      "romanization": "nal mitgo ne momeul matgyeo bwa",
+      "english": "Trust me and leave yourself in my hands",
+      "adlib": false
+    },
+    {
+      "start": 73.54,
+      "end": 75.62,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          73.7,
+          75.66
+        ]
+      ],
+      "original": "두려워도 한 번 믿어봐",
+      "romanization": "duryeowodo han beon mideobwa",
+      "english": "Even if you’re scared, just trust me once",
+      "adlib": false
+    },
+    {
+      "start": 75.69,
+      "end": 78.01,
+      "members": [
+        "TAKI"
+      ],
+      "voice": [
+        [
+          75.88,
+          78.05
+        ]
+      ],
+      "original": "멈출 수 없단 거 잘 알잖아",
+      "romanization": "meomchul su eopdan geo jal aljana",
+      "english": "You know very well there’s no stopping us",
+      "adlib": false
+    },
+    {
+      "start": 79.25,
+      "end": 87.9,
+      "members": [
+        "K"
+      ],
+      "voice": [
+        [
+          79.29,
+          83.47
+        ],
+        [
+          83.74,
+          87.92
+        ]
+      ],
+      "original": "It's been way too long, 더 달리고 싶어",
+      "romanization": "it’s been way too long, deo dallyeogo sipeo",
+      "english": "It’s been way too long, I want to drive even farther",
+      "adlib": false
+    },
+    {
+      "start": 88.14,
+      "end": 91.93,
+      "members": [
+        "HARUA"
+      ],
+      "voice": [
+        [
+          88.2,
+          89.76
+        ],
+        [
+          90.38,
+          91.97
+        ]
+      ],
+      "original": "그 어디라도, 세상 끝까지",
+      "romanization": "geu eodirado, sesang kkeutkkaji",
+      "english": "Anywhere at all, All the way to the end of the world",
+      "adlib": false
+    },
+    {
+      "start": 92.57,
+      "end": 95.57,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          92.59,
+          95.59
+        ]
+      ],
+      "original": "우린 눈이 먼 질주를 택했지",
+      "romanization": "urin nuni meon jiljureul taekhaetji",
+      "english": "We chose a reckless race with our eyes closed",
+      "adlib": false
+    },
+    {
+      "start": 95.72,
+      "end": 97.23,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          95.64,
+          97.23
+        ]
+      ],
+      "original": "",
+      "romanization": "I will get you there",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 97.58,
+      "end": 98.43,
+      "members": [
+        "HARUA"
+      ],
+      "voice": [
+        [
+          97.56,
+          98.48
+        ]
+      ],
+      "original": "너를 싣고 달려",
+      "romanization": "neoreul sitgo dallyeo",
+      "english": "I’ll drive with you on board",
+      "adlib": false
+    },
+    {
+      "start": 98.69,
+      "end": 100.71,
+      "members": [
+        "MAKI"
+      ],
+      "voice": [
+        [
+          98.73,
+          99.61
+        ],
+        [
+          99.84,
+          100.75
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate, Don’t hesitate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 100.92,
+      "end": 102.97,
+      "members": [
+        "MAKI"
+      ],
+      "voice": [
+        [
+          100.94,
+          103.02
+        ]
+      ],
+      "original": "전속력으로, I won’t hit the brakes",
+      "romanization": "jeonsokryeogeuro, i won’t hit the brakes",
+      "english": "At full speed, I won’t hit the brakes",
+      "adlib": false
+    },
+    {
+      "start": 103.15,
+      "end": 105.2,
+      "members": [
+        "EJ"
+      ],
+      "voice": [
+        [
+          103.2,
+          104.05
+        ],
+        [
+          104.28,
+          105.14
+        ]
+      ],
+      "original": "Accelerate, 꽉 잡아 Bae",
+      "romanization": "accelerate, kkwak jaba bae",
+      "english": "Accelerate, Hold on tight, Bae",
+      "adlib": false
+    },
+    {
+      "start": 105.35,
+      "end": 107.4,
+      "members": [
+        "EJ"
+      ],
+      "voice": [
+        [
+          105.35,
+          106.26
+        ],
+        [
+          106.47,
+          107.4
+        ]
+      ],
+      "original": "Don’t hesitate, 너를 싣고 달려",
+      "romanization": "don’t hesitate, neoreul sitgo dallyeo",
+      "english": "Don’t hesitate, I’ll drive with you on board",
+      "adlib": false
+    },
+    {
+      "start": 107.55,
+      "end": 109.63,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          107.62,
+          108.56
+        ],
+        [
+          108.77,
+          109.55
+        ]
+      ],
+      "original": "Accelerate, 내 운전대는",
+      "romanization": "accelerate, nae unjeondaneun",
+      "english": "Accelerate, My steering wheel",
+      "adlib": false
+    },
+    {
+      "start": 109.81,
+      "end": 111.89,
+      "members": [
+        "NICHOLAS"
+      ],
+      "voice": [
+        [
+          109.83,
+          111.82
+        ]
+      ],
+      "original": "네 것이 돼, 나를 믿어 Bae",
+      "romanization": "neoui geosi dwae, nareul mideo bae",
+      "english": "Becomes yours, Trust me, Bae",
+      "adlib": false
+    },
+    {
+      "start": 112.09,
+      "end": 114.1,
+      "members": [
+        "JO"
+      ],
+      "voice": [
+        [
+          111.87,
+          112.85
+        ],
+        [
+          113.06,
+          113.98
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate, I’ll keep you safe",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 114.28,
+      "end": 116.3,
+      "members": [
+        "JO"
+      ],
+      "voice": [
+        [
+          114.29,
+          115.21
+        ],
+        [
+          115.45,
+          116.26
+        ]
+      ],
+      "original": "",
+      "romanization": "Don’t hesitate, Accelerate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 116.3,
+      "end": 119.63,
+      "members": [
+        "YUMA"
+      ],
+      "voice": [
+        [
+          116.27,
+          117.46
+        ],
+        [
+          118.18,
+          119.62
+        ]
+      ],
+      "original": "",
+      "romanization": "Mm, La la la la la",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 119.86,
+      "end": 120.34,
+      "members": [
+        "YUMA"
+      ],
+      "voice": [
+        [
+          119.83,
+          120.67
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 120.46,
+      "end": 124.2,
+      "members": [
+        "FUMA"
+      ],
+      "voice": [
+        [
+          120.43,
+          121.97
+        ],
+        [
+          122.62,
+          124.07
+        ]
+      ],
+      "original": "",
+      "romanization": "Mm, La la la la la",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 124.28,
+      "end": 124.86,
+      "members": [
+        "FUMA"
+      ],
+      "voice": [
+        [
+          124.29,
+          125.16
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 124.98,
+      "end": 128.5,
+      "members": [
+        "K"
+      ],
+      "voice": [
+        [
+          125.12,
+          126.5
+        ],
+        [
+          127.06,
+          128.52
+        ]
+      ],
+      "original": "",
+      "romanization": "Mm, La la la la la",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 128.71,
+      "end": 129.68,
+      "members": [
+        "K"
+      ],
+      "voice": [
+        [
+          128.73,
+          129.69
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 133.17,
+      "end": 134.16,
+      "members": [
+        "HARUA"
+      ],
+      "voice": [
+        [
+          133.16,
+          134.11
+        ]
+      ],
+      "original": "",
+      "romanization": "Accelerate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 36.46,
+      "end": 37.13,
+      "members": [
+        "MAKI"
+      ],
+      "original": "(상도)",
+      "romanization": "(sangdo)",
+      "english": "(World)",
+      "adlib": true,
+      "voice": [
+        [
+          36.44,
+          37.14
+        ]
+      ]
+    },
+    {
+      "start": 38.72,
+      "end": 39.33,
+      "members": [
+        "MAKI"
+      ],
+      "original": "(한 채)",
+      "romanization": "(than chae)",
+      "english": "(Stop us)",
+      "adlib": true,
+      "voice": [
+        [
+          38.69,
+          39.38
+        ]
+      ]
+    },
+    {
+      "start": 78.62,
+      "end": 79.52,
+      "members": [
+        "TAKI"
+      ],
+      "original": "",
+      "romanization": "(Oh woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          78.68,
+          79.58
+        ]
+      ]
+    },
+    {
+      "start": 89.82,
+      "end": 90.46,
+      "members": [
+        "MAKI"
+      ],
+      "original": "(라도)",
+      "romanization": "(rado)",
+      "english": "(At all)",
+      "adlib": true,
+      "voice": [
+        [
+          89.8,
+          90.5
+        ]
+      ]
+    },
+    {
+      "start": 92.04,
+      "end": 92.68,
+      "members": [
+        "MAKI"
+      ],
+      "original": "(까지)",
+      "romanization": "(kkaji)",
+      "english": "(To the end)",
+      "adlib": true,
+      "voice": [
+        [
+          92.04,
+          92.64
+        ]
+      ]
+    },
+    {
+      "start": 97.63,
+      "end": 101.27,
+      "members": [
+        "YUMA"
+      ],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          97.52,
+          101.17
+        ]
+      ]
+    },
+    {
+      "start": 103.4,
+      "end": 104.7,
+      "members": [
+        "YUMA"
+      ],
+      "original": "",
+      "romanization": "(Ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          103.3,
+          104.57
+        ]
+      ]
+    },
+    {
+      "start": 108.38,
+      "end": 108.82,
+      "members": [
+        "YUMA"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          108.51,
+          108.83
+        ]
+      ]
+    },
+    {
+      "start": 109.55,
+      "end": 109.82,
+      "members": [
+        "YUMA"
+      ],
+      "original": "",
+      "romanization": "(Ha)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          109.57,
+          109.92
+        ]
+      ]
+    },
+    {
+      "start": 111.55,
+      "end": 112.33,
+      "members": [
+        "YUMA"
+      ],
+      "original": "",
+      "romanization": "(Oh woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          111.35,
+          112.19
+        ]
+      ]
+    },
+    {
+      "start": 116.78,
+      "end": 118.52,
+      "members": [
+        "MAKI"
+      ],
+      "original": "",
+      "romanization": "(Mmm)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          116.77,
+          118.38
+        ]
+      ]
+    },
+    {
+      "start": 121.89,
+      "end": 123.65,
+      "members": [
+        "MAKI"
+      ],
+      "original": "",
+      "romanization": "(Oh woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          121.79,
+          123.72
+        ]
+      ]
     }
   ],
   "cover": "covers/team_accelerate.jpg",
