@@ -1069,5 +1069,7 @@
   "audio": "audio/team_goodboy.mp3",
   "npC2": "#2e58ff",
   "audioOffset": -0.4,
-  "instrumental": "audio/team_goodboy_inst.mp3"
+  "instrumental": "audio/team_goodboy_inst.mp3",
+  "instrumentalStart": 62.360674939903845,
+  "instrumentalEnd": 153.730612
 }
