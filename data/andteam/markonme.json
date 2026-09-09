@@ -557,5 +557,6 @@
     }
   ],
   "audio": "audio/team_markonme.mp3",
-  "audioOffset": -0.1
+  "audioOffset": -0.1,
+  "instrumental": "audio/team_markonme_inst.mp3"
 }
