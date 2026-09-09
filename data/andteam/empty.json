@@ -554,5 +554,6 @@
   "cover": "covers/team_empty.jpg",
   "audio": "audio/team_empty.mp3",
   "npC1": "#000000",
-  "npC2": "#ffffff"
+  "npC2": "#ffffff",
+  "audioOffset": -0.05
 }
