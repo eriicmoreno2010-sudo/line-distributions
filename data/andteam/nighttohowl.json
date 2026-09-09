@@ -11,63 +11,117 @@
       "image": "images/andteam/nighttohowl/k.png",
       "color": "#c80032",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.512,
+        "cy": 0.262,
+        "size": 0.535,
+        "rot": 15
+      }
     },
     {
       "name": "FUMA",
       "image": "images/andteam/nighttohowl/fuma.png",
       "color": "#1a2e6b",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.8333,
+        "cy": 0.376,
+        "size": 0.3334,
+        "rot": 0
+      }
     },
     {
       "name": "NICHOLAS",
       "image": "images/andteam/nighttohowl/nicholas.png",
       "color": "#e6e6ec",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.538,
+        "cy": 0.372,
+        "size": 0.215,
+        "rot": 347
+      }
     },
     {
       "name": "EJ",
       "image": "images/andteam/nighttohowl/ej.png",
       "color": "#d9a900",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.54,
+        "cy": 0.22,
+        "size": 0.2,
+        "rot": 38
+      }
     },
     {
       "name": "YUMA",
       "image": "images/andteam/nighttohowl/yuma.png",
       "color": "#7a32c8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.672,
+        "cy": 0.274,
+        "size": 0.49,
+        "rot": 0
+      }
     },
     {
       "name": "JO",
       "image": "images/andteam/nighttohowl/jo.png",
       "color": "#2fa673",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.476,
+        "cy": 0.314,
+        "size": 0.605,
+        "rot": 348
+      }
     },
     {
       "name": "HARUA",
       "image": "images/andteam/nighttohowl/harua.png",
       "color": "#7ec8e3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.612,
+        "cy": 0.354,
+        "size": 0.475,
+        "rot": 0
+      }
     },
     {
       "name": "TAKI",
       "image": "images/andteam/nighttohowl/taki.png",
       "color": "#ff7a00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.558,
+        "cy": 0.19,
+        "size": 0.18,
+        "rot": 273
+      }
     },
     {
       "name": "MAKI",
       "image": "images/andteam/nighttohowl/maki.png",
       "color": "#ff6fa3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.454,
+        "cy": 0.31,
+        "size": 0.37,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
