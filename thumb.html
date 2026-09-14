@@ -159,8 +159,8 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     // mostrando MÁS abajo (cuello/hombros) para que no se corte en la barbilla.
     // El frame es un recorte cuadrado de lado = size×ancho; aquí "alejamos" un poco
     // (ZOOM) para dejar sitio al cuello, y colocamos la cara en el tercio superior.
-    const ZOOM = 1.15;     // 1 = igual de cerrado que el ranking; >1 = un poco más lejos (deja ver cuello)
-    const FACE_Y = 0.38;   // altura de la cara dentro del panel (0=arriba, 1=abajo)
+    const ZOOM = 1.0;      // mismo acercamiento que el ranking
+    const FACE_Y = 0.33;   // cara un poco arriba para que el cuello entre debajo sin cortarse
     function applyCover(){
       const W = coverEl.clientWidth || 742, H = coverEl.clientHeight || 720;
       const iw = img.naturalWidth, ih = img.naturalHeight;
