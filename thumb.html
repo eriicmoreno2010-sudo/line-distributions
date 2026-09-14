@@ -15,8 +15,9 @@
   }
 
   /* LEFT — big cover photo */
-  #cover{ position:absolute; inset:0 42% 0 0; background:#111 center/cover no-repeat; }
-  #cover img{ width:100%; height:100%; object-fit:cover; object-position:center 42%; display:block; }
+  #cover{ position:absolute; inset:0 42% 0 0; background:#111; overflow:hidden; }
+  /* posición/escala/rotación se calculan en JS (encuadre a la cara vía frame) */
+  #cover img{ position:absolute; display:block; }
   /* dark gradient bottom-left so the title reads on any photo */
   #shade{ position:absolute; inset:0 42% 0 0; background:
       linear-gradient(180deg, rgba(0,0,0,.10) 45%, rgba(0,0,0,.82) 100%),
@@ -151,22 +152,46 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
   const coverM = (COVER && song.members.find(m=>m.name.toLowerCase()===COVER.toLowerCase())) || ranked[0] || song.members[0];
   if(coverM){
     const img = document.getElementById("coverimg");
+    const coverEl = document.getElementById("cover");
     const folder = coverM.image.slice(0, coverM.image.lastIndexOf("/"));   // images/<group>/<song>
-    // Encuadre a la CARA usando el frame del miembro (cx,cy en 0..1): así la cara
-    // queda arriba-centro y se ven cuello/hombros abajo, SIN cortar en la barbilla.
-    const fr = coverM.frame || {};
-    const cx = (fr.cx != null ? fr.cx * 100 : 50).toFixed(1);
-    const cy = (fr.cy != null ? fr.cy * 100 : 42).toFixed(1);
-    img.style.objectPosition = cx + "% " + cy + "%";
-    // Fuente de la foto:
-    //   1) portada dedicada del álbum/canción (_cover.png/.jpg) si existe;
-    //   2) la ORIGINAL completa (_src) — tiene cara+cuello+hombros, no se corta;
-    //   3) el recorte cuadrado de la cara del ranking (m.image) como último recurso.
+    const fr = coverM.frame;
+    // Encuadre estilo RANKING (mismo centro cx/cy y rotación rot del frame) pero
+    // mostrando MÁS abajo (cuello/hombros) para que no se corte en la barbilla.
+    // El frame es un recorte cuadrado de lado = size×ancho; aquí "alejamos" un poco
+    // (ZOOM) para dejar sitio al cuello, y colocamos la cara en el tercio superior.
+    const ZOOM = 1.35;     // 1 = igual de cerrado que el ranking; >1 = un poco más lejos (deja ver cuello)
+    const FACE_Y = 0.36;   // altura de la cara dentro del panel (0=arriba, 1=abajo)
+    function applyCover(){
+      const W = coverEl.clientWidth || 742, H = coverEl.clientHeight || 720;
+      const iw = img.naturalWidth, ih = img.naturalHeight;
+      if(!iw || !ih) return;
+      img.style.transformOrigin = ""; img.style.transform = "";
+      if(fr && isFinite(fr.size)){
+        const side  = fr.size * iw;               // lado del recorte de la cara (px del original)
+        const scale = W / (side * ZOOM);          // el ancho de la cara ocupa 1/ZOOM del panel
+        img.style.width  = (iw * scale) + "px";
+        img.style.height = (ih * scale) + "px";
+        const fX = fr.cx * iw * scale, fY = fr.cy * ih * scale;   // centro de la cara ya escalado
+        img.style.left = (W/2      - fX) + "px";   // cara centrada en horizontal
+        img.style.top  = (H*FACE_Y - fY) + "px";   // cara en el tercio superior -> cuello debajo
+        img.style.transformOrigin = fX + "px " + fY + "px";
+        img.style.transform = "rotate(" + (fr.rot || 0) + "deg)";
+      } else {
+        // sin frame guardado: relleno simple mostrando la parte de arriba
+        img.style.width = W + "px"; img.style.height = H + "px";
+        img.style.left = "0px"; img.style.top = "0px";
+        img.style.objectFit = "cover"; img.style.objectPosition = "center 32%";
+      }
+    }
+    // Fuente de la foto: 1) portada dedicada (_cover); 2) la ORIGINAL (_src, tiene
+    // cuello/hombros); 3) el recorte cuadrado del ranking (último recurso).
     const chain = (COVER
         ? [ srcPhoto(coverM.image), coverM.image ]
         : [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ])
       .map(u => u + ver);
     let ci = 0;
+    img.onload = applyCover;
+    window.addEventListener("resize", applyCover);
     const tryNext = () => { if(ci < chain.length){ img.onerror = tryNext; img.src = chain[ci++]; } };
     tryNext();
     document.getElementById("tag").style.setProperty("--accent", coverM.color);
