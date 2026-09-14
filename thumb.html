@@ -43,15 +43,23 @@
   #rank .rhead{ font-size:22px; font-weight:800; letter-spacing:3px; color:#9a9ab0;
                 text-transform:uppercase; margin-bottom:6px; flex:none; }
   /* the rows fill the whole height of the panel, evenly spread */
-  #rows{ flex:1; display:flex; flex-direction:column; justify-content:space-evenly; }
-  .row{ display:grid; grid-template-columns:42px 1fr auto; align-items:center; gap:16px; }
-  .rk{ font-size:30px; font-weight:900; color:#6a6a80; text-align:center; font-variant-numeric:tabular-nums; }
-  .who{ display:flex; align-items:center; gap:18px; min-width:0; }
-  .av{ width:84px; height:84px; border-radius:50%; object-fit:cover; border:4px solid var(--c);
-       background:#1a1a24; flex:none; }
-  .nm{ font-size:22px; font-weight:800; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-  .bar{ width:132px; height:17px; border-radius:999px; background:#22222e; overflow:hidden; flex:none; }
+  #rows{ flex:1; display:flex; flex-direction:column; justify-content:space-evenly; gap:14px; }
+  /* TARJETA estilo ranking del visor: foto | (nombre arriba + barra abajo) | %/seg */
+  .row{ display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:18px;
+        background:color-mix(in srgb, var(--c) 16%, #15151d);
+        border:3px solid color-mix(in srgb, var(--c) 55%, transparent);
+        border-radius:18px; padding:12px 20px;
+        box-shadow:0 12px 30px -14px color-mix(in srgb, var(--c) 75%, transparent); }
+  .av{ width:76px; height:76px; border-radius:50%; object-fit:cover; border:4px solid var(--c);
+       background:#1a1a24; flex:none; box-shadow:0 0 0 2px rgba(0,0,0,.3); }
+  .info{ min-width:0; display:flex; flex-direction:column; gap:9px; }
+  .nm{ font-weight:900; letter-spacing:.4px; color:color-mix(in srgb, var(--c) 82%, #fff);
+       white-space:nowrap; overflow:hidden; text-overflow:ellipsis; line-height:1; }
+  .bar{ height:16px; border-radius:999px; background:rgba(0,0,0,.32); overflow:hidden; }
   .fill{ height:100%; border-radius:999px; background:var(--c); }
+  .stats{ text-align:right; font-variant-numeric:tabular-nums; flex:none; }
+  .pct{ font-size:30px; font-weight:900; color:color-mix(in srgb, var(--c) 55%, #fff); line-height:1; }
+  .sec{ font-size:19px; font-weight:800; color:#e8e8f2; margin-top:5px; }
 
   /* editing toolbar (never part of the exported image) */
   #tools{ position:fixed; top:10px; left:10px; z-index:999; display:flex; gap:8px; align-items:center;
@@ -67,10 +75,14 @@
   #thumb.light{ background:#eef0f5; color:#12131a; }
   #thumb.light #rank{ background:linear-gradient(180deg,#f6f7fa,#eceef4); }
   #thumb.light .rhead{ color:#6b7180; }
-  #thumb.light .rk{ color:#a3a9b5; }
-  #thumb.light .nm{ color:#0d0e13; }                 /* nombres en negro */
+  #thumb.light .row{ background:color-mix(in srgb, var(--c) 14%, #f4f5f9);
+                     border-color:color-mix(in srgb, var(--c) 60%, transparent);
+                     box-shadow:0 12px 30px -16px color-mix(in srgb, var(--c) 55%, transparent); }
+  #thumb.light .nm{ color:color-mix(in srgb, var(--c) 70%, #000); }   /* nombre = color del miembro, oscurecido */
+  #thumb.light .pct{ color:color-mix(in srgb, var(--c) 62%, #000); }
+  #thumb.light .sec{ color:#3a3d47; }
   #thumb.light .av{ background:#e3e5ec; }
-  #thumb.light .bar{ background:#dbdde6; }
+  #thumb.light .bar{ background:rgba(0,0,0,.12); }
   #thumb.light #seam{ background:linear-gradient(90deg, rgba(238,240,245,0), #f4f5f9); }
   #thumb.light #song{ color:#fff; }                  /* titulo sobre la foto: blanco */
 </style>
@@ -199,15 +211,22 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
   }
 
   const rows = document.getElementById("rows");
+  const totalAll = Object.keys(t).reduce((s,k)=>s+(t[k]||0),0) || 1;   // total de TODOS (para el %)
   ranked.forEach((m,i)=>{
     const row = document.createElement("div"); row.className="row"; row.style.setProperty("--c", m.color);
     // Nombre adaptativo: los cortos GRANDES, los largos más pequeños para que quepan.
     const len = (m.name || "").length;
     const nmFs = len<=4 ? 34 : len<=7 ? 30 : len<=10 ? 26 : 22;
+    const sec  = t[m.name] || 0;
+    const barW = Math.max(6, Math.round(sec / max * 100));       // barra relativa al líder
+    const pct  = (sec / totalAll * 100).toFixed(2);              // % del total (como el visor)
     row.innerHTML =
-      '<div class="rk">'+(i+1)+'</div>'+
-      '<div class="who"><img class="av" src="'+m.image+ver+'" alt=""><span class="nm" style="font-size:'+nmFs+'px">'+m.name+'</span></div>'+
-      '<div class="bar"><div class="fill" style="width:'+Math.max(6,Math.round((t[m.name]||0)/max*100))+'%"></div></div>';
+      '<img class="av" src="'+m.image+ver+'" alt="">'+
+      '<div class="info">'+
+        '<span class="nm" style="font-size:'+nmFs+'px">'+m.name+'</span>'+
+        '<div class="bar"><div class="fill" style="width:'+barW+'%"></div></div>'+
+      '</div>'+
+      '<div class="stats"><div class="pct">'+pct+'%</div><div class="sec">'+sec.toFixed(2)+'s</div></div>';
     rows.appendChild(row);
   });
 
