@@ -15,7 +15,7 @@
   }
 
   /* LEFT — big cover photo */
-  #cover{ position:absolute; inset:0 42% 0 0; background:#111; overflow:hidden; }
+  #cover{ position:absolute; inset:0 42% 0 0; background:#0b0b12; overflow:hidden; }
   /* posición/escala/rotación se calculan en JS (encuadre a la cara vía frame) */
   #cover img{ position:absolute; display:block; }
   /* dark gradient bottom-left so the title reads on any photo */
@@ -70,6 +70,7 @@
   /* ---- Tema CLARO (cuando SONG.theme === "light", p.ej. Moonlight) ----
      Miniatura en blanco, nombres en NEGRO. El titulo va sobre la foto -> sigue blanco. */
   #thumb.light{ background:#eef0f5; color:#12131a; }
+  #thumb.light #cover{ background:#eef0f5; }         /* canción clara -> fondo de la foto blanco */
   #thumb.light #rank{ background:linear-gradient(180deg,#f6f7fa,#eceef4); }
   #thumb.light .rhead{ color:#6b7180; }
   #thumb.light .row{ background:color-mix(in srgb, var(--c) 14%, #f4f5f9);
@@ -184,12 +185,13 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         img.style.transformOrigin = fX + "px " + fY + "px";
         img.style.transform = "rotate(" + (fr.rot || 0) + "deg)";
       } else {
-        // SIN frame guardado: la foto del ranking (m.image) ya es un primer plano;
-        // se muestra tal cual (object-fit cover) para mantener la cercanía del ranking.
-        const fy = (coverM.focus != null ? coverM.focus : 45);
+        // SIN frame: la foto del ranking (m.image) ya es un primer plano. Se muestra
+        // ENTERA con object-fit:contain para que NO se corte (pelo/barbilla). Como es
+        // casi cuadrada y el panel también, llena casi todo; lo que sobra a los lados
+        // toma el color del fondo (blanco en canciones claras).
         img.style.width = W + "px"; img.style.height = H + "px";
         img.style.left = "0px"; img.style.top = "0px";
-        img.style.objectFit = "cover"; img.style.objectPosition = "center " + fy + "%";
+        img.style.objectFit = "contain"; img.style.objectPosition = "center 46%";
       }
     }
     // Fuente de la foto según haya frame o no:
