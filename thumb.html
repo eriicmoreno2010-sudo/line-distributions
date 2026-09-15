@@ -163,58 +163,34 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     const coverEl = document.getElementById("cover");
     const folder = coverM.image.slice(0, coverM.image.lastIndexOf("/"));   // images/<group>/<song>
     const fr = coverM.frame;
-    const mImg   = coverM.image + ver;                 // foto del ranking (primer plano)
-    const srcImg = srcPhoto(coverM.image) + ver;       // original completa (con ropa)
-    const covPng = folder + "/_cover.png" + ver, covJpg = folder + "/_cover.jpg" + ver;
     const ZOOM = 1.0, FACE_Y = 0.33;
-
-    // CON frame: encuadre a la cara sobre la original (muestra el cuello).
-    function applyFrame(){
+    function applyCover(){
       const W = coverEl.clientWidth||742, H = coverEl.clientHeight||720;
       const iw = img.naturalWidth, ih = img.naturalHeight; if(!iw||!ih) return;
-      const side = fr.size*iw, scale = W/(side*ZOOM);
-      img.style.width=(iw*scale)+"px"; img.style.height=(ih*scale)+"px";
-      const fX=fr.cx*iw*scale, fY=fr.cy*ih*scale;
-      img.style.left=(W/2-fX)+"px"; img.style.top=(H*FACE_Y-fY)+"px";
-      img.style.transformOrigin=fX+"px "+fY+"px"; img.style.transform="rotate("+(fr.rot||0)+"deg)";
+      img.style.transformOrigin=""; img.style.transform="";
+      if(fr && isFinite(fr.size)){
+        // CON frame: encuadre a la cara sobre la original (muestra el cuello).
+        const side = fr.size*iw, scale = W/(side*ZOOM);
+        img.style.width=(iw*scale)+"px"; img.style.height=(ih*scale)+"px";
+        const fX=fr.cx*iw*scale, fY=fr.cy*ih*scale;
+        img.style.left=(W/2-fX)+"px"; img.style.top=(H*FACE_Y-fY)+"px";
+        img.style.transformOrigin=fX+"px "+fY+"px"; img.style.transform="rotate("+(fr.rot||0)+"deg)";
+      } else {
+        // SIN frame: la foto del ranking (m.image), primer plano cercano (object-fit cover).
+        const fy = (coverM.focus!=null ? coverM.focus : 45);
+        img.style.left="0px"; img.style.top="0px"; img.style.width=W+"px"; img.style.height=H+"px";
+        img.style.objectFit="cover"; img.style.objectPosition="center "+fy+"%";
+      }
     }
-    // SIN frame: la foto ENTERA con un pequeño margen. NO corta ni la cara ni la
-    // ropa; lo que sobra toma el color del fondo (blanco en canciones claras).
-    function applyPlain(){
-      const W = coverEl.clientWidth||742, H = coverEl.clientHeight||720;
-      if(!img.naturalWidth||!img.naturalHeight) return;
-      const pad = 0.04;
-      img.style.transform=""; img.style.transformOrigin="";
-      img.style.left=(W*pad)+"px"; img.style.top=(H*pad)+"px";
-      img.style.width=(W*(1-2*pad))+"px"; img.style.height=(H*(1-2*pad))+"px";
-      img.style.objectFit="contain"; img.style.objectPosition="center center";
-    }
-
-    if(fr && isFinite(fr.size)){
-      // CON frame: prioriza la original (para el encuadre); luego la del ranking.
-      const chain = COVER ? [srcImg, mImg] : [covPng, covJpg, srcImg, mImg];
-      let ci=0; img.onload=applyFrame;
-      const nx=()=>{ if(ci<chain.length){ img.onerror=nx; img.src=chain[ci++]; } }; nx();
-      window.addEventListener("resize", applyFrame);
-    } else {
-      // SIN frame: usa la ORIGINAL solo si es VERTICAL (tiene la ropa y se ve entera
-      // sin cortar); si es apaisada/cuadrada (o no existe), la foto del ranking.
-      const cands = COVER ? [{u:srcImg,vert:true},{u:mImg}]
-                          : [{u:covPng},{u:covJpg},{u:srcImg,vert:true},{u:mImg}];
-      let ci=0;
-      const nx=()=>{
-        if(ci>=cands.length) return;
-        const c=cands[ci++];
-        img.onerror=nx;
-        img.onload=()=>{
-          if(c.vert && img.naturalHeight < img.naturalWidth*1.1){ nx(); return; }  // no vertical -> siguiente
-          applyPlain();
-        };
-        img.src=c.u;
-      };
-      nx();
-      window.addEventListener("resize", applyPlain);
-    }
+    // Fuente: CON frame -> original (_src) para el encuadre; SIN frame -> foto del
+    // ranking (primer plano). Una portada dedicada (_cover) tiene prioridad si existe.
+    const chain = (COVER
+        ? (fr ? [ srcPhoto(coverM.image), coverM.image ] : [ coverM.image, srcPhoto(coverM.image) ])
+        : (fr ? [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ]
+              : [ folder+"/_cover.png", folder+"/_cover.jpg", coverM.image, srcPhoto(coverM.image) ]))
+      .map(u => u + ver);
+    let ci=0; img.onload=applyCover; window.addEventListener("resize", applyCover);
+    const tryNext=()=>{ if(ci<chain.length){ img.onerror=tryNext; img.src=chain[ci++]; } }; tryNext();
     document.getElementById("tag").style.setProperty("--accent", coverM.color);
     document.documentElement.style.setProperty("--accent", coverM.color);
   }
