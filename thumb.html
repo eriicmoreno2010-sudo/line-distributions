@@ -87,7 +87,7 @@
   <div id="cover"><img id="coverimg" alt=""></div>
   <div id="shade"></div>
   <div id="seam"></div>
-  <div id="rank"><div class="rhead">Line Distribution</div><div id="rows"></div></div>
+  <div id="rank"><div id="rows"></div></div>
   <div id="title">
     <div id="grp">—</div>
     <div id="song">—</div>
@@ -184,17 +184,22 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         img.style.transformOrigin = fX + "px " + fY + "px";
         img.style.transform = "rotate(" + (fr.rot || 0) + "deg)";
       } else {
-        // sin frame guardado: relleno simple mostrando la parte de arriba
+        // SIN frame guardado: la foto del ranking (m.image) ya es un primer plano;
+        // se muestra tal cual (object-fit cover) para mantener la cercanía del ranking.
+        const fy = (coverM.focus != null ? coverM.focus : 45);
         img.style.width = W + "px"; img.style.height = H + "px";
         img.style.left = "0px"; img.style.top = "0px";
-        img.style.objectFit = "cover"; img.style.objectPosition = "center 32%";
+        img.style.objectFit = "cover"; img.style.objectPosition = "center " + fy + "%";
       }
     }
-    // Fuente de la foto: 1) portada dedicada (_cover); 2) la ORIGINAL (_src, tiene
-    // cuello/hombros); 3) el recorte cuadrado del ranking (último recurso).
+    // Fuente de la foto según haya frame o no:
+    //  - CON frame: la ORIGINAL (_src) para poder encuadrar a la cara y ver el cuello.
+    //  - SIN frame: la foto del ranking (m.image), que ya es un primer plano cercano.
+    // En ambos, una portada dedicada (_cover) tiene prioridad si existe.
     const chain = (COVER
-        ? [ srcPhoto(coverM.image), coverM.image ]
-        : [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ])
+        ? (fr ? [ srcPhoto(coverM.image), coverM.image ] : [ coverM.image, srcPhoto(coverM.image) ])
+        : (fr ? [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ]
+              : [ folder+"/_cover.png", folder+"/_cover.jpg", coverM.image, srcPhoto(coverM.image) ]))
       .map(u => u + ver);
     let ci = 0;
     img.onload = applyCover;
