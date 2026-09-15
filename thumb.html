@@ -185,13 +185,14 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         img.style.transformOrigin = fX + "px " + fY + "px";
         img.style.transform = "rotate(" + (fr.rot || 0) + "deg)";
       } else {
-        // SIN frame: la foto del ranking (m.image) ya es un primer plano. Se muestra
-        // ENTERA con object-fit:contain para que NO se corte (pelo/barbilla). Como es
-        // casi cuadrada y el panel también, llena casi todo; lo que sobra a los lados
-        // toma el color del fondo (blanco en canciones claras).
-        img.style.width = W + "px"; img.style.height = H + "px";
-        img.style.left = "0px"; img.style.top = "0px";
-        img.style.objectFit = "contain"; img.style.objectPosition = "center 46%";
+        // SIN frame: la foto del ranking (m.image) ya es un primer plano CERRADO
+        // (pelo/barbilla pegados al borde). Se muestra ENTERA (contain) y con un
+        // MARGEN alrededor para que "respire" y no parezca cortada; el margen toma
+        // el color del fondo (blanco en canciones claras).
+        const pad = 0.06;                          // 6% de margen alrededor
+        img.style.left = (W*pad) + "px"; img.style.top = (H*pad) + "px";
+        img.style.width = (W*(1-2*pad)) + "px"; img.style.height = (H*(1-2*pad)) + "px";
+        img.style.objectFit = "contain"; img.style.objectPosition = "center center";
       }
     }
     // Fuente de la foto según haya frame o no:
