@@ -1,0 +1,72 @@
+{
+  "group": "NCT DREAM",
+  "song": "숨 (Breathing)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "MARK",
+      "image": "images/nctdream/breathing/mark.png",
+      "color": "#cb6ce6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/nctdream/breathing/renjun.png",
+      "color": "#fac142",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JENO",
+      "image": "images/nctdream/breathing/jeno.png",
+      "color": "#ff3131",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nctdream/breathing/haechan.png",
+      "color": "#1bb7e8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/nctdream/breathing/jaemin.png",
+      "color": "#61fdad",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/nctdream/breathing/chenle.png",
+      "color": "#22c429",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/nctdream/breathing/jisung.png",
+      "color": "#f12ba5",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
