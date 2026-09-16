@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "숨 (Breathing)",
   "video": "videos/nctdream_breathing.mp4",
-  "duration": 0,
+  "duration": 254.442,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -114,5 +114,6 @@
   "cover": "covers/nctdream_breathing.jpg",
   "audio": "audio/nctdream_breathing.mp3",
   "npC1": "#6fd7eb",
-  "npC2": "#ffffff"
+  "npC2": "#ffffff",
+  "audioOffset": -0.05
 }
