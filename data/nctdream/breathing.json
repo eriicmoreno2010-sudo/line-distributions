@@ -111,5 +111,6 @@
       "adlib": ""
     }
   ],
-  "cover": "covers/nctdream_breathing.jpg"
+  "cover": "covers/nctdream_breathing.jpg",
+  "audio": "audio/nctdream_breathing.mp3"
 }
