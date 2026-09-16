@@ -39,23 +39,28 @@
 <body>
 <header>
   <button onclick="location.href='library.html'">←  Biblioteca</button>
-  <h1>✂️ Recortar con lazo <small>rodea lo que quieras CONSERVAR · el fondo se quita al instante</small></h1>
+  <h1>✂️ Recortar con lazo <small>rodea lo que quieras conservar → se añade a la capa "Recorte"</small></h1>
   <span class="who" id="who">—</span>
   <span class="spacer"></span>
-  <span class="hint">Rueda = zoom · botón central o "✋" = mover</span>
-  <button class="pri" id="save">💾  Guardar</button>
+  <span class="hint">Rueda = zoom · "✋" = mover</span>
+  <button class="pri" id="save">💾  Guardar recorte</button>
 </header>
 
 <div class="toolbar">
   <div class="grp">
-    <button id="tLazo" class="on" title="Rodea lo que quieras conservar; al soltar, el resto se quita">🎯 Lazo</button>
+    <button id="tLazo" class="on" title="Rodea lo que quieras conservar; esa zona se añade al recorte">🎯 Lazo</button>
     <button id="tPan" title="Mover la vista (arrastra)">✋ Mover</button>
   </div>
   <span class="spacer"></span>
   <div class="grp">
-    <button id="orig" title="Mantén pulsado para ver la foto original">👁 Ver original</button>
+    <span class="lbl">Capas</span>
+    <button id="layOrig" class="on" title="Ver/ocultar la foto ORIGINAL (de guía, atenuada)">👁 Original</button>
+    <button id="layCut" class="on" title="Ver/ocultar el RECORTE (lo que has rodeado)">👁 Recorte</button>
+  </div>
+  <span class="spacer"></span>
+  <div class="grp">
     <button id="undo" disabled>↶ Deshacer</button>
-    <button id="reset">⟲ Reiniciar</button>
+    <button id="reset">⟲ Vaciar recorte</button>
     <button id="fit">⊡ Ajustar</button>
   </div>
 </div>
@@ -64,6 +69,6 @@
 
 <div id="ov"><div class="t" id="ovT">Guardando…</div></div>
 
-<script src="js/cutout.js?v=2"></script>
+<script src="js/cutout.js?v=3"></script>
 </body>
 </html>

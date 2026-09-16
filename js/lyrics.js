@@ -510,58 +510,54 @@ const Lyrics = {
         return box;
     },
 
-    /* Diff de tarjetas: mantiene las activas, quita las que acaban (colapsan) y
-       añade las nuevas colapsadas -> al expandirse EMPUJAN a las demás (sin salto). */
+    /* Cada ad-lib ocupa un HUECO FIJO y se queda ahí PARA SIEMPRE: al entrar coge
+       el hueco libre más bajo y NO se mueve nunca más. Cuando uno se va (fade), su
+       hueco se libera pero los demás NO se recolocan -> "el de arriba se queda
+       arriba para siempre" aunque el de abajo desaparezca. La pila se reinicia sola
+       cuando no queda ninguno en pantalla. */
     syncAdlibBoxes(msg, ais, lyrics){
         const want = ais.map(String);
-        const GAP = 16;
-        // SALEN: los que ya no tocan -> se van (fade + un pelín hacia arriba). NO se
-        // tocan los demás -> los que quedan NO se mueven.
+        // SALEN: fade y quitar; NADIE más se mueve.
         Array.from(msg.children).forEach(box => {
             if(want.indexOf(box.dataset.i) === -1 && !box._leaving){
                 box._leaving = true;
                 box.style.opacity = "0";
                 box.style.transform = "translateY(-22px)";
-                // al desaparecer del todo, RECOLOCA: solo entonces bajan los de arriba
-                setTimeout(() => { box.remove(); this.repackAdlibs(msg); }, 420);
+                setTimeout(() => box.remove(), 420);
             }
         });
-        // ENTRAN: crea los nuevos (invisibles); todavía sin colocar.
+        // ENTRAN: cada nuevo coge el hueco libre más bajo (fijo).
         ais.forEach(i => {
             const existing = Array.from(msg.querySelectorAll('.al-box[data-i="' + i + '"]'));
             if(existing.some(b => !b._leaving)) return;     // ya hay una activa para este ad-lib
             existing.forEach(b => b.remove());              // reaparece justo al salir -> recrear
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
-            box.style.opacity = "0"; box.style.transform = "translateY(0)"; box._fresh = true;
-            msg.appendChild(box);
+            box.style.opacity = "0"; box.style.bottom = "-140px";
+            msg.appendChild(box);                           // en el DOM para poder medir su alto
+            const y = this.placeAdlib(msg, box);            // hueco fijo (según los que ya hay)
+            requestAnimationFrame(() => requestAnimationFrame(() => {
+                box.style.bottom = y + "px"; box.style.opacity = "1";
+            }));
         });
-        this.repackAdlibs(msg);
     },
 
-    /* Recoloca la pila de ad-libs de abajo hacia arriba. Los que están SALIENDO
-       (fade) siguen RESERVANDO su hueco -> los de arriba NO bajan mientras haya un
-       ad-lib debajo (aunque se esté yendo); solo bajan cuando ese hueco se libera
-       de verdad (al quitarse). Así "se quedan arriba" salvo que no quede ninguno abajo. */
-    repackAdlibs(msg){
+    /* Calcula el hueco libre más bajo donde cabe esta tarjeta (sin solaparse con
+       las que ya hay, incluidas las que se están yendo -> reservan su sitio hasta
+       desaparecer). Fija box._bottom para siempre. */
+    placeAdlib(msg, box){
         const GAP = 16;
-        let acc = 0;
-        Array.from(msg.children).forEach(b => {
-            const h = b.offsetHeight || 90;   // fuente fija; la tarjeta se ensancha sola
-            const target = acc;
-            if(b._fresh){
-                b._fresh = false;
-                b.style.bottom = (-h - 10) + "px";          // empieza debajo (recortado) y sube a su sitio
-                requestAnimationFrame(() => requestAnimationFrame(() => {
-                    b.style.bottom = target + "px"; b.style.opacity = "1";
-                }));
-                b.dataset.bottom = String(target);
-            } else if(!b._leaving){
-                b.style.bottom = target + "px";             // se desplaza suave si su hueco cambió
-                b.dataset.bottom = String(target);
-            }
-            // los que salen NO se recolocan (siguen su animación), pero RESERVAN hueco
-            acc += h + GAP;
-        });
+        const h = box.offsetHeight || 90; box._h = h;
+        const occ = Array.from(msg.children)
+            .filter(b => b !== box && b._bottom != null)
+            .map(b => ({ b: b._bottom, t: b._bottom + (b._h || 90) }))
+            .sort((a, c) => a.b - c.b);
+        let y = 0;
+        for(const iv of occ){
+            if(y + h + GAP <= iv.b) break;          // cabe en el hueco antes de este
+            y = Math.max(y, iv.t + GAP);            // si no, súbete por encima
+        }
+        box._bottom = y; box.dataset.bottom = String(y);
+        return y;
     },
 
     /* Encoge la fuente de cada ad-lib para que SIEMPRE quepa en 1 renglón. */

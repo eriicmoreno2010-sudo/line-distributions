@@ -1,7 +1,8 @@
-/* Editor de recorte con LAZO. Rodeas lo que quieres CONSERVAR y el fondo (lo de
-   fuera) se quita al instante, con vista previa en vivo. Trabaja sobre la foto
-   ORIGINAL a máxima calidad (limitada a MAXDIM). No destructivo: la original se
-   conserva (Deshacer / Reiniciar / Ver original) y se guarda un PNG con transparencia. */
+/* Editor de recorte con LAZO y CAPAS. La foto ORIGINAL nunca se toca (capa base).
+   Cada vez que rodeas una zona con el lazo, esa zona se AÑADE a la capa "Recorte"
+   (tomada de la original). Así no pierdes la imagen entera: tienes la capa Original
+   (de guía, atenuada) y la capa Recorte (lo que conservas). Se guarda el Recorte
+   como PNG con transparencia. Trabaja a máxima calidad (limitada a MAXDIM). */
 (function(){
   const $ = s => document.querySelector(s);
   const D = window.desktop;
@@ -14,16 +15,14 @@
   const MAXDIM = 2048, HISTMAX = 12;
 
   const view = $("#view"), vctx = view.getContext("2d");
-  const work = document.createElement("canvas"); let wctx;   // resultado actual (editable)
-  const orig = document.createElement("canvas"); let octx;   // original intacta
+  const orig = document.createElement("canvas"); let octx;   // capa ORIGINAL (intacta)
+  const cut  = document.createElement("canvas"); let xctx;   // capa RECORTE (lo conservado)
   let W = 0, H = 0, scale = 1, ox = 0, oy = 0;
   let tool = "lazo";
   let history = [];
-  let showOrig = false;
+  let showOrig = true, showCut = true;
 
-  // lazo en curso (puntos en coords de TRABAJO)
   let lassoing = false, lassoPts = [];
-  let ptr = null;
 
   // patrón de cuadros (transparencia)
   const chk = document.createElement("canvas"); chk.width = chk.height = 22;
@@ -52,13 +51,14 @@
     if(chkPat){ vctx.fillStyle = chkPat; vctx.fillRect(ox,oy,dw,dh); }
     vctx.restore();
     vctx.imageSmoothingEnabled = true; vctx.imageSmoothingQuality = "high";
-    vctx.drawImage(showOrig ? orig : work, ox, oy, dw, dh);
+    // Original de guía: atenuada si el recorte también se ve, entera si es la única.
+    if(showOrig){ vctx.globalAlpha = showCut ? 0.32 : 1; vctx.drawImage(orig, ox,oy,dw,dh); vctx.globalAlpha = 1; }
+    if(showCut){ vctx.drawImage(cut, ox,oy,dw,dh); }
     // lazo en curso
     if(lassoing && lassoPts.length > 1){
       vctx.beginPath();
       vctx.moveTo(ox + lassoPts[0].x*scale, oy + lassoPts[0].y*scale);
       for(let i=1;i<lassoPts.length;i++) vctx.lineTo(ox + lassoPts[i].x*scale, oy + lassoPts[i].y*scale);
-      // línea de puntos: blanca sobre negra para que se vea en cualquier fondo
       vctx.setLineDash([7,5]);
       vctx.strokeStyle = "rgba(0,0,0,.7)"; vctx.lineWidth = 3; vctx.stroke();
       vctx.strokeStyle = "rgba(255,255,255,.95)"; vctx.lineWidth = 1.5; vctx.stroke();
@@ -75,7 +75,14 @@
       const k = Math.min(1, MAXDIM / Math.max(im.naturalWidth, im.naturalHeight));
       W = Math.round(im.naturalWidth*k); H = Math.round(im.naturalHeight*k);
       orig.width = W; orig.height = H; octx = orig.getContext("2d"); octx.drawImage(im,0,0,W,H);
-      work.width = W; work.height = H; wctx = work.getContext("2d"); wctx.drawImage(orig,0,0);
+      cut.width  = W; cut.height  = H; xctx = cut.getContext("2d");   // vacía (transparente)
+      // Si la foto YA venía recortada (con transparencia), arráncala como recorte
+      // de partida para no empezar de cero.
+      try{
+        const id = octx.getImageData(0,0,W,H).data; let hasAlpha = false;
+        for(let p=3; p<id.length; p+=4*997){ if(id[p] < 250){ hasAlpha = true; break; } }
+        if(hasAlpha) xctx.drawImage(orig,0,0);
+      }catch(e){}
       resizeView(); fitImage(); redraw();
     };
     im.onerror = () => alert("No se pudo cargar la foto.");
@@ -88,28 +95,26 @@
   }
 
   function snapshot(){
-    try{ history.push(wctx.getImageData(0,0,W,H)); if(history.length > HISTMAX) history.shift(); }catch(e){}
+    try{ history.push(xctx.getImageData(0,0,W,H)); if(history.length > HISTMAX) history.shift(); }catch(e){}
     $("#undo").disabled = history.length === 0;
   }
   function undo(){
     const s = history.pop(); if(!s) return;
-    wctx.putImageData(s,0,0); redraw();
+    xctx.putImageData(s,0,0); redraw();
     $("#undo").disabled = history.length === 0;
   }
 
-  // aplicar el lazo: CONSERVA lo de dentro (recortado de lo que hay ahora), quita lo de fuera
-  function applyLasso(pts){
+  // AÑADE la zona rodeada (de la original) a la capa Recorte.
+  function addLasso(pts){
     if(pts.length < 3) return;
     snapshot();
-    const tmp = document.createElement("canvas"); tmp.width = W; tmp.height = H;
-    const t = tmp.getContext("2d");
-    t.save();
-    t.beginPath(); t.moveTo(pts[0].x, pts[0].y);
-    for(let i=1;i<pts.length;i++) t.lineTo(pts[i].x, pts[i].y);
-    t.closePath(); t.clip();
-    t.drawImage(work, 0, 0);       // conserva SOLO lo de dentro del lazo (de lo actual)
-    t.restore();
-    wctx.clearRect(0,0,W,H); wctx.drawImage(tmp, 0, 0);
+    xctx.save();
+    xctx.beginPath(); xctx.moveTo(pts[0].x, pts[0].y);
+    for(let i=1;i<pts.length;i++) xctx.lineTo(pts[i].x, pts[i].y);
+    xctx.closePath(); xctx.clip();
+    xctx.drawImage(orig, 0, 0);      // copia esa zona de la original al recorte
+    xctx.restore();
+    if(!showCut){ showCut = true; syncLayerBtns(); }   // asegúrate de que se vea
     redraw();
   }
 
@@ -121,17 +126,16 @@
     if(tool === "lazo"){ lassoing = true; lassoPts = [toWork(e)]; }
   });
   view.addEventListener("pointermove", e => {
-    ptr = toWork(e);
     if(panning){ ox += e.clientX-panLast.x; oy += e.clientY-panLast.y; panLast = { x:e.clientX, y:e.clientY }; redraw(); return; }
     if(lassoing){
       const p = toWork(e), last = lassoPts[lassoPts.length-1];
-      if(!last || Math.hypot(p.x-last.x, p.y-last.y) > 2/scale) lassoPts.push(p);   // muestrea puntos
+      if(!last || Math.hypot(p.x-last.x, p.y-last.y) > 2/scale) lassoPts.push(p);
       redraw();
     }
   });
   const endPtr = () => {
     panning = false;
-    if(lassoing){ lassoing = false; const pts = lassoPts; lassoPts = []; applyLasso(pts); }
+    if(lassoing){ lassoing = false; const pts = lassoPts; lassoPts = []; addLasso(pts); }
   };
   view.addEventListener("pointerup", endPtr);
   view.addEventListener("pointercancel", endPtr);
@@ -151,21 +155,20 @@
     $("#tLazo").classList.toggle("on", t === "lazo");
     $("#tPan").classList.toggle("on", t === "pan");
   }
+  function syncLayerBtns(){
+    $("#layOrig").classList.toggle("on", showOrig);
+    $("#layCut").classList.toggle("on", showCut);
+  }
   $("#tLazo").onclick = () => setTool("lazo");
   $("#tPan").onclick  = () => setTool("pan");
+  $("#layOrig").onclick = () => { showOrig = !showOrig; syncLayerBtns(); redraw(); };
+  $("#layCut").onclick  = () => { showCut  = !showCut;  syncLayerBtns(); redraw(); };
   $("#undo").onclick  = undo;
   $("#fit").onclick   = () => { fitImage(); redraw(); };
   $("#reset").onclick = () => {
-    if(!confirm("¿Reiniciar la foto (deshace todos los recortes)?")) return;
-    snapshot(); wctx.clearRect(0,0,W,H); wctx.drawImage(orig,0,0); redraw();
+    if(!confirm("¿Vaciar el recorte (empezar de cero)?")) return;
+    snapshot(); xctx.clearRect(0,0,W,H); redraw();
   };
-  // Ver original: mantener pulsado
-  const ob = $("#orig");
-  const showO = () => { showOrig = true; redraw(); };
-  const hideO = () => { showOrig = false; redraw(); };
-  ob.addEventListener("pointerdown", showO);
-  ob.addEventListener("pointerup", hideO);
-  ob.addEventListener("pointerleave", hideO);
 
   window.addEventListener("resize", () => { resizeView(); redraw(); });
   document.addEventListener("keydown", e => {
@@ -174,12 +177,16 @@
     else if(e.key===" "){ e.preventDefault(); setTool("pan"); }
   });
 
-  // ---- guardar ----
+  // ---- guardar (la capa Recorte) ----
   $("#save").onclick = async () => {
     if(!W || !(D && D.cutoutSave)){ alert("Guardar solo funciona en la app de escritorio."); return; }
+    // ¿hay algo en el recorte?
+    let empty = true;
+    try{ const d = xctx.getImageData(0,0,W,H).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }
+    if(empty){ alert("El recorte está vacío. Rodea con el lazo lo que quieras conservar."); return; }
     $("#ov").classList.add("show"); $("#ovT").textContent = "Guardando…";
     let res = null;
-    try{ res = await D.cutoutSave({ imagePath: IMG, dataURL: work.toDataURL("image/png"), song: SONG }); }catch(e){}
+    try{ res = await D.cutoutSave({ imagePath: IMG, dataURL: cut.toDataURL("image/png"), song: SONG }); }catch(e){}
     if(res && res.ok){
       $("#ovT").textContent = res.pushed ? "✓ Guardado y subido" : "✓ Guardado";
       setTimeout(() => $("#ov").classList.remove("show"), 1200);
