@@ -68,8 +68,10 @@
       m.row = row; m.val = row.querySelector(".val");
     });
 
-    // instrumental opcional: si existe, suena el mp3 (y muteamos el vídeo)
-    instSrc = s.instrumental || s.resultsAudio || "";
+    // Audio a reproducir: el OFICIAL (mp3 limpio) si lo hay -> así el donut suena
+    // como la canción real y no el audio del vídeo; si no, instrumental/resultados.
+    instSrc = s.audio || s.instrumental || s.resultsAudio || "";
+    audioOff = +s.audioOffset || 0;                      // mismo desfase que en el editor/visor
     instAudio = instSrc ? new Audio(instSrc) : null;
     if(instAudio) instAudio.loop = false;               // nunca en bucle
 
@@ -83,7 +85,7 @@
     }
     playBtn.textContent = "▶";
   }
-  let instSrc = "", instAudio = null;
+  let instSrc = "", instAudio = null, audioOff = 0;
 
   function curTime(){ return clock.useVideo ? (vid.currentTime||0) : clock.t; }
   function curDur(){ return clock.useVideo ? (isFinite(vid.duration)&&vid.duration>0 ? vid.duration : clock.dur) : clock.dur; }
@@ -92,13 +94,13 @@
     clock.playing = p;
     if(clock.useVideo){ p ? vid.play().catch(()=>{}) : vid.pause(); }
     else { clock.last = Date.now(); }
-    if(instAudio){ try{ instAudio.currentTime = curTime(); p ? instAudio.play().catch(()=>{}) : instAudio.pause(); }catch(e){} }
+    if(instAudio){ try{ instAudio.currentTime = Math.max(0, curTime() + audioOff); p ? instAudio.play().catch(()=>{}) : instAudio.pause(); }catch(e){} }
     playBtn.textContent = p ? "⏸" : "▶";
   }
   function seekTo(frac){
     const d = curDur() || 0; const t = frac * d;
     if(clock.useVideo){ try{ vid.currentTime = t; }catch(e){} } else { clock.t = Math.min(t, d); clock.last = Date.now(); }
-    if(instAudio){ try{ instAudio.currentTime = t; }catch(e){} }
+    if(instAudio){ try{ instAudio.currentTime = Math.max(0, t + audioOff); }catch(e){} }
   }
 
   function frame(){

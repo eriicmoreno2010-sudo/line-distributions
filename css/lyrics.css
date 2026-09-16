@@ -333,6 +333,12 @@ Version: 3.0 — Lyrics
             mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite:xor; mask-composite:exclude;
 }
+/* Tema CLARO: la tarjeta del ad-lib pasa a cristal CLARO para que resalte sobre
+   el fondo blanco (antes era oscura y quedaba pesada/poco legible). */
+body.theme-light .al-box{
+    background:rgba(244,245,250,.62);
+    box-shadow:0 24px 60px -24px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.06) inset;
+}
 .al-box > .al-inner{ overflow:hidden; padding:14px 22px; }
 .al-box .al-name{ font-size:15px; font-weight:900; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px; white-space:nowrap; }
 /* mismo tamaño y grosor para las tres versiones; SIEMPRE en 1 renglón (la fuente se encoge en JS) */

@@ -522,7 +522,8 @@ const Lyrics = {
                 box._leaving = true;
                 box.style.opacity = "0";
                 box.style.transform = "translateY(-22px)";
-                setTimeout(() => box.remove(), 420);
+                // al desaparecer del todo, RECOLOCA: solo entonces bajan los de arriba
+                setTimeout(() => { box.remove(); this.repackAdlibs(msg); }, 420);
             }
         });
         // ENTRAN: crea los nuevos (invisibles); todavía sin colocar.
@@ -534,12 +535,18 @@ const Lyrics = {
             box.style.opacity = "0"; box.style.transform = "translateY(0)"; box._fresh = true;
             msg.appendChild(box);
         });
-        // RECOLOCA TODA la pila de abajo hacia arriba. Así NUNCA se solapan, aunque
-        // entren VARIOS ad-libs a la vez (Renjun+Jaemin+Chenle) — cada uno tiene su hueco.
+        this.repackAdlibs(msg);
+    },
+
+    /* Recoloca la pila de ad-libs de abajo hacia arriba. Los que están SALIENDO
+       (fade) siguen RESERVANDO su hueco -> los de arriba NO bajan mientras haya un
+       ad-lib debajo (aunque se esté yendo); solo bajan cuando ese hueco se libera
+       de verdad (al quitarse). Así "se quedan arriba" salvo que no quede ninguno abajo. */
+    repackAdlibs(msg){
+        const GAP = 16;
         let acc = 0;
         Array.from(msg.children).forEach(b => {
-            if(b._leaving) return;
-            const h = b.offsetHeight || 90;   // fuente fija; la tarjeta se ensancha sola (CSS width:max-content)
+            const h = b.offsetHeight || 90;   // fuente fija; la tarjeta se ensancha sola
             const target = acc;
             if(b._fresh){
                 b._fresh = false;
@@ -547,10 +554,12 @@ const Lyrics = {
                 requestAnimationFrame(() => requestAnimationFrame(() => {
                     b.style.bottom = target + "px"; b.style.opacity = "1";
                 }));
-            } else {
+                b.dataset.bottom = String(target);
+            } else if(!b._leaving){
                 b.style.bottom = target + "px";             // se desplaza suave si su hueco cambió
+                b.dataset.bottom = String(target);
             }
-            b.dataset.bottom = String(target);
+            // los que salen NO se recolocan (siguen su animación), pero RESERVAN hueco
             acc += h + GAP;
         });
     },

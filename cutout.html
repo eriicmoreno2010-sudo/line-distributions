@@ -39,7 +39,7 @@
 <body>
 <header>
   <button onclick="location.href='library.html'">←  Biblioteca</button>
-  <h1>✂️ Recortar y quitar fondo <small>trabaja sobre la foto original · máxima calidad</small></h1>
+  <h1>✂️ Recortar con lazo <small>rodea lo que quieras CONSERVAR · el fondo se quita al instante</small></h1>
   <span class="who" id="who">—</span>
   <span class="spacer"></span>
   <span class="hint">Rueda = zoom · botón central o "✋" = mover</span>
@@ -48,17 +48,12 @@
 
 <div class="toolbar">
   <div class="grp">
-    <button id="tErase" class="on" title="Borra a transparente (arrastra)">🩹 Borrar</button>
-    <button id="tRestore" title="Recupera lo borrado (arrastra)">↩ Restaurar</button>
-    <button id="tWand" title="Clic en el fondo: borra la zona de color parecido">✨ Varita</button>
+    <button id="tLazo" class="on" title="Rodea lo que quieras conservar; al soltar, el resto se quita">🎯 Lazo</button>
     <button id="tPan" title="Mover la vista (arrastra)">✋ Mover</button>
   </div>
-  <div class="grp" id="brushGrp"><span class="lbl">Pincel</span>
-    <input type="range" id="brush" min="6" max="220" step="1" value="70"><span class="val" id="brushV">70</span></div>
-  <div class="grp" id="tolGrp" style="display:none"><span class="lbl">Tolerancia</span>
-    <input type="range" id="tol" min="4" max="120" step="1" value="32"><span class="val" id="tolV">32</span></div>
   <span class="spacer"></span>
   <div class="grp">
+    <button id="orig" title="Mantén pulsado para ver la foto original">👁 Ver original</button>
     <button id="undo" disabled>↶ Deshacer</button>
     <button id="reset">⟲ Reiniciar</button>
     <button id="fit">⊡ Ajustar</button>
@@ -69,6 +64,6 @@
 
 <div id="ov"><div class="t" id="ovT">Guardando…</div></div>
 
-<script src="js/cutout.js?v=1"></script>
+<script src="js/cutout.js?v=2"></script>
 </body>
 </html>
