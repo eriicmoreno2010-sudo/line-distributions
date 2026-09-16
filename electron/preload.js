@@ -17,6 +17,8 @@ contextBridge.exposeInMainWorld("desktop", {
   pickCover: (args) => ipcRenderer.invoke("pick-cover", args || {}),
   importPhoto: (args) => ipcRenderer.invoke("import-photo", args || {}),
   copyPhoto: (args) => ipcRenderer.invoke("copy-photo", args || {}),
+  cutoutLoad: (args) => ipcRenderer.invoke("cutout-load", args || {}),
+  cutoutSave: (args) => ipcRenderer.invoke("cutout-save", args || {}),
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
   deleteItem: (args) => ipcRenderer.invoke("delete-item", args || {}),
   pickCutInput: () => ipcRenderer.invoke("pick-cut-input"),

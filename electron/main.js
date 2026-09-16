@@ -436,6 +436,71 @@ ipcMain.handle("copy-photo", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// ============ RECORTAR / QUITAR FONDO (cutout.html) ============
+// Carga la mejor versión ORIGINAL de la foto de un miembro para editarla:
+// prioriza _src/orig (pristina intacta) > _src > display.
+ipcMain.handle("cutout-load", async (_e, args) => {
+  try{
+    const rel = String((args && args.imagePath) || "").replace(/\\/g, "/");
+    if(!/^images\/.+/.test(rel) || rel.indexOf("..") !== -1) return { ok:false, error:"ruta no permitida" };
+    const abs = path.join(ROOT, rel);
+    const dir = path.dirname(abs), base = path.basename(abs);
+    const cand = [ path.join(dir,"_src","orig",base), path.join(dir,"_src",base), abs ];
+    const use = cand.find(p => { try{ return fs.existsSync(p); }catch(e){ return false; } }) || abs;
+    return { ok:true, src:"file:///" + use.replace(/\\/g, "/") };
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
+// Guarda el recorte (PNG con transparencia) como el original LIMPIO del miembro.
+// Conserva la pristina intacta en _src/orig la primera vez.
+ipcMain.handle("cutout-save", async (_e, args) => {
+  args = args || {};
+  const rel = String(args.imagePath || "").replace(/\\/g, "/");
+  if(!/^images\/.+/.test(rel) || rel.indexOf("..") !== -1) return { ok:false, error:"ruta no permitida" };
+  if(!args.dataURL) return { ok:false, error:"falta la imagen" };
+  const res = { ok:true, committed:false, pushed:false, gitError:null };
+  try{
+    const abs = path.join(ROOT, rel);
+    const dir = path.dirname(abs), base = path.basename(abs);
+    const srcDir = path.join(dir, "_src"), origDir = path.join(srcDir, "orig");
+    fs.mkdirSync(origDir, { recursive:true });
+    // pristina intacta (una sola vez): guarda lo que hubiera como original
+    const origAbs = path.join(origDir, base);
+    if(!fs.existsSync(origAbs)){
+      const prev = fs.existsSync(path.join(srcDir, base)) ? path.join(srcDir, base) : (fs.existsSync(abs) ? abs : null);
+      if(prev){ try{ fs.copyFileSync(prev, origAbs); }catch(e){} }
+    }
+    const b64 = String(args.dataURL).replace(/^data:image\/\w+;base64,/, "");
+    const buf = Buffer.from(b64, "base64");
+    fs.writeFileSync(path.join(srcDir, base), buf);   // original LIMPIO (para reencuadrar con calidad)
+    fs.writeFileSync(abs, buf);                        // display (se ve ya; se re-hornea al encuadrar)
+  }catch(e){ return { ok:false, error:e.message }; }
+
+  // bump PHOTO_VER para romper la caché del visor
+  let bumped = null;
+  try{
+    const rvPath = path.join(ROOT, "js", "ranking.js");
+    let rv = fs.readFileSync(rvPath, "utf8");
+    const m = rv.match(/const PHOTO_VER\s*=\s*(\d+)\s*;/);
+    if(m){ rv = rv.replace(m[0], "const PHOTO_VER = " + (parseInt(m[1],10)+1) + ";"); fs.writeFileSync(rvPath, rv, "utf8"); bumped = "js/ranking.js"; }
+  }catch(e){}
+
+  try{
+    const imgDir = path.dirname(rel);   // images/<grupo>/<cancion>
+    await git(["add", "--", imgDir]);
+    if(bumped) await git(["add", "--", bumped]);
+    const staged = await git(["diff", "--cached", "--quiet"]);
+    if(staged.code !== 0){
+      const c = await git(["commit", "-m", "Cutout " + (args.song || "foto") + " (quitar fondo)"]);
+      if(c.code === 0) res.committed = true; else res.gitError = c.err || c.out;
+    }
+    let p = await git(["push"]);
+    if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+    if(p.code === 0) res.pushed = true;
+  }catch(e){ res.gitError = e.message; }
+  return res;
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }
