@@ -100,15 +100,1355 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 1.9,
+      "end": 6.69,
+      "members": [
+        "RENJUN"
+      ],
+      "original": "Where I am, 눈을 감으면",
+      "romanization": "where i am, nuneul gameumyeon",
+      "english": "Where I am, When I close my eyes",
+      "adlib": false,
+      "voice": [
+        [
+          1.93,
+          3.59
+        ],
+        [
+          4.25,
+          5.38
+        ],
+        [
+          5.53,
+          6.75
+        ]
+      ]
+    },
+    {
+      "start": 7.8,
+      "end": 10.86,
+      "members": [
+        "RENJUN"
+      ],
+      "voice": [
+        [
+          7.85,
+          9.07
+        ],
+        [
+          9.22,
+          10.84
+        ]
+      ],
+      "original": "잊혀진 바다가 돼",
+      "romanization": "ichyeojin badaga dwae",
+      "english": "It becomes a forgotten sea",
+      "adlib": false
+    },
+    {
+      "start": 14.06,
+      "end": 18.54,
+      "members": [
+        "CHENLE"
+      ],
+      "voice": [
+        [
+          14.08,
+          15.61
+        ],
+        [
+          16.13,
+          18.53
+        ]
+      ],
+      "original": "무겁게, 가라앉고만 싶을 때",
+      "romanization": "mugeopge, garaanjgoman sipeul ttae",
+      "english": "When I want, To sink down heavily",
+      "adlib": false
+    },
+    {
+      "start": 18.92,
+      "end": 24.11,
+      "members": [
+        "CHENLE"
+      ],
+      "voice": [
+        [
+          19.06,
+          20.73
+        ],
+        [
+          20.94,
+          24.11
+        ]
+      ],
+      "original": "너는 달빛처럼 다가와 말을 건네",
+      "romanization": "neoneun dalbitcheoreom dagawa mareul geonne",
+      "english": "You approach me like moonlight and speak to me",
+      "adlib": false
+    },
+    {
+      "start": 25.38,
+      "end": 29.16,
+      "members": [
+        "MARK",
+        "JENO"
+      ],
+      "voice": [
+        [
+          25.57,
+          27.01
+        ],
+        [
+          27.16,
+          27.77
+        ],
+        [
+          27.92,
+          29.13
+        ]
+      ],
+      "original": "",
+      "romanization": "I’m so up and down that I can’t stop",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 31.5,
+      "end": 35.3,
+      "members": [
+        "JENO",
+        "MARK"
+      ],
+      "voice": [
+        [
+          31.57,
+          32.24
+        ],
+        [
+          32.42,
+          32.98
+        ],
+        [
+          33.16,
+          33.78
+        ],
+        [
+          33.93,
+          35.32
+        ]
+      ],
+      "original": "대답 없는 질문 가득해져",
+      "romanization": "daedap eomneun jilmun gadeukaejyeo",
+      "english": "I'm filled with unanswered questions",
+      "adlib": false
+    },
+    {
+      "start": 36.46,
+      "end": 39.29,
+      "members": [
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          36.54,
+          38.81
+        ],
+        [
+          38.96,
+          39.32
+        ]
+      ],
+      "original": "아주 당연했던 감각 oh",
+      "romanization": "aju dangyeonhaetdeon gamgak oh",
+      "english": "That very natural feeling oh",
+      "adlib": false
+    },
+    {
+      "start": 39.58,
+      "end": 42.24,
+      "members": [
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          39.62,
+          41.76
+        ],
+        [
+          41.94,
+          42.29
+        ]
+      ],
+      "original": "잊어버린 것만 같아 oh",
+      "romanization": "ijeobeorin geonman gata oh",
+      "english": "I feel like I've forgotten it oh",
+      "adlib": false
+    },
+    {
+      "start": 42.56,
+      "end": 45.91,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          42.58,
+          46.11
+        ]
+      ],
+      "original": "",
+      "romanization": "I’ve been searching for, another meaning",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 46.06,
+      "end": 48.48,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          45.96,
+          47.76
+        ],
+        [
+          47.91,
+          48.47
+        ]
+      ],
+      "original": "마주칠 수 있을까",
+      "romanization": "majuchil su isseulkka",
+      "english": "Will we be able to meet?",
+      "adlib": false
+    },
+    {
+      "start": 48.95,
+      "end": 52.62,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "When I’m falling down down down, You always save me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 52.78,
+      "end": 55.98,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "내 맘 다 알아준 온기",
+      "romanization": "nae mam da arajun ongi",
+      "english": "The warmth that knows everything about my heart",
+      "adlib": false
+    },
+    {
+      "start": 56.13,
+      "end": 61.09,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "감싸오는 너의 숨이, 나를 눈뜨게 하지",
+      "romanization": "gamssaoneun neoui sumi, nareul nuntteuge haji",
+      "english": "Your breath that wraps around me, Makes me open my eyes",
+      "adlib": false
+    },
+    {
+      "start": 61.24,
+      "end": 64.82,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "길을 잃은 별처럼, 헤매는 매일",
+      "romanization": "gireul ileun byeolcheoreom, hemaeneun maeil",
+      "english": "Like a lost star, Every day that I wander",
+      "adlib": false
+    },
+    {
+      "start": 64.97,
+      "end": 68.03,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "다정히 이끄는 손길",
+      "romanization": "dajeonghi ikkeuneun songil",
+      "english": "Your gentle guiding hand",
+      "adlib": false
+    },
+    {
+      "start": 68.18,
+      "end": 73.74,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "너를 따라 다시 Dreaming, 네가 있어 Now I’m Breathing",
+      "romanization": "neoreul ttara dasi dreaming, nega isseo now i’m breathing",
+      "english": "Following you, dreaming once again, Now that you're here, I'm breathing",
+      "adlib": false
+    },
+    {
+      "start": 74.89,
+      "end": 79.53,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          74.82,
+          76.34
+        ],
+        [
+          76.9,
+          79.53
+        ]
+      ],
+      "original": "내 안에, 감추고 외면했던",
+      "romanization": "nae ane, gamchugo oemyeonhaetdeon",
+      "english": "Inside me, I face the crouching me that I hid",
+      "adlib": false
+    },
+    {
+      "start": 80.6,
+      "end": 84.23,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          80.6,
+          84.25
+        ]
+      ],
+      "original": "웅크린 나를 마주해",
+      "romanization": "ungkeurin nareul majuhae",
+      "english": "And turned away from",
+      "adlib": false
+    },
+    {
+      "start": 84.7,
+      "end": 87.21,
       "members": [
         "MARK"
       ],
+      "voice": [
+        [
+          84.79,
+          87.13
+        ]
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "Feel like I’m about to drown",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 87.77,
+      "end": 89.05,
+      "members": [
+        "JENO"
+      ],
+      "original": "I’m not Breathing 점점 더",
+      "romanization": "i’m not breathing jeomjeom deo",
+      "english": "I'm not breathing, more and more",
+      "adlib": false,
+      "voice": [
+        [
+          87.78,
+          89.06
+        ]
+      ]
+    },
+    {
+      "start": 89.17,
+      "end": 90.31,
+      "members": [
+        "JENO"
+      ],
+      "voice": [
+        [
+          89.11,
+          90.41
+        ]
+      ],
+      "original": "천천히 날 조여와",
+      "romanization": "cheoncheonhi nal joyeowa",
+      "english": "Slowly, you're tightening around me",
+      "adlib": false
+    },
+    {
+      "start": 90.43,
+      "end": 93.02,
+      "members": [
+        "JENO"
+      ],
+      "voice": [
+        [
+          90.4,
+          92.27
+        ],
+        [
+          92.42,
+          93.21
+        ]
+      ],
+      "original": "결국 내가 나를 Bring me down",
+      "romanization": "gyeolguk naega nareul bring me down",
+      "english": "In the end, I bring myself down",
+      "adlib": false
+    },
+    {
+      "start": 93.18,
+      "end": 94.98,
+      "members": [
+        "MARK"
+      ],
+      "voice": [
+        [
+          93.1,
+          95.13
+        ]
+      ],
+      "original": "망상들로 숨 쉴 줄만 알아서",
+      "romanization": "mangsangdeullo sum swil julman araseo",
+      "english": "I only know how to breathe through delusions",
+      "adlib": false
+    },
+    {
+      "start": 95.13,
+      "end": 98.22,
+      "members": [
+        "MARK"
+      ],
+      "voice": [
+        [
+          95.19,
+          98.87
+        ]
+      ],
+      "original": "I’m in the deep end, 칠흑같이 어두워 Can you find me",
+      "romanization": "i’m in the deep end, chilheukgachi eoduwo can you find me",
+      "english": "I'm in the deep end, It's pitch black, can you find me?",
+      "adlib": false
+    },
+    {
+      "start": 98.37,
+      "end": 102.02,
+      "members": [
+        "JAEMIN",
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          98.41,
+          99.89
+        ],
+        [
+          100.04,
+          100.69
+        ],
+        [
+          100.84,
+          102.15
+        ]
+      ],
+      "original": "",
+      "romanization": "I’m so up and down that I can’t stop",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 30.46,
+      "end": 31.6,
+      "members": [
+        "JENO"
+      ],
+      "voice": [
+        [
+          30.46,
+          31.57
+        ]
+      ],
+      "original": "",
+      "romanization": "(Oh oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 102.22,
+      "end": 104.98,
+      "members": [
+        "JENO"
+      ],
+      "original": "",
+      "romanization": "(I won’t never stop, I won’t give you up)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          102.2,
+          103.38
+        ],
+        [
+          103.77,
+          104.89
+        ]
+      ]
+    },
+    {
+      "start": 103.32,
+      "end": 104.54,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "(Oh oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          103.38,
+          104.48
+        ]
+      ]
+    },
+    {
+      "start": 111.59,
+      "end": 112.32,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          111.74,
+          112.46
+        ]
+      ]
+    },
+    {
+      "start": 114.6,
+      "end": 115.88,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          114.76,
+          116.06
+        ]
+      ]
+    },
+    {
+      "start": 120.86,
+      "end": 122.05,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(I)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          120.87,
+          122.06
+        ]
+      ]
+    },
+    {
+      "start": 104.54,
+      "end": 108.28,
+      "members": [
+        "JAEMIN",
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          104.48,
+          105.14
+        ],
+        [
+          105.32,
+          106.65
+        ],
+        [
+          106.8,
+          108.22
+        ]
+      ],
+      "original": "길을 찾지 못해 불안해져",
+      "romanization": "gireul chatji mothae buranhaejyeo",
+      "english": "I become anxious because I can't find my way",
+      "adlib": false
+    },
+    {
+      "start": 109.44,
+      "end": 112.21,
+      "members": [
+        "JENO"
+      ],
+      "voice": [
+        [
+          109.41,
+          111.61
+        ],
+        [
+          111.76,
+          112.17
+        ]
+      ],
+      "original": "같은 꿈을 꾸던 순간 oh",
+      "romanization": "gateun kkumeul kkudeon sungan oh",
+      "english": "The moment when we dreamed the same dream oh",
+      "adlib": false
+    },
+    {
+      "start": 112.42,
+      "end": 115.25,
+      "members": [
+        "JENO"
+      ],
+      "voice": [
+        [
+          112.47,
+          114.53
+        ],
+        [
+          114.74,
+          115.12
+        ]
+      ],
+      "original": "잃어버린 것만 같아 oh",
+      "romanization": "ileobeorin geonman gata oh",
+      "english": "I feel like I've lost it oh",
+      "adlib": false
+    },
+    {
+      "start": 115.43,
+      "end": 118.72,
+      "members": [
+        "RENJUN"
+      ],
+      "voice": [
+        [
+          115.4,
+          118.95
+        ]
+      ],
+      "original": "",
+      "romanization": "I’ve been searching for, another meaning",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 118.87,
+      "end": 121.33,
+      "members": [],
+      "voice": [
+        [
+          118.97,
+          120.79
+        ],
+        [
+          120.91,
+          121.5
+        ]
+      ],
+      "original": "나아갈 수 있을까",
+      "romanization": "naagal su isseulkka",
+      "english": "Will I be able to move forward?",
+      "adlib": false
+    },
+    {
+      "start": 121.88,
+      "end": 125.45,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "When I’m falling down down down, You always save me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 125.66,
+      "end": 128.81,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "내 맘 다 알아준 온기",
+      "romanization": "nae mam da arajun ongi",
+      "english": "The warmth that knows everything about my heart",
+      "adlib": false
+    },
+    {
+      "start": 128.93,
+      "end": 133.88,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "감싸오는 너의 숨이, 나를 눈뜨게 하지",
+      "romanization": "gamssaoneun neoui sumi, nareul nuntteuge haji",
+      "english": "Your breath that wraps around me, Makes me open my eyes",
+      "adlib": false
+    },
+    {
+      "start": 134.03,
+      "end": 137.67,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "길을 잃은 별처럼, 헤매는 매일",
+      "romanization": "gireul ileun byeolcheoreom, hemaeneun maeil",
+      "english": "Like a lost star, Every day that I wander",
+      "adlib": false
+    },
+    {
+      "start": 137.82,
+      "end": 140.88,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "다정히 이끄는 손길",
+      "romanization": "dajeonghi ikkeuneun songil",
+      "english": "Your gentle guiding hand",
+      "adlib": false
+    },
+    {
+      "start": 141.06,
+      "end": 146.53,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "너를 따라 다시 Dreaming, 네가 있어 Now I’m Breathing",
+      "romanization": "neoreul ttara dasi dreaming, nega isseo now i’m breathing",
+      "english": "Following you, dreaming once again, Now that you're here, I'm breathing",
+      "adlib": false
+    },
+    {
+      "start": 147.37,
+      "end": 150.13,
+      "members": [
+        "CHENLE"
+      ],
+      "voice": [
+        [
+          147.34,
+          147.89
+        ],
+        [
+          148.02,
+          150.13
+        ]
+      ],
+      "original": "맘이 다 부서지고",
+      "romanization": "mami da buseojigo",
+      "english": "When my heart was completely broken",
+      "adlib": false
+    },
+    {
+      "start": 150.34,
+      "end": 153.38,
+      "members": [
+        "CHENLE"
+      ],
+      "voice": [
+        [
+          150.33,
+          150.86
+        ],
+        [
+          151.01,
+          151.42
+        ],
+        [
+          151.55,
+          153.25
+        ]
+      ],
+      "original": "숨이 차 도망쳤을 때",
+      "romanization": "sumi cha domangchyeosseul ttae",
+      "english": "When I was out of breath and ran away",
+      "adlib": false
+    },
+    {
+      "start": 153.5,
+      "end": 159.5,
+      "members": [
+        "RENJUN"
+      ],
+      "voice": [
+        [
+          153.72,
+          156.32
+        ],
+        [
+          156.71,
+          159.54
+        ]
+      ],
+      "original": "말도 없이 옆에 서서, 기다려준 너를 알아 난",
+      "romanization": "maldo eopsi yeope seoseo, gidaryeojun neoreul ara nan",
+      "english": "I know you, Who waited beside me without saying a word",
+      "adlib": false
+    },
+    {
+      "start": 159.52,
+      "end": 166.29,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          159.57,
+          162.37
+        ],
+        [
+          162.58,
+          166.34
+        ]
+      ],
+      "original": "아득한 방황의 끝에, 돌아갈 You’re my last chance",
+      "romanization": "adeukan banghwangui kkeute, doragal you’re my last chance",
+      "english": "At the end of a distant wandering, You're my last chance to return",
+      "adlib": false
+    },
+    {
+      "start": 167.12,
+      "end": 169.69,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          167.15,
+          170.46
+        ]
+      ],
+      "original": "",
+      "romanization": "I don’t have any air without you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 169.77,
+      "end": 173.98,
+      "members": [
+        "MARK"
+      ],
+      "voice": [
+        [
+          169.84,
+          174.08
+        ]
+      ],
+      "original": "",
+      "romanization": "I know I’m no good without you, baby can you stay all night",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 174.16,
+      "end": 178.14,
+      "members": [
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          174.43,
+          175.28
+        ],
+        [
+          175.43,
+          178.26
+        ]
+      ],
+      "original": "",
+      "romanization": "yeah You know, I’m always drinking beer, Before I meet you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 178.32,
+      "end": 179.69,
+      "members": [
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          178.46,
+          179.8
+        ]
+      ],
+      "original": "",
+      "romanization": "Still shaking me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 179.64,
+      "end": 180.4,
+      "members": [
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          179.67,
+          180.45
+        ]
+      ],
+      "original": "",
+      "romanization": "(Stupid Cupid)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 180.52,
+      "end": 180.73,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          180.51,
+          180.77
+        ]
+      ]
+    },
+    {
+      "start": 183.13,
+      "end": 183.51,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "(Time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          183.19,
+          183.55
+        ]
+      ]
+    },
+    {
+      "start": 197.94,
+      "end": 203.48,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(Ah woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          197.97,
+          203.45
+        ]
+      ]
+    },
+    {
+      "start": 180.88,
+      "end": 183.33,
+      "members": [
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          180.85,
+          181.52
+        ],
+        [
+          181.64,
+          183.25
+        ]
+      ],
+      "original": "오늘도 난 너를 보다가, Where’s my time?",
+      "romanization": "oneuldo nan neoreul bodaga, where’s my time?",
+      "english": "Even today, while looking at you, Where's my time?",
+      "adlib": false
+    },
+    {
+      "start": 183.94,
+      "end": 186.57,
+      "members": [
+        "JISUNG"
+      ],
+      "voice": [
+        [
+          183.86,
+          184.47
+        ],
+        [
+          184.63,
+          185.27
+        ],
+        [
+          185.43,
+          186.07
+        ],
+        [
+          186.2,
+          186.61
+        ]
+      ],
+      "original": "다른 건 다 필요 없다 오직 하나, Please more",
+      "romanization": "dareun geon da pillyo eopda ojik hana, please more",
+      "english": "I don't need anything else, only one thing, Please more",
+      "adlib": false
+    },
+    {
+      "start": 186.94,
+      "end": 189.54,
+      "members": [
+        "JAEMIN"
+      ],
+      "voice": [
+        [
+          186.89,
+          187.47
+        ],
+        [
+          187.65,
+          189.62
+        ]
+      ],
+      "original": "Breathing 숨을 들이마셔, Think about you",
+      "romanization": "breathing sumeul deurimasyeo, think about you",
+      "english": "Breathing I breathe in, Think about you",
+      "adlib": false
+    },
+    {
+      "start": 189.66,
+      "end": 192.43,
+      "members": [
+        "JAEMIN"
+      ],
+      "voice": [
+        [
+          189.53,
+          192.53
+        ]
+      ],
+      "original": "어둠 속에 나를 비춘, 너와 손을 뻗어 잡고",
+      "romanization": "eodum soge nareul bichun, neowa soneul ppeodeo japgo",
+      "english": "I reach out and hold you, Who illuminated me in the darkness",
+      "adlib": false
+    },
+    {
+      "start": 192.58,
+      "end": 193.97,
+      "members": [
+        "JAEMIN"
+      ],
+      "voice": [
+        [
+          192.61,
+          193.34
+        ],
+        [
+          193.46,
+          194.15
+        ]
+      ],
+      "original": "느껴지는 따스한 온기 속",
+      "romanization": "neukkyeojineun ttaseuhan ongi sok",
+      "english": "Within the warm feeling I can feel",
+      "adlib": false
+    },
+    {
+      "start": 194.09,
+      "end": 195.45,
+      "members": [
+        "JAEMIN"
+      ],
+      "voice": [
+        [
+          194.15,
+          195.6
+        ]
+      ],
+      "original": "원하는 답을 찾아 더 깊이",
+      "romanization": "wonhaneun dabeul chaja deo gipi",
+      "english": "I search for the answer I want, deeper",
+      "adlib": false
+    },
+    {
+      "start": 195.57,
+      "end": 197.94,
+      "members": [
+        "JAEMIN"
+      ],
+      "voice": [
+        [
+          195.55,
+          197.9
+        ]
+      ],
+      "original": "Dive in dive in, 우리들의 여정을 계속해",
+      "romanization": "dive in dive in, urideurui yeojeongeul gyesokae",
+      "english": "Dive in dive in, We continue our journey",
+      "adlib": false
+    },
+    {
+      "start": 198.06,
+      "end": 201.52,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "When I’m falling down down down, You always save me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 201.7,
+      "end": 204.61,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "내 맘 다 알아준 온기",
+      "romanization": "nae mam da arajun ongi",
+      "english": "The warmth that knows everything about my heart",
+      "adlib": false
+    },
+    {
+      "start": 204.19,
+      "end": 206.02,
+      "members": [
+        "CHENLE"
+      ],
+      "voice": [
+        [
+          204.27,
+          206.09
+        ]
+      ],
+      "original": "(네 온기)",
+      "romanization": "(ne ongi)",
+      "english": "(Your warmth)",
+      "adlib": true
+    },
+    {
+      "start": 206.95,
+      "end": 208.49,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "(숨이)",
+      "romanization": "(sumi)",
+      "english": "(Breath)",
+      "adlib": true,
+      "voice": [
+        [
+          206.99,
+          208.5
+        ]
+      ]
+    },
+    {
+      "start": 204.89,
+      "end": 209.94,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "감싸오는 너의 숨이, 나를 눈뜨게 하지",
+      "romanization": "gamssaoneun neoui sumi, nareul nuntteuge haji",
+      "english": "Your breath that wraps around me, Makes me open my eyes",
+      "adlib": false
+    },
+    {
+      "start": 210.09,
+      "end": 213.63,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "길을 잃은 별처럼, 헤매는 매일",
+      "romanization": "gireul ileun byeolcheoreom, hemaeneun maeil",
+      "english": "Like a lost star, Every day that I wander",
+      "adlib": false
+    },
+    {
+      "start": 209.94,
+      "end": 212.85,
+      "members": [
+        "HAECHAN"
+      ],
+      "voice": [
+        [
+          210.09,
+          212.75
+        ]
+      ],
+      "original": "(내 곁에)",
+      "romanization": "(nae gyeote)",
+      "english": "(By my side)",
+      "adlib": true
+    },
+    {
+      "start": 213.15,
+      "end": 214.82,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "(Mmm)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          213.13,
+          214.84
+        ]
+      ]
+    },
+    {
+      "start": 215.23,
+      "end": 217.52,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "(-끄는 손길)",
+      "romanization": "(-keuneun songil)",
+      "english": "(Guiding hand)",
+      "adlib": true,
+      "voice": [
+        [
+          215.27,
+          217.64
+        ]
+      ]
+    },
+    {
+      "start": 218.19,
+      "end": 219.2,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "(Dreaming)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          218.26,
+          219.14
+        ]
+      ]
+    },
+    {
+      "start": 213.81,
+      "end": 216.84,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "다정히 이끄는 손길",
+      "romanization": "dajeonghi ikkeuneun songil",
+      "english": "Your gentle guiding hand",
+      "adlib": false
+    },
+    {
+      "start": 217.05,
+      "end": 222.61,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "너를 따라 다시 Dreaming, 네가 있어 Now I’m Breathing",
+      "romanization": "neoreul ttara dasi dreaming, nega isseo now i’m breathing",
+      "english": "Following you, dreaming once again, Now that you're here, I'm breathing",
+      "adlib": false
+    },
+    {
+      "start": 223.62,
+      "end": 228.49,
+      "members": [
+        "RENJUN"
+      ],
+      "voice": [
+        [
+          223.66,
+          225.17
+        ],
+        [
+          226.01,
+          228.48
+        ]
+      ],
+      "original": "Here I am, 두 눈을 뜨면",
+      "romanization": "here i am, du nuneul tteumyeon",
+      "english": "Here I am, When I open my eyes",
+      "adlib": false
+    },
+    {
+      "start": 229.61,
+      "end": 232.69,
+      "members": [
+        "RENJUN"
+      ],
+      "voice": [
+        [
+          229.68,
+          232.78
+        ]
+      ],
+      "original": "긴긴밤의 끝자리",
+      "romanization": "ginginbamui kkeutjari",
+      "english": "At the end of the long long night",
+      "adlib": false
+    },
+    {
+      "start": 235.87,
+      "end": 240.51,
+      "members": [
+        "CHENLE"
+      ],
+      "voice": [
+        [
+          235.87,
+          237.42
+        ],
+        [
+          237.74,
+          240.48
+        ]
+      ],
+      "original": "따스해, 마주 잡은 손 느낄 때",
+      "romanization": "ttaseuhae, maju jabeun son neukkil ttae",
+      "english": "It's warm, When I feel our hands holding each other",
+      "adlib": false
+    },
+    {
+      "start": 241.7,
+      "end": 244.72,
+      "members": [
+        "CHENLE"
+      ],
+      "voice": [
+        [
+          241.81,
+          244.67
+        ]
+      ],
+      "original": "",
+      "romanization": "And my heart starts beating",
+      "english": "",
+      "adlib": false
     }
   ],
   "cover": "covers/nctdream_breathing.jpg",
