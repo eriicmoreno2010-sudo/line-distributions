@@ -1189,7 +1189,7 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 193.81,
@@ -1200,7 +1200,7 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 195.1,
@@ -1211,7 +1211,7 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 197.99,
@@ -1222,7 +1222,7 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 196.71,
@@ -1234,7 +1234,7 @@
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           196.73,
@@ -1296,7 +1296,7 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 202.12,
@@ -1307,7 +1307,7 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 203.35,
@@ -1318,7 +1318,7 @@
       "original": "(혼자보단 둘이 좋아, 둘이 보단 너가 좋아)",
       "romanization": "(honjabodan duri joa, duribodan neoga joa)",
       "english": "(Better two than one, Better you than other ones)",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 206.27,
@@ -1329,7 +1329,7 @@
       "original": "",
       "romanization": "(Know what I mean)",
       "english": "",
-      "adlib": false
+      "adlib": true
     },
     {
       "start": 204.89,
@@ -1341,7 +1341,7 @@
       "original": "",
       "romanization": "I’m not myself",
       "english": "",
-      "adlib": true,
+      "adlib": false,
       "voice": [
         [
           204.9,
