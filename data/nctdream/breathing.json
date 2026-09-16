@@ -112,5 +112,6 @@
     }
   ],
   "cover": "covers/nctdream_breathing.jpg",
-  "audio": "audio/nctdream_breathing.mp3"
+  "audio": "audio/nctdream_breathing.mp3",
+  "npC1": "#26a4f2"
 }
