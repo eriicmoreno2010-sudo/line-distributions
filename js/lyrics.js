@@ -547,8 +547,10 @@ const Lyrics = {
     placeAdlib(msg, box){
         const GAP = 16;
         const h = box.offsetHeight || 90; box._h = h;
+        // Los que se están YENDO no reservan sitio -> el nuevo ocupa el hueco de
+        // abajo que dejan (como antes). Los que se quedan NO se mueven (fijos).
         const occ = Array.from(msg.children)
-            .filter(b => b !== box && b._bottom != null)
+            .filter(b => b !== box && b._bottom != null && !b._leaving)
             .map(b => ({ b: b._bottom, t: b._bottom + (b._h || 90) }))
             .sort((a, c) => a.b - c.b);
         let y = 0;

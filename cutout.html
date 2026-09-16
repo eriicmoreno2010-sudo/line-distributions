@@ -48,19 +48,24 @@
 
 <div class="toolbar">
   <div class="grp">
-    <button id="tLazo" class="on" title="Rodea lo que quieras conservar; esa zona se añade al recorte">🎯 Lazo</button>
+    <button id="tLazo" class="on" title="Rodea lo que quieras conservar; esa zona se añade a la capa activa">🎯 Lazo</button>
+    <button id="tErase" title="Borra (quita) de la capa recorte ACTIVA — arrastra">🩹 Borrar</button>
     <button id="tPan" title="Mover la vista (arrastra)">✋ Mover</button>
   </div>
+  <div class="grp" id="brushGrp" style="display:none"><span class="lbl">Pincel</span>
+    <input type="range" id="brush" min="6" max="220" step="1" value="70"><span class="val" id="brushV">70</span></div>
   <span class="spacer"></span>
   <div class="grp">
     <span class="lbl">Capas</span>
     <button id="layOrig" class="on" title="Ver/ocultar la foto ORIGINAL (de guía, atenuada)">👁 Original</button>
-    <button id="layCut" class="on" title="Ver/ocultar el RECORTE (lo que has rodeado)">👁 Recorte</button>
+    <span id="layerList" style="display:flex;gap:6px"></span>
+    <button id="addLayer" title="Añadir otra capa de recorte">➕ Capa</button>
+    <button id="delLayer" title="Borrar la capa activa">🗑</button>
   </div>
   <span class="spacer"></span>
   <div class="grp">
     <button id="undo" disabled>↶ Deshacer</button>
-    <button id="reset">⟲ Vaciar recorte</button>
+    <button id="reset">⟲ Vaciar capa</button>
     <button id="fit">⊡ Ajustar</button>
   </div>
 </div>
@@ -69,6 +74,6 @@
 
 <div id="ov"><div class="t" id="ovT">Guardando…</div></div>
 
-<script src="js/cutout.js?v=3"></script>
+<script src="js/cutout.js?v=4"></script>
 </body>
 </html>
