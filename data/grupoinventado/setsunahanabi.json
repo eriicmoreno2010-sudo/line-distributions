@@ -961,5 +961,6 @@
     }
   ],
   "audio": "audio/grupoinventado_setsunahanabi.mp3",
-  "audioOffset": 0.45
+  "audioOffset": 0.45,
+  "npC1": "#ff0000"
 }
