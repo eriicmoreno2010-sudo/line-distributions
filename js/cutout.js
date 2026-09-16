@@ -18,7 +18,8 @@
   const orig = document.createElement("canvas"); let octx;   // capa ORIGINAL (intacta)
   let W = 0, H = 0, scale = 1, ox = 0, oy = 0;
   let tool = "lazo", brush = 70;
-  let showOrig = true;
+  let showOrig = false;   // por defecto NO se muestra (así ves el fondo YA quitado en vivo)
+  let hasCut = false;     // ¿hay algo recortado ya? (antes del 1er lazo se ve la original para apuntar)
   let layers = [];        // [{canvas, ctx, name}]
   let active = 0;
   let history = [];       // [{layer, data}]
@@ -57,8 +58,10 @@
     if(chkPat){ vctx.fillStyle = chkPat; vctx.fillRect(ox,oy,dw,dh); }
     vctx.restore();
     vctx.imageSmoothingEnabled = true; vctx.imageSmoothingQuality = "high";
-    const anyCut = layers.some(l => l);
-    if(showOrig){ vctx.globalAlpha = anyCut ? 0.32 : 1; vctx.drawImage(orig, ox,oy,dw,dh); vctx.globalAlpha = 1; }
+    // Original: antes del 1er recorte se ve ENTERA (para apuntar); después solo si
+    // activas "👁 Original" y muy tenue (guía). Así, al recortar, VES el fondo quitado.
+    if(!hasCut){ vctx.drawImage(orig, ox,oy,dw,dh); }
+    else if(showOrig){ vctx.globalAlpha = 0.18; vctx.drawImage(orig, ox,oy,dw,dh); vctx.globalAlpha = 1; }
     layers.forEach(l => vctx.drawImage(l.canvas, ox,oy,dw,dh));
     if(lassoing && lassoPts.length > 1){
       vctx.beginPath();
@@ -89,8 +92,9 @@
       try{
         const id = octx.getImageData(0,0,W,H).data; let hasAlpha = false;
         for(let p=3; p<id.length; p+=4*997){ if(id[p] < 250){ hasAlpha = true; break; } }
-        if(hasAlpha) layers[0].ctx.drawImage(orig,0,0);
+        if(hasAlpha){ layers[0].ctx.drawImage(orig,0,0); hasCut = true; }
       }catch(e){}
+      $("#layOrig").classList.toggle("on", showOrig);
       renderLayerBtns(); resizeView(); fitImage(); redraw();
     };
     im.onerror = () => alert("No se pudo cargar la foto.");
@@ -124,7 +128,9 @@
     for(let i=1;i<pts.length;i++) x.lineTo(pts[i].x, pts[i].y);
     x.closePath(); x.clip();
     x.drawImage(orig, 0, 0);
-    x.restore(); redraw();
+    x.restore();
+    hasCut = true;                 // ya hay recorte -> se ve el fondo quitado
+    redraw();
   }
   // BORRA (quita) de la capa ACTIVA con el pincel.
   function eraseAt(a, b){
