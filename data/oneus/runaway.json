@@ -63,7 +63,13 @@
       "image": "images/oneus/runaway/xion.png",
       "color": "#cc5de8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 0.885,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
