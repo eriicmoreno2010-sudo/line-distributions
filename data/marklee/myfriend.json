@@ -2,7 +2,7 @@
   "group": "MARK LEE",
   "song": "My Friend",
   "video": "videos/marklee_myfriend.mp4",
-  "duration": 0,
+  "duration": 175.46625,
   "theme": "dark",
   "subunit": true,
   "members": [
@@ -22,15 +22,534 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 17.2,
+      "end": 25.76,
       "members": [
         "MARK LEE"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "I won’t run away just like, I promised you before",
       "english": "",
-      "adlib": ""
+      "adlib": false,
+      "voice": [
+        [
+          17.28,
+          18.24
+        ],
+        [
+          19.14,
+          20.41
+        ],
+        [
+          21.3,
+          22.72
+        ],
+        [
+          23.51,
+          25.78
+        ]
+      ]
+    },
+    {
+      "start": 26.03,
+      "end": 34.59,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          26.03,
+          27.03
+        ],
+        [
+          27.92,
+          29.25
+        ],
+        [
+          30.07,
+          32.23
+        ],
+        [
+          32.35,
+          33.33
+        ],
+        [
+          33.45,
+          34.61
+        ]
+      ],
+      "original": "",
+      "romanization": "Oh I run to you just to hold your hands, And then say a prayer",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 34.71,
+      "end": 39.78,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          34.79,
+          35.4
+        ],
+        [
+          35.58,
+          37.05
+        ],
+        [
+          37.18,
+          37.64
+        ],
+        [
+          37.83,
+          39.76
+        ]
+      ],
+      "original": "",
+      "romanization": "I hope the warmth, from last night stays with you, wherever you go",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 39.93,
+      "end": 43.04,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          39.92,
+          40.83
+        ],
+        [
+          40.98,
+          43.86
+        ]
+      ],
+      "original": "",
+      "romanization": "By the end of summer hope, you can know",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 43.19,
+      "end": 54.45,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          43.22,
+          43.61
+        ],
+        [
+          43.76,
+          45.89
+        ],
+        [
+          46.13,
+          49.55
+        ],
+        [
+          50.48,
+          51.63
+        ],
+        [
+          51.88,
+          52.26
+        ],
+        [
+          52.44,
+          54.46
+        ]
+      ],
+      "original": "",
+      "romanization": "My friend, there ain’t no love like this, can you hold my hand",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 54.59,
+      "end": 63.02,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          54.72,
+          56.19
+        ],
+        [
+          56.31,
+          58.22
+        ],
+        [
+          58.45,
+          59.43
+        ],
+        [
+          59.62,
+          59.95
+        ],
+        [
+          60.07,
+          61.05
+        ],
+        [
+          61.21,
+          63.03
+        ]
+      ],
+      "original": "",
+      "romanization": "How long does it take to know, I'd lay down my life for you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 65.23,
+      "end": 73.73,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          65.28,
+          66.29
+        ],
+        [
+          67.11,
+          68.64
+        ],
+        [
+          69.34,
+          70.69
+        ],
+        [
+          71.51,
+          73.76
+        ]
+      ],
+      "original": "",
+      "romanization": "If you need a light can I be, who you first call to",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 73.94,
+      "end": 80.06,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          73.99,
+          75.06
+        ],
+        [
+          75.88,
+          77.29
+        ],
+        [
+          78.07,
+          80.23
+        ]
+      ],
+      "original": "",
+      "romanization": "Cause I know it’s hard to walk down, this road",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 80.21,
+      "end": 82.51,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          80.28,
+          81.3
+        ],
+        [
+          81.45,
+          82.58
+        ]
+      ],
+      "original": "",
+      "romanization": "When the night gets so dark",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 82.7,
+      "end": 87.73,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          82.77,
+          83.44
+        ],
+        [
+          83.65,
+          85.06
+        ],
+        [
+          85.27,
+          85.62
+        ],
+        [
+          85.81,
+          87.74
+        ]
+      ],
+      "original": "",
+      "romanization": "If I could do it over, I’d choose you all over again",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 87.94,
+      "end": 90.99,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          87.95,
+          88.84
+        ],
+        [
+          89.05,
+          91.33
+        ]
+      ],
+      "original": "",
+      "romanization": "By the end of summer hope, you can know",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 91.16,
+      "end": 102.46,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          91.19,
+          91.61
+        ],
+        [
+          91.76,
+          93.89
+        ],
+        [
+          94.13,
+          97.55
+        ],
+        [
+          98.51,
+          99.62
+        ],
+        [
+          99.88,
+          100.26
+        ],
+        [
+          100.44,
+          102.45
+        ]
+      ],
+      "original": "",
+      "romanization": "My friend, there ain’t no love like this, can you hold my hand",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 102.62,
+      "end": 111,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          102.65,
+          104.22
+        ],
+        [
+          104.36,
+          106.14
+        ],
+        [
+          106.44,
+          107.42
+        ],
+        [
+          107.6,
+          107.9
+        ],
+        [
+          108.08,
+          109.04
+        ],
+        [
+          109.19,
+          110.98
+        ]
+      ],
+      "original": "",
+      "romanization": "How long does it take to know, I'd lay down my life for you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 111.21,
+      "end": 118.89,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          111.32,
+          114.8
+        ],
+        [
+          115.73,
+          118.89
+        ]
+      ],
+      "original": "",
+      "romanization": "I won’t leave you alone, Even if when the night feels long",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 119.5,
+      "end": 125.99,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          119.48,
+          123.51
+        ],
+        [
+          124.18,
+          128.49
+        ]
+      ],
+      "original": "",
+      "romanization": "I’ll always be back for you, Like the wind of the summer",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 126.15,
+      "end": 137.36,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          126.11,
+          126.51
+        ],
+        [
+          126.67,
+          128.72
+        ],
+        [
+          129.07,
+          132.53
+        ],
+        [
+          133.49,
+          134.55
+        ],
+        [
+          134.79,
+          135.15
+        ],
+        [
+          135.35,
+          137.33
+        ]
+      ],
+      "original": "",
+      "romanization": "My friend, there ain’t no love like this, can you hold my hand",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 137.51,
+      "end": 145.87,
+      "members": [
+        "MARK LEE"
+      ],
+      "voice": [
+        [
+          137.52,
+          139.08
+        ],
+        [
+          139.23,
+          141.1
+        ],
+        [
+          141.32,
+          142.36
+        ],
+        [
+          142.51,
+          142.87
+        ],
+        [
+          143.02,
+          143.97
+        ],
+        [
+          144.12,
+          145.83
+        ]
+      ],
+      "original": "",
+      "romanization": "How long does it take to know, I'd lay down my life for you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 150.09,
+      "end": 153.39,
+      "members": [
+        "MARK LEE"
+      ],
+      "original": "",
+      "romanization": "(I'd lay down my life for you)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          150.07,
+          150.99
+        ],
+        [
+          151.2,
+          151.59
+        ],
+        [
+          151.74,
+          152.67
+        ],
+        [
+          152.85,
+          153.42
+        ]
+      ]
     }
   ]
 }
