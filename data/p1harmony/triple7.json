@@ -1,0 +1,65 @@
+{
+  "group": "P1Harmony",
+  "song": "Triple 7",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "KEEHO",
+      "image": "images/p1harmony/triple7/keeho.png",
+      "color": "#ff751f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "THEO",
+      "image": "images/p1harmony/triple7/theo.png",
+      "color": "#ff3131",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JIUNG",
+      "image": "images/p1harmony/triple7/jiung.png",
+      "color": "#ffde59",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "INTAK",
+      "image": "images/p1harmony/triple7/intak.png",
+      "color": "#7ed957",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SOUL",
+      "image": "images/p1harmony/triple7/soul.png",
+      "color": "#38b6ff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JONGSEOB",
+      "image": "images/p1harmony/triple7/jongseob.png",
+      "color": "#8c52ff",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
