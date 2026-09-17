@@ -187,17 +187,22 @@ Self-contained: injects its own styles and markup.
       instAudio.loop=false;                      // nunca en bucle
       instAudio.onended=()=>{ instDone=true; try{ instAudio.pause(); }catch(e){} };  // al acabar NO se reinicia
     }
-    try{ instAudio.currentTime=instStart; instAudio.volume=1; instAudio.play().catch(()=>{}); }catch(e){}
+    try{ instAudio.currentTime=instStart; instAudio.volume=0; instAudio.play().catch(()=>{}); }catch(e){}
     requestAnimationFrame(instVolLoop);
   }
-  // Suena UNA vez: al llegar al fin del trozo se para (no se reactiva). Atenúa el
-  // último tramo si está marcado.
+  // Suena UNA vez: al llegar al fin del trozo se para (no se reactiva). SIEMPRE
+  // entra con fundido (arranca en silencio y sube) y, si está marcado, atenúa
+  // también el último tramo al salir.
   function instVolLoop(){
     if(!instAudio || instAudio.paused) return;
     const FADE=1.5, ct=instAudio.currentTime;
     if(instEnd>instStart && ct>=instEnd){ instDone=true; try{ instAudio.pause(); }catch(e){} return; }
-    instAudio.volume = (instFade && instEnd>instStart && instEnd-ct < FADE)
-      ? Math.max(0, (instEnd-ct)/FADE) : 1;
+    let vol = 1;
+    const inT = ct - instStart;                                   // fundido de ENTRADA
+    if(inT < FADE) vol = Math.min(vol, Math.max(0, inT/FADE));
+    if(instFade && instEnd>instStart && instEnd-ct < FADE)        // fundido de SALIDA (si está marcado)
+      vol = Math.min(vol, Math.max(0, (instEnd-ct)/FADE));
+    instAudio.volume = vol;
     requestAnimationFrame(instVolLoop);
   }
   function stopInstrumental(){ if(instAudio){ try{ instAudio.pause(); }catch(e){} } }
