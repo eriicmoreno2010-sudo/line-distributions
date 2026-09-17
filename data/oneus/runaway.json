@@ -11,28 +11,52 @@
       "image": "images/oneus/runaway/seoho.png",
       "color": "#ff4d6d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.394,
+        "cy": 0.256,
+        "size": 0.585,
+        "rot": 11
+      }
     },
     {
       "name": "LEEDO",
       "image": "images/oneus/runaway/leedo.png",
       "color": "#4dabf7",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.478,
+        "cy": 0.232,
+        "size": 0.315,
+        "rot": 339
+      }
     },
     {
       "name": "KEONHEE",
       "image": "images/oneus/runaway/keonhee.png",
       "color": "#51cf66",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 1,
+        "rot": 0
+      }
     },
     {
       "name": "HWANWOONG",
       "image": "images/oneus/runaway/hwanwoong.png",
       "color": "#ffd43b",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.387,
+        "cy": 0.2108,
+        "size": 0.414,
+        "rot": 0
+      }
     },
     {
       "name": "XION",
