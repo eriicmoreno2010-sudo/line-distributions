@@ -1,0 +1,58 @@
+{
+  "group": "ONEUS",
+  "song": "끝나지 않을 우리 이야기 (Never Ending Us)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "SEOHO",
+      "image": "images/oneus/neverendingus/seoho.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "LEEDO",
+      "image": "images/oneus/neverendingus/leedo.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KEONHEE",
+      "image": "images/oneus/neverendingus/keonhee.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HWANWOONG",
+      "image": "images/oneus/neverendingus/hwanwoong.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "XION",
+      "image": "images/oneus/neverendingus/xion.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SEOHO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
