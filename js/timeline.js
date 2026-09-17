@@ -20,7 +20,7 @@ const Timeline = {
 
             // Group lines blend every color; multi-singer lines blend theirs;
             // solo lines use the single singer's color.
-            const isGroupLine = line.members && line.members.includes(SONG.group);
+            const isGroupLine = (SONG.members || []).length > 1 && line.members && line.members.includes(SONG.group);
             const singers = (line.members || [])
                 .map(name => SONG.members.find(m => m.name === name))
                 .filter(Boolean);

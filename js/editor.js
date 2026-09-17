@@ -228,11 +228,16 @@
       c.onclick = () => { toggleMember(i, m.name); c.classList.toggle("on"); syncTodos(row, i); };
       chips.appendChild(c);
     });
-    const todos = document.createElement("button");
-    todos.className = "chip todos"; todos.textContent = "TODOS";
-    if((l.members||[]).includes(song.group)) todos.classList.add("on");
-    todos.onclick = () => { toggleTodos(i); renderRowChips(row, i); };
-    chips.appendChild(todos);
+    // "TODOS" (whole group) only makes sense with 2+ members. In a solo song the
+    // single member's name equals song.group, so a TODOS chip would collide with
+    // the member chip (clicking one lights both) — skip it entirely.
+    if((song.members||[]).length > 1){
+      const todos = document.createElement("button");
+      todos.className = "chip todos"; todos.textContent = "TODOS";
+      if((l.members||[]).includes(song.group)) todos.classList.add("on");
+      todos.onclick = () => { toggleTodos(i); renderRowChips(row, i); };
+      chips.appendChild(todos);
+    }
     const ad = document.createElement("button");
     ad.className = "chip adlib"; ad.textContent = "AD";
     if(isAdlib(l)) ad.classList.add("on");

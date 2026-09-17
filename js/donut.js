@@ -90,17 +90,36 @@
   function curTime(){ return clock.useVideo ? (vid.currentTime||0) : clock.t; }
   function curDur(){ return clock.useVideo ? (isFinite(vid.duration)&&vid.duration>0 ? vid.duration : clock.dur) : clock.dur; }
 
+  // Mantiene el mp3 EXACTO donde va el vídeo, igual que el visor:
+  //  · desfase negativo -> el mp3 aún no entra: silencio hasta que el reloj llega a -off,
+  //    y entonces suena desde su principio (no adelantado).
+  //  · corrige la deriva (los relojes de <video> y <audio> se separan en canciones largas).
+  function syncAudio(force){
+    if(!instAudio) return;
+    if(!clock.playing){ if(!instAudio.paused) instAudio.pause(); return; }
+    const want = curTime() + audioOff;
+    const dur = isFinite(instAudio.duration) ? instAudio.duration : Infinity;
+    if(want < 0){                                   // el mp3 todavía no entra
+      if(!instAudio.paused) instAudio.pause();
+      if(instAudio.currentTime > 0.05){ try{ instAudio.currentTime = 0; }catch(e){} }
+      return;
+    }
+    if(want >= dur){ if(!instAudio.paused) instAudio.pause(); return; }
+    if(force || Math.abs(instAudio.currentTime - want) > 0.20){ try{ instAudio.currentTime = want; }catch(e){} }
+    if(instAudio.paused) instAudio.play().catch(()=>{});
+  }
+
   function setPlaying(p){
     clock.playing = p;
     if(clock.useVideo){ p ? vid.play().catch(()=>{}) : vid.pause(); }
     else { clock.last = Date.now(); }
-    if(instAudio){ try{ instAudio.currentTime = Math.max(0, curTime() + audioOff); p ? instAudio.play().catch(()=>{}) : instAudio.pause(); }catch(e){} }
+    if(p) syncAudio(true); else if(instAudio) instAudio.pause();
     playBtn.textContent = p ? "⏸" : "▶";
   }
   function seekTo(frac){
     const d = curDur() || 0; const t = frac * d;
     if(clock.useVideo){ try{ vid.currentTime = t; }catch(e){} } else { clock.t = Math.min(t, d); clock.last = Date.now(); }
-    if(instAudio){ try{ instAudio.currentTime = Math.max(0, t + audioOff); }catch(e){} }
+    syncAudio(true);
   }
 
   function frame(){
@@ -109,6 +128,7 @@
       const now = Date.now(); clock.t += (now - clock.last)/1000; clock.last = now;
       if(clock.t >= clock.dur){ clock.t = clock.dur; clock.playing = false; playBtn.textContent = "▶"; }
     }
+    if(clock.playing) syncAudio();            // deriva + entrada retrasada (desfase negativo)
     if(members.length) render(curTime());
     requestAnimationFrame(frame);
   }

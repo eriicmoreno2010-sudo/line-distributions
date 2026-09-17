@@ -17,7 +17,7 @@
   const view = $("#view"), vctx = view.getContext("2d");
   const orig = document.createElement("canvas"); let octx;   // capa ORIGINAL (intacta)
   let W = 0, H = 0, scale = 1, ox = 0, oy = 0;
-  let tool = "lazo", brush = 70;
+  let tool = "lazo", brush = 70, tol = 55;
   let showOrig = false;   // por defecto NO se muestra (así ves el fondo YA quitado en vivo)
   let hasCut = false;     // ¿hay algo recortado ya? (antes del 1er lazo se ve la original para apuntar)
   let layers = [];        // [{canvas, ctx, name}]
@@ -132,6 +132,53 @@
     hasCut = true;                 // ya hay recorte -> se ve el fondo quitado
     redraw();
   }
+  /* QUITAR FONDO AUTOMÁTICO (sin IA externa): rellena desde los BORDES hacia dentro
+     quitando todo lo que se parezca al color del fondo (± "Sensib."). Deja el sujeto
+     con fondo transparente en la capa ACTIVA. Funciona muy bien con fondos lisos/de
+     un color; si el fondo es complejo, luego se afina con el lazo/borrador. */
+  function autoRemoveBg(){
+    if(!W || !actLayer()) return;
+    snapshot();
+    const src = octx.getImageData(0,0,W,H), sd = src.data;
+    // color medio del BORDE = color del fondo a quitar
+    let br=0,bg=0,bb=0,bn=0;
+    const samp = (x,y) => { const i=(y*W+x)*4; if(sd[i+3]>10){ br+=sd[i]; bg+=sd[i+1]; bb+=sd[i+2]; bn++; } };
+    for(let x=0;x<W;x++){ samp(x,0); samp(x,H-1); }
+    for(let y=0;y<H;y++){ samp(0,y); samp(W-1,y); }
+    if(bn){ br/=bn; bg/=bn; bb/=bn; }
+    const tol2 = tol*tol*3;                       // umbral (dist. de color al cuadrado)
+    const isBg = i => {
+      if(sd[i+3] < 10) return true;               // ya transparente
+      const dr=sd[i]-br, dg=sd[i+1]-bg, db=sd[i+2]-bb;
+      return (dr*dr+dg*dg+db*db) <= tol2;
+    };
+    const N = W*H, visited = new Uint8Array(N), bgMask = new Uint8Array(N), stack = [];
+    const seed = (x,y) => { if(x<0||y<0||x>=W||y>=H) return; const p=y*W+x; if(visited[p]) return; visited[p]=1; if(isBg(p*4)) stack.push(p); };
+    for(let x=0;x<W;x++){ seed(x,0); seed(x,H-1); }
+    for(let y=0;y<H;y++){ seed(0,y); seed(W-1,y); }
+    while(stack.length){
+      const p = stack.pop(); bgMask[p]=1;
+      const x=p%W, y=(p/W)|0, tryp = q => { if(!visited[q]){ visited[q]=1; if(isBg(q*4)) stack.push(q); } };
+      if(x>0)   tryp(p-1);
+      if(x<W-1) tryp(p+1);
+      if(y>0)   tryp(p-W);
+      if(y<H-1) tryp(p+W);
+    }
+    // sujeto = original donde NO es fondo (con un pequeño suavizado de borde)
+    const out = actLayer().ctx.createImageData(W,H), od = out.data;
+    for(let p=0;p<N;p++){
+      if(bgMask[p]) continue;
+      const i=p*4;
+      od[i]=sd[i]; od[i+1]=sd[i+1]; od[i+2]=sd[i+2]; od[i+3]=sd[i+3];
+      // borde: si toca fondo, atenúa un poco el alpha para que no quede dentado
+      const x=p%W, y=(p/W)|0;
+      if((x>0&&bgMask[p-1])||(x<W-1&&bgMask[p+1])||(y>0&&bgMask[p-W])||(y<H-1&&bgMask[p+W])) od[i+3] = Math.round(od[i+3]*0.6);
+    }
+    actLayer().ctx.clearRect(0,0,W,H);
+    actLayer().ctx.putImageData(out,0,0);
+    hasCut = true; redraw();
+  }
+
   // BORRA (quita) de la capa ACTIVA con el pincel.
   function eraseAt(a, b){
     const x = actLayer() && actLayer().ctx; if(!x) return;
@@ -172,7 +219,7 @@
     const r = view.getBoundingClientRect();
     const mx=e.clientX-r.left, my=e.clientY-r.top;
     const wx=(mx-ox)/scale, wy=(my-oy)/scale;
-    scale = Math.max(0.05, Math.min(20, scale * (e.deltaY>0 ? 0.9 : 1.1)));
+    scale = Math.max(0.05, Math.min(40, scale * (e.deltaY>0 ? 0.9 : 1.1)));
     ox = mx-wx*scale; oy = my-wy*scale; redraw();
   }, { passive:false });
 
@@ -202,6 +249,8 @@
   $("#tErase").onclick = () => setTool("erase");
   $("#tPan").onclick   = () => setTool("pan");
   $("#brush").oninput  = e => { brush = +e.target.value; $("#brushV").textContent = brush; redraw(); };
+  $("#tol").oninput    = e => { tol = +e.target.value; $("#tolV").textContent = tol; };
+  $("#autoBg").onclick = () => { $("#autoBg").disabled = true; setTimeout(() => { autoRemoveBg(); $("#autoBg").disabled = false; }, 20); };
   $("#layOrig").onclick = () => { showOrig = !showOrig; $("#layOrig").classList.toggle("on", showOrig); redraw(); };
   $("#addLayer").onclick = () => { layers.push(newLayer()); active = layers.length-1; renderLayerBtns(); redraw(); };
   $("#delLayer").onclick = () => {

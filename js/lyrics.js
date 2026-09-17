@@ -149,7 +149,9 @@ const Lyrics = {
 
     /* Colours/gradients derived from a line's members. */
     colorsFor(line){
-        const isGroupLine = line.members.includes(SONG.group);
+        // A "group line" needs 2+ members. In a solo song the member name equals
+        // SONG.group, so without this guard every line would render as a group line.
+        const isGroupLine = (SONG.members || []).length > 1 && line.members.includes(SONG.group);
         const singers = line.members
             .map(name => SONG.members.find(m => m.name === name))
             .filter(Boolean);
@@ -545,20 +547,23 @@ const Lyrics = {
        las que ya hay, incluidas las que se están yendo -> reservan su sitio hasta
        desaparecer). Fija box._bottom para siempre. */
     placeAdlib(msg, box){
-        const GAP = 16;
-        const h = box.offsetHeight || 90; box._h = h;
-        // Los que se están YENDO no reservan sitio -> el nuevo ocupa el hueco de
-        // abajo que dejan (como antes). Los que se quedan NO se mueven (fijos).
-        const occ = Array.from(msg.children)
-            .filter(b => b !== box && b._bottom != null && !b._leaving)
-            .map(b => ({ b: b._bottom, t: b._bottom + (b._h || 90) }))
-            .sort((a, c) => a.b - c.b);
-        let y = 0;
-        for(const iv of occ){
-            if(y + h + GAP <= iv.b) break;          // cabe en el hueco antes de este
-            y = Math.max(y, iv.t + GAP);            // si no, súbete por encima
-        }
-        box._bottom = y; box.dataset.bottom = String(y);
+        // HUECOS POR ÍNDICE (no por píxeles): el hueco 0 es el de abajo, el 1 el
+        // de encima, etc. Cada hueco mide lo mismo (SLOTH), así que una tarjeta
+        // alta o baja SIEMPRE cae en el mismo sitio -> el orden no depende del alto.
+        // El nuevo coge el hueco LIBRE MÁS BAJO: si el de abajo se fue, va abajo;
+        // solo va al 3.º si el 1.º Y el 2.º siguen ocupados. Los que se van liberan
+        // su hueco; los que se quedan NO se mueven jamás.
+        const SLOTH = 156;
+        box._h = box.offsetHeight || 90;
+        const used = new Set(
+            Array.from(msg.children)
+                .filter(b => b !== box && b._slot != null && !b._leaving)
+                .map(b => b._slot)
+        );
+        let idx = 0; while(used.has(idx)) idx++;    // hueco libre más bajo
+        box._slot = idx;
+        const y = idx * SLOTH;
+        box._bottom = y; box.dataset.slot = String(idx); box.dataset.bottom = String(y);
         return y;
     },
 

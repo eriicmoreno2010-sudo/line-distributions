@@ -139,6 +139,9 @@ Self-contained: injects its own styles and markup.
     body.theme-light #results-overlay #ro-head .grp{ color:#7b8090; }
     body.theme-light #results-overlay #ro-even .lbl{ color:#7b8090; }
     body.theme-light #results-overlay .row .bar{ background:#d6d9e2; }
+    /* fondo del círculo de la foto CLARO en tema claro (los recortes con fondo
+       transparente dejaban ver negro; ahora se ve blanco/claro) */
+    body.theme-light #results-overlay .row .photo{ background:#eef0f5; }
     /* filas AÚN sin encender: gris atenuado */
     body.theme-light #results-overlay .row:not(.lit){ background:#e3e5ee; border-color:#d1d4de; opacity:.55; }
     body.theme-light #results-overlay .row:not(.lit) .name{ color:#8890a0; }

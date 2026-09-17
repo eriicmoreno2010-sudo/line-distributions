@@ -54,6 +54,10 @@
   </div>
   <div class="grp" id="brushGrp" style="display:none"><span class="lbl">Pincel</span>
     <input type="range" id="brush" min="6" max="220" step="1" value="70"><span class="val" id="brushV">70</span></div>
+  <div class="grp">
+    <button id="autoBg" class="pri" title="Quita el fondo automáticamente (funciona mejor si el fondo es liso/de un color)">✨ Quitar fondo auto</button>
+    <span class="lbl">Sensib.</span>
+    <input type="range" id="tol" min="8" max="170" step="1" value="55"><span class="val" id="tolV">55</span></div>
   <span class="spacer"></span>
   <div class="grp">
     <span class="lbl">Capas</span>
@@ -74,6 +78,6 @@
 
 <div id="ov"><div class="t" id="ovT">Guardando…</div></div>
 
-<script src="js/cutout.js?v=5"></script>
+<script src="js/cutout.js?v=6"></script>
 </body>
 </html>
