@@ -1,0 +1,58 @@
+{
+  "group": "ONEUS",
+  "song": "눈을 돌리지마 (Say Yes!)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "SEOHO",
+      "image": "images/oneus/sayyes/seoho.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "LEEDO",
+      "image": "images/oneus/sayyes/leedo.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KEONHEE",
+      "image": "images/oneus/sayyes/keonhee.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HWANWOONG",
+      "image": "images/oneus/sayyes/hwanwoong.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "XION",
+      "image": "images/oneus/sayyes/xion.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SEOHO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
