@@ -1,0 +1,30 @@
+{
+  "group": "MARK LEE",
+  "song": "My Friend",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": true,
+  "members": [
+    {
+      "name": "MARK LEE",
+      "image": "images/marklee/myfriend/marklee.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK LEE"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
