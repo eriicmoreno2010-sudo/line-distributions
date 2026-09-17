@@ -11,7 +11,13 @@
       "image": "images/marklee/myfriend/marklee.png",
       "color": "#ff4d6d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.506,
+        "cy": 0.654,
+        "size": 0.255,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
