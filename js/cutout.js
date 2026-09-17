@@ -24,6 +24,7 @@
   let active = 0;
   let history = [];       // [{layer, data}]
   let lassoing = false, lassoPts = [], ptr = null;
+  let circling = false, circC = null, circR = 0;   // recorte en CÍRCULO perfecto
 
   // patrón de cuadros (transparencia)
   const chk = document.createElement("canvas"); chk.width = chk.height = 22;
@@ -67,6 +68,14 @@
       vctx.beginPath();
       vctx.moveTo(ox + lassoPts[0].x*scale, oy + lassoPts[0].y*scale);
       for(let i=1;i<lassoPts.length;i++) vctx.lineTo(ox + lassoPts[i].x*scale, oy + lassoPts[i].y*scale);
+      vctx.setLineDash([7,5]);
+      vctx.strokeStyle = "rgba(0,0,0,.7)"; vctx.lineWidth = 3; vctx.stroke();
+      vctx.strokeStyle = "rgba(255,255,255,.95)"; vctx.lineWidth = 1.5; vctx.stroke();
+      vctx.setLineDash([]);
+    }
+    if(circling && circC && circR > 0){
+      vctx.beginPath();
+      vctx.arc(ox + circC.x*scale, oy + circC.y*scale, circR*scale, 0, 7);
       vctx.setLineDash([7,5]);
       vctx.strokeStyle = "rgba(0,0,0,.7)"; vctx.lineWidth = 3; vctx.stroke();
       vctx.strokeStyle = "rgba(255,255,255,.95)"; vctx.lineWidth = 1.5; vctx.stroke();
@@ -197,6 +206,19 @@
     hasCut = true; redraw();
   }
 
+  // AÑADE un CÍRCULO perfecto (de la original) a la capa ACTIVA.
+  function addCircle(c, rad){
+    if(!c || rad < 2 || !actLayer()) return;
+    snapshot();
+    const x = actLayer().ctx;
+    x.save();
+    x.beginPath(); x.arc(c.x, c.y, rad, 0, Math.PI*2); x.closePath(); x.clip();
+    x.drawImage(orig, 0, 0);
+    x.restore();
+    hasCut = true;
+    redraw();
+  }
+
   // BORRA (quita) de la capa ACTIVA con el pincel.
   function eraseAt(a, b){
     const x = actLayer() && actLayer().ctx; if(!x) return;
@@ -215,18 +237,21 @@
     if(e.button === 1 || tool === "pan"){ panning=true; panLast={x:e.clientX,y:e.clientY}; return; }
     const w = toWork(e);
     if(tool === "lazo"){ lassoing=true; lassoPts=[w]; }
+    else if(tool === "circ"){ circling=true; circC=w; circR=0; }
     else if(tool === "erase"){ erasing=true; snapshot(); last=w; eraseAt(w,w); redraw(); }
   });
   view.addEventListener("pointermove", e => {
     const w = toWork(e); ptr = { x:w.vx, y:w.vy };
     if(panning){ ox += e.clientX-panLast.x; oy += e.clientY-panLast.y; panLast={x:e.clientX,y:e.clientY}; redraw(); return; }
     if(lassoing){ const l=lassoPts[lassoPts.length-1]; if(!l || Math.hypot(w.x-l.x,w.y-l.y) > 2/scale) lassoPts.push(w); redraw(); }
+    else if(circling){ circR = Math.hypot(w.x-circC.x, w.y-circC.y); redraw(); }
     else if(erasing){ eraseAt(last,w); last=w; redraw(); }
     else if(tool === "erase") redraw();
   });
   const endPtr = () => {
     panning=false; erasing=false;
     if(lassoing){ lassoing=false; const pts=lassoPts; lassoPts=[]; addLasso(pts); }
+    if(circling){ circling=false; const c=circC, r=circR; circC=null; circR=0; addCircle(c, r); }
   };
   view.addEventListener("pointerup", endPtr);
   view.addEventListener("pointercancel", endPtr);
@@ -258,12 +283,14 @@
   function setTool(t){
     tool = t;
     $("#tLazo").classList.toggle("on", t==="lazo");
+    $("#tCirc").classList.toggle("on", t==="circ");
     $("#tErase").classList.toggle("on", t==="erase");
     $("#tPan").classList.toggle("on", t==="pan");
     $("#brushGrp").style.display = (t==="erase") ? "" : "none";
     redraw();
   }
   $("#tLazo").onclick  = () => setTool("lazo");
+  $("#tCirc").onclick  = () => setTool("circ");
   $("#tErase").onclick = () => setTool("erase");
   $("#tPan").onclick   = () => setTool("pan");
   $("#brush").oninput  = e => { brush = +e.target.value; $("#brushV").textContent = brush; redraw(); };
@@ -289,6 +316,7 @@
   document.addEventListener("keydown", e => {
     if((e.ctrlKey||e.metaKey) && e.key.toLowerCase()==="z"){ e.preventDefault(); undo(); }
     else if(e.key==="l"||e.key==="L") setTool("lazo");
+    else if(e.key==="c"||e.key==="C") setTool("circ");
     else if(e.key==="e"||e.key==="E") setTool("erase");
     else if(e.key===" "){ e.preventDefault(); setTool("pan"); }
     else if(e.key==="["){ brush=Math.max(6,brush-8); $("#brush").value=brush; $("#brushV").textContent=brush; redraw(); }
