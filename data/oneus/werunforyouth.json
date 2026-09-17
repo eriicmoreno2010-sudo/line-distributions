@@ -1,0 +1,58 @@
+{
+  "group": "ONEUS",
+  "song": "We run for youth",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "SEOHO",
+      "image": "images/oneus/werunforyouth/seoho.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "LEEDO",
+      "image": "images/oneus/werunforyouth/leedo.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KEONHEE",
+      "image": "images/oneus/werunforyouth/keonhee.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HWANWOONG",
+      "image": "images/oneus/werunforyouth/hwanwoong.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "XION",
+      "image": "images/oneus/werunforyouth/xion.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SEOHO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
