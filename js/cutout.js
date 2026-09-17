@@ -132,50 +132,68 @@
     hasCut = true;                 // ya hay recorte -> se ve el fondo quitado
     redraw();
   }
-  /* QUITAR FONDO AUTOMÁTICO (sin IA externa): rellena desde los BORDES hacia dentro
-     quitando todo lo que se parezca al color del fondo (± "Sensib."). Deja el sujeto
-     con fondo transparente en la capa ACTIVA. Funciona muy bien con fondos lisos/de
-     un color; si el fondo es complejo, luego se afina con el lazo/borrador. */
+  /* QUITAR FONDO AUTOMÁTICO de la CAPA ACTIVA (lo que has recortado con el lazo).
+     Toma el color del fondo del BORDE de tu recorte (los píxeles pegados a la zona
+     transparente) y, si la capa está entera, del borde de la imagen. Luego rellena
+     desde fuera hacia dentro quitando todo lo que se parezca a ese color (± "Sensib.").
+     Así limpias el fondo que quedó DENTRO del lazo, sin tocar el original. */
   function autoRemoveBg(){
     if(!W || !actLayer()) return;
-    snapshot();
-    const src = octx.getImageData(0,0,W,H), sd = src.data;
-    // color medio del BORDE = color del fondo a quitar
+    const lctx = actLayer().ctx;
+    const src = lctx.getImageData(0,0,W,H), sd = src.data;
+    const N = W*H;
+    const A = i => sd[i*4+3];
+    // ¿hay algo recortado en esta capa?
+    let opaque = 0; for(let p=0;p<N;p++){ if(A(p) > 10){ opaque++; } }
+    if(!opaque){ alert("Esta capa está vacía. Rodea antes al miembro con el lazo y quita el fondo de dentro."); return; }
+    const full = opaque > N*0.985;                 // capa entera (no lazada) -> muestrea bordes de imagen
+
+    // ---- color del fondo a quitar ----
     let br=0,bg=0,bb=0,bn=0;
-    const samp = (x,y) => { const i=(y*W+x)*4; if(sd[i+3]>10){ br+=sd[i]; bg+=sd[i+1]; bb+=sd[i+2]; bn++; } };
-    for(let x=0;x<W;x++){ samp(x,0); samp(x,H-1); }
-    for(let y=0;y<H;y++){ samp(0,y); samp(W-1,y); }
-    if(bn){ br/=bn; bg/=bn; bb/=bn; }
-    const tol2 = tol*tol*3;                       // umbral (dist. de color al cuadrado)
-    const isBg = i => {
-      if(sd[i+3] < 10) return true;               // ya transparente
+    const addC = p => { const i=p*4; br+=sd[i]; bg+=sd[i+1]; bb+=sd[i+2]; bn++; };
+    if(full){
+      for(let x=0;x<W;x++){ if(A(x)>10) addC(x); const q=(H-1)*W+x; if(A(q)>10) addC(q); }
+      for(let y=0;y<H;y++){ const a=y*W; if(A(a)>10) addC(a); const b=a+W-1; if(A(b)>10) addC(b); }
+    } else {
+      // píxeles opacos pegados a transparente = borde exterior del recorte = fondo
+      for(let y=0;y<H;y++) for(let x=0;x<W;x++){
+        const p=y*W+x; if(A(p)<=10) continue;
+        if((x>0&&A(p-1)<=10)||(x<W-1&&A(p+1)<=10)||(y>0&&A(p-W)<=10)||(y<H-1&&A(p+W)<=10)) addC(p);
+      }
+    }
+    if(!bn){ alert("No pude detectar el fondo. Prueba a rodear al miembro con un poco de margen y vuelve a intentarlo."); return; }
+    br/=bn; bg/=bn; bb/=bn;
+
+    const tol2 = tol*tol*3;                        // umbral (dist. de color al cuadrado)
+    const isBg = p => {                            // ¿este píxel es fondo (a quitar)?
+      const i=p*4; if(sd[i+3] < 10) return true;   // ya transparente
       const dr=sd[i]-br, dg=sd[i+1]-bg, db=sd[i+2]-bb;
       return (dr*dr+dg*dg+db*db) <= tol2;
     };
-    const N = W*H, visited = new Uint8Array(N), bgMask = new Uint8Array(N), stack = [];
-    const seed = (x,y) => { if(x<0||y<0||x>=W||y>=H) return; const p=y*W+x; if(visited[p]) return; visited[p]=1; if(isBg(p*4)) stack.push(p); };
-    for(let x=0;x<W;x++){ seed(x,0); seed(x,H-1); }
-    for(let y=0;y<H;y++){ seed(0,y); seed(W-1,y); }
+    // relleno desde los bordes de la imagen hacia dentro (cruza lo transparente y
+    // sigue por el fondo del recorte que sea de color parecido)
+    const visited = new Uint8Array(N), bgMask = new Uint8Array(N), stack = [];
+    const seed = p => { if(!visited[p]){ visited[p]=1; if(isBg(p)) stack.push(p); } };
+    for(let x=0;x<W;x++){ seed(x); seed((H-1)*W+x); }
+    for(let y=0;y<H;y++){ seed(y*W); seed(y*W+W-1); }
     while(stack.length){
       const p = stack.pop(); bgMask[p]=1;
-      const x=p%W, y=(p/W)|0, tryp = q => { if(!visited[q]){ visited[q]=1; if(isBg(q*4)) stack.push(q); } };
-      if(x>0)   tryp(p-1);
-      if(x<W-1) tryp(p+1);
-      if(y>0)   tryp(p-W);
-      if(y<H-1) tryp(p+W);
-    }
-    // sujeto = original donde NO es fondo (con un pequeño suavizado de borde)
-    const out = actLayer().ctx.createImageData(W,H), od = out.data;
-    for(let p=0;p<N;p++){
-      if(bgMask[p]) continue;
-      const i=p*4;
-      od[i]=sd[i]; od[i+1]=sd[i+1]; od[i+2]=sd[i+2]; od[i+3]=sd[i+3];
-      // borde: si toca fondo, atenúa un poco el alpha para que no quede dentado
       const x=p%W, y=(p/W)|0;
-      if((x>0&&bgMask[p-1])||(x<W-1&&bgMask[p+1])||(y>0&&bgMask[p-W])||(y<H-1&&bgMask[p+W])) od[i+3] = Math.round(od[i+3]*0.6);
+      if(x>0)   seed(p-1);
+      if(x<W-1) seed(p+1);
+      if(y>0)   seed(p-W);
+      if(y<H-1) seed(p+W);
     }
-    actLayer().ctx.clearRect(0,0,W,H);
-    actLayer().ctx.putImageData(out,0,0);
+    snapshot();
+    // quita el fondo detectado; suaviza un poco el borde para que no quede dentado
+    for(let p=0;p<N;p++){
+      const i=p*4;
+      if(bgMask[p]){ sd[i+3]=0; continue; }
+      if(sd[i+3]<10) continue;
+      const x=p%W, y=(p/W)|0;
+      if((x>0&&bgMask[p-1])||(x<W-1&&bgMask[p+1])||(y>0&&bgMask[p-W])||(y<H-1&&bgMask[p+W])) sd[i+3] = Math.round(sd[i+3]*0.55);
+    }
+    lctx.putImageData(src,0,0);
     hasCut = true; redraw();
   }
 
