@@ -10,7 +10,10 @@
   const IMG  = P.get("img")  || "";
   const NAME = P.get("name") || "";
   const SONG = P.get("song") || "";
+  const BACK = P.get("back") || "";
   if($("#who")) $("#who").textContent = NAME || "Foto";
+  // si venimos de otra página (p.ej. la portada), el botón "←" vuelve allí
+  if(BACK){ const bb = document.querySelector("header button"); if(bb) bb.onclick = () => { location.href = BACK; }; }
 
   const MAXDIM = 2048, HISTMAX = 14;
 

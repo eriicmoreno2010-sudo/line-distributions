@@ -389,43 +389,59 @@ ipcMain.handle("pick-cover", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
-// Portada: elegir MI foto (del PC) para el miembro de la portada. Se guarda como
-// _cover-<miembro>.<ext> junto a la foto y la portada la usa con prioridad. Sirve
-// cuando en la foto del ranking el miembro sale lejos/pequeño.
+// Portada: elegir una FOTO DE PORTADA aparte (una sola por canción, sin relación
+// con los miembros). Se guarda como <carpeta_canción>/_cover.<ext> y la portada la
+// usa como foto grande. Editable luego en el editor de recorte (IA).
+function coverFolderOk(folder){ return /^images\/.+/.test(folder) && folder.indexOf("..") === -1; }
 ipcMain.handle("pick-thumb-cover", async (_e, args) => {
   args = args || {};
-  const imgRel = String(args.imagePath || "").replace(/\\/g, "/");
-  if(!/^images\/.+/.test(imgRel) || imgRel.indexOf("..") !== -1) return { ok:false, error:"ruta no permitida" };
+  const folder = String(args.folder || "").replace(/\\/g, "/").replace(/\/+$/, "");
+  if(!coverFolderOk(folder)) return { ok:false, error:"ruta no permitida" };
   try{
     const { canceled, filePaths } = await dialog.showOpenDialog({
-      title: "Elegir foto para la portada",
+      title: "Elegir foto de portada",
       properties: ["openFile"],
       filters: [{ name:"Imagen", extensions:["jpg","jpeg","png","webp"] }]
     });
     if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
     const src = filePaths[0];
-    const abs = path.join(ROOT, imgRel);
-    const dir = path.dirname(abs);
-    const nameNoExt = path.basename(abs, path.extname(abs));           // p.ej. "mark"
+    const dir = path.join(ROOT, folder);
+    fs.mkdirSync(dir, { recursive:true });
     const ext = (path.extname(src) || ".png").toLowerCase();
-    // borra variantes previas de otra extensión para que no gane una vieja
-    for(const e of [".png",".jpg",".jpeg",".webp"]){
+    for(const e of [".png",".jpg",".jpeg",".webp"]){                  // limpia otras extensiones
       if(e === ext) continue;
-      try{ const f = path.join(dir, "_cover-" + nameNoExt + e); if(fs.existsSync(f)) fs.unlinkSync(f); }catch(_){}
+      try{ const f = path.join(dir, "_cover" + e); if(fs.existsSync(f)) fs.unlinkSync(f); }catch(_){}
     }
-    const relDir = imgRel.slice(0, imgRel.lastIndexOf("/"));
-    const destRel = relDir + "/_cover-" + nameNoExt + ext;
+    const destRel = folder + "/_cover" + ext;
     fs.copyFileSync(src, path.join(ROOT, destRel));
     const res = { ok:true, rel: destRel, pushed:false };
     try{
-      await git(["add", "--", relDir]);
+      await git(["add", "--", folder]);
       const staged = await git(["diff", "--cached", "--quiet"]);
-      if(staged.code !== 0) await git(["commit", "-m", "Portada: foto propia (" + nameNoExt + ")"]);
+      if(staged.code !== 0) await git(["commit", "-m", "Portada: foto propia"]);
       let p = await git(["push"]);
       if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
       res.pushed = (p.code === 0);
     }catch(e){ res.gitError = e.message; }
     return res;
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+// Portada: quitar la foto de portada (volver a la del miembro/ranking).
+ipcMain.handle("remove-thumb-cover", async (_e, args) => {
+  args = args || {};
+  const folder = String(args.folder || "").replace(/\\/g, "/").replace(/\/+$/, "");
+  if(!coverFolderOk(folder)) return { ok:false, error:"ruta no permitida" };
+  try{
+    const dir = path.join(ROOT, folder);
+    let removed = false;
+    for(const e of [".png",".jpg",".jpeg",".webp"]){
+      const f = path.join(dir, "_cover" + e);
+      try{ if(fs.existsSync(f)){ fs.unlinkSync(f); removed = true; } }catch(_){}
+      const sf = path.join(dir, "_src", "_cover" + e);
+      try{ if(fs.existsSync(sf)) fs.unlinkSync(sf); }catch(_){}
+    }
+    if(removed){ try{ await git(["add","--",folder]); const st=await git(["diff","--cached","--quiet"]); if(st.code!==0) await git(["commit","-m","Portada: quitar foto propia"]); let p=await git(["push"]); if(p.code!==0){ await git(["pull","--rebase"]); p=await git(["push"]); } }catch(e){} }
+    return { ok:true, removed };
   }catch(e){ return { ok:false, error:e.message }; }
 });
 

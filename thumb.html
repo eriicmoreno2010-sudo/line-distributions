@@ -99,7 +99,9 @@
   <button id="back">← Biblioteca</button>
   <button id="save">💾 Guardar PNG</button>
   <button id="reroll">🎲 Otro momento</button>
-  <button id="mycover" title="Usar una foto MÍA (del PC) para el miembro de la portada — mejor calidad cuando sale lejos">🖼️ Mi foto</button>
+  <button id="mycover" title="Poner una foto MÍA (del PC) como foto grande de la portada — aparte de los miembros">🖼️ Foto de portada</button>
+  <button id="editcover" title="Editar la foto de portada en nuestro editor (recorte / quitar fondo con IA)" style="display:none">✂️ Editar portada</button>
+  <button id="delcover" title="Quitar la foto de portada (volver a la del miembro)" style="display:none">🗑️</button>
   <span class="lbl">Portada:</span>
   <span id="covers"></span>
 </div>
@@ -168,9 +170,9 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     // candidatos "mi foto" (del PC) para ESTE miembro -> prioridad máxima; se
     // muestran sin recorte de frame (encuadre a pantalla), porque son una foto
     // elegida a mano (mejor calidad que la del ranking cuando sale lejos).
-    const cbase = coverM.image.slice(coverM.image.lastIndexOf("/")+1).replace(/\.[^.]+$/,"");
-    const myCov = [".png",".jpg",".jpeg",".webp"].map(e => folder + "/_cover-" + cbase + e);
-    let coverIsCustom = false;
+    // FOTO DE PORTADA propia (una por canción, sin relación con miembros): _cover.*
+    const coverCands = [".png",".jpg",".jpeg",".webp"].map(e => folder + "/_cover" + e);
+    let coverIsCustom = false, customCoverRel = null;
     function applyCover(){
       const W = coverEl.clientWidth||742, H = coverEl.clientHeight||720;
       const iw = img.naturalWidth, ih = img.naturalHeight; if(!iw||!ih) return;
@@ -183,23 +185,26 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         img.style.left=(W/2-fX)+"px"; img.style.top=(H*FACE_Y-fY)+"px";
         img.style.transformOrigin=fX+"px "+fY+"px"; img.style.transform="rotate("+(fr.rot||0)+"deg)";
       } else {
-        // SIN frame: la foto del ranking (m.image), primer plano cercano (object-fit cover).
-        const fy = (coverM.focus!=null ? coverM.focus : 45);
+        // portada propia o foto sin frame: a pantalla (object-fit cover).
+        const fy = coverIsCustom ? 45 : (coverM.focus!=null ? coverM.focus : 45);
         img.style.left="0px"; img.style.top="0px"; img.style.width=W+"px"; img.style.height=H+"px";
         img.style.objectFit="cover"; img.style.objectPosition="center "+fy+"%";
       }
     }
-    // Fuente: CON frame -> original (_src) para el encuadre; SIN frame -> foto del
-    // ranking (primer plano). Una portada dedicada (_cover) tiene prioridad si existe.
-    const rest = (COVER
-        ? (fr ? [ srcPhoto(coverM.image), coverM.image ] : [ coverM.image, srcPhoto(coverM.image) ])
-        : (fr ? [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ]
-              : [ folder+"/_cover.png", folder+"/_cover.jpg", coverM.image, srcPhoto(coverM.image) ]));
-    const chain = myCov.concat(rest).map(u => u + ver);
+    // La portada propia (_cover.*) tiene PRIORIDAD; si no, la foto del miembro.
+    const memberChain = fr ? [ srcPhoto(coverM.image), coverM.image ] : [ coverM.image, srcPhoto(coverM.image) ];
+    const chain = coverCands.concat(memberChain).map(u => u + ver);
     let ci=0;
-    img.onload = () => { coverIsCustom = (ci - 1) < myCov.length; applyCover(); };
+    img.onload = () => {
+      const loaded = ci - 1;
+      coverIsCustom = loaded < coverCands.length;
+      customCoverRel = coverIsCustom ? coverCands[loaded] : null;
+      applyCover(); if(window._updateCoverBtns) window._updateCoverBtns();
+    };
     window.addEventListener("resize", applyCover);
     const tryNext=()=>{ if(ci<chain.length){ img.onerror=tryNext; img.src=chain[ci++]; } }; tryNext();
+    window._coverFolder = folder;
+    window._getCustomCoverRel = () => customCoverRel;
     document.getElementById("tag").style.setProperty("--accent", coverM.color);
     document.documentElement.style.setProperty("--accent", coverM.color);
   }
@@ -236,23 +241,38 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
       location.href = u.toString();
     };
     const myc = document.getElementById("mycover");
-    if(!(window.desktop && window.desktop.pickThumbCover)){ myc.style.display = "none"; }
-    else myc.onclick = async () => {
-      if(!coverM){ return; }
-      const t0 = myc.textContent; myc.textContent = "⏳ …"; myc.disabled = true;
-      let res = null;
-      try{ res = await window.desktop.pickThumbCover({ imagePath: coverM.image }); }catch(e){}
-      if(res && res.ok){
-        // recarga manteniendo momento + miembro para ver ya la foto nueva
-        const u = new URL(location.href);
-        u.searchParams.set("t", String(window._T));
-        u.searchParams.set("cover", coverM.name);
-        location.href = u.toString();
-      } else {
-        myc.textContent = (res && res.canceled) ? t0 : "✕ Error";
-        myc.disabled = false; setTimeout(() => myc.textContent = t0, 2000);
-      }
+    const edc = document.getElementById("editcover");
+    const dlc = document.getElementById("delcover");
+    const reloadSame = () => { const u = new URL(location.href); u.searchParams.set("t", String(window._T)); location.href = u.toString(); };
+    window._updateCoverBtns = () => {
+      const has = !!(window._getCustomCoverRel && window._getCustomCoverRel());
+      edc.style.display = has ? "" : "none";
+      dlc.style.display = has ? "" : "none";
+      myc.textContent = has ? "🖼️ Cambiar portada" : "🖼️ Foto de portada";
     };
+    if(!(window.desktop && window.desktop.pickThumbCover)){ myc.style.display = "none"; }
+    else {
+      myc.onclick = async () => {
+        const t0 = myc.textContent; myc.textContent = "⏳ …"; myc.disabled = true;
+        let res = null;
+        try{ res = await window.desktop.pickThumbCover({ folder: window._coverFolder }); }catch(e){}
+        if(res && res.ok){ reloadSame(); }
+        else { myc.textContent = (res && res.canceled) ? t0 : "✕ Error"; myc.disabled = false; setTimeout(() => myc.textContent = t0, 2000); }
+      };
+      edc.onclick = () => {
+        const rel = window._getCustomCoverRel && window._getCustomCoverRel();
+        if(!rel) return;
+        location.href = "cutout.html?img=" + encodeURIComponent(rel) + "&name=" + encodeURIComponent("Portada") + "&back=" + encodeURIComponent(location.href);
+      };
+      dlc.onclick = async () => {
+        if(!confirm("¿Quitar la foto de portada y volver a la del miembro?")) return;
+        dlc.disabled = true;
+        let res = null;
+        try{ res = await window.desktop.removeThumbCover({ folder: window._coverFolder }); }catch(e){}
+        dlc.disabled = false;
+        if(res && res.ok) reloadSame();
+      };
+    }
     const cov = document.getElementById("covers");
     (song.members||[]).forEach(m => {
       const b = document.createElement("button"); b.className = "cov"; b.textContent = m.name;
