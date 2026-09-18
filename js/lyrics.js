@@ -54,6 +54,26 @@ function partialSingers(line){
     return found;
 }
 
+/* ¿El/los cantante(s) marcados con @ cantan la PRIMERA parte de la línea?
+   Si el trozo **...@nombre** está al principio (nadie canta antes) -> el marcado
+   va DELANTE en la cabecera ("SOUL / JIUNG"); si hay texto del dueño de la línea
+   antes del trozo marcado -> el dueño va delante ("JIUNG / SOUL"). Así el orden de
+   los nombres sigue el orden en que se oyen. */
+function markedComesFirst(line){
+    const fields = [line && line.original, line && line.romanization, line && line.english];
+    for(const t of fields){
+        if(typeof t !== "string" || t.indexOf("@") < 0) continue;
+        const parts = t.split("**");
+        for(let i = 1; i < parts.length; i += 2){          // impares = trozos marcados
+            if(parts[i].indexOf("@") > 0){                 // primer trozo con @
+                const before = parts.slice(0, i).join("");  // todo lo anterior (texto del dueño)
+                return !/\S/.test(before);                 // marcado primero solo si no hay nada antes
+            }
+        }
+    }
+    return true;
+}
+
 /* Nombres a MOSTRAR de una línea: solo los que son del grupo actual (el propio
    grupo o un miembro real). Así, en el "grupo inventado" (cuyas líneas heredaron
    nombres reales como HARUTO/HYUNSUK al importar los tiempos) NO se muestran los
@@ -390,8 +410,10 @@ const Lyrics = {
                     const span = (n) => `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
                     const part = linePartials.map(span).join('<span style="color:inherit"> &amp; </span>');
                     const main = shownMembers.map(span).join('<span style="color:inherit">  &amp;  </span>');
-                    e.member.innerHTML = part +
-                        '<span style="opacity:.6;font-weight:800;padding:0 .18em"> / </span>' + main;
+                    const sep = '<span style="opacity:.6;font-weight:800;padding:0 .18em"> / </span>';
+                    // el que canta ANTES va delante (marcado al principio -> "marcado / dueño";
+                    // marcado al final -> "dueño / marcado")
+                    e.member.innerHTML = markedComesFirst(line) ? (part + sep + main) : (main + sep + part);
                 } else if(c.hasPartial){
                     e.member.textContent = joinNames(shownMembers);
                     e.member.style.background = c.sharedGradient;

@@ -429,6 +429,12 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     transition:color .15s var(--ease), transform .15s var(--ease);
 }
 
+/* GRUPO (no sub-unidad/solista) de 4/5/6 miembros: la tarjeta es grande y el
+   contador se veía pequeño -> agrándalo un poco (4 > 5 > 6). */
+body.gcount-6 #ranking .member-time{ font-size:19px; }
+body.gcount-5 #ranking .member-time{ font-size:20px; }
+body.gcount-4 #ranking .member-time{ font-size:22px; }
+
 #ranking .member-bar{
     width:100%;
     height:14px;

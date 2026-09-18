@@ -49,6 +49,12 @@ const Ranking = {
         const effN = this.subunit ? Math.max(n, 8) : n;
         // Small groups (<=7) have taller cards -> bigger names look better (CSS uses this)
         document.body.classList.toggle("few-members", effN <= 7);
+        // GRUPO de verdad (no sub-unidad ni solista) con 4/5/6 miembros: la tarjeta
+        // es grande y el contador se ve pequeño -> agrándalo un poco (4 > 5 > 6).
+        const bigCounter = !this.subunit && (n === 4 || n === 5 || n === 6);
+        document.body.classList.toggle("gcount-4", bigCounter && n === 4);
+        document.body.classList.toggle("gcount-5", bigCounter && n === 5);
+        document.body.classList.toggle("gcount-6", bigCounter && n === 6);
         // On phones there's no room for two side columns — always use a single
         // (scrollable) column, even for big groups.
         const mobile = window.matchMedia("(max-width:900px)").matches;
