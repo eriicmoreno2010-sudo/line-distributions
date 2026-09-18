@@ -102,6 +102,7 @@
   <button id="mycover" title="Poner una foto MÍA (del PC) como foto grande de la portada — aparte de los miembros">🖼️ Foto de portada</button>
   <button id="editcover" title="Editar la foto de portada en nuestro editor (recorte / quitar fondo con IA)" style="display:none">✂️ Editar portada</button>
   <button id="delcover" title="Quitar la foto de portada (volver a la del miembro)" style="display:none">🗑️</button>
+  <button id="mycoverback" title="Volver a tu foto de portada" style="display:none">↩️ Mi portada</button>
   <span class="lbl">Portada:</span>
   <span id="covers"></span>
 </div>
@@ -191,20 +192,31 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         img.style.objectFit="cover"; img.style.objectPosition="center "+fy+"%";
       }
     }
-    // La portada propia (_cover.*) tiene PRIORIDAD; si no, la foto del miembro.
+    // Previsualizar un miembro (al clicar su chip): muestra su foto sin borrar la
+    // portada propia. Por defecto manda la portada propia (_cover.*); si no hay, el
+    // miembro. Con pm=1 se muestra el miembro por encima (previsualización).
+    const previewMember = P.get("pm") === "1";
     const memberChain = fr ? [ srcPhoto(coverM.image), coverM.image ] : [ coverM.image, srcPhoto(coverM.image) ];
-    const chain = coverCands.concat(memberChain).map(u => u + ver);
+    const bigChain = (previewMember ? memberChain.concat(coverCands) : coverCands.concat(memberChain)).map(u => u + ver);
     let ci=0;
     img.onload = () => {
-      const loaded = ci - 1;
-      coverIsCustom = loaded < coverCands.length;
-      customCoverRel = coverIsCustom ? coverCands[loaded] : null;
+      const url = bigChain[ci - 1] || "";
+      coverIsCustom = coverCands.some(c => url.indexOf(c) === 0);
       applyCover(); if(window._updateCoverBtns) window._updateCoverBtns();
     };
     window.addEventListener("resize", applyCover);
-    const tryNext=()=>{ if(ci<chain.length){ img.onerror=tryNext; img.src=chain[ci++]; } }; tryNext();
+    const tryNext=()=>{ if(ci<bigChain.length){ img.onerror=tryNext; img.src=bigChain[ci++]; } }; tryNext();
     window._coverFolder = folder;
-    window._getCustomCoverRel = () => customCoverRel;
+    window._previewMember = previewMember;
+    // ¿Existe una portada propia? (independiente de lo que se muestre ahora)
+    window._hasCustom = false; window._customRel = null;
+    (function probe(){
+      let k = 0; const im2 = new Image();
+      im2.onload = () => { window._hasCustom = true; window._customRel = coverCands[k - 1]; if(window._updateCoverBtns) window._updateCoverBtns(); };
+      im2.onerror = () => { if(k < coverCands.length) im2.src = coverCands[k++] + ver; };
+      im2.src = coverCands[k++] + ver;
+    })();
+    window._getCustomCoverRel = () => window._customRel;
     document.getElementById("tag").style.setProperty("--accent", coverM.color);
     document.documentElement.style.setProperty("--accent", coverM.color);
   }
@@ -231,7 +243,7 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     document.getElementById("save").onclick = async (e) => {
       const b = e.target; const t0 = b.textContent; b.textContent = "⏳ Guardando…"; b.disabled = true;
       let res = null;
-      try{ res = await window.desktop.exportThumb({ song: SONG_URL, cover: (coverM && coverM.name) || "", t: T }); }catch(err){}
+      try{ res = await window.desktop.exportThumb({ song: SONG_URL, cover: (coverM && coverM.name) || "", t: T, pm: window._previewMember ? 1 : 0 }); }catch(err){}
       b.textContent = (res && res.ok) ? "✓ Guardada" : (res && res.canceled ? t0 : "✕ Error");
       b.disabled = false; setTimeout(()=>b.textContent = t0, 2200);
     };
@@ -243,11 +255,15 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     const myc = document.getElementById("mycover");
     const edc = document.getElementById("editcover");
     const dlc = document.getElementById("delcover");
-    const reloadSame = () => { const u = new URL(location.href); u.searchParams.set("t", String(window._T)); location.href = u.toString(); };
+    const bkc = document.getElementById("mycoverback");
+    // vuelve a la misma canción/momento, quitando la previsualización (pm)
+    const goCustom = () => { const u = new URL(location.href); u.searchParams.set("t", String(window._T)); u.searchParams.delete("pm"); location.href = u.toString(); };
     window._updateCoverBtns = () => {
-      const has = !!(window._getCustomCoverRel && window._getCustomCoverRel());
+      const has = !!window._hasCustom;
       edc.style.display = has ? "" : "none";
       dlc.style.display = has ? "" : "none";
+      // "Mi portada" solo cuando hay portada propia PERO ahora estás viendo un miembro
+      bkc.style.display = (has && window._previewMember) ? "" : "none";
       myc.textContent = has ? "🖼️ Cambiar portada" : "🖼️ Foto de portada";
     };
     if(!(window.desktop && window.desktop.pickThumbCover)){ myc.style.display = "none"; }
@@ -256,7 +272,7 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         const t0 = myc.textContent; myc.textContent = "⏳ …"; myc.disabled = true;
         let res = null;
         try{ res = await window.desktop.pickThumbCover({ folder: window._coverFolder }); }catch(e){}
-        if(res && res.ok){ reloadSame(); }
+        if(res && res.ok){ goCustom(); }
         else { myc.textContent = (res && res.canceled) ? t0 : "✕ Error"; myc.disabled = false; setTimeout(() => myc.textContent = t0, 2000); }
       };
       edc.onclick = () => {
@@ -265,19 +281,22 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         location.href = "cutout.html?img=" + encodeURIComponent(rel) + "&name=" + encodeURIComponent("Portada") + "&back=" + encodeURIComponent(location.href);
       };
       dlc.onclick = async () => {
-        if(!confirm("¿Quitar la foto de portada y volver a la del miembro?")) return;
+        if(!confirm("¿Quitar la foto de portada y quedarte con la del miembro?")) return;
         dlc.disabled = true;
         let res = null;
         try{ res = await window.desktop.removeThumbCover({ folder: window._coverFolder }); }catch(e){}
         dlc.disabled = false;
-        if(res && res.ok) reloadSame();
+        if(res && res.ok){ const u = new URL(location.href); u.searchParams.set("t", String(window._T)); u.searchParams.delete("pm"); location.href = u.toString(); }
       };
+      bkc.onclick = goCustom;
     }
+    window._updateCoverBtns();
     const cov = document.getElementById("covers");
     (song.members||[]).forEach(m => {
       const b = document.createElement("button"); b.className = "cov"; b.textContent = m.name;
       b.style.setProperty("--c", m.color);
-      b.onclick = () => { const u = new URL(location.href); u.searchParams.set("cover", m.name); location.href = u.toString(); };
+      // clicar un chip PREVISUALIZA a ese miembro (pm=1), sin borrar la portada propia
+      b.onclick = () => { const u = new URL(location.href); u.searchParams.set("cover", m.name); u.searchParams.set("pm", "1"); location.href = u.toString(); };
       cov.appendChild(b);
     });
   }

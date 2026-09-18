@@ -924,6 +924,7 @@ ipcMain.handle("export-thumb", async (evt, args) => {
     let q = "song=" + song + "&export=1";
     if(args.cover) q += "&cover=" + encodeURIComponent(args.cover);
     if(args.t != null && args.t !== "") q += "&t=" + encodeURIComponent(args.t);
+    if(args.pm) q += "&pm=1";   // exporta lo que se está previsualizando (miembro), no la portada propia
     await win.loadFile(path.join(ROOT, "thumb.html"), { search: q });
     await new Promise(r => setTimeout(r, 1600));
     const img = await win.webContents.capturePage({ x: 0, y: 0, width: 1280, height: 720 });
