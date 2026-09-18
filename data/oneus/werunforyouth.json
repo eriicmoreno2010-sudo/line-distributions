@@ -11,35 +11,65 @@
       "image": "images/oneus/werunforyouth/seoho.png",
       "color": "#ff4d6d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.394,
+        "cy": 0.256,
+        "size": 0.585,
+        "rot": 11
+      }
     },
     {
       "name": "LEEDO",
       "image": "images/oneus/werunforyouth/leedo.png",
       "color": "#4dabf7",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.478,
+        "cy": 0.232,
+        "size": 0.315,
+        "rot": 339
+      }
     },
     {
       "name": "KEONHEE",
       "image": "images/oneus/werunforyouth/keonhee.png",
       "color": "#51cf66",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4927,
+        "cy": 0.2912,
+        "size": 0.57,
+        "rot": 0
+      }
     },
     {
       "name": "HWANWOONG",
       "image": "images/oneus/werunforyouth/hwanwoong.png",
       "color": "#ffd43b",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.387,
+        "cy": 0.2108,
+        "size": 0.414,
+        "rot": 0
+      }
     },
     {
       "name": "XION",
       "image": "images/oneus/werunforyouth/xion.png",
       "color": "#cc5de8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.426,
+        "cy": 0.308,
+        "size": 0.295,
+        "rot": 0
+      }
     }
   ],
   "lyrics": [
