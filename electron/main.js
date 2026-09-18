@@ -389,6 +389,46 @@ ipcMain.handle("pick-cover", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// Portada: elegir MI foto (del PC) para el miembro de la portada. Se guarda como
+// _cover-<miembro>.<ext> junto a la foto y la portada la usa con prioridad. Sirve
+// cuando en la foto del ranking el miembro sale lejos/pequeño.
+ipcMain.handle("pick-thumb-cover", async (_e, args) => {
+  args = args || {};
+  const imgRel = String(args.imagePath || "").replace(/\\/g, "/");
+  if(!/^images\/.+/.test(imgRel) || imgRel.indexOf("..") !== -1) return { ok:false, error:"ruta no permitida" };
+  try{
+    const { canceled, filePaths } = await dialog.showOpenDialog({
+      title: "Elegir foto para la portada",
+      properties: ["openFile"],
+      filters: [{ name:"Imagen", extensions:["jpg","jpeg","png","webp"] }]
+    });
+    if(canceled || !filePaths || !filePaths[0]) return { ok:false, canceled:true };
+    const src = filePaths[0];
+    const abs = path.join(ROOT, imgRel);
+    const dir = path.dirname(abs);
+    const nameNoExt = path.basename(abs, path.extname(abs));           // p.ej. "mark"
+    const ext = (path.extname(src) || ".png").toLowerCase();
+    // borra variantes previas de otra extensión para que no gane una vieja
+    for(const e of [".png",".jpg",".jpeg",".webp"]){
+      if(e === ext) continue;
+      try{ const f = path.join(dir, "_cover-" + nameNoExt + e); if(fs.existsSync(f)) fs.unlinkSync(f); }catch(_){}
+    }
+    const relDir = imgRel.slice(0, imgRel.lastIndexOf("/"));
+    const destRel = relDir + "/_cover-" + nameNoExt + ext;
+    fs.copyFileSync(src, path.join(ROOT, destRel));
+    const res = { ok:true, rel: destRel, pushed:false };
+    try{
+      await git(["add", "--", relDir]);
+      const staged = await git(["diff", "--cached", "--quiet"]);
+      if(staged.code !== 0) await git(["commit", "-m", "Portada: foto propia (" + nameNoExt + ")"]);
+      let p = await git(["push"]);
+      if(p.code !== 0){ await git(["pull", "--rebase"]); p = await git(["push"]); }
+      res.pushed = (p.code === 0);
+    }catch(e){ res.gitError = e.message; }
+    return res;
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // ---- Importar una foto (desde el PC) para un miembro: copia a _src y al display,
 //      para que se vea ya y se pueda encuadrar. No hace commit (se sube al Guardar). ----
 ipcMain.handle("import-photo", async (_e, args) => {

@@ -20,6 +20,7 @@ contextBridge.exposeInMainWorld("desktop", {
   cutoutLoad: (args) => ipcRenderer.invoke("cutout-load", args || {}),
   cutoutSave: (args) => ipcRenderer.invoke("cutout-save", args || {}),
   saveCutoutFile: (args) => ipcRenderer.invoke("save-cutout-file", args || {}),
+  pickThumbCover: (args) => ipcRenderer.invoke("pick-thumb-cover", args || {}),
   aiModelEnsure: () => ipcRenderer.invoke("ai-model-ensure"),
   onAiProgress: (cb) => ipcRenderer.on("ai-model-progress", (_e, p) => cb(p)),
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),

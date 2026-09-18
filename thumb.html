@@ -99,6 +99,7 @@
   <button id="back">← Biblioteca</button>
   <button id="save">💾 Guardar PNG</button>
   <button id="reroll">🎲 Otro momento</button>
+  <button id="mycover" title="Usar una foto MÍA (del PC) para el miembro de la portada — mejor calidad cuando sale lejos">🖼️ Mi foto</button>
   <span class="lbl">Portada:</span>
   <span id="covers"></span>
 </div>
@@ -164,11 +165,17 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     const folder = coverM.image.slice(0, coverM.image.lastIndexOf("/"));   // images/<group>/<song>
     const fr = coverM.frame;
     const ZOOM = 1.0, FACE_Y = 0.33;
+    // candidatos "mi foto" (del PC) para ESTE miembro -> prioridad máxima; se
+    // muestran sin recorte de frame (encuadre a pantalla), porque son una foto
+    // elegida a mano (mejor calidad que la del ranking cuando sale lejos).
+    const cbase = coverM.image.slice(coverM.image.lastIndexOf("/")+1).replace(/\.[^.]+$/,"");
+    const myCov = [".png",".jpg",".jpeg",".webp"].map(e => folder + "/_cover-" + cbase + e);
+    let coverIsCustom = false;
     function applyCover(){
       const W = coverEl.clientWidth||742, H = coverEl.clientHeight||720;
       const iw = img.naturalWidth, ih = img.naturalHeight; if(!iw||!ih) return;
       img.style.transformOrigin=""; img.style.transform="";
-      if(fr && isFinite(fr.size)){
+      if(fr && isFinite(fr.size) && !coverIsCustom){
         // CON frame: encuadre a la cara sobre la original (muestra el cuello).
         const side = fr.size*iw, scale = W/(side*ZOOM);
         img.style.width=(iw*scale)+"px"; img.style.height=(ih*scale)+"px";
@@ -184,12 +191,14 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
     }
     // Fuente: CON frame -> original (_src) para el encuadre; SIN frame -> foto del
     // ranking (primer plano). Una portada dedicada (_cover) tiene prioridad si existe.
-    const chain = (COVER
+    const rest = (COVER
         ? (fr ? [ srcPhoto(coverM.image), coverM.image ] : [ coverM.image, srcPhoto(coverM.image) ])
         : (fr ? [ folder+"/_cover.png", folder+"/_cover.jpg", srcPhoto(coverM.image), coverM.image ]
-              : [ folder+"/_cover.png", folder+"/_cover.jpg", coverM.image, srcPhoto(coverM.image) ]))
-      .map(u => u + ver);
-    let ci=0; img.onload=applyCover; window.addEventListener("resize", applyCover);
+              : [ folder+"/_cover.png", folder+"/_cover.jpg", coverM.image, srcPhoto(coverM.image) ]));
+    const chain = myCov.concat(rest).map(u => u + ver);
+    let ci=0;
+    img.onload = () => { coverIsCustom = (ci - 1) < myCov.length; applyCover(); };
+    window.addEventListener("resize", applyCover);
     const tryNext=()=>{ if(ci<chain.length){ img.onerror=tryNext; img.src=chain[ci++]; } }; tryNext();
     document.getElementById("tag").style.setProperty("--accent", coverM.color);
     document.documentElement.style.setProperty("--accent", coverM.color);
@@ -225,6 +234,24 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
       const u = new URL(location.href);
       u.searchParams.set("t", (dur * (0.30 + Math.random()*0.42)).toFixed(2));
       location.href = u.toString();
+    };
+    const myc = document.getElementById("mycover");
+    if(!(window.desktop && window.desktop.pickThumbCover)){ myc.style.display = "none"; }
+    else myc.onclick = async () => {
+      if(!coverM){ return; }
+      const t0 = myc.textContent; myc.textContent = "⏳ …"; myc.disabled = true;
+      let res = null;
+      try{ res = await window.desktop.pickThumbCover({ imagePath: coverM.image }); }catch(e){}
+      if(res && res.ok){
+        // recarga manteniendo momento + miembro para ver ya la foto nueva
+        const u = new URL(location.href);
+        u.searchParams.set("t", String(window._T));
+        u.searchParams.set("cover", coverM.name);
+        location.href = u.toString();
+      } else {
+        myc.textContent = (res && res.canceled) ? t0 : "✕ Error";
+        myc.disabled = false; setTimeout(() => myc.textContent = t0, 2000);
+      }
     };
     const cov = document.getElementById("covers");
     (song.members||[]).forEach(m => {
