@@ -254,7 +254,7 @@
       const ready = await D.aiModelEnsure();
       if(!ready || !ready.ok) throw new Error((ready && ready.error) || "no disponible");
       ovT.textContent = "Recortando con IA…";
-      if(!aiLib) aiLib = await import(new URL("vendor/imgly/index.mjs", document.baseURI).href);
+      if(!aiLib) aiLib = await import(new URL("vendor/imgly/index.mjs?v=2", document.baseURI).href);
       // fuente = original a máxima calidad (ya limitada a MAXDIM)
       const oc = document.createElement("canvas"); oc.width = W; oc.height = H;
       oc.getContext("2d").drawImage(orig, 0, 0);
