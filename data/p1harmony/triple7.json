@@ -51,13 +51,1415 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 7.45,
+      "end": 8.5,
+      "members": [
+        "JIUNG"
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "We Triple 7 Up",
       "english": "",
-      "adlib": ""
+      "adlib": false,
+      "voice": [
+        [
+          7.39,
+          8.4
+        ]
+      ]
+    },
+    {
+      "start": 8.76,
+      "end": 11.9,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          8.75,
+          9.36
+        ],
+        [
+          9.57,
+          10.24
+        ],
+        [
+          10.65,
+          11.86
+        ]
+      ],
+      "original": "",
+      "romanization": "Feel it trust it, Y’all seen me glowin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 12.22,
+      "end": 15.36,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          12.16,
+          12.83
+        ],
+        [
+          13.04,
+          13.77
+        ],
+        [
+          14.09,
+          15.25
+        ]
+      ],
+      "original": "Drippin’ vibin’, 운을 바라지 마",
+      "romanization": "drippin’ vibin’, uneul baraji ma",
+      "english": "Drippin’ vibin’, Don’t wish for luck",
+      "adlib": false
+    },
+    {
+      "start": 15.48,
+      "end": 18.65,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          15.44,
+          16.79
+        ],
+        [
+          17.06,
+          18.56
+        ]
+      ],
+      "original": "판은 내가 다 깔아, 걱정 말고 나를 봐 봐",
+      "romanization": "paneun naega da kkala, geokjeong malgo nareul bwa bwa",
+      "english": "I lay out the whole game, Don’t worry and look at me",
+      "adlib": false
+    },
+    {
+      "start": 18.86,
+      "end": 21.93,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          19.04,
+          19.71
+        ],
+        [
+          19.94,
+          20.52
+        ],
+        [
+          20.67,
+          21.97
+        ]
+      ],
+      "original": "Top dog top dog, I’ll never get lost 나를 믿어",
+      "romanization": "top dog top dog, i’ll never get lost nareul mideo",
+      "english": "Top dog top dog, I’ll never get lost trust me",
+      "adlib": false
+    },
+    {
+      "start": 22.08,
+      "end": 25.19,
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          22.02,
+          25.07
+        ]
+      ],
+      "original": "Never stop, 난 갖고 싶음 가져 뛰지 발로",
+      "romanization": "never stop, nan gatgo sipeum gajyeo ttwiji ballo",
+      "english": "Never stop, If I want it I take it I spit it with my feet and keep my word",
+      "adlib": false
+    },
+    {
+      "start": 25.37,
+      "end": 29.19,
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          25.43,
+          29.12
+        ]
+      ],
+      "original": "뱉고 나서 지키지 못한 건 없어, Right away",
+      "romanization": "baetgo naseo jikiji mothan geon eopseo, right away",
+      "english": "There’s nothing I haven’t been able to keep, Right away",
+      "adlib": false
+    },
+    {
+      "start": 29.35,
+      "end": 32.63,
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          29.34,
+          29.6
+        ],
+        [
+          29.76,
+          30
+        ],
+        [
+          30.18,
+          30.39
+        ],
+        [
+          30.51,
+          31.01
+        ],
+        [
+          31.13,
+          31.43
+        ],
+        [
+          31.61,
+          31.88
+        ],
+        [
+          32.03,
+          32.26
+        ],
+        [
+          32.42,
+          32.68
+        ]
+      ],
+      "original": "",
+      "romanization": "Woah woah woah, They should all, Know know know know",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 32.75,
+      "end": 35.14,
+      "members": [
+        "SOUL"
+      ],
+      "voice": [
+        [
+          32.84,
+          33.79
+        ],
+        [
+          33.84,
+          35.4
+        ]
+      ],
+      "original": "운도 실력, 내 길엔 깔려 있어 신념",
+      "romanization": "undo sillyeok, nae gilen kkallyeo isseo sinnyeom",
+      "english": "Luck is skill, My path is paved with conviction",
+      "adlib": false
+    },
+    {
+      "start": 35.26,
+      "end": 38.34,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          35.32,
+          36.25
+        ],
+        [
+          36.97,
+          37.7
+        ],
+        [
+          37.82,
+          38.37
+        ]
+      ],
+      "original": "But I said “Oui”, 세상 위에 우리",
+      "romanization": "but i said “oui”, sesang wie uri",
+      "english": "But I said “Oui”, Us above the world",
+      "adlib": false
+    },
+    {
+      "start": 38.58,
+      "end": 41.83,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          38.66,
+          39.56
+        ],
+        [
+          40.4,
+          41.1
+        ],
+        [
+          41.25,
+          41.78
+        ]
+      ],
+      "original": "This ain’t free, 알잖아 내 땀을",
+      "romanization": "this ain’t free, aljana nae ttameul",
+      "english": "This ain’t free, You know it’s my sweat",
+      "adlib": false
+    },
+    {
+      "start": 42.12,
+      "end": 45.49,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          42.14,
+          42.52
+        ],
+        [
+          42.65,
+          43.77
+        ],
+        [
+          43.9,
+          45.65
+        ]
+      ],
+      "original": "I’m a play ya, 날 따라와",
+      "romanization": "i’m a play ya, nal ttara wa",
+      "english": "I’m a play ya, Follow me",
+      "adlib": false
+    },
+    {
+      "start": 45.64,
+      "end": 47.57,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          45.6,
+          47.36
+        ]
+      ],
+      "original": "",
+      "romanization": "Better call it call it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 2.73,
+      "end": 5.03,
+      "members": [
+        "P1Harmony",
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          2.9,
+          3.28
+        ],
+        [
+          3.77,
+          4.15
+        ],
+        [
+          4.6,
+          5.03
+        ]
+      ],
+      "original": "",
+      "romanization": "(What? What? What?)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 8.34,
+      "end": 8.75,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Oui)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          8.37,
+          8.72
+        ]
+      ]
+    },
+    {
+      "start": 15.21,
+      "end": 15.6,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          15.2,
+          15.58
+        ]
+      ]
+    },
+    {
+      "start": 16.69,
+      "end": 17.28,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Eh oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          16.69,
+          17.24
+        ]
+      ]
+    },
+    {
+      "start": 18.6,
+      "end": 19.04,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          18.63,
+          19.01
+        ]
+      ]
+    },
+    {
+      "start": 19.54,
+      "end": 19.92,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          19.52,
+          19.9
+        ]
+      ]
+    },
+    {
+      "start": 25.05,
+      "end": 25.46,
+      "members": [
+        "SOUL"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          25.05,
+          25.49
+        ]
+      ]
+    },
+    {
+      "start": 37.79,
+      "end": 38.54,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "(위에 우리)",
+      "romanization": "(wie uri)",
+      "english": "(Us above)",
+      "adlib": true,
+      "voice": [
+        [
+          37.9,
+          38.69
+        ]
+      ]
+    },
+    {
+      "start": 39.44,
+      "end": 40.32,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Yeah ain't free)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          39.59,
+          40.4
+        ]
+      ]
+    },
+    {
+      "start": 41.31,
+      "end": 42.17,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(Oh woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          41.31,
+          42.26
+        ]
+      ]
+    },
+    {
+      "start": 45.63,
+      "end": 46.38,
+      "members": [
+        "KEEHO"
+      ],
+      "original": "",
+      "romanization": "(No)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          45.66,
+          46.56
+        ]
+      ]
+    },
+    {
+      "start": 46.08,
+      "end": 49.42,
+      "members": [
+        "P1Harmony"
+      ],
+      "original": "(Give you that 1 2 3 4 5 6 7)",
+      "romanization": "(give you that il i sam sa o yuk chil)",
+      "english": "Give you that 1 2 3 4 5 6 7",
+      "adlib": true
+    },
+    {
+      "start": 66.6,
+      "end": 67.04,
+      "members": [
+        "THEO"
+      ],
+      "original": "(7)",
+      "romanization": "(chil)",
+      "english": "(Seven)",
+      "adlib": true,
+      "voice": [
+        [
+          66.59,
+          67.09
+        ]
+      ]
+    },
+    {
+      "start": 71.32,
+      "end": 71.73,
+      "members": [
+        "THEO"
+      ],
+      "original": "",
+      "romanization": "(Ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          71.37,
+          71.74
+        ]
+      ]
+    },
+    {
+      "start": 49.96,
+      "end": 52.96,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          49.9,
+          51.69,
+          [
+            "JIUNG"
+          ]
+        ],
+        [
+          51.61,
+          52.91,
+          [
+            "SOUL"
+          ]
+        ]
+      ],
+      "original": "",
+      "romanization": "When I get up on a wave, That’s that Triple 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 53.14,
+      "end": 55.79,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          53.33,
+          55.15,
+          [
+            "JIUNG"
+          ]
+        ],
+        [
+          55.03,
+          55.87,
+          [
+            "SOUL"
+          ]
+        ]
+      ],
+      "original": "",
+      "romanization": "Now I’m hot just give me space, That’s that triple",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 55.94,
+      "end": 59.25,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          55.91,
+          57.73
+        ],
+        [
+          57.88,
+          59.3
+        ]
+      ],
+      "original": "",
+      "romanization": "Know with me you always winnin’, Roulette how we be spinnin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 59.37,
+      "end": 60.93,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          59.32,
+          61.08
+        ]
+      ],
+      "original": "",
+      "romanization": "Want that lucky number 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 61.05,
+      "end": 63.27,
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          61.01,
+          63.26
+        ]
+      ],
+      "original": "뭐가 또 걱정돼 걱정 접어",
+      "romanization": "mwoga tto geokjeongdwae geokjeong jeobeo",
+      "english": "What are you worried about again? Put your worries away",
+      "adlib": false
+    },
+    {
+      "start": 65.78,
+      "end": 66.59,
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          65.72,
+          66.59
+        ]
+      ],
+      "original": "",
+      "romanization": "Triple 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 69.05,
+      "end": 69.37,
+      "members": [
+        "THEO"
+      ],
+      "original": "",
+      "romanization": "Triple 7",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          69.15,
+          70.02
+        ]
+      ]
+    },
+    {
+      "start": 69.49,
+      "end": 72.8,
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          69.62,
+          71.38
+        ],
+        [
+          71.53,
+          72.97
+        ]
+      ],
+      "original": "",
+      "romanization": "Know with me you always winnin’, Roulette how we be spinnin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 72.92,
+      "end": 74.74,
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          73.03,
+          74.77
+        ]
+      ],
+      "original": "",
+      "romanization": "Want that lucky number 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 73.51,
+      "end": 76.94,
+      "members": [
+        "P1Harmony"
+      ],
+      "original": "(Give you that 1 2 3 4 5 6 7)",
+      "romanization": "(give you that il i sam sa o yuk chil)",
+      "english": "(Give you that 1 2 3 4 5 6 7)",
+      "adlib": true
+    },
+    {
+      "start": 78.42,
+      "end": 78.72,
+      "members": [
+        "INTAK"
+      ],
+      "original": "",
+      "romanization": "(Ha)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          78.48,
+          78.78
+        ]
+      ]
+    },
+    {
+      "start": 80.1,
+      "end": 80.63,
+      "members": [
+        "INTAK"
+      ],
+      "original": "",
+      "romanization": "(Sheesh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          80.14,
+          80.58
+        ]
+      ]
+    },
+    {
+      "start": 84.47,
+      "end": 85.23,
+      "members": [
+        "INTAK"
+      ],
+      "original": "",
+      "romanization": "(Get out)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          84.44,
+          85.19
+        ]
+      ]
+    },
+    {
+      "start": 105.23,
+      "end": 105.67,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Eh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          105.2,
+          105.64
+        ]
+      ]
+    },
+    {
+      "start": 106.71,
+      "end": 107.32,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Yeah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          106.71,
+          107.3
+        ]
+      ]
+    },
+    {
+      "start": 108.16,
+      "end": 108.95,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Ain't free)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          108.15,
+          108.93
+        ]
+      ]
+    },
+    {
+      "start": 109.91,
+      "end": 110.75,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Oh yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          109.95,
+          110.79
+        ]
+      ]
+    },
+    {
+      "start": 111.61,
+      "end": 112.71,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Play ya)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          111.81,
+          112.66
+        ]
+      ]
+    },
+    {
+      "start": 76.87,
+      "end": 80.03,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          76.93,
+          78.46
+        ],
+        [
+          78.61,
+          80.11
+        ]
+      ],
+      "original": "Triple 7 No limit, 반전의 연속 Get it",
+      "romanization": "triple 7 no limit, banjeonui yeonsok get it",
+      "english": "Triple 7 no limit, A series of twists get it",
+      "adlib": false
+    },
+    {
+      "start": 80.19,
+      "end": 83.32,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          80.33,
+          83.56
+        ]
+      ],
+      "original": "운도 능력이지, 몇 년 사이 Dome intuit",
+      "romanization": "undo neungnyeogiji, myeot nyeon sai dome intuit",
+      "english": "Luck is ability too, Over the past few years dome intuit",
+      "adlib": false
+    },
+    {
+      "start": 83.45,
+      "end": 85.29,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          83.55,
+          84.77
+        ],
+        [
+          84.92,
+          85.56
+        ]
+      ],
+      "original": "",
+      "romanization": "Takki baby where you at?, I’m in berlin",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 85.41,
+      "end": 88.49,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          85.51,
+          88.53
+        ]
+      ],
+      "original": "투어를 전부 마치고 내 상태는, 온전치 못해도 뭐 Not bad",
+      "romanization": "toureul jeonbu machigo, nae sangtaeneun onjeonchi mothaedo mwo not bad",
+      "english": "After finishing the entire tour, Even though I’m not completely okay not bad",
+      "adlib": false
+    },
+    {
+      "start": 88.62,
+      "end": 90.58,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          88.44,
+          90.68
+        ]
+      ],
+      "original": "베팅해 내 가사에, 꼬라박지 그냥 All in",
+      "romanization": "bettinghae nae gasae, kkorapagji geunyang all in",
+      "english": "I bet on my lyrics, I just go all in",
+      "adlib": false
+    },
+    {
+      "start": 90.79,
+      "end": 93.92,
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          91.01,
+          94.27
+        ]
+      ],
+      "original": "다들 성공에 관심이 많아, 몸부림치며 가득 팔아",
+      "romanization": "dadeul seonggonge gwansimi mana, momburimchimyeo gadeuk pala",
+      "english": "Everyone is very interested in success, Struggling and selling plenty",
+      "adlib": false
+    },
+    {
+      "start": 94.07,
+      "end": 96.35,
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          94.13,
+          96.55
+        ]
+      ],
+      "original": "가득 담아 또 퍼 날라, Tongue 위 우린 춤춰",
+      "romanization": "gadeuk dama tto peo nalla, tong wi urin chumchwo",
+      "english": "Filling it up then spreading it around again, Tongue up, we dance",
+      "adlib": false
+    },
+    {
+      "start": 96.5,
+      "end": 98.03,
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          96.6,
+          98.04
+        ]
+      ],
+      "original": "궁궐 혓바닥이 출처",
+      "romanization": "gunggwol hyeotbadagi chulcheo",
+      "english": "The palace the tongue is the source",
+      "adlib": false
+    },
+    {
+      "start": 98.24,
+      "end": 99.71,
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          98.37,
+          98.95
+        ],
+        [
+          99.19,
+          100
+        ]
+      ],
+      "original": "One step, Double 다음은 Triple",
+      "romanization": "one step, double daeumeun triple",
+      "english": "One step, Double next is triple",
+      "adlib": false
+    },
+    {
+      "start": 99.87,
+      "end": 101.28,
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          99.96,
+          101.41
+        ]
+      ],
+      "original": "Step forward 돌아보는, Prequel though",
+      "romanization": "step forward doraboneun, prequel though",
+      "english": "Step forward looking back, Prequel though",
+      "adlib": false
+    },
+    {
+      "start": 101.4,
+      "end": 103.65,
+      "members": [
+        "JONGSEOB"
+      ],
+      "voice": [
+        [
+          101.53,
+          104.39
+        ]
+      ],
+      "original": "Equal 여전하지, 네 것도 내 거, B컷도 백 점",
+      "romanization": "equal yeojeonhaji, ne geotdo nae geo, bkeotdo baek jeom",
+      "english": "Equal still the same, Yours is mine too, Even the B-cut gets a hundred points",
+      "adlib": false
+    },
+    {
+      "start": 103.78,
+      "end": 106.83,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          103.88,
+          104.84
+        ],
+        [
+          105.59,
+          106.9
+        ]
+      ],
+      "original": "But I said “Oui”, 세상 위에 우리",
+      "romanization": "but i said “oui”, sesang wie uri",
+      "english": "But I said “Oui”, Us above the world",
+      "adlib": false
+    },
+    {
+      "start": 107.21,
+      "end": 110.26,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          107.28,
+          108.19
+        ],
+        [
+          109.02,
+          110.29
+        ]
+      ],
+      "original": "This ain’t free, 알잖아 내 땀을",
+      "romanization": "this ain’t free, aljana nae ttameul",
+      "english": "This ain’t free, You know it’s my sweat",
+      "adlib": false
+    },
+    {
+      "start": 110.62,
+      "end": 113.98,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          110.72,
+          111.11
+        ],
+        [
+          111.2,
+          112.27
+        ],
+        [
+          112.48,
+          114.21
+        ]
+      ],
+      "original": "I’m a play ya, 날 따라와",
+      "romanization": "i’m a play ya, nal ttara wa",
+      "english": "I’m a play ya, Follow me",
+      "adlib": false
+    },
+    {
+      "start": 114.13,
+      "end": 116.07,
+      "members": [
+        "JIUNG"
+      ],
+      "voice": [
+        [
+          114.16,
+          115.89
+        ]
+      ],
+      "original": "",
+      "romanization": "Better call it call it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 114.62,
+      "end": 117.98,
+      "members": [
+        "P1Harmony"
+      ],
+      "original": "(Give you that 1 2 3 4 5 6 7)",
+      "romanization": "(give you that il i sam sa o yuk chil)",
+      "english": "(Give you that 1 2 3 4 5 6 7)",
+      "adlib": true
+    },
+    {
+      "start": 117.88,
+      "end": 118.55,
+      "members": [
+        "JIUNG"
+      ],
+      "original": "",
+      "romanization": "(Oh woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          117.83,
+          118.48
+        ]
+      ]
+    },
+    {
+      "start": 135.19,
+      "end": 135.63,
+      "members": [
+        "THEO"
+      ],
+      "original": "(7)",
+      "romanization": "(chil)",
+      "english": "(Seven)",
+      "adlib": true,
+      "voice": [
+        [
+          135.25,
+          135.66
+        ]
+      ]
+    },
+    {
+      "start": 139.94,
+      "end": 140.39,
+      "members": [
+        "THEO"
+      ],
+      "original": "",
+      "romanization": "(Ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          139.89,
+          140.3
+        ]
+      ]
+    },
+    {
+      "start": 118.4,
+      "end": 121.42,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          118.46,
+          120.25,
+          [
+            "KEEHO"
+          ]
+        ],
+        [
+          120.21,
+          121.51,
+          [
+            "SOUL"
+          ]
+        ]
+      ],
+      "original": "",
+      "romanization": "When I get up on a wave, That’s that Triple 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 121.77,
+      "end": 124.25,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          121.9,
+          123.72,
+          [
+            "KEEHO"
+          ]
+        ],
+        [
+          123.58,
+          124.42,
+          [
+            "SOUL"
+          ]
+        ]
+      ],
+      "original": "",
+      "romanization": "Now I’m hot just give me space, That’s that triple",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 124.37,
+      "end": 127.65,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          124.44,
+          126.19
+        ],
+        [
+          126.34,
+          127.82
+        ]
+      ],
+      "original": "",
+      "romanization": "Know with me you always winnin’, Roulette how we be spinnin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 127.77,
+      "end": 129.56,
+      "members": [
+        "KEEHO"
+      ],
+      "voice": [
+        [
+          127.83,
+          129.62
+        ]
+      ],
+      "original": "",
+      "romanization": "Want that lucky number 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 129.6,
+      "end": 131.82,
+      "members": [
+        "INTAK"
+      ],
+      "voice": [
+        [
+          129.58,
+          131.85
+        ]
+      ],
+      "original": "뭐가 또 걱정돼 걱정 접어",
+      "romanization": "mwoga tto geokjeongdwae geokjeong jeobeo",
+      "english": "What are you worried about again? Put your worries away",
+      "adlib": false
+    },
+    {
+      "start": 134.27,
+      "end": 135.17,
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          134.29,
+          135.15
+        ]
+      ],
+      "original": "",
+      "romanization": "Triple 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 137.7,
+      "end": 138.05,
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          137.72,
+          138.59
+        ]
+      ],
+      "original": "",
+      "romanization": "Triple 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 138.15,
+      "end": 141.43,
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          138.21,
+          139.97
+        ],
+        [
+          140.12,
+          141.56
+        ]
+      ],
+      "original": "",
+      "romanization": "Know with me you always winnin’, Roulette how we be spinnin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 141.58,
+      "end": 143.37,
+      "members": [
+        "THEO"
+      ],
+      "voice": [
+        [
+          141.52,
+          143.33
+        ]
+      ],
+      "original": "",
+      "romanization": "Want that lucky number 7",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 142.05,
+      "end": 145.53,
+      "members": [
+        "P1Harmony"
+      ],
+      "original": "(Give you that 1 2 3 4 5 6 7)",
+      "romanization": "(give you that il i sam sa o yuk chil)",
+      "english": "(Give you that 1 2 3 4 5 6 7)",
+      "adlib": true
     }
   ],
   "npC1": "#f22626",
