@@ -411,6 +411,24 @@
     }
   };
 
+  // ---- guardar como ARCHIVO PNG en el PC (eliges carpeta) ----
+  $("#savePc").onclick = async () => {
+    if(!W) return;
+    if(!(D && D.saveCutoutFile)){ alert("Guardar en el PC solo funciona en la app de escritorio."); return; }
+    const flat = document.createElement("canvas"); flat.width = W; flat.height = H;
+    const fx = flat.getContext("2d");
+    layers.forEach(l => fx.drawImage(l.canvas, 0, 0));
+    let empty = true;
+    try{ const d = fx.getImageData(0,0,W,H).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }
+    if(empty){ alert("No hay nada recortado que guardar."); return; }
+    $("#ov").classList.add("show"); $("#ovT").textContent = "Guardando en el PC…";
+    let res = null;
+    try{ res = await D.saveCutoutFile({ dataURL: flat.toDataURL("image/png"), name: (NAME || "recorte") }); }catch(e){}
+    if(res && res.ok){ $("#ovT").textContent = "✓ Guardado en el PC"; setTimeout(() => $("#ov").classList.remove("show"), 1400); }
+    else if(res && res.canceled){ $("#ov").classList.remove("show"); }
+    else { $("#ovT").textContent = "✕ Error al guardar"; setTimeout(() => $("#ov").classList.remove("show"), 1800); }
+  };
+
   resizeView();
   load();
 })();

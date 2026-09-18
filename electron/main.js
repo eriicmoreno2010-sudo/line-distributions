@@ -567,6 +567,21 @@ ipcMain.handle("ai-model-ensure", async (evt) => {
   }catch(e){ return { ok: false, error: e.message }; }
 });
 
+// Guarda el recorte como archivo PNG en el PC (diálogo "Guardar como…").
+ipcMain.handle("save-cutout-file", async (_e, args) => {
+  args = args || {};
+  if(!args.dataURL) return { ok:false, error:"falta la imagen" };
+  try{
+    const safe = String(args.name || "recorte").replace(/[^\w.\- ]+/g, "_").trim() || "recorte";
+    const def = path.join(app.getPath("pictures") || ROOT, safe + ".png");
+    const r = await dialog.showSaveDialog({ title:"Guardar recorte (PNG)", defaultPath:def, filters:[{ name:"PNG", extensions:["png"] }] });
+    if(r.canceled || !r.filePath) return { ok:false, canceled:true };
+    const b64 = String(args.dataURL).replace(/^data:image\/\w+;base64,/, "");
+    fs.writeFileSync(r.filePath, Buffer.from(b64, "base64"));
+    return { ok:true, path:r.filePath };
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }
