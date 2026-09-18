@@ -1,7 +1,7 @@
 {
   "group": "P1Harmony",
   "song": "Triple 7",
-  "video": "",
+  "video": "videos/p1harmony_triple7.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": false,
@@ -53,9 +53,7 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "KEEHO"
-      ],
+      "members": [],
       "original": "",
       "romanization": "",
       "english": "",
