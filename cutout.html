@@ -35,6 +35,14 @@
 
   .hint{ color:var(--text2); font-size:12px; font-weight:700; }
 </style>
+<!-- La librería de IA importa "onnxruntime-web" (bare specifier); este mapa lo
+     resuelve a la copia local (no descarga JS). -->
+<script type="importmap">
+{ "imports": {
+  "onnxruntime-web": "vendor/ort/ort.wasm.bundle.min.mjs",
+  "onnxruntime-web/webgpu": "vendor/ort/ort.wasm.bundle.min.mjs"
+}}
+</script>
 </head>
 <body>
 <header>
@@ -56,7 +64,11 @@
   <div class="grp" id="brushGrp" style="display:none"><span class="lbl">Pincel</span>
     <input type="range" id="brush" min="6" max="220" step="1" value="70"><span class="val" id="brushV">70</span></div>
   <div class="grp">
-    <button id="autoBg" class="pri" title="Quita el fondo que quedó DENTRO de la capa recorte activa (rodea antes al miembro con el lazo dejando un poco de margen)">✨ Quitar fondo auto</button>
+    <button id="aiBg" class="pri" title="Recorta a la persona con IA (bordes limpios, pelo incluido). La 1ª vez descarga el modelo (~95MB); luego funciona sin internet.">🤖 Recortar con IA</button>
+    <span class="lbl">Solidez</span>
+    <input type="range" id="aiSolid" min="0" max="100" step="1" value="0"><span class="val" id="aiSolidV">0</span></div>
+  <div class="grp">
+    <button id="autoBg" title="Quita el fondo por COLOR de la capa recorte activa (para fondos lisos; rodea antes con el lazo dejando margen)">✨ Fondo por color</button>
     <span class="lbl">Sensib.</span>
     <input type="range" id="tol" min="8" max="170" step="1" value="55"><span class="val" id="tolV">55</span></div>
   <span class="spacer"></span>
@@ -79,6 +91,6 @@
 
 <div id="ov"><div class="t" id="ovT">Guardando…</div></div>
 
-<script src="js/cutout.js?v=8"></script>
+<script src="js/cutout.js?v=9"></script>
 </body>
 </html>

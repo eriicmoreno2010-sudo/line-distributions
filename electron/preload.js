@@ -19,6 +19,8 @@ contextBridge.exposeInMainWorld("desktop", {
   copyPhoto: (args) => ipcRenderer.invoke("copy-photo", args || {}),
   cutoutLoad: (args) => ipcRenderer.invoke("cutout-load", args || {}),
   cutoutSave: (args) => ipcRenderer.invoke("cutout-save", args || {}),
+  aiModelEnsure: () => ipcRenderer.invoke("ai-model-ensure"),
+  onAiProgress: (cb) => ipcRenderer.on("ai-model-progress", (_e, p) => cb(p)),
   loadSong: (relPath) => ipcRenderer.invoke("load-song", relPath),
   deleteItem: (args) => ipcRenderer.invoke("delete-item", args || {}),
   pickCutInput: () => ipcRenderer.invoke("pick-cut-input"),

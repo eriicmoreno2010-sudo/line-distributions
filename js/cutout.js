@@ -18,6 +18,7 @@
   const orig = document.createElement("canvas"); let octx;   // capa ORIGINAL (intacta)
   let W = 0, H = 0, scale = 1, ox = 0, oy = 0;
   let tool = "lazo", brush = 70, tol = 55;
+  let aiLib = null, aiRawCanvas = null, aiSolid = 0;   // recorte con IA (@imgly)
   let showOrig = false;   // por defecto NO se muestra (así ves el fondo YA quitado en vivo)
   let hasCut = false;     // ¿hay algo recortado ya? (antes del 1er lazo se ve la original para apuntar)
   let layers = [];        // [{canvas, ctx, name}]
@@ -219,6 +220,66 @@
     redraw();
   }
 
+  /* ---- Recorte con IA (@imgly/background-removal) ----
+     Recorta a la PERSONA con un modelo que corre en el PC. La 1ª vez el proceso
+     principal descarga el modelo (~95MB) y lo sirve por http local. */
+  // "Solidez": endurece el alpha para rellenar zonas que la IA dejó semitransparentes
+  // (típico en ropa oscura sobre fondo oscuro). 0 = tal cual la IA.
+  function hardenAlpha(id, s){
+    if(s <= 0) return;
+    const d = id.data;
+    const cut = s * 0.15;                    // por debajo -> transparente
+    const up  = 0.5 - s * 0.34;              // por encima -> opaco (a más s, más brusco)
+    const span = Math.max(0.02, up - cut);
+    for(let i = 3; i < d.length; i += 4){
+      const a = d[i] / 255;
+      d[i] = a <= cut ? 0 : a >= up ? 255 : Math.round((a - cut) / span * 255);
+    }
+  }
+  function applyAiToLayer(){
+    if(!aiRawCanvas || !actLayer()) return;
+    const tc = document.createElement("canvas"); tc.width = W; tc.height = H;
+    const tx = tc.getContext("2d"); tx.drawImage(aiRawCanvas, 0, 0);
+    if(aiSolid > 0){ const id = tx.getImageData(0,0,W,H); hardenAlpha(id, aiSolid); tx.putImageData(id,0,0); }
+    const lx = actLayer().ctx;
+    lx.clearRect(0,0,W,H); lx.drawImage(tc,0,0);
+    hasCut = true; redraw();
+  }
+  async function aiCutout(){
+    if(!(D && D.aiModelEnsure)){ alert("El recorte con IA solo funciona en la app de escritorio."); return; }
+    if(!W){ return; }
+    const ov = $("#ov"), ovT = $("#ovT");
+    ov.classList.add("show"); ovT.textContent = "Preparando IA…";
+    try{
+      const ready = await D.aiModelEnsure();
+      if(!ready || !ready.ok) throw new Error((ready && ready.error) || "no disponible");
+      ovT.textContent = "Recortando con IA…";
+      if(!aiLib) aiLib = await import("./vendor/imgly/index.mjs");
+      // fuente = original a máxima calidad (ya limitada a MAXDIM)
+      const oc = document.createElement("canvas"); oc.width = W; oc.height = H;
+      oc.getContext("2d").drawImage(orig, 0, 0);
+      const blob = await new Promise(r => oc.toBlob(r, "image/png"));
+      const out = await aiLib.removeBackground(blob, {
+        publicPath: ready.publicPath, model: "isnet_fp16", device: "cpu",
+        progress: (key, cur, total) => {
+          if(/fetch/i.test(key)) ovT.textContent = "Cargando IA…";
+          else if(/compute|inference/i.test(key)) ovT.textContent = "Recortando con IA…";
+        }
+      });
+      const url = URL.createObjectURL(out);
+      const im = new Image(); await new Promise((r,j)=>{ im.onload=r; im.onerror=j; im.src=url; });
+      aiRawCanvas = document.createElement("canvas"); aiRawCanvas.width = W; aiRawCanvas.height = H;
+      aiRawCanvas.getContext("2d").drawImage(im, 0, 0, W, H);
+      URL.revokeObjectURL(url);
+      snapshot();
+      applyAiToLayer();
+      ov.classList.remove("show");
+    }catch(e){
+      ovT.textContent = "✕ IA: " + (e && e.message || e);
+      setTimeout(() => ov.classList.remove("show"), 3200);
+    }
+  }
+
   // BORRA (quita) de la capa ACTIVA con el pincel.
   function eraseAt(a, b){
     const x = actLayer() && actLayer().ctx; if(!x) return;
@@ -296,6 +357,12 @@
   $("#brush").oninput  = e => { brush = +e.target.value; $("#brushV").textContent = brush; redraw(); };
   $("#tol").oninput    = e => { tol = +e.target.value; $("#tolV").textContent = tol; };
   $("#autoBg").onclick = () => { $("#autoBg").disabled = true; setTimeout(() => { autoRemoveBg(); $("#autoBg").disabled = false; }, 20); };
+  if(D && D.onAiProgress) D.onAiProgress(p => {
+    if(p && p.total){ const t = $("#ovT"); if(t) t.textContent = p.done < p.total ? ("Descargando IA (1ª vez)… " + Math.round(p.done/p.total*100) + "%") : "Cargando IA…"; }
+  });
+  $("#aiBg").onclick = () => { $("#aiBg").disabled = true; aiCutout().finally(() => { $("#aiBg").disabled = false; }); };
+  $("#aiSolid").oninput = e => { aiSolid = (+e.target.value)/100; $("#aiSolidV").textContent = e.target.value; applyAiToLayer(); };
+  if(!(D && D.aiModelEnsure)){ const b = $("#aiBg"); if(b && b.parentElement) b.parentElement.style.display = "none"; }
   $("#layOrig").onclick = () => { showOrig = !showOrig; $("#layOrig").classList.toggle("on", showOrig); redraw(); };
   $("#addLayer").onclick = () => { layers.push(newLayer()); active = layers.length-1; renderLayerBtns(); redraw(); };
   $("#delLayer").onclick = () => {

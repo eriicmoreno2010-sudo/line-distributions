@@ -501,6 +501,72 @@ ipcMain.handle("cutout-save", async (_e, args) => {
   return res;
 });
 
+// ---------------------------------------------------------------------------
+// Recorte con IA (@imgly/background-removal). El modelo (~95 MB) se descarga UNA
+// vez a userData y se sirve por un http local (fetch de file:// está bloqueado).
+// Así funciona offline tras la 1ª vez y sin depender de la caché (que se limpia
+// al arrancar). El JS va vendorizado en /vendor (no se descarga).
+// ---------------------------------------------------------------------------
+const AI_VER = "1.7.0";
+const AI_CDN = "https://staticimgly.com/@imgly/background-removal-data/" + AI_VER + "/dist/";
+const aiDistDir = () => path.join(app.getPath("userData"), "imgly-" + AI_VER, "dist");
+let aiServer = null, aiPort = 0;
+
+function httpGetBuf(url){
+  return new Promise((resolve, reject) => {
+    require("https").get(url, r => {
+      if(r.statusCode >= 300 && r.statusCode < 400 && r.headers.location){ r.resume(); return httpGetBuf(r.headers.location).then(resolve, reject); }
+      if(r.statusCode !== 200){ r.resume(); return reject(new Error("HTTP " + r.statusCode)); }
+      const c = []; r.on("data", d => c.push(d)); r.on("end", () => resolve(Buffer.concat(c))); r.on("error", reject);
+    }).on("error", reject);
+  });
+}
+function startAiServer(){
+  if(aiServer) return Promise.resolve(aiPort);
+  return new Promise((resolve, reject) => {
+    const dist = aiDistDir();
+    aiServer = require("http").createServer((req, res) => {
+      const name = decodeURIComponent((req.url || "").split("?")[0]).replace(/^\/+/, "");
+      const f = path.join(dist, name);
+      if(!f.startsWith(dist)){ res.writeHead(403); res.end(); return; }
+      fs.readFile(f, (e, b) => {
+        if(e){ res.writeHead(404); res.end(); return; }
+        res.writeHead(200, { "Access-Control-Allow-Origin": "*", "Cache-Control": "no-store" });
+        res.end(b);
+      });
+    });
+    aiServer.on("error", reject);
+    aiServer.listen(0, "127.0.0.1", () => { aiPort = aiServer.address().port; resolve(aiPort); });
+  });
+}
+ipcMain.handle("ai-model-ensure", async (evt) => {
+  try{
+    const dist = aiDistDir();
+    fs.mkdirSync(dist, { recursive: true });
+    const resPath = path.join(dist, "resources.json");
+    let resJson;
+    if(fs.existsSync(resPath)){ resJson = JSON.parse(fs.readFileSync(resPath, "utf8")); }
+    else { const b = await httpGetBuf(AI_CDN + "resources.json"); fs.writeFileSync(resPath, b); resJson = JSON.parse(b.toString("utf8")); }
+    // recursos: modelo fp16 (buena calidad) + runtime cpu (sin jsep/webgpu ni training)
+    const need = Object.keys(resJson).filter(k =>
+      k === "/models/isnet_fp16" ||
+      (k.startsWith("/onnxruntime-web/") && !k.includes("jsep") && !k.includes("training")));
+    const hashes = [];
+    for(const k of need) for(const c of (resJson[k].chunks || [])) if(!hashes.includes(c.name)) hashes.push(c.name);
+    const missing = hashes.filter(h => !fs.existsSync(path.join(dist, h)));
+    const total = hashes.length, base = total - missing.length;
+    const send = done => { try{ evt.sender.send("ai-model-progress", { done, total }); }catch(e){} };
+    send(base);
+    for(let i = 0; i < missing.length; i++){
+      const b = await httpGetBuf(AI_CDN + missing[i]);
+      fs.writeFileSync(path.join(dist, missing[i]), b);
+      send(base + i + 1);
+    }
+    const port = await startAiServer();
+    return { ok: true, publicPath: "http://127.0.0.1:" + port + "/" };
+  }catch(e){ return { ok: false, error: e.message }; }
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }
