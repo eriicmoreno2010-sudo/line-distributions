@@ -2,7 +2,7 @@
   "group": "NCT 127",
   "song": "Getaway",
   "video": "videos/nct127_getaway.mp4",
-  "duration": 186.154376,
+  "duration": 185.941,
   "members": [
     {
       "name": "JOHNNY",
@@ -1087,5 +1087,6 @@
   "audio": "audio/nct127_getaway.mp3",
   "cover": "covers/nct127_getaway.jpg",
   "npC1": "#45f505",
-  "npC2": "#fcff2e"
+  "npC2": "#fcff2e",
+  "audioOffset": -0.05
 }
