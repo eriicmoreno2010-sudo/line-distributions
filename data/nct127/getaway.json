@@ -1085,5 +1085,6 @@
     }
   ],
   "audio": "audio/nct127_getaway.mp3",
-  "cover": "covers/nct127_getaway.jpg"
+  "cover": "covers/nct127_getaway.jpg",
+  "npC1": "#3ef226"
 }
