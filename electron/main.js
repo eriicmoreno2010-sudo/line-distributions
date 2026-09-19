@@ -320,8 +320,20 @@ ipcMain.handle("pick-video", async (_e, args) => {
     const base = (slug(args.group || "") + "_" + slug(args.song || "video")).replace(/^_|_$/g, "") || "video";
     const ext = (path.extname(srcFile) || ".mp4").toLowerCase();
     fs.mkdirSync(path.join(ROOT, "videos"), { recursive:true });
-    const destRel = "videos/" + base + ext;
+    // Nombre ÚNICO (timestamp): así CAMBIAR el vídeo nunca sobrescribe un archivo que
+    // el reproductor tiene abierto/bloqueado (Windows) ni deja el viejo en caché.
+    const stamp = Date.now().toString(36);
+    const destRel = "videos/" + base + "_" + stamp + ext;
     fs.copyFileSync(srcFile, path.join(ROOT, destRel));
+    // borra el vídeo anterior (si nos lo pasan y se puede: puede estar bloqueado)
+    if(args.prev){
+      try{
+        const prevRel = String(args.prev).replace(/\\/g, "/");
+        const prevAbs = path.join(ROOT, prevRel);
+        if(/^videos\//.test(prevRel) && prevRel.indexOf("..") === -1 && prevAbs !== path.join(ROOT, destRel) && fs.existsSync(prevAbs))
+          fs.unlinkSync(prevAbs);
+      }catch(e){}
+    }
     // SOLO LOCAL: los vídeos NO se suben a GitHub (rápido, sin límite de 100 MB).
     // Se copian a videos/ y la app los usa desde ahí; carpeta videos/ está en .gitignore.
     return { ok:true, video: destRel, pushed:false, localOnly:true };

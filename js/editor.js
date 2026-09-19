@@ -684,16 +684,23 @@
   // --- Elegir el vídeo (MV) desde el PC: se copia, se pone en el reproductor y se guarda ---
   $("#pickvideo").onclick = async () => {
     const btn = $("#pickvideo"); const t = btn.textContent;
+    const prev = song.video || "";
     btn.disabled = true; btn.textContent = "⏳ Copiando vídeo…";
-    const res = await window.desktop.pickVideo({ group: song.group, song: song.song });
+    // SUELTA el vídeo actual para que Windows no lo tenga bloqueado (si no, borrar/
+    // sobrescribir el anterior falla y te quedabas sin vídeo).
+    try{ video.pause(); video.removeAttribute("src"); video.load(); }catch(e){}
+    const res = await window.desktop.pickVideo({ group: song.group, song: song.song, prev });
     btn.disabled = false;
-    if(res && res.canceled){ btn.textContent = t; return; }
+    if(res && res.canceled){ if(prev){ video.src = prev; video.load(); } btn.textContent = t; return; }
     if(res && res.ok){
       song.video = res.video;
-      video.src = song.video; video.load();            // se ve al instante en el editor
-      btn.textContent = "✓ Vídeo puesto (local)";
+      video.onerror = () => { uiAlert("Ese vídeo no se puede reproducir aquí. Usa un MP4 (H.264). MKV/AVI no funcionan en la app."); };
+      video.src = song.video + "?t=" + Date.now();      // ?t= evita la caché del anterior
+      video.load();                                     // se ve al instante en el editor
+      btn.textContent = "✓ Vídeo cambiado (local)";
       save();                                           // guarda el JSON con el nuevo vídeo
     } else {
+      if(prev){ video.src = prev; video.load(); }        // restaura el que había
       btn.textContent = "✕ Error";
       if(res && res.error) console.warn(res.error);
     }
