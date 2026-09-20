@@ -59,6 +59,7 @@
   // instante y sin cortes. Con desfase negativo, el arranque se PROGRAMA para el
   // instante exacto en que el vídeo llega, empezando el mp3 desde su principio.
   let audioCtx=null, audioBuf=null, audioNode=null, aStartCtx=0, aStartOff=0, audioReady=false, audioTok=0;
+  let hearBoth=false;   // true = NO silenciar el vídeo -> se oyen mp3 + vídeo a la vez (para cuadrar el desfase)
   const audioOff = () => +((song && song.audioOffset) || 0);   // desfase (s, dinámico): + retrasa, − adelanta
 
   function aStop(){ if(audioNode){ try{ audioNode.onended=null; audioNode.stop(0); }catch(e){} audioNode=null; } }
@@ -81,7 +82,7 @@
     if(!video || video.paused || !audioReady || !audioCtx || audioCtx.state !== "running") return;
     const want = video.currentTime + audioOff();
     if(want >= audioBuf.duration){ aStop(); return; }
-    video.muted = true;
+    video.muted = !hearBoth;
     if(!audioNode){ aStartAt(want); return; }
     if(audioCtx.currentTime >= aStartCtx){
       const p = aStartOff + (audioCtx.currentTime - aStartCtx) * (audioNode.playbackRate.value || 1);
@@ -110,7 +111,7 @@
           if(performance.now() - t0 < 800){ setTimeout(go, 15); return; }
           video.muted = false; selfPlay = true; video.play().catch(()=>{}); return;
         }
-        video.muted = true; aStartAt(P + audioOff());
+        video.muted = !hearBoth; aStartAt(P + audioOff());
         selfPlay = true; video.play().catch(()=>{});
       };
       audioCtx.resume().then(go, go);
@@ -126,7 +127,7 @@
     aStop(); audioReady = false; audioBuf = null;
     const src = song && song.audio;
     if(!src){ video.muted = false; syncAudioOffUI(); return; }   // sin mp3 -> audio del vídeo
-    video.muted = true;
+    video.muted = !hearBoth;
     const tok = ++audioTok;
     try{
       if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -134,7 +135,7 @@
       const decoded = await audioCtx.decodeAudioData(bytes.slice(0));
       if(tok !== audioTok) return;                              // cambió de canción mientras cargaba
       audioBuf = decoded; audioReady = true;
-      if(!video.paused){ video.muted = true; aResync(); }
+      if(!video.paused){ video.muted = !hearBoth; aResync(); }
     }catch(e){ audioBuf = null; audioReady = false; video.muted = false; }   // si falla, audio del vídeo
     syncAudioOffUI();
   }
@@ -733,6 +734,11 @@
     song.audioOffset = +$("#audioOff").value || 0;
     audioReengage();                 // aplica el desfase al instante si está sonando
     save();
+  };
+  // Oír vídeo + mp3 a la vez (para cuadrar el desfase por oído). No silencia el vídeo.
+  if($("#hearBoth")) $("#hearBoth").onchange = () => {
+    hearBoth = $("#hearBoth").checked;
+    if(audioReady && !video.paused) video.muted = !hearBoth;   // aplícalo al momento
   };
 
   // ===== INSTRUMENTAL: popover con barra para marcar el trozo del donut =====
