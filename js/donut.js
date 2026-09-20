@@ -5,7 +5,7 @@
   const $ = s => document.querySelector(s);
   const TAU = Math.PI * 2;
   const CX = 250, CY = 250, R = 205, r = 118, POP_R = 16;  // donut MÁS GRANDE (llena mejor el viewBox 500). POP: solo crece el radio EXTERIOR (sobresale por arriba); el interior no se mueve
-  const GAP = 0.03;   // separación angular UNIFORME entre porciones (rad); misma distancia entre todas, no depende del tamaño
+  const GAP = 0;   // sin separación entre porciones (así las muy pequeñas —0.3%— también se ven)
 
   const svgNS = "http://www.w3.org/2000/svg";
   const slicesG = $("#slices"), legendEl = $("#legend");
@@ -83,6 +83,7 @@
     } else {
       clock.useVideo = false; vid.removeAttribute("src");
     }
+    applyAudioMode();
     playBtn.textContent = "▶";
   }
   let instSrc = "", instAudio = null, audioOff = 0;
@@ -94,8 +95,21 @@
   //  · desfase negativo -> el mp3 aún no entra: silencio hasta que el reloj llega a -off,
   //    y entonces suena desde su principio (no adelantado).
   //  · corrige la deriva (los relojes de <video> y <audio> se separan en canciones largas).
+  let audioMode = "mine";   // "mine" = mp3 propio (limpio) · "video" = audio del vídeo
+  function applyAudioMode(){
+    if(!instAudio){ audioMode = "video"; }
+    if(audioMode === "video"){
+      vid.muted = false;
+      if(instAudio && !instAudio.paused) try{ instAudio.pause(); }catch(e){}
+      muteBtn.textContent = "🎬 Vídeo";
+    } else {
+      vid.muted = true;
+      muteBtn.textContent = "🎵 Mío";
+      if(clock.playing) syncAudio(true);
+    }
+  }
   function syncAudio(force){
-    if(!instAudio) return;
+    if(!instAudio || audioMode !== "mine"){ if(instAudio && !instAudio.paused) try{ instAudio.pause(); }catch(e){} return; }
     if(!clock.playing){ if(!instAudio.paused) instAudio.pause(); return; }
     const want = curTime() + audioOff;
     const dur = isFinite(instAudio.duration) ? instAudio.duration : Infinity;
@@ -172,7 +186,13 @@
   seek.addEventListener("pointerdown", () => clock.seeking = true);
   seek.addEventListener("pointerup",   () => clock.seeking = false);
   seek.addEventListener("input", () => seekTo(seek.value/1000));
-  muteBtn.onclick = () => { vid.muted = !vid.muted; muteBtn.textContent = vid.muted ? "🔇" : "🔊"; };
+  // Cambia la fuente de audio: mi mp3 (limpio) <-> audio del vídeo
+  muteBtn.title = "Cambiar audio: mío (mp3) o el del vídeo";
+  muteBtn.onclick = () => {
+    if(!instAudio){ applyAudioMode(); return; }   // sin mp3 propio solo hay audio de vídeo
+    audioMode = (audioMode === "mine") ? "video" : "mine";
+    applyAudioMode();
+  };
   $("#back").onclick = () => { location.href = "library.html"; };
   document.addEventListener("keydown", e => {
     if(e.target.tagName === "SELECT" || e.target.tagName === "INPUT") return;
