@@ -103,8 +103,8 @@ Self-contained: injects its own styles and markup.
        top-to-bottom, then the right — so rows are tall enough for the photos */
     #results-overlay #ro-list.two-col{
       display:grid; grid-template-columns:1fr 1fr;
-      grid-template-rows:repeat(var(--rows,7), 1fr);
-      grid-auto-flow:column; gap:1.7vh 1.4vh;
+      grid-template-rows:repeat(var(--rows,7), var(--rowh,12vh));
+      grid-auto-flow:column; gap:1.1vh 1.4vh; align-content:center;
     }
     #results-overlay #ro-list.two-col .row{ flex:none; }
     /* Solista o sub-unidad (menos de 8): las tarjetas NO se estiran para llenar el
@@ -275,12 +275,17 @@ Self-contained: injects its own styles and markup.
       // que la fila -> se desbordaba/cortaba, distinto según nº de miembros).
       if(list.classList.contains("two-col")){
         const rows = Math.ceil(ranked.length / 2);
-        const listH = IH * 0.936;                       // 100vh - 6.4vh (padding de #ro-main)
-        const rowH  = (listH - (rows - 1) * (0.017 * IH)) / rows;  // gap de fila = 1.7vh
-        const content = rowH - (0.0184 * IH) - 4;       // borde (.84vh) + padding (1vh)
-        // deja algo de aire dentro de la tarjeta (no llenar la fila entera) para que
-        // ni con 13 miembros (7 filas) quede pegada/cortada abajo
-        const size = Math.max(40, Math.min(0.10 * IH, content - 8));
+        const gap  = 0.011 * IH;                         // hueco de fila = 1.1vh (tarjetas juntas)
+        const listH = IH * 0.936;                        // 100vh - 6.4vh (padding de #ro-main)
+        // Altura FIJA y compacta: la misma para 12 y 13 (así no se "estiran" las de 12).
+        // Se toma la más pequeña entre "lo que cabe con estas filas" y "lo que cabría con
+        // 7 filas" (la compacta de 13). Con menos filas sobra espacio y el grid se centra.
+        const cap = (listH - 6 * gap) / 7;               // altura compacta (referencia = 13 miembros)
+        const natural = (listH - (rows - 1) * gap) / rows;
+        const rowH = Math.min(natural, cap);
+        list.style.setProperty("--rowh", Math.round(rowH) + "px");
+        const content = rowH - (0.0184 * IH) - 4;        // borde (.84vh) + padding (1vh)
+        const size = Math.max(40, Math.min(0.10 * IH, content - 6));
         list.style.setProperty("--rphoto", Math.round(size) + "px");
         return;
       }
