@@ -11,7 +11,10 @@
   const NAME = P.get("name") || "";
   const SONG = P.get("song") || "";
   const BACK = P.get("back") || "";
+  const coverMode = P.get("cover") === "1";   // editando la PORTADA -> se guarda el encuadre (zoom/posición/rotación)
   if($("#who")) $("#who").textContent = NAME || "Foto";
+  // el recuadro de preview de portada solo se muestra al editar la PORTADA
+  if(!coverMode){ const cp = $("#coverPrev"); if(cp && cp.parentElement) cp.parentElement.style.display = "none"; }
   // si venimos de otra página (p.ej. la portada), el botón "←" vuelve allí
   if(BACK){ const bb = document.querySelector("header button"); if(bb) bb.onclick = () => { location.href = BACK; }; }
 
@@ -79,16 +82,37 @@
     c.translate(nw/2, nh/2); c.rotate(a); c.drawImage(flat, -W/2, -H/2);
     return out;
   }
-  // Preview "cómo se verá en la portada": el recorte plano centrado a modo cover.
+  // Rectángulo (en píxeles de pantalla) que define el ENCUADRE de la portada:
+  // centrado en la vista, con la proporción de la portada. Lo que caiga dentro es
+  // la portada -> así el ZOOM y el desplazamiento cambian el encuadre.
+  function coverRectPx(aspect){
+    const vw = view.width, vh = view.height;
+    let ch = vh*0.84, cw = ch*aspect;
+    if(cw > vw*0.94){ cw = vw*0.94; ch = cw/aspect; }
+    return { sx: vw/2 - cw/2, sy: vh/2 - ch/2, cw, ch };
+  }
+  // Renderiza el ENCUADRE actual (zoom + posición + rotación) a un lienzo tw×th.
+  function renderCrop(tw, th){
+    const r = coverRectPx(tw/th);
+    const out = document.createElement("canvas"); out.width = tw; out.height = th;
+    const tx = out.getContext("2d"); tx.imageSmoothingEnabled = true; tx.imageSmoothingQuality = "high";
+    const k = tw / r.cw;
+    tx.scale(k, k); tx.translate(-r.sx, -r.sy);
+    const dw = W*scale, dh = H*scale;
+    if(outRot){ const ccx = ox + dw/2, ccy = oy + dh/2; tx.translate(ccx, ccy); tx.rotate(outRot*Math.PI/180); tx.translate(-ccx, -ccy); }
+    const flat = document.createElement("canvas"); flat.width = W; flat.height = H;
+    const fx = flat.getContext("2d"); layers.forEach(l => fx.drawImage(l.canvas, 0, 0));
+    tx.drawImage(flat, ox, oy, dw, dh);
+    return out;
+  }
+  const coverAspect = () => { const cv = $("#coverPrev"); return cv ? cv.width/cv.height : 1; };
+  // Preview "cómo se verá en la portada": el ENCUADRE actual (refleja zoom/posición).
   function drawCoverPrev(){
+    if(!coverMode) return;                        // el preview de portada solo al editar la portada
     const cv = $("#coverPrev"); if(!cv || !W) return;
     const c = cv.getContext("2d"), pw = cv.width, ph = cv.height;
     c.clearRect(0,0,pw,ph); c.fillStyle = "#0b0b11"; c.fillRect(0,0,pw,ph);
-    const out = bakedOutput(), iw = out.width, ih = out.height;
-    const s = Math.max(pw/iw, ph/ih);              // object-fit: cover
-    const dw = iw*s, dh = ih*s;
-    c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
-    c.drawImage(out, (pw-dw)/2, (ph-dh)*0.4, dw, dh);   // centrado, cara algo arriba
+    c.drawImage(renderCrop(pw, ph), 0, 0);
   }
   function actLayer(){ return layers[active]; }
 
@@ -143,6 +167,15 @@
     if(ptr && tool === "erase"){                  // cursor del pincel: en pantalla (sin rotar)
       vctx.beginPath(); vctx.arc(ptr.x, ptr.y, brush/2, 0, 7);
       vctx.strokeStyle = "rgba(255,90,90,.9)"; vctx.lineWidth = 1.5; vctx.stroke();
+    }
+    if(coverMode){                                 // marco de la PORTADA: lo de dentro es lo que se guarda
+      const r = coverRectPx(coverAspect());
+      vctx.save();
+      vctx.beginPath(); vctx.rect(0,0,view.width,view.height); vctx.rect(r.sx,r.sy,r.cw,r.ch);
+      vctx.fillStyle = "rgba(0,0,0,.45)"; vctx.fill("evenodd");   // oscurece lo de fuera del marco
+      vctx.setLineDash([9,6]); vctx.strokeStyle = "rgba(124,92,255,.95)"; vctx.lineWidth = 2;
+      vctx.strokeRect(r.sx, r.sy, r.cw, r.ch); vctx.setLineDash([]);
+      vctx.restore();
     }
     drawCoverPrev();
   }
@@ -461,7 +494,7 @@
   // ---- guardar (mezcla de todas las capas de recorte) ----
   $("#save").onclick = async () => {
     if(!W || !(D && D.cutoutSave)){ alert("Guardar solo funciona en la app de escritorio."); return; }
-    const flat = bakedOutput();
+    const flat = coverMode ? renderCrop(Math.round(1080*coverAspect()), 1080) : bakedOutput();
     const fx = flat.getContext("2d");
     let empty = true;
     try{ const d = fx.getImageData(0,0,flat.width,flat.height).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }
@@ -482,7 +515,7 @@
   $("#savePc").onclick = async () => {
     if(!W) return;
     if(!(D && D.saveCutoutFile)){ alert("Guardar en el PC solo funciona en la app de escritorio."); return; }
-    const flat = bakedOutput();
+    const flat = coverMode ? renderCrop(Math.round(1080*coverAspect()), 1080) : bakedOutput();
     const fx = flat.getContext("2d");
     let empty = true;
     try{ const d = fx.getImageData(0,0,flat.width,flat.height).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }

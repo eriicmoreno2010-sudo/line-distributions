@@ -278,7 +278,7 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
       edc.onclick = () => {
         const rel = window._getCustomCoverRel && window._getCustomCoverRel();
         if(!rel) return;
-        location.href = "cutout.html?img=" + encodeURIComponent(rel) + "&name=" + encodeURIComponent("Portada") + "&back=" + encodeURIComponent(location.href);
+        location.href = "cutout.html?img=" + encodeURIComponent(rel) + "&name=" + encodeURIComponent("Portada") + "&cover=1&back=" + encodeURIComponent(location.href);
       };
       dlc.onclick = async () => {
         if(!confirm("¿Quitar la foto de portada y quedarte con la del miembro?")) return;
