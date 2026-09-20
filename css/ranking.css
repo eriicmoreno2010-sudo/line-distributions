@@ -16,7 +16,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 
 .member{
     --accent:#7c5cff;
-    --ring:rgba(255,255,255,.55);   /* photo ring: white by default */
+    --ring:rgba(255,255,255,.95);   /* photo ring: white by default */
     --rank-y:0px;
     --card-scale:1;
     position:absolute;

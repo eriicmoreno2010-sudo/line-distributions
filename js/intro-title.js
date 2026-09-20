@@ -63,7 +63,7 @@ Autónomo: inyecta sus estilos y su markup.
   el.innerHTML = `<div class="it-inner">
       <div class="it-grp"></div>
       <div class="it-sng"></div>
-      <div class="it-sub">Line Distribution</div>
+      <div class="it-sub">Lyrics + Line Distribution</div>
     </div>`;
   document.body.appendChild(el);
 
