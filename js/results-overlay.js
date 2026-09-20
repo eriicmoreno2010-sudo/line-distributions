@@ -104,7 +104,7 @@ Self-contained: injects its own styles and markup.
     #results-overlay #ro-list.two-col{
       display:grid; grid-template-columns:1fr 1fr;
       grid-template-rows:repeat(var(--rows,7), 1fr);
-      grid-auto-flow:column; gap:2.6vh 1.4vh;
+      grid-auto-flow:column; gap:1.7vh 1.4vh;
     }
     #results-overlay #ro-list.two-col .row{ flex:none; }
     /* Solista o sub-unidad (menos de 8): las tarjetas NO se estiran para llenar el
@@ -276,11 +276,11 @@ Self-contained: injects its own styles and markup.
       if(list.classList.contains("two-col")){
         const rows = Math.ceil(ranked.length / 2);
         const listH = IH * 0.936;                       // 100vh - 6.4vh (padding de #ro-main)
-        const rowH  = (listH - (rows - 1) * (0.026 * IH)) / rows;  // gap de fila = 2.6vh
+        const rowH  = (listH - (rows - 1) * (0.017 * IH)) / rows;  // gap de fila = 1.7vh
         const content = rowH - (0.0184 * IH) - 4;       // borde (.84vh) + padding (1vh)
         // deja algo de aire dentro de la tarjeta (no llenar la fila entera) para que
         // ni con 13 miembros (7 filas) quede pegada/cortada abajo
-        const size = Math.max(40, Math.min(0.095 * IH, content - 10));
+        const size = Math.max(40, Math.min(0.10 * IH, content - 8));
         list.style.setProperty("--rphoto", Math.round(size) + "px");
         return;
       }
