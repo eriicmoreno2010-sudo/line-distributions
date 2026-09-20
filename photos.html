@@ -40,6 +40,8 @@
     <div class="previewbox">
       <canvas id="prev" class="circle" width="320" height="320"></canvas>
       <div class="cap">Arrastra para mover · rueda del ratón para zoom</div>
+      <canvas id="coverPrev" width="220" height="214" style="border-radius:12px;background:#000;box-shadow:0 0 0 3px #2a2a34;margin-top:12px"></canvas>
+      <div class="cap">Cómo se vería en la portada</div>
     </div>
     <div id="controls">
       <div class="btns">
@@ -111,6 +113,28 @@ let members = [], idx = 0, SONG_META = null;
 
 const prev = document.getElementById("prev");
 const pctx = prev.getContext("2d");
+const coverPrev = document.getElementById("coverPrev");
+const cpctx = coverPrev.getContext("2d");
+// Dibuja el recorte como se vería en la PORTADA (misma lógica que thumb.html:
+// la cara al 33% del alto, mostrando el cuello; zoom 1.0).
+function drawCoverPreview(m){
+  const Wc = coverPrev.width, Hc = coverPrev.height;
+  cpctx.clearRect(0,0,Wc,Hc);
+  if(!m || !m.iw) return;
+  const ZOOM = 1.0, FACE_Y = 0.33;
+  const scale = Wc / (m.side * ZOOM);
+  const dispW = m.iw * scale, dispH = m.ih * scale;
+  const left = Wc/2 - m.cx*scale, top = Hc*FACE_Y - m.cy*scale;
+  const fx = Wc/2, fy = Hc*FACE_Y;
+  cpctx.save();
+  cpctx.imageSmoothingEnabled = true; cpctx.imageSmoothingQuality = "high";
+  cpctx.translate(fx, fy);
+  if(m.rot) cpctx.rotate(m.rot * Math.PI/180);
+  if(m.flip) cpctx.scale(-1, 1);
+  cpctx.translate(-fx, -fy);
+  cpctx.drawImage(m.img, left, top, dispW, dispH);
+  cpctx.restore();
+}
 const zoom = document.getElementById("zoom");
 const vy = document.getElementById("vy");
 const vx = document.getElementById("vx");
@@ -196,6 +220,7 @@ function render(){
     const m = cur(); if(!m) return;
     clampCrop(m);
     drawInto(pctx, P, m);
+    drawCoverPreview(m);
     document.getElementById("who").textContent = m.name;
     // sliders reflect current values
     zoom.value = (m.side / Math.min(m.iw,m.ih)).toFixed(3);
