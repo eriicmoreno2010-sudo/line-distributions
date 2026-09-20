@@ -275,14 +275,14 @@ Self-contained: injects its own styles and markup.
       // que la fila -> se desbordaba/cortaba, distinto según nº de miembros).
       if(list.classList.contains("two-col")){
         const rows = Math.ceil(ranked.length / 2);
-        const gap  = 0.011 * IH;                         // hueco de fila = 1.1vh (tarjetas juntas)
-        const listH = IH * 0.936;                        // 100vh - 6.4vh (padding de #ro-main)
-        // Altura FIJA y compacta: la misma para 12 y 13 (así no se "estiran" las de 12).
-        // Se toma la más pequeña entre "lo que cabe con estas filas" y "lo que cabría con
-        // 7 filas" (la compacta de 13). Con menos filas sobra espacio y el grid se centra.
-        const cap = (listH - 6 * gap) / 7;               // altura compacta (referencia = 13 miembros)
-        const natural = (listH - (rows - 1) * gap) / rows;
-        const rowH = Math.min(natural, cap);
+        const gap  = 0.011 * IH;                          // hueco de fila = 1.1vh (tarjetas juntas)
+        const listH = IH * 0.936;                         // 100vh - 6.4vh (padding de #ro-main)
+        // Altura de tarjeta cómoda y CENTRADA, dejando SIEMPRE aire arriba y abajo
+        // (el bloque nunca llena más del 92% del alto). Así 13 miembros ya no queda
+        // pegado a los bordes, y 12 se ve igual de bien que ahora.
+        const CAP = 0.135 * listH;                        // altura máx cómoda (la "perfecta" de 12)
+        const fit = (0.92 * listH - (rows - 1) * gap) / rows;
+        const rowH = Math.min(CAP, fit);
         list.style.setProperty("--rowh", Math.round(rowH) + "px");
         const content = rowH - (0.0184 * IH) - 4;        // borde (.84vh) + padding (1vh)
         const size = Math.max(40, Math.min(0.10 * IH, content - 6));
