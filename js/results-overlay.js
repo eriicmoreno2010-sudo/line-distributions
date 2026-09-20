@@ -278,7 +278,9 @@ Self-contained: injects its own styles and markup.
         const listH = IH * 0.936;                       // 100vh - 6.4vh (padding de #ro-main)
         const rowH  = (listH - (rows - 1) * (0.01 * IH)) / rows;   // gap de fila = 1vh
         const content = rowH - (0.0184 * IH) - 4;       // borde (.84vh) + padding (1vh)
-        const size = Math.max(40, Math.min(0.11 * IH, content));
+        // deja algo de aire dentro de la tarjeta (no llenar la fila entera) para que
+        // ni con 13 miembros (7 filas) quede pegada/cortada abajo
+        const size = Math.max(40, Math.min(0.10 * IH, content - 8));
         list.style.setProperty("--rphoto", Math.round(size) + "px");
         return;
       }
