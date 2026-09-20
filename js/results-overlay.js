@@ -102,7 +102,7 @@ Self-contained: injects its own styles and markup.
     /* Many members (>10): two thick columns — ranks fill the left column
        top-to-bottom, then the right — so rows are tall enough for the photos */
     #results-overlay #ro-list.two-col{
-      display:grid; grid-template-columns:1fr 1fr;
+      display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr);
       grid-template-rows:repeat(var(--rows,7), var(--rowh,12vh));
       grid-auto-flow:column; gap:1.1vh 1.4vh; align-content:center;
     }
