@@ -420,9 +420,13 @@ ipcMain.handle("pick-thumb-cover", async (_e, args) => {
     const dir = path.join(ROOT, folder);
     fs.mkdirSync(dir, { recursive:true });
     const ext = (path.extname(src) || ".png").toLowerCase();
-    for(const e of [".png",".jpg",".jpeg",".webp"]){                  // limpia otras extensiones
-      if(e === ext) continue;
-      try{ const f = path.join(dir, "_cover" + e); if(fs.existsSync(f)) fs.unlinkSync(f); }catch(_){}
+    // limpia la portada anterior en TODAS sus formas (display + backups pristinos),
+    // si no, al reeditar la portada saldría la vieja de _src/orig en vez de la nueva.
+    for(const e of [".png",".jpg",".jpeg",".webp"]){
+      for(const base of ["_cover" + e, path.join("_src", "_cover" + e), path.join("_src", "orig", "_cover" + e)]){
+        if(base === "_cover" + ext) continue;      // (la nueva se sobrescribe abajo)
+        try{ const f = path.join(dir, base); if(fs.existsSync(f)) fs.unlinkSync(f); }catch(_){}
+      }
     }
     const destRel = folder + "/_cover" + ext;
     fs.copyFileSync(src, path.join(ROOT, destRel));
@@ -451,6 +455,8 @@ ipcMain.handle("remove-thumb-cover", async (_e, args) => {
       try{ if(fs.existsSync(f)){ fs.unlinkSync(f); removed = true; } }catch(_){}
       const sf = path.join(dir, "_src", "_cover" + e);
       try{ if(fs.existsSync(sf)) fs.unlinkSync(sf); }catch(_){}
+      const of = path.join(dir, "_src", "orig", "_cover" + e);
+      try{ if(fs.existsSync(of)) fs.unlinkSync(of); }catch(_){}
     }
     if(removed){ try{ await git(["add","--",folder]); const st=await git(["diff","--cached","--quiet"]); if(st.code!==0) await git(["commit","-m","Portada: quitar foto propia"]); let p=await git(["push"]); if(p.code!==0){ await git(["pull","--rebase"]); p=await git(["push"]); } }catch(e){} }
     return { ok:true, removed };
