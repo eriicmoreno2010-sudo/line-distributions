@@ -41,6 +41,29 @@
     const c = document.createElement("canvas"); c.width = W; c.height = H;
     return { canvas:c, ctx:c.getContext("2d"), name: name || ("Recorte " + (layers.length+1)) };
   }
+
+  // Espejo HORIZONTAL de todo (original + capas): izquierda <-> derecha.
+  function flipCanvasH(c){
+    const t = document.createElement("canvas"); t.width = c.width; t.height = c.height;
+    const x = t.getContext("2d"); x.translate(c.width, 0); x.scale(-1, 1); x.drawImage(c, 0, 0);
+    const cx = c.getContext("2d"); cx.clearRect(0, 0, c.width, c.height); cx.drawImage(t, 0, 0);
+  }
+  function flipH(){
+    if(!W) return;
+    flipCanvasH(orig); layers.forEach(l => flipCanvasH(l.canvas));
+    history = []; if($("#undo")) $("#undo").disabled = true; redraw();
+  }
+  // Gira 90° en sentido horario todo (original + capas); intercambia ancho/alto.
+  function rotate90(){
+    if(!W) return;
+    const nw = H, nh = W;
+    const rot = src => { const t = document.createElement("canvas"); t.width = nw; t.height = nh;
+      const x = t.getContext("2d"); x.translate(nw, 0); x.rotate(Math.PI/2); x.drawImage(src, 0, 0); return t; };
+    const no = rot(orig); orig.width = nw; orig.height = nh; octx = orig.getContext("2d"); octx.drawImage(no, 0, 0);
+    layers.forEach(l => { const nl = rot(l.canvas); l.canvas.width = nw; l.canvas.height = nh; l.ctx = l.canvas.getContext("2d"); l.ctx.drawImage(nl, 0, 0); });
+    W = nw; H = nh; history = []; if($("#undo")) $("#undo").disabled = true;
+    fitImage(); redraw();
+  }
   function actLayer(){ return layers[active]; }
 
   function resizeView(){
@@ -357,6 +380,8 @@
   $("#tCirc").onclick  = () => setTool("circ");
   $("#tErase").onclick = () => setTool("erase");
   $("#tPan").onclick   = () => setTool("pan");
+  $("#flipH").onclick  = () => flipH();
+  $("#rot90").onclick  = () => rotate90();
   $("#brush").oninput  = e => { brush = +e.target.value; $("#brushV").textContent = brush; redraw(); };
   $("#tol").oninput    = e => { tol = +e.target.value; $("#tolV").textContent = tol; };
   $("#autoBg").onclick = () => { $("#autoBg").disabled = true; setTimeout(() => { autoRemoveBg(); $("#autoBg").disabled = false; }, 20); };
