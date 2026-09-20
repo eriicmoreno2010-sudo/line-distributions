@@ -269,15 +269,29 @@ Self-contained: injects its own styles and markup.
     // Fit the avatar to the row height so it never overflows/touches the card
     // edges on crowded columns (9–10 members = short rows). Capped at 9vh.
     const fitPhotos = () => {
+      const IH = window.innerHeight;
+      // DOS COLUMNAS (>10): calcula el tamaño por geometría (no midiendo el DOM, que
+      // en el momento de construir aún no está colocado y dejaba la foto más grande
+      // que la fila -> se desbordaba/cortaba, distinto según nº de miembros).
+      if(list.classList.contains("two-col")){
+        const rows = Math.ceil(ranked.length / 2);
+        const listH = IH * 0.936;                       // 100vh - 6.4vh (padding de #ro-main)
+        const rowH  = (listH - (rows - 1) * (0.01 * IH)) / rows;   // gap de fila = 1vh
+        const content = rowH - (0.0184 * IH) - 4;       // borde (.84vh) + padding (1vh)
+        const size = Math.max(40, Math.min(0.11 * IH, content));
+        list.style.setProperty("--rphoto", Math.round(size) + "px");
+        return;
+      }
       const row = list.querySelector(".row"); if(!row) return;
       const cs = getComputedStyle(row);
       const avail = row.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
       if(avail > 0){
-        const size = Math.max(40, Math.min(0.11 * window.innerHeight, avail - 4));
+        const size = Math.max(40, Math.min(0.11 * IH, avail - 4));
         list.style.setProperty("--rphoto", Math.round(size) + "px");
       }
     };
     requestAnimationFrame(fitPhotos);
+    setTimeout(fitPhotos, 350);                          // reajuste tras el fundido de entrada
     window.addEventListener("resize", fitPhotos);
   }
 
