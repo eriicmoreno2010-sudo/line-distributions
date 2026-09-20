@@ -80,17 +80,18 @@ Self-contained: injects its own styles and markup.
     }
     #results-overlay #ro-list{ flex:1 1 auto; height:100%; display:flex; flex-direction:column; gap:.7vh; min-width:0; }
     #results-overlay .row{
-      flex:1 1 0; min-height:0; display:grid; grid-template-columns:var(--rphoto,9vh) 1fr auto; align-items:center; gap:1.6vh;
+      flex:1 1 0; min-height:0; display:grid; grid-template-columns:var(--rphoto,9vh) minmax(0,1fr) auto; align-items:center; gap:1.6vh;
       background:#15151d; border:.42vh solid #2b2b3a; border-radius:1.4vh; padding:.5vh 1.8vh;
       opacity:.5; transition:opacity .45s ease, background-color .45s ease, border-color .45s ease, box-shadow .45s ease;
     }
     #results-overlay .row .photo{ width:var(--rphoto,9vh); height:var(--rphoto,9vh); border-radius:50%; object-fit:cover; object-position:center 45%;
       background:#000; filter:grayscale(1) brightness(.75); transition:filter .5s ease, box-shadow .5s ease; }
-    #results-overlay .row .name{ font-size:2.5vh; font-weight:900; letter-spacing:.4px; color:#7c7c8a; transition:color .5s ease; line-height:1.1; }
+    #results-overlay .row .info{ min-width:0; }   /* deja que el nombre se recorte en vez de empujar la barra/números */
+    #results-overlay .row .name{ font-size:1.85vh; font-weight:900; letter-spacing:.3px; color:#7c7c8a; transition:color .5s ease; line-height:1.1; overflow:hidden; text-overflow:ellipsis; }
     #results-overlay .row .bar{ margin-top:.8vh; height:1.2vh; border-radius:999px; background:#1c1c25; overflow:hidden; }
     #results-overlay .row .fill{ height:100%; width:0; border-radius:999px; background:#2c2c37; transition:width .6s cubic-bezier(.3,1,.4,1), background-color .5s ease; }
-    #results-overlay .row .stats{ text-align:right; font-variant-numeric:tabular-nums; }
-    #results-overlay .row .pct{ font-size:2.4vh; font-weight:900; color:#7c7c8a; transition:color .5s ease; line-height:1; }
+    #results-overlay .row .stats{ text-align:right; font-variant-numeric:tabular-nums; width:5.4vw; flex:none; }   /* ancho fijo -> barras iguales y números alineados */
+    #results-overlay .row .pct{ font-size:2.4vh; font-weight:900; color:#7c7c8a; transition:color .5s ease; line-height:1; white-space:nowrap; }
     #results-overlay .row .sec{ font-size:1.5vh; color:#7c7c8a; margin-top:.4vh; }
     #results-overlay .row.lit{ opacity:1; background:var(--rowbg); border-color:color-mix(in srgb, var(--c) 55%, transparent);
       box-shadow:0 1.5vh 4vh -2vh color-mix(in srgb, var(--c) 70%, transparent); }
@@ -103,8 +104,8 @@ Self-contained: injects its own styles and markup.
        top-to-bottom, then the right — so rows are tall enough for the photos */
     #results-overlay #ro-list.two-col{
       display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-      grid-template-rows:repeat(var(--rows,7), var(--rowh,12vh));
-      grid-auto-flow:column; gap:1.1vh 1.4vh; align-content:center;
+      grid-template-rows:repeat(var(--rows,7), 1fr);
+      grid-auto-flow:column; gap:1.1vh 1.4vh;
     }
     #results-overlay #ro-list.two-col .row{ flex:none; }
     /* Solista o sub-unidad (menos de 8): las tarjetas NO se estiran para llenar el
@@ -274,18 +275,14 @@ Self-contained: injects its own styles and markup.
       // en el momento de construir aún no está colocado y dejaba la foto más grande
       // que la fila -> se desbordaba/cortaba, distinto según nº de miembros).
       if(list.classList.contains("two-col")){
+        // Las filas LLENAN el alto (1fr), igual que en las canciones de ≤9 miembros
+        // -> mismo margen arriba/abajo (el 3.2vh del padding) para todas.
         const rows = Math.ceil(ranked.length / 2);
-        const gap  = 0.011 * IH;                          // hueco de fila = 1.1vh (tarjetas juntas)
+        const gap  = 0.011 * IH;                          // hueco de fila = 1.1vh
         const listH = IH * 0.936;                         // 100vh - 6.4vh (padding de #ro-main)
-        // Altura de tarjeta cómoda y CENTRADA, dejando SIEMPRE aire arriba y abajo
-        // (el bloque nunca llena más del 92% del alto). Así 13 miembros ya no queda
-        // pegado a los bordes, y 12 se ve igual de bien que ahora.
-        const CAP = 0.135 * listH;                        // altura máx cómoda (la "perfecta" de 12)
-        const fit = (0.92 * listH - (rows - 1) * gap) / rows;
-        const rowH = Math.min(CAP, fit);
-        list.style.setProperty("--rowh", Math.round(rowH) + "px");
-        const content = rowH - (0.0184 * IH) - 4;        // borde (.84vh) + padding (1vh)
-        const size = Math.max(40, Math.min(0.10 * IH, content - 6));
+        const rowH  = (listH - (rows - 1) * gap) / rows;  // altura real de fila al llenar
+        const content = rowH - (0.0184 * IH) - 4;         // borde (.84vh) + padding (1vh)
+        const size = Math.max(40, Math.min(0.078 * IH, content - 6));
         list.style.setProperty("--rphoto", Math.round(size) + "px");
         return;
       }
