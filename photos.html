@@ -66,6 +66,7 @@
         <button class="sec" id="prev-btn">◀ Anterior</button>
         <button class="sec" id="next-btn">Siguiente ▶</button>
         <button class="sec" id="resetOne">Reset este</button>
+        <button class="sec" id="flipH" title="Girar horizontalmente (espejo izquierda↔derecha)">⇆ Espejo</button>
       </div>
       <div class="btns">
         <button class="sec" id="copyFrame">📋 Copiar encuadre</button>
@@ -155,11 +156,13 @@ function applyFrame(m, f){
         m.cx   = (isFinite(f.cx) ? f.cx : 0.5) * m.iw;
         m.cy   = (isFinite(f.cy) ? f.cy : 0.44) * m.ih;
         m.rot  = f.rot || 0;
+        m.flip = !!f.flip;
     } else {
         m.side = m.iw;                 // por defecto: cuadrado a lo ancho, centrado en la cabeza
         m.cx   = m.iw/2;
         m.cy   = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2);
         m.rot  = 0;
+        m.flip = false;
     }
 }
 
@@ -178,6 +181,11 @@ function drawInto(ctx, size, m){
     if(m.rot){                              // rotate the crop around its centre
         ctx.translate(size/2, size/2);
         ctx.rotate(m.rot * Math.PI/180);
+        ctx.translate(-size/2, -size/2);
+    }
+    if(m.flip){                             // espejo horizontal (izquierda<->derecha)
+        ctx.translate(size/2, size/2);
+        ctx.scale(-1, 1);
         ctx.translate(-size/2, -size/2);
     }
     ctx.drawImage(m.img, m.cx-m.side/2, m.cy-m.side/2, m.side, m.side, 0, 0, size, size);
@@ -211,6 +219,7 @@ zoom.addEventListener("input", ()=>{ const m=cur(); m.side = parseFloat(zoom.val
 vy.addEventListener("input", ()=>{ const m=cur(); m.cy = parseFloat(vy.value)*m.ih; m.dirty=true; render(); });
 vx.addEventListener("input", ()=>{ const m=cur(); m.cx = parseFloat(vx.value)*m.iw; m.dirty=true; render(); });
 rot.addEventListener("input", ()=>{ const m=cur(); m.rot = parseFloat(rot.value)||0; m.dirty=true; render(); });
+document.getElementById("flipH").addEventListener("click", ()=>{ const m=cur(); if(!m) return; m.flip = !m.flip; m.dirty=true; render(); });
 
 document.getElementById("prev-btn").addEventListener("click", ()=>select(idx-1));
 document.getElementById("next-btn").addEventListener("click", ()=>select(idx+1));
@@ -227,12 +236,13 @@ function applyClipTo(m){
     m.cx   = frameClip.cx * m.iw;
     m.cy   = frameClip.cy * m.ih;
     m.rot  = frameClip.rot || 0;
+    m.flip = !!frameClip.flip;
     m.dirty = true; clampCrop(m);
     if(m.thumbCtx) drawInto(m.thumbCtx, 64, m);
 }
 document.getElementById("copyFrame").addEventListener("click", ()=>{
     const m=cur(); if(!m || !m.iw) return;
-    frameClip = { size:m.side/m.iw, cx:m.cx/m.iw, cy:m.cy/m.ih, rot:m.rot||0 };
+    frameClip = { size:m.side/m.iw, cx:m.cx/m.iw, cy:m.cy/m.ih, rot:m.rot||0, flip:!!m.flip };
     document.getElementById("pasteFrame").disabled = false;
     document.getElementById("pasteAll").disabled = false;
     const b=document.getElementById("copyFrame"); const t=b.textContent; b.textContent="✓ Copiado"; setTimeout(()=>b.textContent=t,1200);
@@ -387,7 +397,8 @@ if(!(window.desktop && window.desktop.savePhotos)){
                 cx:   +(m.cx / m.iw).toFixed(4),
                 cy:   +(m.cy / m.ih).toFixed(4),
                 size: +(m.side / m.iw).toFixed(4),
-                rot:  Math.round(m.rot || 0)
+                rot:  Math.round(m.rot || 0),
+                flip: !!m.flip
             };
             // hornear y subir SOLO los que has tocado (los demás no se tocan)
             if(!m.dirty) return;
