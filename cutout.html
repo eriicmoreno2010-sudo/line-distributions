@@ -64,7 +64,10 @@
   </div>
   <div class="grp">
     <button id="flipH" title="Girar horizontalmente (espejo izquierda↔derecha)">⇆ Espejo</button>
-    <button id="rot90" title="Girar 90°">🔁 Girar 90°</button>
+    <span class="lbl">Rotar</span>
+    <input type="range" id="rotR" min="0" max="360" step="1" value="0" style="width:110px"><span class="val" id="rotV">0</span>
+    <button id="zoomOut" title="Alejar">🔍−</button>
+    <button id="zoomIn" title="Acercar">🔍+</button>
   </div>
   <div class="grp" id="brushGrp" style="display:none"><span class="lbl">Pincel</span>
     <input type="range" id="brush" min="6" max="220" step="1" value="70"><span class="val" id="brushV">70</span></div>
@@ -92,10 +95,15 @@
   </div>
 </div>
 
-<main><canvas id="view"></canvas></main>
+<main><canvas id="view"></canvas>
+  <div style="position:absolute; right:14px; bottom:14px; z-index:5; text-align:center; pointer-events:none">
+    <canvas id="coverPrev" width="150" height="150" style="border-radius:12px; box-shadow:0 0 0 2px #2a2a3a; background:#0b0b11; display:block"></canvas>
+    <div style="font-size:11px; font-weight:800; color:var(--text2); margin-top:4px">Portada</div>
+  </div>
+</main>
 
 <div id="ov"><div class="t" id="ovT">Guardando…</div></div>
 
-<script src="js/cutout.js?v=13"></script>
+<script src="js/cutout.js?v=14"></script>
 </body>
 </html>

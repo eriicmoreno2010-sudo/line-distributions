@@ -22,6 +22,7 @@
   let W = 0, H = 0, scale = 1, ox = 0, oy = 0;
   let tool = "lazo", brush = 70, tol = 55;
   let aiLib = null, aiRawCanvas = null, aiSolid = 0;   // recorte con IA (@imgly)
+  let outRot = 0;   // rotación libre (grados) de todo el recorte (se ve en vivo y se hornea al guardar)
   let showOrig = false;   // por defecto NO se muestra (así ves el fondo YA quitado en vivo)
   let hasCut = false;     // ¿hay algo recortado ya? (antes del 1er lazo se ve la original para apuntar)
   let layers = [];        // [{canvas, ctx, name}]
@@ -64,6 +65,31 @@
     W = nw; H = nh; history = []; if($("#undo")) $("#undo").disabled = true;
     fitImage(); redraw();
   }
+
+  // Recorte PLANO (mezcla de capas) + rotación libre horneada. Se usa para guardar
+  // y para el preview de portada.
+  function bakedOutput(){
+    const flat = document.createElement("canvas"); flat.width = W; flat.height = H;
+    const fx = flat.getContext("2d"); layers.forEach(l => fx.drawImage(l.canvas, 0, 0));
+    if(!outRot) return flat;
+    const a = outRot*Math.PI/180, cos = Math.abs(Math.cos(a)), sin = Math.abs(Math.sin(a));
+    const nw = Math.max(1, Math.round(W*cos + H*sin)), nh = Math.max(1, Math.round(W*sin + H*cos));
+    const out = document.createElement("canvas"); out.width = nw; out.height = nh;
+    const c = out.getContext("2d"); c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
+    c.translate(nw/2, nh/2); c.rotate(a); c.drawImage(flat, -W/2, -H/2);
+    return out;
+  }
+  // Preview "cómo se verá en la portada": el recorte plano centrado a modo cover.
+  function drawCoverPrev(){
+    const cv = $("#coverPrev"); if(!cv || !W) return;
+    const c = cv.getContext("2d"), pw = cv.width, ph = cv.height;
+    c.clearRect(0,0,pw,ph); c.fillStyle = "#0b0b11"; c.fillRect(0,0,pw,ph);
+    const out = bakedOutput(), iw = out.width, ih = out.height;
+    const s = Math.max(pw/iw, ph/ih);              // object-fit: cover
+    const dw = iw*s, dh = ih*s;
+    c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
+    c.drawImage(out, (pw-dw)/2, (ph-dh)*0.4, dw, dh);   // centrado, cara algo arriba
+  }
   function actLayer(){ return layers[active]; }
 
   function resizeView(){
@@ -82,6 +108,11 @@
     vctx.fillStyle = "#0d0d12"; vctx.fillRect(0,0,view.width,view.height);
     if(!W) return;
     const dw = W*scale, dh = H*scale;
+    vctx.save();
+    if(outRot){                                   // rota TODO alrededor del centro de la imagen
+      const ccx = ox + dw/2, ccy = oy + dh/2;
+      vctx.translate(ccx, ccy); vctx.rotate(outRot*Math.PI/180); vctx.translate(-ccx, -ccy);
+    }
     vctx.save(); vctx.beginPath(); vctx.rect(ox,oy,dw,dh); vctx.clip();
     if(chkPat){ vctx.fillStyle = chkPat; vctx.fillRect(ox,oy,dw,dh); }
     vctx.restore();
@@ -108,10 +139,12 @@
       vctx.strokeStyle = "rgba(255,255,255,.95)"; vctx.lineWidth = 1.5; vctx.stroke();
       vctx.setLineDash([]);
     }
-    if(ptr && tool === "erase"){
+    vctx.restore();
+    if(ptr && tool === "erase"){                  // cursor del pincel: en pantalla (sin rotar)
       vctx.beginPath(); vctx.arc(ptr.x, ptr.y, brush/2, 0, 7);
       vctx.strokeStyle = "rgba(255,90,90,.9)"; vctx.lineWidth = 1.5; vctx.stroke();
     }
+    drawCoverPrev();
   }
 
   async function load(){
@@ -139,8 +172,13 @@
 
   function toWork(e){
     const r = view.getBoundingClientRect();
-    return { x:(e.clientX - r.left - ox)/scale, y:(e.clientY - r.top - oy)/scale,
-             vx:(e.clientX - r.left), vy:(e.clientY - r.top) };
+    let x = (e.clientX - r.left - ox)/scale, y = (e.clientY - r.top - oy)/scale;
+    if(outRot){                                   // deshace la rotación (edición alineada con lo que ves)
+      const a = -outRot*Math.PI/180, cx = W/2, cy = H/2, dx = x-cx, dy = y-cy;
+      x = cx + dx*Math.cos(a) - dy*Math.sin(a);
+      y = cy + dx*Math.sin(a) + dy*Math.cos(a);
+    }
+    return { x, y, vx:(e.clientX - r.left), vy:(e.clientY - r.top) };
   }
 
   function snapshot(){
@@ -381,7 +419,9 @@
   $("#tErase").onclick = () => setTool("erase");
   $("#tPan").onclick   = () => setTool("pan");
   $("#flipH").onclick  = () => flipH();
-  $("#rot90").onclick  = () => rotate90();
+  if($("#rotR")) $("#rotR").oninput = e => { outRot = +e.target.value || 0; $("#rotV").textContent = Math.round(outRot); redraw(); };
+  if($("#zoomIn"))  $("#zoomIn").onclick  = () => { scale = Math.min(40, scale*1.15); redraw(); };
+  if($("#zoomOut")) $("#zoomOut").onclick = () => { scale = Math.max(0.05, scale/1.15); redraw(); };
   $("#brush").oninput  = e => { brush = +e.target.value; $("#brushV").textContent = brush; redraw(); };
   $("#tol").oninput    = e => { tol = +e.target.value; $("#tolV").textContent = tol; };
   $("#autoBg").onclick = () => { $("#autoBg").disabled = true; setTimeout(() => { autoRemoveBg(); $("#autoBg").disabled = false; }, 20); };
@@ -421,11 +461,10 @@
   // ---- guardar (mezcla de todas las capas de recorte) ----
   $("#save").onclick = async () => {
     if(!W || !(D && D.cutoutSave)){ alert("Guardar solo funciona en la app de escritorio."); return; }
-    const flat = document.createElement("canvas"); flat.width = W; flat.height = H;
+    const flat = bakedOutput();
     const fx = flat.getContext("2d");
-    layers.forEach(l => fx.drawImage(l.canvas, 0, 0));
     let empty = true;
-    try{ const d = fx.getImageData(0,0,W,H).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }
+    try{ const d = fx.getImageData(0,0,flat.width,flat.height).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }
     if(empty){ alert("No hay nada recortado. Rodea con el lazo lo que quieras conservar."); return; }
     $("#ov").classList.add("show"); $("#ovT").textContent = "Guardando…";
     let res = null;
@@ -443,11 +482,10 @@
   $("#savePc").onclick = async () => {
     if(!W) return;
     if(!(D && D.saveCutoutFile)){ alert("Guardar en el PC solo funciona en la app de escritorio."); return; }
-    const flat = document.createElement("canvas"); flat.width = W; flat.height = H;
+    const flat = bakedOutput();
     const fx = flat.getContext("2d");
-    layers.forEach(l => fx.drawImage(l.canvas, 0, 0));
     let empty = true;
-    try{ const d = fx.getImageData(0,0,W,H).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }
+    try{ const d = fx.getImageData(0,0,flat.width,flat.height).data; for(let p=3;p<d.length;p+=4*997){ if(d[p]>4){ empty=false; break; } } }catch(e){ empty=false; }
     if(empty){ alert("No hay nada recortado que guardar."); return; }
     $("#ov").classList.add("show"); $("#ovT").textContent = "Guardando en el PC…";
     let res = null;
