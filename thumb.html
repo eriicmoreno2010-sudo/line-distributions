@@ -184,7 +184,7 @@ fetch(SONG_URL).then(r=>r.json()).then(song=>{
         img.style.width=(iw*scale)+"px"; img.style.height=(ih*scale)+"px";
         const fX=fr.cx*iw*scale, fY=fr.cy*ih*scale;
         img.style.left=(W/2-fX)+"px"; img.style.top=(H*FACE_Y-fY)+"px";
-        img.style.transformOrigin=fX+"px "+fY+"px"; img.style.transform="rotate("+(fr.rot||0)+"deg)"+(fr.flip?" scaleX(-1)":"");
+        img.style.transformOrigin=fX+"px "+fY+"px"; img.style.transform=(fr.flip?"scaleX(-1) ":"")+"rotate("+(fr.rot||0)+"deg)";
       } else {
         // portada propia o foto sin frame: a pantalla (object-fit cover).
         const fy = coverIsCustom ? 45 : (coverM.focus!=null ? coverM.focus : 45);
