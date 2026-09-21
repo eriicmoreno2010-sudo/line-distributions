@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "쌍둥이자리 (Gemini)",
   "video": "videos/seventeen_gemini_mubk3jil.mp4",
-  "duration": 0,
+  "duration": 190.583008,
   "theme": "dark",
   "subunit": true,
   "members": [
@@ -28,5 +28,6 @@
   "npC1": "#53a303",
   "cover": "covers/seventeen_gemini.png",
   "audio": "audio/seventeen_gemini.mp3",
-  "npC2": "#5a4eb7"
+  "npC2": "#5a4eb7",
+  "audioOffset": -0.3
 }
