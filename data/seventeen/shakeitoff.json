@@ -11,7 +11,14 @@
       "image": "images/seventeen/shakeitoff/mingyu.png",
       "color": "#01a68d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.412,
+        "size": 0.875,
+        "rot": 0,
+        "flip": false
+      }
     }
   ],
   "lyrics": [
