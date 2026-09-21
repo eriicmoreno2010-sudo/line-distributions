@@ -487,8 +487,9 @@
       const ring = (a0,a1)=>{ const large=(a1-a0)>Math.PI?1:0;
         const[x0o,y0o]=P(R,a0),[x1o,y1o]=P(R,a1),[x1i,y1i]=P(ri,a1),[x0i,y0i]=P(ri,a0);
         return `M ${x0o} ${y0o} A ${R} ${R} 0 ${large} 1 ${x1o} ${y1o} L ${x1i} ${y1i} A ${ri} ${ri} 0 ${large} 0 ${x0i} ${y0i} Z`; };
-      // orden fijo (unión, por total completo) para que los arcos no salten entre versiones
-      const order = [...A.members].sort((a,b)=> b.total - a.total).map(m => m.name);
+      // orden por el total de ESTA versión (con las canciones quitadas ya aplicadas),
+      // así el ranking del donut/leyenda es correcto aunque se hayan quitado canciones.
+      const order = [...((vers[0] || A).members)].sort((a,b)=> b.total - a.total).map(m => m.name);
       const colorByName = {}; A.members.forEach(m => colorByName[m.name] = m.color);
 
       el.innerHTML = `
