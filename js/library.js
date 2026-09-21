@@ -257,7 +257,36 @@
       return;
     }
     if(albums.length) document.getElementById("songsttl").style.display = "";
-    songs.sort((a, b) => (a.group + a.song).localeCompare(b.group + b.song));
-    songs.forEach(s => grid.appendChild(card(s)));
+
+    // CARPETAS por grupo: cada grupo es una carpeta plegable con sus canciones.
+    // El estado (abierta/cerrada) se recuerda por grupo.
+    const byGroup = {};
+    songs.forEach(s => { const g = s.group || "—"; (byGroup[g] = byGroup[g] || []).push(s); });
+    const groupNames = Object.keys(byGroup).sort((a, b) => a.localeCompare(b));
+    let openState = {}; try{ openState = JSON.parse(localStorage.getItem("libFolders") || "{}"); }catch(e){}
+
+    grid.classList.add("foldered");
+    groupNames.forEach(g => {
+      const list = byGroup[g].sort((a, b) => (a.song || "").localeCompare(b.song || ""));
+      const folder = document.createElement("div"); folder.className = "folder";
+      if(openState[g] === false) folder.classList.add("collapsed");
+
+      const head = document.createElement("div"); head.className = "folder-head";
+      const chev = document.createElement("span"); chev.className = "chev"; chev.textContent = "▾";
+      const fname = document.createElement("span"); fname.className = "fname"; fname.textContent = g;
+      const fcount = document.createElement("span"); fcount.className = "fcount"; fcount.textContent = list.length;
+      head.append(chev, fname, fcount);
+
+      const inner = document.createElement("div"); inner.className = "folder-grid";
+      list.forEach(s => inner.appendChild(card(s)));
+
+      head.onclick = () => {
+        folder.classList.toggle("collapsed");
+        openState[g] = !folder.classList.contains("collapsed");
+        try{ localStorage.setItem("libFolders", JSON.stringify(openState)); }catch(e){}
+      };
+      folder.append(head, inner);
+      grid.appendChild(folder);
+    });
   })();
 })();
