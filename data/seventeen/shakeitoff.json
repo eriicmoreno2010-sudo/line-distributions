@@ -25,5 +25,6 @@
       "adlib": ""
     }
   ],
-  "cover": "covers/seventeen_shakeitoff.png"
+  "cover": "covers/seventeen_shakeitoff.png",
+  "npC1": "#26f22a"
 }
