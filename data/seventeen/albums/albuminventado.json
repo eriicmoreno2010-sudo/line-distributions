@@ -38,13 +38,11 @@
   "raceColor": "#ffffff",
   "versions": [
     {
-      "name": "la",
+      "name": "lal",
       "songs": [
         0,
         1,
-        2,
-        3,
-        4
+        2
       ],
       "members": [
         "S.COUPS",
