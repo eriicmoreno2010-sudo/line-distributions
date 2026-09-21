@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "Shake It Off",
   "video": "videos/seventeen_shakeitoff_mubabq90.mp4",
-  "duration": 0,
+  "duration": 168.566667,
   "theme": "dark",
   "subunit": true,
   "members": [
@@ -28,5 +28,6 @@
   "cover": "covers/seventeen_shakeitoff.png",
   "npC1": "#01a68d",
   "npC2": "#ff0000",
-  "audio": "audio/seventeen_shakeitoff.mp3"
+  "audio": "audio/seventeen_shakeitoff.mp3",
+  "audioOffset": -0.15
 }
