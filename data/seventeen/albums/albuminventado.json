@@ -11,5 +11,57 @@
     "data/seventeen/badinfluenceprodbypharrellwilliams.json",
     "data/seventeen/badinfluenceprodbypharrelwilliamsexplicitver.json",
     "data/seventeen/skyfall.json"
-  ]
+  ],
+  "clips": [
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {},
+    {},
+    {
+      "start": 0,
+      "end": 12
+    }
+  ],
+  "songColors": [
+    "#ff4d6d",
+    "#4dabf7",
+    "#ffa94d",
+    "#cc5de8",
+    "#20c997"
+  ],
+  "raceColor": "#ffffff",
+  "versions": [
+    {
+      "name": "",
+      "songs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "members": [
+        "S.COUPS",
+        "JOSHUA",
+        "JUN",
+        "HOSHI",
+        "WONWOO",
+        "WOOZI",
+        "DK",
+        "MINGYU",
+        "THE8",
+        "SEUNGKWAN",
+        "VERNON",
+        "DINO"
+      ]
+    }
+  ],
+  "bgAudio": {},
+  "baseName": "lol"
 }
