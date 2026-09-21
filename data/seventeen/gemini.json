@@ -16,13 +16,1081 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 4.38,
+      "end": 10.12,
+      "members": [
+        "JUN"
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "Under the moonlight, Come, save me now",
       "english": "",
-      "adlib": ""
+      "adlib": false,
+      "voice": [
+        [
+          4.35,
+          7.09
+        ],
+        [
+          8.35,
+          10.37
+        ]
+      ]
+    },
+    {
+      "start": 10.94,
+      "end": 16.29,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          11.05,
+          12.07
+        ],
+        [
+          13.22,
+          16.28
+        ]
+      ],
+      "original": "널 그리는 사이 흐려져 가는 네 shadow",
+      "romanization": "neol geurineun sai heoryeojyeo ganeun ne shadow",
+      "english": "While I draw you, your shadow gradually fades",
+      "adlib": false
+    },
+    {
+      "start": 17.36,
+      "end": 20.78,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          17.5,
+          20.75
+        ]
+      ],
+      "original": "짙은 어둠이 자욱한 이곳에",
+      "romanization": "jiteun eodumi jaukhan igose",
+      "english": "In this place filled with thick darkness",
+      "adlib": false
+    },
+    {
+      "start": 21.62,
+      "end": 27.34,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          21.71,
+          24.91
+        ],
+        [
+          25.54,
+          27.3
+        ]
+      ],
+      "original": "불완전한 나의 전부던 my half, In this empty space",
+      "romanization": "bulwanjeonhan naui jeonbudeon my half, in this empty space",
+      "english": "My incomplete everything, my half, In this empty space",
+      "adlib": false
+    },
+    {
+      "start": 27.52,
+      "end": 34.21,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          27.65,
+          29.49
+        ],
+        [
+          29.79,
+          31.81
+        ],
+        [
+          32.11,
+          32.84
+        ],
+        [
+          32.99,
+          34.11
+        ]
+      ],
+      "original": "Is it true? Is it true?, 저 달빛 아래 너와 나",
+      "romanization": "is it true? is it true?, jeo dalbit arae neowa na",
+      "english": "Is it true? Is it true?, Under that moonlight, you and I",
+      "adlib": false
+    },
+    {
+      "start": 34.59,
+      "end": 36.06,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          34.6,
+          36.3
+        ]
+      ],
+      "original": "멈출 수 없던 dancing steps",
+      "romanization": "meomchul su eopdeon dancing steps",
+      "english": "Our dancing steps that could never stop",
+      "adlib": false
+    },
+    {
+      "start": 36.19,
+      "end": 40.84,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          36.19,
+          37.87
+        ],
+        [
+          38.34,
+          40.93
+        ]
+      ],
+      "original": "어느새 아득해 fallin’",
+      "romanization": "eoneusae adeukhae fallin’",
+      "english": "Before I knew it, I’m falling into the distance",
+      "adlib": false
+    },
+    {
+      "start": 41.02,
+      "end": 44.04,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          41.12,
+          43.82
+        ]
+      ],
+      "original": "부서져 가는 별빛에 crash and burn",
+      "romanization": "buseojyeo ganeun byeolbiche crash and burn",
+      "english": "Crashing and burning into the starlight that is breaking apart",
+      "adlib": false
+    },
+    {
+      "start": 44.04,
+      "end": 47.98,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          43.98,
+          45.74
+        ],
+        [
+          45.92,
+          46.25
+        ],
+        [
+          46.43,
+          46.75
+        ],
+        [
+          46.9,
+          47.97
+        ]
+      ],
+      "original": "파편이 되어 break break break my heart",
+      "romanization": "papyeoni doeeo break break break my heart",
+      "english": "Becoming fragments, break break break my heart",
+      "adlib": false
+    },
+    {
+      "start": 48.19,
+      "end": 52.44,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          48.22,
+          50.06
+        ],
+        [
+          50.22,
+          50.6
+        ],
+        [
+          50.78,
+          51.1
+        ],
+        [
+          51.25,
+          52.41
+        ]
+      ],
+      "original": "나의 궤도는 change change change this night",
+      "romanization": "naui gwedoneun change change change this night",
+      "english": "My orbit, change change change this night",
+      "adlib": false
+    },
+    {
+      "start": 52.62,
+      "end": 54.44,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          52.59,
+          54.44
+        ]
+      ],
+      "original": "너와 내 자리에",
+      "romanization": "neowa nae jarie",
+      "english": "To me",
+      "adlib": false
+    },
+    {
+      "start": 54.72,
+      "end": 57.54,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          54.75,
+          56.88
+        ],
+        [
+          57.03,
+          57.9
+        ]
+      ],
+      "original": "이름을 잃은 채로 멈춘 내게",
+      "romanization": "ireumeul ilheun chaero meomchun naege",
+      "english": "Stopped in the place where you and I were, having lost my name",
+      "adlib": false
+    },
+    {
+      "start": 57.69,
+      "end": 61.86,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          56.92,
+          58.6
+        ],
+        [
+          58.78,
+          59.1
+        ],
+        [
+          59.29,
+          59.64
+        ],
+        [
+          59.82,
+          60.74
+        ],
+        [
+          60.92,
+          61.9
+        ]
+      ],
+      "original": "",
+      "romanization": "Come back back back my half, my half",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 62.01,
+      "end": 66.07,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          62,
+          63.19
+        ],
+        [
+          63.31,
+          64.21
+        ],
+        [
+          64.36,
+          66.09
+        ]
+      ],
+      "original": "어두운 날이 새듯, 사라짐은 번져",
+      "romanization": "eoduun nari saedeut, sarajimeun beonjyeo",
+      "english": "As the dark day dawns, Its disappearance spreads",
+      "adlib": false
+    },
+    {
+      "start": 66.18,
+      "end": 70.58,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          66.28,
+          67.35
+        ],
+        [
+          67.53,
+          68.48
+        ],
+        [
+          68.66,
+          70.71
+        ]
+      ],
+      "original": "거울같이 닮은 우리, 둘 만을 위한 타인",
+      "romanization": "geoulgachi dalmeun uri, dul maneul wihan tain",
+      "english": "A stranger for only the two of us, Who resemble each other like mirrors",
+      "adlib": false
+    },
+    {
+      "start": 70.74,
+      "end": 78.8,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          70.87,
+          72.69
+        ],
+        [
+          72.92,
+          76.49
+        ],
+        [
+          76.96,
+          78.66
+        ]
+      ],
+      "original": "밀물과 썰물 사이, 중력을 지우고 escape, and stay",
+      "romanization": "milmeulgwa sseolmul sai, jungnyeogeul jiugo escape, and stay",
+      "english": "Between the rising and falling tides, Erase gravity, escape, and stay",
+      "adlib": false
+    },
+    {
+      "start": 78.98,
+      "end": 85.62,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          79.15,
+          80.97
+        ],
+        [
+          81.23,
+          83.25
+        ],
+        [
+          83.49,
+          84.19
+        ],
+        [
+          84.34,
+          85.47
+        ]
+      ],
+      "original": "Is it true? Is it true?, 저 달빛 아래 너와 나",
+      "romanization": "is it true? is it true?, jeo dalbit arae neowa na",
+      "english": "Is it true? Is it true?, Under that moonlight, you and I",
+      "adlib": false
+    },
+    {
+      "start": 85.87,
+      "end": 87.48,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          86.01,
+          87.68
+        ]
+      ],
+      "original": "멈출 수 없던 dancing steps",
+      "romanization": "meomchul su eopdeon dancing steps",
+      "english": "Our dancing steps that could never stop",
+      "adlib": false
+    },
+    {
+      "start": 87.63,
+      "end": 92.29,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          87.65,
+          89.27
+        ],
+        [
+          89.76,
+          92.3
+        ]
+      ],
+      "original": "어느새 아득해 fallin’",
+      "romanization": "eoneusae adeukhae fallin’",
+      "english": "Before I knew it, I’m falling into the distance",
+      "adlib": false
+    },
+    {
+      "start": 92.44,
+      "end": 95.25,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          92.46,
+          95.23
+        ]
+      ],
+      "original": "부서져 가는 별빛에 crash and burn",
+      "romanization": "buseojyeo ganeun byeolbiche crash and burn",
+      "english": "Crashing and burning into the starlight that is breaking apart",
+      "adlib": false
+    },
+    {
+      "start": 95.41,
+      "end": 99.46,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          95.44,
+          97.12
+        ],
+        [
+          97.3,
+          97.65
+        ],
+        [
+          97.83,
+          98.18
+        ],
+        [
+          98.34,
+          99.4
+        ]
+      ],
+      "original": "파편이 되어 break break break my heart",
+      "romanization": "papyeoni doeeo break break break my heart",
+      "english": "Becoming fragments, break break break my heart",
+      "adlib": false
+    },
+    {
+      "start": 99.72,
+      "end": 103.86,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          99.65,
+          101.44
+        ],
+        [
+          101.59,
+          102
+        ],
+        [
+          102.15,
+          102.5
+        ],
+        [
+          102.66,
+          103.81
+        ]
+      ],
+      "original": "나의 궤도는 change change change this night",
+      "romanization": "naui gwedoneun change change change this night",
+      "english": "My orbit, change change change this night",
+      "adlib": false
+    },
+    {
+      "start": 104.04,
+      "end": 105.86,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          104.03,
+          105.88
+        ]
+      ],
+      "original": "너와 내 자리에",
+      "romanization": "neowa nae jarie",
+      "english": "To me",
+      "adlib": false
+    },
+    {
+      "start": 106.18,
+      "end": 109.2,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          106.22,
+          108.27
+        ],
+        [
+          108.45,
+          109.35
+        ]
+      ],
+      "original": "이름을 잃은 채로 멈춘 내게",
+      "romanization": "ireumeul ilheun chaero meomchun naege",
+      "english": "Stopped in the place where you and I were, having lost my name",
+      "adlib": false
+    },
+    {
+      "start": 109.36,
+      "end": 113.38,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          109.29,
+          110.01
+        ],
+        [
+          110.19,
+          110.57
+        ],
+        [
+          110.7,
+          111.05
+        ],
+        [
+          111.23,
+          112.16
+        ],
+        [
+          112.31,
+          113.35
+        ]
+      ],
+      "original": "",
+      "romanization": "Come back back back my half, my half",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 113.7,
+      "end": 117.66,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          113.82,
+          115.49
+        ],
+        [
+          115.79,
+          117.69
+        ]
+      ],
+      "original": "너로 빛나고, 서로를 비추던",
+      "romanization": "neoro bitnago, seororeul bichudeon",
+      "english": "Shining because of you, The one made of two",
+      "adlib": false
+    },
+    {
+      "start": 117.84,
+      "end": 123.22,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          117.99,
+          119.81
+        ],
+        [
+          120.05,
+          123.18
+        ]
+      ],
+      "original": "둘로 이뤄진 one, 나와 넌 nothing can divide",
+      "romanization": "dullo irueojin one, nawa neon nothing can divide",
+      "english": "That reflected each other, You and I, nothing can divide",
+      "adlib": false
+    },
+    {
+      "start": 123.27,
+      "end": 127.47,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          123.27,
+          124.49
+        ],
+        [
+          124.64,
+          127.46
+        ]
+      ],
+      "original": "다시 이끌어, 빛나는 잔상을 끌어안은 채",
+      "romanization": "dasi ikkeureo, bitnaneun jansangeul kkeureoaneun chae",
+      "english": "Lead me again, Holding onto the shining afterimage",
+      "adlib": false
+    },
+    {
+      "start": 34.04,
+      "end": 34.73,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          34.1,
+          34.74
+        ]
+      ],
+      "original": "(너와 나)",
+      "romanization": "(neowa na)",
+      "english": "(You and I)",
+      "adlib": true
+    },
+    {
+      "start": 85.53,
+      "end": 86.11,
+      "members": [
+        "JUN"
+      ],
+      "original": "(너와 나)",
+      "romanization": "(neowa na)",
+      "english": "(You and I)",
+      "adlib": true,
+      "voice": [
+        [
+          85.41,
+          86
+        ]
+      ]
+    },
+    {
+      "start": 127.46,
+      "end": 128.33,
+      "members": [
+        "JUN"
+      ],
+      "original": "",
+      "romanization": "(all night)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          127.49,
+          128.45
+        ]
+      ]
+    },
+    {
+      "start": 127.87,
+      "end": 131.29,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          127.95,
+          131.08
+        ]
+      ],
+      "original": "기나긴 밤 너머 너에게로",
+      "romanization": "ginagin bam neomeo neoegeuro",
+      "english": "Beyond the long night, toward you",
+      "adlib": false
+    },
+    {
+      "start": 133.1,
+      "end": 140.66,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          133.09,
+          140.54
+        ]
+      ],
+      "original": "(온 우주를 헤매 tonight)",
+      "romanization": "(on ujureul hemae tonight)",
+      "english": "(Wandering through the entire universe tonight)",
+      "adlib": true
+    },
+    {
+      "start": 134.02,
+      "end": 137.79,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          134.13,
+          135.8
+        ],
+        [
+          135.98,
+          136.28
+        ],
+        [
+          136.49,
+          136.81
+        ],
+        [
+          136.99,
+          137.94
+        ]
+      ],
+      "original": "부서져도 don't wait wait wait no more",
+      "romanization": "buseojyeodo don't wait wait wait no more",
+      "english": "Even if I break, don’t wait wait wait no more",
+      "adlib": false
+    },
+    {
+      "start": 138.26,
+      "end": 142.37,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          138.39,
+          140.06
+        ],
+        [
+          140.24,
+          140.63
+        ],
+        [
+          140.81,
+          141.13
+        ],
+        [
+          141.31,
+          142.41
+        ]
+      ],
+      "original": "너의 궤도를 chase chase chase this night",
+      "romanization": "neoui gwedoreul chase chase chase this night",
+      "english": "Chase chase chase your orbit this night",
+      "adlib": false
+    },
+    {
+      "start": 142.55,
+      "end": 144.33,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          142.68,
+          144.41
+        ]
+      ],
+      "original": "너와 내 자리에",
+      "romanization": "neowa nae jarie",
+      "english": "In the place where you and I were",
+      "adlib": false
+    },
+    {
+      "start": 142.58,
+      "end": 144.54,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          142.56,
+          144.52
+        ]
+      ],
+      "original": "(날 이끈 네 눈빛을)",
+      "romanization": "(nal ikkeun ne nunbicheul)",
+      "english": "(The gaze of your eyes that led me)",
+      "adlib": true
+    },
+    {
+      "start": 144.83,
+      "end": 147.79,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          144.83,
+          147.93
+        ]
+      ],
+      "original": "이름을 잃은 채로 멈춘 내게",
+      "romanization": "ireumeul ilheun chaero meomchun naege",
+      "english": "To me, stopped after losing my name",
+      "adlib": false
+    },
+    {
+      "start": 147.1,
+      "end": 148.49,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          147.13,
+          148.64
+        ]
+      ],
+      "original": "(따라가 난)",
+      "romanization": "(ttaraga nan)",
+      "english": "(I’ll follow it)",
+      "adlib": true
+    },
+    {
+      "start": 147.92,
+      "end": 151.95,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          147.94,
+          148.58
+        ],
+        [
+          148.73,
+          149.08
+        ],
+        [
+          149.27,
+          149.64
+        ],
+        [
+          149.8,
+          150.7
+        ],
+        [
+          150.91,
+          151.92
+        ]
+      ],
+      "original": "",
+      "romanization": "Come back back back my half, my half",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 154.31,
+      "end": 158.97,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          154.3,
+          155.45
+        ],
+        [
+          155.92,
+          157.54
+        ],
+        [
+          157.69,
+          158.87
+        ]
+      ],
+      "original": "",
+      "romanization": "(You save me, I don't wait no more oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 158.58,
+      "end": 161.12,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          158.48,
+          160.99
+        ]
+      ],
+      "original": "",
+      "romanization": "All night, I’m walking to your light",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 162.88,
+      "end": 167.6,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          162.86,
+          163.87
+        ],
+        [
+          164.48,
+          166.04
+        ],
+        [
+          166.45,
+          167.46
+        ]
+      ],
+      "original": "",
+      "romanization": "(You save me, I don't wait no more oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 167.47,
+      "end": 169.65,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          167.35,
+          169.68
+        ]
+      ],
+      "original": "",
+      "romanization": "All night, I’m walking to your light",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 169.86,
+      "end": 171.79,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          169.88,
+          171.84
+        ]
+      ],
+      "original": "온통 상처 나고 찢긴",
+      "romanization": "ontong sangcheo nago jjitgin",
+      "english": "Throwing off my battered and torn shell",
+      "adlib": false
+    },
+    {
+      "start": 171.92,
+      "end": 175.9,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          172.02,
+          174.04
+        ],
+        [
+          174.19,
+          176.09
+        ]
+      ],
+      "original": "허물은 벗어던지고, 날개를 너를 향해 shakin’",
+      "romanization": "heomureun beoseodeonjigo, nalgaereul neoreul hyanghae shakin’",
+      "english": "Covered in wounds, Spreading my wings toward you, shakin’",
+      "adlib": false
+    },
+    {
+      "start": 176.03,
+      "end": 178.25,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          176.04,
+          178.23
+        ]
+      ],
+      "original": "",
+      "romanization": "All night, I’m walking to your light",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 178.43,
+      "end": 184.32,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          178.46,
+          180.36
+        ],
+        [
+          180.51,
+          182.59
+        ],
+        [
+          182.74,
+          183.07
+        ],
+        [
+          183.22,
+          183.51
+        ],
+        [
+          183.64,
+          184.42
+        ]
+      ],
+      "original": "다시 새롭게 태어나, 반드시 난 너를 되찾아, Oh oh ooh",
+      "romanization": "dasi saeropge taeeona, bandeusi nan neoreul doechaja, oh oh ooh",
+      "english": "Born anew again, I’ll definitely find you again, Oh oh ooh",
+      "adlib": false
+    },
+    {
+      "start": 184.5,
+      "end": 186.86,
+      "members": [
+        "JUN"
+      ],
+      "voice": [
+        [
+          184.62,
+          186.84
+        ]
+      ],
+      "original": "",
+      "romanization": "All night, I’m walking to your light",
+      "english": "",
+      "adlib": false
     }
   ],
   "npC1": "#53a303",
