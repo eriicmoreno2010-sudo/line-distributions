@@ -27,5 +27,6 @@
   ],
   "cover": "covers/seventeen_shakeitoff.png",
   "npC1": "#01a68d",
-  "npC2": "#ff0000"
+  "npC2": "#ff0000",
+  "audio": "audio/seventeen_shakeitoff.mp3"
 }
