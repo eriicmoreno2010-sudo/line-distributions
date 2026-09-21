@@ -526,9 +526,14 @@ const Lyrics = {
         const inner = document.createElement("div"); inner.className = "al-inner";   // lo que colapsa el grid-rows
         const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(displayMembers(line));
         paint(nm); inner.appendChild(nm);
-        const raw = [line.original, line.romanization, line.english].map(x => (x || "").trim());
-        const uniq = raw.filter((x, i) => x && raw.indexOf(x) === i);
-        const shown = uniq.length ? uniq : (typeof line.adlib === "string" && line.adlib.trim() ? [line.adlib.trim()] : []);
+        const raw = [line.original, line.romanization, line.english]
+    .map(x => (x || "").trim());
+
+const shown = raw.filter(Boolean);
+
+if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
+    shown.push(line.adlib.trim());
+},
         shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); inner.appendChild(d); });
         box.appendChild(inner);
         return box;
