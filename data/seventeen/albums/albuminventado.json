@@ -61,5 +61,6 @@
       "allSlides": true
     }
   ],
-  "bgAudio": {}
+  "bgAudio": {},
+  "baseName": "lol"
 }
