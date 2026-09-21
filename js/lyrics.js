@@ -533,7 +533,7 @@ const shown = raw.filter(Boolean);
 
 if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
     shown.push(line.adlib.trim());
-},
+}
         shown.forEach(txt => { const d = document.createElement("div"); d.className = "al-text"; d.textContent = txt; paint(d); inner.appendChild(d); });
         box.appendChild(inner);
         return box;
