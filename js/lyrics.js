@@ -427,14 +427,13 @@ const Lyrics = {
                     e.member.style.textShadow = "";        // sólido -> sombra normal
                 }
             }
-            // Don't repeat identical text 3× (e.g. pure-English lines): show it
-            // once, centred. Korean lines (3 distinct) still show all three.
-            const raw = [line.original, line.romanization, line.english].map(t => (t||"").trim());
-            const uniq = raw.filter((t,i) => t && raw.indexOf(t) === i);
+            // Muestra CADA campo que hayas rellenado en su sitio (no oculta duplicados:
+            // tú decides qué campos dejar). Si solo hay uno, se centra (slot del medio).
+            const o = (line.original||"").trim(), r = (line.romanization||"").trim(), en = (line.english||"").trim();
+            const filled = [o, r, en].filter(Boolean);
             let so="", sr="", se="";
-            if(uniq.length <= 1){ sr = uniq[0] || ""; }
-            else if(uniq.length === 2){ so = uniq[0]; sr = uniq[1]; }
-            else { so = raw[0]; sr = raw[1]; se = raw[2]; }
+            if(filled.length <= 1){ sr = filled[0] || ""; }   // una sola línea -> centrada
+            else { so = o; sr = r; se = en; }                  // varias -> cada campo en SU sitio
             paintText(e.original, so);
             paintText(e.roman,    sr);
             paintText(e.english,  se);
