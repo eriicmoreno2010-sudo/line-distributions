@@ -38,7 +38,7 @@
   "raceColor": "#ffffff",
   "versions": [
     {
-      "name": "de.de.de.de_de.de.d",
+      "name": "de.de.de.de_de.de.de",
       "songs": [
         0,
         1,
@@ -61,6 +61,8 @@
       "allSlides": true
     }
   ],
-  "bgAudio": {},
+  "bgAudio": {
+    "src": "audio/seventeen_albuminventadobg.mp3"
+  },
   "baseName": "lol"
 }
