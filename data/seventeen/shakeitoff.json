@@ -16,18 +16,808 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 0.41,
+      "end": 2.83,
       "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "Shake it off, Shake it",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 4.13,
+      "end": 6.57,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off -, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 7.88,
+      "end": 10.27,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 11.65,
+      "end": 14.01,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off -, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 15.89,
+      "end": 17.53,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          15.96,
+          17.72
+        ]
+      ],
+      "original": "어필은 향수처럼 배어있지 몸",
+      "romanization": "eopireun hyangsucheoreom baeeoitji mom",
+      "english": "Appeal seeps into my body like perfume",
+      "adlib": false
+    },
+    {
+      "start": 17.68,
+      "end": 19.3,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          17.75,
+          19.51
+        ]
+      ],
+      "original": "다 가려도 다들 고개 돌려보지 또",
+      "romanization": "da garyeodo dadeul gogae dollyeoboji tto",
+      "english": "Even if I’m all covered up, they all turn to look again",
+      "adlib": false
+    },
+    {
+      "start": 19.42,
+      "end": 21.06,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          19.42,
+          21.23
+        ]
+      ],
+      "original": "",
+      "romanization": "You already know, when I be the animal",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 21.21,
+      "end": 23.17,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          21.26,
+          23.07
+        ]
+      ],
+      "original": "관심 모아 모아 모아 인기 모아가지 more",
+      "romanization": "gwansim moa moa moa ingi moagaji more",
+      "english": "I gather attention, gather it up, collect popularity more and more",
+      "adlib": false
+    },
+    {
+      "start": 23.29,
+      "end": 25.08,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          23.26,
+          25.11
+        ]
+      ],
+      "original": "끼 낭비는 죄 나는 안 가 jail",
+      "romanization": "kki nangbineun joe naneun an ga jail",
+      "english": "Wasting talent is a crime, I’m not going to jail",
+      "adlib": false
+    },
+    {
+      "start": 25.23,
+      "end": 26.71,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          25.29,
+          26.99
+        ]
+      ],
+      "original": "Back in the day부터 뻔뻔히",
+      "romanization": "back in the daybuteo ppeonppeonhi",
+      "english": "From back in the day, shamelessly",
+      "adlib": false
+    },
+    {
+      "start": 26.89,
+      "end": 28.62,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          26.87,
+          28.71
+        ]
+      ],
+      "original": "이길 필요 없는 우리들의 gambling",
+      "romanization": "igil pillyo eomneun urideurui gambling",
+      "english": "This is our kind of gambling, no need to win",
+      "adlib": false
+    },
+    {
+      "start": 28.77,
+      "end": 30.58,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          28.74,
+          30.64
+        ]
+      ],
+      "original": "철이 들기엔 my time like 벤자민",
+      "romanization": "cheori deulgien my time like benjamin",
+      "english": "Too soon to grow up — my time's like Benjamin",
+      "adlib": false
+    },
+    {
+      "start": 31.51,
+      "end": 34.93,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          31.55,
+          33.04
+        ],
+        [
+          33.4,
+          34.99
+        ]
+      ],
+      "original": "",
+      "romanization": "Workin’ hard everyday, that’s me, Hangover from work, that’s me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 35.2,
+      "end": 38.71,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          35.23,
+          38.26
+        ],
+        [
+          38.38,
+          38.76
+        ]
+      ],
+      "original": "",
+      "romanization": "K.T.F.O now me have fun in my dream, Active me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 38.98,
+      "end": 42.46,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          39.04,
+          40.54
+        ],
+        [
+          40.86,
+          42.48
+        ]
+      ],
+      "original": "",
+      "romanization": "Bet I cook with no recipe, Watch this room overheat",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 42.7,
+      "end": 45.34,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          42.75,
+          44.26
+        ],
+        [
+          44.44,
+          45.28
+        ]
+      ],
+      "original": "",
+      "romanization": "Don’t give a s*it, we will be d*mn free",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 45.75,
+      "end": 48.57,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          45.87,
+          46.83
+        ],
+        [
+          46.98,
+          48.68
+        ]
+      ],
+      "original": "Shake it off, You and me, 우린 lock and key",
+      "romanization": "shake it off, you and me, urin lock and key",
+      "english": "Shake it off, You and me, we’re lock and key",
+      "adlib": false
+    },
+    {
+      "start": 48.78,
+      "end": 52.41,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          48.84,
+          50.6
+        ],
+        [
+          50.75,
+          52.39
+        ]
+      ],
+      "original": "",
+      "romanization": "Got the same s*it, rock CK, That's the recipe to keep us tight",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 53.31,
+      "end": 56.18,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          53.33,
+          54.37
+        ],
+        [
+          54.52,
+          56.16
+        ]
+      ],
+      "original": "Shake it off, You and me, 우린 lock and key",
+      "romanization": "shake it off, you and me, urin lock and key",
+      "english": "Shake it off, You and me, we’re lock and key",
+      "adlib": false
+    },
+    {
+      "start": 56.41,
+      "end": 59.01,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          56.36,
+          58.09
+        ],
+        [
+          58.27,
+          58.96
+        ]
+      ],
+      "original": "",
+      "romanization": "Got the same s*it, rock CK, That's the recipe",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 60.39,
+      "end": 62.76,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 64.14,
+      "end": 66.5,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off -, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 67.89,
+      "end": 70.36,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 71.61,
+      "end": 74.03,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off -, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 75.88,
+      "end": 77.52,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          75.89,
+          77.59
+        ]
+      ],
+      "original": "어필은 땀 흘려야지 매일 뭐",
+      "romanization": "eopireun ttam heullyeoyaji maeil mwo",
+      "english": "Appeal comes from sweat, every single day",
+      "adlib": false
+    },
+    {
+      "start": 77.64,
+      "end": 79.4,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          77.75,
+          79.48
+        ]
+      ],
+      "original": "더운 게 좋은 거 다들 환호하지 워",
+      "romanization": "deoun ge joeun geo dadeul hwanhohaji wo",
+      "english": "Heat is a good thing, everyone cheers, woah",
+      "adlib": false
+    },
+    {
+      "start": 79.55,
+      "end": 83.23,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          79.48,
+          81.25
+        ],
+        [
+          81.37,
+          81.67
+        ],
+        [
+          81.85,
+          82.49
+        ],
+        [
+          82.62,
+          83.02
+        ],
+        [
+          82.79,
+          83.26
+        ]
+      ],
+      "original": "Fit한 T-shirt, my uniform, Pump, pump, pump, pump, pumping",
+      "romanization": "fithan t-shirt, my uniform, pump, pump, pump, pump, pumping",
+      "english": "A fit T-shirt is my uniform, Pump, pump, pump, pump, pumping",
+      "adlib": false
+    },
+    {
+      "start": 83.36,
+      "end": 85.08,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          83.32,
+          85.14
+        ]
+      ],
+      "original": "끼 낭비는 죄 나는 안 가 jail",
+      "romanization": "kki nangbineun joe naneun an ga jail",
+      "english": "Wasting talent is a crime, I’m not going to jail",
+      "adlib": false
+    },
+    {
+      "start": 85.24,
+      "end": 86.71,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          85.3,
+          86.91
+        ]
+      ],
+      "original": "Back in the day부터 뻔뻔히",
+      "romanization": "back in the daybuteo ppeonppeonhi",
+      "english": "From back in the day, shamelessly",
+      "adlib": false
+    },
+    {
+      "start": 86.89,
+      "end": 88.62,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          86.88,
+          88.61
+        ]
+      ],
+      "original": "이길 필요 없는 우리들의 gambling",
+      "romanization": "igil pillyo eomneun urideurui gambling",
+      "english": "This is our kind of gambling, no need to win",
+      "adlib": false
+    },
+    {
+      "start": 88.77,
+      "end": 90.56,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          88.77,
+          90.59
+        ]
+      ],
+      "original": "철이 들기엔 my time like 벤자민",
+      "romanization": "cheori deulgien my time like benjamin",
+      "english": "Too soon to grow up, my time's like Benjamin",
+      "adlib": false
+    },
+    {
+      "start": 91.48,
+      "end": 94.73,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          91.5,
+          93.03
+        ],
+        [
+          93.41,
+          94.91
+        ]
+      ],
+      "original": "",
+      "romanization": "Workin’ hard everyday, that’s me, Hangover from work, that’s me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 95.26,
+      "end": 98.68,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          95.24,
+          98.18
+        ],
+        [
+          98.33,
+          98.68
+        ]
+      ],
+      "original": "",
+      "romanization": "K.T.F.O now me have fun in my dream, Active me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 99,
+      "end": 102.29,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          99.01,
+          100.57
+        ],
+        [
+          100.84,
+          102.43
+        ]
+      ],
+      "original": "",
+      "romanization": "Bet I cook with no recipe, Watch this room overheat",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 102.79,
+      "end": 105.32,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          102.73,
+          104.23
+        ],
+        [
+          104.38,
+          105.31
+        ]
+      ],
+      "original": "",
+      "romanization": "Don’t give a s*it, we will be d*mn free",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 105.84,
+      "end": 108.69,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          105.84,
+          106.91
+        ],
+        [
+          107,
+          108.65
+        ]
+      ],
+      "original": "Shake it off, You and me, 우린 lock and key",
+      "romanization": "shake it off, you and me, urin lock and key",
+      "english": "Shake it off, You and me, we’re lock and key",
+      "adlib": false
+    },
+    {
+      "start": 108.87,
+      "end": 112.44,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          108.94,
+          110.56
+        ],
+        [
+          110.74,
+          112.41
+        ]
+      ],
+      "original": "",
+      "romanization": "Got the same s*it, rock CK, That's the recipe to keep us tight",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 113.37,
+      "end": 116.22,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          113.38,
+          114.3
+        ],
+        [
+          114.45,
+          116.13
+        ]
+      ],
+      "original": "Shake it off, You and me, 우린 lock and key",
+      "romanization": "shake it off, you and me, urin lock and key",
+      "english": "Shake it off, You and me, we’re lock and key",
+      "adlib": false
+    },
+    {
+      "start": 116.33,
+      "end": 118.95,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          116.32,
+          118.1
+        ],
+        [
+          118.28,
+          118.95
+        ]
+      ],
+      "original": "",
+      "romanization": "Got the same s*it, rock CK, That's the recipe",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 120.4,
+      "end": 122.79,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 124.15,
+      "end": 126.56,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off -, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 127.92,
+      "end": 130.28,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off, shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 131.64,
+      "end": 134.03,
+      "members": [],
+      "original": "",
+      "romanization": "Shake it off -, Shake it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 136.56,
+      "end": 140.05,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          136.55,
+          138.13
+        ],
+        [
+          138.34,
+          140.01
+        ]
+      ],
+      "original": "",
+      "romanization": "Workin’ hard everyday, that’s me, Hangover from work, that’s me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 140.26,
+      "end": 143.77,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          140.26,
+          143.25
+        ],
+        [
+          143.4,
+          143.7
+        ]
+      ],
+      "original": "",
+      "romanization": "K.T.F.O now me have fun in my dream, Active me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 143.98,
+      "end": 147.58,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          144.09,
+          145.59
+        ],
+        [
+          145.85,
+          147.47
+        ]
+      ],
+      "original": "",
+      "romanization": "Bet I cook with no recipe, Watch this room overheat",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 147.73,
+      "end": 150.44,
+      "members": [
+        "MINGYU"
+      ],
+      "voice": [
+        [
+          147.69,
+          149.3
+        ],
+        [
+          149.45,
+          150.3
+        ]
+      ],
+      "original": "",
+      "romanization": "Don’t give a s*it, we will be d*mn free",
+      "english": "",
+      "adlib": false
     }
   ],
   "cover": "covers/seventeen_shakeitoff.png",
   "npC1": "#01a68d",
   "npC2": "#ff0000",
   "audio": "audio/seventeen_shakeitoff.mp3",
-  "audioOffset": -0.15
+  "audioOffset": -0.2
 }
