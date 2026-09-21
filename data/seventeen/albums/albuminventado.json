@@ -1,0 +1,15 @@
+{
+  "type": "album",
+  "group": "SEVENTEEN",
+  "album": "album inventado",
+  "cover": "",
+  "theme": "dark",
+  "instrumental": "",
+  "songs": [
+    "data/seventeen/thunder.json",
+    "data/seventeen/hbd.json",
+    "data/seventeen/badinfluenceprodbypharrellwilliams.json",
+    "data/seventeen/badinfluenceprodbypharrelwilliamsexplicitver.json",
+    "data/seventeen/skyfall.json"
+  ]
+}
