@@ -27,5 +27,6 @@
   ],
   "npC1": "#53a303",
   "cover": "covers/seventeen_gemini.png",
-  "audio": "audio/seventeen_gemini.mp3"
+  "audio": "audio/seventeen_gemini.mp3",
+  "npC2": "#462eff"
 }
