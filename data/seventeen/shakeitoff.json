@@ -26,5 +26,6 @@
     }
   ],
   "cover": "covers/seventeen_shakeitoff.png",
-  "npC1": "#01a68d"
+  "npC1": "#01a68d",
+  "npC2": "#000000"
 }
