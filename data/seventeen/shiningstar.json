@@ -11,7 +11,14 @@
       "image": "images/seventeen/shiningstar/vernon.png",
       "color": "#2ec601",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.436,
+        "size": 0.88,
+        "rot": 0,
+        "flip": false
+      }
     }
   ],
   "lyrics": [
