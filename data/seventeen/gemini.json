@@ -667,40 +667,6 @@
       "adlib": false
     },
     {
-      "start": 34.04,
-      "end": 34.73,
-      "members": [
-        "JUN"
-      ],
-      "voice": [
-        [
-          34.1,
-          34.74
-        ]
-      ],
-      "original": "(너와 나)",
-      "romanization": "(neowa na)",
-      "english": "(You and I)",
-      "adlib": true
-    },
-    {
-      "start": 85.53,
-      "end": 86.11,
-      "members": [
-        "JUN"
-      ],
-      "original": "(너와 나)",
-      "romanization": "(neowa na)",
-      "english": "(You and I)",
-      "adlib": true,
-      "voice": [
-        [
-          85.41,
-          86
-        ]
-      ]
-    },
-    {
       "start": 127.46,
       "end": 128.33,
       "members": [
