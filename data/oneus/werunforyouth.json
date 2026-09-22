@@ -9,7 +9,7 @@
     {
       "name": "SEOHO",
       "image": "images/oneus/werunforyouth/seoho.png",
-      "color": "#ff4d6d",
+      "color": "#e12d2d",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -22,7 +22,7 @@
     {
       "name": "LEEDO",
       "image": "images/oneus/werunforyouth/leedo.png",
-      "color": "#4dabf7",
+      "color": "#d89503",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -35,7 +35,7 @@
     {
       "name": "KEONHEE",
       "image": "images/oneus/werunforyouth/keonhee.png",
-      "color": "#51cf66",
+      "color": "#0bd00e",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -48,7 +48,7 @@
     {
       "name": "HWANWOONG",
       "image": "images/oneus/werunforyouth/hwanwoong.png",
-      "color": "#ffd43b",
+      "color": "#374ad7",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -61,7 +61,7 @@
     {
       "name": "XION",
       "image": "images/oneus/werunforyouth/xion.png",
-      "color": "#cc5de8",
+      "color": "#aa0ad1",
       "focus": 50,
       "lift": 3,
       "frame": {
