@@ -2,7 +2,7 @@
   "group": "ALPHA DRIVE ONE",
   "song": "BORN DIRE",
   "video": "videos/alphadriveone_borndire_mud7spr1.mp4",
-  "duration": 0,
+  "duration": 162.370998,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -60,13 +60,12 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "JUNSEO"
-      ],
+      "members": [],
       "original": "",
       "romanization": "",
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/alphadriveone_borndire.mp3"
 }
