@@ -11,7 +11,14 @@
       "image": "images/seventeen/gemini/jun.png",
       "color": "#53a303",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.416,
+        "size": 0.89,
+        "rot": 0,
+        "flip": false
+      }
     }
   ],
   "lyrics": [
