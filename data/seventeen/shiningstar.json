@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "Shining Star",
   "video": "videos/seventeen_shiningstar_muckv23i.mp4",
-  "duration": 0,
+  "duration": 201.95,
   "theme": "dark",
   "subunit": true,
   "members": [
@@ -35,5 +35,6 @@
   "cover": "covers/seventeen_shiningstar.png",
   "audio": "audio/seventeen_shiningstar.mp3",
   "npC1": "#2ec601",
-  "npC2": "#000875"
+  "npC2": "#000875",
+  "audioOffset": -0.3
 }
