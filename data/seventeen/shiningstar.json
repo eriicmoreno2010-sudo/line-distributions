@@ -23,13 +23,734 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 17.54,
+      "end": 20.88,
+      "members": [
+        "VERNON"
+      ],
+      "original": "고민 없이 반복된 너의 하루 끝",
+      "romanization": "gomin eopsi banbokdoen neoui haru kkeut",
+      "english": "At the end of your day, repeated without a single thought",
+      "adlib": false,
+      "voice": [
+        [
+          17.47,
+          19.18
+        ],
+        [
+          19.51,
+          20.78
+        ]
+      ]
+    },
+    {
+      "start": 21.66,
+      "end": 23.8,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          21.66,
+          23.8
+        ]
+      ],
+      "original": "조명이 널 훔쳐 갈 때",
+      "romanization": "jomyeongi neol humchyeo gal ttae",
+      "english": "When the lights come to steal you away",
+      "adlib": false
+    },
+    {
+      "start": 25.82,
+      "end": 29.23,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          25.83,
+          27.58
+        ],
+        [
+          27.91,
+          29.22
+        ]
+      ],
+      "original": "네모난 눈동자 속 목적진 없어",
+      "romanization": "nemonan nundongja sok mokjeokjin eopseo",
+      "english": "There’s no destination inside those square pupils",
+      "adlib": false
+    },
+    {
+      "start": 30.06,
+      "end": 32.81,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          30.05,
+          32.76
+        ]
+      ],
+      "original": "습관처럼 내려갈 뿐인걸",
+      "romanization": "seupgwanchereom naeryeogal ppuningeol",
+      "english": "You simply descend like a habit",
+      "adlib": false
+    },
+    {
+      "start": 34.28,
+      "end": 38.03,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          34.3,
+          34.62
+        ],
+        [
+          34.8,
+          35.1
+        ],
+        [
+          35.25,
+          35.66
+        ],
+        [
+          36.1,
+          36.94
+        ],
+        [
+          37.14,
+          37.84
+        ]
+      ],
+      "original": "말해줘 너의 버릇",
+      "romanization": "malhaejwo neoui beoreut",
+      "english": "Tell me your habits",
+      "adlib": false
+    },
+    {
+      "start": 38.04,
+      "end": 42.34,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          38.26,
+          38.84
+        ],
+        [
+          39.05,
+          39.37
+        ],
+        [
+          39.58,
+          39.9
+        ],
+        [
+          40.32,
+          41.97
+        ],
+        [
+          42.21,
+          42.53
+        ]
+      ],
+      "original": "늘 눈치껏 숨 쉬는 것도",
+      "romanization": "neul nunchikkeot sum swineun geotdo",
+      "english": "Even breathing carefully, always watching your surroundings",
+      "adlib": false
+    },
+    {
+      "start": 42.49,
+      "end": 49.12,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          42.72,
+          43.04
+        ],
+        [
+          43.25,
+          43.58
+        ],
+        [
+          43.73,
+          44.08
+        ],
+        [
+          44.5,
+          45.43
+        ],
+        [
+          45.61,
+          47.54
+        ],
+        [
+          47.72,
+          49.23
+        ]
+      ],
+      "original": "뒤돌아 달려 나가, 쟤넨 아무것도 몰라",
+      "romanization": "dwirora dallyeo naga, jyaenen amugeotdo molla",
+      "english": "Turn around and run out, They don’t know anything",
+      "adlib": false
+    },
+    {
+      "start": 49.74,
+      "end": 50.91,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          49.75,
+          51.11
+        ]
+      ],
+      "original": "검은 도시 사이로",
+      "romanization": "geomeun dosi sairo",
+      "english": "Through the black city",
+      "adlib": false
+    },
+    {
+      "start": 51.06,
+      "end": 54.47,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          50.96,
+          54.71
+        ]
+      ],
+      "original": "Shining star 너는 내 시리우스",
+      "romanization": "shining star neoneun nae siriuseu",
+      "english": "Shining star, you are my Sirius",
+      "adlib": false
+    },
+    {
+      "start": 55.24,
+      "end": 58.79,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          55.32,
+          58.79
+        ]
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "You’re my shooting star on radio star",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 59.51,
+      "end": 62.89,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          59.52,
+          62.87
+        ]
+      ],
+      "original": "도시 불빛 아래 속지 마",
+      "romanization": "dosi bulbit arae sokji ma",
+      "english": "Don’t be fooled beneath the city lights",
+      "adlib": false
+    },
+    {
+      "start": 63.36,
+      "end": 67.11,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          63.63,
+          67.04
+        ]
+      ],
+      "original": "Time is running out 넌 lucky strike",
+      "romanization": "time is running out neon lucky strike",
+      "english": "Time is running out, you’re a lucky strike",
+      "adlib": false
+    },
+    {
+      "start": 67.9,
+      "end": 71.37,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          67.83,
+          69.57
+        ],
+        [
+          69.95,
+          71.2
+        ]
+      ],
+      "original": "우표 없이 부쳐준 너의 편지를",
+      "romanization": "yupyo eopsi buchyeojun neoui pyeonjireul",
+      "english": "I’m staying up all night reading",
+      "adlib": false
+    },
+    {
+      "start": 71.63,
+      "end": 74.37,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          71.54,
+          74.23
+        ]
+      ],
+      "original": "나는 밤을 새워 읽고 있어",
+      "romanization": "naneun bameul saewo ilgo isseo",
+      "english": "The letter you sent without a stamp",
+      "adlib": false
+    },
+    {
+      "start": 76.37,
+      "end": 79.7,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          76.28,
+          78.07
+        ],
+        [
+          78.42,
+          79.63
+        ]
+      ],
+      "original": "언제나 흐릿했던 마지막 줄이",
+      "romanization": "eonjena heurithaetdeon majimak juri",
+      "english": "The final line that was always blurry",
+      "adlib": false
+    },
+    {
+      "start": 80.26,
+      "end": 83.32,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          80.14,
+          83.14
+        ]
+      ],
+      "original": "조금 진하게 보이고 있는걸",
+      "romanization": "jogeum jinhage boigo inneungeol",
+      "english": "Is becoming a little clearer",
+      "adlib": false
+    },
+    {
+      "start": 84.71,
+      "end": 88.34,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          84.68,
+          85.01
+        ],
+        [
+          85.21,
+          85.54
+        ],
+        [
+          85.72,
+          86.13
+        ],
+        [
+          86.51,
+          87.35
+        ],
+        [
+          87.53,
+          88.23
+        ]
+      ],
+      "original": "꺼내줘 너의 소원",
+      "romanization": "kkeonaejwo neoui sowon",
+      "english": "Bring out your wish",
+      "adlib": false
+    },
+    {
+      "start": 88.52,
+      "end": 92.98,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          88.56,
+          89.17
+        ],
+        [
+          89.38,
+          89.74
+        ],
+        [
+          89.94,
+          90.33
+        ],
+        [
+          90.79,
+          92.46
+        ],
+        [
+          92.68,
+          93.03
+        ]
+      ],
+      "original": "늘 눈치껏 숨기는 것도",
+      "romanization": "neul nunchikkeot sumgineun geotdo",
+      "english": "Even the things you always hide carefully",
+      "adlib": false
+    },
+    {
+      "start": 93.16,
+      "end": 99.7,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          93.21,
+          93.53
+        ],
+        [
+          93.74,
+          94.06
+        ],
+        [
+          94.24,
+          94.6
+        ],
+        [
+          95.01,
+          95.85
+        ],
+        [
+          96.06,
+          98.05
+        ],
+        [
+          98.21,
+          99.74
+        ]
+      ],
+      "original": "뒤돌아 달려 나가, 쟤넨 아무것도 몰라",
+      "romanization": "dwirora dallyeo naga, jyaenen amugeotdo molla",
+      "english": "Turn around and run out, They don’t know anything",
+      "adlib": false
+    },
+    {
+      "start": 100.34,
+      "end": 101.44,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          100.3,
+          101.64
+        ]
+      ],
+      "original": "검은 도시 사이로",
+      "romanization": "geomeun dosi sairo",
+      "english": "Through the black city",
+      "adlib": false
+    },
+    {
+      "start": 101.59,
+      "end": 105.28,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          101.57,
+          105.26
+        ]
+      ],
+      "original": "Shining star 너는 내 시리우스",
+      "romanization": "shining star neoneun nae siriuseu",
+      "english": "Shining star, you are my Sirius",
+      "adlib": false
+    },
+    {
+      "start": 105.87,
+      "end": 109.07,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          105.85,
+          109.16
+        ]
+      ],
+      "original": "",
+      "romanization": "You’re my shooting star on radio star",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 110.08,
+      "end": 113.55,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          110.07,
+          113.45
+        ]
+      ],
+      "original": "도시 불빛 아래 속지 마",
+      "romanization": "dosi bulbit arae sokji ma",
+      "english": "Don’t be fooled beneath the city lights",
+      "adlib": false
+    },
+    {
+      "start": 114.27,
+      "end": 117.68,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          114.24,
+          117.61
+        ]
+      ],
+      "original": "Time is running out 넌 lucky strike",
+      "romanization": "time is running out neon lucky strike",
+      "english": "Time is running out, you’re a lucky strike",
+      "adlib": false
+    },
+    {
+      "start": 119.26,
+      "end": 122.72,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          119.3,
+          120.61
+        ],
+        [
+          121.33,
+          122.72
+        ]
+      ],
+      "original": "검은 도시 사이로 숨을 곳은 없어",
+      "romanization": "geomeun dosi sairo sumeul goseun eopseo",
+      "english": "Through the black city there’s nowhere to hide",
+      "adlib": false
+    },
+    {
+      "start": 127.63,
+      "end": 131.24,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          127.7,
+          129
+        ],
+        [
+          129.79,
+          131.14
+        ]
+      ],
+      "original": "밤이 몸을 풀 때쯤 넌 달려야 해",
+      "romanization": "bami momeul pul ttaejjeum neon dallyeoya hae",
+      "english": "When the night starts to loosen up you have to run",
+      "adlib": false
+    },
+    {
+      "start": 135.19,
+      "end": 138.71,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          135.32,
+          138.6
+        ]
+      ],
+      "original": "사람들 속에서 헤엄쳐",
+      "romanization": "saramdeul sogeseo heomchyeo",
+      "english": "Swim through the crowd",
+      "adlib": false
+    },
+    {
+      "start": 138.72,
+      "end": 142.7,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          138.72,
+          142.7
+        ]
+      ],
+      "original": "두 발이 닿지 않는다면 날아",
+      "romanization": "du bali dachi anneundamyeon nara",
+      "english": "If your two feet can’t touch the ground, fly",
+      "adlib": false
+    },
+    {
+      "start": 143.72,
+      "end": 146.92,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          143.69,
+          144.84
+        ],
+        [
+          145.05,
+          147.05
+        ]
+      ],
+      "original": "잠들지 못할 때는 빛나줘",
+      "romanization": "jamdeulji mothal ttaeneun bitnajeo",
+      "english": "When you can’t fall asleep, shine",
+      "adlib": false
+    },
+    {
+      "start": 147.07,
+      "end": 152.5,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          147.17,
+          148.24
+        ],
+        [
+          148.76,
+          149.38
+        ],
+        [
+          150.31,
+          152.34
+        ]
+      ],
+      "original": "기억해 넌 넘어져도 shooting star",
+      "romanization": "gieokhae neon neomeojyeodo shooting star",
+      "english": "Remember, even if you fall, you’re a shooting star",
+      "adlib": false
+    },
+    {
+      "start": 156.36,
+      "end": 160.09,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          156.44,
+          158.07
+        ],
+        [
+          158.25,
+          160.1
+        ]
+      ],
+      "original": "전깃줄 위로 건물 옥상 위로",
+      "romanization": "jeongitjul wiro geonmul oksang wiro",
+      "english": "Over the power lines over the rooftops",
+      "adlib": false
+    },
+    {
+      "start": 160.27,
+      "end": 164.36,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          160.35,
+          164.42
+        ]
+      ],
+      "original": "깜빡이던 그대의 어제는 뒤로",
+      "romanization": "kkambagideon geudaeui eojeneun dwiro",
+      "english": "Leave your flickering yesterday behind",
+      "adlib": false
+    },
+    {
+      "start": 164.86,
+      "end": 168.49,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          164.81,
+          166.37
+        ],
+        [
+          166.64,
+          168.55
+        ]
+      ],
+      "original": "Into the sunlight 기다리던 moonrise",
+      "romanization": "into the sunlight gidarideon moonrise",
+      "english": "Into the sunlight the moonrise you were waiting for",
+      "adlib": false
+    },
+    {
+      "start": 168.7,
+      "end": 172.42,
+      "members": [
+        "VERNON"
+      ],
+      "voice": [
+        [
+          168.72,
+          171.2
+        ],
+        [
+          171.38,
+          172.33
+        ]
+      ],
+      "original": "아침이 와도 넌 절대 녹지 마",
+      "romanization": "achimi wado neon jeoldae nokji ma",
+      "english": "Even when morning comes, never melt away",
+      "adlib": false
     }
   ],
   "cover": "covers/seventeen_shiningstar.png",
