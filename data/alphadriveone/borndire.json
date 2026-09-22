@@ -9,56 +9,56 @@
     {
       "name": "JUNSEO",
       "image": "images/alphadriveone/borndire/junseo.png",
-      "color": "#ff4d6d",
+      "color": "#e175ae",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "ARNO",
       "image": "images/alphadriveone/borndire/arno.png",
-      "color": "#4dabf7",
+      "color": "#5c0000",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "LEO",
       "image": "images/alphadriveone/borndire/leo.png",
-      "color": "#51cf66",
+      "color": "#dab601",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "GEONWOO",
       "image": "images/alphadriveone/borndire/geonwoo.png",
-      "color": "#ffd43b",
+      "color": "#d5ff3d",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "SANGWON",
       "image": "images/alphadriveone/borndire/sangwon.png",
-      "color": "#cc5de8",
+      "color": "#a1f6f7",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "XINLONG",
       "image": "images/alphadriveone/borndire/xinlong.png",
-      "color": "#20c997",
+      "color": "#0dd398",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "ANXIN",
       "image": "images/alphadriveone/borndire/anxin.png",
-      "color": "#ff922b",
+      "color": "#ff7429",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "SANGHYEON",
       "image": "images/alphadriveone/borndire/sanghyeon.png",
-      "color": "#748ffc",
+      "color": "#01651a",
       "focus": 50,
       "lift": 3
     }
