@@ -18,5 +18,7 @@
   ],
   "raceColor": "#ffffff",
   "versions": [],
-  "bgAudio": {}
+  "bgAudio": {
+    "src": "audio/nct2023_quieroverbg.mp3"
+  }
 }
