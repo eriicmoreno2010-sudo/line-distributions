@@ -7,5 +7,16 @@
   "instrumental": "",
   "songs": [
     "data/nct2023/goldenage.json"
-  ]
+  ],
+  "clips": [
+    {
+      "audio": "audio/nct2023_quierovera1.mp3"
+    }
+  ],
+  "songColors": [
+    "#ff4d6d"
+  ],
+  "raceColor": "#ffffff",
+  "versions": [],
+  "bgAudio": {}
 }
