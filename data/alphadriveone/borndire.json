@@ -28,13 +28,6 @@
       "lift": 3
     },
     {
-      "name": "GEONWOO",
-      "image": "images/alphadriveone/borndire/geonwoo.png",
-      "color": "#d5ff3d",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "SANGWON",
       "image": "images/alphadriveone/borndire/sangwon.png",
       "color": "#a1f6f7",
