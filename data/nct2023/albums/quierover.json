@@ -1,0 +1,11 @@
+{
+  "type": "album",
+  "group": "NCT 2023",
+  "album": "quiero ver",
+  "cover": "",
+  "theme": "dark",
+  "instrumental": "",
+  "songs": [
+    "data/nct2023/goldenage.json"
+  ]
+}
