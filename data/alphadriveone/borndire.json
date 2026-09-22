@@ -1,0 +1,79 @@
+{
+  "group": "ALPHA DRIVE ONE",
+  "song": "BORN DIRE",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "JUNSEO",
+      "image": "images/alphadriveone/borndire/junseo.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ARNO",
+      "image": "images/alphadriveone/borndire/arno.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "LEO",
+      "image": "images/alphadriveone/borndire/leo.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GEONWOO",
+      "image": "images/alphadriveone/borndire/geonwoo.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SANGWON",
+      "image": "images/alphadriveone/borndire/sangwon.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "XINLONG",
+      "image": "images/alphadriveone/borndire/xinlong.png",
+      "color": "#20c997",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ANXIN",
+      "image": "images/alphadriveone/borndire/anxin.png",
+      "color": "#ff922b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SANGHYEON",
+      "image": "images/alphadriveone/borndire/sanghyeon.png",
+      "color": "#748ffc",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUNSEO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
