@@ -751,6 +751,78 @@
       "romanization": "achimi wado neon jeoldae nokji ma",
       "english": "Even when morning comes, never melt away",
       "adlib": false
+    },
+    {
+      "start": 104.79,
+      "end": 106.54,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(My Sirius)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          104.81,
+          106.57
+        ]
+      ]
+    },
+    {
+      "start": 109,
+      "end": 111.84,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Be forever yeah, for you)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          109.01,
+          110.65
+        ],
+        [
+          110.95,
+          111.71
+        ]
+      ]
+    },
+    {
+      "start": 112.94,
+      "end": 114.79,
+      "members": [
+        "VERNON"
+      ],
+      "original": "(너무 가지 마)",
+      "romanization": "(neomu gaji ma)",
+      "english": "(Don’t go too far)",
+      "adlib": true,
+      "voice": [
+        [
+          112.98,
+          114.88
+        ]
+      ]
+    },
+    {
+      "start": 154.62,
+      "end": 156.35,
+      "members": [
+        "VERNON"
+      ],
+      "original": "(넘어져도 shooting star)",
+      "romanization": "(neomeojyeodo shooting star)",
+      "english": "(Even if you fall, you're a shooting star)",
+      "adlib": true,
+      "voice": [
+        [
+          154.57,
+          156.42
+        ]
+      ]
     }
   ],
   "cover": "covers/seventeen_shiningstar.png",
