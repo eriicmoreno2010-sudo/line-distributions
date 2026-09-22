@@ -67,5 +67,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/alphadriveone_borndire.mp3"
+  "audio": "audio/alphadriveone_borndire.mp3",
+  "audioOffset": -0.1
 }
