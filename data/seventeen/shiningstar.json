@@ -34,5 +34,6 @@
   ],
   "cover": "covers/seventeen_shiningstar.png",
   "audio": "audio/seventeen_shiningstar.mp3",
-  "npC1": "#2ec6f2"
+  "npC1": "#2ec601",
+  "npC2": "#772eff"
 }
