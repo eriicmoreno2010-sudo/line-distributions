@@ -33,20 +33,21 @@
 <div id="wrap">
   <a class="back" href="library.html">← Biblioteca</a>
   <h1>🎚️ Separar instrumental / voz</h1>
-  <div class="sub">Saca el <b>instrumental</b> de una canción (le quita la voz) con IA, en buena calidad y <b>a favor de la instrumental</b>.
-    Se guarda como instrumental de la canción y lo usan automáticamente el <b>donut</b> y el <b>álbum</b>.</div>
+  <div class="sub">Elige un <b>archivo de audio tuyo</b> y le quita la voz con IA, en buena calidad y <b>a favor de la instrumental</b>.
+    El resultado lo guardas como archivo en tu PC (no toca ninguna canción ni álbum).</div>
 
   <div id="nodesktop" class="warn" style="display:none">Esta herramienta solo funciona en la <b>app de escritorio</b> (la IA corre en tu PC).</div>
 
   <div class="card">
-    <div>
-      <label for="song">Canción</label>
-      <select id="song"><option value="">— cargando… —</option></select>
-    </div>
     <div class="row">
-      <div class="hint">La primera vez descarga el modelo (~70 MB). Después funciona sin internet. Tarda ~1-3 min por canción.</div>
-      <button id="go">Separar</button>
+      <div>
+        <label>Archivo de audio</label>
+        <button class="sec" id="pick" style="width:100%; text-align:left">🎵 Elegir archivo de audio…</button>
+      </div>
+      <button id="go" disabled>Separar</button>
     </div>
+    <div id="fname" class="hint"></div>
+    <div class="hint">La primera vez descarga el modelo (~70 MB). Después funciona sin internet. Tarda ~1-3 min por canción.</div>
     <div class="barwrap"><div id="bar"></div></div>
     <div id="status"></div>
   </div>
@@ -55,12 +56,12 @@
     <label>Previsualización del instrumental</label>
     <audio id="preview" controls></audio>
     <div class="row" style="justify-content:flex-end">
-      <button id="save">💾 Guardar como instrumental de la canción</button>
+      <button id="save">💾 Guardar instrumental en el PC</button>
     </div>
-    <div class="hint">Escúchalo antes de guardar. Al guardar se crea un MP3 en <b>/audio</b> y se asigna a la canción (campo <code>instrumental</code>).</div>
+    <div class="hint">Escúchalo antes de guardar. Se guarda como MP3 320k (o WAV si eliges esa extensión) donde tú quieras.</div>
   </div>
 </div>
 
-<script src="js/inst.js?v=1"></script>
+<script src="js/inst.js?v=2"></script>
 </body>
 </html>

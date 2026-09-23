@@ -41,5 +41,7 @@ contextBridge.exposeInMainWorld("desktop", {
   stemServerStart: () => ipcRenderer.invoke("stem-server-start"),
   stemModelEnsure: () => ipcRenderer.invoke("stem-model-ensure"),
   onStemProgress: (cb) => ipcRenderer.on("stem-model-progress", (_e, p) => cb(p)),
+  pickAudioFile: () => ipcRenderer.invoke("pick-audio-file"),
+  saveInstrumentalFile: (args) => ipcRenderer.invoke("save-instrumental-file", args || {}),
   saveInstrumental: (args) => ipcRenderer.invoke("save-instrumental", args || {})
 });

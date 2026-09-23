@@ -140,12 +140,9 @@
   }
 
   // ================= decodificar + remuestrear a 44100 estéreo =================
-  async function decodeAudio(relPath){
-    const resp = await fetch(new URL(relPath, document.baseURI));
-    if(!resp.ok) throw new Error("no se encuentra el audio: " + relPath);
-    const arr = await resp.arrayBuffer();
+  async function decodeAudioBytes(arr){
     const ac = new (window.AudioContext || window.webkitAudioContext)();
-    const buf = await ac.decodeAudioData(arr);
+    const buf = await ac.decodeAudioData(arr.slice(0));   // slice: evita detached buffer
     ac.close && ac.close();
     let L, R;
     if(Math.abs(buf.sampleRate - 44100) < 1){
@@ -221,29 +218,32 @@
   }
 
   // ================= UI =================
-  let songs = [], resultBytes = null, resultUrl = null;
-  const sel = $("song"), go = $("go"), saveBtn = $("save"), prev = $("preview");
+  let pickedBytes = null, pickedName = "", resultBytes = null, resultUrl = null;
+  const pick = $("pick"), go = $("go"), saveBtn = $("save"), prev = $("preview");
 
-  (async () => {
-    songs = (await D.listSongs()) || [];
-    songs.sort((a,b) => (a.group+a.song).localeCompare(b.group+b.song));
-    sel.innerHTML = '<option value="">— elige una canción —</option>' +
-      songs.map(s => `<option value="${s.path}">${(s.group||"—")} — ${s.song||"(sin título)"}</option>`).join("");
-  })();
+  pick.onclick = async () => {
+    try{
+      const r = await D.pickAudioFile();
+      if(!r || !r.ok){ if(r && r.error) setStatus("✕ " + r.error); return; }
+      // r.bytes llega como Uint8Array/Buffer por IPC
+      pickedBytes = (r.bytes instanceof Uint8Array) ? r.bytes : new Uint8Array(r.bytes);
+      pickedName = r.name || "audio";
+      $("fname").textContent = "🎵 " + pickedName;
+      go.disabled = false;
+      setStatus("");
+    }catch(e){ setStatus("✕ " + (e.message||e)); }
+  };
 
   go.onclick = async () => {
-    const relJson = sel.value;
-    if(!relJson){ setStatus("Elige una canción primero."); return; }
+    if(!pickedBytes){ setStatus("Elige un archivo de audio primero."); return; }
     go.disabled = true; saveBtn.disabled = true; $("result").style.display="none";
     resultBytes = null; if(resultUrl){ URL.revokeObjectURL(resultUrl); resultUrl=null; }
     try{
-      const sr = await D.loadSong(relJson);
-      if(!sr || !sr.ok) throw new Error("no se pudo abrir la canción");
-      const audio = sr.data.audio;
-      if(!audio){ throw new Error("Esta canción no tiene audio original (song.audio). Asígnale un audio en el editor primero."); }
       await ensureModel();
       setStatus("Decodificando el audio…"); setBar(0.02);
-      const { L, R } = await decodeAudio(audio);
+      // copia a un ArrayBuffer propio para decodeAudioData
+      const ab = pickedBytes.buffer.slice(pickedBytes.byteOffset, pickedBytes.byteOffset + pickedBytes.byteLength);
+      const { L, R } = await decodeAudioBytes(ab);
       setStatus("Separando la voz del instrumental… (esto tarda un poco)"); setBar(0);
       const t0 = performance.now();
       const out = await demix(L, R, f => { setBar(f); setStatus("Separando… " + Math.round(f*100) + "%"); });
@@ -254,7 +254,7 @@
       prev.src = resultUrl;
       $("result").style.display = "block";
       saveBtn.disabled = false;
-      setStatus("✅ Listo en " + secs + "s. Escúchalo abajo y guárdalo como instrumental de la canción.");
+      setStatus("✅ Listo en " + secs + "s. Escúchalo abajo y guárdalo en tu PC.");
     }catch(e){
       setStatus("✕ " + (e.message || e));
     }finally{
@@ -267,8 +267,9 @@
     saveBtn.disabled = true; const t = saveBtn.textContent; saveBtn.textContent = "Guardando…";
     try{
       const b64 = await toBase64(resultBytes);
-      const r = await D.saveInstrumental({ songPath: sel.value, wavB64: b64 });
-      if(r && r.ok){ setStatus("✅ Guardado como instrumental: " + r.path + "  (ya lo usan el donut y el álbum)"); saveBtn.textContent = "✅ Guardado"; }
+      const r = await D.saveInstrumentalFile({ wavB64: b64, name: pickedName });
+      if(r && r.ok){ setStatus("✅ Guardado: " + r.path); saveBtn.textContent = "✅ Guardado"; }
+      else if(r && r.canceled){ saveBtn.textContent = t; saveBtn.disabled = false; }
       else { setStatus("✕ " + ((r && r.error) || "no se pudo guardar")); saveBtn.textContent = t; saveBtn.disabled = false; }
     }catch(e){ setStatus("✕ " + (e.message||e)); saveBtn.textContent = t; saveBtn.disabled = false; }
   };

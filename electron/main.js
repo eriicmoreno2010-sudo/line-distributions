@@ -728,8 +728,44 @@ ipcMain.handle("stem-model-ensure", async (evt) => {
   }catch(e){ return { ok: false, error: e.message }; }
 });
 
-// Guarda el instrumental ya separado: recibe un WAV (base64), lo pasa a MP3 con
-// ffmpeg (mucho más pequeño), lo escribe en /audio y lo asigna a la canción.
+// Elegir un archivo de audio del PC del usuario (para separarlo). Devuelve los
+// bytes del fichero para decodificarlo en el navegador (no toca ninguna canción).
+ipcMain.handle("pick-audio-file", async () => {
+  try{
+    const r = await dialog.showOpenDialog({ title:"Elegir audio para separar", properties:["openFile"],
+      filters:[{ name:"Audio", extensions:["mp3","wav","m4a","flac","ogg","aac","opus","wma"] }, { name:"Todos", extensions:["*"] }] });
+    if(r.canceled || !r.filePaths || !r.filePaths[0]) return { ok:false, canceled:true };
+    const p = r.filePaths[0];
+    return { ok:true, name: path.basename(p), bytes: fs.readFileSync(p) };
+  }catch(e){ return { ok:false, error:e.message }; }
+});
+
+// Guardar el instrumental separado como archivo en el PC (diálogo "Guardar como…").
+// Recibe un WAV (base64) y guarda en MP3 320k (pequeño) o WAV según la extensión.
+ipcMain.handle("save-instrumental-file", async (_e, args) => {
+  args = args || {};
+  if(!args.wavB64) return { ok:false, error:"falta el audio" };
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "ld-inst-"));
+  try{
+    const safe = String(args.name || "instrumental").replace(/\.[^.]+$/, "").replace(/[^\w.\- ]+/g, "_").trim() || "instrumental";
+    const def = path.join(app.getPath("music") || ROOT, safe + " (instrumental).mp3");
+    const r = await dialog.showSaveDialog({ title:"Guardar instrumental", defaultPath:def,
+      filters:[{ name:"MP3", extensions:["mp3"] }, { name:"WAV", extensions:["wav"] }] });
+    if(r.canceled || !r.filePath) return { ok:false, canceled:true };
+    const wavTmp = path.join(tmp, "in.wav");
+    fs.writeFileSync(wavTmp, Buffer.from(args.wavB64, "base64"));
+    if(/\.wav$/i.test(r.filePath)){ fs.copyFileSync(wavTmp, r.filePath); }
+    else{
+      const ff = findFfmpeg();
+      const rr = await spawnStream(ff, ["-y", "-i", wavTmp, "-c:a", "libmp3lame", "-b:a", "320k", r.filePath], () => {});
+      if(rr.code !== 0) throw new Error("ffmpeg " + rr.code + ": " + (rr.out || "").slice(-300));
+    }
+    return { ok:true, path: r.filePath };
+  }catch(e){ return { ok:false, error:e.message }; }
+  finally{ try{ fs.rmSync(tmp, { recursive:true, force:true }); }catch(e){} }
+});
+
+// (obsoleto) Guardaba el instrumental como instrumental de una canción concreta.
 ipcMain.handle("save-instrumental", async (_e, args) => {
   args = args || {};
   if(!args.songPath || !args.wavB64) return { ok:false, error:"faltan datos" };
