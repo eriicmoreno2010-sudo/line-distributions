@@ -569,5 +569,8 @@
   "npC1": "#26caf2",
   "npC2": "#f7f96c",
   "audioOffset": -0.3,
-  "instrumental": "audio/oneus_runaway_inst.mp3"
+  "instrumental": "audio/oneus_runaway_inst.mp3",
+  "instrumentalStart": 59.988483547596154,
+  "instrumentalEnd": 118.047347,
+  "instrumentalFade": true
 }
