@@ -472,23 +472,33 @@
       "voice": [
         [
           85.91,
-          87.76
+          87.75
         ],
         [
-          87.91,
-          89.74
+          87.9,
+          89.67
         ],
         [
-          89.86,
-          92
+          89.82,
+          91.99
         ],
         [
-          91.88,
-          93.65
+          91.89,
+          92.77,
+          [
+            "LEEDO"
+          ]
+        ],
+        [
+          92.92,
+          93.71,
+          [
+            "LEEDO"
+          ]
         ]
       ],
       "original": "",
-      "romanization": "Stand by my side, I’ll be the sunrise, For your life, Ooh ooh",
+      "romanization": "Stand by my side, I’ll be the sunrise, For your life, **Ooh ooh@LEEDO**",
       "english": "",
       "adlib": false
     },
