@@ -955,5 +955,7 @@
       "adlib": true
     }
   ],
-  "instrumental": "audio/oneus_sayyes_inst.mp3"
+  "instrumental": "audio/oneus_sayyes_inst.mp3",
+  "instrumentalStart": 39.53544836001603,
+  "instrumentalEnd": 184.346122
 }
