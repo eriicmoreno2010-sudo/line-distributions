@@ -11,35 +11,70 @@
       "image": "images/grupoinventado/blingyourver/arnau.png",
       "color": "#f08c00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.566,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "IRENE",
       "image": "images/grupoinventado/blingyourver/irene.png",
       "color": "#f92fde",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.412,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "MARC",
       "image": "images/grupoinventado/blingyourver/marc.png",
       "color": "#2320fe",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.382,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "BIEL",
       "image": "images/grupoinventado/blingyourver/biel.png",
       "color": "#ff2424",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.534,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "MICHELLE",
       "image": "images/grupoinventado/blingyourver/michelle.png",
       "color": "#ffee33",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.4764,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "ERIC",
