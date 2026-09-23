@@ -80,12 +80,24 @@
       "original": "기억은 마치 오랜 필름처럼",
       "romanization": "gieogeun machi oraen pilreomcheoreom",
       "english": "Memory is like an old film",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.34,
+          16.52
+        ]
+      ]
     },
     {
       "start": 16.91,
       "end": 20.29,
       "members": [],
+      "voice": [
+        [
+          17,
+          20.38
+        ]
+      ],
       "original": "빛에 바랠수록 흐려져 가",
       "romanization": "biche baraelsurok heuryeojyeo ga",
       "english": "The more it fades in the light the blurrier it becomes",
@@ -95,6 +107,16 @@
       "start": 20.9,
       "end": 26.87,
       "members": [],
+      "voice": [
+        [
+          20.88,
+          22.96
+        ],
+        [
+          24.31,
+          26.89
+        ]
+      ],
       "original": "우린 그 사이에 남겨진 장면처럼",
       "romanization": "urin geu saie namgyeojin jangmyeoncheoreom",
       "english": "Like a scene left behind between us",
@@ -104,6 +126,12 @@
       "start": 27.37,
       "end": 30.92,
       "members": [],
+      "voice": [
+        [
+          27.36,
+          30.9
+        ]
+      ],
       "original": "이름 없는 별들을 세어보다",
       "romanization": "ireum eomneun byeoldeureul seeoboda",
       "english": "As we count the nameless stars",
@@ -113,6 +141,12 @@
       "start": 31.07,
       "end": 34.85,
       "members": [],
+      "voice": [
+        [
+          31.09,
+          34.72
+        ]
+      ],
       "original": "서로의 눈 그 안의 우주",
       "romanization": "seoroui nun geu anui uju",
       "english": "Each other’s eyes and the universe within them",
@@ -122,6 +156,16 @@
       "start": 35.56,
       "end": 41.52,
       "members": [],
+      "voice": [
+        [
+          35.5,
+          37.03
+        ],
+        [
+          38.13,
+          41.53
+        ]
+      ],
       "original": "그 속에서 사라지지 않도록",
       "romanization": "geu sogeseo sarajiji antorok",
       "english": "So that we won’t disappear in that place",
@@ -131,6 +175,16 @@
       "start": 42.54,
       "end": 48.77,
       "members": [],
+      "voice": [
+        [
+          42.54,
+          45.16
+        ],
+        [
+          45.37,
+          48.78
+        ]
+      ],
       "original": "달아나는 시간은, 우리를 기다려 주지 않아",
       "romanization": "darananeun siganeun, urireul gidaryeo juji ana",
       "english": "Time that runs away, Won’t wait for us",
@@ -140,6 +194,16 @@
       "start": 49.18,
       "end": 55.35,
       "members": [],
+      "voice": [
+        [
+          49.14,
+          51.83
+        ],
+        [
+          52.5,
+          55.67
+        ]
+      ],
       "original": "어둠 속에서도 난, 이 손을 놓지 않아",
       "romanization": "eodum sogeseodo nan, i soneul nohji ana",
       "english": "Even in the darkness, I won’t let go of this hand",
@@ -148,7 +212,19 @@
     {
       "start": 55.59,
       "end": 62.62,
-      "members": [],
+      "members": [
+        "LEEDO"
+      ],
+      "voice": [
+        [
+          55.72,
+          58.78
+        ],
+        [
+          58.99,
+          62.65
+        ]
+      ],
       "original": "We run for youth, 다친 마음까지 끌어안을 테니",
       "romanization": "we run for youth, dachin maeumkkaji kkeureoaneul teni",
       "english": "We run for youth, Because I’ll embrace even your wounded heart",
@@ -158,6 +234,16 @@
       "start": 62.83,
       "end": 69.72,
       "members": [],
+      "voice": [
+        [
+          62.81,
+          65.87
+        ],
+        [
+          66.09,
+          69.75
+        ]
+      ],
       "original": "We run for youth, 불완전한 세계의 넌 눈부셔",
       "romanization": "we run for youth, bulwanjeonhan segyeui neon nunbusyeo",
       "english": "We run for youth, You are dazzling in this imperfect world",
@@ -167,6 +253,16 @@
       "start": 69.9,
       "end": 76.79,
       "members": [],
+      "voice": [
+        [
+          69.75,
+          72.93
+        ],
+        [
+          73.14,
+          76.74
+        ]
+      ],
       "original": "끝나지 않을 우리의 이야기에서 만나",
       "romanization": "kkeunnaji aneul uriui iyagieseo manna",
       "english": "We’ll meet in our story that will never end",
@@ -176,6 +272,16 @@
       "start": 77.15,
       "end": 83.37,
       "members": [],
+      "voice": [
+        [
+          77.17,
+          80.26
+        ],
+        [
+          80.47,
+          83.24
+        ]
+      ],
       "original": "언젠가 함께 꿈꿔왔던 그곳에서",
       "romanization": "eonjenga hamkke kkumkkwowatdeon geugoseseo",
       "english": "Someday in the place we once dreamed of together",
@@ -185,6 +291,12 @@
       "start": 83.86,
       "end": 86.02,
       "members": [],
+      "voice": [
+        [
+          83.93,
+          85.99
+        ]
+      ],
       "original": "",
       "romanization": "We burn for youth",
       "english": "",
@@ -194,6 +306,12 @@
       "start": 91.06,
       "end": 92.96,
       "members": [],
+      "voice": [
+        [
+          91.1,
+          92.93
+        ]
+      ],
       "original": "",
       "romanization": "We burn for youth",
       "english": "",
@@ -203,6 +321,12 @@
       "start": 97.96,
       "end": 101.33,
       "members": [],
+      "voice": [
+        [
+          97.92,
+          101.32
+        ]
+      ],
       "original": "또 하루만큼 멀어진 듯해도",
       "romanization": "tto harumankeum meoreojin deuthaedo",
       "english": "Even if it feels like we’ve grown a day farther apart",
@@ -212,6 +336,12 @@
       "start": 101.68,
       "end": 105.29,
       "members": [],
+      "voice": [
+        [
+          101.66,
+          105.25
+        ]
+      ],
       "original": "내 옆에서 웃는 너를 보면",
       "romanization": "nae yeopeseo utneun neoreul bomyeon",
       "english": "When I see you smiling beside me",
@@ -220,7 +350,19 @@
     {
       "start": 105.62,
       "end": 112.04,
-      "members": [],
+      "members": [
+        "LEEDO"
+      ],
+      "voice": [
+        [
+          105.56,
+          108.44
+        ],
+        [
+          108.74,
+          111.94
+        ]
+      ],
       "original": "멈춰지지가 않아서 난, 달려갈게",
       "romanization": "meomchwojijiga anaseo nan, dallyeogalge",
       "english": "I can’t stop myself so, I’ll run to you",
@@ -230,6 +372,16 @@
       "start": 112.1,
       "end": 118.92,
       "members": [],
+      "voice": [
+        [
+          112.17,
+          115.17
+        ],
+        [
+          115.35,
+          119.08
+        ]
+      ],
       "original": "We run for youth, 다친 마음까지 끌어안을 테니",
       "romanization": "we run for youth, dachin maeumkkaji kkeureoaneul teni",
       "english": "We run for youth, Because I’ll embrace even your wounded heart",
@@ -239,6 +391,16 @@
       "start": 119.16,
       "end": 126.31,
       "members": [],
+      "voice": [
+        [
+          119.24,
+          122.56
+        ],
+        [
+          122.65,
+          126.37
+        ]
+      ],
       "original": "We run for youth, 불완전한 세계의 넌 눈부셔",
       "romanization": "we run for youth, bulwanjeonhan segyeui neon nunbusyeo",
       "english": "We run for youth, You are dazzling in this imperfect world",
@@ -248,6 +410,16 @@
       "start": 126.42,
       "end": 133.39,
       "members": [],
+      "voice": [
+        [
+          126.42,
+          129.57
+        ],
+        [
+          129.95,
+          133.38
+        ]
+      ],
       "original": "끝나지 않을 우리의 이야기에서 만나",
       "romanization": "kkeunnaji aneul uriui iyagieseo manna",
       "english": "We’ll meet in our story that will never end",
@@ -256,16 +428,36 @@
     {
       "start": 133.69,
       "end": 139.8,
-      "members": [],
+      "members": [
+        "LEEDO"
+      ],
+      "voice": [
+        [
+          133.55,
+          136.52
+        ],
+        [
+          136.84,
+          139.59
+        ]
+      ],
       "original": "언제나 함께를 약속했던 그때처럼",
-      "romanization": "eonjena hamkkereul yaksokhaetdeon ttaecheoreom",
+      "romanization": "eonjena hamkkereul yaksokhaetdeon geuttaecheoreom",
       "english": "Just like back then when we promised to always be together",
       "adlib": false
     },
     {
       "start": 140.44,
       "end": 142.93,
-      "members": [],
+      "members": [
+        "LEEDO"
+      ],
+      "voice": [
+        [
+          140.39,
+          142.92
+        ]
+      ],
       "original": "",
       "romanization": "We burn for youth",
       "english": "",
@@ -275,6 +467,12 @@
       "start": 143.86,
       "end": 146,
       "members": [],
+      "voice": [
+        [
+          143.85,
+          146.07
+        ]
+      ],
       "original": "",
       "romanization": "We burn for youth",
       "english": "",
@@ -284,6 +482,12 @@
       "start": 147.56,
       "end": 149.96,
       "members": [],
+      "voice": [
+        [
+          147.6,
+          149.94
+        ]
+      ],
       "original": "",
       "romanization": "We burn for youth",
       "english": "",
@@ -293,6 +497,12 @@
       "start": 151.14,
       "end": 153.6,
       "members": [],
+      "voice": [
+        [
+          151.02,
+          153.64
+        ]
+      ],
       "original": "",
       "romanization": "We burn for youth",
       "english": "",
@@ -305,7 +515,13 @@
       "original": "",
       "romanization": "(We burn for youth)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          140.45,
+          146.52
+        ]
+      ]
     },
     {
       "start": 147.51,
@@ -314,7 +530,13 @@
       "original": "",
       "romanization": "(We burn for youth)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          147.54,
+          153.54
+        ]
+      ]
     }
   ],
   "cover": "covers/oneus_werunforyouth.jpg",
