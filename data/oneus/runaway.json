@@ -2,7 +2,7 @@
   "group": "ONEUS",
   "song": "Runaway",
   "video": "videos/oneus_runaway_mudxfv5o.mp4",
-  "duration": 0,
+  "duration": 118.716667,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -76,17 +76,205 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SEOHO"
-      ],
+      "members": [],
+      "original": "Runaway my baby, 나 Dancing with somebody",
+      "romanization": "runaway my baby na, dancing with somebody",
+      "english": "Runaway my baby, me, Dancing with somebody",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "맘대로 나가지, 또 없지 난 중간이",
+      "romanization": "mamdaero nagaji, tto eopji nan junggani",
+      "english": "I go my own way again, There’s no one else I’m in the middle",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나를 위로하듯 밝게 빛나지 달이",
+      "romanization": "nareul wirohadeut balge binnaji dari",
+      "english": "It shines brightly as if comforting me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "여전히 날 찾아 또",
+      "romanization": "yeojeonhi nal chaja tto",
+      "english": "The moon still comes looking for me again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거절은 안 해 난 go go go",
+      "romanization": "geojeoreun an hae nan go go go",
+      "english": "I don’t refuse it, I go go go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갇혀 있던 미로, 네 말은 다시 울려 왜",
+      "romanization": "gathyeo itdeon miro, ne mareun dasi ullyeo wae",
+      "english": "The maze I was trapped in, Your words echo again, why?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(말은 다시 울려 왜)",
+      "romanization": "(mareun dasi ullyeo wae)",
+      "english": "(Your words echo again, why?)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "흩어졌던 기도, 여전히 잔뜩 꼬였네",
+      "romanization": "heuteojyeotdeon gido, yeojeonhi jantteuk kkoeyeotne",
+      "english": "The prayer that had scattered, Is still all tangled up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "Oh baby she go runaway, Now she on her way",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "자꾸 반복해 난 기를 쓰고 왜",
+      "romanization": "jakku banbokhae nan gireul sseugo wae",
+      "english": "I keep repeating it, why do I try so hard?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Oh baby she go runaway, Now she on her way",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "혼자가 돼가 난 길을 잃은 채",
+      "romanization": "honjaga dwaega nan gireul ireun chae",
+      "english": "I’m becoming alone, lost as I am",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Baby don’t runaway, 내게 don’t runaway",
+      "romanization": "baby don’t runaway, naege don’t runaway",
+      "english": "Baby don’t runaway, Don’t runaway from me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날개를 잃은 채 넌 달려가지 runaway, Oh oh",
+      "romanization": "nalgaereul ilheun chae neon dallyeogaji runaway, oh oh",
+      "english": "You run away without your wings, Oh oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "runaway, Baby don’t runaway",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "달빛을 흘린 채 넌 달려가지 왜, Oh oh oh",
+      "romanization": "dalbicheul heullin chae neon dallyeogaji wae, oh oh oh",
+      "english": "Why do you run away, spilling moonlight?, Oh oh oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Baby don’t runaway, 내게 don’t runaway",
+      "romanization": "baby don’t runaway, naege don’t runaway",
+      "english": "Baby don’t runaway, Don’t runaway from me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날개를 잃은 채 넌 달려가지 runaway, Oh oh",
+      "romanization": "nalgaereul ilheun chae neon dallyeogaji runaway, oh oh",
+      "english": "You run away without your wings, Oh oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "runaway, Baby don’t runaway",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "달빛을 흘린 채 넌 달려가지 왜, Oh oh oh",
+      "romanization": "dalbicheul heullin chae neon dallyeogaji wae, oh oh oh",
+      "english": "Why do you run away, spilling moonlight?, Oh oh oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Oh oh oh, Oh oh oh, Oh oh oh oh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Oh oh oh no, Oh oh oh, Oh oh oh oh",
+      "english": "",
+      "adlib": false
     }
   ],
   "cover": "covers/oneus_runaway.jpg",
   "audio": "audio/oneus_runaway.mp3",
   "npC1": "#26caf2",
-  "npC2": "#f7f96c"
+  "npC2": "#f7f96c",
+  "audioOffset": -0.3
 }
