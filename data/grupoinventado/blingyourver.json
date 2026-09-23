@@ -46,7 +46,14 @@
       "image": "images/grupoinventado/blingyourver/eric.png",
       "color": "#fb9118",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.484,
+        "cy": 0.486,
+        "size": 0.445,
+        "rot": 0,
+        "flip": false
+      }
     }
   ],
   "lyrics": [

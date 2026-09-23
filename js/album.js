@@ -262,10 +262,12 @@
       const mem = Ax.members.filter(m => Object.keys(m.per).length >= half);
       const most = mem.filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
       const less = mem.filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
+      // con muchos miembros, quita el subtítulo de canción para que quepan todos
+      const compact = Math.max(most.length, less.length) > 14;
       const rowH = (m, song, sec) => `
         <div class="ml-row" style="--accent:${m.color}">
           <img class="ph" src="${esc(m.image)}" alt="">
-          <div class="who"><div class="nm">${esc(m.name)}</div><div class="sg">${esc(song ? song.title : "—")}</div></div>
+          <div class="who"><div class="nm">${esc(m.name)}</div>${compact ? "" : `<div class="sg">${esc(song ? song.title : "—")}</div>`}</div>
           <div class="sec">${fmtS(sec)}</div>
         </div>`;
       el.innerHTML = `
@@ -627,11 +629,33 @@
     // porque el número le robaba altura).
     function placesSlides(A, badge){
     const USE = 88;
+    // Con >10 miembros, la gráfica de barras verticales solapa los nombres largos.
+    // En ese caso se usa una LISTA de filas (foto + nombre + barra + nº), como el resto.
+    const manyMembers = A.members.length > 10;
     for(let place=1; place<=Math.max(A.maxRank,1); place++){
-      const el = makeSlide("places", "places-slide");
       const data = A.members.map(m => ({ m, c: m.rankCount[place]||0 }))
                             .sort((a,b)=> b.c - a.c);
       const maxC = Math.max(1, ...data.map(d=>d.c));
+
+      if(manyMembers){
+        const el = makeSlide("places", "places-slide places-rows");
+        el.innerHTML = `
+          ${verBadgeHTML(badge)}
+          <div class="place-head"><span class="slide-title">Number of times</span><span class="place-big">${ord(place)} place</span></div>
+          <div class="prows">${data.map(d => `
+            <div class="prow${d.c ? "" : " zero"}" style="--accent:${d.m.color}">
+              <img class="ph" src="${esc(d.m.image)}" alt="">
+              <div class="pnm">${esc(d.m.name)}</div>
+              <div class="pbar"><div class="pfill" data-w="${d.c ? d.c/maxC*100 : 0}" style="width:0"></div></div>
+              <div class="pcnt">${d.c}</div>
+            </div>`).join("")}</div>`;
+        const enter = () => el.querySelectorAll(".pfill").forEach(f => { f.style.width = (+f.dataset.w) + "%"; });
+        const reset = () => el.querySelectorAll(".pfill").forEach(f => f.style.width = "0");
+        slides.push({ el, dur:2.5, enter, reset });
+        continue;
+      }
+
+      const el = makeSlide("places", "places-slide");
       const glines = []; for(let i=1;i<=maxC;i++) glines.push(`<div class="gl" style="bottom:${i/maxC*USE}%"></div>`);
       const ylabs  = []; for(let i=0;i<=maxC;i++) ylabs.push(`<span style="bottom:${i/maxC*USE}%">${i}</span>`);
       el.innerHTML = `
