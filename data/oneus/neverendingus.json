@@ -192,13 +192,49 @@
       ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 27.57,
+      "end": 29.76,
       "members": [],
       "original": "(널 비춰줄게)",
       "romanization": "(neol bichwojulge)",
       "english": "(I'll shine a light on you)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          27.63,
+          29.78
+        ]
+      ]
+    },
+    {
+      "start": 94.71,
+      "end": 95.04,
+      "members": [],
+      "original": "",
+      "romanization": "(back)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          94.74,
+          95.09
+        ]
+      ]
+    },
+    {
+      "start": 96.2,
+      "end": 96.78,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          96.23,
+          96.76
+        ]
+      ]
     },
     {
       "start": 31.11,
@@ -549,22 +585,49 @@
       ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 108.12,
+      "end": 108.54,
       "members": [],
       "original": "(는)",
       "romanization": "(neun)",
       "english": "(is)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          108.07,
+          108.55
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 109.81,
+      "end": 110.22,
       "members": [],
       "original": "(빛)",
       "romanization": "(bit)",
       "english": "(-her)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          109.8,
+          110.21
+        ]
+      ]
+    },
+    {
+      "start": 157.08,
+      "end": 158.01,
+      "members": [],
+      "original": "",
+      "romanization": "(Woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          157.07,
+          158.14
+        ]
+      ]
     },
     {
       "start": 110.03,
@@ -802,22 +865,34 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 170.28,
+      "end": 171.82,
       "members": [],
-      "original": "(oh yeah)",
+      "original": "",
       "romanization": "(oh yeah)",
-      "english": "(oh yeah)",
-      "adlib": true
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          170.41,
+          171.94
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 173.65,
+      "end": 175.12,
       "members": [],
-      "original": "(oh yeah)",
+      "original": "",
       "romanization": "(oh yeah)",
-      "english": "(oh yeah)",
-      "adlib": true
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          173.77,
+          175.24
+        ]
+      ]
     },
     {
       "start": 174.71,
