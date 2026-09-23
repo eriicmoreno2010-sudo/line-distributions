@@ -74,62 +74,110 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.91,
+      "end": 13.14,
       "members": [],
       "original": "Runaway my baby, 나 Dancing with somebody",
       "romanization": "runaway my baby na, dancing with somebody",
       "english": "Runaway my baby, me, Dancing with somebody",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.88,
+          12.96
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.28,
+      "end": 17.36,
       "members": [],
+      "voice": [
+        [
+          14.16,
+          17.31
+        ]
+      ],
       "original": "맘대로 나가지, 또 없지 난 중간이",
       "romanization": "mamdaero nagaji, tto eopji nan junggani",
       "english": "I go my own way again, There’s no one else I’m in the middle",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.58,
+      "end": 21.61,
       "members": [],
+      "voice": [
+        [
+          18.48,
+          21.63
+        ]
+      ],
       "original": "나를 위로하듯 밝게 빛나지 달이",
       "romanization": "nareul wirohadeut balge binnaji dari",
       "english": "It shines brightly as if comforting me",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 22.48,
+      "end": 24.11,
       "members": [],
+      "voice": [
+        [
+          22.57,
+          24.17
+        ]
+      ],
       "original": "여전히 날 찾아 또",
       "romanization": "yeojeonhi nal chaja tto",
       "english": "The moon still comes looking for me again",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 24.23,
+      "end": 26.77,
       "members": [],
+      "voice": [
+        [
+          24.25,
+          25.74
+        ],
+        [
+          25.92,
+          26.24
+        ],
+        [
+          26.43,
+          26.84
+        ]
+      ],
       "original": "거절은 안 해 난 go go go",
       "romanization": "geojeoreun an hae nan go go go",
       "english": "I don’t refuse it, I go go go",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 27.13,
+      "end": 33.12,
       "members": [],
+      "voice": [
+        [
+          27.13,
+          29.93
+        ],
+        [
+          30.14,
+          33.12
+        ]
+      ],
       "original": "갇혀 있던 미로, 네 말은 다시 울려 왜",
       "romanization": "gathyeo itdeon miro, ne mareun dasi ullyeo wae",
       "english": "The maze I was trapped in, Your words echo again, why?",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 32.55,
+      "end": 35.67,
       "members": [],
       "original": "(말은 다시 울려 왜)",
       "romanization": "(mareun dasi ullyeo wae)",
@@ -137,135 +185,369 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 35.81,
+      "end": 42.06,
       "members": [],
+      "voice": [
+        [
+          35.78,
+          38.53
+        ],
+        [
+          38.73,
+          42.08
+        ]
+      ],
       "original": "흩어졌던 기도, 여전히 잔뜩 꼬였네",
       "romanization": "heuteojyeotdeon gido, yeojeonhi jantteuk kkoeyeotne",
       "english": "The prayer that had scattered, Is still all tangled up",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.55,
+      "end": 46.87,
       "members": [],
+      "voice": [
+        [
+          42.55,
+          44.69
+        ],
+        [
+          45.21,
+          46.8
+        ]
+      ],
       "original": "",
       "romanization": "Oh baby she go runaway, Now she on her way",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.42,
+      "end": 50.71,
       "members": [],
+      "voice": [
+        [
+          47.37,
+          50.69
+        ]
+      ],
       "original": "자꾸 반복해 난 기를 쓰고 왜",
       "romanization": "jakku banbokhae nan gireul sseugo wae",
       "english": "I keep repeating it, why do I try so hard?",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.21,
+      "end": 55.82,
       "members": [],
+      "voice": [
+        [
+          51.17,
+          53.25
+        ],
+        [
+          53.86,
+          55.53
+        ]
+      ],
       "original": "",
       "romanization": "Oh baby she go runaway, Now she on her way",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 56.16,
+      "end": 60.1,
       "members": [],
+      "voice": [
+        [
+          56.09,
+          59.23
+        ],
+        [
+          59.36,
+          59.76
+        ],
+        [
+          59.89,
+          60.39
+        ]
+      ],
       "original": "혼자가 돼가 난 길을 잃은 채",
       "romanization": "honjaga dwaega nan gireul ireun chae",
       "english": "I’m becoming alone, lost as I am",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 60.1,
+      "end": 64.07,
       "members": [],
+      "voice": [
+        [
+          60.15,
+          61.93
+        ],
+        [
+          62.26,
+          64.14
+        ]
+      ],
       "original": "Baby don’t runaway, 내게 don’t runaway",
       "romanization": "baby don’t runaway, naege don’t runaway",
       "english": "Baby don’t runaway, Don’t runaway from me",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.37,
+      "end": 69.42,
       "members": [],
+      "voice": [
+        [
+          64.42,
+          68.36
+        ],
+        [
+          68.55,
+          68.9
+        ],
+        [
+          69.05,
+          69.38
+        ]
+      ],
       "original": "날개를 잃은 채 넌 달려가지 runaway, Oh oh",
       "romanization": "nalgaereul ilheun chae neon dallyeogaji runaway, oh oh",
       "english": "You run away without your wings, Oh oh",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.54,
+      "end": 72.75,
       "members": [],
+      "voice": [
+        [
+          69.6,
+          70.59
+        ],
+        [
+          70.86,
+          72.7
+        ]
+      ],
       "original": "",
       "romanization": "runaway, Baby don’t runaway",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 73.03,
+      "end": 77.33,
       "members": [],
+      "voice": [
+        [
+          73.04,
+          76.47
+        ],
+        [
+          76.65,
+          76.95
+        ],
+        [
+          77.16,
+          77.45
+        ]
+      ],
       "original": "달빛을 흘린 채 넌 달려가지 왜, Oh oh oh",
       "romanization": "dalbicheul heullin chae neon dallyeogaji wae, oh oh oh",
       "english": "Why do you run away, spilling moonlight?, Oh oh oh",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 77.48,
+      "end": 81.41,
       "members": [],
+      "voice": [
+        [
+          77.46,
+          79.32
+        ],
+        [
+          79.61,
+          81.49
+        ]
+      ],
       "original": "Baby don’t runaway, 내게 don’t runaway",
       "romanization": "baby don’t runaway, naege don’t runaway",
       "english": "Baby don’t runaway, Don’t runaway from me",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.67,
+      "end": 86.62,
       "members": [],
+      "voice": [
+        [
+          81.82,
+          85.63
+        ],
+        [
+          85.84,
+          86.13
+        ],
+        [
+          86.35,
+          86.64
+        ]
+      ],
       "original": "날개를 잃은 채 넌 달려가지 runaway, Oh oh",
       "romanization": "nalgaereul ilheun chae neon dallyeogaji runaway, oh oh",
       "english": "You run away without your wings, Oh oh",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 86.77,
+      "end": 90.01,
       "members": [],
+      "voice": [
+        [
+          86.89,
+          87.87
+        ],
+        [
+          88.22,
+          89.96
+        ]
+      ],
       "original": "",
       "romanization": "runaway, Baby don’t runaway",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 90.3,
+      "end": 95.52,
       "members": [],
+      "voice": [
+        [
+          90.38,
+          93.73
+        ],
+        [
+          93.94,
+          94.23
+        ],
+        [
+          94.47,
+          94.76
+        ],
+        [
+          95.03,
+          95.58
+        ]
+      ],
       "original": "달빛을 흘린 채 넌 달려가지 왜, Oh oh oh",
       "romanization": "dalbicheul heullin chae neon dallyeogaji wae, oh oh oh",
       "english": "Why do you run away, spilling moonlight?, Oh oh oh",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 96.03,
+      "end": 103.46,
       "members": [],
+      "voice": [
+        [
+          96.09,
+          96.41
+        ],
+        [
+          96.65,
+          97
+        ],
+        [
+          97.21,
+          97.65
+        ],
+        [
+          98.26,
+          98.58
+        ],
+        [
+          98.85,
+          99.14
+        ],
+        [
+          99.35,
+          99.82
+        ],
+        [
+          100.37,
+          100.67
+        ],
+        [
+          100.91,
+          101.26
+        ],
+        [
+          101.5,
+          101.82
+        ],
+        [
+          102,
+          103.28
+        ]
+      ],
       "original": "",
       "romanization": "Oh oh oh, Oh oh oh, Oh oh oh oh",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 104.7,
+      "end": 111.96,
       "members": [],
+      "voice": [
+        [
+          104.71,
+          105.07
+        ],
+        [
+          105.34,
+          105.61
+        ],
+        [
+          105.85,
+          106.4
+        ],
+        [
+          106.86,
+          107.22
+        ],
+        [
+          107.43,
+          107.72
+        ],
+        [
+          107.91,
+          108.46
+        ],
+        [
+          108.99,
+          109.29
+        ],
+        [
+          109.55,
+          109.88
+        ],
+        [
+          110.09,
+          110.45
+        ],
+        [
+          110.65,
+          111.82
+        ]
+      ],
       "original": "",
       "romanization": "Oh oh oh no, Oh oh oh, Oh oh oh oh",
       "english": "",
