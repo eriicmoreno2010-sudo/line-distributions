@@ -2,7 +2,7 @@
   "group": "ONEUS",
   "song": "우연히 너를 만나도 (By chance)",
   "video": "videos/oneus_bychance_mudxgznu.mp4",
-  "duration": 0,
+  "duration": 182.583333,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -76,17 +76,610 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SEOHO"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "지나온 시간을 따라 달려와",
+      "romanization": "jinaon siganeul ttara dallyeowa",
+      "english": "We run along the time that has passed",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "수많은 기억을 채워간 Our page",
+      "romanization": "sumaneun gieogeul chaewogan our page",
+      "english": "Filling it with countless memories, our page",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나를 밝혀 줄",
+      "romanization": "nareul balkhyeo jul",
+      "english": "Your voice",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 목소리 oh yeah",
+      "romanization": "ne moksori oh yeah",
+      "english": "That will light me up, oh yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝없이 이어진",
+      "romanization": "kkeuteopsi ieojin",
+      "english": "In all the endless time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "많은 시간 속에",
+      "romanization": "maneun sigan soge",
+      "english": "That has continued",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "널 마주한 순간",
+      "romanization": "neol majuhan sungan",
+      "english": "The moment I met you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That's when I become me",
+      "romanization": "that's when i become me",
+      "english": "That's when I become me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가장 큰 빛으로 널 비춰줄게",
+      "romanization": "gajang keun bicheuro neol bichwojulge",
+      "english": "I'll shine a light on you with the greatest light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(널 비춰줄게)",
+      "romanization": "(neol bichwojulge)",
+      "english": "(I'll shine a light on you)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지워지지 않을 우린",
+      "romanization": "jiwojiji aneul urin",
+      "english": "We won't be erased",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "영원이라는 이름에",
+      "romanization": "yeongwoniraneun ireume",
+      "english": "Shining brilliantly",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "찬란히 빛나고",
+      "romanization": "challanhi bitnago",
+      "english": "In the name of eternity",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하나가 되었어",
+      "romanization": "hanaga doeeosseo",
+      "english": "We became one",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터질 듯 크게 외쳐봐",
+      "romanization": "teojil deut keuge oechyeobwa",
+      "english": "Shout out as loudly as you can",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하늘 끝에 닿을 수 있게",
+      "romanization": "haneul kkeute dacheul su itge",
+      "english": "So you can reach the end of the sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Don't stop tonight",
+      "romanization": "don't stop",
+      "english": "Don't stop tonight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Forever young",
+      "romanization": "tonight forever",
+      "english": "Forever young",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah uh Woah uh",
+      "romanization": "young woah uh woah uh",
+      "english": "Woah uh Woah uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마지막 우리 페이지엔",
+      "romanization": "majimak uri peijien",
+      "english": "On our final page",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝나지 않을 너와의",
+      "romanization": "kkeunnaji aneul neowaui",
+      "english": "It begins with a story with you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이야기로 시작이 돼 yeah",
+      "romanization": "iyagiro sijagi dwae yeah",
+      "english": "That will never end, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "All days",
+      "romanization": "all days",
+      "english": "All days",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "타올라 터질 듯 높이 위로",
+      "romanization": "taolla teojil deut nopi wiro",
+      "english": "Burn up, jump high into the air",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "뛰어봐 터질 듯 벅차도록",
+      "romanization": "ttwieobwa teojil deut beokchadorok",
+      "english": "As if you're about to burst we'll keep running",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우린 계속 달려가",
+      "romanization": "urin gyesok dallyeoga",
+      "english": "Until we're overflowing with excitement",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah uh Woah uh",
+      "romanization": "woah uh woah uh",
+      "english": "Woah uh Woah uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "What's page",
+      "romanization": "what's page",
+      "english": "What's page",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I just wanna go",
+      "romanization": "i just wanna go",
+      "english": "I just wanna go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈부신 하늘, go there",
+      "romanization": "nunbushin haneul go there",
+      "english": "Dazzling sky, go there",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다음은 추억의 페이지를 열어",
+      "romanization": "daeumeun chueogui peijireul yeoreo",
+      "english": "Next, open the page of memories",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "기억 속에 drowning",
+      "romanization": "gieok soge drowning",
+      "english": "Drowning in memories",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Take off, no looking back",
+      "romanization": "take off, no looking back",
+      "english": "Take off, no looking back",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This keeps us on track",
+      "romanization": "this keeps us on track",
+      "english": "This keeps us on track",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "함께 써 내려갈 모든 그 순간이",
+      "romanization": "hamkke sseo naeryeogal modeun geu sungani",
+      "english": "Every moment we'll write down together",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 화려하게 빛나 huh",
+      "romanization": "deo hwaryeohage bitna huh",
+      "english": "Shines even more brilliantly, huh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "수많은 계절이 지나쳐 가도",
+      "romanization": "sumaneun gyejeori jinachyeo gado",
+      "english": "Even when countless seasons pass by",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가끔은 길 잃고 캄캄해져도",
+      "romanization": "gakkeumeun gil ilko kamkamhaejyeodo",
+      "english": "Even when we sometimes get lost and everything becomes dark",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 높이 번져가는",
+      "romanization": "deo nopi beonjyeoganeun",
+      "english": "The blue moonlight that spreads",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(는)",
+      "romanization": "(neun)",
+      "english": "(is)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "푸른색의 달빛",
+      "romanization": "pureunsaegui dalbit",
+      "english": "Higher and higher",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(빛)",
+      "romanization": "(bit)",
+      "english": "(-her)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "영원토록 기억될",
+      "romanization": "yeongweontorok gieokdoel",
+      "english": "Becoming a preview",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "예고편이 되고 huh",
+      "romanization": "yegopyeoni doego huh",
+      "english": "That will be remembered forever, huh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지워지지 않을 우린",
+      "romanization": "jiwojiji aneul urin",
+      "english": "We won't be erased",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "영원이라는 이름에",
+      "romanization": "yeongwoniraneun ireume",
+      "english": "Shining brilliantly",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "찬란히 빛나고",
+      "romanization": "challanhi bitnago",
+      "english": "In the name of eternity",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하나가 되었어 Huh",
+      "romanization": "hanaga doeeosseo huh",
+      "english": "We became one Huh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "터질 듯 크게 외쳐봐",
+      "romanization": "teojil deut keuge oechyeobwa",
+      "english": "Shout out as loudly as you can",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하늘 끝에 닿을 수 있게",
+      "romanization": "haneul kkeute dacheul su itge",
+      "english": "So you can reach the end of the sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Don't stop tonight",
+      "romanization": "don't stop tonight",
+      "english": "Don't stop tonight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Forever young",
+      "romanization": "forever young",
+      "english": "Forever young",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah uh Woah uh",
+      "romanization": "woah uh woah uh",
+      "english": "Woah uh Woah uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마지막 우리 페이지엔",
+      "romanization": "majimak uri peijien",
+      "english": "On our final page",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝나지 않을 너와의",
+      "romanization": "kkeunnaji aneul neowaui",
+      "english": "It begins with a story with you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이야기로 시작이 돼 yeah",
+      "romanization": "iyagiro sijagi dwae yeah",
+      "english": "That will never end, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "All days",
+      "romanization": "all days",
+      "english": "All days",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah~ Woah~",
+      "romanization": "woah~ woah~",
+      "english": "Woah~ Woah~",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah~ Woah~",
+      "romanization": "woah~ woah~",
+      "english": "Woah~ Woah~",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우린 계속 달려가",
+      "romanization": "urin gyesok dallyeoga",
+      "english": "We'll keep running",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah uh Woah uh",
+      "romanization": "woah uh woah uh",
+      "english": "Woah uh Woah uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah~ Woah~",
+      "romanization": "woah~ woah~",
+      "english": "Woah~ Woah~",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(oh yeah)",
+      "romanization": "(oh yeah)",
+      "english": "(oh yeah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah~ Woah~",
+      "romanization": "woah~ woah~",
+      "english": "Woah~ Woah~",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(oh yeah)",
+      "romanization": "(oh yeah)",
+      "english": "(oh yeah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 순간을 기억할게 yeah",
+      "romanization": "i sunganeul gieokhalge yeah",
+      "english": "I'll remember this moment, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "All days",
+      "romanization": "all days",
+      "english": "All days",
+      "adlib": false
     }
   ],
   "cover": "covers/oneus_bychance.jpg",
   "audio": "audio/oneus_bychance.mp3",
   "npC1": "#f38116",
-  "npC2": "#ffee2e"
+  "npC2": "#ffee2e",
+  "audioOffset": -0.2
 }
