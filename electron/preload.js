@@ -37,5 +37,9 @@ contextBridge.exposeInMainWorld("desktop", {
   exportThumb: (args) => ipcRenderer.invoke("export-thumb", args),
   exportAlbumThumb: (args) => ipcRenderer.invoke("export-album-thumb", args || {}),
   transcribeUrl: (args) => ipcRenderer.invoke("transcribe-url", args || {}),
-  onTranscribeProgress: (cb) => ipcRenderer.on("transcribe-progress", (_e, m) => cb(m))
+  onTranscribeProgress: (cb) => ipcRenderer.on("transcribe-progress", (_e, m) => cb(m)),
+  stemServerStart: () => ipcRenderer.invoke("stem-server-start"),
+  stemModelEnsure: () => ipcRenderer.invoke("stem-model-ensure"),
+  onStemProgress: (cb) => ipcRenderer.on("stem-model-progress", (_e, p) => cb(p)),
+  saveInstrumental: (args) => ipcRenderer.invoke("save-instrumental", args || {})
 });

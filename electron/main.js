@@ -656,6 +656,104 @@ ipcMain.handle("save-cutout-file", async (_e, args) => {
   }catch(e){ return { ok:false, error:e.message }; }
 });
 
+// ---------------------------------------------------------------------------
+// Separar instrumental / voz (MDX-Net). El modelo ONNX (~67 MB) y el runtime
+// onnxruntime-web se descargan UNA vez a userData y se sirven por http local
+// (como el recorte con IA). La separación se ejecuta en el navegador con
+// onnxruntime-web; aquí solo descargamos/servimos y guardamos el resultado.
+// El modelo "Inst" saca directamente el INSTRUMENTAL (a favor de la instrumental).
+// ---------------------------------------------------------------------------
+const STEM_MODEL_NAME = "UVR-MDX-NET-Inst_HQ_3.onnx";
+const STEM_MODEL_URL  = "https://huggingface.co/seanghay/uvr_models/resolve/main/" + STEM_MODEL_NAME;
+const ORT_VER = "1.21.0";
+const ORT_CDN = "https://cdn.jsdelivr.net/npm/onnxruntime-web@" + ORT_VER + "/dist/";
+const ORT_FILES = ["ort-wasm-simd-threaded.wasm", "ort-wasm-simd-threaded.mjs"];
+const stemDir = () => path.join(app.getPath("userData"), "stem-" + ORT_VER);
+
+// La separación con onnxruntime-web va MUCHO más rápida multi-hilo, pero eso
+// exige que la página esté "cross-origin isolated" (COOP/COEP) y sirva el wasm
+// desde el MISMO origen. Por eso servimos la app y el modelo por http local con
+// esas cabeceras; inst.html se abre desde aquí (no por file://) y así hay hilos.
+const STEM_MIME = { ".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8",
+  ".mjs":"text/javascript; charset=utf-8", ".css":"text/css; charset=utf-8", ".json":"application/json; charset=utf-8",
+  ".wasm":"application/wasm", ".onnx":"application/octet-stream", ".mp3":"audio/mpeg", ".wav":"audio/wav",
+  ".m4a":"audio/mp4", ".ogg":"audio/ogg", ".mp4":"video/mp4", ".webm":"video/webm",
+  ".png":"image/png", ".jpg":"image/jpeg", ".jpeg":"image/jpeg", ".gif":"image/gif", ".svg":"image/svg+xml",
+  ".woff":"font/woff", ".woff2":"font/woff2", ".ttf":"font/ttf" };
+let appServer = null, appPort = 0;
+function startAppServer(){
+  if(appServer) return Promise.resolve(appPort);
+  const dir = stemDir();
+  return new Promise((resolve, reject) => {
+    appServer = require("http").createServer((req, res) => {
+      let name = decodeURIComponent((req.url || "/").split("?")[0]);
+      let f;
+      if(name.startsWith("/_stem/")){ f = path.join(dir, name.slice(7)); if(!f.startsWith(dir)){ res.writeHead(403); res.end(); return; } }
+      else { if(name === "/" || name === "") name = "/library.html"; f = path.join(ROOT, name.replace(/^\/+/, "")); if(!f.startsWith(ROOT)){ res.writeHead(403); res.end(); return; } }
+      fs.readFile(f, (e, b) => {
+        if(e){ res.writeHead(404); res.end("not found"); return; }
+        res.writeHead(200, {
+          "Content-Type": STEM_MIME[path.extname(f).toLowerCase()] || "application/octet-stream",
+          "Cross-Origin-Opener-Policy": "same-origin",
+          "Cross-Origin-Embedder-Policy": "require-corp",
+          "Cross-Origin-Resource-Policy": "same-origin",
+          "Cache-Control": "no-store"
+        });
+        res.end(b);
+      });
+    });
+    appServer.on("error", reject);
+    appServer.listen(0, "127.0.0.1", () => { appPort = appServer.address().port; resolve(appPort); });
+  });
+}
+ipcMain.handle("stem-server-start", async () => {
+  try{ const port = await startAppServer(); return { ok:true, url: "http://127.0.0.1:" + port + "/" }; }
+  catch(e){ return { ok:false, error:e.message }; }
+});
+ipcMain.handle("stem-model-ensure", async (evt) => {
+  try{
+    const dir = stemDir(); fs.mkdirSync(dir, { recursive: true });
+    const items = [{ url: STEM_MODEL_URL, file: STEM_MODEL_NAME }]
+      .concat(ORT_FILES.map(f => ({ url: ORT_CDN + f, file: f })));
+    const missing = items.filter(it => !fs.existsSync(path.join(dir, it.file)));
+    const send = (done, total, label) => { try{ evt.sender.send("stem-model-progress", { done, total, label }); }catch(e){} };
+    for(let i = 0; i < missing.length; i++){
+      send(i, missing.length, "Descargando " + missing[i].file + "…");
+      const b = await httpGetBuf(missing[i].url);
+      fs.writeFileSync(path.join(dir, missing[i].file), b);
+      send(i + 1, missing.length, missing[i].file);
+    }
+    await startAppServer();
+    return { ok: true, base: "http://127.0.0.1:" + appPort + "/_stem/", model: STEM_MODEL_NAME };
+  }catch(e){ return { ok: false, error: e.message }; }
+});
+
+// Guarda el instrumental ya separado: recibe un WAV (base64), lo pasa a MP3 con
+// ffmpeg (mucho más pequeño), lo escribe en /audio y lo asigna a la canción.
+ipcMain.handle("save-instrumental", async (_e, args) => {
+  args = args || {};
+  if(!args.songPath || !args.wavB64) return { ok:false, error:"faltan datos" };
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "ld-inst-"));
+  try{
+    const songFull = path.join(ROOT, args.songPath);
+    const song = JSON.parse(fs.readFileSync(songFull, "utf8"));
+    const base = (slug(song.group) + "_" + path.basename(args.songPath).replace(/\.json$/i, "")).replace(/^_+/, "") || "instrumental";
+    const wavTmp = path.join(tmp, "in.wav");
+    fs.writeFileSync(wavTmp, Buffer.from(args.wavB64, "base64"));
+    const outRel = "audio/" + base + "_inst.mp3";
+    const outFull = path.join(ROOT, outRel);
+    fs.mkdirSync(path.dirname(outFull), { recursive: true });
+    const ff = findFfmpeg();
+    const r = await spawnStream(ff, ["-y", "-i", wavTmp, "-c:a", "libmp3lame", "-b:a", "320k", outFull], () => {});
+    if(r.code !== 0) throw new Error("ffmpeg " + r.code + ": " + (r.out || "").slice(-300));
+    song.instrumental = outRel;
+    if(song.instrumentalStart == null) song.instrumentalStart = 0;
+    fs.writeFileSync(songFull, JSON.stringify(song, null, 2), "utf8");
+    return { ok:true, path: outRel };
+  }catch(e){ return { ok:false, error:e.message }; }
+  finally{ try{ fs.rmSync(tmp, { recursive:true, force:true }); }catch(e){} }
+});
+
 // Editor: load a song JSON, and save it back after editing.
 ipcMain.handle("load-song", async (_e, relPath) => {
   try{ return { ok: true, data: JSON.parse(fs.readFileSync(path.join(ROOT, relPath), "utf8")) }; }

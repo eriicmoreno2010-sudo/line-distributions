@@ -143,6 +143,18 @@
     if(transcribeBtn) transcribeBtn.onclick = () => { location.href = "transcribe.html"; };
     const cutterBtn = document.getElementById("cutterBtn");
     if(cutterBtn) cutterBtn.onclick = () => { location.href = "cutter.html"; };
+    const instBtn = document.getElementById("instBtn");
+    if(instBtn) instBtn.onclick = async () => {
+      // La herramienta necesita hilos (cross-origin isolation): se abre desde el
+      // servidor http local con COOP/COEP. Si falla, cae a file:// (single-thread).
+      try{
+        if(window.desktop && window.desktop.stemServerStart){
+          const r = await window.desktop.stemServerStart();
+          if(r && r.ok){ location.href = r.url + "inst.html"; return; }
+        }
+      }catch(e){}
+      location.href = "inst.html";
+    };
     const nowplayingBtn = document.getElementById("nowplayingBtn");
     if(nowplayingBtn) nowplayingBtn.onclick = () => { location.href = "nowplaying.html"; };
     document.getElementById("mCancel").onclick = () => modal.classList.remove("show");

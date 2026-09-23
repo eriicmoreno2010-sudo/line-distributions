@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Separar instrumental / voz</title>
+<style>
+  :root{ --bg:#0e0e13; --panel:#15151d; --accent:#7c5cff; --text:#f2f2f7; --muted:#9a9aa8; --border:#2a2a36; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--text); }
+  #wrap{ max-width:820px; margin:0 auto; padding:22px; display:flex; flex-direction:column; gap:16px; }
+  a.back{ align-self:flex-start; color:#cfcfe0; text-decoration:none; background:#15151d; border:1px solid #33334a;
+          border-radius:8px; padding:8px 12px; font-weight:700; font-size:13px; }
+  h1{ font-size:20px; letter-spacing:.5px; margin:2px 0 0; }
+  .sub{ color:var(--muted); font-size:14px; line-height:1.5; }
+  .card{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:12px; }
+  label{ font-size:13px; color:var(--muted); font-weight:700; }
+  select{ width:100%; background:#0a0a0f; color:var(--text); border:1px solid var(--border); border-radius:9px; padding:11px 13px; font-size:15px; }
+  .row{ display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
+  .row > div{ flex:1; min-width:180px; }
+  button{ background:var(--accent); color:#fff; border:0; border-radius:9px; padding:12px 20px; font-weight:800; cursor:pointer; font-size:15px; }
+  button.sec{ background:#2a2a34; }
+  button:disabled{ opacity:.6; cursor:default; }
+  #status{ font-size:14px; color:#cfe; min-height:20px; font-family:monospace; white-space:pre-wrap; }
+  .barwrap{ height:12px; background:#0a0a0f; border:1px solid var(--border); border-radius:999px; overflow:hidden; }
+  #bar{ height:100%; width:0; background:linear-gradient(90deg,#7c5cff,#22b8cf); transition:width .2s; }
+  audio{ width:100%; margin-top:6px; }
+  .hint{ color:var(--muted); font-size:13px; line-height:1.5; }
+  .warn{ background:#2a1a1a; border:1px solid #663; color:#ffd; border-radius:10px; padding:12px 14px; font-size:14px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <a class="back" href="library.html">← Biblioteca</a>
+  <h1>🎚️ Separar instrumental / voz</h1>
+  <div class="sub">Saca el <b>instrumental</b> de una canción (le quita la voz) con IA, en buena calidad y <b>a favor de la instrumental</b>.
+    Se guarda como instrumental de la canción y lo usan automáticamente el <b>donut</b> y el <b>álbum</b>.</div>
+
+  <div id="nodesktop" class="warn" style="display:none">Esta herramienta solo funciona en la <b>app de escritorio</b> (la IA corre en tu PC).</div>
+
+  <div class="card">
+    <div>
+      <label for="song">Canción</label>
+      <select id="song"><option value="">— cargando… —</option></select>
+    </div>
+    <div class="row">
+      <div class="hint">La primera vez descarga el modelo (~70 MB). Después funciona sin internet. Tarda ~1-3 min por canción.</div>
+      <button id="go">Separar</button>
+    </div>
+    <div class="barwrap"><div id="bar"></div></div>
+    <div id="status"></div>
+  </div>
+
+  <div class="card" id="result" style="display:none">
+    <label>Previsualización del instrumental</label>
+    <audio id="preview" controls></audio>
+    <div class="row" style="justify-content:flex-end">
+      <button id="save">💾 Guardar como instrumental de la canción</button>
+    </div>
+    <div class="hint">Escúchalo antes de guardar. Al guardar se crea un MP3 en <b>/audio</b> y se asigna a la canción (campo <code>instrumental</code>).</div>
+  </div>
+</div>
+
+<script src="js/inst.js?v=1"></script>
+</body>
+</html>
