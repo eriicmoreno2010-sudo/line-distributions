@@ -85,12 +85,15 @@ Self-contained: injects its own styles and markup.
       opacity:.5; transition:opacity .45s ease, background-color .45s ease, border-color .45s ease, box-shadow .45s ease;
     }
     #results-overlay .row .photo{ width:var(--rphoto,9vh); height:var(--rphoto,9vh); border-radius:50%; object-fit:cover; object-position:center 45%;
-      background:#000; filter:grayscale(1) brightness(.75); transition:filter .5s ease, box-shadow .5s ease; }
+      background:#000; filter:grayscale(1) brightness(.75); box-shadow:0 0 0 .3vh rgba(255,255,255,.22); transition:filter .5s ease, box-shadow .5s ease; }
     #results-overlay .row .info{ min-width:0; }   /* deja que el nombre se recorte en vez de empujar la barra/números */
     #results-overlay .row .name{ font-size:1.85vh; font-weight:900; letter-spacing:.3px; color:#7c7c8a; transition:color .5s ease; line-height:1.1; overflow:hidden; text-overflow:ellipsis; }
     #results-overlay .row .bar{ margin-top:.8vh; height:1.2vh; border-radius:999px; background:#1c1c25; overflow:hidden; }
     #results-overlay .row .fill{ height:100%; width:0; border-radius:999px; background:#2c2c37; transition:width .6s cubic-bezier(.3,1,.4,1), background-color .5s ease; }
-    #results-overlay .row .stats{ text-align:right; font-variant-numeric:tabular-nums; width:5.4vw; flex:none; }   /* ancho fijo -> barras iguales y números alineados */
+    #results-overlay .row .stats{ text-align:right; font-variant-numeric:tabular-nums; }
+    /* ancho fijo SOLO en 2 columnas (barras iguales + números alineados). En 1 columna
+       (solista/pocos) va automático, así "100.00%" no se sale de la tarjeta. */
+    #results-overlay #ro-list.two-col .row .stats{ width:5.4vw; flex:none; }
     #results-overlay .row .pct{ font-size:2.4vh; font-weight:900; color:#7c7c8a; transition:color .5s ease; line-height:1; white-space:nowrap; }
     #results-overlay .row .sec{ font-size:1.5vh; color:#7c7c8a; margin-top:.4vh; }
     #results-overlay .row.lit{ opacity:1; background:var(--rowbg); border-color:color-mix(in srgb, var(--c) 55%, transparent);
