@@ -262,12 +262,12 @@
       const mem = Ax.members.filter(m => Object.keys(m.per).length >= half);
       const most = mem.filter(m=>m.topSong).sort((a,b)=> b.topSec - a.topSec);
       const less = mem.filter(m=>m.lowSong).sort((a,b)=> a.lowSec - b.lowSec);
-      // con muchos miembros, quita el subtítulo de canción para que quepan todos
-      const compact = Math.max(most.length, less.length) > 14;
+      // la canción va a la DERECHA del nombre (misma fila), aprovechando el hueco
       const rowH = (m, song, sec) => `
         <div class="ml-row" style="--accent:${m.color}">
           <img class="ph" src="${esc(m.image)}" alt="">
-          <div class="who"><div class="nm">${esc(m.name)}</div>${compact ? "" : `<div class="sg">${esc(song ? song.title : "—")}</div>`}</div>
+          <div class="nm">${esc(m.name)}</div>
+          <div class="sg">${esc(song ? song.title : "—")}</div>
           <div class="sec">${fmtS(sec)}</div>
         </div>`;
       el.innerHTML = `
@@ -629,9 +629,9 @@
     // porque el número le robaba altura).
     function placesSlides(A, badge){
     const USE = 88;
-    // Con >10 miembros, la gráfica de barras verticales solapa los nombres largos.
-    // En ese caso se usa una LISTA de filas (foto + nombre + barra + nº), como el resto.
-    const manyMembers = A.members.length > 10;
+    // La LISTA de filas (foto + nombre + barra + nº) queda preciosa y no solapa
+    // nombres: se usa SIEMPRE (a petición del usuario), sea cual sea el nº de miembros.
+    const manyMembers = true;
     for(let place=1; place<=Math.max(A.maxRank,1); place++){
       const data = A.members.map(m => ({ m, c: m.rankCount[place]||0 }))
                             .sort((a,b)=> b.c - a.c);

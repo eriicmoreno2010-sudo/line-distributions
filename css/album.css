@@ -226,14 +226,14 @@ body.light #albumSel{ background:rgba(255,255,255,.7); }
 .ml-col.most .ml-head{ color:#2ec77a; }
 .ml-col.less .ml-head{ color:#ff6b6b; }
 /* las filas se reparten para llenar todo el alto hasta abajo */
-.ml-row{ flex:1; display:grid; grid-template-columns:min(8vh,80px,calc(46vh / var(--nm,9))) 1fr auto; align-items:center; gap:16px;
+.ml-row{ flex:1; display:grid; grid-template-columns:min(8vh,80px,calc(46vh / var(--nm,9))) auto minmax(0,1fr) auto; align-items:center; gap:16px;
   background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:2px 18px;
   margin-bottom:min(1vh,8px,calc(12vh / var(--nm,9))); min-height:0; overflow:hidden; }
 .ml-row:last-child{ margin-bottom:0; }
 .ml-row .ph{ width:min(8vh,80px,calc(46vh / var(--nm,9))); height:min(8vh,80px,calc(46vh / var(--nm,9))); border-radius:50%; object-fit:cover; border:3px solid var(--accent); }
-.ml-row .who{ min-width:0; }
-.ml-row .who .nm{ font-size:min(2.7vh,23px,calc(42vh / var(--nm,9))); font-weight:900; color:var(--accent); line-height:1.05; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.ml-row .who .sg{ font-size:min(1.9vh,16px,calc(28vh / var(--nm,9))); font-weight:700; color:var(--text2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ml-row .nm{ font-size:min(2.7vh,23px,calc(42vh / var(--nm,9))); font-weight:900; color:var(--accent); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+/* canción a la DERECHA del nombre (antes iba debajo) */
+.ml-row .sg{ font-size:min(1.9vh,16px,calc(28vh / var(--nm,9))); font-weight:700; color:var(--text2); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .ml-row .sec{ font-size:min(2.7vh,24px,calc(46vh / var(--nm,9))); font-weight:900; font-variant-numeric:tabular-nums; }
 
 /* ---- HUD (controles; se ocultan al grabar) ---- */
