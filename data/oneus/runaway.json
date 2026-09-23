@@ -87,5 +87,6 @@
   ],
   "cover": "covers/oneus_runaway.jpg",
   "audio": "audio/oneus_runaway.mp3",
-  "npC1": "#26a4f2"
+  "npC1": "#26caf2",
+  "npC2": "#fcff2e"
 }
