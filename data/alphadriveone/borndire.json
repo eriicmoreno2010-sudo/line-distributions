@@ -60,7 +60,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON"
+      ],
       "original": "Step back, 비틀어진 Highway",
       "romanization": "step back, biteureojin highway",
       "english": "Step back, Twisted-up Highway",
@@ -69,7 +71,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON"
+      ],
       "original": "경계를 찢어 Rip that, rip that",
       "romanization": "gyeonggyereul jjijeo rip that, rip that",
       "english": "Rip the boundary Rip that, rip that",
@@ -78,7 +82,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -87,7 +94,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -96,7 +106,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGHYEON"
+      ],
       "original": "Step back, 뭔가 다른 My way",
       "romanization": "step back, mwonga dareun my way",
       "english": "Step back, Something different My way",
@@ -105,7 +117,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGHYEON"
+      ],
       "original": "한계를 넘어 Rip that, rip that",
       "romanization": "hangyereul neomeo rip that, rip that",
       "english": "Push past the limit Rip that, rip that",
@@ -114,7 +128,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -123,7 +140,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -132,7 +152,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "LEO"
+      ],
       "original": "",
       "romanization": "I’ma own it all, Born to be high above",
       "english": "",
@@ -141,7 +163,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "LEO"
+      ],
       "original": "나약해 보여 What?, 달아오르는 Flame",
       "romanization": "nayahage boyeo what?, daraoreuneun flame",
       "english": "You think I'm weak What?, Burning hotter Flame",
@@ -150,7 +174,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO"
+      ],
       "original": "날카롭게 세운 Passion, 몰아치듯 Harder",
       "romanization": "nalkaropge seun passion, morachideut harder",
       "english": "Razor-sharp and ready Passion, Rushing at you Harder",
@@ -159,7 +185,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO"
+      ],
       "original": "통제할 수 없는 Motion, And it makes me stronger",
       "romanization": "tongjehal su eomneun motion, and it makes me stronger",
       "english": "No way to control this Motion, And it makes me stronger",
@@ -168,25 +196,20 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Reborn in the ashes",
-      "english": "",
+      "members": [
+        "XINLONG"
+      ],
+      "original": "Reborn in the ashes, 전부 제껴, 봐, Turn it louder",
+      "romanization": "reborn in the ashes, jeonbu jekkyeo, bwa, turn it louder",
+      "english": "Reborn in the ashes, Knock 'em all aside, Turn it louder",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "전부 제껴, 봐, Turn it louder",
-      "romanization": "jeonbu jekkyeo, bwa, turn it louder",
-      "english": "Knock 'em all aside, Turn it louder",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON"
+      ],
       "original": "Step back, 비틀어진 Highway",
       "romanization": "step back, biteureojin highway",
       "english": "Step back, Twisted-up Highway",
@@ -195,7 +218,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON"
+      ],
       "original": "경계를 찢어 Rip that, rip that",
       "romanization": "gyeonggyereul jjijeo rip that, rip that",
       "english": "Rip the boundary Rip that, rip that",
@@ -204,7 +229,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON",
+        "ARNO"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -213,7 +241,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGWON",
+        "ARNO"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -222,7 +253,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ARNO"
+      ],
       "original": "Step back, 펼쳐지는 One way",
       "romanization": "step back, pyeolchyeojineun one way",
       "english": "Step back, Opening up One way",
@@ -231,7 +264,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ARNO"
+      ],
       "original": "나를 바꿔 Lead that, lead that",
       "romanization": "nareul bakkwo lead that, lead that",
       "english": "Turn me around Lead that, lead that",
@@ -240,7 +275,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ARNO",
+        "SANGWON"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -249,7 +287,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ARNO",
+        "SANGWON"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -258,7 +299,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "",
       "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
       "english": "",
@@ -267,7 +310,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "",
       "romanization": "On top, my track",
       "english": "",
@@ -276,7 +321,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO"
+      ],
       "original": "",
       "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
       "english": "",
@@ -285,7 +332,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -294,7 +343,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGHYEON"
+      ],
       "original": "난 안 해 뻔한 Step by step, 두려움 따윈 벗어둔 채",
       "romanization": "nan an hae ppeonhan step by step, duryeoum ttawin beoseodun chae",
       "english": "I don't do the same Step by step, Leaving all my fear behind",
@@ -303,7 +354,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SANGHYEON"
+      ],
       "original": "과감히 덤비는 Beast mode, 우린 그저 모른 채 질주해",
       "romanization": "gwagami deom bineun beast mode, urin geujeo moreun chae jiljuhae",
       "english": "Charging straight ahead Beast mode, We just keep running without a clue",
@@ -312,7 +365,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "It’s getting critical, 깨뜨려 Typical",
       "romanization": "it’s getting critical, kkaetteuryeo typical",
       "english": "It’s getting critical, Smash it up Typical",
@@ -321,7 +376,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "",
       "romanization": "We’re getting ready to go, So cut it, drop it low",
       "english": "",
@@ -330,43 +387,42 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "On top, my track, ay, 부딪혀 끝까지",
-      "romanization": "on top, my track, ay, budichyeo kkeutkkaji",
-      "english": "On top, my track, ay, Fight it to the end",
+      "members": [
+        "XINLONG"
+      ],
+      "original": "On top, my track, ay, **부딪혀 끝까지@LEO**",
+      "romanization": "on top, my track, ay, **budichyeo kkeutkkaji@LEO**",
+      "english": "On top, my track, ay, **Fight it to the end@LEO**",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "XINLONG"
+      ],
       "original": "",
-      "romanization": "On top, my track, No one can break us",
+      "romanization": "On top, my track, **No one can break us@LEO**",
       "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "Reborn in the ashes",
-      "english": "",
+      "members": [
+        "SANGWON"
+      ],
+      "original": "Reborn in the ashes, 전부 제껴, 봐, Turn it louder",
+      "romanization": "reborn in the ashes, jeonbu jekkyeo, bwa, turn it louder",
+      "english": "Reborn in the ashes, Knock 'em all aside, Turn it louder",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "전부 제껴, 봐, Turn it louder",
-      "romanization": "jeonbu jekkyeo, bwa, turn it louder",
-      "english": "Knock 'em all aside, Turn it louder",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO"
+      ],
       "original": "Step back, 비틀어진 Highway",
       "romanization": "step back, biteureojin highway",
       "english": "Step back, Twisted-up Highway",
@@ -375,7 +431,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO"
+      ],
       "original": "경계를 찢어 Rip that, rip that",
       "romanization": "gyeonggyereul jjijeo rip that, rip that",
       "english": "Rip the boundary Rip that, rip that",
@@ -384,7 +442,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO",
+        "ANXIN"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -393,7 +454,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JUNSEO",
+        "ANXIN"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -402,7 +466,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "Step back, 펼쳐지는 One way",
       "romanization": "step back, pyeolchyeojineun one way",
       "english": "Step back, Opening up One way",
@@ -411,7 +477,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "나를 바꿔 Lead that, lead that",
       "romanization": "nareul bakkwo lead that, lead that",
       "english": "Turn me around Lead that, lead that",
@@ -420,7 +488,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN",
+        "JUNSEO"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -429,7 +500,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN",
+        "JUNSEO"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -438,7 +512,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "LEO"
+      ],
       "original": "Step back, 비틀어진 Highway",
       "romanization": "step back, biteureojin highway",
       "english": "Step back, Twisted-up Highway",
@@ -447,7 +523,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "LEO"
+      ],
       "original": "경계를 찢어 Rip that, rip that",
       "romanization": "gyeonggyereul jjijeo rip that, rip that",
       "english": "Rip the boundary Rip that, rip that",
@@ -456,7 +534,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "LEO",
+        "XINLONG"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -465,7 +546,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "LEO",
+        "XINLONG"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -474,7 +558,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "XINLONG"
+      ],
       "original": "Step back, 펼쳐지는 One way",
       "romanization": "step back, pyeolchyeojineun one way",
       "english": "Step back, Opening up One way",
@@ -483,7 +569,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "XINLONG"
+      ],
       "original": "나를 바꿔 Lead that, lead that",
       "romanization": "nareul bakkwo lead that, lead that",
       "english": "Turn me around Lead that, lead that",
@@ -492,7 +580,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "XINLONG",
+        "LEO"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -501,7 +592,10 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "XINLONG",
+        "LEO"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
@@ -510,7 +604,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ARNO"
+      ],
       "original": "",
       "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
       "english": "",
@@ -519,7 +615,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ARNO"
+      ],
       "original": "",
       "romanization": "On top, my track, ay",
       "english": "",
@@ -528,7 +626,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "",
       "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
       "english": "",
@@ -537,7 +637,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "ANXIN"
+      ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
