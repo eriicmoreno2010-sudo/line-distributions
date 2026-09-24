@@ -2,7 +2,7 @@
   "group": "CLOSE YOUR EYES",
   "song": "Open Your Eyes",
   "video": "videos/closeyoureyes_openyoureyes_mug2de0f.mp4",
-  "duration": 0,
+  "duration": 179.249349,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -68,5 +68,6 @@
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/closeyoureyes_openyoureyes.mp3"
 }
