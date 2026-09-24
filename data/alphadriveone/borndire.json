@@ -1096,6 +1096,18 @@
         [
           151.62,
           151.95
+        ],
+        [
+          152.08,
+          152.38
+        ],
+        [
+          152.53,
+          152.85
+        ],
+        [
+          153.03,
+          153.33
         ]
       ],
       "original": "",
@@ -1112,7 +1124,13 @@
       "original": "",
       "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          153.01,
+          158.42
+        ]
+      ]
     },
     {
       "start": 158.38,
@@ -1123,7 +1141,17 @@
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          158.43,
+          159.44
+        ],
+        [
+          159.59,
+          160.24
+        ]
+      ]
     },
     {
       "start": 36.61,
