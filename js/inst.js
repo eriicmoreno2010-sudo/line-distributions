@@ -157,6 +157,12 @@
   }
 
   // ================= separación (mismo chunking que UVR/MDX) =================
+  const COMPENSATE = 1.030848;   // factor del modelo Inst_HQ_3 (nivel correcto)
+  const DENOISE = true;          // como UVR: pasa +x y -x y promedia -> quita artefactos
+  async function runModel(data, fr){
+    const res = await sess.run({ input: new ort.Tensor("float32", data, [1,4,DIM_F,fr]) });
+    return res.output.data;
+  }
   async function demix(L, R, onProg){
     const N = L.length;
     const pad = GEN - (N % GEN);
@@ -167,6 +173,7 @@
     const nChunks = Math.floor((total - CHUNK) / GEN) + 1;
     const plane = DIM_F * DIM_T;
     let done = 0;
+    const steps = DENOISE ? 2 : 1;
     for(let i=0; i+CHUNK<=total; i+=GEN){
       const cl = padL.subarray(i, i+CHUNK), cr = padR.subarray(i, i+CHUNK);
       const SL = stftReal(cl), SR = stftReal(cr), fr = SL.frames;
@@ -178,17 +185,26 @@
           data[idx]=slr[k]; data[plane+idx]=sli[k]; data[2*plane+idx]=srr[k]; data[3*plane+idx]=sri[k];
         }
       }
-      const t = new ort.Tensor("float32", data, [1,4,DIM_F,fr]);
-      const res = await sess.run({ input: t });
-      const o = res.output.data;
+      // salida = compensate * ( denoise ? (model(x) - model(-x))/2 : model(x) )
+      const oPos = await runModel(data, fr);
+      let o = new Float32Array(oPos.length);
+      if(DENOISE){
+        const neg = new Float32Array(data.length); for(let j=0;j<data.length;j++) neg[j] = -data[j];
+        done += 0.5/nChunks; if(onProg) onProg(done);
+        await new Promise(r => setTimeout(r, 0));
+        const oNeg = await runModel(neg, fr);
+        for(let j=0;j<o.length;j++) o[j] = (oPos[j] - oNeg[j]) * 0.5 * COMPENSATE;
+      }else{
+        for(let j=0;j<o.length;j++) o[j] = oPos[j] * COMPENSATE;
+      }
       const orl=Array.from({length:fr},()=>new Float64Array(DIM_F)), oil=Array.from({length:fr},()=>new Float64Array(DIM_F));
       const orr=Array.from({length:fr},()=>new Float64Array(DIM_F)), oir=Array.from({length:fr},()=>new Float64Array(DIM_F));
       for(let f=0;f<fr;f++) for(let k=0;k<DIM_F;k++){ const idx=k*fr+f;
         orl[f][k]=o[idx]; oil[f][k]=o[plane+idx]; orr[f][k]=o[2*plane+idx]; oir[f][k]=o[3*plane+idx]; }
       const wl=istftReal(orl,oil,fr), wr=istftReal(orr,oir,fr);
       for(let n=0;n<GEN;n++){ outL[i+TRIM+n]=wl[TRIM+n]; outR[i+TRIM+n]=wr[TRIM+n]; }
-      done++;
-      if(onProg) onProg(done/nChunks);
+      done = Math.max(done, (Math.floor(i/GEN)+1)/nChunks);
+      if(onProg) onProg(done);
       await new Promise(r => setTimeout(r, 0));   // deja respirar a la UI
     }
     return { L: outL.subarray(TRIM, TRIM+N), R: outR.subarray(TRIM, TRIM+N) };
