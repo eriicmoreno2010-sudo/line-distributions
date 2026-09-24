@@ -1,0 +1,72 @@
+{
+  "group": "CLOSE YOUR EYES",
+  "song": "OPEN YOUR EYES",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "MINWOOK",
+      "image": "images/closeyoureyes/openyoureyes/minwook.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JINGXIANG",
+      "image": "images/closeyoureyes/openyoureyes/jingxiang.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YEOJUN",
+      "image": "images/closeyoureyes/openyoureyes/yeojun.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SUNGMIN",
+      "image": "images/closeyoureyes/openyoureyes/sungmin.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SEUNGHO",
+      "image": "images/closeyoureyes/openyoureyes/seungho.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KENSHIN",
+      "image": "images/closeyoureyes/openyoureyes/kenshin.png",
+      "color": "#20c997",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KYOUNGBAE",
+      "image": "images/closeyoureyes/openyoureyes/kyoungbae.png",
+      "color": "#ff922b",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINWOOK"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
