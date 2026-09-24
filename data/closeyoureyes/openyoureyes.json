@@ -64,12 +64,28 @@
       "original": "",
       "romanization": "Pain is gone",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.9,
+          17.85
+        ]
+      ]
     },
     {
       "start": 18.85,
       "end": 21.76,
       "members": [],
+      "voice": [
+        [
+          18.84,
+          20.6
+        ],
+        [
+          20.75,
+          21.76
+        ]
+      ],
       "original": "",
       "romanization": "Night is done done done, Wake up in the show",
       "english": "",
@@ -79,6 +95,16 @@
       "start": 22.52,
       "end": 25.94,
       "members": [],
+      "voice": [
+        [
+          22.53,
+          23.66
+        ],
+        [
+          23.84,
+          25.88
+        ]
+      ],
       "original": "눈을 감은 채, 들어봐 Raindrops till the dawn",
       "romanization": "nuneul gameun chae deureobwa, raindrops till the dawn",
       "english": "With eyes closed, Listen to the raindrops till the dawn",
@@ -88,6 +114,16 @@
       "start": 25.99,
       "end": 28.61,
       "members": [],
+      "voice": [
+        [
+          26.12,
+          27.08
+        ],
+        [
+          27.23,
+          28.65
+        ]
+      ],
       "original": "그 밤엔 내 마음 써 있는 Dream is free",
       "romanization": "geu bamen nae maeum sseo inneun dream is free",
       "english": "That night, written in my heart, “Dream is free”",
@@ -97,6 +133,12 @@
       "start": 29.51,
       "end": 30.67,
       "members": [],
+      "voice": [
+        [
+          29.5,
+          30.68
+        ]
+      ],
       "original": "새겨진 Set me free",
       "romanization": "saegyeojin set me free",
       "english": "Carved in, “Set me free”",
@@ -106,6 +148,12 @@
       "start": 31.2,
       "end": 32.55,
       "members": [],
+      "voice": [
+        [
+          31.3,
+          32.68
+        ]
+      ],
       "original": "하지만 Pay a fee",
       "romanization": "hajiman pay a fee",
       "english": "But I have to pay a fee",
@@ -115,6 +163,12 @@
       "start": 32.56,
       "end": 34.95,
       "members": [],
+      "voice": [
+        [
+          32.61,
+          34.98
+        ]
+      ],
       "original": "",
       "romanization": "With a small print, side note, your scars in it",
       "english": "",
@@ -124,6 +178,12 @@
       "start": 34.99,
       "end": 37.52,
       "members": [],
+      "voice": [
+        [
+          34.98,
+          37.58
+        ]
+      ],
       "original": "어두운 날의 작은 씨앗은 긴 겨울은",
       "romanization": "eoduun narui jageun ssiaseun gin gyeoureun",
       "english": "The little seeds of darker days, the long winter",
@@ -133,6 +193,20 @@
       "start": 37.66,
       "end": 40.48,
       "members": [],
+      "voice": [
+        [
+          37.59,
+          37.92
+        ],
+        [
+          38.1,
+          38.94
+        ],
+        [
+          39.12,
+          40.87
+        ]
+      ],
       "original": "Look, 영원을 피우니, So don't close your eyes",
       "romanization": "look, yeongwoneul piuni, so don't close your eyes",
       "english": "Look, they bloom into eternity, So don't close your eyes",
@@ -142,6 +216,12 @@
       "start": 40.63,
       "end": 42.42,
       "members": [],
+      "voice": [
+        [
+          40.79,
+          42.52
+        ]
+      ],
       "original": "",
       "romanization": "Then it feels real, make no sense",
       "english": "",
@@ -151,6 +231,12 @@
       "start": 42.6,
       "end": 44.5,
       "members": [],
+      "voice": [
+        [
+          42.62,
+          44.55
+        ]
+      ],
       "original": "잘 모르겠다면 믿어 봐 날",
       "romanization": "jal moreugessdamyeon mideo bwa nal",
       "english": "If you’re not sure, just trust me",
@@ -160,6 +246,12 @@
       "start": 44.82,
       "end": 47.13,
       "members": [],
+      "voice": [
+        [
+          44.84,
+          47.38
+        ]
+      ],
       "original": "하나, 둘, 셋 하면 깨어나",
       "romanization": "hana, dul, set hamyeon kkaeeona",
       "english": "One, two, three, and you’ll wake up",
@@ -169,6 +261,16 @@
       "start": 47.99,
       "end": 49.35,
       "members": [],
+      "voice": [
+        [
+          48.06,
+          48.47
+        ],
+        [
+          48.62,
+          49.38
+        ]
+      ],
       "original": "눈을 떠",
       "romanization": "nuneul tteo",
       "english": "Open your eyes",
@@ -214,6 +316,16 @@
       "start": 64.14,
       "end": 71.54,
       "members": [],
+      "voice": [
+        [
+          64.14,
+          66.99
+        ],
+        [
+          67.64,
+          71.61
+        ]
+      ],
       "original": "보여 줄게 My own world, 이끌림 그대로 와",
       "romanization": "boyeo julge my own world, ikkeullim geudaero wa",
       "english": "Let me show you my own world, Just follow the pull",
@@ -223,6 +335,12 @@
       "start": 71.61,
       "end": 77.15,
       "members": [],
+      "voice": [
+        [
+          71.6,
+          76.94
+        ]
+      ],
       "original": "",
       "romanization": "Until you face it on your own",
       "english": "",
@@ -232,6 +350,12 @@
       "start": 80.31,
       "end": 84.13,
       "members": [],
+      "voice": [
+        [
+          80.34,
+          84.08
+        ]
+      ],
       "original": "익숙해져 버린 Night and day at the bottom line",
       "romanization": "iksukhaejyeo beorin night and day at the bottom line",
       "english": "Grown used to night and day at the bottom line",
@@ -241,6 +365,12 @@
       "start": 84.15,
       "end": 87.08,
       "members": [],
+      "voice": [
+        [
+          84.02,
+          87.21
+        ]
+      ],
       "original": "가끔은 눈을 감아도 We’re ahead of time, yeah",
       "romanization": "gakkeumeun nuneul gamado we’re ahead of time, yeah",
       "english": "Even if we close our eyes sometimes, we’re ahead of time, yeah",
@@ -250,6 +380,28 @@
       "start": 87.92,
       "end": 94.38,
       "members": [],
+      "voice": [
+        [
+          87.96,
+          91.98
+        ],
+        [
+          92.05,
+          92.21
+        ],
+        [
+          92.34,
+          92.64
+        ],
+        [
+          92.71,
+          93.26
+        ],
+        [
+          93.31,
+          94.24
+        ]
+      ],
       "original": "한참을 넘어간 Red zone, Now I’m out of options",
       "romanization": "hanchameul neomeogan red zone, now i’m out of options",
       "english": "Way past the red zone, Now I’m out of options",
@@ -259,6 +411,20 @@
       "start": 94.68,
       "end": 97.33,
       "members": [],
+      "voice": [
+        [
+          94.8,
+          95.5
+        ],
+        [
+          96.06,
+          96.46
+        ],
+        [
+          96.61,
+          97.34
+        ]
+      ],
       "original": "이젠 눈을 떠",
       "romanization": "ijen nuneul tteo",
       "english": "Now open your eyes",
@@ -304,6 +470,12 @@
       "start": 112.49,
       "end": 114,
       "members": [],
+      "voice": [
+        [
+          112.44,
+          113.94
+        ]
+      ],
       "original": "시간은 계속 Tickin’",
       "romanization": "siganeun gyesok tickin’",
       "english": "Time keeps on tickin’",
@@ -313,6 +485,12 @@
       "start": 114.4,
       "end": 118.02,
       "members": [],
+      "voice": [
+        [
+          114.45,
+          117.96
+        ]
+      ],
       "original": "시작은 어서 널 데려가 기적으로 Back for more",
       "romanization": "sijageun eoseo neol deryeoga gijeogeuro back for more",
       "english": "The beginning takes you to a miracle, back for more",
@@ -322,6 +500,12 @@
       "start": 118.47,
       "end": 121.4,
       "members": [],
+      "voice": [
+        [
+          118.47,
+          121.61
+        ]
+      ],
       "original": "숨이 벅차도 난 Keep on going",
       "romanization": "sumi beokchado nan keep on going",
       "english": "Even when I’m out of breath, I keep on going",
@@ -331,6 +515,20 @@
       "start": 121.55,
       "end": 126.79,
       "members": [],
+      "voice": [
+        [
+          121.55,
+          123.39
+        ],
+        [
+          123.6,
+          125.42
+        ],
+        [
+          125.57,
+          126.78
+        ]
+      ],
       "original": "보이지 않는 칠흑 같은 어둠은 사라져",
       "romanization": "boiji anneun chilheuk gateun eodumeun sarajyeo",
       "english": "The pitch-black darkness we couldn’t see in fades away",
@@ -340,6 +538,12 @@
       "start": 128.06,
       "end": 129.25,
       "members": [],
+      "voice": [
+        [
+          128.03,
+          129.33
+        ]
+      ],
       "original": "",
       "romanization": "We’re still getting closer",
       "english": "",
@@ -349,6 +553,16 @@
       "start": 129.54,
       "end": 132.01,
       "members": [],
+      "voice": [
+        [
+          129.57,
+          130.92
+        ],
+        [
+          131.1,
+          132.2
+        ]
+      ],
       "original": "We all came 같은 곳에, Assemble 7 project",
       "romanization": "we all came gateun gose, assemble 7 project",
       "english": "We all came to the same place, Assemble 7 project",
@@ -358,6 +572,12 @@
       "start": 132.17,
       "end": 133.35,
       "members": [],
+      "voice": [
+        [
+          132.27,
+          133.45
+        ]
+      ],
       "original": "맞이할 끝에",
       "romanization": "majihal kkeute",
       "english": "At the end that awaits us",
@@ -367,6 +587,16 @@
       "start": 133.5,
       "end": 136.1,
       "members": [],
+      "voice": [
+        [
+          133.63,
+          134.92
+        ],
+        [
+          135.1,
+          136.29
+        ]
+      ],
       "original": "I refuse to prove it, 영화 속 피날레",
       "romanization": "i refuse to prove it, yeonghwa sog pinalle",
       "english": "I refuse to prove it, The finale of a movie",
@@ -376,6 +606,12 @@
       "start": 136.3,
       "end": 137.4,
       "members": [],
+      "voice": [
+        [
+          136.38,
+          137.68
+        ]
+      ],
       "original": "그 막을 향해서",
       "romanization": "geu mageul hyanghaeseo",
       "english": "Heading toward the final scene",
@@ -385,6 +621,12 @@
       "start": 137.41,
       "end": 139.07,
       "members": [],
+      "voice": [
+        [
+          137.34,
+          139.1
+        ]
+      ],
       "original": "",
       "romanization": "How can I say?",
       "english": "",
@@ -394,6 +636,16 @@
       "start": 139.09,
       "end": 143.95,
       "members": [],
+      "voice": [
+        [
+          139.12,
+          141.54
+        ],
+        [
+          141.6,
+          144.07
+        ]
+      ],
       "original": "감은 두 눈이 떠졌을 때, 우릴 지켜봐 줘",
       "romanization": "gameun du nuni tteojyeosseul ttae, uril jikyeobwa jwo",
       "english": "When your closed eyes open, Keep your eyes on us",
@@ -403,6 +655,16 @@
       "start": 144.1,
       "end": 145.4,
       "members": [],
+      "voice": [
+        [
+          144.07,
+          144.53
+        ],
+        [
+          144.68,
+          145.32
+        ]
+      ],
       "original": "이렇게",
       "romanization": "ireoke",
       "english": "Like this",
