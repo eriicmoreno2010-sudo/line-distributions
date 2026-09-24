@@ -7,6 +7,13 @@
   "subunit": false,
   "members": [
     {
+      "name": "TAEIL",
+      "image": "images/nct127/orangeseoul/taeil.png",
+      "color": "#f273ca",
+      "focus": 50,
+      "lift": 3
+    },
+    {
       "name": "JOHNNY",
       "image": "images/nct127/orangeseoul/johnny.png",
       "color": "#31b287",
@@ -49,13 +56,6 @@
       "lift": 3
     },
     {
-      "name": "HAECHAN",
-      "image": "images/nct127/orangeseoul/haechan.png",
-      "color": "#1bb7e8",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "MARK",
       "image": "images/nct127/orangeseoul/mark.png",
       "color": "#cb6ce6",
@@ -63,9 +63,9 @@
       "lift": 3
     },
     {
-      "name": "TAEIL",
-      "image": "images/nct127/orangeseoul/taeil.png",
-      "color": "#f273ca",
+      "name": "HAECHAN",
+      "image": "images/nct127/orangeseoul/haechan.png",
+      "color": "#1bb7e8",
       "focus": 50,
       "lift": 3
     }
