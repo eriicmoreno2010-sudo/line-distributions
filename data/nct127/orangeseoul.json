@@ -85,5 +85,6 @@
   ],
   "cover": "covers/nct127_orangeseoul.jpg",
   "audio": "audio/nct127_orangeseoul.mp3",
-  "npC1": "#f78426"
+  "npC1": "#f78426",
+  "npC2": "#f1ff2e"
 }
