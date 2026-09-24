@@ -188,15 +188,59 @@
       "adlib": false
     },
     {
-      "start": 32.55,
-      "end": 35.67,
+      "start": 17.15,
+      "end": 18.36,
+      "members": [
+        "SEOHO"
+      ],
+      "original": "(중간이)",
+      "romanization": "(junggani)",
+      "english": "(In the middle)",
+      "adlib": true,
+      "voice": [
+        [
+          17.19,
+          18.37
+        ]
+      ]
+    },
+    {
+      "start": 21.51,
+      "end": 22.66,
+      "members": [
+        "KEONHEE"
+      ],
+      "original": "(달이)",
+      "romanization": "(dari)",
+      "english": "(The moon)",
+      "adlib": true,
+      "voice": [
+        [
+          21.47,
+          21.94
+        ],
+        [
+          22.09,
+          22.56
+        ]
+      ]
+    },
+    {
+      "start": 0,
+      "end": 0,
       "members": [
         "HWANWOONG"
       ],
       "original": "(말은 다시 울려 왜)",
       "romanization": "(mareun dasi ullyeo wae)",
       "english": "(Your words echo again, why?)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          32.61,
+          35.49
+        ]
+      ]
     },
     {
       "start": 35.81,
