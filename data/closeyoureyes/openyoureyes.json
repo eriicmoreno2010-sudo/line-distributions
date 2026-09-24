@@ -69,5 +69,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/closeyoureyes_openyoureyes.mp3"
+  "audio": "audio/closeyoureyes_openyoureyes.mp3",
+  "audioOffset": -0.1
 }
