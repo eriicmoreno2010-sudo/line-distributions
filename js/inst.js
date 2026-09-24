@@ -101,14 +101,26 @@
     setBar(0.02);
     const modelUrl = modelBase + r.model;
     const ext = [{ path: r.dataName, data: modelBase + r.dataName }];   // pesos externos (.onnx.data)
-    engine = "GPU";
+    // El modelo es fp16: hay que crear el device de WebGPU pidiendo "shader-f16"
+    // explícitamente y dárselo a ORT (si no, falla al ejecutar con "device does not support f16").
+    let f16ok = false;
     if(navigator.gpu){
+      try{
+        const ad = await navigator.gpu.requestAdapter();
+        if(ad && ad.features && ad.features.has("shader-f16")){
+          ort.env.webgpu.device = await ad.requestDevice({ requiredFeatures:["shader-f16"] });
+          f16ok = true;
+        }
+      }catch(e){ console.warn("webgpu device:", e); }
+    }
+    engine = f16ok ? "GPU" : "CPU";
+    if(f16ok){
       try{ setStatus("Cargando el modelo en la GPU…"); sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["webgpu"], externalData: ext }); }
       catch(e){ sess = null; console.warn("webgpu:", e); }
     }
     if(!sess){
       engine = "CPU";
-      setStatus("Sin GPU disponible: cargando en CPU (irá lento)…");
+      setStatus(f16ok ? "GPU falló; usando CPU (lento)…" : "Tu GPU no soporta f16; usando CPU (lento)…");
       sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"], externalData: ext });
     }
   }
