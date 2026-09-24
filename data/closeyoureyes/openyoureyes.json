@@ -9,49 +9,49 @@
     {
       "name": "MINWOOK",
       "image": "images/closeyoureyes/openyoureyes/minwook.png",
-      "color": "#ff4d6d",
+      "color": "#2d32d2",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JINGXIANG",
       "image": "images/closeyoureyes/openyoureyes/jingxiang.png",
-      "color": "#4dabf7",
+      "color": "#d42525",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "YEOJUN",
       "image": "images/closeyoureyes/openyoureyes/yeojun.png",
-      "color": "#51cf66",
+      "color": "#efc325",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "SUNGMIN",
       "image": "images/closeyoureyes/openyoureyes/sungmin.png",
-      "color": "#ffd43b",
+      "color": "#20ed1d",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "SEUNGHO",
       "image": "images/closeyoureyes/openyoureyes/seungho.png",
-      "color": "#cc5de8",
+      "color": "#b1e85e",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "KENSHIN",
       "image": "images/closeyoureyes/openyoureyes/kenshin.png",
-      "color": "#20c997",
+      "color": "#f5984d",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "KYOUNGBAE",
       "image": "images/closeyoureyes/openyoureyes/kyoungbae.png",
-      "color": "#ff922b",
+      "color": "#2b7fee",
       "focus": 50,
       "lift": 3
     }
