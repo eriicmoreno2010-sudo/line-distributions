@@ -61,6 +61,13 @@
       "color": "#cb6ce6",
       "focus": 50,
       "lift": 3
+    },
+    {
+      "name": "TAEIL",
+      "image": "images/nct127/orangeseoul/taeil.png",
+      "color": "#7c5cff",
+      "focus": 50,
+      "lift": 3
     }
   ],
   "lyrics": [
