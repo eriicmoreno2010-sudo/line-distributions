@@ -16,6 +16,10 @@ const { runExport, findFfmpeg } = require("./export");
 
 const ROOT = path.join(__dirname, "..");
 
+// Asegura WebGPU disponible (el separador de instrumental corre en GPU).
+// En Windows usa el backend D3D12 por defecto; este switch habilita WebGPU.
+try{ app.commandLine.appendSwitch("enable-unsafe-webgpu"); }catch(e){}
+
 // Resolve git: prefer the standard Windows install path, fall back to PATH.
 const GIT = (function(){
   const cands = [
@@ -663,24 +667,44 @@ ipcMain.handle("save-cutout-file", async (_e, args) => {
 // onnxruntime-web; aquí solo descargamos/servimos y guardamos el resultado.
 // El modelo "Inst" saca directamente el INSTRUMENTAL (a favor de la instrumental).
 // ---------------------------------------------------------------------------
-const STEM_MODEL_NAME = "UVR-MDX-NET-Inst_HQ_3.onnx";
-const STEM_MODEL_URL  = "https://huggingface.co/seanghay/uvr_models/resolve/main/" + STEM_MODEL_NAME;
-const ORT_VER = "1.21.0";
+// Modelo: Mel-Band RoFormer (SOTA para voces), export "host-STFT" en ONNX fp16
+// para WebGPU. El .onnx (5 MB) + sus pesos .onnx.data (~707 MB) se descargan UNA
+// vez. Corre en la GPU con onnxruntime-web 1.30 (soporta opset 23).
+const STEM_HF = "https://huggingface.co/silverdaw/mel-band-roformer-vocals-onnx/resolve/main/";
+const STEM_MODEL_NAME = "syhft_core_folded_fp16_webgpu.onnx";
+const STEM_DATA_NAME  = "syhft_core_folded_fp16_webgpu.onnx.data";
+const ORT_VER = "1.30.0";
 const ORT_CDN = "https://cdn.jsdelivr.net/npm/onnxruntime-web@" + ORT_VER + "/dist/";
-// bundle WebGPU (usa la GPU -> MUCHÍSIMO más rápido) + su runtime jsep, y el wasm normal de reserva
+// bundle WebGPU (usa la GPU) + su runtime asyncify (nombres nuevos en 1.30)
 const ORT_FILES = ["ort.webgpu.bundle.min.mjs",
-  "ort-wasm-simd-threaded.jsep.wasm", "ort-wasm-simd-threaded.jsep.mjs",
-  "ort-wasm-simd-threaded.wasm", "ort-wasm-simd-threaded.mjs"];
-const stemDir = () => path.join(app.getPath("userData"), "stem-" + ORT_VER);
+  "ort-wasm-simd-threaded.asyncify.wasm", "ort-wasm-simd-threaded.asyncify.mjs"];
+const stemDir = () => path.join(app.getPath("userData"), "stem-roformer");
+const OLD_STEM_DIRS = ["stem-1.21.0"];   // carpetas de modelos antiguos (se borran)
 
-// La separación con onnxruntime-web va MUCHO más rápida multi-hilo, pero eso
-// exige que la página esté "cross-origin isolated" (COOP/COEP) y sirva el wasm
-// desde el MISMO origen. Por eso servimos la app y el modelo por http local con
-// esas cabeceras; inst.html se abre desde aquí (no por file://) y así hay hilos.
+// Descarga en streaming a disco (para ficheros grandes como los pesos de 707 MB).
+function httpDownload(url, dest, onProgress){
+  return new Promise((resolve, reject) => {
+    require("https").get(url, r => {
+      if(r.statusCode >= 300 && r.statusCode < 400 && r.headers.location){ r.resume(); return httpDownload(r.headers.location, dest, onProgress).then(resolve, reject); }
+      if(r.statusCode !== 200){ r.resume(); return reject(new Error("HTTP " + r.statusCode)); }
+      const total = parseInt(r.headers["content-length"] || "0", 10); let got = 0;
+      const ws = fs.createWriteStream(dest);
+      r.on("data", d => { got += d.length; if(onProgress && total) onProgress(got, total); });
+      r.pipe(ws);
+      ws.on("finish", () => ws.close(() => resolve()));
+      ws.on("error", reject); r.on("error", reject);
+    }).on("error", reject);
+  });
+}
+
+// La separación con onnxruntime-web necesita GPU (WebGPU) y que la página esté
+// "cross-origin isolated" (COOP/COEP) sirviendo todo del MISMO origen. Por eso
+// servimos la app + el modelo por http local con esas cabeceras; inst.html se
+// abre desde aquí (no por file://).
 const STEM_MIME = { ".html":"text/html; charset=utf-8", ".js":"text/javascript; charset=utf-8",
   ".mjs":"text/javascript; charset=utf-8", ".css":"text/css; charset=utf-8", ".json":"application/json; charset=utf-8",
-  ".wasm":"application/wasm", ".onnx":"application/octet-stream", ".mp3":"audio/mpeg", ".wav":"audio/wav",
-  ".m4a":"audio/mp4", ".ogg":"audio/ogg", ".mp4":"video/mp4", ".webm":"video/webm",
+  ".wasm":"application/wasm", ".onnx":"application/octet-stream", ".data":"application/octet-stream",
+  ".mp3":"audio/mpeg", ".wav":"audio/wav", ".m4a":"audio/mp4", ".ogg":"audio/ogg", ".mp4":"video/mp4", ".webm":"video/webm",
   ".png":"image/png", ".jpg":"image/jpeg", ".jpeg":"image/jpeg", ".gif":"image/gif", ".svg":"image/svg+xml",
   ".woff":"font/woff", ".woff2":"font/woff2", ".ttf":"font/ttf" };
 let appServer = null, appPort = 0;
@@ -693,16 +717,17 @@ function startAppServer(){
       let f;
       if(name.startsWith("/_stem/")){ f = path.join(dir, name.slice(7)); if(!f.startsWith(dir)){ res.writeHead(403); res.end(); return; } }
       else { if(name === "/" || name === "") name = "/library.html"; f = path.join(ROOT, name.replace(/^\/+/, "")); if(!f.startsWith(ROOT)){ res.writeHead(403); res.end(); return; } }
-      fs.readFile(f, (e, b) => {
-        if(e){ res.writeHead(404); res.end("not found"); return; }
+      fs.stat(f, (e, st) => {
+        if(e || !st.isFile()){ res.writeHead(404); res.end("not found"); return; }
         res.writeHead(200, {
           "Content-Type": STEM_MIME[path.extname(f).toLowerCase()] || "application/octet-stream",
+          "Content-Length": st.size,
           "Cross-Origin-Opener-Policy": "same-origin",
           "Cross-Origin-Embedder-Policy": "require-corp",
           "Cross-Origin-Resource-Policy": "same-origin",
           "Cache-Control": "no-store"
         });
-        res.end(b);
+        fs.createReadStream(f).on("error", () => { try{ res.destroy(); }catch(_){} }).pipe(res);   // streaming (pesos de 707 MB)
       });
     });
     appServer.on("error", reject);
@@ -715,19 +740,25 @@ ipcMain.handle("stem-server-start", async () => {
 });
 ipcMain.handle("stem-model-ensure", async (evt) => {
   try{
+    // borra modelos antiguos para no acumular archivos
+    for(const d of OLD_STEM_DIRS){ try{ fs.rmSync(path.join(app.getPath("userData"), d), { recursive:true, force:true }); }catch(e){} }
     const dir = stemDir(); fs.mkdirSync(dir, { recursive: true });
-    const items = [{ url: STEM_MODEL_URL, file: STEM_MODEL_NAME }]
-      .concat(ORT_FILES.map(f => ({ url: ORT_CDN + f, file: f })));
+    const items = [
+      { url: STEM_HF + STEM_MODEL_NAME, file: STEM_MODEL_NAME },
+      { url: STEM_HF + STEM_DATA_NAME,  file: STEM_DATA_NAME  }
+    ].concat(ORT_FILES.map(f => ({ url: ORT_CDN + f, file: f })));
     const missing = items.filter(it => !fs.existsSync(path.join(dir, it.file)));
     const send = (done, total, label) => { try{ evt.sender.send("stem-model-progress", { done, total, label }); }catch(e){} };
     for(let i = 0; i < missing.length; i++){
-      send(i, missing.length, "Descargando " + missing[i].file + "…");
-      const b = await httpGetBuf(missing[i].url);
-      fs.writeFileSync(path.join(dir, missing[i].file), b);
+      const dest = path.join(dir, missing[i].file), tmp = dest + ".part";
+      await httpDownload(missing[i].url, tmp, (got, tot) => {
+        send(i + got/tot, missing.length, "Descargando " + missing[i].file + " (" + Math.round(got/1e6) + "/" + Math.round(tot/1e6) + " MB)");
+      });
+      fs.renameSync(tmp, dest);
       send(i + 1, missing.length, missing[i].file);
     }
     await startAppServer();
-    return { ok: true, base: "http://127.0.0.1:" + appPort + "/_stem/", model: STEM_MODEL_NAME };
+    return { ok: true, base: "http://127.0.0.1:" + appPort + "/_stem/", model: STEM_MODEL_NAME, dataName: STEM_DATA_NAME };
   }catch(e){ return { ok: false, error: e.message }; }
 });
 

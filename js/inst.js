@@ -1,9 +1,9 @@
 /*
-  Separar INSTRUMENTAL / voz con IA (MDX-Net UVR-MDX-NET-Inst_HQ_3).
-  Corre en el navegador con onnxruntime-web (WASM). El modelo "Inst" saca
-  directamente el instrumental (a favor de la instrumental, como pidió el user).
-  El DSP (STFT/iSTFT compatible con torch.stft, FFT de Bluestein para n_fft=6144)
-  está verificado con reconstrucción de ~3e-7 antes de integrarlo.
+  Separar INSTRUMENTAL / voz con IA — Mel-Band RoFormer (SOTA para voces).
+  Export ONNX "host-STFT" fp16 para WebGPU: el modelo recibe la STFT y devuelve
+  una MÁSCARA compleja; aquí hacemos la STFT/iSTFT y aplicamos (1-máscara) para
+  quedarnos con el instrumental. Corre en la GPU con onnxruntime-web 1.30.
+  DSP verificado: reconstrucción STFT/iSTFT ~1e-14; pipeline completo probado.
 */
 (function(){
   const D = window.desktop;
@@ -17,13 +17,13 @@
     return;
   }
 
-  // ================= FFT (radix-2 iterativa, in-place). sign=-1 fwd, +1 inv =================
+  // ================= FFT radix-2 (n_fft=2048 es potencia de 2) =================
   function fft(re, im, sign){
     const n = re.length;
     for(let i=1,j=0;i<n;i++){ let bit=n>>1; for(;j&bit;bit>>=1) j^=bit; j^=bit;
       if(i<j){ const tr=re[i];re[i]=re[j];re[j]=tr; const ti=im[i];im[i]=im[j];im[j]=ti; } }
     for(let len=2;len<=n;len<<=1){
-      const ang = sign*2*Math.PI/len, wr=Math.cos(ang), wi=Math.sin(ang), half=len>>1;
+      const ang=sign*2*Math.PI/len, wr=Math.cos(ang), wi=Math.sin(ang), half=len>>1;
       for(let i=0;i<n;i+=len){
         let cr=1, ci=0;
         for(let k=0;k<half;k++){
@@ -36,117 +36,87 @@
       }
     }
   }
-  // ================= Bluestein (DFT de tamaño arbitrario; fwd + inv por conjugado) =========
-  function makeBluestein(N){
-    let M=1; while(M < 2*N-1) M<<=1;
-    const cosT=new Float64Array(N), sinT=new Float64Array(N);
-    for(let n=0;n<N;n++){ const a=Math.PI*((n*n)%(2*N))/N; cosT[n]=Math.cos(a); sinT[n]=Math.sin(a); }
-    const br=new Float64Array(M), bi=new Float64Array(M);
-    br[0]=cosT[0]; bi[0]=sinT[0];
-    for(let n=1;n<N;n++){ br[n]=cosT[n]; bi[n]=sinT[n]; br[M-n]=cosT[n]; bi[M-n]=sinT[n]; }
-    fft(br,bi,-1);
-    return { N, M, cosT, sinT, br, bi, ar:new Float64Array(M), ai:new Float64Array(M) };
-  }
-  function dftFwd(bs, xr, xi){
-    const {N,M,cosT,sinT,br,bi,ar,ai}=bs;
-    ar.fill(0); ai.fill(0);
-    for(let n=0;n<N;n++){ const c=cosT[n], s=sinT[n]; ar[n]=xr[n]*c + xi[n]*s; ai[n]=xi[n]*c - xr[n]*s; }
-    fft(ar,ai,-1);
-    for(let k=0;k<M;k++){ const r=ar[k]*br[k]-ai[k]*bi[k], i=ar[k]*bi[k]+ai[k]*br[k]; ar[k]=r; ai[k]=i; }
-    fft(ar,ai,+1);
-    const outr=new Float64Array(N), outi=new Float64Array(N), inv=1/M;
-    for(let k=0;k<N;k++){ const c=cosT[k], s=sinT[k], rr=ar[k]*inv, ii=ai[k]*inv;
-      outr[k]=rr*c + ii*s; outi[k]=ii*c - rr*s; }
-    return { r:outr, i:outi };
-  }
-  function dftInv(bs, xr, xi){
-    const nxi=new Float64Array(xr.length); for(let i=0;i<xr.length;i++) nxi[i]=-xi[i];
-    const t=dftFwd(bs, xr, nxi);
-    for(let i=0;i<t.i.length;i++) t.i[i]=-t.i[i];
-    return t;
-  }
 
-  // ================= STFT / iSTFT compatibles con torch.stft(center=True) =================
-  const N_FFT=6144, HOP=1024, DIM_F=3072, N_BINS=N_FFT/2+1, TRIM=N_FFT/2;
-  const DIM_T=256, CHUNK=HOP*(DIM_T-1), GEN=CHUNK-2*TRIM;
-  const bs = makeBluestein(N_FFT);
+  // ================= STFT/iSTFT (torch.stft center=True) para el RoFormer =================
+  const N_FFT=2048, HOP=441, N_BINS=N_FFT/2+1, TRIM=N_FFT/2;   // 1025 bins
+  const T_FR=1101, CHUNK=HOP*(T_FR-1), STEP=Math.round(8*44100);   // ventana ~11s, salto 8s
   const WIN = new Float64Array(N_FFT);
-  for(let n=0;n<N_FFT;n++) WIN[n]=0.5-0.5*Math.cos(2*Math.PI*n/N_FFT); // hann periódica
+  for(let n=0;n<N_FFT;n++) WIN[n]=0.5-0.5*Math.cos(2*Math.PI*n/N_FFT);      // hann periódica
+  const HAM = new Float64Array(CHUNK);
+  for(let n=0;n<CHUNK;n++) HAM[n]=0.54-0.46*Math.cos(2*Math.PI*n/(CHUNK-1)); // hamming (solape entre trozos)
   function reflectPad(x, p){
-    const L=x.length, out=new Float64Array(L+2*p);
-    for(let i=0;i<L;i++) out[p+i]=x[i];
-    for(let i=1;i<=p;i++){ out[p-i]=x[i]; out[p+L-1+i]=x[L-1-i]; }
+    const Ln=x.length, out=new Float64Array(Ln+2*p);
+    for(let i=0;i<Ln;i++) out[p+i]=x[i];
+    for(let i=1;i<=p;i++){ out[p-i]=x[i]; out[p+Ln-1+i]=x[Ln-1-i]; }
     return out;
   }
-  function stftReal(x){
+  function stft(x){
     const xp=reflectPad(x, TRIM);
     const frames=1+Math.floor((xp.length-N_FFT)/HOP);
-    const re=Array.from({length:frames},()=>new Float64Array(DIM_F));
-    const im=Array.from({length:frames},()=>new Float64Array(DIM_F));
+    const RE=Array.from({length:frames},()=>new Float64Array(N_BINS));
+    const IM=Array.from({length:frames},()=>new Float64Array(N_BINS));
     const fr=new Float64Array(N_FFT), fi=new Float64Array(N_FFT);
     for(let m=0;m<frames;m++){
       const off=m*HOP;
       for(let n=0;n<N_FFT;n++){ fr[n]=xp[off+n]*WIN[n]; fi[n]=0; }
-      const R=dftFwd(bs, fr, fi);
-      const rm=re[m], imm=im[m];
-      for(let k=0;k<DIM_F;k++){ rm[k]=R.r[k]; imm[k]=R.i[k]; }
+      fft(fr,fi,-1);
+      const rm=RE[m], imm=IM[m];
+      for(let k=0;k<N_BINS;k++){ rm[k]=fr[k]; imm[k]=fi[k]; }
     }
-    return { re, im, frames };
+    return { RE, IM, frames };
   }
-  function istftReal(re, im, frames){
+  function istft(RE, IM, frames){
     const len=(frames-1)*HOP+N_FFT;
-    const xp=new Float64Array(len), wsum=new Float64Array(len);
+    const xp=new Float64Array(len), ws=new Float64Array(len);
     const fr=new Float64Array(N_FFT), fi=new Float64Array(N_FFT);
     for(let m=0;m<frames;m++){
       fr.fill(0); fi.fill(0);
-      const rm=re[m], imm=im[m];
-      for(let k=0;k<DIM_F;k++){ fr[k]=rm[k]; fi[k]=imm[k]; }
+      const rm=RE[m], imm=IM[m];
+      for(let k=0;k<N_BINS;k++){ fr[k]=rm[k]; fi[k]=imm[k]; }
       for(let k=1;k<N_BINS-1;k++){ fr[N_FFT-k]=fr[k]; fi[N_FFT-k]=-fi[k]; }
-      const R=dftInv(bs, fr, fi);
+      fft(fr,fi,+1);
       const off=m*HOP;
-      for(let n=0;n<N_FFT;n++){ const v=(R.r[n]/N_FFT)*WIN[n]; xp[off+n]+=v; wsum[off+n]+=WIN[n]*WIN[n]; }
+      for(let n=0;n<N_FFT;n++){ const v=(fr[n]/N_FFT)*WIN[n]; xp[off+n]+=v; ws[off+n]+=WIN[n]*WIN[n]; }
     }
-    for(let i=0;i<len;i++){ if(wsum[i]>1e-8) xp[i]/=wsum[i]; }
+    for(let i=0;i<len;i++){ if(ws[i]>1e-8) xp[i]/=ws[i]; }
     return xp.subarray(TRIM, len-TRIM);
   }
 
   // ================= carga del modelo (una vez) =================
-  let ort=null, sess=null, modelBase=null, engine="CPU";
+  let ort=null, sess=null, modelBase=null, engine="GPU";
   async function ensureModel(){
     if(sess) return;
-    setStatus("Preparando el modelo de IA (se descarga una vez, ~70 MB)…");
-    D.onStemProgress(p => { if(p && p.total){ setStatus("⬇️ " + (p.label||"") + "  (" + p.done + "/" + p.total + ")"); setBar(p.done/p.total); } });
+    setStatus("Preparando el modelo de IA (se descarga una vez, ~710 MB)…");
+    D.onStemProgress(p => { if(p && p.total){ setStatus("⬇️ " + (p.label||"") + "  (" + (p.done).toFixed(1) + "/" + p.total + ")"); setBar(p.done/p.total); } });
     const r = await D.stemModelEnsure();
     if(!r || !r.ok) throw new Error((r && r.error) || "no se pudo preparar el modelo");
     modelBase = r.base;
     if(!ort){
-      // bundle WebGPU (corre en la GPU); trae también el motor wasm de reserva
       ort = (await import(modelBase + "ort.webgpu.bundle.min.mjs")).default;
-      ort.env.wasm.wasmPaths = modelBase;   // ort-*.jsep.wasm/.mjs y wasm normal (mismo origen)
+      ort.env.wasm.wasmPaths = modelBase;                 // runtime asyncify, mismo origen
       const iso = (typeof SharedArrayBuffer !== "undefined") && (self.crossOriginIsolated !== false);
       ort.env.wasm.numThreads = iso ? Math.min(navigator.hardwareConcurrency || 4, 8) : 1;
       ort.env.wasm.proxy = false;
     }
     setBar(0.02);
     const modelUrl = modelBase + r.model;
-    // 1º intenta GPU (WebGPU, rapidísimo); si no hay GPU, cae a CPU (wasm)
+    const ext = [{ path: r.dataName, data: modelBase + r.dataName }];   // pesos externos (.onnx.data)
     engine = "GPU";
     if(navigator.gpu){
-      try{ setStatus("Cargando el modelo en la GPU…"); sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["webgpu"] }); }
-      catch(e){ sess = null; }
+      try{ setStatus("Cargando el modelo en la GPU…"); sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["webgpu"], externalData: ext }); }
+      catch(e){ sess = null; console.warn("webgpu:", e); }
     }
     if(!sess){
       engine = "CPU";
-      setStatus("Cargando el modelo en la CPU… (sin GPU, irá más lento)");
-      try{ sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"] }); }
-      catch(e){ ort.env.wasm.numThreads = 1; sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"] }); }
+      setStatus("Sin GPU disponible: cargando en CPU (irá lento)…");
+      sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"], externalData: ext });
     }
   }
 
   // ================= decodificar + remuestrear a 44100 estéreo =================
   async function decodeAudioBytes(arr){
     const ac = new (window.AudioContext || window.webkitAudioContext)();
-    const buf = await ac.decodeAudioData(arr.slice(0));   // slice: evita detached buffer
+    const buf = await ac.decodeAudioData(arr.slice(0));
     ac.close && ac.close();
     let L, R;
     if(Math.abs(buf.sampleRate - 44100) < 1){
@@ -160,58 +130,47 @@
     return { L: Float32Array.from(L), R: Float32Array.from(R) };
   }
 
-  // ================= separación (mismo chunking que UVR/MDX) =================
-  const COMPENSATE = 1.030848;   // factor del modelo Inst_HQ_3 (nivel correcto)
-  const DENOISE = true;          // como UVR: pasa +x y -x y promedia -> quita artefactos
-  async function runModel(data, fr){
-    const res = await sess.run({ input: new ort.Tensor("float32", data, [1,4,DIM_F,fr]) });
-    return res.output.data;
-  }
+  // ================= separación (RoFormer: máscara compleja + solape Hamming) =================
   async function demix(L, R, onProg){
     const N = L.length;
-    const pad = GEN - (N % GEN);
-    const total = TRIM + N + pad + TRIM;
-    const padL = new Float64Array(total), padR = new Float64Array(total);
-    padL.set(L, TRIM); padR.set(R, TRIM);
-    const outL = new Float64Array(total), outR = new Float64Array(total);
-    const nChunks = Math.floor((total - CHUNK) / GEN) + 1;
-    const plane = DIM_F * DIM_T;
-    let done = 0;
-    const steps = DENOISE ? 2 : 1;
-    for(let i=0; i+CHUNK<=total; i+=GEN){
-      const cl = padL.subarray(i, i+CHUNK), cr = padR.subarray(i, i+CHUNK);
-      const SL = stftReal(cl), SR = stftReal(cr), fr = SL.frames;
-      const data = new Float32Array(4*DIM_F*fr);
-      for(let f=0;f<fr;f++){
-        const slr=SL.re[f], sli=SL.im[f], srr=SR.re[f], sri=SR.im[f];
-        for(let k=0;k<DIM_F;k++){
-          const idx=k*fr+f;
-          data[idx]=slr[k]; data[plane+idx]=sli[k]; data[2*plane+idx]=srr[k]; data[3*plane+idx]=sri[k];
+    const accL = new Float64Array(N), accR = new Float64Array(N), accW = new Float64Array(N);
+    const cl = new Float64Array(CHUNK), cr = new Float64Array(CHUNK);
+    const nWin = Math.max(1, Math.ceil(N / STEP));
+    let wi = 0;
+    for(let i=0; i<N; i+=STEP){
+      for(let n=0;n<CHUNK;n++){ cl[n]=L[i+n]||0; cr[n]=R[i+n]||0; }
+      const SL = stft(cl), SR = stft(cr), fr = SL.frames;
+      // empaqueta [1,2050,T,2], fila = 2*freq + canal, último eje = (re, im)
+      const data = new Float32Array(2050*T_FR*2);
+      for(let f=0; f<N_BINS; f++) for(let c=0; c<2; c++){
+        const RE=c?SR.RE:SL.RE, IM=c?SR.IM:SL.IM, row=2*f+c;
+        for(let m=0;m<fr;m++){ const idx=row*(T_FR*2)+m*2; data[idx]=RE[m][f]; data[idx+1]=IM[m][f]; }
+      }
+      const res = await sess.run({ stft_repr: new ort.Tensor("float32", data, [1,2050,T_FR,2]) });
+      const mk = res.masks.data;
+      // instrumental = (1 - máscara) · entrada  (por canal)
+      const IRE=[Array.from({length:fr},()=>new Float64Array(N_BINS)),Array.from({length:fr},()=>new Float64Array(N_BINS))];
+      const IIM=[Array.from({length:fr},()=>new Float64Array(N_BINS)),Array.from({length:fr},()=>new Float64Array(N_BINS))];
+      for(let f=0; f<N_BINS; f++) for(let c=0; c<2; c++){
+        const RE=c?SR.RE:SL.RE, IM=c?SR.IM:SL.IM, row=2*f+c;
+        for(let m=0;m<fr;m++){
+          const idx=row*(T_FR*2)+m*2, mr=mk[idx], mi=mk[idx+1], xr=RE[m][f], xi=IM[m][f];
+          const vr=mr*xr-mi*xi, vi=mr*xi+mi*xr;   // voz
+          IRE[c][m][f]=xr-vr; IIM[c][m][f]=xi-vi; // instrumental = mezcla - voz
         }
       }
-      // salida = compensate * ( denoise ? (model(x) - model(-x))/2 : model(x) )
-      const oPos = await runModel(data, fr);
-      let o = new Float32Array(oPos.length);
-      if(DENOISE){
-        const neg = new Float32Array(data.length); for(let j=0;j<data.length;j++) neg[j] = -data[j];
-        done += 0.5/nChunks; if(onProg) onProg(done);
-        await new Promise(r => setTimeout(r, 0));
-        const oNeg = await runModel(neg, fr);
-        for(let j=0;j<o.length;j++) o[j] = (oPos[j] - oNeg[j]) * 0.5 * COMPENSATE;
-      }else{
-        for(let j=0;j<o.length;j++) o[j] = oPos[j] * COMPENSATE;
-      }
-      const orl=Array.from({length:fr},()=>new Float64Array(DIM_F)), oil=Array.from({length:fr},()=>new Float64Array(DIM_F));
-      const orr=Array.from({length:fr},()=>new Float64Array(DIM_F)), oir=Array.from({length:fr},()=>new Float64Array(DIM_F));
-      for(let f=0;f<fr;f++) for(let k=0;k<DIM_F;k++){ const idx=k*fr+f;
-        orl[f][k]=o[idx]; oil[f][k]=o[plane+idx]; orr[f][k]=o[2*plane+idx]; oir[f][k]=o[3*plane+idx]; }
-      const wl=istftReal(orl,oil,fr), wr=istftReal(orr,oir,fr);
-      for(let n=0;n<GEN;n++){ outL[i+TRIM+n]=wl[TRIM+n]; outR[i+TRIM+n]=wr[TRIM+n]; }
-      done = Math.max(done, (Math.floor(i/GEN)+1)/nChunks);
-      if(onProg) onProg(done);
-      await new Promise(r => setTimeout(r, 0));   // deja respirar a la UI
+      const wl = istft(IRE[0],IIM[0],fr), wr = istft(IRE[1],IIM[1],fr);
+      for(let n=0;n<CHUNK;n++){ const g=i+n; if(g<N){ const w=HAM[n]; accL[g]+=wl[n]*w; accR[g]+=wr[n]*w; accW[g]+=w; } }
+      wi++;
+      if(onProg) onProg(Math.min(1, wi/nWin));
+      await new Promise(res2 => setTimeout(res2, 0));
     }
-    return { L: outL.subarray(TRIM, TRIM+N), R: outR.subarray(TRIM, TRIM+N) };
+    let peak=0;
+    for(let i=0;i<N;i++){ if(accW[i]>1e-8){ accL[i]/=accW[i]; accR[i]/=accW[i]; } const a=Math.abs(accL[i]), b=Math.abs(accR[i]); if(a>peak)peak=a; if(b>peak)peak=b; }
+    const scale = peak>0.99 ? 0.99/peak : 1;   // normalización de pico (evita saturación)
+    const oL=new Float32Array(N), oR=new Float32Array(N);
+    for(let i=0;i<N;i++){ oL[i]=accL[i]*scale; oR[i]=accR[i]*scale; }
+    return { L: oL, R: oR };
   }
 
   // ================= WAV 16-bit estéreo =================
@@ -245,7 +204,6 @@
     try{
       const r = await D.pickAudioFile();
       if(!r || !r.ok){ if(r && r.error) setStatus("✕ " + r.error); return; }
-      // r.bytes llega como Uint8Array/Buffer por IPC
       pickedBytes = (r.bytes instanceof Uint8Array) ? r.bytes : new Uint8Array(r.bytes);
       pickedName = r.name || "audio";
       $("fname").textContent = "🎵 " + pickedName;
@@ -261,10 +219,9 @@
     try{
       await ensureModel();
       setStatus("Decodificando el audio…"); setBar(0.02);
-      // copia a un ArrayBuffer propio para decodeAudioData
       const ab = pickedBytes.buffer.slice(pickedBytes.byteOffset, pickedBytes.byteOffset + pickedBytes.byteLength);
       const { L, R } = await decodeAudioBytes(ab);
-      setStatus("Separando la voz del instrumental… (esto tarda un poco)"); setBar(0);
+      setStatus("Separando en " + engine + "…"); setBar(0);
       const t0 = performance.now();
       const out = await demix(L, R, f => { setBar(f); setStatus("Separando en " + engine + "… " + Math.round(f*100) + "%"); });
       const secs = ((performance.now()-t0)/1000).toFixed(0);
@@ -274,7 +231,7 @@
       prev.src = resultUrl;
       $("result").style.display = "block";
       saveBtn.disabled = false;
-      setStatus("✅ Listo en " + secs + "s. Escúchalo abajo y guárdalo en tu PC.");
+      setStatus("✅ Listo en " + secs + "s (" + engine + "). Escúchalo abajo y guárdalo en tu PC.");
     }catch(e){
       setStatus("✕ " + (e.message || e));
     }finally{
