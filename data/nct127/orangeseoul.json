@@ -54,6 +54,13 @@
       "color": "#1bb7e8",
       "focus": 50,
       "lift": 3
+    },
+    {
+      "name": "MARK",
+      "image": "images/nct127/orangeseoul/mark.png",
+      "color": "#cb6ce6",
+      "focus": 50,
+      "lift": 3
     }
   ],
   "lyrics": [
