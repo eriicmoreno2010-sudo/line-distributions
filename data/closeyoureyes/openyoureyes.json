@@ -713,7 +713,13 @@
       "original": "",
       "romanization": "(Uh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          29.17,
+          29.49
+        ]
+      ]
     },
     {
       "start": 110.83,
@@ -722,7 +728,13 @@
       "original": "",
       "romanization": "(Woo)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          110.83,
+          112.8
+        ]
+      ]
     },
     {
       "start": 127.1,
@@ -731,7 +743,17 @@
       "original": "",
       "romanization": "(Uh uh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          127.17,
+          127.41
+        ],
+        [
+          127.62,
+          127.91
+        ]
+      ]
     }
   ],
   "audio": "audio/closeyoureyes_openyoureyes.mp3",
