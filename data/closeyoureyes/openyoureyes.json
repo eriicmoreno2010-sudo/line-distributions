@@ -58,15 +58,418 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "MINWOOK"
-      ],
+      "start": 16.86,
+      "end": 17.85,
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "Pain is gone",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 18.85,
+      "end": 21.76,
+      "members": [],
+      "original": "",
+      "romanization": "Night is done done done, Wake up in the show",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 22.52,
+      "end": 25.94,
+      "members": [],
+      "original": "눈을 감은 채, 들어봐 Raindrops till the dawn",
+      "romanization": "nuneul gameun chae deureobwa, raindrops till the dawn",
+      "english": "With eyes closed, Listen to the raindrops till the dawn",
+      "adlib": false
+    },
+    {
+      "start": 25.99,
+      "end": 28.61,
+      "members": [],
+      "original": "그 밤엔 내 마음 써 있는 Dream is free",
+      "romanization": "geu bamen nae maeum sseo inneun dream is free",
+      "english": "That night, written in my heart, “Dream is free”",
+      "adlib": false
+    },
+    {
+      "start": 29.51,
+      "end": 30.67,
+      "members": [],
+      "original": "새겨진 Set me free",
+      "romanization": "saegyeojin set me free",
+      "english": "Carved in, “Set me free”",
+      "adlib": false
+    },
+    {
+      "start": 31.2,
+      "end": 32.55,
+      "members": [],
+      "original": "하지만 Pay a fee",
+      "romanization": "hajiman pay a fee",
+      "english": "But I have to pay a fee",
+      "adlib": false
+    },
+    {
+      "start": 32.56,
+      "end": 34.95,
+      "members": [],
+      "original": "",
+      "romanization": "With a small print, side note, your scars in it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 34.99,
+      "end": 37.52,
+      "members": [],
+      "original": "어두운 날의 작은 씨앗은 긴 겨울은",
+      "romanization": "eoduun narui jageun ssiaseun gin gyeoureun",
+      "english": "The little seeds of darker days, the long winter",
+      "adlib": false
+    },
+    {
+      "start": 37.66,
+      "end": 40.48,
+      "members": [],
+      "original": "Look, 영원을 피우니, So don't close your eyes",
+      "romanization": "look, yeongwoneul piuni, so don't close your eyes",
+      "english": "Look, they bloom into eternity, So don't close your eyes",
+      "adlib": false
+    },
+    {
+      "start": 40.63,
+      "end": 42.42,
+      "members": [],
+      "original": "",
+      "romanization": "Then it feels real, make no sense",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 42.6,
+      "end": 44.5,
+      "members": [],
+      "original": "잘 모르겠다면 믿어 봐 날",
+      "romanization": "jal moreugessdamyeon mideo bwa nal",
+      "english": "If you’re not sure, just trust me",
+      "adlib": false
+    },
+    {
+      "start": 44.82,
+      "end": 47.13,
+      "members": [],
+      "original": "하나, 둘, 셋 하면 깨어나",
+      "romanization": "hana, dul, set hamyeon kkaeeona",
+      "english": "One, two, three, and you’ll wake up",
+      "adlib": false
+    },
+    {
+      "start": 47.99,
+      "end": 49.35,
+      "members": [],
+      "original": "눈을 떠",
+      "romanization": "nuneul tteo",
+      "english": "Open your eyes",
+      "adlib": false
+    },
+    {
+      "start": 49.79,
+      "end": 52.18,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 52.33,
+      "end": 54.81,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 56.08,
+      "end": 58.73,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 59.31,
+      "end": 64.06,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 64.14,
+      "end": 71.54,
+      "members": [],
+      "original": "보여 줄게 My own world, 이끌림 그대로 와",
+      "romanization": "boyeo julge my own world, ikkeullim geudaero wa",
+      "english": "Let me show you my own world, Just follow the pull",
+      "adlib": false
+    },
+    {
+      "start": 71.61,
+      "end": 77.15,
+      "members": [],
+      "original": "",
+      "romanization": "Until you face it on your own",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 80.31,
+      "end": 84.13,
+      "members": [],
+      "original": "익숙해져 버린 Night and day at the bottom line",
+      "romanization": "iksukhaejyeo beorin night and day at the bottom line",
+      "english": "Grown used to night and day at the bottom line",
+      "adlib": false
+    },
+    {
+      "start": 84.15,
+      "end": 87.08,
+      "members": [],
+      "original": "가끔은 눈을 감아도 We’re ahead of time, yeah",
+      "romanization": "gakkeumeun nuneul gamado we’re ahead of time, yeah",
+      "english": "Even if we close our eyes sometimes, we’re ahead of time, yeah",
+      "adlib": false
+    },
+    {
+      "start": 87.92,
+      "end": 94.38,
+      "members": [],
+      "original": "한참을 넘어간 Red zone, Now I’m out of options",
+      "romanization": "hanchameul neomeogan red zone, now i’m out of options",
+      "english": "Way past the red zone, Now I’m out of options",
+      "adlib": false
+    },
+    {
+      "start": 94.68,
+      "end": 97.33,
+      "members": [],
+      "original": "이젠 눈을 떠",
+      "romanization": "ijen nuneul tteo",
+      "english": "Now open your eyes",
+      "adlib": false
+    },
+    {
+      "start": 97.68,
+      "end": 100.06,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 100.22,
+      "end": 102.69,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 104.01,
+      "end": 106.74,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 107.32,
+      "end": 112.21,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 112.49,
+      "end": 114,
+      "members": [],
+      "original": "시간은 계속 Tickin’",
+      "romanization": "siganeun gyesok tickin’",
+      "english": "Time keeps on tickin’",
+      "adlib": false
+    },
+    {
+      "start": 114.4,
+      "end": 118.02,
+      "members": [],
+      "original": "시작은 어서 널 데려가 기적으로 Back for more",
+      "romanization": "sijageun eoseo neol deryeoga gijeogeuro back for more",
+      "english": "The beginning takes you to a miracle, back for more",
+      "adlib": false
+    },
+    {
+      "start": 118.47,
+      "end": 121.4,
+      "members": [],
+      "original": "숨이 벅차도 난 Keep on going",
+      "romanization": "sumi beokchado nan keep on going",
+      "english": "Even when I’m out of breath, I keep on going",
+      "adlib": false
+    },
+    {
+      "start": 121.55,
+      "end": 126.79,
+      "members": [],
+      "original": "보이지 않는 칠흑 같은 어둠은 사라져",
+      "romanization": "boiji anneun chilheuk gateun eodumeun sarajyeo",
+      "english": "The pitch-black darkness we couldn’t see in fades away",
+      "adlib": false
+    },
+    {
+      "start": 128.06,
+      "end": 129.25,
+      "members": [],
+      "original": "",
+      "romanization": "We’re still getting closer",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 129.54,
+      "end": 132.01,
+      "members": [],
+      "original": "We all came 같은 곳에, Assemble 7 project",
+      "romanization": "we all came gateun gose, assemble 7 project",
+      "english": "We all came to the same place, Assemble 7 project",
+      "adlib": false
+    },
+    {
+      "start": 132.17,
+      "end": 133.35,
+      "members": [],
+      "original": "맞이할 끝에",
+      "romanization": "majihal kkeute",
+      "english": "At the end that awaits us",
+      "adlib": false
+    },
+    {
+      "start": 133.5,
+      "end": 136.1,
+      "members": [],
+      "original": "I refuse to prove it, 영화 속 피날레",
+      "romanization": "i refuse to prove it, yeonghwa sog pinalle",
+      "english": "I refuse to prove it, The finale of a movie",
+      "adlib": false
+    },
+    {
+      "start": 136.3,
+      "end": 137.4,
+      "members": [],
+      "original": "그 막을 향해서",
+      "romanization": "geu mageul hyanghaeseo",
+      "english": "Heading toward the final scene",
+      "adlib": false
+    },
+    {
+      "start": 137.41,
+      "end": 139.07,
+      "members": [],
+      "original": "",
+      "romanization": "How can I say?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 139.09,
+      "end": 143.95,
+      "members": [],
+      "original": "감은 두 눈이 떠졌을 때, 우릴 지켜봐 줘",
+      "romanization": "gameun du nuni tteojyeosseul ttae, uril jikyeobwa jwo",
+      "english": "When your closed eyes open, Keep your eyes on us",
+      "adlib": false
+    },
+    {
+      "start": 144.1,
+      "end": 145.4,
+      "members": [],
+      "original": "이렇게",
+      "romanization": "ireoke",
+      "english": "Like this",
+      "adlib": false
+    },
+    {
+      "start": 145.83,
+      "end": 148.23,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 148.38,
+      "end": 150.74,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 152.01,
+      "end": 154.72,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 155.33,
+      "end": 160.13,
+      "members": [],
+      "original": "",
+      "romanization": "Open your eyes, open your eyes",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 29.2,
+      "end": 29.41,
+      "members": [],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 110.83,
+      "end": 112.82,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 127.1,
+      "end": 127.91,
+      "members": [],
+      "original": "",
+      "romanization": "(Uh uh)",
+      "english": "",
+      "adlib": true
     }
   ],
   "audio": "audio/closeyoureyes_openyoureyes.mp3",
