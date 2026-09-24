@@ -111,7 +111,7 @@
   }
 
   // ================= carga del modelo (una vez) =================
-  let ort=null, sess=null, modelBase=null;
+  let ort=null, sess=null, modelBase=null, engine="CPU";
   async function ensureModel(){
     if(sess) return;
     setStatus("Preparando el modelo de IA (se descarga una vez, ~70 MB)…");
@@ -120,22 +120,26 @@
     if(!r || !r.ok) throw new Error((r && r.error) || "no se pudo preparar el modelo");
     modelBase = r.base;
     if(!ort){
-      ort = (await import(new URL("vendor/ort/ort.wasm.bundle.min.mjs", document.baseURI))).default;
-      ort.env.wasm.wasmPaths = modelBase;   // sirve ort-wasm-simd-threaded.wasm/.mjs (mismo origen)
-      // multi-hilo si hay SharedArrayBuffer (página aislada); si no, 1 hilo (lento pero funciona)
+      // bundle WebGPU (corre en la GPU); trae también el motor wasm de reserva
+      ort = (await import(modelBase + "ort.webgpu.bundle.min.mjs")).default;
+      ort.env.wasm.wasmPaths = modelBase;   // ort-*.jsep.wasm/.mjs y wasm normal (mismo origen)
       const iso = (typeof SharedArrayBuffer !== "undefined") && (self.crossOriginIsolated !== false);
       ort.env.wasm.numThreads = iso ? Math.min(navigator.hardwareConcurrency || 4, 8) : 1;
       ort.env.wasm.proxy = false;
     }
-    setStatus(ort.env.wasm.numThreads > 1 ? ("Cargando el modelo… (" + ort.env.wasm.numThreads + " hilos)") : "Cargando el modelo… (1 hilo, irá lento)");
     setBar(0.02);
     const modelUrl = modelBase + r.model;
-    try{
-      sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"] });
-    }catch(e){
-      // si los hilos fallan (sin SAB), reintenta a 1 hilo
-      ort.env.wasm.numThreads = 1;
-      sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"] });
+    // 1º intenta GPU (WebGPU, rapidísimo); si no hay GPU, cae a CPU (wasm)
+    engine = "GPU";
+    if(navigator.gpu){
+      try{ setStatus("Cargando el modelo en la GPU…"); sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["webgpu"] }); }
+      catch(e){ sess = null; }
+    }
+    if(!sess){
+      engine = "CPU";
+      setStatus("Cargando el modelo en la CPU… (sin GPU, irá más lento)");
+      try{ sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"] }); }
+      catch(e){ ort.env.wasm.numThreads = 1; sess = await ort.InferenceSession.create(modelUrl, { executionProviders:["wasm"] }); }
     }
   }
 
@@ -262,7 +266,7 @@
       const { L, R } = await decodeAudioBytes(ab);
       setStatus("Separando la voz del instrumental… (esto tarda un poco)"); setBar(0);
       const t0 = performance.now();
-      const out = await demix(L, R, f => { setBar(f); setStatus("Separando… " + Math.round(f*100) + "%"); });
+      const out = await demix(L, R, f => { setBar(f); setStatus("Separando en " + engine + "… " + Math.round(f*100) + "%"); });
       const secs = ((performance.now()-t0)/1000).toFixed(0);
       setStatus("Codificando el instrumental…"); setBar(1);
       resultBytes = encodeWav(out.L, out.R);

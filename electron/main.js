@@ -667,7 +667,10 @@ const STEM_MODEL_NAME = "UVR-MDX-NET-Inst_HQ_3.onnx";
 const STEM_MODEL_URL  = "https://huggingface.co/seanghay/uvr_models/resolve/main/" + STEM_MODEL_NAME;
 const ORT_VER = "1.21.0";
 const ORT_CDN = "https://cdn.jsdelivr.net/npm/onnxruntime-web@" + ORT_VER + "/dist/";
-const ORT_FILES = ["ort-wasm-simd-threaded.wasm", "ort-wasm-simd-threaded.mjs"];
+// bundle WebGPU (usa la GPU -> MUCHÍSIMO más rápido) + su runtime jsep, y el wasm normal de reserva
+const ORT_FILES = ["ort.webgpu.bundle.min.mjs",
+  "ort-wasm-simd-threaded.jsep.wasm", "ort-wasm-simd-threaded.jsep.mjs",
+  "ort-wasm-simd-threaded.wasm", "ort-wasm-simd-threaded.mjs"];
 const stemDir = () => path.join(app.getPath("userData"), "stem-" + ORT_VER);
 
 // La separación con onnxruntime-web va MUCHO más rápida multi-hilo, pero eso
