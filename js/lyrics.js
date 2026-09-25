@@ -213,12 +213,14 @@ const Lyrics = {
             `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`;
         const markGradient = singers.length <= 1 ? groupAllGradient : sharedGradient;
 
-        // Glow made from EVERY singer's colour (so 3+ members all show, not just 2).
+        // Halo del fondo con el color de CADA cantante. Se colocan en una banda
+        // central (32%-68%) y anchos (55%) para que se SOLAPEN y rellenen todo el
+        // panel (difuminado), igual que cuando canta uno solo — no dos en los lados.
         const membersGlow = singers.length
             ? singers.map((s, i, arr) => {
-                  const pos = arr.length > 1 ? 8 + (i / (arr.length - 1)) * 84 : 50;
-                  return `radial-gradient(42% 60% at ${pos}% 45%, ` +
-                         `color-mix(in srgb, ${s.color} 14%, transparent), transparent 70%)`;
+                  const pos = arr.length > 1 ? 32 + (i / (arr.length - 1)) * 36 : 50;
+                  return `radial-gradient(55% 55% at ${pos}% 42%, ` +
+                         `color-mix(in srgb, ${s.color} 16%, transparent), transparent 70%)`;
               }).join(", ")
             : "";
 
