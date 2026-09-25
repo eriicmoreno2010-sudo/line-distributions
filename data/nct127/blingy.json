@@ -81,7 +81,13 @@
       "original": "",
       "romanization": "(I’ma blingy blingy blingy)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          10.83,
+          12.33
+        ]
+      ]
     },
     {
       "start": 12.56,
@@ -136,7 +142,13 @@
       "original": "",
       "romanization": "(I’ma blingy blingy blingy)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.75,
+          36.26
+        ]
+      ]
     },
     {
       "start": 36.28,
@@ -341,7 +353,13 @@
       "original": "",
       "romanization": "(I’ma blingy blingy blingy)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          73.8,
+          75.35
+        ]
+      ]
     },
     {
       "start": 75.56,
@@ -396,7 +414,13 @@
       "original": "",
       "romanization": "(I’ma blingy blingy blingy)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          97.79,
+          99.28
+        ]
+      ]
     },
     {
       "start": 99.29,
@@ -877,7 +901,13 @@
       "original": "",
       "romanization": "(I’ma blingy blingy blingy)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.8,
+          138.33
+        ]
+      ]
     },
     {
       "start": 138.57,
@@ -932,7 +962,13 @@
       "original": "",
       "romanization": "(I’ma blingy blingy blingy)",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.81,
+          162.31
+        ]
+      ]
     },
     {
       "start": 162.62,
