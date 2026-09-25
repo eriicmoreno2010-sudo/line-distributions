@@ -44,411 +44,503 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "JOHNNY"
-      ],
-      "original": "Well,",
-      "romanization": "well",
-      "english": "Well",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 6.12,
+      "end": 8.08,
       "members": [],
-      "original": "내가 바라는 대로만",
-      "romanization": "naega baraneun daeroman",
-      "english": "Because not everything can go",
-      "adlib": false
+      "original": "Well, 내가 바라는 대로만",
+      "romanization": "well, naega baraneun daeroman",
+      "english": "Well, Because not everything can go",
+      "adlib": false,
+      "voice": [
+        [
+          6.21,
+          6.73
+        ],
+        [
+          6.91,
+          8.07
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 8.24,
+      "end": 9.68,
       "members": [],
       "original": "모든 게 흘러갈 리는 없으니까",
       "romanization": "modeun ge heulleogal rineun eopseunikka",
       "english": "The way I want it to",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          8.32,
+          9.82
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.54,
+      "end": 13.36,
       "members": [],
-      "original": "거대한 기대는 버리고",
-      "romanization": "geodaehan gidaeneun beorigo",
-      "english": "I just let go of huge expectations",
-      "adlib": false
+      "original": "거대한 기대는 버리고, 작은 희망을 가질 뿐이야",
+      "romanization": "geodaehan gidaeneun beorigo, jageun huimangeul gajil ppuniya",
+      "english": "I just let go of huge expectations, And hold onto small hopes",
+      "adlib": false,
+      "voice": [
+        [
+          10.49,
+          11.73
+        ],
+        [
+          11.97,
+          13.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.03,
+      "end": 16.15,
       "members": [],
-      "original": "작은 희망을 가질 뿐이야",
-      "romanization": "jageun huimangeul gajil ppuniya",
-      "english": "And hold onto small hopes",
-      "adlib": false
+      "original": "모든 게 다, 무너져 내리겠다 싶은 그때",
+      "romanization": "modeun ge da, muneojyeo naerigetda sipeun geuttae",
+      "english": "When it feels like, Everything is about to come crashing down",
+      "adlib": false,
+      "voice": [
+        [
+          14.17,
+          16.09
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 16.49,
+      "end": 19.95,
       "members": [],
-      "original": "모든 게 다",
-      "romanization": "modeun ge da",
-      "english": "When it feels like",
-      "adlib": false
+      "original": "정신 붙잡고 순간에 집중해, 어쩔 수 없잖아",
+      "romanization": "jeongsin butjapgo sungane jipjunghae, eojjeol su eopjana",
+      "english": "I hold myself together and focus on the moment, There’s nothing else I can do",
+      "adlib": false,
+      "voice": [
+        [
+          16.66,
+          17.54
+        ],
+        [
+          17.69,
+          18.59
+        ],
+        [
+          18.96,
+          19.89
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.92,
+      "end": 22.87,
       "members": [],
-      "original": "무너져 내리겠다 싶은 그때",
-      "romanization": "muneojyeo naerigetda sipeun geuttae",
-      "english": "Everything is about to come crashing down",
-      "adlib": false
+      "original": "기억 때문에, 방향을 잃은 적도 있고",
+      "romanization": "gieok ttaemune, banghyangeul ilheun jeokdo itgo",
+      "english": "There were times, When I lost my direction because of memories",
+      "adlib": false,
+      "voice": [
+        [
+          20.85,
+          22.82
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.13,
+      "end": 25.43,
       "members": [],
-      "original": "정신 붙잡고 순간에 집중해,",
-      "romanization": "jeongsin butjapgo sungane jipjunghae,",
-      "english": "I hold myself together and focus on the moment,",
-      "adlib": false
+      "original": "기억을 밟고, 더 높이 올라서기도 해",
+      "romanization": "gieogeul balgo, deo nopi ollaseogido hae",
+      "english": "And there were times, When I stepped on those memories and climbed even higher",
+      "adlib": false,
+      "voice": [
+        [
+          23.23,
+          23.99
+        ],
+        [
+          24.17,
+          25.41
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.07,
+      "end": 28.56,
       "members": [],
-      "original": "어쩔 수 없잖아",
-      "romanization": "eojjeol su eopjana",
-      "english": "There’s nothing else I can do",
-      "adlib": false
+      "original": "누군간, 기억 속의 날 그리워한다던데",
+      "romanization": "nugungan, gieok sogui nal geuriwohandadeonde",
+      "english": "Someone, Said they miss the me from their memories",
+      "adlib": false,
+      "voice": [
+        [
+          26.12,
+          28.37
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "기억 때문에",
-      "romanization": "gieok ttaemune",
-      "english": "There were times",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "방향을 잃은 적도 있고",
-      "romanization": "banghyangeul ilheun jeokdo itgo",
-      "english": "When I lost my direction because of memories",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "기억을 밟고",
-      "romanization": "gieogeul balgo",
-      "english": "And there were times",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 높이 올라서기도 해",
-      "romanization": "deo nopi ollaseogido hae",
-      "english": "When I stepped on those memories and climbed even higher",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "누군간",
-      "romanization": "nugungan",
-      "english": "Someone",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "기억 속의 날 그리워한다던데",
-      "romanization": "gieok sogui nal geuriwohandadeonde",
-      "english": "Said they miss the me from their memories",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 28.63,
+      "end": 30.53,
       "members": [],
       "original": "내가 변했나 그게 나쁜 거야?",
       "romanization": "naega byeonhaetna geuge nappeun geoya?",
       "english": "Have I changed? Is that a bad thing?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.57,
+          29.41
+        ],
+        [
+          29.59,
+          30.44
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 31.77,
+      "end": 34.12,
       "members": [],
-      "original": "Every day I ask myself",
-      "romanization": "every day i ask myself",
-      "english": "Every day I ask myself",
-      "adlib": false
+      "original": "",
+      "romanization": "Every day I ask myself, what really changed?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          31.86,
+          33.1
+        ],
+        [
+          33.23,
+          34.18
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 34.5,
+      "end": 36.93,
       "members": [],
-      "original": "what really changed?",
-      "romanization": "what really changed?",
-      "english": "what really changed?",
-      "adlib": false
+      "original": "",
+      "romanization": "All this life I poured into it, how did that pay?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          34.66,
+          36.02
+        ],
+        [
+          36.17,
+          36.96
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 37.17,
+      "end": 39.39,
       "members": [],
-      "original": "All this life I poured into it",
-      "romanization": "all this life i poured into it",
-      "english": "All this life I poured into it",
-      "adlib": false
+      "original": "",
+      "romanization": "Did I try too hard, to become something I’m not?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          37.29,
+          39.45
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 39.71,
+      "end": 42.37,
       "members": [],
-      "original": "how did that pay?",
-      "romanization": "how did that pay?",
-      "english": "how did that pay?",
-      "adlib": false
+      "original": "",
+      "romanization": "Did I risk it all, just to end up in doubt?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          39.97,
+          40.92
+        ],
+        [
+          41.27,
+          42.37
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.66,
+      "end": 46.24,
       "members": [],
-      "original": "Did I try too hard",
-      "romanization": "did i try too hard",
-      "english": "Did I try too hard",
-      "adlib": false
+      "original": "",
+      "romanization": "Just be here with me, From scene to scene city to city",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          42.94,
+          43.96
+        ],
+        [
+          44.32,
+          45.21
+        ],
+        [
+          45.42,
+          46.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 46.42,
+      "end": 48.41,
       "members": [],
-      "original": "to become something I’m not?",
-      "romanization": "to become something i’m not?",
-      "english": "to become something I’m not?",
-      "adlib": false
+      "original": "",
+      "romanization": "I’m in it for that next memory",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          46.75,
+          48.4
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Did I risk it all",
-      "romanization": "did i risk it all",
-      "english": "Did I risk it all",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "just to end up in doubt?",
-      "romanization": "just to end up in doubt?",
-      "english": "just to end up in doubt?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Just be here with me",
-      "romanization": "just be here with me",
-      "english": "Just be here with me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "From scene to scene city to city",
-      "romanization": "from scene to scene city to city",
-      "english": "From scene to scene, city to city",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m in it for that next memory",
-      "romanization": "i’m in it for that next memory",
-      "english": "I’m in it for that next memory",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 48.98,
+      "end": 50.62,
       "members": [],
       "original": "다음 기억에 대한 약속이",
       "romanization": "daeum gieoge daehan yaksogi",
       "english": "The promise of the next memory",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.12,
+          50.68
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.97,
+      "end": 53.96,
       "members": [],
       "original": "오늘을 버티게 하잖아, 안 그래?",
       "romanization": "oneureul beotige hajana, an geurae?",
       "english": "Keeps me going through today, doesn’t it?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52,
+          53.14
+        ],
+        [
+          53.69,
+          54.16
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 54.11,
+      "end": 56.48,
       "members": [],
-      "original": "Yes yes yes wanna go rounds",
-      "romanization": "yes yes yes wanna go rounds",
-      "english": "Yes yes yes, wanna go rounds",
-      "adlib": false
+      "original": "",
+      "romanization": "Yes yes yes wanna go rounds",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          54.12,
+          56.49
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 56.72,
+      "end": 59.4,
       "members": [],
       "original": "물결을 일으켜 닿는 순간",
       "romanization": "mulgyeoreul ireukyeo dahneun sungan",
       "english": "Make waves, and the moment they reach the shore",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          56.68,
+          59.38
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.64,
+      "end": 62.35,
       "members": [],
       "original": "잔잔했던 수면에 Dive in",
       "romanization": "janjanhaetdeon sumyeone dive in",
       "english": "Dive into the calm surface",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.57,
+          62.25
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.53,
+      "end": 65.29,
       "members": [],
       "original": "번지는 기억은 Keep shinin’",
       "romanization": "beonjineun gieogeun keep shinin’",
       "english": "The spreading memories keep shinin’",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          62.49,
+          65.17
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 65.9,
+      "end": 68.27,
       "members": [],
-      "original": "Yes yes yes wanna go rounds",
-      "romanization": "yes yes yes wanna go rounds",
-      "english": "Yes yes yes, wanna go rounds",
-      "adlib": false
+      "original": "",
+      "romanization": "Yes yes yes wanna go rounds",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          65.85,
+          68.15
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.42,
+      "end": 71.22,
       "members": [],
       "original": "빛을 따라 새겨지는 우리 기억",
       "romanization": "bicheul ttara saegyeojineun uri gieok",
       "english": "Our memories are carved following the light",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          68.37,
+          70.99
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.37,
+      "end": 74.04,
       "members": [],
       "original": "질문이 늘어가도 I don’t fight back",
       "romanization": "jilmuni neureogado i don’t fight back",
       "english": "Even as the questions keep piling up, I don’t fight back",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          71.26,
+          73.92
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 74.22,
+      "end": 76.72,
       "members": [],
       "original": "해답은 너와 나 That’s priceless",
       "romanization": "haedabeun neowa na that’s priceless",
       "english": "The answer is you and me, that’s priceless",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.16,
+          76.84
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 76.87,
+      "end": 82.52,
       "members": [],
-      "original": "우릴 감싸주는 봄",
-      "romanization": "uril gamssajuneun bom",
-      "english": "The spring that embraces us",
-      "adlib": false
+      "original": "우릴 감싸주는 봄, 녹아내린 지난겨울",
+      "romanization": "uril gamssajuneun bom, noganaerin jinangyeoul",
+      "english": "The spring that embraces us, The melted-away winter from the past",
+      "adlib": false,
+      "voice": [
+        [
+          76.87,
+          79.61
+        ],
+        [
+          79.76,
+          82.53
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.74,
+      "end": 88.35,
       "members": [],
-      "original": "녹아내린 지난겨울",
-      "romanization": "noganaerin jinangyeoul",
-      "english": "The melted-away winter from the past",
-      "adlib": false
+      "original": "",
+      "romanization": "There are things that stay the same, Like a book you read again",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          82.72,
+          85.42
+        ],
+        [
+          85.69,
+          88.58
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.5,
+      "end": 94.24,
       "members": [],
-      "original": "There are things that stay the same",
-      "romanization": "there are things that stay the same",
-      "english": "There are things that stay the same",
-      "adlib": false
+      "original": "10년이란 시간 속, 지나온 많은 계절",
+      "romanization": "sipsnyeoniran sigan sok, jinan manyeun gyejeol",
+      "english": "The many seasons that, Have passed over ten years",
+      "adlib": false,
+      "voice": [
+        [
+          88.47,
+          91.26
+        ],
+        [
+          91.44,
+          94.16
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 94.39,
+      "end": 100.44,
       "members": [],
-      "original": "Like a book you read again",
-      "romanization": "like a book you read again",
-      "english": "Like a book you read again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "10년이란 시간 속",
-      "romanization": "sipsnyeoniran sigan sok",
-      "english": "The many seasons that",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "지나온 많은 계절",
-      "romanization": "jinan manyeun gyejeol",
-      "english": "Have passed over ten years",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "There are things that stay the same",
-      "romanization": "there are things that stay the same",
-      "english": "There are things that stay the same",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Like a book you read again",
-      "romanization": "like a book you read again",
-      "english": "Like a book you read again",
-      "adlib": false
+      "original": "",
+      "romanization": "There are things that stay the same, Like a book you read again",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          94.37,
+          97.05
+        ],
+        [
+          97.29,
+          100.33
+        ]
+      ]
     }
   ],
   "cover": "covers/nct127_imeanitsabouttime.jpg",
