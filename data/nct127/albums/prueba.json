@@ -12,5 +12,57 @@
     "data/nct127/imeanitsabouttime.json",
     "data/nct127/legacy.json",
     "data/nct127/piata.json"
-  ]
+  ],
+  "clips": [
+    {
+      "start": 0,
+      "end": 12
+    },
+    {},
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {}
+  ],
+  "songColors": [
+    "#ff4d6d",
+    "#4dabf7",
+    "#ffa94d",
+    "#cc5de8",
+    "#20c997",
+    "#ffd43b"
+  ],
+  "raceColor": "#ffffff",
+  "versions": [
+    {
+      "name": "",
+      "songs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "members": [
+        "JOHNNY",
+        "TAEYONG",
+        "YUTA",
+        "DOYOUNG",
+        "JAEHYUN",
+        "JUNGWOO",
+        "HAECHAN"
+      ]
+    }
+  ],
+  "bgAudio": {}
 }
