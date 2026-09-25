@@ -230,7 +230,7 @@ const Lyrics = {
             secondaryAccent = colors[colors.length - 1];
             isSharedLine = false;
         } else {
-            accent = singers[0] ? singers[0].color : "#ffffff;
+            accent = singers[0] ? singers[0].color : "var(--accent)";
             secondaryAccent = singers[1] ? singers[1].color : accent;
             isSharedLine = !hasPartial && singers.length > 1;
         }
