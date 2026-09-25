@@ -72,8 +72,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.93,
+      "end": 14.84,
       "members": [],
       "original": "해가 지는 순간 Seoul City, 그 오렌지색 밤",
       "romanization": "haega jineun sungan seoul city, geu orenjisaek bam",
@@ -81,8 +81,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.96,
+      "end": 17.84,
       "members": [],
       "original": "자 달리자고 Highway, 섞여 저 석양에",
       "romanization": "ja dallijago highway, seokkyeo jeo seongyange",
@@ -90,8 +90,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 16.51,
+      "end": 18.39,
       "members": [],
       "original": "",
       "romanization": "(Uh, sunset)",
@@ -99,8 +99,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 24.92,
+      "end": 25.87,
       "members": [],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -108,17 +108,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(노을)",
-      "romanization": "(noeu)",
-      "english": "()",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 41.17,
+      "end": 41.55,
       "members": [],
       "original": "",
       "romanization": "(We)",
@@ -126,8 +117,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 41.81,
+      "end": 42.16,
       "members": [],
       "original": "",
       "romanization": "(Ride)",
@@ -135,8 +126,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 56.08,
+      "end": 56.83,
       "members": [],
       "original": "",
       "romanization": "(OK)",
@@ -144,8 +135,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.25,
+      "end": 58.01,
       "members": [],
       "original": "(-이 때)",
       "romanization": "(-i ttae)",
@@ -153,8 +144,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.37,
+      "end": 20.1,
       "members": [],
       "original": "스며들어가",
       "romanization": "seumyeodeureoga",
@@ -162,8 +153,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.28,
+      "end": 22.9,
       "members": [],
       "original": "빌딩 속 사이로 골인",
       "romanization": "bilding sok sairo gorin",
@@ -171,8 +162,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.05,
+      "end": 25.06,
       "members": [],
       "original": "Shoot 저 태양을 쏴",
       "romanization": "shoot jeo taeyangeul sswa",
@@ -180,8 +171,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.85,
+      "end": 28.28,
       "members": [],
       "original": "해가 저물어, 한강 위로 띄워",
       "romanization": "haega jeomureo, hangang wiro ttuiwo",
@@ -189,8 +180,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.42,
+      "end": 29.75,
       "members": [],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -198,8 +189,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 29.87,
+      "end": 32.95,
       "members": [],
       "original": "Woah 하늘 반 땅 반, 뻥 뚫린 창밖을",
       "romanization": "woah haneul ban ttang ban, ppeong ttulrin changbakkeul",
@@ -207,8 +198,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.07,
+      "end": 35.24,
       "members": [],
       "original": "눈에 담을 틈이 없이 달렸는지도",
       "romanization": "nune dameul teumi eopsi dallyeonneunjido",
@@ -216,8 +207,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 35.39,
+      "end": 37.98,
       "members": [],
       "original": "노을은 날 알아주지 늘 Always do",
       "romanization": "noeureun nal arajuji neul always do",
@@ -225,8 +216,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 38.16,
+      "end": 40.47,
       "members": [],
       "original": "바람에 날 적시는 샤워 Booth",
       "romanization": "barame nal jeoksineun syawo booth",
@@ -234,8 +225,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 40.71,
+      "end": 43.15,
       "members": [],
       "original": "We gon’ ride, 언제든지 I don't care",
       "romanization": "we gon’ ride, eonjedeunji i don't care",
@@ -243,8 +234,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 43.29,
+      "end": 45.7,
       "members": [],
       "original": "가끔 삐걱대도 난 직진이지",
       "romanization": "gakkeum ppigeokdaedo nan jikjiniji",
@@ -252,8 +243,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 45.85,
+      "end": 47.74,
       "members": [],
       "original": "난 저기 노을 속으로 첨벙",
       "romanization": "nan jeogi noeul sogeuro cheombeong",
@@ -261,8 +252,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.92,
+      "end": 51.02,
       "members": [],
       "original": "Yeah It's right here, 망설임 없이 Dive",
       "romanization": "yeah it's right here, mangseorim eopsi dive",
@@ -270,8 +261,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.71,
+      "end": 54.98,
       "members": [],
       "original": "누가 저 하늘에, 불을 지르지 Fire fire",
       "romanization": "nuga jeo haneure, bureul jireuji fire fire",
@@ -279,8 +270,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 55.13,
+      "end": 57.45,
       "members": [],
       "original": "But It’s OK, 오늘이 때",
       "romanization": "but it’s ok, oneuri ttae",
@@ -288,8 +279,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.98,
+      "end": 59.74,
       "members": [],
       "original": "너와 같이 석양 속으로, Dive dive",
       "romanization": "neowa gachi seongyang sogeuro, dive dive",
@@ -297,8 +288,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.9,
+      "end": 64.8,
       "members": [],
       "original": "해가 지는 순간 Seoul City, 그 오렌지색 밤",
       "romanization": "haega jineun sungan seoul city, geu orenjisaek bam",
@@ -306,8 +297,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.93,
+      "end": 67.76,
       "members": [],
       "original": "자 달리자고 Highway, 섞여 저 석양에",
       "romanization": "ja dallijago highway, seokkyeo jeo seongyange",
@@ -315,8 +306,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.54,
+      "end": 68.62,
       "members": [],
       "original": "",
       "romanization": "(Uh, sunset)",
@@ -324,8 +315,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 74.9,
+      "end": 75.89,
       "members": [],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -333,8 +324,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.34,
+      "end": 70.04,
       "members": [],
       "original": "스며들어가",
       "romanization": "seumyeodeureoga",
@@ -342,8 +333,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 70.19,
+      "end": 72.87,
       "members": [],
       "original": "빌딩 속 사이로 골인",
       "romanization": "bilding sok sairo gorin",
@@ -351,8 +342,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.99,
+      "end": 75.03,
       "members": [],
       "original": "Shoot 저 태양을 쏴",
       "romanization": "shoot jeo taeyangeul sswa",
@@ -360,8 +351,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.82,
+      "end": 78.21,
       "members": [],
       "original": "해가 저물어, 한강 위로 띄워",
       "romanization": "haega jeomureo, hangang wiro ttuiwo",
@@ -369,8 +360,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 78.4,
+      "end": 80.3,
       "members": [],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -378,8 +369,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.88,
+      "end": 80.9,
       "members": [],
       "original": "",
       "romanization": "(Alright ah)",
@@ -387,8 +378,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 95.27,
+      "end": 95.59,
       "members": [],
       "original": "",
       "romanization": "(Hah)",
@@ -396,8 +387,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 96.84,
+      "end": 97.16,
       "members": [],
       "original": "",
       "romanization": "(Ho)",
@@ -405,8 +396,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 111.2,
+      "end": 111.97,
       "members": [],
       "original": "",
       "romanization": "(OK)",
@@ -414,8 +405,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 112.36,
+      "end": 113.08,
       "members": [],
       "original": "(-이 때)",
       "romanization": "(-i ttae)",
@@ -423,8 +414,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.17,
+      "end": 85.35,
       "members": [],
       "original": "",
       "romanization": "Dive into the sunset dive dive into, To the sunset dive into",
@@ -432,8 +423,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.5,
+      "end": 87.97,
       "members": [],
       "original": "바다가 담은 하늘은 멋진 대칭",
       "romanization": "badaga dameun haneureun meotjin daeching",
@@ -441,8 +432,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.12,
+      "end": 90.37,
       "members": [],
       "original": "날 스쳐 가지 Summer breeze",
       "romanization": "nal seuchyeo gaji summer breeze",
@@ -450,8 +441,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 90.5,
+      "end": 92.84,
       "members": [],
       "original": "눈에 다 담아, 놓치기엔 아까워",
       "romanization": "nune da dama, nochigien akkawo",
@@ -459,8 +450,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 92.96,
+      "end": 95.36,
       "members": [],
       "original": "석양은 끝나지 않는 긴 터널 같지",
       "romanization": "seongyangeun kkeunnaji anneun gin teoneol gatji",
@@ -468,8 +459,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 95.46,
+      "end": 97.92,
       "members": [],
       "original": "아지랑이들이 더, 이글이글 대는걸",
       "romanization": "ajirangideuri deo, igeuligeul daeneungeol",
@@ -477,8 +468,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 98.1,
+      "end": 100.36,
       "members": [],
       "original": "Shimmy shimmy ya ya, 춤을 추지 Woah",
       "romanization": "shimmy shimmy ya ya, chumeul chuji woah",
@@ -486,8 +477,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 100.48,
+      "end": 105.62,
       "members": [],
       "original": "Woah 반겨주지 널, 저 하늘에 불이나, 불러 Fireman",
       "romanization": "woah bangyeojuji neol, jeo haneure burina, bulleo fireman",
@@ -495,8 +486,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 106.75,
+      "end": 110.06,
       "members": [],
       "original": "이 그림을 밤이, 가져가 버리네 Why",
       "romanization": "i geurimeul bami, gajyeoga beorine why",
@@ -504,8 +495,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 110.21,
+      "end": 112.59,
       "members": [],
       "original": "But It’s OK, 오늘이 때",
       "romanization": "but it’s ok, oneuri ttae",
@@ -513,8 +504,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 112.93,
+      "end": 114.69,
       "members": [],
       "original": "너는 이 그림을 담아, 난 Drive drive",
       "romanization": "neoneun i geurimeul dama, nan drive drive",
@@ -522,8 +513,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 114.81,
+      "end": 119.7,
       "members": [],
       "original": "해가 지는 순간 Seoul City, 그 오렌지색 밤",
       "romanization": "haega jineun sungan seoul city, geu orenjisaek bam",
@@ -531,8 +522,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 119.82,
+      "end": 122.71,
       "members": [],
       "original": "자 달리자고 Highway, 섞여 저 석양에",
       "romanization": "ja dallijago highway, seokkyeo jeo seongyange",
@@ -540,8 +531,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.18,
+      "end": 123.43,
       "members": [],
       "original": "",
       "romanization": "(Uh, sunset)",
@@ -549,8 +540,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 129.92,
+      "end": 130.87,
       "members": [],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -558,8 +549,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 133.34,
+      "end": 136.12,
       "members": [],
       "original": "(오렌지색 물감)",
       "romanization": "(orenjisaek mulgam)",
@@ -567,8 +558,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.64,
+      "end": 134.97,
       "members": [],
       "original": "",
       "romanization": "(Ah)",
@@ -576,8 +567,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 141.48,
+      "end": 142.21,
       "members": [],
       "original": "",
       "romanization": "(Yeah)",
@@ -585,8 +576,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 144.35,
+      "end": 144.73,
       "members": [],
       "original": "",
       "romanization": "(Yeh)",
@@ -594,8 +585,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 123.35,
+      "end": 125.11,
       "members": [],
       "original": "스며들어가",
       "romanization": "seumyeodeureoga",
@@ -603,8 +594,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 125.24,
+      "end": 127.84,
       "members": [],
       "original": "빌딩 속 사이로 골인",
       "romanization": "bilding sok sairo gorin",
@@ -612,8 +603,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 127.99,
+      "end": 129.97,
       "members": [],
       "original": "Shoot 저 태양을 쏴",
       "romanization": "shoot jeo taeyangeul sswa",
@@ -621,8 +612,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.78,
+      "end": 133.22,
       "members": [],
       "original": "해가 저물어, 한강 위로 띄워",
       "romanization": "haega jeomureo, hangang wiro ttuiwo",
@@ -630,8 +621,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 133.34,
+      "end": 135.24,
       "members": [],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -639,8 +630,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 135.78,
+      "end": 141.55,
       "members": [],
       "original": "",
       "romanization": "Oh this city gives me love, and I just can't get enough",
@@ -648,8 +639,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 141.74,
+      "end": 144.9,
       "members": [],
       "original": "점점 붉게 물들어가 Tonight",
       "romanization": "jeomjeom bulge muldeureoga tonight",
@@ -657,8 +648,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 145.05,
+      "end": 150.05,
       "members": [],
       "original": "볼 때마다 달라져, 사랑하게 되는 이유지",
       "romanization": "bol ttaemada dallajyeo, saranghage doeneun iyuji",
@@ -666,8 +657,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 150.17,
+      "end": 152.37,
       "members": [],
       "original": "시간을 따라 변화하는 널",
       "romanization": "siganeul ttara byeonhwahaneun neol",
@@ -675,8 +666,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 152.12,
+      "end": 152.82,
       "members": [],
       "original": "",
       "romanization": "(Like you do)",
@@ -684,8 +675,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 157.79,
+      "end": 159.11,
       "members": [],
       "original": "(사랑한 밤)",
       "romanization": "(saranghan bam)",
@@ -693,8 +684,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 160.18,
+      "end": 162.06,
       "members": [],
       "original": "",
       "romanization": "(Yeah yeah)",
@@ -702,8 +693,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 162.76,
+      "end": 164.04,
       "members": [],
       "original": "(뚫려버린 Highway)",
       "romanization": "(ttullyeobeorin highway)",
@@ -711,8 +702,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 164,
+      "end": 166.35,
       "members": [],
       "original": "(적시길 바라네)",
       "romanization": "(jeoksigil barane)",
@@ -720,8 +711,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 152.55,
+      "end": 154.87,
       "members": [],
       "original": "사라지기 전에 담아봐",
       "romanization": "sarajigi jeone damabwa",
@@ -729,8 +720,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 155.82,
+      "end": 157.12,
       "members": [],
       "original": "Ay 놓치지 마 Baby",
       "romanization": "ay nochiji ma baby",
@@ -738,8 +729,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 157.27,
+      "end": 162.26,
       "members": [],
       "original": "내가 사랑한 밤 Seoul City, 그 오렌지색 밤",
       "romanization": "naega saranghan bam seoul city, geu orenjisaek bam",
@@ -747,8 +738,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 162.38,
+      "end": 165.33,
       "members": [],
       "original": "뻥 뚫려버린 Highway, 적시길 바라네",
       "romanization": "ppeong ttullyeobeorin highway, jeoksigil barane",
@@ -756,8 +747,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 165.23,
+      "end": 165.93,
       "members": [],
       "original": "",
       "romanization": "(Sunset)",
@@ -765,8 +756,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.18,
+      "end": 168.57,
       "members": [],
       "original": "(밤)",
       "romanization": "(bam)",
@@ -774,8 +765,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 169.87,
+      "end": 171.93,
       "members": [],
       "original": "(고민 oh woah)",
       "romanization": "(gomin oh woah)",
@@ -783,8 +774,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 172.35,
+      "end": 173.38,
       "members": [],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -792,8 +783,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 173.38,
+      "end": 175.14,
       "members": [],
       "original": "(멀리 더 날려)",
       "romanization": "(meolli deo nallyeo)",
@@ -801,8 +792,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 177.42,
+      "end": 178.06,
       "members": [],
       "original": "",
       "romanization": "(Woo)",
@@ -810,8 +801,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 165.86,
+      "end": 167.56,
       "members": [],
       "original": "오렌지색 밤",
       "romanization": "orenjisaek bam",
@@ -819,8 +810,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.71,
+      "end": 170.3,
       "members": [],
       "original": "붉게 다 타버린 고민",
       "romanization": "bulge da tabeorin gomin",
@@ -828,8 +819,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 170.57,
+      "end": 172.5,
       "members": [],
       "original": "이 도시가 준 답",
       "romanization": "i dosiga jun dap",
@@ -837,8 +828,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 173.31,
+      "end": 175.75,
       "members": [],
       "original": "멀리 더 날려, 던져버려 3 Point",
       "romanization": "meolli deo nallyeo, deonjyeobeoryeo three point",
@@ -846,8 +837,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 175.9,
+      "end": 177.55,
       "members": [],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -855,8 +846,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 177.71,
+      "end": 182.25,
       "members": [],
       "original": "Girl you know how how we roll, 오늘 밤은 안 식어",
       "romanization": "girl you know how how we roll, oneul bameun an sigeo",
@@ -864,8 +855,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 182.4,
+      "end": 186.37,
       "members": [],
       "original": "",
       "romanization": "Just let it burn, Just let it burn",
@@ -873,8 +864,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 183.65,
+      "end": 184.81,
       "members": [],
       "original": "",
       "romanization": "(Cuz I say so)",
@@ -882,8 +873,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 186.78,
+      "end": 188.96,
       "members": [],
       "original": "",
       "romanization": "(This is my city yeah)",
@@ -891,8 +882,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 187.75,
+      "end": 190.1,
       "members": [],
       "original": "(오렌지빛 하늘에)",
       "romanization": "(orenjibit haneure)",
@@ -900,8 +891,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 190.56,
+      "end": 193.14,
       "members": [],
       "original": "(보자 Til we’re there yeah)",
       "romanization": "(boja til we´re there yeah)",
@@ -909,8 +900,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 187.73,
+      "end": 192.37,
       "members": [],
       "original": "오렌지빛 하늘에, 부딪혀 보자 Til we’re there",
       "romanization": "orenjibit haneure, budichyeo boja til we’re there",
@@ -918,8 +909,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 192.5,
+      "end": 196.43,
       "members": [],
       "original": "",
       "romanization": "Just let it burn, Just let it burn",
@@ -927,8 +918,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 197.45,
+      "end": 198.21,
       "members": [],
       "original": "",
       "romanization": "Just let it",
