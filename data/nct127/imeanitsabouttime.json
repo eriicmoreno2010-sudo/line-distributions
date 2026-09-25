@@ -2,7 +2,7 @@
   "group": "NCT 127",
   "song": "I mean, It's about time",
   "video": "videos/nct127_imeanitsabouttime_mugqcvcr.mp4",
-  "duration": 0,
+  "duration": 128.483008,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -454,5 +454,6 @@
   "cover": "covers/nct127_imeanitsabouttime.jpg",
   "audio": "audio/nct127_imeanitsabouttime.mp3",
   "npC1": "#495d5f",
-  "npC2": "#beacb7"
+  "npC2": "#beacb7",
+  "audioOffset": 0.05
 }
