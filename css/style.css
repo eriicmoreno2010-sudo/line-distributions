@@ -374,7 +374,6 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     overflow:hidden;
     box-sizing:border-box;
     background:var(--panel3);
-    transform:translateY(-3px);
     flex-shrink:0;
     transition:border-color .15s var(--ease);
 }
