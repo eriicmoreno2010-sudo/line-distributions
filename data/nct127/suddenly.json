@@ -75,10 +75,685 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "예보 없이 만난 비처럼",
+      "romanization": "yebo eopsi mannan bicheoreom",
+      "english": "Like rain that comes without a forecast",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "갑작스레 내게 쏟아져",
+      "romanization": "gapjagseure naege ssodajyeo",
+      "english": "Suddenly pouring down on me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "피할 틈도 없이",
+      "romanization": "pihal teumdo eopsi",
+      "english": "Without a chance to escape",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "난 그저 너를 향해 가",
+      "romanization": "nan geujeo neoreul hyanghae ga",
+      "english": "I'm just heading towards you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그 누구도 모르게",
+      "romanization": "geu nugudo moreuge",
+      "english": "Without anyone knowing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너의 향기가 내게로 스며들 때",
+      "romanization": "neoui hyanggiga naegero seumyeodeul ttae",
+      "english": "When your scent seeps into me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "낯선 이 떨림이 싫진 않지",
+      "romanization": "natseon i tteollimi silchin anchi",
+      "english": "I don't mind this unfamiliar thrill",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네게 조금씩 날 맡겨 보려고 해",
+      "romanization": "nege jogeumssik nal matgyeo boryeogo hae",
+      "english": "I'm trying to slowly entrust myself to you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그 끝이 어떨지는 몰라도",
+      "romanization": "geu kkeuchi eotteoljineun mollado",
+      "english": "Even though I don't know where it will end",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나를 비추는 너의 두 눈에",
+      "romanization": "nareul bichuneun neoui du nune",
+      "english": "In your two eyes that reflect me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이대로 난 시간이 멈췄으면 해",
+      "romanization": "idaero nan sigani meomchwosseumyeon hae",
+      "english": "I wish time would stop like this",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너란 빗속에 멈춰 서게 돼",
+      "romanization": "neoran bitsoge meomchwo seoge dwae",
+      "english": "I'm stopped in the rain that is you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "놓쳐버린 우산도 잊은 채",
+      "romanization": "nochyeobeorin usando ijeun chae",
+      "english": "Forgetting even the lost umbrella",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너는 마치 내게 내린 소나기",
+      "romanization": "neoneun machi naege naerin sonagi",
+      "english": "You're like a sudden shower that fell on me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(그 속에 서서히)",
+      "romanization": "(geu soge seoseohi)",
+      "english": "(Gradually within it)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어느 틈에 나를 전부 적시지",
+      "romanization": "eoneu teume nareul jeonbu jeoksiji",
+      "english": "Without realizing you drench me completely",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Rain on me)",
+      "romanization": "(rain on me)",
+      "english": "(Rain on me)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나의 눈을 가리는 빗방울",
+      "romanization": "naui nuneul garineun bitbangul",
+      "english": "Raindrops that cover my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨이 가득 차와도 너만 바라",
+      "romanization": "sumi gadeuk chawado neoman bara",
+      "english": "Even if I'm filled with breath I only look at you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "깊은 바다 같은 너의 두 눈",
+      "romanization": "gipeun bada gateun neoui du nun",
+      "english": "Your eyes like a deep sea",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 안에 가득 가득",
+      "romanization": "ne ane gadeuk gadeuk",
+      "english": "Filled up inside you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잠겨 서서히",
+      "romanization": "jamgyeo seoseohi",
+      "english": "Slowly sinking",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah ya 볼을 세게 꼬집지",
+      "romanization": "ayy yeah boreul sege kkojipji",
+      "english": "Pinching my cheek hard",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "상상 이상의 Chemistry",
+      "romanization": "sangsang isangui chemistry",
+      "english": "Chemistry beyond imagination",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oh is it dream?",
+      "romanization": "oh is it dream?",
+      "english": "Oh is it a dream?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "From my morning to my evening",
+      "romanization": "from my morning to my evening",
+      "english": "From my morning to my evening",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You’re here with me",
+      "romanization": "you're here with me",
+      "english": "You're here with me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잔잔했던 수면 위",
+      "romanization": "janjanhaetdeon sumyeon wi",
+      "english": "On the calm surface",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 자꾸 번져가는",
+      "romanization": "neon jakku beonjyeoganeun",
+      "english": "You keep spreading",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이름 모를 이끌림",
+      "romanization": "ireum moreul ikkeullim",
+      "english": "An unknown allure",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거세게 맘의 창을",
+      "romanization": "geosege mamui changeul",
+      "english": "Your touch pounding",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두드리는 네 손길",
+      "romanization": "dudeurineun ne songil",
+      "english": "On the window of my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "주저 없이 더욱 깊이",
+      "romanization": "jujeo eopsi deouk gipi",
+      "english": "Without hesitation deeper",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잠기고만 싶은걸",
+      "romanization": "jamgigoman sipeungeol",
+      "english": "I just want to sink",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(잠기고만)",
+      "romanization": "(jamgigoman)",
+      "english": "(I just want to)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We can’t stop it",
+      "romanization": "we can’t stop it",
+      "english": "We can't stop it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝이 없이",
+      "romanization": "kkeuchi eopsi",
+      "english": "Endlessly",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그치지 않고 내게",
+      "romanization": "geuchiji anko naege",
+      "english": "Without stopping pouring into me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 쏟아지게",
+      "romanization": "deo ssodajige",
+      "english": "More and more",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나를 비추는 너의 두 눈에",
+      "romanization": "nareul bichuneun neoui du nune",
+      "english": "In your two eyes that reflect me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "온 세상을 이미 다 가진 것 같애",
+      "romanization": "on sesangeul imi da gajin geotae",
+      "english": "It feels like I already have the whole world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너란 빗속에 멈춰 서게 돼",
+      "romanization": "neoran bitsoge meomchwo seoge dwae",
+      "english": "I'm stopped in the rain that is you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "놓쳐버린 우산조차 잊은 채",
+      "romanization": "nochyeobeorin usanjocha ijeun chae",
+      "english": "Even forgetting the lost umbrella",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너는 마치 내게 내린 소나기",
+      "romanization": "neoneun machi naege naerin sonagi",
+      "english": "You're like a sudden shower that fell on me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(그 속에 서서히)",
+      "romanization": "(geu soge seoseohi)",
+      "english": "(Gradually within it)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어느 틈에 나를 전부 적시지",
+      "romanization": "eoneu teume nareul jeonbu jeoksiji",
+      "english": "Without realizing you drench me completely",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Rain on me)",
+      "romanization": "(rain on me)",
+      "english": "(Rain on me)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나의 눈을 가리는 빗방울",
+      "romanization": "naui nuneul garineun bitbangul",
+      "english": "Raindrops that cover my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(너는 마치 나의 눈을 가리는 빗방울)",
+      "romanization": "(neoneun machi naui nuneul garineun bitbangul)",
+      "english": "(You're like raindrops covering my eyes)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨이 가득 차와도 너만 바라",
+      "romanization": "sumi gadeuk chawado neoman bara",
+      "english": "Even if I'm filled with breath I only look at you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "깊은 바다 같은 너의 두 눈",
+      "romanization": "gipeun bada gateun neoui du nun",
+      "english": "Your eyes like a deep sea",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 안에 가득 가득",
+      "romanization": "ne ane gadeuk gadeuk",
+      "english": "Filled up inside you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잠겨 서서히",
+      "romanization": "jamgyeo seoseohi",
+      "english": "Slowly sinking",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oh I just can’t believe",
+      "romanization": "oh i just can't believe",
+      "english": "I just can't believe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "that you’re here with me",
+      "romanization": "that you're here with me",
+      "english": "that you're here with me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Hey hey hey yeah",
+      "romanization": "hey hey hey yeah",
+      "english": "Hey hey hey yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Hey hey hey yeah",
+      "romanization": "hey hey hey yeah",
+      "english": "Hey hey hey yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Rain on me",
+      "romanization": "rain on me",
+      "english": "Rain on me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Got me)",
+      "romanization": "(got me)",
+      "english": "(Got me)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Feeling good but dizzy",
+      "romanization": "feeling good but dizzy",
+      "english": "Feeling good but dizzy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I know you’re the reason",
+      "romanization": "i know you’re the reason",
+      "english": "I know you're the reason",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 또 시간이 멈춘 것만 같아 Yeah",
+      "romanization": "dasi tto sigani meomchun geonman gata yeah",
+      "english": "It feels like time has stopped again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너는 마치 내게 내린 소나기",
+      "romanization": "neoneun machi naege naerin sonagi",
+      "english": "You're like a sudden shower that fell on me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(그 속에 서서히)",
+      "romanization": "(geu soge seoseohi)",
+      "english": "(Gradually within it)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어느 틈에 나를 전부 적시지",
+      "romanization": "eoneu teume nareul jeonbu jeoksiji",
+      "english": "Without realizing you drench me completely",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Rain on me)",
+      "romanization": "(rain on me)",
+      "english": "(Rain on me)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나의 눈을 가리는 빗방울",
+      "romanization": "naui nuneul garineun bitbangul",
+      "english": "Raindrops that cover my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨이 가득 차와도 너만 바라",
+      "romanization": "sumi gadeuk chawado neoman bara",
+      "english": "Even if I'm filled with breath I only look at you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "깊은 바닷속에 잠수한 듯",
+      "romanization": "gipeun badatsoge jamsuhan deut",
+      "english": "Like diving into a deep sea",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 안에 가득 가득",
+      "romanization": "ne ane gadeuk gadeuk",
+      "english": "Filled up inside you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잠겨 서서히",
+      "romanization": "jamgyeo seoseohi",
+      "english": "Slowly sinking",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "서서히 서서히 너에게",
+      "romanization": "seoseohi seoseohi neoege",
+      "english": "Slowly slowly To you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "서서히 서서히 너에게",
+      "romanization": "seoseohi seoseohi neoege",
+      "english": "Slowly slowly To you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "맘에 가라앉듯",
+      "romanization": "mame garaandeut",
+      "english": "Sinking into my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 안에 가득 가득",
+      "romanization": "ne ane gadeuk gadeuk",
+      "english": "Filled up inside you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잠겨 서서히",
+      "romanization": "jamgyeo seoseohi",
+      "english": "Slowly sinking",
+      "adlib": false
     }
   ]
 }
