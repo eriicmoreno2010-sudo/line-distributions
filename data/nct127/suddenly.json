@@ -7,6 +7,13 @@
   "subunit": false,
   "members": [
     {
+      "name": "TAEIL",
+      "image": "images/nct127/suddenly/taeil.png",
+      "color": "#f273ca",
+      "focus": 50,
+      "lift": 3
+    },
+    {
       "name": "JOHNNY",
       "image": "images/nct127/suddenly/johnny.png",
       "color": "#31b287",
@@ -49,6 +56,13 @@
       "lift": 3
     },
     {
+      "name": "MARK",
+      "image": "images/nct127/suddenly/mark.png",
+      "color": "#cb6ce6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
       "name": "HAECHAN",
       "image": "images/nct127/suddenly/haechan.png",
       "color": "#1bb7e8",
@@ -60,9 +74,7 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "JOHNNY"
-      ],
+      "members": [],
       "original": "",
       "romanization": "",
       "english": "",
