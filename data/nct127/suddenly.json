@@ -84,36 +84,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "갑작스레 내게 쏟아져",
-      "romanization": "gapjagseure naege ssodajyeo",
-      "english": "Suddenly pouring down on me",
+      "original": "갑작스레 내게 쏟아져, 피할 틈도 없이",
+      "romanization": "gapjagseure naege ssodajyeo, pihal teumdo eopsi",
+      "english": "Suddenly pouring down on me, Without a chance to escape",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "피할 틈도 없이",
-      "romanization": "pihal teumdo eopsi",
-      "english": "Without a chance to escape",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "난 그저 너를 향해 가",
-      "romanization": "nan geujeo neoreul hyanghae ga",
-      "english": "I'm just heading towards you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그 누구도 모르게",
-      "romanization": "geu nugudo moreuge",
-      "english": "Without anyone knowing",
+      "original": "난 그저 너를 향해 가, 그 누구도 모르게",
+      "romanization": "nan geujeo neoreul hyanghae ga, geu nugudo moreuge",
+      "english": "I'm just heading towards you, Without anyone knowing",
       "adlib": false
     },
     {
@@ -255,18 +237,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "네 안에 가득 가득",
-      "romanization": "ne ane gadeuk gadeuk",
-      "english": "Filled up inside you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잠겨 서서히",
-      "romanization": "jamgyeo seoseohi",
-      "english": "Slowly sinking",
+      "original": "네 안에 가득 가득, 잠겨 서서히",
+      "romanization": "ne ane gadeuk gadeuk, jamgyeo seoseohi",
+      "english": "Filled up inside you, Slowly sinking",
       "adlib": false
     },
     {
@@ -274,8 +247,8 @@
       "end": 0,
       "members": [],
       "original": "Yeah ya 볼을 세게 꼬집지",
-      "romanization": "ayy yeah boreul sege kkojipji",
-      "english": "Pinching my cheek hard",
+      "romanization": "yeah ya boreul sege kkojipji",
+      "english": "Yeah ya Pinching my cheek hard",
       "adlib": false
     },
     {
