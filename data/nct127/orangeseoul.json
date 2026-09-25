@@ -2,7 +2,7 @@
   "group": "NCT 127",
   "song": "오렌지색 물감 (Orange Seoul)",
   "video": "videos/nct127_orangeseoul_mugsf0tk.mp4",
-  "duration": 0,
+  "duration": 206.533333,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -995,5 +995,6 @@
   "cover": "covers/nct127_orangeseoul.jpg",
   "audio": "audio/nct127_orangeseoul.mp3",
   "npC1": "#fd811c",
-  "npC2": "#db6300"
+  "npC2": "#db6300",
+  "audioOffset": -0.2
 }
