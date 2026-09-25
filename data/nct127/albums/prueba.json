@@ -1,0 +1,16 @@
+{
+  "type": "album",
+  "group": "NCT 127",
+  "album": "prueba",
+  "cover": "",
+  "theme": "dark",
+  "instrumental": "",
+  "songs": [
+    "data/nct127/127millionmiles.json",
+    "data/nct127/blingy.json",
+    "data/nct127/getaway.json",
+    "data/nct127/imeanitsabouttime.json",
+    "data/nct127/legacy.json",
+    "data/nct127/piata.json"
+  ]
+}
