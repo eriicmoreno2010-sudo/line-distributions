@@ -2,7 +2,7 @@
   "group": "NCT 127",
   "song": "서서히 (Suddenly)",
   "video": "videos/nct127_suddenly_muhfqo25.mp4",
-  "duration": 0,
+  "duration": 177.783008,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -758,5 +758,6 @@
   ],
   "cover": "covers/nct127_suddenly.jpg",
   "audio": "audio/nct127_suddenly.mp3",
-  "npC2": "#46ff2e"
+  "npC2": "#46ff2e",
+  "audioOffset": -0.2
 }
