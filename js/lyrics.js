@@ -510,17 +510,20 @@ const Lyrics = {
     /* Construye la tarjeta de UN ad-lib (con su color propio). */
     buildAdlibBox(line){
         const c = this.colorsFor(line);
+        // Ad-lib SIN cantante asignado -> blanco (en vez del morado por defecto).
+        const hasSinger = (line.members || []).some(n => (SONG.members || []).some(m => m.name === n));
+        const acc = (!c.isGroupLine && !c.isSharedLine && !hasSinger) ? "#ffffff" : c.accent;
         const box = document.createElement("div"); box.className = "al-box";
-        box.style.setProperty("--al-accent", c.accent);
+        box.style.setProperty("--al-accent", acc);
         // borde: degradado real -> grupo = arcoíris de todos; dúo/coro = colores de los que cantan; solista = su color
         const borderPaint = c.isGroupLine ? c.groupGradient
                           : (c.isSharedLine ? c.sharedGradient
-                          : `linear-gradient(90deg, ${c.accent}, ${c.accent})`);
+                          : `linear-gradient(90deg, ${acc}, ${acc})`);
         box.style.setProperty("--al-border", borderPaint);
         const paint = el => {
             if(c.isGroupLine){ el.style.background = c.groupGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
             else if(c.isSharedLine){ el.style.background = c.sharedGradient; el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text"; el.style.color = "transparent"; }
-            else el.style.color = c.accent;
+            else el.style.color = acc;
         };
         const inner = document.createElement("div"); inner.className = "al-inner";   // lo que colapsa el grid-rows
         const nm = document.createElement("div"); nm.className = "al-name"; nm.textContent = joinNames(displayMembers(line));
