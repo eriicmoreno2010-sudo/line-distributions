@@ -85,6 +85,33 @@ body.theme-light #ranking .member:not(.has-sung) .member-name{ color:#98a0af; }
 body.theme-light #ranking .member-time{ color:#98a0af; }
 body.theme-light #ranking .member.active .member-time{ color:color-mix(in srgb, var(--accent) 66%, #000); }
 
+/* ===== Ranking "LÍNEAS" (prueba Moonlight): SIN tarjetas; todo NEGRO por defecto;
+   el COLOR del miembro sale SOLO mientras canta (.active) o cuando ya terminó (.done);
+   si cantó pero le quedan partes -> vuelve a negro. La barra del líder llega al 100%
+   (el ancho lo calcula ranking.js con el máximo actual). Puntas de barra redondeadas. */
+body.rank-lines #ranking .member,
+body.rank-lines #ranking .member.active,
+body.rank-lines #ranking .member.done{
+    background:transparent; border-color:transparent; box-shadow:none;
+}
+/* NEGRO por defecto (no ha cantado, o cantó pero aún le quedan partes) */
+body.rank-lines #ranking .member:not(.active):not(.done) .member-name,
+body.rank-lines #ranking .member:not(.active):not(.done) .member-time{ color:#111219; }
+body.rank-lines #ranking .member:not(.active):not(.done) .member-progress{ background:#111219; }
+body.rank-lines #ranking .member:not(.active):not(.done) .member-photo-wrap{ border-color:#111219; }
+/* COLOR del miembro: mientras canta o una vez terminado */
+body.rank-lines #ranking .member.active .member-name,
+body.rank-lines #ranking .member.done  .member-name,
+body.rank-lines #ranking .member.active .member-time,
+body.rank-lines #ranking .member.done  .member-time{ color:color-mix(in srgb, var(--accent) 82%, #000); }
+body.rank-lines #ranking .member.active .member-progress,
+body.rank-lines #ranking .member.done  .member-progress{ background:var(--accent); }
+body.rank-lines #ranking .member.active .member-photo-wrap,
+body.rank-lines #ranking .member.done  .member-photo-wrap{ border-color:var(--accent); }
+/* barra como "línea" con puntas redondeadas */
+body.rank-lines #ranking .member-bar{ background:rgba(0,0,0,.10); border-radius:999px; }
+body.rank-lines #ranking .member-progress{ border-radius:999px; }
+
 /* ========================= */
 /* BODY */
 /* ========================= */

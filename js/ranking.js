@@ -117,19 +117,25 @@ const Ranking = {
     /* Exact leaderboard state at time t — a pure function of the video clock,
        so it never lags and stays correct after any seek. */
     updateAt(t){
-        const ref = this.maxTotal || 1;
+        const linesMode = (typeof SONG !== "undefined" && SONG && SONG.rankLines);
         this.members.forEach(m => {
             let sec = 0, active = false;
             for(const iv of m.intervals){
                 if(t >= iv[1]) sec += iv[1] - iv[0];          // whole interval already sung
                 else if(t > iv[0]){ sec += t - iv[0]; active = true; }  // currently in it
             }
+            m._sec       = sec;
             m.seconds    = Math.round(sec * 100) / 100;
-            m.percentage = Math.min(100, (sec / ref) * 100);
             m.active     = active;
             m.hasSung    = sec > 0;
             m.done       = m.hasSung && !active && isFinite(m.lastSing) && t >= m.lastSing;
         });
+        // Ancho de barra: normal -> respecto al TOTAL FINAL máximo (crece hasta 100% al final).
+        // lines (Moonlight): respecto al máximo ACTUAL -> el líder SIEMPRE llega al 100%.
+        const ref = linesMode
+            ? Math.max(1e-6, ...this.members.map(m => m._sec))
+            : (this.maxTotal || 1);
+        this.members.forEach(m => { m.percentage = Math.min(100, (m._sec / ref) * 100); });
         this.updateVisuals();
         this.reorder();
         if(this.det) this.tweenTick(t);
