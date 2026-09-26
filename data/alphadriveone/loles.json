@@ -1,7 +1,7 @@
 {
   "group": "ALPHA DRIVE ONE",
   "song": "loles",
-  "video": "",
+  "video": "videos/alphadriveone_loles_muiwdlsk.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": false,
@@ -35,6 +35,13 @@
       "lift": 3
     },
     {
+      "name": "GEONWOO",
+      "image": "images/alphadriveone/loles/geonwoo.png",
+      "color": "#a4f245",
+      "focus": 50,
+      "lift": 3
+    },
+    {
       "name": "XINLONG",
       "image": "images/alphadriveone/loles/xinlong.png",
       "color": "#0dd398",
@@ -58,15 +65,1259 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 7.49,
+      "end": 9.46,
+      "members": [
+        "SANGWON"
+      ],
+      "original": "Step back, 비틀어진 Highway",
+      "romanization": "step back, biteureojin highway",
+      "english": "Step back, Twisted-up Highway",
+      "adlib": false,
+      "voice": [
+        [
+          7.48,
+          8.13
+        ],
+        [
+          8.25,
+          9.49
+        ]
+      ]
+    },
+    {
+      "start": 9.59,
+      "end": 11.03,
+      "members": [
+        "SANGWON"
+      ],
+      "voice": [
+        [
+          9.62,
+          11.19
+        ]
+      ],
+      "original": "경계를 찢어 Rip that, rip that",
+      "romanization": "gyeonggyereul jjijeo rip that, rip that",
+      "english": "Rip the boundary Rip that, rip that",
+      "adlib": false
+    },
+    {
+      "start": 11.15,
+      "end": 12.84,
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          11.18,
+          12.16
+        ],
+        [
+          12.32,
+          12.93
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 12.97,
+      "end": 14.6,
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          12.96,
+          14
+        ],
+        [
+          14.15,
+          14.79
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 14.75,
+      "end": 16.68,
+      "members": [
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          14.72,
+          15.33
+        ],
+        [
+          15.48,
+          16.71
+        ]
+      ],
+      "original": "Step back, 뭔가 다른 My way",
+      "romanization": "step back, mwonga dareun my way",
+      "english": "Step back, Something different My way",
+      "adlib": false
+    },
+    {
+      "start": 16.81,
+      "end": 18.23,
+      "members": [
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          16.8,
+          18.42
+        ]
+      ],
+      "original": "한계를 넘어 Rip that, rip that",
+      "romanization": "hangyereul neomeo rip that, rip that",
+      "english": "Push past the limit Rip that, rip that",
+      "adlib": false
+    },
+    {
+      "start": 18.35,
+      "end": 20.07,
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          18.43,
+          19.45
+        ],
+        [
+          19.6,
+          20.18
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 20.2,
+      "end": 21.86,
+      "members": [
+        "SANGWON",
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          20.22,
+          21.27
+        ],
+        [
+          21.42,
+          22
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 21.98,
+      "end": 25.33,
+      "members": [
+        "LEO"
+      ],
+      "voice": [
+        [
+          22.03,
+          23.48
+        ],
+        [
+          23.86,
+          25.32
+        ]
+      ],
+      "original": "",
+      "romanization": "I’ma own it all, Born to be high above",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 25.51,
+      "end": 28.95,
+      "members": [
+        "LEO"
+      ],
+      "voice": [
+        [
+          25.65,
+          26.98
+        ],
+        [
+          27.5,
+          28.94
+        ]
+      ],
+      "original": "나약해 보여 What?, 달아오르는 Flame",
+      "romanization": "nayahage boyeo what?, daraoreuneun flame",
+      "english": "You think I'm weak What?, Burning hotter Flame",
+      "adlib": false
+    },
+    {
+      "start": 29.16,
+      "end": 32.82,
       "members": [
         "JUNSEO"
       ],
+      "voice": [
+        [
+          29.3,
+          32.97
+        ]
+      ],
+      "original": "날카롭게 세운 Passion, 몰아치듯 Harder",
+      "romanization": "nalkaropge seun passion, morachideut harder",
+      "english": "Razor-sharp and ready Passion, Rushing at you Harder",
+      "adlib": false
+    },
+    {
+      "start": 32.95,
+      "end": 36.76,
+      "members": [
+        "JUNSEO"
+      ],
+      "voice": [
+        [
+          33,
+          36.65
+        ]
+      ],
+      "original": "통제할 수 없는 Motion, And it makes me stronger",
+      "romanization": "tongjehal su eomneun motion, and it makes me stronger",
+      "english": "No way to control this Motion, And it makes me stronger",
+      "adlib": false
+    },
+    {
+      "start": 38.32,
+      "end": 43.69,
+      "members": [
+        "XINLONG"
+      ],
+      "voice": [
+        [
+          38.39,
+          39.88
+        ],
+        [
+          40.24,
+          43.69
+        ]
+      ],
+      "original": "Reborn in the ashes, 전부 제껴, 봐, Turn it louder",
+      "romanization": "reborn in the ashes, jeonbu jekkyeo, bwa, turn it louder",
+      "english": "Reborn in the ashes, Knock 'em all aside, Turn it louder",
+      "adlib": false
+    },
+    {
+      "start": 43.87,
+      "end": 45.77,
+      "members": [
+        "SANGWON"
+      ],
+      "voice": [
+        [
+          43.8,
+          44.43
+        ],
+        [
+          44.59,
+          45.8
+        ]
+      ],
+      "original": "Step back, 비틀어진 Highway",
+      "romanization": "step back, biteureojin highway",
+      "english": "Step back, Twisted-up Highway",
+      "adlib": false
+    },
+    {
+      "start": 45.89,
+      "end": 47.34,
+      "members": [
+        "SANGWON"
+      ],
+      "voice": [
+        [
+          45.88,
+          47.53
+        ]
+      ],
+      "original": "경계를 찢어 Rip that, rip that",
+      "romanization": "gyeonggyereul jjijeo rip that, rip that",
+      "english": "Rip the boundary Rip that, rip that",
+      "adlib": false
+    },
+    {
+      "start": 47.47,
+      "end": 49.16,
+      "members": [
+        "SANGWON",
+        "ARNO"
+      ],
+      "voice": [
+        [
+          47.51,
+          48.52
+        ],
+        [
+          48.68,
+          49.29
+        ]
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 49.28,
+      "end": 50.92,
+      "members": [
+        "SANGWON",
+        "ARNO"
+      ],
+      "voice": [
+        [
+          49.3,
+          50.35
+        ],
+        [
+          50.5,
+          51.1
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 51.07,
+      "end": 52.98,
+      "members": [
+        "ARNO"
+      ],
+      "voice": [
+        [
+          51.08,
+          51.72
+        ],
+        [
+          51.87,
+          53.04
+        ]
+      ],
+      "original": "Step back, 펼쳐지는 One way",
+      "romanization": "step back, pyeolchyeojineun one way",
+      "english": "Step back, Opening up One way",
+      "adlib": false
+    },
+    {
+      "start": 53.1,
+      "end": 54.59,
+      "members": [
+        "ARNO"
+      ],
+      "voice": [
+        [
+          53.15,
+          54.8
+        ]
+      ],
+      "original": "나를 바꿔 Lead that, lead that",
+      "romanization": "nareul bakkwo lead that, lead that",
+      "english": "Turn me around Lead that, lead that",
+      "adlib": false
+    },
+    {
+      "start": 54.72,
+      "end": 56.41,
+      "members": [
+        "ARNO",
+        "SANGWON"
+      ],
+      "voice": [
+        [
+          54.77,
+          55.78
+        ],
+        [
+          55.94,
+          56.52
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 56.56,
+      "end": 58.3,
+      "members": [
+        "ARNO",
+        "SANGWON"
+      ],
+      "voice": [
+        [
+          56.58,
+          57.62
+        ],
+        [
+          57.77,
+          58.38
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 58.42,
+      "end": 63.71,
+      "members": [
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          58.43,
+          63.88
+        ]
+      ],
+      "original": "",
+      "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 63.87,
+      "end": 65.51,
+      "members": [
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          63.92,
+          64.19
+        ],
+        [
+          64.37,
+          64.64
+        ],
+        [
+          64.78,
+          65.02
+        ],
+        [
+          65.2,
+          65.53
+        ]
+      ],
+      "original": "",
+      "romanization": "On top, my track",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 65.66,
+      "end": 70.95,
+      "members": [
+        "JUNSEO"
+      ],
+      "voice": [
+        [
+          65.69,
+          71.16
+        ]
+      ],
+      "original": "",
+      "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 71.1,
+      "end": 72.85,
+      "members": [
+        "JUNSEO"
+      ],
+      "voice": [
+        [
+          71.15,
+          72.17
+        ],
+        [
+          72.32,
+          72.96
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 73.39,
+      "end": 76.95,
+      "members": [
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          73.4,
+          75.12
+        ],
+        [
+          75.28,
+          76.96
+        ]
+      ],
+      "original": "난 안 해 뻔한 Step by step, 두려움 따윈 벗어둔 채",
+      "romanization": "nan an hae ppeonhan step by step, duryeoum ttawin beoseodun chae",
+      "english": "I don't do the same Step by step, Leaving all my fear behind",
+      "adlib": false
+    },
+    {
+      "start": 77.07,
+      "end": 80.1,
+      "members": [
+        "SANGHYEON"
+      ],
+      "voice": [
+        [
+          77.04,
+          80.18
+        ]
+      ],
+      "original": "과감히 덤비는 Beast mode, 우린 그저 모른 채 질주해",
+      "romanization": "gwagami deom bineun beast mode, urin geujeo moreun chae jiljuhae",
+      "english": "Charging straight ahead Beast mode, We just keep running without a clue",
+      "adlib": false
+    },
+    {
+      "start": 80.51,
+      "end": 83.92,
+      "members": [
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          80.44,
+          82.11
+        ],
+        [
+          82.29,
+          83.94
+        ]
+      ],
+      "original": "It’s getting critical, 깨뜨려 Typical",
+      "romanization": "it’s getting critical, kkaetteuryeo typical",
+      "english": "It’s getting critical, Smash it up Typical",
+      "adlib": false
+    },
+    {
+      "start": 84.02,
+      "end": 87.34,
+      "members": [
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          84.1,
+          85.77
+        ],
+        [
+          85.93,
+          87.62
+        ]
+      ],
+      "original": "",
+      "romanization": "We’re getting ready to go, So cut it, drop it low",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 87.46,
+      "end": 91.04,
+      "members": [
+        "XINLONG"
+      ],
+      "voice": [
+        [
+          87.55,
+          87.84
+        ],
+        [
+          87.96,
+          88.31
+        ],
+        [
+          88.44,
+          88.72
+        ],
+        [
+          88.87,
+          89.19
+        ],
+        [
+          89.33,
+          89.75
+        ],
+        [
+          89.77,
+          91.21,
+          [
+            "LEO"
+          ]
+        ]
+      ],
+      "original": "On top, my track, ay, **부딪혀 끝까지@LEO**",
+      "romanization": "on top, my track, ay, **budichyeo kkeutkkaji@LEO**",
+      "english": "On top, my track, ay, **Fight it to the end@LEO**",
+      "adlib": false
+    },
+    {
+      "start": 91.19,
+      "end": 94.91,
+      "members": [
+        "XINLONG"
+      ],
+      "voice": [
+        [
+          91.16,
+          91.49
+        ],
+        [
+          91.64,
+          91.94
+        ],
+        [
+          92.09,
+          92.38
+        ],
+        [
+          92.53,
+          92.89
+        ],
+        [
+          93.19,
+          94.86,
+          [
+            "LEO"
+          ]
+        ]
+      ],
+      "original": "",
+      "romanization": "On top, my track, **No one can break us@LEO**",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 96.59,
+      "end": 101.83,
+      "members": [
+        "SANGWON"
+      ],
+      "voice": [
+        [
+          96.58,
+          98.17
+        ],
+        [
+          98.37,
+          101.99
+        ]
+      ],
+      "original": "Reborn in the ashes, 전부 제껴, 봐, Turn it louder",
+      "romanization": "reborn in the ashes, jeonbu jekkyeo, bwa, turn it louder",
+      "english": "Reborn in the ashes, Knock 'em all aside, Turn it louder",
+      "adlib": false
+    },
+    {
+      "start": 102.04,
+      "end": 103.96,
+      "members": [
+        "JUNSEO"
+      ],
+      "voice": [
+        [
+          102.01,
+          102.62
+        ],
+        [
+          102.77,
+          104.01
+        ]
+      ],
+      "original": "Step back, 비틀어진 Highway",
+      "romanization": "step back, biteureojin highway",
+      "english": "Step back, Twisted-up Highway",
+      "adlib": false
+    },
+    {
+      "start": 104.11,
+      "end": 105.55,
+      "members": [
+        "JUNSEO"
+      ],
+      "voice": [
+        [
+          104.14,
+          105.76
+        ]
+      ],
+      "original": "경계를 찢어 Rip that, rip that",
+      "romanization": "gyeonggyereul jjijeo rip that, rip that",
+      "english": "Rip the boundary Rip that, rip that",
+      "adlib": false
+    },
+    {
+      "start": 105.67,
+      "end": 107.42,
+      "members": [
+        "JUNSEO",
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          105.7,
+          106.71
+        ],
+        [
+          106.86,
+          107.51
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 107.54,
+      "end": 109.21,
+      "members": [
+        "JUNSEO",
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          107.49,
+          108.5
+        ],
+        [
+          108.65,
+          109.35
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 109.33,
+      "end": 111.22,
+      "members": [
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          109.27,
+          109.88
+        ],
+        [
+          110.03,
+          111.22
+        ]
+      ],
+      "original": "Step back, 펼쳐지는 One way",
+      "romanization": "step back, pyeolchyeojineun one way",
+      "english": "Step back, Opening up One way",
+      "adlib": false
+    },
+    {
+      "start": 111.37,
+      "end": 112.82,
+      "members": [
+        "ANXIN"
+      ],
+      "voice": [
+        [
+          111.38,
+          112.94
+        ]
+      ],
+      "original": "나를 바꿔 Lead that, lead that",
+      "romanization": "nareul bakkwo lead that, lead that",
+      "english": "Turn me around Lead that, lead that",
+      "adlib": false
+    },
+    {
+      "start": 112.97,
+      "end": 114.59,
+      "members": [
+        "ANXIN",
+        "JUNSEO"
+      ],
+      "voice": [
+        [
+          112.95,
+          113.91
+        ],
+        [
+          114.09,
+          114.71
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 114.74,
+      "end": 116.53,
+      "members": [
+        "ANXIN",
+        "JUNSEO"
+      ],
+      "voice": [
+        [
+          114.78,
+          115.79
+        ],
+        [
+          115.94,
+          116.58
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 131.12,
+      "end": 133.03,
+      "members": [
+        "LEO"
+      ],
+      "voice": [
+        [
+          131.1,
+          131.72
+        ],
+        [
+          131.87,
+          133.06
+        ]
+      ],
+      "original": "Step back, 비틀어진 Highway",
+      "romanization": "step back, biteureojin highway",
+      "english": "Step back, Twisted-up Highway",
+      "adlib": false
+    },
+    {
+      "start": 133.18,
+      "end": 134.58,
+      "members": [
+        "LEO"
+      ],
+      "voice": [
+        [
+          133.17,
+          134.82
+        ]
+      ],
+      "original": "경계를 찢어 Rip that, rip that",
+      "romanization": "gyeonggyereul jjijeo rip that, rip that",
+      "english": "Rip the boundary Rip that, rip that",
+      "adlib": false
+    },
+    {
+      "start": 134.73,
+      "end": 136.42,
+      "members": [
+        "LEO",
+        "XINLONG"
+      ],
+      "voice": [
+        [
+          134.8,
+          135.79
+        ],
+        [
+          135.94,
+          136.51
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 136.57,
+      "end": 138.24,
+      "members": [
+        "LEO",
+        "XINLONG"
+      ],
+      "voice": [
+        [
+          136.62,
+          137.67
+        ],
+        [
+          137.83,
+          138.44
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 138.36,
+      "end": 140.25,
+      "members": [
+        "XINLONG"
+      ],
+      "voice": [
+        [
+          138.36,
+          138.98
+        ],
+        [
+          139.13,
+          140.41
+        ]
+      ],
+      "original": "Step back, 펼쳐지는 One way",
+      "romanization": "step back, pyeolchyeojineun one way",
+      "english": "Step back, Opening up One way",
+      "adlib": false
+    },
+    {
+      "start": 140.43,
+      "end": 141.84,
+      "members": [
+        "XINLONG"
+      ],
+      "voice": [
+        [
+          140.44,
+          142.07
+        ]
+      ],
+      "original": "나를 바꿔 Lead that, lead that",
+      "romanization": "nareul bakkwo lead that, lead that",
+      "english": "Turn me around Lead that, lead that",
+      "adlib": false
+    },
+    {
+      "start": 142.02,
+      "end": 143.7,
+      "members": [
+        "XINLONG",
+        "LEO"
+      ],
+      "voice": [
+        [
+          142.03,
+          143.05
+        ],
+        [
+          143.23,
+          143.81
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 143.88,
+      "end": 145.56,
+      "members": [
+        "XINLONG",
+        "LEO"
+      ],
+      "voice": [
+        [
+          143.87,
+          144.88
+        ],
+        [
+          145.06,
+          145.7
+        ]
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 145.71,
+      "end": 150.94,
+      "members": [
+        "ARNO"
+      ],
+      "voice": [
+        [
+          145.69,
+          151.16
+        ]
+      ],
+      "original": "",
+      "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 151.18,
+      "end": 152.91,
+      "members": [
+        "ARNO"
+      ],
+      "voice": [
+        [
+          151.17,
+          151.46
+        ],
+        [
+          151.62,
+          151.95
+        ],
+        [
+          152.08,
+          152.38
+        ],
+        [
+          152.53,
+          152.85
+        ],
+        [
+          153.03,
+          153.33
+        ]
+      ],
+      "original": "",
+      "romanization": "On top, my track, ay",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 153.04,
+      "end": 158.23,
+      "members": [
+        "ANXIN"
+      ],
+      "original": "",
+      "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          153.01,
+          158.42
+        ]
+      ]
+    },
+    {
+      "start": 158.38,
+      "end": 160.27,
+      "members": [
+        "ANXIN"
+      ],
+      "original": "",
+      "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          158.43,
+          159.44
+        ],
+        [
+          159.59,
+          160.24
+        ]
+      ]
+    },
+    {
+      "start": 36.61,
+      "end": 38.42,
+      "members": [
+        "XINLONG"
+      ],
+      "original": "",
+      "romanization": "(I)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          36.67,
+          38.46
+        ]
+      ]
+    },
+    {
+      "start": 80.27,
+      "end": 80.71,
+      "members": [
+        "SANGHYEON"
+      ],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          80.27,
+          80.67
+        ]
+      ]
+    },
+    {
+      "start": 94.79,
+      "end": 96.6,
+      "members": [
+        "SANGWON"
+      ],
+      "original": "",
+      "romanization": "(I)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          94.82,
+          96.6
+        ]
+      ]
+    },
+    {
+      "start": 103.4,
+      "end": 104.16,
+      "members": [
+        "LEO"
+      ],
+      "original": "",
+      "romanization": "(Highway)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          103.45,
+          104.17
+        ]
+      ]
+    },
+    {
+      "start": 106.82,
+      "end": 107.55,
+      "members": [
+        "LEO"
+      ],
+      "original": "",
+      "romanization": "(BORN DIRE)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          106.85,
+          107.49
+        ]
+      ]
+    },
+    {
+      "start": 108.6,
+      "end": 109.36,
+      "members": [
+        "LEO"
+      ],
+      "original": "",
+      "romanization": "(BORN DIRE)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          108.63,
+          109.35
+        ]
+      ]
+    },
+    {
+      "start": 110.68,
+      "end": 111.38,
+      "members": [
+        "LEO"
+      ],
+      "original": "",
+      "romanization": "(One way)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          110.71,
+          111.38
+        ]
+      ]
+    },
+    {
+      "start": 114.79,
+      "end": 117.25,
+      "members": [
+        "LEO"
+      ],
+      "original": "",
+      "romanization": "(BORN, BORN, BORN DIRE)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          114.81,
+          117.23
+        ]
+      ]
+    },
+    {
+      "start": 151.15,
+      "end": 153.66,
+      "members": [
+        "LEO"
+      ],
+      "original": "",
+      "romanization": "(On top, my track)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          151.15,
+          153.53
+        ]
+      ]
     }
   ]
 }
