@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Optional per-song "lines" ranking (Moonlight test): no cards, black by default,
         // colour only while singing or once finished; leader bar reaches 100%.
         document.body.classList.toggle("rank-lines", !!SONG.rankLines);
+        // Optional beat-reactive glitch halo on the ranking photos (Moonlight test).
+        document.body.classList.toggle("rank-beats", !!SONG.beats);
+        if(typeof Beats !== "undefined" && SONG.beats) Beats.enable();
 
         loadSongInformation();
 

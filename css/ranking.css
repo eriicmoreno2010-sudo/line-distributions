@@ -238,3 +238,36 @@ body.two-side .member.ready{
     /* .member-name aqui tampoco manda (lo pisa style.css). Solo fotos. */
     .member-photo-wrap{ width:58px; height:58px; }
 }
+
+/* ===== Halo de BEATS (prueba Moonlight): detrás de la foto, INVISIBLE sin beat;
+   aparece y se 'glitchea' con cada golpe (más fuerte el beat, más glitch). El aro
+   normal NO se toca. Lo controla la var --beat (0..1) que pone js/beats.js. ===== */
+.member-photo-box{ position:relative; display:inline-flex; }
+.beat-halo{ display:none; }
+body.rank-beats .beat-halo{
+    display:block; position:absolute; inset:-10px; border-radius:50%; pointer-events:none; z-index:0;
+    opacity: clamp(0, calc(var(--beat,0) * 1.25), 1);
+    box-shadow:
+        0 0 calc(6px + var(--beat,0)*26px) calc(1px + var(--beat,0)*7px) rgba(70,225,215,.70),
+        0 0 calc(2px + var(--beat,0)*10px) rgba(70,225,215,.90);
+}
+body.rank-beats .member-photo-wrap{ position:relative; z-index:1; }   /* foto + aro POR ENCIMA del halo */
+/* aberración cromática 'glitch': dos copias desplazadas (cian / magenta) que saltan;
+   el desplazamiento crece con --beat (beat más fuerte = glitch más pronunciado) */
+body.rank-beats .beat-halo::before, body.rank-beats .beat-halo::after{
+    content:""; position:absolute; inset:0; border-radius:50%;
+}
+body.rank-beats .beat-halo::before{
+    box-shadow:0 0 calc(5px + var(--beat,0)*20px) 1px rgba(0,200,255,.6);
+    animation: beatGlitch .18s steps(2,end) infinite;
+}
+body.rank-beats .beat-halo::after{
+    box-shadow:0 0 calc(5px + var(--beat,0)*20px) 1px rgba(255,40,140,.55);
+    animation: beatGlitch .15s steps(2,end) infinite reverse;
+}
+@keyframes beatGlitch{
+    0%  { transform: translate(calc(var(--beat,0) * -6px), 0); }
+    33% { transform: translate(calc(var(--beat,0) *  5px), calc(var(--beat,0) * -3px)); }
+    66% { transform: translate(calc(var(--beat,0) * -4px), calc(var(--beat,0) *  3px)); }
+    100%{ transform: translate(calc(var(--beat,0) *  6px), 0); }
+}

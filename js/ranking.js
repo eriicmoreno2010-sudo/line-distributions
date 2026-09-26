@@ -247,9 +247,12 @@ const Ranking = {
 
             card.innerHTML = `
                 <div class="member-rank">1</div>
-                <span class="member-photo-wrap">
-                    <img class="member-photo" src="${member.image}?v=${PHOTO_VER}" alt="${member.name}"
-                         style="object-position:center ${member.focus ?? 50}%">
+                <span class="member-photo-box">
+                    <span class="beat-halo"></span>
+                    <span class="member-photo-wrap">
+                        <img class="member-photo" src="${member.image}?v=${PHOTO_VER}" alt="${member.name}"
+                             style="object-position:center ${member.focus ?? 50}%">
+                    </span>
                 </span>
 
                 <div class="member-info">

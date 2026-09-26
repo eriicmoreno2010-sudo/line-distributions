@@ -3,6 +3,7 @@
   "song": "Moonlight",
   "theme": "light",
   "rankLines": true,
+  "beats": true,
   "video": "videos/moonlight.mp4",
   "duration": 192.97,
   "members": [
