@@ -7,6 +7,13 @@
   "subunit": false,
   "members": [
     {
+      "name": "TAEIL",
+      "image": "images/nct127/canthelpmyself/taeil.png",
+      "color": "#f273ca",
+      "focus": 50,
+      "lift": 3
+    },
+    {
       "name": "JOHNNY",
       "image": "images/nct127/canthelpmyself/johnny.png",
       "color": "#31b287",
@@ -45,6 +52,13 @@
       "name": "JUNGWOO",
       "image": "images/nct127/canthelpmyself/jungwoo.png",
       "color": "#4d6593",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MARK",
+      "image": "images/nct127/canthelpmyself/mark.png",
+      "color": "#cb6ce6",
       "focus": 50,
       "lift": 3
     },
