@@ -67,8 +67,8 @@ body.two-side .member.ready{
 /* a card that jumps to the OTHER column: snap into place (no diagonal slide)
    then fade in, so the column change reads cleanly */
 .member.no-anim{ transition:none !important; }
-/* cambio de columna: anima la ESCALA (encoge/crece) suave -> nunca desaparece */
-.member.switching{ transition:transform .2s cubic-bezier(.4,0,.2,1) !important; transform-origin:center center; }
+/* cambio de columna: se va por un borde y entra por el otro, RÁPIDO */
+.member.switching{ transition:transform .09s var(--ease), opacity .07s var(--ease) !important; }
 
 /* ========================= */
 /* ACTIVE STATE (color glow, no resizing) */

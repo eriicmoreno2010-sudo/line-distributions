@@ -405,12 +405,12 @@ const Ranking = {
         }
     },
 
-    /* Column change: como las columnas están SEPARADAS por el vídeo, la tarjeta no
-       puede cruzar deslizándose. En vez de desvanecerse (parecía que desaparecía),
-       ENCOGE en su sitio y CRECE en el nuevo hueco -> siempre visible y fluido. */
+    /* Column change (RÁPIDO): la tarjeta se va por el borde de su columna (arriba si
+       sube a la izquierda, abajo si baja a la derecha) y entra por el borde opuesto
+       de la otra columna. Tiempos cortos para que sea ágil. */
     switchCard(m, colIdx, row, gi){
         // Tight race guard: si ya está cambiando hacia ESTA columna, solo actualiza
-        // el hueco destino y deja terminar la animación en curso.
+        // el hueco destino y deja terminar la animación en curso (no reinicia el fundido).
         if(m._switching && m._switchCol === colIdx){
             m._switchRow = row; m._switchGi = gi;
             if(m.rankElement) m.rankElement.textContent = gi + 1;
@@ -418,6 +418,8 @@ const Ranking = {
         }
 
         const dest = this.columns[colIdx];
+        const src  = this.columns[m._col];
+        const improving = colIdx < m._col;              // sube a la columna izquierda (mejor)
         m._switching = true;
         m._switchCol = colIdx;
         m._switchRow = row; m._switchGi = gi;
@@ -426,32 +428,35 @@ const Ranking = {
         m.element.style.zIndex = "60";
         if(m.rankElement) m.rankElement.textContent = gi + 1;
 
-        // Fase 1: ENCOGE en su sitio actual (sigue visible mientras mengua).
-        m.element.style.setProperty("--card-scale", "0.01");
+        // Fase 1: se va por el borde (arriba si sube, abajo si baja) y se desvanece.
+        const exitY = improving ? -src.rowH : src.cap * src.rowH;
+        m.element.style.setProperty("--rank-y", `${exitY}px`);
+        m.element.style.opacity = "0";
 
         clearTimeout(m._switchT); clearTimeout(m._cleanT);
         m._switchT = setTimeout(() => {
-            // Fase 2: aparece pequeño YA en su hueco de la otra columna y CRECE.
+            // Fase 2: aparece por el borde opuesto de la otra columna y entra a su hueco.
             const r = m._switchRow, g = m._switchGi;
             m.element.classList.add("no-anim");
             dest.el.appendChild(m.element);
             m.element.style.height = dest.cardH ? dest.cardH + "px" : "";
-            m.element.style.setProperty("--rank-y", `${r * dest.rowH}px`);
-            m.element.style.setProperty("--card-scale", "0.01");
+            const enterY = improving ? (r + 1) * dest.rowH : (r - 1) * dest.rowH;
+            m.element.style.setProperty("--rank-y", `${enterY}px`);
             m.element.style.zIndex = String(dest.cap - r);
             m._pos = r;
             m._col = colIdx;
             if(m.rankElement) m.rankElement.textContent = g + 1;
-            void m.element.offsetWidth;                  // reflow: posición/escala iniciales instantáneas
+            void m.element.offsetWidth;                  // reflow: posición inicial instantánea
             m.element.classList.remove("no-anim");       // re-activa la transición
-            m.element.style.setProperty("--card-scale", "1");   // CRECE en el nuevo sitio
+            m.element.style.setProperty("--rank-y", `${r * dest.rowH}px`);   // entra a su hueco
+            m.element.style.opacity = "1";
             m._cleanT = setTimeout(() => {
                 m.element.classList.remove("switching");
-                m.element.style.removeProperty("--card-scale");   // vuelve a 1 (o 1.04 si canta)
+                m.element.style.opacity = "";
                 m._switching = false;
                 m._switchCol = undefined;
-            }, 240);
-        }, 200);
+            }, 110);
+        }, 95);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
