@@ -165,126 +165,63 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "다시 시작한대도",
-      "romanization": "dasi shijakandaedo",
-      "english": "Even if we start all over again",
+      "original": "다시 시작한대도, 난 너밖에 몰라",
+      "romanization": "dasi shijakandaedo, nan neobakke molla",
+      "english": "Even if we start all over again, You're the only one I know",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "난 너밖에 몰라",
-      "romanization": "nan neobakke molla",
-      "english": "You're the only one I know",
+      "original": "I’ll always choose you, 너 아니면 안 돼",
+      "romanization": "i’ll always choose you, neo animyeon an dwae",
+      "english": "I'll always choose you, No one else but you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’ll always choose you",
-      "romanization": "i’ll always choose you",
-      "english": "I'll always choose you",
+      "original": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너 아니면 안 돼",
-      "romanization": "neo animyeon an dwae",
-      "english": "No one else but you",
+      "original": "I’ll always choose you, 오랜 시간 속에",
+      "romanization": "i’ll always choose you, oraen shigan soge",
+      "english": "I'll always choose you, Through all the passing time",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
+      "original": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’ll always choose you",
-      "romanization": "i’ll always choose you",
-      "english": "I'll always choose you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "오랜 시간 속에",
-      "romanization": "oraen shigan soge",
-      "english": "Through all the passing time",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help my",
-      "romanization": "i can’t i can’t help my",
-      "english": "I can't I can't help my",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help myself no oh",
-      "romanization": "i can’t i can’t help myself no",
-      "english": "I can't I can't help myself no",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help my",
-      "romanization": "i can’t i can’t help my",
-      "english": "I can't I can't help my",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help myself no oh",
-      "romanization": "i can’t i can’t help myself no",
-      "english": "I can't I can't help myself no",
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
       "adlib": false
     },
     {
@@ -300,6 +237,24 @@
       "start": 0,
       "end": 0,
       "members": [],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
       "original": "(내게 온 거니 Yeah)",
       "romanization": "(naege on geoni yeah)",
       "english": "(Did you come to me yeah)",
@@ -309,81 +264,54 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "이 큰 세상",
-      "romanization": "i keun sesang",
-      "english": "That in this big world",
+      "original": "이 큰 세상, 둘이 만났다는 게",
+      "romanization": "i keun sesang, duri mannatdaneun ge",
+      "english": "That in this big world, We found each other",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "둘이 만났다는 게",
-      "romanization": "duri mannatdaneun ge",
-      "english": "We found each other",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I know)",
-      "romanization": "(i know)",
-      "english": "(I know)",
+      "original": "",
+      "romanization": "(I know)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "자꾸 웃음이 나와",
-      "romanization": "jakku useumi nawa",
-      "english": "I can't stop smiling",
+      "original": "자꾸 웃음이 나와, 운명이란걸 믿게 됐어",
+      "romanization": "jakku useumi nawa, unmyeongirangeol mitge dwaesseo",
+      "english": "I can't stop smiling, You made me believe in fate",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(Can’t believe no no)",
-      "romanization": "(can’t believe no no)",
-      "english": "(Can't believe no no)",
+      "original": "",
+      "romanization": "(Can’t believe no no)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "운명이란걸 믿게 됐어",
-      "romanization": "unmyeongirangeol mitge dwaesseo",
-      "english": "You made me believe in fate",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(You and me oh-eh)",
-      "romanization": "(you and me oh yeah)",
-      "english": "(You and me oh yeah)",
+      "original": "",
+      "romanization": "(You and me oh-eh)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "가끔은 시간도",
-      "romanization": "gakkeumeun shigando",
-      "english": "Sometimes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "필요하겠지",
-      "romanization": "piryohagetji",
-      "english": "We might need time",
+      "original": "가끔은 시간도, 필요하겠지",
+      "romanization": "gakkeumeun shigando, piryohagetji",
+      "english": "Sometimes, We might need time",
       "adlib": false
     },
     {
@@ -399,18 +327,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "하지만 우린",
-      "romanization": "hajiman urin",
-      "english": "But we already",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "결말을 안다는 걸",
-      "romanization": "gyeolmareul andaneun geol",
-      "english": "Know how our story ends",
+      "original": "하지만 우린, 결말을 안다는 걸",
+      "romanization": "hajiman urin, gyeolmareul andaneun geol",
+      "english": "But we already, Know how our story ends",
       "adlib": false
     },
     {
@@ -444,27 +363,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "네 마음이",
-      "romanization": "ne maeumi",
-      "english": "I don't take",
+      "original": "네 마음이, 당연한 게 아냐",
+      "romanization": "ne maeumi, dangyeonhan ge anya",
+      "english": "I don't take, Your feelings for granted",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "당연한 게 아냐",
-      "romanization": "dangyeonhan ge anya",
-      "english": "Your feelings for granted",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(The way you hold me)",
-      "romanization": "(the way you hold me)",
-      "english": "(The way you hold me)",
+      "original": "",
+      "romanization": "(The way you hold me)",
+      "english": "",
       "adlib": true
     },
     {
@@ -480,180 +390,216 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(Feel so holy)",
-      "romanization": "(feel so holy)",
-      "english": "(Feels so holy)",
+      "original": "",
+      "romanization": "(Feel so holy)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "어떻게 말해야 할까",
-      "romanization": "eotteoke malhaeya halkka",
-      "english": "How should I put it into words?",
+      "original": "",
+      "romanization": "(I’ll always choose you)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(너 아니면 안 돼)",
+      "romanization": "(neo animyeon an dwae)",
+      "english": "(No one else but you)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t help myself no no no no)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t help myself no no no no)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(You, 오랜 시간 속에)",
+      "romanization": "(you, oraen shigan soge)",
+      "english": "(You, through all the passing time)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t help myself no no no)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t help myself no no no)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Help myself)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Woo I can’t help myself)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(No woo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어떻게 말해야 할까, 너뿐이란걸",
+      "romanization": "eotteoke malhaeya halkka, neoppuniran geol",
+      "english": "How should I put it into words?, It's only you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너뿐이란걸",
-      "romanization": "neoppuniran geol",
-      "english": "It's only you",
+      "original": "I’ll always choose you, 너 아니면 안 돼",
+      "romanization": "i’ll always choose you, neo animyeon an dwae",
+      "english": "I'll always choose you, No one else but you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’ll always choose you",
-      "romanization": "i’ll always choose you",
-      "english": "I'll always choose you",
+      "original": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너 아니면 안 돼",
-      "romanization": "neo animyeon an dwae",
-      "english": "No one else but you",
+      "original": "I’ll always choose you, 오랜 시간 속에",
+      "romanization": "i’ll always choose you, oraen shigan soge",
+      "english": "I'll always choose you, Through all the passing time",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
+      "original": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I’ll always choose you",
-      "romanization": "i’ll always choose you",
-      "english": "I'll always choose you",
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "오랜 시간 속에",
-      "romanization": "oraen shigan soge",
-      "english": "Through all the passing time",
+      "original": "I’ll always choose you, 난 너밖에 몰라",
+      "romanization": "i’ll always choose you, nan neobakke molla",
+      "english": "I'll always choose you, You're the only one I know",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
+      "original": "",
+      "romanization": "I just can’t help myself",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "I just can’t help myself no",
-      "romanization": "i just can’t help myself no",
-      "english": "I just can't help myself no",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help my",
-      "romanization": "i can’t i can’t help my",
-      "english": "I can't I can't help my",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help myself no oh",
-      "romanization": "i can’t i can’t help myself no",
-      "english": "I can't I can't help myself no",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help my",
-      "romanization": "i can’t i can’t help my",
-      "english": "I can't I can't help my",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can’t, I can’t help myself no oh",
-      "romanization": "i can’t i can’t help myself no",
-      "english": "I can't I can't help myself no",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’ll always choose you",
-      "romanization": "i’ll always choose you",
-      "english": "I'll always choose you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "난 너밖에 몰라",
-      "romanization": "nan neobakke molla",
-      "english": "You're the only one I know",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I just can’t help myself",
-      "romanization": "i just can’t help myself",
-      "english": "I just can't help myself",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I just can’t help myself",
-      "romanization": "i just can’t help myself",
-      "english": "I just can't help myself",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I just can’t help myself",
-      "romanization": "i just can’t help myself",
-      "english": "I just can't help myself",
+      "original": "",
+      "romanization": "I just can’t help myself, I just can’t help myself",
+      "english": "",
       "adlib": false
     }
   ],
@@ -661,5 +607,5 @@
   "audio": "audio/nct127_canthelpmyself.mp3",
   "npC1": "#c86ac0",
   "npC2": "#ff622e",
-  "audioOffset": 0
+  "audioOffset": -0.05
 }
