@@ -52,6 +52,16 @@ Version: 4.0 — Ranking (transform leaderboard)
 /* a card climbing to a better rank floats over the ones it passes */
 .member.rising{
     box-shadow:0 18px 36px -10px rgba(0,0,0,.75);
+    z-index:55 !important;   /* SIEMPRE por encima al reordenar (que no desaparezca tras otra) */
+}
+/* Con dos columnas (>10) las tarjetas están MUY juntas: quitamos el rebote del glide
+   para que no se monten unas sobre otras (era lo que hacía "desaparecer" alguna). */
+body.two-side .member.ready{
+    transition:
+        transform .5s cubic-bezier(.22,1,.36,1),      /* ease-out, SIN overshoot */
+        box-shadow .18s var(--ease),
+        background-color .18s var(--ease),
+        border-color .18s var(--ease);
 }
 
 /* a card that jumps to the OTHER column: snap into place (no diagonal slide)
@@ -68,6 +78,7 @@ Version: 4.0 — Ranking (transform leaderboard)
 .member.active{
     --card-scale:1.04;
     --emph:1.14;                     /* nombre+tiempo se agrandan al cantar (vía var, animable) */
+    z-index:60 !important;           /* al agrandarse (1.04) NUNCA queda tapada por la de al lado */
     --sing:color-mix(in srgb, var(--accent) 100%, #fff);
     --ring:var(--sing);
     background:
