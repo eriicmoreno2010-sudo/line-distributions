@@ -2,7 +2,7 @@
   "group": "ALPHA DRIVE ONE",
   "song": "loles",
   "video": "videos/alphadriveone_loles_muiwdlsk.mp4",
-  "duration": 0,
+  "duration": 162.370998,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -28,16 +28,16 @@
       "lift": 3
     },
     {
-      "name": "SANGWON",
-      "image": "images/alphadriveone/loles/sangwon.png",
-      "color": "#a1f6f7",
+      "name": "GEONWOO",
+      "image": "images/alphadriveone/loles/geonwoo.png",
+      "color": "#a4f245",
       "focus": 50,
       "lift": 3
     },
     {
-      "name": "GEONWOO",
-      "image": "images/alphadriveone/loles/geonwoo.png",
-      "color": "#a4f245",
+      "name": "SANGWON",
+      "image": "images/alphadriveone/loles/sangwon.png",
+      "color": "#a1f6f7",
       "focus": 50,
       "lift": 3
     },
@@ -329,7 +329,7 @@
       "start": 43.87,
       "end": 45.77,
       "members": [
-        "SANGWON"
+        "GEONWOO"
       ],
       "voice": [
         [
@@ -350,7 +350,7 @@
       "start": 45.89,
       "end": 47.34,
       "members": [
-        "SANGWON"
+        "GEONWOO"
       ],
       "voice": [
         [
@@ -367,8 +367,8 @@
       "start": 47.47,
       "end": 49.16,
       "members": [
-        "SANGWON",
-        "ARNO"
+        "ARNO",
+        "GEONWOO"
       ],
       "voice": [
         [
@@ -389,8 +389,8 @@
       "start": 49.28,
       "end": 50.92,
       "members": [
-        "SANGWON",
-        "ARNO"
+        "ARNO",
+        "GEONWOO"
       ],
       "voice": [
         [
@@ -1132,7 +1132,7 @@
       "start": 153.04,
       "end": 158.23,
       "members": [
-        "ANXIN"
+        "GEONWOO"
       ],
       "original": "",
       "romanization": "Na na na na na na, Na na na na na na, Na na na na na na",
@@ -1149,7 +1149,7 @@
       "start": 158.38,
       "end": 160.27,
       "members": [
-        "ANXIN"
+        "GEONWOO"
       ],
       "original": "",
       "romanization": "BORN, BORN, BORN, BORN, BORN, BORN DIRE",
