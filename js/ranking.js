@@ -363,8 +363,15 @@ const Ranking = {
             const col = this.columns[colIdx];
             const changingCol = (m.element.parentNode !== col.el);
 
-            // Animated column change → soft two-phase dissolve (leave it where it is).
+            // Animated column change → glide off/enter. Con COOLDOWN anti-parpadeo:
+            // si acaba de cambiar de columna hace muy poco (segundos casi empatados,
+            // o el arranque con todos a 0.00), NO vuelve a cruzar todavía -> se queda
+            // donde está y no "desaparece" una y otra vez.
             if(animate && changingCol && m._col !== undefined){
+                if(performance.now() - (m._switchDoneAt || 0) < 450){
+                    if(m.rankElement) m.rankElement.textContent = gi + 1;   // solo actualiza el nº
+                    return;                                                  // se queda en su columna
+                }
                 this.switchCard(m, colIdx, row, gi);
                 return;
             }
@@ -455,6 +462,7 @@ const Ranking = {
                 m.element.style.opacity = "";
                 m._switching = false;
                 m._switchCol = undefined;
+                m._switchDoneAt = performance.now();   // arranca el cooldown anti-parpadeo
             }, 110);
         }, 95);
     },
