@@ -74,7 +74,9 @@
     {
       "start": 1.56,
       "end": 4.38,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "예보 없이 만난 비처럼",
       "romanization": "yebo eopsi mannan bicheoreom",
       "english": "Like rain that comes without a forecast",
@@ -89,7 +91,9 @@
     {
       "start": 4.65,
       "end": 8.65,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "갑작스레 내게 쏟아져, 피할 틈도 없이",
       "romanization": "gapjagseure naege ssodajyeo, pihal teumdo eopsi",
       "english": "Suddenly pouring down on me, Without a chance to escape",
@@ -112,7 +116,9 @@
     {
       "start": 8.77,
       "end": 12.39,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "난 그저 너를 향해 가, 그 누구도 모르게",
       "romanization": "nan geujeo neoreul hyanghae ga, geu nugudo moreuge",
       "english": "I'm just heading towards you, Without anyone knowing",
@@ -127,7 +133,9 @@
     {
       "start": 13.24,
       "end": 16.35,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "너의 향기가 내게로 스며들 때",
       "romanization": "neoui hyanggiga naegero seumyeodeul ttae",
       "english": "When your scent seeps into me",
@@ -142,7 +150,9 @@
     {
       "start": 16.54,
       "end": 19.41,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "낯선 이 떨림이 싫진 않지",
       "romanization": "natseon i tteollimi silchin anchi",
       "english": "I don't mind this unfamiliar thrill",
@@ -157,7 +167,9 @@
     {
       "start": 19.81,
       "end": 22.35,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "네게 조금씩 날 맡겨 보려고 해",
       "romanization": "nege jogeumssik nal matgyeo boryeogo hae",
       "english": "I'm trying to slowly entrust myself to you",
@@ -176,7 +188,9 @@
     {
       "start": 22.5,
       "end": 24.54,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "그 끝이 어떨지는 몰라도",
       "romanization": "geu kkeuchi eotteoljineun mollado",
       "english": "Even though I don't know where it will end",
@@ -195,7 +209,9 @@
     {
       "start": 24.72,
       "end": 26.91,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "나를 비추는 너의 두 눈에",
       "romanization": "nareul bichuneun neoui du nune",
       "english": "In your two eyes that reflect me",
@@ -210,7 +226,9 @@
     {
       "start": 27.06,
       "end": 30.66,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "이대로 난 시간이 멈췄으면 해",
       "romanization": "idaero nan sigani meomchwosseumyeon hae",
       "english": "I wish time would stop like this",
@@ -225,7 +243,9 @@
     {
       "start": 30.84,
       "end": 32.91,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "너란 빗속에 멈춰 서게 돼",
       "romanization": "neoran bitsoge meomchwo seoge dwae",
       "english": "I'm stopped in the rain that is you",
@@ -240,7 +260,9 @@
     {
       "start": 33.06,
       "end": 36.2,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "놓쳐버린 우산도 잊은 채",
       "romanization": "nochyeobeorin usando ijeun chae",
       "english": "Forgetting even the lost umbrella",
@@ -259,7 +281,9 @@
     {
       "start": 36.81,
       "end": 40.72,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "너는 마치 내게 내린 소나기",
       "romanization": "neoneun machi naege naerin sonagi",
       "english": "You're like a sudden shower that fell on me",
@@ -290,7 +314,9 @@
     {
       "start": 12.23,
       "end": 12.99,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(Yeah yeah)",
       "english": "",
@@ -305,7 +331,9 @@
     {
       "start": 13.02,
       "end": 13.47,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
@@ -320,7 +348,9 @@
     {
       "start": 16.44,
       "end": 16.82,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -335,7 +365,9 @@
     {
       "start": 19.46,
       "end": 20.24,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "(않지)",
       "romanization": "(anchi)",
       "english": "(I don't)",
@@ -350,7 +382,9 @@
     {
       "start": 40.7,
       "end": 42.45,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "(그 속에 서서히)",
       "romanization": "(geu soge seoseohi)",
       "english": "(Gradually within it)",
@@ -365,7 +399,9 @@
     {
       "start": 42.93,
       "end": 46.82,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "어느 틈에 나를 전부 적시지",
       "romanization": "eoneu teume nareul jeonbu jeoksiji",
       "english": "Without realizing you drench me completely",
@@ -396,7 +432,9 @@
     {
       "start": 46.79,
       "end": 47.52,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "(Rain on me)",
       "english": "",
@@ -411,7 +449,9 @@
     {
       "start": 47.19,
       "end": 47.54,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -426,7 +466,9 @@
     {
       "start": 66.18,
       "end": 66.5,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -441,7 +483,9 @@
     {
       "start": 70.38,
       "end": 70.74,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
@@ -456,7 +500,9 @@
     {
       "start": 72.61,
       "end": 73.4,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "(이끌림)",
       "romanization": "(ikkeullim)",
       "english": "(Allure)",
@@ -471,7 +517,9 @@
     {
       "start": 76.01,
       "end": 76.39,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "(Uh)",
       "english": "",
@@ -486,7 +534,9 @@
     {
       "start": 47.46,
       "end": 50.28,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "나의 눈을 가리는 빗방울",
       "romanization": "naui nuneul garineun bitbangul",
       "english": "Raindrops that cover my eyes",
@@ -501,7 +551,9 @@
     {
       "start": 50.55,
       "end": 53.74,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "숨이 가득 차와도 너만 바라",
       "romanization": "sumi gadeuk chawado neoman bara",
       "english": "Even if I'm filled with breath I only look at you",
@@ -516,7 +568,9 @@
     {
       "start": 54.27,
       "end": 57.06,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "깊은 바다 같은 너의 두 눈",
       "romanization": "gipeun bada gateun neoui du nun",
       "english": "Your eyes like a deep sea",
@@ -535,7 +589,9 @@
     {
       "start": 57.38,
       "end": 59.97,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "네 안에 가득 가득, 잠겨 서서히",
       "romanization": "ne ane gadeuk gadeuk, jamgyeo seoseohi",
       "english": "Filled up inside you, Slowly sinking",
@@ -554,7 +610,9 @@
     {
       "start": 60.09,
       "end": 65.1,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "Yeah ya 볼을 세게 꼬집지, 상상 이상의 Chemistry",
       "romanization": "yeah ya boreul sege kkojipji, sangsang isangui chemistry",
       "english": "Yeah ya Pinching my cheek hard, Chemistry beyond imagination",
@@ -577,7 +635,9 @@
     {
       "start": 65.13,
       "end": 67.64,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "Oh is it dream?, From my morning to my evening",
       "english": "",
@@ -592,7 +652,9 @@
     {
       "start": 67.79,
       "end": 70.33,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "You’re here with me, 잔잔했던 수면 위",
       "romanization": "you're here with me, janjanhaetdeon sumyeon wi",
       "english": "You're here with me, On the calm surface",
@@ -611,7 +673,9 @@
     {
       "start": 70.49,
       "end": 73.34,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "넌 자꾸 번져가는, 이름 모를 이끌림",
       "romanization": "neon jakku beonjyeoganeun, ireum moreul ikkeullim",
       "english": "You keep spreading, An unknown allure",
@@ -626,7 +690,9 @@
     {
       "start": 73.35,
       "end": 76.28,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "거세게 맘의 창을, 두드리는 네 손길",
       "romanization": "geosege mamui changeul, dudeurineun ne songil",
       "english": "Your touch pounding, On the window of my heart",
@@ -645,7 +711,9 @@
     {
       "start": 76.43,
       "end": 79.25,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "주저 없이 더욱 깊이, 잠기고만 싶은걸",
       "romanization": "jujeo eopsi deouk gipi, jamgigoman sipeungeol",
       "english": "Without hesitation deeper, I just want to sink",
@@ -668,7 +736,9 @@
     {
       "start": 78.65,
       "end": 79.66,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "(잠기고만)",
       "romanization": "(jamgigoman)",
       "english": "(I just want to)",
@@ -683,7 +753,9 @@
     {
       "start": 80.97,
       "end": 81.32,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Uh)",
       "english": "",
@@ -698,7 +770,9 @@
     {
       "start": 84.79,
       "end": 85.57,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Uh yeah)",
       "english": "",
@@ -713,7 +787,9 @@
     {
       "start": 90.37,
       "end": 91.55,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Oh yeah)",
       "english": "",
@@ -728,7 +804,9 @@
     {
       "start": 79.71,
       "end": 82.44,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "We can’t stop it, 끝이 없이",
       "romanization": "we can’t stop it, kkeuchi eopsi",
       "english": "We can't stop it, Endlessly",
@@ -747,7 +825,9 @@
     {
       "start": 82.62,
       "end": 85.3,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "그치지 않고 내게, 더 쏟아지게",
       "romanization": "geuchiji anko naege, deo ssodajige",
       "english": "Without stopping pouring into me, More and more",
@@ -766,7 +846,9 @@
     {
       "start": 85.42,
       "end": 87.61,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "나를 비추는 너의 두 눈에",
       "romanization": "nareul bichuneun neoui du nune",
       "english": "In your two eyes that reflect me",
@@ -781,7 +863,9 @@
     {
       "start": 87.76,
       "end": 91.3,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "온 세상을 이미 다 가진 것 같애",
       "romanization": "on sesangeul imi da gajin geotae",
       "english": "It feels like I already have the whole world",
@@ -796,7 +880,9 @@
     {
       "start": 91.45,
       "end": 93.55,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "너란 빗속에 멈춰 서게 돼",
       "romanization": "neoran bitsoge meomchwo seoge dwae",
       "english": "I'm stopped in the rain that is you",
@@ -811,7 +897,9 @@
     {
       "start": 93.73,
       "end": 96.79,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "놓쳐버린 우산조차 잊은 채",
       "romanization": "nochyeobeorin usanjocha ijeun chae",
       "english": "Even forgetting the lost umbrella",
@@ -826,7 +914,9 @@
     {
       "start": 97.51,
       "end": 101.42,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "너는 마치 내게 내린 소나기",
       "romanization": "neoneun machi naege naerin sonagi",
       "english": "You're like a sudden shower that fell on me",
@@ -857,7 +947,9 @@
     {
       "start": 101.32,
       "end": 103.02,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "(그 속에 서서히)",
       "romanization": "(geu soge seoseohi)",
       "english": "(Gradually within it)",
@@ -872,7 +964,9 @@
     {
       "start": 101.84,
       "end": 102.23,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -887,7 +981,9 @@
     {
       "start": 103.61,
       "end": 107.55,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "어느 틈에 나를 전부 적시지",
       "romanization": "eoneu teume nareul jeonbu jeoksiji",
       "english": "Without realizing you drench me completely",
@@ -918,7 +1014,9 @@
     {
       "start": 107.54,
       "end": 108.33,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(Rain on me)",
       "english": "",
@@ -933,7 +1031,9 @@
     {
       "start": 107.94,
       "end": 108.32,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Woo)",
       "english": "",
@@ -948,7 +1048,9 @@
     {
       "start": 108.22,
       "end": 111.02,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "나의 눈을 가리는 빗방울",
       "romanization": "naui nuneul garineun bitbangul",
       "english": "Raindrops that cover my eyes",
@@ -963,7 +1065,9 @@
     {
       "start": 107.5,
       "end": 111.24,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "(너는 마치 나의 눈을 가리는 빗방울)",
       "romanization": "(neoneun machi naui nuneul garineun bitbangul)",
       "english": "(You're like raindrops covering my eyes)",
@@ -978,7 +1082,9 @@
     {
       "start": 124.7,
       "end": 125.02,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(What)",
       "english": "",
@@ -993,7 +1099,9 @@
     {
       "start": 130.74,
       "end": 131.07,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(What)",
       "english": "",
@@ -1008,7 +1116,9 @@
     {
       "start": 111.25,
       "end": 114.41,
-      "members": [],
+      "members": [
+        "YUTA"
+      ],
       "original": "숨이 가득 차와도 너만 바라",
       "romanization": "sumi gadeuk chawado neoman bara",
       "english": "Even if I'm filled with breath I only look at you",
@@ -1023,7 +1133,9 @@
     {
       "start": 115.16,
       "end": 117.95,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "깊은 바다 같은 너의 두 눈",
       "romanization": "gipeun bada gateun neoui du nun",
       "english": "Your eyes like a deep sea",
@@ -1042,7 +1154,9 @@
     {
       "start": 118.16,
       "end": 122.15,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "네 안에 가득 가득, 잠겨 서서히",
       "romanization": "ne ane gadeuk gadeuk, jamgyeo seoseohi",
       "english": "Filled up inside you, Slowly sinking",
@@ -1061,7 +1175,9 @@
     {
       "start": 122.33,
       "end": 125.1,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "Oh I just can’t believe, that you’re here with me",
       "english": "",
@@ -1080,9 +1196,11 @@
     {
       "start": 125.35,
       "end": 130.23,
-      "members": [],
+      "members": [
+        "NCT 127"
+      ],
       "original": "",
-      "romanization": "Hey hey hey yeah, Hey hey hey yeah",
+      "romanization": "Hey hey hey **yeah@MARK**, Hey hey hey **yeah@JOHNNY**",
       "english": "",
       "adlib": false,
       "voice": [
@@ -1099,7 +1217,9 @@
     {
       "start": 130.36,
       "end": 134.04,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "",
       "romanization": "Rain on me, Feeling good but dizzy, I know you’re the reason",
       "english": "",
@@ -1118,7 +1238,9 @@
     {
       "start": 131.18,
       "end": 131.76,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "(Got me)",
       "english": "",
@@ -1133,9 +1255,11 @@
     {
       "start": 136.4,
       "end": 137.1,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
-      "romanization": "(Brrr)",
+      "romanization": "(Brrruh)",
       "english": "",
       "adlib": true,
       "voice": [
@@ -1148,7 +1272,9 @@
     {
       "start": 134.11,
       "end": 137.16,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "다시 또 시간이 멈춘 것만 같아 Yeah",
       "romanization": "dasi tto sigani meomchun geonman gata yeah",
       "english": "It feels like time has stopped again yeah",
@@ -1163,7 +1289,9 @@
     {
       "start": 137.13,
       "end": 141.02,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "너는 마치 내게 내린 소나기",
       "romanization": "neoneun machi naege naerin sonagi",
       "english": "You're like a sudden shower that fell on me",
@@ -1194,7 +1322,9 @@
     {
       "start": 140.96,
       "end": 143.06,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "(그 속에 서서히)",
       "romanization": "(geu soge seoseohi)",
       "english": "(Gradually within it)",
@@ -1209,7 +1339,9 @@
     {
       "start": 144.36,
       "end": 145.97,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "(틈에 나를)",
       "romanization": "(teume nareul)",
       "english": "(Realizing you drench me)",
@@ -1224,7 +1356,9 @@
     {
       "start": 143.27,
       "end": 147.12,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "어느 틈에 나를 전부 적시지",
       "romanization": "eoneu teume nareul jeonbu jeoksiji",
       "english": "Without realizing you drench me completely",
@@ -1255,7 +1389,9 @@
     {
       "start": 147.04,
       "end": 147.82,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "",
       "romanization": "(Rain on me)",
       "english": "",
@@ -1270,7 +1406,9 @@
     {
       "start": 147.81,
       "end": 151.84,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "(나의 눈을 가리는 빗방울)",
       "romanization": "(naui nuneul garineun bitbangul)",
       "english": "(Raindrops that cover my eyes)",
@@ -1289,7 +1427,9 @@
     {
       "start": 150.83,
       "end": 153.59,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "",
       "romanization": "(Oh)",
       "english": "",
@@ -1304,7 +1444,9 @@
     {
       "start": 153.12,
       "end": 154.65,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "(바라)",
       "romanization": "(bara)",
       "english": "(Look at)",
@@ -1319,7 +1461,9 @@
     {
       "start": 155.74,
       "end": 158.07,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "(Oh 잠수한 듯)",
       "romanization": "(oh jamsuhan deut)",
       "english": "(Oh like diving)",
@@ -1334,7 +1478,9 @@
     {
       "start": 158.77,
       "end": 160.07,
-      "members": [],
+      "members": [
+        "TAEYONG"
+      ],
       "original": "",
       "romanization": "(No no)",
       "english": "",
@@ -1353,7 +1499,9 @@
     {
       "start": 160.68,
       "end": 163.07,
-      "members": [],
+      "members": [
+        "TAEIL"
+      ],
       "original": "(서서히 yeah)",
       "romanization": "(seoseohi yeah)",
       "english": "(Slowly yeah)",
@@ -1368,7 +1516,9 @@
     {
       "start": 166.68,
       "end": 168.81,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "(Get down right now)",
       "english": "",
@@ -1383,7 +1533,9 @@
     {
       "start": 167.61,
       "end": 169.22,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "",
       "romanization": "(Oh no)",
       "english": "",
@@ -1398,7 +1550,9 @@
     {
       "start": 169.84,
       "end": 171.57,
-      "members": [],
+      "members": [
+        "DOYOUNG"
+      ],
       "original": "",
       "romanization": "(Yeah yeah)",
       "english": "",
@@ -1413,7 +1567,9 @@
     {
       "start": 170.8,
       "end": 172.01,
-      "members": [],
+      "members": [
+        "JOHNNY"
+      ],
       "original": "",
       "romanization": "(No no)",
       "english": "",
@@ -1432,7 +1588,9 @@
     {
       "start": 147.74,
       "end": 150.56,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "나의 눈을 가리는 빗방울",
       "romanization": "naui nuneul garineun bitbangul",
       "english": "Raindrops that cover my eyes",
@@ -1447,7 +1605,9 @@
     {
       "start": 150.8,
       "end": 153.96,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "숨이 가득 차와도 너만 바라",
       "romanization": "sumi gadeuk chawado neoman bara",
       "english": "Even if I'm filled with breath I only look at you",
@@ -1462,7 +1622,9 @@
     {
       "start": 154.63,
       "end": 157.45,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "깊은 바닷속에 잠수한 듯",
       "romanization": "gipeun badatsoge jamsuhan deut",
       "english": "Like diving into a deep sea",
@@ -1481,7 +1643,9 @@
     {
       "start": 157.63,
       "end": 161.58,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "네 안에 가득 가득, 잠겨 서서히",
       "romanization": "ne ane gadeuk gadeuk, jamgyeo seoseohi",
       "english": "Filled up inside you, Slowly sinking",
@@ -1500,10 +1664,12 @@
     {
       "start": 161.76,
       "end": 167.71,
-      "members": [],
-      "original": "서서히 서서히 너에게, 서서히 서서히 너에게",
-      "romanization": "seoseohi seoseohi neoege, seoseohi seoseohi neoege",
-      "english": "Slowly slowly To you, Slowly slowly To you",
+      "members": [
+        "NCT 127"
+      ],
+      "original": "서서히 서서히 **너에게@HAECHAN**, 서서히 서서히 **너에게@HAECHAN**",
+      "romanization": "seoseohi seoseohi **neoege@HAECHAN**, seoseohi seoseohi **neoege@HAECHAN**",
+      "english": "Slowly slowly **To you@HAECHAN**, Slowly slowly **To you@HAECHAN**",
       "adlib": false,
       "voice": [
         [
@@ -1519,7 +1685,9 @@
     {
       "start": 167.86,
       "end": 174.04,
-      "members": [],
+      "members": [
+        "JUNGWOO"
+      ],
       "original": "맘에 가라앉듯, 네 안에 가득 가득, 잠겨 서서히",
       "romanization": "mame garaandeut, ne ane gadeuk gadeuk, jamgyeo seoseohi",
       "english": "Sinking into my heart, Filled up inside you, Slowly sinking",
