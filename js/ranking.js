@@ -309,12 +309,13 @@ const Ranking = {
 
         // Make photos as large as the card allows (fill it) without overflowing.
         // Single column: trim the card's vertical padding so the circle nearly
-        // fills the row. Two-side keeps its compact 72px look (unchanged).
+        // fills the row. Two columns: let the photo GROW to fill the card too (so
+        // groups with few per column -e.g. SEVENTEEN, 130px cards- se ven al máximo,
+        // sin 30px desperdiciados); en NCT 2023 (10/col) la altura ya lo limita.
         const minCardH = Math.min(...this.columns.map(c => c.cardH || 92));
         const isTwo = this.twoSide;
-        // Two columns (>10, e.g. SEVENTEEN): 100. Single column: 88 for 7–10
-        // members, a bit larger (100) for small groups of 5–6 so they don't look tiny.
-        const cap = isTwo ? 100 : (this.members.length <= 6 ? 100 : 88);
+        // Tope alto en dos columnas para que mande la altura de la tarjeta (rellenar).
+        const cap = isTwo ? 140 : (this.members.length <= 6 ? 100 : 88);
         this.photoSize = Math.max(44, Math.min(cap, Math.round(minCardH - 12)));
         this.members.forEach(m => {
             if(m.photoWrap){
