@@ -661,5 +661,5 @@
   "audio": "audio/nct127_canthelpmyself.mp3",
   "npC1": "#c86ac0",
   "npC2": "#ff622e",
-  "audioOffset": 0.05
+  "audioOffset": -0.05
 }
