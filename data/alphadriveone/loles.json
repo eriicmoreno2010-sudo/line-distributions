@@ -1,0 +1,72 @@
+{
+  "group": "ALPHA DRIVE ONE",
+  "song": "loles",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "JUNSEO",
+      "image": "images/alphadriveone/loles/junseo.png",
+      "color": "#e175ae",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ARNO",
+      "image": "images/alphadriveone/loles/arno.png",
+      "color": "#5c0000",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "LEO",
+      "image": "images/alphadriveone/loles/leo.png",
+      "color": "#dab601",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SANGWON",
+      "image": "images/alphadriveone/loles/sangwon.png",
+      "color": "#a1f6f7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "XINLONG",
+      "image": "images/alphadriveone/loles/xinlong.png",
+      "color": "#0dd398",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ANXIN",
+      "image": "images/alphadriveone/loles/anxin.png",
+      "color": "#ff7429",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SANGHYEON",
+      "image": "images/alphadriveone/loles/sanghyeon.png",
+      "color": "#01651a",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUNSEO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
