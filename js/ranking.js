@@ -309,13 +309,12 @@ const Ranking = {
 
         // Make photos as large as the card allows (fill it) without overflowing.
         // Single column: trim the card's vertical padding so the circle nearly
-        // fills the row. Two columns: let the photo GROW to fill the card too (so
-        // groups with few per column -e.g. SEVENTEEN, 130px cards- se ven al máximo,
-        // sin 30px desperdiciados); en NCT 2023 (10/col) la altura ya lo limita.
+        // fills the row. Two-side keeps its compact 100px look.
         const minCardH = Math.min(...this.columns.map(c => c.cardH || 92));
         const isTwo = this.twoSide;
-        // Tope alto en dos columnas para que mande la altura de la tarjeta (rellenar).
-        const cap = isTwo ? 140 : (this.members.length <= 6 ? 100 : 88);
+        // Two columns (>10, e.g. SEVENTEEN): 100. Single column: 88 for 7–10
+        // members, a bit larger (100) for small groups of 5–6 so they don't look tiny.
+        const cap = isTwo ? 100 : (this.members.length <= 6 ? 100 : 88);
         this.photoSize = Math.max(44, Math.min(cap, Math.round(minCardH - 12)));
         this.members.forEach(m => {
             if(m.photoWrap){
@@ -406,16 +405,12 @@ const Ranking = {
         }
     },
 
-    /* Column change as a GLIDE (not a teleport): the card slides off its
-       current column edge (up when climbing to the left column, down when
-       dropping to the right one) and slides into the other column from the
-       opposite edge — so it reads as continuous motion. */
+    /* Column change: como las columnas están SEPARADAS por el vídeo, la tarjeta no
+       puede cruzar deslizándose. En vez de desvanecerse (parecía que desaparecía),
+       ENCOGE en su sitio y CRECE en el nuevo hueco -> siempre visible y fluido. */
     switchCard(m, colIdx, row, gi){
-        // Tight race guard: at 60fps a card that's climbing/dropping past many
-        // near-tied members fires a reorder EVERY frame. If it's already gliding
-        // toward THIS same column, don't restart the fade (that would keep it
-        // parked off-edge at opacity 0 forever = invisible). Just remember the
-        // latest slot it should land in and let the in-flight animation finish.
+        // Tight race guard: si ya está cambiando hacia ESTA columna, solo actualiza
+        // el hueco destino y deja terminar la animación en curso.
         if(m._switching && m._switchCol === colIdx){
             m._switchRow = row; m._switchGi = gi;
             if(m.rankElement) m.rankElement.textContent = gi + 1;
@@ -423,48 +418,40 @@ const Ranking = {
         }
 
         const dest = this.columns[colIdx];
-        const src  = this.columns[m._col];
-        const improving = colIdx < m._col;              // moving to the left (better) column
         m._switching = true;
         m._switchCol = colIdx;
         m._switchRow = row; m._switchGi = gi;
         m.element.classList.remove("rising", "no-anim");
-        m.element.classList.add("switching");           // transition: transform + opacity
-        m.element.style.zIndex = "60";                  // float above while travelling
+        m.element.classList.add("switching");
+        m.element.style.zIndex = "60";
         if(m.rankElement) m.rankElement.textContent = gi + 1;
 
-        // Phase 1: glide off the current column's edge (up if climbing, down if
-        // dropping) and fade out.
-        const exitY = improving ? -src.rowH : src.cap * src.rowH;
-        m.element.style.setProperty("--rank-y", `${exitY}px`);
-        m.element.style.opacity = "0";
+        // Fase 1: ENCOGE en su sitio actual (sigue visible mientras mengua).
+        m.element.style.setProperty("--card-scale", "0.01");
 
         clearTimeout(m._switchT); clearTimeout(m._cleanT);
         m._switchT = setTimeout(() => {
-            // Phase 2: drop into the other column just past the opposite edge
-            // (no animation), then glide into its slot and fade back in. Use the
-            // LATEST target slot — it may have moved while we were fading out.
+            // Fase 2: aparece pequeño YA en su hueco de la otra columna y CRECE.
             const r = m._switchRow, g = m._switchGi;
             m.element.classList.add("no-anim");
             dest.el.appendChild(m.element);
             m.element.style.height = dest.cardH ? dest.cardH + "px" : "";
-            const enterY = improving ? (r + 1) * dest.rowH : (r - 1) * dest.rowH;
-            m.element.style.setProperty("--rank-y", `${enterY}px`);
+            m.element.style.setProperty("--rank-y", `${r * dest.rowH}px`);
+            m.element.style.setProperty("--card-scale", "0.01");
             m.element.style.zIndex = String(dest.cap - r);
             m._pos = r;
             m._col = colIdx;
             if(m.rankElement) m.rankElement.textContent = g + 1;
-            void m.element.offsetWidth;                  // reflow so the start pos is instant
-            m.element.classList.remove("no-anim");       // re-enable transitions
-            m.element.style.setProperty("--rank-y", `${r * dest.rowH}px`);   // glide into slot
-            m.element.style.opacity = "1";
+            void m.element.offsetWidth;                  // reflow: posición/escala iniciales instantáneas
+            m.element.classList.remove("no-anim");       // re-activa la transición
+            m.element.style.setProperty("--card-scale", "1");   // CRECE en el nuevo sitio
             m._cleanT = setTimeout(() => {
                 m.element.classList.remove("switching");
-                m.element.style.opacity = "";
+                m.element.style.removeProperty("--card-scale");   // vuelve a 1 (o 1.04 si canta)
                 m._switching = false;
                 m._switchCol = undefined;
-            }, 170);
-        }, 120);
+            }, 240);
+        }, 200);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
