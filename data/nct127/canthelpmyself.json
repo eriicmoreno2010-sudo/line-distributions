@@ -1,0 +1,72 @@
+{
+  "group": "NCT 127",
+  "song": "영화처럼 (Can't Help Myself)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "JOHNNY",
+      "image": "images/nct127/canthelpmyself/johnny.png",
+      "color": "#31b287",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAEYONG",
+      "image": "images/nct127/canthelpmyself/taeyong.png",
+      "color": "#c80404",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUTA",
+      "image": "images/nct127/canthelpmyself/yuta.png",
+      "color": "#dd7f10",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DOYOUNG",
+      "image": "images/nct127/canthelpmyself/doyoung.png",
+      "color": "#1100ff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUN",
+      "image": "images/nct127/canthelpmyself/jaehyun.png",
+      "color": "#bf9b00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNGWOO",
+      "image": "images/nct127/canthelpmyself/jungwoo.png",
+      "color": "#4d6593",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nct127/canthelpmyself/haechan.png",
+      "color": "#1bb7e8",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
