@@ -551,16 +551,18 @@ if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
        cuando no queda ninguno en pantalla. */
     syncAdlibBoxes(msg, ais, lyrics){
         const want = ais.map(String);
-        // SALEN: se meten RÁPIDO hacia dentro del panel (a la izquierda) y POR DETRÁS
-        // de los que se quedan (z-index bajo), sin empujar a nadie.
+        // SALEN: se meten RÁPIDO hacia ARRIBA (por la línea azul del borde superior)
+        // y POR DETRÁS de los que se quedan (z-index bajo), sin empujar a nadie.
         Array.from(msg.children).forEach(box => {
             if(want.indexOf(box.dataset.i) === -1 && !box._leaving){
                 box._leaving = true;
                 box.style.zIndex = "1";                                    // por detrás de los ad-libs que se quedan
-                box.style.transition = "transform .24s cubic-bezier(.5,0,.75,0), opacity .22s ease";  // rápido
+                const msgH = msg.clientHeight || 380;
+                const up = (msgH - (box._bottom || 0)) + 14;               // sube hasta salir por arriba (la línea azul)
+                box.style.transition = "transform .26s cubic-bezier(.45,0,.7,.2), opacity .24s ease";  // rápido
+                box.style.transform = "translate(16px, " + (-up) + "px) scale(.94)";   // arriba y un pelín a la derecha
                 box.style.opacity = "0";
-                box.style.transform = "translateX(-90px) scale(.9)";       // se mete hacia dentro del panel
-                setTimeout(() => box.remove(), 280);
+                setTimeout(() => box.remove(), 300);
             }
         });
         // ENTRAN: cada nuevo coge el hueco libre más bajo (fijo).
