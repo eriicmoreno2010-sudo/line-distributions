@@ -196,9 +196,13 @@ const Lyrics = {
               }).join(", ")
             : "";
 
-        const hasPartial = !isGroupLine &&
+        // Un trozo **...@miembro** puede aparecer TAMBIÉN en una línea de grupo
+        // (todos cantan y además alguien tiene su parte marcada). Por eso detectamos
+        // los marcadores aunque sea línea de grupo.
+        const hasPartial =
             [line.original, line.romanization, line.english]
                 .some(hasPairedMarker);
+        const isGroupPartial = isGroupLine && hasPartial;   // grupo + parte marcada
         // A CSS linear-gradient needs >=2 colour stops; with a single singer we
         // duplicate the colour so the gradient stays valid (otherwise the whole
         // background is dropped and the name, painted with color:transparent,
@@ -236,7 +240,7 @@ const Lyrics = {
             secondaryAccent = singers[1] ? singers[1].color : accent;
             isSharedLine = !hasPartial && singers.length > 1;
         }
-        return { isGroupLine, groupGradient, groupGlow, hasPartial,
+        return { isGroupLine, isGroupPartial, groupGradient, groupGlow, hasPartial,
                  sharedGradient, markGradient, membersGlow, accent, secondaryAccent, isSharedLine };
     },
 
@@ -382,17 +386,24 @@ const Lyrics = {
                 // sin sombra oscura en el texto con degradado (la apagaba y ocultaba el color real)
                 return `<span style="background:${bg};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(display)}</span>`;
             };
+            // trozo BASE (no marcado): arcoíris del grupo en línea de grupo; si no, su color
+            const baseSpan = chunk => c.isGroupLine
+                ? `<span style="background:${c.groupGradient};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(chunk)}</span>`
+                : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`;
             const paintText = (el, text) => {
                 text = text || "";
                 clearPaint(el);
+                el.style.color = "";
                 if(c.hasPartial && hasPairedMarker(text)){
                     el.innerHTML = text.split("**").map((chunk, i) => i % 2
-                        ? markedSpan(chunk)
-                        : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`
+                        ? markedSpan(chunk)      // trozo **...@miembro** -> su color
+                        : baseSpan(chunk)        // resto -> arcoíris (grupo) o color de la línea
                     ).join("");
-                } else {
+                } else if(!c.isGroupLine){
                     el.textContent = text;
                     el.style.color = c.accent;
+                } else {
+                    el.textContent = text;       // grupo sin marcas: lo pinta la CSS .group
                 }
             };
 
@@ -409,7 +420,11 @@ const Lyrics = {
                     e.member.style.background = ""; e.member.style.webkitBackgroundClip = "";
                     e.member.style.backgroundClip = ""; e.member.style.color = "";
                     e.member.style.textShadow = "";        // sólido -> sombra/contorno normal
-                    const span = (n) => `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
+                    // el nombre del GRUPO (p. ej. "NCT 127") va con el arcoíris de todos;
+                    // los miembros, con su color.
+                    const span = (n) => (n === SONG.group)
+                        ? `<span style="background:${c.groupGradient};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(n)}</span>`
+                        : `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
                     const part = linePartials.map(span).join('<span style="color:inherit"> &amp; </span>');
                     const main = shownMembers.map(span).join('<span style="color:inherit">  &amp;  </span>');
                     const sep = '<span style="opacity:.6;font-weight:800;padding:0 .18em"> / </span>';
@@ -449,7 +464,9 @@ const Lyrics = {
             e.section.style.setProperty("--members-glow", c.membersGlow);
             e.section.classList.add("singing");
             e.section.classList.toggle("multi-member", c.isSharedLine);
-            e.section.classList.toggle("group", c.isGroupLine);
+            // Grupo + parte marcada: NO usamos la clase .group (su color:transparent
+            // !important pisaría los <span> de cada trozo); lo pintamos a mano.
+            e.section.classList.toggle("group", c.isGroupLine && !c.isGroupPartial);
 
             fadeEls.forEach(el => { el.classList.remove("fade-out"); el.classList.add("fade-in"); });
         }, 100);

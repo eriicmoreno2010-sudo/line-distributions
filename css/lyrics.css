@@ -323,12 +323,14 @@ body.theme-light .adlib-member, body.theme-light .adlib-original, body.theme-lig
    (JS) para que las nuevas entren por ABAJO empujando hacia arriba, y al irse una
    las demás NO se muevan. */
 #adlib-msg{
-    position:absolute; right:26px; top:22px; bottom:22px; width:48%; z-index:5;
+    /* Va dentro de #left-panel y abarca desde el TOP del vídeo (~108px) hasta abajo,
+       para que el ad-lib se meta por el borde SUPERIOR del panel (la "línea azul") y
+       no a mitad de altura. */
+    position:absolute; right:26px; top:108px; bottom:22px; width:48%; z-index:5;
     pointer-events:none;
-    /* recorta SOLO por arriba: los ad-libs que salen se meten por el borde superior
-       (la "línea azul") y desaparecen ahí, sin desvanecerse. Los otros lados se
-       extienden (-9999px) para no cortar sombras ni la entrada por abajo. */
-    clip-path: inset(0 -9999px -9999px -9999px);
+    /* recorta por ARRIBA y por ABAJO (en sus bordes), pero NO por los lados (-9999px)
+       para no cortar sombras. Así el ad-lib que sale se mete por el borde de arriba. */
+    clip-path: inset(0 -9999px 0 -9999px);
 }
 .al-box{
     position:absolute; right:0; bottom:0;

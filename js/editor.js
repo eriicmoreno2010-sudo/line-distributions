@@ -419,10 +419,20 @@
       row.append(tlab, chips); menu.appendChild(row);
       refresh();
     });
+    document.body.appendChild(menu);
     const r = anchor.getBoundingClientRect();
     menu.style.left = Math.max(8, Math.min(r.left, window.innerWidth - 380)) + "px";
-    menu.style.top = Math.min(r.bottom + 6, window.innerHeight - 60) + "px";
-    document.body.appendChild(menu);
+    // Abre hacia abajo si hay sitio; si no (última línea), hacia ARRIBA, y limita la
+    // altura al espacio libre para que SIEMPRE se pueda ver/scrollear hasta el final.
+    const below = window.innerHeight - r.bottom - 12;
+    const above = r.top - 12;
+    if(below >= above){
+      menu.style.top = (r.bottom + 6) + "px"; menu.style.bottom = "auto";
+      menu.style.maxHeight = Math.max(140, below) + "px";
+    } else {
+      menu.style.bottom = (window.innerHeight - r.top + 6) + "px"; menu.style.top = "auto";
+      menu.style.maxHeight = Math.max(140, above) + "px";
+    }
     setTimeout(() => document.addEventListener("click", function h(ev){
       if(!menu.contains(ev.target) && ev.target !== anchor){ menu.remove(); document.removeEventListener("click", h); } }), 0);
   }
