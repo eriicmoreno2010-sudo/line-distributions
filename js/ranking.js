@@ -412,59 +412,49 @@ const Ranking = {
         }
     },
 
-    /* Column change (RÁPIDO): la tarjeta se va por el borde de su columna (arriba si
-       sube a la izquierda, abajo si baja a la derecha) y entra por el borde opuesto
-       de la otra columna. Tiempos cortos para que sea ágil. */
+    /* Column change (como los ad-libs): la tarjeta NO se desvanece. Aparece YA en la
+       otra columna, a opacidad COMPLETA y POR ENCIMA (z-index alto), y hace un pequeño
+       deslizamiento de asentamiento hasta su hueco. Así se ve en todo momento y "pasa
+       por encima" en vez de desaparecer. */
     switchCard(m, colIdx, row, gi){
-        // Tight race guard: si ya está cambiando hacia ESTA columna, solo actualiza
-        // el hueco destino y deja terminar la animación en curso (no reinicia el fundido).
-        if(m._switching && m._switchCol === colIdx){
+        // Si ya está en pleno cambio, solo actualiza el destino (no arranca otro).
+        if(m._switching){
             m._switchRow = row; m._switchGi = gi;
             if(m.rankElement) m.rankElement.textContent = gi + 1;
             return;
         }
 
         const dest = this.columns[colIdx];
-        const src  = this.columns[m._col];
         const improving = colIdx < m._col;              // sube a la columna izquierda (mejor)
         m._switching = true;
         m._switchCol = colIdx;
         m._switchRow = row; m._switchGi = gi;
         m.element.classList.remove("rising", "no-anim");
         m.element.classList.add("switching");
-        m.element.style.zIndex = "60";
         if(m.rankElement) m.rankElement.textContent = gi + 1;
 
-        // Fase 1: se va por el borde (arriba si sube, abajo si baja) y se desvanece.
-        const exitY = improving ? -src.rowH : src.cap * src.rowH;
-        m.element.style.setProperty("--rank-y", `${exitY}px`);
-        m.element.style.opacity = "0";
+        // Reubica YA en la otra columna, VISIBLE (opacity 1) y POR ENCIMA (z-index 60),
+        // empezando ~media fila desplazada para que se vea "entrar por encima".
+        m.element.classList.add("no-anim");
+        dest.el.appendChild(m.element);
+        m.element.style.height = dest.cardH ? dest.cardH + "px" : "";
+        m.element.style.opacity = "1";
+        m.element.style.zIndex = "60";
+        const startY = (row + (improving ? 0.55 : -0.55)) * dest.rowH;   // desde un poco fuera de su hueco
+        m.element.style.setProperty("--rank-y", `${startY}px`);
+        m._pos = row; m._col = colIdx;
+        void m.element.offsetWidth;                       // reflow: posición inicial instantánea
+        m.element.classList.remove("no-anim");            // re-activa la transición (transform)
+        m.element.style.setProperty("--rank-y", `${row * dest.rowH}px`);   // se asienta en su hueco
 
-        clearTimeout(m._switchT); clearTimeout(m._cleanT);
-        m._switchT = setTimeout(() => {
-            // Fase 2: aparece por el borde opuesto de la otra columna y entra a su hueco.
-            const r = m._switchRow, g = m._switchGi;
-            m.element.classList.add("no-anim");
-            dest.el.appendChild(m.element);
-            m.element.style.height = dest.cardH ? dest.cardH + "px" : "";
-            const enterY = improving ? (r + 1) * dest.rowH : (r - 1) * dest.rowH;
-            m.element.style.setProperty("--rank-y", `${enterY}px`);
-            m.element.style.zIndex = String(dest.cap - r);
-            m._pos = r;
-            m._col = colIdx;
-            if(m.rankElement) m.rankElement.textContent = g + 1;
-            void m.element.offsetWidth;                  // reflow: posición inicial instantánea
-            m.element.classList.remove("no-anim");       // re-activa la transición
-            m.element.style.setProperty("--rank-y", `${r * dest.rowH}px`);   // entra a su hueco
-            m.element.style.opacity = "1";
-            m._cleanT = setTimeout(() => {
-                m.element.classList.remove("switching");
-                m.element.style.opacity = "";
-                m._switching = false;
-                m._switchCol = undefined;
-                m._switchDoneAt = performance.now();   // arranca el cooldown anti-parpadeo
-            }, 110);
-        }, 95);
+        clearTimeout(m._cleanT);
+        m._cleanT = setTimeout(() => {
+            m.element.classList.remove("switching");
+            m.element.style.zIndex = String(dest.cap - m._switchRow);
+            m._switching = false;
+            m._switchCol = undefined;
+            m._switchDoneAt = performance.now();          // cooldown anti-rebote
+        }, 200);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
