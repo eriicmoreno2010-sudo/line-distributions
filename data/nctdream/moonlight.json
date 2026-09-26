@@ -13,9 +13,9 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.282,
-        "cy": 0.346,
-        "size": 0.095,
+        "cx": 0.2817,
+        "cy": 0.3419,
+        "size": 0.0857,
         "rot": 0,
         "flip": false
       }
@@ -25,42 +25,84 @@
       "image": "images/avatars/renjun.png",
       "color": "#fac142",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.1435,
+        "cy": 0.3579,
+        "size": 0.0857,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "JENO",
       "image": "images/avatars/jeno.png",
       "color": "#ff3131",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5263,
+        "cy": 0.3545,
+        "size": 0.081,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/avatars/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.7601,
+        "cy": 0.3513,
+        "size": 0.081,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "JAEMIN",
       "image": "images/avatars/jaemin.png",
       "color": "#61fdad",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6261,
+        "cy": 0.3513,
+        "size": 0.0848,
+        "rot": 6,
+        "flip": false
+      }
     },
     {
       "name": "CHENLE",
       "image": "images/avatars/chenle.png",
       "color": "#22c429",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.8655,
+        "cy": 0.3498,
+        "size": 0.0853,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "JISUNG",
       "image": "images/avatars/jisung.png",
       "color": "#f12ba5",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4103,
+        "cy": 0.3456,
+        "size": 0.085,
+        "rot": 0,
+        "flip": false
+      }
     }
   ],
   "lyrics": [
