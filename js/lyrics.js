@@ -575,27 +575,24 @@ if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
         });
     },
 
-    /* Calcula el hueco libre más bajo donde cabe esta tarjeta (sin solaparse con
-       las que ya hay, incluidas las que se están yendo -> reservan su sitio hasta
-       desaparecer). Fija box._bottom para siempre. */
+    /* Coloca la tarjeta SEGÚN SU ALTURA REAL (1, 2 o 3 renglones) para que la
+       separación sea justa: si el fondo está libre va abajo; si no, se apila justo
+       encima de la más alta con un HUECO pequeño (GAP). Las que se van reservan su
+       sitio hasta desaparecer; las que se quedan NO se mueven. Así un ad-lib de 1
+       renglón queda pegadito y uno de 3 solo ocupa lo que necesita. */
     placeAdlib(msg, box){
-        // HUECOS POR ÍNDICE (no por píxeles): el hueco 0 es el de abajo, el 1 el
-        // de encima, etc. Cada hueco mide lo mismo (SLOTH), así que una tarjeta
-        // alta o baja SIEMPRE cae en el mismo sitio -> el orden no depende del alto.
-        // El nuevo coge el hueco LIBRE MÁS BAJO: si el de abajo se fue, va abajo;
-        // solo va al 3.º si el 1.º Y el 2.º siguen ocupados. Los que se van liberan
-        // su hueco; los que se quedan NO se mueven jamás.
-        const SLOTH = 156;
+        const GAP = 16;                              // separación justa entre tarjetas
         box._h = box.offsetHeight || 90;
-        const used = new Set(
-            Array.from(msg.children)
-                .filter(b => b !== box && b._slot != null && !b._leaving)
-                .map(b => b._slot)
-        );
-        let idx = 0; while(used.has(idx)) idx++;    // hueco libre más bajo
-        box._slot = idx;
-        const y = idx * SLOTH;
-        box._bottom = y; box.dataset.slot = String(idx); box.dataset.bottom = String(y);
+        const occ = Array.from(msg.children)
+            .filter(b => b !== box && b._bottom != null && !b._leaving);
+        // ¿solaparía con alguna ya colocada si la pongo en la posición y?
+        const overlapsAt = (y) => occ.some(b =>
+            !(y + box._h + GAP <= b._bottom || y >= b._bottom + b._h + GAP));
+        let y = 0;                                   // por defecto, abajo del todo
+        if(occ.length && overlapsAt(0)){             // el fondo está ocupado -> apila encima de la más alta
+            y = Math.max(...occ.map(b => b._bottom + b._h)) + GAP;
+        }
+        box._bottom = y; box.dataset.bottom = String(y);
         return y;
     },
 
