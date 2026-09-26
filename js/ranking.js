@@ -412,12 +412,12 @@ const Ranking = {
         }
     },
 
-    /* Column change (como los ad-libs): la tarjeta NO se desvanece. Aparece YA en la
-       otra columna, a opacidad COMPLETA y POR ENCIMA (z-index alto), y hace un pequeño
-       deslizamiento de asentamiento hasta su hueco. Así se ve en todo momento y "pasa
-       por encima" en vez de desaparecer. */
+    /* Column change: la tarjeta VUELA de una columna a la otra POR ENCIMA del vídeo,
+       siempre visible (nada de fundirse ni teletransportarse). Se saca a #app como
+       capa flotante en su posición de ORIGEN y se desliza hasta la de DESTINO; al
+       llegar se suelta en su hueco de la nueva columna. */
     switchCard(m, colIdx, row, gi){
-        // Si ya está en pleno cambio, solo actualiza el destino (no arranca otro).
+        // Si ya está volando, solo actualiza el destino (no arranca otro vuelo).
         if(m._switching){
             m._switchRow = row; m._switchGi = gi;
             if(m.rankElement) m.rankElement.textContent = gi + 1;
@@ -425,36 +425,58 @@ const Ranking = {
         }
 
         const dest = this.columns[colIdx];
-        const improving = colIdx < m._col;              // sube a la columna izquierda (mejor)
-        m._switching = true;
-        m._switchCol = colIdx;
-        m._switchRow = row; m._switchGi = gi;
-        m.element.classList.remove("rising", "no-anim");
-        m.element.classList.add("switching");
+        const el   = m.element;
+        const app  = document.getElementById("app");
+        if(!app){ /* sin canvas: coloca directo */ dest.el.appendChild(el); el.style.setProperty("--rank-y", `${row*dest.rowH}px`); m._pos=row; m._col=colIdx; return; }
+        const scale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--ui-scale")) || 1;
+        const appRect = app.getBoundingClientRect();
+
+        m._switching = true; m._switchCol = colIdx; m._switchRow = row; m._switchGi = gi;
+        el.classList.remove("rising", "no-anim");
         if(m.rankElement) m.rankElement.textContent = gi + 1;
 
-        // Reubica YA en la otra columna, VISIBLE (opacity 1) y POR ENCIMA (z-index 60),
-        // empezando ~media fila desplazada para que se vea "entrar por encima".
-        m.element.classList.add("no-anim");
-        dest.el.appendChild(m.element);
-        m.element.style.height = dest.cardH ? dest.cardH + "px" : "";
-        m.element.style.opacity = "1";
-        m.element.style.zIndex = "60";
-        const startY = (row + (improving ? 0.55 : -0.55)) * dest.rowH;   // desde un poco fuera de su hueco
-        m.element.style.setProperty("--rank-y", `${startY}px`);
+        // 1) posición ORIGEN (en pantalla)
+        const fromVP = el.getBoundingClientRect();
+        // 2) colócala (sin animar) en su hueco final de la nueva columna para medir DESTINO
+        el.classList.add("no-anim");
+        dest.el.appendChild(el);
+        el.style.height = dest.cardH ? dest.cardH + "px" : "";
+        el.style.setProperty("--rank-y", `${row * dest.rowH}px`);
         m._pos = row; m._col = colIdx;
-        void m.element.offsetWidth;                       // reflow: posición inicial instantánea
-        m.element.classList.remove("no-anim");            // re-activa la transición (transform)
-        m.element.style.setProperty("--rank-y", `${row * dest.rowH}px`);   // se asienta en su hueco
+        const toVP = el.getBoundingClientRect();
+        // 3) sácala a #app como capa flotante en la pos de ORIGEN (coords del lienzo 1920)
+        const fx = (fromVP.left - appRect.left) / scale, fy = (fromVP.top - appRect.top) / scale;
+        const tx = (toVP.left   - appRect.left) / scale, ty = (toVP.top   - appRect.top) / scale;
+        el.classList.add("flying");
+        el.style.left = fx + "px"; el.style.top = fy + "px"; el.style.right = "auto";
+        el.style.width = (fromVP.width / scale) + "px";
+        el.style.setProperty("--rank-y", "0px");
+        el.style.transform = "none";
+        app.appendChild(el);
+        void el.offsetWidth;                              // reflow: fija la pos de origen
+        el.classList.remove("no-anim");
+        el.classList.add("flying-go");                    // transición de transform
+        el.style.transform = `translate(${(tx - fx).toFixed(2)}px, ${(ty - fy).toFixed(2)}px)`;
 
         clearTimeout(m._cleanT);
         m._cleanT = setTimeout(() => {
-            m.element.classList.remove("switching");
-            m.element.style.zIndex = String(dest.cap - m._switchRow);
+            // 4) aterriza: de vuelta a la columna destino, en su hueco (último objetivo)
+            const r = m._switchRow;
+            el.classList.remove("flying", "flying-go");
+            el.style.left = ""; el.style.top = ""; el.style.right = ""; el.style.width = ""; el.style.transform = "";
+            el.classList.add("no-anim");
+            dest.el.appendChild(el);
+            el.style.height = dest.cardH ? dest.cardH + "px" : "";
+            el.style.setProperty("--rank-y", `${r * dest.rowH}px`);
+            el.style.zIndex = String(dest.cap - r);
+            m._pos = r; m._col = colIdx;
+            if(m.rankElement) m.rankElement.textContent = m._switchGi + 1;
+            void el.offsetWidth;
+            el.classList.remove("no-anim");
             m._switching = false;
             m._switchCol = undefined;
             m._switchDoneAt = performance.now();          // cooldown anti-rebote
-        }, 200);
+        }, 350);
     },
 
     /* Update text, bars and active glow in place (no layout change). */

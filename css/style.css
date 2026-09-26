@@ -159,6 +159,7 @@ body{
     width:1920px;                     /* fixed design canvas */
     height:1080px;
     flex:none;
+    position:relative;                /* contexto para la tarjeta que "vuela" entre columnas */
     /* `zoom` (not transform:scale) so text re-rasterises at the target size and
        stays SHARP when the canvas is scaled up on bigger-than-1080p monitors.
        transform:scale would just stretch a 1920×1080 bitmap → pixelated. */
