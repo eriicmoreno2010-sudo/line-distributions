@@ -559,9 +559,9 @@ if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
                 box.style.zIndex = "1";                                    // por detrás de los ad-libs que se quedan
                 const msgH = msg.clientHeight || 380;
                 const up = (msgH - (box._bottom || 0)) + 14;               // sube hasta salir por arriba (la línea azul)
-                box.style.transition = "transform .26s cubic-bezier(.45,0,.7,.2), opacity .24s ease";  // rápido
+                box.style.transition = "transform .26s cubic-bezier(.45,0,.7,.2)";     // rápido, SIN fundido
                 box.style.transform = "translate(16px, " + (-up) + "px) scale(.94)";   // arriba y un pelín a la derecha
-                box.style.opacity = "0";
+                // NO se desvanece: se mete por arriba y lo recorta el borde del panel (clip-path)
                 setTimeout(() => box.remove(), 300);
             }
         });

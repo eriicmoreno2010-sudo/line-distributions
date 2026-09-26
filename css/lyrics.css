@@ -310,6 +310,10 @@ Version: 3.0 — Lyrics
 #adlib-msg{
     position:absolute; right:26px; top:22px; bottom:22px; width:48%; z-index:5;
     pointer-events:none;
+    /* recorta SOLO por arriba: los ad-libs que salen se meten por el borde superior
+       (la "línea azul") y desaparecen ahí, sin desvanecerse. Los otros lados se
+       extienden (-9999px) para no cortar sombras ni la entrada por abajo. */
+    clip-path: inset(0 -9999px -9999px -9999px);
 }
 .al-box{
     position:absolute; right:0; bottom:0;
