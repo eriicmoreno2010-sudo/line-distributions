@@ -155,8 +155,12 @@
       "adlib": false,
       "voice": [
         [
-          23.14,
-          26.25
+          23.15,
+          24.84
+        ],
+        [
+          25.2,
+          26.27
         ]
       ]
     },
@@ -240,7 +244,7 @@
       "start": 37.14,
       "end": 39.77,
       "members": [
-        "JOHNNY"
+        "JAEHYUN"
       ],
       "original": "혹은 싸우고 멀어져",
       "romanization": "hogeun ssaugo meoreojyeo",
