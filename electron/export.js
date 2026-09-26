@@ -99,8 +99,10 @@ async function runExport(opts, onProgress){
     await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: scale });
     await page.goto(fileUrl(opts.root, opts.song), { waitUntil: "networkidle0", timeout: 30000 });
     await page.waitForFunction(
-      () => { const v = document.getElementById("video"); return v && typeof SONG !== "undefined" && SONG && v.readyState >= 1; },
-      { timeout: 20000 });
+      () => { const v = document.getElementById("video"); return v && typeof SONG !== "undefined" && SONG && v.readyState >= 1
+                 // si la canción usa audio-reactividad (beats), espera a que la envolvente esté precalculada
+                 && (!SONG.beats || window.__audioReady === true); },
+      { timeout: 30000 });
 
     const info = await page.evaluate(() => ({ dur: SONG.duration, video: SONG.video }));
     const startT = Math.max(0, opts.start || 0);                       // render a mid-song window

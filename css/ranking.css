@@ -253,22 +253,17 @@ body.rank-beats .beat-halo{
         0 0 calc(2px + var(--beat,0)*10px) rgba(70,225,215,.90);
 }
 body.rank-beats .member-photo-wrap{ position:relative; z-index:1; }   /* foto + aro POR ENCIMA del halo */
-/* aberración cromática 'glitch': dos copias desplazadas (cian / magenta) que saltan;
-   el desplazamiento crece con --beat (beat más fuerte = glitch más pronunciado) */
+/* Aberración cromática 'glitch': dos copias (cian / magenta) desplazadas DIRECTAMENTE
+   por las variables que pone js/beats.js cada frame (--gx1/--gy1, --gx2/--gy2). NADA
+   de @keyframes ni animaciones autónomas: el movimiento ES la señal del audio. */
 body.rank-beats .beat-halo::before, body.rank-beats .beat-halo::after{
     content:""; position:absolute; inset:0; border-radius:50%;
 }
 body.rank-beats .beat-halo::before{
     box-shadow:0 0 calc(5px + var(--beat,0)*20px) 1px rgba(0,200,255,.6);
-    animation: beatGlitch .18s steps(2,end) infinite;
+    transform: translate(var(--gx1,0), var(--gy1,0));
 }
 body.rank-beats .beat-halo::after{
     box-shadow:0 0 calc(5px + var(--beat,0)*20px) 1px rgba(255,40,140,.55);
-    animation: beatGlitch .15s steps(2,end) infinite reverse;
-}
-@keyframes beatGlitch{
-    0%  { transform: translate(calc(var(--beat,0) * -6px), 0); }
-    33% { transform: translate(calc(var(--beat,0) *  5px), calc(var(--beat,0) * -3px)); }
-    66% { transform: translate(calc(var(--beat,0) * -4px), calc(var(--beat,0) *  3px)); }
-    100%{ transform: translate(calc(var(--beat,0) *  6px), 0); }
+    transform: translate(var(--gx2,0), var(--gy2,0));
 }
