@@ -294,6 +294,21 @@ Version: 3.0 — Lyrics
     text-shadow:none;
 }
 
+/* SOMBRA UNIFICADA del texto central + ad-libs (uno o varios cantantes igual):
+   usamos filter:drop-shadow, que SÍ funciona con el texto en degradado (2+ miembros)
+   sin apagar el relleno -> así 2+ tienen la MISMA sombra que 1 solo. Quitamos el
+   text-shadow global aquí para que no haya doble sombra.
+   Tema OSCURO -> sombra negra. Tema CLARO -> sombra CLARA/suave (no se nota tanto). */
+#current-member, #original, #romanized, #english,
+.adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text{
+    text-shadow:none;
+    filter: drop-shadow(0 0 2px rgba(0,0,0,.6)) drop-shadow(0 2px 3px rgba(0,0,0,.45));
+}
+body.theme-light #current-member, body.theme-light #original, body.theme-light #romanized, body.theme-light #english,
+body.theme-light .adlib-member, body.theme-light .adlib-original, body.theme-light .adlib-roman, body.theme-light .adlib-english, body.theme-light .adlib-text{
+    filter: drop-shadow(0 0 2px rgba(255,255,255,.95)) drop-shadow(0 1px 2px rgba(0,0,0,.14));
+}
+
 /* El glow (::after) es contenido generado -> se pinta DESPUES del texto y quedaba
    ENCIMA, apagandolo (sobre todo el degradado de grupo, que ya es menos punchy que
    un color solido). El glow debe ir DETRAS como halo: subimos el texto por z-index. */

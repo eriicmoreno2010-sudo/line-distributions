@@ -94,11 +94,18 @@ body.rank-lines #ranking .member.active,
 body.rank-lines #ranking .member.done{
     background:transparent; border-color:transparent; box-shadow:none;
 }
-/* NEGRO por defecto (no ha cantado, o cantó pero aún le quedan partes) */
+/* Fondo del panel = CUADRÍCULA clara (como la miniatura) */
+body.rank-lines #right-panel{
+    background:
+        linear-gradient(#dfe2ec 1.5px, transparent 1.5px) 0 0 / 100% 48px,
+        linear-gradient(90deg, #dfe2ec 1.5px, transparent 1.5px) 0 0 / 48px 100%,
+        #f6f7fb;
+}
+/* "no tan negro": gris oscuro suave por defecto (no ha cantado, o cantó pero le quedan partes) */
 body.rank-lines #ranking .member:not(.active):not(.done) .member-name,
-body.rank-lines #ranking .member:not(.active):not(.done) .member-time{ color:#111219; }
-body.rank-lines #ranking .member:not(.active):not(.done) .member-progress{ background:#111219; }
-body.rank-lines #ranking .member:not(.active):not(.done) .member-photo-wrap{ border-color:#111219; }
+body.rank-lines #ranking .member:not(.active):not(.done) .member-time{ color:#3c3e48; }
+body.rank-lines #ranking .member:not(.active):not(.done) .member-progress{ background:#3c3e48; }
+body.rank-lines #ranking .member:not(.active):not(.done) .member-photo-wrap{ border-color:#3c3e48; }
 /* COLOR del miembro: mientras canta o una vez terminado */
 body.rank-lines #ranking .member.active .member-name,
 body.rank-lines #ranking .member.done  .member-name,
@@ -109,8 +116,14 @@ body.rank-lines #ranking .member.done  .member-progress{ background:var(--accent
 body.rank-lines #ranking .member.active .member-photo-wrap,
 body.rank-lines #ranking .member.done  .member-photo-wrap{ border-color:var(--accent); }
 /* barra como "línea" con puntas redondeadas */
-body.rank-lines #ranking .member-bar{ background:rgba(0,0,0,.10); border-radius:999px; }
+body.rank-lines #ranking .member-bar{ background:rgba(0,0,0,.08); border-radius:999px; }
 body.rank-lines #ranking .member-progress{ border-radius:999px; }
+/* sombra del texto del ranking en tema claro: CLARA/suave (no la negra dura del tema oscuro) */
+body.theme-light #ranking .member-name,
+body.theme-light #ranking .member-time,
+body.theme-light #ranking .member-rank{
+    text-shadow: 0 1px 2px rgba(255,255,255,.8);
+}
 
 /* ========================= */
 /* BODY */
