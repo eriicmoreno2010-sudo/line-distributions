@@ -2,7 +2,7 @@
   "group": "NCT 127",
   "song": "영화처럼 (Can't Help Myself)",
   "video": "videos/nct127_canthelpmyself_muitx5i0.mp4",
-  "duration": 0,
+  "duration": 185.966667,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -660,5 +660,6 @@
   "cover": "covers/nct127_canthelpmyself.jpg",
   "audio": "audio/nct127_canthelpmyself.mp3",
   "npC1": "#c86ac0",
-  "npC2": "#ff622e"
+  "npC2": "#ff622e",
+  "audioOffset": 0.05
 }
