@@ -659,5 +659,6 @@
   ],
   "cover": "covers/nct127_canthelpmyself.jpg",
   "audio": "audio/nct127_canthelpmyself.mp3",
-  "npC1": "#c86ac0"
+  "npC1": "#c86ac0",
+  "npC2": "#e72eff"
 }
