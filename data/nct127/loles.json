@@ -2,7 +2,7 @@
   "group": "NCT 127",
   "song": "loles",
   "video": "videos/nct127_loles_mukby4fy.mp4",
-  "duration": 0,
+  "duration": 185.941,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -28,13 +28,6 @@
       "lift": 3
     },
     {
-      "name": "DOYOUNG",
-      "image": "images/nct127/loles/doyoung.png",
-      "color": "#1100ff",
-      "focus": 50,
-      "lift": 3
-    },
-    {
       "name": "JAEHYUN",
       "image": "images/nct127/loles/jaehyun.png",
       "color": "#bf9b00",
@@ -42,9 +35,16 @@
       "lift": 3
     },
     {
-      "name": "HAECHAN",
-      "image": "images/nct127/loles/haechan.png",
-      "color": "#1bb7e8",
+      "name": "JUNGWOO",
+      "image": "images/nct127/loles/jungwoo.png",
+      "color": "#4d6593",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MARK",
+      "image": "images/nct127/loles/mark.png",
+      "color": "#cb6ce6",
       "focus": 50,
       "lift": 3
     }
@@ -211,9 +211,7 @@
     {
       "start": 45.04,
       "end": 48.88,
-      "members": [
-        "HAECHAN"
-      ],
+      "members": [],
       "original": "지도에도 없는 Route, 누구나 아는 쉬운 길은, 전부 벗어나",
       "romanization": "jidoedo eomneun route, nuguna aneun swiun gireun, jeonbu beoseona",
       "english": "A route that doesn’t even exist on the map, Let’s get off all the easy roads, Everyone knows",
@@ -228,9 +226,7 @@
     {
       "start": 49.16,
       "end": 52.2,
-      "members": [
-        "HAECHAN"
-      ],
+      "members": [],
       "original": "낯설은 Avenue, 기꺼이 헤매볼까",
       "romanization": "natseoreun avenue, gikkeoi hemaebolkka",
       "english": "An unfamiliar avenue, Shall we willingly get lost?",
@@ -280,7 +276,7 @@
       "start": 61.27,
       "end": 64.21,
       "members": [
-        "TAEYONG"
+        "MARK"
       ],
       "original": "Take the road, 여유만 가득 실은 채로",
       "romanization": "take the road, yeoyuman gadeuk sireun chaero",
@@ -301,7 +297,7 @@
       "start": 64.34,
       "end": 68.58,
       "members": [
-        "TAEYONG"
+        "MARK"
       ],
       "original": "한 템포 느린 태도, 그게 우리 Dress code",
       "romanization": "han tempo neurin taedo, geuge uri dress code",
@@ -447,9 +443,7 @@
     {
       "start": 95.2,
       "end": 99.32,
-      "members": [
-        "HAECHAN"
-      ],
+      "members": [],
       "original": "단숨에 지구 위를, 몇 바퀴를 도는 기분",
       "romanization": "dansume jigu wireul, myeot bakwireul doneun gibun",
       "english": "In one breath, around the Earth, Feels like we’re circling it a few times",
@@ -468,9 +462,7 @@
     {
       "start": 99.67,
       "end": 103.27,
-      "members": [
-        "HAECHAN"
-      ],
+      "members": [],
       "original": "",
       "romanization": "Free and crazy, With my crew all in the backseat",
       "english": "",
@@ -528,7 +520,7 @@
       "start": 111.95,
       "end": 115.97,
       "members": [
-        "TAEYONG"
+        "MARK"
       ],
       "original": "괜한 걱정 접어둬 우린, 필요하지 원근법이",
       "romanization": "gwaenhan geokjeong jeobeodwo urin, piryohae wongeunbeobi",
@@ -545,7 +537,7 @@
       "start": 116.12,
       "end": 119.97,
       "members": [
-        "TAEYONG"
+        "MARK"
       ],
       "original": "뻔한 하루와 멀어진 뒤, 벗어나 긴말 없이",
       "romanization": "ppeonhan haruwa meoreojin dwi, beoseona ginmal eopsi",
@@ -825,9 +817,7 @@
     {
       "start": 94,
       "end": 95.02,
-      "members": [
-        "HAECHAN"
-      ],
+      "members": [],
       "original": "",
       "romanization": "(Mm yeah)",
       "english": "",
@@ -942,9 +932,7 @@
     {
       "start": 150.3,
       "end": 153.22,
-      "members": [
-        "HAECHAN"
-      ],
+      "members": [],
       "original": "(My coupe, 데리러 갈게)",
       "romanization": "(my coupe, derireo galge)",
       "english": "(My coupe, I’ll come pick you up)",
