@@ -53,16 +53,36 @@
     {
       "start": 0.6,
       "end": 3.17,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "1回の喧嘩, 2週ひっぱるから",
       "romanization": "ikkai no kenka, ni shuu hipparukara",
       "english": "One fight, Lasts two weeks",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          0.64,
+          0.93
+        ],
+        [
+          1.06,
+          3.35
+        ]
+      ]
     },
     {
       "start": 3.29,
       "end": 5.78,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          3.36,
+          5.78
+        ]
+      ],
       "original": "もう三回は耐えたのに",
       "romanization": "mou san kai wa taetanoni",
       "english": "So I've held back three times",
@@ -71,7 +91,23 @@
     {
       "start": 6.15,
       "end": 9.21,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          6.17,
+          6.84
+        ],
+        [
+          6.99,
+          8.09
+        ],
+        [
+          8.27,
+          9.34
+        ]
+      ],
       "original": "また失敗重ね, 誤解ばかり",
       "romanization": "mata shippai kasane, gokai bakari",
       "english": "But I keep slipping up, Just misunderstandings",
@@ -80,7 +116,15 @@
     {
       "start": 9.36,
       "end": 11.79,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          9.34,
+          11.71
+        ]
+      ],
       "original": "僕の愛情はなんなんだ",
       "romanization": "boku no aijou wa nann nann da",
       "english": "What is my love worth?",
@@ -89,7 +133,19 @@
     {
       "start": 24.72,
       "end": 27.57,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
+      "voice": [
+        [
+          24.75,
+          25.82
+        ],
+        [
+          26.31,
+          27.54
+        ]
+      ],
       "original": "ねえ、どうして？, 思い違いで",
       "romanization": "nee doushite?, omoichigai de",
       "english": "Come on, what's wrong with you?, We get the wrong idea",
@@ -98,7 +154,15 @@
     {
       "start": 27.72,
       "end": 30.55,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
+      "voice": [
+        [
+          27.73,
+          30.58
+        ]
+      ],
       "original": "美味しいはずの beer もまずいよ",
       "romanization": "oishii hazu no beer mo mazui yo",
       "english": "And great beer starts to taste flat",
@@ -107,7 +171,19 @@
     {
       "start": 30.74,
       "end": 36.32,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
+      "voice": [
+        [
+          30.72,
+          31.88
+        ],
+        [
+          32.21,
+          36.45
+        ]
+      ],
       "original": "マジなんで, Timing 失ったプレゼントもう渡せないよ",
       "romanization": "maji nande, timing ushinatta purezento mou watasenai yo",
       "english": "Really, what's with you?, Timing's off for giving you your gift now",
@@ -116,7 +192,19 @@
     {
       "start": 36.5,
       "end": 41.69,
-      "members": [],
+      "members": [
+        "WOONHAK"
+      ],
+      "voice": [
+        [
+          36.59,
+          38.79
+        ],
+        [
+          39,
+          41.86
+        ]
+      ],
       "original": "一瞬の小さな火花のはずが",
       "romanization": "isshun no chiisana hibana no hazu ga",
       "english": "It could've stopped at a small spark",
@@ -125,7 +213,19 @@
     {
       "start": 41.93,
       "end": 48.36,
-      "members": [],
+      "members": [
+        "WOONHAK"
+      ],
+      "voice": [
+        [
+          42.24,
+          42.5
+        ],
+        [
+          42.65,
+          48.57
+        ]
+      ],
       "original": "うっかりため息ついたら, もっと燃える君と, 灰になってく僕",
       "romanization": "ukkari tameiki tsui tara, motto moeru kimi to, haininatte ku boku",
       "english": "But I let a sigh slip out, You flare up more and more, While I turn to ash",
@@ -134,7 +234,31 @@
     {
       "start": 48.51,
       "end": 53.9,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
+      "voice": [
+        [
+          48.52,
+          50.43
+        ],
+        [
+          50.63,
+          51.88
+        ],
+        [
+          51.97,
+          52.27
+        ],
+        [
+          52.28,
+          53.17
+        ],
+        [
+          53.31,
+          54.27
+        ]
+      ],
       "original": "突然 終わりなんてごめんだから",
       "romanization": "totsuzen owari nante gomen dakara",
       "english": "I'd hate for it to end abruptly",
@@ -143,7 +267,19 @@
     {
       "start": 53.99,
       "end": 55.95,
-      "members": [],
+      "members": [
+        "RIWOO"
+      ],
+      "voice": [
+        [
+          54,
+          54.87
+        ],
+        [
+          55.02,
+          56.01
+        ]
+      ],
       "original": "今日もちゃんと我慢してんの",
       "romanization": "kyou mo chanto gaman shite n no",
       "english": "So I'm holding back again today",
@@ -152,7 +288,19 @@
     {
       "start": 56.08,
       "end": 59.2,
-      "members": [],
+      "members": [
+        "RIWOO"
+      ],
+      "voice": [
+        [
+          56.03,
+          56.39
+        ],
+        [
+          56.54,
+          59.17
+        ]
+      ],
       "original": "何で苦しめる？, 僕も人間(ひと)なのに",
       "romanization": "nani de kurushimeru?, boku mo hito nano ni",
       "english": "Why are you doing this to me?, I'm human too, you know",
@@ -161,7 +309,15 @@
     {
       "start": 60.14,
       "end": 63.27,
-      "members": [],
+      "members": [
+        "WOONHAK"
+      ],
+      "voice": [
+        [
+          60.12,
+          63.33
+        ]
+      ],
       "original": "無理！1回の喧嘩, 2週ひっぱるから",
       "romanization": "muri ikkai no kenka, ni shuu hipparu kara",
       "english": "I can't take it! One fight, Lasts two weeks",
@@ -170,7 +326,15 @@
     {
       "start": 63.45,
       "end": 65.73,
-      "members": [],
+      "members": [
+        "WOONHAK"
+      ],
+      "voice": [
+        [
+          63.32,
+          65.75
+        ]
+      ],
       "original": "もう三回は耐えたのに",
       "romanization": "mou san kai wa taetano ni",
       "english": "So I've held back three times",
@@ -179,7 +343,23 @@
     {
       "start": 66.14,
       "end": 69.23,
-      "members": [],
+      "members": [
+        "LEEHAN"
+      ],
+      "voice": [
+        [
+          66.19,
+          66.83
+        ],
+        [
+          66.98,
+          68.12
+        ],
+        [
+          68.27,
+          69.34
+        ]
+      ],
       "original": "また失敗重ね, 誤解ばかり",
       "romanization": "mata shippai kasane, gokai bakari",
       "english": "But I keep slipping up, Just misunderstandings",
@@ -188,7 +368,15 @@
     {
       "start": 69.36,
       "end": 71.9,
-      "members": [],
+      "members": [
+        "LEEHAN"
+      ],
+      "voice": [
+        [
+          69.37,
+          71.94
+        ]
+      ],
       "original": "僕の愛情はなんなんだ",
       "romanization": "boku no aijou wa nann nann da",
       "english": "What is my love worth?",
@@ -197,7 +385,27 @@
     {
       "start": 72.13,
       "end": 75.21,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
+      "voice": [
+        [
+          72.09,
+          73.19
+        ],
+        [
+          73.34,
+          73.86
+        ],
+        [
+          73.93,
+          74.11
+        ],
+        [
+          74.25,
+          75.3
+        ]
+      ],
       "original": "そういつも僕を, にらむ君に",
       "romanization": "sou itsumo boku o, niramu kimi ni",
       "english": "And you, You're always glaring at me",
@@ -206,7 +414,15 @@
     {
       "start": 75.37,
       "end": 77.74,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
+      "voice": [
+        [
+          75.35,
+          77.89
+        ]
+      ],
       "original": "ねえ、三度目の正直あるの？",
       "romanization": "nee sandome no shoujiki aru no?",
       "english": "Come on, is third time the charm for chances?",
@@ -215,7 +431,23 @@
     {
       "start": 78.12,
       "end": 81.2,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
+      "voice": [
+        [
+          78.15,
+          78.82
+        ],
+        [
+          78.97,
+          80.13
+        ],
+        [
+          80.25,
+          81.35
+        ]
+      ],
       "original": "ほんと余計みじめ, 5歳児のように",
       "romanization": "honto yokei mijime, go saiji no you ni",
       "english": "It only makes me feel worse, I'm counting like a five-year-old",
@@ -224,7 +456,15 @@
     {
       "start": 81.36,
       "end": 83.78,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
+      "voice": [
+        [
+          81.37,
+          83.89
+        ]
+      ],
       "original": "数えてる僕なんなんだ",
       "romanization": "kazoe teru bokuna nann nann da",
       "english": "What is this?",
@@ -233,7 +473,15 @@
     {
       "start": 84.54,
       "end": 89.06,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          84.52,
+          89.19
+        ]
+      ],
       "original": "1, 2, 3, 4, 5 sad な確率 99.9%",
       "romanization": "one two three four five sad na kakuritsu ninety-nine point nine",
       "english": "1, 2, 3, 4, 5, sad probability 99.9%",
@@ -242,7 +490,15 @@
     {
       "start": 89.25,
       "end": 89.95,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          89.24,
+          90.11
+        ]
+      ],
       "original": "残り何秒？",
       "romanization": "nokori nan byou?",
       "english": "How many seconds left?",
@@ -251,7 +507,15 @@
     {
       "start": 90.11,
       "end": 92.7,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          90.13,
+          92.76
+        ]
+      ],
       "original": "進むほど countdown 狂っていく",
       "romanization": "susumu hodo countdown kurutte iku",
       "english": "As I count down, I trip up",
@@ -260,7 +524,23 @@
     {
       "start": 92.97,
       "end": 96.61,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
+      "voice": [
+        [
+          92.98,
+          95.58
+        ],
+        [
+          95.73,
+          95.97
+        ],
+        [
+          96.12,
+          96.62
+        ]
+      ],
       "original": "こんなはずじゃない 24/7 yeah yeah",
       "romanization": "konna hazu janai twenty four seven yeah yeah",
       "english": "This ain't it, 24/7 yeah yeah",
@@ -269,7 +549,19 @@
     {
       "start": 96.63,
       "end": 101.74,
-      "members": [],
+      "members": [
+        "RIWOO"
+      ],
+      "voice": [
+        [
+          96.61,
+          98.69
+        ],
+        [
+          98.93,
+          101.76
+        ]
+      ],
       "original": "一瞬の小さな火花のはずが",
       "romanization": "isshun no chiisana hibana no hazu ga",
       "english": "It could've stopped at a small spark",
@@ -278,7 +570,19 @@
     {
       "start": 102.13,
       "end": 108.27,
-      "members": [],
+      "members": [
+        "RIWOO"
+      ],
+      "voice": [
+        [
+          102.19,
+          102.45
+        ],
+        [
+          102.63,
+          108.51
+        ]
+      ],
       "original": "うっかりため息ついたら, もっと燃える君と, 灰になってく僕",
       "romanization": "ukkari tameiki tsui tara, motto moeru kimi to, haini natte ku boku",
       "english": "But I let a sigh slip out, You flare up more and more, While I turn to ash",
@@ -287,7 +591,31 @@
     {
       "start": 108.42,
       "end": 113.95,
-      "members": [],
+      "members": [
+        "LEEHAN"
+      ],
+      "voice": [
+        [
+          108.57,
+          109.42
+        ],
+        [
+          109.55,
+          110.53
+        ],
+        [
+          110.71,
+          111.79
+        ],
+        [
+          111.95,
+          112.18
+        ],
+        [
+          112.34,
+          113.95
+        ]
+      ],
       "original": "わかって 君のことは本気だから",
       "romanization": "wakatte kimi no koto wa honki dakara",
       "english": "You should know, my feelings for you are real",
@@ -296,7 +624,19 @@
     {
       "start": 114.01,
       "end": 115.92,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
+      "voice": [
+        [
+          113.95,
+          114.83
+        ],
+        [
+          114.98,
+          116
+        ]
+      ],
       "original": "今日もちゃんと我慢してんの",
       "romanization": "kyou mo chanto gaman shite n no",
       "english": "So I'm holding back again today",
@@ -305,7 +645,19 @@
     {
       "start": 116.04,
       "end": 119.22,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
+      "voice": [
+        [
+          116.05,
+          116.38
+        ],
+        [
+          116.5,
+          119.21
+        ]
+      ],
       "original": "何で苦しめる？, 僕も人間(ひと)なのに",
       "romanization": "nan de kurushimeru?, boku mo hitoru nano ni",
       "english": "Why are you doing this to me?, I'm human too, you know",
@@ -314,7 +666,19 @@
     {
       "start": 120.12,
       "end": 123.17,
-      "members": [],
+      "members": [
+        "WOONHAK"
+      ],
+      "voice": [
+        [
+          120.18,
+          120.86
+        ],
+        [
+          121.01,
+          123.32
+        ]
+      ],
       "original": "無理！1回の喧嘩, 2週ひっぱるから",
       "romanization": "muri ikkai no kenka, ni shuu hipparu kara",
       "english": "I can't take it! One fight, Lasts two weeks",
@@ -323,7 +687,15 @@
     {
       "start": 123.35,
       "end": 125.78,
-      "members": [],
+      "members": [
+        "WOONHAK"
+      ],
+      "voice": [
+        [
+          123.34,
+          125.8
+        ]
+      ],
       "original": "もう三回は耐えたのに",
       "romanization": "mou san kai wa taetano ni",
       "english": "So I've held back three times",
@@ -332,7 +704,23 @@
     {
       "start": 126.18,
       "end": 129.22,
-      "members": [],
+      "members": [
+        "RIWOO"
+      ],
+      "voice": [
+        [
+          126.21,
+          126.82
+        ],
+        [
+          126.97,
+          128.14
+        ],
+        [
+          128.29,
+          129.33
+        ]
+      ],
       "original": "また失敗重ね, 誤解ばかり",
       "romanization": "mata shippai kasane, gokai bakari",
       "english": "But I keep slipping up, Just misunderstandings",
@@ -341,7 +729,15 @@
     {
       "start": 129.34,
       "end": 131.83,
-      "members": [],
+      "members": [
+        "RIWOO"
+      ],
+      "voice": [
+        [
+          129.32,
+          131.86
+        ]
+      ],
       "original": "僕の愛情はなんなんだ",
       "romanization": "boku no aijou wa nann nann da",
       "english": "What is my love worth?",
@@ -350,7 +746,31 @@
     {
       "start": 132.15,
       "end": 135.21,
-      "members": [],
+      "members": [
+        "LEEHAN"
+      ],
+      "voice": [
+        [
+          132.19,
+          132.49
+        ],
+        [
+          132.67,
+          133.2
+        ],
+        [
+          133.38,
+          133.8
+        ],
+        [
+          133.95,
+          134.19
+        ],
+        [
+          134.34,
+          135.32
+        ]
+      ],
       "original": "そういつも僕を, にらむ君に",
       "romanization": "sou itsumo boku o, niramu kimi ni",
       "english": "And you, You're always glaring at me",
@@ -359,7 +779,15 @@
     {
       "start": 135.33,
       "end": 137.73,
-      "members": [],
+      "members": [
+        "LEEHAN"
+      ],
+      "voice": [
+        [
+          135.31,
+          137.76
+        ]
+      ],
       "original": "ねえ、三度目の正直あるの？",
       "romanization": "nee sandome no shoujiki aru no?",
       "english": "Come on, is third time the charm for chances?",
@@ -368,7 +796,23 @@
     {
       "start": 138.2,
       "end": 141.17,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
+      "voice": [
+        [
+          138.18,
+          138.82
+        ],
+        [
+          138.97,
+          140.13
+        ],
+        [
+          140.25,
+          141.3
+        ]
+      ],
       "original": "ほんと余計みじめ, 5歳児のように",
       "romanization": "honto yokei mijime, go saiji no you ni",
       "english": "It only makes me feel worse, I'm counting like a five-year-old",
@@ -377,11 +821,48 @@
     {
       "start": 141.32,
       "end": 143.75,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
+      "voice": [
+        [
+          141.31,
+          143.82
+        ]
+      ],
       "original": "数えてる僕なんなんだ",
       "romanization": "kazoe teru boku nann nann da",
       "english": "What is this?",
       "adlib": false
+    },
+    {
+      "start": 143.12,
+      "end": 144.59,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "( 1 2 3 4)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          143.13,
+          143.31
+        ],
+        [
+          143.49,
+          143.72
+        ],
+        [
+          143.81,
+          143.99
+        ],
+        [
+          144.17,
+          144.5
+        ]
+      ]
     }
   ],
   "audio": "audio/boynextdoor_counttolove.mp3",
