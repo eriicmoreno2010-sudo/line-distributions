@@ -84,8 +84,15 @@ body.two-side .member.ready{
 /* SOLO la tarjeta que ADELANTA (mejora de puesto) va por encima de todo; la que baja
    mantiene su z normal ("como cuando no cantan"). */
 .member.switch-top{ z-index:70 !important; }
-/* Arranque (todos a 0.00): cruces aún más rápidos. */
+/* Ya cantando y muy juntos: cruce corto y más rápido. */
 .member.switch-fast{ transition:transform .22s cubic-bezier(.4,0,.2,1) !important; }
+/* Arranque (casi todos en 0.00): cruce COMPLETO (columna entera), más pausado y visible. */
+.member.switch-full{ transition:transform .46s cubic-bezier(.4,0,.2,1) !important; }
+/* El clon NO se borra de golpe: se funde (y el JS lo quita 1s después). */
+.member.switch-ghost.ghost-out{
+    opacity:0 !important;
+    transition:transform .32s cubic-bezier(.4,0,.2,1), opacity .45s ease !important;
+}
 
 /* ========================= */
 /* ACTIVE STATE (color glow, no resizing) */

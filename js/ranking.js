@@ -353,9 +353,11 @@ const Ranking = {
     placeAll(animate){
         const sorted = [...this.members].sort((a,b) => b.seconds - a.seconds);
         this.rankMap = {};
-        // Arranque (todos ~0.00): hay mucho baile de posiciones -> los cruces van MÁS
-        // RÁPIDO para que no se vea lento/torpe al principio.
-        const churn = sorted.length > 0 && sorted[0].seconds < 2;
+        // Arranque = casi todos todavía en ~0.00 (la mayoría por debajo de 0.5s). En ese
+        // caso el cruce hace la COLUMNA ENTERA (se ve bien); ya cantando y muy juntos,
+        // el cruce es corto y más rápido.
+        const churn = sorted.length > 0 &&
+            sorted.filter(x => x.seconds < 0.5).length > sorted.length * 0.5;
 
         sorted.forEach((m, gi) => {
             this.rankMap[m.name] = gi + 1;
@@ -436,7 +438,7 @@ const Ranking = {
        una empieza a irse la otra YA está entrando por el otro lado -> nunca hay
        hueco invisible (esto es "que si un pixel se mete por arriba, ya aparezca
        esa fila en el otro lado"). El clon se recorta con overflow:hidden del panel. */
-    switchCard(m, colIdx, row, gi, fast){
+    switchCard(m, colIdx, row, gi, churn){
         // Si ya está cambiando, solo actualiza el destino (no arranca otro cambio).
         if(m._switching){
             m._switchRow = row; m._switchGi = gi;
@@ -464,16 +466,16 @@ const Ranking = {
         }
 
         m._switching = true; m._switchCol = colIdx; m._switchRow = row; m._switchGi = gi;
-        // RÁPIDO: cuando están muy juntos no hace falta la animación larga; la tarjeta
-        // llega pronto a su puesto (adelanta cuando tiene que adelantar).
-        const dur = fast ? 220 : 320;
+        // ARRANQUE (casi todos en 0.00): cruce COMPLETO, recorre la columna entera y se
+        // ve bien. YA CANTANDO y muy juntos: cruce CORTO (2 filas) y más rápido.
+        const dur = churn ? 460 : 220;
         m._switchDur = dur;
+        const speedClass = churn ? "switch-full" : "switch-fast";
 
         // ---- CLON: imagen de la tarjeta que se va; se recorta al salir por el borde ----
         const ghost = el.cloneNode(true);
-        ghost.classList.add("switch-ghost");
+        ghost.classList.add("switch-ghost", speedClass);
         ghost.classList.remove("no-anim", "rising");
-        if(fast) ghost.classList.add("switch-fast");
         // Solo la que ADELANTA (mejora) va por ENCIMA de todo; la que baja mantiene su
         // z normal ("como cuando no cantan").
         if(improving) ghost.classList.add("switch-top");
@@ -485,29 +487,31 @@ const Ranking = {
         ghost.style.setProperty("--rank-y", `${exitY}px`);
         m._ghost = ghost;      // updateVisuals lo mantiene IGUAL que el real (iluminado, mismos s)
 
-        // ---- TARJETA REAL: entra desde CERCA (2 filas) para llegar RÁPIDO a su puesto ----
+        // ---- TARJETA REAL ----
         el.classList.remove("rising");
-        el.classList.add("no-anim", "switching");
-        if(fast) el.classList.add("switch-fast");
+        el.classList.add("no-anim", "switching", speedClass);
         if(improving) el.classList.add("switch-top");         // la que adelanta, por encima
         else el.style.zIndex = String(dest.cap - row);        // la que baja, z normal
         dest.el.appendChild(el);
         el.style.height = dest.cardH ? dest.cardH + "px" : "";
-        // sube -> entra desde 2 filas por DEBAJO; baja -> desde 2 filas por ARRIBA.
-        const enterY = improving ? (row + 2) * dest.rowH : (row - 2) * dest.rowH;
+        // Arranque -> entra desde el BORDE lejano (columna entera). Ya cantando -> 2 filas.
+        const enterY = churn
+            ? (improving ? dest.cap * dest.rowH : -dest.rowH)
+            : (improving ? (row + 2) * dest.rowH : (row - 2) * dest.rowH);
         el.style.setProperty("--rank-y", `${enterY}px`);
         m._pos = row; m._col = colIdx;
         void el.offsetWidth;                                                    // fija el punto de entrada
         el.classList.remove("no-anim");
         el.style.setProperty("--rank-y", `${row * dest.rowH}px`);               // desliza hasta su hueco
 
-        // El clon desaparece SOLO cuando la real ha llegado del TODO a su hueco (no a
-        // medias). Si por el camino cambia de fila (empates), placeAll reprograma esta
-        // limpieza para que el clon siga hasta que la real termine de subir.
+        // El clon se va SOLO cuando la real ha llegado del TODO a su hueco. Y NO de golpe:
+        // se funde y se borra ~1s después (durante ese segundo la copia ya no se ve). Si
+        // por el camino cambia de fila (empates), placeAll reprograma esta limpieza.
         m._doClean = () => {
             const r = m._switchRow;
-            if(m._ghost){ m._ghost.remove(); m._ghost = null; }
-            el.classList.remove("switching", "switch-fast", "switch-top");
+            const g = m._ghost; m._ghost = null;
+            if(g){ g.classList.add("ghost-out"); setTimeout(() => g.remove(), 1000); }
+            el.classList.remove("switching", "switch-fast", "switch-full", "switch-top");
             el.style.zIndex = String(dest.cap - r);
             if(m.rankElement) m.rankElement.textContent = m._switchGi + 1;
             m._switching = false;
