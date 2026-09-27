@@ -11,63 +11,135 @@
       "image": "images/nct127/suddenly/taeil.png",
       "color": "#f273ca",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5027,
+        "cy": 0.301,
+        "size": 0.1506,
+        "rot": 25,
+        "flip": false,
+        "blur": 0.26
+      }
     },
     {
       "name": "JOHNNY",
       "image": "images/nct127/suddenly/johnny.png",
       "color": "#31b287",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5074,
+        "cy": 0.2688,
+        "size": 0.6287,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "TAEYONG",
       "image": "images/nct127/suddenly/taeyong.png",
       "color": "#c80404",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3803,
+        "cy": 0.2209,
+        "size": 0.2767,
+        "rot": 17,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "YUTA",
       "image": "images/nct127/suddenly/yuta.png",
       "color": "#dd7f10",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4381,
+        "cy": 0.3923,
+        "size": 0.2635,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "DOYOUNG",
       "image": "images/nct127/suddenly/doyoung.png",
       "color": "#1100ff",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4112,
+        "cy": 0.2857,
+        "size": 0.8145,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JAEHYUN",
       "image": "images/nct127/suddenly/jaehyun.png",
       "color": "#bf9b00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3489,
+        "cy": 0.2893,
+        "size": 0.8574,
+        "rot": 351,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JUNGWOO",
       "image": "images/nct127/suddenly/jungwoo.png",
       "color": "#4d6593",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6221,
+        "cy": 0.3155,
+        "size": 0.7738,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "MARK",
       "image": "images/nct127/suddenly/mark.png",
       "color": "#cb6ce6",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4587,
+        "cy": 0.2931,
+        "size": 0.2259,
+        "rot": 22,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nct127/suddenly/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.531,
+        "cy": 0.3879,
+        "size": 0.461,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
