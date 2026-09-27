@@ -386,19 +386,30 @@ const Lyrics = {
                 // sin sombra oscura en el texto con degradado (la apagaba y ocultaba el color real)
                 return `<span style="background:${bg};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(display)}</span>`;
             };
-            // trozo BASE (no marcado): arcoíris del grupo en línea de grupo; si no, su color
-            const baseSpan = chunk => c.isGroupLine
-                ? `<span style="background:${c.groupGradient};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(chunk)}</span>`
-                : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`;
             const paintText = (el, text) => {
                 text = text || "";
                 clearPaint(el);
                 el.style.color = "";
+                el.style.textShadow = "";
                 if(c.hasPartial && hasPairedMarker(text)){
-                    el.innerHTML = text.split("**").map((chunk, i) => i % 2
-                        ? markedSpan(chunk)      // trozo **...@miembro** -> su color
-                        : baseSpan(chunk)        // resto -> arcoíris (grupo) o color de la línea
-                    ).join("");
+                    if(c.isGroupLine){
+                        // LÍNEA DE GRUPO: el arcoíris debe ser CONTINUO en toda la línea
+                        // (no reiniciarse por trozo, que se veía rosa). Lo pintamos en el
+                        // PROPIO elemento y dejamos los trozos base como texto (heredan ese
+                        // arcoíris); solo los **...@miembro** llevan su color (markedSpan).
+                        el.style.background = c.groupGradient;
+                        el.style.webkitBackgroundClip = "text"; el.style.backgroundClip = "text";
+                        el.style.color = "transparent"; el.style.textShadow = "none";
+                        el.innerHTML = text.split("**").map((chunk, i) => i % 2
+                            ? markedSpan(chunk)          // @miembro -> su color (opaco/independiente)
+                            : escapeHtml(chunk)          // base -> arcoíris continuo del elemento
+                        ).join("");
+                    } else {
+                        el.innerHTML = text.split("**").map((chunk, i) => i % 2
+                            ? markedSpan(chunk)
+                            : `<span style="color:${c.accent}">${escapeHtml(chunk)}</span>`
+                        ).join("");
+                    }
                 } else if(!c.isGroupLine){
                     el.textContent = text;
                     el.style.color = c.accent;
