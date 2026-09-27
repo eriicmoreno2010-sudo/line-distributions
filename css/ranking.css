@@ -58,7 +58,7 @@ Version: 4.0 — Ranking (transform leaderboard)
    para que no se monten unas sobre otras (era lo que hacía "desaparecer" alguna). */
 body.two-side .member.ready{
     transition:
-        transform .5s cubic-bezier(.22,1,.36,1),      /* ease-out, SIN overshoot */
+        transform .4s cubic-bezier(.4,0,.2,1),        /* ease-out, SIN overshoot, algo más rápido */
         box-shadow .18s var(--ease),
         background-color .18s var(--ease),
         border-color .18s var(--ease);
@@ -75,17 +75,17 @@ body.two-side .member.ready{
    EXACTAMENTE la misma -> el clon acaba de salir justo cuando la real acaba de
    entrar, y entonces se borra. */
 .member.switching{
-    transition:transform .6s cubic-bezier(.45,0,.35,1) !important;
+    transition:transform .32s cubic-bezier(.4,0,.2,1) !important;
 }
 .member.switch-ghost{
     pointer-events:none !important;
-    transition:transform .6s cubic-bezier(.45,0,.35,1) !important;
+    transition:transform .32s cubic-bezier(.4,0,.2,1) !important;
 }
 /* SOLO la tarjeta que ADELANTA (mejora de puesto) va por encima de todo; la que baja
    mantiene su z normal ("como cuando no cantan"). */
 .member.switch-top{ z-index:70 !important; }
-/* Arranque (todos a 0.00): cruces más rápidos. */
-.member.switch-fast{ transition:transform .3s cubic-bezier(.45,0,.35,1) !important; }
+/* Arranque (todos a 0.00): cruces aún más rápidos. */
+.member.switch-fast{ transition:transform .22s cubic-bezier(.4,0,.2,1) !important; }
 
 /* ========================= */
 /* ACTIVE STATE (color glow, no resizing) */

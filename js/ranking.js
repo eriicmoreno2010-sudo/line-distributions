@@ -370,9 +370,11 @@ const Ranking = {
             // así la tarjeta llega directa a su sitio y NO pega un salto al terminar.
             if(m._switching){
                 if(m.rankElement) m.rankElement.textContent = gi + 1;
-                if(colIdx === m._switchCol){
+                if(colIdx === m._switchCol && row !== m._switchRow){
                     m._switchRow = row;
                     if(!this.det) m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);
+                    // el destino cambió: que el clon siga hasta que la real llegue de verdad
+                    if(m._doClean){ clearTimeout(m._cleanT); m._cleanT = setTimeout(m._doClean, m._switchDur || 320); }
                 }
                 return;
             }
@@ -462,12 +464,15 @@ const Ranking = {
         }
 
         m._switching = true; m._switchCol = colIdx; m._switchRow = row; m._switchGi = gi;
-        const dur = fast ? 300 : 600;                     // arranque (todos ~0.00) -> más rápido
+        // RÁPIDO: cuando están muy juntos no hace falta la animación larga; la tarjeta
+        // llega pronto a su puesto (adelanta cuando tiene que adelantar).
+        const dur = fast ? 220 : 320;
+        m._switchDur = dur;
 
-        // ---- CLON FANTASMA: sale POR COMPLETO por el borde de la columna ORIGEN ----
+        // ---- CLON: imagen de la tarjeta que se va; se recorta al salir por el borde ----
         const ghost = el.cloneNode(true);
         ghost.classList.add("switch-ghost");
-        ghost.classList.remove("no-anim", "rising", "active");
+        ghost.classList.remove("no-anim", "rising");
         if(fast) ghost.classList.add("switch-fast");
         // Solo la que ADELANTA (mejora) va por ENCIMA de todo; la que baja mantiene su
         // z normal ("como cuando no cantan").
@@ -478,8 +483,9 @@ const Ranking = {
         void ghost.offsetWidth;                                                 // fija el punto de partida
         const exitY = improving ? -src.rowH : src.cap * src.rowH;               // arriba si sube, abajo si baja
         ghost.style.setProperty("--rank-y", `${exitY}px`);
+        m._ghost = ghost;      // updateVisuals lo mantiene IGUAL que el real (iluminado, mismos s)
 
-        // ---- TARJETA REAL: entra desde el BORDE OPUESTO (recorrido completo, se ve) ----
+        // ---- TARJETA REAL: entra desde CERCA (2 filas) para llegar RÁPIDO a su puesto ----
         el.classList.remove("rising");
         el.classList.add("no-anim", "switching");
         if(fast) el.classList.add("switch-fast");
@@ -487,28 +493,29 @@ const Ranking = {
         else el.style.zIndex = String(dest.cap - row);        // la que baja, z normal
         dest.el.appendChild(el);
         el.style.height = dest.cardH ? dest.cardH + "px" : "";
-        // sube -> entra desde el borde INFERIOR del destino; baja -> desde el SUPERIOR.
-        const enterY = improving ? dest.cap * dest.rowH : -dest.rowH;
+        // sube -> entra desde 2 filas por DEBAJO; baja -> desde 2 filas por ARRIBA.
+        const enterY = improving ? (row + 2) * dest.rowH : (row - 2) * dest.rowH;
         el.style.setProperty("--rank-y", `${enterY}px`);
         m._pos = row; m._col = colIdx;
         void el.offsetWidth;                                                    // fija el punto de entrada
         el.classList.remove("no-anim");
         el.style.setProperty("--rank-y", `${row * dest.rowH}px`);               // desliza hasta su hueco
 
-        // El clon desaparece JUSTO cuando la real ha terminado de entrar (misma
-        // duración): "si la tarjeta ya está completamente en el otro lado, su clon
-        // también desaparece".
-        clearTimeout(m._cleanT);
-        m._cleanT = setTimeout(() => {
+        // El clon desaparece SOLO cuando la real ha llegado del TODO a su hueco (no a
+        // medias). Si por el camino cambia de fila (empates), placeAll reprograma esta
+        // limpieza para que el clon siga hasta que la real termine de subir.
+        m._doClean = () => {
             const r = m._switchRow;
-            ghost.remove();
+            if(m._ghost){ m._ghost.remove(); m._ghost = null; }
             el.classList.remove("switching", "switch-fast", "switch-top");
             el.style.zIndex = String(dest.cap - r);
             if(m.rankElement) m.rankElement.textContent = m._switchGi + 1;
             m._switching = false;
             m._switchCol = undefined;
             m._switchDoneAt = performance.now();          // cooldown anti-rebote
-        }, dur + 10);
+        };
+        clearTimeout(m._cleanT);
+        m._cleanT = setTimeout(m._doClean, dur + 10);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
@@ -522,6 +529,18 @@ const Ranking = {
                 member.element.classList.toggle("active", member.active);
                 member.element.classList.toggle("has-sung", member.hasSung);
                 member.element.classList.toggle("done", member.done && !member.active);
+            }
+            // El CLON del cambio de columna va SIEMPRE IGUAL que el real: mismos
+            // segundos, misma barra y misma iluminación (si canta, brilla).
+            const g = member._ghost;
+            if(g){
+                const gt = g.querySelector(".member-time");
+                if(gt) gt.textContent = member.seconds.toFixed(2) + "s";
+                const gp = g.querySelector(".member-progress");
+                if(gp) gp.style.width = member.percentage + "%";
+                g.classList.toggle("active", member.active);
+                g.classList.toggle("has-sung", member.hasSung);
+                g.classList.toggle("done", member.done && !member.active);
             }
         });
     },
