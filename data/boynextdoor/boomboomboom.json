@@ -62,5 +62,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/boynextdoor_boomboomboom.mp3"
+  "audio": "audio/boynextdoor_boomboomboom.mp3",
+  "audioOffset": 0.2
 }
