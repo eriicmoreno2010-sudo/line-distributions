@@ -62,5 +62,6 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/boynextdoor_counttolove.mp3"
+  "audio": "audio/boynextdoor_counttolove.mp3",
+  "audioOffset": 0.1
 }
