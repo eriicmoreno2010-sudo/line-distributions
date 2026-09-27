@@ -472,9 +472,10 @@ const Ranking = {
         m._switchDur = dur;
         const speedClass = churn ? "switch-full" : "switch-fast";
 
-        // ---- CLON: imagen de la tarjeta que se va; se recorta al salir por el borde ----
+        // ---- CLON: imagen de la tarjeta que se va; SALE RÁPIDO (más que la real) para
+        //      que se vea como UNA sola tarjeta, no dos. No hereda la duración del cruce. ----
         const ghost = el.cloneNode(true);
-        ghost.classList.add("switch-ghost", speedClass);
+        ghost.classList.add("switch-ghost");
         ghost.classList.remove("no-anim", "rising");
         // Solo la que ADELANTA (mejora) va por ENCIMA de todo; la que baja mantiene su
         // z normal ("como cuando no cantan").
