@@ -2,7 +2,7 @@
   "group": "BOYNEXTDOOR",
   "song": "Boom Boom Boom",
   "video": "videos/boynextdoor_boomboomboom_muk1it5o.mp4",
-  "duration": 0,
+  "duration": 176.416667,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -61,5 +61,6 @@
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/boynextdoor_boomboomboom.mp3"
 }
