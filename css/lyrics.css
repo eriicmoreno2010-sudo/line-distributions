@@ -323,11 +323,12 @@ body.theme-light .adlib-member, body.theme-light .adlib-original, body.theme-lig
    (JS) para que las nuevas entren por ABAJO empujando hacia arriba, y al irse una
    las demás NO se muevan. */
 #adlib-msg{
-    /* Abarca TODO el panel de letras: el ad-lib aparece por el borde INFERIOR y se
-       mete por el SUPERIOR (las "líneas blancas"), sin tocar el vídeo. */
-    position:absolute; right:26px; top:0; bottom:0; width:48%; z-index:5;
+    /* Dentro del panel de letras: se mete por el borde SUPERIOR (top:0 = línea de
+       arriba) y REPOSA con un pequeño margen abajo (bottom:22) para que al entrar no
+       queden pegados al borde inferior. */
+    position:absolute; right:26px; top:0; bottom:22px; width:48%; z-index:5;
     pointer-events:none;
-    /* recorta por ARRIBA y por ABAJO (bordes del panel), pero NO por los lados
+    /* recorta por ARRIBA y por ABAJO (bordes de esta caja), pero NO por los lados
        (-9999px) para no cortar sombras. */
     clip-path: inset(0 -9999px 0 -9999px);
 }
