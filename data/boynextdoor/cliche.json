@@ -1,0 +1,65 @@
+{
+  "group": "BOYNEXTDOOR",
+  "song": "CLICHE",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "SUNGHO",
+      "image": "images/boynextdoor/cliche/sungho.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RIWOO",
+      "image": "images/boynextdoor/cliche/riwoo.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUN",
+      "image": "images/boynextdoor/cliche/jaehyun.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAESAN",
+      "image": "images/boynextdoor/cliche/taesan.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "LEEHAN",
+      "image": "images/boynextdoor/cliche/leehan.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOONHAK",
+      "image": "images/boynextdoor/cliche/woonhak.png",
+      "color": "#20c997",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SUNGHO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
