@@ -599,9 +599,10 @@ if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
             if(existing.some(b => !b._leaving)) return;     // ya hay una activa para este ad-lib
             existing.forEach(b => b.remove());              // reaparece justo al salir -> recrear
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
-            // APARECE en 0px (borde inferior del panel) y SUBE a colocarse en su hueco
-            // (22px la de abajo). Solo la ENTRADA; la salida no se toca.
-            box.style.opacity = "0"; box.style.bottom = "0px";
+            // ENTRA deslizándose desde ABAJO (por debajo del panel, se recorta): emerge por
+            // el borde inferior (0px) y SUBE hasta colocarse en su hueco (22px la de abajo).
+            // Así se ve la animación completa de entrada. Solo la ENTRADA; la salida no se toca.
+            box.style.opacity = "0"; box.style.bottom = "-140px";
             msg.appendChild(box);                           // en el DOM para poder medir su alto
             const y = this.placeAdlib(msg, box);            // hueco fijo (según los que ya hay)
             requestAnimationFrame(() => requestAnimationFrame(() => {

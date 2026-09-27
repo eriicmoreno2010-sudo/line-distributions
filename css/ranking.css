@@ -75,14 +75,17 @@ body.two-side .member.ready{
    EXACTAMENTE la misma -> el clon acaba de salir justo cuando la real acaba de
    entrar, y entonces se borra. */
 .member.switching{
-    z-index:70 !important;
     transition:transform .6s cubic-bezier(.45,0,.35,1) !important;
 }
 .member.switch-ghost{
-    z-index:70 !important;
     pointer-events:none !important;
     transition:transform .6s cubic-bezier(.45,0,.35,1) !important;
 }
+/* SOLO la tarjeta que ADELANTA (mejora de puesto) va por encima de todo; la que baja
+   mantiene su z normal ("como cuando no cantan"). */
+.member.switch-top{ z-index:70 !important; }
+/* Arranque (todos a 0.00): cruces más rápidos. */
+.member.switch-fast{ transition:transform .3s cubic-bezier(.45,0,.35,1) !important; }
 
 /* ========================= */
 /* ACTIVE STATE (color glow, no resizing) */

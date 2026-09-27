@@ -353,6 +353,9 @@ const Ranking = {
     placeAll(animate){
         const sorted = [...this.members].sort((a,b) => b.seconds - a.seconds);
         this.rankMap = {};
+        // Arranque (todos ~0.00): hay mucho baile de posiciones -> los cruces van MÁS
+        // RÁPIDO para que no se vea lento/torpe al principio.
+        const churn = sorted.length > 0 && sorted[0].seconds < 2;
 
         sorted.forEach((m, gi) => {
             this.rankMap[m.name] = gi + 1;
@@ -361,6 +364,19 @@ const Ranking = {
             if(this.twoSide && gi >= this.half){ colIdx = 1; row = gi - this.half; }
             else { colIdx = 0; row = gi; }
             const col = this.columns[colIdx];
+
+            // Ya está CRUZANDO de columna: no arranques otro cruce. En su lugar
+            // REDIRIGE el glide al hueco correcto sobre la marcha (transición .switching),
+            // así la tarjeta llega directa a su sitio y NO pega un salto al terminar.
+            if(m._switching){
+                if(m.rankElement) m.rankElement.textContent = gi + 1;
+                if(colIdx === m._switchCol){
+                    m._switchRow = row;
+                    if(!this.det) m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);
+                }
+                return;
+            }
+
             const changingCol = (m.element.parentNode !== col.el);
 
             // Animated column change → glide off/enter. Con COOLDOWN anti-parpadeo:
@@ -372,7 +388,7 @@ const Ranking = {
                     if(m.rankElement) m.rankElement.textContent = gi + 1;   // solo actualiza el nº
                     return;                                                  // se queda en su columna
                 }
-                this.switchCard(m, colIdx, row, gi);
+                this.switchCard(m, colIdx, row, gi, churn);
                 return;
             }
 
@@ -418,7 +434,7 @@ const Ranking = {
        una empieza a irse la otra YA está entrando por el otro lado -> nunca hay
        hueco invisible (esto es "que si un pixel se mete por arriba, ya aparezca
        esa fila en el otro lado"). El clon se recorta con overflow:hidden del panel. */
-    switchCard(m, colIdx, row, gi){
+    switchCard(m, colIdx, row, gi, fast){
         // Si ya está cambiando, solo actualiza el destino (no arranca otro cambio).
         if(m._switching){
             m._switchRow = row; m._switchGi = gi;
@@ -446,11 +462,17 @@ const Ranking = {
         }
 
         m._switching = true; m._switchCol = colIdx; m._switchRow = row; m._switchGi = gi;
+        const dur = fast ? 300 : 600;                     // arranque (todos ~0.00) -> más rápido
 
         // ---- CLON FANTASMA: sale POR COMPLETO por el borde de la columna ORIGEN ----
         const ghost = el.cloneNode(true);
         ghost.classList.add("switch-ghost");
         ghost.classList.remove("no-anim", "rising", "active");
+        if(fast) ghost.classList.add("switch-fast");
+        // Solo la que ADELANTA (mejora) va por ENCIMA de todo; la que baja mantiene su
+        // z normal ("como cuando no cantan").
+        if(improving) ghost.classList.add("switch-top");
+        else ghost.style.zIndex = String(src.cap - (m._pos ?? 0));
         ghost.style.setProperty("--rank-y", `${(m._pos ?? 0) * src.rowH}px`);   // arranca en su hueco actual
         src.el.appendChild(ghost);
         void ghost.offsetWidth;                                                 // fija el punto de partida
@@ -460,6 +482,9 @@ const Ranking = {
         // ---- TARJETA REAL: entra desde el BORDE OPUESTO (recorrido completo, se ve) ----
         el.classList.remove("rising");
         el.classList.add("no-anim", "switching");
+        if(fast) el.classList.add("switch-fast");
+        if(improving) el.classList.add("switch-top");         // la que adelanta, por encima
+        else el.style.zIndex = String(dest.cap - row);        // la que baja, z normal
         dest.el.appendChild(el);
         el.style.height = dest.cardH ? dest.cardH + "px" : "";
         // sube -> entra desde el borde INFERIOR del destino; baja -> desde el SUPERIOR.
@@ -471,19 +496,19 @@ const Ranking = {
         el.style.setProperty("--rank-y", `${row * dest.rowH}px`);               // desliza hasta su hueco
 
         // El clon desaparece JUSTO cuando la real ha terminado de entrar (misma
-        // duración .6s): "si la tarjeta ya está completamente en el otro lado, su
-        // clon también desaparece".
+        // duración): "si la tarjeta ya está completamente en el otro lado, su clon
+        // también desaparece".
         clearTimeout(m._cleanT);
         m._cleanT = setTimeout(() => {
             const r = m._switchRow;
             ghost.remove();
-            el.classList.remove("switching");
+            el.classList.remove("switching", "switch-fast", "switch-top");
             el.style.zIndex = String(dest.cap - r);
             if(m.rankElement) m.rankElement.textContent = m._switchGi + 1;
             m._switching = false;
             m._switchCol = undefined;
             m._switchDoneAt = performance.now();          // cooldown anti-rebote
-        }, 610);
+        }, dur + 10);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
