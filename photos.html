@@ -169,8 +169,12 @@ function applyFrame(m, f){
 function clampCrop(m){
     const maxSide = Math.min(m.iw, m.ih);
     m.side = clamp(m.side, maxSide*0.05, maxSide);   // allow much tighter zoom (down to 5%)
-    m.cx = clamp(m.cx, m.side/2, m.iw - m.side/2);
-    m.cy = clamp(m.cy, m.side/2, m.ih - m.side/2);
+    // El encuadre PUEDE salirse de la foto (deja margen vacío/transparente) para poder
+    // MOVER a la persona hasta el borde y centrarla, sin tener que agrandar la foto.
+    // Se limita a que el centro del encuadre siga dentro de la foto (como mucho, la
+    // mitad del recuadro queda fuera).
+    m.cx = clamp(m.cx, 0, m.iw);
+    m.cy = clamp(m.cy, 0, m.ih);
 }
 
 function drawInto(ctx, size, m){
