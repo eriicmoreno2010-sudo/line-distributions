@@ -51,15 +51,899 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "SUNGHO"
+      "start": 15.16,
+      "end": 17.04,
+      "members": [],
+      "original": "今しかないこのときにクランクイン",
+      "romanization": "ima shika nai kono toki ni kuranku in",
+      "english": "Crank into this one-and-only moment",
+      "adlib": false,
+      "voice": [
+        [
+          15.36,
+          17
+        ]
+      ]
+    },
+    {
+      "start": 17.2,
+      "end": 18.67,
+      "members": [],
+      "voice": [
+        [
+          17.09,
+          18.68
+        ]
+      ],
+      "original": "シナリオ通りじゃナンセンス",
+      "romanization": "shinario douri ja nansensu",
+      "english": "Following the script? Nonsense",
+      "adlib": false
+    },
+    {
+      "start": 18.82,
+      "end": 22.25,
+      "members": [],
+      "voice": [
+        [
+          18.87,
+          22.5
+        ]
+      ],
+      "original": "理想と現実の狭間で dance dance",
+      "romanization": "risou to genjitsu no hazama de dance dance",
+      "english": "Between the ideal and the real, dance dance",
+      "adlib": false
+    },
+    {
+      "start": 22.43,
+      "end": 24.14,
+      "members": [],
+      "voice": [
+        [
+          22.5,
+          24.06
+        ]
+      ],
+      "original": "このまま演じる? 優等生",
+      "romanization": "kono mama enjiru? youtousei",
+      "english": "Gonna keep pretending? Honor student",
+      "adlib": false
+    },
+    {
+      "start": 24.29,
+      "end": 25.82,
+      "members": [],
+      "voice": [
+        [
+          24.25,
+          25.93
+        ]
+      ],
+      "original": "誰のものだ? 僕らの人生",
+      "romanization": "dare no mono da? bokura no jinsei",
+      "english": "Whose is it anyway? It's our life",
+      "adlib": false
+    },
+    {
+      "start": 26.14,
+      "end": 29.35,
+      "members": [],
+      "voice": [
+        [
+          26,
+          29.44
+        ]
+      ],
+      "original": "タイトルなんていらない, 自由に描け",
+      "romanization": "taitoru nante iranai, jiyuu ni egake",
+      "english": "Don't need any titles, Sketch it out, be free",
+      "adlib": false
+    },
+    {
+      "start": 29.5,
+      "end": 31.12,
+      "members": [],
+      "voice": [
+        [
+          29.57,
+          31.19
+        ]
+      ],
+      "original": "既視感だらけのこの世界",
+      "romanization": "kishikan darake no kono sekai",
+      "english": "This world so full of déjà vu",
+      "adlib": false
+    },
+    {
+      "start": 31.3,
+      "end": 33.07,
+      "members": [],
+      "voice": [
+        [
+          31.38,
+          33.06
+        ]
+      ],
+      "original": "誰かのパロディじゃ不正解",
+      "romanization": "dareka no parodi ja fuseikai",
+      "english": "Parroting someone else is the wrong answer",
+      "adlib": false
+    },
+    {
+      "start": 33.22,
+      "end": 34.81,
+      "members": [],
+      "voice": [
+        [
+          33.22,
+          34.75
+        ]
+      ],
+      "original": "ハナ トゥル セッ 新たなフィルム",
+      "romanization": "hana dul set arata na firumu",
+      "english": "One, two, three, a fresh reel of film",
+      "adlib": false
+    },
+    {
+      "start": 34.74,
+      "end": 36.48,
+      "members": [],
+      "voice": [
+        [
+          34.74,
+          36.54
+        ]
+      ],
+      "original": "この手で回せ、今を",
+      "romanization": "kono te de mawase ima o",
+      "english": "Wind this moment with our own hands",
+      "adlib": false
+    },
+    {
+      "start": 36.53,
+      "end": 41.66,
+      "members": [],
+      "voice": [
+        [
+          36.51,
+          41.47
+        ]
+      ],
+      "original": "進め, 時代を切り取る僕らは出会った",
+      "romanization": "susume, jidai o kiritoru bokura wa deatta",
+      "english": "Push on ahead, Those who capture the era, we've met at last",
+      "adlib": false
+    },
+    {
+      "start": 41.72,
+      "end": 44.55,
+      "members": [],
+      "voice": [
+        [
+          41.58,
+          44.55
+        ]
+      ],
+      "original": "最高の未来へ",
+      "romanization": "saikou no mirai e",
+      "english": "Heading toward the finest future",
+      "adlib": false
+    },
+    {
+      "start": 44.38,
+      "end": 47.57,
+      "members": [],
+      "voice": [
+        [
+          44.49,
+          47.63
+        ]
+      ],
+      "original": "エンドロールは終わりじゃない",
+      "romanization": "endorouru wa owari janai",
+      "english": "The ending credits aren't the end",
+      "adlib": false
+    },
+    {
+      "start": 47.78,
+      "end": 51.82,
+      "members": [],
+      "voice": [
+        [
+          47.88,
+          51.83
+        ]
+      ],
+      "original": "キリなく続いてくストーリー",
+      "romanization": "kiri naku tsuzuiteku story",
+      "english": "A story that continues endlessly",
+      "adlib": false
+    },
+    {
+      "start": 51.9,
+      "end": 55,
+      "members": [],
+      "voice": [
+        [
+          51.88,
+          55
+        ]
+      ],
+      "original": "電光石火 全身全霊で dive",
+      "romanization": "denkou sekka zenshin zenrei de dive",
+      "english": "Quick as a lightning flash, with all our hearts, dive",
+      "adlib": false
+    },
+    {
+      "start": 55.01,
+      "end": 58.21,
+      "members": [],
+      "voice": [
+        [
+          54.94,
+          58.22
+        ]
+      ],
+      "original": "一瞬一秒刻め boom boom",
+      "romanization": "isshun ichibyou kizame boom boom",
+      "english": "Carving out every moment, boom boom",
+      "adlib": false
+    },
+    {
+      "start": 59.77,
+      "end": 61.56,
+      "members": [],
+      "voice": [
+        [
+          59.78,
+          61.66
+        ]
+      ],
+      "original": "この世界のスクリーンの中",
+      "romanization": "kono sekai no screen no naka",
+      "english": "Inside this world's screen",
+      "adlib": false
+    },
+    {
+      "start": 61.67,
+      "end": 63.32,
+      "members": [],
+      "voice": [
+        [
+          61.66,
+          63.39
+        ]
+      ],
+      "original": "誰もがメインプレイヤーだ",
+      "romanization": "dare mo ga mein pureiyaa da",
+      "english": "Everyone's a main player",
+      "adlib": false
+    },
+    {
+      "start": 63.47,
+      "end": 64.89,
+      "members": [],
+      "voice": [
+        [
+          63.41,
+          65.14
+        ]
+      ],
+      "original": "大人が嫉妬するボーダーライン",
+      "romanization": "otona ga shitto suru boudaarain",
+      "english": "The borderline that grown-ups envy",
+      "adlib": false
+    },
+    {
+      "start": 65.07,
+      "end": 66.58,
+      "members": [],
+      "voice": [
+        [
+          65.15,
+          66.8
+        ]
+      ],
+      "original": "堂々と行けこのレール",
+      "romanization": "doudou to ike kono reeru",
+      "english": "March right down this rail",
+      "adlib": false
+    },
+    {
+      "start": 66.76,
+      "end": 68.58,
+      "members": [],
+      "voice": [
+        [
+          67.17,
+          68.67
+        ]
+      ],
+      "original": "今しかない優越感",
+      "romanization": "ima shika nai yuuetsukan",
+      "english": "A sense of greatness that's only ours, right now",
+      "adlib": false
+    },
+    {
+      "start": 68.7,
+      "end": 70.32,
+      "members": [],
+      "voice": [
+        [
+          68.72,
+          70.37
+        ]
+      ],
+      "original": "余計なしがらみなんか",
+      "romanization": "yokei na shigarami nanka",
+      "english": "Pointless ties holding us back",
+      "adlib": false
+    },
+    {
+      "start": 70.5,
+      "end": 71.89,
+      "members": [],
+      "voice": [
+        [
+          70.45,
+          72.11
+        ]
+      ],
+      "original": "時間の無駄なだけ",
+      "romanization": "jikan no muda na dake",
+      "english": "Nothing but a waste of time",
+      "adlib": false
+    },
+    {
+      "start": 72.05,
+      "end": 73.98,
+      "members": [],
+      "voice": [
+        [
+          72.13,
+          72.13
+        ],
+        [
+          72.09,
+          73.94
+        ]
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "Bada bing bada boom, Bada bing bada boom",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 74.07,
+      "end": 75.86,
+      "members": [],
+      "voice": [
+        [
+          74.04,
+          75.83
+        ]
+      ],
+      "original": "唯一無二の存在意義",
+      "romanization": "yuiitsu muni no sonzai igi",
+      "english": "One-of-a-kind reason for being",
+      "adlib": false
+    },
+    {
+      "start": 76.01,
+      "end": 77.55,
+      "members": [],
+      "voice": [
+        [
+          75.83,
+          77.59
+        ]
+      ],
+      "original": "未完成こその輝き",
+      "romanization": "mikansei koso no kagayaki",
+      "english": "A glow made possible only because it's unfinished",
+      "adlib": false
+    },
+    {
+      "start": 77.76,
+      "end": 81.15,
+      "members": [],
+      "voice": [
+        [
+          77.65,
+          81.26
+        ]
+      ],
+      "original": "BAD END?, 傷跡全て名シーンへの伏線",
+      "romanization": "bad end?, kizuato subete mei shiin e no fukusen",
+      "english": "BAD END?, Every scar's a foreshadow for the masterpiece scene",
+      "adlib": false
+    },
+    {
+      "start": 81.18,
+      "end": 82.91,
+      "members": [],
+      "voice": [
+        [
+          81.16,
+          82.96
+        ]
+      ],
+      "original": "マンネリなストーリーぶち壊す",
+      "romanization": "manneri na sutourii buchikowasu",
+      "english": "Smash the stories full of clichés",
+      "adlib": false
+    },
+    {
+      "start": 83.07,
+      "end": 84.51,
+      "members": [],
+      "voice": [
+        [
+          82.95,
+          84.56
+        ]
+      ],
+      "original": "僕らが塗り替えるブーム",
+      "romanization": "bokura ga nurikaeru buumu",
+      "english": "The boom we write anew",
+      "adlib": false
+    },
+    {
+      "start": 84.73,
+      "end": 89.8,
+      "members": [],
+      "voice": [
+        [
+          84.76,
+          89.77
+        ]
+      ],
+      "original": "恐れずに進めよ",
+      "romanization": "osorezu ni susumeyo",
+      "english": "Don't be afraid, push on ahead",
+      "adlib": false
+    },
+    {
+      "start": 89.84,
+      "end": 92.51,
+      "members": [],
+      "voice": [
+        [
+          89.92,
+          92.63
+        ]
+      ],
+      "original": "巻き戻せはしない",
+      "romanization": "makimodose wa shinai",
+      "english": "There's no rewinding now",
+      "adlib": false
+    },
+    {
+      "start": 92.52,
+      "end": 95.73,
+      "members": [],
+      "voice": [
+        [
+          92.53,
+          95.71
+        ]
+      ],
+      "original": "エンドロールは終わりじゃない",
+      "romanization": "endorouru wa owari janai",
+      "english": "The ending credits aren't the end",
+      "adlib": false
+    },
+    {
+      "start": 95.91,
+      "end": 99.8,
+      "members": [],
+      "voice": [
+        [
+          95.93,
+          99.72
+        ]
+      ],
+      "original": "キリなく続いてくストーリー",
+      "romanization": "kiri naku tsuzuiteku story",
+      "english": "A story that continues endlessly",
+      "adlib": false
+    },
+    {
+      "start": 99.84,
+      "end": 102.95,
+      "members": [],
+      "voice": [
+        [
+          99.84,
+          102.9
+        ]
+      ],
+      "original": "電光石火 全身全霊で dive",
+      "romanization": "denkou sekka zenshin zenrei de dive",
+      "english": "Quick as a lightning flash, with all our hearts, dive",
+      "adlib": false
+    },
+    {
+      "start": 102.95,
+      "end": 106.26,
+      "members": [],
+      "voice": [
+        [
+          102.97,
+          106.2
+        ]
+      ],
+      "original": "一瞬一秒刻め boom boom",
+      "romanization": "isshun ichibyou kizame boom boom",
+      "english": "Carving out every moment, boom boom",
+      "adlib": false
+    },
+    {
+      "start": 106.76,
+      "end": 108.14,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 108.29,
+      "end": 110.03,
+      "members": [],
+      "voice": [
+        [
+          108.16,
+          109.94
+        ]
+      ],
+      "original": "今を駆け抜けろよ アクション",
+      "romanization": "ima o kakenukero yo action",
+      "english": "Race through this moment, action",
+      "adlib": false
+    },
+    {
+      "start": 110.21,
+      "end": 111.51,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 111.66,
+      "end": 113.65,
+      "members": [],
+      "voice": [
+        [
+          111.75,
+          113.57
+        ]
+      ],
+      "original": "永遠刻み込め ワンシーン",
+      "romanization": "eien kizamikome wan shiin",
+      "english": "Etch eternity into one scene",
+      "adlib": false
+    },
+    {
+      "start": 113.8,
+      "end": 114.99,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 115.18,
+      "end": 117.24,
+      "members": [],
+      "voice": [
+        [
+          115.17,
+          118.17
+        ]
+      ],
+      "original": "高鳴る鼓動",
+      "romanization": "takanaru kodou",
+      "english": "This pounding heart",
+      "adlib": false
+    },
+    {
+      "start": 117.42,
+      "end": 118.49,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 118.64,
+      "end": 123.02,
+      "members": [],
+      "voice": [
+        [
+          118.71,
+          123.03
+        ]
+      ],
+      "original": "エンドロールのその先へ dive",
+      "romanization": "endorouru no sono saki e dive",
+      "english": "Beyond the ending credits, dive",
+      "adlib": false
+    },
+    {
+      "start": 124.31,
+      "end": 126.56,
+      "members": [],
+      "voice": [
+        [
+          124.25,
+          126.7
+        ]
+      ],
+      "original": "この時代の片隅",
+      "romanization": "kono jidai no katasumi",
+      "english": "In this one corner of the era",
+      "adlib": false
+    },
+    {
+      "start": 126.71,
+      "end": 130.01,
+      "members": [],
+      "voice": [
+        [
+          126.76,
+          130.19
+        ]
+      ],
+      "original": "僕らの爪痕は勲章",
+      "romanization": "bokura no tsumeato wa kunshou",
+      "english": "The mark we've left behind is a badge of honor",
+      "adlib": false
+    },
+    {
+      "start": 130.16,
+      "end": 133.78,
+      "members": [],
+      "voice": [
+        [
+          130.06,
+          131.22
+        ],
+        [
+          131.4,
+          133.68
+        ]
+      ],
+      "original": "誰にも超えられはしない",
+      "romanization": "dare ni mo koerare wa shinai",
+      "english": "No one can ever surpass it",
+      "adlib": false
+    },
+    {
+      "start": 133.8,
+      "end": 139.88,
+      "members": [],
+      "voice": [
+        [
+          133.74,
+          139.87
+        ]
+      ],
+      "original": "強い絆 手にした軌跡",
+      "romanization": "tsuyoi kizuna te ni shita kiseki",
+      "english": "Our strong bond, and the path we grasped together",
+      "adlib": false
+    },
+    {
+      "start": 140.5,
+      "end": 144.77,
+      "members": [],
+      "voice": [
+        [
+          140.57,
+          141.71
+        ],
+        [
+          141.86,
+          142.41
+        ],
+        [
+          142.59,
+          143.35
+        ],
+        [
+          143.45,
+          144.96
+        ]
+      ],
+      "original": "エンドロールは, キリなく続いてくストーリー",
+      "romanization": "endorouru wa, kiri naku tsuzuiteku story",
+      "english": "The ending credits are, A story that continues endlessly",
+      "adlib": false
+    },
+    {
+      "start": 144.92,
+      "end": 148.61,
+      "members": [],
+      "voice": [
+        [
+          145.08,
+          146.7
+        ],
+        [
+          146.85,
+          148.59
+        ]
+      ],
+      "original": "誰かのパロディでもない, 僕らの物語",
+      "romanization": "dareka no parodi demo nai bokura no, monogatari",
+      "english": "Not some parody of somebody else, But a story all our own",
+      "adlib": false
+    },
+    {
+      "start": 148.76,
+      "end": 157.08,
+      "members": [],
+      "voice": [
+        [
+          148.76,
+          153.69
+        ],
+        [
+          153.9,
+          156.84
+        ]
+      ],
+      "original": "ともに分かち合った瞬間(とき)は, 消えない",
+      "romanization": "tomo ni wakachiatta toki wa, kienai",
+      "english": "The time we shared together, It won't ever fade away",
+      "adlib": false
+    },
+    {
+      "start": 156.51,
+      "end": 157.9,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 158.05,
+      "end": 159.73,
+      "members": [],
+      "voice": [
+        [
+          157.9,
+          159.67
+        ]
+      ],
+      "original": "今を駆け抜けろよ アクション",
+      "romanization": "ima o kakenukero yo action",
+      "english": "Race through this moment, action",
+      "adlib": false
+    },
+    {
+      "start": 159.94,
+      "end": 161.27,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 161.42,
+      "end": 163.49,
+      "members": [],
+      "voice": [
+        [
+          161.33,
+          164.08
+        ]
+      ],
+      "original": "永遠刻め",
+      "romanization": "eien kizame",
+      "english": "Etch eternity in",
+      "adlib": false
+    },
+    {
+      "start": 163.65,
+      "end": 164.83,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 165.01,
+      "end": 166.95,
+      "members": [],
+      "voice": [
+        [
+          164.82,
+          166.73
+        ]
+      ],
+      "original": "笑い飛ばせよ ラストシーン",
+      "romanization": "waraitobase yo rasuto shiin",
+      "english": "Laugh it off until the last scene",
+      "adlib": false
+    },
+    {
+      "start": 167.13,
+      "end": 168.21,
+      "members": [],
+      "original": "",
+      "romanization": "Boom boom boom",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 168.36,
+      "end": 172.82,
+      "members": [],
+      "voice": [
+        [
+          168.39,
+          172.62
+        ]
+      ],
+      "original": "エンドロールのその先へ dive",
+      "romanization": "endorouru no sono saki e dive",
+      "english": "Beyond the ending credits, dive",
+      "adlib": false
+    },
+    {
+      "start": 14.21,
+      "end": 14.56,
+      "members": [],
+      "original": "",
+      "romanization": "(Shh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          14.21,
+          14.5
+        ]
+      ]
+    },
+    {
+      "start": 59.4,
+      "end": 59.69,
+      "members": [],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          59.44,
+          59.64
+        ]
+      ]
+    },
+    {
+      "start": 123.67,
+      "end": 124.25,
+      "members": [],
+      "original": "",
+      "romanization": "(Ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          123.64,
+          124.25
+        ]
+      ]
     }
   ],
   "audio": "audio/boynextdoor_boomboomboom.mp3",
