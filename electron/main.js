@@ -624,11 +624,11 @@ ipcMain.handle("ai-model-ensure", async (evt) => {
     let resJson;
     if(fs.existsSync(resPath)){ resJson = JSON.parse(fs.readFileSync(resPath, "utf8")); }
     else { const b = await httpGetBuf(AI_CDN + "resources.json"); fs.writeFileSync(resPath, b); resJson = JSON.parse(b.toString("utf8")); }
-    // recursos: modelo isnet COMPLETO (fp32, máxima calidad -> recorta mejor la ropa,
-    // menos "se come" bordes) + runtime cpu (sin jsep/webgpu ni training). Es más
-    // grande (~170MB) y algo más lento que fp16, pero mejor recorte.
+    // recursos: modelo fp16 (buena calidad, ligero y rápido) + runtime cpu (sin
+    // jsep/webgpu ni training). Se probó el isnet fp32 completo pero NO mejora los
+    // casos difíciles (ropa que se funde con el fondo) y es más pesado/lento -> fp16.
     const need = Object.keys(resJson).filter(k =>
-      k === "/models/isnet" ||
+      k === "/models/isnet_fp16" ||
       (k.startsWith("/onnxruntime-web/") && !k.includes("jsep") && !k.includes("training")));
     const hashes = [];
     for(const k of need) for(const c of (resJson[k].chunks || [])) if(!hashes.includes(c.name)) hashes.push(c.name);

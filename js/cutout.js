@@ -357,7 +357,7 @@
       oc.getContext("2d").drawImage(orig, 0, 0);
       const blob = await new Promise(r => oc.toBlob(r, "image/png"));
       const out = await aiLib.removeBackground(blob, {
-        publicPath: ready.publicPath, model: "isnet", device: "cpu",
+        publicPath: ready.publicPath, model: "isnet_fp16", device: "cpu",
         progress: (key, cur, total) => {
           if(/fetch/i.test(key)) ovT.textContent = "Cargando IA…";
           else if(/compute|inference/i.test(key)) ovT.textContent = "Recortando con IA…";

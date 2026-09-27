@@ -32,7 +32,7 @@
   /* tamaño fijo y cuadrado: la geometría (incl. la porción que sobresale) cabe entera
      dentro del viewBox, así que nada desborda ni recoloca (evita el micro-salto). */
   #donut{ height:min(92vh,58vw); width:min(92vh,58vw); flex:none; }  /* donut MÁS grande */
-  #donut path{ stroke:var(--bg); stroke-width:1.5; }
+  #donut path{ stroke:var(--bg); stroke-width:4; stroke-linejoin:round; }
   #centerlbl{ font-weight:900; fill:var(--text); text-anchor:middle; }
   #centersub{ fill:var(--text2); text-anchor:middle; font-weight:700; }
 
