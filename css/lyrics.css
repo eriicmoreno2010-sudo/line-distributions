@@ -324,9 +324,10 @@ body.theme-light .adlib-member, body.theme-light .adlib-original, body.theme-lig
    las demás NO se muevan. */
 #adlib-msg{
     /* Dentro del panel de letras: se mete por el borde SUPERIOR (top:0 = línea de
-       arriba) y REPOSA con un pequeño margen abajo (bottom:22) para que al entrar no
-       queden pegados al borde inferior. */
-    position:absolute; right:26px; top:0; bottom:22px; width:48%; z-index:5;
+       arriba). El contenedor llega hasta el borde INFERIOR del panel (bottom:0) para
+       que una tarjeta pueda APARECER en 0px (borde de abajo) al entrar; luego el JS
+       la sube a reposar con un margen de 22px (BASE en placeAdlib). */
+    position:absolute; right:26px; top:0; bottom:0; width:48%; z-index:5;
     pointer-events:none;
     /* recorta por ARRIBA y por ABAJO (bordes de esta caja), pero NO por los lados
        (-9999px) para no cortar sombras. */

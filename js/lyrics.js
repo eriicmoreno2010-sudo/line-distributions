@@ -599,7 +599,9 @@ if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
             if(existing.some(b => !b._leaving)) return;     // ya hay una activa para este ad-lib
             existing.forEach(b => b.remove());              // reaparece justo al salir -> recrear
             const box = this.buildAdlibBox(lyrics[i]); box.dataset.i = String(i);
-            box.style.opacity = "0"; box.style.bottom = "-140px";
+            // APARECE en 0px (borde inferior del panel) y SUBE a colocarse en su hueco
+            // (22px la de abajo). Solo la ENTRADA; la salida no se toca.
+            box.style.opacity = "0"; box.style.bottom = "0px";
             msg.appendChild(box);                           // en el DOM para poder medir su alto
             const y = this.placeAdlib(msg, box);            // hueco fijo (según los que ya hay)
             requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -615,14 +617,15 @@ if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
        renglón queda pegadito y uno de 3 solo ocupa lo que necesita. */
     placeAdlib(msg, box){
         const GAP = 16;                              // separación justa entre tarjetas
+        const BASE = 22;                             // margen de reposo sobre el borde inferior (entra desde 0 y sube aquí)
         box._h = box.offsetHeight || 90;
         const occ = Array.from(msg.children)
             .filter(b => b !== box && b._bottom != null && !b._leaving);
         // ¿solaparía con alguna ya colocada si la pongo en la posición y?
         const overlapsAt = (y) => occ.some(b =>
             !(y + box._h + GAP <= b._bottom || y >= b._bottom + b._h + GAP));
-        let y = 0;                                   // por defecto, abajo del todo
-        if(occ.length && overlapsAt(0)){             // el fondo está ocupado -> apila encima de la más alta
+        let y = BASE;                                // por defecto, abajo del todo (con margen de reposo)
+        if(occ.length && overlapsAt(BASE)){          // el fondo está ocupado -> apila encima de la más alta
             y = Math.max(...occ.map(b => b._bottom + b._h)) + GAP;
         }
         box._bottom = y; box.dataset.bottom = String(y);

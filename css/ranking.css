@@ -70,11 +70,18 @@ body.two-side .member.ready{
    recorta por overflow:hidden del panel). Las dos van por encima de las demás y
    con la MISMA duración -> en cuanto una empieza a irse, la otra ya está entrando,
    nunca hay hueco invisible ni teletransporte. */
-.member.switching{ z-index:70 !important; }
+/* Curva SUAVE y algo más larga: nada de "80% del recorrido en el primer 30%"
+   (eso hacía que con tarjetas juntas pareciera teletransporte). Real y clon usan
+   EXACTAMENTE la misma -> el clon acaba de salir justo cuando la real acaba de
+   entrar, y entonces se borra. */
+.member.switching{
+    z-index:70 !important;
+    transition:transform .6s cubic-bezier(.45,0,.35,1) !important;
+}
 .member.switch-ghost{
     z-index:70 !important;
     pointer-events:none !important;
-    transition:transform .5s cubic-bezier(.22,1,.36,1) !important;
+    transition:transform .6s cubic-bezier(.45,0,.35,1) !important;
 }
 
 /* ========================= */

@@ -447,7 +447,7 @@ const Ranking = {
 
         m._switching = true; m._switchCol = colIdx; m._switchRow = row; m._switchGi = gi;
 
-        // ---- CLON FANTASMA: sale por el borde de la columna ORIGEN, a la vez ----
+        // ---- CLON FANTASMA: sale POR COMPLETO por el borde de la columna ORIGEN ----
         const ghost = el.cloneNode(true);
         ghost.classList.add("switch-ghost");
         ghost.classList.remove("no-anim", "rising", "active");
@@ -456,30 +456,34 @@ const Ranking = {
         void ghost.offsetWidth;                                                 // fija el punto de partida
         const exitY = improving ? -src.rowH : src.cap * src.rowH;               // arriba si sube, abajo si baja
         ghost.style.setProperty("--rank-y", `${exitY}px`);
-        setTimeout(() => ghost.remove(), 560);
 
-        // ---- TARJETA REAL: entra por el borde OPUESTO de la columna DESTINO ----
+        // ---- TARJETA REAL: entra desde el BORDE OPUESTO (recorrido completo, se ve) ----
         el.classList.remove("rising");
         el.classList.add("no-anim", "switching");
         dest.el.appendChild(el);
         el.style.height = dest.cardH ? dest.cardH + "px" : "";
-        const enterY = improving ? (row + 1) * dest.rowH : (row - 1) * dest.rowH; // desde debajo si sube, desde arriba si baja
+        // sube -> entra desde el borde INFERIOR del destino; baja -> desde el SUPERIOR.
+        const enterY = improving ? dest.cap * dest.rowH : -dest.rowH;
         el.style.setProperty("--rank-y", `${enterY}px`);
         m._pos = row; m._col = colIdx;
         void el.offsetWidth;                                                    // fija el punto de entrada
         el.classList.remove("no-anim");
         el.style.setProperty("--rank-y", `${row * dest.rowH}px`);               // desliza hasta su hueco
 
+        // El clon desaparece JUSTO cuando la real ha terminado de entrar (misma
+        // duración .6s): "si la tarjeta ya está completamente en el otro lado, su
+        // clon también desaparece".
         clearTimeout(m._cleanT);
         m._cleanT = setTimeout(() => {
             const r = m._switchRow;
+            ghost.remove();
             el.classList.remove("switching");
             el.style.zIndex = String(dest.cap - r);
             if(m.rankElement) m.rankElement.textContent = m._switchGi + 1;
             m._switching = false;
             m._switchCol = undefined;
             m._switchDoneAt = performance.now();          // cooldown anti-rebote
-        }, 520);
+        }, 610);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
