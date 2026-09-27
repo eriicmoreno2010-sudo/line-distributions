@@ -58,7 +58,7 @@ Version: 4.0 — Ranking (transform leaderboard)
    para que no se monten unas sobre otras (era lo que hacía "desaparecer" alguna). */
 body.two-side .member.ready{
     transition:
-        transform .44s cubic-bezier(.45,.05,.35,1),   /* curva suave (accel+decel) = adelantos FLUIDOS con muchos */
+        transform .4s cubic-bezier(.4,0,.2,1),        /* ease-out, SIN overshoot, algo más rápido */
         box-shadow .18s var(--ease),
         background-color .18s var(--ease),
         border-color .18s var(--ease);
@@ -75,7 +75,7 @@ body.two-side .member.ready{
    EXACTAMENTE la misma -> el clon acaba de salir justo cuando la real acaba de
    entrar, y entonces se borra. */
 .member.switching{
-    transition:transform .32s cubic-bezier(.45,.05,.35,1) !important;
+    transition:transform .32s cubic-bezier(.4,0,.2,1) !important;
 }
 /* El CLON sale RÁPIDO (más que la real) y siempre a la misma velocidad -> se percibe
    UNA sola tarjeta (la real entrando), no dos. */
@@ -86,10 +86,10 @@ body.two-side .member.ready{
 /* SOLO la tarjeta que ADELANTA (mejora de puesto) va por encima de todo; la que baja
    mantiene su z normal ("como cuando no cantan"). */
 .member.switch-top{ z-index:70 !important; }
-/* Ya cantando y muy juntos: cruce corto y más rápido (curva suave = fluido). */
-.member.switch-fast{ transition:transform .22s cubic-bezier(.45,.05,.35,1) !important; }
+/* Ya cantando y muy juntos: cruce corto y más rápido. */
+.member.switch-fast{ transition:transform .22s cubic-bezier(.4,0,.2,1) !important; }
 /* Arranque (casi todos en 0.00): cruce COMPLETO (columna entera), más pausado y visible. */
-.member.switch-full{ transition:transform .46s cubic-bezier(.45,.05,.35,1) !important; }
+.member.switch-full{ transition:transform .46s cubic-bezier(.4,0,.2,1) !important; }
 /* El clon NO se borra de golpe: se funde (y el JS lo quita 1s después). */
 .member.switch-ghost.ghost-out{
     opacity:0 !important;
