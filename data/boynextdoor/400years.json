@@ -2,7 +2,7 @@
   "group": "BOYNEXTDOOR",
   "song": "400 Years",
   "video": "videos/boynextdoor_400years_muk4zkka.mp4",
-  "duration": 0,
+  "duration": 143.559375,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -51,19 +51,17 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "SUNGHO"
-      ],
+      "start": 14.1,
+      "end": 17.56,
+      "members": [],
       "original": "오늘도 처음을 열게 됐네요",
       "romanization": "oneuldo cheoeumeul yeolge dwaenneyo",
       "english": "Here I am, writing the opening line again",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.6,
+      "end": 20.82,
       "members": [],
       "original": "애교도 없는 저였지만",
       "romanization": "aegyodo eomneun jeoyeotjiman",
@@ -71,8 +69,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.97,
+      "end": 23.43,
       "members": [],
       "original": "이젠 널 위해 전해주죠",
       "romanization": "ijen neol wihae jeonhaejujyo",
@@ -80,8 +78,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.74,
+      "end": 25.71,
       "members": [],
       "original": "제가 참 많이 4&해요",
       "romanization": "jega cham mani saranghaeyo",
@@ -89,44 +87,26 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.5,
+      "end": 30.58,
       "members": [],
-      "original": "Ooh ooh my baby",
-      "romanization": "ooh ooh my baby",
-      "english": "Ooh ooh my baby",
+      "original": "Ooh ooh my baby, 네가 기댈 어깬 여기에",
+      "romanization": "ooh ooh my baby, nega gidael eokkaen yeogie",
+      "english": "Ooh ooh my baby, Here's a shoulder you can lean on",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 31.07,
+      "end": 35.97,
       "members": [],
-      "original": "네가 기댈 어깬 여기에",
-      "romanization": "nega gidael eokkaen yeogie",
-      "english": "Here's a shoulder you can lean on",
+      "original": "“Love you”, that's the only thing I can say, 오늘도 난",
+      "romanization": "“love you”, that's the only thing i can say, oneuldo nan",
+      "english": "“Love you”, that's the only thing I can say, Even tonight",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "“Love you”, that's the only thing I can say",
-      "romanization": "love you, that's the only thing i can say",
-      "english": "“Love you”, that's the only thing I can say",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "오늘도 난",
-      "romanization": "oneuldo nan",
-      "english": "Even tonight",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 36.15,
+      "end": 42.46,
       "members": [],
       "original": "달빛에 네가 더 그리운 밤",
       "romanization": "dalbiche nega deo geuriun bam",
@@ -134,8 +114,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.73,
+      "end": 48.29,
       "members": [],
       "original": "이 우주에서 가장 따뜻한 나날들",
       "romanization": "i ujueseo gajang ttatteuthan nanaldeul",
@@ -143,8 +123,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 48.44,
+      "end": 54.01,
       "members": [],
       "original": "지나갈 내 봄 중 400번을 함께해 줘",
       "romanization": "jinagal nae bom jung sabaekbeoneul hamkkehae jwo",
@@ -152,26 +132,17 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 54.06,
+      "end": 66.52,
       "members": [],
-      "original": "I love you",
-      "romanization": "i love you",
-      "english": "I love you",
+      "original": "I love you, I love you, 400년만 함께해 우리",
+      "romanization": "i love you, i love you, sabaengnyeonman hamkkehae uri",
+      "english": "I love you, I love you, Let's stay together for just 400 years",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "400년만 함께해 우리",
-      "romanization": "sabaengnyeonman hamkkehae uri",
-      "english": "Let's stay together for just 400 years",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 67.74,
+      "end": 70.8,
       "members": [],
       "original": "옷차림도 머리도 걷는 폼까지도",
       "romanization": "otcharimdo meorido geonneun pomkkajido",
@@ -179,71 +150,53 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.39,
+      "end": 72.62,
       "members": [],
       "original": "널 만난 뒤 바뀌어",
-      "romanization": "neol mannan dwi bakkwieo ireon iri",
+      "romanization": "neol mannan dwi bakkwieo",
       "english": "have changed since I met you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.72,
+      "end": 76.38,
       "members": [],
-      "original": "이런 일이",
-      "romanization": "cheongbajido an dwijibeo ipgo danyeo babe",
-      "english": "How could this be",
+      "original": "이런 일이, 청바지도 안 뒤집어 입고 다녀 babe",
+      "romanization": "ireon iri, cheongbajido an dwijibeo ipgo danyeo babe",
+      "english": "How could this be, I don't even wear my jeans inside out anymore, babe",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "청바지도 안 뒤집어 입고 다녀 babe",
-      "romanization": "je maeum aljyo",
-      "english": "I don't even wear my jeans inside out anymore, babe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 76.84,
+      "end": 77.41,
       "members": [],
       "original": "제 마음 알죠",
-      "romanization": "hanchameun deo bujokan nareul",
+      "romanization": "je maeum aljyo",
       "english": "Do you see how I feel?",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 77.56,
+      "end": 84.33,
       "members": [],
-      "original": "한참은 더 부족한 나를",
-      "romanization": "i baboreul ttatteuthage anajwoseo",
-      "english": "Thank you for warmly embracing",
+      "original": "한참은 더 부족한 나를, 이 바보를 따뜻하게 안아줘서",
+      "romanization": "hanchameun deo bujokan nareul, i baboreul ttatteuthage anajwoseo",
+      "english": "Thank you for warmly embracing, this stupid, silly me",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "이 바보를 따뜻하게 안아줘서",
-      "romanization": "gomawo han beondo",
-      "english": "this stupid, silly me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 84.77,
+      "end": 89.75,
       "members": [],
       "original": "고마워 한 번도 느껴본 적 없었어",
-      "romanization": "neukkyeobon jeok eopseosseo",
+      "romanization": "gomawo han beondoneukkyeobon jeok eopseosseo",
       "english": "I've never felt this before",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 89.79,
+      "end": 96.47,
       "members": [],
       "original": "한없이 네가 생각나는 밤",
       "romanization": "haneopsi nega saenggangnaneun bam",
@@ -251,8 +204,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 96.53,
+      "end": 101.96,
       "members": [],
       "original": "이 우주에서 가장 따뜻한 나날들",
       "romanization": "i ujueseo gajang ttatteuthan nanaldeul",
@@ -260,8 +213,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 102.11,
+      "end": 107.48,
       "members": [],
       "original": "지나갈 내 겨울 중 400번을 함께해 줘",
       "romanization": "jinagal nae gyeoul jung sabaekbeoneul hamkkehae jwo",
@@ -269,66 +222,39 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 107.65,
+      "end": 120.25,
       "members": [],
-      "original": "I need you",
-      "romanization": "i need you",
-      "english": "I need you",
+      "original": "I need you, I need you, 400년만 함께해 우리",
+      "romanization": "i need you, i need you, sabaengnyeonman hamkkehae uri",
+      "english": "I need you, I need you, Let's stay together for just 400 years",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.85,
+      "end": 131.9,
       "members": [],
-      "original": "400년만 함께해 우리",
-      "romanization": "sabaengnyeonman hamkkehae uri",
-      "english": "Let's stay together for just 400 years",
+      "original": "Hi, 할 말은 많아, But I can’t say, 네 앞에만 서면",
+      "romanization": "hi hal mareun mana, but i can't say, ne apeman seomyeon",
+      "english": "Hi, I have a lot to say, But I can’t say it, when I'm in front of you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.98,
+      "end": 135.07,
       "members": [],
-      "original": "Hi, 할 말은 많아",
-      "romanization": "hi hal mareun mana",
-      "english": "Hi, I have a lot to say",
+      "original": "",
+      "romanization": "Just, dancing, us together",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 135.27,
+      "end": 141.67,
       "members": [],
-      "original": "But I can’t say",
-      "romanization": "but i can't say",
-      "english": "But I can’t say it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네 앞에만 서면",
-      "romanization": "ne apeman seomyeon",
-      "english": "when I'm in front of you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Just",
-      "romanization": "just",
-      "english": "Just",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "dancing, us together",
-      "romanization": "dancing us together",
-      "english": "dancing, us together",
+      "original": "",
+      "romanization": "Oh oh, dancing, us together",
+      "english": "",
       "adlib": false
     }
   ]
