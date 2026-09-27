@@ -2,7 +2,7 @@
   "group": "BOYNEXTDOOR",
   "song": "Count To Love",
   "video": "videos/boynextdoor_counttolove_muk7mn1n.mp4",
-  "duration": 0,
+  "duration": 157.94875,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -61,5 +61,6 @@
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/boynextdoor_counttolove.mp3"
 }
