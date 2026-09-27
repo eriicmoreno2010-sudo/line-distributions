@@ -9,42 +9,42 @@
     {
       "name": "SUNGHO",
       "image": "images/boynextdoor/animal/sungho.png",
-      "color": "#ff4d6d",
+      "color": "#0203b1",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "RIWOO",
       "image": "images/boynextdoor/animal/riwoo.png",
-      "color": "#4dabf7",
+      "color": "#ff0000",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JAEHYUN",
       "image": "images/boynextdoor/animal/jaehyun.png",
-      "color": "#51cf66",
+      "color": "#be731a",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "TAESAN",
       "image": "images/boynextdoor/animal/taesan.png",
-      "color": "#ffd43b",
+      "color": "#ff5833",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "LEEHAN",
       "image": "images/boynextdoor/animal/leehan.png",
-      "color": "#cc5de8",
+      "color": "#3ea26f",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "WOONHAK",
       "image": "images/boynextdoor/animal/woonhak.png",
-      "color": "#20c997",
+      "color": "#a61ece",
       "focus": 50,
       "lift": 3
     }
