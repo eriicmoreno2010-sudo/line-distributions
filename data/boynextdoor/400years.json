@@ -53,7 +53,9 @@
     {
       "start": 14.1,
       "end": 17.56,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
       "original": "오늘도 처음을 열게 됐네요",
       "romanization": "oneuldo cheoeumeul yeolge dwaenneyo",
       "english": "Here I am, writing the opening line again",
@@ -72,7 +74,9 @@
     {
       "start": 18.6,
       "end": 20.82,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
       "original": "애교도 없는 저였지만",
       "romanization": "aegyodo eomneun jeoyeotjiman",
       "english": "I've never acted cute",
@@ -87,7 +91,9 @@
     {
       "start": 20.97,
       "end": 23.43,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
       "original": "이젠 널 위해 전해주죠",
       "romanization": "ijen neol wihae jeonhaejujyo",
       "english": "But now I'm doing it for you",
@@ -102,7 +108,9 @@
     {
       "start": 23.74,
       "end": 25.71,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
       "original": "제가 참 많이 4&해요",
       "romanization": "jega cham mani saranghaeyo",
       "english": "I really 4& you",
@@ -117,7 +125,9 @@
     {
       "start": 25.5,
       "end": 30.58,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
       "original": "Ooh ooh my baby, 네가 기댈 어깬 여기에",
       "romanization": "ooh ooh my baby, nega gidael eokkaen yeogie",
       "english": "Ooh ooh my baby, Here's a shoulder you can lean on",
@@ -140,7 +150,9 @@
     {
       "start": 31.07,
       "end": 35.97,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
       "original": "“Love you”, that's the only thing I can say, 오늘도 난",
       "romanization": "“love you”, that's the only thing i can say, oneuldo nan",
       "english": "“Love you”, that's the only thing I can say, Even tonight",
@@ -163,7 +175,9 @@
     {
       "start": 36.15,
       "end": 42.46,
-      "members": [],
+      "members": [
+        "RIWOO"
+      ],
       "original": "달빛에 네가 더 그리운 밤",
       "romanization": "dalbiche nega deo geuriun bam",
       "english": "Missing you more under the moonlight",
@@ -186,7 +200,9 @@
     {
       "start": 42.73,
       "end": 48.29,
-      "members": [],
+      "members": [
+        "BOYNEXTDOOR"
+      ],
       "original": "이 우주에서 가장 따뜻한 나날들",
       "romanization": "i ujueseo gajang ttatteuthan nanaldeul",
       "english": "Join me through all of 400 springs that will pass me by",
@@ -195,7 +211,9 @@
     {
       "start": 48.44,
       "end": 54.01,
-      "members": [],
+      "members": [
+        "BOYNEXTDOOR"
+      ],
       "original": "지나갈 내 봄 중 400번을 함께해 줘",
       "romanization": "jinagal nae bom jung sabaekbeoneul hamkkehae jwo",
       "english": "On the warmest days in this universe",
@@ -204,7 +222,9 @@
     {
       "start": 54.06,
       "end": 66.52,
-      "members": [],
+      "members": [
+        "BOYNEXTDOOR"
+      ],
       "original": "I love you, I love you, 400년만 함께해 우리",
       "romanization": "i love you, i love you, sabaengnyeonman hamkkehae uri",
       "english": "I love you, I love you, Let's stay together for just 400 years",
@@ -213,7 +233,9 @@
     {
       "start": 67.74,
       "end": 70.8,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "옷차림도 머리도 걷는 폼까지도",
       "romanization": "otcharimdo meorido geonneun pomkkajido",
       "english": "My clothes, my hair, even the way I walk",
@@ -228,7 +250,9 @@
     {
       "start": 71.39,
       "end": 72.62,
-      "members": [],
+      "members": [
+        "JAEHYUN"
+      ],
       "original": "널 만난 뒤 바뀌어",
       "romanization": "neol mannan dwi bakkwieo",
       "english": "have changed since I met you",
@@ -241,17 +265,37 @@
       ]
     },
     {
-      "start": 72.72,
-      "end": 76.38,
-      "members": [],
-      "original": "이런 일이, 청바지도 안 뒤집어 입고 다녀 babe",
-      "romanization": "ireon iri, cheongbajido an dwijibeo ipgo danyeo babe",
-      "english": "How could this be, I don't even wear my jeans inside out anymore, babe",
+      "start": 72.76,
+      "end": 73.37,
+      "members": [
+        "JAEHYUN",
+        "RIWOO"
+      ],
+      "original": "이런 일이",
+      "romanization": "ireon iri",
+      "english": "How could this be",
       "adlib": false,
       "voice": [
         [
-          72.71,
-          76.41
+          72.74,
+          73.49
+        ]
+      ]
+    },
+    {
+      "start": 73.52,
+      "end": 76.41,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "청바지도 안 뒤집어 입고 다녀 babe",
+      "romanization": "cheongbajido an dwijibeo ipgo danyeo babe",
+      "english": "I don't even wear my jeans inside out anymore, babe",
+      "adlib": false,
+      "voice": [
+        [
+          73.51,
+          76.46
         ]
       ]
     },
