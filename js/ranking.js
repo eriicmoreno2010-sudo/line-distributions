@@ -412,71 +412,74 @@ const Ranking = {
         }
     },
 
-    /* Column change: la tarjeta VUELA de una columna a la otra POR ENCIMA del vídeo,
-       siempre visible (nada de fundirse ni teletransportarse). Se saca a #app como
-       capa flotante en su posición de ORIGEN y se desliza hasta la de DESTINO; al
-       llegar se suelta en su hueco de la nueva columna. */
+    /* Column change SIMULTÁNEO: la tarjeta REAL entra por el borde OPUESTO de la
+       nueva columna a la vez que un CLON fantasma sale por el borde de la vieja.
+       Ambas arrancan en el MISMO frame y con la MISMA duración, así que en cuanto
+       una empieza a irse la otra YA está entrando por el otro lado -> nunca hay
+       hueco invisible (esto es "que si un pixel se mete por arriba, ya aparezca
+       esa fila en el otro lado"). El clon se recorta con overflow:hidden del panel. */
     switchCard(m, colIdx, row, gi){
-        // Si ya está volando, solo actualiza el destino (no arranca otro vuelo).
+        // Si ya está cambiando, solo actualiza el destino (no arranca otro cambio).
         if(m._switching){
             m._switchRow = row; m._switchGi = gi;
             if(m.rankElement) m.rankElement.textContent = gi + 1;
             return;
         }
 
+        const src  = this.columns[m._col];
         const dest = this.columns[colIdx];
         const el   = m.element;
-        const app  = document.getElementById("app");
-        if(!app){ /* sin canvas: coloca directo */ dest.el.appendChild(el); el.style.setProperty("--rank-y", `${row*dest.rowH}px`); m._pos=row; m._col=colIdx; return; }
-        const scale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--ui-scale")) || 1;
-        const appRect = app.getBoundingClientRect();
+        const improving = colIdx < m._col;                // sube (izq. es mejor) vs. baja
 
-        m._switching = true; m._switchCol = colIdx; m._switchRow = row; m._switchGi = gi;
-        el.classList.remove("rising", "no-anim");
         if(m.rankElement) m.rankElement.textContent = gi + 1;
 
-        // 1) posición ORIGEN (en pantalla)
-        const fromVP = el.getBoundingClientRect();
-        // 2) colócala (sin animar) en su hueco final de la nueva columna para medir DESTINO
-        el.classList.add("no-anim");
+        // Export determinista (sin transiciones CSS): colócala directa, sin clon.
+        if(this.det || !src){
+            dest.el.appendChild(el);
+            el.style.height = dest.cardH ? dest.cardH + "px" : "";
+            const y = row * dest.rowH;
+            el.style.setProperty("--rank-y", `${y}px`);
+            m._slotY = y; m._curY = y; m._tweenTo = y;
+            el.style.zIndex = String(dest.cap - row);
+            m._pos = row; m._col = colIdx; m._switchDoneAt = performance.now();
+            return;
+        }
+
+        m._switching = true; m._switchCol = colIdx; m._switchRow = row; m._switchGi = gi;
+
+        // ---- CLON FANTASMA: sale por el borde de la columna ORIGEN, a la vez ----
+        const ghost = el.cloneNode(true);
+        ghost.classList.add("switch-ghost");
+        ghost.classList.remove("no-anim", "rising", "active");
+        ghost.style.setProperty("--rank-y", `${(m._pos ?? 0) * src.rowH}px`);   // arranca en su hueco actual
+        src.el.appendChild(ghost);
+        void ghost.offsetWidth;                                                 // fija el punto de partida
+        const exitY = improving ? -src.rowH : src.cap * src.rowH;               // arriba si sube, abajo si baja
+        ghost.style.setProperty("--rank-y", `${exitY}px`);
+        setTimeout(() => ghost.remove(), 560);
+
+        // ---- TARJETA REAL: entra por el borde OPUESTO de la columna DESTINO ----
+        el.classList.remove("rising");
+        el.classList.add("no-anim", "switching");
         dest.el.appendChild(el);
         el.style.height = dest.cardH ? dest.cardH + "px" : "";
-        el.style.setProperty("--rank-y", `${row * dest.rowH}px`);
+        const enterY = improving ? (row + 1) * dest.rowH : (row - 1) * dest.rowH; // desde debajo si sube, desde arriba si baja
+        el.style.setProperty("--rank-y", `${enterY}px`);
         m._pos = row; m._col = colIdx;
-        const toVP = el.getBoundingClientRect();
-        // 3) sácala a #app como capa flotante en la pos de ORIGEN (coords del lienzo 1920)
-        const fx = (fromVP.left - appRect.left) / scale, fy = (fromVP.top - appRect.top) / scale;
-        const tx = (toVP.left   - appRect.left) / scale, ty = (toVP.top   - appRect.top) / scale;
-        el.classList.add("flying");
-        el.style.left = fx + "px"; el.style.top = fy + "px"; el.style.right = "auto";
-        el.style.width = (fromVP.width / scale) + "px";
-        el.style.setProperty("--rank-y", "0px");
-        el.style.transform = "none";
-        app.appendChild(el);
-        void el.offsetWidth;                              // reflow: fija la pos de origen
+        void el.offsetWidth;                                                    // fija el punto de entrada
         el.classList.remove("no-anim");
-        el.classList.add("flying-go");                    // transición de transform
-        el.style.transform = `translate(${(tx - fx).toFixed(2)}px, ${(ty - fy).toFixed(2)}px)`;
+        el.style.setProperty("--rank-y", `${row * dest.rowH}px`);               // desliza hasta su hueco
 
         clearTimeout(m._cleanT);
         m._cleanT = setTimeout(() => {
-            // 4) aterriza: de vuelta a la columna destino, en su hueco (último objetivo)
             const r = m._switchRow;
-            el.classList.remove("flying", "flying-go");
-            el.style.left = ""; el.style.top = ""; el.style.right = ""; el.style.width = ""; el.style.transform = "";
-            el.classList.add("no-anim");
-            dest.el.appendChild(el);
-            el.style.height = dest.cardH ? dest.cardH + "px" : "";
-            el.style.setProperty("--rank-y", `${r * dest.rowH}px`);
+            el.classList.remove("switching");
             el.style.zIndex = String(dest.cap - r);
-            m._pos = r; m._col = colIdx;
             if(m.rankElement) m.rankElement.textContent = m._switchGi + 1;
-            void el.offsetWidth;
-            el.classList.remove("no-anim");
             m._switching = false;
             m._switchCol = undefined;
             m._switchDoneAt = performance.now();          // cooldown anti-rebote
-        }, 350);
+        }, 520);
     },
 
     /* Update text, bars and active glow in place (no layout change). */
