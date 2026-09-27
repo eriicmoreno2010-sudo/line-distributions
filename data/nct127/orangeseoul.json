@@ -11,63 +11,126 @@
       "image": "images/nct127/orangeseoul/taeil.png",
       "color": "#f273ca",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "size": 0.6667,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "JOHNNY",
       "image": "images/nct127/orangeseoul/johnny.png",
       "color": "#31b287",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.3489,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "TAEYONG",
       "image": "images/nct127/orangeseoul/taeyong.png",
       "color": "#c80404",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "YUTA",
       "image": "images/nct127/orangeseoul/yuta.png",
       "color": "#dd7f10",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "DOYOUNG",
       "image": "images/nct127/orangeseoul/doyoung.png",
       "color": "#1100ff",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.3489,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "JAEHYUN",
       "image": "images/nct127/orangeseoul/jaehyun.png",
       "color": "#bf9b00",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.3489,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "JUNGWOO",
       "image": "images/nct127/orangeseoul/jungwoo.png",
       "color": "#4d6593",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "MARK",
       "image": "images/nct127/orangeseoul/mark.png",
       "color": "#cb6ce6",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nct127/orangeseoul/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 1,
+        "rot": 0,
+        "flip": false
+      }
     }
   ],
   "lyrics": [
