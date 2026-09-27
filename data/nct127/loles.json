@@ -67,19 +67,11 @@
       }
     },
     {
-      "name": "JUNGWOO",
-      "image": "images/nct127/loles/jungwoo.png",
-      "color": "#4d6593",
+      "name": "HAECHAN",
+      "image": "images/nct127/loles/haechan.png",
+      "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3,
-      "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
-        "rot": 0,
-        "flip": false,
-        "blur": 0
-      }
+      "lift": 3
     },
     {
       "name": "MARK",
@@ -259,7 +251,9 @@
     {
       "start": 45.04,
       "end": 48.88,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "지도에도 없는 Route, 누구나 아는 쉬운 길은, 전부 벗어나",
       "romanization": "jidoedo eomneun route, nuguna aneun swiun gireun, jeonbu beoseona",
       "english": "A route that doesn’t even exist on the map, Let’s get off all the easy roads, Everyone knows",
@@ -274,7 +268,9 @@
     {
       "start": 49.16,
       "end": 52.2,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "낯설은 Avenue, 기꺼이 헤매볼까",
       "romanization": "natseoreun avenue, gikkeoi hemaebolkka",
       "english": "An unfamiliar avenue, Shall we willingly get lost?",
@@ -491,7 +487,9 @@
     {
       "start": 95.2,
       "end": 99.32,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "단숨에 지구 위를, 몇 바퀴를 도는 기분",
       "romanization": "dansume jigu wireul, myeot bakwireul doneun gibun",
       "english": "In one breath, around the Earth, Feels like we’re circling it a few times",
@@ -510,7 +508,9 @@
     {
       "start": 99.67,
       "end": 103.27,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "Free and crazy, With my crew all in the backseat",
       "english": "",
@@ -865,7 +865,9 @@
     {
       "start": 94,
       "end": 95.02,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Mm yeah)",
       "english": "",
@@ -980,7 +982,9 @@
     {
       "start": 150.3,
       "end": 153.22,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "(My coupe, 데리러 갈게)",
       "romanization": "(my coupe, derireo galge)",
       "english": "(My coupe, I’ll come pick you up)",
