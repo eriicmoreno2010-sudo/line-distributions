@@ -1,0 +1,65 @@
+{
+  "group": "BOYNEXTDOOR",
+  "song": "Count To Love",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "members": [
+    {
+      "name": "SUNGHO",
+      "image": "images/boynextdoor/counttolove/sungho.png",
+      "color": "#0203b1",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RIWOO",
+      "image": "images/boynextdoor/counttolove/riwoo.png",
+      "color": "#ff0000",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHYUN",
+      "image": "images/boynextdoor/counttolove/jaehyun.png",
+      "color": "#be731a",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAESAN",
+      "image": "images/boynextdoor/counttolove/taesan.png",
+      "color": "#ff5833",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "LEEHAN",
+      "image": "images/boynextdoor/counttolove/leehan.png",
+      "color": "#3ea26f",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOONHAK",
+      "image": "images/boynextdoor/counttolove/woonhak.png",
+      "color": "#a61ece",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SUNGHO"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
