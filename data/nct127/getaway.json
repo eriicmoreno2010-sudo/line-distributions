@@ -932,9 +932,9 @@
       "members": [
         "JOHNNY"
       ],
-      "original": "새로운 Main course",
+      "original": "(새로운 Main course)",
       "romanization": "(saeroun main course)",
-      "english": "A new main course",
+      "english": "(A new main course)",
       "adlib": true,
       "voice": [
         [
@@ -1088,5 +1088,5 @@
   "cover": "covers/nct127_getaway.jpg",
   "npC1": "#45f505",
   "npC2": "#fcff2e",
-  "audioOffset": -0.55
+  "audioOffset": 0
 }
