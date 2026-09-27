@@ -62,6 +62,10 @@
         <label>Rotación (0–360°) — <span id="rotval">0</span>°</label>
         <input id="rot" type="range" min="0" max="360" step="1" value="0">
       </div>
+      <div class="ctl">
+        <label>Desenfoque — <span id="blurval">0</span></label>
+        <input id="blur" type="range" min="0" max="1" step="0.01" value="0">
+      </div>
       <div class="btns">
         <button class="sec" id="prev-btn">◀ Anterior</button>
         <button class="sec" id="next-btn">Siguiente ▶</button>
@@ -115,6 +119,7 @@ const zoom = document.getElementById("zoom");
 const vy = document.getElementById("vy");
 const vx = document.getElementById("vx");
 const rot = document.getElementById("rot");
+const blur = document.getElementById("blur");
 
 const SONG_URL = new URLSearchParams(location.search).get("song") || "data/nctdream/moonlight.json";
 fetch(SONG_URL).then(r=>r.json()).then(async d=>{
@@ -157,12 +162,14 @@ function applyFrame(m, f){
         m.cy   = (isFinite(f.cy) ? f.cy : 0.44) * m.ih;
         m.rot  = f.rot || 0;
         m.flip = !!f.flip;
+        m.blur = isFinite(f.blur) ? f.blur : 0;
     } else {
         m.side = m.iw;                 // por defecto: cuadrado a lo ancho, centrado en la cabeza
         m.cx   = m.iw/2;
         m.cy   = clamp(0.44*m.ih, m.side/2, m.ih - m.side/2);
         m.rot  = 0;
         m.flip = false;
+        m.blur = 0;
     }
 }
 
@@ -194,7 +201,20 @@ function drawInto(ctx, size, m){
         ctx.rotate(m.rot * Math.PI/180);
         ctx.translate(-size/2, -size/2);
     }
-    ctx.drawImage(m.img, m.cx-m.side/2, m.cy-m.side/2, m.side, m.side, 0, 0, size, size);
+    // Desenfoque opcional. Se dibuja un poco MÁS GRANDE (overscan) para que el blur no
+    // chupe transparencia en los bordes visibles (nada de anillo oscuro). El encuadre
+    // visible sigue siendo exactamente el mismo.
+    const bpx = m.blur ? m.blur * size * 0.05 : 0;
+    if(bpx){
+        ctx.filter = "blur(" + bpx.toFixed(2) + "px)";
+        const over = bpx * 2, srcOver = over * (m.side / size);
+        ctx.drawImage(m.img,
+            m.cx - m.side/2 - srcOver, m.cy - m.side/2 - srcOver, m.side + 2*srcOver, m.side + 2*srcOver,
+            -over, -over, size + 2*over, size + 2*over);
+        ctx.filter = "none";
+    } else {
+        ctx.drawImage(m.img, m.cx-m.side/2, m.cy-m.side/2, m.side, m.side, 0, 0, size, size);
+    }
     ctx.restore();
 }
 
@@ -209,6 +229,8 @@ function render(){
     vx.value   = (m.cx / m.iw).toFixed(3);
     rot.value  = (m.rot || 0);
     document.getElementById("rotval").textContent = Math.round(m.rot || 0);
+    blur.value = (m.blur || 0);
+    document.getElementById("blurval").textContent = Math.round((m.blur || 0) * 100);
     // update this thumb
     if(m.thumbCtx) drawInto(m.thumbCtx, 64, m);
     buildOutput();
@@ -225,6 +247,7 @@ zoom.addEventListener("input", ()=>{ const m=cur(); m.side = parseFloat(zoom.val
 vy.addEventListener("input", ()=>{ const m=cur(); m.cy = parseFloat(vy.value)*m.ih; m.dirty=true; render(); });
 vx.addEventListener("input", ()=>{ const m=cur(); m.cx = parseFloat(vx.value)*m.iw; m.dirty=true; render(); });
 rot.addEventListener("input", ()=>{ const m=cur(); m.rot = parseFloat(rot.value)||0; m.dirty=true; render(); });
+blur.addEventListener("input", ()=>{ const m=cur(); m.blur = parseFloat(blur.value)||0; m.dirty=true; render(); });
 document.getElementById("flipH").addEventListener("click", ()=>{ const m=cur(); if(!m) return; m.flip = !m.flip; m.dirty=true; render(); });
 
 document.getElementById("prev-btn").addEventListener("click", ()=>select(idx-1));
@@ -248,7 +271,7 @@ function applyClipTo(m){
 }
 document.getElementById("copyFrame").addEventListener("click", ()=>{
     const m=cur(); if(!m || !m.iw) return;
-    frameClip = { size:m.side/m.iw, cx:m.cx/m.iw, cy:m.cy/m.ih, rot:m.rot||0, flip:!!m.flip };
+    frameClip = { size:m.side/m.iw, cx:m.cx/m.iw, cy:m.cy/m.ih, rot:m.rot||0, flip:!!m.flip, blur:m.blur||0 };
     document.getElementById("pasteFrame").disabled = false;
     document.getElementById("pasteAll").disabled = false;
     const b=document.getElementById("copyFrame"); const t=b.textContent; b.textContent="✓ Copiado"; setTimeout(()=>b.textContent=t,1200);
@@ -404,7 +427,8 @@ if(!(window.desktop && window.desktop.savePhotos)){
                 cy:   +(m.cy / m.ih).toFixed(4),
                 size: +(m.side / m.iw).toFixed(4),
                 rot:  Math.round(m.rot || 0),
-                flip: !!m.flip
+                flip: !!m.flip,
+                blur: +(m.blur || 0).toFixed(3)
             };
             // hornear y subir SOLO los que has tocado (los demás no se tocan)
             if(!m.dirty) return;
