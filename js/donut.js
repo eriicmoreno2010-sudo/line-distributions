@@ -4,7 +4,7 @@
 (function(){
   const $ = s => document.querySelector(s);
   const TAU = Math.PI * 2;
-  const CX = 250, CY = 250, R = 205, r = 90, POP_R = 16;  // hueco interior MÁS PEQUEÑO (r); el anillo queda más grueso. POP: solo crece el radio EXTERIOR
+  const CX = 250, CY = 250, R = 172, r = 76, POP_R = 13;  // donut MÁS PEQUEÑO en conjunto (R menor -> más margen) y hueco interior pequeño (r). POP: solo crece el radio EXTERIOR
   const GAP = 0;   // sin separación entre porciones (así las muy pequeñas —0.3%— también se ven)
 
   const svgNS = "http://www.w3.org/2000/svg";
@@ -173,9 +173,9 @@
       const nm = singers.length > 1 ? "VARIOS" : singers[0].name;
       centerLbl.textContent = nm;
       // hueco más pequeño -> nombre algo más pequeño para que siga cabiendo
-      centerLbl.setAttribute("font-size", nm.length > 8 ? 16 : nm.length > 6 ? 20 : nm.length > 4 ? 24 : 28);
+      centerLbl.setAttribute("font-size", nm.length > 8 ? 14 : nm.length > 6 ? 17 : nm.length > 4 ? 21 : 24);
       centerSub.textContent = "cantando";
-    } else { centerLbl.textContent = "—"; centerLbl.setAttribute("font-size", 28); centerSub.textContent = ""; }
+    } else { centerLbl.textContent = "—"; centerLbl.setAttribute("font-size", 24); centerSub.textContent = ""; }
 
     const d = curDur() || 0;
     if(!clock.seeking) seek.value = d > 0 ? Math.round(t/d*1000) : 0;
