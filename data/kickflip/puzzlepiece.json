@@ -2,14 +2,14 @@
   "group": "KickFlip",
   "song": "미완성(Puzzle Piece)",
   "video": "videos/kickflip_puzzlepiece_mukzz65q.mp4",
-  "duration": 0,
+  "duration": 175.416016,
   "theme": "dark",
   "subunit": false,
   "members": [
     {
       "name": "KYEHOON",
       "image": "images/kickflip/puzzlepiece/kyehoon.png",
-      "color": "#ff4d6d",
+      "color": "#d435dd",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -24,7 +24,7 @@
     {
       "name": "DONGHWA",
       "image": "images/kickflip/puzzlepiece/donghwa.png",
-      "color": "#4dabf7",
+      "color": "#00d856",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -39,7 +39,7 @@
     {
       "name": "JUWANG",
       "image": "images/kickflip/puzzlepiece/juwang.png",
-      "color": "#51cf66",
+      "color": "#dfb627",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -54,7 +54,7 @@
     {
       "name": "MINJE",
       "image": "images/kickflip/puzzlepiece/minje.png",
-      "color": "#ffd43b",
+      "color": "#3445da",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -69,7 +69,7 @@
     {
       "name": "KEIJU",
       "image": "images/kickflip/puzzlepiece/keiju.png",
-      "color": "#cc5de8",
+      "color": "#ee7426",
       "focus": 50,
       "lift": 3,
       "frame": {
@@ -84,7 +84,7 @@
     {
       "name": "DONGHYEON",
       "image": "images/kickflip/puzzlepiece/donghyeon.png",
-      "color": "#20c997",
+      "color": "#25dada",
       "focus": 50,
       "lift": 3,
       "frame": {
