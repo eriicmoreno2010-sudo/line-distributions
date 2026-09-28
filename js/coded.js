@@ -156,7 +156,7 @@ const Coded = {
       Object.keys(adMap).forEach(n => lit.add(n));   // el que hace el ad-lib también se enciende
 
       // barrita inferior con el color del que canta (línea + ad-libs)
-      if(this.bar){ const bg = this.colorForNames([...lit]); this.bar.style.background = bg; this.bar.style.opacity = bg ? "1" : "0"; }
+      if(this.bar){ const bg = this.colorForNames([...lit]); this.bar.style.background = bg || ""; }   // sin cantante -> "" -> gris (CSS)
 
       if(this.root) this.root.classList.toggle("has-singer", lit.size > 0);
       for(const st of this.strips){
