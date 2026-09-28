@@ -2,7 +2,7 @@
   "group": "BOYNEXTDOOR",
   "song": "400 Years",
   "video": "videos/boynextdoor_400years_mul3rtq6.mp4",
-  "duration": 143.559375,
+  "duration": 148.272417,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -519,5 +519,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "audio": "audio/boynextdoor_400years.mp3"
 }
