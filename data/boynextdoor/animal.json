@@ -886,5 +886,7 @@
   ],
   "audio": "audio/boynextdoor_animal.mp3",
   "audioOffset": 0.15,
-  "instrumental": "audio/boynextdoor_animal_inst.mp3"
+  "instrumental": "audio/boynextdoor_animal_inst.mp3",
+  "instrumentalStart": 0,
+  "instrumentalEnd": 86.54182724326922
 }
