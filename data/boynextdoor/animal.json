@@ -179,7 +179,9 @@
     {
       "start": 26.44,
       "end": 32.46,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
       "original": "",
       "romanization": "Coachella, Penthouse, New York, in the States, Prestige",
       "english": "",
@@ -188,7 +190,9 @@
     {
       "start": 33.09,
       "end": 38.1,
-      "members": [],
+      "members": [
+        "TAESAN"
+      ],
       "original": "Players, 나마스테, This is what you gotta do",
       "romanization": "players, namaste, this is what you gotta do",
       "english": "Players, Namaste, This is what you gotta do",
@@ -356,7 +360,9 @@
     {
       "start": 66.21,
       "end": 72.15,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
       "original": "",
       "romanization": "Coachella, Penthouse, New York, in the States, Prestige",
       "english": "",
@@ -365,7 +371,9 @@
     {
       "start": 72.82,
       "end": 77.77,
-      "members": [],
+      "members": [
+        "SUNGHO"
+      ],
       "original": "Players, 나마스테, This is what you gotta do",
       "romanization": "players, namaste, this is what you gotta do",
       "english": "Players, Namaste, This is what you gotta do",
@@ -404,7 +412,7 @@
       "start": 85.17,
       "end": 91.37,
       "members": [
-        "SUNGHO"
+        "LEEHAN"
       ],
       "original": "가자 like animal, Animal, animal, animal",
       "romanization": "gaja like animal, animal animal animal",
@@ -433,7 +441,7 @@
       "start": 91.83,
       "end": 92.96,
       "members": [
-        "SUNGHO"
+        "LEEHAN"
       ],
       "original": "",
       "romanization": "Move like animal",
