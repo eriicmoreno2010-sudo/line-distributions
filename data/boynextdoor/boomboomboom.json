@@ -11,42 +11,90 @@
       "image": "images/boynextdoor/boomboomboom/sungho.png",
       "color": "#0203b1",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4084,
+        "cy": 0.3239,
+        "size": 0.292,
+        "rot": 19,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "RIWOO",
       "image": "images/boynextdoor/boomboomboom/riwoo.png",
       "color": "#ff0000",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5979,
+        "cy": 0.2879,
+        "size": 0.2123,
+        "rot": 29,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JAEHYUN",
       "image": "images/boynextdoor/boomboomboom/jaehyun.png",
       "color": "#be731a",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6267,
+        "cy": 0.3441,
+        "size": 0.4877,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "TAESAN",
       "image": "images/boynextdoor/boomboomboom/taesan.png",
       "color": "#ff5833",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5646,
+        "cy": 0.3298,
+        "size": 0.3406,
+        "rot": 16,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "LEEHAN",
       "image": "images/boynextdoor/boomboomboom/leehan.png",
       "color": "#3ea26f",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5001,
+        "cy": 0.1971,
+        "size": 0.4181,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "WOONHAK",
       "image": "images/boynextdoor/boomboomboom/woonhak.png",
       "color": "#a61ece",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4895,
+        "cy": 0.2528,
+        "size": 0.1642,
+        "rot": 16,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
