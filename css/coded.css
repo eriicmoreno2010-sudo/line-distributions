@@ -57,22 +57,21 @@ body.layout-coded #timeline-section{ display:none !important; }
 .cstrip.done .cstrip-grad{ opacity:.2; }
 .cstrip.done .cstrip-name{ opacity:.55; }
 
-/* AD-LIB como TEXTO ABAJO en la foto del miembro (justo encima del nombre), sin panel */
-.cstrip-adlib{
-    position:absolute; left:8px; right:8px; bottom:118px;
-    text-align:center; font-family:var(--app-font); font-weight:800; font-size:26px; line-height:1.12;
-    color:#fff; -webkit-text-stroke:2px var(--c); paint-order:stroke fill;
-    text-shadow:0 2px 9px rgba(0,0,0,.85);
-    opacity:0; transform:translateY(8px); transition:opacity .16s ease, transform .16s ease;
-    pointer-events:none; z-index:3;
-}
-.cstrip.has-adlib .cstrip-adlib{ opacity:1; transform:none; }
-
-/* ---------- barrita inferior (color del que canta) ---------- */
+/* ---------- BARRA de color, justo debajo de las fotos ---------- */
 #coded-bar{
-    position:absolute; left:0; right:0; bottom:0; height:16px; z-index:6;
+    flex:none; width:100%; height:20px;
     background:transparent; opacity:0; transition:opacity .2s ease;
 }
+
+/* ---------- AD-LIBS: celdas alineadas con las tiras, debajo de la barra ---------- */
+#coded-adzone{ flex:none; display:flex; width:100%; height:86px; align-items:flex-start; padding-top:10px; }
+.cad-cell{ flex:1 1 0; min-width:0; display:flex; justify-content:center; align-items:flex-start; padding:0 8px; }
+.cad-text{
+    text-align:center; font-family:var(--app-font); font-weight:800; font-size:27px; line-height:1.14;
+    color:var(--c); text-shadow:0 1px 3px rgba(0,0,0,.28);
+    opacity:0; transform:translateY(-6px); transition:opacity .16s ease, transform .16s ease;
+}
+.cad-text.on{ opacity:1; transform:none; }
 
 /* ---------- LETRA central ---------- */
 #coded-lyrics{
@@ -88,7 +87,10 @@ body.layout-coded #lyrics-section{
 body.layout-coded #lyrics-section::before,
 body.layout-coded #lyrics-section::after{ display:none !important; background:none !important; content:none !important; }
 body.layout-coded #current-member{ display:none; }   /* la tira encendida dice quién canta */
-/* tamaños de letra IGUALES para las tres versiones */
+/* tamaños de letra IGUALES SIEMPRE (no se encogen; las líneas largas envuelven) */
 body.layout-coded #original,
 body.layout-coded #romanized,
-body.layout-coded #english{ font-size:46px; font-weight:800; line-height:1.3; margin:16px 0; }
+body.layout-coded #english{
+    font-size:44px !important; font-weight:800; line-height:1.3; margin:15px 0;
+    white-space:normal !important;
+}

@@ -38,22 +38,32 @@ const Coded = {
       img.style.objectPosition = "center " + (m.focus != null ? m.focus : 45) + "%";
 
       const grad = document.createElement("div"); grad.className = "cstrip-grad";
-      const ad   = document.createElement("div"); ad.className = "cstrip-adlib";   // ad-lib COMO TEXTO sobre el miembro
       const nm   = document.createElement("div"); nm.className = "cstrip-name"; nm.textContent = m.name;
 
-      s.appendChild(img); s.appendChild(grad); s.appendChild(ad); s.appendChild(nm);
+      s.appendChild(img); s.appendChild(grad); s.appendChild(nm);
       top.appendChild(s);
-      this.strips.push({ name: m.name, el: s, adEl: ad });
+      this.strips.push({ name: m.name, el: s, adEl: null });
     });
     root.appendChild(top);
+
+    // --- BARRA de color justo DEBAJO de las fotos (toma el color del que canta) ---
+    const bar = document.createElement("div"); bar.id = "coded-bar";
+    root.appendChild(bar); this.bar = bar;
+
+    // --- AD-LIBS: fila de celdas alineadas con las tiras, DEBAJO de la barra ---
+    const adzone = document.createElement("div"); adzone.id = "coded-adzone";
+    (SONG.members || []).forEach((m, i) => {
+      const cell = document.createElement("div"); cell.className = "cad-cell";
+      cell.style.setProperty("--c", m.color || "#888");
+      const tx = document.createElement("div"); tx.className = "cad-text";
+      cell.appendChild(tx); adzone.appendChild(cell);
+      this.strips[i].adEl = tx;
+    });
+    root.appendChild(adzone);
 
     // --- LETRA central (reutiliza #lyrics-section) ---
     const lyrZone = document.createElement("div"); lyrZone.id = "coded-lyrics";
     root.appendChild(lyrZone);
-
-    // --- barrita inferior que toma el color del que canta ---
-    const bar = document.createElement("div"); bar.id = "coded-bar";
-    root.appendChild(bar); this.bar = bar;
 
     app.appendChild(root);
 
@@ -155,8 +165,10 @@ const Coded = {
         st.el.classList.toggle("singing", singing);
         st.el.classList.toggle("done", done);
         const ad = adMap[st.name] || "";
-        if(st.adEl.textContent !== ad) st.adEl.textContent = ad;
-        st.el.classList.toggle("has-adlib", !!ad);
+        if(st.adEl){
+          if(st.adEl.textContent !== ad) st.adEl.textContent = ad;
+          st.adEl.classList.toggle("on", !!ad);
+        }
       }
       requestAnimationFrame(tick);
     };

@@ -465,7 +465,10 @@ const Lyrics = {
             paintText(e.original, so);
             paintText(e.roman,    sr);
             paintText(e.english,  se);
-            requestAnimationFrame(() => { fitFieldsEqual([e.original, e.roman, e.english], e.section.clientWidth - 72); });
+            // Diseño "coded": NO encoger la letra -> tamaño IGUAL siempre (las líneas
+            // largas envuelven en 2 renglones). En el diseño normal sí se ajusta.
+            if(!document.body.classList.contains("layout-coded"))
+                requestAnimationFrame(() => { fitFieldsEqual([e.original, e.roman, e.english], e.section.clientWidth - 72); });
 
             e.section.style.setProperty("--accent", c.accent);
             e.section.style.setProperty("--accent-secondary", c.secondaryAccent);
