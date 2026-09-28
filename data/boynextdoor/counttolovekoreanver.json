@@ -916,5 +916,8 @@
   "audio": "audio/boynextdoor_counttolovekoreanver.mp3",
   "cover": "covers/boynextdoor_counttolovekoreanver.png",
   "npC1": "#f22626",
-  "instrumental": "audio/boynextdoor_counttolovekoreanver_inst.mp3"
+  "instrumental": "audio/boynextdoor_counttolovekoreanver_inst.mp3",
+  "instrumentalStart": 59.85224499038462,
+  "instrumentalEnd": 158.589388,
+  "instrumentalFade": true
 }
