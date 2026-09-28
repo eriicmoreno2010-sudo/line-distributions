@@ -110,7 +110,8 @@
 </div>
 
 <script>
-const P = 320;                 // preview size
+const P = 320;                 // preview size (cuadrado, por defecto)
+let PREV_W = P, PREV_H = P, CODED = false;   // en "coded" el preview es VERTICAL (tira)
 let members = [], idx = 0, SONG_META = null;
 
 const prev = document.getElementById("prev");
@@ -124,6 +125,20 @@ const blur = document.getElementById("blur");
 const SONG_URL = new URLSearchParams(location.search).get("song") || "data/nctdream/moonlight.json";
 fetch(SONG_URL).then(r=>r.json()).then(async d=>{
     SONG_META = d;
+    // Diseño "coded": el preview es una TIRA vertical (como se verá en pantalla), no
+    // un círculo. Así encuadras la foto estirada. El horneado sigue siendo cuadrado.
+    CODED = !!(d && d.layout === "coded");
+    if(CODED){
+        const n = (d.members || []).length || 1;
+        const aspect = (1920 / n) / (1080 * 0.56);      // ancho/alto real de la tira
+        PREV_H = 560; PREV_W = Math.max(150, Math.round(PREV_H * aspect));
+        prev.width = PREV_W; prev.height = PREV_H;
+        prev.classList.remove("circle");
+        prev.style.background = "#000"; prev.style.borderRadius = "10px";
+        prev.style.boxShadow = "0 0 0 3px #2a2a34";
+        const cap = document.querySelector(".cap");
+        if(cap) cap.textContent = "Arrastra para mover · rueda para zoom · (vista de la TIRA)";
+    }
     // encuadre guardado por miembro (si existe en el JSON)
     const frameOf = name => { const mm = (d.members||[]).find(x=>x.name===name); return mm && mm.frame; };
     // m.path = destination (JSON image path); m.src = where to READ from.
@@ -184,36 +199,28 @@ function clampCrop(m){
     m.cy = clamp(m.cy, 0, m.ih);
 }
 
-function drawInto(ctx, size, m){
-    ctx.clearRect(0,0,size,size);
+// Dibuja el recorte. Cuadrado (H = W, por defecto: ranking/miniatura/horneado) o,
+// para el diseño "coded", VERTICAL (H > W): muestra la franja central de la foto tal
+// como se verá en la tira. El horneado sigue siendo cuadrado -> el visor la recorta.
+function drawInto(ctx, W, m, H){
+    H = H || W;
+    ctx.clearRect(0,0,W,H);
     if(!m.iw) return;
     ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high";
+    const portrait = H > W + 0.5;
+    const sw = portrait ? m.side * (W / H) : m.side;   // ancho de fuente visible (franja si es vertical)
+    const sh = m.side;                                 // alto de fuente = lado del cuadrado
     ctx.save();
-    // El espejo se aplica como ÚLTIMO paso visual (envuelve a la rotación), así
-    // refleja la vista tal cual (conserva la inclinación, no la pone a 0).
-    if(m.flip){                             // espejo horizontal (izquierda<->derecha)
-        ctx.translate(size/2, size/2);
-        ctx.scale(-1, 1);
-        ctx.translate(-size/2, -size/2);
-    }
-    if(m.rot){                              // rotate the crop around its centre
-        ctx.translate(size/2, size/2);
-        ctx.rotate(m.rot * Math.PI/180);
-        ctx.translate(-size/2, -size/2);
-    }
-    // Desenfoque opcional. Se dibuja un poco MÁS GRANDE (overscan) para que el blur no
-    // chupe transparencia en los bordes visibles (nada de anillo oscuro). El encuadre
-    // visible sigue siendo exactamente el mismo.
-    const bpx = m.blur ? m.blur * size * 0.05 : 0;
+    if(m.flip){ ctx.translate(W/2, H/2); ctx.scale(-1, 1); ctx.translate(-W/2, -H/2); }
+    if(m.rot){  ctx.translate(W/2, H/2); ctx.rotate(m.rot * Math.PI/180); ctx.translate(-W/2, -H/2); }
+    const bpx = m.blur ? m.blur * Math.max(W,H) * 0.05 : 0;
     if(bpx){
         ctx.filter = "blur(" + bpx.toFixed(2) + "px)";
-        const over = bpx * 2, srcOver = over * (m.side / size);
-        ctx.drawImage(m.img,
-            m.cx - m.side/2 - srcOver, m.cy - m.side/2 - srcOver, m.side + 2*srcOver, m.side + 2*srcOver,
-            -over, -over, size + 2*over, size + 2*over);
+        const ovX = bpx*2, ovY = bpx*2, soX = ovX*(sw/W), soY = ovY*(sh/H);
+        ctx.drawImage(m.img, m.cx - sw/2 - soX, m.cy - sh/2 - soY, sw + 2*soX, sh + 2*soY, -ovX, -ovY, W + 2*ovX, H + 2*ovY);
         ctx.filter = "none";
     } else {
-        ctx.drawImage(m.img, m.cx-m.side/2, m.cy-m.side/2, m.side, m.side, 0, 0, size, size);
+        ctx.drawImage(m.img, m.cx - sw/2, m.cy - sh/2, sw, sh, 0, 0, W, H);
     }
     ctx.restore();
 }
@@ -221,7 +228,7 @@ function drawInto(ctx, size, m){
 function render(){
     const m = cur(); if(!m) return;
     clampCrop(m);
-    drawInto(pctx, P, m);
+    drawInto(pctx, PREV_W, m, PREV_H);
     document.getElementById("who").textContent = m.name;
     // sliders reflect current values
     zoom.value = (m.side / Math.min(m.iw,m.ih)).toFixed(3);
@@ -375,7 +382,7 @@ let dragging=false, lx=0, ly=0;
 prev.addEventListener("pointerdown", e=>{ dragging=true; lx=e.clientX; ly=e.clientY; prev.setPointerCapture(e.pointerId); });
 prev.addEventListener("pointermove", e=>{
     if(!dragging) return;
-    const m=cur(); const k = m.side/P;   // image px per preview px
+    const m=cur(); const k = m.side/PREV_H;   // image px por px de preview (alto = lado del recorte)
     m.cx -= (e.clientX-lx)*k;
     m.cy -= (e.clientY-ly)*k;
     m.dirty=true;

@@ -47,12 +47,13 @@ const Coded = {
     });
     root.appendChild(top);
 
-    // --- borde "papel roto" entre las fotos y la letra ---
-    root.appendChild(this.buildTorn());
-
     // --- LETRA central (reutiliza #lyrics-section) ---
     const lyrZone = document.createElement("div"); lyrZone.id = "coded-lyrics";
     root.appendChild(lyrZone);
+
+    // --- barrita inferior que toma el color del que canta ---
+    const bar = document.createElement("div"); bar.id = "coded-bar";
+    root.appendChild(bar); this.bar = bar;
 
     app.appendChild(root);
 
@@ -72,25 +73,12 @@ const Coded = {
     this.loop();
   },
 
-  // SVG de borde "papel roto" (jagged), relleno del color del panel de letra.
-  buildTorn(){
-    const NS = "http://www.w3.org/2000/svg", W = 1920, H = 44;
-    const svg = document.createElementNS(NS, "svg");
-    svg.setAttribute("class", "coded-torn");
-    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
-    svg.setAttribute("preserveAspectRatio", "none");
-    let d = "M 0 " + H + " L 0 " + (H * 0.55).toFixed(1);
-    let x = 0;
-    while(x < W){
-      x = Math.min(W, x + 20 + Math.random() * 26);
-      const y = (5 + Math.random() * (H * 0.6)).toFixed(1);
-      d += " L " + x.toFixed(1) + " " + y;
-    }
-    d += " L " + W + " " + H + " Z";
-    const path = document.createElementNS(NS, "path");
-    path.setAttribute("d", d);
-    svg.appendChild(path);
-    return svg;
+  // color(es) de un conjunto de miembros -> sólido (1) o degradado (varios)
+  colorForNames(names){
+    const cols = names.map(n => { const m = (SONG.members||[]).find(x=>x.name===n); return m && m.color; }).filter(Boolean);
+    if(!cols.length) return "";
+    if(cols.length === 1) return cols[0];
+    return "linear-gradient(90deg, " + cols.join(", ") + ")";
   },
 
   // Encoge el nombre de cada tira hasta que quepa. Mido el ancho REAL del texto con
@@ -139,9 +127,9 @@ const Coded = {
       // Línea actual = la que muestra el texto (Lyrics.centralIndex). Encendemos sus miembros.
       const ci = (L && L.centralIndex != null) ? L.centralIndex : -1;
       const line = (ci >= 0 && SONG.lyrics) ? SONG.lyrics[ci] : null;
-      const lit = this.lineLit(line) || new Set();
+      const litLine = this.lineLit(line) || new Set();
 
-      // Ad-libs activos -> su TEXTO se pinta sobre el miembro que los canta.
+      // Ad-libs activos -> su TEXTO sobre el miembro Y el miembro TAMBIÉN se ilumina.
       const t = (v ? v.currentTime : 0) + this.LEAD;
       const adMap = {};
       for(const l of (SONG.lyrics || [])){
@@ -153,6 +141,11 @@ const Coded = {
           for(const n of (l.members || [])){ if(!adMap[n]) adMap[n] = txt; }
         }
       }
+      const lit = new Set(litLine);
+      Object.keys(adMap).forEach(n => lit.add(n));   // el que hace el ad-lib también se enciende
+
+      // barrita inferior con el color del que canta (línea + ad-libs)
+      if(this.bar){ const bg = this.colorForNames([...lit]); this.bar.style.background = bg; this.bar.style.opacity = bg ? "1" : "0"; }
 
       if(this.root) this.root.classList.toggle("has-singer", lit.size > 0);
       for(const st of this.strips){

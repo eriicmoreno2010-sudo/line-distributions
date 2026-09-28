@@ -46,10 +46,10 @@ body.layout-coded #timeline-section{ display:none !important; }
     opacity:.9; transition:opacity .25s ease, transform .25s ease;
 }
 
-/* CANTANDO -> foto a tope + nombre y color al máximo */
+/* CANTANDO -> foto a tope (el nombre NO cambia de tamaño) */
 .cstrip.singing .cstrip-photo{ filter:brightness(1.04) saturate(1.08); }
 .cstrip.singing .cstrip-grad{ opacity:1; }
-.cstrip.singing .cstrip-name{ opacity:1; transform:translateY(-2px) scale(1.05); }
+.cstrip.singing .cstrip-name{ opacity:1; }
 .cstrip.singing{ z-index:2; }
 
 /* YA NO cantará más -> gris */
@@ -57,23 +57,22 @@ body.layout-coded #timeline-section{ display:none !important; }
 .cstrip.done .cstrip-grad{ opacity:.2; }
 .cstrip.done .cstrip-name{ opacity:.55; }
 
-/* AD-LIB como TEXTO sobre la foto del miembro que lo canta (sin panel) */
+/* AD-LIB como TEXTO ABAJO en la foto del miembro (justo encima del nombre), sin panel */
 .cstrip-adlib{
-    position:absolute; left:8px; right:8px; top:30%;
-    text-align:center; font-family:var(--app-font); font-weight:800; font-size:27px; line-height:1.15;
+    position:absolute; left:8px; right:8px; bottom:118px;
+    text-align:center; font-family:var(--app-font); font-weight:800; font-size:26px; line-height:1.12;
     color:#fff; -webkit-text-stroke:2px var(--c); paint-order:stroke fill;
-    text-shadow:0 2px 9px rgba(0,0,0,.8);
-    opacity:0; transform:translateY(10px); transition:opacity .18s ease, transform .18s ease;
+    text-shadow:0 2px 9px rgba(0,0,0,.85);
+    opacity:0; transform:translateY(8px); transition:opacity .16s ease, transform .16s ease;
     pointer-events:none; z-index:3;
 }
 .cstrip.has-adlib .cstrip-adlib{ opacity:1; transform:none; }
 
-/* ---------- borde "papel roto" ---------- */
-.coded-torn{
-    position:absolute; left:0; right:0; top:56%; width:100%; height:44px;
-    transform:translateY(-100%); z-index:4; pointer-events:none; display:block;
+/* ---------- barrita inferior (color del que canta) ---------- */
+#coded-bar{
+    position:absolute; left:0; right:0; bottom:0; height:16px; z-index:6;
+    background:transparent; opacity:0; transition:opacity .2s ease;
 }
-.coded-torn path{ fill:var(--panel); }
 
 /* ---------- LETRA central ---------- */
 #coded-lyrics{
@@ -85,6 +84,9 @@ body.layout-coded #lyrics-section{
     text-align:center; width:100%; max-width:1600px;
     background:none !important; border:0 !important; box-shadow:none !important; padding:0 !important;
 }
+/* sin halo/glow detrás de la letra */
+body.layout-coded #lyrics-section::before,
+body.layout-coded #lyrics-section::after{ display:none !important; background:none !important; content:none !important; }
 body.layout-coded #current-member{ display:none; }   /* la tira encendida dice quién canta */
 /* tamaños de letra IGUALES para las tres versiones */
 body.layout-coded #original,
