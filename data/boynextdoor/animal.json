@@ -2,7 +2,7 @@
   "group": "BOYNEXTDOOR",
   "song": "ANIMAL",
   "video": "videos/boynextdoor_animal_mul14kvw.mp4",
-  "duration": 0,
+  "duration": 144.727917,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -53,9 +53,7 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SUNGHO"
-      ],
+      "members": [],
       "original": "Move like animal",
       "romanization": "Move like animal",
       "english": "Move like animal",
@@ -538,5 +536,6 @@
       "english": "Move like an animal",
       "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/boynextdoor_animal.mp3"
 }
