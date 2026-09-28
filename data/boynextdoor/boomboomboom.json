@@ -1117,5 +1117,6 @@
     }
   ],
   "audio": "audio/boynextdoor_boomboomboom.mp3",
-  "audioOffset": 0.15
+  "audioOffset": 0.15,
+  "instrumental": "audio/boynextdoor_boomboomboom_inst.mp3"
 }
