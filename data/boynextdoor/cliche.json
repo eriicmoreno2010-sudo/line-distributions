@@ -2,7 +2,7 @@
   "group": "BOYNEXTDOOR",
   "song": "CLICHE",
   "video": "videos/boynextdoor_cliche_mul4p2lp.mp4",
-  "duration": 0,
+  "duration": 166.3,
   "theme": "dark",
   "subunit": false,
   "members": [
@@ -668,5 +668,6 @@
   "npC1": "#d0f226",
   "cover": "covers/boynextdoor_cliche.png",
   "audio": "audio/boynextdoor_cliche.mp3",
-  "npC2": "#2eff58"
+  "npC2": "#2eff58",
+  "audioOffset": 0.1
 }
