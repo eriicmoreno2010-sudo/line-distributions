@@ -357,6 +357,16 @@
     for(let i=from;i<song.lyrics.length;i++){ if(isAdlibLine(song.lyrics[i])===mode.adlib) return i; }
     return -1;
   }
+  // Mueve la selección a la siguiente/anterior línea DEL MISMO TIPO (central o ad-lib),
+  // saltándose las del otro tipo -> las flechas ya no "se van" a una línea de ad-libs
+  // ni pegan saltos raros. dir = +1 (abajo) o -1 (arriba).
+  function stepSel(dir){
+    for(let i = sel + dir; i >= 0 && i < song.lyrics.length; i += dir){
+      if(isAdlibLine(song.lyrics[i]) === mode.adlib){
+        sel = i; awaitingEnd = false; highlightSel(); updateTapUI(); return;
+      }
+    }
+  }
   // Voice segments: label + tooltip + cell refresh.
   function voiceSegs(l){ return Array.isArray(l.voice) ? l.voice : []; }
   function segMembers(seg){ return (seg.length > 2 && seg[2] != null) ? (Array.isArray(seg[2]) ? seg[2] : [seg[2]]) : []; }
@@ -560,7 +570,8 @@
   };
   $("#importCancel").onclick = () => $("#importmodal").classList.remove("show");
   $("#importmodal").addEventListener("click", e => { if(e.target.id === "importmodal") $("#importmodal").classList.remove("show"); });
-  $("#importGo").onclick = async () => {
+  // withText = true -> importa TODO (tiempos + reparto + LETRA). false -> SOLO tiempos.
+  async function doImport(withText){
     const src = $("#importSel").value; if(!src) return;
     let res = null; try{ res = await window.desktop.loadSong(src); }catch(e){}
     if(!res || !res.ok){ uiAlert("No se pudo cargar esa canción."); return; }
@@ -568,7 +579,6 @@
     if(!srcLyrics.length){ uiAlert("La canción de origen no tiene líneas."); return; }
     const cur = song.lyrics || [];
     const curN = cur.length, srcN = srcLyrics.length;
-    const withText = $("#importText") ? $("#importText").checked : false;
 
     // Importa tiempos + segmentos de voz + miembros + adlib línea a línea. Si
     // "también la letra" está marcada, copia además el TEXTO (original/rom/inglés)
@@ -608,7 +618,12 @@
     renderLines(); updateTapUI();
     if(!withText && curN !== srcN) uiAlert("Importados los tiempos de " + n + " líneas. Revisa el resto (había " + (curN>srcN?("sobran "+(curN-srcN)):("faltan "+(srcN-curN))) + " líneas de diferencia).");
     else if(withText && curN > srcN) uiAlert("Importadas " + n + " líneas con letra. Te sobran " + (curN-srcN) + " líneas antiguas al final; bórralas si no van.");
-  };
+  }
+  // Dos opciones al importar: TODO (con letra) o SOLO los tiempos.
+  const impAll = $("#importGoAll"), impTimes = $("#importGoTimes"), impGo = $("#importGo");
+  if(impAll)   impAll.onclick   = () => doImport(true);
+  if(impTimes) impTimes.onclick = () => doImport(false);
+  if(impGo)    impGo.onclick    = () => doImport($("#importText") ? $("#importText").checked : true);   // compat
   // Reaplica la regla: AD-LIB solo si la línea va entre paréntesis ( )
   $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");
   $("#pastemodal").addEventListener("click", e => { if(e.target.id === "pastemodal") $("#pastemodal").classList.remove("show"); });
@@ -1078,8 +1093,8 @@
     else if(e.key==="k"||e.key==="K"){ e.preventDefault(); video.paused?video.play():video.pause(); }
     else if(e.key==="j"||e.key==="J"){ e.preventDefault(); video.currentTime=Math.max(0,video.currentTime-2); }
     else if(e.key==="l"||e.key==="L"){ e.preventDefault(); video.currentTime+=2; }
-    else if(e.key==="ArrowDown"){ e.preventDefault(); if(sel<song.lyrics.length-1){sel++; awaitingEnd=false; highlightSel(); updateTapUI();} }
-    else if(e.key==="ArrowUp"){ e.preventDefault(); if(sel>0){sel--; awaitingEnd=false; highlightSel(); updateTapUI();} }
+    else if(e.key==="ArrowDown"){ e.preventDefault(); stepSel(1); }
+    else if(e.key==="ArrowUp"){ e.preventDefault(); stepSel(-1); }
     else if((e.ctrlKey||e.metaKey) && (e.key==="s")){ e.preventDefault(); save(); }
   });
 
