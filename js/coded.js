@@ -161,9 +161,9 @@ const Coded = {
       for(const st of this.strips){
         const singing = lit.has(st.name);
         const mem = (R && R.members) ? R.members.find(x => x.name === st.name) : null;
-        const done = !!(mem && mem.done) && !singing;
+        const done = !!(mem && mem.done);          // "done" se mantiene aunque cante con el grupo
         st.el.classList.toggle("singing", singing);
-        st.el.classList.toggle("done", done);
+        st.el.classList.toggle("done", done);      // done + singing -> gris ILUMINADO (ver CSS)
         const ad = adMap[st.name] || "";
         if(st.adEl){
           if(st.adEl.textContent !== ad) st.adEl.textContent = ad;

@@ -44,16 +44,19 @@ body.layout-coded #timeline-section{ display:none !important; }
     opacity:.9; transition:opacity .25s ease, transform .25s ease;
 }
 
-/* CANTANDO -> foto a tope (el nombre NO cambia de tamaño) */
-.cstrip.singing .cstrip-photo{ filter:brightness(1.04) saturate(1.08); }
-.cstrip.singing .cstrip-grad{ opacity:1; }
-.cstrip.singing .cstrip-name{ opacity:1; }
+/* CANTANDO en COLOR (si no es un miembro que ya terminó) */
+.cstrip.singing:not(.done) .cstrip-photo{ filter:brightness(1.04) saturate(1.08); }
+.cstrip.singing:not(.done) .cstrip-grad{ opacity:1; }
+.cstrip.singing:not(.done) .cstrip-name{ opacity:1; }
 .cstrip.singing{ z-index:2; }
 
-/* YA NO cantará más -> gris */
+/* YA NO cantará más -> SIEMPRE en GRIS. Apagado si no canta; si canta con el grupo
+   se ILUMINA pero en GRIS (no en color). */
 .cstrip.done .cstrip-photo{ filter:grayscale(1) brightness(.5); }
-.cstrip.done .cstrip-grad{ opacity:.2; }
-.cstrip.done .cstrip-name{ opacity:.55; }
+.cstrip.done.singing .cstrip-photo{ filter:grayscale(1) brightness(1); }
+.cstrip.done .cstrip-grad{ opacity:.16; }
+.cstrip.done .cstrip-name{ opacity:.55; -webkit-text-stroke-color:#8a8a8a; }
+.cstrip.done.singing .cstrip-name{ opacity:.9; }
 
 /* ---------- BARRA de color, justo debajo de las fotos ---------- */
 #coded-bar{
