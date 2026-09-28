@@ -42,6 +42,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Optional beat-reactive glitch halo on the ranking photos (Moonlight test).
         document.body.classList.toggle("rank-beats", !!SONG.beats);
         if(typeof Beats !== "undefined" && SONG.beats) Beats.enable();
+        // Segundo DISEÑO: "coded" (color-coded lyrics) — tira de fotos + letra +
+        // ad-libs, con el ranking (resultados+donut) al final. El resto del sistema
+        // (motor de letras, flags del ranking, resultados) se reutiliza.
+        document.body.classList.toggle("layout-coded", SONG.layout === "coded");
 
         loadSongInformation();
 
@@ -54,6 +58,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         Player.init();
 
         Lyrics.clear();
+
+        // Construye el diseño coded (mueve la letra/ad-libs y monta la tira de fotos).
+        if(typeof Coded !== "undefined") Coded.build();
 
     } catch (error) {
 

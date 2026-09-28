@@ -194,6 +194,7 @@ ipcMain.handle("create-song", async (_e, args) => {
       group: groupName, song: songName, video: "", duration: 0,
       theme: (args.theme === "light" ? "light" : "dark"),   // fondo elegido al crear
       subunit: !!args.subunit,                              // sub-unidad/solista: tarjetas arriba, tamaño de 8
+      layout: (args.layout === "coded" ? "coded" : "classic"),   // diseño: normal o color-coded
       members,
       lyrics: [
         { start:0, end:0, members:[members[0] ? members[0].name : ""],

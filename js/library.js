@@ -132,6 +132,7 @@
       document.getElementById("groupName").value = "";
       document.getElementById("membersTa").value = "";
       document.getElementById("unitSelect").value = "group";
+      if(document.getElementById("designSelect")) document.getElementById("designSelect").value = "classic";
       modal.classList.add("show");
     }
 
@@ -164,7 +165,8 @@
       const song = document.getElementById("songName").value.trim();
       if(!song){ mError.textContent = "Pon el nombre de la canción."; return; }
       const args = { song, theme: document.getElementById("themeSelect").value,
-                     subunit: document.getElementById("unitSelect").value === "subunit" };
+                     subunit: document.getElementById("unitSelect").value === "subunit",
+                     layout: (document.getElementById("designSelect") || {}).value || "classic" };
       if(mode === "existing"){
         const g = sel.value;
         args.group = g; args.sourcePath = groups[g];

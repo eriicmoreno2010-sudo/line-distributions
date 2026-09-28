@@ -34,8 +34,13 @@ function loadSongInformation(){
 
 function loadVideo(){
 
-    // Cache-bust by duration so re-trimmed videos reload instead of serving the stale cached file.
-    UI.elements.video.src = SONG.video + (SONG.video.indexOf("?") < 0 ? "?" : "&") + "v=" + (SONG.duration || 0);
+    // Diseño "coded": no hay vídeo MV -> el <video> reproduce el mp3 (audio) y hace
+    // de reloj. Usa SONG.audio si está; si no, el vídeo (del que solo se oye el audio).
+    const coded = (SONG.layout === "coded");
+    const src = coded ? (SONG.audio || SONG.video || "") : (SONG.video || "");
+    if(!src){ return; }
+    // Cache-bust by duration so re-trimmed media reload instead of serving the stale cached file.
+    UI.elements.video.src = src + (src.indexOf("?") < 0 ? "?" : "&") + "v=" + (SONG.duration || 0);
 
 }
 

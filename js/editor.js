@@ -173,6 +173,7 @@
     syncInstSeg();
     if($("#subunit")) $("#subunit").checked = !!song.subunit;   // solista / sub-unidad
     if($("#themeLight")) $("#themeLight").checked = (song.theme === "light");   // tema claro/oscuro
+    if($("#codedLayout")) $("#codedLayout").checked = (song.layout === "coded");   // diseño color-coded
     requestAnimationFrame(tick);
   }
 
@@ -919,6 +920,7 @@
   $("#instFade").onchange = () => { song.instrumentalFade = $("#instFade").checked; save(); };
   if($("#subunit")) $("#subunit").onchange = () => { song.subunit = $("#subunit").checked; save(); };
   if($("#themeLight")) $("#themeLight").onchange = () => { song.theme = $("#themeLight").checked ? "light" : "dark"; save(); };
+  if($("#codedLayout")) $("#codedLayout").onchange = () => { song.layout = $("#codedLayout").checked ? "coded" : "classic"; save(); };
 
   // Per-word colour marking. Select a word in a lyric box, then:
   //   🌈  -> the whole group sings it (**word**)

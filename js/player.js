@@ -54,6 +54,9 @@ const Player = {
     // Con Web Audio el mp3 se descodifica UNA vez a memoria y arranca EXACTO en la
     // posición, al instante y SIN cortes. Clave para grabar con OBS.
     setupAudio() {
+        // Diseño "coded": el <video> YA reproduce el mp3 como fuente -> que suene
+        // directo (no dupliques el audio por Web Audio).
+        if(typeof SONG !== "undefined" && SONG && SONG.layout === "coded") return;
         const src = (typeof SONG !== "undefined" && SONG && (SONG.audio || SONG.mp3)) || "";
         if(!src) return;                         // sin campo audio -> usa el audio del vídeo (como siempre)
         const v = this.video;
