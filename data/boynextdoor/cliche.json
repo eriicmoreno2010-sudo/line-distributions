@@ -666,5 +666,6 @@
     }
   ],
   "npC1": "#d0f226",
-  "cover": "covers/boynextdoor_cliche.png"
+  "cover": "covers/boynextdoor_cliche.png",
+  "audio": "audio/boynextdoor_cliche.mp3"
 }
