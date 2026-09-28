@@ -11,42 +11,90 @@
       "image": "images/kickflip/puzzlepiece/kyehoon.png",
       "color": "#ff4d6d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.741,
+        "cy": 0.5106,
+        "size": 0.1173,
+        "rot": 328,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "DONGHWA",
       "image": "images/kickflip/puzzlepiece/donghwa.png",
       "color": "#4dabf7",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5697,
+        "cy": 0.1335,
+        "size": 0.0899,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JUWANG",
       "image": "images/kickflip/puzzlepiece/juwang.png",
       "color": "#51cf66",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3125,
+        "cy": 0.5197,
+        "size": 0.1165,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "MINJE",
       "image": "images/kickflip/puzzlepiece/minje.png",
       "color": "#ffd43b",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4185,
+        "cy": 0.4917,
+        "size": 0.1227,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "KEIJU",
       "image": "images/kickflip/puzzlepiece/keiju.png",
       "color": "#cc5de8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.295,
+        "cy": 0.3874,
+        "size": 0.1431,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "DONGHYEON",
       "image": "images/kickflip/puzzlepiece/donghyeon.png",
       "color": "#20c997",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.8722,
+        "cy": 0.2736,
+        "size": 0.2008,
+        "rot": 325,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
