@@ -233,7 +233,25 @@
       "original": "",
       "romanization": "Coachella, Penthouse, New York, in the States, Prestige",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          26.5,
+          27.29
+        ],
+        [
+          28.17,
+          29.12
+        ],
+        [
+          29.82,
+          30.67
+        ],
+        [
+          31.48,
+          32.37
+        ]
+      ]
     },
     {
       "start": 33.09,
@@ -244,7 +262,21 @@
       "original": "Players, 나마스테, This is what you gotta do",
       "romanization": "players, namaste, this is what you gotta do",
       "english": "Players, Namaste, This is what you gotta do",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.11,
+          33.89
+        ],
+        [
+          34.76,
+          35.63
+        ],
+        [
+          36.45,
+          38.1
+        ]
+      ]
     },
     {
       "start": 38.86,
@@ -414,7 +446,25 @@
       "original": "",
       "romanization": "Coachella, Penthouse, New York, in the States, Prestige",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.24,
+          66.99
+        ],
+        [
+          67.83,
+          68.79
+        ],
+        [
+          69.52,
+          70.45
+        ],
+        [
+          71.15,
+          72.16
+        ]
+      ]
     },
     {
       "start": 72.82,
@@ -425,7 +475,21 @@
       "original": "Players, 나마스테, This is what you gotta do",
       "romanization": "players, namaste, this is what you gotta do",
       "english": "Players, Namaste, This is what you gotta do",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.84,
+          73.62
+        ],
+        [
+          74.46,
+          75.33
+        ],
+        [
+          76.14,
+          77.76
+        ]
+      ]
     },
     {
       "start": 78.4,
