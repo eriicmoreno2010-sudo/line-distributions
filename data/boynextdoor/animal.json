@@ -56,10 +56,487 @@
       "members": [
         "SUNGHO"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "Move like animal",
+      "romanization": "Move like animal",
+      "english": "Move like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Animal",
+      "romanization": "animal",
+      "english": "Animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "서울 꼭대기 다음 위치",
+      "romanization": "seoul kkokdaegi daeum wichi",
+      "english": "Next stop, top of Seoul",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "빌딩 숲에 누가 집주인",
+      "romanization": "bildeong supe nuga jipjumin",
+      "english": "In this forest of towers, who's the landlord?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "통째로 부어 hot chilli",
+      "romanization": "tongjjaero bureo hot chilli",
+      "english": "Pour it all out, hot chilli",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "뒷일은 not my business",
+      "romanization": "dwitireun not my business",
+      "english": "What comes next? Not my business",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like doremi 올라가 ha, high",
+      "romanization": "like doremi ollaga ha high",
+      "english": "Like doremi, I'm going ha, high",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "입버릇같이 담다디 담다",
+      "romanization": "ipbeoreutgachi damdadi damda",
+      "english": "Repeating like a habit, dam-da-di dam-da",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Coachella",
+      "romanization": "coachella",
+      "english": "Coachella",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Penthouse",
+      "romanization": "penthouse",
+      "english": "Penthouse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "New York, in the States",
+      "romanization": "new york in the states",
+      "english": "New York, in the States",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Prestige",
+      "romanization": "prestige",
+      "english": "Prestige",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Players",
+      "romanization": "players",
+      "english": "Players",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나마스테",
+      "romanization": "namaste",
+      "english": "Namaste",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This is what you gotta do",
+      "romanization": "this is what you gotta do",
+      "english": "This is what you gotta do",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Move like animal",
+      "romanization": "move like animal",
+      "english": "Move like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Animal, animal, animal",
+      "romanization": "animal animal animal",
+      "english": "Animal, animal, animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가자 like animal",
+      "romanization": "gaja like animal",
+      "english": "Let's go, like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Animal, animal, animal",
+      "romanization": "animal animal animal",
+      "english": "Animal, animal, animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Move like animal",
+      "romanization": "move like animal",
+      "english": "Move like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어제의 나를 신호위반해",
+      "romanization": "eojeyui nareul sinhovi banhae",
+      "english": "Blew past yesterday's me like a red light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Limit야 나 잡아봐라",
+      "romanization": "limitya na jabbwabara",
+      "english": "Hey limit, come and catch me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아샷추 세 번에 샷추 drip",
+      "romanization": "asyatchu se beon-e syatchu drip",
+      "english": "Three shots in my iced tea, shot shot drip",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Caffeine 중독증 시동 켜 brain",
+      "romanization": "caffeine jungdokjeung sidong kye brain",
+      "english": "Caffeine kicks in, my brain starts running",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "빵꾸난 신발은 몇 개야",
+      "romanization": "ppangkkunan sinbareun myeot gaeya",
+      "english": "How many worn-out shoes is that?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "늘어난 T-T-shirt",
+      "romanization": "neureonan t t shirt",
+      "english": "Stretched-out T-T-shirt",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Coachella",
+      "romanization": "coachella",
+      "english": "Coachella",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Penthouse",
+      "romanization": "penthouse",
+      "english": "Penthouse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "New York, in the States",
+      "romanization": "new york in the states",
+      "english": "New York, in the States",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Prestige",
+      "romanization": "prestige",
+      "english": "Prestige",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Players",
+      "romanization": "players",
+      "english": "Players",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나마스테",
+      "romanization": "namaste",
+      "english": "Namaste",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This is what you gotta do",
+      "romanization": "this is what you gotta do",
+      "english": "This is what you gotta do",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Move like animal",
+      "romanization": "move like animal",
+      "english": "Move like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Animal, animal, animal",
+      "romanization": "animal animal animal",
+      "english": "Animal, animal, animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가자 like animal",
+      "romanization": "gaja like animal",
+      "english": "Let's go, like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Animal, animal, animal",
+      "romanization": "animal animal animal",
+      "english": "Animal, animal, animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Move like animal",
+      "romanization": "move like animal",
+      "english": "Move like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You’ll wanna leak it",
+      "romanization": "you’ll wanna leak it",
+      "english": "You'll wanna leak it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝내준 beat is",
+      "romanization": "kkeutnaejun beat is",
+      "english": "This beat is lethal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "분명히 click it",
+      "romanization": "bunmyeonghi click it",
+      "english": "You're gonna click it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "당연히 need it",
+      "romanization": "dangyeonhi need it",
+      "english": "Totally need it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그냥 해 wow",
+      "romanization": "geunyang hae wow",
+      "english": "Just go, WOW",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Go with your instincts",
+      "romanization": "go with your instincts",
+      "english": "Go with your instincts",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그냥 해 wow",
+      "romanization": "geunyang hae wow",
+      "english": "Just go, WOW",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Go with your instincts",
+      "romanization": "go with your instincts",
+      "english": "Go with your instincts",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Move like animal",
+      "romanization": "move like animal",
+      "english": "Move like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Animal, animal, animal",
+      "romanization": "animal animal animal",
+      "english": "Animal, animal, animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가자 like animal",
+      "romanization": "gaja like animal",
+      "english": "Let's go, like animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Animal, animal, animal",
+      "romanization": "animal animal animal",
+      "english": "Animal, animal, animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You can’t take it anymore",
+      "romanization": "you can’t take it anymore",
+      "english": "You can't take it anymore",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can’t take it anymore",
+      "romanization": "can’t take it anymore",
+      "english": "Can't take it anymore",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m an animal",
+      "romanization": "i’m an animal",
+      "english": "I'm an animal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Move like an animal",
+      "romanization": "move like an animal",
+      "english": "Move like an animal",
+      "adlib": false
     }
   ]
 }
