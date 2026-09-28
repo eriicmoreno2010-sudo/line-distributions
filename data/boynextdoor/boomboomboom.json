@@ -1120,5 +1120,6 @@
   "audioOffset": 0.15,
   "instrumental": "audio/boynextdoor_boomboomboom_inst.mp3",
   "instrumentalStart": 45.20946525913461,
-  "instrumentalEnd": 175.986939
+  "instrumentalEnd": 70.47938470528847,
+  "instrumentalFade": true
 }
