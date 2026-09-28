@@ -155,9 +155,17 @@
     if(!res.ok){ listEl.textContent = "Error al cargar: " + res.error; return; }
     song = res.data;
     song.lyrics = song.lyrics || [];
-    video.src = song.video;
-    attachAudioSync();      // sincroniza el mp3 (si lo hay) con el vídeo
-    applyEditorAudio();     // prioriza SONG.audio si existe; si no, audio del vídeo
+    // Diseño "coded" (u otra canción sin vídeo): el <video> reproduce el mp3 como
+    // fuente, así hay reloj + audio para marcar los tiempos aunque no haya vídeo MV.
+    const audioOnly = !song.video && !!song.audio;
+    video.src = song.video || song.audio || "";
+    if(audioOnly){
+      video.muted = false;          // el propio <video> suena (es el mp3)
+      syncAudioOffUI();
+    } else {
+      attachAudioSync();            // sincroniza el mp3 (si lo hay) con el vídeo
+      applyEditorAudio();           // prioriza SONG.audio si existe; si no, audio del vídeo
+    }
     // Keep the saved duration in step with the actual video (avoids a stale
     // JSON duration making the timeline/results length wrong).
     video.addEventListener("loadedmetadata", () => {
