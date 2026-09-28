@@ -27,11 +27,9 @@ body.layout-coded #timeline-section{ display:none !important; }
 .cstrip{ position:relative; flex:1 1 0; min-width:0; overflow:hidden; background:#000; }
 .cstrip-photo{
     width:100%; height:100%; object-fit:cover; display:block;
-    filter:brightness(.82) saturate(.98);           /* en reposo: bien visible (como la miniatura) */
+    filter:brightness(.38) saturate(.8);            /* APAGADO por defecto: si nadie canta, todos oscuros */
     transition:filter .28s ease;
 }
-/* SOLO cuando hay alguien cantando, los demás se apagan (si no, todos visibles) */
-#coded.has-singer .cstrip:not(.singing):not(.done) .cstrip-photo{ filter:brightness(.38) saturate(.8); }
 .cstrip-grad{
     position:absolute; left:0; right:0; bottom:0; height:48%;
     background:linear-gradient(to top, var(--c) 0%, transparent 100%);
