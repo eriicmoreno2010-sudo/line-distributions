@@ -565,5 +565,6 @@
     }
   ],
   "audio": "audio/boynextdoor_400years.mp3",
-  "audioOffset": 1.2
+  "audioOffset": 1.2,
+  "instrumental": "audio/boynextdoor_400years_inst.mp3"
 }
