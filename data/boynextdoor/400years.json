@@ -520,5 +520,6 @@
       ]
     }
   ],
-  "audio": "audio/boynextdoor_400years.mp3"
+  "audio": "audio/boynextdoor_400years.mp3",
+  "audioOffset": -0.3
 }
