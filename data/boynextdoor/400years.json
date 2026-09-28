@@ -11,42 +11,90 @@
       "image": "images/boynextdoor/400years/sungho.png",
       "color": "#0203b1",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4988,
+        "cy": 0.381,
+        "size": 0.1357,
+        "rot": 21,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "RIWOO",
       "image": "images/boynextdoor/400years/riwoo.png",
       "color": "#ff0000",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5362,
+        "cy": 0.3691,
+        "size": 0.136,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JAEHYUN",
       "image": "images/boynextdoor/400years/jaehyun.png",
       "color": "#be731a",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6681,
+        "cy": 0.3845,
+        "size": 0.1227,
+        "rot": 329,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "TAESAN",
       "image": "images/boynextdoor/400years/taesan.png",
       "color": "#ff5833",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5025,
+        "cy": 0.3559,
+        "size": 0.5121,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "LEEHAN",
       "image": "images/boynextdoor/400years/leehan.png",
       "color": "#3ea26f",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.8477,
+        "cy": 0.5547,
+        "size": 0.2649,
+        "rot": 339,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "WOONHAK",
       "image": "images/boynextdoor/400years/woonhak.png",
       "color": "#a61ece",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.464,
+        "cy": 0.341,
+        "size": 0.7738,
+        "rot": 346,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
