@@ -12,49 +12,105 @@
       "image": "images/nctdream/juice/mark.png",
       "color": "#cb6ce6",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5286,
+        "cy": 0.4484,
+        "size": 0.5929,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "RENJUN",
       "image": "images/nctdream/juice/renjun.png",
       "color": "#fac142",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5,
+        "cy": 0.44,
+        "size": 0.95,
+        "rot": 16,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JENO",
       "image": "images/nctdream/juice/jeno.png",
       "color": "#ff3131",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5531,
+        "cy": 0.3508,
+        "size": 1,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "HAECHAN",
       "image": "images/nctdream/juice/haechan.png",
       "color": "#1bb7e8",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4822,
+        "cy": 0.4144,
+        "size": 0.95,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JAEMIN",
       "image": "images/nctdream/juice/jaemin.png",
       "color": "#61fdad",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4633,
+        "cy": 0.3413,
+        "size": 0.8574,
+        "rot": 25,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "CHENLE",
       "image": "images/nctdream/juice/chenle.png",
       "color": "#22c429",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5226,
+        "cy": 0.3705,
+        "size": 0.9025,
+        "rot": 356,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JISUNG",
       "image": "images/nctdream/juice/jisung.png",
       "color": "#f12ba5",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5035,
+        "cy": 0.2253,
+        "size": 0.6983,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
