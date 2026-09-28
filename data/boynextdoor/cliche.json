@@ -1007,5 +1007,6 @@
   "audioOffset": -0.1,
   "instrumental": "audio/boynextdoor_cliche_inst.mp3",
   "instrumentalStart": 15.386675027884618,
-  "instrumentalEnd": 165.825306
+  "instrumentalEnd": 165.825306,
+  "instrumentalFade": true
 }
