@@ -568,5 +568,6 @@
   "audioOffset": 1.2,
   "instrumental": "audio/boynextdoor_400years_inst.mp3",
   "instrumentalStart": 43.34320868365385,
-  "instrumentalEnd": 148.035918
+  "instrumentalEnd": 68.7750202375,
+  "instrumentalFade": true
 }
