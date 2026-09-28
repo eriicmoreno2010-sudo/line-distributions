@@ -79,6 +79,7 @@ const Coded = {
     this.built = true;
     requestAnimationFrame(() => this.fitNames());
     setTimeout(() => this.fitNames(), 250);
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(() => this.fitNames());   // re-encaja al cargar la fuente bubbly
     window.addEventListener("resize", () => this.fitNames());
     this.loop();
   },
@@ -103,7 +104,7 @@ const Coded = {
       const cs = getComputedStyle(nm);
       const fam = cs.fontFamily, wght = cs.fontWeight;
       const fits = px => { ctx.font = wght + " " + px + "px " + fam; return ctx.measureText(nm.textContent).width <= box * 0.86; };
-      let s = 52;
+      let s = 44;
       while(s > 12 && !fits(s)) s--;
       nm.style.fontSize = s + "px";
     }
