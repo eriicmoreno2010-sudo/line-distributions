@@ -51,74 +51,134 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 5.79,
+      "end": 6.92,
       "members": [
         "TAESAN"
       ],
       "original": "",
       "romanization": "Move like animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          5.8,
+          6.92
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.72,
+      "end": 10.27,
       "members": [
         "TAESAN"
       ],
       "original": "",
       "romanization": "Animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.77,
+          10.33
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 13.11,
+      "end": 14.71,
       "members": [
         "JAEHYUN"
       ],
       "original": "서울 꼭대기 다음 위치",
       "romanization": "seoul kkokdaegi daeum wichi",
       "english": "Next stop, top of Seoul",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.21,
+          14.6
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.86,
+      "end": 16.3,
       "members": [
         "JAEHYUN"
       ],
       "original": "빌딩 숲에 누가 집주인",
       "romanization": "bildeong supe nuga jipjumin",
       "english": "In this forest of towers, who's the landlord?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          14.91,
+          16.35
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 16.45,
+      "end": 19.57,
       "members": [
         "JAEHYUN"
       ],
       "original": "통째로 부어 hot chilli, 뒷일은 not my business",
       "romanization": "tongjjaero bureo hot chilli, dwitireun not my business",
       "english": "Pour it all out, hot chilli, What comes next? Not my business",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.52,
+          17.94
+        ],
+        [
+          18.11,
+          19.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 19.69,
+      "end": 25.89,
       "members": [
         "JAEHYUN"
       ],
       "original": "Like doremi 올라가 ha, high, 입버릇같이 담다디 담다",
       "romanization": "like doremi ollaga ha high, ipbeoreutgachi damdadi damda",
       "english": "Like doremi, I'm going ha, high, Repeating like a habit, dam-da-di dam-da",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          19.65,
+          21.65
+        ],
+        [
+          21.8,
+          22.26
+        ],
+        [
+          22.42,
+          22.83
+        ],
+        [
+          22.83,
+          24.96
+        ],
+        [
+          25.09,
+          25.56
+        ],
+        [
+          25.68,
+          26.06
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.44,
+      "end": 32.46,
       "members": [],
       "original": "",
       "romanization": "Coachella, Penthouse, New York, in the States, Prestige",
@@ -126,8 +186,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.09,
+      "end": 38.1,
       "members": [],
       "original": "Players, 나마스테, This is what you gotta do",
       "romanization": "players, namaste, this is what you gotta do",
@@ -135,85 +195,167 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 38.86,
+      "end": 45.06,
       "members": [
         "WOONHAK"
       ],
       "original": "",
       "romanization": "Move like animal, Animal, animal, animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.87,
+          40
+        ],
+        [
+          41.15,
+          41.65
+        ],
+        [
+          42.84,
+          43.39
+        ],
+        [
+          44.5,
+          44.99
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 45.49,
+      "end": 51.63,
       "members": [
         "SUNGHO"
       ],
       "original": "가자 like animal, Animal, animal, animal",
       "romanization": "gaja like animal, animal animal animal",
       "english": "Let's go, like animal, Animal, animal, animal",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.5,
+          46.66
+        ],
+        [
+          47.77,
+          48.32
+        ],
+        [
+          49.49,
+          50.01
+        ],
+        [
+          51.17,
+          51.6
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.13,
+      "end": 53.75,
       "members": [
         "SUNGHO"
       ],
       "original": "",
       "romanization": "Move like animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.09,
+          53.2
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.79,
+      "end": 58.43,
       "members": [
         "LEEHAN"
       ],
       "original": "어제의 나를 신호위반해, Limit야 나 잡아봐라",
       "romanization": "eojeyui nareul sinhovi banhae, limitya na jabbwabara",
       "english": "Blew past yesterday's me like a red light, Hey limit, come and catch me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.84,
+          55.07
+        ],
+        [
+          56.09,
+          56.47
+        ],
+        [
+          56.65,
+          57.01
+        ],
+        [
+          57.16,
+          58.35
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.64,
+      "end": 61.14,
       "members": [
         "LEEHAN"
       ],
       "original": "아샷추 세 번에 샷추 drip",
       "romanization": "asyatchu se beone syatchu drip",
       "english": "Three shots in my iced tea, shot shot drip",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.6,
+          61.2
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 61.3,
+      "end": 62.71,
       "members": [
         "LEEHAN"
       ],
       "original": "Caffeine 중독증 시동 켜 brain",
       "romanization": "caffeine jungdokjeung sidong kye brain",
       "english": "Caffeine kicks in, my brain starts running",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.24,
+          62.86
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.86,
+      "end": 66.06,
       "members": [
         "RIWOO"
       ],
       "original": "빵꾸난 신발은 몇 개야, 늘어난 T-T-shirt",
-      "romanization": "ppangkkunan sinbareun myeot gaeya, neureonan t t shirt",
+      "romanization": "ppangkkunan sinbareun myeot gaeya, neureonan t-t-shirt",
       "english": "How many worn-out shoes is that?, Stretched-out T-T-shirt",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          62.9,
+          64.5
+        ],
+        [
+          64.65,
+          66.18
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.21,
+      "end": 72.15,
       "members": [],
       "original": "",
       "romanization": "Coachella, Penthouse, New York, in the States, Prestige",
@@ -221,8 +363,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.82,
+      "end": 77.77,
       "members": [],
       "original": "Players, 나마스테, This is what you gotta do",
       "romanization": "players, namaste, this is what you gotta do",
@@ -230,140 +372,268 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 78.4,
+      "end": 84.79,
       "members": [
         "JAEHYUN"
       ],
       "original": "",
       "romanization": "Move like animal, Animal, animal, animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          78.51,
+          79.76
+        ],
+        [
+          80.87,
+          81.45
+        ],
+        [
+          82.58,
+          83.14
+        ],
+        [
+          84.24,
+          84.71
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.17,
+      "end": 91.37,
       "members": [
         "SUNGHO"
       ],
       "original": "가자 like animal, Animal, animal, animal",
       "romanization": "gaja like animal, animal animal animal",
       "english": "Let's go, like animal, Animal, animal, animal",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.25,
+          86.41
+        ],
+        [
+          87.5,
+          88.03
+        ],
+        [
+          89.19,
+          89.69
+        ],
+        [
+          90.85,
+          91.32
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 91.83,
+      "end": 92.96,
       "members": [
         "SUNGHO"
       ],
       "original": "",
       "romanization": "Move like animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          91.84,
+          92.97
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 98.63,
+      "end": 101.81,
       "members": [
         "WOONHAK"
       ],
       "original": "You’ll wanna leak it, 끝내준 beat is",
       "romanization": "you’ll wanna leak it, kkeutnaejun beat is",
       "english": "You'll wanna leak it, This beat is lethal",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          98.6,
+          100.13
+        ],
+        [
+          100.31,
+          101.88
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 101.99,
+      "end": 105.11,
       "members": [
         "WOONHAK"
       ],
       "original": "분명히 click it, 당연히 need it",
       "romanization": "bunmyeonghi click it, dangyeonhi need it",
       "english": "You're gonna click it, Totally need it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          102,
+          103.53
+        ],
+        [
+          103.68,
+          105.24
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 105.26,
+      "end": 108.46,
       "members": [
         "TAESAN"
       ],
       "original": "그냥 해 wow, Go with your instincts",
       "romanization": "geunyang hae wow, go with your instincts",
       "english": "Just go, WOW, Go with your instincts",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.27,
+          108.53
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 108.63,
+      "end": 112.87,
       "members": [
         "TAESAN"
       ],
       "original": "그냥 해 wow, Go with your instincts",
       "romanization": "geunyang hae wow, go with your instincts",
       "english": "Just go, WOW, Go with your instincts",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          108.6,
+          112.82
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 113.4,
+      "end": 119.54,
       "members": [
         "TAESAN"
       ],
       "original": "",
       "romanization": "Move like animal, Animal, animal, animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.7,
+          114.54
+        ],
+        [
+          115.66,
+          116.19
+        ],
+        [
+          117.34,
+          117.84
+        ],
+        [
+          119.03,
+          119.5
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 119.98,
+      "end": 126,
       "members": [
         "RIWOO"
       ],
       "original": "가자 like animal, Animal, animal, animal",
       "romanization": "gaja like animal, animal animal animal",
       "english": "Let's go, like animal, Animal, animal, animal",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          120.03,
+          121.11
+        ],
+        [
+          122.3,
+          122.71
+        ],
+        [
+          123.93,
+          124.43
+        ],
+        [
+          125.61,
+          126.06
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 126.41,
+      "end": 127.78,
       "members": [
         "WOONHAK"
       ],
       "original": "",
       "romanization": "You can’t take it anymore",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          126.41,
+          127.74
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 129.95,
+      "end": 130.96,
       "members": [
         "WOONHAK"
       ],
       "original": "",
       "romanization": "Can’t take it anymore",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.89,
+          131.07
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 133.22,
+      "end": 134.61,
       "members": [
         "JAEHYUN"
       ],
       "original": "",
       "romanization": "I’m an animal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.23,
+          134.58
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 139.86,
+      "end": 141.25,
       "members": [
         "BOYNEXTDOOR"
       ],
@@ -373,17 +643,96 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 7.03,
+      "end": 9.69,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
       "original": "",
       "romanization": "(Hoo hoo hoo hoo hoo hoo)",
       "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.35,
+      "end": 11.28,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
+      "original": "",
+      "romanization": "(Hoo hoo hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 46.75,
+      "end": 47.75,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
+      "original": "",
+      "romanization": "(Hoo hoo hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 48.44,
+      "end": 49.34,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
+      "original": "",
+      "romanization": "(Hoo hoo hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 50.07,
+      "end": 51.03,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
+      "original": "",
+      "romanization": "(Hoo hoo hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 86.49,
+      "end": 87.5,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
+      "original": "",
+      "romanization": "(Hoo hoo hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 88.12,
+      "end": 89.14,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
+      "original": "",
+      "romanization": "(Hoo hoo hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 89.81,
+      "end": 90.82,
+      "members": [
+        "BOYNEXTDOOR"
+      ],
+      "original": "",
+      "romanization": "(Hoo hoo hoo)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 121.24,
+      "end": 122.23,
       "members": [],
       "original": "",
       "romanization": "(Hoo hoo hoo)",
@@ -391,8 +740,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 122.9,
+      "end": 123.89,
       "members": [],
       "original": "",
       "romanization": "(Hoo hoo hoo)",
@@ -400,71 +749,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(Hoo hoo hoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(Hoo hoo hoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(Hoo hoo hoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(Hoo hoo hoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(Hoo hoo hoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(Hoo hoo hoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "",
-      "romanization": "(Hoo hoo hoo)",
-      "english": "",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 124.58,
+      "end": 125.57,
       "members": [],
       "original": "",
       "romanization": "(Hoo hoo hoo)",
