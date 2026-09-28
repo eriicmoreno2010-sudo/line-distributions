@@ -62,5 +62,7 @@
       "adlib": ""
     }
   ],
-  "audio": "audio/boynextdoor_counttolovekoreanver.mp3"
+  "audio": "audio/boynextdoor_counttolovekoreanver.mp3",
+  "cover": "covers/boynextdoor_counttolovekoreanver.png",
+  "npC1": "#f22626"
 }
