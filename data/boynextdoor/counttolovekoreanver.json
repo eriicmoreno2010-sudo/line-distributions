@@ -53,39 +53,64 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SUNGHO"
-      ],
-      "original": "한 번 싸우면 이틀은 가니까",
-      "romanization": "han beon ssau myeon iteureun ganikka",
-      "english": "One fight, Lasts for two days",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
       "members": [],
-      "original": "딱 세 번만 참으려 했는데",
-      "romanization": "ttak se beonman cham euryeo haenneunde",
-      "english": "So I tried to hold back just three times",
+      "original": "한 번 싸우면, 이틀은 가니까",
+      "romanization": "han beon ssaumyeon, iteureun ganikka",
+      "english": "If we fight once, it lasts for two days",
       "adlib": false
     },
     {
       "start": 8.6,
       "end": 8.87,
       "members": [],
-      "original": "이깟 사랑이 뭔지 다섯 번은 더 참고 있는 내가 진짜 호구인가 싶다",
-      "romanization": "ikkat sarangi mwonji daseot beoneun deo chamgo inneun naega jinjja hoguinga sipda",
-      "english": "But I kept enduring it five more times What even is this love?",
+      "original": "딱 세 번만 참으려 했는데",
+      "romanization": "ttak se beonman chameuryeo haenneunde",
+      "english": "I tried to hold back just three times",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "또 뭐가 왜? 네 눈칫밥에",
-      "romanization": "tto mwoga wae? ne nunchnitbape",
+      "original": "이깟 사랑이 뭔지",
+      "romanization": "ikkat sarangi mwonji daseot beoneun",
+      "english": "What even is this love",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다섯 번은 더 참고 있는",
+      "romanization": "deo chamgo inneun",
+      "english": "I keep enduring it five more times",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내가 진짜 호구인가 싶다",
+      "romanization": "naega jinjja hoguinga sipda",
       "english": "I wonder if I’m really a fool",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "또 뭐가 왜?",
+      "romanization": "tto mwoga wae?",
+      "english": "What’s wrong again?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네 눈칫밥에",
+      "romanization": "ne nunchitbabe",
+      "english": "Because of your mood",
       "adlib": false
     },
     {
@@ -94,7 +119,7 @@
       "members": [],
       "original": "끼니를 걸렀어도 배가 불러",
       "romanization": "kkinireul geolleosseodo baega bulleo",
-      "english": "What’s wrong again? Even if I put up with your cold attitude",
+      "english": "Even if I skip a meal I’m still full",
       "adlib": false
     },
     {
@@ -102,8 +127,8 @@
       "end": 0,
       "members": [],
       "original": "한 시간째 입도 못 댄 커피는",
-      "romanization": "han siganjja ipdo mot daen keopineun uri saicheoreom mingminghaejyeosseo",
-      "english": "And my stomach starts hurting",
+      "romanization": "han siganjjae ipdo mot daen keopineun",
+      "english": "The coffee I haven’t touched for an hour",
       "adlib": false
     },
     {
@@ -111,8 +136,8 @@
       "end": 0,
       "members": [],
       "original": "우리 사이처럼 밍밍해졌어",
-      "romanization": "hanbatang tto taoreuda mal jageun bulssind eunde",
-      "english": "The coffee left untouched for an hour Has gone flat just like us",
+      "romanization": "uri saicheoreom mingminghaejyeosseo",
+      "english": "Has gone bland just like us",
       "adlib": false
     },
     {
@@ -120,8 +145,8 @@
       "end": 0,
       "members": [],
       "original": "한바탕 또 타오르다 말 작은 불씨인데",
-      "romanization": "hansum han beon jalmot swieotdaga",
-      "english": "After flaring up once again it was just a small spark",
+      "romanization": "hanbatang tto taoreuda mal jageun bulssiinde",
+      "english": "It’s just a small spark after flaring up again",
       "adlib": false
     },
     {
@@ -129,17 +154,26 @@
       "end": 0,
       "members": [],
       "original": "한숨 한 번 잘못 쉬었다가",
-      "romanization": "neon dasi buri buteotgo nae sogeun kkamaejineun geol",
-      "english": "But I let out a sigh the wrong way You caught fire again",
+      "romanization": "hansum han beon jalmot swieotdaga",
+      "english": "But I let out a sigh the wrong way",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "넌 다시 불이 붙었고 내 속은 까매지는 걸",
-      "romanization": "saramdeului joeun gugyeonggeoriga doegin sireun geol",
-      "english": "And my insides are turning black",
+      "original": "넌 다시 불이 붙었고",
+      "romanization": "neon dasi buri buteotgo",
+      "english": "And you caught fire again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 속은 까매지는 걸",
+      "romanization": "nae sogeun kkamaejineun geol",
+      "english": "While my insides turn black",
       "adlib": false
     },
     {
@@ -147,7 +181,7 @@
       "end": 0,
       "members": [],
       "original": "사람들의 좋은 구경거리가 되긴 싫은 걸",
-      "romanization": "geuraeseo chamgo chamneunde",
+      "romanization": "saramdeurui joeun gugyeonggeoriga doegin sileun geol",
       "english": "I don’t want to become something good for other people to watch",
       "adlib": false
     },
@@ -156,7 +190,7 @@
       "end": 0,
       "members": [],
       "original": "그래서 참고 참는데",
-      "romanization": "wae mam deo geureo jakku nado hwanael jul aneunde",
+      "romanization": "geuraeseo chamgo chamneunde",
       "english": "So I keep holding it in",
       "adlib": false
     },
@@ -164,17 +198,26 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "왜 맘 더 긁어 자꾸 나도 화낼 줄 아는데",
-      "romanization": "uri han beon ssau myeon iteureun ganikka",
-      "english": "Why do you keep hurting my heart? I know how to get angry too",
+      "original": "왜 맘 더 긁어 자꾸",
+      "romanization": "wae mam deo geulgeo jakku",
+      "english": "Why do you keep hurting my heart?",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "우리 한 번 싸우면 이틀은 가니까",
-      "romanization": "ttak se beonman cham euryeo haenneunde",
+      "original": "나도 화낼 줄 아는데",
+      "romanization": "nado hwanael jul aneunde",
+      "english": "I know how to get angry too",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우리 한 번 싸우면",
+      "romanization": "uri han beon ssaumyeon",
       "english": "If we fight once",
       "adlib": false
     },
@@ -182,18 +225,36 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "딱 세 번만 참으려 했는데",
-      "romanization": "ikkat sarangi mwonji daseot beoneun deo chamgo inneun",
-      "english": "It lasts for two days",
+      "original": "이틀은 가니까",
+      "romanization": "iteureun ganikka",
+      "english": "it lasts for two days",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "이깟 사랑이 뭔지 다섯 번은 더 참고 있는",
-      "romanization": "naega jinjja hoguinga sipda",
-      "english": "So I tried to hold back just three times",
+      "original": "딱 세 번만 참으려 했는데",
+      "romanization": "ttak se beonman chameuryeo haenneunde",
+      "english": "I tried to hold back just three times",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이깟 사랑이 뭔지",
+      "romanization": "ikkat sarangi mwonji",
+      "english": "What even is this love",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다섯 번은 더 참고 있는",
+      "romanization": "daseot beoneun deo chamgo inneun",
+      "english": "I keep enduring it five more times",
       "adlib": false
     },
     {
@@ -201,17 +262,26 @@
       "end": 0,
       "members": [],
       "original": "내가 진짜 호구인가 싶다",
-      "romanization": "neon hansum swineun nal ihae mot hanikka",
-      "english": "What even is this love?",
+      "romanization": "naega jinjja hoguinga sipda",
+      "english": "I wonder if I’m really a fool",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "넌 한숨 쉬는 날 이해 못 하니까",
-      "romanization": "ttak samchoman sum chama boryeo hae",
-      "english": "But I keep enduring it five more times",
+      "original": "넌 한숨 쉬는 날",
+      "romanization": "neon hansum swineun naL",
+      "english": "You don’t understand when I sigh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이해 못 하니까",
+      "romanization": "ihae mot hanikka",
+      "english": "So I’ll try holding my breath",
       "adlib": false
     },
     {
@@ -219,52 +289,25 @@
       "end": 0,
       "members": [],
       "original": "딱 3초만 숨 참아보려 해",
-      "romanization": "ikkat sarangi mwonji daseot saljja aecheoreom sutjana seneun naega cham silta",
-      "english": "I wonder if I’m really a fool",
+      "romanization": "ttak samchoman sum chamaboryeo hae",
+      "english": "For just three seconds",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "이깟 사랑이 뭔지 다섯 살짜리 애처럼",
-      "romanization": "il i sam sa o sum neomeogagi jikjeon gupsipgu jeom gu peosenteu",
-      "english": "You don’t understand the days when I sigh",
+      "original": "이깟 사랑이 뭔지",
+      "romanization": "ikkat sarangi mwonji",
+      "english": "What even is this love",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "숫자나 세는 내가 참 싫다",
-      "romanization": "myeot cho namasseo?",
-      "english": "So I’ll try holding my breath for just three seconds",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "1, 2, 3, 4, 5 숨넘어가기 직전 99.9%",
-      "romanization": "hansumman nawa countdown maeil hetgallyeo",
-      "english": "What even is this love?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "몇 초 남았어?",
-      "romanization": "gal got ilheun son 24/7 yeah yeah",
-      "english": "I hate myself for just counting numbers",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "한숨만 나와 countdown 매일 헷갈려",
-      "romanization": "hanbatang tto taoreuda mal jageun bulssind eunde",
+      "original": "다섯 살짜리 애처럼",
+      "romanization": "daseot saljjari aecheoreom",
       "english": "Like a five year old child",
       "adlib": false
     },
@@ -272,17 +315,26 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "갈 곳 잃은 손 24/7 yeah yeah",
-      "romanization": "hansum han beon jalmot swieotdaga",
-      "english": "1, 2, 3, 4, 5 Just before I run out of breath 99.9%",
+      "original": "숫자나 세는 내가 참 싫다",
+      "romanization": "sutjana seneun naega cham silta",
+      "english": "I hate myself for just counting numbers",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "한바탕 또 타오르다 말 작은 불씨인데",
-      "romanization": "neon dasi buri buteotgo nae sogeun kkamaejineun geol",
+      "original": "1, 2, 3, 4, 5 숨넘어가기 직전 99.9%",
+      "romanization": "one two three four five sumneomeogagi jikjeon ninety nine point nine",
+      "english": "1, 2, 3, 4, 5  just before I run out of breath 99.9%",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "몇 초 남았어?",
+      "romanization": "myeot cho namasseo?",
       "english": "How many seconds are left?",
       "adlib": false
     },
@@ -290,18 +342,54 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "한숨 한 번 잘못 쉬었다가",
-      "romanization": "saramdeului joeun gugyeonggeoriga doegin sireun geol",
-      "english": "All that comes out is a sigh Countdown I get confused every day",
+      "original": "한숨만 나와 countdown 매일 헷갈려",
+      "romanization": "hansumman nawa countdown maeil hetgallyeo",
+      "english": "All that comes out is a sigh countdown I get confused every day",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "넌 다시 불이 붙었고 내 속은 까매지는 걸",
-      "romanization": "geuraeseo chamgo chamneunde",
-      "english": "Hands that have lost where to go 24/7 yeah yeah",
+      "original": "갈 곳 잃은 손 24/7 yeah yeah",
+      "romanization": "gal got ileun son twenty four seven yeah yeah",
+      "english": "Hands that have lost where to go twenty four seven yeah yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "한바탕 또 타오르다 말 작은 불씨인데",
+      "romanization": "hanbatang tto taoreuda mal jageun bulssiinde",
+      "english": "It’s just a small spark after flaring up again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "한숨 한 번 잘못 쉬었다가",
+      "romanization": "hansum han beon jalmot swieotdaga",
+      "english": "But I let out a sigh the wrong way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 다시 불이 붙었고",
+      "romanization": "neon dasi buri buteotgo",
+      "english": "And you caught fire again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 속은 까매지는 걸",
+      "romanization": "nae sogeun kkamaejineun geol",
+      "english": "While my insides turn black",
       "adlib": false
     },
     {
@@ -309,34 +397,7 @@
       "end": 0,
       "members": [],
       "original": "사람들의 좋은 구경거리가 되긴 싫은 걸",
-      "romanization": "wae mam deo geureo jakku nado hwanael jul aneunde",
-      "english": "After flaring up once again it was just a small spark",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그래서 참고 참는데",
-      "romanization": "uri han beon ssau myeon iteureun ganikka",
-      "english": "But I let out a sigh the wrong way You caught fire again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "왜 맘 더 긁어 자꾸 나도 화낼 줄 아는데",
-      "romanization": "ttak se beonman cham euryeo haenneunde",
-      "english": "And my insides are turning black",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "우리 한 번 싸우면 이틀은 가니까",
-      "romanization": "ikkat sarangi mwonji daseot beoneun deo chamgo inneun naega jinjja hoguinga sipda",
+      "romanization": "saramdeurui joeun gugyeonggeoriga doegin sileun geol",
       "english": "I don’t want to become something good for other people to watch",
       "adlib": false
     },
@@ -344,8 +405,8 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "딱 세 번만 참으려 했는데",
-      "romanization": "neon hansum swineun nal ihae mot hanikka",
+      "original": "그래서 참고 참는데",
+      "romanization": "geuraeseo chamgo chamneunde",
       "english": "So I keep holding it in",
       "adlib": false
     },
@@ -353,17 +414,26 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "이깟 사랑이 뭔지 다섯 번은 더 참고 있는 내가 진짜 호구인가 싶다",
-      "romanization": "ttak samchoman sum chama boryeo hae",
-      "english": "Why do you keep hurting my heart? I know how to get angry too",
+      "original": "왜 맘 더 긁어 자꾸",
+      "romanization": "wae mam deo geulgeo jakku",
+      "english": "Why do you keep hurting my heart?",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "넌 한숨 쉬는 날 이해 못 하니까",
-      "romanization": "ikkat sarangi mwonji daseot saljja aecheoreom sutjana seneun naega cham silta",
+      "original": "나도 화낼 줄 아는데",
+      "romanization": "nado hwanael jul aneunde",
+      "english": "I know how to get angry too",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우리 한 번 싸우면",
+      "romanization": "uri han beon ssaumyeon",
       "english": "If we fight once",
       "adlib": false
     },
@@ -371,8 +441,8 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "딱 3초만 숨 참아보려 해 이깟 사랑이 뭔지 다섯 살짜리 애처럼 숫자나 세는 내가 참 싫다",
-      "romanization": "",
+      "original": "이틀은 가니까",
+      "romanization": "iteureun ganikka",
       "english": "It lasts for two days",
       "adlib": false
     },
@@ -380,35 +450,35 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
-      "english": "So I tried to hold back just three times",
+      "original": "딱 세 번만 참으려 했는데",
+      "romanization": "ttak se beonman chameuryeo haenneunde",
+      "english": "I tried to hold back just three times",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
-      "english": "What even is this love?",
+      "original": "이깟 사랑이 뭔지",
+      "romanization": "ikkat sarangi mwonji",
+      "english": "What even is this love",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
-      "english": "But I keep enduring it five more times",
+      "original": "다섯 번은 더 참고 있는",
+      "romanization": "daseot beoneun deo chamgo inneun",
+      "english": "I keep enduring it five more times",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
+      "original": "내가 진짜 호구인가 싶다",
+      "romanization": "naega jinjja hoguinga sipda",
       "english": "I wonder if I’m really a fool",
       "adlib": false
     },
@@ -416,35 +486,53 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
-      "english": "You don’t understand the days when I sigh",
+      "original": "넌 한숨 쉬는 날",
+      "romanization": "neon hansum swineun nal",
+      "english": "You don’t understand when I sigh",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
-      "english": "So I’ll try holding my breath for just three seconds",
+      "original": "이해 못 하니까",
+      "romanization": "ihae mot hanikka",
+      "english": "So I’ll try holding my breath",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
-      "english": "What even is this love? Like a five year old child",
+      "original": "딱 3초만 숨 참아보려 해",
+      "romanization": "ttak samchoman sum chamaboryeo hae",
+      "english": "For just three seconds",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "",
-      "romanization": "",
+      "original": "이깟 사랑이 뭔지",
+      "romanization": "ikkat sarangi mwonji",
+      "english": "What even is this love",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다섯 살짜리 애처럼",
+      "romanization": "daseot saljjari aecheoreom",
+      "english": "Like a five year old child",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숫자나 세는 내가 참 싫다",
+      "romanization": "sutjana seneun naega cham silta",
       "english": "I hate myself for just counting numbers",
       "adlib": false
     }
