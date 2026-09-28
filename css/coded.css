@@ -38,15 +38,16 @@ body.layout-coded #timeline-section{ display:none !important; }
     transition:filter .28s ease;
 }
 .cstrip-grad{
-    position:absolute; left:0; right:0; bottom:0; height:48%;
+    position:absolute; left:0; right:0; bottom:0; height:30%;
     background:linear-gradient(to top, var(--c) 0%, transparent 100%);
     opacity:.7; transition:opacity .28s ease;
 }
 .cstrip-name{
     position:absolute; left:4px; right:4px; bottom:26px; text-align:center;
     font-family:"Jua", var(--app-font); font-weight:400; font-size:46px; letter-spacing:.2px;
-    color:#fff; -webkit-text-stroke:3px var(--c); paint-order:stroke fill;   /* contorno del color del miembro */
-    text-shadow:0 3px 12px rgba(0,0,0,.7);
+    /* relleno = color del miembro; contorno BLANCO grueso y notorio */
+    color:var(--c); -webkit-text-stroke:5px #fff; paint-order:stroke fill;
+    text-shadow:0 2px 6px rgba(0,0,0,.55);
     white-space:nowrap; overflow:hidden;
     opacity:.92; transition:opacity .25s ease, transform .25s ease;
 }
@@ -62,7 +63,7 @@ body.layout-coded #timeline-section{ display:none !important; }
 .cstrip.done .cstrip-photo{ filter:grayscale(1) brightness(.5); }
 .cstrip.done.singing .cstrip-photo{ filter:grayscale(1) brightness(1); }
 .cstrip.done .cstrip-grad{ opacity:.16; }
-.cstrip.done .cstrip-name{ opacity:.55; -webkit-text-stroke-color:#8a8a8a; }
+.cstrip.done .cstrip-name{ opacity:.55; color:#9a9a9a; }   /* gris por dentro, contorno blanco */
 .cstrip.done.singing .cstrip-name{ opacity:.9; }
 
 /* ---------- BARRA de color, justo debajo de las fotos ---------- */
