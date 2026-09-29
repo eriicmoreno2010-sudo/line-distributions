@@ -134,9 +134,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(oh ah)",
-      "romanization": "oh ah",
-      "english": "oh ah",
+      "original": "",
+      "romanization": "(oh ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -170,9 +170,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -197,9 +197,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -242,9 +242,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -269,18 +269,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(yeah)",
-      "romanization": "yeah",
-      "english": "yeah",
+      "original": "",
+      "romanization": "(yeah)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(yeah)",
-      "romanization": "yeah",
-      "english": "yeah",
+      "original": "",
+      "romanization": "(yeah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -341,9 +341,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(oh ah)",
-      "romanization": "oh ah",
-      "english": "oh ah",
+      "original": "",
+      "romanization": "(oh ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -377,9 +377,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -404,9 +404,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -449,9 +449,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -512,9 +512,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -539,9 +539,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -566,9 +566,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(I love you yeah)",
-      "romanization": "i love you yeah",
-      "english": "I love you yeah",
+      "original": "",
+      "romanization": "(I love you yeah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -584,18 +584,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(uh uh)",
-      "romanization": "uh uh",
-      "english": "uh uh",
+      "original": "",
+      "romanization": "(uh uh)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(oh You give me that babe)",
-      "romanization": "oh you give me that babe",
-      "english": "oh you give me that babe",
+      "original": "",
+      "romanization": "(oh You give me that babe)",
+      "english": "",
       "adlib": true
     },
     {
@@ -611,9 +611,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ah)",
-      "romanization": "ah",
-      "english": "ah",
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -629,9 +629,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(yeah)",
-      "romanization": "yeah",
-      "english": "yeah",
+      "original": "",
+      "romanization": "(yeah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -647,5 +647,6 @@
   "npC1": "#eff226",
   "cover": "covers/nctdream_thatsummer.jpg",
   "npC2": "#2ee7ff",
-  "audio": "audio/nctdream_thatsummer.mp3"
+  "audio": "audio/nctdream_thatsummer.mp3",
+  "audioOffset": -0.1
 }
