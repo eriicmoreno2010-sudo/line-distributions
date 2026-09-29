@@ -62,18 +62,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "여름 바람이 불어오면",
-      "romanization": "yeoreum barami bureoomyeon",
-      "english": "When the summer breeze blows",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "떠오르는 네 기억",
-      "romanization": "tteooreuneun ne gieok",
-      "english": "Memories of you come back",
+      "original": "여름 바람이 불어오면, 떠오르는 네 기억",
+      "romanization": "yeoreum barami bureoomyeon, tteooreuneun ne gieok",
+      "english": "When the summer breeze blows, Memories of you come back",
       "adlib": false
     },
     {
@@ -89,27 +80,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "18",
-      "romanization": "eighteen",
-      "english": "Eighteen",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "이른 여름처럼",
-      "romanization": "ireun yeoreumcheoreom",
-      "english": "Like an early summer",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어른은 아직 아닌 나이",
-      "romanization": "eoreuneun ajik anin nai",
-      "english": "Not quite an adult yet",
+      "original": "18, 이른 여름처럼, 어른은 아직 아닌 나이",
+      "romanization": "eighteen, ireun yeoreumcheoreom, eoreuneun ajik anin nai",
+      "english": "18, Like an early summer, Not quite an adult yet",
       "adlib": false
     },
     {
@@ -134,18 +107,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "자전거 뒤에 탄 네 향기",
-      "romanization": "jajeongeo dwie tan ne hyanggi",
-      "english": "Your scent riding behind me on the bike",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그건 아마 Hand cream",
-      "romanization": "geugeon ama hand cream",
-      "english": "Probably your hand cream",
+      "original": "자전거 뒤에 탄 네 향기, 그건 아마 Hand cream",
+      "romanization": "jajeongeo dwie tan ne hyanggi, geugeon ama hand cream",
+      "english": "Your scent riding behind me on the bike, Probably your hand cream",
       "adlib": false
     },
     {
@@ -161,27 +125,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "어느새 집",
-      "romanization": "eoneusae jip",
-      "english": "Before I knew it I was home",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잘 가 인사 대신 내 손에",
-      "romanization": "jal ga insa daesin nae sone",
-      "english": "Instead of goodbye",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "쥐어준 캔",
-      "romanization": "jwieojun kaen",
-      "english": "You handed me a can",
+      "original": "어느새 집, 잘 가 인사 대신 내 손에, 쥐어준 캔",
+      "romanization": "eoneusae jip, jal ga insa daesin nae sone, jwieojun kaen",
+      "english": "Before I knew it I was home, Instead of goodbye, You handed me a can",
       "adlib": false
     },
     {
@@ -197,81 +143,27 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "복숭아 향",
-      "romanization": "boksunga hyang",
-      "english": "Peach scent",
+      "original": "복숭아 향, 떨리던 맘, 어색해질까 봐 모른척한",
+      "romanization": "boksunga hyang, tteollideon mam, eosaekhaejilkka bwa moreuncheokan",
+      "english": "Peach scent, A trembling heart, Afraid it’d get awkward I pretended not to notice",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "떨리던 맘",
-      "romanization": "tteollideon mam",
-      "english": "A trembling heart",
+      "original": "서툰 그날, 내 첫사랑, Miss you right now",
+      "romanization": "seotun geunal, nae cheotsarang, miss you right now",
+      "english": "That clumsy day, My first love, Miss you right now",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "어색해질까 봐 모른척한",
-      "romanization": "eosaekhaejilkka bwa moreuncheokan",
-      "english": "Afraid it’d get awkward I pretended not to notice",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "서툰 그날",
-      "romanization": "seotun geunal",
-      "english": "That clumsy day",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "내 첫사랑",
-      "romanization": "nae cheotsarang",
-      "english": "My first love",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Miss you right now",
-      "romanization": "miss you right now",
-      "english": "Miss you right now",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "여름",
-      "romanization": "yeoreum",
-      "english": "When",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "또 바람이 불어오면",
-      "romanization": "tto barami bureoomyeon",
-      "english": "The summer breeze blows again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "떠오르는 그 Flavour",
-      "romanization": "tteooreuneun geu flavour",
-      "english": "That flavour comes back to me",
+      "original": "여름, 또 바람이 불어오면, 떠오르는 그 Flavour",
+      "romanization": "yeoreum, tto barami bureoomyeon, tteooreuneun geu flavour",
+      "english": "When, The summer breeze blows again, That flavour comes back to me",
       "adlib": false
     },
     {
@@ -287,54 +179,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "우린 그렇게",
-      "romanization": "urin geureoke",
-      "english": "We’re like that",
+      "original": "우린 그렇게, Spring or summer, Friend or lover",
+      "romanization": "urin geureoke, spring or summer, friend or lover",
+      "english": "We’re like that, Spring or summer, Friend or lover",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Spring or summer",
-      "romanization": "spring or summer",
-      "english": "Spring or summer",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Friend or lover",
-      "romanization": "friend or lover",
-      "english": "Friend or lover",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Hold up",
-      "romanization": "hold up",
-      "english": "Hold up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "눈 깜빡할 사이 넌",
-      "romanization": "nun kkamppakal sai neon",
-      "english": "In the blink of an eye",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "사라지고 말 계절",
-      "romanization": "sarajigo mal gyejeol",
-      "english": "You became a season that disappeared",
+      "original": "Hold up, 눈 깜빡할 사이 넌, 사라지고 말 계절",
+      "romanization": "hold up, nun kkamppakal sai neon, sarajigo mal gyejeol",
+      "english": "Hold up, In the blink of an eye, You became a season that disappeared",
       "adlib": false
     },
     {
@@ -350,72 +206,36 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너로 기억될",
-      "romanization": "neoro gieokdoel",
-      "english": "A flavour flavour flavour flavour",
+      "original": "너로 기억될, Flavour flavour flavour flavour",
+      "romanization": "neoro gieokdoel, flavour flavour flavour flavour",
+      "english": "A flavour flavour flavour flavour, Remembered as you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Flavour flavour flavour flavour",
-      "romanization": "flavour flavour flavour flavour",
-      "english": "Remembered as you",
+      "original": "Give me that flavour, La la la 그날의 Flavour",
+      "romanization": "give me that flavour, la la la geunarui flavour",
+      "english": "Give me that flavour, La la la the flavour of that day",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Give me that flavour",
-      "romanization": "give me that flavour",
-      "english": "Give me that flavour",
+      "original": "Gi give me That Summer, La la la 우리의 계절",
+      "romanization": "gi give me that summer, la la la uriui gyejeol",
+      "english": "Gi give me that summer, La la la our season",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "La la la 그날의 Flavour",
-      "romanization": "la la la geunarui flavour",
-      "english": "La la la the flavour of that day",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Gi give me That Summer",
-      "romanization": "gi give me that summer",
-      "english": "Gi give me that summer",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "La la la 우리의 계절",
-      "romanization": "la la la uriui gyejeol",
-      "english": "La la la our season",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "눈 깜빡할 사이 넌",
-      "romanization": "nun kkamppakal sai neon",
-      "english": "In the blink of an eye",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "사라지고 말 계절",
-      "romanization": "sarajigo mal gyejeol",
-      "english": "You became a season that disappeared",
+      "original": "눈 깜빡할 사이 넌, 사라지고 말 계절",
+      "romanization": "nun kkamppakal sai neon, sarajigo mal gyejeol",
+      "english": "In the blink of an eye, You became a season that disappeared",
       "adlib": false
     },
     {
@@ -431,27 +251,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너로 기억될",
-      "romanization": "neoro gieokdoel",
-      "english": "A flavour flavour flavour flavour",
+      "original": "너로 기억될, Flavour flavour flavour flavour",
+      "romanization": "neoro gieokdoel, flavour flavour flavour flavour",
+      "english": "A flavour flavour flavour flavour, Remembered as you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Flavour flavour flavour flavour",
-      "romanization": "flavour flavour flavour flavour",
-      "english": "Remembered as you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "팔을 걷어 입은 후디",
-      "romanization": "pareul geodeo ibeun hudi",
-      "english": "Rolled up sleeves of a hoodie",
+      "original": "팔을 걷어 입은 후디, 맨살 위로 미지근한 햇살들이",
+      "romanization": "pareul geodeo ibeun hudi, maensal wiro mijigeunhan haetsaldeuri",
+      "english": "Rolled up sleeves of a hoodie, The lukewarm sunlight on bare skin",
       "adlib": false
     },
     {
@@ -467,15 +278,6 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "맨살 위로 미지근한 햇살들이",
-      "romanization": "maensal wiro mijigeunhan haetsaldeuri",
-      "english": "The lukewarm sunlight on bare skin",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
       "original": "(yeah)",
       "romanization": "yeah",
       "english": "yeah",
@@ -485,36 +287,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "잠든 기억 깨워",
-      "romanization": "jamdeun gieok kkaewo",
-      "english": "It wakes up sleeping memories",
+      "original": "잠든 기억 깨워, 색 보정된 듯",
+      "romanization": "jamdeun gieok kkaewo, saek bojeongdoen deut",
+      "english": "It wakes up sleeping memories, Like color correction",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "색 보정된 듯",
-      "romanization": "saek bojeongdoen deut",
-      "english": "Like color correction",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아련해 Every scene",
-      "romanization": "aryeonhae every scene",
-      "english": "Every scene is sentimental",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "필름 사진 같아",
-      "romanization": "pilleum sajin gata",
-      "english": "Like a film photo",
+      "original": "아련해 Every scene, 필름 사진 같아",
+      "romanization": "aryeonhae every scene, pilleum sajin gata",
+      "english": "Every scene is sentimental, Like a film photo",
       "adlib": false
     },
     {
@@ -539,45 +323,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "닿은 그림자에 설레던 맘",
-      "romanization": "daeun geurimjae seolledeon mam",
-      "english": "My heart fluttered from our shadows touching",
+      "original": "닿은 그림자에 설레던 맘, 그때의 넌 알까",
+      "romanization": "daeun geurimjae seolledeon mam, geuttaeui neon alkka",
+      "english": "My heart fluttered from our shadows touching, Would you have known back then?",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "그때의 넌 알까",
-      "romanization": "geuttaeui neon alkka",
-      "english": "Would you have known back then?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "투명한 색",
-      "romanization": "tumyeonghan saek",
-      "english": "A transparent hue",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "봄 반 여름 반인 하늘에",
-      "romanization": "bom ban yeoreum banin haneure",
-      "english": "In the sky that’s half spring half summer",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "내 맘 이렇게",
-      "romanization": "nae mam ireoke",
-      "english": "That’s how my heart is too",
+      "original": "투명한 색, 봄 반 여름 반인 하늘에, 내 맘 이렇게",
+      "romanization": "tumyeonghan saek, bom ban yeoreum banin haneure, nae mam ireoke",
+      "english": "A transparent hue, In the sky that’s half spring half summer, That’s how my heart is too",
       "adlib": false
     },
     {
@@ -593,81 +350,27 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "앞설까 봐",
-      "romanization": "apseolkka bwa",
-      "english": "I held myself back afraid",
+      "original": "앞설까 봐, 늦추던 맘, 머뭇거리다가 놓쳐버린",
+      "romanization": "apseolkka bwa, neutchudeon mam, meomutgeoridaga nochyeobeorin",
+      "english": "I held myself back afraid, Of being too forward, Hesitating I missed the chance",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "늦추던 맘",
-      "romanization": "neutchudeon mam",
-      "english": "Of being too forward",
+      "original": "너라는 아이, 참 애틋한, Miss you right now",
+      "romanization": "neoraneun ai, cham aeteuthan, miss you right now",
+      "english": "That person called you, So dear to me, Miss you right now",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "머뭇거리다가 놓쳐버린",
-      "romanization": "meomutgeoridaga nochyeobeorin",
-      "english": "Hesitating I missed the chance",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너라는 아이",
-      "romanization": "neoraneun ai",
-      "english": "That person called you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "참 애틋한",
-      "romanization": "cham aeteuthan",
-      "english": "So dear to me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Miss you right now",
-      "romanization": "miss you right now",
-      "english": "Miss you right now",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "여름",
-      "romanization": "yeoreum",
-      "english": "When",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "또 바람이 불어오면",
-      "romanization": "tto barami bureoomyeon",
-      "english": "The summer breeze blows again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "떠오르는 그 Flavour",
-      "romanization": "tteooreuneun geu flavour",
-      "english": "That flavour comes back to me",
+      "original": "여름, 또 바람이 불어오면, 떠오르는 그 Flavour",
+      "romanization": "yeoreum, tto barami bureoomyeon, tteooreuneun geu flavour",
+      "english": "When, The summer breeze blows again, That flavour comes back to me",
       "adlib": false
     },
     {
@@ -683,54 +386,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "우린 그렇게",
-      "romanization": "urin geureoke",
-      "english": "We’re like that",
+      "original": "우린 그렇게, Spring or summer, Friend or lover",
+      "romanization": "urin geureoke, spring or summer, friend or lover",
+      "english": "We’re like that, Spring or summer, Friend or lover",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Spring or summer",
-      "romanization": "spring or summer",
-      "english": "Spring or summer",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Friend or lover",
-      "romanization": "friend or lover",
-      "english": "Friend or lover",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Hold up",
-      "romanization": "hold up",
-      "english": "Hold up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "눈 깜빡할 사이 넌",
-      "romanization": "nun kkamppakal sai neon",
-      "english": "In the blink of an eye",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "사라지고 말 계절",
-      "romanization": "sarajigo mal gyejeol",
-      "english": "You became a season that disappeared",
+      "original": "Hold up, 눈 깜빡할 사이 넌, 사라지고 말 계절",
+      "romanization": "hold up, nun kkamppakal sai neon, sarajigo mal gyejeol",
+      "english": "Hold up, In the blink of an eye, You became a season that disappeared",
       "adlib": false
     },
     {
@@ -746,72 +413,36 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너로 기억될",
-      "romanization": "neoro gieokdoel",
-      "english": "A flavour flavour flavour flavour",
+      "original": "너로 기억될, Flavour flavour flavour flavour",
+      "romanization": "neoro gieokdoel, flavour flavour flavour flavour",
+      "english": "A flavour flavour flavour flavour, Remembered as you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Flavour flavour flavour flavour",
-      "romanization": "flavour flavour flavour flavour",
-      "english": "Remembered as you ah",
+      "original": "Give me that flavour, La la la 그날의 Flavour",
+      "romanization": "give me that flavour, la la la geunarui flavour",
+      "english": "Give me that flavour, La la la the flavour of that day",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Give me that flavour",
-      "romanization": "give me that flavour",
-      "english": "Give me that flavour",
+      "original": "Gi give me That Summer, La la la 우리의 계절",
+      "romanization": "gi give me that summer, la la la uriui gyejeol",
+      "english": "Gi give me that summer, La la la our season",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "La la la 그날의 Flavour",
-      "romanization": "la la la geunarui flavour",
-      "english": "La la la the flavour of that day",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Gi give me That Summer",
-      "romanization": "gi give me that summer",
-      "english": "Gi give me that summer",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "La la la 우리의 계절",
-      "romanization": "la la la uriui gyejeol",
-      "english": "La la la our season",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "눈 깜빡할 사이 넌",
-      "romanization": "nun kkamppakal sai neon",
-      "english": "In the blink of an eye",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "사라지고 말 계절",
-      "romanization": "sarajigo mal gyejeol",
-      "english": "You became a season that disappeared",
+      "original": "눈 깜빡할 사이 넌, 사라지고 말 계절",
+      "romanization": "nun kkamppakal sai neon, sarajigo mal gyejeol",
+      "english": "In the blink of an eye, You became a season that disappeared",
       "adlib": false
     },
     {
@@ -827,18 +458,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너로 기억될",
-      "romanization": "neoro gieokdoel",
-      "english": "A flavour flavour flavour flavour",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Flavour flavour flavour flavour",
-      "romanization": "flavour flavour flavour flavour",
-      "english": "Remembered as you",
+      "original": "너로 기억될, Flavour flavour flavour flavour",
+      "romanization": "neoro gieokdoel, flavour flavour flavour flavour",
+      "english": "A flavour flavour flavour flavour, Remembered as you",
       "adlib": false
     },
     {
@@ -881,27 +503,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "여름",
-      "romanization": "yeoreum",
-      "english": "When",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "또 바람이 불어오면",
-      "romanization": "tto barami bureoomyeon",
-      "english": "The summer breeze blows again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "떠오르는 그 Flavour",
-      "romanization": "tteooreuneun geu flavour",
-      "english": "That flavour comes back to me",
+      "original": "여름, 또 바람이 불어오면, 떠오르는 그 Flavour",
+      "romanization": "yeoreum, tto barami bureoomyeon, tteooreuneun geu flavour",
+      "english": "When, The summer breeze blows again, That flavour comes back to me",
       "adlib": false
     },
     {
@@ -917,54 +521,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "우린 그렇게",
-      "romanization": "urin geureoke",
-      "english": "We’re like that",
+      "original": "우린 그렇게, Spring or summer, Friend or lover",
+      "romanization": "urin geureoke, spring or summer, friend or lover",
+      "english": "We’re like that, Spring or summer, Friend or lover",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Spring or summer",
-      "romanization": "spring or summer",
-      "english": "Spring or summer",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Friend or lover",
-      "romanization": "friend or lover",
-      "english": "Friend or lover",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Hold up",
-      "romanization": "hold up",
-      "english": "Hold up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "눈 깜빡할 사이 넌",
-      "romanization": "nun kkamppakal sai neon",
-      "english": "In the blink of an eye",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "사라지고 말 계절",
-      "romanization": "sarajigo mal gyejeol",
-      "english": "You became a season that disappeared",
+      "original": "Hold up, 눈 깜빡할 사이 넌, 사라지고 말 계절",
+      "romanization": "hold up, nun kkamppakal sai neon, sarajigo mal gyejeol",
+      "english": "Hold up, In the blink of an eye, You became a season that disappeared",
       "adlib": false
     },
     {
@@ -980,27 +548,18 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너로 기억될",
-      "romanization": "neoro gieokdoel",
-      "english": "A flavour flavour flavour flavour",
+      "original": "너로 기억될, Flavour flavour flavour flavour",
+      "romanization": "neoro gieokdoel, flavour flavour flavour flavour",
+      "english": "A flavour flavour flavour flavour, Remembered as you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Flavour flavour flavour flavour",
-      "romanization": "flavour flavour flavour flavour",
-      "english": "Remembered as you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Give me that flavour",
-      "romanization": "give me that flavour",
-      "english": "Give me that flavour",
+      "original": "Give me that flavour, La la la 그날의 Flavour",
+      "romanization": "give me that flavour, la la la geunarui flavour",
+      "english": "Give me that flavour, La la la the flavour of that day",
       "adlib": false
     },
     {
@@ -1016,18 +575,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "La la la 그날의 Flavour",
-      "romanization": "la la la geunarui flavour",
-      "english": "La la la the flavour of that day",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Gi give me That Summer",
-      "romanization": "gi give me that summer",
-      "english": "Gi give me that summer",
+      "original": "Gi give me That Summer, La la la 우리의 계절",
+      "romanization": "gi give me that summer, la la la uriui gyejeol",
+      "english": "Gi give me that summer, La la la our season",
       "adlib": false
     },
     {
@@ -1043,15 +593,6 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "La la la 우리의 계절",
-      "romanization": "la la la uriui gyejeol",
-      "english": "La la la our season",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
       "original": "(oh You give me that babe)",
       "romanization": "oh you give me that babe",
       "english": "oh you give me that babe",
@@ -1061,27 +602,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Hold up",
-      "romanization": "hold up",
-      "english": "Hold up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "천천히 지나가 줘",
-      "romanization": "cheoncheonhi jinaga jwo",
-      "english": "Let it pass slowly",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "내가 사랑한 계절",
-      "romanization": "naega saranghan gyejeol",
-      "english": "The season I loved you",
+      "original": "Hold up, 천천히 지나가 줘, 내가 사랑한 계절",
+      "romanization": "hold up, cheoncheonhi jinaga jwo, naega saranghan gyejeol",
+      "english": "Hold up, Let it pass slowly, The season I loved you",
       "adlib": false
     },
     {
@@ -1097,18 +620,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "너로 기억될",
-      "romanization": "neoro gieokdoel",
-      "english": "A flavour flavour flavour",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Flavour flavour flavour",
-      "romanization": "flavour flavour flavour",
-      "english": "Remembered as you",
+      "original": "너로 기억될, Flavour flavour flavour",
+      "romanization": "neoro gieokdoel, flavour flavour flavour",
+      "english": "A flavour flavour flavour, Remembered as you",
       "adlib": false
     },
     {
@@ -1124,9 +638,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Flavour",
-      "romanization": "flavour",
-      "english": "Flavour",
+      "original": "",
+      "romanization": "Flavour",
+      "english": "",
       "adlib": false
     }
   ],
