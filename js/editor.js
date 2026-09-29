@@ -635,7 +635,7 @@
   if(impGo)    impGo.onclick    = () => doImport($("#importText") ? $("#importText").checked : true);   // compat
   // Reaplica la regla: AD-LIB solo si la línea va entre paréntesis ( )
   $("#paCancel").onclick = () => $("#pastemodal").classList.remove("show");
-  $("#pastemodal").addEventListener("click", e => { if(e.target.id === "pastemodal") $("#pastemodal").classList.remove("show"); });
+  // NO cerrar al clicar fuera (se perdía todo lo pegado): solo Cancelar o Generar líneas.
 
   // Previsualizar: construye la tabla desde los textareas
   $("#paPreviewBtn").onclick = () => {
