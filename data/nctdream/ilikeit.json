@@ -808,5 +808,7 @@
       "adlib": false
     }
   ],
-  "npC1": "#f2c626"
+  "npC1": "#f29d26",
+  "audio": "audio/nctdream_ilikeit.mp3",
+  "cover": "covers/nctdream_ilikeit.jpg"
 }
