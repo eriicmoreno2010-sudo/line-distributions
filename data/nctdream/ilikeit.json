@@ -64,10 +64,748 @@
       "members": [
         "MARK"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "우연일 뿐인",
+      "romanization": "uyeonil ppunin",
+      "english": "It’s just a coincidence",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그저 스침을 가장한",
+      "romanization": "geujeo seuchimeul gajanghan",
+      "english": "Pretending to be just a passing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "시간선을 걷고 있는 중",
+      "romanization": "siganseoneul geotgo inneun jung",
+      "english": "We’re walking along a timeline",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이름도 없이",
+      "romanization": "ireumdo eopsi",
+      "english": "Without even a name",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "기나긴 밤을 뚫고서",
+      "romanization": "ginagin bameul ttulkoseo",
+      "english": "Piercing through the long night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너를 만나러 오게 됐어",
+      "romanization": "neoreul mannareo oge dwaesseo",
+      "english": "I ended up coming to meet you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "oh oh",
+      "romanization": "oh oh",
+      "english": "oh oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(uh yeah)",
+      "romanization": "uh yeah",
+      "english": "uh yeah",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You gon’ be there, right?",
+      "romanization": "you gon' be there right?",
+      "english": "You gon’ be there right?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "원래라면 닿지 못할",
+      "romanization": "wollaeramyeon dachi mothal",
+      "english": "Normally we wouldn’t even meet",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "둘 사이 아주 작은 틈을 찾아",
+      "romanization": "dul sai aju jageun teumeul chaja",
+      "english": "But we find a tiny gap between us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어지러운 세상에",
+      "romanization": "eojireoun sesange",
+      "english": "In this dizzy world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "균열 하나쯤은 괜찮아",
+      "romanization": "gyunyeol hanajjeumeun gwaenchana",
+      "english": "A crack like this is alright",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Just come and try now",
+      "romanization": "just come and try now",
+      "english": "Just come and try now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 손을 잡아",
+      "romanization": "nae soneul jaba",
+      "english": "Take my hand",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I got you doing it right",
+      "romanization": "i got you doing it right",
+      "english": "I got you doing it right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "난 다른 너이니까",
+      "romanization": "nan dareun neoinikka",
+      "english": "Cause I’m a different version of you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We gon’ outta control",
+      "romanization": "we gon' outta control",
+      "english": "We gon’ outta control",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We gon' outta control",
+      "romanization": "we gon' outta control",
+      "english": "We gon’ outta control",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "ri-ri-ri-ri-right",
+      "romanization": "ri ri ri ri right",
+      "english": "Right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(oh)",
+      "romanization": "oh",
+      "english": "oh",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Wait a minute check myself woo",
+      "romanization": "wait a minute check myself ooh",
+      "english": "Wait a minute check myself ooh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Baby 예상할 수 없게 다 뒤집어",
+      "romanization": "baby yesanghal su eopge da dwijibeo",
+      "english": "Baby flipping everything in unpredictable ways",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I go crazy 저 문을 열어 꿈을 열어",
+      "romanization": "i go crazy jeo muneul yeoreo kkumeul yeoreo yeah",
+      "english": "I go crazy open that door open that dream yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "oh 여긴 아마 너의 내일 어디쯤",
+      "romanization": "oh yeogin ama neoui naeil eodijjeum",
+      "english": "Oh this is probably somewhere near your tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그게 뭐든 I LIKE IT I LIKE IT I LIKE IT",
+      "romanization": "geuge mwodeun i like it i like it i like it",
+      "english": "Whatever it is I LIKE IT I LIKE IT I LIKE IT",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’ll float I’ll float away",
+      "romanization": "i'll float i'll float away",
+      "english": "I’ll float I’ll float away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Float I’ll float away",
+      "romanization": "float i'll float away",
+      "english": "Float I’ll float away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’ll float I’ll float away",
+      "romanization": "i'll float i'll float away",
+      "english": "I’ll float I’ll float away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그게 뭐든 I LIKE IT I LIKE IT I LIKE IT",
+      "romanization": "geuge mwodeun i like it i like it i like it",
+      "english": "Whatever it is I LIKE IT I LIKE IT I LIKE IT",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I keep on rocking",
+      "romanization": "i keep on rocking",
+      "english": "I keep on rocking",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Do that do that 내 뒤를 쫓아",
+      "romanization": "do that do that nae dwireul jjocha",
+      "english": "Do that do that follow me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두 세계와 갈린 엇박자",
+      "romanization": "du segyewa gallin eotbakja",
+      "english": "Two worlds out of sync",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "네가 뱉을 다음 말을 알아",
+      "romanization": "nega baeteul daeum mareul ara",
+      "english": "I know what you’re about to say next",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "방금 느낀 감정 마실 다음 숨까지 다",
+      "romanization": "banggeum neukkin gamjeong masil daeum sumkkaji da",
+      "english": "Even the breath you’ll take after the feeling you just had",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Don’t ask it",
+      "romanization": "don't ask it",
+      "english": "Don’t ask it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "멈춘 곳이 네 자리",
+      "romanization": "meomchun gosi ne jari",
+      "english": "Where it stopped that’s your place",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Whatever you wanna do do you you",
+      "romanization": "whatever you wanna do do you you",
+      "english": "Whatever you wanna do do you you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You can do it do it do it all ahhh",
+      "romanization": "you can do it do it do it all",
+      "english": "You can do it do it do it all",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "둘 사이 우릴 막는 오류라면",
+      "romanization": "dul sai uril mangneun oryuramyeon",
+      "english": "If the error between us blocks the way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Rewrite 다시 한번 써 내려가",
+      "romanization": "rewrite dasi hanbeon sseo naeryeoga",
+      "english": "Rewrite it let’s write it again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어지러운 세상에",
+      "romanization": "eojireoun sesange",
+      "english": "In this dizzy world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이런 장난쯤은 괜찮아",
+      "romanization": "ireon jangnanjjeumeun gwaenchana",
+      "english": "A little game like this is okay",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Baby you’ll be mine",
+      "romanization": "baby you'll be mine",
+      "english": "Baby you’ll be mine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "mine mine mine mine",
+      "romanization": "minemineminemine",
+      "english": "minemineminemine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We gon’ outta control",
+      "romanization": "we gon' outta control",
+      "english": "We gon’ outta control",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We gon' outta control",
+      "romanization": "we gon' outta control",
+      "english": "We gon’ outta control",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "ri-ri-ri-ri-right",
+      "romanization": "ri ri ri ri right",
+      "english": "Right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(oh)",
+      "romanization": "oh",
+      "english": "oh",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Wait a minute check myself woo",
+      "romanization": "wait a minute check myself ooh",
+      "english": "Wait a minute check myself ooh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Baby 예상할 수 없게 다 뒤집어",
+      "romanization": "baby woo yesanghal su eopge da dwijibeo that's right",
+      "english": "Baby woo flipping everything in unpredictable ways that’s right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I go crazy 저 문을 열어 꿈을 열어",
+      "romanization": "i go crazy jeo muneul yeoreo kkumeul yeoreo",
+      "english": "I go crazy open that door open that dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "oh 여긴 아마 너의 내일 어디쯤",
+      "romanization": "oh yeogin ama neoui naeil eodijjeum",
+      "english": "Oh this is probably somewhere near your tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그게 뭐든 I LIKE IT I LIKE IT I LIKE IT",
+      "romanization": "geuge mwodeun i like it i like it i like it",
+      "english": "Whatever it is I LIKE IT I LIKE IT I LIKE IT",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "oh yeah",
+      "romanization": "oh yeah",
+      "english": "oh yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "긴 밤을 지나 다시 네게 갈 거야",
+      "romanization": "gin bameul jina dasi nege gal geoya",
+      "english": "After passing through the long night I’ll come back to you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So don't think twice",
+      "romanization": "so don't think twice",
+      "english": "So don’t think twice",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "일그러지는 Phase 그다음 패턴도",
+      "romanization": "ilgeureojineun phase geudaeum paeteondo",
+      "english": "Even the distorted phase or pattern that comes next",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "예측하지 못해도",
+      "romanization": "yecheukaji mothaedo",
+      "english": "Even if I can’t predict it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "But I’m just having fun",
+      "romanization": "but i'm just having fun",
+      "english": "But I’m just having fun",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "뒤로 감긴 태엽",
+      "romanization": "dwiro gamgin taeyeop",
+      "english": "The spring winding back",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 제자리로",
+      "romanization": "dasi jejariro",
+      "english": "Returns to its place",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "벗어나 이 궤도 밖의 난",
+      "romanization": "beoseona i gwedo bakkui nan",
+      "english": "Breaking out of this orbit",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So bring it back one last time",
+      "romanization": "so bring it back one last time woo",
+      "english": "So bring it back one last time woo",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Baby",
+      "romanization": "baby",
+      "english": "Baby",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Baby)",
+      "romanization": "baby",
+      "english": "baby",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "예상할 수 없게 다 뒤집어",
+      "romanization": "yesanghal su eopge da dwijibeo that's right",
+      "english": "flipping everything in unpredictable ways that’s right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I go crazy",
+      "romanization": "i go crazy",
+      "english": "I go crazy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "저 문을 열어 꿈을 열어",
+      "romanization": "jeo muneul yeoreo kkumeul yeoreo",
+      "english": "Open that door open that dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "oh 여긴 아마",
+      "romanization": "oh yeogin ama",
+      "english": "Oh this is probably",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너의 내일 어디쯤",
+      "romanization": "neoui naeil eodijjeum",
+      "english": "Somewhere near your tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(내일 어디쯤)",
+      "romanization": "naeil eodijjeum",
+      "english": "near your tomorrow",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그게 뭐든 I LIKE IT I LIKE IT I LIKE IT",
+      "romanization": "geuge mwodeun i like it i like it i like it",
+      "english": "Whatever it is I LIKE IT I LIKE IT I LIKE IT",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(What, that’s right)",
+      "romanization": "what? that's right",
+      "english": "what? that’s right",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’ll float I’ll float away",
+      "romanization": "i'll float i'll float away",
+      "english": "I’ll float I’ll float away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(I’ll float I’ll float away)",
+      "romanization": "i'll float i'll float away",
+      "english": "I’ll float I’ll float away",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Float I’ll float away",
+      "romanization": "float i'll float away",
+      "english": "Float I’ll float away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Way)",
+      "romanization": "way",
+      "english": "way",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’ll float I’ll float away",
+      "romanization": "i'll float i'll float away",
+      "english": "I’ll float I’ll float away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Float away float away oh no)",
+      "romanization": "float away float away oh nah",
+      "english": "float away float away oh nah",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그게 뭐든 I LIKE IT I LIKE IT I LIKE IT",
+      "romanization": "geuge mwodeun i like it i like it i like it",
+      "english": "Whatever it is I LIKE IT I LIKE IT I LIKE IT",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(ho! yeah)",
+      "romanization": "woo yeah",
+      "english": "ho yeah",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I keep on rocking",
+      "romanization": "i keep on rocking",
+      "english": "I keep on rocking",
+      "adlib": false
     }
   ]
 }
