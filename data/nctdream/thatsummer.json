@@ -1130,5 +1130,8 @@
       "adlib": false
     }
   ],
-  "npC1": "#eff226"
+  "npC1": "#eff226",
+  "cover": "covers/nctdream_thatsummer.jpg",
+  "npC2": "#2ee7ff",
+  "audio": "audio/nctdream_thatsummer.mp3"
 }
