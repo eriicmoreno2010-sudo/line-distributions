@@ -459,10 +459,15 @@ const Lyrics = {
                     e.member.style.background = ""; e.member.style.webkitBackgroundClip = "";
                     e.member.style.backgroundClip = ""; e.member.style.color = "";
                     e.member.style.textShadow = "";        // sólido -> sombra/contorno normal
-                    // el nombre del GRUPO (p. ej. "NCT 127") va con el arcoíris de todos;
+                    // el nombre del GRUPO (p. ej. "NCT DREAM") va con el arcoíris de TODOS
+                    // (lo construimos aquí porque en una línea de un miembro c.groupGradient
+                    // viene vacío -> antes el nombre del grupo salía transparente/invisible);
                     // los miembros, con su color.
+                    const _lt = document.body.classList.contains("theme-light");
+                    const _lift = col => _lt ? `color-mix(in srgb, ${col} 82%, #000)` : col;
+                    const groupGrad = `linear-gradient(90deg, ${(SONG.members || []).map(m => _lift(m.color)).join(", ")})`;
                     const span = (n) => (n === SONG.group)
-                        ? `<span style="background:${c.groupGradient};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(n)}</span>`
+                        ? `<span style="background:${groupGrad};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(n)}</span>`
                         : `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
                     const part = linePartials.map(span).join('<span style="color:inherit"> &amp; </span>');
                     const main = shownMembers.map(span).join('<span style="color:inherit">  &amp;  </span>');
