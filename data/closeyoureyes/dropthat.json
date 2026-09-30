@@ -725,5 +725,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/closeyoureyes_dropthat.mp3"
+  "audio": "audio/closeyoureyes_dropthat.mp3",
+  "audioOffset": 0.2
 }
