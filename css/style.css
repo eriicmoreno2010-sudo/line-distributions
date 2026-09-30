@@ -556,14 +556,14 @@ body.gcount-4 #ranking .member-time{ font-size:22px; }
 #timeline{
     position:relative;
     width:100%;
-    height:14px;
+    height:18px;
     background:var(--panel3);
     border-radius:999px;
     overflow:hidden;
     box-shadow:
-        inset 0 0 0 1px rgba(255,255,255,.05),
-        inset 0 1px 2px rgba(0,0,0,.5),
-        0 -6px 20px -8px rgba(0,0,0,.6);
+        inset 0 0 0 1px rgba(255,255,255,.06),
+        inset 0 1px 3px rgba(0,0,0,.55),
+        0 -6px 22px -8px rgba(0,0,0,.6);
 }
 
 .timeline-segment{
@@ -571,18 +571,20 @@ body.gcount-4 #ranking .member-time{ font-size:22px; }
     top:0;
     height:100%;
     opacity:1;
+    /* separador fino entre partes (se ven como bloques, más bonito) */
+    box-shadow:inset -1.5px 0 0 rgba(0,0,0,.3);
 }
 
-/* glossy sheen so every segment reads the same height and looks polished */
+/* brillo suave para que todas las partes lean igual de altas y pulidas */
 .timeline-segment::after{
     content:"";
     position:absolute;
     inset:0;
     background:linear-gradient(
         180deg,
-        rgba(255,255,255,.35),
-        rgba(255,255,255,.08) 45%,
-        rgba(0,0,0,.18));
+        rgba(255,255,255,.28),
+        rgba(255,255,255,.06) 48%,
+        rgba(0,0,0,.16));
     pointer-events:none;
 }
 
