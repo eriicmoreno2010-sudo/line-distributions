@@ -1337,5 +1337,8 @@
       ]
     }
   ],
-  "instrumental": "audio/cravity_louder_inst.mp3"
+  "instrumental": "audio/cravity_louder_inst.mp3",
+  "instrumentalStart": 0,
+  "instrumentalEnd": 182.021224,
+  "instrumentalFade": true
 }
