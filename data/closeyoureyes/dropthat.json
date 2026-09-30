@@ -61,7 +61,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, Mama ain’t raise no punk",
       "english": "",
@@ -70,7 +72,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, So come on",
       "english": "",
@@ -79,7 +83,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "",
       "romanization": "Black jeans, cap, empty street",
       "english": "",
@@ -88,7 +94,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "너네 오늘 뭐 해? Come tonight",
       "romanization": "neone oneul mwo hae? come tonight",
       "english": "What you guys doing tonight? Come tonight",
@@ -97,7 +105,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "Tight shoes, feet burning up, 그냥 구겨 넣어 Fun tonight",
       "romanization": "tight shoes, feet burning up, geunyang gugyeo neoeo fun tonight",
       "english": "Tight shoes, feet burning up, Just squeeze it in, fun tonight",
@@ -106,7 +116,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YEOJUN"
+      ],
       "original": "",
       "romanization": "Wavy, let go, From the get-go",
       "english": "",
@@ -115,7 +127,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "MINWOOK"
+      ],
       "original": "Think you forgot my name, Doesn’t matter 얼마나 좋을까",
       "romanization": "think you forgot my name, doesn't matter eolmana joeulkka?",
       "english": "Think you forgot my name, Doesn’t matter, how good would it feel",
@@ -124,7 +138,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "Drop that, 네가 누구든 We don’t care",
       "romanization": "drop that, nega nugudeun we don't care",
       "english": "Drop that, whoever you are, we don’t care",
@@ -133,7 +149,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "지저분한 게 더 Fit 해",
       "romanization": "jijeobunhan ge deo fit hae",
       "english": "Messy fits better",
@@ -142,7 +160,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SUNGMIN"
+      ],
       "original": "",
       "romanization": "I don't wanna hear about a this, that, this, that, baby",
       "english": "",
@@ -151,7 +171,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SUNGMIN"
+      ],
       "original": "Drop that, 망설일 거면 Just stay there",
       "romanization": "drop that, mangseoril geomyeon just stay there",
       "english": "Drop that, if you’re gonna hesitate, just stay there",
@@ -160,7 +182,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SUNGMIN"
+      ],
       "original": "비틀거리는 게 뭐 어때",
       "romanization": "biteulgeorineun ge mwo eottae",
       "english": "So what if we stumble",
@@ -169,7 +193,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SEUNGHO"
+      ],
       "original": "",
       "romanization": "I don't wanna hear about a this, that, this, that, baby",
       "english": "",
@@ -178,16 +204,42 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "(We got no restrictions)",
-      "romanization": "we got no restrictions",
-      "english": "(We got no restrictions)",
+      "members": [
+        "KYOUNGBAE"
+      ],
+      "original": "(오늘 뭐 해? Come tonight)",
+      "romanization": "(oneul mwo hae? come tonight)",
+      "english": "(What are you doing tonight? Come tonight)",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
+      "original": "(구겨 넣어 Fun tonight)",
+      "romanization": "(gugyeo neoeo fun tonight)",
+      "english": "(Squeeze it in, fun tonight)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYOUNGBAE"
+      ],
+      "original": "",
+      "romanization": "(We got no restrictions)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SEUNGHO"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, Mama ain’t raise no punk",
       "english": "",
@@ -196,7 +248,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "MINWOOK"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, Mama you raised a star",
       "english": "",
@@ -205,7 +259,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YEOJUN"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, Mama I raise the bar",
       "english": "",
@@ -214,7 +270,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "CLOSE YOUR EYES"
+      ],
       "original": "",
       "romanization": "Shining, I’m a light that dark, whole team on the stage, So you know I go hard",
       "english": "",
@@ -241,7 +299,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JINGXIANG"
+      ],
       "original": "I got a hundred lyrics in my phone, Yeah 괴로운 생각 말고",
       "romanization": "i got a hundred lyrics in my phone, yeah goeroun saenggak malgo",
       "english": "I got a hundred lyrics in my phone, Yeah, let all those worries go",
@@ -250,7 +310,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JINGXIANG"
+      ],
       "original": "Like Marvin Gaye, let’s get it on, 웃어 이 밤 다 가도록",
       "romanization": "like marvin gaye, let's get it on, useo i bam da gadorok",
       "english": "Like Marvin Gaye, let’s get it on, Smile until this night is over",
@@ -259,7 +321,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "Drop that, 네가 누구든 We don’t care",
       "romanization": "drop that, nega nugudeun we don't care",
       "english": "Drop that, whoever you are, we don’t care",
@@ -268,7 +332,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "지저분한 게 더 Fit 해",
       "romanization": "jijeobunhan ge deo fit hae",
       "english": "Messy fits better",
@@ -277,7 +343,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SUNGMIN"
+      ],
       "original": "",
       "romanization": "I don't wanna hear about a this, that, this, that, baby",
       "english": "",
@@ -286,7 +354,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SUNGMIN"
+      ],
       "original": "Drop that, 망설일 거면 Just stay there",
       "romanization": "drop that, mangseoril geomyeon just stay there",
       "english": "Drop that, if you’re gonna hesitate, just stay there",
@@ -295,7 +365,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SUNGMIN"
+      ],
       "original": "비틀거리는 게 뭐 어때",
       "romanization": "biteulgeorineun ge mwo eottae",
       "english": "So what if we stumble",
@@ -304,7 +376,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JINGXIANG"
+      ],
       "original": "",
       "romanization": "I don't wanna hear about a this, that, this, that, baby",
       "english": "",
@@ -313,7 +387,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "MINWOOK"
+      ],
       "original": "Take it low, 아무 소리 없이 살금살금 숨죽여 머릴 낮추고",
       "romanization": "take it low, amu sori eopsi salgeumsalgeum sumjungnyeo meoril natchugo",
       "english": "Take it low, Quietly, tiptoe, hold your breath, lower your head",
@@ -322,16 +398,20 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "(uh)",
-      "romanization": "uh",
-      "english": "(uh)",
+      "members": [
+        "MINWOOK"
+      ],
+      "original": "",
+      "romanization": "(uh)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SEUNGHO"
+      ],
       "original": "Let it flow, 나는 자유롭게 걸어가 휘청거리는 바람처럼",
       "romanization": "let it flow, naneun jayuropge georeoga hwicheonggeorineun baramcheoreom",
       "english": "Let it flow, I walk freely like the drifting wind",
@@ -340,16 +420,31 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "(uh)",
-      "romanization": "uh",
-      "english": "(uh)",
+      "members": [
+        "SEUNGHO"
+      ],
+      "original": "",
+      "romanization": "(uh)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "YEOJUN"
+      ],
+      "original": "",
+      "romanization": "(uh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "YEOJUN"
+      ],
       "original": "Feel the flow, 지금 이 흐름에 몸을 맡겨 아득아득해져 버린 밤",
       "romanization": "feel the flow, jigeum i heureume momeul matgyeo adeugadeukaejyeo beorin bam",
       "english": "Feel the flow, Let myself go with the flow, fading into the night",
@@ -358,7 +453,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "Take it up, 웃어 이 밤이 가도록  What can we say",
       "romanization": "take it up, useo i bami gadorok what can we say",
       "english": "Take it up, Smile until this night is over, What can we say",
@@ -367,7 +464,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "",
       "romanization": "Come, come, baby, let's dance, I'm taking the fast lane",
       "english": "",
@@ -376,7 +475,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "",
       "romanization": "Come, come, baby, let's dance",
       "english": "",
@@ -385,7 +486,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SUNGMIN"
+      ],
       "original": "",
       "romanization": "I see the light, hot lights ringing",
       "english": "",
@@ -394,7 +497,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "",
       "romanization": "Come, come, baby, let's dance, I'm taking the fast lane",
       "english": "",
@@ -403,7 +508,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "",
       "romanization": "Put your hands up when you step down",
       "english": "",
@@ -412,7 +519,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KYOUNGBAE"
+      ],
       "original": "",
       "romanization": "Cause everybody talk, when you stick your neck out",
       "english": "",
@@ -421,7 +530,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SEUNGHO"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, Mama ain’t raise no punk",
       "english": "",
@@ -430,7 +541,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "KENSHIN"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, Mama you raised a star",
       "english": "",
@@ -439,7 +552,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JINGXIANG"
+      ],
       "original": "",
       "romanization": "Ya Ya Ya Uh, Mama I raise the bar",
       "english": "",
@@ -448,7 +563,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "CLOSE YOUR EYES"
+      ],
       "original": "",
       "romanization": "Shining, I’m a light that dark, whole team on the stage, So you know I go hard",
       "english": "",
