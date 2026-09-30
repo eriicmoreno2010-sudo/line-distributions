@@ -65,7 +65,17 @@
       "original": "여름 바람이 불어오면, 떠오르는 네 기억",
       "romanization": "yeoreum barami bureoomyeon, tteooreuneun ne gieok",
       "english": "When the summer breeze blows, Memories of you come back",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          0.67,
+          1.31
+        ],
+        [
+          1.69,
+          5.48
+        ]
+      ]
     },
     {
       "start": 6.08,
@@ -74,7 +84,13 @@
       "original": "다시 그날의 Flavour flavour flavour",
       "romanization": "dasi geunarui flavour flavour flavour",
       "english": "Along with the flavour flavour flavour of that day",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          6.09,
+          8.66
+        ]
+      ]
     },
     {
       "start": 9.03,
@@ -83,7 +99,17 @@
       "original": "18, 이른 여름처럼, 어른은 아직 아닌 나이",
       "romanization": "eighteen, ireun yeoreumcheoreom, eoreuneun ajik anin nai",
       "english": "18, Like an early summer, Not quite an adult yet",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.02,
+          9.98
+        ],
+        [
+          10.83,
+          14.35
+        ]
+      ]
     },
     {
       "start": 14.98,
@@ -92,7 +118,13 @@
       "original": "거기 네가 있어",
       "romanization": "geogi nega isseo",
       "english": "You were there",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          15.09,
+          16.83
+        ]
+      ]
     },
     {
       "start": 16.7,
@@ -101,7 +133,13 @@
       "original": "기다렸던 네 시",
       "romanization": "gidaryeotdeon ne si",
       "english": "The poem I waited for",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.65,
+          18.47
+        ]
+      ]
     },
     {
       "start": 19.27,
@@ -110,7 +148,13 @@
       "original": "자전거 뒤에 탄 네 향기, 그건 아마 Hand cream",
       "romanization": "jajeongeo dwie tan ne hyanggi, geugeon ama hand cream",
       "english": "Your scent riding behind me on the bike, Probably your hand cream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          19.27,
+          22.77
+        ]
+      ]
     },
     {
       "start": 22.82,
@@ -119,7 +163,13 @@
       "original": "덥지만 산뜻한 날",
       "romanization": "deopjiman santteuthan nal",
       "english": "A hot but refreshing day",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          22.95,
+          25.66
+        ]
+      ]
     },
     {
       "start": 25.51,
@@ -128,7 +178,33 @@
       "original": "어느새 집, 잘 가 인사 대신 내 손에, 쥐어준 캔",
       "romanization": "eoneusae jip, jal ga insa daesin nae sone, jwieojun kaen",
       "english": "Before I knew it I was home, Instead of goodbye, You handed me a can",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.57,
+          27.53
+        ],
+        [
+          28.03,
+          28.73
+        ],
+        [
+          28.88,
+          31.4
+        ],
+        [
+          31.7,
+          32.05
+        ],
+        [
+          32.26,
+          32.87
+        ],
+        [
+          33.02,
+          33.75
+        ]
+      ]
     },
     {
       "start": 33.47,
@@ -137,7 +213,13 @@
       "original": "",
       "romanization": "(oh ah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          33.51,
+          34.41
+        ]
+      ]
     },
     {
       "start": 34.19,
@@ -146,7 +228,21 @@
       "original": "복숭아 향, 떨리던 맘, 어색해질까 봐 모른척한",
       "romanization": "boksunga hyang, tteollideon mam, eosaekhaejilkka bwa moreuncheokan",
       "english": "Peach scent, A trembling heart, Afraid it’d get awkward I pretended not to notice",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.31,
+          35.26
+        ],
+        [
+          35.44,
+          36.29
+        ],
+        [
+          36.47,
+          38.29
+        ]
+      ]
     },
     {
       "start": 38.12,
@@ -155,7 +251,29 @@
       "original": "서툰 그날, 내 첫사랑, Miss you right now",
       "romanization": "seotun geunal, nae cheotsarang, miss you right now",
       "english": "That clumsy day, My first love, Miss you right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.21,
+          39.22
+        ],
+        [
+          39.37,
+          40.24
+        ],
+        [
+          40.4,
+          40.95
+        ],
+        [
+          41.1,
+          41.49
+        ],
+        [
+          41.66,
+          42.05
+        ]
+      ]
     },
     {
       "start": 42.58,
@@ -263,7 +381,17 @@
       "original": "팔을 걷어 입은 후디, 맨살 위로 미지근한 햇살들이",
       "romanization": "pareul geodeo ibeun hudi, maensal wiro mijigeunhan haetsaldeuri",
       "english": "Rolled up sleeves of a hoodie, The lukewarm sunlight on bare skin",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          76.96,
+          78.32
+        ],
+        [
+          78.5,
+          80.38
+        ]
+      ]
     },
     {
       "start": 78.3,
@@ -272,7 +400,13 @@
       "original": "",
       "romanization": "(yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          78.3,
+          78.6
+        ]
+      ]
     },
     {
       "start": 80.39,
@@ -281,7 +415,13 @@
       "original": "",
       "romanization": "(yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          80.38,
+          80.7
+        ]
+      ]
     },
     {
       "start": 80.57,
@@ -290,7 +430,13 @@
       "original": "잠든 기억 깨워, 색 보정된 듯",
       "romanization": "jamdeun gieok kkaewo, saek bojeongdoen deut",
       "english": "It wakes up sleeping memories, Like color correction",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.61,
+          82.76
+        ]
+      ]
     },
     {
       "start": 82.72,
@@ -299,7 +445,13 @@
       "original": "아련해 Every scene, 필름 사진 같아",
       "romanization": "aryeonhae every scene, pilleum sajin gata",
       "english": "Every scene is sentimental, Like a film photo",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          82.73,
+          85.24
+        ]
+      ]
     },
     {
       "start": 85.38,
@@ -308,7 +460,13 @@
       "original": "집에는 괜히 더 먼 길로 가",
       "romanization": "jibeneun gwaenhi deo meon gillo ga",
       "english": "I take the long way home for no reason",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.39,
+          87.29
+        ]
+      ]
     },
     {
       "start": 87.41,
@@ -317,7 +475,13 @@
       "original": "바보처럼 말은 잘 못했지만",
       "romanization": "babocheoreom mareun jal mothaetjiman",
       "english": "I couldn’t speak well like a fool",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          87.46,
+          89.4
+        ]
+      ]
     },
     {
       "start": 89.56,
@@ -326,7 +490,17 @@
       "original": "닿은 그림자에 설레던 맘, 그때의 넌 알까",
       "romanization": "daeun geurimjae seolledeon mam, geuttaeui neon alkka",
       "english": "My heart fluttered from our shadows touching, Would you have known back then?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.51,
+          91.45
+        ],
+        [
+          91.6,
+          92.88
+        ]
+      ]
     },
     {
       "start": 92.96,
@@ -335,7 +509,21 @@
       "original": "투명한 색, 봄 반 여름 반인 하늘에, 내 맘 이렇게",
       "romanization": "tumyeonghan saek, bom ban yeoreum banin haneure, nae mam ireoke",
       "english": "A transparent hue, In the sky that’s half spring half summer, That’s how my heart is too",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          93.01,
+          94.98
+        ],
+        [
+          95.4,
+          98.77
+        ],
+        [
+          99.07,
+          101.24
+        ]
+      ]
     },
     {
       "start": 100.91,
@@ -344,7 +532,13 @@
       "original": "",
       "romanization": "(oh ah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          100.78,
+          101.68
+        ]
+      ]
     },
     {
       "start": 101.68,
@@ -353,7 +547,21 @@
       "original": "앞설까 봐, 늦추던 맘, 머뭇거리다가 놓쳐버린",
       "romanization": "apseolkka bwa, neutchudeon mam, meomutgeoridaga nochyeobeorin",
       "english": "I held myself back afraid, Of being too forward, Hesitating I missed the chance",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101.7,
+          102.66
+        ],
+        [
+          102.81,
+          103.65
+        ],
+        [
+          103.8,
+          105.64
+        ]
+      ]
     },
     {
       "start": 105.64,
@@ -362,7 +570,29 @@
       "original": "너라는 아이, 참 애틋한, Miss you right now",
       "romanization": "neoraneun ai, cham aeteuthan, miss you right now",
       "english": "That person called you, So dear to me, Miss you right now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.58,
+          106.57
+        ],
+        [
+          106.7,
+          107.63
+        ],
+        [
+          107.75,
+          108.33
+        ],
+        [
+          108.48,
+          108.86
+        ],
+        [
+          109.02,
+          109.49
+        ]
+      ]
     },
     {
       "start": 110.06,
@@ -461,7 +691,13 @@
       "original": "",
       "romanization": "(oh woah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          160.15,
+          163.53
+        ]
+      ]
     },
     {
       "start": 140.88,
@@ -479,7 +715,13 @@
       "original": "저기 환히 쏟아지는 Golden shine",
       "romanization": "jeogi hwanhi ssodajineun golden shine",
       "english": "That golden shine brightly pouring down over there",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          145.86,
+          149.59
+        ]
+      ]
     },
     {
       "start": 150.09,
@@ -488,7 +730,13 @@
       "original": "지금 너도 바라보고 있을까",
       "romanization": "jigeum neodo barabogo isseulkka",
       "english": "Are you looking at it too right now?",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          150.04,
+          153.68
+        ]
+      ]
     },
     {
       "start": 154.24,
@@ -497,7 +745,13 @@
       "original": "같은 시간 속을 걷는 너와 나",
       "romanization": "gateun sigan sogeul geonneun neowa na",
       "english": "You and I walking through the same moment in time",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.15,
+          157.87
+        ]
+      ]
     },
     {
       "start": 158.49,
@@ -506,7 +760,13 @@
       "original": "빛나고 있어",
       "romanization": "binnago isseo",
       "english": "We’re shining",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          158.35,
+          161.43
+        ]
+      ]
     },
     {
       "start": 160.58,
@@ -578,7 +838,13 @@
       "original": "",
       "romanization": "(I love you yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          179.1,
+          181.32
+        ]
+      ]
     },
     {
       "start": 182.38,
@@ -596,7 +862,17 @@
       "original": "",
       "romanization": "(uh uh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          182.57,
+          182.86
+        ],
+        [
+          183.05,
+          183.37
+        ]
+      ]
     },
     {
       "start": 183.42,
@@ -605,7 +881,17 @@
       "original": "",
       "romanization": "(oh You give me that babe)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          183.57,
+          184.68
+        ],
+        [
+          184.87,
+          185.89
+        ]
+      ]
     },
     {
       "start": 189.88,
@@ -614,7 +900,13 @@
       "original": "",
       "romanization": "(You yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          189.83,
+          191.59
+        ]
+      ]
     },
     {
       "start": 185.82,
@@ -650,7 +942,13 @@
       "original": "",
       "romanization": "(yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          192.47,
+          193.58
+        ]
+      ]
     },
     {
       "start": 193.71,
@@ -659,7 +957,13 @@
       "original": "",
       "romanization": "Flavour",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          193.78,
+          195.66
+        ]
+      ]
     }
   ],
   "npC1": "#eff226",
