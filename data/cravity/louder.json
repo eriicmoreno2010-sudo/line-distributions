@@ -1,0 +1,87 @@
+{
+  "group": "CRAVITY",
+  "song": "LOUDER",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "SERIM",
+      "image": "images/cravity/louder/serim.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ALLEN",
+      "image": "images/cravity/louder/allen.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUNGMO",
+      "image": "images/cravity/louder/jungmo.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WOOBIN",
+      "image": "images/cravity/louder/woobin.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "WONJIN",
+      "image": "images/cravity/louder/wonjin.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MINHEE",
+      "image": "images/cravity/louder/minhee.png",
+      "color": "#20c997",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HYEONGJUN",
+      "image": "images/cravity/louder/hyeongjun.png",
+      "color": "#ff922b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TAEYOUNG",
+      "image": "images/cravity/louder/taeyoung.png",
+      "color": "#748ffc",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SEONGMIN",
+      "image": "images/cravity/louder/seongmin.png",
+      "color": "#f06595",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
