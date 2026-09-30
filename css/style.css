@@ -83,7 +83,9 @@ body.theme-light #ranking .member:not(.has-sung) .member-name{ color:#98a0af; }
 /* CONTADOR: SIEMPRE gris; SOLO se pone del color del miembro mientras canta (active),
    luego vuelve a gris (igual que el oscuro vuelve a blanco). */
 body.theme-light #ranking .member-time{ color:#98a0af; }
-body.theme-light #ranking .member.active .member-time{ color:color-mix(in srgb, var(--accent) 66%, #000); }
+/* AL CANTAR: nombre y contador con el MISMO color del miembro (no oscurecido). */
+body.theme-light #ranking .member.active .member-name,
+body.theme-light #ranking .member.active .member-time{ color:var(--accent); }
 
 /* ===== Ranking "LÍNEAS" (prueba Moonlight): SIN tarjetas; todo NEGRO por defecto;
    el COLOR del miembro sale SOLO mientras canta (.active) o cuando ya terminó (.done);
@@ -130,10 +132,10 @@ body.theme-light #ranking .member-rank{
 body.theme-light #ranking .member.done,
 body.theme-light #ranking-left .member.done{
     background:linear-gradient(90deg,
-        color-mix(in srgb, var(--accent) 24%, #fff),
-        color-mix(in srgb, var(--accent) 13%, #fff));
-    border-color:color-mix(in srgb, var(--accent) 42%, #fff);
-    box-shadow:0 2px 10px -7px rgba(0,0,0,.4);
+        color-mix(in srgb, var(--accent) 40%, #fff),
+        color-mix(in srgb, var(--accent) 26%, #fff));
+    border-color:color-mix(in srgb, var(--accent) 55%, #fff);
+    box-shadow:0 2px 10px -7px rgba(0,0,0,.45);
 }
 body.theme-light #ranking .member.done .member-name{ color:color-mix(in srgb, var(--accent) 72%, #000); }
 body.theme-light #ranking .member.done .member-time{ color:color-mix(in srgb, var(--accent) 60%, #000); }
@@ -487,6 +489,11 @@ body.two-side #ranking-left .member-info{ gap:8px; }
 body.gcount-6 #ranking .member-time{ font-size:19px; }
 body.gcount-5 #ranking .member-time{ font-size:20px; }
 body.gcount-4 #ranking .member-time{ font-size:22px; }
+/* 7-10 miembros: contador un pelín más grande que el base (16), y a más miembros más pequeño */
+body.gcount-7 #ranking .member-time{ font-size:18.5px; }
+body.gcount-8 #ranking .member-time{ font-size:18px; }
+body.gcount-9 #ranking .member-time{ font-size:17.5px; }
+body.gcount-10 #ranking .member-time{ font-size:17px; }
 
 #ranking .member-bar{
     width:100%;
