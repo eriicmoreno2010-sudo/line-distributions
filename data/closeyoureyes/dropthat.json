@@ -2,7 +2,7 @@
   "group": "CLOSE YOUR EYES",
   "song": "Drop That!",
   "video": "videos/closeyoureyes_dropthat_munxy3so.mp4",
-  "duration": 0,
+  "duration": 182.833333,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -724,5 +724,6 @@
       "english": "So you know I go hard",
       "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/closeyoureyes_dropthat.mp3"
 }
