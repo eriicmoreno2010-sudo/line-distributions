@@ -64,7 +64,8 @@ const Timeline = {
         const arr = [...names];
         if(arr.length === 0) return null;
         if(arr.length === 1) return byName(arr[0]).color;
-        return this.mixColors(arr.map(n => byName(n).color));
+        // 2+ -> DEGRADADO (difuminado) de sus colores, como antes.
+        return `linear-gradient(90deg, ${arr.map(n => byName(n).color).join(", ")})`;
     },
 
     /* Color de la barra de una línea:
@@ -81,20 +82,6 @@ const Timeline = {
         const re = /@([^*\n]+?)\*\*/g; let m;
         while((m = re.exec(txt))){ m[1].split(",").forEach(x => names.push(x.trim())); }
         return this.colorForMembers(names);
-    },
-
-    _cx: null,
-    toRgb(c){
-        if(!this._cx) this._cx = document.createElement("canvas").getContext("2d");
-        this._cx.fillStyle = "#000"; this._cx.fillStyle = c;
-        const s = this._cx.fillStyle;
-        if(s[0] === "#"){ let h = s.slice(1); if(h.length === 3) h = h.split("").map(x => x + x).join(""); const n = parseInt(h, 16); return [(n>>16)&255, (n>>8)&255, n&255]; }
-        const g = s.match(/\d+/g); return g ? g.slice(0,3).map(Number) : [136,136,136];
-    },
-    mixColors(cols){
-        const rgb = cols.map(c => this.toRgb(c));
-        const a = [0,1,2].map(i => Math.round(rgb.reduce((s,v) => s + v[i], 0) / rgb.length));
-        return `rgb(${a[0]}, ${a[1]}, ${a[2]})`;
     },
 
     /* The cursor is animated with requestAnimationFrame reading the video's
