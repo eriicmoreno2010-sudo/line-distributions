@@ -73,13 +73,499 @@
   ],
   "lyrics": [
     {
+      "start": 16.59,
+      "end": 20.1,
+      "members": [],
+      "original": "Get loud, 고요를 흔드는 Flow",
+      "romanization": "get loud, goyoreul heundeuneun flow",
+      "english": "Get loud, A Flow that stirs the silence",
+      "adlib": false
+    },
+    {
+      "start": 20.36,
+      "end": 24.11,
+      "members": [],
+      "original": "Realize, 찬란한 수면 위로",
+      "romanization": "realize, challanhan sumyeon wiro",
+      "english": "Realize, Above the resplendent surface",
+      "adlib": false
+    },
+    {
+      "start": 24.26,
+      "end": 27.96,
+      "members": [],
+      "original": "커져가는 떨림 Nobody knows",
+      "romanization": "keojyeoganeun tteollim nobody knows",
+      "english": "Growing vibration, Nobody knows",
+      "adlib": false
+    },
+    {
+      "start": 30.93,
+      "end": 37.95,
+      "members": [],
+      "original": "Voices in my mind, 거듭된 숨결 따라",
+      "romanization": "voices in my mind, geodeupdoen sumgyeol ttara",
+      "english": "Voices in my mind, Following every breath",
+      "adlib": false
+    },
+    {
+      "start": 38.17,
+      "end": 45.63,
+      "members": [],
+      "original": "Got me something so mythical, 심장을 박찬 이 순간",
+      "romanization": "got me something so mythical, simjangeul bakchan i sungan",
+      "english": "Got me something so mythical, This moment that makes my heart pound",
+      "adlib": false
+    },
+    {
+      "start": 45.78,
+      "end": 49.23,
+      "members": [],
+      "original": "Oh I can feel it louder, 올려 더 Temperature",
+      "romanization": "oh i can feel it louder, ollyeo deo temperature",
+      "english": "Oh I can feel it louder, Raise the Temperature",
+      "adlib": false
+    },
+    {
+      "start": 49.35,
+      "end": 53.33,
+      "members": [],
+      "original": "낯선 떨림은, 더 새롭게 Burn me alive",
+      "romanization": "natseon tteollimeun, deo saeropge burn me alive",
+      "english": "Unfamiliar vibrations, Burn me alive anew",
+      "adlib": false
+    },
+    {
+      "start": 53.46,
+      "end": 56.6,
+      "members": [],
+      "original": "Ain’t no use to fight it, 끝없이 휘몰아쳐",
+      "romanization": "ain't no use to fight it, kkeuteopsi hwimorachyeo",
+      "english": "Ain’t no use to fight it, It rages on endlessly",
+      "adlib": false
+    },
+    {
+      "start": 56.76,
+      "end": 60.4,
+      "members": [],
+      "original": "온몸을 던져, Shed it off and bring me alive",
+      "romanization": "onmomeul deonjyeo, shed it off and bring me alive",
+      "english": "Throw myself into it, Shed it off and bring me alive",
+      "adlib": false
+    },
+    {
+      "start": 60.48,
+      "end": 67.57,
+      "members": [],
+      "original": "All my heart gets louder, 떨림 속에 Feelin’ so loud",
+      "romanization": "all my heart gets louder, tteollim soge feelin' so loud",
+      "english": "All my heart gets louder, Inside this vibration Feelin’ so loud",
+      "adlib": false
+    },
+    {
+      "start": 67.71,
+      "end": 75.04,
+      "members": [],
+      "original": "You & I get higher, 거침없이 Makin’ so loud",
+      "romanization": "you & i get higher, geochimeopsi makin' so loud",
+      "english": "You & I get higher, No hesitation, Makin’ so loud",
+      "adlib": false
+    },
+    {
+      "start": 75.07,
+      "end": 76.92,
+      "members": [],
+      "original": "",
+      "romanization": "Splash in the pocket, clap in the cavity",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 77.08,
+      "end": 78.54,
+      "members": [],
+      "original": "",
+      "romanization": "Every little bounce comes back at me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 78.69,
+      "end": 80.05,
+      "members": [],
+      "original": "파고든 리듬 Make the room lean",
+      "romanization": "pagodeun rideum make the room lean",
+      "english": "Penetrating rhythm, Make the room lean",
+      "adlib": false
+    },
+    {
+      "start": 80.18,
+      "end": 82.28,
+      "members": [],
+      "original": "날을 세운 소리 베어버려 The sheen",
+      "romanization": "nareul seun sori beeobeoryeo the sheen",
+      "english": "Sound with a sharpened edge, cut through The sheen",
+      "adlib": false
+    },
+    {
+      "start": 82.5,
+      "end": 84.31,
+      "members": [],
+      "original": "",
+      "romanization": "I think you know what I mean",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 84.45,
+      "end": 87.51,
+      "members": [],
+      "original": "",
+      "romanization": "I don’t fade, I inflate, I don’t wait, I resonate",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 87.87,
+      "end": 89.78,
+      "members": [],
+      "original": "",
+      "romanization": "From a hush to a roar to a rush to a blur",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 90.04,
+      "end": 97.01,
+      "members": [],
+      "original": "Gazing at the sky, 숨결 따라 흘러가",
+      "romanization": "gazing at the sky, sumgyeol ttara heulleoga",
+      "english": "Gazing at the sky, Flow with every breath",
+      "adlib": false
+    },
+    {
+      "start": 97.37,
+      "end": 104.65,
+      "members": [],
+      "original": "파도 끝 편에 널 찾아, 계속 번져가 Take me far",
+      "romanization": "pado kkeut pyeone neol chaja, gyesok beonjyeoga take me far",
+      "english": "Find you at the end of the waves, Keep spreading, Take me far",
+      "adlib": false
+    },
+    {
+      "start": 104.8,
+      "end": 108.31,
+      "members": [],
+      "original": "Oh I can feel it louder, 올려 더 Temperature",
+      "romanization": "oh i can feel it louder, ollyeo deo temperature",
+      "english": "Oh I can feel it louder, Raise the Temperature",
+      "adlib": false
+    },
+    {
+      "start": 108.46,
+      "end": 112.36,
+      "members": [],
+      "original": "낯선 떨림은, 더 새롭게 Burn me alive",
+      "romanization": "natseon tteollimeun, deo saeropge burn me alive",
+      "english": "Unfamiliar vibrations, Burn me alive anew",
+      "adlib": false
+    },
+    {
+      "start": 112.48,
+      "end": 115.56,
+      "members": [],
+      "original": "Ain’t no use to fight it, 끝없이 휘몰아쳐",
+      "romanization": "ain't no use to fight it, kkeuteopsi hwimorachyeo",
+      "english": "Ain’t no use to fight it, It rages on endlessly",
+      "adlib": false
+    },
+    {
+      "start": 115.71,
+      "end": 119.32,
+      "members": [],
+      "original": "온몸을 던져, Shed it off and bring me alive",
+      "romanization": "onmomeul deonjyeo, shed it off and bring me alive",
+      "english": "Throw myself into it, Shed it off and bring me alive",
+      "adlib": false
+    },
+    {
+      "start": 119.51,
+      "end": 126.72,
+      "members": [],
+      "original": "All my heart gets louder, 떨림 속에 Feelin’ so loud",
+      "romanization": "all my heart gets louder, tteollim soge feelin' so loud",
+      "english": "All my heart gets louder, Inside this vibration Feelin’ so loud",
+      "adlib": false
+    },
+    {
+      "start": 126.88,
+      "end": 134.43,
+      "members": [],
+      "original": "You & I get higher, 거침없이 Makin’ so loud",
+      "romanization": "you & i get higher, geochimeopsi makin' so loud",
+      "english": "You & I get higher, No hesitation, Makin’ so loud",
+      "adlib": false
+    },
+    {
+      "start": 134.64,
+      "end": 138.11,
+      "members": [],
+      "original": "나를 뒤바꿔 From the inside, Not of this world 그게 My type",
+      "romanization": "nareul dwibakkwo from the inside, not of this world geuge my type",
+      "english": "Transform me From the inside, Not of this world, that’s My type",
+      "adlib": false
+    },
+    {
+      "start": 138.29,
+      "end": 141.99,
+      "members": [],
+      "original": "Catch another wave take a deep dive, 더 Penetrate, 더 Penetrate",
+      "romanization": "catch another wave take a deep dive, deo penetrate deo penetrate",
+      "english": "Catch another wave take a deep dive, Penetrate deeper, Penetrate deeper",
+      "adlib": false
+    },
+    {
+      "start": 142.15,
+      "end": 145.52,
+      "members": [],
+      "original": "올라가는 Tempo no rewind, 마주하는 My inner divine",
+      "romanization": "ollaganeun tempo no rewind, majuhaneun my inner divine",
+      "english": "Rising Tempo no rewind, Facing My inner divine",
+      "adlib": false
+    },
+    {
+      "start": 145.86,
+      "end": 149.36,
+      "members": [],
+      "original": "",
+      "romanization": "Look me in the face, Put me in a daze, Take me to that place",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 149.96,
+      "end": 150.67,
+      "members": [],
+      "original": "",
+      "romanization": "Makin’ so loud",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 150.82,
+      "end": 158.21,
+      "members": [],
+      "original": "All my heart gets louder, 떨림 속에 Feelin’ so loud",
+      "romanization": "all my heart gets louder, tteollim soge feelin' so loud",
+      "english": "All my heart gets louder, Inside this vibration Feelin’ so loud",
+      "adlib": false
+    },
+    {
+      "start": 158.36,
+      "end": 165.5,
+      "members": [],
+      "original": "You & I get higher, 거침없이 Makin’ so loud",
+      "romanization": "you & i get higher, geochimeopsi makin' so loud",
+      "english": "You & I get higher, No hesitation, Makin’ so loud",
+      "adlib": false
+    },
+    {
+      "start": 165.65,
+      "end": 169.2,
+      "members": [],
+      "original": "Oh I can feel it louder, 올려 더 Temperature",
+      "romanization": "oh i can feel it louder, ollyeo deo temperature",
+      "english": "Oh I can feel it louder, Raise the Temperature",
+      "adlib": false
+    },
+    {
+      "start": 169.4,
+      "end": 173.32,
+      "members": [],
+      "original": "낯선 떨림은, 더 새롭게 Burn me alive",
+      "romanization": "natseon tteollimeun, deo saeropge burn me alive",
+      "english": "Unfamiliar vibrations, Burn me alive anew",
+      "adlib": false
+    },
+    {
+      "start": 173.32,
+      "end": 176.54,
+      "members": [],
+      "original": "Ain’t no use to fight it, 끝없이 휘몰아쳐",
+      "romanization": "ain't no use to fight it, kkeuteopsi hwimorachyeo",
+      "english": "Ain’t no use to fight it, It rages on endlessly",
+      "adlib": false
+    },
+    {
+      "start": 176.69,
+      "end": 180.92,
+      "members": [],
+      "original": "온몸을 던져, 더 뜨겁게 Drive me louder",
+      "romanization": "onmomeul deonjyeo, deo tteugeopge drive me louder",
+      "english": "Throw myself into it, Even hotter, Drive me louder",
+      "adlib": false
+    },
+    {
       "start": 0,
       "end": 0,
       "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "(Shee)",
       "english": "",
-      "adlib": ""
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Sky)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(흘러가)",
+      "romanization": "(heulleoga)",
+      "english": "(Flow)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(찾아)",
+      "romanization": "(chaja)",
+      "english": "(Find)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Ayy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Ayy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Ayy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Rewind)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Divine)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Oh, Feelin' so loud)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Do it again)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Hey, hey, hey)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Temperature)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Burnin', burnin', burnin')",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Fight it)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(몰아쳐)",
+      "romanization": "(morachyeo)",
+      "english": "(Rages)",
+      "adlib": true
     }
   ]
 }
