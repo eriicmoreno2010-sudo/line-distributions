@@ -2,7 +2,7 @@
   "group": "CRAVITY",
   "song": "LOUDER",
   "video": "videos/cravity_louder_muo180fa.mp4",
-  "duration": 0,
+  "duration": 185.573878,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -10,63 +10,63 @@
     {
       "name": "SERIM",
       "image": "images/cravity/louder/serim.png",
-      "color": "#ff4d6d",
+      "color": "#e79559",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "ALLEN",
       "image": "images/cravity/louder/allen.png",
-      "color": "#4dabf7",
+      "color": "#ff4003",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "JUNGMO",
       "image": "images/cravity/louder/jungmo.png",
-      "color": "#51cf66",
+      "color": "#d33434",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "WOOBIN",
       "image": "images/cravity/louder/woobin.png",
-      "color": "#ffd43b",
+      "color": "#fe8726",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "WONJIN",
       "image": "images/cravity/louder/wonjin.png",
-      "color": "#cc5de8",
+      "color": "#b92ac1",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "MINHEE",
       "image": "images/cravity/louder/minhee.png",
-      "color": "#20c997",
+      "color": "#495ddc",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "HYEONGJUN",
       "image": "images/cravity/louder/hyeongjun.png",
-      "color": "#ff922b",
+      "color": "#53e782",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "TAEYOUNG",
       "image": "images/cravity/louder/taeyoung.png",
-      "color": "#748ffc",
+      "color": "#05b3b3",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "SEONGMIN",
       "image": "images/cravity/louder/seongmin.png",
-      "color": "#f06595",
+      "color": "#830358",
       "focus": 50,
       "lift": 3
     }
@@ -75,9 +75,7 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SERIM"
-      ],
+      "members": [],
       "original": "",
       "romanization": "",
       "english": "",
