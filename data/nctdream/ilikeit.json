@@ -65,7 +65,13 @@
       "original": "우연일 뿐인",
       "romanization": "uyeonil ppunin",
       "english": "It’s just a coincidence",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.88,
+          9.42
+        ]
+      ]
     },
     {
       "start": 10.38,
@@ -74,7 +80,17 @@
       "original": "그저 스침을 가장한, 시간선을 걷고 있는 중",
       "romanization": "geujeo seuchimeul gajanghan, siganseoneul geotgo inneun jung",
       "english": "Pretending to be just a passing, We’re walking along a timeline",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          10.38,
+          12.37
+        ],
+        [
+          12.52,
+          15.04
+        ]
+      ]
     },
     {
       "start": 15.64,
@@ -83,7 +99,13 @@
       "original": "이름도 없이",
       "romanization": "ireumdo eopsi",
       "english": "Without even a name",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          15.61,
+          17.31
+        ]
+      ]
     },
     {
       "start": 18.29,
@@ -92,7 +114,25 @@
       "original": "기나긴 밤을 뚫고서, 너를 만나러 오게 됐어, oh oh",
       "romanization": "ginagin bameul ttulkoseo, neoreul mannareo oge dwaesseo, oh oh",
       "english": "Piercing through the long night, I ended up coming to meet you, oh oh",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          18.27,
+          20.24
+        ],
+        [
+          20.39,
+          22.59
+        ],
+        [
+          22.71,
+          22.95
+        ],
+        [
+          23.07,
+          23.86
+        ]
+      ]
     },
     {
       "start": 9.84,
@@ -227,7 +267,17 @@
       "original": "",
       "romanization": "You gon’ be there, right?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          23.67,
+          24.95
+        ],
+        [
+          25.24,
+          25.91
+        ]
+      ]
     },
     {
       "start": 26.15,
@@ -236,7 +286,21 @@
       "original": "원래라면 닿지 못할, 둘 사이 아주 작은 틈을 찾아",
       "romanization": "wollaeramyeon dachi mothal, dul sai aju jageun teumeul chaja",
       "english": "Normally we wouldn’t even meet, But we find a tiny gap between us",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          26.26,
+          28.89
+        ],
+        [
+          29.21,
+          29.93
+        ],
+        [
+          30.23,
+          32.29
+        ]
+      ]
     },
     {
       "start": 32.42,
@@ -245,7 +309,13 @@
       "original": "어지러운 세상에, 균열 하나쯤은 괜찮아",
       "romanization": "eojireoun sesange, gyunyeol hanajjeumeun gwaenchana",
       "english": "In this dizzy world, A crack like this is alright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          32.44,
+          36.17
+        ]
+      ]
     },
     {
       "start": 35.71,
@@ -254,7 +324,17 @@
       "original": "Just come and try now, 내 손을 잡아",
       "romanization": "just come and try now, nae soneul jaba",
       "english": "Just come and try now, Take my hand",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.76,
+          37.11
+        ],
+        [
+          36.75,
+          38.11
+        ]
+      ]
     },
     {
       "start": 37.77,
@@ -263,7 +343,13 @@
       "original": "I got you doing it right, 난 다른 너이니까",
       "romanization": "i got you doing it right, nan dareun neoinikka",
       "english": "I got you doing it right, Cause I’m a different version of you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          37.76,
+          40.1
+        ]
+      ]
     },
     {
       "start": 40.29,
@@ -281,7 +367,21 @@
       "original": "",
       "romanization": "Wait a minute check myself woo",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.91,
+          46.55
+        ],
+        [
+          46.7,
+          47.25
+        ],
+        [
+          47.43,
+          47.87
+        ]
+      ]
     },
     {
       "start": 47.92,
@@ -353,7 +453,17 @@
       "original": "Do that do that 내 뒤를 쫓아, 두 세계와 갈린 엇박자",
       "romanization": "do that do that nae dwireul jjocha, du segyewa gallin eotbakja",
       "english": "Do that do that follow me, Two worlds out of sync",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          79.69,
+          81.42
+        ],
+        [
+          81.6,
+          83.42
+        ]
+      ]
     },
     {
       "start": 83.56,
@@ -362,7 +472,13 @@
       "original": "네가 뱉을 다음 말을 알아",
       "romanization": "nega baeteul daeum mareul ara",
       "english": "I know what you’re about to say next",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.54,
+          84.99
+        ]
+      ]
     },
     {
       "start": 84.93,
@@ -371,7 +487,13 @@
       "original": "방금 느낀 감정 마실 다음 숨까지 다",
       "romanization": "banggeum neukkin gamjeong masil daeum sumkkaji da",
       "english": "Even the breath you’ll take after the feeling you just had",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          84.98,
+          86.94
+        ]
+      ]
     },
     {
       "start": 86.87,
@@ -380,7 +502,17 @@
       "original": "Don’t ask it, 멈춘 곳이 네 자리",
       "romanization": "don't ask it, meomchun gosi ne jari",
       "english": "Don’t ask it, Where it stopped that’s your place",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.98,
+          88.12
+        ],
+        [
+          88.27,
+          90.01
+        ]
+      ]
     },
     {
       "start": 90.11,
@@ -389,7 +521,13 @@
       "original": "",
       "romanization": "Whatever you wanna do do you you, You can do it do it do it all ahhh",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.15,
+          95.11
+        ]
+      ]
     },
     {
       "start": 95.15,
@@ -398,7 +536,21 @@
       "original": "둘 사이 우릴 막는 오류라면",
       "romanization": "dul sai uril mangneun oryuramyeon",
       "english": "If the error between us blocks the way",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          95.14,
+          95.72
+        ],
+        [
+          96.07,
+          96.68
+        ],
+        [
+          97.06,
+          99.04
+        ]
+      ]
     },
     {
       "start": 99.02,
@@ -407,7 +559,21 @@
       "original": "Rewrite 다시 한번 써 내려가",
       "romanization": "rewrite dasi hanbeon sseo naeryeoga",
       "english": "Rewrite it let’s write it again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          99.03,
+          99.56
+        ],
+        [
+          99.97,
+          100.58
+        ],
+        [
+          100.93,
+          103.07
+        ]
+      ]
     },
     {
       "start": 103.25,
@@ -416,7 +582,13 @@
       "original": "어지러운 세상에, 이런 장난쯤은 괜찮아",
       "romanization": "eojireoun sesange, ireon jangnanjjeumeun gwaenchana",
       "english": "In this dizzy world, A little game like this is okay",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          103.24,
+          107.16
+        ]
+      ]
     },
     {
       "start": 107.24,
@@ -425,7 +597,21 @@
       "original": "",
       "romanization": "Baby you’ll be mine, mine mine mine mine",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.27,
+          107.61
+        ],
+        [
+          107.29,
+          108.11
+        ],
+        [
+          108.29,
+          111.03
+        ]
+      ]
     },
     {
       "start": 111.09,
@@ -443,7 +629,21 @@
       "original": "",
       "romanization": "Wait a minute check myself woo",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.76,
+          117.34
+        ],
+        [
+          117.5,
+          118.08
+        ],
+        [
+          118.23,
+          118.7
+        ]
+      ]
     },
     {
       "start": 118.81,
@@ -488,7 +688,13 @@
       "original": "",
       "romanization": "oh yeah",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.18,
+          135.16
+        ]
+      ]
     },
     {
       "start": 135.26,
@@ -497,7 +703,25 @@
       "original": "긴 밤을 지나 다시 네게 갈 거야, So don't think twice",
       "romanization": "gin bameul jina dasi nege gal geoya, so don't think twice",
       "english": "After passing through the long night I’ll come back to you, So don’t think twice",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          135.25,
+          137.05
+        ],
+        [
+          137.23,
+          138.2
+        ],
+        [
+          138.38,
+          139.02
+        ],
+        [
+          139.23,
+          141.54
+        ]
+      ]
     },
     {
       "start": 140.54,
@@ -506,7 +730,13 @@
       "original": "일그러지는 Phase 그다음 패턴도, 예측하지 못해도",
       "romanization": "ilgeureojineun phase geudaeum paeteondo, yecheukaji mothaedo",
       "english": "Even the distorted phase or pattern that comes next, Even if I can’t predict it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          140.49,
+          143.34
+        ]
+      ]
     },
     {
       "start": 143.34,
@@ -515,7 +745,25 @@
       "original": "But I’m just having fun, 뒤로 감긴 태엽, 다시 제자리로",
       "romanization": "but i'm just having fun, dwiro gamgin taeyeop, dasi jejariro",
       "english": "But I’m just having fun, The spring winding back, Returns to its place",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          143.31,
+          144.36
+        ],
+        [
+          145.28,
+          145.88
+        ],
+        [
+          146,
+          146.38
+        ],
+        [
+          144.28,
+          145.27
+        ]
+      ]
     },
     {
       "start": 146.24,
@@ -524,7 +772,13 @@
       "original": "벗어나 이 궤도 밖의 난, So bring it back one last time",
       "romanization": "beoseona i gwedo bakkui nan, so bring it back one last time",
       "english": "Breaking out of this orbit, So bring it back one last time",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          146.2,
+          148.17
+        ]
+      ]
     },
     {
       "start": 150.19,
