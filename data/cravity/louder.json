@@ -12,63 +12,135 @@
       "image": "images/cravity/louder/serim.png",
       "color": "#e79559",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4911,
+        "cy": 0.3148,
+        "size": 0.4053,
+        "rot": 349,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "ALLEN",
       "image": "images/cravity/louder/allen.png",
       "color": "#ff4003",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4613,
+        "cy": 0.2505,
+        "size": 0.4053,
+        "rot": 11,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JUNGMO",
       "image": "images/cravity/louder/jungmo.png",
       "color": "#d33434",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.2499,
+        "cy": 0.476,
+        "size": 0.3774,
+        "rot": 25,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "WOOBIN",
       "image": "images/cravity/louder/woobin.png",
       "color": "#fe8726",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.2469,
+        "cy": 0.2535,
+        "size": 0.3284,
+        "rot": 23,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "WONJIN",
       "image": "images/cravity/louder/wonjin.png",
       "color": "#b92ac1",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3514,
+        "cy": 0.2827,
+        "size": 0.5957,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "MINHEE",
       "image": "images/cravity/louder/minhee.png",
       "color": "#495ddc",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.2722,
+        "cy": 0.3251,
+        "size": 0.3457,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "HYEONGJUN",
       "image": "images/cravity/louder/hyeongjun.png",
       "color": "#53e782",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4069,
+        "cy": 0.2002,
+        "size": 0.484,
+        "rot": 29,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "TAEYOUNG",
       "image": "images/cravity/louder/taeyoung.png",
       "color": "#05b3b3",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.387,
+        "cy": 0.272,
+        "size": 0.2979,
+        "rot": 332,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "SEONGMIN",
       "image": "images/cravity/louder/seongmin.png",
       "color": "#830358",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3567,
+        "cy": 0.425,
+        "size": 0.385,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
