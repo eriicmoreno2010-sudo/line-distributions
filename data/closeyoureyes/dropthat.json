@@ -1,0 +1,73 @@
+{
+  "group": "CLOSE YOUR EYES",
+  "song": "Drop That!",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "MINWOOK",
+      "image": "images/closeyoureyes/dropthat/minwook.png",
+      "color": "#2d32d2",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JINGXIANG",
+      "image": "images/closeyoureyes/dropthat/jingxiang.png",
+      "color": "#d42525",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YEOJUN",
+      "image": "images/closeyoureyes/dropthat/yeojun.png",
+      "color": "#efc325",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SUNGMIN",
+      "image": "images/closeyoureyes/dropthat/sungmin.png",
+      "color": "#20ed1d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SEUNGHO",
+      "image": "images/closeyoureyes/dropthat/seungho.png",
+      "color": "#b1e85e",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KENSHIN",
+      "image": "images/closeyoureyes/dropthat/kenshin.png",
+      "color": "#f5984d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KYOUNGBAE",
+      "image": "images/closeyoureyes/dropthat/kyoungbae.png",
+      "color": "#2b7fee",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINWOOK"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
