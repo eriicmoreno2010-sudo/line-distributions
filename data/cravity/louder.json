@@ -75,7 +75,9 @@
     {
       "start": 16.59,
       "end": 20.1,
-      "members": [],
+      "members": [
+        "WONJIN"
+      ],
       "original": "Get loud, 고요를 흔드는 Flow",
       "romanization": "get loud, goyoreul heundeuneun flow",
       "english": "Get loud, A Flow that stirs the silence",
@@ -98,7 +100,9 @@
     {
       "start": 20.36,
       "end": 24.11,
-      "members": [],
+      "members": [
+        "WONJIN"
+      ],
       "voice": [
         [
           20.31,
@@ -117,7 +121,9 @@
     {
       "start": 24.26,
       "end": 27.96,
-      "members": [],
+      "members": [
+        "SEONGMIN"
+      ],
       "voice": [
         [
           24.62,
@@ -132,7 +138,9 @@
     {
       "start": 30.93,
       "end": 37.95,
-      "members": [],
+      "members": [
+        "JUNGMO"
+      ],
       "voice": [
         [
           30.92,
@@ -151,7 +159,9 @@
     {
       "start": 38.17,
       "end": 45.63,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "voice": [
         [
           38.3,
@@ -174,7 +184,9 @@
     {
       "start": 45.78,
       "end": 49.23,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "voice": [
         [
           45.72,
@@ -193,7 +205,9 @@
     {
       "start": 49.35,
       "end": 53.33,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "voice": [
         [
           49.39,
@@ -212,15 +226,17 @@
           53.41
         ]
       ],
-      "original": "낯선 떨림은, 더 새롭게 Burn me alive",
-      "romanization": "natseon tteollimeun, deo saeropge burn me alive",
-      "english": "Unfamiliar vibrations, Burn me alive anew",
+      "original": "낯선 떨림은, **더 새롭게 Burn me alive@WONJIN**",
+      "romanization": "natseon tteollimeun, **deo saeropge burn me alive@WONJIN**",
+      "english": "Unfamiliar vibrations, **Burn me alive anew@WONJIN**",
       "adlib": false
     },
     {
       "start": 53.46,
       "end": 56.6,
-      "members": [],
+      "members": [
+        "HYEONGJUN"
+      ],
       "voice": [
         [
           53.42,
@@ -239,7 +255,9 @@
     {
       "start": 56.76,
       "end": 60.4,
-      "members": [],
+      "members": [
+        "HYEONGJUN"
+      ],
       "voice": [
         [
           56.8,
@@ -258,15 +276,17 @@
           60.88
         ]
       ],
-      "original": "온몸을 던져, Shed it off and bring me alive",
-      "romanization": "onmomeul deonjyeo, shed it off and bring me alive",
-      "english": "Throw myself into it, Shed it off and bring me alive",
+      "original": "온몸을 던져, **Shed it off and bring me alive@WOOBIN**",
+      "romanization": "onmomeul deonjyeo, **shed it off and bring me alive@WOOBIN**",
+      "english": "Throw myself into it, **Shed it off and bring me alive@WOOBIN**",
       "adlib": false
     },
     {
       "start": 60.48,
       "end": 67.57,
-      "members": [],
+      "members": [
+        "MINHEE"
+      ],
       "voice": [
         [
           60.48,
@@ -297,7 +317,9 @@
     {
       "start": 67.71,
       "end": 75.04,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "voice": [
         [
           67.85,
@@ -320,7 +342,9 @@
     {
       "start": 75.07,
       "end": 76.92,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "voice": [
         [
           75.05,
@@ -335,7 +359,9 @@
     {
       "start": 77.08,
       "end": 78.54,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "voice": [
         [
           77.08,
@@ -350,7 +376,9 @@
     {
       "start": 78.69,
       "end": 80.05,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "voice": [
         [
           78.72,
@@ -365,7 +393,9 @@
     {
       "start": 80.18,
       "end": 82.28,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "voice": [
         [
           80.24,
@@ -380,7 +410,9 @@
     {
       "start": 82.5,
       "end": 84.31,
-      "members": [],
+      "members": [
+        "SEONGMIN"
+      ],
       "voice": [
         [
           82.63,
@@ -395,7 +427,9 @@
     {
       "start": 84.45,
       "end": 87.51,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "voice": [
         [
           84.49,
@@ -410,7 +444,9 @@
     {
       "start": 87.87,
       "end": 89.78,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "voice": [
         [
           87.89,
@@ -425,7 +461,9 @@
     {
       "start": 90.04,
       "end": 97.01,
-      "members": [],
+      "members": [
+        "HYEONGJUN"
+      ],
       "voice": [
         [
           90.02,
@@ -444,7 +482,9 @@
     {
       "start": 97.37,
       "end": 104.65,
-      "members": [],
+      "members": [
+        "MINHEE"
+      ],
       "voice": [
         [
           97.37,
@@ -467,7 +507,9 @@
     {
       "start": 104.8,
       "end": 108.31,
-      "members": [],
+      "members": [
+        "WONJIN"
+      ],
       "voice": [
         [
           104.8,
@@ -486,7 +528,9 @@
     {
       "start": 108.46,
       "end": 112.36,
-      "members": [],
+      "members": [
+        "WONJIN"
+      ],
       "voice": [
         [
           108.44,
@@ -505,15 +549,17 @@
           112.48
         ]
       ],
-      "original": "낯선 떨림은, 더 새롭게 Burn me alive",
-      "romanization": "natseon tteollimeun, deo saeropge burn me alive",
-      "english": "Unfamiliar vibrations, Burn me alive anew",
+      "original": "낯선 떨림은, **더 새롭게 Burn me alive@MINHEE**",
+      "romanization": "natseon tteollimeun, **deo saeropge burn me alive@MINHEE**",
+      "english": "Unfamiliar vibrations, **Burn me alive anew@MINHEE**",
       "adlib": false
     },
     {
       "start": 112.48,
       "end": 115.56,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "voice": [
         [
           112.5,
@@ -532,7 +578,9 @@
     {
       "start": 115.71,
       "end": 119.32,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "voice": [
         [
           115.83,
@@ -547,15 +595,17 @@
           119.91
         ]
       ],
-      "original": "온몸을 던져, Shed it off and bring me alive",
-      "romanization": "onmomeul deonjyeo, shed it off and bring me alive",
-      "english": "Throw myself into it, Shed it off and bring me alive",
+      "original": "온몸을 던져, **Shed it off and bring me alive@TAEYOUNG**",
+      "romanization": "onmomeul deonjyeo, **shed it off and bring me alive@TAEYOUNG**",
+      "english": "Throw myself into it, **Shed it off and bring me alive@TAEYOUNG**",
       "adlib": false
     },
     {
       "start": 119.51,
       "end": 126.72,
-      "members": [],
+      "members": [
+        "JUNGMO"
+      ],
       "voice": [
         [
           119.54,
@@ -586,7 +636,9 @@
     {
       "start": 126.88,
       "end": 134.43,
-      "members": [],
+      "members": [
+        "SEONGMIN"
+      ],
       "voice": [
         [
           126.92,
@@ -605,7 +657,9 @@
     {
       "start": 134.64,
       "end": 138.11,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "voice": [
         [
           134.74,
@@ -624,7 +678,9 @@
     {
       "start": 138.29,
       "end": 141.99,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "voice": [
         [
           138.41,
@@ -647,7 +703,9 @@
     {
       "start": 142.15,
       "end": 145.52,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "voice": [
         [
           142.18,
@@ -666,7 +724,9 @@
     {
       "start": 145.86,
       "end": 149.36,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "voice": [
         [
           145.85,
@@ -689,7 +749,9 @@
     {
       "start": 149.96,
       "end": 150.67,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "voice": [
         [
           149.91,
@@ -704,7 +766,9 @@
     {
       "start": 150.82,
       "end": 158.21,
-      "members": [],
+      "members": [
+        "MINHEE"
+      ],
       "voice": [
         [
           150.93,
@@ -735,7 +799,9 @@
     {
       "start": 158.36,
       "end": 165.5,
-      "members": [],
+      "members": [
+        "JUNGMO"
+      ],
       "voice": [
         [
           158.34,
@@ -758,7 +824,9 @@
     {
       "start": 165.65,
       "end": 169.2,
-      "members": [],
+      "members": [
+        "HYEONGJUN"
+      ],
       "voice": [
         [
           165.7,
@@ -777,7 +845,9 @@
     {
       "start": 169.4,
       "end": 173.32,
-      "members": [],
+      "members": [
+        "HYEONGJUN"
+      ],
       "voice": [
         [
           169.39,
@@ -796,15 +866,17 @@
           173.43
         ]
       ],
-      "original": "낯선 떨림은, 더 새롭게 Burn me alive",
-      "romanization": "natseon tteollimeun, deo saeropge burn me alive",
-      "english": "Unfamiliar vibrations, Burn me alive anew",
+      "original": "낯선 떨림은, **더 새롭게 Burn me alive@WONJIN**",
+      "romanization": "natseon tteollimeun, **deo saeropge burn me alive@WONJIN**",
+      "english": "Unfamiliar vibrations, **Burn me alive anew@WONJIN**",
       "adlib": false
     },
     {
       "start": 173.32,
       "end": 176.54,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "voice": [
         [
           173.43,
@@ -823,7 +895,9 @@
     {
       "start": 176.69,
       "end": 180.92,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "voice": [
         [
           176.72,
@@ -842,15 +916,17 @@
           180.8
         ]
       ],
-      "original": "온몸을 던져, 더 뜨겁게 Drive me louder",
-      "romanization": "onmomeul deonjyeo, deo tteugeopge drive me louder",
-      "english": "Throw myself into it, Even hotter, Drive me louder",
+      "original": "온몸을 던져, **더 뜨겁게 Drive me louder@MINHEE**",
+      "romanization": "onmomeul deonjyeo, **deo tteugeopge drive me louder@MINHEE**",
+      "english": "Throw myself into it, **Even hotter, Drive me louder@MINHEE**",
       "adlib": false
     },
     {
       "start": 6.47,
       "end": 6.96,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "original": "",
       "romanization": "(Shee)",
       "english": "",
@@ -865,7 +941,9 @@
     {
       "start": 8.34,
       "end": 8.82,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "original": "",
       "romanization": "(Uh)",
       "english": "",
@@ -880,7 +958,9 @@
     {
       "start": 27.92,
       "end": 28.31,
-      "members": [],
+      "members": [
+        "SEONGMIN"
+      ],
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
@@ -895,7 +975,9 @@
     {
       "start": 28.37,
       "end": 30.39,
-      "members": [],
+      "members": [
+        "SEONGMIN"
+      ],
       "original": "",
       "romanization": "(Oh oh)",
       "english": "",
@@ -910,7 +992,9 @@
     {
       "start": 92.47,
       "end": 93.21,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "",
       "romanization": "(Sky)",
       "english": "",
@@ -925,7 +1009,9 @@
     {
       "start": 95.82,
       "end": 98.86,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "(흘러가)",
       "romanization": "(heulleoga)",
       "english": "(Flow)",
@@ -940,7 +1026,9 @@
     {
       "start": 99.66,
       "end": 100.5,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "(찾아)",
       "romanization": "(chaja)",
       "english": "(Find)",
@@ -955,7 +1043,9 @@
     {
       "start": 136.21,
       "end": 136.65,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "original": "",
       "romanization": "(Ayy)",
       "english": "",
@@ -970,7 +1060,9 @@
     {
       "start": 138.02,
       "end": 138.49,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "original": "",
       "romanization": "(Ayy)",
       "english": "",
@@ -985,7 +1077,9 @@
     {
       "start": 139.88,
       "end": 140.32,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "original": "",
       "romanization": "(Ayy)",
       "english": "",
@@ -1000,7 +1094,9 @@
     {
       "start": 143.33,
       "end": 144.05,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "original": "",
       "romanization": "(Rewind)",
       "english": "",
@@ -1015,7 +1111,9 @@
     {
       "start": 145.21,
       "end": 146.16,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
       "original": "",
       "romanization": "(Divine)",
       "english": "",
@@ -1030,7 +1128,9 @@
     {
       "start": 155.76,
       "end": 159.24,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "",
       "romanization": "(Oh, Feelin' so loud)",
       "english": "",
@@ -1049,7 +1149,9 @@
     {
       "start": 160.82,
       "end": 162.09,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "original": "",
       "romanization": "(Do it again)",
       "english": "",
@@ -1064,7 +1166,9 @@
     {
       "start": 163.42,
       "end": 165.74,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "",
       "romanization": "(Hey, hey, hey)",
       "english": "",
@@ -1087,7 +1191,9 @@
     {
       "start": 168.48,
       "end": 169.41,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "",
       "romanization": "(Temperature)",
       "english": "",
@@ -1102,7 +1208,9 @@
     {
       "start": 170.73,
       "end": 173.24,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "",
       "romanization": "(Burnin', burnin', burnin')",
       "english": "",
@@ -1125,7 +1233,9 @@
     {
       "start": 174.45,
       "end": 175.06,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "",
       "romanization": "(Fight it)",
       "english": "",
@@ -1140,7 +1250,9 @@
     {
       "start": 175.81,
       "end": 177.48,
-      "members": [],
+      "members": [
+        "WOOBIN"
+      ],
       "original": "(몰아쳐)",
       "romanization": "(morachyeo)",
       "english": "(Rages)",
