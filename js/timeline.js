@@ -16,22 +16,55 @@ const Timeline = {
 
         if(!SONG || !SONG.lyrics) return;
 
-        SONG.lyrics.forEach(line => {
-
-            const background = this.lineColor(line);
-            if(!background) return;
-
+        const dur = SONG.duration || 0;
+        const addSeg = (start, end, bg) => {
+            if(!bg || !(end > start)) return;
             const segment = document.createElement("div");
             segment.className = "timeline-segment";
-
-            segment.style.left   = (line.start / SONG.duration) * 100 + "%";
-            segment.style.width  = ((line.end - line.start) / SONG.duration) * 100 + "%";
-            segment.style.background = background;
-
+            segment.style.left  = (start / dur) * 100 + "%";
+            segment.style.width = ((end - start) / dur) * 100 + "%";
+            segment.style.background = bg;
             timeline.insertBefore(segment, cursor);
+        };
+
+        // El timeline va POR VOZ: cada segmento de voz (line.voice) es un bloque con el
+        // color de QUIEN lo canta (por eso salen las dos partes de "JUN / THE8"). Si una
+        // línea no tiene segmentos de voz, se colorea la línea entera (fallback).
+        SONG.lyrics.forEach(line => {
+            const v = Array.isArray(line.voice) ? line.voice : null;
+            if(v && v.length){
+                v.forEach(seg => {
+                    if(!seg) return;
+                    const who = seg[2];
+                    const names = (who == null) ? (line.members || []) : (Array.isArray(who) ? who : [who]);
+                    addSeg(seg[0], seg[1], this.colorForMembers(names));
+                });
+            } else {
+                addSeg(line.start, line.end, this.lineColor(line));
+            }
         });
 
         this.startCursor();
+    },
+
+    /* Color a partir de una lista de nombres: grupo -> degradado de todos; 2+ ->
+       color mezclado sólido; 1 -> su color. */
+    colorForMembers(namesArr){
+        const members = SONG.members || [];
+        const byName = n => members.find(m => m.name === n);
+        const names = new Set();
+        let hasGroup = false;
+        (namesArr || []).forEach(n => {
+            if(n == null) return; n = ("" + n).trim();
+            if(n === SONG.group || /^(todos|all|grupo|group)$/i.test(n)){ hasGroup = true; return; }
+            if(byName(n)) names.add(n);
+        });
+        if(hasGroup && members.length > 1)
+            return `linear-gradient(90deg, ${members.map(m => m.color).join(", ")})`;
+        const arr = [...names];
+        if(arr.length === 0) return null;
+        if(arr.length === 1) return byName(arr[0]).color;
+        return this.mixColors(arr.map(n => byName(n).color));
     },
 
     /* Color de la barra de una línea:
@@ -43,29 +76,11 @@ const Timeline = {
        Recoge cantantes de line.members, de los marcadores **...@Miembro** y de los
        segmentos de voz (line.voice), así no se pierde nadie (antes THE8 no salía). */
     lineColor(line){
-        const members = SONG.members || [];
-        const byName = n => members.find(m => m.name === n);
-        const names = new Set();
-        let hasGroup = false;
-        const add = n => {
-            if(!n) return; n = ("" + n).trim();
-            if(n === SONG.group || /^(todos|all|grupo|group)$/i.test(n)){ hasGroup = true; return; }
-            if(byName(n)) names.add(n);
-        };
-        (line.members || []).forEach(add);
+        const names = (line.members || []).slice();
         const txt = (line.original || "") + "\n" + (line.romanization || "") + "\n" + (line.english || "");
         const re = /@([^*\n]+?)\*\*/g; let m;
-        while((m = re.exec(txt))){ m[1].split(",").forEach(add); }
-        if(Array.isArray(line.voice)){
-            line.voice.forEach(seg => { const who = seg && seg[2]; if(Array.isArray(who)) who.forEach(add); else add(who); });
-        }
-
-        if(hasGroup && members.length > 1)
-            return `linear-gradient(90deg, ${members.map(m => m.color).join(", ")})`;
-        const arr = [...names];
-        if(arr.length === 0) return null;
-        if(arr.length === 1) return byName(arr[0]).color;
-        return this.mixColors(arr.map(n => byName(n).color));   // 2+ -> color mezclado sólido
+        while((m = re.exec(txt))){ m[1].split(",").forEach(x => names.push(x.trim())); }
+        return this.colorForMembers(names);
     },
 
     _cx: null,

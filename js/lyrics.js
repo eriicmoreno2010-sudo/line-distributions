@@ -22,6 +22,33 @@ function hasPairedMarker(t){
     return typeof t === "string" && t.includes("**") && (t.split("**").length % 2 === 1);
 }
 
+/* ¿La línea tiene una parte cantada por TODO EL GRUPO? = un **trozo** sin @ (los
+   trozos con @ son de un miembro; sin @ = coro/grupo). Sirve para poner el nombre
+   del grupo en la cabecera ("CHENLE / NCT DREAM"). */
+function hasGroupHighlight(line){
+    return [line && line.original, line && line.romanization, line && line.english].some(t => {
+        if(!hasPairedMarker(t)) return false;
+        const parts = t.split("**");
+        for(let i = 1; i < parts.length; i += 2){ if(parts[i].indexOf("@") < 0) return true; }
+        return false;
+    });
+}
+
+/* Color MEZCLADO (promedio) de una lista de colores -> un solo color sólido. */
+let _lyCx = null;
+function _toRgb(c){
+    if(!_lyCx) _lyCx = document.createElement("canvas").getContext("2d");
+    _lyCx.fillStyle = "#000"; _lyCx.fillStyle = c; const s = _lyCx.fillStyle;
+    if(s[0] === "#"){ let h = s.slice(1); if(h.length === 3) h = h.split("").map(x => x + x).join(""); const n = parseInt(h, 16); return [(n>>16)&255, (n>>8)&255, n&255]; }
+    const g = s.match(/\d+/g); return g ? g.slice(0,3).map(Number) : [136,136,136];
+}
+function avgColor(cols){
+    cols = (cols || []).filter(Boolean); if(!cols.length) return "#888";
+    const rgb = cols.map(_toRgb);
+    const a = [0,1,2].map(i => Math.round(rgb.reduce((s,v) => s + v[i], 0) / rgb.length));
+    return `rgb(${a[0]}, ${a[1]}, ${a[2]})`;
+}
+
 /* Join singer names: "A" · "A & B" · "A, B & C" · "A, B, C & D" ... */
 function joinNames(names){
     names = (names || []).filter(Boolean);
@@ -62,14 +89,9 @@ function partialSingers(line){
 function markedComesFirst(line){
     const fields = [line && line.original, line && line.romanization, line && line.english];
     for(const t of fields){
-        if(typeof t !== "string" || t.indexOf("@") < 0) continue;
-        const parts = t.split("**");
-        for(let i = 1; i < parts.length; i += 2){          // impares = trozos marcados
-            if(parts[i].indexOf("@") > 0){                 // primer trozo con @
-                const before = parts.slice(0, i).join("");  // todo lo anterior (texto del dueño)
-                return !/\S/.test(before);                 // marcado primero solo si no hay nada antes
-            }
-        }
+        if(!hasPairedMarker(t)) continue;
+        const parts = t.split("**");                 // parts[0] = texto ANTES del 1er trozo marcado
+        if(parts.length > 1) return !/\S/.test(parts[0]);   // marcado primero solo si no hay nada antes
     }
     return true;
 }
@@ -343,8 +365,14 @@ const Lyrics = {
         this.centralTextCleared = false;
 
         const shownMembers = displayMembers(line);
-        const linePartials = partialSingers(line)
+        let linePartials = partialSingers(line)
             .filter(n => !shownMembers.some(m => m.toLowerCase() === n.toLowerCase()));
+        // Parte de TODO EL GRUPO (**...** sin @) en una línea de un miembro -> añade el
+        // grupo a la cabecera: "CHENLE / NCT DREAM" (no solo "CHENLE").
+        if(!c.isGroupLine && hasGroupHighlight(line)
+           && !shownMembers.includes(SONG.group) && !linePartials.includes(SONG.group)){
+            linePartials = linePartials.concat([SONG.group]);
+        }
         const membersKey = shownMembers.join("|") + "@@" + linePartials.join("|");
         const sameName = this.lastCentralMembers === membersKey;
         this.lastCentralMembers = membersKey;
@@ -438,7 +466,12 @@ const Lyrics = {
                         : `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
                     const part = linePartials.map(span).join('<span style="color:inherit"> &amp; </span>');
                     const main = shownMembers.map(span).join('<span style="color:inherit">  &amp;  </span>');
-                    const sep = '<span style="opacity:.6;font-weight:800;padding:0 .18em"> / </span>';
+                    // El "/" va en el COLOR MEZCLADO de los dos lados (miembro↔grupo/otro).
+                    const repCol = ns => avgColor(ns.includes(SONG.group)
+                        ? (SONG.members || []).map(m => m.color)
+                        : ns.map(colOf));
+                    const sepCol = avgColor([repCol(shownMembers), repCol(linePartials)]);
+                    const sep = `<span style="color:${sepCol};font-weight:900;padding:0 .16em"> / </span>`;
                     // el que canta ANTES va delante (marcado al principio -> "marcado / dueño";
                     // marcado al final -> "dueño / marcado")
                     e.member.innerHTML = markedComesFirst(line) ? (part + sep + main) : (main + sep + part);
