@@ -848,10 +848,12 @@
     {
       "start": 146.24,
       "end": 149.67,
-      "members": [],
-      "original": "벗어나 이 궤도 밖의 난, So bring it back one last time",
-      "romanization": "beoseona i gwedo bakkui nan, so bring it back one last time",
-      "english": "Breaking out of this orbit, So bring it back one last time",
+      "members": [
+        "CHENLE"
+      ],
+      "original": "벗어나 이 궤도 밖의 난, **So bring it back one last time**",
+      "romanization": "beoseona i gwedo bakkui nan, **so bring it back one last time**",
+      "english": "Breaking out of this orbit, **So bring it back one last time**",
       "adlib": false,
       "voice": [
         [
