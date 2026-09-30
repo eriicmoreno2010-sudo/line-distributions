@@ -125,6 +125,20 @@ body.theme-light #ranking .member-rank{
     text-shadow: 0 1px 2px rgba(255,255,255,.8);
 }
 
+/* Tema CLARO: las tarjetas "done" (ya no cantan) NO tan oscuras -> se tiñen con
+   BLANCO (no con negro), con texto oscuro para que se lea. */
+body.theme-light #ranking .member.done,
+body.theme-light #ranking-left .member.done{
+    background:linear-gradient(90deg,
+        color-mix(in srgb, var(--accent) 24%, #fff),
+        color-mix(in srgb, var(--accent) 13%, #fff));
+    border-color:color-mix(in srgb, var(--accent) 42%, #fff);
+    box-shadow:0 2px 10px -7px rgba(0,0,0,.4);
+}
+body.theme-light #ranking .member.done .member-name{ color:color-mix(in srgb, var(--accent) 72%, #000); }
+body.theme-light #ranking .member.done .member-time{ color:color-mix(in srgb, var(--accent) 60%, #000); }
+body.theme-light #ranking .member.done .member-progress{ background:color-mix(in srgb, var(--accent) 70%, #000); }
+
 /* ========================= */
 /* BODY */
 /* ========================= */
