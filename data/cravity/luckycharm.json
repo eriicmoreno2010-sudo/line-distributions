@@ -2,7 +2,7 @@
   "group": "CRAVITY",
   "song": "Lucky Charm",
   "video": "videos/cravity_luckycharm_mupjsirg.mp4",
-  "duration": 155.036735,
+  "duration": 155.566667,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -168,7 +168,9 @@
     {
       "start": 10.84,
       "end": 13.64,
-      "members": [],
+      "members": [
+        "ALLEN"
+      ],
       "original": "",
       "romanization": "**Watch this!,@ALLEN** **Let’s freakin’ go!@SERIM**",
       "english": "",
@@ -176,11 +178,17 @@
       "voice": [
         [
           10.88,
-          11.47
+          11.47,
+          [
+            "ALLEN"
+          ]
         ],
         [
           12.94,
-          13.73
+          13.73,
+          [
+            "SERIM"
+          ]
         ]
       ]
     },
@@ -715,7 +723,10 @@
         ],
         [
           86.26,
-          87.07
+          87.07,
+          [
+            "MINHEE"
+          ]
         ]
       ]
     },
@@ -736,7 +747,10 @@
         ],
         [
           88.33,
-          89.11
+          89.11,
+          [
+            "MINHEE"
+          ]
         ]
       ]
     },
@@ -880,7 +894,10 @@
       "voice": [
         [
           109.73,
-          110.54
+          110.54,
+          [
+            "WONJIN"
+          ]
         ],
         [
           110.25,
@@ -901,7 +918,10 @@
       "voice": [
         [
           111.74,
-          112.63
+          112.63,
+          [
+            "WONJIN"
+          ]
         ],
         [
           112.27,
@@ -922,7 +942,10 @@
       "voice": [
         [
           113.85,
-          114.64
+          114.64,
+          [
+            "WONJIN"
+          ]
         ],
         [
           114.36,
@@ -943,7 +966,10 @@
       "voice": [
         [
           115.96,
-          116.77
+          116.77,
+          [
+            "WONJIN"
+          ]
         ],
         [
           116.48,
@@ -968,7 +994,11 @@
         ],
         [
           119.1,
-          120.45
+          120.45,
+          [
+            "ALLEN",
+            "WOOBIN"
+          ]
         ]
       ]
     },
