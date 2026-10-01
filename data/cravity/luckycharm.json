@@ -1178,5 +1178,8 @@
   "npC1": "#f29326",
   "npC2": "#e7ff2e",
   "audioOffset": -0.2,
-  "instrumental": "audio/cravity_luckycharm_inst.mp3"
+  "instrumental": "audio/cravity_luckycharm_inst.mp3",
+  "instrumentalStart": 48.57320784054487,
+  "instrumentalEnd": 155.036735,
+  "instrumentalFade": true
 }
