@@ -1176,5 +1176,6 @@
   "audio": "audio/cravity_luckycharm.mp3",
   "cover": "covers/cravity_luckycharm.jpg",
   "npC1": "#f29326",
-  "npC2": "#e7ff2e"
+  "npC2": "#e7ff2e",
+  "audioOffset": -0.2
 }
