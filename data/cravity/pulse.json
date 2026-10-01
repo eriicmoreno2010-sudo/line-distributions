@@ -73,8 +73,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 5.72,
+      "end": 11.06,
       "members": [
         "WONJIN"
       ],
@@ -84,8 +84,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 12.22,
+      "end": 17.57,
       "members": [
         "WONJIN"
       ],
@@ -95,8 +95,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.25,
+      "end": 24.49,
       "members": [
         "JUNGMO"
       ],
@@ -106,8 +106,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.31,
+      "end": 28.46,
       "members": [
         "MINHEE"
       ],
@@ -117,8 +117,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.58,
+      "end": 32.2,
       "members": [
         "MINHEE"
       ],
@@ -128,8 +128,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.99,
+      "end": 37.07,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -137,8 +137,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 37.31,
+      "end": 40.43,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -146,8 +146,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 40.69,
+      "end": 43.63,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -155,8 +155,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 43.99,
+      "end": 47.02,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, **Pulse, I’m feeling your@WONJIN**",
@@ -164,8 +164,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.17,
+      "end": 51.02,
       "members": [
         "WOOBIN"
       ],
@@ -175,8 +175,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.61,
+      "end": 54.21,
       "members": [
         "WOOBIN"
       ],
@@ -186,8 +186,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 54.99,
+      "end": 58.31,
       "members": [
         "SEONGMIN"
       ],
@@ -197,8 +197,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.63,
+      "end": 60.32,
       "members": [
         "SEONGMIN"
       ],
@@ -208,17 +208,19 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 65.85,
+      "end": 66.62,
+      "members": [
+        "ALLEN"
+      ],
       "original": "",
       "romanization": "Yeah I like that",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.91,
+      "end": 70.06,
       "members": [
         "ALLEN"
       ],
@@ -228,8 +230,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 70.23,
+      "end": 73.59,
       "members": [
         "ALLEN"
       ],
@@ -239,8 +241,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 73.61,
+      "end": 76.73,
       "members": [
         "SERIM"
       ],
@@ -250,8 +252,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 76.91,
+      "end": 78.56,
       "members": [
         "SERIM"
       ],
@@ -261,8 +263,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.65,
+      "end": 81.67,
       "members": [
         "HYEONGJUN"
       ],
@@ -272,8 +274,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.85,
+      "end": 85.36,
       "members": [
         "HYEONGJUN"
       ],
@@ -283,8 +285,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 86.36,
+      "end": 87,
       "members": [
         "HYEONGJUN"
       ],
@@ -294,8 +296,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 87.29,
+      "end": 90.41,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -303,8 +305,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 90.56,
+      "end": 93.65,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -312,8 +314,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 93.82,
+      "end": 96.98,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -321,8 +323,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.13,
+      "end": 100.38,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, **Pulse, I’m feeling your@MINHEE**",
@@ -330,8 +332,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 100.54,
+      "end": 104.29,
       "members": [
         "WONJIN"
       ],
@@ -341,8 +343,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 104.98,
+      "end": 107.44,
       "members": [
         "WONJIN"
       ],
@@ -352,8 +354,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 108.32,
+      "end": 111.83,
       "members": [
         "TAEYOUNG"
       ],
@@ -363,8 +365,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 112.94,
+      "end": 113.5,
       "members": [
         "TAEYOUNG"
       ],
@@ -374,8 +376,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 113.58,
+      "end": 117.59,
       "members": [
         "HYEONGJUN"
       ],
@@ -385,8 +387,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 120.27,
+      "end": 124.22,
       "members": [
         "ALLEN"
       ],
@@ -396,8 +398,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 125.12,
+      "end": 130.92,
       "members": [
         "WONJIN"
       ],
@@ -407,8 +409,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 132.96,
+      "end": 135.06,
       "members": [
         "SEONGMIN"
       ],
@@ -418,8 +420,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 135.22,
+      "end": 138.71,
       "members": [
         "SEONGMIN"
       ],
@@ -429,8 +431,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 139.65,
+      "end": 140.32,
       "members": [],
       "original": "",
       "romanization": "I’m feeling your",
@@ -438,8 +440,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 143.05,
+      "end": 143.63,
       "members": [],
       "original": "",
       "romanization": "I’m feeling your",
@@ -447,8 +449,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 144.01,
+      "end": 146.96,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -456,8 +458,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 147.23,
+      "end": 150.28,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -465,8 +467,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 150.44,
+      "end": 153.67,
       "members": [],
       "original": "",
       "romanization": "Pulse, Pulse, Pulse, I’m feeling your",
@@ -474,19 +476,19 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 153.85,
+      "end": 157.6,
       "members": [
         "TAEYOUNG"
       ],
       "original": "You, you, 넌 빛이 되어 감싸 오는 아침",
-      "romanization": "you you, neon bicci doeeo gamssao-neun achim",
+      "romanization": "you you, neon bicci doeeo gamssa oneun achim",
       "english": "You, you, You're a morning that embraces me as light",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 158.36,
+      "end": 160.95,
       "members": [
         "TAEYOUNG"
       ],
@@ -496,8 +498,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 161.71,
+      "end": 164.97,
       "members": [
         "MINHEE"
       ],
@@ -507,8 +509,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 166.25,
+      "end": 167,
       "members": [
         "MINHEE"
       ],
