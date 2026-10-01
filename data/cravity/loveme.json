@@ -1332,5 +1332,7 @@
       ]
     }
   ],
-  "audio": "audio/cravity_loveme.mp3"
+  "audio": "audio/cravity_loveme.mp3",
+  "npC1": "#f22626",
+  "cover": "covers/cravity_loveme.jpg"
 }
