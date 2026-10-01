@@ -894,5 +894,6 @@
   "audio": "audio/cravity_pulse.mp3",
   "cover": "covers/cravity_pulse.jpg",
   "npC1": "#272574",
-  "npC2": "#61170a"
+  "npC2": "#61170a",
+  "instrumental": "audio/cravity_pulse_inst.mp3"
 }
