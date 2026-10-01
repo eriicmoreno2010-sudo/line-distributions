@@ -849,5 +849,6 @@
   ],
   "audio": "audio/cravity_pulse.mp3",
   "cover": "covers/cravity_pulse.jpg",
-  "npC1": "#2a26f2"
+  "npC1": "#272574",
+  "npC2": "#ff4d2e"
 }
