@@ -590,7 +590,17 @@
       "original": "",
       "romanization": "(Woah-oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          14.28,
+          15.48
+        ],
+        [
+          15.59,
+          16.84
+        ]
+      ]
     },
     {
       "start": 19.99,
@@ -601,7 +611,17 @@
       "original": "",
       "romanization": "(Woah-oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          19.95,
+          21.14
+        ],
+        [
+          21.26,
+          22.42
+        ]
+      ]
     },
     {
       "start": 28.27,
@@ -612,7 +632,13 @@
       "original": "",
       "romanization": "(Oh oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          28.25,
+          29.01
+        ]
+      ]
     },
     {
       "start": 65.15,
@@ -623,7 +649,17 @@
       "original": "",
       "romanization": "(Oh-woah, oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          65.17,
+          66.32
+        ],
+        [
+          66.5,
+          67.63
+        ]
+      ]
     },
     {
       "start": 76.42,
@@ -634,7 +670,17 @@
       "original": "",
       "romanization": "(Oh-woah, oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          76.45,
+          77.63
+        ],
+        [
+          77.78,
+          78.9
+        ]
+      ]
     },
     {
       "start": 95.78,
@@ -645,7 +691,13 @@
       "original": "",
       "romanization": "(There we, there we go)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          95.9,
+          96.94
+        ]
+      ]
     },
     {
       "start": 102.6,
@@ -656,7 +708,13 @@
       "original": "",
       "romanization": "(What do you know?)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          102.58,
+          104.57
+        ]
+      ]
     },
     {
       "start": 108.44,
@@ -667,7 +725,13 @@
       "original": "",
       "romanization": "(Woah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          108.5,
+          110.68
+        ]
+      ]
     },
     {
       "start": 121.58,
@@ -678,7 +742,17 @@
       "original": "",
       "romanization": "(Oh-woah, oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          121.62,
+          122.78
+        ],
+        [
+          122.93,
+          124.04
+        ]
+      ]
     },
     {
       "start": 132.88,
@@ -689,7 +763,17 @@
       "original": "",
       "romanization": "(Oh-woah, oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          132.87,
+          134.09
+        ],
+        [
+          134.21,
+          135.4
+        ]
+      ]
     },
     {
       "start": 154.77,
@@ -700,7 +784,13 @@
       "original": "",
       "romanization": "(Oh oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          154.74,
+          157.4
+        ]
+      ]
     },
     {
       "start": 155.5,
@@ -711,7 +801,17 @@
       "original": "",
       "romanization": "(Oh-woah, oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          155.48,
+          156.62
+        ],
+        [
+          156.77,
+          157.94
+        ]
+      ]
     },
     {
       "start": 166.76,
@@ -722,7 +822,17 @@
       "original": "",
       "romanization": "(Oh-woah, oh-oh, oh-oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          166.74,
+          167.93
+        ],
+        [
+          168.05,
+          169.21
+        ]
+      ]
     },
     {
       "start": 96.69,
