@@ -1148,5 +1148,6 @@
     }
   ],
   "audio": "audio/cravity_luckycharm.mp3",
-  "cover": "covers/cravity_luckycharm.jpg"
+  "cover": "covers/cravity_luckycharm.jpg",
+  "npC1": "#f29326"
 }
