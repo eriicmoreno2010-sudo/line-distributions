@@ -847,5 +847,6 @@
       ]
     }
   ],
-  "audio": "audio/cravity_pulse.mp3"
+  "audio": "audio/cravity_pulse.mp3",
+  "cover": "covers/cravity_pulse.jpg"
 }
