@@ -1,7 +1,7 @@
 {
   "group": "CRAVITY",
   "song": "Lucky Charm",
-  "video": "",
+  "video": "videos/cravity_luckycharm_mupjsirg.mp4",
   "duration": 155.036735,
   "theme": "dark",
   "subunit": false,
@@ -1149,5 +1149,6 @@
   ],
   "audio": "audio/cravity_luckycharm.mp3",
   "cover": "covers/cravity_luckycharm.jpg",
-  "npC1": "#f29326"
+  "npC1": "#f29326",
+  "npC2": "#e7ff2e"
 }
