@@ -895,5 +895,8 @@
   "cover": "covers/cravity_pulse.jpg",
   "npC1": "#272574",
   "npC2": "#61170a",
-  "instrumental": "audio/cravity_pulse_inst.mp3"
+  "instrumental": "audio/cravity_pulse_inst.mp3",
+  "instrumentalStart": 33.16276304182692,
+  "instrumentalEnd": 172.016327,
+  "instrumentalFade": true
 }
