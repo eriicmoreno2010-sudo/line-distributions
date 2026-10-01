@@ -147,13 +147,12 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SERIM"
-      ],
+      "members": [],
       "original": "",
       "romanization": "",
       "english": "",
       "adlib": ""
     }
-  ]
+  ],
+  "audio": "audio/cravity_luckycharm.mp3"
 }
