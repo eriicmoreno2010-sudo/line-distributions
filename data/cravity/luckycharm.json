@@ -2,7 +2,7 @@
   "group": "CRAVITY",
   "song": "Lucky Charm",
   "video": "",
-  "duration": 0,
+  "duration": 155.036735,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -145,795 +145,617 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Hey, look at me",
-      "romanization": "hey look at me",
-      "english": "Hey, look at me",
+      "start": 5.43,
+      "end": 9.84,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "Hey, look at me",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.84,
+      "end": 13.64,
       "members": [],
-      "original": "Watch this!",
-      "romanization": "watch this",
-      "english": "Watch this!",
+      "original": "",
+      "romanization": "**Watch this!,@ALLEN** **Let’s freakin’ go!@SERIM**",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Let’s freakin’ go!",
-      "romanization": "let's freakin' go",
-      "english": "Let's freakin' go!",
+      "start": 13.79,
+      "end": 17.14,
+      "members": [
+        "SERIM"
+      ],
+      "original": "100% Chance, 아무리 봐도 I’ve got lucky charm",
+      "romanization": "100% chance, amuri bwado i've got lucky charm",
+      "english": "100% chance, No matter how I look at it, I've got lucky charm",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "100% Chance",
-      "romanization": "100% chance",
-      "english": "100% chance",
+      "start": 17.01,
+      "end": 20.93,
+      "members": [
+        "SERIM"
+      ],
+      "original": "널 만난 후로 매일이 Lovely, Like 넘치는 Dopamine baby oh my God",
+      "romanization": "neol mannan huro maeiri lovely, like neomchineun dopamine baby oh my god",
+      "english": "Since I met you, every day is lovely, Like overflowing dopamine, baby oh my God",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아무리 봐도 I’ve got lucky charm",
-      "romanization": "amuri bwado i've got lucky charm",
-      "english": "No matter how I look at it, I've got lucky charm",
+      "start": 21.06,
+      "end": 23.8,
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "Like tick tick boom, Oh watch out",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "널 만난 후로 매일이 Lovely",
-      "romanization": "neol mannan huro maeiri lovely",
-      "english": "Since I met you, every day is lovely",
+      "start": 23.95,
+      "end": 27.7,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "Sweetie 나를 웃음 짓게 해, Like you did 너를 만난 것부터",
+      "romanization": "sweetie nareul useum jitge hae, like you did neoreul mannan geotbuteo",
+      "english": "Sweetie, you make me smile, Like you did from the moment I met you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Like 넘치는 Dopamine baby oh my God",
-      "romanization": "like neomchineun dopamine baby oh my god",
-      "english": "Like overflowing dopamine, baby oh my God",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Like tick tick boom",
-      "romanization": "like tick tick boom",
-      "english": "Like tick tick boom",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Oh watch out",
-      "romanization": "oh watch out",
-      "english": "Oh watch out",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Sweetie 나를 웃음 짓게 해",
-      "romanization": "sweetie nareul useum jitge hae",
-      "english": "Sweetie, you make me smile",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Like you did 너를 만난 것부터",
-      "romanization": "like you did neoreul mannan geotbuteo",
-      "english": "Like you did from the moment I met you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 27.85,
+      "end": 30.45,
+      "members": [
+        "ALLEN"
+      ],
       "original": "I’m lucky 오늘 밤은 Win 규칙 따윈 없지 Grin",
       "romanization": "i'm lucky oneul bameun win gyuchik ttawin eopji grin",
       "english": "I'm lucky, tonight is a win, there are no rules, grin",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "When you look into my eyes",
-      "romanization": "when you look into my eyes",
-      "english": "When you look into my eyes",
+      "start": 30.47,
+      "end": 32.84,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "When you look into my eyes, Baby if you wanna try me",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Baby if you wanna try me",
-      "romanization": "baby if you wanna try me",
-      "english": "Baby if you wanna try me",
+      "start": 33.59,
+      "end": 38.38,
+      "members": [
+        "TAEYOUNG"
+      ],
+      "original": "새로워 너와 나 Swap me, That’s right 알잖아 I’m one and only",
+      "romanization": "saerowo neowa na swap me, that's right aljana i'm one and only",
+      "english": "It's new, you and I, swap me, That's right, you know I'm one and only",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "새로워 너와 나 Swap me",
-      "romanization": "saerowo neowa na swap me",
-      "english": "It's new, you and I, swap me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "That’s right 알잖아 I’m one and only",
-      "romanization": "that's right aljana i'm one and only",
-      "english": "That's right, you know I'm one and only",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 38.6,
+      "end": 40.68,
+      "members": [
+        "TAEYOUNG"
+      ],
       "original": "네 맘에 달아 줘 Keyring",
       "romanization": "ne mame dara jwo keyring",
       "english": "Put this keyring on your heart",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Get it multiplied",
-      "romanization": "get it multiplied",
-      "english": "Get it multiplied",
+      "start": 40.83,
+      "end": 44.09,
+      "members": [
+        "JUNGMO"
+      ],
+      "original": "",
+      "romanization": "Get it multiplied, You + me = more than twice",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "You + me = more than twice",
-      "romanization": "you + me = more than twice",
-      "english": "You + me = more than twice",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 44.27,
+      "end": 46.17,
+      "members": [
+        "MINHEE"
+      ],
       "original": "Maybe 우린 Sweet like apple pie",
       "romanization": "maybe urin sweet like apple pie",
       "english": "Maybe we're sweet like apple pie",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "You know you wanna taste good appetite",
-      "romanization": "you know you wanna taste good appetite",
-      "english": "You know you wanna taste good appetite",
+      "start": 46.35,
+      "end": 49.01,
+      "members": [
+        "MINHEE"
+      ],
+      "original": "",
+      "romanization": "You know you wanna taste good appetite, Oh lucky me",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Oh lucky me",
-      "romanization": "oh lucky me",
-      "english": "Oh lucky me",
+      "start": 49.23,
+      "end": 52.65,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "I got that lucky charm from my head to toe",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I got that lucky charm from my head to toe",
-      "romanization": "i got that lucky charm from my head to toe",
-      "english": "I got that lucky charm from my head to toe",
-      "adlib": false
+      "start": 5.43,
+      "end": 7.19,
+      "members": [
+        "CRAVITY"
+      ],
+      "original": "",
+      "romanization": "(Hey, hey, hey, hey)",
+      "english": "",
+      "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Lucky me)",
-      "romanization": "(lucky me)",
-      "english": "(Lucky me)",
+      "start": 7.37,
+      "end": 9.3,
+      "members": [
+        "CRAVITY"
+      ],
+      "original": "",
+      "romanization": "(Hey, hey, hey, hey)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 9.46,
+      "end": 11.37,
+      "members": [
+        "CRAVITY"
+      ],
+      "original": "",
+      "romanization": "(Hey, hey, hey, hey)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 11.63,
+      "end": 12.96,
+      "members": [
+        "CRAVITY"
+      ],
+      "original": "",
+      "romanization": "(Hey, hey, hey)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 33.01,
+      "end": 33.8,
+      "members": [
+        "TAEYOUNG"
+      ],
+      "original": "",
+      "romanization": "(Try me)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "(Lucky me)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 53.36,
+      "end": 56.4,
+      "members": [
+        "WONJIN"
+      ],
       "original": "너랑 나랑 매일매일 딱 붙어서",
       "romanization": "neorang narang maeilmaeil ttak buteoseo",
       "english": "You and me every day",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "완벽해졌어 One team",
-      "romanization": "wanbyeokaejyeosseo one team",
-      "english": "Glued together became perfect, one team",
+      "start": 56.49,
+      "end": 59.86,
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "완벽해졌어 One team, Got me feeling like that so lucky",
+      "romanization": "wanbyeokaejyeosseo one team, got me feeling like that so lucky",
+      "english": "Glued together became perfect, one team, Got me feeling like that so lucky",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Got me feeling like that so lucky",
-      "romanization": "got me feeling like that so lucky",
-      "english": "Got me feeling like that so lucky",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 59.94,
+      "end": 62,
+      "members": [
+        "WOOBIN"
+      ],
       "original": "Every time I swing 네게 날려 Homerun",
       "romanization": "every time i swing nege nallyeo homerun",
       "english": "Every time I swing, I hit a homerun right to you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We hit the spot roll the dice",
-      "romanization": "we hit the spot roll the dice",
-      "english": "We hit the spot, roll the dice",
+      "start": 62.29,
+      "end": 65.7,
+      "members": [
+        "JUNGMO"
+      ],
+      "original": "",
+      "romanization": "We hit the spot roll the dice, Another 6 yeah!",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Another 6 yeah!",
-      "romanization": "another 6 yeah!",
-      "english": "Another 6 yeah!",
+      "start": 65.9,
+      "end": 68.9,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "Look at me look at me, 슬쩍 허공에 Peace, Eeny meeny miny moe",
+      "romanization": "look at me look at me, seuljjeok heogonge peace, eeny meeny miny moe",
+      "english": "Look at me, look at me, Sneak a peace sign in the air, Eeny meeny miny moe",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Look at me look at me",
-      "romanization": "look at me look at me",
-      "english": "Look at me, look at me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "슬쩍 허공에 Peace",
-      "romanization": "seuljjeok heogonge peace",
-      "english": "Sneak a peace sign in the air",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Eeny meeny miny moe",
-      "romanization": "eeny meeny miny moe",
-      "english": "Eeny meeny miny moe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 68.9,
+      "end": 72.02,
+      "members": [
+        "WONJIN"
+      ],
       "original": "무심코 Pick한 Outfit goin’ Milano to Paris 3, 2, cheese",
       "romanization": "musimko pickhan outfit goin’ milano to paris 3, 2, cheese",
       "english": "Casually picked this outfit, goin’ Milano to Paris 3, 2, cheese",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아무렇게 찍어도 A컷",
-      "romanization": "amureoke jjigeodo a cut",
-      "english": "Every photo is an A cut",
+      "start": 72.15,
+      "end": 74.19,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "아무렇게 찍어도 A컷, That’s me, crazy",
+      "romanization": "amureoke jjigeodo a cut, that's me crazy",
+      "english": "Every photo is an A cut, That's me, crazy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "That’s me, crazy",
-      "romanization": "that's me crazy",
-      "english": "That's me, crazy",
+      "start": 74.35,
+      "end": 76.49,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "달려 Fast fast, Don’t look back back",
+      "romanization": "dallyeo fast fast, don't look back back",
+      "english": "Run fast fast, Don't look back back",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "달려 Fast fast",
-      "romanization": "dallyeo fast fast",
-      "english": "Run fast fast",
+      "start": 76.64,
+      "end": 78.46,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "You so bad bad, Don’t get no pat pat",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Don’t look back back",
-      "romanization": "don't look back back",
-      "english": "Don't look back back",
+      "start": 78.61,
+      "end": 81.02,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "Hot like a time bomb, 뿌려놔 향수 칙칙",
+      "romanization": "hot like a time bomb, ppuryeonwa hyangsu chikchik",
+      "english": "Hot like a time bomb, Spray perfume pshh pshh",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "You so bad bad",
-      "romanization": "you so bad bad",
-      "english": "You so bad bad",
+      "start": 81.15,
+      "end": 84.1,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "그만 틱틱틱, Let me know",
+      "romanization": "geuman tiktiktik, let me know",
+      "english": "Stop tick tick tick, Let me know",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Don’t get no pat pat",
-      "romanization": "don't get no pat pat",
-      "english": "Don't get no pat pat",
+      "start": 84.13,
+      "end": 84.91,
+      "members": [
+        "MINHEE"
+      ],
+      "original": "",
+      "romanization": "Oh gotcha",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Hot like a time bomb",
-      "romanization": "hot like a time bomb",
-      "english": "Hot like a time bomb",
+      "start": 84.97,
+      "end": 86.93,
+      "members": [
+        "SERIM"
+      ],
+      "original": "터지는 Jackpot oh it’s, **It’s holy@MINHEE**",
+      "romanization": "teojineun jackpot oh it's, **it's holy@MINHEE**",
+      "english": "Exploding jackpot, oh it's, **It's holy@MINHEE**",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "뿌려놔 향수 칙칙",
-      "romanization": "ppuryeonwa hyangsu chikchik",
-      "english": "Spray perfume pshh pshh",
+      "start": 87.08,
+      "end": 89,
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "Put it in my pocket right away, **Feel lucky@MINHEE**",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그만 틱틱틱",
-      "romanization": "geuman tiktiktik",
-      "english": "Stop tick tick tick",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Let me know",
-      "romanization": "let me know",
-      "english": "Let me know",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Oh gotcha",
-      "romanization": "oh gotcha",
-      "english": "Oh gotcha",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "터지는 Jackpot oh it’s",
-      "romanization": "teojineun jackpot oh it's",
-      "english": "Exploding jackpot, oh it's",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "It’s holy",
-      "romanization": "it's holy",
-      "english": "It's holy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Put it in my pocket right away",
-      "romanization": "put it in my pocket right away",
-      "english": "Put it in my pocket right away",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Feel lucky",
-      "romanization": "feel lucky",
-      "english": "Feel lucky",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 89.15,
+      "end": 91.28,
+      "members": [
+        "SERIM"
+      ],
       "original": "눈이 마주친 순간 쏟아지는 Shine",
       "romanization": "nuni majuchin sungan ssodajineun shine",
       "english": "Shine pours out the moment our eyes meet",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "My lucky charm",
-      "romanization": "my lucky charm",
-      "english": "My lucky charm",
+      "start": 91.41,
+      "end": 93.14,
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "My lucky charm, Ya feel me?",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ya feel me?",
-      "romanization": "ya feel me?",
-      "english": "Ya feel me?",
+      "start": 93.29,
+      "end": 97.22,
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "Run it run it run it like a king, 걸음걸이마다 Billie Jean",
+      "romanization": "run it run it run it like a king, georeumgeorimada billie jean",
+      "english": "Run it run it run it like a king, Every step is Billie Jean",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Run it run it run it like a king",
-      "romanization": "run it run it run it like a king",
-      "english": "Run it run it run it like a king",
+      "start": 97.37,
+      "end": 101.06,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "달빛 아래 Show time, 푹 빠진 듯한 It’s my time to shine",
+      "romanization": "dalbit arae show time, puk ppajin deuthan it's my time to shine",
+      "english": "Under the moonlight, show time, Completely hooked, it's my time to shine",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "걸음걸이마다 Billie Jean",
-      "romanization": "georeumgeorimada billie jean",
-      "english": "Every step is Billie Jean",
+      "start": 101.21,
+      "end": 104.62,
+      "members": [
+        "MINHEE"
+      ],
+      "original": "",
+      "romanization": "Get it multiplied, You + me = more than twice",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "달빛 아래 Show time",
-      "romanization": "dalbit arae show time",
-      "english": "Under the moonlight, show time",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "푹 빠진 듯한 It’s my time to shine",
-      "romanization": "puk ppajin deuthan it's my time to shine",
-      "english": "Completely hooked, it's my time to shine",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Get it multiplied",
-      "romanization": "get it multiplied",
-      "english": "Get it multiplied",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "You + me = more than twice",
-      "romanization": "you + me = more than twice",
-      "english": "You + me = more than twice",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 104.76,
+      "end": 106.68,
+      "members": [
+        "TAEYOUNG"
+      ],
       "original": "Maybe 우린 Sweet like apple pie",
       "romanization": "maybe urin sweet like apple pie",
       "english": "Maybe we're sweet like apple pie",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "You know you wanna taste good appetite",
-      "romanization": "you know you wanna taste good appetite",
-      "english": "You know you wanna taste good appetite",
+      "start": 106.83,
+      "end": 109.68,
+      "members": [
+        "TAEYOUNG"
+      ],
+      "original": "",
+      "romanization": "You know you wanna taste good appetite, Oh lucky me",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 109.72,
+      "end": 111.68,
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "**Ooh wee,@WONJIN** 더 당연하게 믿어봐",
+      "romanization": "**ooh wee,@WONJIN** deo dangyeonhage mideobwa",
+      "english": "**Ooh wee,@WONJIN** Believe it more naturally",
+      "adlib": false
+    },
+    {
+      "start": 111.83,
+      "end": 113.69,
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "**For real,@WONJIN** 나 너의 행운이라고",
+      "romanization": "**for real,@WONJIN** na neoui haengunirago",
+      "english": "**For real@WONJIN**, I'm your good luck",
+      "adlib": false
+    },
+    {
+      "start": 113.87,
+      "end": 115.85,
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "**Like me,@WONJIN** 지금 모든 것이 완벽한",
+      "romanization": "**like me,@WONJIN** jigeum modeun geosi wanbyeokan",
+      "english": "**Like me,@WONJIN** Everything right now is perfect",
+      "adlib": false
+    },
+    {
+      "start": 116.01,
+      "end": 117.94,
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "**Oh please,@WONJIN** 이보다 좋을 수 있을까",
+      "romanization": "**oh please,@WONJIN** iboda joeul su isseulkka",
+      "english": "**Oh please,@WONJIN** Could it get any better than this",
+      "adlib": false
+    },
+    {
+      "start": 118.03,
+      "end": 120.08,
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "너만 있으면 **Oh lucky me@ALLEN,WOOBIN**",
+      "romanization": "neoman isseumyeon **oh lucky me@ALLEN,WOOBIN**",
+      "english": "As long as I have you, **oh lucky me@ALLEN,WOOBIN**",
+      "adlib": false
+    },
+    {
+      "start": 120.23,
+      "end": 123.55,
+      "members": [
+        "JUNGMO"
+      ],
+      "original": "",
+      "romanization": "I got that lucky charm from my head to toe",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Oh lucky me",
-      "romanization": "oh lucky me",
-      "english": "Oh lucky me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh wee",
-      "romanization": "ooh wee",
-      "english": "Ooh wee",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 당연하게 믿어봐",
-      "romanization": "deo dangyeonhage mideobwa",
-      "english": "Believe it more naturally",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "For real",
-      "romanization": "for real",
-      "english": "For real",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "나 너의 행운이라고",
-      "romanization": "na neoui haengunirago",
-      "english": "I'm your good luck",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Like me",
-      "romanization": "like me",
-      "english": "Like me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "지금 모든 것이 완벽한",
-      "romanization": "jigeum modeun geosi wanbyeokan",
-      "english": "Everything right now is perfect",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Oh please",
-      "romanization": "oh please",
-      "english": "Oh please",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "이보다 좋을 수 있을까",
-      "romanization": "iboda joeul su isseulkka",
-      "english": "Could it get any better than this",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너만 있으면 Oh lucky me",
-      "romanization": "neoman isseumyeon oh lucky me",
-      "english": "As long as I have you, oh lucky me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I got that lucky charm from my head to toe",
-      "romanization": "i got that lucky charm from my head to toe",
-      "english": "I got that lucky charm from my head to toe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Lucky me)",
-      "romanization": "(lucky me)",
-      "english": "(Lucky me)",
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "(Lucky me)",
+      "english": "",
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 124.28,
+      "end": 127.43,
+      "members": [
+        "JUNGMO"
+      ],
       "original": "너랑 나랑 매일매일 딱 붙어서",
       "romanization": "neorang narang maeilmaeil ttak buteoseo",
       "english": "You and me every day",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "완벽해졌어 One team",
-      "romanization": "wanbyeokaejyeosseo one team",
-      "english": "Glued together became perfect, one team",
+      "start": 127.46,
+      "end": 130.84,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "완벽해졌어 One team, Got me feeling like that so lucky",
+      "romanization": "wanbyeokaejyeosseo one team, got me feeling like that so lucky",
+      "english": "Glued together became perfect, one team, Got me feeling like that so lucky",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Got me feeling like that so lucky",
-      "romanization": "got me feeling like that so lucky",
-      "english": "Got me feeling like that so lucky",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 130.86,
+      "end": 132.96,
+      "members": [
+        "MINHEE"
+      ],
       "original": "Every time I swing 네게 날려 Homerun",
       "romanization": "every time i swing nege nallyeo homerun",
       "english": "Every time I swing, I hit a homerun right to you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We hit the spot roll the dice",
-      "romanization": "we hit the spot roll the dice",
-      "english": "We hit the spot, roll the dice",
+      "start": 133.19,
+      "end": 136.56,
+      "members": [
+        "TAEYOUNG"
+      ],
+      "original": "",
+      "romanization": "We hit the spot roll the dice, Another 6 yeah!",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Another 6 yeah!",
-      "romanization": "another 6 yeah!",
-      "english": "Another 6 yeah!",
+      "start": 136.59,
+      "end": 141.13,
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "",
+      "romanization": "Ooh feelin’ on top all the time, When I’m with you my lucky charm",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh feelin’ on top all the time",
-      "romanization": "ooh feelin’ on top all the time",
-      "english": "Ooh feelin’ on top all the time",
+      "start": 141.46,
+      "end": 144.86,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "Won’t waste my time, You make me you make me you make me, Lucky",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "When I’m with you my lucky charm",
-      "romanization": "when i’m with you my lucky charm",
-      "english": "When I’m with you, my lucky charm",
+      "start": 145.04,
+      "end": 149.47,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "Ooh 너와 나, 끊임없이 밤새 Dancing all night long",
+      "romanization": "ooh neowa na, kkeunimeopsi bamsae dancing all night long",
+      "english": "Ooh you and I, Endlessly, dancing all night long",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Won’t waste my time",
-      "romanization": "won't waste my time",
-      "english": "Won’t waste my time",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "You make me you make me you make me",
-      "romanization": "you make me you make me you make me",
-      "english": "You make me you make me you make me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Lucky",
-      "romanization": "lucky",
-      "english": "Lucky",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh 너와 나",
-      "romanization": "ooh neowa na",
-      "english": "Ooh you and I",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "끊임없이 밤새 Dancing all night long",
-      "romanization": "kkeunimeopsi bamsae dancing all night long",
-      "english": "Endlessly, dancing all night long",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Don’t waste no time",
-      "romanization": "don't waste no time",
-      "english": "Don’t waste no time",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I make you I make you I make you",
-      "romanization": "i make you i make you i make you",
-      "english": "I make you I make you I make you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Lucky",
-      "romanization": "lucky",
-      "english": "Lucky",
+      "start": 149.8,
+      "end": 153.63,
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "Don’t waste no time, I make you I make you I make you, Lucky",
+      "english": "",
       "adlib": false
     }
   ],
