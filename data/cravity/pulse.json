@@ -75,13 +75,579 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SERIM"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "마침내 눈을 뜨지",
+      "romanization": "machimnae nuneul tteuji",
+      "english": "I finally open my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Only one belief",
+      "romanization": "only one belief",
+      "english": "Only one belief",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꿈을 깬 영혼이",
+      "romanization": "kkumeul kkaen yeonghoni",
+      "english": "A soul awakened from a dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "환상을 꺼내",
+      "romanization": "hwansangeul kkeonae",
+      "english": "Brings out a fantasy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 태어난 맘",
+      "romanization": "dasi taeeonan mam",
+      "english": "Heart reborn",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마치 새로운 몸",
+      "romanization": "machi saeroun mom",
+      "english": "As if in a new body",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 순간 예민해진 본능들이",
+      "romanization": "i sungan yeminhaejin bonneungdeuri",
+      "english": "When my heightened instincts",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "정해 놓은 운명인 듯 어딘가로 이끌 때",
+      "romanization": "jeonghae noeun unmyeongin deut eodingaro ikkeul ttae",
+      "english": "Lead me somewhere as if it were my destiny",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You, you",
+      "romanization": "you you",
+      "english": "You, you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 기적이자 잊지 못할 울림",
+      "romanization": "neon gijeogija itji mothal ullim",
+      "english": "You're a miracle and an unforgettable resonance",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 심장 속에 명중할 Arrow",
+      "romanization": "nae simjang soge myeongjunghal arrow",
+      "english": "An arrow straight to my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "시공간을 다 비트는 떨림",
+      "romanization": "sigongganeul da biteuneun tteollim",
+      "english": "A vibration that twists through space and time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah I like that",
+      "romanization": "yeah i like that",
+      "english": "Yeah I like that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세상 위에 올라",
+      "romanization": "sesang wie olla",
+      "english": "Climb on top of the world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "바라봐 Paradise",
+      "romanization": "barabwa paradise",
+      "english": "Look at paradise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "영원처럼 흘러가",
+      "romanization": "yeongwoncheoreom heulleoga",
+      "english": "Endlessly flowing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨을 더 크게 쉬며 Make it glow",
+      "romanization": "sumeul deo keuge swimyeo make it glow",
+      "english": "Breathing even deeper make it glow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "천사 같은 Melody",
+      "romanization": "cheonsa gateun melody",
+      "english": "Angelic melody",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝없이 넘칠 Energy",
+      "romanization": "kkeuteopsi neomchil energy",
+      "english": "Endlessly overflowing energy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이제 모든 곳에 퍼지리",
+      "romanization": "ije modeun gose peojiri",
+      "english": "It will spread everywhere now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "경계를 넘어선 이 본능들이",
+      "romanization": "gyeonggyereul neomeoseon i bonneungdeuri",
+      "english": "When these instincts beyond the boundaries",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우리들을 강렬하게 서로에게 이끌 때",
+      "romanization": "urideureul gangnyeolhage seoroege ikkeul ttae",
+      "english": "Pull us strongly toward each other",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You, you",
+      "romanization": "you you",
+      "english": "You, you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 기적이자 잊지 못할 울림",
+      "romanization": "neon gijeogija itji mothal ullim",
+      "english": "You're a miracle and an unforgettable resonance",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 심장 속에 명중할 Arrow",
+      "romanization": "nae simjang soge myeongjunghal arrow",
+      "english": "An arrow straight to my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "시공간을 다 비트는 떨림",
+      "romanization": "sigongganeul da biteuneun tteollim",
+      "english": "A vibration that twists through space and time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두 눈에 비친 너를 봐",
+      "romanization": "du nune bichin neoreul bwa",
+      "english": "Look at you reflected in my two eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "또 다른 차원을 지나",
+      "romanization": "tto dareun chawoneul jina",
+      "english": "Passing through another dimension",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이뤄지는 모든 바람",
+      "romanization": "irwojineun modeun baram",
+      "english": "Every wish comes true",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "사라지는 밤의 장막",
+      "romanization": "sarajineun bamui jangmak",
+      "english": "The veil of the night disappears",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 순간 뒤섞이는 느낌들이",
+      "romanization": "i sungan dwiseokkineun neukkimdeuri",
+      "english": "The sensations intertwining at this moment",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너와 나로 이어지며 무엇보다 선명해",
+      "romanization": "neowa naro ieojimyeo mueotboda seonmyeonghae",
+      "english": "Connecting you and me and becoming clearer than anything",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Pulse, Pulse, Pulse",
+      "romanization": "pulse pulse pulse",
+      "english": "Pulse, Pulse, Pulse",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You, you",
+      "romanization": "you you",
+      "english": "You, you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 빛이 되어 감싸 오는 아침",
+      "romanization": "neon bicci doeeo gamssao-neun achim",
+      "english": "You're a morning that embraces me as light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 길을 열어주는 날개 펴",
+      "romanization": "nae gireul yeoreojuneun nalgae pyeo",
+      "english": "Spread your wings that open my path",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 세상을 뒤흔드는 떨림",
+      "romanization": "i sesangeul dwieodneuneun tteollim",
+      "english": "A vibration that shakes this world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m feeling your",
+      "romanization": "i'm feeling your",
+      "english": "I'm feeling your",
+      "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/cravity_pulse.mp3"
 }
