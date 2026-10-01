@@ -2,7 +2,7 @@
   "group": "CRAVITY",
   "song": "LOVE ME",
   "video": "videos/cravity_loveme_muplfbhu.mp4",
-  "duration": 186.096327,
+  "duration": 186.633333,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -1334,5 +1334,6 @@
   ],
   "audio": "audio/cravity_loveme.mp3",
   "npC1": "#f22626",
-  "cover": "covers/cravity_loveme.jpg"
+  "cover": "covers/cravity_loveme.jpg",
+  "instrumental": "audio/cravity_loveme_inst.mp3"
 }
