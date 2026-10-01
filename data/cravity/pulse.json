@@ -1,7 +1,7 @@
 {
   "group": "CRAVITY",
   "song": "Pulse",
-  "video": "",
+  "video": "videos/cravity_pulse_muph9xqz.mp4",
   "duration": 172.016327,
   "theme": "dark",
   "subunit": false,
@@ -850,5 +850,5 @@
   "audio": "audio/cravity_pulse.mp3",
   "cover": "covers/cravity_pulse.jpg",
   "npC1": "#272574",
-  "npC2": "#ff4d2e"
+  "npC2": "#61170a"
 }
