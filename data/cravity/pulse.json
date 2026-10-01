@@ -848,5 +848,6 @@
     }
   ],
   "audio": "audio/cravity_pulse.mp3",
-  "cover": "covers/cravity_pulse.jpg"
+  "cover": "covers/cravity_pulse.jpg",
+  "npC1": "#2a26f2"
 }
