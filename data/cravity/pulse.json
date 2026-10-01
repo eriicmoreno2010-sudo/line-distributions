@@ -518,6 +518,59 @@
       "romanization": "I’m feeling your",
       "english": "",
       "adlib": false
+    },
+    {
+      "start": 69.86,
+      "end": 70.49,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "(Woah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 73.12,
+      "end": 73.67,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "(Make)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 130.98,
+      "end": 132.91,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "(oh woah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 136.09,
+      "end": 136.96,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "(Woah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 164.35,
+      "end": 166.51,
+      "members": [],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true
     }
   ],
   "audio": "audio/cravity_pulse.mp3"
