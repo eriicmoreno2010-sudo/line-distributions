@@ -150,10 +150,488 @@
       "members": [
         "SERIM"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "Love me",
+      "romanization": "love me",
+      "english": "Love me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Trust me",
+      "romanization": "trust me",
+      "english": "Trust me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You came to me like a voice in the dark",
+      "romanization": "you came to me like a voice in the dark",
+      "english": "You came to me like a voice in the dark",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "But I don’t really know where it goes",
+      "romanization": "but i don’t really know where it goes",
+      "english": "But I don’t really know where it goes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Push it down 더 깊어져만 가",
+      "romanization": "push it down deo gipeojyeoman ga",
+      "english": "Push it down, it keeps getting deeper",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이미 너에게로 가고 있어",
+      "romanization": "imi neoegeoro gago isseo",
+      "english": "I’m already heading toward you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So I don’t wanna let this slip away",
+      "romanization": "so i don’t wanna let this slip away",
+      "english": "So I don’t wanna let this slip away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Like all the times I lost my faith",
+      "romanization": "like all the times i lost my faith",
+      "english": "Like all the times I lost my faith",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "흐트러진 감정 위를 달리듯 I drift away",
+      "romanization": "heureojin gamjeong wireul dallideut i drift away",
+      "english": "As I run through these tangled emotions, I drift away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "And now we say 절대 끝나지 않게",
+      "romanization": "and now we say jeoldae kkeunnaji anke",
+      "english": "And now we say, so that it may never end",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I don’t know",
+      "romanization": "i don’t know",
+      "english": "I don’t know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너와의 기억들이 번져 With your love",
+      "romanization": "neowaui gieokdeuri beonjyeo with your love",
+      "english": "Memories with you spread with your love",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "And now I’m waiting here for you",
+      "romanization": "and now i’m waiting here for you",
+      "english": "And now I’m waiting here for you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You should love me 지금 말을 해줘",
+      "romanization": "you should love me jigeum mareul haejwo",
+      "english": "You should love me, tell me now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Trust me 이 순간을 놓지 마",
+      "romanization": "trust me i sunganeul nochi ma",
+      "english": "Trust me, don’t let go of this moment",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One piece I’ll be all you need",
+      "romanization": "one piece i’ll be all you need",
+      "english": "One piece, I’ll be all you need",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So love me 알고 있잖아",
+      "romanization": "so love me algo itjana",
+      "english": "So love me, you already know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Don’t doubt me 숨길 수가 없어",
+      "romanization": "don’t doubt me sumgil suga eopseo",
+      "english": "Don’t doubt me, can’t hide it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Only you and I belong",
+      "romanization": "only you and i belong",
+      "english": "Only you and I belong",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You wanna take it back",
+      "romanization": "you wanna take it back",
+      "english": "You, you wanna take it back",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "No, this ain’t that, just another fake out",
+      "romanization": "no, this ain’t that, just another fake out",
+      "english": "No, this ain’t that, just another fake out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dying to check",
+      "romanization": "dying to check",
+      "english": "Dying to check",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "굳이 설명 안 해도 No deed",
+      "romanization": "guji seolmyeong an haedo no deed",
+      "english": "No need to explain, no deed",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Let me take this now got you unraveled like a flower",
+      "romanization": "let me take this now got you unraveled like a flower",
+      "english": "Let me take this now got you unraveled like a flower",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Bring your head down lower",
+      "romanization": "bring your head down lower",
+      "english": "Bring your head down lower",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So 멈출 수 없어 We on our way",
+      "romanization": "so meomchul su eopseo we on our way",
+      "english": "So can’t stop, we on our way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "왜 굳이 너는 선을 넘을 듯이 멈춰서",
+      "romanization": "wae guji neoneun seoneul neomeul deusi meomchwoseo",
+      "english": "Why do you stop before crossing the line",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Cause you do what you want anyway",
+      "romanization": "cause you do what you want anyway",
+      "english": "’Cause you do what you want anyway",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(There we, there we go)",
+      "romanization": "there we, there we go",
+      "english": "There we, there we go",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "No matter what I do 왜 모든 게 틀어져 가",
+      "romanization": "no matter what i do wae modeun ge teureojyeo ga",
+      "english": "No matter what I do, why is everything falling apart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 또 아무렇지 않은 듯해",
+      "romanization": "neon tto amureochi aneun deutae",
+      "english": "And you act like you don’t care",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I don’t know",
+      "romanization": "i don’t know",
+      "english": "I don’t know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너와의 기억들이 번져 With your love",
+      "romanization": "neowaui gieokdeuri beonjyeo with your love",
+      "english": "Memories with you spread with your love",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "And now I’m waiting here for you",
+      "romanization": "and now i’m waiting here for you",
+      "english": "And now I’m waiting here for you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You should love me 지금 말을 해줘",
+      "romanization": "you should love me jigeum mareul haejwo",
+      "english": "You should love me, tell me now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Trust me 이 순간을 놓지 마",
+      "romanization": "trust me i sunganeul nochi ma",
+      "english": "Trust me, don’t let go of this moment",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One piece I’ll be all you need",
+      "romanization": "one piece i’ll be all you need",
+      "english": "One piece, I’ll be all you need",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So love me 알고 있잖아",
+      "romanization": "so love me algo itjana",
+      "english": "So love me, you already know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Don’t doubt me 숨길 수가 없어",
+      "romanization": "don’t doubt me sumgil suga eopseo",
+      "english": "Don’t doubt me, can’t hide it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Only you and I belong",
+      "romanization": "only you and i belong",
+      "english": "Only you and I belong",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨이 멎은 듯한데 너는 어때",
+      "romanization": "sumi meojeun deuthande neoneun eottae",
+      "english": "It feels like my breath has stopped, how about you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "흔들리는 불빛 끝이 불안해",
+      "romanization": "heundeullineun bulbit kkeuchi buranhae",
+      "english": "The end of the flickering light feels uneasy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You’re my hidden glow",
+      "romanization": "you’re my hidden glow",
+      "english": "You’re my hidden glow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "My high and low",
+      "romanization": "my high and low",
+      "english": "My high and low",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Anywhere I stay",
+      "romanization": "anywhere i stay",
+      "english": "Anywhere I stay",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You should love me 지금 말을 해줘",
+      "romanization": "you should love me jigeum mareul haejwo",
+      "english": "You should love me, tell me now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Trust me 이 순간을 놓지 마",
+      "romanization": "trust me i sunganeul nochi ma",
+      "english": "Trust me, don’t let go of this moment",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One piece I’ll be all you need",
+      "romanization": "one piece i’ll be all you need",
+      "english": "One piece, I’ll be all you need",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So love me 알고 있잖아",
+      "romanization": "so love me algo itjana",
+      "english": "So love me, you already know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Don’t doubt me 숨길 수가 없어",
+      "romanization": "don’t doubt me sumgil suga eopseo",
+      "english": "Don’t doubt me, can’t hide it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Only you and I belong",
+      "romanization": "only you and i belong",
+      "english": "Only you and I belong",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You should love me 이대로 멈춰줘",
+      "romanization": "you should love me idaero meomchwojwo",
+      "english": "You should love me, please stay like this",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Trust me 사라지지 않게",
+      "romanization": "trust me sarajiji anke",
+      "english": "Trust me, to not disappear",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "One piece I’ll be all you need",
+      "romanization": "one piece i’ll be all you need",
+      "english": "One piece, I’ll be all you need",
+      "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/cravity_loveme.mp3"
 }
