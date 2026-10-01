@@ -29,10 +29,10 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.6667,
-        "size": 0.75,
-        "rot": 0,
+        "cx": 0.787,
+        "cy": 0.3378,
+        "size": 0.087,
+        "rot": 349,
         "flip": false,
         "blur": 0
       }
@@ -44,9 +44,9 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
+        "cx": 0.2524,
+        "cy": 0.4551,
+        "size": 0.136,
         "rot": 0,
         "flip": false,
         "blur": 0
@@ -59,10 +59,10 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
-        "rot": 0,
+        "cx": 0.9375,
+        "cy": 0.4378,
+        "size": 0.1246,
+        "rot": 349,
         "flip": false,
         "blur": 0
       }
@@ -74,9 +74,9 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
+        "cx": 0.3861,
+        "cy": 0.2231,
+        "size": 0.091,
         "rot": 0,
         "flip": false,
         "blur": 0
@@ -89,10 +89,10 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
-        "rot": 0,
+        "cx": 0.0869,
+        "cy": 0.3455,
+        "size": 0.1124,
+        "rot": 350,
         "flip": false,
         "blur": 0
       }
@@ -104,10 +104,10 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
-        "rot": 0,
+        "cx": 0.7651,
+        "cy": 0.5707,
+        "size": 0.1529,
+        "rot": 348,
         "flip": false,
         "blur": 0
       }
@@ -119,9 +119,9 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
+        "cx": 0.4934,
+        "cy": 0.3549,
+        "size": 0.1056,
         "rot": 0,
         "flip": false,
         "blur": 0
@@ -134,9 +134,9 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.5,
-        "size": 1,
+        "cx": 0.6254,
+        "cy": 0.4277,
+        "size": 0.1183,
         "rot": 0,
         "flip": false,
         "blur": 0
