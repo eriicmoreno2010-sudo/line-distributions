@@ -513,7 +513,8 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
     background:var(--accent);
 }
 
-#ranking .member.has-sung .member-name{ color:var(--accent); }
+#ranking .member.has-sung .member-name,
+#ranking-left .member.has-sung .member-name{ color:var(--accent); }
 
 /* While a member is actually singing, their whole card lights up in their
    colour (kept legible) and the counter turns their colour too. */
@@ -533,7 +534,8 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
 
 /* El contador se queda del COLOR del miembro una vez ha cantado (igual que en claro),
    no solo mientras canta. (active lo pone más brillante; done lo apaga, más abajo.) */
-#ranking .member.has-sung .member-time{ color:var(--accent); }
+#ranking .member.has-sung .member-time,
+#ranking-left .member.has-sung .member-time{ color:var(--accent); }
 
 #ranking .member.active .member-rank{ color:var(--sing); }
 #ranking .member.active .member-photo-wrap,
