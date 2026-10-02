@@ -1040,5 +1040,8 @@
   "cover": "covers/cravity_seizethenight.jpg",
   "npC1": "#4f26f2",
   "npC2": "#000000",
-  "instrumental": "audio/cravity_seizethenight_inst.mp3"
+  "instrumental": "audio/cravity_seizethenight_inst.mp3",
+  "instrumentalStart": 44.313544684455124,
+  "instrumentalEnd": 176.013061,
+  "instrumentalFade": true
 }
