@@ -1,0 +1,17 @@
+{
+  "type": "album",
+  "group": "CRAVITY",
+  "album": "9th EP 'sonorous'",
+  "cover": "",
+  "theme": "dark",
+  "instrumental": "",
+  "songs": [
+    "data/cravity/pulse.json",
+    "data/cravity/louder.json",
+    "data/cravity/luckycharm.json",
+    "data/cravity/loveme.json",
+    "data/cravity/seizethenight.json",
+    "data/cravity/fantasy.json",
+    "data/cravity/oddoneout.json"
+  ]
+}
