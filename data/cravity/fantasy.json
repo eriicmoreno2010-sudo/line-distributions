@@ -1,8 +1,8 @@
 {
   "group": "CRAVITY",
   "song": "Fantasy",
-  "video": "",
-  "duration": 0,
+  "video": "videos/cravity_fantasy_muqt9b8a.mp4",
+  "duration": 175.020408,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -859,5 +859,5 @@
   "audio": "audio/cravity_fantasy.mp3",
   "cover": "covers/cravity_fantasy.jpg",
   "npC1": "#8226f2",
-  "npC2": "#ff2ec7"
+  "npC2": "#ff2eb2"
 }
