@@ -1036,5 +1036,6 @@
       ]
     }
   ],
-  "audio": "audio/cravity_seizethenight.mp3"
+  "audio": "audio/cravity_seizethenight.mp3",
+  "cover": "covers/cravity_seizethenight.jpg"
 }
