@@ -2,7 +2,7 @@
   "group": "CRAVITY",
   "song": "Odd One Out",
   "video": "videos/cravity_oddoneout_muqt9kka.mp4",
-  "duration": 166.112653,
+  "duration": 166.816667,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -147,34 +147,42 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Stop",
-      "romanization": "stop",
-      "english": "Stop",
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "Stop",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Starting off this whole night with my sign",
-      "romanization": "starting off this whole night with my sign",
-      "english": "Starting off this whole night with my sign",
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "Starting off this whole night with my sign",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Cause I’m ready for the ride yeah",
-      "romanization": "cause i’m ready for the ride yeah",
-      "english": "'Cause I'm ready for the ride, yeah",
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "Cause I’m ready for the ride yeah",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "TAEYOUNG"
+      ],
       "original": "나를 향해 Say say say",
       "romanization": "nareul hyanghae say say say",
       "english": "Say, say, say to me",
@@ -183,34 +191,31 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "난 일으켜 New wave wave wave",
-      "romanization": "nan ireukyeo new wave wave wave",
-      "english": "I raise a new wave, wave, wave",
+      "members": [
+        "TAEYOUNG"
+      ],
+      "original": "난 일으켜 New wave wave wave, Got no way",
+      "romanization": "nan ireukyeo new wave wave wave, got no way",
+      "english": "I raise a new wave, wave, wave, Got no way",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Got no way",
-      "romanization": "got no way",
-      "english": "Got no way",
+      "members": [
+        "MINHEE"
+      ],
+      "original": "",
+      "romanization": "Cause I know, I won’t doubt me anymore",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Cause I know, I won’t doubt me anymore",
-      "romanization": "cause i know i won’t doubt me anymore",
-      "english": "'Cause I know, I won't doubt me anymore",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "MINHEE"
+      ],
       "original": "가려진 어둠 끝에 Spotlight",
       "romanization": "garyeojin eodum kkeute spotlight",
       "english": "At the end of the hidden darkness, spotlight",
@@ -219,223 +224,131 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Don’t turn around, turn around",
-      "romanization": "don’t turn around turn around",
-      "english": "Don't turn around, turn around",
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "Don’t turn around, turn around, 경계 끝에 Cross the line",
+      "romanization": "don’t turn around turn around, gyeonggye kkeute cross the line",
+      "english": "Don't turn around, turn around, At the edge, cross the line",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "경계 끝에 Cross the line",
-      "romanization": "gyeonggye kkeute cross the line",
-      "english": "At the edge, cross the line",
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "후회 따윈 없어 내게, Nobody dares, try to be like",
+      "romanization": "huhoe ttawin eopseo naege, nobody dares try to be like",
+      "english": "I have no regrets, Nobody dares, try to be like",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "후회 따윈 없어 내게",
-      "romanization": "huhoe ttawin eopseo naege",
-      "english": "I have no regrets",
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "",
+      "romanization": "ODD ONE OUT, We shut it down",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Nobody dares, try to be like",
-      "romanization": "nobody dares try to be like",
-      "english": "Nobody dares, try to be like",
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "ODD ONE OUT, 넘보지 마",
+      "romanization": "odd one out, neomboji ma",
+      "english": "ODD ONE OUT, Don't you dare",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "ODD ONE OUT, We make ’em bow, We ODD ONE OUT",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "We shut it down",
-      "romanization": "we shut it down",
-      "english": "We shut it down",
+      "members": [
+        "MINHEE"
+      ],
+      "original": "So let me show you babe show you babe, 더 크게 소리 질러봐",
+      "romanization": "so let me show you babe show you babe, deo keuge sori jilleobwa",
+      "english": "So let me show you babe, show you babe, Scream even louder",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "So let me show you babe show you babe, Watch me burn it until I die",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "넘보지 마",
-      "romanization": "neomboji ma",
-      "english": "Don't you dare",
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "Sonorous sonorous sonorous",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "Pick up the phone, Turn it on and off, I’m muting all the calls",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "We make ’em bow",
-      "romanization": "we make ’em bow",
-      "english": "We make 'em bow",
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "Not gonna meet nobody, Till I get what I want, I’m phenomenal",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "We ODD ONE OUT",
-      "romanization": "we odd one out",
-      "english": "We odd one out",
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "They be chasing clout like, Gee you really got it all",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "So let me show you babe show you babe",
-      "romanization": "so let me show you babe show you babe",
-      "english": "So let me show you babe, show you babe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 크게 소리 질러봐",
-      "romanization": "deo keuge sori jilleobwa",
-      "english": "Scream even louder",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "So let me show you babe show you babe",
-      "romanization": "so let me show you babe show you babe",
-      "english": "So let me show you babe, show you babe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Watch me burn it until I die",
-      "romanization": "watch me burn it until i die",
-      "english": "Watch me burn it until I die",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Sonorous sonorous sonorous",
-      "romanization": "sonorous sonorous sonorous",
-      "english": "Sonorous, sonorous, sonorous",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Pick up the phone",
-      "romanization": "pick up the phone",
-      "english": "Pick up the phone",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Turn it on and off",
-      "romanization": "turn it on and off",
-      "english": "Turn it on and off",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m muting all the calls",
-      "romanization": "i’m muting all the calls",
-      "english": "I'm muting all the calls",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Not gonna meet nobody",
-      "romanization": "not gonna meet nobody",
-      "english": "Not gonna meet nobody",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Till I get what I want",
-      "romanization": "till i get what i want",
-      "english": "'Til I get what I want",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m phenomenal",
-      "romanization": "i’m phenomenal",
-      "english": "I'm phenomenal",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "They be chasing clout like",
-      "romanization": "they be chasing clout like",
-      "english": "They be chasing clout like",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Gee you really got it all",
-      "romanization": "gee you really got it all",
-      "english": "Gee, you really got it all",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "MINHEE",
+        "SEONGMIN"
+      ],
       "original": "바라는 게 없어도 I 원해 더",
       "romanization": "baraneun ge eopseodo i wonhae deo",
       "english": "Even if I wish for nothing, I want more",
@@ -444,190 +357,122 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "So try me now try me now",
-      "romanization": "so try me now try me now",
-      "english": "So try me now, try me now",
+      "members": [
+        "WONJIN"
+      ],
+      "original": "So try me now try me now, 맞설 필요 없어 난",
+      "romanization": "so try me now try me now, matseol pillyo eopseo nan",
+      "english": "So try me now, try me now, I have no need to fight",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "맞설 필요 없어 난",
-      "romanization": "matseol pillyo eopseo nan",
-      "english": "I have no need to fight",
+      "members": [
+        "JUNGMO"
+      ],
+      "original": "",
+      "romanization": "Cause I get it when I want it, Don’t even care, try to be like",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Cause I get it when I want it",
-      "romanization": "cause i get it when i want it",
-      "english": "'Cause I get it when I want it",
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "ODD ONE OUT, We shut it down",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Don’t even care, try to be like",
-      "romanization": "don’t even care try to be like",
-      "english": "Don't even care, try to be like",
+      "members": [
+        "SERIM"
+      ],
+      "original": "ODD ONE OUT, 넘보지 마",
+      "romanization": "odd one out, neomboji ma",
+      "english": "ODD ONE OUTt, Don't you dare",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "",
+      "romanization": "ODD ONE OUT, We make ’em bow, We ODD ONE OUT",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "We shut it down",
-      "romanization": "we shut it down",
-      "english": "We shut it down",
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "So let me show you babe show you babe, 더 크게 소리 질러봐",
+      "romanization": "so let me show you babe show you babe, deo keuge sori jilleobwa",
+      "english": "So let me show you babe, show you babe, Scream even louder",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "So let me show you babe show you babe, Watch me burn it until I die",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "넘보지 마",
-      "romanization": "neomboji ma",
-      "english": "Don't you dare",
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "어긋난 Rhapsody, 더 원해 난",
+      "romanization": "eogeunnan rhapsody, deo wonhae nan",
+      "english": "Misaligned rhapsody, I want more",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
+      "members": [
+        "SEONGMIN"
+      ],
+      "original": "",
+      "romanization": "I’m craving more",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "We make ’em bow",
-      "romanization": "we make ’em bow",
-      "english": "We make 'em bow",
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "",
+      "romanization": "Lost in time, Out of line",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "We ODD ONE OUT",
-      "romanization": "we odd one out",
-      "english": "We odd one out",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "So let me show you babe show you babe",
-      "romanization": "so let me show you babe show you babe",
-      "english": "So let me show you babe, show you babe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 크게 소리 질러봐",
-      "romanization": "deo keuge sori jilleobwa",
-      "english": "Scream even louder",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "So let me show you babe show you babe",
-      "romanization": "so let me show you babe show you babe",
-      "english": "So let me show you babe, show you babe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Watch me burn it until I die",
-      "romanization": "watch me burn it until i die",
-      "english": "Watch me burn it until I die",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어긋난 Rhapsody",
-      "romanization": "eogeunnan rhapsody",
-      "english": "Misaligned rhapsody",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 원해 난",
-      "romanization": "deo wonhae nan",
-      "english": "I want more",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m craving more",
-      "romanization": "i’m craving more",
-      "english": "I'm craving more",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Lost in time",
-      "romanization": "lost in time",
-      "english": "Lost in time",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Out of line",
-      "romanization": "out of line",
-      "english": "Out of line",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Feel so alive",
-      "romanization": "feel so alive",
-      "english": "Feel so alive",
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "Feel so alive",
+      "english": "",
       "adlib": false
     },
     {
@@ -642,136 +487,76 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Show you babe show you babe",
-      "romanization": "show you babe show you babe",
-      "english": "Show you babe, show you babe",
+      "members": [
+        "TAEYOUNG"
+      ],
+      "original": "Show you babe show you babe, 더 크게 울려 퍼져 가",
+      "romanization": "show you babe show you babe, deo keuge ullyeo peojyeo ga",
+      "english": "Show you babe, show you babe, It rings out even louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "So let me show you babe show you babe, Watch me burn it until I die",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "더 크게 울려 퍼져 가",
-      "romanization": "deo keuge ullyeo peojyeo ga",
-      "english": "It rings out even louder",
+      "original": "",
+      "romanization": "**Sonorous sonorous sonorous,@WONJIN** **Sonorous sonorous sonorous@MINHEE**",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "So let me show you babe show you babe",
-      "romanization": "so let me show you babe show you babe",
-      "english": "So let me show you babe, show you babe",
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "Sonorous sonorous sonorous, Burn it until I die",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Watch me burn it until I die",
-      "romanization": "watch me burn it until i die",
-      "english": "Watch me burn it until I die",
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "ODD ONE OUT, We shut it down",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Sonorous sonorous sonorous",
-      "romanization": "sonorous sonorous sonorous",
-      "english": "Sonorous, sonorous, sonorous",
+      "members": [
+        "SERIM"
+      ],
+      "original": "ODD ONE OUT, 넘보지 마",
+      "romanization": "odd one out, neomboji ma",
+      "english": "ODD ONE OUT, Don't you dare",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Sonorous sonorous sonorous",
-      "romanization": "sonorous sonorous sonorous",
-      "english": "Sonorous, sonorous, sonorous",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Sonorous sonorous sonorous",
-      "romanization": "sonorous sonorous sonorous",
-      "english": "Sonorous, sonorous, sonorous",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Burn it until I die",
-      "romanization": "burn it until i die",
-      "english": "Burn it until I die",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We shut it down",
-      "romanization": "we shut it down",
-      "english": "We shut it down",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "넘보지 마",
-      "romanization": "neomboji ma",
-      "english": "Don't you dare",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ODD ONE OUT",
-      "romanization": "odd one out",
-      "english": "Odd one out",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We make ’em bow",
-      "romanization": "we make ’em bow",
-      "english": "We make 'em bow",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We ODD ONE OUT",
-      "romanization": "we odd one out",
-      "english": "We odd one out",
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "ODD ONE OUT, We make ’em bow, We ODD ONE OUT",
+      "english": "",
       "adlib": false
     }
   ],
