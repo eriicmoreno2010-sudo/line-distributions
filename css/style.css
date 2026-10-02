@@ -531,6 +531,10 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
         0 12px 34px -12px var(--accent);
 }
 
+/* El contador se queda del COLOR del miembro una vez ha cantado (igual que en claro),
+   no solo mientras canta. (active lo pone más brillante; done lo apaga, más abajo.) */
+#ranking .member.has-sung .member-time{ color:var(--accent); }
+
 #ranking .member.active .member-rank{ color:var(--sing); }
 #ranking .member.active .member-photo-wrap,
 #ranking-left .member.active .member-photo-wrap{ border-color:var(--sing); }

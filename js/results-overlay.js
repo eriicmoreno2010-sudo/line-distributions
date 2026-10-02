@@ -160,6 +160,12 @@ Self-contained: injects its own styles and markup.
     body.theme-light #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 64%, #000); }
     body.theme-light #results-overlay .row.lit .sec{ color:#14151c; }
     body.theme-light #results-overlay .row.lit .fill{ background:var(--c); }
+    /* Tema claro: sombra CLARA en el texto (no oscura) para que no parezca "pesado". */
+    body.theme-light #results-overlay .row .name,
+    body.theme-light #results-overlay .row .pct,
+    body.theme-light #results-overlay .row .sec,
+    body.theme-light #results-overlay #ro-head .sng,
+    body.theme-light #results-overlay #ro-even .val{ text-shadow:0 1px 2px rgba(255,255,255,.85); }
   `;
   document.head.appendChild(style);
 
