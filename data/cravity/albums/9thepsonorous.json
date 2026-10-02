@@ -2,7 +2,7 @@
   "type": "album",
   "group": "CRAVITY",
   "album": "9th EP 'sonorous'",
-  "cover": "",
+  "cover": "covers/cravity_9thepsonorous.jpg",
   "theme": "dark",
   "instrumental": "",
   "songs": [
@@ -13,5 +13,47 @@
     "data/cravity/seizethenight.json",
     "data/cravity/fantasy.json",
     "data/cravity/oddoneout.json"
-  ]
+  ],
+  "clips": [
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    },
+    {
+      "start": 0,
+      "end": 12
+    }
+  ],
+  "songColors": [
+    "#ff4d6d",
+    "#4dabf7",
+    "#ffa94d",
+    "#cc5de8",
+    "#20c997",
+    "#ffd43b",
+    "#748ffc"
+  ],
+  "raceColor": "#ffffff",
+  "versions": [],
+  "bgAudio": {}
 }
