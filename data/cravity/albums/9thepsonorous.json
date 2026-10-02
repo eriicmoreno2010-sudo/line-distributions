@@ -41,7 +41,7 @@
     },
     {
       "start": 0,
-      "end": 12
+      "end": 54.52463631515489
     }
   ],
   "songColors": [
@@ -53,7 +53,9 @@
     "#ffd43b",
     "#748ffc"
   ],
-  "raceColor": "#948989",
+  "raceColor": "#858080",
   "versions": [],
-  "bgAudio": {}
+  "bgAudio": {
+    "src": "audio/cravity_9thepsonorousbg.mp3"
+  }
 }
