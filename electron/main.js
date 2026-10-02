@@ -719,6 +719,21 @@ ipcMain.handle("stem-server-start", async () => {
   try{ const port = await startAppServer(); return { ok:true, url: "http://127.0.0.1:" + port + "/" }; }
   catch(e){ return { ok:false, error:e.message }; }
 });
+// Abre el instrumental en su PROPIA ventana (sobre el servidor http con COOP/COEP),
+// así la app principal se queda en file:// y NO se rompe (carpetas de la biblioteca se
+// abrían todas y el vídeo del editor no avanzaba, porque el server http no soporta Range
+// y el localStorage es por-origen).
+ipcMain.handle("open-stem-window", async () => {
+  try{
+    const port = await startAppServer();
+    const w = new BrowserWindow({
+      width: 1120, height: 840, backgroundColor: "#0b0b10", autoHideMenuBar: true,
+      webPreferences: { webSecurity: false, backgroundThrottling: false, preload: path.join(__dirname, "preload.js") }
+    });
+    await w.loadURL("http://127.0.0.1:" + port + "/inst.html");
+    return { ok:true };
+  }catch(e){ return { ok:false, error:e.message }; }
+});
 ipcMain.handle("stem-model-ensure", async (evt) => {
   try{
     // borra el modelo RoFormer grande (710 MB) que resultó demasiado pesado para la GPU

@@ -146,12 +146,14 @@
     if(cutterBtn) cutterBtn.onclick = () => { location.href = "cutter.html"; };
     const instBtn = document.getElementById("instBtn");
     if(instBtn) instBtn.onclick = async () => {
-      // La herramienta necesita hilos (cross-origin isolation): se abre desde el
-      // servidor http local con COOP/COEP. Si falla, cae a file:// (single-thread).
+      // La herramienta necesita hilos (cross-origin isolation): se abre en SU PROPIA
+      // ventana sobre el servidor http local con COOP/COEP, así la app principal se
+      // queda en file:// (si no, la biblioteca abría todas las carpetas y el vídeo del
+      // editor no avanzaba). Si falla, cae a file:// (single-thread) en esta ventana.
       try{
-        if(window.desktop && window.desktop.stemServerStart){
-          const r = await window.desktop.stemServerStart();
-          if(r && r.ok){ location.href = r.url + "inst.html"; return; }
+        if(window.desktop && window.desktop.openStemWindow){
+          const r = await window.desktop.openStemWindow();
+          if(r && r.ok) return;
         }
       }catch(e){}
       location.href = "inst.html";

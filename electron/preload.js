@@ -39,6 +39,7 @@ contextBridge.exposeInMainWorld("desktop", {
   transcribeUrl: (args) => ipcRenderer.invoke("transcribe-url", args || {}),
   onTranscribeProgress: (cb) => ipcRenderer.on("transcribe-progress", (_e, m) => cb(m)),
   stemServerStart: () => ipcRenderer.invoke("stem-server-start"),
+  openStemWindow: () => ipcRenderer.invoke("open-stem-window"),
   stemModelEnsure: () => ipcRenderer.invoke("stem-model-ensure"),
   onStemProgress: (cb) => ipcRenderer.on("stem-model-progress", (_e, p) => cb(p)),
   pickAudioFile: () => ipcRenderer.invoke("pick-audio-file"),
