@@ -156,8 +156,8 @@ Self-contained: injects its own styles and markup.
     body.theme-light #results-overlay .row.lit{ opacity:1;
       background:color-mix(in srgb, var(--c) 16%, #fff);
       border-color:color-mix(in srgb, var(--c) 55%, transparent); }
-    body.theme-light #results-overlay .row.lit .name{ color:color-mix(in srgb, var(--c) 74%, #000); }
-    body.theme-light #results-overlay .row.lit .pct{ color:color-mix(in srgb, var(--c) 64%, #000); }
+    body.theme-light #results-overlay .row.lit .name{ color:var(--c); }
+    body.theme-light #results-overlay .row.lit .pct{ color:var(--c); }
     body.theme-light #results-overlay .row.lit .sec{ color:#14151c; }
     body.theme-light #results-overlay .row.lit .fill{ background:var(--c); }
     /* Tema claro: sombra CLARA en el texto (no oscura) para que no parezca "pesado". */
