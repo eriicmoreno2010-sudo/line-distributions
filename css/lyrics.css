@@ -151,6 +151,13 @@ Version: 3.0 — Lyrics
     opacity:1;
 }
 
+/* Líneas "/" (dueño + @marcados): halo con los colores de todos los implicados.
+   Clase propia que SOLO pinta el halo (el texto va coloreado por trozos). */
+#lyrics-section.singing.partial-glow::after{
+    background: var(--members-glow);
+    opacity:1;
+}
+
 .adlib-member,
 .adlib-original,
 .adlib-roman,

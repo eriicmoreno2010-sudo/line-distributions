@@ -48,6 +48,14 @@ function avgColor(cols){
     const a = [0,1,2].map(i => Math.round(rgb.reduce((s,v) => s + v[i], 0) / rgb.length));
     return `rgb(${a[0]}, ${a[1]}, ${a[2]})`;
 }
+/* Halo (radial-gradients) a partir de una lista de colores -> para el fondo del panel. */
+function buildGlow(cols){
+    cols = (cols || []).filter(Boolean); if(!cols.length) return "";
+    return cols.map((col, i, arr) => {
+        const pos = arr.length > 1 ? 32 + (i / (arr.length - 1)) * 36 : 50;
+        return `radial-gradient(55% 55% at ${pos}% 42%, color-mix(in srgb, ${col} 16%, transparent), transparent 70%)`;
+    }).join(", ");
+}
 
 /* Join singer names: "A" · "A & B" · "A, B & C" · "A, B, C & D" ... */
 function joinNames(names){
@@ -523,6 +531,18 @@ const Lyrics = {
             // Grupo + parte marcada: NO usamos la clase .group (su color:transparent
             // !important pisaría los <span> de cada trozo); lo pintamos a mano.
             e.section.classList.toggle("group", c.isGroupLine && !c.isGroupPartial);
+            // HALO para líneas "/" (dueño + @marcados, o parte de grupo): glow con los
+            // colores de TODOS los implicados (no solo el dueño). Clase propia que SOLO
+            // pinta el halo (no toca el color del texto, que va por trozos).
+            const partialGlow = linePartials.length > 0;
+            if(partialGlow){
+                const names = shownMembers.concat(linePartials);
+                const cols = names.includes(SONG.group)
+                    ? (SONG.members || []).map(m => m.color)
+                    : names.map(n => { const m = (SONG.members || []).find(x => x.name.toLowerCase() === String(n).toLowerCase()); return m && m.color; }).filter(Boolean);
+                e.section.style.setProperty("--members-glow", buildGlow(cols));
+            }
+            e.section.classList.toggle("partial-glow", partialGlow);
 
             fadeEls.forEach(el => { el.classList.remove("fade-out"); el.classList.add("fade-in"); });
         }, 100);
@@ -564,6 +584,7 @@ const Lyrics = {
             e.section.classList.remove("singing");
             e.section.classList.remove("multi-member");
             e.section.classList.remove("group");
+            e.section.classList.remove("partial-glow");
             fadeEls.forEach(el => el.classList.remove("fade-out"));
         }, 100);
     },
