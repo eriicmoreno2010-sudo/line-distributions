@@ -153,7 +153,17 @@
       "original": "",
       "romanization": "I be like, breakin’ all the cages, right?",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.43,
+          8.04
+        ],
+        [
+          8.36,
+          9.75
+        ]
+      ]
     },
     {
       "start": 10.1,
@@ -164,7 +174,17 @@
       "original": "I’m gonna cut this line, 차려입은 Suit and tie",
       "romanization": "i’m gonna cut this line, charyeoipeun suit and tie",
       "english": "I'm gonna cut this line, All dressed up in my suit and tie",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          10.33,
+          11.63
+        ],
+        [
+          11.98,
+          13.19
+        ]
+      ]
     },
     {
       "start": 13.27,
@@ -175,7 +195,13 @@
       "original": "",
       "romanization": "And I’m coming to vibe, make it way too high",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.14,
+          15.19
+        ]
+      ]
     },
     {
       "start": 14.86,
@@ -186,7 +212,13 @@
       "original": "",
       "romanization": "Count that cake, I know how to flip it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          14.77,
+          16.65
+        ]
+      ]
     },
     {
       "start": 16.87,
@@ -197,7 +229,13 @@
       "original": "멈출 줄 모르는 Riding",
       "romanization": "meomchul jul moreuneun riding",
       "english": "Nonstop riding",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.89,
+          18.52
+        ]
+      ]
     },
     {
       "start": 18.52,
@@ -208,7 +246,17 @@
       "original": "이제는 눈을 떠 Now, Open your eyes, Keep movin’ 어차피",
       "romanization": "ijeneun nuneul tteo now, open your eyes, keep movin’ eochapi",
       "english": "Open your eyes now, Open your eyes, Keep movin' anyway",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          18.49,
+          20.87
+        ],
+        [
+          21.02,
+          22.22
+        ]
+      ]
     },
     {
       "start": 24.01,
@@ -219,7 +267,13 @@
       "original": "숨은 네 본능이 눈 뜨는 순간",
       "romanization": "sumeun ne bonneungi nun tteuneun sungan",
       "english": "When your hidden instinct opens its eyes",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          23.95,
+          26.5
+        ]
+      ]
     },
     {
       "start": 27.74,
@@ -230,7 +284,13 @@
       "original": "손에 쥔 Masterpiece 원하는 걸",
       "romanization": "sone jwin masterpiece wonhaneun geol",
       "english": "It holds the masterpiece you desire",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.71,
+          29.88
+        ]
+      ]
     },
     {
       "start": 29.73,
@@ -241,7 +301,17 @@
       "original": "Do what you want, 시간이 아까운 걸",
       "romanization": "do what you want, sigani akkaun geol",
       "english": "Do what you want, Time's wasting",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          29.79,
+          31.29
+        ],
+        [
+          31.44,
+          33.2
+        ]
+      ]
     },
     {
       "start": 33.19,
@@ -252,7 +322,25 @@
       "original": "Tik tak, kick it, make it, 넘볼 수 없게",
       "romanization": "tik tak, kick it, make it, neombol su eopge",
       "english": "Tick tack, kick it, make it, Out of reach",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.25,
+          33.86
+        ],
+        [
+          34.21,
+          34.79
+        ],
+        [
+          35.12,
+          35.67
+        ],
+        [
+          35.82,
+          37.37
+        ]
+      ]
     },
     {
       "start": 37.82,
@@ -263,7 +351,17 @@
       "original": "선을 넘어 Go crazy, 커져가는 My daydream",
       "romanization": "seoneul neomeo go crazy, keojyeoganeun my daydream",
       "english": "Cross the line, go crazy, My growing daydream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          37.82,
+          39.38
+        ],
+        [
+          39.74,
+          41.35
+        ]
+      ]
     },
     {
       "start": 41.28,
@@ -274,7 +372,17 @@
       "original": "멈추지 마, 더는 돌이킬 수 없어 No way out",
       "romanization": "meomchuji ma, deoneun dorikil su eopseo no way out",
       "english": "Don't stop, Can't go back now, no way out",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          41.36,
+          42.69
+        ],
+        [
+          42.77,
+          45.24
+        ]
+      ]
     },
     {
       "start": 45.26,
@@ -285,7 +393,13 @@
       "original": "모진 것에 힘쓰지 마",
       "romanization": "mojin geose himsseuji ma",
       "english": "Don't waste your strength on what's harsh",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.25,
+          49.45
+        ]
+      ]
     },
     {
       "start": 48.75,
@@ -296,7 +410,25 @@
       "original": "",
       "romanization": "Step into my inner self, Make it, do it, rock it",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          48.9,
+          50.37
+        ],
+        [
+          50.79,
+          51.17
+        ],
+        [
+          51.32,
+          51.62
+        ],
+        [
+          51.8,
+          52.25
+        ]
+      ]
     },
     {
       "start": 52.23,
@@ -307,7 +439,13 @@
       "original": "Break into the room, get through it, 눈을 떠 I feel right",
       "romanization": "break into the room, get through it, nuneul tteo i feel right",
       "english": "Break into the room, get through it, Open my eyes, I feel right",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.21,
+          55.36
+        ]
+      ]
     },
     {
       "start": 55.5,
@@ -318,7 +456,13 @@
       "original": "머뭇거리지 마 Don’t lose control 기다려주지 않아",
       "romanization": "meomutgeoriji ma don’t lose control gidaryeojuji ana",
       "english": "Don't hesitate, don't lose control, it doesn't wait",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          55.42,
+          59.1
+        ]
+      ]
     },
     {
       "start": 59.04,
@@ -329,7 +473,25 @@
       "original": "",
       "romanization": "Bring that green light, green light, Everyday spotlight, spotlight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.05,
+          60.11
+        ],
+        [
+          60.26,
+          60.84
+        ],
+        [
+          61,
+          61.95
+        ],
+        [
+          62.08,
+          62.69
+        ]
+      ]
     },
     {
       "start": 62.83,
@@ -340,7 +502,13 @@
       "original": "Give me that, Always me myself and I, 속도를 올려 Let’s drive",
       "romanization": "give me that, always me myself and i, sokdoreul ollyeo let’s drive",
       "english": "Give me that, Always me myself and I, Accelerate, let's drive",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          62.74,
+          66.54
+        ]
+      ]
     },
     {
       "start": 66.26,
@@ -351,7 +519,13 @@
       "original": "",
       "romanization": "In this new world",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.25,
+          67.63
+        ]
+      ]
     },
     {
       "start": 67.42,
@@ -362,7 +536,17 @@
       "original": "",
       "romanization": "Fantasy, I’ll be burning energy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          67.4,
+          68.2
+        ],
+        [
+          68.36,
+          70.14
+        ]
+      ]
     },
     {
       "start": 69.89,
@@ -373,7 +557,13 @@
       "original": "",
       "romanization": "Ah ah ah ah",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.92,
+          71.15
+        ]
+      ]
     },
     {
       "start": 10.21,
@@ -575,7 +765,13 @@
       "original": "흐린 세상 끝에 저 문을 열어",
       "romanization": "heurin sesang kkeute jeo muneul yeoreo",
       "english": "Open that door at the end of this hazy world",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          71.98,
+          75.26
+        ]
+      ]
     },
     {
       "start": 74.76,
@@ -586,7 +782,17 @@
       "original": "",
       "romanization": "Fantasy, I’ll be burning energy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.71,
+          75.57
+        ],
+        [
+          75.72,
+          77.46
+        ]
+      ]
     },
     {
       "start": 77.57,
@@ -596,8 +802,14 @@
       ],
       "original": "커져가는 Rhythm 안에 Up & down",
       "romanization": "keojyeoganeun rhythm ane up & down",
-      "english": "Up and down inside this growing rhythm",
-      "adlib": false
+      "english": "Up & down inside this growing rhythm",
+      "adlib": false,
+      "voice": [
+        [
+          77.56,
+          80.43
+        ]
+      ]
     },
     {
       "start": 80.25,
@@ -608,7 +820,17 @@
       "original": "",
       "romanization": "Step into my Fantasy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.27,
+          80.68
+        ],
+        [
+          80.84,
+          82.14
+        ]
+      ]
     },
     {
       "start": 84.02,
@@ -619,7 +841,13 @@
       "original": "",
       "romanization": "I crush it, we’ve got to say that right now",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          84.01,
+          88.25
+        ]
+      ]
     },
     {
       "start": 88.61,
@@ -630,7 +858,13 @@
       "original": "TNT 던져버려 다",
       "romanization": "tnt deonjyeobeoryeo da",
       "english": "TNT throw it all away",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          88.6,
+          91.05
+        ]
+      ]
     },
     {
       "start": 90.43,
@@ -641,7 +875,17 @@
       "original": "번져가 모든 불빛 Deep into your eyes",
       "romanization": "beonjyeoga modeun bulbit deep into your eyes",
       "english": "Every light spreads deep into your eyes",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.49,
+          91.94
+        ],
+        [
+          92.24,
+          95.64
+        ]
+      ]
     },
     {
       "start": 96.05,
@@ -652,7 +896,13 @@
       "original": "우릴 집어삼킨 Nightmare",
       "romanization": "uril jibeosamkin nightmare",
       "english": "Nightmare engulfing us",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          95.97,
+          98.42
+        ]
+      ]
     },
     {
       "start": 98.62,
@@ -663,7 +913,13 @@
       "original": "내 손 위에 올려진 Crown, 챙겨 전부 Head to toe",
       "romanization": "nae son wie ollyeojin crown, chaenggyeo jeonbu head to toe",
       "english": "The crown placed on my hands, Take everything head to toe",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          98.55,
+          101.33
+        ]
+      ]
     },
     {
       "start": 101.54,
@@ -674,7 +930,13 @@
       "original": "Every time 언제나 원하는 게 많아 Something more",
       "romanization": "every time eonjena wonhaneun ge mana something more",
       "english": "Every time I always want more, something more",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101.54,
+          104.34
+        ]
+      ]
     },
     {
       "start": 104.34,
@@ -685,7 +947,13 @@
       "original": "",
       "romanization": "Can you hear it getting loud",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          104.39,
+          106.37
+        ]
+      ]
     },
     {
       "start": 106.45,
@@ -696,7 +964,13 @@
       "original": "",
       "romanization": "Bring it up, take it out, To the place, you’ll never know",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          106.39,
+          108.75
+        ]
+      ]
     },
     {
       "start": 109.59,
@@ -707,7 +981,13 @@
       "original": "",
       "romanization": "Sweet spot, bass line, midnight, starlight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.54,
+          112.21
+        ]
+      ]
     },
     {
       "start": 112.13,
@@ -718,7 +998,13 @@
       "original": "",
       "romanization": "Shout out to my fans",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          112.15,
+          113.1
+        ]
+      ]
     },
     {
       "start": 113.04,
@@ -729,7 +1015,13 @@
       "original": "Break into the room, get through it, 눈을 떠 I feel right",
       "romanization": "break into the room, get through it, nuneul tteo i feel right",
       "english": "Break into the room, get through it, Open my eyes, I feel right",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.05,
+          116.33
+        ]
+      ]
     },
     {
       "start": 116.32,
@@ -740,7 +1032,13 @@
       "original": "머뭇거리지 마 Don’t lose control 기다려주지 않아",
       "romanization": "meomutgeoriji ma don’t lose control gidaryeojuji ana",
       "english": "Don't hesitate, don't lose control, it doesn't wait",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.24,
+          119.85
+        ]
+      ]
     },
     {
       "start": 119.96,
@@ -751,7 +1049,25 @@
       "original": "",
       "romanization": "Bring that green light, green light, Everyday spotlight, spotlight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.99,
+          121.03
+        ],
+        [
+          121.19,
+          121.73
+        ],
+        [
+          121.88,
+          122.85
+        ],
+        [
+          123,
+          123.61
+        ]
+      ]
     },
     {
       "start": 123.69,
@@ -762,7 +1078,13 @@
       "original": "Give me that, Always me myself and I, 속도를 올려 Let’s drive",
       "romanization": "give me that, always me myself and i, sokdoreul ollyeo let’s drive",
       "english": "Give me that, Always me myself and I, Accelerate, let's drive",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          123.7,
+          127.44
+        ]
+      ]
     },
     {
       "start": 127.42,
@@ -773,7 +1095,17 @@
       "original": "아른거리는 빛을 향해 걸어가",
       "romanization": "areungeorineun bicheul hyanghae georeoga",
       "english": "Walk toward the glimmering light",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          127.37,
+          130.77
+        ],
+        [
+          130.84,
+          132.43
+        ]
+      ]
     },
     {
       "start": 131.96,
@@ -784,7 +1116,17 @@
       "original": "",
       "romanization": "Tonight tonight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          131.97,
+          133.04
+        ],
+        [
+          133.17,
+          134.49
+        ]
+      ]
     },
     {
       "start": 134.23,
@@ -795,7 +1137,17 @@
       "original": "Beyond the days, 일어날 때야 Hold me tight",
       "romanization": "beyond the days, ireonal ttaeya hold me tight",
       "english": "Beyond the days, It's time to wake up, hold me tight",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.35,
+          135.95
+        ],
+        [
+          136.18,
+          140.48
+        ]
+      ]
     },
     {
       "start": 139.11,
@@ -806,7 +1158,13 @@
       "original": "어제는 뒤로 한 채",
       "romanization": "eojeneun dwiro han chae",
       "english": "Leave yesterday behind",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          139.16,
+          142.54
+        ]
+      ]
     },
     {
       "start": 142.61,
@@ -817,7 +1175,13 @@
       "original": "Break into the room, get through it, 눈을 떠 I feel right",
       "romanization": "break into the room, get through it, nuneul tteo i feel right",
       "english": "Break into the room, get through it, Open my eyes, I feel right",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          142.62,
+          145.81
+        ]
+      ]
     },
     {
       "start": 145.83,
@@ -828,7 +1192,13 @@
       "original": "머뭇거리지 마 Don’t lose control 기다려주지 않아",
       "romanization": "meomutgeoriji ma don’t lose control gidaryeojuji ana",
       "english": "Don't hesitate, don't lose control, it doesn't wait",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          145.87,
+          149.49
+        ]
+      ]
     },
     {
       "start": 149.5,
@@ -839,7 +1209,25 @@
       "original": "",
       "romanization": "Bring that green light, green light, Everyday spotlight, spotlight",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          149.54,
+          150.56
+        ],
+        [
+          150.71,
+          151.3
+        ],
+        [
+          151.42,
+          152.4
+        ],
+        [
+          152.56,
+          153.14
+        ]
+      ]
     },
     {
       "start": 153.2,
@@ -850,7 +1238,13 @@
       "original": "Give me that, Always me myself and I, 속도를 올려 Let’s drive",
       "romanization": "give me that, always me myself and i, sokdoreul ollyeo let’s drive",
       "english": "Give me that, Always me myself and I, Accelerate, let's drive",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          153.17,
+          156.94
+        ]
+      ]
     },
     {
       "start": 156.65,
@@ -861,7 +1255,13 @@
       "original": "",
       "romanization": "In this new world",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          156.67,
+          157.89
+        ]
+      ]
     },
     {
       "start": 157.73,
@@ -872,7 +1272,17 @@
       "original": "",
       "romanization": "Fantasy, I’ll be burning energy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          157.85,
+          158.66
+        ],
+        [
+          158.82,
+          160.55
+        ]
+      ]
     },
     {
       "start": 160.43,
@@ -883,7 +1293,13 @@
       "original": "",
       "romanization": "Ah ah ah ah",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.39,
+          161.72
+        ]
+      ]
     },
     {
       "start": 161.58,
@@ -945,7 +1361,13 @@
       "original": "흐린 세상 끝에 저 문을 열어",
       "romanization": "heurin sesang kkeute jeo muneul yeoreo",
       "english": "Open that door at the end of this hazy world",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          162.45,
+          165.74
+        ]
+      ]
     },
     {
       "start": 165.28,
@@ -956,7 +1378,17 @@
       "original": "",
       "romanization": "Fantasy, I’ll be burning energy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          165.24,
+          166.05
+        ],
+        [
+          166.2,
+          167.91
+        ]
+      ]
     },
     {
       "start": 167.98,
@@ -966,8 +1398,14 @@
       ],
       "original": "커져가는 Rhythm 안에 Up & down",
       "romanization": "keojyeoganeun rhythm ane up & down",
-      "english": "Up and down inside this growing rhythm",
-      "adlib": false
+      "english": "Up & down inside this growing rhythm",
+      "adlib": false,
+      "voice": [
+        [
+          168,
+          170.84
+        ]
+      ]
     },
     {
       "start": 170.72,
@@ -978,7 +1416,13 @@
       "original": "",
       "romanization": "Step into my Fantasy",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          170.78,
+          172.72
+        ]
+      ]
     }
   ],
   "audio": "audio/cravity_fantasy.mp3",
