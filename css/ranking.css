@@ -229,9 +229,9 @@ body.two-side .member.ready{
 /* Done: member has sung their last line -> settle into their dark colour */
 .member.done{
     background:linear-gradient(90deg,
-        color-mix(in srgb, var(--accent) 34%, #000),
-        color-mix(in srgb, var(--accent) 20%, #000));
-    border-color:color-mix(in srgb, var(--accent) 45%, #000);
+        color-mix(in srgb, var(--accent) 48%, #000),
+        color-mix(in srgb, var(--accent) 32%, #000));
+    border-color:color-mix(in srgb, var(--accent) 58%, #000);
 }
 /* Once done, name/counter/bar stay the member's FULL colour (no lightening or
    darkening) — same as while they still had lines left. The dark card bg +
