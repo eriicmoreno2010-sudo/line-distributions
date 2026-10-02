@@ -171,7 +171,7 @@ Self-contained: injects its own styles and markup.
     body.theme-light #results-overlay #ro-even .val{
       background:color-mix(in srgb, var(--ev,#888) 16%, #fff);
       border-color:color-mix(in srgb, var(--ev,#888) 55%, transparent);
-      color:color-mix(in srgb, var(--ev,#888) 62%, #000);
+      color:color-mix(in srgb, var(--ev,#888) 85%, #000);
     }
   `;
   document.head.appendChild(style);
