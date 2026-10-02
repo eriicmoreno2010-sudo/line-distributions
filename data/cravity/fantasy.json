@@ -1446,5 +1446,6 @@
   "cover": "covers/cravity_fantasy.jpg",
   "npC1": "#8226f2",
   "npC2": "#ff2eb2",
-  "audioOffset": -0.05
+  "audioOffset": -0.05,
+  "instrumental": "audio/cravity_fantasy_inst.mp3"
 }
