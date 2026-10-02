@@ -857,5 +857,6 @@
     }
   ],
   "audio": "audio/cravity_fantasy.mp3",
-  "cover": "covers/cravity_fantasy.jpg"
+  "cover": "covers/cravity_fantasy.jpg",
+  "npC1": "#8226f2"
 }
