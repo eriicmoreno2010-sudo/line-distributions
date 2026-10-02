@@ -147,13 +147,714 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SERIM"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "I be like, breakin’ all the cages, right?",
+      "romanization": "i be like, breakin’ all the cages, right?",
+      "english": "I be like, breakin' all the cages, right?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m gonna cut this line",
+      "romanization": "i’m gonna cut this line",
+      "english": "I'm gonna cut this line",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "차려입은 Suit and tie",
+      "romanization": "charyeoipeun suit and tie",
+      "english": "All dressed up in my suit and tie",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "And I’m coming to vibe, make it way too high",
+      "romanization": "and i’m coming to vibe, make it way too high",
+      "english": "And I'm coming to vibe, make it way too high",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Count that cake, I know how to flip it",
+      "romanization": "count that cake, i know how to flip it",
+      "english": "Count that cake, I know how to flip it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "멈출 줄 모르는 Riding",
+      "romanization": "meomchul jul moreuneun riding",
+      "english": "Nonstop riding",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이제는 눈을 떠 Now",
+      "romanization": "ijeneun nuneul tteo now",
+      "english": "Open your eyes now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Open your eyes",
+      "romanization": "open your eyes",
+      "english": "Open your eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Keep movin’ 어차피",
+      "romanization": "keep movin’ eochapi",
+      "english": "Keep movin' anyway",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨은 네 본능이 눈 뜨는 순간",
+      "romanization": "sumeun ne bonneungi nun tteuneun sungan",
+      "english": "When your hidden instinct opens its eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "손에 쥔 Masterpiece 원하는 걸",
+      "romanization": "sone jwin masterpiece wonhaneun geol",
+      "english": "It holds the masterpiece you desire",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Do what you want",
+      "romanization": "do what you want",
+      "english": "Do what you want",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "시간이 아까운 걸",
+      "romanization": "sigani akkaun geol",
+      "english": "Time's wasting",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Tik tak, kick it, make it",
+      "romanization": "tik tak, kick it, make it",
+      "english": "Tick tack, kick it, make it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넘볼 수 없게",
+      "romanization": "neombol su eopge",
+      "english": "Out of reach",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "선을 넘어 Go crazy",
+      "romanization": "seoneul neomeo go crazy",
+      "english": "Cross the line, go crazy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "커져가는 My daydream",
+      "romanization": "keojyeoganeun my daydream",
+      "english": "My growing daydream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "멈추지 마",
+      "romanization": "meomchuji ma",
+      "english": "Don't stop",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더는 돌이킬 수 없어 No way out",
+      "romanization": "deoneun dorikil su eopseo no way out",
+      "english": "Can't go back now, no way out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "모진 것에 힘쓰지 마",
+      "romanization": "mojin geose himsseuji ma",
+      "english": "Don't waste your strength on what's harsh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Step into my inner self",
+      "romanization": "step into my inner self",
+      "english": "Step into my inner self",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Make it, do it, rock it",
+      "romanization": "make it, do it, rock it",
+      "english": "Make it, do it, rock it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Break into the room, get through it",
+      "romanization": "break into the room, get through it",
+      "english": "Break into the room, get through it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈을 떠 I feel right",
+      "romanization": "nuneul tteo i feel right",
+      "english": "Open my eyes, I feel right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "머뭇거리지 마 Don’t lose control 기다려주지 않아",
+      "romanization": "meomutgeoriji ma don’t lose control gidaryeojuji ana",
+      "english": "Don't hesitate, don't lose control, it doesn't wait",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Bring that green light, green light",
+      "romanization": "bring that green light, green light",
+      "english": "Bring that green light, green light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Everyday spotlight, spotlight",
+      "romanization": "everyday spotlight, spotlight",
+      "english": "Everyday spotlight, spotlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Give me that",
+      "romanization": "give me that",
+      "english": "Give me that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always me myself and I",
+      "romanization": "always me myself and i",
+      "english": "Always me myself and I",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "속도를 올려 Let’s drive",
+      "romanization": "sokdoreul ollyeo let’s drive",
+      "english": "Accelerate, let's drive",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "In this new world",
+      "romanization": "in this new world",
+      "english": "In this new world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fantasy, I’ll be burning energy",
+      "romanization": "fantasy, i’ll be burning energy",
+      "english": "Fantasy, I'll be burning energy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ah ah ah ah",
+      "romanization": "ah ah ah ah",
+      "english": "Ah ah ah ah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Fantasy)",
+      "romanization": "(fantasy)",
+      "english": "(Fantasy)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "흐린 세상 끝에 저 문을 열어",
+      "romanization": "heurin sesang kkeute jeo muneul yeoreo",
+      "english": "Open that door at the end of this hazy world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fantasy, I’ll be burning energy",
+      "romanization": "fantasy, i’ll be burning energy",
+      "english": "Fantasy, I'll be burning energy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "커져가는 Rhythm 안에 Up & down",
+      "romanization": "keojyeoganeun rhythm ane up & down",
+      "english": "Up and down inside this growing rhythm",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Step into my Fantasy",
+      "romanization": "step into my fantasy",
+      "english": "Step into my fantasy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I crush it, we’ve got to say that right now",
+      "romanization": "i crush it, we’ve got to say that right now",
+      "english": "I crush it, we've got to say that right now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "TNT 던져버려 다",
+      "romanization": "tnt deonjyeobeoryeo da",
+      "english": "Throw it all away",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "번져가 모든 불빛 Deep into your eyes",
+      "romanization": "beonjyeoga modeun bulbit deep into your eyes",
+      "english": "Every light spreads deep into your eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우릴 집어삼킨 Nightmare",
+      "romanization": "uril jibeosamkin nightmare",
+      "english": "Nightmare engulfing us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 손 위에 올려진 Crown",
+      "romanization": "nae son wie ollyeojin crown",
+      "english": "The crown placed on my hands",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "챙겨 전부 Head to toe",
+      "romanization": "chaenggyeo jeonbu head to toe",
+      "english": "Take everything head to toe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Every time 언제나 원하는 게 많아 Something more",
+      "romanization": "every time eonjena wonhaneun ge mana something more",
+      "english": "Every time I always want more, something more",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Can you hear it getting loud",
+      "romanization": "can you hear it getting loud",
+      "english": "Can you hear it getting loud",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Bring it up, take it out",
+      "romanization": "bring it up, take it out",
+      "english": "Bring it up, take it out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "To the place, you’ll never know",
+      "romanization": "to the place, you’ll never know",
+      "english": "To the place you'll never know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Sweet spot, bass line, midnight, starlight",
+      "romanization": "sweet spot, bass line, midnight, starlight",
+      "english": "Sweet spot, bass line, midnight, starlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Shout out to my fans",
+      "romanization": "shout out to my fans",
+      "english": "Shout out to my fans",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Break into the room, get through it",
+      "romanization": "break into the room, get through it",
+      "english": "Break into the room, get through it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈을 떠 I feel right",
+      "romanization": "nuneul tteo i feel right",
+      "english": "Open my eyes, I feel right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "머뭇거리지 마 Don’t lose control 기다려주지 않아",
+      "romanization": "meomutgeoriji ma don’t lose control gidaryeojuji ana",
+      "english": "Don't hesitate, don't lose control, it doesn't wait",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Bring that green light, green light",
+      "romanization": "bring that green light, green light",
+      "english": "Bring that green light, green light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Everyday spotlight, spotlight",
+      "romanization": "everyday spotlight, spotlight",
+      "english": "Everyday spotlight, spotlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Give me that",
+      "romanization": "give me that",
+      "english": "Give me that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always me myself and I",
+      "romanization": "always me myself and i",
+      "english": "Always me myself and I",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "속도를 올려 Let’s drive",
+      "romanization": "sokdoreul ollyeo let’s drive",
+      "english": "Accelerate, let's drive",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아른거리는 빛을 향해 걸어가",
+      "romanization": "areungeorineun bicheul hyanghae georeoga",
+      "english": "Walk toward the glimmering light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Tonight tonight",
+      "romanization": "tonight tonight",
+      "english": "Tonight tonight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Beyond the days",
+      "romanization": "beyond the days",
+      "english": "Beyond the days",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "일어날 때야 Hold me tight",
+      "romanization": "ireonal ttaeya hold me tight",
+      "english": "It's time to wake up, hold me tight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어제는 뒤로 한 채",
+      "romanization": "eojeneun dwiro han chae",
+      "english": "Leave yesterday behind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Break into the room, get through it",
+      "romanization": "break into the room, get through it",
+      "english": "Break into the room, get through it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈을 떠 I feel right",
+      "romanization": "nuneul tteo i feel right",
+      "english": "Open my eyes, I feel right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "머뭇거리지 마 Don’t lose control 기다려주지 않아",
+      "romanization": "meomutgeoriji ma don’t lose control gidaryeojuji ana",
+      "english": "Don't hesitate, don't lose control, it doesn't wait",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Bring that green light, green light",
+      "romanization": "bring that green light, green light",
+      "english": "Bring that green light, green light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Everyday spotlight, spotlight",
+      "romanization": "everyday spotlight, spotlight",
+      "english": "Everyday spotlight, spotlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Give me that",
+      "romanization": "give me that",
+      "english": "Give me that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Always me myself and I",
+      "romanization": "always me myself and i",
+      "english": "Always me myself and I",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "속도를 올려 Let’s drive",
+      "romanization": "sokdoreul ollyeo let’s drive",
+      "english": "Accelerate, let's drive",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "In this new world",
+      "romanization": "in this new world",
+      "english": "In this new world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fantasy, I’ll be burning energy",
+      "romanization": "fantasy, i’ll be burning energy",
+      "english": "Fantasy, I'll be burning energy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Ah ah ah ah",
+      "romanization": "ah ah ah ah",
+      "english": "Ah ah ah ah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Fantasy)",
+      "romanization": "(fantasy)",
+      "english": "(Fantasy)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "흐린 세상 끝에 저 문을 열어",
+      "romanization": "heurin sesang kkeute jeo muneul yeoreo",
+      "english": "Open that door at the end of this hazy world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Fantasy, I’ll be burning energy",
+      "romanization": "fantasy, i’ll be burning energy",
+      "english": "Fantasy, I'll be burning energy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "커져가는 Rhythm 안에 Up & down",
+      "romanization": "keojyeoganeun rhythm ane up & down",
+      "english": "Up and down inside this growing rhythm",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Step into my Fantasy",
+      "romanization": "step into my fantasy",
+      "english": "Step into my fantasy",
+      "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/cravity_fantasy.mp3"
 }
