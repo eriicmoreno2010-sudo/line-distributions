@@ -775,5 +775,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/cravity_oddoneout.mp3"
+  "audio": "audio/cravity_oddoneout.mp3",
+  "cover": "covers/cravity_oddoneout.jpg"
 }
