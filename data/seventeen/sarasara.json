@@ -2,7 +2,7 @@
   "group": "SEVENTEEN",
   "song": "Sara Sara",
   "video": "videos/sarasara.mp3",
-  "duration": 177.77,
+  "duration": 177.81551,
   "members": [
     {
       "name": "S.COUPS",
@@ -945,5 +945,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "theme": "light"
 }
