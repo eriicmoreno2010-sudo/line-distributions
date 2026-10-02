@@ -40,7 +40,7 @@
       "end": 12
     },
     {
-      "start": 0,
+      "start": 18.667756840103877,
       "end": 54.52463631515489
     }
   ],
@@ -56,6 +56,8 @@
   "raceColor": "#858080",
   "versions": [],
   "bgAudio": {
-    "src": "audio/cravity_9thepsonorousbg.mp3"
+    "src": "audio/cravity_9thepsonorousbg.mp3",
+    "start": 0,
+    "end": 12
   }
 }
