@@ -1038,5 +1038,6 @@
   ],
   "audio": "audio/cravity_seizethenight.mp3",
   "cover": "covers/cravity_seizethenight.jpg",
-  "npC1": "#4f26f2"
+  "npC1": "#4f26f2",
+  "npC2": "#000000"
 }
