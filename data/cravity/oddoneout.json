@@ -776,5 +776,6 @@
     }
   ],
   "audio": "audio/cravity_oddoneout.mp3",
-  "cover": "covers/cravity_oddoneout.jpg"
+  "cover": "covers/cravity_oddoneout.jpg",
+  "npC1": "#8ba5a7"
 }
