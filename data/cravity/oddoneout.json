@@ -145,206 +145,322 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.02,
+      "end": 11.52,
       "members": [
         "WONJIN"
       ],
       "original": "",
       "romanization": "Stop",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.01,
+          11.57
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 13.28,
+      "end": 18.19,
       "members": [
         "WONJIN"
       ],
       "original": "",
       "romanization": "Starting off this whole night with my sign",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.25,
+          16.09
+        ],
+        [
+          16.68,
+          18.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.4,
+      "end": 20.67,
       "members": [
         "WONJIN"
       ],
       "original": "",
       "romanization": "Cause I’m ready for the ride yeah",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          18.4,
+          20.82
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.7,
+      "end": 23.21,
       "members": [
         "TAEYOUNG"
       ],
       "original": "나를 향해 Say say say",
       "romanization": "nareul hyanghae say say say",
       "english": "Say, say, say to me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          20.71,
+          23.34
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.39,
+      "end": 26.9,
       "members": [
         "TAEYOUNG"
       ],
       "original": "난 일으켜 New wave wave wave, Got no way",
       "romanization": "nan ireukyeo new wave wave wave, got no way",
       "english": "I raise a new wave, wave, wave, Got no way",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          23.26,
+          26.78
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 27.03,
+      "end": 29.47,
       "members": [
         "MINHEE"
       ],
       "original": "",
       "romanization": "Cause I know, I won’t doubt me anymore",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.03,
+          29.56
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 29.7,
+      "end": 31.55,
       "members": [
         "MINHEE"
       ],
       "original": "가려진 어둠 끝에 Spotlight",
       "romanization": "garyeojin eodum kkeute spotlight",
       "english": "At the end of the hidden darkness, spotlight",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          29.67,
+          32.12
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 31.7,
+      "end": 36.47,
       "members": [
         "WOOBIN"
       ],
       "original": "Don’t turn around, turn around, 경계 끝에 Cross the line",
       "romanization": "don’t turn around turn around, gyeonggye kkeute cross the line",
       "english": "Don't turn around, turn around, At the edge, cross the line",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.71,
+          36.68
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.62,
+      "end": 41.66,
       "members": [
         "SEONGMIN"
       ],
       "original": "후회 따윈 없어 내게, Nobody dares, try to be like",
       "romanization": "huhoe ttawin eopseo naege, nobody dares try to be like",
       "english": "I have no regrets, Nobody dares, try to be like",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          36.57,
+          41.49
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 43.04,
+      "end": 44.77,
       "members": [
         "HYEONGJUN"
       ],
       "original": "",
       "romanization": "ODD ONE OUT, We shut it down",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.97,
+          44.73
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 45.72,
+      "end": 47.42,
       "members": [
         "HYEONGJUN"
       ],
       "original": "ODD ONE OUT, 넘보지 마",
       "romanization": "odd one out, neomboji ma",
       "english": "ODD ONE OUT, Don't you dare",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.61,
+          47.34
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 48.41,
+      "end": 52.2,
       "members": [
         "SERIM"
       ],
       "original": "",
       "romanization": "ODD ONE OUT, We make ’em bow, We ODD ONE OUT",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          48.3,
+          50.06
+        ],
+        [
+          51.88,
+          52.66
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.23,
+      "end": 57.52,
       "members": [
         "MINHEE"
       ],
       "original": "So let me show you babe show you babe, 더 크게 소리 질러봐",
       "romanization": "so let me show you babe show you babe, deo keuge sori jilleobwa",
       "english": "So let me show you babe, show you babe, Scream even louder",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.33,
+          57.86
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.64,
+      "end": 63.41,
       "members": [
         "WOOBIN"
       ],
       "original": "",
       "romanization": "So let me show you babe show you babe, Watch me burn it until I die",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.82,
+          63.51
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.31,
+      "end": 66.55,
       "members": [
         "WONJIN"
       ],
       "original": "",
       "romanization": "Sonorous sonorous sonorous",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          64.31,
+          66.73
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.73,
+      "end": 69.32,
       "members": [
         "ALLEN"
       ],
       "original": "",
       "romanization": "Pick up the phone, Turn it on and off, I’m muting all the calls",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.71,
+          69.39
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.45,
+      "end": 72.23,
       "members": [
         "ALLEN"
       ],
       "original": "",
       "romanization": "Not gonna meet nobody, Till I get what I want, I’m phenomenal",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.39,
+          72.35
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.39,
+      "end": 74.52,
       "members": [
         "ALLEN"
       ],
       "original": "",
       "romanization": "They be chasing clout like, Gee you really got it all",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.37,
+          74.73
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 74.75,
+      "end": 76.85,
       "members": [
         "MINHEE",
         "SEONGMIN"
@@ -352,212 +468,601 @@
       "original": "바라는 게 없어도 I 원해 더",
       "romanization": "baraneun ge eopseodo i wonhae deo",
       "english": "Even if I wish for nothing, I want more",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.7,
+          77.01
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 77.04,
+      "end": 81.72,
       "members": [
         "WONJIN"
       ],
       "original": "So try me now try me now, 맞설 필요 없어 난",
       "romanization": "so try me now try me now, matseol pillyo eopseo nan",
       "english": "So try me now, try me now, I have no need to fight",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          77.01,
+          81.83
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.87,
+      "end": 86.81,
       "members": [
         "JUNGMO"
       ],
       "original": "",
       "romanization": "Cause I get it when I want it, Don’t even care, try to be like",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          81.98,
+          86.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 88.34,
+      "end": 90.04,
       "members": [
         "SERIM"
       ],
       "original": "",
       "romanization": "ODD ONE OUT, We shut it down",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          88.38,
+          90.16
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 90.93,
+      "end": 92.72,
       "members": [
         "SERIM"
       ],
       "original": "ODD ONE OUT, 넘보지 마",
       "romanization": "odd one out, neomboji ma",
       "english": "ODD ONE OUTt, Don't you dare",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          91.07,
+          92.77
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 93.73,
+      "end": 97.44,
       "members": [
         "HYEONGJUN"
       ],
       "original": "",
       "romanization": "ODD ONE OUT, We make ’em bow, We ODD ONE OUT",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          93.73,
+          95.46
+        ],
+        [
+          97.24,
+          98.06
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.56,
+      "end": 102.94,
       "members": [
         "WOOBIN"
       ],
       "original": "So let me show you babe show you babe, 더 크게 소리 질러봐",
       "romanization": "so let me show you babe show you babe, deo keuge sori jilleobwa",
       "english": "So let me show you babe, show you babe, Scream even louder",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          97.63,
+          103.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 103.28,
+      "end": 108.8,
       "members": [
         "WONJIN"
       ],
       "original": "",
       "romanization": "So let me show you babe show you babe, Watch me burn it until I die",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          103.16,
+          108.83
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 110.7,
+      "end": 115.53,
       "members": [
         "SEONGMIN"
       ],
       "original": "어긋난 Rhapsody, 더 원해 난",
       "romanization": "eogeunnan rhapsody, deo wonhae nan",
       "english": "Misaligned rhapsody, I want more",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          110.67,
+          113.45
+        ],
+        [
+          113.7,
+          115.46
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 116.4,
+      "end": 119.62,
       "members": [
         "SEONGMIN"
       ],
       "original": "",
       "romanization": "I’m craving more",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.39,
+          119.5
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.46,
+      "end": 125.69,
       "members": [
         "HYEONGJUN"
       ],
       "original": "",
       "romanization": "Lost in time, Out of line",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          121.35,
+          123.03
+        ],
+        [
+          123.98,
+          125.68
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 126.74,
+      "end": 130.93,
       "members": [
         "WOOBIN"
       ],
       "original": "",
       "romanization": "Feel so alive",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          126.67,
+          131.08
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I feel the high)",
-      "romanization": "(i feel the high)",
-      "english": "I feel the high",
-      "adlib": true
+      "start": 12.75,
+      "end": 13.19,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          12.73,
+          13.15
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 50.98,
+      "end": 51.87,
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "(Ha ha)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          51.03,
+          51.36
+        ],
+        [
+          51.48,
+          51.86
+        ]
+      ]
+    },
+    {
+      "start": 63.38,
+      "end": 64.14,
+      "members": [
+        "MINHEE"
+      ],
+      "original": "",
+      "romanization": "(ODD ONE OUT)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          63.32,
+          64.16
+        ]
+      ]
+    },
+    {
+      "start": 81.93,
+      "end": 83.81,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          81.97,
+          83.78
+        ]
+      ]
+    },
+    {
+      "start": 96.37,
+      "end": 97.19,
+      "members": [
+        "HYEONGJUN"
+      ],
+      "original": "",
+      "romanization": "(Ha ha)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          96.38,
+          96.76
+        ],
+        [
+          96.94,
+          97.29
+        ]
+      ]
+    },
+    {
+      "start": 108.65,
+      "end": 109.43,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "(ODD ONE OUT)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          108.66,
+          109.47
+        ]
+      ]
+    },
+    {
+      "start": 121.38,
+      "end": 126.44,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "(Lost in time, Out of line)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          121.35,
+          123.02
+        ],
+        [
+          124.01,
+          126.28
+        ]
+      ]
+    },
+    {
+      "start": 130.04,
+      "end": 131.39,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "(I feel the high)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          130.09,
+          131.38
+        ]
+      ]
+    },
+    {
+      "start": 132.72,
+      "end": 138.75,
+      "members": [
+        "WOOBIN"
+      ],
+      "original": "",
+      "romanization": "(Oh woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          132.63,
+          138.72
+        ]
+      ]
+    },
+    {
+      "start": 143.49,
+      "end": 144.04,
+      "members": [
+        "TAEYOUNG"
+      ],
+      "original": "",
+      "romanization": "(ODD ONE OUT)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          143.32,
+          144.08
+        ]
+      ]
+    },
+    {
+      "start": 148.8,
+      "end": 149.58,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "(ODD ONE OUT)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          148.7,
+          149.51
+        ]
+      ]
+    },
+    {
+      "start": 154.04,
+      "end": 154.8,
+      "members": [
+        "WONJIN"
+      ],
+      "original": "",
+      "romanization": "(ODD ONE OUT)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          154.04,
+          154.82
+        ]
+      ]
+    },
+    {
+      "start": 163.05,
+      "end": 163.86,
+      "members": [
+        "ALLEN"
+      ],
+      "original": "",
+      "romanization": "(Ha ha)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          163.09,
+          163.38
+        ],
+        [
+          163.56,
+          163.89
+        ]
+      ]
+    },
+    {
+      "start": 164.73,
+      "end": 165.55,
+      "members": [
+        "SERIM"
+      ],
+      "original": "",
+      "romanization": "(ODD ONE OUT)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          164.71,
+          165.52
+        ]
+      ]
+    },
+    {
+      "start": 133.33,
+      "end": 137.87,
       "members": [
         "TAEYOUNG"
       ],
       "original": "Show you babe show you babe, 더 크게 울려 퍼져 가",
       "romanization": "show you babe show you babe, deo keuge ullyeo peojyeo ga",
       "english": "Show you babe, show you babe, It rings out even louder",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.4,
+          137.85
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 137.84,
+      "end": 143.27,
       "members": [
         "WOOBIN"
       ],
       "original": "",
       "romanization": "So let me show you babe show you babe, Watch me burn it until I die",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          137.84,
+          143.39
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 144.34,
+      "end": 149.35,
       "members": [],
       "original": "",
       "romanization": "**Sonorous sonorous sonorous,@WONJIN** **Sonorous sonorous sonorous@MINHEE**",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          144.29,
+          146.68,
+          [
+            "WONJIN"
+          ]
+        ],
+        [
+          146.97,
+          149.34,
+          [
+            "MINHEE"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 149.68,
+      "end": 154.1,
       "members": [
         "WONJIN"
       ],
       "original": "",
       "romanization": "Sonorous sonorous sonorous, Burn it until I die",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          149.7,
+          151.86
+        ],
+        [
+          152.01,
+          154.09
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 155.06,
+      "end": 156.79,
       "members": [
         "SERIM"
       ],
       "original": "",
       "romanization": "ODD ONE OUT, We shut it down",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.96,
+          156.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 157.63,
+      "end": 159.45,
       "members": [
         "SERIM"
       ],
       "original": "ODD ONE OUT, 넘보지 마",
       "romanization": "odd one out, neomboji ma",
       "english": "ODD ONE OUT, Don't you dare",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          157.63,
+          159.39
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 160.4,
+      "end": 164.83,
       "members": [
         "ALLEN"
       ],
       "original": "",
       "romanization": "ODD ONE OUT, We make ’em bow, We ODD ONE OUT",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.32,
+          162.05
+        ],
+        [
+          163.84,
+          164.71
+        ]
+      ]
     }
   ],
   "audio": "audio/cravity_oddoneout.mp3",
