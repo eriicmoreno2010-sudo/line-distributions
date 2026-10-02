@@ -127,25 +127,26 @@ body.theme-light #ranking .member-rank{
     text-shadow: 0 1px 2px rgba(255,255,255,.8);
 }
 
-/* Tema CLARO: las tarjetas "done" (ya no cantan) se APAGAN tiñéndose hacia
-   OSCURO (mezcla con negro), no hacia blanco — como en el tema oscuro. */
+/* Tema CLARO: las tarjetas "done" (ya no cantan) más claras/apagadas: su color
+   pero mezclado con BLANCO (tono suave, no oscuro). Texto a color completo, que
+   se lee bien sobre el fondo claro. */
 body.theme-light #ranking .member.done,
 body.theme-light #ranking-left .member.done{
     background:linear-gradient(90deg,
-        color-mix(in srgb, var(--accent) 80%, #000),
-        color-mix(in srgb, var(--accent) 64%, #000));
-    border-color:color-mix(in srgb, var(--accent) 86%, #000);
-    box-shadow:0 2px 10px -6px rgba(0,0,0,.35);
+        color-mix(in srgb, var(--accent) 52%, #fff),
+        color-mix(in srgb, var(--accent) 38%, #fff));
+    border-color:color-mix(in srgb, var(--accent) 60%, #fff);
+    box-shadow:0 2px 10px -7px rgba(0,0,0,.4);
 }
-/* DONE: texto a color completo; sobre tarjeta oscura la sombra pasa a OSCURA
-   (la blanca del resto del tema claro queda rara sobre fondo oscuro). */
+/* DONE: texto a color completo, con un contorno/sombra oscura sutil para que el
+   color del miembro se lea sobre la tarjeta clara (incl. amarillos). */
 body.theme-light #ranking .member.done .member-name,
 body.theme-light #ranking-left .member.done .member-name,
 body.theme-light #ranking .member.done .member-time,
 body.theme-light #ranking-left .member.done .member-time,
 body.theme-light #ranking .member.done .member-rank,
 body.theme-light #ranking-left .member.done .member-rank{
-    text-shadow:0 1px 2px rgba(0,0,0,.55);
+    text-shadow:0 1px 2px rgba(0,0,0,.35);
 }
 body.theme-light #ranking .member.done .member-name,
 body.theme-light #ranking-left .member.done .member-name{ color:var(--accent); }
