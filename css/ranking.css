@@ -233,9 +233,12 @@ body.two-side .member.ready{
         color-mix(in srgb, var(--accent) 20%, #000));
     border-color:color-mix(in srgb, var(--accent) 45%, #000);
 }
-.member.done .member-name{ color:color-mix(in srgb, var(--accent) 62%, #fff); }
-.member.done .member-time{ color:color-mix(in srgb, var(--accent) 45%, #fff); }
-.member.done .member-progress{ background:color-mix(in srgb, var(--accent) 60%, #000); }
+/* Once done, name/counter/bar stay the member's FULL colour (no lightening or
+   darkening) — same as while they still had lines left. The dark card bg +
+   grayscale photo are the only "won't sing again" cues. */
+.member.done .member-name{ color:var(--accent); }
+.member.done .member-time{ color:var(--accent); }
+.member.done .member-progress{ background:var(--accent); }
 
 /* ========================= */
 /* BAR */
