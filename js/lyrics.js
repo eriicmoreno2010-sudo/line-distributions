@@ -469,12 +469,16 @@ const Lyrics = {
                     const span = (n) => (n === SONG.group)
                         ? `<span style="background:${groupGrad};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(n)}</span>`
                         : `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
-                    const part = linePartials.map(span).join('<span style="color:inherit"> &amp; </span>');
-                    const main = shownMembers.map(span).join('<span style="color:inherit">  &amp;  </span>');
-                    // El "/" va en el COLOR MEZCLADO de los dos lados (miembro↔grupo/otro).
+                    // color REPRESENTATIVO (mezcla) de un lado: grupo -> mezcla de todos; si no, mezcla de sus colores.
                     const repCol = ns => avgColor(ns.includes(SONG.group)
                         ? (SONG.members || []).map(m => m.color)
                         : ns.map(colOf));
+                    // El "&" (une a los de un mismo lado) va con la MEZCLA de ese lado;
+                    // el "/" (separa los dos lados) va con la mezcla de los dos lados.
+                    const partSep = `<span style="color:${repCol(linePartials)}"> &amp; </span>`;
+                    const mainSep = `<span style="color:${repCol(shownMembers)}">  &amp;  </span>`;
+                    const part = linePartials.map(span).join(partSep);
+                    const main = shownMembers.map(span).join(mainSep);
                     const sepCol = avgColor([repCol(shownMembers), repCol(linePartials)]);
                     const sep = `<span style="color:${sepCol};font-weight:900;padding:0 .16em"> / </span>`;
                     // el que canta ANTES va delante (marcado al principio -> "marcado / dueño";

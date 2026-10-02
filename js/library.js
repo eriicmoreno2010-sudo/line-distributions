@@ -78,14 +78,38 @@
     return el;
   }
 
+  // Modal propio (NO el confirm/alert nativo: en la app de escritorio sobre Windows,
+  // el diálogo nativo congela el repintado de la ventana hasta minimizar/restaurar).
+  function uiModal(msg, { confirm = false } = {}){
+    return new Promise(resolve => {
+      const ov = document.createElement("div");
+      ov.style.cssText = "position:fixed;inset:0;background:rgba(8,8,12,.82);display:flex;align-items:center;justify-content:center;z-index:9999;padding:20px";
+      const box = document.createElement("div");
+      box.style.cssText = "background:var(--panel,#15151d);border:1px solid var(--border,#2a2a3a);border-radius:14px;padding:22px 24px;max-width:460px;color:var(--text,#f0f0f6);box-shadow:0 24px 70px -20px #000;font-size:15px";
+      const actions = confirm
+        ? `<button class="m-no" style="background:var(--panel2,#1b1b26);color:var(--text,#fff);border:1px solid var(--border,#2a2a3a);border-radius:9px;padding:9px 16px;font-weight:700;cursor:pointer">Cancelar</button>
+           <button class="m-yes" style="background:#c0392b;color:#fff;border:0;border-radius:9px;padding:9px 16px;font-weight:800;cursor:pointer">Borrar</button>`
+        : `<button class="m-yes" style="background:var(--accent,#7c5cff);color:#fff;border:0;border-radius:9px;padding:9px 16px;font-weight:800;cursor:pointer">OK</button>`;
+      box.innerHTML = `<div style="white-space:pre-line;line-height:1.5;margin-bottom:16px">${String(msg).replace(/&/g,"&amp;").replace(/</g,"&lt;")}</div>
+        <div style="display:flex;gap:10px;justify-content:flex-end">${actions}</div>`;
+      ov.appendChild(box); document.body.appendChild(ov);
+      const done = v => { ov.remove(); resolve(v); };
+      box.querySelector(".m-yes").onclick = () => done(true);
+      const no = box.querySelector(".m-no"); if(no) no.onclick = () => done(false);
+      ov.addEventListener("click", e => { if(e.target === ov) done(false); });
+    });
+  }
+  const uiConfirm = msg => uiModal(msg, { confirm:true });
+  const uiAlert = msg => uiModal(msg);
+
   // Borrar canción o álbum (con confirmación). Elimina el JSON y hace push.
   async function removeItem(cardEl, relPath, label){
-    if(!window.desktop || !window.desktop.deleteItem){ alert("Solo disponible en la app de escritorio."); return; }
-    if(!confirm(`¿Borrar "${label}"?\n\nSe elimina de la biblioteca y de GitHub. No se puede deshacer.\n(El vídeo y las fotos NO se borran.)`)) return;
+    if(!window.desktop || !window.desktop.deleteItem){ await uiAlert("Solo disponible en la app de escritorio."); return; }
+    if(!await uiConfirm(`¿Borrar "${label}"?\n\nSe elimina de la biblioteca y de GitHub. No se puede deshacer.\n(El vídeo y las fotos NO se borran.)`)) return;
     const btn = cardEl.querySelector(".del"); const t0 = btn.textContent; btn.disabled = true; btn.textContent = "⏳ Borrando…";
     const res = await window.desktop.deleteItem({ path: relPath, name: label });
     if(res && res.ok){ cardEl.style.transition = "opacity .25s"; cardEl.style.opacity = "0"; setTimeout(() => cardEl.remove(), 250); }
-    else { btn.disabled = false; btn.textContent = t0; alert("No se pudo borrar: " + ((res && res.error) || "desconocido")); }
+    else { btn.disabled = false; btn.textContent = t0; await uiAlert("No se pudo borrar: " + ((res && res.error) || "desconocido")); }
   }
 
   async function doExport(song){
