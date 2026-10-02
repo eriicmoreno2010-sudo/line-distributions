@@ -856,5 +856,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/cravity_fantasy.mp3"
+  "audio": "audio/cravity_fantasy.mp3",
+  "cover": "covers/cravity_fantasy.jpg"
 }
