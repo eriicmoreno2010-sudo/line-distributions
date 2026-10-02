@@ -101,6 +101,21 @@
   }
   const uiConfirm = msg => uiModal(msg, { confirm:true });
   const uiAlert = msg => uiModal(msg);
+  // Elige entre varias opciones (botones). Devuelve el value elegido (o null si cancela).
+  function uiChoose(msg, options){
+    return new Promise(resolve => {
+      const ov = document.createElement("div");
+      ov.style.cssText = "position:fixed;inset:0;background:rgba(8,8,12,.82);display:flex;align-items:center;justify-content:center;z-index:9999;padding:20px";
+      const box = document.createElement("div");
+      box.style.cssText = "background:var(--panel,#15151d);border:1px solid var(--border,#2a2a3a);border-radius:14px;padding:22px 24px;max-width:500px;color:var(--text,#f0f0f6);box-shadow:0 24px 70px -20px #000;font-size:15px";
+      const btns = options.map((o, i) => `<button data-i="${i}" style="background:${o.primary ? 'var(--accent,#7c5cff)' : 'var(--panel2,#1b1b26)'};color:${o.primary ? '#fff' : 'var(--text,#fff)'};border:${o.primary ? '0' : '1px solid var(--border,#2a2a3a)'};border-radius:9px;padding:9px 16px;font-weight:${o.primary ? '800' : '700'};cursor:pointer">${o.label}</button>`).join("");
+      box.innerHTML = `<div style="white-space:pre-line;line-height:1.5;margin-bottom:16px">${String(msg).replace(/&/g,"&amp;").replace(/</g,"&lt;")}</div><div style="display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap">${btns}</div>`;
+      ov.appendChild(box); document.body.appendChild(ov);
+      const done = v => { ov.remove(); resolve(v); };
+      box.querySelectorAll("button").forEach(b => b.onclick = () => done(options[+b.dataset.i].value));
+      ov.addEventListener("click", e => { if(e.target === ov) done(null); });
+    });
+  }
 
   // Borrar canción o álbum (con confirmación). Elimina el JSON y hace push.
   async function removeItem(cardEl, relPath, label){
@@ -113,14 +128,22 @@
   }
 
   async function doExport(song){
+    // Elegir calidad. 4K = se renderiza a 3840×2160 DE VERDAD (texto nítido) -> YouTube
+    // lo trata como 4K y NO lo machaca como a un 1080p. Es lo recomendado para subir.
+    const scale = await uiChoose(
+      "¿En qué calidad exportar el vídeo?\n\n• 4K: la MEJOR para YouTube — el texto de colores se mantiene nítido (YouTube castiga mucho el 1080p). Tarda más y pesa más.\n• 1080p: más ligero.",
+      [ { label:"4K (recomendado)", value:2, primary:true },
+        { label:"1080p", value:1 },
+        { label:"Cancelar", value:null } ]);
+    if(!scale) return;
     overlay.classList.add("show");
-    ovtitle.textContent = "Exportando: " + song.song;
+    ovtitle.textContent = "Exportando: " + song.song + (scale === 2 ? " (4K)" : " (1080p)");
     fill.style.width = "0%";
-    const res = await window.desktop.exportVideo({ song: song.path, name: (song.song || "video").replace(/[^\w\-]+/g, "_") });
+    const res = await window.desktop.exportVideo({ song: song.path, name: (song.song || "video").replace(/[^\w\-]+/g, "_"), scale });
     overlay.classList.remove("show");
-    if(res && res.ok) alert("¡Listo! Vídeo 1080p guardado en:\n" + res.out);
+    if(res && res.ok) await uiAlert("¡Listo! Vídeo " + (scale === 2 ? "4K" : "1080p") + " guardado en:\n" + res.out + (scale === 2 ? "\n\nSúbelo a YouTube tal cual (en 4K)." : ""));
     else if(res && res.canceled){ /* nada */ }
-    else alert("Error al exportar: " + ((res && res.error) || "desconocido"));
+    else await uiAlert("Error al exportar: " + ((res && res.error) || "desconocido"));
   }
 
   window.desktop.onProgress(p => {
