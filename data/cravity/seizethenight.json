@@ -75,13 +75,579 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SERIM"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "Why don’t you change",
+      "romanization": "why don’t you change",
+      "english": "Why don't you change",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "겁 없이 I find my way",
+      "romanization": "geop eopsi i find my way",
+      "english": "Fearlessly I find my way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어둠은 계속돼",
+      "romanization": "eodumeun gyesokdwae",
+      "english": "The darkness continues",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그럴수록 선명한 My sight",
+      "romanization": "geureolsurok seonmyeonghan my sight",
+      "english": "The clearer my sight becomes, the more it goes on like that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "매 순간 난 Got no fear inside",
+      "romanization": "mae sungan nan got no fear inside",
+      "english": "Every moment I got no fear inside",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거짓을 Ripping it up",
+      "romanization": "geojiseul ripping it up",
+      "english": "Lies I'm ripping it up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "진실의 불을 밝혀",
+      "romanization": "jinsirui bureul balkhyeo",
+      "english": "Turn on the light of truth",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I got it in my mind",
+      "romanization": "i got it in my mind",
+      "english": "I got it in my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Keep the light",
+      "romanization": "keep the light",
+      "english": "Keep the light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Make it so",
+      "romanization": "make it so",
+      "english": "Make it so",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah 거짓을 태우고",
+      "romanization": "yeah geojiseul taeugo",
+      "english": "Yeah burn up the lies",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 두 손에 쥐는 Truth",
+      "romanization": "nae du sone jwineun truth",
+      "english": "In my two hands I hold the truth",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I chase the starlight in the sky",
+      "romanization": "i chase the starlight in the sky",
+      "english": "I chase the starlight in the sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거침없이",
+      "romanization": "geochimeopsi",
+      "english": "Without hesitation",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "해 뜰 때까지 Crave it",
+      "romanization": "hae tteul ttaekkaji crave it",
+      "english": "Until the sun rises crave it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두렵지 않아 For tonight",
+      "romanization": "duryeopji ana for tonight",
+      "english": "I'm not afraid for tonight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It’s never gonna end",
+      "romanization": "it’s never gonna end",
+      "english": "It's never gonna end",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Seize the night",
+      "romanization": "seize the night",
+      "english": "Seize the night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "If I wanna",
+      "romanization": "if i wanna",
+      "english": "If I wanna",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이성 너머",
+      "romanization": "iseong neomeo",
+      "english": "Beyond reason",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "확신뿐인 Heart",
+      "romanization": "hwaksinppunin heart",
+      "english": "A heart filled only with certainty",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "깊어지는 숨",
+      "romanization": "gipeojineun sum",
+      "english": "Deepening breath",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "진리를 품어 Let me know",
+      "romanization": "jillireul pumeo let me know",
+      "english": "Embrace the truth let me know",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "난 힘껏 더 손을 뻗어 봐",
+      "romanization": "nan himkkeot deo soneul ppeodeo bwa",
+      "english": "I stretch my hands out with all my strength",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Cause I’ve got no fear inside",
+      "romanization": "cause i’ve got no fear inside",
+      "english": "Cause I've got no fear inside",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거짓을 Ripping it up",
+      "romanization": "geojiseul ripping it up",
+      "english": "Lies I'm ripping it up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "진실의 불을 밝혀",
+      "romanization": "jinsirui bureul balkhyeo",
+      "english": "Turn on the light of truth",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I got it in my mind",
+      "romanization": "i got it in my mind",
+      "english": "I got it in my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Keep the light",
+      "romanization": "keep the light",
+      "english": "Keep the light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Make it so",
+      "romanization": "make it so",
+      "english": "Make it so",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah 거짓을 태우고",
+      "romanization": "yeah geojiseul taeugo",
+      "english": "Yeah burn up the lies",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 두 손에 쥐는 Truth",
+      "romanization": "nae du sone jwineun truth",
+      "english": "In my two hands I hold the truth",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I chase the starlight in the sky",
+      "romanization": "i chase the starlight in the sky",
+      "english": "I chase the starlight in the sky",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거침없이",
+      "romanization": "geochimeopsi",
+      "english": "Without hesitation",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "해 뜰 때까지 Crave it",
+      "romanization": "hae tteul ttaekkaji crave it",
+      "english": "Until the sun rises crave it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두렵지 않아 For tonight",
+      "romanization": "duryeopji ana for tonight",
+      "english": "I'm not afraid for tonight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It’s never gonna end",
+      "romanization": "it’s never gonna end",
+      "english": "It's never gonna end",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Seize the night",
+      "romanization": "seize the night",
+      "english": "Seize the night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "If I wanna",
+      "romanization": "if i wanna",
+      "english": "If I wanna",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "침묵 속의 답",
+      "romanization": "chimmuk sogui dap",
+      "english": "The answer in the silence",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "또렷한 불빛",
+      "romanization": "ttoryeothan bulbit",
+      "english": "A clear light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "전부 알 것만 같아",
+      "romanization": "jeonbu al geonman gata",
+      "english": "I feel like I know it all",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Do you want it to",
+      "romanization": "do you want it to",
+      "english": "Do you want it to",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Do you want it to",
+      "romanization": "do you want it to",
+      "english": "Do you want it to",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Seize the night)",
+      "romanization": "seize the night",
+      "english": "(Seize the night)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Just seize the night",
+      "romanization": "just seize the night",
+      "english": "Just seize the night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "If I want it",
+      "romanization": "if i want it",
+      "english": "If I want it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I can take it all yeah",
+      "romanization": "i can take it all yeah",
+      "english": "I can take it all yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Seize the night",
+      "romanization": "seize the night",
+      "english": "Seize the night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "If I wanna",
+      "romanization": "if i wanna",
+      "english": "If I wanna",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Woah oh",
+      "romanization": "woah oh",
+      "english": "Woah oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Just seize the night",
+      "romanization": "just seize the night",
+      "english": "Just seize the night",
+      "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/cravity_seizethenight.mp3"
 }
