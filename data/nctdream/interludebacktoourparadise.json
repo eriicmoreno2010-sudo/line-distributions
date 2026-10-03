@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "Interlude : Back to Our Paradise",
   "video": "",
-  "duration": 0,
+  "duration": 125.048163,
   "theme": "light",
   "subunit": false,
   "layout": "classic",
@@ -61,48 +61,19 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "MARK"
-      ],
-      "original": "내 작은 꿈 지나",
-      "romanization": "nae jageun kkum jina",
-      "english": "Past my small dream",
+      "members": [],
+      "original": "내 작은 꿈 지나, 본 적 없던 그림",
+      "romanization": "nae jageun kkum jina, bon jeok eopdeon geurim",
+      "english": "Past my small dream, A picture I've never seen before",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "본 적 없던 그림",
-      "romanization": "bon jeok eopdeon geurim",
-      "english": "A picture I've never seen before",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어디로 갈까",
-      "romanization": "eodiro galkka",
-      "english": "Where should we go",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "두 손을 꼭 잡고서",
-      "romanization": "du soneul kkok japgoseo",
-      "english": "Holding hands tightly",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잠깐 눈을 감아",
-      "romanization": "jamkkan nuneul gama",
-      "english": "We close our eyes for a moment",
+      "original": "어디로 갈까, 두 손을 꼭 잡고서, 잠깐 눈을 감아",
+      "romanization": "eodiro galkka, du soneul kkok japgoseo, jamkkan nuneul gama",
+      "english": "Where should we go, Holding hands tightly, We close our eyes for a moment",
       "adlib": false
     },
     {
@@ -118,18 +89,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "잠시만 쉬어가 우리 여기",
-      "romanization": "jamsiman swieoga uri yeogi",
-      "english": "Let's take a short break right here",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "비워 둔 이야기 사이",
-      "romanization": "biwo dun iyagi sai",
-      "english": "In the space between unfinished stories",
+      "original": "잠시만 쉬어가 우리 여기, 비워 둔 이야기 사이",
+      "romanization": "jamsiman swieoga uri yeogi, biwo dun iyagi sai",
+      "english": "Let's take a short break right here, In the space between unfinished stories",
       "adlib": false
     },
     {
@@ -145,9 +107,9 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ooh)",
+      "original": "",
       "romanization": "(ooh)",
-      "english": "(Ooh)",
+      "english": "",
       "adlib": true
     },
     {
@@ -163,180 +125,180 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ooh)",
+      "original": "",
       "romanization": "(ooh)",
-      "english": "(Ooh)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "yeah 또 다른 시작으로",
-      "romanization": "yeah tto dareun sijageuro",
-      "english": "Yeah toward a new beginning",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "이어지는 마지막 위",
-      "romanization": "ieojineun majimak wi",
-      "english": "It connects to the final scene",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "지나왔던 모든 자리",
-      "romanization": "jinawatteon modeun jari",
-      "english": "Looking back on all the places we've been",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "바라보며 Scream and shout it",
-      "romanization": "barabomyeo scream and shout it",
-      "english": "Looking on and scream and shout it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너와 함께",
-      "romanization": "neowa hamkke",
-      "english": "Together with you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m a different person today",
-      "romanization": "i’m a different person today",
-      "english": "I’m a different person today",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "펼쳐지는 New phase",
-      "romanization": "pyeolchyeojineun new phase",
-      "english": "A new phase unfolds",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "한 발 내딛기 전에 Wait ay",
-      "romanization": "han bal naeditgi jeone wait ay",
-      "english": "Before taking a step forward Wait ay",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어제의 상상 속",
-      "romanization": "eoj eui sangsang sok",
-      "english": "In yesterday's imagination",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그릴 수 없던 모습도",
-      "romanization": "geuril su eopdeon moseupdo",
-      "english": "Even the image I couldn't draw",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아주 조그만 변화들까지",
-      "romanization": "aju jogeuman byeonhwadeulkkaji",
-      "english": "Even the tiniest changes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "천천히 모두 새기고",
-      "romanization": "cheoncheonhi modu saegigo",
-      "english": "Slowly engraving them all",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Let me tell you",
-      "romanization": "let me tell you",
-      "english": "Let me tell you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "what I think what I know",
-      "romanization": "what i think what i know",
-      "english": "what I think what I know",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "조금 뒤 누구보다 더",
-      "romanization": "jogeum dwi nuguboda deo",
-      "english": "Soon I'll reach farther",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "멀리 닿게 될 거야",
-      "romanization": "meolli dakeun doel geoya",
-      "english": "Than anyone",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(ooh)",
-      "romanization": "(ooh)",
-      "english": "(ooh)",
+      "original": "",
+      "romanization": "(Hey yeah yeah yeah yeah)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "몸은 한결 더 가벼워",
-      "romanization": "momeun hangyeol deo gabyeowo",
-      "english": "My body feels much lighter",
+      "original": "yeah 또 다른 시작으로, 이어지는 마지막 위",
+      "romanization": "yeah tto dareun sijageuro, ieojineun majimak wi",
+      "english": "Yeah toward a new beginning, It connects to the final scene",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "이제 미지의 바람 위로 난",
-      "romanization": "ije mijiui baram wiro nan",
-      "english": "Now I'm ready to rise",
+      "original": "지나왔던 모든 자리, 바라보며 Scream and shout it",
+      "romanization": "jinawatteon modeun jari, barabomyeo scream and shout it",
+      "english": "Looking back on all the places we've been, Looking on and scream and shout it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너와 함께, I’m a different person today",
+      "romanization": "neowa hamkke, i’m a different person today",
+      "english": "Together with you, I’m a different person today",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "펼쳐지는 New phase, 한 발 내딛기 전에 Wait ay",
+      "romanization": "pyeolchyeojineun new phase, han bal naeditgi jeone wait ay",
+      "english": "A new phase unfolds, Before taking a step forward Wait ay",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어제의 상상 속, 그릴 수 없던 모습도",
+      "romanization": "eoj eui sangsang sok, geuril su eopdeon moseupdo",
+      "english": "In yesterday's imagination, Even the image I couldn't draw",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아주 조그만 변화들까지, 천천히 모두 새기고",
+      "romanization": "aju jogeuman byeonhwadeulkkaji, cheoncheonhi modu saegigo",
+      "english": "Even the tiniest changes, Slowly engraving them all",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Let me tell you, what I think what I know",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "조금 뒤 누구보다 더, 멀리 닿게 될 거야",
+      "romanization": "jogeum dwi nuguboda deo, meolli dakeun doel geoya",
+      "english": "Soon I'll reach farther, Than anyone",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(ooh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "(Para)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "몸은 한결 더 가벼워, 이제 미지의 바람 위로 난",
+      "romanization": "momeun hangyeol deo gabyeowo, ije mijiui baram wiro nan",
+      "english": "My body feels much lighter, Now I'm ready to rise",
       "adlib": false
     },
     {
@@ -352,126 +314,63 @@
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Paradise",
-      "romanization": "paradise",
-      "english": "Paradise",
+      "original": "",
+      "romanization": "Paradise, Paradise, Paradise, Para",
+      "english": "",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Paradise",
-      "romanization": "paradise",
-      "english": "Paradise",
+      "original": "Paradise, 숨을 고른 뒤 난, 너를 찾아가",
+      "romanization": "paradise, sumeul goreun dwi nan, neoreul chajaga",
+      "english": "Paradise, After catching my breath, I go to find you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "Paradise",
-      "romanization": "paradise",
-      "english": "Paradise",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Para",
-      "romanization": "para",
-      "english": "Para",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Paradise",
-      "romanization": "paradise",
-      "english": "Paradise",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "숨을 고른 뒤 난",
-      "romanization": "sumeul goreun dwi nan",
-      "english": "After catching my breath",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너를 찾아가",
-      "romanization": "neoreul chajaga",
-      "english": "I go to find you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(ooh)",
+      "original": "",
       "romanization": "(ooh)",
-      "english": "(ooh)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "훨씬 더 높이 날아올라",
-      "romanization": "hwolssin deo nopi naraolla",
-      "english": "Flying much higher",
+      "original": "훨씬 더 높이 날아올라, 나의 기억 넘어 닿은 곳엔",
+      "romanization": "hwolssin deo nopi naraolla, naui gieok neomeo daeun gosen",
+      "english": "Flying much higher, Beyond my memories where I reach",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "(ooh)",
+      "original": "",
       "romanization": "(ooh)",
-      "english": "(ooh)",
+      "english": "",
       "adlib": true
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "나의 기억 넘어 닿은 곳엔",
-      "romanization": "naui gieok neomeo daeun gosen",
-      "english": "Beyond my memories where I reach",
+      "original": "이어진 시간, I can hear you now",
+      "romanization": "ieojin sigan, i can hear you now",
+      "english": "Time continues, I can hear you now",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "이어진 시간",
-      "romanization": "ieojin sigan",
-      "english": "Time continues",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can hear you now",
-      "romanization": "i can hear you now",
-      "english": "I can hear you now",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(ooh)",
+      "original": "",
       "romanization": "(ooh)",
-      "english": "(ooh)",
+      "english": "",
       "adlib": true
     },
     {
