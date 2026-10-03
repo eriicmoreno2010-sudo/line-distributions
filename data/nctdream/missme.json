@@ -129,7 +129,13 @@
       "original": "",
       "romanization": "(mmm yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          16.43,
+          17.71
+        ]
+      ]
     },
     {
       "start": 17.91,
@@ -180,7 +186,13 @@
       "original": "(oh 날)",
       "romanization": "(oh nal)",
       "english": "(Oh, to me)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          23.4,
+          24.21
+        ]
+      ]
     },
     {
       "start": 26.85,
@@ -223,7 +235,13 @@
       "original": "",
       "romanization": "(umm)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          33.68,
+          34.76
+        ]
+      ]
     },
     {
       "start": 34.61,
@@ -251,7 +269,13 @@
       "original": "",
       "romanization": "(Please)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          42.13,
+          43.2
+        ]
+      ]
     },
     {
       "start": 42.73,
@@ -372,7 +396,13 @@
       "original": "",
       "romanization": "(umm)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          73.26,
+          74.73
+        ]
+      ]
     },
     {
       "start": 77.6,
@@ -414,7 +444,13 @@
       "original": "",
       "romanization": "(hey)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          82.3,
+          82.63
+        ]
+      ]
     },
     {
       "start": 86.87,
@@ -457,7 +493,13 @@
       "original": "",
       "romanization": "(yeah yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          93.43,
+          94.09
+        ]
+      ]
     },
     {
       "start": 94.14,
@@ -485,7 +527,13 @@
       "original": "",
       "romanization": "(shh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          97.08,
+          97.37
+        ]
+      ]
     },
     {
       "start": 97.75,
@@ -513,7 +561,13 @@
       "original": "",
       "romanization": "(ho)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          99.37,
+          99.87
+        ]
+      ]
     },
     {
       "start": 101.48,
@@ -522,7 +576,13 @@
       "original": "",
       "romanization": "(High)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          101.46,
+          101.99
+        ]
+      ]
     },
     {
       "start": 101.94,
@@ -603,7 +663,13 @@
       "original": "",
       "romanization": "(Time)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          110.21,
+          110.74
+        ]
+      ]
     },
     {
       "start": 111.79,
@@ -612,7 +678,13 @@
       "original": "",
       "romanization": "(Mind)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          111.82,
+          112.32
+        ]
+      ]
     },
     {
       "start": 113.7,
@@ -676,7 +748,13 @@
       "original": "(떠나보내 나 이제)",
       "romanization": "(tteonabonae na ije)",
       "english": "(Let it go for now)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          128.31,
+          130.57
+        ]
+      ]
     },
     {
       "start": 130.68,
@@ -694,7 +772,13 @@
       "original": "",
       "romanization": "(my head)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          134.03,
+          134.72
+        ]
+      ]
     },
     {
       "start": 134.79,
@@ -712,7 +796,13 @@
       "original": "(같은 꿈속에)",
       "romanization": "(gateun kkumsoge)",
       "english": "(Same dream)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          137.36,
+          139.35
+        ]
+      ]
     },
     {
       "start": 139.57,
@@ -749,7 +839,13 @@
       "original": "",
       "romanization": "(hey)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          144.37,
+          144.72
+        ]
+      ]
     },
     {
       "start": 147.18,
@@ -828,7 +924,13 @@
       "original": "(우리의 새벽별에)",
       "romanization": "(uriui saebyeokbyeore)",
       "english": "(Our dawn star)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          161.44,
+          163.98
+        ]
+      ]
     },
     {
       "start": 163.77,
@@ -846,7 +948,13 @@
       "original": "",
       "romanization": "(Song in my head)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          166.2,
+          171.01
+        ]
+      ]
     },
     {
       "start": 167.91,
@@ -864,7 +972,13 @@
       "original": "(여전히 같은 꿈속에)",
       "romanization": "(yeojeonhi gateun kkumsoge)",
       "english": "(Still in the same dream)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          169.67,
+          172.61
+        ]
+      ]
     },
     {
       "start": 172.76,
@@ -882,7 +996,13 @@
       "original": "",
       "romanization": "(I miss you)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          175.13,
+          176.71
+        ]
+      ]
     },
     {
       "start": 177.67,
@@ -891,7 +1011,13 @@
       "original": "",
       "romanization": "(ho)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          177.68,
+          178.77
+        ]
+      ]
     },
     {
       "start": 175.88,
@@ -930,7 +1056,17 @@
       "original": "",
       "romanization": "(yeah yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          180.31,
+          180.61
+        ],
+        [
+          180.82,
+          181.23
+        ]
+      ]
     },
     {
       "start": 184.16,
@@ -958,7 +1094,13 @@
       "original": "",
       "romanization": "(Missing you)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          184.35,
+          186.46
+        ]
+      ]
     },
     {
       "start": 189.35,
@@ -976,7 +1118,13 @@
       "original": "",
       "romanization": "(I miss you)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          191.68,
+          193.44
+        ]
+      ]
     },
     {
       "start": 197.57,
