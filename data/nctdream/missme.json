@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "새벽별 (Miss Me)",
   "video": "",
-  "duration": 0,
+  "duration": 206.053878,
   "theme": "light",
   "subunit": false,
   "layout": "classic",
@@ -59,71 +59,44 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 2.42,
+      "end": 6.4,
       "members": [],
-      "original": "아쉬운 밤을",
-      "romanization": "aswiun bameul",
-      "english": "This bittersweet night",
+      "original": "아쉬운 밤을, 잠시 떠나보내 나 이제",
+      "romanization": "aswiun bameul, jamsi tteonabonae na ije",
+      "english": "This bittersweet night, I'll let it go for now",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 6.55,
+      "end": 10.45,
       "members": [],
-      "original": "잠시 떠나보내 나 이제",
-      "romanization": "jamsi tteonabonae na ije",
-      "english": "I'll let it go for now",
+      "original": "날 위해 불러주던, Beautiful song in my head",
+      "romanization": "nal wihae bulleojudeon, beautiful song in my head",
+      "english": "The voice that sang for me, Beautiful song in my head",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 10.64,
+      "end": 14.73,
       "members": [],
-      "original": "날 위해 불러주던",
-      "romanization": "nal wihae bulleojudeon",
-      "english": "The voice that sang for me",
+      "original": "아침이 와도 우린, 여전히 같은 꿈속에",
+      "romanization": "achimi wado urin, yeojeonhi gateun kkumsoge",
+      "english": "Even when morning comes, we're, Still in the same dream",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 14.84,
+      "end": 17.67,
       "members": [],
-      "original": "Beautiful song in my head",
-      "romanization": "beautiful song in my head",
-      "english": "Beautiful song in my head",
+      "original": "",
+      "romanization": "Do you Miss Me?, Like I miss you",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아침이 와도 우린",
-      "romanization": "achimi wado urin",
-      "english": "Even when morning comes, we're",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "여전히 같은 꿈속에",
-      "romanization": "yeojeonhi gateun kkumsoge",
-      "english": "Still in the same dream",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Do you Miss Me?",
-      "romanization": "do you miss me?",
-      "english": "Do you miss me?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 16.39,
+      "end": 17.63,
       "members": [],
       "original": "",
       "romanization": "(mmm yeah)",
@@ -131,44 +104,26 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 17.91,
+      "end": 21.93,
       "members": [],
-      "original": "Like I miss you",
-      "romanization": "like i miss you",
-      "english": "Like I miss you",
+      "original": "떠나질 않아, 반짝이던 네 웃음이",
+      "romanization": "tteonajil ana, banjjagideon ne useumi",
+      "english": "Your sparkling smile doesn't leave me, Your voice",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 22.05,
+      "end": 26.66,
       "members": [],
-      "original": "떠나질 않아",
-      "romanization": "tteonajil ana",
-      "english": "Your sparkling smile doesn't leave me",
+      "original": "참 예쁘게 날, 불러 주던 네 목소리 ay",
+      "romanization": "cham yeppeuge nal, bulleo judeon ne moksori ay",
+      "english": "That called out to me, So beautifully, ay",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "반짝이던 네 웃음이",
-      "romanization": "banjjagideon ne useumi",
-      "english": "Your voice",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "참 예쁘게 날",
-      "romanization": "cham yeppeuge nal",
-      "english": "That called out to me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 23.38,
+      "end": 24.16,
       "members": [],
       "original": "(oh 날)",
       "romanization": "(oh nal)",
@@ -176,17 +131,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "불러 주던 네 목소리 ay",
-      "romanization": "bulleo judeon ne moksori ay",
-      "english": "So beautifully, I",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 26.85,
+      "end": 29.78,
       "members": [],
       "original": "아이처럼 웃던 너를",
       "romanization": "aicheoreom utdeon neoreul",
@@ -194,26 +140,17 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 29.91,
+      "end": 33.77,
       "members": [],
-      "original": "수많은 밤을 건너",
-      "romanization": "sumaneun bameul geonneo",
-      "english": "Crossing countless nights",
+      "original": "수많은 밤을 건너, 난 그리워하게 될 걸",
+      "romanization": "sumaneun bameul geonneo, nan geuriwohage doel geol",
+      "english": "Crossing countless nights, I know I'll end up missing you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "난 그리워하게 될 걸",
-      "romanization": "nan geuriwohage doel geol",
-      "english": "I know I'll end up missing you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 33.69,
+      "end": 34.76,
       "members": [],
       "original": "",
       "romanization": "(umm)",
@@ -221,35 +158,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 34.61,
+      "end": 42.67,
       "members": [],
-      "original": "Do you love me",
-      "romanization": "do you love me",
-      "english": "Do you love me",
+      "original": "Do you love me, 묻는 대신 우린, 밤새 서롤 비추겠지",
+      "romanization": "do you love me, munneun daesin urin, bamsae seorol bichugetji",
+      "english": "Do you love me, Instead of asking, we'll, Shine on each other all night long",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "묻는 대신 우린",
-      "romanization": "munneun daesin urin",
-      "english": "Instead of asking, we'll",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "밤새 서롤 비추겠지",
-      "romanization": "bamsae seorol bichugetji",
-      "english": "Shine on each other all night long",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 42.2,
+      "end": 43.22,
       "members": [],
       "original": "",
       "romanization": "(Please)",
@@ -257,161 +176,80 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 42.73,
+      "end": 47.63,
       "members": [],
-      "original": "곧 다시 만나게 되길",
-      "romanization": "got dasi mannage doegil",
-      "english": "I hope we'll meet again",
+      "original": "곧 다시 만나게 되길, 믿어 우린, 지금 우릴 우릴",
+      "romanization": "got dasi mannage doegil, mideo urin, jigeum uril uril",
+      "english": "I hope we'll meet again, I believe in us, Right now, us, us",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.79,
+      "end": 51.85,
       "members": [],
-      "original": "믿어 우린",
-      "romanization": "mideo urin",
-      "english": "I believe in us",
+      "original": "아쉬운 밤을, 잠시 떠나보내 나 이제",
+      "romanization": "aswiun bameul, jamsi tteonabonae na ije",
+      "english": "This bittersweet night, I'll let it go for now",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.98,
+      "end": 56.02,
       "members": [],
-      "original": "지금 우릴 우릴",
-      "romanization": "jigeum uril uril",
-      "english": "Right now, us, us",
+      "original": "날 위해 불러주던, Beautiful song in my head",
+      "romanization": "nal wihae bulleojudeon, beautiful song in my head",
+      "english": "The voice that sang for me, Beautiful song in my head",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 56.15,
+      "end": 60.58,
       "members": [],
-      "original": "아쉬운 밤을",
-      "romanization": "aswiun bameul",
-      "english": "This bittersweet night",
+      "original": "아침이 와도 우린, 여전히 같은 꿈속에",
+      "romanization": "achimi wado urin, yeojeonhi gateun kkumsoge",
+      "english": "Even when morning comes, we're, Still in the same dream",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 60.73,
+      "end": 64.08,
       "members": [],
-      "original": "잠시 떠나보내 나 이제",
-      "romanization": "jamsi tteonabonae na ije",
-      "english": "I'll let it go for now",
+      "original": "기억하면 돼, 꿈꾸면 돼, I miss you",
+      "romanization": "gieokhamyeon dwae, kkumkkumyeon dwae, i miss you",
+      "english": "Just remember, Just keep dreaming, I miss you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.2,
+      "end": 68.13,
       "members": [],
-      "original": "날 위해 불러주던",
-      "romanization": "nal wihae bulleojudeon",
-      "english": "The voice that sang for me",
+      "original": "",
+      "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.25,
+      "end": 72.37,
       "members": [],
-      "original": "Beautiful song in my head",
-      "romanization": "beautiful song in my head",
-      "english": "Beautiful song in my head",
+      "original": "",
+      "romanization": "ooh ooh ooh, Like I missing missing you",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.49,
+      "end": 77.05,
       "members": [],
-      "original": "아침이 와도 우린",
-      "romanization": "achimi wado urin",
-      "english": "Even when morning comes, we're",
+      "original": "",
+      "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "여전히 같은 꿈속에",
-      "romanization": "yeojeonhi gateun kkumsoge",
-      "english": "Still in the same dream",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "기억하면 돼",
-      "romanization": "gieokhamyeon dwae",
-      "english": "Just remember",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "꿈꾸면 돼",
-      "romanization": "kkumkkumyeon dwae",
-      "english": "Just keep dreaming",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I miss you",
-      "romanization": "i miss you",
-      "english": "I miss you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ooh ooh ooh",
-      "romanization": "ooh ooh ooh",
-      "english": "Ooh ooh ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Do you Miss Me Miss Me too",
-      "romanization": "do you miss me miss me too",
-      "english": "Do you miss me miss me too",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ooh ooh ooh",
-      "romanization": "ooh ooh ooh",
-      "english": "Ooh ooh ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Like I missing missing you",
-      "romanization": "like i missing missing you",
-      "english": "Like I'm missing missing you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ooh ooh ooh",
-      "romanization": "ooh ooh ooh",
-      "english": "Ooh ooh ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 73.36,
+      "end": 74.79,
       "members": [],
       "original": "",
       "romanization": "(umm)",
@@ -419,53 +257,26 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 77.6,
+      "end": 80.83,
       "members": [],
-      "original": "Do you Miss Me Miss Me too",
-      "romanization": "do you miss me miss me too",
-      "english": "Do you miss me miss me too",
+      "original": "기억하면 돼, 꿈꾸면 돼, I miss you",
+      "romanization": "gieokhamyeon dwae, kkumkkumyeon dwae, i miss you",
+      "english": "Just remember, Just keep dreaming, I miss you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.21,
+      "end": 86.09,
       "members": [],
-      "original": "기억하면 돼",
-      "romanization": "gieokhamyeon dwae",
-      "english": "Just remember",
+      "original": "좋아, 상상한 그대로, 펼친 그 밤으로 떠나",
+      "romanization": "joa, sangsanghan geudaero, pyeolchin geu bameuro tteona",
+      "english": "I like it, Just as I imagined, Let's leave for that night that unfolded",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "꿈꾸면 돼",
-      "romanization": "kkumkkumyeon dwae",
-      "english": "Just keep dreaming",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I miss you",
-      "romanization": "i miss you",
-      "english": "I miss you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "좋아",
-      "romanization": "joa",
-      "english": "I like it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 82.3,
+      "end": 82.74,
       "members": [],
       "original": "",
       "romanization": "(hey)",
@@ -473,44 +284,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 86.87,
+      "end": 90.25,
       "members": [],
-      "original": "상상한 그대로",
-      "romanization": "sangsanghan geudaero",
-      "english": "Just as I imagined",
+      "original": "눈 깜짝할 사이에, 흐르는 시간은 몰라",
+      "romanization": "nun kkamjjakal saie, heureuneun siganeun molla",
+      "english": "In the blink of an eye, I don't know where the time goes",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "펼친 그 밤으로 떠나",
-      "romanization": "pyeolchin geu bameuro tteona",
-      "english": "Let's leave for that night that unfolded",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "눈 깜짝할 사이에",
-      "romanization": "nun kkamjjakal saie",
-      "english": "In the blink of an eye",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "흐르는 시간은 몰라",
-      "romanization": "heureuneun siganeun molla",
-      "english": "I don't know where the time goes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 91.09,
+      "end": 93.31,
       "members": [],
       "original": "잠시만 이 순간을 멈춰",
       "romanization": "jamsiman i sunganeul meomchwo",
@@ -518,8 +302,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 93.45,
+      "end": 94.13,
       "members": [],
       "original": "",
       "romanization": "(yeah yeah)",
@@ -527,8 +311,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 94.14,
+      "end": 97.31,
       "members": [],
       "original": "우리만의 얘기로 이 밤을 채워",
       "romanization": "urimanui yaegiro i bameul chaewo",
@@ -536,8 +320,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.04,
+      "end": 97.37,
       "members": [],
       "original": "",
       "romanization": "(shh)",
@@ -545,17 +329,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.75,
+      "end": 101.76,
       "members": [],
-      "original": "창밖으로 별이 떠올라",
-      "romanization": "changbakkeuro byeori tteoolla",
-      "english": "Stars rise outside the window",
+      "original": "창밖으로 별이 떠올라, 당연하게 네가 떠올라",
+      "romanization": "changbakkeuro byeori tteoolla, dangyeonhage nega tteoolla",
+      "english": "Stars rise outside the window, Naturally, I think of you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 99.36,
+      "end": 99.8,
       "members": [],
       "original": "",
       "romanization": "(ho)",
@@ -563,17 +347,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "당연하게 네가 떠올라",
-      "romanization": "dangyeonhage nega tteoolla",
-      "english": "Naturally, I think of you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 101.48,
+      "end": 101.98,
       "members": [],
       "original": "",
       "romanization": "(High)",
@@ -581,8 +356,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 101.94,
+      "end": 103.65,
       "members": [],
       "original": "절대 헷갈리지 않아",
       "romanization": "jeoldae hetgalliji ana",
@@ -590,26 +365,17 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 103.77,
+      "end": 105.65,
       "members": [],
-      "original": "Just you",
-      "romanization": "just you",
-      "english": "Just you",
+      "original": "Just you, I’ll love you like that ooh",
+      "romanization": "just you, i’ll love you like that ooh",
+      "english": "Just you, I'll love you like that ooh",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’ll love you like that ooh",
-      "romanization": "i’ll love you like that ooh",
-      "english": "I'll love you like that ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 105.8,
+      "end": 108.75,
       "members": [],
       "original": "Reflection 우린 서로를 비추고 비춰",
       "romanization": "reflection urin seororeul bichugo bichwo",
@@ -617,17 +383,17 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 108.9,
+      "end": 113.57,
       "members": [],
-      "original": "여긴 둘만의 Time",
-      "romanization": "yeogin dulmanui time",
-      "english": "Here, it's just our Time",
+      "original": "여긴 둘만의 Time, Into your mind, ooh Shining all night",
+      "romanization": "yeogin dulmanui time, into your mind, ooh shining all night",
+      "english": "Here, it's just our Time, Into your mind, Ooh shining all night",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 110.22,
+      "end": 110.72,
       "members": [],
       "original": "",
       "romanization": "(Time)",
@@ -635,17 +401,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Into your mind",
-      "romanization": "into your mind",
-      "english": "Into your mind",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 111.79,
+      "end": 112.32,
       "members": [],
       "original": "",
       "romanization": "(Mind)",
@@ -653,89 +410,35 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 113.7,
+      "end": 121.29,
       "members": [],
-      "original": "ooh Shining all night",
-      "romanization": "ooh shining all night",
-      "english": "Ooh shining all night",
+      "original": "Love me, 말하지 않아도 알 것 같아, I can believe",
+      "romanization": "love me, malhaji anado al geot gata, i can believe",
+      "english": "Love me, I feel like I know even without you saying it, I can believe",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.33,
+      "end": 126.23,
       "members": [],
-      "original": "Love me",
-      "romanization": "love me",
-      "english": "Love me",
+      "original": "꼭 다시 만나게 되길, 그때 우리, 다시 우리 우리",
+      "romanization": "kkok dasi mannage doegil, geuttae uri, dasi uri uri",
+      "english": "I hope we'll meet again, Then us, Us, us again",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 126.41,
+      "end": 130.58,
       "members": [],
-      "original": "말하지 않아도 알 것 같아",
-      "romanization": "malhaji anado al geot gata",
-      "english": "I feel like I know even without you saying it",
+      "original": "아쉬운 밤을 잠시, 떠나보내 나 이제",
+      "romanization": "aswiun bameul jamsi, tteonabonae na ije",
+      "english": "This bittersweet night, for a while, I'll let it go for now",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I can believe",
-      "romanization": "i can believe",
-      "english": "I can believe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "꼭 다시 만나게 되길",
-      "romanization": "kkok dasi mannage doegil",
-      "english": "I hope we'll meet again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그때 우리",
-      "romanization": "geuttae uri",
-      "english": "Then us",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "다시 우리 우리",
-      "romanization": "dasi uri uri",
-      "english": "Us, us again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아쉬운 밤을 잠시",
-      "romanization": "aswiun bameul jamsi",
-      "english": "This bittersweet night, for a while",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "떠나보내 나 이제",
-      "romanization": "tteonabonae na ije",
-      "english": "I'll let it go for now",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 128.32,
+      "end": 130.61,
       "members": [],
       "original": "(떠나보내 나 이제)",
       "romanization": "(tteonabonae na ije)",
@@ -743,26 +446,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.68,
+      "end": 134.63,
       "members": [],
-      "original": "날 위해 불러주던",
-      "romanization": "nal wihae bulleojudeon",
-      "english": "The voice that sang for me",
+      "original": "날 위해 불러주던, Beautiful song in my head",
+      "romanization": "nal wihae bulleojudeon, beautiful song in my head",
+      "english": "The voice that sang for me, Beautiful song in my head",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Beautiful song in my head",
-      "romanization": "beautiful song in my head",
-      "english": "Beautiful song in my head",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 134.02,
+      "end": 134.75,
       "members": [],
       "original": "",
       "romanization": "(my head)",
@@ -770,26 +464,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.79,
+      "end": 139.4,
       "members": [],
-      "original": "아침이 와도 우린",
-      "romanization": "achimi wado urin",
-      "english": "Even when morning comes, we're",
+      "original": "아침이 와도 우린, 여전히 같은 꿈속에",
+      "romanization": "achimi wado urin, yeojeonhi gateun kkumsoge",
+      "english": "Even when morning comes, we're, Still in the same dream",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "여전히 같은 꿈속에",
-      "romanization": "yeojeonhi gateun kkumsoge",
-      "english": "Still in the same dream",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 137.37,
+      "end": 139.29,
       "members": [],
       "original": "(같은 꿈속에)",
       "romanization": "(gateun kkumsoge)",
@@ -797,35 +482,26 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 139.57,
+      "end": 142.84,
       "members": [],
-      "original": "기억하면 돼 꿈꾸면 돼",
-      "romanization": "gieokhamyeon dwae kkumkkumyeon dwae",
-      "english": "Just remember, just keep dreaming",
+      "original": "기억하면 돼 꿈꾸면 돼, I miss you",
+      "romanization": "gieokhamyeon dwae kkumkkumyeon dwae, i miss you",
+      "english": "Just remember, just keep dreaming, I miss you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 143.31,
+      "end": 146.63,
       "members": [],
-      "original": "I miss you",
-      "romanization": "i miss you",
-      "english": "I miss you",
+      "original": "반짝이는 Head light, 이끄는 대로 Let’s ride",
+      "romanization": "banjjagineun head light, ikkeuneun daero let’s ride",
+      "english": "Shining Head light, Let's ride as it leads us",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "반짝이는 Head light",
-      "romanization": "banjjagineun head light",
-      "english": "Shining Head light",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 144.35,
+      "end": 144.74,
       "members": [],
       "original": "",
       "romanization": "(hey)",
@@ -833,98 +509,44 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 147.18,
+      "end": 151.12,
       "members": [],
-      "original": "이끄는 대로 Let’s ride",
-      "romanization": "ikkeuneun daero let’s ride",
-      "english": "Let's ride as it leads us",
+      "original": "어디라고 해도 좋아, 자유롭잖아 어디든 다",
+      "romanization": "eodirago haedo joa, jayuropjana eodideun da",
+      "english": "Anywhere is fine, We're free, anywhere at all",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 151.28,
+      "end": 154.85,
       "members": [],
-      "original": "어디라고 해도 좋아",
-      "romanization": "eodirago haedo joa",
-      "english": "Anywhere is fine",
+      "original": "Need you now, Hit me up, 너의 목소릴 따라서 드리운 밤",
+      "romanization": "need you now, hit me up, neoui moksoril ttaraseo deuriun bam",
+      "english": "Need you now, Hit me up, This night draped in your voice",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 154.97,
+      "end": 159.44,
       "members": [],
-      "original": "자유롭잖아 어디든 다",
-      "romanization": "jayuropjana eodideun da",
-      "english": "We're free, anywhere at all",
+      "original": "I still love you, 까만 밤 쏟아지는 별",
+      "romanization": "i still love you, kkaman bam ssodajineun byeol",
+      "english": "I still love you, Stars pouring down in the black night",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 159.56,
+      "end": 163.75,
       "members": [],
-      "original": "Need you now",
-      "romanization": "need you now",
-      "english": "Need you now",
+      "original": "아무도 닿지 못할, 우리의 새벽별에",
+      "romanization": "amudo dachi mothal, uriui saebyeokbyeore",
+      "english": "To our dawn star, That no one else can reach",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Hit me up",
-      "romanization": "hit me up",
-      "english": "Hit me up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너의 목소릴 따라서 드리운 밤",
-      "romanization": "neoui moksoril ttaraseo deuriun bam",
-      "english": "This night draped in your voice",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I still love you",
-      "romanization": "i still love you",
-      "english": "I still love you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "까만 밤 쏟아지는 별",
-      "romanization": "kkaman bam ssodajineun byeol",
-      "english": "Stars pouring down in the black night",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아무도 닿지 못할",
-      "romanization": "amudo dachi mothal",
-      "english": "To our dawn star",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "우리의 새벽별에",
-      "romanization": "uriui saebyeokbyeore",
-      "english": "That no one else can reach",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 161.43,
+      "end": 164.08,
       "members": [],
       "original": "(우리의 새벽별에)",
       "romanization": "(uriui saebyeokbyeore)",
@@ -932,26 +554,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 163.77,
+      "end": 167.76,
       "members": [],
-      "original": "유난히 반짝이는",
-      "romanization": "yunanhi banjjagineun",
-      "english": "Shining especially bright",
+      "original": "유난히 반짝이는, Beautiful song in my head",
+      "romanization": "yunanhi banjjagineun, beautiful song in my head",
+      "english": "Shining especially bright, Beautiful song in my head",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Beautiful song in my head",
-      "romanization": "beautiful song in my head",
-      "english": "Beautiful song in my head",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 166.35,
+      "end": 171.16,
       "members": [],
       "original": "",
       "romanization": "(Song in my head)",
@@ -959,26 +572,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.91,
+      "end": 172.39,
       "members": [],
-      "original": "아침이 와도 우린",
-      "romanization": "achimi wado urin",
-      "english": "Even when morning comes, we're",
+      "original": "아침이 와도 우린, 여전히 같은 꿈속에",
+      "romanization": "achimi wado urin, yeojeonhi gateun kkumsoge",
+      "english": "Even when morning comes, we're, Still in the same dream",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "여전히 같은 꿈속에",
-      "romanization": "yeojeonhi gateun kkumsoge",
-      "english": "Still in the same dream",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 169.71,
+      "end": 172.68,
       "members": [],
       "original": "(여전히 같은 꿈속에)",
       "romanization": "(yeojeonhi gateun kkumsoge)",
@@ -986,26 +590,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 172.76,
+      "end": 175.87,
       "members": [],
-      "original": "너무 행복했어 네 곁에",
-      "romanization": "neomu haengbokaesseo ne gyeote",
-      "english": "I was so happy by your side",
+      "original": "너무 행복했어 네 곁에, I miss you",
+      "romanization": "neomu haengbokaesseo ne gyeote, i miss you",
+      "english": "I was so happy by your side, I miss you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I miss you",
-      "romanization": "i miss you",
-      "english": "I miss you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 175.12,
+      "end": 176.83,
       "members": [],
       "original": "",
       "romanization": "(I miss you)",
@@ -1013,35 +608,35 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 177.67,
+      "end": 178.68,
       "members": [],
-      "original": "ooh ooh ooh",
-      "romanization": "ooh ooh ooh",
-      "english": "Ooh ooh ooh",
+      "original": "",
+      "romanization": "(ho)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 175.88,
+      "end": 179.87,
+      "members": [],
+      "original": "",
+      "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 180,
+      "end": 184.01,
       "members": [],
-      "original": "Do you Miss Me Miss Me too",
-      "romanization": "do you miss me miss me too",
-      "english": "Do you miss me miss me too",
+      "original": "",
+      "romanization": "ooh ooh ooh, Like I missing missing you",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ooh ooh ooh",
-      "romanization": "ooh ooh ooh",
-      "english": "Ooh ooh ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 180.3,
+      "end": 181.19,
       "members": [],
       "original": "",
       "romanization": "(yeah yeah)",
@@ -1049,26 +644,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 184.16,
+      "end": 189.32,
       "members": [],
-      "original": "Like I missing missing you",
-      "romanization": "like i missing missing you",
-      "english": "Like I'm missing missing you",
+      "original": "",
+      "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "ooh ooh ooh",
-      "romanization": "ooh ooh ooh",
-      "english": "Ooh ooh ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 184.43,
+      "end": 186.57,
       "members": [],
       "original": "",
       "romanization": "(Missing you)",
@@ -1076,35 +662,17 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 189.35,
+      "end": 192.55,
       "members": [],
-      "original": "Do you Miss Me Miss Me too",
-      "romanization": "do you miss me miss me too",
-      "english": "Do you miss me miss me too",
+      "original": "기억하면 돼 꿈꾸면 돼, I miss you",
+      "romanization": "gieokhamyeon dwae kkumkkumyeon dwae, i miss you",
+      "english": "Just remember, just keep dreaming, I miss you",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "기억하면 돼 꿈꾸면 돼",
-      "romanization": "gieokhamyeon dwae kkumkkumyeon dwae",
-      "english": "Just remember, just keep dreaming",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I miss you",
-      "romanization": "i miss you",
-      "english": "I miss you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 191.69,
+      "end": 193.45,
       "members": [],
       "original": "",
       "romanization": "(I miss you)",
@@ -1112,21 +680,12 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 197.57,
+      "end": 201.26,
       "members": [],
-      "original": "너무 행복했어 네 곁에",
-      "romanization": "neomu haengbokaesseo ne gyeote",
-      "english": "I was so happy by your side",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’ll miss you",
-      "romanization": "i’ll miss you",
-      "english": "I'll miss you",
+      "original": "너무 행복했어 네 곁에, I’ll miss you",
+      "romanization": "neomu haengbokaesseo ne gyeote, i’ll miss you",
+      "english": "I was so happy by your side, I'll miss you",
       "adlib": false
     }
   ],
