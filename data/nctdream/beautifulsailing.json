@@ -61,13 +61,732 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "MARK"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "ooh ooh ooh",
+      "romanization": "ooh ooh ooh",
+      "english": "Ooh ooh ooh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "ooh ooh ooh",
+      "romanization": "ooh ooh ooh",
+      "english": "Ooh ooh ooh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "일렁이는 파도와",
+      "romanization": "illeongineun padowa",
+      "english": "With the rippling waves",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "손에 닿을 듯한",
+      "romanization": "sone daeul deuthan",
+      "english": "And the blue horizon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "푸르른 수평선",
+      "romanization": "pureureun supyeongseon",
+      "english": "That feels just within reach",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "반짝임을 향해 난",
+      "romanization": "banjjagimeul hyanghae nan",
+      "english": "Heading toward the sparkle",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "모든 것이 낯선",
+      "romanization": "modeun geosi natseon",
+      "english": "Everything was unfamiliar",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그때",
+      "romanization": "geuttae",
+      "english": "Back then",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마음처럼 안 돼",
+      "romanization": "maeumcheoreom an dwae",
+      "english": "Things didn't go as I hoped",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "서툴던",
+      "romanization": "seotuldeon",
+      "english": "Clumsy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꿈을 향한 나의 첫걸음",
+      "romanization": "kkumeul hyanghan naui cheotgeoreum",
+      "english": "My first step toward the dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "사나운 파도가 날 덮쳐와",
+      "romanization": "sanaun padoga nal deopchyeowa",
+      "english": "The fierce waves crash over me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "How can I move on",
+      "romanization": "how can i move on",
+      "english": "How can I move on",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "몇 번이든 다시 We Young",
+      "romanization": "myeot beonideun dasi we young",
+      "english": "No matter how many times, we young",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dive in a dream",
+      "romanization": "dive in a dream",
+      "english": "Dive in a dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Dream)",
+      "romanization": "(dream)",
+      "english": "(Dream)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I feel better",
+      "romanization": "i feel better",
+      "english": "I feel better",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Looking back on us",
+      "romanization": "looking back on us",
+      "english": "Looking back on us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It's a Beautiful Sailing",
+      "romanization": "it’s a beautiful sailing",
+      "english": "It's a Beautiful Sailing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "서로 기대어",
+      "romanization": "seoro gidaeeo",
+      "english": "Leaning on each other",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "밤새 나누던 얘기",
+      "romanization": "bamsae nanudeon yaegi",
+      "english": "Talking all through the night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마음에 가장 큰 돛을 달아",
+      "romanization": "maeume gajang keun dochereul dara",
+      "english": "We raised the biggest sail in our hearts",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝없이 멀리 나아간 그다음",
+      "romanization": "kkeuteopsi meolli naagan geudaeum",
+      "english": "And then moved endlessly far ahead",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그렇게 흘러",
+      "romanization": "geureoke heulleo",
+      "english": "We flowed just like that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It's a Beautiful Sailing",
+      "romanization": "it’s a beautiful sailing",
+      "english": "It's a Beautiful Sailing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "yeah 방향을 잃은 배는",
+      "romanization": "yeah banghyangeul ileun baeneun",
+      "english": "Yeah, a ship that's lost its direction",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "물살에 떠밀리듯",
+      "romanization": "mulsare tteomillideut",
+      "english": "As if being pushed by the current",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "계속 가도 가도 망망대해",
+      "romanization": "gyesok gado gado mangmangdaehae",
+      "english": "It keeps going and going into the open sea",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "앞으로 매번 나아가도",
+      "romanization": "apeuro maebeon naagado",
+      "english": "Even if I keep moving forward every time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어디가 끝인지 모르지",
+      "romanization": "eodiga kkeuchinji moreuji",
+      "english": "I don't know where the end is",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마음속의",
+      "romanization": "maeumsogui",
+      "english": "The beating in my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "고동을 울려",
+      "romanization": "godongeul ullyeo",
+      "english": "Let it ring out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "힘껏 저어 Hurry up",
+      "romanization": "himkkeot jeoeo hurry up",
+      "english": "Row with all your strength Hurry up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "숨을 크게 쉬어 멈추지 마",
+      "romanization": "sumeul keuge swieo meomchuji ma",
+      "english": "Take a deep breath Don't stop",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "yeah 오랜 나침반을 꺼내봐",
+      "romanization": "yeah oraen nachimbaneul kkeonaebwa",
+      "english": "Yeah take out that old compass",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "같은 곳으로 향해 가",
+      "romanization": "gateun goseuro hyanghae ga",
+      "english": "Let's head toward the same place",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "바람 따라 결국 우린",
+      "romanization": "baram ttara gyeolguk urin",
+      "english": "Following the wind, we'll eventually",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "저 먼 수평선 넘을 테니",
+      "romanization": "jeo meon supyeongseon neomeul teni",
+      "english": "Cross that far off horizon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "드넓은 바단 쉼 없이 흘러",
+      "romanization": "deuneolbeun badan swim eopsi heulleo",
+      "english": "The vast sea flows on without rest",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "How can I move on",
+      "romanization": "how can i move on",
+      "english": "How can I move on",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꿈꾸는 한 우린 We Young",
+      "romanization": "kkumkkuneun han urin we young",
+      "english": "As long as we dream, we young",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Dive in a dream",
+      "romanization": "dive in a dream",
+      "english": "Dive in a dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Dream)",
+      "romanization": "(dream)",
+      "english": "(Dream)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I feel better",
+      "romanization": "i feel better",
+      "english": "I feel better",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Looking back on us",
+      "romanization": "looking back on us",
+      "english": "Looking back on us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It's a Beautiful Sailing",
+      "romanization": "it’s a beautiful sailing",
+      "english": "It's a Beautiful Sailing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "서로 기대어",
+      "romanization": "seoro gidaeeo",
+      "english": "Leaning on each other",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "밤새 나누던 얘기",
+      "romanization": "bamsae nanudeon yaegi",
+      "english": "Talking all through the night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마음에 가장 큰 돛을 달아",
+      "romanization": "maeume gajang keun dochereul dara",
+      "english": "We raised the biggest sail in our hearts",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝없이 멀리 나아간 그다음",
+      "romanization": "kkeuteopsi meolli naagan geudaeum",
+      "english": "And then moved endlessly far ahead",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그렇게 흘러",
+      "romanization": "geureoke heulleo",
+      "english": "We flowed just like that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It's a Beautiful Sailing",
+      "romanization": "it’s a beautiful sailing",
+      "english": "It's a Beautiful Sailing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두 눈을 감아",
+      "romanization": "du nuneul gama",
+      "english": "Close your eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "바람을 타고",
+      "romanization": "barameul tago",
+      "english": "Ride the wind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "들려온 노래 oh",
+      "romanization": "deullyeoon norae oh",
+      "english": "A song that came to me oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "늘 변함없이",
+      "romanization": "neul byeonhameopsi",
+      "english": "The sky colored sea",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "곁에 있어 준",
+      "romanization": "gyeote isseo jun",
+      "english": "That stayed by my side without changing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하늘빛 바다",
+      "romanization": "haneulbit bada",
+      "english": "We dream an eternal dream",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "우리가 영원할 꿈을 꿔",
+      "romanization": "uriga yeongwonhal kkumeul kkwo",
+      "english": "Every moment of mine shines brightly",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 모든 순간이 찬란히 빛나",
+      "romanization": "nae modeun sungani challanhi binna",
+      "english": "Through all days and nights",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "모든 낮과 밤 너와 함께 난",
+      "romanization": "modeun natgwa bam neowa hamkke nan",
+      "english": "With you I",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "떠나 Beautiful Sailing",
+      "romanization": "tteona beautiful sailing",
+      "english": "Set off Beautiful Sailing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Looking back on us",
+      "romanization": "looking back on us",
+      "english": "Looking back on us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(yeah)",
+      "romanization": "(yeah)",
+      "english": "(Yeah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It's a Beautiful Sailing",
+      "romanization": "it’s a beautiful sailing",
+      "english": "It's a Beautiful Sailing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Beautiful Sailing)",
+      "romanization": "(beautiful sailing)",
+      "english": "(Beautiful Sailing)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "고개를 들어",
+      "romanization": "gogaereul deureo",
+      "english": "Lift your head",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(가장 눈부신 Sailing)",
+      "romanization": "(gajang nunbusin sailing)",
+      "english": "(The brightest Sailing of all)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가장 눈부신 Sailing",
+      "romanization": "gajang nunbusin sailing",
+      "english": "The brightest Sailing of all",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거친 파도를 안아준 바다",
+      "romanization": "geochin padoreul anajun bada",
+      "english": "The sea that embraced the rough waves",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(거친 파도를)",
+      "romanization": "(geochin padoreul)",
+      "english": "(The rough waves)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "오늘을 지나 내일을 만나",
+      "romanization": "oneureul jina naeireul manna",
+      "english": "Passing today, meeting tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(oh)",
+      "romanization": "(oh)",
+      "english": "(Oh)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그렇게 흘러",
+      "romanization": "geureoke heulleo",
+      "english": "We flowed just like that",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 큰 바다로 우린",
+      "romanization": "deo keun badaro urin",
+      "english": "To an even greater ocean",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(ah ah ah ah)",
+      "romanization": "(ah ah ah ah)",
+      "english": "(Ah ah ah ah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "That’s what it is",
+      "romanization": "that’s what it is",
+      "english": "That's what it is",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It’s a Beautiful Sailing",
+      "romanization": "it’s a beautiful sailing",
+      "english": "It's a Beautiful Sailing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(ah ah ah ah)",
+      "romanization": "(ah ah ah ah)",
+      "english": "(Ah ah ah ah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Looking back on us",
+      "romanization": "looking back on us",
+      "english": "Looking back on us",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It's a Beautiful Sailing",
+      "romanization": "it’s a beautiful sailing",
+      "english": "It's a Beautiful Sailing",
+      "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/nctdream_beautifulsailing.mp3"
 }
