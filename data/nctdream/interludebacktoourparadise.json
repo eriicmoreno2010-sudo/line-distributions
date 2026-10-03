@@ -1,0 +1,73 @@
+{
+  "group": "NCT DREAM",
+  "song": "Interlude : Back to Our Paradise",
+  "video": "",
+  "duration": 0,
+  "theme": "light",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "MARK",
+      "image": "images/nctdream/interludebacktoourparadise/mark.png",
+      "color": "#cb6ce6",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RENJUN",
+      "image": "images/nctdream/interludebacktoourparadise/renjun.png",
+      "color": "#fac142",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JENO",
+      "image": "images/nctdream/interludebacktoourparadise/jeno.png",
+      "color": "#ff3131",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "HAECHAN",
+      "image": "images/nctdream/interludebacktoourparadise/haechan.png",
+      "color": "#1bb7e8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEMIN",
+      "image": "images/nctdream/interludebacktoourparadise/jaemin.png",
+      "color": "#61fdad",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "CHENLE",
+      "image": "images/nctdream/interludebacktoourparadise/chenle.png",
+      "color": "#22c429",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JISUNG",
+      "image": "images/nctdream/interludebacktoourparadise/jisung.png",
+      "color": "#f12ba5",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MARK"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
