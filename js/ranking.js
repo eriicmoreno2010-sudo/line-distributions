@@ -185,7 +185,7 @@ const Ranking = {
             // Énfasis (tamaño de nombre+tiempo) — también JS aquí: con la transición
             // de transform desactivada en det, el paso 1.14→1.0 al DEJAR de cantar
             // se teletransportaba (tirón). Ahora se anima suave, frame a frame.
-            const em = m.active ? 1.14 : 1.0;
+            const em = m.active ? 1.06 : 1.0;
             if(m._emphTo !== em){
                 m._emphFrom  = (m._curEmph != null) ? m._curEmph : em;
                 m._emphTo    = em;
@@ -370,6 +370,9 @@ const Ranking = {
             // así la tarjeta llega directa a su sitio y NO pega un salto al terminar.
             if(m._switching){
                 if(m.rankElement) m.rankElement.textContent = gi + 1;
+                m._switchGi = gi;   // mantener el nº final al día: si el rango sigue
+                                    // mejorando durante el cruce, el "clean" no debe
+                                    // dejar un número viejo (p. ej. VERNON 7 en vez de 4).
                 if(colIdx === m._switchCol && row !== m._switchRow){
                     m._switchRow = row;
                     if(!this.det) m.element.style.setProperty("--rank-y", `${row * col.rowH}px`);

@@ -556,12 +556,12 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
 #ranking .member.active .member-name{
     color:var(--sing);
     font-weight:900;
-    transform:scale(1.14);
+    transform:scale(1.06);
 }
 #ranking .member.active .member-time{
     color:var(--sing);
     font-weight:900;
-    transform:scale(1.14);
+    transform:scale(1.06);
 }
 #ranking .member.active .member-bar{
     background:color-mix(in srgb, #000 25%, transparent);
@@ -660,7 +660,6 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
 /* recorded video (4:2:0 chroma subsampling halves colour resolution); a thin   */
 /* luma-contrast edge keeps the glyphs sharp. paint-order keeps the fill on top. */
 /* ========================= */
-#ranking .member-name, #ranking .member-time, #ranking .member-rank,
 #current-member, #original, #romanized, #english,
 .adlib-member, .adlib-original, .adlib-roman, .adlib-english, .adlib-text,
 #results-overlay .row .name, #results-overlay .row .pct, #results-overlay .row .sec,
@@ -671,6 +670,17 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
         0 0 2px rgba(0,0,0,.92),
         0 0 5px rgba(0,0,0,.72),
         0 1px 4px rgba(0,0,0,.6);
+}
+/* Ranking: sombra SOLO de caída (hacia abajo), SIN halo 0 0 que rodee el glifo.
+   El halo oscuro "comía" el relleno del número/nombre en los colores fuertes
+   (se veían más delgados) y no en los claros. Ahora el relleno queda completo
+   (grosor como la columna izquierda, que no tenía sombra) y en AMBAS columnas
+   por igual, manteniendo una sombra para separar del fondo. */
+#ranking .member-name, #ranking .member-time, #ranking .member-rank,
+#ranking-left .member-name, #ranking-left .member-time, #ranking-left .member-rank{
+    text-shadow:
+        0 1px 2px rgba(0,0,0,.5),
+        0 2px 5px rgba(0,0,0,.4);
 }
 
 
