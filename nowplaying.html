@@ -77,6 +77,38 @@
   #play svg{ width:26px; height:26px; }
 
   #msg{ position:absolute; bottom:14px; left:0; right:0; text-align:center; color:#8aa; font-size:14px; z-index:3; }
+
+  /* ===== Tono CLARO (se elige por canción con el botón de la barra) ===== */
+  body.theme-light{ background:#eef1f7; color:#1a1d27; }
+  body.theme-light #bg{
+    background:
+      radial-gradient(70% 55% at 50% 42%, #dfe4f4 0%, transparent 70%),
+      linear-gradient(#eef1f7,#e7eaf3); }
+  body.theme-light .streak{ background:linear-gradient(rgba(70,90,140,.5),transparent); opacity:.16; }
+  body.theme-light .dot{ background:#8893b5; opacity:.4; }
+  body.theme-light #frame{
+    background:linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.52));
+    border:1px solid rgba(60,80,130,.22);
+    box-shadow:0 0 0 1px rgba(255,255,255,.45) inset, 0 40px 120px -40px rgba(40,60,110,.45),
+               0 0 calc(40px + var(--beat)*60px) rgba(90,150,230,calc(.08 + var(--beat)*.16)); }
+  body.theme-light #frame::before{ border-color:rgba(60,80,130,.14); }
+  body.theme-light #nowplaying{ color:#5566a0; }
+  body.theme-light #title{ text-shadow:0 2px 16px rgba(120,160,230,.25); }
+  body.theme-light #artist{ color:#55608a; }
+  body.theme-light #cover{ background:#dde3f0;
+    box-shadow:0 16px 40px -10px rgba(40,60,110,.4), 0 0 0 1px rgba(40,60,110,.14); }
+  body.theme-light #bar{ background:rgba(20,30,60,.14); }
+  body.theme-light #knob{ background:#2a3350; box-shadow:0 0 8px rgba(40,60,110,.4); }
+  body.theme-light #times{ color:#55608a; }
+  body.theme-light .ctl{ color:#2a3350; filter:drop-shadow(0 2px 6px rgba(0,0,0,.18)); }
+  body.theme-light #play{ color:#2a3350; background:rgba(255,255,255,.55);
+    border-color:rgba(40,60,110,.7); box-shadow:0 0 22px rgba(120,170,240,.3); }
+  body.theme-light #msg{ color:#667; }
+  body.theme-light #topbar a, body.theme-light #topbar select, body.theme-light #topbar button,
+  body.theme-light #topbar .grp{ background:rgba(255,255,255,.82); color:#2a3350; border-color:rgba(40,60,110,.25); }
+  body.theme-light #topbar .grp .mini{ color:#55608a; }
+  body.theme-light #topbar .grp input[type=number]{ background:rgba(255,255,255,.92); color:#2a3350; border-color:rgba(40,60,110,.25); }
+  body.theme-light #topbar .tip{ color:#8893b5; }
 </style>
 </head>
 <body>
@@ -95,6 +127,7 @@
     <input type="color" id="c1" value="#25e0f2" title="Color 1">
     <input type="color" id="c2" value="#ff2fb0" title="Color 2">
   </span>
+  <button id="themeBtn" title="Tono claro / oscuro">🌙</button>
   <span class="sp"></span>
   <span class="tip">▶ para reproducir · tecla <b>R</b> oculta esta barra y el ratón (para grabar)</span>
 </div>
@@ -159,6 +192,7 @@
     // aplicar ajustes guardados de ESTA canción (colores + desfase del audio)
     applyColor("--c1", data.npC1 || "#25e0f2", $("c1"));
     applyColor("--c2", data.npC2 || "#ff2fb0", $("c2"));
+    applyTheme(data.npTheme || data.theme || "dark");
     curDelay = +data.npAudioDelay || 0;
     $("off").value = curDelay; $("offNum").value = curDelay.toFixed(2);
     if(delayNode) delayNode.delayTime.value = curDelay;
@@ -174,6 +208,17 @@
     document.documentElement.style.setProperty(varName, val);
     if(input) input.value = val;
   }
+  // ---- Tono claro / oscuro (se guarda por canción, como los colores) ----
+  function applyTheme(t){
+    const light = t === "light";
+    document.body.classList.toggle("theme-light", light);
+    $("themeBtn").textContent = light ? "☀️" : "🌙";
+  }
+  $("themeBtn").onclick = () => {
+    const light = !document.body.classList.contains("theme-light");
+    applyTheme(light ? "light" : "dark");
+    if(SONG){ SONG.npTheme = light ? "light" : "dark"; saveSoon(); }
+  };
 
   // ---- selector de canciones (escritorio) ----
   async function fillSongs(preselect){

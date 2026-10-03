@@ -211,10 +211,9 @@ const Lyrics = {
         // vanish. Kept vivid enough to still read as each member's colour.
         // Group/multi gradient stops: on the dark theme brighten (mix white) so the
         // rainbow reads on black; on the light theme darken (mix black) so it reads on white.
-        const lightTheme = typeof document !== "undefined" && document.body.classList.contains("theme-light");
-        const lift = c => lightTheme
-            ? `color-mix(in srgb, ${c} 82%, #000)`   // tema claro: oscurecer un poco para que lea sobre blanco
-            : c;                                       // tema oscuro: color CRUDO/real de cada miembro (líneas de grupo)
+        // Color CRUDO/real de cada miembro en AMBOS temas (el usuario quiere ver el
+        // arcoíris con los colores tal cual, sin oscurecer en tema claro).
+        const lift = c => c;
         const groupGradient = isGroupLine
             ? `linear-gradient(90deg, ${SONG.members.map(m => lift(m.color)).join(", ")})`
             : "";
@@ -373,8 +372,15 @@ const Lyrics = {
         this.centralTextCleared = false;
 
         const shownMembers = displayMembers(line);
-        let linePartials = partialSingers(line)
-            .filter(n => !shownMembers.some(m => m.toLowerCase() === n.toLowerCase()));
+        let linePartials = partialSingers(line);
+        // Antes quitábamos de los "partials" a los dueños de la línea. Ahora los
+        // CONSERVAMOS cuando el @ es una combinación real con alguien de fuera
+        // (p. ej. "@CHENLE,MARK" en una línea de MARK -> "CHENLE & MARK / MARK",
+        // o "@JISUNG,HAECHAN" en una de JISUNG -> "JISUNG / JISUNG & HAECHAN").
+        // Solo los descartamos si TODOS los marcados ya son dueños (un "@dueño"
+        // redundante -> no queremos mostrar "X / X").
+        if(!linePartials.some(n => !shownMembers.some(m => m.toLowerCase() === n.toLowerCase())))
+            linePartials = [];
         // Parte de TODO EL GRUPO (**...** sin @) en una línea de un miembro -> añade el
         // grupo a la cabecera: "CHENLE / NCT DREAM" (no solo "CHENLE").
         if(!c.isGroupLine && hasGroupHighlight(line)
@@ -471,9 +477,8 @@ const Lyrics = {
                     // (lo construimos aquí porque en una línea de un miembro c.groupGradient
                     // viene vacío -> antes el nombre del grupo salía transparente/invisible);
                     // los miembros, con su color.
-                    const _lt = document.body.classList.contains("theme-light");
-                    const _lift = col => _lt ? `color-mix(in srgb, ${col} 82%, #000)` : col;
-                    const groupGrad = `linear-gradient(90deg, ${(SONG.members || []).map(m => _lift(m.color)).join(", ")})`;
+                    // nombre del grupo en la cabecera: arcoíris con los colores reales.
+                    const groupGrad = `linear-gradient(90deg, ${(SONG.members || []).map(m => m.color).join(", ")})`;
                     const span = (n) => (n === SONG.group)
                         ? `<span style="background:${groupGrad};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(n)}</span>`
                         : `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
@@ -654,7 +659,9 @@ if(!shown.length && typeof line.adlib === "string" && line.adlib.trim()){
                 const msgH = msg.clientHeight || 380;
                 const up = (msgH - (box._bottom || 0)) + 14;               // sube hasta salir por arriba (la línea azul)
                 box.style.transition = "transform .26s cubic-bezier(.45,0,.7,.2)";     // rápido, SIN fundido
-                box.style.transform = "translate(16px, " + (-up) + "px) scale(.94)";   // arriba y un pelín a la derecha
+                // Sube RÍGIDA (solo traslación): sin scale, que distorsionaba y hacía
+                // que el texto (p. ej. el roman) pareciera moverse dentro de la tarjeta.
+                box.style.transform = "translateY(" + (-up) + "px)";
                 // NO se desvanece: se mete por arriba y lo recorta el borde del panel (clip-path)
                 setTimeout(() => box.remove(), 300);
             }
