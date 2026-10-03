@@ -59,8 +59,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 13.97,
+      "end": 20.71,
       "members": [],
       "original": "내 작은 꿈 지나, 본 적 없던 그림",
       "romanization": "nae jageun kkum jina, bon jeok eopdeon geurim",
@@ -68,8 +68,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.87,
+      "end": 29.74,
       "members": [],
       "original": "어디로 갈까, 두 손을 꼭 잡고서, 잠깐 눈을 감아",
       "romanization": "eodiro galkka, du soneul kkok japgoseo, jamkkan nuneul gama",
@@ -77,8 +77,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.04,
+      "end": 29.65,
       "members": [],
       "original": "(잠깐 눈을 감아)",
       "romanization": "(jamkkan nuneul gama)",
@@ -86,8 +86,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 29.98,
+      "end": 33.5,
       "members": [],
       "original": "잠시만 쉬어가 우리 여기, 비워 둔 이야기 사이",
       "romanization": "jamsiman swieoga uri yeogi, biwo dun iyagi sai",
@@ -95,8 +95,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.61,
+      "end": 35.37,
       "members": [],
       "original": "설레는 마음까지",
       "romanization": "seolleneun maeumkkaji",
@@ -104,8 +104,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.77,
+      "end": 38.97,
       "members": [],
       "original": "",
       "romanization": "(ooh)",
@@ -113,8 +113,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 38.8,
+      "end": 42.52,
       "members": [],
       "original": "그 시간들이 깨어나",
       "romanization": "geu sigandeuri kkaeona",
@@ -122,8 +122,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 43.38,
+      "end": 50.02,
       "members": [],
       "original": "",
       "romanization": "(ooh)",
@@ -131,8 +131,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.38,
+      "end": 55.52,
       "members": [],
       "original": "",
       "romanization": "(Hey yeah yeah yeah yeah)",
@@ -140,8 +140,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.46,
+      "end": 51.04,
       "members": [],
       "original": "yeah 또 다른 시작으로, 이어지는 마지막 위",
       "romanization": "yeah tto dareun sijageuro, ieojineun majimak wi",
@@ -149,8 +149,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 51.19,
+      "end": 54.59,
       "members": [],
       "original": "지나왔던 모든 자리, 바라보며 Scream and shout it",
       "romanization": "jinawatteon modeun jari, barabomyeo scream and shout it",
@@ -158,8 +158,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 54.73,
+      "end": 57.36,
       "members": [],
       "original": "너와 함께, I’m a different person today",
       "romanization": "neowa hamkke, i’m a different person today",
@@ -167,8 +167,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 57.48,
+      "end": 61.02,
       "members": [],
       "original": "펼쳐지는 New phase, 한 발 내딛기 전에 Wait ay",
       "romanization": "pyeolchyeojineun new phase, han bal naeditgi jeone wait ay",
@@ -176,8 +176,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 61.18,
+      "end": 64.16,
       "members": [],
       "original": "어제의 상상 속, 그릴 수 없던 모습도",
       "romanization": "eoj eui sangsang sok, geuril su eopdeon moseupdo",
@@ -185,8 +185,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.31,
+      "end": 67.56,
       "members": [],
       "original": "아주 조그만 변화들까지, 천천히 모두 새기고",
       "romanization": "aju jogeuman byeonhwadeulkkaji, cheoncheonhi modu saegigo",
@@ -194,8 +194,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 67.71,
+      "end": 68.83,
       "members": [],
       "original": "",
       "romanization": "Let me tell you, what I think what I know",
@@ -203,8 +203,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.94,
+      "end": 71.14,
       "members": [],
       "original": "조금 뒤 누구보다 더, 멀리 닿게 될 거야",
       "romanization": "jogeum dwi nuguboda deo, meolli dakeun doel geoya",
@@ -212,8 +212,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.64,
+      "end": 76.77,
       "members": [],
       "original": "",
       "romanization": "(ooh)",
@@ -221,8 +221,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.07,
+      "end": 76.74,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -230,8 +230,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.86,
+      "end": 76.72,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -239,8 +239,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 78.27,
+      "end": 80.18,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -248,8 +248,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.12,
+      "end": 80.09,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -257,8 +257,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.58,
+      "end": 83.26,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -266,8 +266,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 82.37,
+      "end": 83.25,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -275,8 +275,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 84.81,
+      "end": 86.88,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -284,8 +284,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.65,
+      "end": 86.93,
       "members": [],
       "original": "",
       "romanization": "(Para)",
@@ -293,8 +293,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.28,
+      "end": 73.45,
       "members": [],
       "original": "몸은 한결 더 가벼워, 이제 미지의 바람 위로 난",
       "romanization": "momeun hangyeol deo gabyeowo, ije mijiui baram wiro nan",
@@ -302,8 +302,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 73.59,
+      "end": 74.07,
       "members": [],
       "original": "올라탈 준비 Paradise",
       "romanization": "ollatal junbi paradise",
@@ -311,8 +311,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 74.17,
+      "end": 86.85,
       "members": [],
       "original": "",
       "romanization": "Paradise, Paradise, Paradise, Para",
@@ -320,8 +320,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 87.12,
+      "end": 94.93,
       "members": [],
       "original": "Paradise, 숨을 고른 뒤 난, 너를 찾아가",
       "romanization": "paradise, sumeul goreun dwi nan, neoreul chajaga",
@@ -329,8 +329,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 95.91,
+      "end": 98.84,
       "members": [],
       "original": "",
       "romanization": "(ooh)",
@@ -338,8 +338,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.17,
+      "end": 108.99,
       "members": [],
       "original": "훨씬 더 높이 날아올라, 나의 기억 넘어 닿은 곳엔",
       "romanization": "hwolssin deo nopi naraolla, naui gieok neomeo daeun gosen",
@@ -347,8 +347,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 102.51,
+      "end": 108.83,
       "members": [],
       "original": "",
       "romanization": "(ooh)",
@@ -356,8 +356,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 109.72,
+      "end": 115.61,
       "members": [],
       "original": "이어진 시간, I can hear you now",
       "romanization": "ieojin sigan, i can hear you now",
@@ -365,8 +365,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 115.59,
+      "end": 117.9,
       "members": [],
       "original": "",
       "romanization": "(ooh)",
@@ -374,8 +374,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 117.7,
+      "end": 121.59,
       "members": [],
       "original": "자 시작되는 Paradise",
       "romanization": "ja sijakdoeneun paradise",
