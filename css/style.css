@@ -485,9 +485,9 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     text-overflow:ellipsis;
     white-space:nowrap;
     transform-origin:left center;
-    /* color/tamaño INSTANTÁNEOS al activar/desactivar: así la sombra no "aparece"
-       poco a poco al encenderse el miembro (se notaba y no molaba). */
-    transition:none;
+    /* Transición SUAVE al activar/desactivar (fluida, sin trompicones ni "salto").
+       Con el crecimiento ya en 1.06 el movimiento de la sombra es mínimo. */
+    transition:color .22s var(--ease), transform .22s var(--ease);
 }
 
 #ranking .member-time{
@@ -497,7 +497,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     color:var(--text2);
     font-variant-numeric:tabular-nums;
     transform-origin:right center;
-    transition:none;
+    transition:color .22s var(--ease), transform .22s var(--ease);
 }
 
 /* GRUPO (no sub-unidad/solista) de 4/5/6 miembros: la tarjeta es grande y el

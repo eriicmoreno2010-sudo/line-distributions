@@ -198,7 +198,7 @@ body.two-side .member.ready{
     text-overflow:ellipsis;
     transform-origin:left center;
     transform:scale(var(--emph,1));   /* énfasis al cantar (vía --emph) */
-    transition:none;                  /* instantáneo: la sombra no aparece poco a poco al activarse */
+    transition:color .22s var(--ease), transform .22s var(--ease);   /* fluido al cantar/parar */
 }
 .member.has-sung .member-name{ color:var(--accent); }
 
@@ -210,7 +210,7 @@ body.two-side .member.ready{
     flex-shrink:0;
     transform-origin:right center;
     transform:scale(var(--emph,1));   /* énfasis al cantar (vía --emph) */
-    transition:none;                  /* instantáneo: la sombra no aparece poco a poco al activarse */
+    transition:color .22s var(--ease), transform .22s var(--ease);   /* fluido al cantar/parar */
 }
 .member.active .member-rank{ color:var(--sing); }
 .member.active .member-photo-wrap{ border-color:var(--sing); }
