@@ -695,5 +695,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/nctdream_interludebacktoourparadise.mp3"
+  "audio": "audio/nctdream_interludebacktoourparadise.mp3",
+  "cover": "covers/nctdream_interludebacktoourparadise.jpg"
 }
