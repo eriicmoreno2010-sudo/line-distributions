@@ -515,12 +515,11 @@
       "start": 86.87,
       "end": 90.25,
       "members": [
-        "MARK",
-        "CHENLE"
+        "MARK"
       ],
-      "original": "눈 깜짝할 사이에, 흐르는 시간은 **몰라@MARK**",
-      "romanization": "nun kkamjjakal saie, heureuneun siganeun **molla@MARK**",
-      "english": "In the blink of an eye, **I don't know@MARK** where the time goes",
+      "original": "**눈 깜짝할 사이에, 흐르는 시간은@MARK,CHENLE** 몰라",
+      "romanization": "**nun kkamjjakal saie, heureuneun siganeun@MARK,CHENLE** molla",
+      "english": "**In the blink of an eye,@MARK,CHENLE** I don't know **where the time goes@MARK,CHENLE**",
       "adlib": false,
       "voice": [
         [
