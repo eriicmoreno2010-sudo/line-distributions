@@ -61,155 +61,338 @@
     {
       "start": 13.97,
       "end": 20.71,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "내 작은 꿈 지나, 본 적 없던 그림",
       "romanization": "nae jageun kkum jina, bon jeok eopdeon geurim",
       "english": "Past my small dream, A picture I've never seen before",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.94,
+          17.14
+        ],
+        [
+          17.67,
+          19.37
+        ],
+        [
+          19.51,
+          20.72
+        ]
+      ]
     },
     {
       "start": 20.87,
       "end": 29.74,
-      "members": [],
+      "members": [
+        "RENJUN"
+      ],
       "original": "어디로 갈까, 두 손을 꼭 잡고서, 잠깐 눈을 감아",
       "romanization": "eodiro galkka, du soneul kkok japgoseo, jamkkan nuneul gama",
       "english": "Where should we go, Holding hands tightly, We close our eyes for a moment",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          20.95,
+          23.31
+        ],
+        [
+          23.75,
+          25.87
+        ],
+        [
+          26.08,
+          27.47
+        ],
+        [
+          27.77,
+          29.74
+        ]
+      ]
     },
     {
       "start": 26.04,
       "end": 29.65,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "(잠깐 눈을 감아)",
       "romanization": "(jamkkan nuneul gama)",
       "english": "(Close our eyes for a moment)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          26.05,
+          27.44
+        ],
+        [
+          27.74,
+          29.69
+        ]
+      ]
     },
     {
       "start": 29.98,
       "end": 33.5,
-      "members": [],
-      "original": "잠시만 쉬어가 우리 여기, 비워 둔 이야기 사이",
-      "romanization": "jamsiman swieoga uri yeogi, biwo dun iyagi sai",
-      "english": "Let's take a short break right here, In the space between unfinished stories",
-      "adlib": false
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "잠시만 쉬어가 우리 여기, **비워 둔 이야기 사이@CHENLE**",
+      "romanization": "jamsiman swieoga uri yeogi, **biwo dun iyagi sai@CHENLE**",
+      "english": "Let's take a short break right here, **In the space between unfinished stories@CHENLE**",
+      "adlib": false,
+      "voice": [
+        [
+          30,
+          32.05
+        ],
+        [
+          32.08,
+          33.66,
+          [
+            "CHENLE"
+          ]
+        ]
+      ]
     },
     {
       "start": 33.61,
       "end": 35.37,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "설레는 마음까지",
       "romanization": "seolleneun maeumkkaji",
       "english": "Even the fluttering hearts",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.64,
+          35.46
+        ]
+      ]
     },
     {
       "start": 36.77,
       "end": 38.97,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "(ooh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          36.8,
+          38.94
+        ]
+      ]
     },
     {
       "start": 38.8,
       "end": 42.52,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "그 시간들이 깨어나",
       "romanization": "geu sigandeuri kkaeona",
       "english": "Those moments awaken again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.84,
+          41.01
+        ],
+        [
+          41.16,
+          42.51
+        ]
+      ]
     },
     {
       "start": 43.38,
       "end": 50.02,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "(ooh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          43.37,
+          50.01
+        ]
+      ]
     },
     {
       "start": 52.38,
       "end": 55.52,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Hey yeah yeah yeah yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          52.39,
+          55.47
+        ]
+      ]
     },
     {
       "start": 47.46,
       "end": 51.04,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "yeah 또 다른 시작으로, 이어지는 마지막 위",
       "romanization": "yeah tto dareun sijageuro, ieojineun majimak wi",
       "english": "Yeah toward a new beginning, It connects to the final scene",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          47.48,
+          47.94
+        ],
+        [
+          48.15,
+          51.17
+        ]
+      ]
     },
     {
       "start": 51.19,
       "end": 54.59,
-      "members": [],
+      "members": [
+        "JENO"
+      ],
       "original": "지나왔던 모든 자리, 바라보며 Scream and shout it",
       "romanization": "jinawatteon modeun jari, barabomyeo scream and shout it",
       "english": "Looking back on all the places we've been, Looking on and scream and shout it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.14,
+          54.56
+        ]
+      ]
     },
     {
       "start": 54.73,
       "end": 57.36,
-      "members": [],
+      "members": [
+        "JAEMIN"
+      ],
       "original": "너와 함께, I’m a different person today",
       "romanization": "neowa hamkke, i’m a different person today",
       "english": "Together with you, I’m a different person today",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.71,
+          55.76
+        ],
+        [
+          55.93,
+          57.34
+        ]
+      ]
     },
     {
       "start": 57.48,
       "end": 61.02,
-      "members": [],
+      "members": [
+        "JAEMIN"
+      ],
       "original": "펼쳐지는 New phase, 한 발 내딛기 전에 Wait ay",
       "romanization": "pyeolchyeojineun new phase, han bal naeditgi jeone wait ay",
       "english": "A new phase unfolds, Before taking a step forward Wait ay",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.51,
+          60.58
+        ],
+        [
+          60.73,
+          61.1
+        ]
+      ]
     },
     {
       "start": 61.18,
       "end": 64.16,
-      "members": [],
+      "members": [
+        "JISUNG"
+      ],
       "original": "어제의 상상 속, 그릴 수 없던 모습도",
-      "romanization": "eoj eui sangsang sok, geuril su eopdeon moseupdo",
+      "romanization": "eojeui sangsang sok, geuril su eopdeon moseupdo",
       "english": "In yesterday's imagination, Even the image I couldn't draw",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.26,
+          64.39
+        ]
+      ]
     },
     {
       "start": 64.31,
       "end": 67.56,
-      "members": [],
+      "members": [
+        "JISUNG"
+      ],
       "original": "아주 조그만 변화들까지, 천천히 모두 새기고",
       "romanization": "aju jogeuman byeonhwadeulkkaji, cheoncheonhi modu saegigo",
       "english": "Even the tiniest changes, Slowly engraving them all",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          64.32,
+          67.64
+        ]
+      ]
     },
     {
       "start": 67.71,
       "end": 68.83,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "",
       "romanization": "Let me tell you, what I think what I know",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          67.78,
+          69
+        ]
+      ]
     },
     {
       "start": 68.94,
       "end": 71.14,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "조금 뒤 누구보다 더, 멀리 닿게 될 거야",
       "romanization": "jogeum dwi nuguboda deo, meolli dakeun doel geoya",
       "english": "Soon I'll reach farther, Than anyone",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          68.97,
+          71.14
+        ]
+      ]
     },
     {
       "start": 69.64,
@@ -223,106 +406,229 @@
     {
       "start": 75.07,
       "end": 76.74,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          75.02,
+          76.69
+        ]
+      ]
     },
     {
       "start": 75.86,
       "end": 76.72,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          75.82,
+          76.75
+        ]
+      ]
     },
     {
       "start": 78.27,
       "end": 80.18,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          78.29,
+          80.06
+        ]
+      ]
     },
     {
       "start": 79.12,
       "end": 80.09,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          79.08,
+          79.99
+        ]
+      ]
     },
     {
       "start": 81.58,
       "end": 83.26,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          81.55,
+          83.3
+        ]
+      ]
     },
     {
       "start": 82.37,
       "end": 83.25,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          82.41,
+          83.3
+        ]
+      ]
     },
     {
       "start": 84.81,
       "end": 86.88,
-      "members": [],
+      "members": [
+        "CHENLE"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          84.84,
+          86.89
+        ]
+      ]
     },
     {
       "start": 85.65,
       "end": 86.93,
-      "members": [],
+      "members": [
+        "HAECHAN"
+      ],
       "original": "",
       "romanization": "(Para)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          85.65,
+          86.8
+        ]
+      ]
     },
     {
       "start": 71.28,
       "end": 73.45,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "몸은 한결 더 가벼워, 이제 미지의 바람 위로 난",
       "romanization": "momeun hangyeol deo gabyeowo, ije mijiui baram wiro nan",
       "english": "My body feels much lighter, Now I'm ready to rise",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          71.27,
+          73.47
+        ]
+      ]
     },
     {
       "start": 73.59,
       "end": 74.07,
-      "members": [],
+      "members": [
+        "MARK"
+      ],
       "original": "올라탈 준비 Paradise",
       "romanization": "ollatal junbi paradise",
       "english": "To the unknown wind Paradise",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          73.54,
+          74.84
+        ]
+      ]
     },
     {
       "start": 74.17,
       "end": 86.85,
-      "members": [],
+      "members": [
+        "JISUNG"
+      ],
       "original": "",
-      "romanization": "Paradise, Paradise, Paradise, Para",
+      "romanization": "Para**dise,@RENJUN** Para**dise,@RENJUN** Para**dise,@RENJUN** Para",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.15,
+          76.66
+        ],
+        [
+          76.66,
+          77.37,
+          [
+            "RENJUN"
+          ]
+        ],
+        [
+          77.43,
+          79.97
+        ],
+        [
+          79.96,
+          80.57,
+          [
+            "RENJUN"
+          ]
+        ],
+        [
+          80.76,
+          83.26
+        ],
+        [
+          83.23,
+          83.87,
+          [
+            "RENJUN"
+          ]
+        ],
+        [
+          84.02,
+          86.82
+        ]
+      ]
     },
     {
       "start": 87.12,
       "end": 94.93,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "Paradise, 숨을 고른 뒤 난, 너를 찾아가",
       "romanization": "paradise, sumeul goreun dwi nan, neoreul chajaga",
       "english": "Paradise, After catching my breath, I go to find you",
@@ -340,7 +646,9 @@
     {
       "start": 97.17,
       "end": 108.99,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "훨씬 더 높이 날아올라, 나의 기억 넘어 닿은 곳엔",
       "romanization": "hwolssin deo nopi naraolla, naui gieok neomeo daeun gosen",
       "english": "Flying much higher, Beyond my memories where I reach",
@@ -358,7 +666,9 @@
     {
       "start": 109.72,
       "end": 115.61,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "이어진 시간, I can hear you now",
       "romanization": "ieojin sigan, i can hear you now",
       "english": "Time continues, I can hear you now",
@@ -376,7 +686,9 @@
     {
       "start": 117.7,
       "end": 121.59,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "자 시작되는 Paradise",
       "romanization": "ja sijakdoeneun paradise",
       "english": "Here begins Paradise",
