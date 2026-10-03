@@ -106,7 +106,7 @@ body.two-side .member.ready{
 
 .member.active{
     --card-scale:1.04;
-    --emph:1.14;                     /* nombre+tiempo se agrandan al cantar (vía var, animable) */
+    --emph:1.06;                     /* nombre+tiempo se agrandan un poco al cantar (vía var; ambas columnas) */
     z-index:60 !important;           /* al agrandarse (1.04) NUNCA queda tapada por la de al lado */
     --sing:color-mix(in srgb, var(--accent) 100%, #fff);
     --ring:var(--sing);
@@ -197,8 +197,8 @@ body.two-side .member.ready{
     overflow:hidden;
     text-overflow:ellipsis;
     transform-origin:left center;
-    transform:scale(var(--emph,1));   /* énfasis al cantar; se anima por CSS (vivo) o por JS (export) */
-    transition:color .15s var(--ease), transform .15s var(--ease);
+    transform:scale(var(--emph,1));   /* énfasis al cantar (vía --emph) */
+    transition:none;                  /* instantáneo: la sombra no aparece poco a poco al activarse */
 }
 .member.has-sung .member-name{ color:var(--accent); }
 
@@ -209,8 +209,8 @@ body.two-side .member.ready{
     font-variant-numeric:tabular-nums;
     flex-shrink:0;
     transform-origin:right center;
-    transform:scale(var(--emph,1));   /* énfasis al cantar; se anima por CSS (vivo) o por JS (export) */
-    transition:color .15s var(--ease), transform .15s var(--ease);
+    transform:scale(var(--emph,1));   /* énfasis al cantar (vía --emph) */
+    transition:none;                  /* instantáneo: la sombra no aparece poco a poco al activarse */
 }
 .member.active .member-rank{ color:var(--sing); }
 .member.active .member-photo-wrap{ border-color:var(--sing); }

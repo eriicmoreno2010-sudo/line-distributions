@@ -485,7 +485,9 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     text-overflow:ellipsis;
     white-space:nowrap;
     transform-origin:left center;
-    transition:color .15s var(--ease), transform .15s var(--ease);
+    /* color/tamaño INSTANTÁNEOS al activar/desactivar: así la sombra no "aparece"
+       poco a poco al encenderse el miembro (se notaba y no molaba). */
+    transition:none;
 }
 
 #ranking .member-time{
@@ -495,7 +497,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     color:var(--text2);
     font-variant-numeric:tabular-nums;
     transform-origin:right center;
-    transition:color .15s var(--ease), transform .15s var(--ease);
+    transition:none;
 }
 
 /* GRUPO (no sub-unidad/solista) de 4/5/6 miembros: la tarjeta es grande y el
@@ -526,8 +528,10 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
     background:var(--accent);
 }
 
+/* Ya han cantado (o terminado): nombre y contador con MÁS relleno (peso 900, como
+   al cantar) — solo los que aún no han cantado quedan más finos (800). */
 #ranking .member.has-sung .member-name,
-#ranking-left .member.has-sung .member-name{ color:var(--accent); }
+#ranking-left .member.has-sung .member-name{ color:var(--accent); font-weight:900; }
 
 /* While a member is actually singing, their whole card lights up in their
    colour (kept legible) and the counter turns their colour too. */
@@ -548,7 +552,7 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
 /* El contador se queda del COLOR del miembro una vez ha cantado (igual que en claro),
    no solo mientras canta. (active lo pone más brillante; done lo apaga, más abajo.) */
 #ranking .member.has-sung .member-time,
-#ranking-left .member.has-sung .member-time{ color:var(--accent); }
+#ranking-left .member.has-sung .member-time{ color:var(--accent); font-weight:900; }
 
 #ranking .member.active .member-rank{ color:var(--sing); }
 #ranking .member.active .member-photo-wrap,
@@ -556,12 +560,11 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
 #ranking .member.active .member-name{
     color:var(--sing);
     font-weight:900;
-    transform:scale(1.06);
+    /* el tamaño al cantar lo controla --emph (ranking.css), igual en ambas columnas */
 }
 #ranking .member.active .member-time{
     color:var(--sing);
     font-weight:900;
-    transform:scale(1.06);
 }
 #ranking .member.active .member-bar{
     background:color-mix(in srgb, #000 25%, transparent);
