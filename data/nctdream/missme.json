@@ -691,5 +691,6 @@
   ],
   "audio": "audio/nctdream_missme.mp3",
   "npC1": "#80eaf4",
-  "cover": "covers/nctdream_missme.jpg"
+  "cover": "covers/nctdream_missme.jpg",
+  "npC2": "#ce82b1"
 }
