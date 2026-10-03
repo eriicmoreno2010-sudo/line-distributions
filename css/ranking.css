@@ -54,11 +54,13 @@ Version: 4.0 — Ranking (transform leaderboard)
 .member.rising{
     z-index:55 !important;
 }
-/* Con dos columnas (>10) las tarjetas están MUY juntas: quitamos el rebote del glide
-   para que no se monten unas sobre otras (era lo que hacía "desaparecer" alguna). */
+/* Con dos columnas (>10) usamos EL MISMO glide fluido (con rebote suave) que en los
+   grupos de 10- para que las tarjetas se adelanten igual de fluidas. La que sube va
+   con z-index alto (.rising) por encima de las que pasa, así el leve rebote nunca
+   hace que "desaparezca" ninguna aunque estén juntas. */
 body.two-side .member.ready{
     transition:
-        transform .4s cubic-bezier(.4,0,.2,1),        /* ease-out, SIN overshoot, algo más rápido */
+        transform .55s cubic-bezier(.34,1.32,.5,1),   /* mismo overshoot suave que 10- */
         box-shadow .18s var(--ease),
         background-color .18s var(--ease),
         border-color .18s var(--ease);
