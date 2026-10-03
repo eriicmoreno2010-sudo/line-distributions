@@ -697,5 +697,6 @@
   ],
   "audio": "audio/nctdream_interludebacktoourparadise.mp3",
   "cover": "covers/nctdream_interludebacktoourparadise.jpg",
-  "npC1": "#26f2e5"
+  "npC1": "#26f2e5",
+  "npC2": "#e0d1db"
 }
