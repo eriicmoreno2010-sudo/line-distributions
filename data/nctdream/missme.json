@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "새벽별 (Miss Me)",
   "video": "videos/nctdream_missme_musa8wmc.mp4",
-  "duration": 206.053878,
+  "duration": 206.433333,
   "theme": "light",
   "subunit": false,
   "layout": "classic",
@@ -59,13 +59,19 @@
   ],
   "lyrics": [
     {
-      "start": 2.42,
-      "end": 6.4,
+      "start": 2.38,
+      "end": 6.37,
       "members": [],
       "original": "아쉬운 밤을, 잠시 떠나보내 나 이제",
       "romanization": "aswiun bameul, jamsi tteonabonae na ije",
       "english": "This bittersweet night, I'll let it go for now",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          2.4,
+          6.48
+        ]
+      ]
     },
     {
       "start": 6.55,
@@ -74,7 +80,13 @@
       "original": "날 위해 불러주던, Beautiful song in my head",
       "romanization": "nal wihae bulleojudeon, beautiful song in my head",
       "english": "The voice that sang for me, Beautiful song in my head",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          6.51,
+          10.46
+        ]
+      ]
     },
     {
       "start": 10.64,
@@ -83,7 +95,13 @@
       "original": "아침이 와도 우린, 여전히 같은 꿈속에",
       "romanization": "achimi wado urin, yeojeonhi gateun kkumsoge",
       "english": "Even when morning comes, we're, Still in the same dream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          10.65,
+          14.92
+        ]
+      ]
     },
     {
       "start": 14.84,
@@ -92,7 +110,17 @@
       "original": "",
       "romanization": "Do you Miss Me?, Like I miss you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          14.63,
+          15.41
+        ],
+        [
+          16.74,
+          17.56
+        ]
+      ]
     },
     {
       "start": 16.39,
@@ -110,7 +138,17 @@
       "original": "떠나질 않아, 반짝이던 네 웃음이",
       "romanization": "tteonajil ana, banjjagideon ne useumi",
       "english": "Your sparkling smile doesn't leave me, Your voice",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          17.87,
+          19.17
+        ],
+        [
+          19.9,
+          21.86
+        ]
+      ]
     },
     {
       "start": 22.05,
@@ -119,7 +157,21 @@
       "original": "참 예쁘게 날, 불러 주던 네 목소리 ay",
       "romanization": "cham yeppeuge nal, bulleo judeon ne moksori ay",
       "english": "That called out to me, So beautifully, ay",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          22.01,
+          23.37
+        ],
+        [
+          24.06,
+          26.11
+        ],
+        [
+          26.27,
+          26.71
+        ]
+      ]
     },
     {
       "start": 23.38,
@@ -137,7 +189,13 @@
       "original": "아이처럼 웃던 너를",
       "romanization": "aicheoreom utdeon neoreul",
       "english": "The way you laughed like a child",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          26.95,
+          29.69
+        ]
+      ]
     },
     {
       "start": 29.91,
@@ -146,7 +204,17 @@
       "original": "수많은 밤을 건너, 난 그리워하게 될 걸",
       "romanization": "sumaneun bameul geonneo, nan geuriwohage doel geol",
       "english": "Crossing countless nights, I know I'll end up missing you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          29.88,
+          31.78
+        ],
+        [
+          32.02,
+          33.76
+        ]
+      ]
     },
     {
       "start": 33.69,
@@ -164,7 +232,17 @@
       "original": "Do you love me, 묻는 대신 우린, 밤새 서롤 비추겠지",
       "romanization": "do you love me, munneun daesin urin, bamsae seorol bichugetji",
       "english": "Do you love me, Instead of asking, we'll, Shine on each other all night long",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.67,
+          36.41
+        ],
+        [
+          37.03,
+          42.5
+        ]
+      ]
     },
     {
       "start": 42.2,
@@ -182,7 +260,25 @@
       "original": "곧 다시 만나게 되길, 믿어 우린, 지금 우릴 우릴",
       "romanization": "got dasi mannage doegil, mideo urin, jigeum uril uril",
       "english": "I hope we'll meet again, I believe in us, Right now, us, us",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.6,
+          44.82
+        ],
+        [
+          45.14,
+          45.93
+        ],
+        [
+          46.23,
+          46.9
+        ],
+        [
+          47.05,
+          47.44
+        ]
+      ]
     },
     {
       "start": 47.79,
@@ -227,7 +323,13 @@
       "original": "",
       "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.51,
+          68.38
+        ]
+      ]
     },
     {
       "start": 68.25,
@@ -236,7 +338,13 @@
       "original": "",
       "romanization": "ooh ooh ooh, Like I missing missing you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          70.63,
+          72.48
+        ]
+      ]
     },
     {
       "start": 72.49,
@@ -245,7 +353,17 @@
       "original": "",
       "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.85,
+          76.18
+        ],
+        [
+          76.33,
+          76.88
+        ]
+      ]
     },
     {
       "start": 73.36,
@@ -263,7 +381,8 @@
       "original": "기억하면 돼, 꿈꾸면 돼, I miss you",
       "romanization": "gieokhamyeon dwae, kkumkkumyeon dwae, i miss you",
       "english": "Just remember, Just keep dreaming, I miss you",
-      "adlib": false
+      "adlib": false,
+      "voice": []
     },
     {
       "start": 81.21,
@@ -272,7 +391,21 @@
       "original": "좋아, 상상한 그대로, 펼친 그 밤으로 떠나",
       "romanization": "joa, sangsanghan geudaero, pyeolchin geu bameuro tteona",
       "english": "I like it, Just as I imagined, Let's leave for that night that unfolded",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          81.11,
+          81.77
+        ],
+        [
+          82.63,
+          84.83
+        ],
+        [
+          85.27,
+          85.89
+        ]
+      ]
     },
     {
       "start": 82.3,
@@ -290,7 +423,17 @@
       "original": "눈 깜짝할 사이에, 흐르는 시간은 몰라",
       "romanization": "nun kkamjjakal saie, heureuneun siganeun molla",
       "english": "In the blink of an eye, I don't know where the time goes",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.79,
+          88.91
+        ],
+        [
+          89.34,
+          90.04
+        ]
+      ]
     },
     {
       "start": 91.09,
@@ -299,7 +442,13 @@
       "original": "잠시만 이 순간을 멈춰",
       "romanization": "jamsiman i sunganeul meomchwo",
       "english": "Just stop this moment for a while",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.95,
+          93.26
+        ]
+      ]
     },
     {
       "start": 93.45,
@@ -317,7 +466,17 @@
       "original": "우리만의 얘기로 이 밤을 채워",
       "romanization": "urimanui yaegiro i bameul chaewo",
       "english": "Let's fill this night with a story that's just ours",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          94.02,
+          97.22
+        ],
+        [
+          95.13,
+          97.24
+        ]
+      ]
     },
     {
       "start": 97.04,
@@ -335,7 +494,17 @@
       "original": "창밖으로 별이 떠올라, 당연하게 네가 떠올라",
       "romanization": "changbakkeuro byeori tteoolla, dangyeonhage nega tteoolla",
       "english": "Stars rise outside the window, Naturally, I think of you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          97.76,
+          99.73
+        ],
+        [
+          99.88,
+          101.84
+        ]
+      ]
     },
     {
       "start": 99.36,
@@ -362,16 +531,28 @@
       "original": "절대 헷갈리지 않아",
       "romanization": "jeoldae hetgalliji ana",
       "english": "There's no mistaking it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101.92,
+          103.79
+        ]
+      ]
     },
     {
       "start": 103.77,
       "end": 105.65,
       "members": [],
-      "original": "Just you, I’ll love you like that ooh",
-      "romanization": "just you, i’ll love you like that ooh",
-      "english": "Just you, I'll love you like that ooh",
-      "adlib": false
+      "original": "",
+      "romanization": "Just you, I’ll love you like that ooh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          103.73,
+          105.89
+        ]
+      ]
     },
     {
       "start": 105.8,
@@ -380,7 +561,17 @@
       "original": "Reflection 우린 서로를 비추고 비춰",
       "romanization": "reflection urin seororeul bichugo bichwo",
       "english": "Reflection, we reflect and shine on each other",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.78,
+          106.74
+        ],
+        [
+          106.89,
+          108.77
+        ]
+      ]
     },
     {
       "start": 108.9,
@@ -389,7 +580,21 @@
       "original": "여긴 둘만의 Time, Into your mind, ooh Shining all night",
       "romanization": "yeogin dulmanui time, into your mind, ooh shining all night",
       "english": "Here, it's just our Time, Into your mind, Ooh shining all night",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          108.93,
+          110.23
+        ],
+        [
+          110.75,
+          111.8
+        ],
+        [
+          112.21,
+          113.78
+        ]
+      ]
     },
     {
       "start": 110.22,
@@ -416,7 +621,17 @@
       "original": "Love me, 말하지 않아도 알 것 같아, I can believe",
       "romanization": "love me, malhaji anado al geot gata, i can believe",
       "english": "Love me, I feel like I know even without you saying it, I can believe",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.79,
+          115.04
+        ],
+        [
+          115.62,
+          121.29
+        ]
+      ]
     },
     {
       "start": 121.33,
@@ -425,7 +640,25 @@
       "original": "꼭 다시 만나게 되길, 그때 우리, 다시 우리 우리",
       "romanization": "kkok dasi mannage doegil, geuttae uri, dasi uri uri",
       "english": "I hope we'll meet again, Then us, Us, us again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          121.32,
+          123.57
+        ],
+        [
+          123.89,
+          124.6
+        ],
+        [
+          124.98,
+          125.59
+        ],
+        [
+          125.8,
+          126.2
+        ]
+      ]
     },
     {
       "start": 126.41,
@@ -497,7 +730,17 @@
       "original": "반짝이는 Head light, 이끄는 대로 Let’s ride",
       "romanization": "banjjagineun head light, ikkeuneun daero let’s ride",
       "english": "Shining Head light, Let's ride as it leads us",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          143.3,
+          144.4
+        ],
+        [
+          145.31,
+          146.55
+        ]
+      ]
     },
     {
       "start": 144.35,
@@ -515,7 +758,17 @@
       "original": "어디라고 해도 좋아, 자유롭잖아 어디든 다",
       "romanization": "eodirago haedo joa, jayuropjana eodideun da",
       "english": "Anywhere is fine, We're free, anywhere at all",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          147.2,
+          148.62
+        ],
+        [
+          149.24,
+          151.34
+        ]
+      ]
     },
     {
       "start": 151.28,
@@ -524,7 +777,13 @@
       "original": "Need you now, Hit me up, 너의 목소릴 따라서 드리운 밤",
       "romanization": "need you now, hit me up, neoui moksoril ttaraseo deuriun bam",
       "english": "Need you now, Hit me up, This night draped in your voice",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          151.3,
+          154.99
+        ]
+      ]
     },
     {
       "start": 154.97,
@@ -533,7 +792,25 @@
       "original": "I still love you, 까만 밤 쏟아지는 별",
       "romanization": "i still love you, kkaman bam ssodajineun byeol",
       "english": "I still love you, Stars pouring down in the black night",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          155.06,
+          156.17
+        ],
+        [
+          156.32,
+          157.13
+        ],
+        [
+          157.31,
+          157.68
+        ],
+        [
+          157.82,
+          159.56
+        ]
+      ]
     },
     {
       "start": 159.56,
@@ -623,7 +900,13 @@
       "original": "",
       "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          178.24,
+          180.12
+        ]
+      ]
     },
     {
       "start": 180,
@@ -632,7 +915,13 @@
       "original": "",
       "romanization": "ooh ooh ooh, Like I missing missing you",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          182.35,
+          184.29
+        ]
+      ]
     },
     {
       "start": 180.3,
@@ -650,7 +939,17 @@
       "original": "",
       "romanization": "ooh ooh ooh, Do you Miss Me Miss Me too",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          186.46,
+          187.85
+        ],
+        [
+          188.06,
+          189.7
+        ]
+      ]
     },
     {
       "start": 184.43,
@@ -686,7 +985,17 @@
       "original": "너무 행복했어 네 곁에, I’ll miss you",
       "romanization": "neomu haengbokaesseo ne gyeote, i’ll miss you",
       "english": "I was so happy by your side, I'll miss you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          197.6,
+          199.94
+        ],
+        [
+          200.12,
+          201.2
+        ]
+      ]
     }
   ],
   "audio": "audio/nctdream_missme.mp3",
