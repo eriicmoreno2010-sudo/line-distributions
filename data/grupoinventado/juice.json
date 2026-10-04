@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "Juice",
-  "video": "",
+  "video": "videos/grupoinventado_juice_muu8su0x.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": false,
@@ -46,6 +46,48 @@
       "name": "ERIC",
       "image": "images/grupoinventado/juice/eric.png",
       "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GHD",
+      "image": "images/grupoinventado/juice/ghd.png",
+      "color": "#5cffa3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GFGDG",
+      "image": "images/grupoinventado/juice/gfgdg.png",
+      "color": "#ff5cbb",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RTERT",
+      "image": "images/grupoinventado/juice/rtert.png",
+      "color": "#e4ff5c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERTERT",
+      "image": "images/grupoinventado/juice/ertert.png",
+      "color": "#ffe45c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TET",
+      "image": "images/grupoinventado/juice/tet.png",
+      "color": "#5cffde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ET",
+      "image": "images/grupoinventado/juice/et.png",
+      "color": "#ff5c5c",
       "focus": 50,
       "lift": 3
     }
