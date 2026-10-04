@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "Cuando Estoy Contigo",
-  "video": "",
+  "video": "videos/grupoinventado_cuandoestoycontigo_muucenxr.mp4",
   "duration": 0,
   "theme": "light",
   "subunit": false,
@@ -46,6 +46,48 @@
       "name": "ERIC",
       "image": "images/grupoinventado/cuandoestoycontigo/eric.png",
       "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GHD",
+      "image": "images/grupoinventado/cuandoestoycontigo/ghd.png",
+      "color": "#5cffa3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GFGDG",
+      "image": "images/grupoinventado/cuandoestoycontigo/gfgdg.png",
+      "color": "#ff5cbb",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RTERT",
+      "image": "images/grupoinventado/cuandoestoycontigo/rtert.png",
+      "color": "#e4ff5c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERTERT",
+      "image": "images/grupoinventado/cuandoestoycontigo/ertert.png",
+      "color": "#ffe45c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TET",
+      "image": "images/grupoinventado/cuandoestoycontigo/tet.png",
+      "color": "#5cffde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ET",
+      "image": "images/grupoinventado/cuandoestoycontigo/et.png",
+      "color": "#ff5c5c",
       "focus": 50,
       "lift": 3
     }
