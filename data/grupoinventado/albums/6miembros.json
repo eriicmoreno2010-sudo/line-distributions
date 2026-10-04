@@ -1,0 +1,17 @@
+{
+  "type": "album",
+  "group": "GRUPO INVENTADO",
+  "album": "+6 MIEMBROS",
+  "cover": "",
+  "theme": "light",
+  "instrumental": "",
+  "songs": [
+    "data/grupoinventado/loles.json",
+    "data/grupoinventado/juice.json",
+    "data/grupoinventado/legado.json",
+    "data/grupoinventado/sriracha.json",
+    "data/grupoinventado/brillante.json",
+    "data/grupoinventado/cuandoestoycontigo.json",
+    "data/grupoinventado/cuandoestoycontigofixedver.json"
+  ]
+}
