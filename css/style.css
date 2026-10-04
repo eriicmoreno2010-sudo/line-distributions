@@ -81,11 +81,17 @@ body.theme-light #current-member{ color:color-mix(in srgb, var(--accent) 76%, #0
    · ha cantado / está cantando (y AÚN le queda) -> SU color FUERTE.
    · ya NO cantará más (done) -> su color pero un poco OSCURO. */
 body.theme-light #ranking .member:not(.has-sung) .member-name,
-body.theme-light #ranking .member-time{ color:#98a0af; }
+body.theme-light #ranking-left .member:not(.has-sung) .member-name,
+body.theme-light #ranking .member-time,
+body.theme-light #ranking-left .member-time{ color:#98a0af; }
 body.theme-light #ranking .member.has-sung .member-name,
+body.theme-light #ranking-left .member.has-sung .member-name,
 body.theme-light #ranking .member.has-sung .member-time,
+body.theme-light #ranking-left .member.has-sung .member-time,
 body.theme-light #ranking .member.active .member-name,
-body.theme-light #ranking .member.active .member-time{ color:var(--accent); }
+body.theme-light #ranking-left .member.active .member-name,
+body.theme-light #ranking .member.active .member-time,
+body.theme-light #ranking-left .member.active .member-time{ color:var(--accent); }
 
 /* ===== Ranking "LÍNEAS" (prueba Moonlight): SIN tarjetas; todo NEGRO por defecto;
    el COLOR del miembro sale SOLO mientras canta (.active) o cuando ya terminó (.done);
@@ -120,10 +126,14 @@ body.rank-lines #ranking .member.done  .member-photo-wrap{ border-color:var(--ac
 /* barra como "línea" con puntas redondeadas */
 body.rank-lines #ranking .member-bar{ background:rgba(0,0,0,.08); border-radius:999px; }
 body.rank-lines #ranking .member-progress{ border-radius:999px; }
-/* sombra del texto del ranking en tema claro: CLARA/suave (no la negra dura del tema oscuro) */
+/* sombra del texto del ranking en tema claro: CLARA/suave (no la negra dura del tema
+   oscuro) — en AMBAS columnas (antes solo la derecha, por eso la izquierda se veía oscura). */
 body.theme-light #ranking .member-name,
 body.theme-light #ranking .member-time,
-body.theme-light #ranking .member-rank{
+body.theme-light #ranking .member-rank,
+body.theme-light #ranking-left .member-name,
+body.theme-light #ranking-left .member-time,
+body.theme-light #ranking-left .member-rank{
     text-shadow: 0 1px 2px rgba(255,255,255,.8);
 }
 
