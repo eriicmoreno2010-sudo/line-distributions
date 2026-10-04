@@ -17,7 +17,7 @@
   "clips": [
     {
       "start": 0,
-      "end": 54.46027892552402
+      "end": 77.72686311676868
     },
     {
       "audio": "audio/grupoinventado_6miembrosa2.mp3",
@@ -44,7 +44,9 @@
       "end": 12
     },
     {
-      "audio": "audio/grupoinventado_6miembrosa7.mp3"
+      "audio": "audio/grupoinventado_6miembrosa7.mp3",
+      "start": 0,
+      "end": 12
     }
   ],
   "songColors": [
