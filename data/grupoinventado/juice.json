@@ -762,8 +762,15 @@
       "adlib": false,
       "voice": [
         [
-          89.8,
-          92.27
+          89.77,
+          90.83,
+          [
+            "TET"
+          ]
+        ],
+        [
+          90.87,
+          92.28
         ]
       ]
     },
@@ -773,14 +780,21 @@
       "members": [
         "BIEL"
       ],
-      "original": "What a commotion, 튀어 오른 찌꺼긴 옷에 묻어",
-      "romanization": "what a commotion, twieo oreun jjikkeoginose mudeo",
-      "english": "What a commotion, Flecks fly up, splatter on clothes",
+      "original": "**What a commotion,@ET** 튀어 오른 찌꺼긴 옷에 묻어",
+      "romanization": "**what a commotion,@ET** twieo oreun jjikkeoginose mudeo",
+      "english": "**What a commotion,@ET** Flecks fly up, splatter on clothes",
       "adlib": false,
       "voice": [
         [
-          92.49,
-          94.35
+          92.51,
+          93.09,
+          [
+            "ET"
+          ]
+        ],
+        [
+          93.06,
+          94.38
         ]
       ]
     },
@@ -790,14 +804,29 @@
       "members": [
         "BIEL"
       ],
-      "original": "그냥 버려 난 이미, Don’t need permission, You just watch it",
-      "romanization": "geunyang beoryeo nan imi, don't need permission, you just watch it",
-      "english": "Just get rid of it already, Don’t need permission, You just watch it",
+      "original": "그냥 버려 난 이미, **Don’t need@BIEL,ET** **permission, You just watch it@ET**",
+      "romanization": "geunyang beoryeo nan imi, **don't need@BIEL,ET** **permission, you just watch it@ET**",
+      "english": "Just get rid of it already, **Don’t need@BIEL,ET** **permission, You just watch it@ET**",
       "adlib": false,
       "voice": [
         [
-          94.45,
-          96.61
+          94.43,
+          95.34
+        ],
+        [
+          95.43,
+          95.68,
+          [
+            "BIEL",
+            "ET"
+          ]
+        ],
+        [
+          95.64,
+          96.69,
+          [
+            "ET"
+          ]
         ]
       ]
     },
