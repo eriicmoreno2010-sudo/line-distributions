@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "항해 (Beautiful Sailing)",
   "video": "videos/nctdream_beautifulsailing_muu392pl.mp4",
-  "duration": 8.516667,
+  "duration": 206.433333,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -70,8 +70,8 @@
       "adlib": false,
       "voice": [
         [
-          0.44,
-          5.67
+          0.43,
+          5.53
         ],
         [
           6.11,
@@ -138,7 +138,10 @@
         ],
         [
           24.33,
-          25.4
+          25.4,
+          [
+            "HAECHAN"
+          ]
         ]
       ]
     },
@@ -159,7 +162,10 @@
         ],
         [
           27.14,
-          29.07
+          29.07,
+          [
+            "HAECHAN"
+          ]
         ]
       ]
     },
@@ -393,7 +399,11 @@
         ],
         [
           80.96,
-          83.5
+          83.5,
+          [
+            "JENO",
+            "RENJUN"
+          ]
         ]
       ]
     },
@@ -414,7 +424,17 @@
         ],
         [
           83.89,
-          84.28
+          84.28,
+          [
+            "MARK"
+          ]
+        ],
+        [
+          84.18,
+          85.69,
+          [
+            "RENJUN"
+          ]
         ]
       ]
     },
