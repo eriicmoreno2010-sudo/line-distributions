@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "loles",
-  "video": "",
+  "video": "videos/grupoinventado_loles_muu7ysum.mp4",
   "duration": 0,
   "theme": "light",
   "subunit": false,
@@ -46,6 +46,48 @@
       "name": "ERIC",
       "image": "images/grupoinventado/loles/eric.png",
       "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GHD",
+      "image": "images/grupoinventado/loles/ghd.png",
+      "color": "#5cffa3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GFGDG",
+      "image": "images/grupoinventado/loles/gfgdg.png",
+      "color": "#ff5cbb",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RTERT",
+      "image": "images/grupoinventado/loles/rtert.png",
+      "color": "#e4ff5c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERTERT",
+      "image": "images/grupoinventado/loles/ertert.png",
+      "color": "#ffe45c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TET",
+      "image": "images/grupoinventado/loles/tet.png",
+      "color": "#5cffde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ET",
+      "image": "images/grupoinventado/loles/et.png",
+      "color": "#ff5c5c",
       "focus": 50,
       "lift": 3
     }
