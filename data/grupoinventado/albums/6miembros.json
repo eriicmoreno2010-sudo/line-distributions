@@ -13,5 +13,32 @@
     "data/grupoinventado/brillante.json",
     "data/grupoinventado/cuandoestoycontigo.json",
     "data/grupoinventado/cuandoestoycontigofixedver.json"
-  ]
+  ],
+  "clips": [
+    {
+      "start": 0,
+      "end": 12
+    },
+    {},
+    {},
+    {},
+    {
+      "start": 0,
+      "end": 12
+    },
+    {},
+    {}
+  ],
+  "songColors": [
+    "#ff4d6d",
+    "#4dabf7",
+    "#ffa94d",
+    "#cc5de8",
+    "#20c997",
+    "#ffd43b",
+    "#748ffc"
+  ],
+  "raceColor": "#000000",
+  "versions": [],
+  "bgAudio": {}
 }
