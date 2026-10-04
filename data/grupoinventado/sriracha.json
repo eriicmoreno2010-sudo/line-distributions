@@ -463,9 +463,9 @@
         "HAECHAN",
         "MICHELLE"
       ],
-      "original": "변함이 없어 We’re still louder, 손대는 것이 곧 Piñata",
-      "romanization": "byeonhami eopseo we’re still louder, sondaeneun geosi got piñata",
-      "english": "Nothing has changed We're still louder, Anything we touch becomes a Piñata",
+      "original": "변함이 없어 We’re still louder, **손대는 것이 곧 Piñata@GHD**",
+      "romanization": "byeonhami eopseo we’re still louder, **sondaeneun geosi got piñata@GHD**",
+      "english": "Nothing has changed We're still louder, **Anything we touch becomes a Piñata@GHD**",
       "adlib": false,
       "voice": [
         [
@@ -474,7 +474,10 @@
         ],
         [
           72.19,
-          74.45
+          74.45,
+          [
+            "GHD"
+          ]
         ]
       ]
     },
