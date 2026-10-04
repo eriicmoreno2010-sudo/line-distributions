@@ -145,8 +145,8 @@
   ],
   "lyrics": [
     {
-      "start": 5.43,
-      "end": 9.84,
+      "start": 6.95,
+      "end": 9.78,
       "members": [
         "ALLEN"
       ],
@@ -1177,7 +1177,7 @@
   "cover": "covers/cravity_luckycharm.jpg",
   "npC1": "#f29326",
   "npC2": "#e7ff2e",
-  "audioOffset": -0.15,
+  "audioOffset": 0,
   "instrumental": "audio/cravity_luckycharm_inst.mp3",
   "instrumentalStart": 48.97073793028846,
   "instrumentalEnd": 73.61760349439102,
