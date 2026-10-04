@@ -39,9 +39,13 @@
       "end": 12
     },
     {
-      "audio": "audio/grupoinventado_6miembrosa6.mp3"
+      "audio": "audio/grupoinventado_6miembrosa6.mp3",
+      "start": 0,
+      "end": 12
     },
-    {}
+    {
+      "audio": "audio/grupoinventado_6miembrosa7.mp3"
+    }
   ],
   "songColors": [
     "#ff4d6d",
