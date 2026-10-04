@@ -13,11 +13,12 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.566,
-        "size": 1,
-        "rot": 0,
-        "flip": false
+        "cx": 0.5629,
+        "cy": 0.5237,
+        "size": 0.7738,
+        "rot": 21,
+        "flip": false,
+        "blur": 0
       }
     },
     {
@@ -27,11 +28,12 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.412,
+        "cx": 0.5375,
+        "cy": 0.4189,
         "size": 1,
         "rot": 0,
-        "flip": false
+        "flip": false,
+        "blur": 0
       }
     },
     {
@@ -41,11 +43,12 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.382,
-        "size": 1,
+        "cx": 0.4897,
+        "cy": 0.3458,
+        "size": 0.8145,
         "rot": 0,
-        "flip": false
+        "flip": false,
+        "blur": 0
       }
     },
     {
@@ -55,11 +58,12 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.534,
-        "size": 1,
+        "cx": 0.5268,
+        "cy": 0.5506,
+        "size": 0.8574,
         "rot": 0,
-        "flip": false
+        "flip": false,
+        "blur": 0
       }
     },
     {
@@ -69,11 +73,12 @@
       "focus": 50,
       "lift": 3,
       "frame": {
-        "cx": 0.5,
-        "cy": 0.4764,
-        "size": 1,
+        "cx": 0.5636,
+        "cy": 0.4667,
+        "size": 0.8145,
         "rot": 0,
-        "flip": false
+        "flip": false,
+        "blur": 0
       }
     },
     {
@@ -87,7 +92,8 @@
         "cy": 0.486,
         "size": 0.445,
         "rot": 0,
-        "flip": false
+        "flip": false,
+        "blur": 0
       }
     }
   ],
