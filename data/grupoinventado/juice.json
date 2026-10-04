@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Juice",
   "video": "videos/grupoinventado_juice_muu8su0x.mp4",
-  "duration": 0,
+  "duration": 186.143583,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -95,14 +95,1573 @@
   "lyrics": [
     {
       "start": 0,
-      "end": 0,
+      "end": 7.45,
       "members": [
         "ARNAU"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "Smoothie yes sir umm",
       "english": "",
-      "adlib": ""
+      "adlib": false,
+      "voice": [
+        [
+          0.02,
+          0.5
+        ],
+        [
+          2.5,
+          3.96
+        ],
+        [
+          4.12,
+          4.58
+        ],
+        [
+          6.9,
+          7.41
+        ]
+      ]
+    },
+    {
+      "start": 8.47,
+      "end": 9.08,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "Listen",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          8.53,
+          9.05
+        ]
+      ]
+    },
+    {
+      "start": 9.35,
+      "end": 11.32,
+      "members": [
+        "BIEL"
+      ],
+      "original": "Good boy, 이제 더는 없어 I’mma bad",
+      "romanization": "good boy, ije deoneun eopseo i'mma bad",
+      "english": "No more, Good boy, I'mma bad",
+      "adlib": false,
+      "voice": [
+        [
+          9.27,
+          11.32
+        ]
+      ]
+    },
+    {
+      "start": 11.51,
+      "end": 13.58,
+      "members": [
+        "BIEL"
+      ],
+      "original": "Soft하게 Twist, Give you just a lil’ taste ha",
+      "romanization": "softhage twist, give you just a little taste ha",
+      "english": "Softly Twist, Give you just a lil' taste ha",
+      "adlib": false,
+      "voice": [
+        [
+          11.54,
+          13.64
+        ]
+      ]
+    },
+    {
+      "start": 13.99,
+      "end": 15.98,
+      "members": [
+        "BIEL"
+      ],
+      "original": "가차 없이 비틀어 논 다음",
+      "romanization": "gacha eopsi biteureo non daeum",
+      "english": "Whirl it up all without mercy then",
+      "adlib": false,
+      "voice": [
+        [
+          13.94,
+          14.5
+        ],
+        [
+          14.65,
+          15
+        ],
+        [
+          15.18,
+          15.94
+        ]
+      ]
+    },
+    {
+      "start": 16.16,
+      "end": 18.04,
+      "members": [
+        "BIEL"
+      ],
+      "original": "삼켜 Sip, Watch how I blend it up",
+      "romanization": "samkyeo sip, watch how i blend it up",
+      "english": "Sip 'n' swallow, Watch how I blend it up",
+      "adlib": false,
+      "voice": [
+        [
+          16.18,
+          16.59
+        ],
+        [
+          16.77,
+          17.07
+        ],
+        [
+          17.25,
+          18.09
+        ]
+      ]
+    },
+    {
+      "start": 18.1,
+      "end": 20.12,
+      "members": [
+        "TET"
+      ],
+      "original": "가릴 것이 없어, 우린 목이 말라 마침",
+      "romanization": "garil geosi eopseo, urin mogi malla machim",
+      "english": "We ain't picky, Just happen to be thirsty",
+      "adlib": false,
+      "voice": [
+        [
+          18.07,
+          20.24
+        ]
+      ]
+    },
+    {
+      "start": 20.27,
+      "end": 22.43,
+      "members": [
+        "TET"
+      ],
+      "original": "보여줄게, 네가 바란 무자비한 방식",
+      "romanization": "boyeojulge, nega baran mujabihan bangsik",
+      "english": "Show you, This ruthless method you wanted",
+      "adlib": false,
+      "voice": [
+        [
+          20.26,
+          22.49
+        ]
+      ]
+    },
+    {
+      "start": 22.61,
+      "end": 26.41,
+      "members": [
+        "MICHELLE"
+      ],
+      "original": "Strawberry sweet cinnamon, 어서 Pop that corn 터트려봐",
+      "romanization": "strawberry sweet cinnamon, eoseo pop that corn teoteuryeobwa",
+      "english": "Strawberry sweet cinnamon, C'mon, go ahead Pop that corn",
+      "adlib": false,
+      "voice": [
+        [
+          22.67,
+          23.55
+        ],
+        [
+          23.81,
+          24.71
+        ],
+        [
+          24.92,
+          26.79
+        ]
+      ]
+    },
+    {
+      "start": 26.54,
+      "end": 28.87,
+      "members": [
+        "RTERT"
+      ],
+      "original": "You should know what you missin’, 수준대로 Guessin’",
+      "romanization": "you should know what you missin', sujundaero guessin'",
+      "english": "You should know what you missin’, Your level is where you Guessin'",
+      "adlib": false,
+      "voice": [
+        [
+          26.47,
+          27.66
+        ],
+        [
+          27.89,
+          28.8
+        ]
+      ]
+    },
+    {
+      "start": 29.02,
+      "end": 30.72,
+      "members": [
+        "RTERT"
+      ],
+      "original": "Freeze like ice, 단 한 번에 Crushin’",
+      "romanization": "freeze like ice, dan han beone crushin'",
+      "english": "Freeze like ice, One punch Crushin'",
+      "adlib": false,
+      "voice": [
+        [
+          29.01,
+          31
+        ]
+      ]
+    },
+    {
+      "start": 30.87,
+      "end": 32.98,
+      "members": [
+        "BIEL"
+      ],
+      "original": "날것 그대로인 Action, 껍질째로 밟아 우선",
+      "romanization": "nalgeot geudaeroin action, kkeopjiljjaero balba useon",
+      "english": "Raw, unedited Action, Skin 'n' all, first we stompin'",
+      "adlib": false,
+      "voice": [
+        [
+          30.92,
+          33.06
+        ]
+      ]
+    },
+    {
+      "start": 33.11,
+      "end": 34.86,
+      "members": [
+        "BIEL"
+      ],
+      "original": "수도 없이 견딘 상처, 위로 들이부어 실컷",
+      "romanization": "sudo eopsi gyeondin sangcheo, wiro deuribueo silkeot",
+      "english": "Countless cuts we'd suffer, Raise 'n' pour till it runneth over",
+      "adlib": false,
+      "voice": [
+        [
+          33.02,
+          35.38
+        ]
+      ]
+    },
+    {
+      "start": 35.05,
+      "end": 39.16,
+      "members": [
+        "IRENE"
+      ],
+      "original": "끈적하게 날, 타고 흘러내린 Trauma",
+      "romanization": "kkeunjeokage nal, tago heulleonaerin trauma",
+      "english": "Feels sticky on me, This Trauma tricklin' down me",
+      "adlib": false,
+      "voice": [
+        [
+          34.98,
+          36.83
+        ],
+        [
+          37.16,
+          39.18
+        ]
+      ]
+    },
+    {
+      "start": 39.31,
+      "end": 43.2,
+      "members": [
+        "MICHELLE"
+      ],
+      "original": "씹어 삼켜 바닥까지, Cuz you’re my",
+      "romanization": "ssibeo samkyeo badakkkaji, 'cuz you're my",
+      "english": "To the bottom, swallow it all chewy, Cuz you’re my",
+      "adlib": false,
+      "voice": [
+        [
+          39.36,
+          43.18
+        ]
+      ]
+    },
+    {
+      "start": 43.66,
+      "end": 44.13,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "",
+      "romanization": "Smoothie",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 44.28,
+      "end": 47.33,
+      "members": [
+        "ET"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          44.25,
+          44.69
+        ],
+        [
+          44.83,
+          45.22
+        ],
+        [
+          45.4,
+          45.75
+        ],
+        [
+          45.93,
+          46.26
+        ],
+        [
+          46.47,
+          46.82
+        ],
+        [
+          47,
+          47.43
+        ]
+      ]
+    },
+    {
+      "start": 47.48,
+      "end": 48.44,
+      "members": [
+        "ET"
+      ],
+      "original": "다 털어 갈아 넣어",
+      "romanization": "da teoreo gara neoeo",
+      "english": "Shake it all in and blend it",
+      "adlib": false,
+      "voice": [
+        [
+          47.52,
+          48.62
+        ]
+      ]
+    },
+    {
+      "start": 48.61,
+      "end": 51.73,
+      "members": [
+        "ET"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          48.66,
+          49.01
+        ],
+        [
+          49.2,
+          49.55
+        ],
+        [
+          49.7,
+          50.09
+        ],
+        [
+          50.23,
+          50.62
+        ],
+        [
+          50.77,
+          51.12
+        ],
+        [
+          51.31,
+          51.77
+        ]
+      ]
+    },
+    {
+      "start": 51.86,
+      "end": 52.93,
+      "members": [
+        "ET"
+      ],
+      "original": "Dirty taste 들이켜",
+      "romanization": "dirty taste deurikyeo",
+      "english": "Dirty taste drink it up",
+      "adlib": false,
+      "voice": [
+        [
+          51.9,
+          52.95
+        ]
+      ]
+    },
+    {
+      "start": 53.04,
+      "end": 56.1,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          53,
+          53.38
+        ],
+        [
+          53.56,
+          53.94
+        ],
+        [
+          54.09,
+          54.47
+        ],
+        [
+          54.62,
+          55.03
+        ],
+        [
+          55.19,
+          55.57
+        ],
+        [
+          55.72,
+          56.2
+        ]
+      ]
+    },
+    {
+      "start": 56.25,
+      "end": 57.21,
+      "members": [
+        "MARC"
+      ],
+      "original": "가볍게 씹어 삼켜",
+      "romanization": "gabyeopge ssibeo samkyeo",
+      "english": "Chew a bit 'n' swallow it",
+      "adlib": false,
+      "voice": [
+        [
+          56.25,
+          57.34
+        ]
+      ]
+    },
+    {
+      "start": 57.36,
+      "end": 59.46,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie, Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          57.37,
+          57.83
+        ],
+        [
+          57.95,
+          58.31
+        ],
+        [
+          58.49,
+          58.87
+        ],
+        [
+          59.03,
+          59.47
+        ]
+      ]
+    },
+    {
+      "start": 64.37,
+      "end": 66.01,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "Sip it sip it down like Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          64.39,
+          66.06
+        ]
+      ]
+    },
+    {
+      "start": 68.73,
+      "end": 70.17,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "Sip it sip it down like Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          68.73,
+          70.47
+        ]
+      ]
+    },
+    {
+      "start": 70.32,
+      "end": 74.46,
+      "members": [
+        "GFGDG"
+      ],
+      "original": "때려 넣어 Doubt and fake, 쏟아부어 모든 Pain",
+      "romanization": "ttaeryeo neoeo doubt and fake, ssodabueo modeun pain",
+      "english": "Throw in that Doubt and fake, Pour in all that Pain",
+      "adlib": false,
+      "voice": [
+        [
+          70.45,
+          72.18
+        ],
+        [
+          72.6,
+          74.39
+        ]
+      ]
+    },
+    {
+      "start": 75.01,
+      "end": 78.98,
+      "members": [
+        "GFGDG"
+      ],
+      "original": "Shower that in all this ice, 결국엔 녹아 Fade out",
+      "romanization": "shower that in all this ice, gyeolgugen noga fade out",
+      "english": "Shower that in all this ice, Eventually it all melts, Fade out",
+      "adlib": false,
+      "voice": [
+        [
+          75.09,
+          77.15
+        ],
+        [
+          77.29,
+          80.15
+        ]
+      ]
+    },
+    {
+      "start": 79.11,
+      "end": 82.21,
+      "members": [
+        "ERIC"
+      ],
+      "original": "어디 더 던져봐 Stuff, Syrup and sugar like buff",
+      "romanization": "eodi deo deonjyeobwa stuff, syrup and sugar like buff",
+      "english": "Go ahead toss in more Stuff, Syrup and sugar like buff",
+      "adlib": false,
+      "voice": [
+        [
+          79.11,
+          83.5
+        ]
+      ]
+    },
+    {
+      "start": 82.37,
+      "end": 86.39,
+      "members": [
+        "GHD"
+      ],
+      "original": "",
+      "romanization": "We make it easy, I’m gonna take it all",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          82.4,
+          84.31
+        ],
+        [
+          84.61,
+          88.03
+        ]
+      ]
+    },
+    {
+      "start": 86.55,
+      "end": 87.93,
+      "members": [
+        "TET"
+      ],
+      "original": "",
+      "romanization": "Ayo Check it huh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          86.54,
+          87.04
+        ],
+        [
+          87.19,
+          87.55
+        ],
+        [
+          87.69,
+          87.99
+        ]
+      ]
+    },
+    {
+      "start": 88.09,
+      "end": 89.71,
+      "members": [
+        "TET"
+      ],
+      "original": "재료는 차고 넘쳐, 새로 만든 Menu",
+      "romanization": "jaeryoneun chago neomchyeo, saero mandeun menu",
+      "english": "More than enough ingredients, Created this new Menu",
+      "adlib": false,
+      "voice": [
+        [
+          88.09,
+          89.73
+        ]
+      ]
+    },
+    {
+      "start": 89.82,
+      "end": 92.27,
+      "members": [
+        "MARC"
+      ],
+      "original": "**So delicious vicious, 뭐래@TET**도 I deserve, I’mma killa huh",
+      "romanization": "**so delicious vicious, mworae@TET**do i deserve, i'mma killa huh",
+      "english": "**So delicious vicious, Say whatever, sti@TET**ll I deserve, I’mma killa huh",
+      "adlib": false,
+      "voice": [
+        [
+          89.8,
+          92.27
+        ]
+      ]
+    },
+    {
+      "start": 92.45,
+      "end": 94.27,
+      "members": [
+        "BIEL"
+      ],
+      "original": "What a commotion, 튀어 오른 찌꺼긴 옷에 묻어",
+      "romanization": "what a commotion, twieo oreun jjikkeoginose mudeo",
+      "english": "What a commotion, Flecks fly up, splatter on clothes",
+      "adlib": false,
+      "voice": [
+        [
+          92.49,
+          94.35
+        ]
+      ]
+    },
+    {
+      "start": 94.42,
+      "end": 96.42,
+      "members": [
+        "BIEL"
+      ],
+      "original": "그냥 버려 난 이미, Don’t need permission, You just watch it",
+      "romanization": "geunyang beoryeo nan imi, don't need permission, you just watch it",
+      "english": "Just get rid of it already, Don’t need permission, You just watch it",
+      "adlib": false,
+      "voice": [
+        [
+          94.45,
+          96.61
+        ]
+      ]
+    },
+    {
+      "start": 96.54,
+      "end": 98.55,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "Shakin’ stirrin’ drinkin’ up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          96.61,
+          98.56
+        ]
+      ]
+    },
+    {
+      "start": 98.73,
+      "end": 100.26,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "(ho! Give us some more)",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          98.81,
+          99.19
+        ],
+        [
+          99.37,
+          100.44
+        ]
+      ]
+    },
+    {
+      "start": 100.39,
+      "end": 102.09,
+      "members": [
+        "GHD"
+      ],
+      "original": "",
+      "romanization": "Hot and spicy Mix it up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          100.41,
+          102.25
+        ]
+      ]
+    },
+    {
+      "start": 102.24,
+      "end": 104.89,
+      "members": [
+        "BIEL"
+      ],
+      "original": "Wait stop 입은 다물고 봐, I’m ridin’ that new wave",
+      "romanization": "wait stop ibeun damulgo bwa, i'm ridin' that new wave",
+      "english": "Wait stop Close your mouth when you stare, I’m ridin’ that new wave",
+      "adlib": false,
+      "voice": [
+        [
+          102.4,
+          103.02
+        ],
+        [
+          103.22,
+          104.76
+        ],
+        [
+          104.9,
+          105.38
+        ]
+      ]
+    },
+    {
+      "start": 105.07,
+      "end": 107.38,
+      "members": [
+        "MARC"
+      ],
+      "original": "You should know what you missin’, 취향대로 Guessin’",
+      "romanization": "you should know what you missin', chwihyangdaero guessin'",
+      "english": "You should know what you missin’, Your taste shows when Guessin'",
+      "adlib": false,
+      "voice": [
+        [
+          105.07,
+          106.25
+        ],
+        [
+          106.49,
+          107.36
+        ]
+      ]
+    },
+    {
+      "start": 107.5,
+      "end": 109.37,
+      "members": [
+        "MARC"
+      ],
+      "original": "Freeze like ice, 더 거칠게 Mess up",
+      "romanization": "freeze like ice, deo geochilge mess up",
+      "english": "Freeze like ice, Mess up, rough it up",
+      "adlib": false,
+      "voice": [
+        [
+          107.58,
+          109.63
+        ]
+      ]
+    },
+    {
+      "start": 5.26,
+      "end": 5.73,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "(Ha ha)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          5.28,
+          5.74
+        ]
+      ]
+    },
+    {
+      "start": 27.66,
+      "end": 27.99,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "(Hey)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          27.62,
+          27.96
+        ]
+      ]
+    },
+    {
+      "start": 28.74,
+      "end": 29.04,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "(Hey)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          28.7,
+          29.09
+        ]
+      ]
+    },
+    {
+      "start": 30.33,
+      "end": 31.04,
+      "members": [
+        "MARC"
+      ],
+      "original": "",
+      "romanization": "(Brrah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          30.31,
+          31.11
+        ]
+      ]
+    },
+    {
+      "start": 108.58,
+      "end": 111.99,
+      "members": [
+        "MICHELLE"
+      ],
+      "original": "(거칠게 Mess up yeah)",
+      "romanization": "(geochilge mess up yeah)",
+      "english": "(Rough that Mess up yeah)",
+      "adlib": true,
+      "voice": [
+        [
+          108.64,
+          111.98
+        ]
+      ]
+    },
+    {
+      "start": 115.21,
+      "end": 116.94,
+      "members": [
+        "ERIC"
+      ],
+      "original": "(끈적하게 날 뒤덮)",
+      "romanization": "(kkeunjeokage nal dwideop)",
+      "english": "(Felt sticky on me)",
+      "adlib": true,
+      "voice": [
+        [
+          115.18,
+          117.03
+        ]
+      ]
+    },
+    {
+      "start": 134.74,
+      "end": 136.72,
+      "members": [
+        "RTERT"
+      ],
+      "original": "(가볍게 씹어 삼켜 Smoothie)",
+      "romanization": "(gabyeopge ssibeo samkyeo smoothie)",
+      "english": "(Chew a bit and swallow it Smoothie)",
+      "adlib": true,
+      "voice": [
+        [
+          134.79,
+          136.74
+        ]
+      ]
+    },
+    {
+      "start": 144.08,
+      "end": 146.59,
+      "members": [
+        "GHD"
+      ],
+      "original": "(괜찮아)",
+      "romanization": "(gwaenchana)",
+      "english": "(Fine with it)",
+      "adlib": true,
+      "voice": [
+        [
+          144.1,
+          146.52
+        ]
+      ]
+    },
+    {
+      "start": 152.54,
+      "end": 153.53,
+      "members": [
+        "MARC"
+      ],
+      "original": "(흘러간 뒤)",
+      "romanization": "(heulleogan dwi)",
+      "english": "(After it flows)",
+      "adlib": true,
+      "voice": [
+        [
+          152.52,
+          153.44
+        ]
+      ]
+    },
+    {
+      "start": 109.52,
+      "end": 111.48,
+      "members": [
+        "BIEL"
+      ],
+      "original": "훤히 드러나는 Action, 배배 꼬여버린 시선",
+      "romanization": "hwonhi deureonaneun action, baebae kkoyeobeorin siseon",
+      "english": "Obvious, transparent Action, View's all twisted distortion",
+      "adlib": false,
+      "voice": [
+        [
+          109.42,
+          111.61
+        ]
+      ]
+    },
+    {
+      "start": 111.6,
+      "end": 113.39,
+      "members": [
+        "BIEL"
+      ],
+      "original": "밟아버리는 게 Mission, 우린 Special한 Edition",
+      "romanization": "balbabeorineun ge mission, urin specialhan edition",
+      "english": "Crush it, that's the Mission, We're a Special Edition",
+      "adlib": false,
+      "voice": [
+        [
+          111.64,
+          113.91
+        ]
+      ]
+    },
+    {
+      "start": 113.52,
+      "end": 117.76,
+      "members": [
+        "MICHELLE"
+      ],
+      "original": "끈적하게 날, 뒤덮었던 흉터를 봐",
+      "romanization": "kkeunjeokage nal, dwideopeotdeon hyungteoreul bwa",
+      "english": "Felt sticky on me, These scars once all over me",
+      "adlib": false,
+      "voice": [
+        [
+          113.54,
+          115.41
+        ],
+        [
+          115.68,
+          117.84
+        ]
+      ]
+    },
+    {
+      "start": 117.89,
+      "end": 121.78,
+      "members": [
+        "IRENE"
+      ],
+      "original": "흔적 없이 끝을 내지, Watch me now",
+      "romanization": "heunjeok eopsi kkeuteul naeji, watch me now",
+      "english": "End without a trace, Watch me now",
+      "adlib": false,
+      "voice": [
+        [
+          117.9,
+          121.76
+        ]
+      ]
+    },
+    {
+      "start": 122.19,
+      "end": 122.62,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "",
+      "romanization": "Smoothie",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 122.77,
+      "end": 125.92,
+      "members": [
+        "BIEL"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          122.78,
+          123.21
+        ],
+        [
+          123.37,
+          123.75
+        ],
+        [
+          123.93,
+          124.31
+        ],
+        [
+          124.5,
+          124.85
+        ],
+        [
+          125.03,
+          125.41
+        ],
+        [
+          125.59,
+          126.02
+        ]
+      ]
+    },
+    {
+      "start": 126.06,
+      "end": 127.02,
+      "members": [
+        "BIEL"
+      ],
+      "original": "다 털어 갈아 넣어",
+      "romanization": "da teoreo gara neoeo",
+      "english": "Shake it all in and blend it",
+      "adlib": false,
+      "voice": [
+        [
+          126.07,
+          127.13
+        ]
+      ]
+    },
+    {
+      "start": 127.14,
+      "end": 130.28,
+      "members": [
+        "BIEL"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          127.17,
+          127.6
+        ],
+        [
+          127.75,
+          128.14
+        ],
+        [
+          128.29,
+          128.67
+        ],
+        [
+          128.83,
+          129.23
+        ],
+        [
+          129.38,
+          129.79
+        ],
+        [
+          129.94,
+          130.35
+        ]
+      ]
+    },
+    {
+      "start": 130.43,
+      "end": 131.42,
+      "members": [
+        "BIEL"
+      ],
+      "original": "Dirty taste 들이켜",
+      "romanization": "dirty taste deurikyeo",
+      "english": "Dirty taste drink it up",
+      "adlib": false,
+      "voice": [
+        [
+          130.41,
+          131.47
+        ]
+      ]
+    },
+    {
+      "start": 131.54,
+      "end": 134.62,
+      "members": [
+        "RTERT"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          131.53,
+          131.97
+        ],
+        [
+          132.15,
+          132.53
+        ],
+        [
+          132.69,
+          133.07
+        ],
+        [
+          133.25,
+          133.66
+        ],
+        [
+          133.81,
+          134.19
+        ],
+        [
+          134.34,
+          134.78
+        ]
+      ]
+    },
+    {
+      "start": 134.8,
+      "end": 135.7,
+      "members": [
+        "RTERT"
+      ],
+      "original": "가볍게 씹어 삼켜",
+      "romanization": "gabyeopge ssibeo samkyeo",
+      "english": "Chew a bit 'n' swallow it",
+      "adlib": false,
+      "voice": [
+        [
+          134.78,
+          135.88
+        ]
+      ]
+    },
+    {
+      "start": 135.86,
+      "end": 137.99,
+      "members": [
+        "RTERT"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie, Smoothie Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          135.89,
+          136.33
+        ],
+        [
+          136.48,
+          136.87
+        ],
+        [
+          137.02,
+          137.4
+        ],
+        [
+          137.52,
+          137.99
+        ]
+      ]
+    },
+    {
+      "start": 141.35,
+      "end": 144.71,
+      "members": [
+        "MICHELLE"
+      ],
+      "original": "얼마든지 괴로워도 괜찮아",
+      "romanization": "eolmadeunji goerowodo gwaenchana",
+      "english": "No matter the agony, I'm fine with it",
+      "adlib": false,
+      "voice": [
+        [
+          141.42,
+          144.73
+        ]
+      ]
+    },
+    {
+      "start": 145.69,
+      "end": 148.8,
+      "members": [
+        "MICHELLE"
+      ],
+      "original": "달콤함만 기대한 적 없어 난",
+      "romanization": "dalkomhamman gidaehan jeok eopseo nan",
+      "english": "Never did I expect only sweetness",
+      "adlib": false,
+      "voice": [
+        [
+          145.73,
+          149.03
+        ]
+      ]
+    },
+    {
+      "start": 148.92,
+      "end": 153.11,
+      "members": [
+        "GHD"
+      ],
+      "original": "모든 고통이, 전부 녹아 흐른 뒤",
+      "romanization": "modeun gotongi, jeonbu noga heureun dwi",
+      "english": "After all the pain, Melts and flows",
+      "adlib": false,
+      "voice": [
+        [
+          148.97,
+          150.5
+        ],
+        [
+          150.67,
+          153.09
+        ]
+      ]
+    },
+    {
+      "start": 153.29,
+      "end": 157.83,
+      "members": [
+        "ERIC"
+      ],
+      "original": "다시 채워지는 새로운 나",
+      "romanization": "dasi chaewojineun saeroun na",
+      "english": "Fill me up again a whole new me",
+      "adlib": false,
+      "voice": [
+        [
+          153.32,
+          157.72
+        ]
+      ]
+    },
+    {
+      "start": 157.95,
+      "end": 159.62,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "Sip it down real smooth you know",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          157.97,
+          159.66
+        ]
+      ]
+    },
+    {
+      "start": 159.89,
+      "end": 163.08,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 161.49,
+      "end": 164.16,
+      "members": [
+        "GFGDG"
+      ],
+      "original": "",
+      "romanization": "(Sip it down yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          161.47,
+          164.18
+        ]
+      ]
+    },
+    {
+      "start": 163.24,
+      "end": 164.08,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "다 털어 갈아 넣어",
+      "romanization": "da teoreo gara neoeo",
+      "english": "Shake it all in and blend it",
+      "adlib": false
+    },
+    {
+      "start": 164.23,
+      "end": 167.37,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 165.83,
+      "end": 168.49,
+      "members": [
+        "ET"
+      ],
+      "original": "",
+      "romanization": "(Pour it like Smoothie yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          165.8,
+          166.96
+        ],
+        [
+          167.2,
+          168.5
+        ]
+      ]
+    },
+    {
+      "start": 167.53,
+      "end": 168.47,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "Dirty taste 들이켜",
+      "romanization": "dirty taste deurikyeo",
+      "english": "Dirty taste drink it up",
+      "adlib": false
+    },
+    {
+      "start": 167.56,
+      "end": 169.78,
+      "members": [
+        "MICHELLE"
+      ],
+      "original": "(Dirty taste 들이켜 Smoothie)",
+      "romanization": "(dirty taste deurikyeo smoothie)",
+      "english": "(Dirty taste drink it up Smoothie)",
+      "adlib": true,
+      "voice": [
+        [
+          167.53,
+          169.78
+        ]
+      ]
+    },
+    {
+      "start": 168.63,
+      "end": 171.74,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie Smoothie, Smoothie Smoothie Smoothie",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 171.89,
+      "end": 172.85,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "가볍게 씹어 삼켜",
+      "romanization": "gabyeopge ssibeo samkyeo",
+      "english": "Chew a bit 'n' swallow it",
+      "adlib": false
+    },
+    {
+      "start": 171.88,
+      "end": 173.51,
+      "members": [
+        "GHD"
+      ],
+      "original": "(가볍게 씹어 삼켜 Smoothie)",
+      "romanization": "(gabyeopge ssibeo samkyeo smoothie)",
+      "english": "(Chew a bit 'n' swallow it Smoothie)",
+      "adlib": true,
+      "voice": [
+        [
+          171.9,
+          173.54
+        ]
+      ]
+    },
+    {
+      "start": 174.84,
+      "end": 175.53,
+      "members": [
+        "GHD"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          174.83,
+          175.5
+        ]
+      ]
+    },
+    {
+      "start": 173.02,
+      "end": 174.98,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "",
+      "romanization": "Smoothie Smoothie, Smoothie Smoothie",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 176.77,
+      "end": 178.82,
+      "members": [
+        "ERTERT"
+      ],
+      "original": "끈적하게 날",
+      "romanization": "kkeunjeokage nal",
+      "english": "Feels sticky on me",
+      "adlib": false,
+      "voice": [
+        [
+          176.81,
+          178.82
+        ]
+      ]
+    },
+    {
+      "start": 179.98,
+      "end": 181.68,
+      "members": [
+        "BIEL"
+      ],
+      "original": "",
+      "romanization": "Sip it sip it down like Smoothie",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          180.04,
+          181.72
+        ]
+      ]
+    },
+    {
+      "start": 184.38,
+      "end": 185.49,
+      "members": [
+        "TET"
+      ],
+      "original": "",
+      "romanization": "Sip it sip it down like",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          184.34,
+          185.45
+        ]
+      ]
+    },
+    {
+      "start": 185.5,
+      "end": 186.06,
+      "members": [
+        "GRUPO INVENTADO"
+      ],
+      "original": "",
+      "romanization": "Smoothie",
+      "english": "",
+      "adlib": false
     }
   ]
 }
