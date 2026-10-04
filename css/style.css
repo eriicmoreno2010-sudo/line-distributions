@@ -485,10 +485,9 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     text-overflow:ellipsis;
     white-space:nowrap;
     transform-origin:left center;
-    /* Transición SUAVE al activar/desactivar (fluida). La sombra se funde a la vez
-       que el fondo de la tarjeta se ilumina (.18s), así NUNCA "aparece" sobre el
-       fondo ya verde (era lo que se notaba al empezar a cantar). */
-    transition:color .22s var(--ease), transform .22s var(--ease), text-shadow .18s var(--ease);
+    /* Transición SUAVE de color/tamaño (fluida); la sombra NO se transiciona: es
+       constante y visible todo el rato. */
+    transition:color .22s var(--ease), transform .22s var(--ease);
 }
 
 #ranking .member-time{
@@ -498,7 +497,7 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     color:var(--text2);
     font-variant-numeric:tabular-nums;
     transform-origin:right center;
-    transition:color .22s var(--ease), transform .22s var(--ease), text-shadow .18s var(--ease);
+    transition:color .22s var(--ease), transform .22s var(--ease);
 }
 
 /* GRUPO (no sub-unidad/solista) de 4/5/6 miembros: la tarjeta es grande y el
@@ -680,20 +679,13 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
    (se veían más delgados) y no en los claros. Ahora el relleno queda completo
    (grosor como la columna izquierda, que no tenía sombra) y en AMBAS columnas
    por igual, manteniendo una sombra para separar del fondo. */
+/* Sombra CONSTANTE en TODOS los estados (también mientras cantan): siempre visible,
+   nunca aparece ni se quita. */
 #ranking .member-name, #ranking .member-time, #ranking .member-rank,
 #ranking-left .member-name, #ranking-left .member-time, #ranking-left .member-rank{
     text-shadow:
         0 1px 2px rgba(0,0,0,.5),
         0 2px 5px rgba(0,0,0,.4);
-}
-/* Miembro ACTIVO (tarjeta iluminada): la sombra se va a TRANSPARENTE (mismas 2 capas
-   para que interpole suave). Así, al encenderse el fondo verde, la sombra se funde a
-   la vez y no se ve "aparecer"; al dejar de cantar vuelve según se oscurece el fondo. */
-#ranking .member.active .member-name, #ranking .member.active .member-time, #ranking .member.active .member-rank,
-#ranking-left .member.active .member-name, #ranking-left .member.active .member-time, #ranking-left .member.active .member-rank{
-    text-shadow:
-        0 1px 2px rgba(0,0,0,0),
-        0 2px 5px rgba(0,0,0,0);
 }
 
 
