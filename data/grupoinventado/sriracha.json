@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "SRIRACHA",
-  "video": "",
+  "video": "videos/grupoinventado_sriracha_muubb7yb.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": false,
@@ -46,6 +46,48 @@
       "name": "ERIC",
       "image": "images/grupoinventado/sriracha/eric.png",
       "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GHD",
+      "image": "images/grupoinventado/sriracha/ghd.png",
+      "color": "#5cffa3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GFGDG",
+      "image": "images/grupoinventado/sriracha/gfgdg.png",
+      "color": "#ff5cbb",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RTERT",
+      "image": "images/grupoinventado/sriracha/rtert.png",
+      "color": "#e4ff5c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERTERT",
+      "image": "images/grupoinventado/sriracha/ertert.png",
+      "color": "#ffe45c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TET",
+      "image": "images/grupoinventado/sriracha/tet.png",
+      "color": "#5cffde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ET",
+      "image": "images/grupoinventado/sriracha/et.png",
+      "color": "#ff5c5c",
       "focus": 50,
       "lift": 3
     }
