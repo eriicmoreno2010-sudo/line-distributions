@@ -59,8 +59,8 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 0.41,
+      "end": 11.03,
       "members": [],
       "original": "",
       "romanization": "ooh ooh ooh, ooh ooh ooh",
@@ -68,8 +68,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.1,
+      "end": 16.61,
       "members": [],
       "original": "일렁이는 파도와, 손에 닿을 듯한",
       "romanization": "illeongineun padowa, sone daeul deuthan",
@@ -77,8 +77,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 16.79,
+      "end": 22.42,
       "members": [],
       "original": "푸르른 수평선, 반짝임을 향해 난",
       "romanization": "pureureun supyeongseon, banjjagimeul hyanghae nan",
@@ -86,8 +86,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 22.56,
+      "end": 25.15,
       "members": [],
       "original": "모든 것이 낯선, 그때",
       "romanization": "modeun geosi natseon, geuttae",
@@ -95,8 +95,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.33,
+      "end": 28.79,
       "members": [],
       "original": "마음처럼 안 돼, 서툴던",
       "romanization": "maeumcheoreom an dwae, seotuldeon",
@@ -104,8 +104,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 28.94,
+      "end": 32.84,
       "members": [],
       "original": "꿈을 향한 나의 첫걸음",
       "romanization": "kkumeul hyanghan naui cheotgeoreum",
@@ -113,8 +113,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.1,
+      "end": 39.1,
       "members": [],
       "original": "사나운 파도가 날 덮쳐와, How can I move on",
       "romanization": "sanaun padoga nal deopchyeowa, how can i move on",
@@ -122,8 +122,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 39.56,
+      "end": 44.79,
       "members": [],
       "original": "몇 번이든 다시 We Young, Dive in a dream",
       "romanization": "myeot beonideun dasi we young, dive in a dream",
@@ -140,8 +140,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 45.14,
+      "end": 46.35,
       "members": [],
       "original": "",
       "romanization": "I feel better",
@@ -149,8 +149,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 46.73,
+      "end": 52.11,
       "members": [],
       "original": "",
       "romanization": "Looking back on us, It's a Beautiful Sailing",
@@ -158,8 +158,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.37,
+      "end": 57.95,
       "members": [],
       "original": "서로 기대어, 밤새 나누던 얘기",
       "romanization": "seoro gidaeeo, bamsae nanudeon yaegi",
@@ -167,8 +167,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 58.3,
+      "end": 61.09,
       "members": [],
       "original": "마음에 가장 큰 돛을 달아",
       "romanization": "maeume gajang keun dochereul dara",
@@ -176,8 +176,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 61.25,
+      "end": 63.66,
       "members": [],
       "original": "끝없이 멀리 나아간 그다음",
       "romanization": "kkeuteopsi meolli naagan geudaeum",
@@ -185,8 +185,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 63.85,
+      "end": 69.3,
       "members": [],
       "original": "그렇게 흘러, It's a Beautiful Sailing",
       "romanization": "geureoke heulleo, it’s a beautiful sailing",
@@ -194,8 +194,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 69.59,
+      "end": 72.96,
       "members": [],
       "original": "yeah 방향을 잃은 배는, 물살에 떠밀리듯",
       "romanization": "yeah banghyangeul ileun baeneun, mulsare tteomillideut",
@@ -203,8 +203,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 73.11,
+      "end": 75.32,
       "members": [],
       "original": "계속 가도 가도 망망대해",
       "romanization": "gyesok gado gado mangmangdaehae",
@@ -212,8 +212,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.79,
+      "end": 79.8,
       "members": [],
       "original": "앞으로 매번 나아가도, 어디가 끝인지 모르지",
       "romanization": "apeuro maebeon naagado, eodiga kkeuchinji moreuji",
@@ -221,8 +221,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.95,
+      "end": 83.43,
       "members": [],
       "original": "마음속의, 고동을 울려, 힘껏 저어 Hurry up",
       "romanization": "maeumsogui, godongeul ullyeo, himkkeot jeoeo hurry up",
@@ -230,26 +230,26 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 83.5,
+      "end": 85.66,
       "members": [],
-      "original": "숨을 크게 쉬어 멈추지 마",
-      "romanization": "sumeul keuge swieo meomchuji ma",
-      "english": "Take a deep breath Don't stop",
+      "original": "숨을 크게 쉬어 멈추지 마 yeah",
+      "romanization": "sumeul keuge swieo meomchuji ma yeah",
+      "english": "Take a deep breath Don't stop Yeah",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 85.81,
+      "end": 89.23,
       "members": [],
-      "original": "yeah 오랜 나침반을 꺼내봐, 같은 곳으로 향해 가",
-      "romanization": "yeah oraen nachimbaneul kkeonaebwa, gateun goseuro hyanghae ga",
-      "english": "Yeah take out that old compass, Let's head toward the same place",
+      "original": "오랜 나침반을 꺼내봐, 같은 곳으로 향해 가",
+      "romanization": "oraen nachimbaneul kkeonaebwa, gateun goseuro hyanghae ga",
+      "english": "Take out that old compass, Let's head toward the same place",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 89.44,
+      "end": 91.1,
       "members": [],
       "original": "바람 따라 결국 우린, 저 먼 수평선 넘을 테니",
       "romanization": "baram ttara gyeolguk urin, jeo meon supyeongseon neomeul teni",
@@ -257,8 +257,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 91.26,
+      "end": 96.58,
       "members": [],
       "original": "드넓은 바단 쉼 없이 흘러, How can I move on",
       "romanization": "deuneolbeun badan swim eopsi heulleo, how can i move on",
@@ -266,8 +266,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 97.03,
+      "end": 102.12,
       "members": [],
       "original": "꿈꾸는 한 우린 We Young, Dive in a dream",
       "romanization": "kkumkkuneun han urin we young, dive in a dream",
@@ -284,8 +284,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 102.27,
+      "end": 103.71,
       "members": [],
       "original": "",
       "romanization": "I feel better",
@@ -293,8 +293,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 104.51,
+      "end": 110.03,
       "members": [],
       "original": "",
       "romanization": "Looking back on us, It's a Beautiful Sailing",
@@ -302,8 +302,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 110.18,
+      "end": 115.75,
       "members": [],
       "original": "서로 기대어, 밤새 나누던 얘기",
       "romanization": "seoro gidaeeo, bamsae nanudeon yaegi",
@@ -311,8 +311,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 115.9,
+      "end": 118.84,
       "members": [],
       "original": "마음에 가장 큰 돛을 달아",
       "romanization": "maeume gajang keun dochereul dara",
@@ -320,8 +320,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 118.99,
+      "end": 121.43,
       "members": [],
       "original": "끝없이 멀리 나아간 그다음",
       "romanization": "kkeuteopsi meolli naagan geudaeum",
@@ -329,8 +329,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.67,
+      "end": 127.59,
       "members": [],
       "original": "그렇게 흘러, It's a Beautiful Sailing",
       "romanization": "geureoke heulleo, it’s a beautiful sailing",
@@ -338,8 +338,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 128,
+      "end": 133.52,
       "members": [],
       "original": "두 눈을 감아, 바람을 타고, 들려온 노래 oh",
       "romanization": "du nuneul gama, barameul tago, deullyeoon norae oh",
@@ -347,8 +347,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 133.73,
+      "end": 138.45,
       "members": [],
       "original": "늘 변함없이, 곁에 있어 준, 하늘빛 바다",
       "romanization": "neul byeonhameopsi, gyeote isseo jun, haneulbit bada",
@@ -356,8 +356,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 138.6,
+      "end": 144.83,
       "members": [],
       "original": "우리가 영원할 꿈을 꿔, 내 모든 순간이 찬란히 빛나",
       "romanization": "uriga yeongwonhal kkumeul kkwo, nae modeun sungani challanhi binna",
@@ -365,8 +365,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 144.94,
+      "end": 150.13,
       "members": [],
       "original": "모든 낮과 밤 너와 함께 난, 떠나 Beautiful Sailing",
       "romanization": "modeun natgwa bam neowa hamkke nan, tteona beautiful sailing",
@@ -374,8 +374,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 150.95,
+      "end": 156.5,
       "members": [],
       "original": "",
       "romanization": "Looking back on us, It's a Beautiful Sailing",
@@ -401,8 +401,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 156.68,
+      "end": 162.25,
       "members": [],
       "original": "고개를 들어, 가장 눈부신 Sailing",
       "romanization": "gogaereul deureo, gajang nunbusin sailing",
@@ -419,8 +419,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 162.44,
+      "end": 165.31,
       "members": [],
       "original": "거친 파도를 안아준 바다",
       "romanization": "geochin padoreul anajun bada",
@@ -437,8 +437,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 165.46,
+      "end": 167.88,
       "members": [],
       "original": "오늘을 지나 내일을 만나",
       "romanization": "oneureul jina naeireul manna",
@@ -455,8 +455,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 168.07,
+      "end": 173.63,
       "members": [],
       "original": "그렇게 흘러, 더 큰 바다로 우린",
       "romanization": "geureoke heulleo, deo keun badaro urin",
@@ -473,8 +473,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 181.97,
+      "end": 185.23,
       "members": [],
       "original": "",
       "romanization": "That’s what it is, It’s a Beautiful Sailing",
@@ -491,8 +491,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 190.95,
+      "end": 194.24,
       "members": [],
       "original": "",
       "romanization": "Looking back on us",
@@ -500,8 +500,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 194.41,
+      "end": 197.18,
       "members": [],
       "original": "",
       "romanization": "It's a Beautiful Sailing",
