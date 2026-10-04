@@ -65,7 +65,17 @@
       "original": "",
       "romanization": "ooh ooh ooh, ooh ooh ooh",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          0.44,
+          5.67
+        ],
+        [
+          6.11,
+          11.21
+        ]
+      ]
     },
     {
       "start": 11.1,
@@ -74,7 +84,17 @@
       "original": "일렁이는 파도와, 손에 닿을 듯한",
       "romanization": "illeongineun padowa, sone daeul deuthan",
       "english": "With the rippling waves, And the blue horizon",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.09,
+          13.33
+        ],
+        [
+          13.91,
+          16.79
+        ]
+      ]
     },
     {
       "start": 16.79,
@@ -83,7 +103,17 @@
       "original": "푸르른 수평선, 반짝임을 향해 난",
       "romanization": "pureureun supyeongseon, banjjagimeul hyanghae nan",
       "english": "That feels just within reach, Heading toward the sparkle",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.82,
+          19.29
+        ],
+        [
+          19.48,
+          22.42
+        ]
+      ]
     },
     {
       "start": 22.56,
@@ -92,7 +122,17 @@
       "original": "모든 것이 낯선, 그때",
       "romanization": "modeun geosi natseon, geuttae",
       "english": "Everything was unfamiliar, Back then",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          22.52,
+          24.25
+        ],
+        [
+          24.33,
+          25.4
+        ]
+      ]
     },
     {
       "start": 25.33,
@@ -101,7 +141,17 @@
       "original": "마음처럼 안 돼, 서툴던",
       "romanization": "maeumcheoreom an dwae, seotuldeon",
       "english": "Things didn't go as I hoped, Clumsy",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.39,
+          27.12
+        ],
+        [
+          27.14,
+          29.07
+        ]
+      ]
     },
     {
       "start": 28.94,
@@ -110,7 +160,13 @@
       "original": "꿈을 향한 나의 첫걸음",
       "romanization": "kkumeul hyanghan naui cheotgeoreum",
       "english": "My first step toward the dream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.98,
+          32.91
+        ]
+      ]
     },
     {
       "start": 33.1,
@@ -119,7 +175,21 @@
       "original": "사나운 파도가 날 덮쳐와, How can I move on",
       "romanization": "sanaun padoga nal deopchyeowa, how can i move on",
       "english": "The fierce waves crash over me, How can I move on",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          33.09,
+          35.16
+        ],
+        [
+          35.36,
+          36.62
+        ],
+        [
+          36.9,
+          39.18
+        ]
+      ]
     },
     {
       "start": 39.56,
@@ -128,15 +198,29 @@
       "original": "몇 번이든 다시 We Young, Dive in a dream",
       "romanization": "myeot beonideun dasi we young, dive in a dream",
       "english": "No matter how many times, we young, Dive in a dream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          39.65,
+          40.92
+        ],
+        [
+          41.22,
+          42.43
+        ],
+        [
+          42.73,
+          44.73
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 44.45,
+      "end": 46.44,
       "members": [],
-      "original": "(Dream)",
-      "romanization": "(dream)",
-      "english": "(Dream)",
+      "original": "",
+      "romanization": "(Dream)",
+      "english": "",
       "adlib": true
     },
     {
@@ -146,7 +230,13 @@
       "original": "",
       "romanization": "I feel better",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.23,
+          46.35
+        ]
+      ]
     },
     {
       "start": 46.73,
@@ -200,7 +290,21 @@
       "original": "yeah 방향을 잃은 배는, 물살에 떠밀리듯",
       "romanization": "yeah banghyangeul ileun baeneun, mulsare tteomillideut",
       "english": "Yeah, a ship that's lost its direction, As if being pushed by the current",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.59,
+          70.06
+        ],
+        [
+          70.5,
+          71.8
+        ],
+        [
+          71.95,
+          73.05
+        ]
+      ]
     },
     {
       "start": 73.11,
@@ -209,7 +313,13 @@
       "original": "계속 가도 가도 망망대해",
       "romanization": "gyesok gado gado mangmangdaehae",
       "english": "It keeps going and going into the open sea",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          73.11,
+          75.71
+        ]
+      ]
     },
     {
       "start": 75.79,
@@ -218,7 +328,17 @@
       "original": "앞으로 매번 나아가도, 어디가 끝인지 모르지",
       "romanization": "apeuro maebeon naagado, eodiga kkeuchinji moreuji",
       "english": "Even if I keep moving forward every time, I don't know where the end is",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          75.85,
+          77.64
+        ],
+        [
+          77.83,
+          80.22
+        ]
+      ]
     },
     {
       "start": 79.95,
@@ -227,7 +347,17 @@
       "original": "마음속의, 고동을 울려, 힘껏 저어 Hurry up",
       "romanization": "maeumsogui, godongeul ullyeo, himkkeot jeoeo hurry up",
       "english": "The beating in my heart, Let it ring out, Row with all your strength Hurry up",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.15,
+          80.79
+        ],
+        [
+          80.96,
+          83.5
+        ]
+      ]
     },
     {
       "start": 83.5,
@@ -236,7 +366,17 @@
       "original": "숨을 크게 쉬어 멈추지 마 yeah",
       "romanization": "sumeul keuge swieo meomchuji ma yeah",
       "english": "Take a deep breath Don't stop Yeah",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.52,
+          85.81
+        ],
+        [
+          83.89,
+          84.28
+        ]
+      ]
     },
     {
       "start": 85.81,
@@ -245,7 +385,21 @@
       "original": "오랜 나침반을 꺼내봐, 같은 곳으로 향해 가",
       "romanization": "oraen nachimbaneul kkeonaebwa, gateun goseuro hyanghae ga",
       "english": "Take out that old compass, Let's head toward the same place",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          85.88,
+          86.42
+        ],
+        [
+          86.58,
+          87.83
+        ],
+        [
+          87.98,
+          89.26
+        ]
+      ]
     },
     {
       "start": 89.44,
@@ -254,7 +408,13 @@
       "original": "바람 따라 결국 우린, 저 먼 수평선 넘을 테니",
       "romanization": "baram ttara gyeolguk urin, jeo meon supyeongseon neomeul teni",
       "english": "Following the wind, we'll eventually, Cross that far off horizon",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.36,
+          92.18
+        ]
+      ]
     },
     {
       "start": 91.26,
@@ -263,7 +423,21 @@
       "original": "드넓은 바단 쉼 없이 흘러, How can I move on",
       "romanization": "deuneolbeun badan swim eopsi heulleo, how can i move on",
       "english": "The vast sea flows on without rest, How can I move on",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          91.21,
+          92.53
+        ],
+        [
+          92.69,
+          94.04
+        ],
+        [
+          94.3,
+          96.65
+        ]
+      ]
     },
     {
       "start": 97.03,
@@ -272,15 +446,29 @@
       "original": "꿈꾸는 한 우린 We Young, Dive in a dream",
       "romanization": "kkumkkuneun han urin we young, dive in a dream",
       "english": "As long as we dream, we young, Dive in a dream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.99,
+          98.29
+        ],
+        [
+          98.48,
+          99.75
+        ],
+        [
+          99.94,
+          103.07
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 101.84,
+      "end": 103.59,
       "members": [],
-      "original": "(Dream)",
-      "romanization": "(dream)",
-      "english": "(Dream)",
+      "original": "",
+      "romanization": "(Dream)",
+      "english": "",
       "adlib": true
     },
     {
@@ -290,7 +478,13 @@
       "original": "",
       "romanization": "I feel better",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          102.27,
+          103.66
+        ]
+      ]
     },
     {
       "start": 104.51,
@@ -344,7 +538,13 @@
       "original": "두 눈을 감아, 바람을 타고, 들려온 노래 oh",
       "romanization": "du nuneul gama, barameul tago, deullyeoon norae oh",
       "english": "Close your eyes, Ride the wind, A song that came to me oh",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          128.1,
+          133.52
+        ]
+      ]
     },
     {
       "start": 133.73,
@@ -353,7 +553,13 @@
       "original": "늘 변함없이, 곁에 있어 준, 하늘빛 바다",
       "romanization": "neul byeonhameopsi, gyeote isseo jun, haneulbit bada",
       "english": "The sky colored sea, That stayed by my side without changing, We dream an eternal dream",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.79,
+          138.63
+        ]
+      ]
     },
     {
       "start": 138.6,
@@ -362,7 +568,17 @@
       "original": "우리가 영원할 꿈을 꿔, 내 모든 순간이 찬란히 빛나",
       "romanization": "uriga yeongwonhal kkumeul kkwo, nae modeun sungani challanhi binna",
       "english": "Every moment of mine shines brightly, Through all days and nights",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          139.02,
+          141.44
+        ],
+        [
+          141.88,
+          144.87
+        ]
+      ]
     },
     {
       "start": 144.94,
@@ -371,7 +587,13 @@
       "original": "모든 낮과 밤 너와 함께 난, 떠나 Beautiful Sailing",
       "romanization": "modeun natgwa bam neowa hamkke nan, tteona beautiful sailing",
       "english": "With you I, Set off Beautiful Sailing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          145.22,
+          150.01
+        ]
+      ]
     },
     {
       "start": 150.95,
@@ -383,22 +605,34 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 150.56,
+      "end": 153.42,
       "members": [],
-      "original": "(yeah)",
+      "original": "",
       "romanization": "(yeah)",
-      "english": "(Yeah)",
-      "adlib": true
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          150.63,
+          153.41
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 156.36,
+      "end": 158.2,
       "members": [],
-      "original": "(Beautiful Sailing)",
-      "romanization": "(beautiful sailing)",
-      "english": "(Beautiful Sailing)",
-      "adlib": true
+      "original": "",
+      "romanization": "(Beautiful Sailing)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          156.33,
+          158.16
+        ]
+      ]
     },
     {
       "start": 156.68,
@@ -410,13 +644,19 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 159.51,
+      "end": 163.24,
       "members": [],
       "original": "(가장 눈부신 Sailing)",
       "romanization": "(gajang nunbusin sailing)",
       "english": "(The brightest Sailing of all)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          159.51,
+          163.13
+        ]
+      ]
     },
     {
       "start": 162.44,
@@ -428,13 +668,19 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 164.02,
+      "end": 166.12,
       "members": [],
       "original": "(거친 파도를)",
       "romanization": "(geochin padoreul)",
       "english": "(The rough waves)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          164.06,
+          166.05
+        ]
+      ]
     },
     {
       "start": 165.46,
@@ -446,13 +692,19 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.09,
+      "end": 168.77,
       "members": [],
-      "original": "(oh)",
+      "original": "",
       "romanization": "(oh)",
-      "english": "(Oh)",
-      "adlib": true
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          167.07,
+          168.67
+        ]
+      ]
     },
     {
       "start": 168.07,
@@ -464,12 +716,12 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 173.61,
+      "end": 178.57,
       "members": [],
-      "original": "(ah ah ah ah)",
+      "original": "",
       "romanization": "(ah ah ah ah)",
-      "english": "(Ah ah ah ah)",
+      "english": "",
       "adlib": true
     },
     {
@@ -479,16 +731,82 @@
       "original": "",
       "romanization": "That’s what it is, It’s a Beautiful Sailing",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          182.05,
+          185.1
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 179.21,
+      "end": 183.65,
       "members": [],
-      "original": "(ah ah ah ah)",
+      "original": "",
       "romanization": "(ah ah ah ah)",
-      "english": "(Ah ah ah ah)",
+      "english": "",
       "adlib": true
+    },
+    {
+      "start": 185.59,
+      "end": 187.89,
+      "members": [],
+      "original": "",
+      "romanization": "(oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          185.63,
+          187.53
+        ]
+      ]
+    },
+    {
+      "start": 187.9,
+      "end": 189.54,
+      "members": [],
+      "original": "",
+      "romanization": "(woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          187.79,
+          189.56
+        ]
+      ]
+    },
+    {
+      "start": 188.78,
+      "end": 190.03,
+      "members": [],
+      "original": "",
+      "romanization": "(yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          188.82,
+          189.98
+        ]
+      ]
+    },
+    {
+      "start": 189.9,
+      "end": 190.75,
+      "members": [],
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          189.92,
+          190.79
+        ]
+      ]
     },
     {
       "start": 190.95,
@@ -506,7 +824,13 @@
       "original": "",
       "romanization": "It's a Beautiful Sailing",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          194.49,
+          196.86
+        ]
+      ]
     }
   ],
   "audio": "audio/nctdream_beautifulsailing.mp3"
