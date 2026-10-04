@@ -1,0 +1,66 @@
+{
+  "group": "GRUPO INVENTADO",
+  "song": "loles",
+  "video": "",
+  "duration": 0,
+  "theme": "light",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "ARNAU",
+      "image": "images/grupoinventado/loles/arnau.png",
+      "color": "#f08c00",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "IRENE",
+      "image": "images/grupoinventado/loles/irene.png",
+      "color": "#f92fde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MARC",
+      "image": "images/grupoinventado/loles/marc.png",
+      "color": "#2320fe",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "BIEL",
+      "image": "images/grupoinventado/loles/biel.png",
+      "color": "#ff2424",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MICHELLE",
+      "image": "images/grupoinventado/loles/michelle.png",
+      "color": "#ffee33",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERIC",
+      "image": "images/grupoinventado/loles/eric.png",
+      "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "ARNAU"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
