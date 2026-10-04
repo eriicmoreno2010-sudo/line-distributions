@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Legado",
   "video": "videos/grupoinventado_legado_muuakz4d.mp4",
-  "duration": 0,
+  "duration": 178.883008,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -322,7 +322,7 @@
       "end": 30.56,
       "members": [
         "HAECHAN",
-        "MICHELLE"
+        "GFGDG"
       ],
       "original": "어려운 길 그려낸 Past, Imma go do the most",
       "romanization": "eoryeoun gil geuryeonaen past, imma go do the most",
@@ -340,7 +340,7 @@
       "end": 33.99,
       "members": [
         "HAECHAN",
-        "MICHELLE"
+        "GFGDG"
       ],
       "original": "Planted the seeds, 혼란 속에 한강 위 새긴 Chord",
       "romanization": "planted the seeds, honran soge hangang wi saegin chord",
@@ -394,7 +394,7 @@
       "end": 42.74,
       "members": [
         "JAEHYUN",
-        "IRENE"
+        "ET"
       ],
       "original": "새로운 감각이, 남겨질 이 Culture",
       "romanization": "saeroun gamsagi, namgyeojil i culture",
@@ -428,11 +428,19 @@
     {
       "start": 45.73,
       "end": 46.42,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          45.86,
+          46.55
+        ]
+      ]
     },
     {
       "start": 46.42,
@@ -471,11 +479,19 @@
     {
       "start": 50.7,
       "end": 52.14,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          50.81,
+          52.28
+        ]
+      ]
     },
     {
       "start": 52.15,
@@ -518,27 +534,43 @@
     {
       "start": 56.41,
       "end": 57.83,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          56.47,
+          57.88
+        ]
+      ]
     },
     {
       "start": 59.21,
       "end": 60.62,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          59.32,
+          60.76
+        ]
+      ]
     },
     {
       "start": 57.81,
       "end": 62.28,
       "members": [
         "YUTA",
-        "MARC"
+        "RTERT"
       ],
       "original": "도화선에 Raindrop, Keep it going worldwide",
       "romanization": "dohwaseone raindrop, keep it going worldwide",
@@ -558,18 +590,26 @@
     {
       "start": 62.06,
       "end": 63.47,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Energy energy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          62.17,
+          63.58
+        ]
+      ]
     },
     {
       "start": 63.49,
       "end": 66.18,
       "members": [
         "HAECHAN",
-        "MICHELLE"
+        "GHD"
       ],
       "original": "땅을 딛고 깨어나, 새 좌표를 열어놔",
       "romanization": "ttangeul ditgo kkaeeona, sae jwapyoreul yeoreonwa",
@@ -587,7 +627,7 @@
       "end": 67.8,
       "members": [
         "HAECHAN",
-        "MICHELLE"
+        "GHD"
       ],
       "original": "암전 속의 Neon sign",
       "romanization": "amjeon sogui neon sign",
@@ -603,18 +643,26 @@
     {
       "start": 67.74,
       "end": 69.12,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          67.82,
+          69.32
+        ]
+      ]
     },
     {
       "start": 93.61,
       "end": 98.01,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "(올라가 더 높이, Betcha like what you see yeah)",
       "romanization": "(ollaga deo nopi, betcha like what you see yeah)",
@@ -636,7 +684,7 @@
       "end": 105.84,
       "members": [
         "YUTA",
-        "ERIC"
+        "BIEL"
       ],
       "original": "(새로운 이름들이, 만들어낸 Culture)",
       "romanization": "(saeroun ireumdeuri, mandeureonaen culture)",
@@ -710,7 +758,7 @@
       "end": 81.86,
       "members": [
         "TAEYONG",
-        "MARC"
+        "TET"
       ],
       "original": "Out in the open and I don’t hide, 좌표를 찍어 We worldwide",
       "romanization": "out in the open and i don’t hide, jwapyoreul jjigeo we worldwide",
@@ -740,7 +788,7 @@
       "end": 84.59,
       "members": [
         "TAEYONG",
-        "MARC"
+        "TET"
       ],
       "original": "카메라 켜져 It’s showtime, 이 세계 너머로 Both sides",
       "romanization": "kamera kyeojyeo it’s showtime, i segye neomeoro both sides",
@@ -784,7 +832,7 @@
       "end": 87.84,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ET"
       ],
       "original": "Slide with the beat, 발밑에 Melody",
       "romanization": "slide with the beat, balmite melody",
@@ -806,7 +854,7 @@
       "end": 90.7,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ET"
       ],
       "original": "숨죽인 밤 위로, We light up the street",
       "romanization": "sumjug in bam wiro, we light up the street",
@@ -824,7 +872,7 @@
       "end": 93.55,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "BIEL"
       ],
       "original": "",
       "romanization": "You could try, but these guys ain’t flyer than me",
@@ -842,7 +890,7 @@
       "end": 96.5,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "BIEL"
       ],
       "original": "올라가 더 높이, Betcha like what you see",
       "romanization": "ollaga deo nopi, betcha like what you see",
@@ -864,7 +912,7 @@
       "end": 99.9,
       "members": [
         "HAECHAN",
-        "IRENE"
+        "MICHELLE"
       ],
       "original": "밝게 타오르는, 도시 속에 Thunder",
       "romanization": "balge taoreuneun, dosi soge thunder",
@@ -882,7 +930,7 @@
       "end": 102.75,
       "members": [
         "HAECHAN",
-        "IRENE"
+        "MICHELLE"
       ],
       "original": "지난 자리마다, 선명해진 Color",
       "romanization": "jinan jarimadama, seonmyeonghaejin color",
@@ -934,18 +982,26 @@
     {
       "start": 108.26,
       "end": 108.95,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          108.32,
+          109.05
+        ]
+      ]
     },
     {
       "start": 108.94,
       "end": 113.19,
       "members": [
         "YUTA",
-        "MARC"
+        "RTERT"
       ],
       "original": "도화선에 Raindrop, 태양 빛을 깨워, 한강 위를 감싸",
       "romanization": "dohwaseone raindrop, taeyang bicheul kkaewo, hangang wireul gamssa",
@@ -973,11 +1029,19 @@
     {
       "start": 113.22,
       "end": 114.59,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          113.3,
+          114.71
+        ]
+      ]
     },
     {
       "start": 114.55,
@@ -1020,27 +1084,43 @@
     {
       "start": 118.88,
       "end": 120.24,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          118.94,
+          120.36
+        ]
+      ]
     },
     {
       "start": 121.69,
       "end": 123.07,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          121.78,
+          123.22
+        ]
+      ]
     },
     {
       "start": 120.25,
       "end": 124.69,
       "members": [
         "TAEYONG",
-        "ERIC"
+        "TET"
       ],
       "original": "도화선에 Raindrop, Keep it going worldwide",
       "romanization": "dohwaseone raindrop, keep it going worldwide",
@@ -1060,11 +1140,19 @@
     {
       "start": 124.54,
       "end": 125.93,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Energy energy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          124.64,
+          126.01
+        ]
+      ]
     },
     {
       "start": 125.96,
@@ -1105,18 +1193,26 @@
     {
       "start": 130.21,
       "end": 131.71,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          130.33,
+          131.78
+        ]
+      ]
     },
     {
       "start": 131.68,
       "end": 133.9,
       "members": [
         "JAEHYUN",
-        "IRENE"
+        "GHD"
       ],
       "original": "City lights 혼자였던 밤은",
       "romanization": "city lights honjayeotdeon bameun",
@@ -1134,7 +1230,7 @@
       "end": 136.51,
       "members": [
         "JAEHYUN",
-        "IRENE"
+        "GHD"
       ],
       "original": "It’s our time 의심 따윈 없기에",
       "romanization": "it’s our time uisim ttawin eopgie",
@@ -1188,7 +1284,7 @@
       "end": 144.94,
       "members": [
         "TAEYONG",
-        "MARC"
+        "BIEL"
       ],
       "original": "어둠 속에 너와 나, 둘은 똑같은 Doppelganger",
       "romanization": "eodum soge neowa na, duleun ttokgateun doppelganger",
@@ -1206,7 +1302,7 @@
       "end": 147.8,
       "members": [
         "TAEYONG",
-        "MARC"
+        "BIEL"
       ],
       "original": "우린 나타나면, 판을 바꿔 Bangaranga",
       "romanization": "urin natanamyeon, paneul bakkwo bangaranga",
@@ -1224,7 +1320,7 @@
       "end": 150.68,
       "members": [
         "JOHNNY",
-        "ARNAU"
+        "BIEL"
       ],
       "original": "새겨지는 Energy, 서울 위의 Melody",
       "romanization": "saegyeojineun energy, seoul wie melody",
@@ -1242,7 +1338,7 @@
       "end": 154.25,
       "members": [
         "YUTA",
-        "ERIC"
+        "ET"
       ],
       "original": "",
       "romanization": "Everybody knows that we gon’, Live inside their memory yeah",
@@ -1258,18 +1354,26 @@
     {
       "start": 153.67,
       "end": 154.39,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          153.76,
+          154.43
+        ]
+      ]
     },
     {
       "start": 155.83,
       "end": 156.58,
       "members": [
         "YUTA",
-        "ERIC"
+        "ERTERT"
       ],
       "original": "",
       "romanization": "(Oh)",
@@ -1287,7 +1391,7 @@
       "end": 160.2,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "(위를 감싸)",
       "romanization": "(wireul gamssa)",
@@ -1305,7 +1409,7 @@
       "end": 158.58,
       "members": [
         "JOHNNY",
-        "BIEL"
+        "RTERT"
       ],
       "original": "도화선에 Raindrop, 태양 빛을 깨워, 한강 위를 감싸",
       "romanization": "dohwaseone raindrop, taeyang bicheul kkaewo, hangang wireul gamssa",
@@ -1337,14 +1441,20 @@
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          158.76,
+          160.15
+        ]
+      ]
     },
     {
       "start": 160.02,
       "end": 164.31,
       "members": [
         "HAECHAN",
-        "MARC"
+        "BIEL"
       ],
       "original": "땅을 딛고 깨어나, 초록빛을 따라, 남산 위는 밝아",
       "romanization": "ttangeul ditgo kkaeeona, chorokbicheul ttara, namsan wineun balga",
@@ -1378,7 +1488,7 @@
       "end": 167.23,
       "members": [
         "YUTA",
-        "ERIC"
+        "GHD"
       ],
       "original": "(남산 위는 밝아 Legacy yeah)",
       "romanization": "(namsan wineun balga legacy yeah)",
@@ -1398,14 +1508,20 @@
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          164.4,
+          165.75
+        ]
+      ]
     },
     {
       "start": 167.23,
       "end": 169.27,
       "members": [
         "YUTA",
-        "ERIC"
+        "GHD"
       ],
       "original": "",
       "romanization": "(Oh)",
@@ -1421,18 +1537,26 @@
     {
       "start": 167.18,
       "end": 168.57,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Legacy legacy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          167.22,
+          168.63
+        ]
+      ]
     },
     {
       "start": 169.7,
       "end": 172.06,
       "members": [
         "YUTA",
-        "ERIC"
+        "GHD"
       ],
       "original": "",
       "romanization": "(Oh)",
@@ -1450,7 +1574,7 @@
       "end": 170.22,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ERIC"
       ],
       "original": "온 세상에 새겨놔, Keep it going worldwide",
       "romanization": "on sesange saegyeonwa, keep it going worldwide",
@@ -1470,11 +1594,19 @@
     {
       "start": 169.97,
       "end": 171.47,
-      "members": [],
+      "members": [
+        "BIEL"
+      ],
       "original": "",
       "romanization": "(Energy energy)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          170.13,
+          171.58
+        ]
+      ]
     },
     {
       "start": 174.22,
@@ -1499,7 +1631,7 @@
       "end": 174.09,
       "members": [
         "TAEYONG",
-        "IRENE"
+        "BIEL"
       ],
       "original": "Seoul city we don’t stop, 새 좌표를 열어놔",
       "romanization": "seoul city we don’t stop, sae jwapyoreul yeoreonwa",
@@ -1517,7 +1649,7 @@
       "end": 175.66,
       "members": [
         "TAEYONG",
-        "IRENE"
+        "BIEL"
       ],
       "original": "암전 속의 Neon sign",
       "romanization": "amjeon sogui neon sign",
@@ -1535,7 +1667,7 @@
       "end": 177.19,
       "members": [
         "TAEYONG",
-        "ARNAU"
+        "BIEL"
       ],
       "original": "",
       "romanization": "Legacy legacy",
