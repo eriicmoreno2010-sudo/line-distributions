@@ -252,7 +252,7 @@
       "end": 48.88,
       "members": [
         "HAECHAN",
-        "ERIC"
+        "GHD"
       ],
       "voice": [
         [
@@ -270,7 +270,7 @@
       "end": 52.2,
       "members": [
         "HAECHAN",
-        "ERIC"
+        "GHD"
       ],
       "voice": [
         [
@@ -526,7 +526,7 @@
       "end": 107.51,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ERTERT"
       ],
       "voice": [
         [
@@ -548,7 +548,7 @@
       "end": 111.87,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ERTERT"
       ],
       "voice": [
         [
@@ -566,7 +566,7 @@
       "end": 115.97,
       "members": [
         "TAEYONG",
-        "MARC"
+        "TET"
       ],
       "voice": [
         [
@@ -584,7 +584,7 @@
       "end": 119.97,
       "members": [
         "TAEYONG",
-        "MARC"
+        "TET"
       ],
       "voice": [
         [
@@ -602,7 +602,7 @@
       "end": 124.04,
       "members": [
         "JOHNNY",
-        "BIEL"
+        "GFGDG"
       ],
       "voice": [
         [
@@ -624,7 +624,7 @@
       "end": 128.3,
       "members": [
         "JOHNNY",
-        "BIEL"
+        "GFGDG"
       ],
       "voice": [
         [
@@ -646,7 +646,7 @@
       "end": 131.59,
       "members": [
         "JAEHYUN",
-        "IRENE"
+        "ET"
       ],
       "voice": [
         [
@@ -672,7 +672,7 @@
       "end": 136.13,
       "members": [
         "JAEHYUN",
-        "IRENE"
+        "ET"
       ],
       "voice": [
         [
@@ -702,7 +702,7 @@
       "end": 140.17,
       "members": [
         "YUTA",
-        "MICHELLE"
+        "RTERT"
       ],
       "voice": [
         [
@@ -724,7 +724,7 @@
       "end": 144.74,
       "members": [
         "YUTA",
-        "MICHELLE"
+        "RTERT"
       ],
       "voice": [
         [
@@ -850,7 +850,7 @@
       "end": 146.22,
       "members": [
         "TAEYONG",
-        "BIEL"
+        "TET"
       ],
       "original": "(새로운 Main course)",
       "romanization": "(saeroun main course)",
@@ -878,8 +878,7 @@
       "start": 149.01,
       "end": 150.23,
       "members": [
-        "HAECHAN",
-        "MARC"
+        "HAECHAN"
       ],
       "voice": [
         [
@@ -907,8 +906,7 @@
       "start": 150.3,
       "end": 153.44,
       "members": [
-        "NCT 127",
-        "ERIC"
+        "NCT 127"
       ],
       "voice": [
         [
@@ -929,8 +927,7 @@
       "start": 153.21,
       "end": 154.44,
       "members": [
-        "NCT 127",
-        "MARC"
+        "NCT 127"
       ],
       "original": "(데리러 갈게)",
       "romanization": "(derireo galge)",
@@ -958,8 +955,7 @@
       "start": 157.28,
       "end": 158.33,
       "members": [
-        "NCT 127",
-        "ARNAU"
+        "NCT 127"
       ],
       "voice": [
         [
@@ -987,8 +983,7 @@
       "start": 161.71,
       "end": 166.11,
       "members": [
-        "GRUPO INVENTADO",
-        "MICHELLE"
+        "GRUPO INVENTADO"
       ],
       "voice": [
         [
@@ -1005,8 +1000,7 @@
       "start": 158.17,
       "end": 161.86,
       "members": [
-        "TAEYONG",
-        "ERIC"
+        "TAEYONG"
       ],
       "voice": [
         [
@@ -1035,8 +1029,7 @@
       "start": 164.89,
       "end": 166.52,
       "members": [
-        "TAEYONG",
-        "MICHELLE"
+        "TAEYONG"
       ],
       "voice": [
         [
@@ -1069,8 +1062,7 @@
       "start": 168.95,
       "end": 170.76,
       "members": [
-        "YUTA",
-        "IRENE"
+        "YUTA"
       ],
       "voice": [
         [
@@ -1086,9 +1078,7 @@
     {
       "start": 174.4,
       "end": 175.63,
-      "members": [
-        "IRENE"
-      ],
+      "members": [],
       "original": "",
       "romanization": "(That’s it that’s it)",
       "english": "",
@@ -1115,9 +1105,7 @@
     {
       "start": 3.24,
       "end": 6.13,
-      "members": [
-        "BIEL"
-      ],
+      "members": [],
       "original": "",
       "romanization": "(Da da da da da la da la da)",
       "english": "",
@@ -1132,9 +1120,7 @@
     {
       "start": 6.5,
       "end": 7.63,
-      "members": [
-        "MARC"
-      ],
+      "members": [],
       "original": "",
       "romanization": "(Yeah a driving show)",
       "english": "",
