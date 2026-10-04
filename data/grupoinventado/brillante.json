@@ -1213,5 +1213,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/grupoinventado_brillante.mp3"
+  "audio": "audio/grupoinventado_brillante.mp3",
+  "audioOffset": -0.15
 }
