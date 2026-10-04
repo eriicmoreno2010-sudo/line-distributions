@@ -877,7 +877,8 @@
       "start": 149.01,
       "end": 150.23,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "MARC"
       ],
       "voice": [
         [
@@ -926,7 +927,8 @@
       "start": 153.21,
       "end": 154.44,
       "members": [
-        "NCT 127"
+        "NCT 127",
+        "MARC"
       ],
       "original": "(데리러 갈게)",
       "romanization": "(derireo galge)",
@@ -954,7 +956,8 @@
       "start": 157.28,
       "end": 158.33,
       "members": [
-        "NCT 127"
+        "NCT 127",
+        "MARC"
       ],
       "voice": [
         [
@@ -999,7 +1002,8 @@
       "start": 158.17,
       "end": 161.86,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "ET"
       ],
       "voice": [
         [
@@ -1028,7 +1032,8 @@
       "start": 164.89,
       "end": 166.52,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "RTERT"
       ],
       "voice": [
         [
@@ -1061,7 +1066,8 @@
       "start": 168.95,
       "end": 170.76,
       "members": [
-        "YUTA"
+        "YUTA",
+        "GFGDG"
       ],
       "voice": [
         [
@@ -1077,7 +1083,9 @@
     {
       "start": 174.4,
       "end": 175.63,
-      "members": [],
+      "members": [
+        "GHD"
+      ],
       "original": "",
       "romanization": "(That’s it that’s it)",
       "english": "",
