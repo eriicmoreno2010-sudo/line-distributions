@@ -20,9 +20,13 @@
       "end": 12
     },
     {
-      "audio": "audio/grupoinventado_6miembrosa2.mp3"
+      "audio": "audio/grupoinventado_6miembrosa2.mp3",
+      "start": 0,
+      "end": 12
     },
-    {},
+    {
+      "audio": "audio/grupoinventado_6miembrosa3.mp3"
+    },
     {},
     {
       "start": 0,
