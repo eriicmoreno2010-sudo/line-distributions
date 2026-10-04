@@ -500,10 +500,11 @@ body.two-side #ranking-left .member-info{ gap:8px; }
     transition:color .22s var(--ease), transform .22s var(--ease);
 }
 
-#ranking .member-time{
+#ranking .member-time,
+#ranking-left .member-time{
     flex-shrink:0;
     font-size:16px;
-    font-weight:800;
+    font-weight:800;   /* mismo grosor en AMBAS columnas (la izquierda heredaba 900 de ranking.css) */
     color:var(--text2);
     font-variant-numeric:tabular-nums;
     transform-origin:right center;
