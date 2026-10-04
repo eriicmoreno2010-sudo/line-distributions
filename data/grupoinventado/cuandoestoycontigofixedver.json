@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "Cuando estoy Contigo (Fixed Ver.)",
-  "video": "",
+  "video": "videos/grupoinventado_cuandoestoycontigofixedver_muudjnam.mp4",
   "duration": 0,
   "theme": "light",
   "subunit": false,
@@ -46,6 +46,48 @@
       "name": "ERIC",
       "image": "images/grupoinventado/cuandoestoycontigofixedver/eric.png",
       "color": "#fb9118",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GHD",
+      "image": "images/grupoinventado/cuandoestoycontigofixedver/ghd.png",
+      "color": "#5cffa3",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "GFGDG",
+      "image": "images/grupoinventado/cuandoestoycontigofixedver/gfgdg.png",
+      "color": "#ff5cbb",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RTERT",
+      "image": "images/grupoinventado/cuandoestoycontigofixedver/rtert.png",
+      "color": "#e4ff5c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ERTERT",
+      "image": "images/grupoinventado/cuandoestoycontigofixedver/ertert.png",
+      "color": "#ffe45c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "TET",
+      "image": "images/grupoinventado/cuandoestoycontigofixedver/tet.png",
+      "color": "#5cffde",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "ET",
+      "image": "images/grupoinventado/cuandoestoycontigofixedver/et.png",
+      "color": "#ff5c5c",
       "focus": 50,
       "lift": 3
     }
