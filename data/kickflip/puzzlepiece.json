@@ -60,7 +60,29 @@
       "original": "",
       "romanization": "",
       "english": "Wait, ugh, I don't know, Ugh, here we go again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.51,
+          7.93
+        ],
+        [
+          8.1,
+          8.43
+        ],
+        [
+          8.57,
+          8.96
+        ],
+        [
+          9.14,
+          10.82
+        ],
+        [
+          11.23,
+          12.96
+        ]
+      ]
     },
     {
       "start": 0,
@@ -71,7 +93,13 @@
       "original": "",
       "romanization": "",
       "english": "It’s morning already, Don't know where I'm goin'",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.37,
+          16.74
+        ]
+      ]
     },
     {
       "start": 0,
@@ -112,6 +140,20 @@
       "members": [
         "DONGHWA"
       ],
+      "voice": [
+        [
+          16.64,
+          17.24
+        ],
+        [
+          17.68,
+          19.41
+        ],
+        [
+          19.57,
+          22.45
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "No matter how hard I try, To find the right answer",
@@ -122,6 +164,12 @@
       "end": 0,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          21.71,
+          23.53
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -134,6 +182,12 @@
       "members": [
         "MINJE"
       ],
+      "voice": [
+        [
+          23.58,
+          25.26
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "The further I go, the more messed up it gets",
@@ -144,6 +198,12 @@
       "end": 30.22,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          25.75,
+          30.22
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -156,6 +216,12 @@
       "members": [
         "DONGHYEON"
       ],
+      "voice": [
+        [
+          34.29,
+          38.73
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Even if I rewrite the answer all night, In the end, we’re always unfinished",
@@ -166,6 +232,12 @@
       "end": 42.24,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          40.69,
+          42.41
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -178,6 +250,12 @@
       "members": [
         "KYEHOON"
       ],
+      "voice": [
+        [
+          42.34,
+          46.47
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Clumsy and scattered, Our Puzzle Piece",
@@ -188,6 +266,20 @@
       "end": 50.78,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          46.63,
+          48.65
+        ],
+        [
+          48.8,
+          49.4
+        ],
+        [
+          49.59,
+          50.81
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -200,6 +292,12 @@
       "members": [
         "JUWANG"
       ],
+      "voice": [
+        [
+          50.88,
+          55.04
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Connecting imperfect lines, Drawing a masterpiece",
@@ -210,6 +308,20 @@
       "end": 60.12,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          55.2,
+          55.86
+        ],
+        [
+          56.01,
+          56.42
+        ],
+        [
+          56.58,
+          60.03
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -222,6 +334,12 @@
       "members": [
         "DONGHWA"
       ],
+      "voice": [
+        [
+          62.92,
+          64.85
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "**Ahh,** How beautiful we are",
@@ -232,6 +350,12 @@
       "end": 68.94,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          67.18,
+          69.05
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -244,6 +368,12 @@
       "members": [
         "DONGHWA"
       ],
+      "voice": [
+        [
+          71.52,
+          73.82
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "**Ahh,** How beautiful we are",
@@ -253,6 +383,16 @@
       "start": 73.19,
       "end": 77.13,
       "members": [],
+      "voice": [
+        [
+          73.19,
+          73.54
+        ],
+        [
+          73.73,
+          77.18
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "No matter what we do, We'll be beautiful",
@@ -263,6 +403,12 @@
       "end": 80.56,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          79.81,
+          80.53
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -275,6 +421,20 @@
       "members": [
         "MINJE"
       ],
+      "voice": [
+        [
+          81.63,
+          82.62
+        ],
+        [
+          82.84,
+          83.7
+        ],
+        [
+          83.88,
+          85.79
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "No plans, just comfy again, I lay face-down on the scattered pieces",
@@ -285,6 +445,12 @@
       "end": 87.96,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          86,
+          87.96
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -297,6 +463,12 @@
       "members": [
         "MINJE"
       ],
+      "voice": [
+        [
+          88.14,
+          90.23
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "And just like that, morning comes again, aight?",
@@ -307,6 +479,16 @@
       "end": 94.43,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          90.3,
+          92.28
+        ],
+        [
+          92.46,
+          94.4
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -319,6 +501,16 @@
       "members": [
         "KYEHOON"
       ],
+      "voice": [
+        [
+          94.56,
+          96.58
+        ],
+        [
+          96.72,
+          97.82
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "I’m a dumb, I’m a nut, I’m a what, what?, This is us, this is me!",
@@ -329,6 +521,12 @@
       "end": 99.86,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          99.33,
+          99.89
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -341,6 +539,12 @@
       "members": [
         "KEIJU"
       ],
+      "voice": [
+        [
+          99.91,
+          104.36
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "A total mess, feeling dizzy, Everything feels so strange all day",
@@ -351,6 +555,12 @@
       "end": 112.94,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          108.47,
+          112.89
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -363,6 +573,12 @@
       "members": [
         "JUWANG"
       ],
+      "voice": [
+        [
+          114.9,
+          116.6
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Yeah we are",
@@ -373,6 +589,12 @@
       "end": 120.67,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          116.54,
+          120.66
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -385,6 +607,20 @@
       "members": [
         "DONGHWA"
       ],
+      "voice": [
+        [
+          120.84,
+          122.78
+        ],
+        [
+          122.96,
+          123.57
+        ],
+        [
+          123.75,
+          125.05
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Yeah, that's just how I am, Yeah, I'm incomplete",
@@ -395,6 +631,12 @@
       "end": 129.21,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          125.09,
+          129.24
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -407,6 +649,20 @@
       "members": [
         "DONGHYEON"
       ],
+      "voice": [
+        [
+          129.4,
+          130.04
+        ],
+        [
+          130.24,
+          130.6
+        ],
+        [
+          130.77,
+          134.26
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Just watch, no matter what we do, We'll be beautiful",
@@ -417,6 +673,12 @@
       "end": 138.88,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          137.13,
+          139
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -429,6 +691,12 @@
       "members": [
         "MINJE"
       ],
+      "voice": [
+        [
+          141.43,
+          143.27
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "**Ahh,** Yeah this is you and I",
@@ -439,6 +707,12 @@
       "end": 147.21,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          145.71,
+          147.96
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -451,6 +725,16 @@
       "members": [
         "KYEHOON"
       ],
+      "voice": [
+        [
+          147.4,
+          147.75
+        ],
+        [
+          147.93,
+          151.33
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "No matter what we do, We'll be beautiful",
@@ -461,6 +745,24 @@
       "end": 155.96,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          151.89,
+          152.32
+        ],
+        [
+          152.68,
+          153.01
+        ],
+        [
+          153.21,
+          153.6
+        ],
+        [
+          153.77,
+          156.08
+        ]
       ],
       "original": "",
       "romanization": "",
@@ -473,6 +775,24 @@
       "members": [
         "DONGHYEON"
       ],
+      "voice": [
+        [
+          156.13,
+          156.62
+        ],
+        [
+          157.01,
+          157.33
+        ],
+        [
+          157.54,
+          157.89
+        ],
+        [
+          158.1,
+          160.24
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Why, why, why, Why don’t we lose our way?",
@@ -484,6 +804,24 @@
       "members": [
         "DONGHWA"
       ],
+      "voice": [
+        [
+          160.45,
+          160.88
+        ],
+        [
+          161.24,
+          161.57
+        ],
+        [
+          161.78,
+          162.18
+        ],
+        [
+          162.34,
+          164.78
+        ]
+      ],
       "original": "",
       "romanization": "",
       "english": "Why, why, why, Why don’t we blur the lines?",
@@ -494,6 +832,16 @@
       "end": 168.54,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          164.55,
+          164.87
+        ],
+        [
+          165.08,
+          168.51
+        ]
       ],
       "original": "",
       "romanization": "",
