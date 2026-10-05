@@ -880,6 +880,56 @@
           25.74
         ]
       ]
+    },
+    {
+      "start": 2.59,
+      "end": 4.98,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(ooh ooh oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          2.67,
+          3.09
+        ],
+        [
+          3.27,
+          3.83
+        ],
+        [
+          4.03,
+          4.84
+        ]
+      ]
+    },
+    {
+      "start": 77.68,
+      "end": 80.02,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(ooh ooh oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          77.71,
+          78.08
+        ],
+        [
+          78.26,
+          78.93
+        ],
+        [
+          79.09,
+          79.99
+        ]
+      ]
     }
   ]
 }
