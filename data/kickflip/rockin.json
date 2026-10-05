@@ -1,0 +1,66 @@
+{
+  "group": "KickFlip",
+  "song": "휘청 (Rockin')",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "KYEHOON",
+      "image": "images/kickflip/rockin/kyehoon.png",
+      "color": "#d435dd",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DONGHWA",
+      "image": "images/kickflip/rockin/donghwa.png",
+      "color": "#00d856",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUWANG",
+      "image": "images/kickflip/rockin/juwang.png",
+      "color": "#dfb627",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MINJE",
+      "image": "images/kickflip/rockin/minje.png",
+      "color": "#3445da",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KEIJU",
+      "image": "images/kickflip/rockin/keiju.png",
+      "color": "#ee7426",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DONGHYEON",
+      "image": "images/kickflip/rockin/donghyeon.png",
+      "color": "#25dada",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
