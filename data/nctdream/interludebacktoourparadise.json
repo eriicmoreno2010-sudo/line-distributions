@@ -2,7 +2,7 @@
   "group": "NCT DREAM",
   "song": "Interlude : Back to Our Paradise",
   "video": "videos/nctdream_interludebacktoourparadise_musivbrt.mp4",
-  "duration": 125.048163,
+  "duration": 125.45,
   "theme": "light",
   "subunit": false,
   "layout": "classic",
@@ -397,7 +397,9 @@
     {
       "start": 69.64,
       "end": 76.77,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "",
       "romanization": "(ooh)",
       "english": "",
@@ -637,7 +639,9 @@
     {
       "start": 95.91,
       "end": 98.84,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "",
       "romanization": "(ooh)",
       "english": "",
@@ -657,7 +661,9 @@
     {
       "start": 102.51,
       "end": 108.83,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "",
       "romanization": "(ooh)",
       "english": "",
@@ -677,7 +683,9 @@
     {
       "start": 115.59,
       "end": 117.9,
-      "members": [],
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "",
       "romanization": "(ooh)",
       "english": "",
