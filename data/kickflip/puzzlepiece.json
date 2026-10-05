@@ -110,7 +110,21 @@
       "original": "",
       "romanization": "(ooh ooh ooh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          2.66,
+          3.06
+        ],
+        [
+          3.25,
+          3.89
+        ],
+        [
+          4.06,
+          4.93
+        ]
+      ]
     },
     {
       "start": 0,
@@ -121,7 +135,13 @@
       "original": "",
       "romanization": "(Messed up)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          25.23,
+          25.75
+        ]
+      ]
     },
     {
       "start": 0,
@@ -132,7 +152,21 @@
       "original": "",
       "romanization": "(ooh ooh ooh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          77.71,
+          78.11
+        ],
+        [
+          78.3,
+          78.91
+        ],
+        [
+          79.13,
+          79.91
+        ]
+      ]
     },
     {
       "start": 0,
