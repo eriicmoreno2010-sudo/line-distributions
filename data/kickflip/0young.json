@@ -1,0 +1,66 @@
+{
+  "group": "KickFlip",
+  "song": "0 (Young)",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "KYEHOON",
+      "image": "images/kickflip/0young/kyehoon.png",
+      "color": "#d435dd",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DONGHWA",
+      "image": "images/kickflip/0young/donghwa.png",
+      "color": "#00d856",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JUWANG",
+      "image": "images/kickflip/0young/juwang.png",
+      "color": "#dfb627",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MINJE",
+      "image": "images/kickflip/0young/minje.png",
+      "color": "#3445da",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "KEIJU",
+      "image": "images/kickflip/0young/keiju.png",
+      "color": "#ee7426",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "DONGHYEON",
+      "image": "images/kickflip/0young/donghyeon.png",
+      "color": "#25dada",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
