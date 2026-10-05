@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "미완성 (Puzzle Piece)",
   "video": "videos/kickflip_puzzlepiece_muvfky9t.mp4",
-  "duration": 0,
+  "duration": 175.416016,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -61,6 +61,39 @@
       "romanization": "",
       "english": "",
       "adlib": ""
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(ooh ooh ooh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Messed oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(ooh ooh ooh)",
+      "english": "",
+      "adlib": true
     }
   ]
 }
