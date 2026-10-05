@@ -89,6 +89,48 @@ function partialSingers(line){
     return found;
 }
 
+/* Parte la línea en TROZOS en orden de lectura y devuelve, por cada trozo, quién lo
+   canta: el texto SIN marcar lo cantan los dueños (line.members); un **...@A,B** lo
+   cantan A y B; un **...** sin @ es TODO el grupo. Se colapsan trozos consecutivos
+   iguales. Así la cabecera puede ser de 2, 3 o más partes: "A / B & C / D". */
+function orderedParts(line){
+    if(typeof SONG === "undefined" || !SONG) return [];
+    const owners = displayMembers(line);
+    const resolve = n => {
+        const m = (SONG.members || []).find(mm => mm.name.toLowerCase() === String(n).toLowerCase());
+        return m ? m.name : null;
+    };
+    // usa el campo que de verdad tenga marcadores (para leer un orden coherente)
+    const field = [line.original, line.romanization, line.english]
+        .find(t => typeof t === "string" && t.indexOf("**") >= 0)
+        || line.original || line.romanization || line.english || "";
+    const chunks = String(field).split("**");
+    const parts = [];
+    const push = names => {
+        names = (names || []).filter(Boolean);
+        if(!names.length) return;
+        const key = names.map(x => x.toLowerCase()).join("|");
+        if(parts.length && parts[parts.length - 1].key === key) return;   // colapsa iguales seguidos
+        parts.push({ names, key });
+    };
+    chunks.forEach((chunk, i) => {
+        if(i % 2 === 0){                                   // texto SIN marcar -> dueños
+            if(chunk && /\S/.test(chunk)) push(owners.slice());
+        } else {                                          // **marcado**
+            const at = chunk.lastIndexOf("@");
+            if(at > 0){
+                const names = chunk.slice(at + 1).split(",").map(s => s.trim()).filter(Boolean)
+                    .map(n => /^(all|todos|grupo)$/i.test(n) ? SONG.group : resolve(n))
+                    .filter(Boolean);
+                push(names.length ? names : owners.slice());
+            } else {
+                push([SONG.group]);                       // **...** sin @ = TODO el grupo
+            }
+        }
+    });
+    return parts;
+}
+
 /* ¿El/los cantante(s) marcados con @ cantan la PRIMERA parte de la línea?
    Si el trozo **...@nombre** está al principio (nadie canta antes) -> el marcado
    va DELANTE en la cabecera ("SOUL / JIUNG"); si hay texto del dueño de la línea
@@ -467,36 +509,39 @@ const Lyrics = {
                     return m ? m.color : c.accent;
                 };
                 if(linePartials.length){
-                    // "JUN / THE8": el/los cantante(s) del @ (cada uno en su color) +
-                    // "/" + el/los miembro(s) de la línea (su color). El "/" lo
-                    // distingue del "&" (dos cantando la línea entera).
+                    // Cabecera por PARTES en orden de lectura: "A / B & C / D".
+                    // Cada parte junta a los suyos con "&"; las partes se separan con "/".
                     e.member.style.background = ""; e.member.style.webkitBackgroundClip = "";
                     e.member.style.backgroundClip = ""; e.member.style.color = "";
                     e.member.style.textShadow = "";        // sólido -> sombra/contorno normal
-                    // el nombre del GRUPO (p. ej. "NCT DREAM") va con el arcoíris de TODOS
-                    // (lo construimos aquí porque en una línea de un miembro c.groupGradient
-                    // viene vacío -> antes el nombre del grupo salía transparente/invisible);
-                    // los miembros, con su color.
-                    // nombre del grupo en la cabecera: arcoíris con los colores reales.
+                    // nombre del GRUPO (p. ej. "NCT DREAM") con el arcoíris de TODOS; los miembros, su color.
                     const groupGrad = `linear-gradient(90deg, ${(SONG.members || []).map(m => m.color).join(", ")})`;
                     const span = (n) => (n === SONG.group)
                         ? `<span style="background:${groupGrad};-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none">${escapeHtml(n)}</span>`
                         : `<span style="color:${colOf(n)}">${escapeHtml(n)}</span>`;
-                    // color REPRESENTATIVO (mezcla) de un lado: grupo -> mezcla de todos; si no, mezcla de sus colores.
+                    // color REPRESENTATIVO (mezcla) de una parte: grupo -> mezcla de todos; si no, mezcla de sus colores.
                     const repCol = ns => avgColor(ns.includes(SONG.group)
                         ? (SONG.members || []).map(m => m.color)
                         : ns.map(colOf));
-                    // El "&" (une a los de un mismo lado) va con la MEZCLA de ese lado;
-                    // el "/" (separa los dos lados) va con la mezcla de los dos lados.
-                    const partSep = `<span style="color:${repCol(linePartials)}"> &amp; </span>`;
-                    const mainSep = `<span style="color:${repCol(shownMembers)}">  &amp;  </span>`;
-                    const part = linePartials.map(span).join(partSep);
-                    const main = shownMembers.map(span).join(mainSep);
-                    const sepCol = avgColor([repCol(shownMembers), repCol(linePartials)]);
-                    const sep = `<span style="color:${sepCol};font-weight:900;padding:0 .16em"> / </span>`;
-                    // el que canta ANTES va delante (marcado al principio -> "marcado / dueño";
-                    // marcado al final -> "dueño / marcado")
-                    e.member.innerHTML = markedComesFirst(line) ? (part + sep + main) : (main + sep + part);
+                    const parts = orderedParts(line);
+                    if(parts.length){
+                        // cada parte: nombres unidos por "&" (en la mezcla de esa parte)
+                        const partHtml = g => g.names.map(span)
+                            .join(`<span style="color:${repCol(g.names)}"> &amp; </span>`);
+                        // "/" con la mezcla de TODAS las partes
+                        const sepCol = avgColor(parts.map(g => repCol(g.names)));
+                        const sep = `<span style="color:${sepCol};font-weight:900;padding:0 .16em"> / </span>`;
+                        e.member.innerHTML = parts.map(partHtml).join(sep);
+                    } else {
+                        // respaldo (no debería pasar): el comportamiento antiguo de 2 lados
+                        const partSep = `<span style="color:${repCol(linePartials)}"> &amp; </span>`;
+                        const mainSep = `<span style="color:${repCol(shownMembers)}">  &amp;  </span>`;
+                        const part = linePartials.map(span).join(partSep);
+                        const main = shownMembers.map(span).join(mainSep);
+                        const sepCol = avgColor([repCol(shownMembers), repCol(linePartials)]);
+                        const sep = `<span style="color:${sepCol};font-weight:900;padding:0 .16em"> / </span>`;
+                        e.member.innerHTML = markedComesFirst(line) ? (part + sep + main) : (main + sep + part);
+                    }
                 } else if(c.hasPartial){
                     e.member.textContent = joinNames(shownMembers);
                     e.member.style.background = c.sharedGradient;
@@ -611,9 +656,12 @@ const Lyrics = {
     /* Construye la tarjeta de UN ad-lib (con su color propio). */
     buildAdlibBox(line){
         const c = this.colorsFor(line);
-        // Ad-lib SIN cantante asignado -> blanco (en vez del morado por defecto).
+        // Ad-lib SIN cantante asignado -> blanco en tema oscuro, NEGRO en tema claro
+        // (sobre el cristal claro el texto blanco no se leía).
         const hasSinger = (line.members || []).some(n => (SONG.members || []).some(m => m.name === n));
-        const acc = (!c.isGroupLine && !c.isSharedLine && !hasSinger) ? "#ffffff" : c.accent;
+        const noSinger = (!c.isGroupLine && !c.isSharedLine && !hasSinger);
+        const lightTheme = typeof document !== "undefined" && document.body.classList.contains("theme-light");
+        const acc = noSinger ? (lightTheme ? "#14151c" : "#ffffff") : c.accent;
         const box = document.createElement("div"); box.className = "al-box";
         box.style.setProperty("--al-accent", acc);
         // borde: degradado real -> grupo = arcoíris de todos; dúo/coro = colores de los que cantan; solista = su color
