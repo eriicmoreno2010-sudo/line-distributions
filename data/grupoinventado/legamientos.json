@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Legamientos",
   "video": "videos/grupoinventado_legamientos_muuzp7rf.mp4",
-  "duration": 0,
+  "duration": 178.883008,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -527,7 +527,7 @@
       "end": 66.18,
       "members": [
         "HAECHAN",
-        "MICHELLE"
+        "ARNAU"
       ],
       "original": "땅을 딛고 깨어나, 새 좌표를 열어놔",
       "romanization": "ttangeul ditgo kkaeeona, sae jwapyoreul yeoreonwa",
@@ -545,7 +545,7 @@
       "end": 67.8,
       "members": [
         "HAECHAN",
-        "MICHELLE"
+        "ARNAU"
       ],
       "original": "암전 속의 Neon sign",
       "romanization": "amjeon sogui neon sign",
@@ -572,7 +572,7 @@
       "end": 98.01,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "(올라가 더 높이, Betcha like what you see yeah)",
       "romanization": "(ollaga deo nopi, betcha like what you see yeah)",
@@ -586,24 +586,6 @@
         [
           95.14,
           97.69
-        ]
-      ]
-    },
-    {
-      "start": 102.89,
-      "end": 105.84,
-      "members": [
-        "YUTA",
-        "ERIC"
-      ],
-      "original": "(새로운 이름들이, 만들어낸 Culture)",
-      "romanization": "(saeroun ireumdeuri, mandeureonaen culture)",
-      "english": "(A culture created, By these new names)",
-      "adlib": true,
-      "voice": [
-        [
-          102.87,
-          105.74
         ]
       ]
     },
@@ -742,7 +724,7 @@
       "end": 87.84,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ERIC"
       ],
       "original": "Slide with the beat, 발밑에 Melody",
       "romanization": "slide with the beat, balmite melody",
@@ -764,7 +746,7 @@
       "end": 90.7,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ERIC"
       ],
       "original": "숨죽인 밤 위로, We light up the street",
       "romanization": "sumjug in bam wiro, we light up the street",
@@ -782,7 +764,7 @@
       "end": 93.55,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ERIC"
       ],
       "original": "",
       "romanization": "You could try, but these guys ain’t flyer than me",
@@ -800,7 +782,7 @@
       "end": 96.5,
       "members": [
         "JAEHYUN",
-        "ARNAU"
+        "ERIC"
       ],
       "original": "올라가 더 높이, Betcha like what you see",
       "romanization": "ollaga deo nopi, betcha like what you see",
@@ -858,7 +840,8 @@
       "end": 105.22,
       "members": [
         "HAECHAN",
-        "IRENE"
+        "IRENE",
+        "MICHELLE"
       ],
       "original": "새로운 이름들이, 만들어낸 Culture",
       "romanization": "saeroun ireumdeuri, mandeureonaen culture",
@@ -1200,7 +1183,7 @@
       "end": 154.25,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "",
       "romanization": "Everybody knows that we gon’, Live inside their memory yeah",
@@ -1227,7 +1210,7 @@
       "end": 156.58,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "",
       "romanization": "(Oh)",
@@ -1245,7 +1228,7 @@
       "end": 160.2,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "(위를 감싸)",
       "romanization": "(wireul gamssa)",
@@ -1302,7 +1285,7 @@
       "end": 164.31,
       "members": [
         "HAECHAN",
-        "MARC"
+        "ERIC"
       ],
       "original": "땅을 딛고 깨어나, 초록빛을 따라, 남산 위는 밝아",
       "romanization": "ttangeul ditgo kkaeeona, chorokbicheul ttara, namsan wineun balga",
@@ -1336,7 +1319,7 @@
       "end": 167.23,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "(남산 위는 밝아 Legacy yeah)",
       "romanization": "(namsan wineun balga legacy yeah)",
@@ -1363,7 +1346,7 @@
       "end": 169.27,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "",
       "romanization": "(Oh)",
@@ -1390,7 +1373,7 @@
       "end": 172.06,
       "members": [
         "YUTA",
-        "ERIC"
+        "MICHELLE"
       ],
       "original": "",
       "romanization": "(Oh)",
