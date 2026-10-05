@@ -101,7 +101,9 @@
     {
       "start": 7.44,
       "end": 13.03,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "original": "",
       "romanization": "",
       "english": "Wait, ugh, I don't know, Ugh, here we go again",
@@ -132,7 +134,9 @@
     {
       "start": 13.18,
       "end": 16.55,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "voice": [
         [
           13.43,
@@ -147,7 +151,9 @@
     {
       "start": 16.62,
       "end": 21.53,
-      "members": [],
+      "members": [
+        "DONGHWA"
+      ],
       "voice": [
         [
           16.66,
@@ -170,7 +176,9 @@
     {
       "start": 21.69,
       "end": 23.36,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           21.72,
@@ -185,7 +193,9 @@
     {
       "start": 23.48,
       "end": 25.3,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           23.49,
@@ -200,7 +210,9 @@
     {
       "start": 25.69,
       "end": 30.29,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "voice": [
         [
           25.7,
@@ -215,7 +227,9 @@
     {
       "start": 34.26,
       "end": 38.83,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "voice": [
         [
           34.27,
@@ -230,7 +244,9 @@
     {
       "start": 40.7,
       "end": 42.15,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "voice": [
         [
           40.71,
@@ -245,7 +261,9 @@
     {
       "start": 42.36,
       "end": 46.49,
-      "members": [],
+      "members": [
+        "KYEHOON"
+      ],
       "voice": [
         [
           42.4,
@@ -260,7 +278,9 @@
     {
       "start": 46.64,
       "end": 50.73,
-      "members": [],
+      "members": [
+        "KYEHOON"
+      ],
       "voice": [
         [
           46.67,
@@ -283,7 +303,9 @@
     {
       "start": 50.88,
       "end": 55.03,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "voice": [
         [
           50.9,
@@ -298,7 +320,9 @@
     {
       "start": 55.15,
       "end": 59.82,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "voice": [
         [
           55.22,
@@ -321,7 +345,9 @@
     {
       "start": 59.96,
       "end": 64.66,
-      "members": [],
+      "members": [
+        "DONGHWA"
+      ],
       "voice": [
         [
           63,
@@ -336,7 +362,9 @@
     {
       "start": 64.8,
       "end": 68.98,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           67.24,
@@ -351,7 +379,9 @@
     {
       "start": 69.1,
       "end": 73.15,
-      "members": [],
+      "members": [
+        "KYEHOON"
+      ],
       "voice": [
         [
           71.52,
@@ -366,7 +396,9 @@
     {
       "start": 73.2,
       "end": 77.18,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "voice": [
         [
           73.18,
@@ -385,7 +417,9 @@
     {
       "start": 79.86,
       "end": 80.55,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           79.92,
@@ -400,7 +434,9 @@
     {
       "start": 81.69,
       "end": 85.77,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           81.71,
@@ -423,7 +459,9 @@
     {
       "start": 85.95,
       "end": 88,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           85.99,
@@ -438,7 +476,9 @@
     {
       "start": 88.19,
       "end": 90.08,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           88.16,
@@ -453,7 +493,9 @@
     {
       "start": 90.27,
       "end": 94.35,
-      "members": [],
+      "members": [
+        "KYEHOON"
+      ],
       "voice": [
         [
           90.27,
@@ -472,7 +514,9 @@
     {
       "start": 94.54,
       "end": 97.86,
-      "members": [],
+      "members": [
+        "KYEHOON"
+      ],
       "voice": [
         [
           94.58,
@@ -491,7 +535,9 @@
     {
       "start": 99.22,
       "end": 99.91,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           99.33,
@@ -506,7 +552,9 @@
     {
       "start": 99.95,
       "end": 104.32,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "voice": [
         [
           99.93,
@@ -521,7 +569,9 @@
     {
       "start": 108.47,
       "end": 112.98,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "voice": [
         [
           108.45,
@@ -536,7 +586,9 @@
     {
       "start": 114.91,
       "end": 116.43,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "voice": [
         [
           114.9,
@@ -551,7 +603,9 @@
     {
       "start": 116.56,
       "end": 120.62,
-      "members": [],
+      "members": [
+        "DONGHWA"
+      ],
       "voice": [
         [
           116.56,
@@ -566,7 +620,9 @@
     {
       "start": 120.76,
       "end": 124.97,
-      "members": [],
+      "members": [
+        "DONGHWA"
+      ],
       "voice": [
         [
           120.84,
@@ -589,7 +645,9 @@
     {
       "start": 125.15,
       "end": 129.2,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "voice": [
         [
           125.08,
@@ -604,7 +662,9 @@
     {
       "start": 129.39,
       "end": 134.19,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "voice": [
         [
           129.41,
@@ -627,7 +687,9 @@
     {
       "start": 134.81,
       "end": 138.84,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "voice": [
         [
           137.09,
@@ -642,7 +704,9 @@
     {
       "start": 138.99,
       "end": 143.16,
-      "members": [],
+      "members": [
+        "MINJE"
+      ],
       "voice": [
         [
           141.37,
@@ -657,7 +721,9 @@
     {
       "start": 143.28,
       "end": 147.3,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "voice": [
         [
           145.7,
@@ -672,7 +738,9 @@
     {
       "start": 147.34,
       "end": 151.4,
-      "members": [],
+      "members": [
+        "KYEHOON"
+      ],
       "voice": [
         [
           147.38,
@@ -691,7 +759,9 @@
     {
       "start": 151.86,
       "end": 156.15,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "voice": [
         [
           151.89,
@@ -718,7 +788,9 @@
     {
       "start": 156.17,
       "end": 160.21,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "voice": [
         [
           156.11,
@@ -745,7 +817,9 @@
     {
       "start": 160.38,
       "end": 164.49,
-      "members": [],
+      "members": [
+        "DONGHWA"
+      ],
       "voice": [
         [
           160.38,
@@ -772,7 +846,9 @@
     {
       "start": 164.49,
       "end": 168.58,
-      "members": [],
+      "members": [
+        "KYEHOON"
+      ],
       "voice": [
         [
           164.5,
@@ -787,6 +863,23 @@
       "romanization": "",
       "english": "No matter what we do, We'll be beautiful",
       "adlib": false
+    },
+    {
+      "start": 25.23,
+      "end": 25.81,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Messed oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          25.21,
+          25.74
+        ]
+      ]
     }
   ]
 }
