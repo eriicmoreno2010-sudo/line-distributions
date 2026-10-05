@@ -12,42 +12,90 @@
       "image": "images/kickflip/kickoffthewallfeatianndior/kyehoon.png",
       "color": "#d435dd",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4343,
+        "cy": 0.3425,
+        "size": 0.4204,
+        "rot": 343,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "DONGHWA",
       "image": "images/kickflip/kickoffthewallfeatianndior/donghwa.png",
       "color": "#00d856",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5175,
+        "cy": 0.1752,
+        "size": 0.3585,
+        "rot": 348,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JUWANG",
       "image": "images/kickflip/kickoffthewallfeatianndior/juwang.png",
       "color": "#dfb627",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6107,
+        "cy": 0.1857,
+        "size": 0.3972,
+        "rot": 31,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "MINJE",
       "image": "images/kickflip/kickoffthewallfeatianndior/minje.png",
       "color": "#3445da",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.709,
+        "cy": 0.2289,
+        "size": 0.4877,
+        "rot": 342,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "KEIJU",
       "image": "images/kickflip/kickoffthewallfeatianndior/keiju.png",
       "color": "#ee7426",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6494,
+        "cy": 0.2148,
+        "size": 0.5987,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "DONGHYEON",
       "image": "images/kickflip/kickoffthewallfeatianndior/donghyeon.png",
       "color": "#25dada",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5691,
+        "cy": 0.1923,
+        "size": 0.5943,
+        "rot": 23,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
