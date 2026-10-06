@@ -57,8 +57,8 @@
       "members": [
         "KEIJU"
       ],
-      "original": "",
-      "romanization": "",
+      "original": "잠깐만 아 모르겠어, 아 이렇게 또",
+      "romanization": "jamkkanman a moreugesseo, a ireoke tto",
       "english": "Wait, ugh, I don't know, Ugh, here we go again",
       "adlib": false,
       "voice": [
@@ -90,8 +90,8 @@
       "members": [
         "KEIJU"
       ],
-      "original": "",
-      "romanization": "",
+      "original": "아침이 됐어, Don’t know where I’m goin’",
+      "romanization": "achimi dwaesseo, don’t know where i’m goin’",
       "english": "It’s morning already, Don't know where I'm goin'",
       "adlib": false,
       "voice": [
@@ -102,8 +102,724 @@
       ]
     },
     {
-      "start": 2.62,
-      "end": 4.95,
+      "start": 16.67,
+      "end": 21.66,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "괜히 아무리 애써, 정답을 찾아봐도",
+      "romanization": "gwaenhi amuri aesseo, jeongdabeul chajabwayo",
+      "english": "No matter how hard I try, To find the right answer",
+      "adlib": false,
+      "voice": [
+        [
+          16.67,
+          17.28
+        ],
+        [
+          17.69,
+          19.42
+        ],
+        [
+          19.57,
+          22.48
+        ]
+      ]
+    },
+    {
+      "start": 21.71,
+      "end": 23.39,
+      "members": [
+        "MINJE"
+      ],
+      "original": "이게 맞나 싶어 가면",
+      "romanization": "ige matna sipeogamyeon",
+      "english": "I keep wondering if I’m doing this right",
+      "adlib": false,
+      "voice": [
+        [
+          21.72,
+          23.57
+        ]
+      ]
+    },
+    {
+      "start": 23.54,
+      "end": 25.22,
+      "members": [
+        "MINJE"
+      ],
+      "original": "갈수록 더 Messed up",
+      "romanization": "galsurok deo messed up",
+      "english": "The further I go, the more messed up it gets",
+      "adlib": false,
+      "voice": [
+        [
+          23.53,
+          25.23
+        ]
+      ]
+    },
+    {
+      "start": 25.74,
+      "end": 30.16,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          25.73,
+          30.24
+        ]
+      ],
+      "original": "엉망진창 어질어질, 하루 종일 진짜 이상해",
+      "romanization": "eongmangjinchang eojijeojil, haru jongil jinjja isanghae",
+      "english": "A total mess, feeling dizzy, Everything feels so strange all day",
+      "adlib": false
+    },
+    {
+      "start": 34.26,
+      "end": 38.69,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          34.31,
+          38.73
+        ]
+      ],
+      "original": "밤새 답을 고쳐 써도, 결국엔 항상 미완성의",
+      "romanization": "bamsae dabeul gochyeo sseodo, gyeolgugen hangsang miwanseongui",
+      "english": "Even if I rewrite the answer all night, In the end, we’re always unfinished",
+      "adlib": false
+    },
+    {
+      "start": 40.72,
+      "end": 42.18,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          40.71,
+          42.41
+        ]
+      ],
+      "original": "",
+      "romanization": "Yeah we are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 42.31,
+      "end": 46.49,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          42.36,
+          46.51
+        ]
+      ],
+      "original": "어설프고 어질러진, 우리들의 Puzzle Piece",
+      "romanization": "eoseolpeugo eojilleojin, urideurui puzzle piece",
+      "english": "Clumsy and scattered, Our Puzzle Piece",
+      "adlib": false
+    },
+    {
+      "start": 46.63,
+      "end": 50.74,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          46.66,
+          48.6
+        ],
+        [
+          48.77,
+          49.41
+        ],
+        [
+          49.6,
+          50.84
+        ]
+      ],
+      "original": "그래, 원래 이래 난, 그래, 불완전해",
+      "romanization": "geurae wonrae irae nan, geurae bulwanjeonhae",
+      "english": "Yeah, that's just how I am, Yeah, I'm incomplete",
+      "adlib": false
+    },
+    {
+      "start": 50.9,
+      "end": 55.07,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          50.89,
+          55.11
+        ]
+      ],
+      "original": "서투른 선들을 이어, 그려지는 Masterpiece",
+      "romanization": "seotureun seondeureul ieo, geuryeojineun masterpiece",
+      "english": "Connecting imperfect lines, Drawing a masterpiece",
+      "adlib": false
+    },
+    {
+      "start": 55.19,
+      "end": 60.02,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          55.24,
+          55.85
+        ],
+        [
+          56.03,
+          56.39
+        ],
+        [
+          56.54,
+          60.03
+        ]
+      ],
+      "original": "잘 봐, 뭘 해도 우린, 아름다울 거니까",
+      "romanization": "jal bwa mwol haedo urin, areumdaul geonikka",
+      "english": "Just watch, no matter what we do, We'll be beautiful",
+      "adlib": false
+    },
+    {
+      "start": 60.28,
+      "end": 64.66,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          62.91,
+          64.84
+        ]
+      ],
+      "original": "",
+      "romanization": "**Ahh-** How beautiful we are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 64.81,
+      "end": 69,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          67.23,
+          69.12
+        ]
+      ],
+      "original": "",
+      "romanization": "**Ahh-** Yeah this is you and I",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 69.14,
+      "end": 72.96,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          71.51,
+          73.76
+        ]
+      ],
+      "original": "",
+      "romanization": "**Ahh-** How beautiful we are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 73.11,
+      "end": 77.14,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          73.18,
+          73.57
+        ],
+        [
+          73.72,
+          77.22
+        ]
+      ],
+      "original": "뭘 해도 우린,아름다울 거니까",
+      "romanization": "mwol haedo urin, areumdaul geonikka",
+      "english": "No matter what we do, We'll be beautiful",
+      "adlib": false
+    },
+    {
+      "start": 79.91,
+      "end": 80.64,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          79.86,
+          80.62
+        ]
+      ],
+      "original": "",
+      "romanization": "Uh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 81.71,
+      "end": 85.79,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          81.75,
+          82.62
+        ],
+        [
+          82.83,
+          83.75
+        ],
+        [
+          83.94,
+          85.75
+        ]
+      ],
+      "original": "계획 없이 또 Comfy, 흩어진 Piece 위에 엎드렸지",
+      "romanization": "gyehoek eopsi tto comfy, heoteojin piece wie eopdeuryeotji",
+      "english": "No plans, just comfy again, I lay face-down on the scattered pieces",
+      "adlib": false
+    },
+    {
+      "start": 85.98,
+      "end": 87.96,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          85.91,
+          87.99
+        ]
+      ],
+      "original": "멍하니 있으니 이건 또 다른 Peace",
+      "romanization": "meonghani isseuni igeon tto dareun peace",
+      "english": "As I zone out, it feels like another kind of peace",
+      "adlib": false
+    },
+    {
+      "start": 88.11,
+      "end": 90.16,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          88.15,
+          90.2
+        ]
+      ],
+      "original": "그대로 결국 또 아침을 맞네, Aight?",
+      "romanization": "geudaero gyeolguk tto achimeul matne aight?",
+      "english": "And just like that, morning comes again, aight?",
+      "adlib": false
+    },
+    {
+      "start": 90.3,
+      "end": 94.34,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          90.29,
+          92.31
+        ],
+        [
+          92.43,
+          94.37
+        ]
+      ],
+      "original": "네모반듯한 건 재미없어, 미완성이 내겐 미의 완성",
+      "romanization": "nemobandeuthan geon jaemieopseo, miwanseongi naegen miui wanseong",
+      "english": "Perfect squares are no fun, To me, being unfinished is beauty perfected",
+      "adlib": false
+    },
+    {
+      "start": 94.51,
+      "end": 97.85,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          94.52,
+          96.52
+        ],
+        [
+          96.69,
+          97.88
+        ]
+      ],
+      "original": "",
+      "romanization": "I’m a dumb, I’m a nut, I’m a what, what?, This is us, this is me!",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 99.33,
+      "end": 99.75,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          99.23,
+          99.88
+        ]
+      ],
+      "original": "완성",
+      "romanization": "wanseong",
+      "english": "Complete",
+      "adlib": false
+    },
+    {
+      "start": 99.9,
+      "end": 104.37,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          99.92,
+          104.35
+        ]
+      ],
+      "original": "엉망진창 어질어질, 하루 종일 진짜 이상해",
+      "romanization": "eongmangjinchang eojijeojil, haru jongil jinjja isanghae",
+      "english": "A total mess, feeling dizzy, Everything feels so strange all day",
+      "adlib": false
+    },
+    {
+      "start": 108.49,
+      "end": 112.87,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          108.47,
+          113.04
+        ]
+      ],
+      "original": "바보 같고 아름다운, 것들은 항상 미완성의",
+      "romanization": "babo gatgo areumdaun, geotdeureun hangsang miwanseongui",
+      "english": "Things that are foolish yet beautiful, Are always unfinished",
+      "adlib": false
+    },
+    {
+      "start": 114.83,
+      "end": 116.41,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          114.9,
+          116.62
+        ]
+      ],
+      "original": "",
+      "romanization": "Yeah we are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 116.56,
+      "end": 120.66,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          116.54,
+          120.69
+        ]
+      ],
+      "original": "어설프고 어질러진, 우리들의 Puzzle Piece",
+      "romanization": "eoseolpeugo eojilleojin, urideurui puzzle piece",
+      "english": "Clumsy and scattered, Our Puzzle Piece",
+      "adlib": false
+    },
+    {
+      "start": 120.8,
+      "end": 124.95,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          120.84,
+          122.81
+        ],
+        [
+          122.99,
+          123.57
+        ],
+        [
+          123.78,
+          125.07
+        ]
+      ],
+      "original": "그래, 원래 이래 난, 그래, 불완전해",
+      "romanization": "geurae wonrae irae nan, geurae bulwanjeonhae",
+      "english": "Yeah, that's just how I am, Yeah, I'm incomplete",
+      "adlib": false
+    },
+    {
+      "start": 125.1,
+      "end": 129.18,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          125.07,
+          129.25
+        ]
+      ],
+      "original": "서투른 선들을 이어, 그려지는 Masterpiece",
+      "romanization": "seotureun seondeureul ieo, geuryeojineun masterpiece",
+      "english": "Connecting imperfect lines, Drawing a masterpiece",
+      "adlib": false
+    },
+    {
+      "start": 129.33,
+      "end": 134.26,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          129.37,
+          130.02
+        ],
+        [
+          130.24,
+          130.61
+        ],
+        [
+          130.76,
+          134.28
+        ]
+      ],
+      "original": "잘 봐, 뭘 해도 우린, 아름다울 거니까",
+      "romanization": "jal bwa mwol haedo urin, areumdaul geonikka",
+      "english": "Just watch, no matter what we do, We'll be beautiful",
+      "adlib": false
+    },
+    {
+      "start": 134.69,
+      "end": 138.88,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          137.16,
+          139.01
+        ]
+      ],
+      "original": "",
+      "romanization": "**Ahh-** How beautiful we are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 139.01,
+      "end": 143.18,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          141.42,
+          143.33
+        ]
+      ],
+      "original": "",
+      "romanization": "**Ahh-** Yeah this is you and I",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 143.3,
+      "end": 147.13,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          145.74,
+          147.87
+        ]
+      ],
+      "original": "",
+      "romanization": "**Ahh-** How beautiful we are",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 147.28,
+      "end": 151.31,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          147.39,
+          147.77
+        ],
+        [
+          147.92,
+          151.35
+        ]
+      ],
+      "original": "뭘 해도 우린 , 아름다울 거니까",
+      "romanization": "mwol haedo urin, areumdaul geonikka",
+      "english": "No matter what we do, We'll be beautiful",
+      "adlib": false
+    },
+    {
+      "start": 151.81,
+      "end": 156.01,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          151.91,
+          152.38
+        ],
+        [
+          152.7,
+          153.05
+        ],
+        [
+          153.24,
+          153.65
+        ],
+        [
+          153.8,
+          156.1
+        ]
+      ],
+      "original": "",
+      "romanization": "Why, why, why, Why don’t we blur the lines?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 156.17,
+      "end": 160.19,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          156.16,
+          156.6
+        ],
+        [
+          156.95,
+          157.3
+        ],
+        [
+          157.51,
+          157.86
+        ],
+        [
+          158.04,
+          160.37
+        ]
+      ],
+      "original": "",
+      "romanization": "Why, why, why, Why don’t we lose our way?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 160.37,
+      "end": 164.32,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          160.43,
+          160.93
+        ],
+        [
+          161.16,
+          161.6
+        ],
+        [
+          161.78,
+          162.23
+        ],
+        [
+          162.37,
+          164.6
+        ]
+      ],
+      "original": "",
+      "romanization": "Why, why, why, Why don’t we blur the lines?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 164.47,
+      "end": 168.51,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          164.54,
+          164.89
+        ],
+        [
+          165.04,
+          168.5
+        ]
+      ],
+      "original": "뭘 해도 우린, 아름다울 거니까",
+      "romanization": "mwol haedo urin, areumdaul geonikka",
+      "english": "No matter what we do, We'll be beautiful",
+      "adlib": false
+    },
+    {
+      "start": 2.64,
+      "end": 4.92,
       "members": [
         "DONGHYEON"
       ],
@@ -113,22 +829,22 @@
       "adlib": true,
       "voice": [
         [
-          2.66,
-          3.06
+          2.72,
+          3.07
         ],
         [
-          3.25,
-          3.89
+          3.26,
+          3.87
         ],
         [
-          4.06,
-          4.93
+          4.05,
+          4.92
         ]
       ]
     },
     {
-      "start": 25.24,
-      "end": 25.79,
+      "start": 25.23,
+      "end": 25.75,
       "members": [
         "DONGHWA"
       ],
@@ -138,13 +854,13 @@
       "adlib": true,
       "voice": [
         [
-          25.23,
-          25.75
+          25.19,
+          25.74
         ]
       ]
     },
     {
-      "start": 77.7,
+      "start": 77.68,
       "end": 79.95,
       "members": [
         "DONGHYEON"
@@ -155,734 +871,18 @@
       "adlib": true,
       "voice": [
         [
-          77.71,
-          78.11
+          77.68,
+          78.12
         ],
         [
-          78.3,
-          78.91
+          78.27,
+          79.01
         ],
         [
-          79.13,
-          79.91
+          79.17,
+          79.9
         ]
       ]
-    },
-    {
-      "start": 16.57,
-      "end": 21.52,
-      "members": [
-        "DONGHWA"
-      ],
-      "voice": [
-        [
-          16.64,
-          17.24
-        ],
-        [
-          17.68,
-          19.41
-        ],
-        [
-          19.57,
-          22.45
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "No matter how hard I try, To find the right answer",
-      "adlib": false
-    },
-    {
-      "start": 21.65,
-      "end": 23.35,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          21.71,
-          23.53
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "I keep wondering if I’m doing this right",
-      "adlib": false
-    },
-    {
-      "start": 23.5,
-      "end": 25.18,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          23.58,
-          25.26
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "The further I go, the more messed up it gets",
-      "adlib": false
-    },
-    {
-      "start": 25.64,
-      "end": 30.26,
-      "members": [
-        "KEIJU"
-      ],
-      "voice": [
-        [
-          25.75,
-          30.22
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "A total mess, feeling dizzy, Everything feels so strange all day",
-      "adlib": false
-    },
-    {
-      "start": 34.28,
-      "end": 38.77,
-      "members": [
-        "DONGHYEON"
-      ],
-      "voice": [
-        [
-          34.29,
-          38.73
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Even if I rewrite the answer all night, In the end, we’re always unfinished",
-      "adlib": false
-    },
-    {
-      "start": 40.7,
-      "end": 42.18,
-      "members": [
-        "DONGHYEON"
-      ],
-      "voice": [
-        [
-          40.69,
-          42.41
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Yeah, we are",
-      "adlib": false
-    },
-    {
-      "start": 42.33,
-      "end": 46.45,
-      "members": [
-        "KYEHOON"
-      ],
-      "voice": [
-        [
-          42.34,
-          46.47
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Clumsy and scattered, Our Puzzle Piece",
-      "adlib": false
-    },
-    {
-      "start": 46.57,
-      "end": 50.72,
-      "members": [
-        "KYEHOON"
-      ],
-      "voice": [
-        [
-          46.63,
-          48.65
-        ],
-        [
-          48.8,
-          49.4
-        ],
-        [
-          49.59,
-          50.81
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Yeah, that's just how I am, Yeah, I'm incomplete",
-      "adlib": false
-    },
-    {
-      "start": 50.87,
-      "end": 55.02,
-      "members": [
-        "JUWANG"
-      ],
-      "voice": [
-        [
-          50.88,
-          55.04
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Connecting imperfect lines, Drawing a masterpiece",
-      "adlib": false
-    },
-    {
-      "start": 55.17,
-      "end": 59.97,
-      "members": [
-        "JUWANG"
-      ],
-      "voice": [
-        [
-          55.2,
-          55.86
-        ],
-        [
-          56.01,
-          56.42
-        ],
-        [
-          56.58,
-          60.03
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Just watch, no matter what we do, We'll be beautiful",
-      "adlib": false
-    },
-    {
-      "start": 60.46,
-      "end": 64.71,
-      "members": [
-        "DONGHWA"
-      ],
-      "voice": [
-        [
-          62.92,
-          64.85
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "**Ahh,** How beautiful we are",
-      "adlib": false
-    },
-    {
-      "start": 64.86,
-      "end": 68.94,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          67.18,
-          69.05
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "**Ahh,** Yeah this is you and I",
-      "adlib": false
-    },
-    {
-      "start": 69.09,
-      "end": 72.98,
-      "members": [
-        "DONGHWA"
-      ],
-      "voice": [
-        [
-          71.52,
-          73.82
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "**Ahh,** How beautiful we are",
-      "adlib": false
-    },
-    {
-      "start": 73.1,
-      "end": 77.13,
-      "members": [
-        "DONGHYEON"
-      ],
-      "voice": [
-        [
-          73.19,
-          73.54
-        ],
-        [
-          73.73,
-          77.18
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "No matter what we do, We'll be beautiful",
-      "adlib": false
-    },
-    {
-      "start": 79.83,
-      "end": 80.59,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          79.81,
-          80.53
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Uh",
-      "adlib": false
-    },
-    {
-      "start": 81.72,
-      "end": 85.75,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          81.63,
-          82.62
-        ],
-        [
-          82.84,
-          83.7
-        ],
-        [
-          83.88,
-          85.79
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "No plans, just comfy again, I lay face-down on the scattered pieces",
-      "adlib": false
-    },
-    {
-      "start": 85.94,
-      "end": 87.99,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          86,
-          87.96
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "As I zone out, it feels like another kind of peace",
-      "adlib": false
-    },
-    {
-      "start": 88.14,
-      "end": 90.19,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          88.14,
-          90.23
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "And just like that, morning comes again, aight?",
-      "adlib": false
-    },
-    {
-      "start": 90.35,
-      "end": 94.43,
-      "members": [
-        "KYEHOON"
-      ],
-      "voice": [
-        [
-          90.3,
-          92.28
-        ],
-        [
-          92.46,
-          94.4
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Perfect squares are no fun, To me, being unfinished is beauty perfected",
-      "adlib": false
-    },
-    {
-      "start": 94.59,
-      "end": 97.9,
-      "members": [
-        "KYEHOON"
-      ],
-      "voice": [
-        [
-          94.56,
-          96.58
-        ],
-        [
-          96.72,
-          97.82
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "I’m a dumb, I’m a nut, I’m a what, what?, This is us, this is me!",
-      "adlib": false
-    },
-    {
-      "start": 99.37,
-      "end": 99.86,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          99.33,
-          99.89
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Complete",
-      "adlib": false
-    },
-    {
-      "start": 99.92,
-      "end": 104.33,
-      "members": [
-        "KEIJU"
-      ],
-      "voice": [
-        [
-          99.91,
-          104.36
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "A total mess, feeling dizzy, Everything feels so strange all day",
-      "adlib": false
-    },
-    {
-      "start": 108.47,
-      "end": 112.94,
-      "members": [
-        "JUWANG"
-      ],
-      "voice": [
-        [
-          108.47,
-          112.89
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Things that are foolish yet beautiful, Are always unfinished",
-      "adlib": false
-    },
-    {
-      "start": 114.88,
-      "end": 116.38,
-      "members": [
-        "JUWANG"
-      ],
-      "voice": [
-        [
-          114.9,
-          116.6
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Yeah we are",
-      "adlib": false
-    },
-    {
-      "start": 116.53,
-      "end": 120.67,
-      "members": [
-        "DONGHWA"
-      ],
-      "voice": [
-        [
-          116.54,
-          120.66
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Clumsy and scattered, Our Puzzle Piece",
-      "adlib": false
-    },
-    {
-      "start": 120.82,
-      "end": 125,
-      "members": [
-        "DONGHWA"
-      ],
-      "voice": [
-        [
-          120.84,
-          122.78
-        ],
-        [
-          122.96,
-          123.57
-        ],
-        [
-          123.75,
-          125.05
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Yeah, that's just how I am, Yeah, I'm incomplete",
-      "adlib": false
-    },
-    {
-      "start": 125.15,
-      "end": 129.21,
-      "members": [
-        "DONGHYEON"
-      ],
-      "voice": [
-        [
-          125.09,
-          129.24
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Connecting imperfect lines, Drawing a masterpiece",
-      "adlib": false
-    },
-    {
-      "start": 129.34,
-      "end": 134.22,
-      "members": [
-        "DONGHYEON"
-      ],
-      "voice": [
-        [
-          129.4,
-          130.04
-        ],
-        [
-          130.24,
-          130.6
-        ],
-        [
-          130.77,
-          134.26
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Just watch, no matter what we do, We'll be beautiful",
-      "adlib": false
-    },
-    {
-      "start": 134.45,
-      "end": 138.88,
-      "members": [
-        "JUWANG"
-      ],
-      "voice": [
-        [
-          137.13,
-          139
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "**Ahh,** How beautiful we are",
-      "adlib": false
-    },
-    {
-      "start": 139.04,
-      "end": 143.19,
-      "members": [
-        "MINJE"
-      ],
-      "voice": [
-        [
-          141.43,
-          143.27
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "**Ahh,** Yeah this is you and I",
-      "adlib": false
-    },
-    {
-      "start": 143.34,
-      "end": 147.21,
-      "members": [
-        "JUWANG"
-      ],
-      "voice": [
-        [
-          145.71,
-          147.96
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "**Ahh,** How beautiful we are",
-      "adlib": false
-    },
-    {
-      "start": 147.35,
-      "end": 151.3,
-      "members": [
-        "KYEHOON"
-      ],
-      "voice": [
-        [
-          147.4,
-          147.75
-        ],
-        [
-          147.93,
-          151.33
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "No matter what we do, We'll be beautiful",
-      "adlib": false
-    },
-    {
-      "start": 151.93,
-      "end": 155.96,
-      "members": [
-        "KEIJU"
-      ],
-      "voice": [
-        [
-          151.89,
-          152.32
-        ],
-        [
-          152.68,
-          153.01
-        ],
-        [
-          153.21,
-          153.6
-        ],
-        [
-          153.77,
-          156.08
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Why, why, why, Why don’t we blur the lines?",
-      "adlib": false
-    },
-    {
-      "start": 156.14,
-      "end": 160.23,
-      "members": [
-        "DONGHYEON"
-      ],
-      "voice": [
-        [
-          156.13,
-          156.62
-        ],
-        [
-          157.01,
-          157.33
-        ],
-        [
-          157.54,
-          157.89
-        ],
-        [
-          158.1,
-          160.24
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Why, why, why, Why don’t we lose our way?",
-      "adlib": false
-    },
-    {
-      "start": 160.41,
-      "end": 164.32,
-      "members": [
-        "DONGHWA"
-      ],
-      "voice": [
-        [
-          160.45,
-          160.88
-        ],
-        [
-          161.24,
-          161.57
-        ],
-        [
-          161.78,
-          162.18
-        ],
-        [
-          162.34,
-          164.78
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "Why, why, why, Why don’t we blur the lines?",
-      "adlib": false
-    },
-    {
-      "start": 164.47,
-      "end": 168.54,
-      "members": [
-        "KYEHOON"
-      ],
-      "voice": [
-        [
-          164.55,
-          164.87
-        ],
-        [
-          165.08,
-          168.51
-        ]
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "No matter what we do, We'll be beautiful",
-      "adlib": false
     }
   ]
 }
