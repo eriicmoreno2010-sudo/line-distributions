@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "우리 같이 청춘을 낭비해 (Waste It All With You)",
   "video": "",
-  "duration": 0,
+  "duration": 198.034286,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -52,15 +52,961 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 3.52,
+      "end": 9.15,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "눈이 마주친 순간, 그때 알았나 봐",
+      "romanization": "nuni majuchin sungan, geuttae aranna bwa",
+      "english": "The moment our eyes met, I guess I knew then",
+      "adlib": false,
+      "voice": [
+        [
+          3.5,
+          6.3
+        ],
+        [
+          7.1,
+          9.15
+        ]
+      ]
+    },
+    {
+      "start": 9.74,
+      "end": 14.76,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          9.8,
+          12.93
+        ],
+        [
+          13.43,
+          14.76
+        ]
+      ],
+      "original": "가까워질 너와 날 Um",
+      "romanization": "gakkawojil neowa nal um",
+      "english": "You and I would grow closer Um",
+      "adlib": false
+    },
+    {
+      "start": 15.92,
+      "end": 22.09,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          16.01,
+          18.77
+        ],
+        [
+          19.3,
+          22.03
+        ]
+      ],
+      "original": "끝도 없는 고민들과, 답이 없는 질문들도",
+      "romanization": "kkeutdo eomneun gomindeulgwa, dabi eomneun jilmundeuldo",
+      "english": "The endless worries, And even the questions without answers",
+      "adlib": false
+    },
+    {
+      "start": 22.44,
+      "end": 25.73,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          22.45,
+          25.68
+        ]
+      ],
+      "original": "너와 있으면 왠지 난",
+      "romanization": "neowa isseumyeon waenji nan",
+      "english": "When I'm with you somehow I",
+      "adlib": false
+    },
+    {
+      "start": 26.29,
+      "end": 28.16,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          26.34,
+          28.07
+        ]
+      ],
+      "original": "(두렵지 않았으니까)",
+      "romanization": "(duryeopji anasseunikka)",
+      "english": "(Because I wasn't afraid)",
+      "adlib": true
+    },
+    {
+      "start": 38.69,
+      "end": 39.44,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "(Woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          38.66,
+          39.42
+        ]
+      ]
+    },
+    {
+      "start": 50.1,
+      "end": 50.89,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "(보자고)",
+      "romanization": "(bojago)",
+      "english": "(Let's)",
+      "adlib": true
+    },
+    {
+      "start": 51.69,
+      "end": 52.48,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "(가자고)",
+      "romanization": "(gajago)",
+      "english": "(Let's go)",
+      "adlib": true
+    },
+    {
+      "start": 82.04,
+      "end": 84.13,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "(No woah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          82.03,
+          84.05
+        ]
+      ]
+    },
+    {
+      "start": 82.89,
+      "end": 83.42,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(No)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          82.97,
+          83.44
+        ]
+      ]
+    },
+    {
+      "start": 100.64,
+      "end": 101.4,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "(보자고)",
+      "romanization": "(bojago)",
+      "english": "(Let's)",
+      "adlib": true
+    },
+    {
+      "start": 102.21,
+      "end": 102.97,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "(가자고)",
+      "romanization": "(gajago)",
+      "english": "(Let's go)",
+      "adlib": true
+    },
+    {
+      "start": 126.7,
+      "end": 129.06,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          126.71,
+          129.01
+        ]
+      ]
+    },
+    {
+      "start": 141.74,
+      "end": 145.02,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          141.73,
+          144.89
+        ]
+      ]
+    },
+    {
+      "start": 146.81,
+      "end": 148.34,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(Woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          146.81,
+          148.14
+        ]
+      ]
+    },
+    {
+      "start": 27.5,
+      "end": 31.93,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          27.54,
+          31.9
+        ]
+      ],
+      "original": "신호등이 깜빡이는 교차로에서",
+      "romanization": "sinhodeungi kkamppagineun gyocharoeseo",
+      "english": "At the intersection where the traffic light is blinking",
+      "adlib": false
+    },
+    {
+      "start": 33.8,
+      "end": 38.2,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          33.91,
+          38.18
+        ]
+      ],
+      "original": "멈추는 법을 까먹어 버린 것처럼",
+      "romanization": "meomchuneun beobeul kkaemeoge beorin geotcheoreom",
+      "english": "Like I've forgotten how to stop",
+      "adlib": false
+    },
+    {
+      "start": 39.85,
+      "end": 46.21,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          39.83,
+          42.49
+        ],
+        [
+          42.68,
+          46.07
+        ]
+      ],
+      "original": "이 밤 위를 달려, 소리 질러 버려 맘껏",
+      "romanization": "i bam wireul dalryeo, sori jilleo beoryeo mamkkeot",
+      "english": "Let's run across this night, Let's scream as loud as we want",
+      "adlib": false
+    },
+    {
+      "start": 46.52,
+      "end": 51.78,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          46.57,
+          50.11
+        ],
+        [
+          50.87,
+          51.71
+        ]
+      ],
+      "original": "자, 우리 청춘을 다 낭비해 보자고, 가자고",
+      "romanization": "ja uri cheongchuneul da nangbihae bojago, gajago",
+      "english": "Come on, let's waste all of our youth, Let's go",
+      "adlib": false
+    },
+    {
+      "start": 52.51,
+      "end": 58.66,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          52.47,
+          54.97
+        ],
+        [
+          55.21,
+          58.57
+        ]
+      ],
+      "original": "어디로든 달려, 내일 생각하지 말고",
+      "romanization": "eodirodeun dalryeo, naeil saenggakaji malgo",
+      "english": "Let's run anywhere, Without thinking about tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 59.15,
+      "end": 64.72,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          59.14,
+          64.91
+        ]
+      ],
+      "original": "자, 우리 청춘을 다 낭비해 보자, Go with me",
+      "romanization": "ja uri cheongchuneul da nangbihae boja, go with me",
+      "english": "Come on, let's waste all of our youth, Go with me",
+      "adlib": false
+    },
+    {
+      "start": 64.74,
+      "end": 68.42,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          64.73,
+          65.17
+        ],
+        [
+          65.32,
+          66.28
+        ],
+        [
+          66.42,
+          66.84
+        ],
+        [
+          66.99,
+          67.8
+        ],
+        [
+          67.93,
+          68.48
+        ]
+      ],
+      "original": "Yeah 침대에 누워 울었어?, 또 혼자 꾹 참았어?",
+      "romanization": "yeah chimdaee nuwo ureosseo?, tto honja kkuk chameosseo?",
+      "english": "Yeah did you lie in bed and cry?, Did you hold it all in alone again?",
+      "adlib": false
+    },
+    {
+      "start": 68.76,
+      "end": 71.96,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          68.85,
+          72.03
+        ]
+      ],
+      "original": "지금 하는 도전은 사치가 아냐, 어깨 펼래?",
+      "romanization": "jigeum haneun dojeoneun sachiga anya, eokkae pyeolla?",
+      "english": "The challenge you're taking on now isn't a luxury, Wanna straighten your shoulders?",
+      "adlib": false
+    },
+    {
+      "start": 72.05,
+      "end": 75.12,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          72.02,
+          72.5
+        ],
+        [
+          72.65,
+          72.91
+        ],
+        [
+          73.07,
+          73.7
+        ],
+        [
+          73.86,
+          75.1
+        ]
+      ],
+      "original": "Okay yeah 너랑 있음, 불안함마저도 청춘이야",
+      "romanization": "okay yeah neorang isseum, buranhammareuldo cheongchuniya",
+      "english": "Okay yeah when I'm with you, Even anxiety is youth",
+      "adlib": false
+    },
+    {
+      "start": 75.17,
+      "end": 78.09,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          75.26,
+          78.45
+        ]
+      ],
+      "original": "이 막춤도 청춘이야, 무섭지 않아 너 덕분이야",
+      "romanization": "i makchumdo cheongchuniya, museopji ana neo deokbuniya",
+      "english": "Even this crazy dance is youth, I'm not afraid thanks to you",
+      "adlib": false
+    },
+    {
+      "start": 78.13,
+      "end": 82.36,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          78.13,
+          82.2
+        ]
+      ],
+      "original": "끝도 없이 펼쳐진 이 갈림길에서",
+      "romanization": "kkeutdo eopsi pyeolchyeojin i galrimgireseo",
+      "english": "At this crossroads stretching endlessly",
+      "adlib": false
+    },
+    {
+      "start": 84.42,
+      "end": 90.26,
+      "members": [
+        "DONGHWA",
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          84.47,
+          90.24
+        ]
+      ],
+      "original": "너를 만난 건 우연이 아니라 믿어",
+      "romanization": "neoreul mannan geon uyeoni anira mideo",
+      "english": "I believe meeting you wasn't a coincidence",
+      "adlib": false
+    },
+    {
+      "start": 90.4,
+      "end": 96.66,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          90.44,
+          93
+        ],
+        [
+          93.15,
+          96.63
+        ]
+      ],
+      "original": "이 밤 위를 달려, 소리 질러 버려 맘껏",
+      "romanization": "i bam wireul dalryeo, sori jilleo beoryeo mamkkeot",
+      "english": "Let's run across this night, Let's scream as loud as we want",
+      "adlib": false
+    },
+    {
+      "start": 97.07,
+      "end": 102.25,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          97.05,
+          100.68
+        ],
+        [
+          101.44,
+          102.25
+        ]
+      ],
+      "original": "자, 우리 청춘을 다 낭비해 보자고, 가자고",
+      "romanization": "ja uri cheongchuneul da nangbihae bojago, gajago",
+      "english": "Come on, let's waste all of our youth, Let's go",
+      "adlib": false
+    },
+    {
+      "start": 102.96,
+      "end": 109,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          102.98,
+          105.57
+        ],
+        [
+          105.76,
+          109.06
+        ]
+      ],
+      "original": "어디로든 달려, 내일 생각하지 말고",
+      "romanization": "eodirodeun dalryeo, naeil saenggakaji malgo",
+      "english": "Let's run anywhere, Without thinking about tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 109.63,
+      "end": 115.47,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          109.66,
+          115.52
+        ]
+      ],
+      "original": "자, 우리 청춘을 다 낭비해 보자, Go with me",
+      "romanization": "ja uri cheongchuneul da nangbihae boja, go with me",
+      "english": "Come on, let's waste all of our youth, Go with me",
+      "adlib": false
+    },
+    {
+      "start": 115.97,
+      "end": 121.95,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          115.96,
+          118.64
+        ],
+        [
+          119.14,
+          119.77
+        ],
+        [
+          119.96,
+          122.04
+        ]
+      ],
+      "original": "I’d waste it all with you, 내 대답은 항상",
+      "romanization": "i’d waste it all with you, nae daedabeun hangsang",
+      "english": "I'd waste it all with you, My answer is always",
+      "adlib": false
+    },
+    {
+      "start": 122.25,
+      "end": 127.24,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          122.34,
+          124.88
+        ],
+        [
+          125.18,
+          127.07
+        ]
+      ],
+      "original": "",
+      "romanization": "There’s nothing else I’d do, I do",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 128.89,
+      "end": 134.78,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "I’d waste it all with you, 언제든지 말이야",
+      "romanization": "i’d waste it all with you, eonjedunji mariya",
+      "english": "I'd waste it all with you, Anytime you want",
+      "adlib": false,
+      "voice": [
+        [
+          128.9,
+          131.28
+        ],
+        [
+          131.76,
+          134.75
+        ]
+      ]
+    },
+    {
+      "start": 134.97,
+      "end": 140.84,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          135.18,
+          137.53
+        ],
+        [
+          137.74,
+          141.74
+        ]
+      ],
+      "original": "",
+      "romanization": "There’s nothing else I’d do, I do",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 140.84,
+      "end": 147.16,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          140.86,
+          143.4
+        ],
+        [
+          143.61,
+          147.03
+        ]
+      ],
+      "original": "이 밤 위를 달려, 소리 질러 버려 맘껏",
+      "romanization": "i bam wireul dalryeo, sori jilleo beoryeo mamkkeot",
+      "english": "Let's run across this night, Let's scream as loud as we want",
+      "adlib": false
+    },
+    {
+      "start": 147.56,
+      "end": 152.8,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          147.51,
+          151.2
+        ],
+        [
+          151.89,
+          152.76
+        ]
+      ],
+      "original": "자, 우리 청춘을 다 낭비해 보자고, 가자고",
+      "romanization": "ja uri cheongchuneul da nangbihae bojago, gajago",
+      "english": "Come on, let's waste all of our youth, Let's go",
+      "adlib": false
+    },
+    {
+      "start": 150.79,
+      "end": 153.64,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          150.79,
+          153.67
+        ]
+      ],
+      "original": "(다 낭비해 보자고)",
+      "romanization": "(da nangbihae bojago)",
+      "english": "(Let's waste it all)",
+      "adlib": true
+    },
+    {
+      "start": 151.13,
+      "end": 151.92,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "(보자고)",
+      "romanization": "(bojago)",
+      "english": "(Let's)",
+      "adlib": true
+    },
+    {
+      "start": 152.73,
+      "end": 153.49,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "(가자고)",
+      "romanization": "(gajago)",
+      "english": "(Let's go)",
+      "adlib": true
+    },
+    {
+      "start": 170.47,
+      "end": 173.2,
       "members": [
         "KYEHOON"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "(Yeah yeah yeah yeah yeah yeah)",
       "english": "",
-      "adlib": ""
+      "adlib": true,
+      "voice": [
+        [
+          170.47,
+          173.25
+        ]
+      ]
+    },
+    {
+      "start": 176.73,
+      "end": 179.39,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "",
+      "romanization": "(Yeah yeah yeah yeah yeah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          176.8,
+          179.61
+        ]
+      ]
+    },
+    {
+      "start": 177.57,
+      "end": 180.44,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(La la la la la la)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          177.57,
+          180.47
+        ]
+      ]
+    },
+    {
+      "start": 183.51,
+      "end": 186.07,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          183.5,
+          186.03
+        ]
+      ]
+    },
+    {
+      "start": 188.72,
+      "end": 189.16,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          188.69,
+          189.15
+        ]
+      ]
+    },
+    {
+      "start": 153.46,
+      "end": 159.51,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          153.46,
+          156.09
+        ],
+        [
+          156.26,
+          159.55
+        ]
+      ],
+      "original": "어디로든 달려, 내일 생각하지 말고",
+      "romanization": "eodirodeun dalryeo, naeil saenggakaji malgo",
+      "english": "Let's run anywhere, Without thinking about tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 160.16,
+      "end": 165.97,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          160.2,
+          165.97
+        ]
+      ],
+      "original": "자, 우리 청춘을 다 낭비해 보자, Go with me",
+      "romanization": "ja uri cheongchuneul da nangbihae boja, go with me",
+      "english": "Come on, let's waste all of our youth, Go with me",
+      "adlib": false
+    },
+    {
+      "start": 166.48,
+      "end": 172.34,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          166.5,
+          167.8
+        ],
+        [
+          168.1,
+          172.35
+        ]
+      ],
+      "original": "우리 같이 청춘을 낭비해",
+      "romanization": "uri gachi cheongchuneul nangbihae",
+      "english": "Let's waste our youth together",
+      "adlib": false
+    },
+    {
+      "start": 172.87,
+      "end": 178.76,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          172.86,
+          174.1
+        ],
+        [
+          174.42,
+          178.76
+        ]
+      ],
+      "original": "우리 같이 청춘을 낭비해",
+      "romanization": "uri gachi cheongchuneul nangbihae",
+      "english": "Let's waste our youth together",
+      "adlib": false
+    },
+    {
+      "start": 179.14,
+      "end": 185.06,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          179.16,
+          180.42
+        ],
+        [
+          180.72,
+          185.03
+        ]
+      ],
+      "original": "우리 같이 청춘을 낭비해",
+      "romanization": "uri gachi cheongchuneul nangbihae",
+      "english": "Let's waste our youth together",
+      "adlib": false
+    },
+    {
+      "start": 185.45,
+      "end": 188.9,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          185.48,
+          188.73
+        ]
+      ],
+      "original": "자, 우리 청춘을 다 낭비해 보자",
+      "romanization": "ja uri cheongchuneul da nangbihae boja",
+      "english": "Come on, let's waste all of our youth",
+      "adlib": false
+    },
+    {
+      "start": 189.05,
+      "end": 193.17,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          189.06,
+          193.03
+        ]
+      ],
+      "original": "아낌없이 전부 다 낭비하자고",
+      "romanization": "akim eopsi jeonbu da nangbihajago",
+      "english": "Let's waste it all without holding anything back",
+      "adlib": false
     }
   ],
   "cover": "covers/kickflip_wasteitallwithyou.jpg",
