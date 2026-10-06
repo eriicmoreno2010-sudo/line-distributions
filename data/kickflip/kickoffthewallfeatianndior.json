@@ -96,6 +96,13 @@
         "flip": false,
         "blur": 0
       }
+    },
+    {
+      "name": "IANN DIOR",
+      "image": "images/kickflip/kickoffthewallfeatianndior/ianndior.png",
+      "color": "#ff1414",
+      "focus": 50,
+      "lift": 3
     }
   ],
   "lyrics": [
@@ -548,7 +555,9 @@
     {
       "start": 122.43,
       "end": 125.08,
-      "members": [],
+      "members": [
+        "IANN DIOR"
+      ],
       "original": "",
       "romanization": "I'mma kick off the wall, Ain't worried 'bout a loss",
       "english": "",
@@ -557,7 +566,9 @@
     {
       "start": 125.2,
       "end": 129.23,
-      "members": [],
+      "members": [
+        "IANN DIOR"
+      ],
       "original": "",
       "romanization": "Yeah we risking it all, I've been waiting for this moment way too long",
       "english": "",
@@ -566,7 +577,9 @@
     {
       "start": 129.41,
       "end": 132.15,
-      "members": [],
+      "members": [
+        "IANN DIOR"
+      ],
       "original": "",
       "romanization": "So I'mma do whatever it takes to get on",
       "english": "",
@@ -575,7 +588,9 @@
     {
       "start": 132.36,
       "end": 135.47,
-      "members": [],
+      "members": [
+        "IANN DIOR"
+      ],
       "original": "",
       "romanization": "All gas, no brakes, We ain’t slowing down",
       "english": "",
@@ -584,7 +599,9 @@
     {
       "start": 135.65,
       "end": 137.75,
-      "members": [],
+      "members": [
+        "IANN DIOR"
+      ],
       "original": "",
       "romanization": "Uh uh they ain’t catching up now",
       "english": "",
@@ -593,7 +610,9 @@
     {
       "start": 138.19,
       "end": 140.95,
-      "members": [],
+      "members": [
+        "IANN DIOR"
+      ],
       "original": "",
       "romanization": "It’s Me ‘n’ Kick, Money Flip, Got ‘em wondering how",
       "english": "",
@@ -602,7 +621,9 @@
     {
       "start": 141.1,
       "end": 143.55,
-      "members": [],
+      "members": [
+        "IANN DIOR"
+      ],
       "original": "",
       "romanization": "All of a sudden we the talk of the town",
       "english": "",
@@ -694,9 +715,7 @@
     {
       "start": 160.89,
       "end": 163.05,
-      "members": [
-        "KEIJU"
-      ],
+      "members": [],
       "original": "",
       "romanization": "Kick Kick Kick Kick, Kick off the wall",
       "english": "",
