@@ -102,7 +102,15 @@
       "image": "images/kickflip/kickoffthewallfeatianndior/ianndior.png",
       "color": "#ff1414",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3761,
+        "cy": 0.4986,
+        "size": 0.1836,
+        "rot": 342,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
