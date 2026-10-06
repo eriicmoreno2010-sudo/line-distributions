@@ -63,5 +63,6 @@
       "adlib": ""
     }
   ],
-  "cover": "covers/kickflip_dropin.jpg"
+  "cover": "covers/kickflip_dropin.jpg",
+  "audio": "audio/kickflip_dropin.mp3"
 }
