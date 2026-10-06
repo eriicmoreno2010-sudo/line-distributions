@@ -102,13 +102,611 @@
     {
       "start": 0,
       "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "No more waitin’ on the right time, I’ll be runnin’ till the sunrise",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Yeah)",
+      "romanization": "(yeah)",
+      "english": "(Yeah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "머릴 썩이는 Night and day, Skate 바퀴는 삐걱대",
+      "romanization": "meoril sseogineun night and day, skate bakwineun ppigeokdae",
+      "english": "Racking my brain night and day, Skate wheels are squeaking",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "뭔가 발끝에 걸릴 땐, I don’t care, I’m on my way",
+      "romanization": "mwonga balkkeute geollil ttaen, i don’t care i’m on my way",
+      "english": "When something gets caught at my feet, I don’t care, I’m on my way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "망설임 따윈 잊고 Drive, Can’t wait 까짓것 Just try",
+      "romanization": "mangseorim ttawin itgo drive, can’t wait gajjitgeot just try",
+      "english": "Leave hesitation behind and drive, Can’t wait, why not just try",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "지금 느낌은 Big green light, I was made for a bigger life",
+      "romanization": "jigeum neukkimeun big green light, i was made for a bigger life",
+      "english": "Right now it feels like a big green light, I was made for a bigger life",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "Yeah I’m movin’ through",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "어차피 정답 없는 Question, Ain’t no hesitation",
+      "romanization": "eochapi jeongdap eomneun question, ain’t no hesitation",
+      "english": "It’s a question with no right answer, Ain’t no hesitation",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "Yeah now I’m groovin’ through",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "지금부터 We go wild",
+      "romanization": "jigeumbuteo we go wild",
+      "english": "From now on, we go wild",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Kick off the wall)",
+      "romanization": "(kick off the wall)",
+      "english": "(Kick off the wall)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Kick Kick Kick Kick, Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Jump on the board and now we lose control",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Kick off the wall)",
+      "romanization": "(kick off the wall)",
+      "english": "(Kick off the wall)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "No brakes, no sleep, We never stop",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Just keep it rollin’, We gon’ kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "That's how we kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "Woah-oh-oh, Woah-oh-oh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "Woah-oh-oh, Woah-oh-oh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "밤을 불태우는 중 지금을 즐기는 중",
+      "romanization": "bameul bultaeuneun jung jigeumeul jeulgineun jung",
+      "english": "Burning up the night, living in the moment",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "내일은 모르겠고 고민 않고 걍 Go",
+      "romanization": "naeileun moreugessgo gomin an hago gyang go",
+      "english": "Don’t know about tomorrow, no overthinking, just go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "This is how we do, Rollin’ fast 뛰어넘어 Roof",
+      "romanization": "this is how we do, rollin’ fast ttwieoneomeo roof",
+      "english": "This is how we do, Rollin’ fast, jumping over the roof",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "확신 따위 기다리지 말고, Let’s kick off the show",
+      "romanization": "hwaksin ttawi gidariji malgo, let’s kick off the show",
+      "english": "Don't wait for certainty, Let’s kick off the show",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "끝은 몰라도 Ain’t no doubt, Go straight 오직 앞만 봐",
+      "romanization": "kkeuteun mollado ain’t no doubt, go straight ojik apman bwa",
+      "english": "Don't know how it'll end, but there ain't no doubt, Go straight, just look ahead",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "복잡한 생각 제껴 다, 너만 있으면 I’m alright",
+      "romanization": "bokjaphan saenggak jekkyeo da, neoman isseumyeon i’m alright",
+      "english": "Push all those complicated thoughts aside, As long as I have you, I’m alright",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "Yeah I'm movin’ through",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "설명은 필요 없어 Action, We don’t need permission",
+      "romanization": "seolmyeongeun piryo eopseo action, we don’t need permission",
+      "english": "No explanation needed, just action, We don’t need permission",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "Yeah now I’m boostin’ through",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "숨이 차도 We go wild",
+      "romanization": "sumi chado we go wild",
+      "english": "Even out of breath, we go wild",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Kick off the wall)",
+      "romanization": "(kick off the wall)",
+      "english": "(Kick off the wall)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "Kick Kick Kick Kick, Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "Jump on the board and now we lose control",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Kick off the wall)",
+      "romanization": "(kick off the wall)",
+      "english": "(Kick off the wall)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "No brakes, no sleep, We never stop",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Just keep it rollin’, We gon’ kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "That's how we kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "Woah-oh-oh, Woah-oh-oh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "Woah-oh-oh, Woah-oh-oh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I'mma kick off the wall, Ain't worried 'bout a loss",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Yeah we risking it all, I've been waiting for this moment way too long",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "So I'mma do whatever it takes to get on",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "All gas, no brakes, We ain’t slowing down",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Uh uh they ain’t catching up now",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "It’s Me ‘n’ Kick, Money Flip, Got ‘em wondering how",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "All of a sudden we the talk of the town",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Kick off the wall)",
+      "romanization": "(kick off the wall)",
+      "english": "(Kick off the wall)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(I was made for a bigger life)",
+      "romanization": "(i was made for a bigger life)",
+      "english": "(I was made for a bigger life)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Kick off the wall)",
+      "romanization": "(kick off the wall)",
+      "english": "(Kick off the wall)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Kick Kick Kick Kick, Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I’m in my zone and I’m in full control",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Yeah yeah yeah)",
+      "romanization": "(yeah yeah yeah)",
+      "english": "(Yeah yeah yeah)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Kick Kick Kick Kick, Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "Sky is the limit, Come on, Let’s break through it all, yeah",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "Woah-oh-oh, Woah-oh-oh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "Kick off the wall",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "Woah-oh-oh, Woah-oh-oh",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
       "members": [
         "KYEHOON"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "Kick off the wall",
       "english": "",
-      "adlib": ""
+      "adlib": false
     }
   ]
 }
