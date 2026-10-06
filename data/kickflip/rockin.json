@@ -1026,5 +1026,6 @@
     }
   ],
   "cover": "covers/kickflip_rockin.jpg",
-  "audio": "audio/kickflip_rockin.mp3"
+  "audio": "audio/kickflip_rockin.mp3",
+  "npC1": "#f22626"
 }
