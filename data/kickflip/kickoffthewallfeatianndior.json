@@ -117,7 +117,9 @@
     {
       "start": 1.7,
       "end": 6.62,
-      "members": [],
+      "members": [
+        "DONGHWA"
+      ],
       "original": "",
       "romanization": "No more waitin’ on the right time, I’ll be runnin’ till the sunrise",
       "english": "",
@@ -346,7 +348,9 @@
     {
       "start": 48.71,
       "end": 50.18,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -424,7 +428,7 @@
       "start": 60.4,
       "end": 61.5,
       "members": [
-        "MINJE"
+        "KEIJU"
       ],
       "original": "",
       "romanization": "Kick off the wall",
@@ -452,7 +456,7 @@
       "start": 66.01,
       "end": 67,
       "members": [
-        "MINJE"
+        "DONGHWA"
       ],
       "original": "",
       "romanization": "Kick off the wall",
@@ -759,7 +763,7 @@
       "start": 115.75,
       "end": 116.91,
       "members": [
-        "KYEHOON"
+        "KEIJU"
       ],
       "original": "",
       "romanization": "Kick off the wall",
@@ -941,7 +945,9 @@
     {
       "start": 104.17,
       "end": 105.76,
-      "members": [],
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -1012,7 +1018,9 @@
     {
       "start": 155.35,
       "end": 157.5,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "original": "",
       "romanization": "Kick Kick Kick Kick, Kick off the wall",
       "english": "",
@@ -1027,7 +1035,9 @@
     {
       "start": 157.66,
       "end": 159.73,
-      "members": [],
+      "members": [
+        "KEIJU"
+      ],
       "original": "",
       "romanization": "I’m in my zone and I’m in full control",
       "english": "",
@@ -1070,7 +1080,9 @@
     {
       "start": 160.89,
       "end": 163.05,
-      "members": [],
+      "members": [
+        "DONGHWA"
+      ],
       "original": "",
       "romanization": "Kick Kick Kick Kick, Kick off the wall",
       "english": "",
