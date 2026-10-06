@@ -63,5 +63,7 @@
       "adlib": ""
     }
   ],
-  "cover": "covers/kickflip_hateblueberry.jpg"
+  "cover": "covers/kickflip_hateblueberry.jpg",
+  "npC1": "#2f44e4",
+  "audio": "audio/kickflip_hateblueberry.mp3"
 }
