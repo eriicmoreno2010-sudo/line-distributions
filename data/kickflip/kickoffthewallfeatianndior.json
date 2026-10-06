@@ -113,7 +113,17 @@
       "original": "",
       "romanization": "No more waitin’ on the right time, I’ll be runnin’ till the sunrise",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          1.64,
+          3.71
+        ],
+        [
+          4.43,
+          6.51
+        ]
+      ]
     },
     {
       "start": 6.6,
@@ -124,7 +134,13 @@
       "original": "",
       "romanization": "(Yeah)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          6.62,
+          7.03
+        ]
+      ]
     },
     {
       "start": 10.81,
@@ -135,7 +151,17 @@
       "original": "머릴 썩이는 Night and day, Skate 바퀴는 삐걱대",
       "romanization": "meoril sseogineun night and day, skate bakwineun ppigeokdae",
       "english": "Racking my brain night and day, Skate wheels are squeaking",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          10.72,
+          12.88
+        ],
+        [
+          13.38,
+          15.45
+        ]
+      ]
     },
     {
       "start": 16.12,
@@ -146,7 +172,17 @@
       "original": "뭔가 발끝에 걸릴 땐, I don’t care, I’m on my way",
       "romanization": "mwonga balkkeute geollil ttaen, i don’t care i’m on my way",
       "english": "When something gets caught at my feet, I don’t care, I’m on my way",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.07,
+          18.28
+        ],
+        [
+          18.69,
+          21.43
+        ]
+      ]
     },
     {
       "start": 21.85,
@@ -157,7 +193,17 @@
       "original": "망설임 따윈 잊고 Drive, Can’t wait 까짓것 Just try",
       "romanization": "mangseorim ttawin itgo drive, can’t wait gajjitgeot just try",
       "english": "Leave hesitation behind and drive, Can’t wait, why not just try",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          21.76,
+          24.44
+        ],
+        [
+          24.62,
+          27.19
+        ]
+      ]
     },
     {
       "start": 27.27,
@@ -168,7 +214,13 @@
       "original": "지금 느낌은 Big green light, I was made for a bigger life",
       "romanization": "jigeum neukkimeun big green light, i was made for a bigger life",
       "english": "Right now it feels like a big green light, I was made for a bigger life",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.19,
+          32.54
+        ]
+      ]
     },
     {
       "start": 32.82,
@@ -179,7 +231,13 @@
       "original": "",
       "romanization": "Yeah I’m movin’ through",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          32.75,
+          34.7
+        ]
+      ]
     },
     {
       "start": 34.96,
@@ -190,7 +248,13 @@
       "original": "어차피 정답 없는 Question, Ain’t no hesitation",
       "romanization": "eochapi jeongdap eomneun question, ain’t no hesitation",
       "english": "It’s a question with no right answer, Ain’t no hesitation",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          34.87,
+          38.15
+        ]
+      ]
     },
     {
       "start": 38.41,
@@ -201,7 +265,13 @@
       "original": "",
       "romanization": "Yeah now I’m groovin’ through",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.31,
+          40.29
+        ]
+      ]
     },
     {
       "start": 40.91,
@@ -212,12 +282,20 @@
       "original": "지금부터 We go wild",
       "romanization": "jigeumbuteo we go wild",
       "english": "From now on, we go wild",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          40.83,
+          43.42
+        ]
+      ]
     },
     {
       "start": 43.71,
       "end": 44.72,
-      "members": [],
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -232,7 +310,13 @@
       "original": "",
       "romanization": "Kick Kick Kick Kick, Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.33,
+          46.6
+        ]
+      ]
     },
     {
       "start": 46.75,
@@ -243,7 +327,13 @@
       "original": "",
       "romanization": "Jump on the board and now we lose control",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          46.6,
+          48.82
+        ]
+      ]
     },
     {
       "start": 48.71,
@@ -252,7 +342,13 @@
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          48.69,
+          50.31
+        ]
+      ]
     },
     {
       "start": 49.95,
@@ -263,7 +359,13 @@
       "original": "",
       "romanization": "No brakes, no sleep, We never stop",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          49.9,
+          52.09
+        ]
+      ]
     },
     {
       "start": 52.31,
@@ -274,7 +376,13 @@
       "original": "",
       "romanization": "Just keep it rollin’, We gon’ kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.13,
+          54.35
+        ]
+      ]
     },
     {
       "start": 54.38,
@@ -285,7 +393,13 @@
       "original": "",
       "romanization": "That's how we kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.22,
+          55.83
+        ]
+      ]
     },
     {
       "start": 56.22,
@@ -307,7 +421,13 @@
       "original": "",
       "romanization": "Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          60.36,
+          61.43
+        ]
+      ]
     },
     {
       "start": 61.69,
@@ -329,7 +449,13 @@
       "original": "",
       "romanization": "Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          65.85,
+          66.98
+        ]
+      ]
     },
     {
       "start": 67,
@@ -340,7 +466,13 @@
       "original": "밤을 불태우는 중 지금을 즐기는 중",
       "romanization": "bameul bultaeuneun jung jigeumeul jeulgineun jung",
       "english": "Burning up the night, living in the moment",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          66.87,
+          69.01
+        ]
+      ]
     },
     {
       "start": 69.74,
@@ -349,9 +481,15 @@
         "MINJE"
       ],
       "original": "내일은 모르겠고 고민 않고 걍 Go",
-      "romanization": "naeileun moreugessgo gomin an hago gyang go",
+      "romanization": "naeileun moreugessgo gomin ango gyang go",
       "english": "Don’t know about tomorrow, no overthinking, just go",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.65,
+          71.81
+        ]
+      ]
     },
     {
       "start": 72.15,
@@ -362,7 +500,13 @@
       "original": "This is how we do, Rollin’ fast 뛰어넘어 Roof",
       "romanization": "this is how we do, rollin’ fast ttwieoneomeo roof",
       "english": "This is how we do, Rollin’ fast, jumping over the roof",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.11,
+          74.85
+        ]
+      ]
     },
     {
       "start": 74.84,
@@ -373,7 +517,17 @@
       "original": "확신 따위 기다리지 말고, Let’s kick off the show",
       "romanization": "hwaksin ttawi gidariji malgo, let’s kick off the show",
       "english": "Don't wait for certainty, Let’s kick off the show",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          74.87,
+          76.32
+        ],
+        [
+          76.47,
+          77.62
+        ]
+      ]
     },
     {
       "start": 77.36,
@@ -384,7 +538,17 @@
       "original": "끝은 몰라도 Ain’t no doubt, Go straight 오직 앞만 봐",
       "romanization": "kkeuteun mollado ain’t no doubt, go straight ojik apman bwa",
       "english": "Don't know how it'll end, but there ain't no doubt, Go straight, just look ahead",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          77.35,
+          79.85
+        ],
+        [
+          80.12,
+          82.69
+        ]
+      ]
     },
     {
       "start": 82.75,
@@ -395,7 +559,13 @@
       "original": "복잡한 생각 제껴 다, 너만 있으면 I’m alright",
       "romanization": "bokjaphan saenggak jekkyeo da, neoman isseumyeon i’m alright",
       "english": "Push all those complicated thoughts aside, As long as I have you, I’m alright",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          82.74,
+          87.97
+        ]
+      ]
     },
     {
       "start": 88.23,
@@ -406,7 +576,13 @@
       "original": "",
       "romanization": "Yeah I'm movin’ through",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          88.22,
+          90.23
+        ]
+      ]
     },
     {
       "start": 90.32,
@@ -417,7 +593,13 @@
       "original": "설명은 필요 없어 Action, We don’t need permission",
       "romanization": "seolmyeongeun piryo eopseo action, we don’t need permission",
       "english": "No explanation needed, just action, We don’t need permission",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.21,
+          93.64
+        ]
+      ]
     },
     {
       "start": 93.81,
@@ -428,7 +610,13 @@
       "original": "",
       "romanization": "Yeah now I’m boostin’ through",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          93.83,
+          95.95
+        ]
+      ]
     },
     {
       "start": 96.33,
@@ -439,12 +627,20 @@
       "original": "숨이 차도 We go wild",
       "romanization": "sumi chado we go wild",
       "english": "Even out of breath, we go wild",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.34,
+          99.02
+        ]
+      ]
     },
     {
       "start": 49.24,
       "end": 50.31,
-      "members": [],
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -459,7 +655,13 @@
       "original": "",
       "romanization": "Kick Kick Kick Kick, Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          99.87,
+          102.09
+        ]
+      ]
     },
     {
       "start": 102.13,
@@ -470,12 +672,20 @@
       "original": "",
       "romanization": "Jump on the board and now we lose control",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          102.1,
+          104.29
+        ]
+      ]
     },
     {
       "start": 99.25,
       "end": 100.2,
-      "members": [],
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -488,7 +698,13 @@
       "original": "",
       "romanization": "No brakes, no sleep, We never stop",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.39,
+          107.59
+        ]
+      ]
     },
     {
       "start": 107.69,
@@ -497,7 +713,13 @@
       "original": "",
       "romanization": "Just keep it rollin’, We gon’ kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.64,
+          109.8
+        ]
+      ]
     },
     {
       "start": 109.75,
@@ -506,7 +728,13 @@
       "original": "",
       "romanization": "That's how we kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.72,
+          111.34
+        ]
+      ]
     },
     {
       "start": 111.69,
@@ -528,7 +756,13 @@
       "original": "",
       "romanization": "Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          115.85,
+          116.92
+        ]
+      ]
     },
     {
       "start": 117.2,
@@ -550,7 +784,13 @@
       "original": "",
       "romanization": "Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          121.34,
+          122.44
+        ]
+      ]
     },
     {
       "start": 122.43,
@@ -561,7 +801,17 @@
       "original": "",
       "romanization": "I'mma kick off the wall, Ain't worried 'bout a loss",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          122.4,
+          123.84
+        ],
+        [
+          124.03,
+          125.16
+        ]
+      ]
     },
     {
       "start": 125.2,
@@ -572,7 +822,17 @@
       "original": "",
       "romanization": "Yeah we risking it all, I've been waiting for this moment way too long",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          125.13,
+          126.37
+        ],
+        [
+          126.55,
+          129.23
+        ]
+      ]
     },
     {
       "start": 129.41,
@@ -583,7 +843,13 @@
       "original": "",
       "romanization": "So I'mma do whatever it takes to get on",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.49,
+          132.14
+        ]
+      ]
     },
     {
       "start": 132.36,
@@ -594,7 +860,13 @@
       "original": "",
       "romanization": "All gas, no brakes, We ain’t slowing down",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          132.4,
+          135.54
+        ]
+      ]
     },
     {
       "start": 135.65,
@@ -605,7 +877,13 @@
       "original": "",
       "romanization": "Uh uh they ain’t catching up now",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          135.61,
+          137.77
+        ]
+      ]
     },
     {
       "start": 138.19,
@@ -616,7 +894,13 @@
       "original": "",
       "romanization": "It’s Me ‘n’ Kick, Money Flip, Got ‘em wondering how",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          138.2,
+          141.06
+        ]
+      ]
     },
     {
       "start": 141.1,
@@ -627,12 +911,20 @@
       "original": "",
       "romanization": "All of a sudden we the talk of the town",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          141.15,
+          143.77
+        ]
+      ]
     },
     {
       "start": 104.69,
       "end": 105.85,
-      "members": [],
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -645,12 +937,20 @@
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          104.19,
+          105.78
+        ]
+      ]
     },
     {
       "start": 143.53,
       "end": 144.65,
-      "members": [],
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -665,12 +965,20 @@
       "original": "",
       "romanization": "(I was made for a bigger life)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          151.86,
+          154.42
+        ]
+      ]
     },
     {
       "start": 154.63,
       "end": 155.69,
-      "members": [],
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "(Kick off the wall)",
       "english": "",
@@ -679,11 +987,19 @@
     {
       "start": 155.3,
       "end": 157.69,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "original": "",
       "romanization": "(Woah oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          155.32,
+          157.62
+        ]
+      ]
     },
     {
       "start": 155.35,
@@ -692,7 +1008,13 @@
       "original": "",
       "romanization": "Kick Kick Kick Kick, Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          155.32,
+          157.63
+        ]
+      ]
     },
     {
       "start": 157.66,
@@ -701,14 +1023,39 @@
       "original": "",
       "romanization": "I’m in my zone and I’m in full control",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          157.61,
+          159.83
+        ]
+      ]
     },
     {
       "start": 159.69,
       "end": 161.05,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "original": "",
       "romanization": "(Yeah yeah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          159.68,
+          161.01
+        ]
+      ]
+    },
+    {
+      "start": 160.23,
+      "end": 161.29,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "(Kick off the wall)",
       "english": "",
       "adlib": true
     },
@@ -719,7 +1066,13 @@
       "original": "",
       "romanization": "Kick Kick Kick Kick, Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          160.94,
+          163.16
+        ]
+      ]
     },
     {
       "start": 163.2,
@@ -730,7 +1083,24 @@
       "original": "",
       "romanization": "Sky is the limit, **Come on, Let’s break through it all, yeah@JUWANG,DONGHYEON**",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          163.15,
+          164.05
+        ],
+        [
+          164.2,
+          166.94
+        ],
+        [
+          164.19,
+          166.53,
+          [
+            "DONGHYEON"
+          ]
+        ]
+      ]
     },
     {
       "start": 167.16,
@@ -752,7 +1122,13 @@
       "original": "",
       "romanization": "Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          171.35,
+          172.42
+        ]
+      ]
     },
     {
       "start": 172.65,
@@ -774,7 +1150,13 @@
       "original": "",
       "romanization": "Kick off the wall",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          176.86,
+          177.99
+        ]
+      ]
     }
   ],
   "audio": "audio/kickflip_kickoffthewallfeatianndior.mp3",
