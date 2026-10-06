@@ -4,7 +4,7 @@
 /* ========================================= */
 
 /* Bump when the avatar images change, to bust the browser/Pages cache. */
-const PHOTO_VER = 200;
+const PHOTO_VER = 201;
 window.PHOTO_VER = PHOTO_VER;
 
 const Ranking = {
