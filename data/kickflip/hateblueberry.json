@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "hate blueberry",
   "video": "",
-  "duration": 0,
+  "duration": 182.047347,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -103,12 +103,373 @@
       "start": 0,
       "end": 0,
       "members": [
-        "KYEHOON"
+        "DONGHWA"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "I hated, but I love it",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "Yeah I hated, but I love it",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "I used to hate blueberries",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "그 작은 걸 왜 그렇게 쓰게 느꼈는지",
+      "romanization": "geu jageun geol wae geureoke sseuge neukkyeonneunji",
+      "english": "Why did I find that little thing so bitter?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "떫은 느낌처럼, 너를 처음엔 이해할 수 없었어",
+      "romanization": "tteoreun neukkimcheoreom, neoreul cheoeumen ihaehal su eopseosseo",
+      "english": "Like an astringent feeling, I couldn't understand you at first",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(없었어!)",
+      "romanization": "(eopseosseo!)",
+      "english": "(I couldn't!)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "When you pushed it all away, 달콤한 건 다 거짓말 같았어",
+      "romanization": "when you pushed it all away, dalkomhan geon da geojinmal gataesseo",
+      "english": "When you pushed it all away, All the sweet things felt like lies",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "이렇게까진 싫은데, 네가 사라질까 더 붙잡았어",
+      "romanization": "ireotgekkajin silheunde, nega sarajilkka deo butjabaseo",
+      "english": "I didn't want to hate it this much, I held on tighter because I was afraid you'd disappear",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "I used to hate the way it felt, 아무렇지 않은 척해 봤어",
+      "romanization": "i used to hate the way it felt, amureotji aneun cheokhae bwasseo",
+      "english": "I used to hate the way it felt, I tried pretending I didn't care",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "달콤하고 씁쓸한, 새벽에 담아 뒀던 혼잣말",
+      "romanization": "dalkomhago sseupsseulan, saebyeoge dama dwotdeon honjatmal",
+      "english": "Sweet and bitter, The words I kept to myself at dawn",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "이젠 꺼내 볼 거야",
+      "romanization": "ijen kkeonae bol geoya",
+      "english": "Now I'm going to bring them out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "널 너무 좋아해서, 너 진짜 싫었었어",
+      "romanization": "neol neomu joahaeseo, neo jinjja silheosseosseo",
+      "english": "Because I liked you too much, I really hated you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "그래서",
+      "romanization": "geuraeseo",
+      "english": "That's why",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "I hated, but I love it, 삼키기 어려웠던",
+      "romanization": "i hated, but i love it, samkigi eoryeowotdeon",
+      "english": "I hated, but I love it, Something that was hard to swallow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "정말 I hated, 이젠 I love it, 두 눈을 찡그렸던",
+      "romanization": "jeongmal i hated, ijen i love it, du nuneul jjinggeuryeotdeon",
+      "english": "Really I hated, now I love it, Something that made me squint my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "Sweet blueberry’s like you",
+      "romanization": "sweet blueberry’s like you",
+      "english": "Sweet blueberry's like you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "정말 I hated, 이젠 I love it, 미치도록 싫었던",
+      "romanization": "jeongmal i hated, ijen i love it, michidorok silheotdeon",
+      "english": "Really I hated, now I love it, Something I hated like crazy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "I used to hate blueberries, 멍든 것처럼 파랗게 물들어 버린",
+      "romanization": "i used to hate blueberries, meongdeun geotcheoreom paratge muldeureo beorin",
+      "english": "I used to hate blueberries, Turned blue like a bruise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "그날 새벽처럼, 깨끗이 씻어 낼 방법을 몰랐어",
+      "romanization": "geunal saebyeokcheoreom, kkaekkeusi ssiseo nael bangbeobeul mollasseo",
+      "english": "Like that dawn, I didn't know how to wash it away completely",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "터질 듯이 복잡한, 너에게 둘러댔던 거짓말",
+      "romanization": "teojil deusi bokjaphan, neoege dulleodaetdeon geojinmal",
+      "english": "The complicated feelings ready to burst, The lies I made up to you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "솔직히 말할 거야",
+      "romanization": "soljikhi malhal geoya",
+      "english": "I'm going to be honest",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "널 너무 좋아해서, 너 진짜 싫었었어",
+      "romanization": "neol neomu joahaeseo, neo jinjja silheosseosseo",
+      "english": "Because I liked you too much, I really hated you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "그래서",
+      "romanization": "geuraeseo",
+      "english": "That's why",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "I hated, but I love it, 삼키기 어려웠던",
+      "romanization": "i hated, but i love it, samkigi eoryeowotdeon",
+      "english": "I hated, but I love it, Something that was hard to swallow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "정말 I hated, 이젠 I love it, 두 눈을 찡그렸던",
+      "romanization": "jeongmal i hated, ijen i love it, du nuneul jjinggeuryeotdeon",
+      "english": "Really I hated, now I love it, Something that made me squint my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "Sweet blueberry’s like you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "정말 I hated, 이젠 I love it, 미치도록 싫었던",
+      "romanization": "jeongmal i hated, ijen i love it, michidorok silheotdeon",
+      "english": "Really I hated, now I love it, Something I hated like crazy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "그래 오늘까지만, 설레었던 것도 아픈 것도",
+      "romanization": "geurae oneulkkajiman, seolleyeotdeon geotdo apeun geotdo",
+      "english": "Yeah, just until today, The excitement and the pain",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "전부 처음이라서",
+      "romanization": "jeonbu cheoeumiraseo",
+      "english": "Because they were both a first for me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "널 너무 좋아했어, **너 진짜 좋았었어!@MINJE,DONGHWA**",
+      "romanization": "neol neomu joahaesseo, **neo jinjja joasseosseo!@MINJE,DONGHWA**",
+      "english": "I liked you so much, **I really did like you!@MINJE,DONGHWA**",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "I hated, but I love it, 삼키기 어려웠던",
+      "romanization": "i hated, but i love it, samkigi eoryeowotdeon",
+      "english": "I hated, but I love it, Something that was hard to swallow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "정말 I hated, 이젠 I love it, 두 눈을 찡그렸던",
+      "romanization": "jeongmal i hated, ijen i love it, du nuneul jjinggeuryeotdeon",
+      "english": "Really I hated, now I love it, Something that made me squint my eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "Sweet blueberry’s like you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "정말 I hated, 이젠 I love it, 미치도록 싫었던",
+      "romanization": "jeongmal i hated, ijen i love it, michidorok silheotdeon",
+      "english": "Really I hated, now I love it, Something I hated like crazy",
+      "adlib": false
     }
   ],
   "cover": "covers/kickflip_hateblueberry.jpg",
