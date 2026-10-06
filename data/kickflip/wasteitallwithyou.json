@@ -898,6 +898,7 @@
       "start": 160.16,
       "end": 165.97,
       "members": [
+        "KYEHOON",
         "JUWANG"
       ],
       "voice": [
@@ -913,9 +914,9 @@
           ]
         ]
       ],
-      "original": "자, 우리 청춘을 다 **낭비해 보자, Go with me@JUWANG,DONGHYEON**",
-      "romanization": "ja uri cheongchuneul da **nangbihae boja, go with me@JUWANG,DONGHYEON**",
-      "english": "Come on, **let's waste@JUWANG,DONGHYEON** all of our youth, **Go with me@JUWANG,DONGHYEON**",
+      "original": "자, 우리 청춘을 다 **낭비해 보자, Go with me@KYEHOON,JUWANG,DONGHYEON**",
+      "romanization": "ja uri cheongchuneul da **nangbihae boja, go with me@KYEHOON,JUWANG,DONGHYEON**",
+      "english": "Come on, **let's waste@KYEHOON,JUWANG,DONGHYEON** all of our youth, **Go with me@KYEHOON,JUWANG,DONGHYEON**",
       "adlib": false
     },
     {
