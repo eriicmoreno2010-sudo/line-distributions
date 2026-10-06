@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "휘청 (Rockin')",
   "video": "",
-  "duration": 0,
+  "duration": 159.033469,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -52,15 +52,977 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 11.4,
+      "end": 13.36,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "Yeah uh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          11.4,
+          12.46
+        ],
+        [
+          12.99,
+          13.43
+        ]
+      ]
+    },
+    {
+      "start": 13.76,
+      "end": 15.92,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          13.75,
+          14.67
+        ],
+        [
+          14.86,
+          15.92
+        ]
+      ],
+      "original": "I’ve been thinkin’, 끝은 어딘지",
+      "romanization": "i’ve been thinkin’, kkeuteun eodinji",
+      "english": "I’ve been thinkin’, Where is the end",
+      "adlib": false
+    },
+    {
+      "start": 16.78,
+      "end": 19.2,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          16.8,
+          17.9
+        ],
+        [
+          18.05,
+          19.15
+        ]
+      ],
+      "original": "수많은 고민, 다 쓸데없지",
+      "romanization": "sumaneun gomin, da sseuldeeopji",
+      "english": "So many worries, They're all pointless",
+      "adlib": false
+    },
+    {
+      "start": 20.01,
+      "end": 25.61,
       "members": [
         "KYEHOON"
       ],
+      "voice": [
+        [
+          19.99,
+          21.15
+        ],
+        [
+          21.28,
+          22.29
+        ],
+        [
+          22.44,
+          25.58
+        ]
+      ],
+      "original": "서투른 기대, 날 움직이지, 엔진 같은 나의 Heartbeat",
+      "romanization": "seotureun gidae, nal umjigiji, enjin gateun naui heartbeat",
+      "english": "Clumsy expectations, They move me, My heartbeat like an engine",
+      "adlib": false
+    },
+    {
+      "start": 25.63,
+      "end": 28.65,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          25.67,
+          26.77
+        ],
+        [
+          27.21,
+          28.62
+        ]
+      ],
+      "original": "I said I’m okay, 상처는 I don’t care",
+      "romanization": "i said i’m okay, sangcheoneun i don’t care",
+      "english": "I said I’m okay, I don’t care about the scars",
+      "adlib": false
+    },
+    {
+      "start": 28.87,
+      "end": 31.89,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          28.83,
+          29.94
+        ],
+        [
+          30.44,
+          31.83
+        ]
+      ],
+      "original": "넘어지면 뭐, 그까짓 거 Nothing",
+      "romanization": "neomeojimyeon mwo, geukkajit geo nothing",
+      "english": "So what if I fall, That little thing is nothing",
+      "adlib": false
+    },
+    {
+      "start": 32.01,
+      "end": 35.11,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          31.89,
+          33.22
+        ],
+        [
+          33.69,
+          35.3
+        ]
+      ],
+      "original": "비틀거려도 Go, 꽉 깨물고 일어서",
+      "romanization": "biteulgeoryeodo go, kkwak kkaemulgo ireoseo",
+      "english": "Even if I stumble, go, Grit my teeth and stand back up",
+      "adlib": false
+    },
+    {
+      "start": 35.32,
+      "end": 37.82,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          35.32,
+          37.88
+        ]
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "So watch me swervin’, swervin’ now",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 38.09,
+      "end": 41.28,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          38.08,
+          39.67
+        ],
+        [
+          39.86,
+          41.31
+        ]
+      ],
+      "original": "휘청거린 만큼, 부딪혔던 만큼",
+      "romanization": "hwicheonggeorin mankeum, budithyeotdeon mankeum",
+      "english": "As much as I’ve stumbled, As much as I’ve collided",
+      "adlib": false
+    },
+    {
+      "start": 41.43,
+      "end": 44.44,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          41.46,
+          44.49
+        ]
+      ],
+      "original": "To the horizon 달려가",
+      "romanization": "to the horizon dalryeoga",
+      "english": "I’ll run to the horizon",
+      "adlib": false
+    },
+    {
+      "start": 44.58,
+      "end": 48.66,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          44.55,
+          46.43
+        ],
+        [
+          46.58,
+          48.77
+        ]
+      ],
+      "original": "날 부르는 Callin’, No more fallin’ down 이젠",
+      "romanization": "nal bureuneun callin’, no more fallin’ down ijen",
+      "english": "The callin’ that calls me, No more fallin’ down, not anymore",
+      "adlib": false
+    },
+    {
+      "start": 48.79,
+      "end": 50.98,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 51.11,
+      "end": 54.22,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          51.2,
+          52.52
+        ],
+        [
+          52.67,
+          54.18
+        ]
+      ],
+      "original": "너도 한번쯤, 넘어지는 것쯤",
+      "romanization": "neodo hanbeonjjeum, neomeojineun geotjjeum",
+      "english": "You know too, That falling down once in a while",
+      "adlib": false
+    },
+    {
+      "start": 54.27,
+      "end": 57.3,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          54.21,
+          57.32
+        ]
+      ],
+      "original": "별거 아니란 걸 알잖아",
+      "romanization": "byeolgeoran geol aljana",
+      "english": "Isn't a big deal",
+      "adlib": false
+    },
+    {
+      "start": 57.45,
+      "end": 60.91,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          57.62,
+          60.92
+        ]
+      ],
+      "original": "자꾸만 휘청 휘청거려도",
+      "romanization": "jakkuman hwicheong hwicheonggeoryeodo",
+      "english": "Even if I keep swaying and swaying",
+      "adlib": false
+    },
+    {
+      "start": 61.06,
+      "end": 64.93,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          61.07,
+          64.18
+        ],
+        [
+          64.53,
+          65.04
+        ]
+      ],
+      "original": "",
+      "romanization": "I’ll be rockin’, rockin’ back and forth",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 65.05,
+      "end": 68.91,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          65.31,
+          65.74
+        ],
+        [
+          65.9,
+          68.91
+        ]
+      ],
+      "original": "Yeah I kinda feel dizzy man, 재밌어 조금 더 달릴게",
+      "romanization": "yeah i kinda feel dizzy man, jaemisseo jogeum deo dalrilge",
+      "english": "Yeah I kinda feel dizzy man, It’s fun, I’ll run a little more",
+      "adlib": false
+    },
+    {
+      "start": 69.08,
+      "end": 71.88,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          69.13,
+          71.89
+        ]
+      ],
+      "original": "자빠진 내 모습도 뭐 어때, Damn I look fine",
+      "romanization": "jappajin nae moseupdo mwo eottae, damn i look fine",
+      "english": "So what if I look like I fell flat, Damn I look fine",
+      "adlib": false
+    },
+    {
+      "start": 72.24,
+      "end": 76.03,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          72.29,
+          74.11
+        ],
+        [
+          73.9,
+          76.17
+        ]
+      ],
+      "original": "My favorite nightmare, **난 이제 헛발 디뎌 지쳐 쓰러져도@MINJE**",
+      "romanization": "my favorite nightmare, **nan ije heotbal didyeo jichyeo sseureojyeodo@MINJE**",
+      "english": "My favorite nightmare, **Even if I now trip over my own feet and collapse from exhaustion@MINJE**",
+      "adlib": false
+    },
+    {
+      "start": 76.18,
+      "end": 77.67,
+      "members": [
+        "MINJE"
+      ],
+      "original": "나비처럼 날아 I’m a bee",
+      "romanization": "nabicheoreom nara i’m a bee",
+      "english": "I’ll fly like a butterfly, I’m a bee",
+      "adlib": false,
+      "voice": [
+        [
+          76.22,
+          77.9
+        ]
+      ]
+    },
+    {
+      "start": 77.8,
+      "end": 80.24,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          77.82,
+          78.34
+        ],
+        [
+          78.84,
+          80.17
+        ]
+      ],
+      "original": "Okay, 상처는 I don’t care",
+      "romanization": "okay, sangcheoneun i don’t care",
+      "english": "Okay, I don’t care about the scars",
+      "adlib": false
+    },
+    {
+      "start": 80.4,
+      "end": 83.39,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          80.44,
+          81.48
+        ],
+        [
+          82.04,
+          83.45
+        ]
+      ],
+      "original": "넘어지면 뭐, 그까짓 거 Nothing",
+      "romanization": "neomeojimyeon mwo, geukkajit geo nothing",
+      "english": "So what if I fall, That little thing is nothing",
+      "adlib": false
+    },
+    {
+      "start": 83.54,
+      "end": 86.71,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          83.42,
+          84.71
+        ],
+        [
+          85.11,
+          86.72
+        ]
+      ],
+      "original": "비틀거려도 Go, 꽉 깨물고 일어서",
+      "romanization": "biteulgeoryeodo go, kkwak kkaemulgo ireoseo",
+      "english": "Even if I stumble, go, Grit my teeth and stand back up",
+      "adlib": false
+    },
+    {
+      "start": 86.83,
+      "end": 89.31,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          86.78,
+          89.35
+        ]
+      ],
+      "original": "",
+      "romanization": "So watch me swervin’, swervin’ now",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 89.61,
+      "end": 92.78,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          89.57,
+          91.25
+        ],
+        [
+          91.4,
+          92.75
+        ]
+      ],
+      "original": "휘청거린 만큼, 부딪혔던 만큼",
+      "romanization": "hwicheonggeorin mankeum, budithyeotdeon mankeum",
+      "english": "As much as I’ve stumbled, As much as I’ve collided",
+      "adlib": false
+    },
+    {
+      "start": 92.92,
+      "end": 95.97,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          93.02,
+          95.98
+        ]
+      ],
+      "original": "To the horizon 달려가",
+      "romanization": "to the horizon dalryeoga",
+      "english": "I’ll run to the horizon",
+      "adlib": false
+    },
+    {
+      "start": 96.13,
+      "end": 100.21,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          96.05,
+          97.85
+        ],
+        [
+          98.08,
+          100.3
+        ]
+      ],
+      "original": "날 부르는 Callin’, No more fallin’ down 이젠",
+      "romanization": "nal bureuneun callin’, no more fallin’ down ijen",
+      "english": "The callin’ that calls me, No more fallin’ down, not anymore",
+      "adlib": false
+    },
+    {
+      "start": 100.36,
+      "end": 102.41,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 102.53,
+      "end": 105.69,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          102.73,
+          104.05
+        ],
+        [
+          104.24,
+          105.71
+        ]
+      ],
+      "original": "너도 한번쯤, 넘어지는 것쯤",
+      "romanization": "neodo hanbeonjjeum, neomeojineun geotjjeum",
+      "english": "You know too, That falling down once in a while",
+      "adlib": false
+    },
+    {
+      "start": 105.84,
+      "end": 108.75,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          105.71,
+          108.82
+        ]
+      ],
+      "original": "별거 아니란 걸 알잖아",
+      "romanization": "byeolgeoran geol aljana",
+      "english": "Isn't a big deal",
+      "adlib": false
+    },
+    {
+      "start": 108.91,
+      "end": 112.45,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          109.15,
+          112.44
+        ]
+      ],
+      "original": "자꾸만 휘청 휘청거려도",
+      "romanization": "jakkuman hwicheong hwicheonggeoryeodo",
+      "english": "Even if I keep swaying and swaying",
+      "adlib": false
+    },
+    {
+      "start": 112.61,
+      "end": 116.48,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          112.64,
+          115.68
+        ],
+        [
+          116.01,
+          116.59
+        ]
+      ],
+      "original": "",
+      "romanization": "I’ll be rockin’, rockin’ back and forth",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 116.64,
+      "end": 119.63,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          116.78,
+          119.62
+        ]
+      ],
+      "original": "원한다면 해, 고개 들어 Heads up",
+      "romanization": "wonhandamyeon hae, gogae deureo heads up",
+      "english": "If you want it, do it, Lift your head, Heads up",
+      "adlib": false
+    },
+    {
+      "start": 119.98,
+      "end": 123.06,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          119.98,
+          123.06
+        ]
+      ],
+      "original": "넘어짐 어때 일단 들이받어",
+      "romanization": "neomeojim eottae ildan deuribadeo",
+      "english": "So what if you fall, just charge ahead",
+      "adlib": false
+    },
+    {
+      "start": 123.22,
+      "end": 129.63,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          123.29,
+          125.01
+        ],
+        [
+          125.17,
+          129.4
+        ]
+      ],
+      "original": "지금 이대로 Ride on, 흔들리는 걸음걸이도",
+      "romanization": "jigeum idaero ride on, heundeullineun georeumgeorido",
+      "english": "Ride on just as you are now, Even your unsteady footsteps",
+      "adlib": false
+    },
+    {
+      "start": 129.91,
+      "end": 133.05,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          129.88,
+          131.45
+        ],
+        [
+          131.6,
+          133.08
+        ]
+      ],
+      "original": "휘청거린 만큼, 부딪혔던 만큼",
+      "romanization": "hwicheonggeorin mankeum, budithyeotdeon mankeum",
+      "english": "As much as I’ve stumbled, As much as I’ve collided",
+      "adlib": false
+    },
+    {
+      "start": 133.17,
+      "end": 136.17,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          133.29,
+          136.22
+        ]
+      ],
+      "original": "To the horizon 달려가",
+      "romanization": "to the horizon dalryeoga",
+      "english": "I’ll run to the horizon",
+      "adlib": false
+    },
+    {
+      "start": 136.32,
+      "end": 140.43,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          136.37,
+          138.06
+        ],
+        [
+          138.36,
+          140.58
+        ]
+      ],
+      "original": "날 부르는 Callin’, No more fallin’ down 이젠",
+      "romanization": "nal bureuneun callin’, no more fallin’ down ijen",
+      "english": "The callin’ that calls me, No more fallin’ down, not anymore",
+      "adlib": false
+    },
+    {
+      "start": 140.58,
+      "end": 142.68,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 142.83,
+      "end": 145.97,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          142.96,
+          144.34
+        ],
+        [
+          144.5,
+          145.94
+        ]
+      ],
+      "original": "너도 한번쯤, 넘어지는 것쯤",
+      "romanization": "neodo hanbeonjjeum, neomeojineun geotjjeum",
+      "english": "You know too, That falling down once in a while",
+      "adlib": false
+    },
+    {
+      "start": 146.18,
+      "end": 148.97,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          145.97,
+          149.02
+        ]
+      ],
+      "original": "별거 아니란 걸 알잖아",
+      "romanization": "byeolgeoran geol aljana",
+      "english": "Isn't a big deal",
+      "adlib": false
+    },
+    {
+      "start": 149.15,
+      "end": 152.69,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          149.37,
+          152.71
+        ]
+      ],
+      "original": "자꾸만 휘청 휘청거려도",
+      "romanization": "jakkuman hwicheong hwicheonggeoryeodo",
+      "english": "Even if I keep swaying and swaying",
+      "adlib": false
+    },
+    {
+      "start": 152.84,
+      "end": 156.86,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          152.84,
+          155.94
+        ],
+        [
+          156.29,
+          156.83
+        ]
+      ],
+      "original": "",
+      "romanization": "I’ll be rockin’, rockin’ back and forth",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 16,
+      "end": 16.79,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "(Yeah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          16.02,
+          16.28
+        ],
+        [
+          16.4,
+          16.8
+        ]
+      ]
+    },
+    {
+      "start": 19.21,
+      "end": 19.99,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "(Uh huh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          19.21,
+          19.99
+        ]
+      ]
+    },
+    {
+      "start": 28.26,
+      "end": 28.93,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Woo woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          28.31,
+          28.55
+        ],
+        [
+          28.7,
+          28.93
+        ]
+      ]
+    },
+    {
+      "start": 29.91,
+      "end": 30.35,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          29.9,
+          30.31
+        ]
+      ]
+    },
+    {
+      "start": 79.83,
+      "end": 80.5,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Woo woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          79.87,
+          80.07
+        ],
+        [
+          80.25,
+          80.49
+        ]
+      ]
+    },
+    {
+      "start": 81.48,
+      "end": 81.89,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          81.46,
+          81.83
+        ]
+      ]
+    },
+    {
+      "start": 135.84,
+      "end": 139.47,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          135.8,
+          139.45
+        ]
+      ]
+    },
+    {
+      "start": 141.97,
+      "end": 144.99,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "(KICK OFF THE WALL)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          142.04,
+          142.32
+        ],
+        [
+          142.43,
+          142.73
+        ],
+        [
+          142.85,
+          145.3
+        ]
+      ]
     }
   ],
   "cover": "covers/kickflip_rockin.jpg",
