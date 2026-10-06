@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "우리 같이 청춘을 낭비해 (Waste It All With You)",
   "video": "videos/kickflip_wasteitallwithyou_muwu505j.mp4",
-  "duration": 198.034286,
+  "duration": 198.4,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -904,11 +904,18 @@
         [
           160.2,
           165.97
+        ],
+        [
+          162.21,
+          166.24,
+          [
+            "DONGHYEON"
+          ]
         ]
       ],
-      "original": "자, 우리 청춘을 다 낭비해 보자, Go with me",
-      "romanization": "ja uri cheongchuneul da nangbihae boja, go with me",
-      "english": "Come on, let's waste all of our youth, Go with me",
+      "original": "자, 우리 청춘을 다 **낭비해 보자, Go with me@JUWANG,DONGHYEON**",
+      "romanization": "ja uri cheongchuneul da **nangbihae boja, go with me@JUWANG,DONGHYEON**",
+      "english": "Come on, **let's waste@JUWANG,DONGHYEON** all of our youth, **Go with me@JUWANG,DONGHYEON**",
       "adlib": false
     },
     {
