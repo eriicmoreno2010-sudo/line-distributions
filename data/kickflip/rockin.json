@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "휘청 (Rockin')",
   "video": "videos/kickflip_rockin_mux1ldw7.mp4",
-  "duration": 159.033469,
+  "duration": 159.5,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -464,7 +464,10 @@
         ],
         [
           73.9,
-          76.17
+          76.17,
+          [
+            "MINJE"
+          ]
         ]
       ],
       "original": "My favorite nightmare, **난 이제 헛발 디뎌 지쳐 쓰러져도@MINJE**",
