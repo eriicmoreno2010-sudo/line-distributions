@@ -839,5 +839,6 @@
   "cover": "covers/kickflip_hateblueberry.jpg",
   "npC1": "#0e26dd",
   "audio": "audio/kickflip_hateblueberry.mp3",
-  "npC2": "#450594"
+  "npC2": "#450594",
+  "instrumental": "audio/kickflip_hateblueberry_inst.mp3"
 }
