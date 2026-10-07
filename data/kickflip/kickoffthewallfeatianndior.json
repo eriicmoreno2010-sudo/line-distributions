@@ -1193,5 +1193,6 @@
   "audioOffset": 0.3,
   "instrumental": "audio/kickflip_kickoffthewallfeatianndior_inst.mp3",
   "instrumentalStart": 44.40308939134616,
-  "instrumentalEnd": 180.035918
+  "instrumentalEnd": 69.7927701349359,
+  "instrumentalFade": true
 }
