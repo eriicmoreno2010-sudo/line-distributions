@@ -366,8 +366,8 @@
       "start": 49.95,
       "end": 52.16,
       "members": [
-        "KYEHOON",
-        "DONGHWA"
+        "DONGHWA",
+        "KYEHOON"
       ],
       "original": "",
       "romanization": "No brakes, no sleep, We never stop",
@@ -384,8 +384,8 @@
       "start": 52.31,
       "end": 54.36,
       "members": [
-        "KYEHOON",
-        "DONGHWA"
+        "DONGHWA",
+        "KYEHOON"
       ],
       "original": "",
       "romanization": "Just keep it rollin’, We gon’ kick off the wall",
@@ -458,7 +458,7 @@
       "start": 66.01,
       "end": 67,
       "members": [
-        "DONGHYEON"
+        "KEIJU"
       ],
       "original": "",
       "romanization": "Kick off the wall",
@@ -1193,5 +1193,6 @@
   "audioOffset": 0.3,
   "instrumental": "audio/kickflip_kickoffthewallfeatianndior_inst.mp3",
   "instrumentalStart": 44.40308939134616,
-  "instrumentalEnd": 69.7927701349359
+  "instrumentalEnd": 69.7927701349359,
+  "instrumentalFade": true
 }
