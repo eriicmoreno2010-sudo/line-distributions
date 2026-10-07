@@ -885,5 +885,7 @@
       ]
     }
   ],
-  "instrumental": "audio/kickflip_puzzlepiece_inst.mp3"
+  "instrumental": "audio/kickflip_puzzlepiece_inst.mp3",
+  "instrumentalStart": 42.92707597159455,
+  "instrumentalEnd": 175.046531
 }
