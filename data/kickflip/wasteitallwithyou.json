@@ -898,7 +898,6 @@
       "start": 160.16,
       "end": 165.97,
       "members": [
-        "KYEHOON",
         "JUWANG"
       ],
       "voice": [
@@ -914,9 +913,9 @@
           ]
         ]
       ],
-      "original": "자, 우리 청춘을 다 **낭비해 보자, Go with me@KYEHOON,JUWANG,DONGHYEON**",
-      "romanization": "ja uri cheongchuneul da **nangbihae boja, go with me@KYEHOON,JUWANG,DONGHYEON**",
-      "english": "Come on, **let's waste@KYEHOON,JUWANG,DONGHYEON** all of our youth, **Go with me@KYEHOON,JUWANG,DONGHYEON**",
+      "original": "자, 우리 청춘을 다 **낭비해 보자, Go with me@JUWANG,DONGHYEON**",
+      "romanization": "ja uri cheongchuneul da **nangbihae boja, go with me@JUWANG,DONGHYEON**",
+      "english": "Come on, **let's waste@JUWANG,DONGHYEON** all of our youth, **Go with me@JUWANG,DONGHYEON**",
       "adlib": false
     },
     {
@@ -944,7 +943,7 @@
       "start": 172.87,
       "end": 178.76,
       "members": [
-        "JUWANG"
+        "KEIJU"
       ],
       "voice": [
         [
@@ -1023,5 +1022,6 @@
   "npC2": "#6671c2",
   "instrumental": "audio/kickflip_wasteitallwithyou_inst.mp3",
   "instrumentalStart": 40.209846211858974,
-  "instrumentalEnd": 65.09107701698719
+  "instrumentalEnd": 65.09107701698719,
+  "instrumentalFade": true
 }
