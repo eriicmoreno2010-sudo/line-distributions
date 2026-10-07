@@ -842,5 +842,6 @@
   "npC2": "#450594",
   "instrumental": "audio/kickflip_hateblueberry_inst.mp3",
   "instrumentalStart": 58.43603141682693,
-  "instrumentalEnd": 182.047347
+  "instrumentalEnd": 83.1757990860577,
+  "instrumentalFade": true
 }
