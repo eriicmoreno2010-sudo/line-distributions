@@ -1079,5 +1079,6 @@
   "cover": "covers/kickflip_rockin.jpg",
   "audio": "audio/kickflip_rockin.mp3",
   "npC1": "#ff0000",
-  "npC2": "#2ed5ff"
+  "npC2": "#2ed5ff",
+  "instrumental": "audio/kickflip_rockin_inst.mp3"
 }
