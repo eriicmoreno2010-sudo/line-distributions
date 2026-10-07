@@ -12,42 +12,90 @@
       "image": "images/kickflip/dropin/kyehoon.png",
       "color": "#d435dd",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4405,
+        "cy": 0.3425,
+        "size": 0.3994,
+        "rot": 343,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "DONGHWA",
       "image": "images/kickflip/dropin/donghwa.png",
       "color": "#00d856",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5238,
+        "cy": 0.1712,
+        "size": 0.3227,
+        "rot": 348,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JUWANG",
       "image": "images/kickflip/dropin/juwang.png",
       "color": "#dfb627",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5995,
+        "cy": 0.1805,
+        "size": 0.3585,
+        "rot": 31,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "MINJE",
       "image": "images/kickflip/dropin/minje.png",
       "color": "#3445da",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.7049,
+        "cy": 0.2225,
+        "size": 0.4401,
+        "rot": 342,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "KEIJU",
       "image": "images/kickflip/dropin/keiju.png",
       "color": "#ee7426",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6367,
+        "cy": 0.1787,
+        "size": 0.4864,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "DONGHYEON",
       "image": "images/kickflip/dropin/donghyeon.png",
       "color": "#25dada",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5725,
+        "cy": 0.1878,
+        "size": 0.5364,
+        "rot": 23,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
