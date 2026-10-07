@@ -52,21 +52,53 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 3.2,
+      "end": 10.27,
       "members": [
         "DONGHWA"
       ],
       "original": "",
       "romanization": "Um, **Yeah,@MINJE** Woo wah, **Yeah yeah@MINJE**",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          3.22,
+          4.21
+        ],
+        [
+          4.82,
+          5.57
+        ],
+        [
+          6.22,
+          7.76
+        ],
+        [
+          8.12,
+          8.54
+        ],
+        [
+          9.75,
+          10.19
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 13.31,
+      "end": 16.94,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          13.31,
+          13.76
+        ],
+        [
+          14.53,
+          17
+        ]
       ],
       "original": "",
       "romanization": "Drop, Ain’t nobody blockin’ me from hittin’ top",
@@ -74,10 +106,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 17.76,
+      "end": 20.09,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          17.76,
+          20.22
+        ]
       ],
       "original": "",
       "romanization": "We’re just doin’ what we wanna anytime",
@@ -85,10 +123,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 20.25,
+      "end": 23.11,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          20.23,
+          23.09
+        ]
       ],
       "original": "",
       "romanization": "Never hit the brakes, No we ain’t ever stoppin’",
@@ -96,10 +140,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 23.41,
+      "end": 26.1,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          23.45,
+          26.31
+        ]
       ],
       "original": "",
       "romanization": "And they wonder how we do it, We just drop in",
@@ -107,10 +157,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 26.25,
+      "end": 29.53,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          26.74,
+          27.09
+        ],
+        [
+          27.16,
+          29.74
+        ]
       ],
       "original": "Yeah 박스 속 똑같은 모양 Naysay",
       "romanization": "yeah bakseu sok ttokgateun moyang naysay",
@@ -118,10 +178,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 30.31,
+      "end": 32.97,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          30.33,
+          32.89
+        ]
       ],
       "original": "남의 말 거슬러 간 열대어’s",
       "romanization": "name mal geoseulleo gan yeoldaeoeo’s",
@@ -129,10 +195,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.21,
+      "end": 36.07,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          33.25,
+          33.52
+        ],
+        [
+          33.65,
+          36.02
+        ]
       ],
       "original": "",
       "romanization": "Yeah, off the wall like MJ and my Vans though",
@@ -140,10 +216,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.07,
+      "end": 39.38,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          36.05,
+          39.26
+        ]
       ],
       "original": "차라리 저 밖에 나가, 뜨겁게 더 데어",
       "romanization": "charari jeo bakke naga, tteugeopge deo deeo",
@@ -151,10 +233,28 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 39.88,
+      "end": 46.03,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          39.93,
+          41.29
+        ],
+        [
+          41.73,
+          42.88
+        ],
+        [
+          43.14,
+          44.51
+        ],
+        [
+          44.75,
+          46.16
+        ]
       ],
       "original": "",
       "romanization": "Can’t lose my way, Catchin’ the sky, Two steppin’ on air, But it’ll be fine",
@@ -162,10 +262,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 46.23,
+      "end": 49.1,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          46.17,
+          47.38
+        ],
+        [
+          47.8,
+          49.05
+        ]
       ],
       "original": "어지러울 듯 저 높이, 올라가 I cannot breathe",
       "romanization": "eojireoul deut jeo nopi, ollaga i cannot breathe",
@@ -173,10 +283,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 49.42,
+      "end": 52.15,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          49.44,
+          50.64
+        ],
+        [
+          51.02,
+          52.21
+        ]
       ],
       "original": "Ain’t nobody tryna stop, 아래 보지 말고 Drop",
       "romanization": "ain’t nobody tryna stop, arae boji malgo drop",
@@ -184,10 +304,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 52.29,
+      "end": 55.89,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          52.25,
+          52.66
+        ],
+        [
+          53.47,
+          55.87
+        ]
       ],
       "original": "",
       "romanization": "Drop, Ain’t nobody blockin’ me from hittin’ top",
@@ -195,10 +325,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 56.65,
+      "end": 59.03,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          56.65,
+          59.11
+        ]
       ],
       "original": "",
       "romanization": "We’re just doin’ what we wanna anytime",
@@ -206,10 +342,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.15,
+      "end": 62.02,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          59.12,
+          62.01
+        ]
       ],
       "original": "",
       "romanization": "Never hit the brakes, No we ain’t ever stoppin’",
@@ -217,10 +359,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 61.62,
+      "end": 62.89,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          61.62,
+          62.98
+        ]
       ],
       "original": "",
       "romanization": "(Never stoppin’)",
@@ -228,10 +376,16 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 62.38,
+      "end": 65.2,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          62.34,
+          65.23
+        ]
       ],
       "original": "",
       "romanization": "And they wonder how we do it, We just drop in",
@@ -239,10 +393,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 64.8,
+      "end": 66.36,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          64.8,
+          66.31
+        ]
       ],
       "original": "",
       "romanization": "(We just drop in)",
@@ -250,10 +410,16 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 65.57,
+      "end": 68.55,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          66.86,
+          68.52
+        ]
       ],
       "original": "",
       "romanization": "**Drop Drop,** We don’t care, we drop in",
@@ -261,10 +427,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 68.87,
+      "end": 71.69,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          70.01,
+          71.69
+        ]
       ],
       "original": "",
       "romanization": "**Drop Drop,** We won’t stop, keep poppin’",
@@ -272,10 +444,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 71.33,
+      "end": 72.75,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          71.31,
+          72.61
+        ]
       ],
       "original": "",
       "romanization": "(Never stoppin’)",
@@ -283,10 +461,16 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 72.07,
+      "end": 74.96,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          72.08,
+          74.93
+        ]
       ],
       "original": "",
       "romanization": "We’re just doin’ what we want and we just drop in",
@@ -294,10 +478,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.35,
+      "end": 77.94,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          75.29,
+          78.11
+        ]
       ],
       "original": "",
       "romanization": "We’re just doin’ what we want and we just drop in",
@@ -305,10 +495,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 78.12,
+      "end": 81.21,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          78.15,
+          81.18
+        ]
       ],
       "original": "처음부터 알 순 없어, Which one is the wrong way",
       "romanization": "cheoeumbuteo al sun eopseo, which one is the wrong way",
@@ -316,10 +512,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 81.39,
+      "end": 84.4,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          81.43,
+          82.87
+        ],
+        [
+          83.11,
+          84.39
+        ]
       ],
       "original": "지름길 반대로 Ridin’, 가파른 경사 Like it",
       "romanization": "jireumgil bandaero ridin’, gapareun gyeongsa like it",
@@ -327,10 +533,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 84.59,
+      "end": 86.07,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          84.69,
+          85.3
+        ],
+        [
+          85.54,
+          86.12
+        ]
       ],
       "original": "",
       "romanization": "Get it, right?, Get it, right?",
@@ -338,10 +554,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 86.22,
+      "end": 87.74,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          86.26,
+          87.72
+        ]
       ],
       "original": "",
       "romanization": "Finally time for us to go and rise",
@@ -349,10 +571,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 87.86,
+      "end": 91.47,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          87.93,
+          89.17
+        ],
+        [
+          89.53,
+          91.59
+        ]
       ],
       "original": "",
       "romanization": "Brand new day when I wake up, Erry bad thing we can fade out, Yeah yeah",
@@ -360,10 +592,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 91.62,
+      "end": 95.03,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          91.95,
+          93.37
+        ],
+        [
+          93.55,
+          95.05
+        ]
       ],
       "original": "위험한 게 뭐 어떤데?, I’mma go break all boundaries",
       "romanization": "wiheomhan ge mwo eotteonde?, i’mma go break all boundaries",
@@ -371,10 +613,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 95.18,
+      "end": 98.17,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          95.26,
+          96.71
+        ],
+        [
+          96.86,
+          98.28
+        ]
       ],
       "original": "기록적인 우리 매일 밤, 오늘이 항상 Last flip",
       "romanization": "girokjeogin uri maeil bam, oneuri hangsang last flip",
@@ -382,10 +634,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 98.36,
+      "end": 100.96,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          98.5,
+          100.89
+        ]
       ],
       "original": "",
       "romanization": "Drop, drop, droppin’ in my own way",
@@ -393,10 +651,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 101.44,
+      "end": 104.22,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          101.51,
+          104.31
+        ]
       ],
       "original": "",
       "romanization": "If we get down, we always coming up",
@@ -404,10 +668,28 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 104.72,
+      "end": 110.77,
       "members": [
         "JUWANG"
+      ],
+      "voice": [
+        [
+          104.71,
+          106.1
+        ],
+        [
+          106.52,
+          107.69
+        ],
+        [
+          107.88,
+          109.33
+        ],
+        [
+          109.62,
+          110.93
+        ]
       ],
       "original": "",
       "romanization": "Can’t lose my way, Catchin’ the sky, Two steppin’ on air, But it’ll be fine",
@@ -415,10 +697,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 110.92,
+      "end": 113.85,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          111.01,
+          112.22
+        ],
+        [
+          112.64,
+          113.89
+        ]
       ],
       "original": "어지러울 듯 저 높이, 올라가 I cannot breathe",
       "romanization": "eojireoul deut jeo nopi, ollaga i cannot breathe",
@@ -426,10 +718,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 114.24,
+      "end": 117.06,
       "members": [
         "DONGHYEON"
+      ],
+      "voice": [
+        [
+          114.25,
+          115.46
+        ],
+        [
+          115.87,
+          117.01
+        ]
       ],
       "original": "Ain’t nobody tryna stop, **아래 보지 말고 Drop@MINJE**",
       "romanization": "ain’t nobody tryna stop, **arae boji malgo drop@MINJE**",
@@ -437,10 +739,20 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 117.14,
+      "end": 120.79,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          117.11,
+          117.55
+        ],
+        [
+          118.24,
+          120.73
+        ]
       ],
       "original": "",
       "romanization": "Drop, Ain’t nobody blockin’ me from hittin’ top",
@@ -448,10 +760,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 121.54,
+      "end": 123.83,
       "members": [
         "MINJE"
+      ],
+      "voice": [
+        [
+          121.52,
+          124.01
+        ]
       ],
       "original": "",
       "romanization": "We’re just doin’ what we wanna anytime",
@@ -459,10 +777,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 123.97,
+      "end": 126.97,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          124.02,
+          126.89
+        ]
       ],
       "original": "",
       "romanization": "Never hit the brakes, No we ain’t ever stoppin’",
@@ -470,10 +794,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 126.45,
+      "end": 127.84,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          126.43,
+          127.69
+        ]
       ],
       "original": "",
       "romanization": "(Never stoppin’)",
@@ -481,10 +811,16 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 127.19,
+      "end": 130.04,
       "members": [
         "KYEHOON"
+      ],
+      "voice": [
+        [
+          127.2,
+          130.06
+        ]
       ],
       "original": "",
       "romanization": "And they wonder how we do it, We just drop in",
@@ -492,10 +828,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 129.67,
+      "end": 131.2,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          129.67,
+          131.19
+        ]
       ],
       "original": "",
       "romanization": "(We just drop in)",
@@ -503,32 +845,50 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 130.45,
+      "end": 133.36,
       "members": [
         "DONGHWA"
       ],
+      "voice": [
+        [
+          131.69,
+          133.34
+        ]
+      ],
       "original": "",
-      "romanization": "Drop Drop, We don’t care, we drop in",
+      "romanization": "**Drop Drop,** We don’t care, we drop in",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 133.69,
+      "end": 136.53,
       "members": [
         "DONGHYEON"
       ],
-      "original": "Dr",
-      "romanization": "Drop Drop, We won’t stop, keep poppin’",
+      "voice": [
+        [
+          134.85,
+          136.54
+        ]
+      ],
+      "original": "",
+      "romanization": "**Drop Drop,** We won’t stop, keep poppin’",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 136.12,
+      "end": 137.47,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          136.15,
+          137.42
+        ]
       ],
       "original": "",
       "romanization": "(Never stoppin’)",
@@ -536,10 +896,16 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 136.91,
+      "end": 139.81,
       "members": [
         "KEIJU"
+      ],
+      "voice": [
+        [
+          136.9,
+          139.8
+        ]
       ],
       "original": "",
       "romanization": "We’re just doin’ what we want and we just drop in",
@@ -547,10 +913,16 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 139.4,
+      "end": 140.87,
       "members": [
         "DONGHWA"
+      ],
+      "voice": [
+        [
+          139.42,
+          140.96
+        ]
       ],
       "original": "",
       "romanization": "(We just drop in)",
@@ -558,8 +930,8 @@
       "adlib": true
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 140.19,
+      "end": 143.09,
       "members": [
         "KickFlip"
       ],
