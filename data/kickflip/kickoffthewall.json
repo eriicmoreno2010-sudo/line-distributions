@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "Kick Off The Wall",
   "video": "videos/kickflip_kickoffthewall_muxxsb3a.mp4",
-  "duration": 158.040816,
+  "duration": 158.45,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -1029,5 +1029,6 @@
   "cover": "covers/kickflip_kickoffthewall.jpg",
   "audio": "audio/kickflip_kickoffthewall.mp3",
   "npC1": "#5aab4f",
-  "npC2": "#0f5002"
+  "npC2": "#0f5002",
+  "instrumental": "audio/kickflip_kickoffthewall_inst.mp3"
 }
