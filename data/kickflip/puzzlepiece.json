@@ -889,5 +889,6 @@
   "instrumentalStart": 42.92707597159455,
   "instrumentalEnd": 67.61312521518428,
   "instrumentalFade": true,
-  "audio": "audio/kickflip_puzzlepiece.mp3"
+  "audio": "audio/kickflip_puzzlepiece.mp3",
+  "audioOffset": -0.05
 }
