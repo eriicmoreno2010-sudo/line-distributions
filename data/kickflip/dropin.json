@@ -1005,5 +1005,7 @@
   "audio": "audio/kickflip_dropin.mp3",
   "npC1": "#2648f2",
   "npC2": "#ffdc2e",
-  "instrumental": "audio/kickflip_dropin_inst.mp3"
+  "instrumental": "audio/kickflip_dropin_inst.mp3",
+  "instrumentalStart": 52.75625316153846,
+  "instrumentalEnd": 158.040816
 }
