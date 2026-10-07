@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "0 (Young)",
   "video": "",
-  "duration": 0,
+  "duration": 178.050612,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -52,16 +52,823 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 7.07,
+      "end": 8.11,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "We all young",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          7.07,
+          8.17
+        ]
+      ]
+    },
+    {
+      "start": 12.49,
+      "end": 13.62,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          12.49,
+          13.54
+        ]
+      ],
+      "original": "",
+      "romanization": "We all young",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 18.44,
+      "end": 23.53,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          18.43,
+          20.84
+        ],
+        [
+          21.11,
+          23.53
+        ]
+      ],
+      "original": "영 별일 없는 날, 혼자가 된 것 같아",
+      "romanization": "yeong byeol il eomneun nal, honjaga doen geot gata",
+      "english": "A day with nothing special, I feel like I’m all alone",
+      "adlib": false
+    },
+    {
+      "start": 23.77,
+      "end": 28.31,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          23.73,
+          28.26
+        ]
+      ],
+      "original": "용기 좀 내 볼까, 한 걸음씩 Step ahead",
+      "romanization": "yonggi jom nae bolkka, han georeumssik step ahead",
+      "english": "Should I gather up some courage?, Step by step Step ahead",
+      "adlib": false
+    },
+    {
+      "start": 28.82,
+      "end": 34.74,
       "members": [
         "KYEHOON"
       ],
+      "voice": [
+        [
+          28.76,
+          32.02
+        ],
+        [
+          32.41,
+          34.77
+        ]
+      ],
+      "original": "너도 나랑 같은 마음이지, 서로 만나 둘이 돼",
+      "romanization": "neodo narang gateun maeumiji, seoro manna duri dwae",
+      "english": "You feel the same way as me, right?, When we meet we become two",
+      "adlib": false
+    },
+    {
+      "start": 35.1,
+      "end": 38.98,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          35.13,
+          36.68
+        ],
+        [
+          36.83,
+          38.95
+        ]
+      ],
+      "original": "두리번대며 쫓던, 영원한 Our dream",
+      "romanization": "duribeondaemyeo jjotdeon, yeongwonhan our dream",
+      "english": "Searching around as we chased, Our eternal dream",
+      "adlib": false
+    },
+    {
+      "start": 39.13,
+      "end": 42.79,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          39.1,
+          40.15
+        ],
+        [
+          41.81,
+          42.8
+        ]
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "We all young, We all young",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 45.15,
+      "end": 49.55,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          45.14,
+          47.5
+        ],
+        [
+          47.74,
+          50.18
+        ]
+      ],
+      "original": "One two we started from zero, 셋 넷 더 높이 저 위로",
+      "romanization": "one two we started from zero, set net deo nopi jeo wiro",
+      "english": "One two we started from zero, Three four higher up there",
+      "adlib": false
+    },
+    {
+      "start": 49.7,
+      "end": 53.5,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          49.78,
+          50.79
+        ],
+        [
+          52.46,
+          53.47
+        ]
+      ],
+      "original": "",
+      "romanization": "We all young, We all young",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 55.77,
+      "end": 60.73,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          55.79,
+          58.18
+        ],
+        [
+          58.46,
+          60.81
+        ]
+      ],
+      "original": "One two we started from zero, 셋 넷 이 결말은 Hero",
+      "romanization": "one two we started from zero, set net i gyeolmareun hero",
+      "english": "One two we started from zero, Three four this ending is Hero",
+      "adlib": false
+    },
+    {
+      "start": 60.79,
+      "end": 64.01,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          60.84,
+          61.64
+        ],
+        [
+          61.8,
+          64.1
+        ]
+      ],
+      "original": "Zero, 우린 Young 해서 아픈 거래",
+      "romanization": "zero, urin young haeseo apeun georae",
+      "english": "Zero, They say we’re hurting because we’re Young",
+      "adlib": false
+    },
+    {
+      "start": 64.44,
+      "end": 66,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          64.46,
+          66.67
+        ]
+      ],
+      "original": "Zero to hero 이건 어때",
+      "romanization": "zero to hero igeon eottae",
+      "english": "Zero to hero how about this",
+      "adlib": false
+    },
+    {
+      "start": 66.15,
+      "end": 68.74,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          66.13,
+          66.91
+        ],
+        [
+          67.09,
+          69.23
+        ]
+      ],
+      "original": "Hero, 우린 0에다 꿈을 더해",
+      "romanization": "hero, urin yeongeda kkumeul deohae",
+      "english": "Hero, We add dreams to our 0",
+      "adlib": false
+    },
+    {
+      "start": 68.93,
+      "end": 71.46,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          69.05,
+          71.46
+        ]
+      ],
+      "original": "셋 넷 이 결말은 Hero",
+      "romanization": "set net i gyeolmareun hero",
+      "english": "Three four this ending is Hero",
+      "adlib": false
+    },
+    {
+      "start": 72.97,
+      "end": 76.27,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          73.12,
+          73.53
+        ],
+        [
+          73.83,
+          76.65
+        ]
+      ],
+      "original": "Yeah 아직 가진 게 없기에, 내 발걸음은 가볍지",
+      "romanization": "yeah ajik gajin ge eopgie, nae balgeoreumeun gabyeopji",
+      "english": "Yeah because I still have nothing, My footsteps are light",
+      "adlib": false
+    },
+    {
+      "start": 76.4,
+      "end": 79.09,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          76.58,
+          79.48
+        ]
+      ],
+      "original": "난 잃을 게 없기에, 젊음을 내세워 배팅해",
+      "romanization": "nan ilheul ge eopgie, jeolmeumeul naesewo baetinghae",
+      "english": "Because I have nothing to lose, I bet on my youth",
+      "adlib": false
+    },
+    {
+      "start": 79.1,
+      "end": 81.6,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          79.15,
+          79.97
+        ],
+        [
+          80.47,
+          81.32
+        ],
+        [
+          79.62,
+          80.61
+        ],
+        [
+          80.98,
+          82
+        ]
+      ],
+      "original": "",
+      "romanization": "What a shame?, **No, not at all,@KEIJU** What a flame, **that we started@KEIJU**",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 81.75,
+      "end": 84.63,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          81.82,
+          82.24
+        ],
+        [
+          82.36,
+          84.83
+        ]
+      ],
+      "original": "",
+      "romanization": "Yeah I don’t think our spark could be faded",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 84.82,
+      "end": 90.71,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          84.81,
+          87.85
+        ],
+        [
+          88.38,
+          90.57
+        ]
+      ],
+      "original": "너도 나랑 같은 마음이지, 서로 만나 둘이 돼",
+      "romanization": "neodo narang gateun maeumiji, seoro manna duri dwae",
+      "english": "You feel the same way as me, right?, When we meet we become two",
+      "adlib": false
+    },
+    {
+      "start": 91.12,
+      "end": 94.93,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          91.1,
+          92.6
+        ],
+        [
+          92.76,
+          95.03
+        ]
+      ],
+      "original": "두리번대며 쫓던, 영원한 Our dream",
+      "romanization": "duribeondaemyeo jjotdeon, yeongwonhan our dream",
+      "english": "Searching around as we chased, Our eternal dream",
+      "adlib": false
+    },
+    {
+      "start": 95.08,
+      "end": 98.82,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          95.08,
+          96.12
+        ],
+        [
+          97.73,
+          98.81
+        ]
+      ],
+      "original": "",
+      "romanization": "We all young, We all young",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 101.06,
+      "end": 105.6,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          101.09,
+          103.48
+        ],
+        [
+          103.75,
+          106.12
+        ]
+      ],
+      "original": "One two we started from zero, 셋 넷 더 높이 저 위로",
+      "romanization": "one two we started from zero, set net deo nopi jeo wiro",
+      "english": "One two we started from zero, Three four higher up there",
+      "adlib": false
+    },
+    {
+      "start": 105.75,
+      "end": 109.53,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          105.79,
+          106.72
+        ],
+        [
+          108.42,
+          109.43
+        ]
+      ],
+      "original": "",
+      "romanization": "We all young, We all young",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 111.75,
+      "end": 116.64,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          111.75,
+          114.14
+        ],
+        [
+          114.37,
+          116.82
+        ]
+      ],
+      "original": "One two we started from zero, 셋 넷 이 결말은 Hero",
+      "romanization": "one two we started from zero, set net i gyeolmareun hero",
+      "english": "One two we started from zero, Three four this ending is Hero",
+      "adlib": false
+    },
+    {
+      "start": 116.79,
+      "end": 120.18,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          116.79,
+          117.61
+        ],
+        [
+          117.76,
+          120.09
+        ]
+      ],
+      "original": "Zero, 우린 Young 해서 아픈 거래",
+      "romanization": "zero, urin young haeseo apeun georae",
+      "english": "Zero, They say we’re hurting because we’re Young",
+      "adlib": false
+    },
+    {
+      "start": 120.46,
+      "end": 122.04,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          120.43,
+          122.7
+        ]
+      ],
+      "original": "Zero to hero 이건 어때",
+      "romanization": "zero to hero igeon eottae",
+      "english": "Zero to hero how about this",
+      "adlib": false
+    },
+    {
+      "start": 122.18,
+      "end": 124.87,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          122.13,
+          122.94
+        ],
+        [
+          123.12,
+          125.26
+        ]
+      ],
+      "original": "Hero, 우린 0에다 꿈을 더해",
+      "romanization": "hero, urin yeongeda kkumeul deohae",
+      "english": "Hero, We add dreams to our 0",
+      "adlib": false
+    },
+    {
+      "start": 125.02,
+      "end": 127.25,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          125.03,
+          127.42
+        ]
+      ],
+      "original": "셋 넷 이 결말은 Hero",
+      "romanization": "set net i gyeolmareun hero",
+      "english": "Three four this ending is Hero",
+      "adlib": false
+    },
+    {
+      "start": 127.39,
+      "end": 130.79,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          127.42,
+          128.27
+        ],
+        [
+          128.44,
+          130.78
+        ]
+      ],
+      "original": "Zero, 우린 Young 해서 아픈 거래",
+      "romanization": "zero, urin young haeseo apeun georae",
+      "english": "Zero, They say we’re hurting because we’re Young",
+      "adlib": false
+    },
+    {
+      "start": 131.08,
+      "end": 132.67,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          131.08,
+          133.36
+        ]
+      ],
+      "original": "Zero to hero 이건 어때",
+      "romanization": "zero to hero igeon eottae",
+      "english": "Zero to hero how about this",
+      "adlib": false
+    },
+    {
+      "start": 132.79,
+      "end": 135.49,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          132.76,
+          133.58
+        ],
+        [
+          133.75,
+          135.89
+        ]
+      ],
+      "original": "Hero, 우린 0에다 꿈을 더해",
+      "romanization": "hero, urin yeongeda kkumeul deohae",
+      "english": "Hero, We add dreams to our 0",
+      "adlib": false
+    },
+    {
+      "start": 135.64,
+      "end": 138.09,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          135.7,
+          138.09
+        ]
+      ],
+      "original": "셋 넷 이 결말은 Hero",
+      "romanization": "set net i gyeolmareun hero",
+      "english": "Three four this ending is Hero",
+      "adlib": false
+    },
+    {
+      "start": 138.48,
+      "end": 140.81,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          138.35,
+          140.81
+        ]
+      ],
+      "original": "아무도 없던 0(Zero) 옆에",
+      "romanization": "amudo eopdeon yeong (zero) yeope",
+      "english": "Next to the 0 (Zero) where there was nobody",
+      "adlib": false
+    },
+    {
+      "start": 141.08,
+      "end": 143.44,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          141.02,
+          143.45
+        ]
+      ],
+      "original": "너와 내가 붙으면 무한대",
+      "romanization": "neowa naega buteumyeon muhandae",
+      "english": "When you and I come together it becomes infinity",
+      "adlib": false
+    },
+    {
+      "start": 143.74,
+      "end": 147.04,
+      "members": [
+        "MINJE"
+      ],
+      "voice": [
+        [
+          143.76,
+          145.95
+        ],
+        [
+          145.99,
+          146.45
+        ],
+        [
+          146.63,
+          147.1
+        ]
+      ],
+      "original": "혼자선 의미 없던 꿈도, 우리라면",
+      "romanization": "honjaseon uimi eopdeon kkumdo, uriramyeon",
+      "english": "Even the dreams that meant nothing alone, If it’s us",
+      "adlib": false
+    },
+    {
+      "start": 147.29,
+      "end": 148.45,
+      "members": [
+        "JUWANG"
+      ],
+      "voice": [
+        [
+          147.3,
+          156.13
+        ]
+      ],
+      "original": "영원히 Chase our light",
+      "romanization": "yeongwonhi chase our light",
+      "english": "We’ll forever Chase our light",
+      "adlib": false
+    },
+    {
+      "start": 148.6,
+      "end": 152.07,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          148.45,
+          149.4
+        ],
+        [
+          151.08,
+          152.06
+        ]
+      ],
+      "original": "",
+      "romanization": "We all young, We all young",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 154.37,
+      "end": 158.86,
+      "members": [
+        "DONGHWA"
+      ],
+      "voice": [
+        [
+          154.42,
+          156.79
+        ],
+        [
+          157.06,
+          159.42
+        ]
+      ],
+      "original": "One two we started from zero, 셋 넷 더 높이 저 위로",
+      "romanization": "one two we started from zero, set net deo nopi jeo wiro",
+      "english": "One two we started from zero, Three four higher up there",
+      "adlib": false
+    },
+    {
+      "start": 159.05,
+      "end": 162.75,
+      "members": [
+        "DONGHYEON"
+      ],
+      "voice": [
+        [
+          159.08,
+          160.04
+        ],
+        [
+          161.77,
+          162.78
+        ]
+      ],
+      "original": "",
+      "romanization": "We all young, We all young",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 165.04,
+      "end": 170.15,
+      "members": [
+        "KEIJU"
+      ],
+      "voice": [
+        [
+          165.03,
+          167.45
+        ],
+        [
+          167.71,
+          170.08
+        ]
+      ],
+      "original": "One two we started from zero, 셋 넷 이 결말은 Hero",
+      "romanization": "one two we started from zero, set net i gyeolmareun hero",
+      "english": "One two we started from zero, Three four this ending is Hero",
+      "adlib": false
+    },
+    {
+      "start": 172.8,
+      "end": 173.72,
+      "members": [
+        "KYEHOON"
+      ],
+      "voice": [
+        [
+          172.79,
+          173.68
+        ]
+      ],
+      "original": "",
+      "romanization": "Zero",
+      "english": "",
+      "adlib": false
     }
   ],
-  "cover": "covers/kickflip_0young.jpg"
+  "cover": "covers/kickflip_0young.jpg",
+  "audio": "audio/kickflip_0young.mp3"
 }
