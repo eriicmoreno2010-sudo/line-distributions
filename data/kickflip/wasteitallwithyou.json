@@ -1021,5 +1021,7 @@
   "audio": "audio/kickflip_wasteitallwithyou.mp3",
   "npC1": "#a2d3d7",
   "npC2": "#6671c2",
-  "instrumental": "audio/kickflip_wasteitallwithyou_inst.mp3"
+  "instrumental": "audio/kickflip_wasteitallwithyou_inst.mp3",
+  "instrumentalStart": 39.19428577083333,
+  "instrumentalEnd": 198.034286
 }
