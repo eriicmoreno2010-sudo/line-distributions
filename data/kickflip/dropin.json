@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "Drop In",
   "video": "videos/kickflip_dropin_muxvrh8v.mp4",
-  "duration": 158.040816,
+  "duration": 158.366667,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -116,7 +116,10 @@
         ],
         [
           4.82,
-          5.57
+          5.57,
+          [
+            "MINJE"
+          ]
         ],
         [
           6.22,
@@ -124,11 +127,17 @@
         ],
         [
           8.12,
-          8.54
+          8.54,
+          [
+            "MINJE"
+          ]
         ],
         [
           9.75,
-          10.19
+          10.19,
+          [
+            "MINJE"
+          ]
         ]
       ]
     },
@@ -778,7 +787,10 @@
         ],
         [
           115.87,
-          117.01
+          117.01,
+          [
+            "MINJE"
+          ]
         ]
       ],
       "original": "Ain’t nobody tryna stop, **아래 보지 말고 Drop@MINJE**",
