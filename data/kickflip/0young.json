@@ -879,5 +879,7 @@
   "audio": "audio/kickflip_0young.mp3",
   "npC1": "#9aabac",
   "npC2": "#d72894",
-  "instrumental": "audio/kickflip_0young_inst.mp3"
+  "instrumental": "audio/kickflip_0young_inst.mp3",
+  "instrumentalStart": 39.80458393269231,
+  "instrumentalEnd": 178.050612
 }
