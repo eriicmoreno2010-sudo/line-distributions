@@ -1080,5 +1080,7 @@
   "audio": "audio/kickflip_rockin.mp3",
   "npC1": "#ff0000",
   "npC2": "#2ed5ff",
-  "instrumental": "audio/kickflip_rockin_inst.mp3"
+  "instrumental": "audio/kickflip_rockin_inst.mp3",
+  "instrumentalStart": 39.63093658573718,
+  "instrumentalEnd": 159.033469
 }
