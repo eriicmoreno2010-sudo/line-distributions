@@ -990,5 +990,6 @@
     }
   ],
   "cover": "covers/kickflip_dropin.jpg",
-  "audio": "audio/kickflip_dropin.mp3"
+  "audio": "audio/kickflip_dropin.mp3",
+  "npC1": "#2648f2"
 }
