@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "Drop In",
   "video": "",
-  "duration": 0,
+  "duration": 158.040816,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -55,12 +55,518 @@
       "start": 0,
       "end": 0,
       "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "Um, **Yeah,@MINJE** Woo wah, **Yeah yeah@MINJE**",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "Drop, Ain’t nobody blockin’ me from hittin’ top",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "We’re just doin’ what we wanna anytime",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "Never hit the brakes, No we ain’t ever stoppin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "And they wonder how we do it, We just drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "Yeah 박스 속 똑같은 모양 Naysay",
+      "romanization": "yeah bakseu sok ttokgateun moyang naysay",
+      "english": "Yeah, the same shape inside the box Naysay",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "남의 말 거슬러 간 열대어’s",
+      "romanization": "name mal geoseulleo gan yeoldaeoeo’s",
+      "english": "Fish swimming against the current of others’ words",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
         "KYEHOON"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "Yeah, off the wall like MJ and my Vans though",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "차라리 저 밖에 나가, 뜨겁게 더 데어",
+      "romanization": "charari jeo bakke naga, tteugeopge deo deeo",
+      "english": "I’d rather go out there, Get burned even hotter",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "Can’t lose my way, Catchin’ the sky, Two steppin’ on air, But it’ll be fine",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "어지러울 듯 저 높이, 올라가 I cannot breathe",
+      "romanization": "eojireoul deut jeo nopi, ollaga i cannot breathe",
+      "english": "So high it feels dizzy, I go up I cannot breathe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "Ain’t nobody tryna stop, 아래 보지 말고 Drop",
+      "romanization": "ain’t nobody tryna stop, arae boji malgo drop",
+      "english": "Ain’t nobody tryna stop, Don’t look down Drop",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "Drop, Ain’t nobody blockin’ me from hittin’ top",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "We’re just doin’ what we wanna anytime",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "Never hit the brakes, No we ain’t ever stoppin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Never stoppin’)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "And they wonder how we do it, We just drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(We just drop in)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "**Drop Drop,** We don’t care, we drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "**Drop Drop,** We won’t stop, keep poppin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Never stoppin’)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "We’re just doin’ what we want and we just drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "We’re just doin’ what we want and we just drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "처음부터 알 순 없어, Which one is the wrong way",
+      "romanization": "cheoeumbuteo al sun eopseo, which one is the wrong way",
+      "english": "You can’t know from the beginning, Which one is the wrong way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "지름길 반대로 Ridin’, 가파른 경사 Like it",
+      "romanization": "jireumgil bandaero ridin’, gapareun gyeongsa like it",
+      "english": "Ridin’ against the shortcut, A steep slope Like it",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "Get it, right?, Get it, right?",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "Finally time for us to go and rise",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "Brand new day when I wake up, Erry bad thing we can fade out, Yeah yeah",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "위험한 게 뭐 어떤데?, I’mma go break all boundaries",
+      "romanization": "wiheomhan ge mwo eotteonde?, i’mma go break all boundaries",
+      "english": "What’s so dangerous about it?, I’mma go break all boundaries",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "기록적인 우리 매일 밤, 오늘이 항상 Last flip",
+      "romanization": "girokjeogin uri maeil bam, oneuri hangsang last flip",
+      "english": "Our record breaking every night, Today is always Last flip",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "Drop, drop, droppin’ in my own way",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "",
+      "romanization": "If we get down, we always coming up",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "Can’t lose my way, Catchin’ the sky, Two steppin’ on air, But it’ll be fine",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "어지러울 듯 저 높이, 올라가 I cannot breathe",
+      "romanization": "eojireoul deut jeo nopi, ollaga i cannot breathe",
+      "english": "So high it feels dizzy, I go up I cannot breathe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "Ain’t nobody tryna stop, **아래 보지 말고 Drop@MINJE**",
+      "romanization": "ain’t nobody tryna stop, **arae boji malgo drop@MINJE**",
+      "english": "Ain’t nobody tryna stop, **Don’t look down Drop@MINJE**",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "",
+      "romanization": "Drop, Ain’t nobody blockin’ me from hittin’ top",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "We’re just doin’ what we wanna anytime",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "",
+      "romanization": "Never hit the brakes, No we ain’t ever stoppin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Never stoppin’)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KYEHOON"
+      ],
+      "original": "",
+      "romanization": "And they wonder how we do it, We just drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(We just drop in)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "Drop Drop, We don’t care, we drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHYEON"
+      ],
+      "original": "Dr",
+      "romanization": "Drop Drop, We won’t stop, keep poppin’",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Never stoppin’)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KEIJU"
+      ],
+      "original": "",
+      "romanization": "We’re just doin’ what we want and we just drop in",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(We just drop in)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "KickFlip"
+      ],
+      "original": "",
+      "romanization": "We’re just doin’ what we want and we just drop in",
+      "english": "",
+      "adlib": false
     }
   ],
   "cover": "covers/kickflip_dropin.jpg",
