@@ -1043,5 +1043,6 @@
   "instrumental": "audio/kickflip_kickoffthewall_inst.mp3",
   "instrumentalStart": 44.40308939134616,
   "instrumentalEnd": 69.33113957596154,
-  "instrumentalFade": true
+  "instrumentalFade": true,
+  "audioOffset": -0.1
 }
