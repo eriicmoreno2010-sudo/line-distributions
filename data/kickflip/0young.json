@@ -870,5 +870,6 @@
     }
   ],
   "cover": "covers/kickflip_0young.jpg",
-  "audio": "audio/kickflip_0young.mp3"
+  "audio": "audio/kickflip_0young.mp3",
+  "npC1": "#9aabac"
 }
