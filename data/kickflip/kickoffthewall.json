@@ -351,7 +351,8 @@
       "start": 49.95,
       "end": 52.16,
       "members": [
-        "DONGHWA"
+        "DONGHWA",
+        "KYEHOON"
       ],
       "original": "",
       "romanization": "No brakes, no sleep, We never stop",
@@ -368,7 +369,8 @@
       "start": 52.31,
       "end": 54.36,
       "members": [
-        "DONGHWA"
+        "DONGHWA",
+        "KYEHOON"
       ],
       "original": "",
       "romanization": "Just keep it rollin’, We gon’ kick off the wall",
@@ -691,7 +693,10 @@
     {
       "start": 105.38,
       "end": 107.57,
-      "members": [],
+      "members": [
+        "MINJE",
+        "DONGHWA"
+      ],
       "original": "",
       "romanization": "No brakes, no sleep, We never stop",
       "english": "",
@@ -706,7 +711,10 @@
     {
       "start": 107.69,
       "end": 109.72,
-      "members": [],
+      "members": [
+        "MINJE",
+        "DONGHWA"
+      ],
       "original": "",
       "romanization": "Just keep it rollin’, We gon’ kick off the wall",
       "english": "",
@@ -721,7 +729,9 @@
     {
       "start": 109.75,
       "end": 111.39,
-      "members": [],
+      "members": [
+        "JUWANG"
+      ],
       "original": "",
       "romanization": "That's how we kick off the wall",
       "english": "",
