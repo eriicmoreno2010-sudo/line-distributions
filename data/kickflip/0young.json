@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "0 (Young)",
   "video": "videos/kickflip_0young_muxwvyhh.mp4",
-  "duration": 178.050612,
+  "duration": 178.466667,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -376,7 +376,10 @@
         ],
         [
           80.47,
-          81.32
+          81.32,
+          [
+            "KEIJU"
+          ]
         ],
         [
           79.62,
@@ -384,7 +387,10 @@
         ],
         [
           80.98,
-          82
+          82,
+          [
+            "KEIJU"
+          ]
         ]
       ],
       "original": "",
