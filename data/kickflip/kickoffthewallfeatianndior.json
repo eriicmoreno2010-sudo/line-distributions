@@ -1191,5 +1191,7 @@
   ],
   "audio": "audio/kickflip_kickoffthewallfeatianndior.mp3",
   "audioOffset": 0.3,
-  "instrumental": "audio/kickflip_kickoffthewallfeatianndior_inst.mp3"
+  "instrumental": "audio/kickflip_kickoffthewallfeatianndior_inst.mp3",
+  "instrumentalStart": 44.86471995032051,
+  "instrumentalEnd": 180.035918
 }
