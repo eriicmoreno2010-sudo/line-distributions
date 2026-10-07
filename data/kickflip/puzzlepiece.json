@@ -2,7 +2,7 @@
   "group": "KickFlip",
   "song": "미완성 (Puzzle Piece)",
   "video": "videos/kickflip_puzzlepiece_muxy5t0f.mp4",
-  "duration": 175.416016,
+  "duration": 174.063991,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -888,5 +888,6 @@
   "instrumental": "audio/kickflip_puzzlepiece_inst.mp3",
   "instrumentalStart": 42.92707597159455,
   "instrumentalEnd": 67.61312521518428,
-  "instrumentalFade": true
+  "instrumentalFade": true,
+  "audio": "audio/kickflip_puzzlepiece.mp3"
 }
