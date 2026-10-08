@@ -1,7 +1,7 @@
 {
   "group": "NCT DREAM",
   "song": "BTTF",
-  "video": "videos/nctdream_bttf_muzutkps.mp4",
+  "video": "videos/nctdream_bttf_muzv9gvu.mp4",
   "duration": 182.348833,
   "theme": "light",
   "subunit": false,
@@ -879,5 +879,5 @@
     }
   ],
   "audio": "audio/nctdream_bttf.mp3",
-  "audioOffset": -0.1
+  "audioOffset": -0.2
 }
