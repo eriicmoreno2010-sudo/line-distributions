@@ -878,5 +878,6 @@
       "adlib": false
     }
   ],
-  "audio": "audio/nctdream_bttf.mp3"
+  "audio": "audio/nctdream_bttf.mp3",
+  "audioOffset": 0.1
 }
