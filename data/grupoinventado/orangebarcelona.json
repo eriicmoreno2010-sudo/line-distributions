@@ -1851,5 +1851,6 @@
       ]
     }
   ],
-  "audio": "audio/grupoinventado_orangebarcelona.mp3"
+  "audio": "audio/grupoinventado_orangebarcelona.mp3",
+  "audioOffset": -0.2
 }
