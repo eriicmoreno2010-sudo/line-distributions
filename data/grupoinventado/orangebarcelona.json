@@ -55,11 +55,12 @@
       "start": 9.93,
       "end": 14.84,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "IRENE"
       ],
-      "original": "해가 지는 순간 Seoul City, 그 오렌지색 밤",
-      "romanization": "haega jineun sungan seoul city, geu orenjisaek bam",
-      "english": "The moment the sun sets in Seoul City, That orange-colored night",
+      "original": "해가 지는 순간 BCN City, 그 오렌지색 밤",
+      "romanization": "haega jineun sungan bcn city, geu orenjisaek bam",
+      "english": "The moment the sun sets in BCN City, That orange-colored night",
       "adlib": false,
       "voice": [
         [
@@ -76,7 +77,8 @@
       "start": 14.96,
       "end": 17.84,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "ARNAU"
       ],
       "original": "자 달리자고 Highway, 섞여 저 석양에",
       "romanization": "ja dallijago highway, seokkyeo jeo seongyange",
@@ -93,7 +95,8 @@
       "start": 16.51,
       "end": 18.39,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "",
       "romanization": "(Uh, sunset)",
@@ -114,7 +117,8 @@
       "start": 24.92,
       "end": 25.87,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -131,7 +135,8 @@
       "start": 41.17,
       "end": 41.55,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(We)",
@@ -148,7 +153,8 @@
       "start": 41.81,
       "end": 42.16,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Ride)",
@@ -165,7 +171,8 @@
       "start": 56.08,
       "end": 56.83,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(OK)",
@@ -182,7 +189,8 @@
       "start": 57.25,
       "end": 58.01,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "(-이 때)",
       "romanization": "(-i ttae)",
@@ -199,7 +207,8 @@
       "start": 18.37,
       "end": 20.1,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "ARNAU"
       ],
       "original": "스며들어가",
       "romanization": "seumyeodeureoga",
@@ -216,7 +225,8 @@
       "start": 20.28,
       "end": 22.9,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "MICHELLE"
       ],
       "original": "빌딩 속 사이로 골인",
       "romanization": "bilding sok sairo gorin",
@@ -233,7 +243,8 @@
       "start": 23.05,
       "end": 25.06,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "MICHELLE"
       ],
       "original": "Shoot 저 태양을 쏴",
       "romanization": "shoot jeo taeyangeul sswa",
@@ -250,7 +261,8 @@
       "start": 25.85,
       "end": 28.28,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "해가 저물어, 한강 위로 띄워",
       "romanization": "haega jeomureo, hangang wiro ttuiwo",
@@ -267,7 +279,8 @@
       "start": 28.42,
       "end": 29.75,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "ERIC"
       ],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -284,7 +297,8 @@
       "start": 29.87,
       "end": 32.95,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "Woah 하늘 반 땅 반, 뻥 뚫린 창밖을",
       "romanization": "woah haneul ban ttang ban, ppeong ttulrin changbakkeul",
@@ -317,7 +331,8 @@
       "start": 33.07,
       "end": 35.24,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "눈에 담을 틈이 없이 달렸는지도",
       "romanization": "nune dameul teumi eopsi dallyeonneunjido",
@@ -334,7 +349,8 @@
       "start": 35.39,
       "end": 37.98,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "노을은 날 알아주지 늘 Always do",
       "romanization": "noeureun nal arajuji neul always do",
@@ -355,7 +371,8 @@
       "start": 38.16,
       "end": 40.47,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "바람에 날 적시는 샤워 Booth",
       "romanization": "barame nal jeoksineun syawo booth",
@@ -372,7 +389,8 @@
       "start": 40.71,
       "end": 43.15,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "We gon’ ride, 언제든지 I don't care",
       "romanization": "we gon’ ride, eonjedeunji i don't care",
@@ -397,7 +415,8 @@
       "start": 43.29,
       "end": 45.7,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "가끔 삐걱대도 난 직진이지",
       "romanization": "gakkeum ppigeokdaedo nan jikjiniji",
@@ -414,7 +433,8 @@
       "start": 45.85,
       "end": 47.74,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "난 저기 노을 속으로 첨벙",
       "romanization": "nan jeogi noeul sogeuro cheombeong",
@@ -431,7 +451,8 @@
       "start": 47.92,
       "end": 51.02,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "Yeah It's right here, 망설임 없이 Dive",
       "romanization": "yeah it's right here, mangseorim eopsi dive",
@@ -456,7 +477,8 @@
       "start": 51.71,
       "end": 54.98,
       "members": [
-        "YUTA"
+        "YUTA",
+        "IRENE"
       ],
       "original": "누가 저 하늘에, 불을 지르지 Fire fire",
       "romanization": "nuga jeo haneure, bureul jireuji fire fire",
@@ -477,7 +499,8 @@
       "start": 55.13,
       "end": 57.45,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "ERIC"
       ],
       "original": "But It’s OK, 오늘이 때",
       "romanization": "but it’s ok, oneuri ttae",
@@ -498,7 +521,8 @@
       "start": 57.98,
       "end": 59.74,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "ERIC"
       ],
       "original": "너와 같이 석양 속으로, Dive dive",
       "romanization": "neowa gachi seongyang sogeuro, dive dive",
@@ -519,11 +543,12 @@
       "start": 59.9,
       "end": 64.8,
       "members": [
-        "JAEHYUN"
+        "JAEHYUN",
+        "ARNAU"
       ],
-      "original": "해가 지는 순간 Seoul City, 그 오렌지색 밤",
-      "romanization": "haega jineun sungan seoul city, geu orenjisaek bam",
-      "english": "The moment the sun sets in Seoul City, That orange-colored night",
+      "original": "해가 지는 순간 BCN City, 그 오렌지색 밤",
+      "romanization": "haega jineun sungan bcn city, geu orenjisaek bam",
+      "english": "The moment the sun sets in BCN City, That orange-colored night",
       "adlib": false,
       "voice": [
         [
@@ -540,7 +565,8 @@
       "start": 64.93,
       "end": 67.76,
       "members": [
-        "YUTA"
+        "YUTA",
+        "IRENE"
       ],
       "original": "자 달리자고 Highway, 섞여 저 석양에",
       "romanization": "ja dallijago highway, seokkyeo jeo seongyange",
@@ -557,7 +583,8 @@
       "start": 66.54,
       "end": 68.62,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Uh, sunset)",
@@ -578,7 +605,8 @@
       "start": 74.9,
       "end": 75.89,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -595,7 +623,8 @@
       "start": 68.34,
       "end": 70.04,
       "members": [
-        "YUTA"
+        "YUTA",
+        "IRENE"
       ],
       "original": "스며들어가",
       "romanization": "seumyeodeureoga",
@@ -612,7 +641,8 @@
       "start": 70.19,
       "end": 72.87,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "MICHELLE"
       ],
       "original": "빌딩 속 사이로 골인",
       "romanization": "bilding sok sairo gorin",
@@ -629,7 +659,8 @@
       "start": 72.99,
       "end": 75.03,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "MICHELLE"
       ],
       "original": "Shoot 저 태양을 쏴",
       "romanization": "shoot jeo taeyangeul sswa",
@@ -646,7 +677,8 @@
       "start": 75.82,
       "end": 78.21,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "해가 저물어, 한강 위로 띄워",
       "romanization": "haega jeomureo, hangang wiro ttuiwo",
@@ -663,7 +695,8 @@
       "start": 78.4,
       "end": 80.3,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "ERIC"
       ],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -680,7 +713,8 @@
       "start": 79.88,
       "end": 80.9,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "IRENE"
       ],
       "original": "",
       "romanization": "(Alright ah)",
@@ -697,7 +731,8 @@
       "start": 95.27,
       "end": 95.59,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Hah)",
@@ -714,7 +749,8 @@
       "start": 96.84,
       "end": 97.16,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Ho)",
@@ -731,7 +767,8 @@
       "start": 111.2,
       "end": 111.97,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "",
       "romanization": "(OK)",
@@ -748,7 +785,8 @@
       "start": 112.36,
       "end": 113.08,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "(-이 때)",
       "romanization": "(-i ttae)",
@@ -765,7 +803,8 @@
       "start": 81.17,
       "end": 85.35,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "Dive into the sunset dive dive into, To the sunset dive into",
@@ -794,7 +833,8 @@
       "start": 85.5,
       "end": 87.97,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "바다가 담은 하늘은 멋진 대칭",
       "romanization": "badaga dameun haneureun meotjin daeching",
@@ -811,7 +851,8 @@
       "start": 88.12,
       "end": 90.37,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "날 스쳐 가지 Summer breeze",
       "romanization": "nal seuchyeo gaji summer breeze",
@@ -828,7 +869,8 @@
       "start": 90.5,
       "end": 92.84,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "눈에 다 담아, 놓치기엔 아까워",
       "romanization": "nune da dama, nochigien akkawo",
@@ -845,7 +887,8 @@
       "start": 92.96,
       "end": 95.36,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "석양은 끝나지 않는 긴 터널 같지",
       "romanization": "seongyangeun kkeunnaji anneun gin teoneol gatji",
@@ -862,7 +905,8 @@
       "start": 95.46,
       "end": 97.92,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "아지랑이들이 더, 이글이글 대는걸",
       "romanization": "ajirangideuri deo, igeuligeul daeneungeol",
@@ -883,7 +927,8 @@
       "start": 98.1,
       "end": 100.36,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "Shimmy shimmy ya ya, 춤을 추지 Woah",
       "romanization": "shimmy shimmy ya ya, chumeul chuji woah",
@@ -900,7 +945,8 @@
       "start": 100.48,
       "end": 105.62,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "Woah 반겨주지 널, 저 하늘에 불이나, 불러 Fireman",
       "romanization": "woah bangyeojuji neol, jeo haneure burina, bulleo fireman",
@@ -929,7 +975,8 @@
       "start": 106.75,
       "end": 110.06,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "ERIC"
       ],
       "original": "이 그림을 밤이, 가져가 버리네 Why",
       "romanization": "i geurimeul bami, gajyeoga beorine why",
@@ -950,7 +997,8 @@
       "start": 110.21,
       "end": 112.59,
       "members": [
-        "JAEHYUN"
+        "JAEHYUN",
+        "IRENE"
       ],
       "original": "But It’s OK, 오늘이 때",
       "romanization": "but it’s ok, oneuri ttae",
@@ -971,7 +1019,8 @@
       "start": 112.93,
       "end": 114.69,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "너는 이 그림을 담아, 난 Drive drive",
       "romanization": "neoneun i geurimeul dama, nan drive drive",
@@ -992,11 +1041,12 @@
       "start": 114.81,
       "end": 119.7,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "ERIC"
       ],
-      "original": "해가 지는 순간 Seoul City, 그 오렌지색 밤",
-      "romanization": "haega jineun sungan seoul city, geu orenjisaek bam",
-      "english": "The moment the sun sets in Seoul City, That orange-colored night",
+      "original": "해가 지는 순간 BCN City, 그 오렌지색 밤",
+      "romanization": "haega jineun sungan bcn city, geu orenjisaek bam",
+      "english": "The moment the sun sets in BCN City, That orange-colored night",
       "adlib": false,
       "voice": [
         [
@@ -1017,7 +1067,8 @@
       "start": 119.82,
       "end": 122.71,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "MICHELLE"
       ],
       "original": "자 달리자고 Highway, 섞여 저 석양에",
       "romanization": "ja dallijago highway, seokkyeo jeo seongyange",
@@ -1034,7 +1085,8 @@
       "start": 121.18,
       "end": 123.43,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "",
       "romanization": "(Uh, sunset)",
@@ -1055,7 +1107,8 @@
       "start": 129.92,
       "end": 130.87,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -1072,7 +1125,8 @@
       "start": 133.34,
       "end": 136.12,
       "members": [
-        "YUTA"
+        "YUTA",
+        "MICHELLE"
       ],
       "original": "(오렌지색 물감)",
       "romanization": "(orenjisaek mulgam)",
@@ -1089,7 +1143,8 @@
       "start": 134.64,
       "end": 134.97,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "",
       "romanization": "(Ah)",
@@ -1106,7 +1161,8 @@
       "start": 141.48,
       "end": 142.21,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "IRENE"
       ],
       "original": "",
       "romanization": "(Yeah)",
@@ -1123,7 +1179,8 @@
       "start": 144.35,
       "end": 144.73,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "IRENE"
       ],
       "original": "",
       "romanization": "(Yeh)",
@@ -1140,7 +1197,8 @@
       "start": 123.35,
       "end": 125.11,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "MICHELLE"
       ],
       "original": "스며들어가",
       "romanization": "seumyeodeureoga",
@@ -1157,7 +1215,8 @@
       "start": 125.24,
       "end": 127.84,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "IRENE"
       ],
       "original": "빌딩 속 사이로 골인",
       "romanization": "bilding sok sairo gorin",
@@ -1191,7 +1250,8 @@
       "start": 130.78,
       "end": 133.22,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "해가 저물어, 한강 위로 띄워",
       "romanization": "haega jeomureo, hangang wiro ttuiwo",
@@ -1208,7 +1268,8 @@
       "start": 133.34,
       "end": 135.24,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "ERIC"
       ],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -1225,7 +1286,8 @@
       "start": 135.78,
       "end": 141.55,
       "members": [
-        "JAEHYUN"
+        "JAEHYUN",
+        "ARNAU"
       ],
       "original": "",
       "romanization": "Oh this city gives me love, and I just can't get enough",
@@ -1250,7 +1312,8 @@
       "start": 141.74,
       "end": 144.9,
       "members": [
-        "JAEHYUN"
+        "JAEHYUN",
+        "IRENE"
       ],
       "original": "점점 붉게 물들어가 Tonight",
       "romanization": "jeomjeom bulge muldeureoga tonight",
@@ -1267,7 +1330,8 @@
       "start": 145.05,
       "end": 150.05,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "ERIC"
       ],
       "original": "볼 때마다 달라져, 사랑하게 되는 이유지",
       "romanization": "bol ttaemada dallajyeo, saranghage doeneun iyuji",
@@ -1304,7 +1368,8 @@
       "start": 150.17,
       "end": 152.37,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "MICHELLE"
       ],
       "original": "시간을 따라 변화하는 널",
       "romanization": "siganeul ttara byeonhwahaneun neol",
@@ -1321,7 +1386,8 @@
       "start": 152.12,
       "end": 152.82,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Like you do)",
@@ -1338,7 +1404,8 @@
       "start": 157.79,
       "end": 159.11,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "MICHELLE"
       ],
       "original": "(사랑한 밤)",
       "romanization": "(saranghan bam)",
@@ -1355,7 +1422,8 @@
       "start": 160.18,
       "end": 162.06,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "MICHELLE"
       ],
       "original": "",
       "romanization": "(Yeah yeah)",
@@ -1372,7 +1440,8 @@
       "start": 162.76,
       "end": 164.04,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "ERIC"
       ],
       "original": "(뚫려버린 Highway)",
       "romanization": "(ttullyeobeorin highway)",
@@ -1389,7 +1458,8 @@
       "start": 164,
       "end": 166.35,
       "members": [
-        "JAEHYUN"
+        "JAEHYUN",
+        "ARNAU"
       ],
       "original": "(적시길 바라네)",
       "romanization": "(jeoksigil barane)",
@@ -1406,7 +1476,8 @@
       "start": 152.55,
       "end": 154.87,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "MICHELLE"
       ],
       "original": "사라지기 전에 담아봐",
       "romanization": "sarajigi jeone damabwa",
@@ -1427,7 +1498,8 @@
       "start": 155.82,
       "end": 157.12,
       "members": [
-        "TAEYONG"
+        "TAEYONG",
+        "MARC"
       ],
       "original": "Ay 놓치지 마 Baby",
       "romanization": "ay nochiji ma baby",
@@ -1448,11 +1520,12 @@
       "start": 157.27,
       "end": 162.26,
       "members": [
-        "YUTA"
+        "YUTA",
+        "ERIC"
       ],
-      "original": "내가 사랑한 밤 Seoul City, 그 오렌지색 밤",
-      "romanization": "naega saranghan bam seoul city, geu orenjisaek bam",
-      "english": "The night I loved in Seoul City, That orange-colored night",
+      "original": "내가 사랑한 밤 BCN City, 그 오렌지색 밤",
+      "romanization": "naega saranghan bam bcn city, geu orenjisaek bam",
+      "english": "The night I loved in BCN City, That orange-colored night",
       "adlib": false,
       "voice": [
         [
@@ -1469,7 +1542,8 @@
       "start": 162.38,
       "end": 165.33,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "IRENE"
       ],
       "original": "뻥 뚫려버린 Highway, 적시길 바라네",
       "romanization": "ppeong ttullyeobeorin highway, jeoksigil barane",
@@ -1486,7 +1560,8 @@
       "start": 165.23,
       "end": 165.93,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "",
       "romanization": "(Sunset)",
@@ -1503,7 +1578,8 @@
       "start": 167.18,
       "end": 168.57,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "MICHELLE"
       ],
       "original": "(밤)",
       "romanization": "(bam)",
@@ -1520,7 +1596,8 @@
       "start": 169.87,
       "end": 171.93,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "MICHELLE"
       ],
       "original": "(고민 oh woah)",
       "romanization": "(gomin oh woah)",
@@ -1537,7 +1614,8 @@
       "start": 172.35,
       "end": 173.38,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "",
       "romanization": "(Woo, ayo ayo)",
@@ -1554,7 +1632,8 @@
       "start": 173.38,
       "end": 175.14,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "MICHELLE"
       ],
       "original": "(멀리 더 날려)",
       "romanization": "(meolli deo nallyeo)",
@@ -1571,7 +1650,8 @@
       "start": 177.42,
       "end": 178.06,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "",
       "romanization": "(Woo)",
@@ -1588,7 +1668,8 @@
       "start": 165.86,
       "end": 167.56,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "IRENE"
       ],
       "original": "오렌지색 밤",
       "romanization": "orenjisaek bam",
@@ -1605,7 +1686,8 @@
       "start": 167.71,
       "end": 170.3,
       "members": [
-        "JAEHYUN"
+        "JAEHYUN",
+        "ARNAU"
       ],
       "original": "붉게 다 타버린 고민",
       "romanization": "bulge da tabeorin gomin",
@@ -1622,7 +1704,8 @@
       "start": 170.57,
       "end": 172.5,
       "members": [
-        "JAEHYUN"
+        "JAEHYUN",
+        "ARNAU"
       ],
       "original": "이 도시가 준 답",
       "romanization": "i dosiga jun dap",
@@ -1639,7 +1722,8 @@
       "start": 173.31,
       "end": 175.75,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "멀리 더 날려, 던져버려 3 Point",
       "romanization": "meolli deo nallyeo, deonjyeobeoryeo three point",
@@ -1656,7 +1740,8 @@
       "start": 175.9,
       "end": 177.55,
       "members": [
-        "JUNGWOO"
+        "JUNGWOO",
+        "ERIC"
       ],
       "original": "오렌지색 물감",
       "romanization": "orenjisaek mulgam",
@@ -1673,7 +1758,8 @@
       "start": 177.71,
       "end": 182.25,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "ERIC"
       ],
       "original": "Girl you know how how we roll, 오늘 밤은 안 식어",
       "romanization": "girl you know how how we roll, oneul bameun an sigeo",
@@ -1706,7 +1792,8 @@
       "start": 182.4,
       "end": 186.37,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "ERIC"
       ],
       "original": "",
       "romanization": "Just let it burn, Just let it burn",
@@ -1727,7 +1814,8 @@
       "start": 183.65,
       "end": 184.81,
       "members": [
-        "JOHNNY"
+        "JOHNNY",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Cuz I say so)",
@@ -1744,7 +1832,8 @@
       "start": 186.78,
       "end": 188.96,
       "members": [
-        "DOYOUNG"
+        "DOYOUNG",
+        "IRENE"
       ],
       "original": "",
       "romanization": "(This is my city yeah)",
@@ -1761,7 +1850,8 @@
       "start": 188.23,
       "end": 189.91,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "MICHELLE"
       ],
       "original": "(지빛 하늘에)",
       "romanization": "(jibit haneure)",
@@ -1778,7 +1868,8 @@
       "start": 190.56,
       "end": 193.14,
       "members": [
-        "TAEIL"
+        "TAEIL",
+        "MICHELLE"
       ],
       "original": "(보자 Til we’re there yeah)",
       "romanization": "(boja til we’re there yeah)",
@@ -1795,7 +1886,8 @@
       "start": 187.73,
       "end": 192.37,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "ERIC"
       ],
       "original": "오렌지빛 하늘에, 부딪혀 보자 Til we’re there",
       "romanization": "orenjibit haneure, budichyeo boja til we’re there",
@@ -1816,7 +1908,8 @@
       "start": 192.5,
       "end": 196.43,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "ERIC"
       ],
       "original": "",
       "romanization": "Just let it burn, Just let it burn",
@@ -1837,7 +1930,8 @@
       "start": 197.45,
       "end": 198.21,
       "members": [
-        "MARK"
+        "MARK",
+        "BIEL"
       ],
       "original": "",
       "romanization": "Just let it",
