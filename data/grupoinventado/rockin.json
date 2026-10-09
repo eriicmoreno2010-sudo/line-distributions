@@ -1,7 +1,7 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "Rockin'",
-  "video": "",
+  "video": "videos/grupoinventado_rockin_mv17sbb1.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": false,
@@ -32,13 +32,6 @@
       "name": "BIEL",
       "image": "images/grupoinventado/rockin/biel.png",
       "color": "#ff2424",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "MICHELLE",
-      "image": "images/grupoinventado/rockin/michelle.png",
-      "color": "#ffee33",
       "focus": 50,
       "lift": 3
     },
