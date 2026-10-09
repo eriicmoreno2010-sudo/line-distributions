@@ -59,463 +59,944 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
-      "romanization": "ya ya whoa ya ya whoa, ya ya whoa ya ya whoa",
-      "english": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
+      "start": 15.25,
+      "end": 17.62,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn the time time time",
-      "romanization": "we gon’ we gon’ we gon’, turn the time time time",
-      "english": "We gon’ we gon’ we gon’, turn the time time time",
+      "start": 17.76,
+      "end": 20.1,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn the time time time",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
-      "romanization": "we gon’ we gon’ we gon’, turn it ra ta ta",
-      "english": "We gon’ we gon’ we gon’, turn it ra-ta-ta",
+      "start": 20.22,
+      "end": 22.53,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
-      "romanization": "ya ya whoa ya ya whoa, ya ya whoa ya ya whoa",
-      "english": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
+      "start": 22.69,
+      "end": 24.99,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "And it’s Back To The Future on the go",
-      "romanization": "and it’s back to the future, on the go",
-      "english": "And it’s Back To The Future, on the go",
-      "adlib": false
+      "start": 25.11,
+      "end": 26.9,
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "",
+      "romanization": "And it’s Back To The Future on the go",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          25.08,
+          26.98
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 27.34,
+      "end": 29.96,
+      "members": [
+        "MARK"
+      ],
       "original": "경고음 미친 듯이 내 귓속을 쏴",
       "romanization": "gyeonggoeum michin deusi nae gwitsogeul sswa",
       "english": "Warning sounds blast through my ears",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          27.42,
+          29.98
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 30.2,
+      "end": 32.44,
+      "members": [
+        "MARK"
+      ],
       "original": "번개 치는 써킷 위의 Spark",
       "romanization": "beongae chineun sseokit wiui spark",
       "english": "On a lightning-struck circuit, this Spark",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          30.23,
+          32.44
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 32.65,
+      "end": 34.93,
+      "members": [
+        "MARK"
+      ],
       "original": "초월한 듯 뒤섞인 Space-time",
       "romanization": "chowolhan deut dwisseokkin space time",
       "english": "Beyond control, mashed up Space-time",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          32.69,
+          34.94
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 35.14,
+      "end": 37.3,
+      "members": [
+        "MARK"
+      ],
       "original": "여긴 어디? 상상 못 한 Stop",
       "romanization": "yeogin eodi? sangsang mot han stop",
       "english": "Where am I? This unimagined Stop",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.13,
+          37.32
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 37.79,
+      "end": 40.16,
+      "members": [
+        "CHENLE"
+      ],
       "original": "시간을 뒤엎어, 떨어진 Alien",
       "romanization": "siganeul dwieopeo, tteoreojin alien",
       "english": "Flipping time upside down, Fallen Alien",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          37.72,
+          38.93
+        ],
+        [
+          39.08,
+          40.12
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 40.31,
+      "end": 42.67,
+      "members": [
+        "CHENLE"
+      ],
       "original": "눈앞에 펼쳐지는, 낯설지 않은 Sight",
       "romanization": "nunape pyeolchyeojineun, natseolji aneun sight",
       "english": "Unfolding right in front of me, This familiar Sight",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          40.21,
+          43.2
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 42.82,
+      "end": 44.78,
+      "members": [
+        "JENO"
+      ],
       "original": "시간을 시간을, 뚫어내 난 왔어",
       "romanization": "siganeul siganeul, ttureonae nan wasseo",
       "english": "Tunneling, tunneling, Through time I've come",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          42.82,
+          44.98
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 44.96,
+      "end": 47.49,
+      "members": [
+        "JENO"
+      ],
       "original": "오래된 아니, 맨 처음 느낀 듯한 Moment",
       "romanization": "oraedoen ani, maen cheoeum neukkin deuthan moment",
       "english": "Old? Nah, Feels fresh like the first time, this Moment",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          45.02,
+          47.5
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "난 알아 저 눈빛을 가진 소년",
-      "romanization": "nan ara jeo nunbicheul gajin sonyeon",
-      "english": "I know him — the boy with that look in his eyes",
-      "adlib": false
+      "start": 48.01,
+      "end": 52.87,
+      "members": [
+        "RENJUN"
+      ],
+      "original": "난 알아 저 눈**빛을 가진 소년@RENJUN,CHENLE**",
+      "romanization": "nan ara jeo nun**bicheul gajin sonyeon@RENJUN,CHENLE**",
+      "english": "I know him — the boy **with that look in his eyes@RENJUN,CHENLE**",
+      "adlib": false,
+      "voice": [
+        [
+          48.03,
+          54.01
+        ],
+        [
+          49.64,
+          54.01,
+          [
+            "CHENLE"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 53.03,
+      "end": 55.88,
+      "members": [
+        "HAECHAN"
+      ],
       "original": "네게 말을 걸어볼까, 상상 못 할 얘길 해 볼까",
       "romanization": "nege mareul georeobolkka, sangsang mot hal yaegil hae bolkka",
       "english": "Should I go talk to you?, Should I say something beyond imagination",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          52.91,
+          54.3
+        ],
+        [
+          54.45,
+          55.01
+        ],
+        [
+          55.16,
+          56.17
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 56,
+      "end": 58.3,
+      "members": [
+        "JISUNG"
+      ],
       "original": "ay ay It’s my choice, 내 시간 속의 파워",
       "romanization": "ay ay it’s my choice, nae sigan sogui pawo",
-      "english": "ay ay It's my choice, The power that my time holds,",
-      "adlib": false
+      "english": "ay ay It's my choice, The power that my time holds",
+      "adlib": false,
+      "voice": [
+        [
+          56,
+          58.36
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 58.47,
+      "end": 59.48,
+      "members": [
+        "JISUNG"
+      ],
       "original": "휘어놔 내 맘대로",
       "romanization": "hwieonwa nae mamdaero",
       "english": "I bend it how I want",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          58.52,
+          59.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 59.63,
+      "end": 62.11,
+      "members": [
+        "MARK"
+      ],
       "original": "지우거나 더하는 Force, More than an observer",
       "romanization": "jiugeona deohaneun force, more than an observer",
       "english": "An obliterating or an aggregating Force, More than an observer",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          59.54,
+          62.13
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 62.4,
+      "end": 64.14,
+      "members": [
+        "CHENLE"
+      ],
       "original": "그 답을 우린 알잖아",
       "romanization": "geu dabeul urin aljana",
       "english": "We already know the answer",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          62.41,
+          64.6
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 64.29,
+      "end": 66.05,
+      "members": [
+        "JISUNG"
+      ],
       "original": "나를 바꾸지 않을 거라고",
       "romanization": "nareul bakkuji aneul georago",
       "english": "Not gonna change who I am",
+      "adlib": false,
+      "voice": [
+        [
+          64.26,
+          66.08
+        ]
+      ]
+    },
+    {
+      "start": 66.34,
+      "end": 68.71,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Go Dream!, Go! Back To The Future",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Go Dream!, Go! Back To The Future",
-      "romanization": "go dream!, go! back to the future",
-      "english": "Go Dream!, Go! Back To The Future",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 68.86,
+      "end": 73.83,
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "Whoa 그 빛나는 순간에 서다, I am the Future",
       "romanization": "whoa geu binnaneun sungane seoda, i am the future",
       "english": "Whoa, standing upon that shining moment, I am the Future",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bring it ha ha, 내 이름을 새겼지",
-      "romanization": "bring it ha ha, nae ireumeul saegyeotji",
-      "english": "Bring it ha ha, Carved my name on it",
+      "start": 73.99,
+      "end": 76.46,
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "Bring it ha ha, **내 이름을 새겼지@HAECHAN**",
+      "romanization": "bring it ha ha, **nae ireumeul saegyeotji@HAECHAN**",
+      "english": "Bring it ha ha, **Carved my name on it@HAECHAN**",
+      "adlib": false,
+      "voice": [
+        [
+          74.05,
+          74.94
+        ],
+        [
+          74.95,
+          78.35,
+          [
+            "HAECHAN"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 76.59,
+      "end": 78.83,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn the time time time",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn the time time time",
-      "romanization": "we gon’ we gon’ we gon’, turn the time time time",
-      "english": "We gon’ we gon’ we gon’, turn the time time time",
+      "start": 78.99,
+      "end": 81.29,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
-      "romanization": "we gon’ we gon’ we gon’, turn it ra ta ta",
-      "english": "We gon’ we gon’ we gon’, turn it ra-ta-ta",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 81.45,
+      "end": 86.33,
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "Whoa We Dream 나 서 있는, 지금이 바로 Future",
       "romanization": "whoa we dream na seo inneun, jigeumi baro future",
       "english": "Whoa We Dream, here where I'm standing, This very moment is the Future",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 86.91,
+      "end": 90.11,
+      "members": [
+        "JAEMIN"
+      ],
       "original": "Moving history, 충돌하며 직면하는 사건들을",
       "romanization": "moving history, chungdolhamyeo jingmyeonhaneun sageondeureul",
       "english": "Moving history, Colliding with moments head-on",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.9,
+          88.03
+        ],
+        [
+          88.18,
+          90.22
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 90.26,
+      "end": 91.96,
+      "members": [
+        "JAEMIN"
+      ],
       "original": "내 손에 쥐고 한 발 전진",
       "romanization": "nae sone jwigo han bal jeonjin",
       "english": "Grip it and step it",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.24,
+          91.97
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 92.12,
+      "end": 94.25,
+      "members": [
+        "MARK"
+      ],
       "original": "That’s a big decision, 기억의 컬렉션",
       "romanization": "that’s a big decision, gieogui keollekseon",
       "english": "That’s a big decision, Collection of memories",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          92.14,
+          93.2
+        ],
+        [
+          93.36,
+          94.43
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 94.4,
+      "end": 96.27,
+      "members": [
+        "MARK"
+      ],
       "original": "난 알지 필요 없을 걸 Revision",
       "romanization": "nan alji piryo eopseul geol revision",
       "english": "I know we won't need no Revision",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          94.36,
+          96.41
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 96.45,
+      "end": 101.31,
+      "members": [
+        "RENJUN"
+      ],
       "original": "장면들은 날 스쳐, 너를 떠올려",
       "romanization": "jangmyeondeureun nal seuchyeo, neoreul tteoollyeo",
       "english": "Scenes brush past me, And I think of you",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.42,
+          101.4
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 101.46,
+      "end": 103.54,
+      "members": [
+        "JISUNG"
+      ],
       "original": "시간을 시간을, 뚫어내 난 왔어",
       "romanization": "siganeul siganeul, ttureonae nan wasseo",
       "english": "Tunneling, tunneling, Through time I've come",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101.55,
+          103.65
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 103.72,
+      "end": 106.2,
+      "members": [
+        "JISUNG"
+      ],
       "original": "짜릿해 내 손에 달린, 먼 시간의 저울",
       "romanization": "jjarithae nae sone dallin, meon siganui jeoul",
       "english": "Thrilling, dangling from my fingertips, The scale of distant time",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          103.81,
+          106.23
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 107.13,
+      "end": 112.84,
+      "members": [
+        "HAECHAN"
+      ],
       "original": "안녕 나야, 내가 달라진 건지 말해줘",
       "romanization": "annyeong naya, naega dallajin geonji malhaejwo",
       "english": "Hey, it’s me, Tell me have I changed",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          107.14,
+          108.06
+        ],
+        [
+          108.38,
+          109.23
+        ],
+        [
+          109.52,
+          112.86
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 113.17,
+      "end": 117.42,
+      "members": [
+        "RENJUN"
+      ],
       "original": "너를 보며 나를 봐, 절대 후회하지 않아",
       "romanization": "neoreul bomyeo nareul bwa, jeoldae huhoehaji ana",
       "english": "I see you, and I see myself, And I’ll never regret this",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          113.22,
+          115.18
+        ],
+        [
+          115.39,
+          117.52
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 117.58,
+      "end": 120.6,
+      "members": [
+        "JENO"
+      ],
       "original": "Turn it back, 그리고 우리 마주하게 될 때",
       "romanization": "turn it back, geurigo uri majuhage doel ttae",
       "english": "Turn it back, When we finally meet face to face",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          117.56,
+          118.26
+        ],
+        [
+          118.46,
+          119.25
+        ],
+        [
+          119.4,
+          120.64
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 121.49,
+      "end": 125.72,
+      "members": [
+        "CHENLE"
+      ],
       "original": "걱정하지 않아도 돼, 그 어떤 시간 위라도 완전해 oh",
       "romanization": "geokjeonghaji anado dwae, geu eotteon sigan wirado wanjeonhae oh",
       "english": "No need to worry, Upon any timeline, we're complete, oh",
+      "adlib": false,
+      "voice": [
+        [
+          121.5,
+          123.14
+        ],
+        [
+          123.29,
+          123.53
+        ],
+        [
+          123.68,
+          125.84
+        ]
+      ]
+    },
+    {
+      "start": 125.87,
+      "end": 135.82,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "Back To The Future, ohhh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          125.85,
+          135.73
+        ]
+      ]
+    },
+    {
+      "start": 137.66,
+      "end": 140.08,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn the time time time",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Back To The Future, ohhh",
-      "romanization": "back to the future, ohhh",
-      "english": "Back To The Future, ohhh",
+      "start": 140.2,
+      "end": 142.51,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn the time time time",
-      "romanization": "we gon’ we gon’ we gon’, turn the time time time",
-      "english": "We gon’ we gon’ we gon’, turn the time time time",
+      "start": 142.66,
+      "end": 144.94,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
-      "romanization": "we gon’ we gon’ we gon’, turn it ra ta ta",
-      "english": "We gon’ we gon’ we gon’, turn it ra-ta-ta",
-      "adlib": false
+      "start": 145.06,
+      "end": 146.93,
+      "members": [
+        "JAEMIN"
+      ],
+      "original": "",
+      "romanization": "And it’s Back To The Future on the go",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          145.09,
+          146.94
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
-      "romanization": "ya ya whoa ya ya whoa, ya ya whoa ya ya whoa",
-      "english": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
-      "adlib": false
+      "start": 147.2,
+      "end": 149.55,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Go Dream!, Go! Back To The Future",
+      "english": "",
+      "adlib": false,
+      "voice": []
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "And it’s Back To The Future on the go",
-      "romanization": "and it’s back to the future, on the go",
-      "english": "And it’s Back To The Future, on the go",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Go Dream!, Go! Back To The Future",
-      "romanization": "go dream!, go! back to the future",
-      "english": "Go Dream!, Go! Back To The Future",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 149.68,
+      "end": 154.74,
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "Whoa 그 빛나는 순간에 서다, I am the Future",
       "romanization": "whoa geu binnaneun sungane seoda, i am the future",
       "english": "Whoa, standing upon that shining moment, I am the Future",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bring it ha ha, 내 이름을 새겼지",
-      "romanization": "bring it ha ha, nae ireumeul saegyeotji",
-      "english": "Bring it ha ha, Carved my name on it",
+      "start": 154.86,
+      "end": 157.2,
+      "members": [
+        "JENO"
+      ],
+      "original": "Bring it ha ha, **내 이름을 새겼지@CHENLE**",
+      "romanization": "bring it ha ha, **nae ireumeul saegyeotji@CHENLE**",
+      "english": "Bring it ha ha, **Carved my name on it@CHENLE**",
+      "adlib": false,
+      "voice": [
+        [
+          154.86,
+          155.81
+        ],
+        [
+          155.8,
+          159.23,
+          [
+            "CHENLE"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 157.32,
+      "end": 159.68,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn the time time time",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn the time time time",
-      "romanization": "we gon’ we gon’ we gon’, turn the time time time",
-      "english": "We gon’ we gon’ we gon’, turn the time time time",
+      "start": 159.83,
+      "end": 162.13,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
-      "romanization": "we gon’ we gon’ we gon’, turn it ra ta ta",
-      "english": "We gon’ we gon’ we gon’, turn it ra-ta-ta",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 162.28,
+      "end": 167.14,
+      "members": [
+        "NCT DREAM"
+      ],
       "original": "Whoa We Dream 나 서 있는, 지금이 바로 Future",
       "romanization": "whoa we dream na seo inneun, jigeumi baro future",
       "english": "Whoa We Dream, here where I'm standing, This very moment is the Future",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m the I’m the ta-ta-ta-ta, Future Future ra-ta-ta-ta",
-      "romanization": "i’m the i’m the ta ta ta ta, future future ra ta ta ta",
-      "english": "I’m the I’m the ta-ta-ta-ta, Future Future ra-ta-ta-ta",
+      "start": 167.38,
+      "end": 172.18,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "I’m the I’m the ta-ta-ta-ta, Future Future ra-ta-ta-ta",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I’m the I’m the ta-ta-ta-ta, Back to the back to the",
-      "romanization": "i’m the i’m the ta ta ta ta, back to the back to the",
-      "english": "I’m the I’m the ta-ta-ta-ta, Back to the back to the",
+      "start": 172.33,
+      "end": 175.87,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "I’m the I’m the ta-ta-ta-ta, Back to the back to the",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Back To The Future",
-      "romanization": "back to the future",
-      "english": "Back To The Future",
+      "start": 175.99,
+      "end": 177.64,
+      "members": [
+        "NCT DREAM"
+      ],
+      "original": "",
+      "romanization": "Back To The Future",
+      "english": "",
       "adlib": false
+    },
+    {
+      "start": 37.31,
+      "end": 37.64,
+      "members": [
+        "JENO"
+      ],
+      "original": "",
+      "romanization": "(Stop)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          37.32,
+          37.61
+        ]
+      ]
+    },
+    {
+      "start": 38.88,
+      "end": 39.17,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          38.9,
+          39.19
+        ]
+      ]
+    },
+    {
+      "start": 39.77,
+      "end": 40.47,
+      "members": [
+        "JISUNG"
+      ],
+      "original": "",
+      "romanization": "(Let's go)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          39.78,
+          40.48
+        ]
+      ]
+    },
+    {
+      "start": 47.13,
+      "end": 48,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(Ah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          47.14,
+          47.98
+        ]
+      ]
+    },
+    {
+      "start": 52.64,
+      "end": 52.93,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "(Uh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          52.65,
+          52.97
+        ]
+      ]
+    },
+    {
+      "start": 54.14,
+      "end": 56.82,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(Ah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          54.19,
+          56.06
+        ],
+        [
+          56.36,
+          56.77
+        ]
+      ]
+    },
+    {
+      "start": 120.62,
+      "end": 120.95,
+      "members": [
+        "CHENLE"
+      ],
+      "original": "",
+      "romanization": "(Ayy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          120.62,
+          120.92
+        ]
+      ]
     }
   ],
   "audio": "audio/nctdream_bttf.mp3",
