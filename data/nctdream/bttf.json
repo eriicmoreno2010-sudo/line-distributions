@@ -73,23 +73,35 @@
       "start": 17.76,
       "end": 20.1,
       "members": [
-        "NCT DREAM"
+        "JENO"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn the time time time",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          17.74,
+          20.16
+        ]
+      ]
     },
     {
       "start": 20.22,
       "end": 22.53,
       "members": [
-        "NCT DREAM"
+        "JENO"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          20.2,
+          22.65
+        ]
+      ]
     },
     {
       "start": 22.69,
@@ -716,23 +728,35 @@
       "start": 137.66,
       "end": 140.08,
       "members": [
-        "NCT DREAM"
+        "MARK"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn the time time time",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          137.72,
+          140.17
+        ]
+      ]
     },
     {
       "start": 140.2,
       "end": 142.51,
       "members": [
-        "NCT DREAM"
+        "MARK"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          140.2,
+          142.59
+        ]
+      ]
     },
     {
       "start": 142.66,
