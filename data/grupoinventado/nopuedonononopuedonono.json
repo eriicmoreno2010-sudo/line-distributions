@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "No Puedo No No No Puedo No No",
   "video": "videos/grupoinventado_nopuedonononopuedonono_mv1ay1u2.mp4",
-  "duration": 0,
+  "duration": 185.966667,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -52,15 +52,1153 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 12.92,
+      "end": 15.34,
       "members": [
-        "ARNAU"
+        "MARK"
+      ],
+      "original": "낯설던 우리 사이가 기억나",
+      "romanization": "natseoldeon uri saiga gieokna",
+      "english": "I remember when we were strangers",
+      "adlib": false,
+      "voice": [
+        [
+          13,
+          15.39
+        ]
+      ]
+    },
+    {
+      "start": 15.92,
+      "end": 18.12,
+      "members": [
+        "MARK"
+      ],
+      "original": "그땐 너무도 어려 몰라",
+      "romanization": "geuttaen neomudo eoryeo molla",
+      "english": "Back then we were too young to know",
+      "adlib": false,
+      "voice": [
+        [
+          15.94,
+          16.87
+        ],
+        [
+          17.05,
+          18.12
+        ]
+      ]
+    },
+    {
+      "start": 18.7,
+      "end": 20.66,
+      "members": [
+        "MARK"
+      ],
+      "original": "얼마나 오랜 시간 쌓일지",
+      "romanization": "eolmana oraen shigan ssailji",
+      "english": "How long it would take to build this",
+      "adlib": false,
+      "voice": [
+        [
+          18.71,
+          20.7
+        ]
+      ]
+    },
+    {
+      "start": 20.81,
+      "end": 22.86,
+      "members": [
+        "MARK"
+      ],
+      "original": "이만큼 좋아하게 될지",
+      "romanization": "imankeum joahage dwelji",
+      "english": "How much I'd grow into liking you",
+      "adlib": false,
+      "voice": [
+        [
+          20.79,
+          22.89
+        ]
+      ]
+    },
+    {
+      "start": 23.07,
+      "end": 26.1,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "Yeah 늦은 밤이라도 전화해 줄래",
+      "romanization": "yeah neujeun bamirado jeonhwahae jullae",
+      "english": "Yeah even if it's late at night will you call me?",
+      "adlib": false,
+      "voice": [
+        [
+          23.15,
+          24.84
+        ],
+        [
+          25.2,
+          26.27
+        ]
+      ]
+    },
+    {
+      "start": 26.27,
+      "end": 29.07,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "어떤 얘길 해도 난 웃을 텐데",
+      "romanization": "eotteon yaegil haedo nan useul tende",
+      "english": "No matter what you say I'll be smiling",
+      "adlib": false,
+      "voice": [
+        [
+          26.27,
+          27.65
+        ],
+        [
+          27.94,
+          29.13
+        ]
+      ]
+    },
+    {
+      "start": 29.25,
+      "end": 31.5,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "매일 궁금한 너의 하루가",
+      "romanization": "maeil gunggeumhan neoui haruga",
+      "english": "Every day I'm curious about your day",
+      "adlib": false,
+      "voice": [
+        [
+          29.26,
+          30.47
+        ],
+        [
+          30.66,
+          31.64
+        ]
+      ]
+    },
+    {
+      "start": 31.65,
+      "end": 33.9,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "포근하게 녹아와 내 귓가에",
+      "romanization": "pogeunhage nogawa nae gwitgae",
+      "english": "It melts softly into my ears so warm",
+      "adlib": false,
+      "voice": [
+        [
+          31.79,
+          34.3
+        ]
+      ]
+    },
+    {
+      "start": 34.05,
+      "end": 36.96,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "영화처럼 기억이 지워져",
+      "romanization": "yeonghwacheoreom gieogi jiwojyeo",
+      "english": "Like a movie the memories fade",
+      "adlib": false,
+      "voice": [
+        [
+          34.05,
+          37.16
+        ]
+      ]
+    },
+    {
+      "start": 37.14,
+      "end": 39.77,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "혹은 싸우고 멀어져",
+      "romanization": "hogeun ssaugo meoreojyeo",
+      "english": "Or we fight and grow apart",
+      "adlib": false,
+      "voice": [
+        [
+          37.18,
+          39.94
+        ]
+      ]
+    },
+    {
+      "start": 39.95,
+      "end": 43.97,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "다시 시작한대도, 난 너밖에 몰라",
+      "romanization": "dasi shijakandaedo, nan neobakke molla",
+      "english": "Even if we start all over again, You're the only one I know",
+      "adlib": false,
+      "voice": [
+        [
+          39.93,
+          44.01
+        ]
+      ]
+    },
+    {
+      "start": 44.15,
+      "end": 49.13,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "I’ll always choose you, 너 아니면 안 돼",
+      "romanization": "i’ll always choose you, neo animyeon an dwae",
+      "english": "I'll always choose you, No one else but you",
+      "adlib": false,
+      "voice": [
+        [
+          44.2,
+          49.14
+        ]
+      ]
+    },
+    {
+      "start": 49.71,
+      "end": 55.12,
+      "members": [
+        "JUNGWOO"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
       "english": "",
-      "adlib": ""
+      "adlib": false,
+      "voice": [
+        [
+          49.74,
+          52.36
+        ],
+        [
+          52.51,
+          55.34
+        ]
+      ]
+    },
+    {
+      "start": 55.3,
+      "end": 60.19,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "I’ll always choose you, 오랜 시간 속에",
+      "romanization": "i’ll always choose you, oraen shigan soge",
+      "english": "I'll always choose you, Through all the passing time",
+      "adlib": false,
+      "voice": [
+        [
+          55.26,
+          60.12
+        ]
+      ]
+    },
+    {
+      "start": 60.8,
+      "end": 66.35,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          60.71,
+          63.33
+        ],
+        [
+          63.51,
+          66.3
+        ]
+      ]
+    },
+    {
+      "start": 67.63,
+      "end": 78.49,
+      "members": [
+        "DOYOUNG"
+      ],
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          67.56,
+          68.32
+        ],
+        [
+          68.76,
+          69.42
+        ],
+        [
+          69.6,
+          70.24
+        ],
+        [
+          70.4,
+          71.07
+        ],
+        [
+          71.56,
+          72.26
+        ],
+        [
+          72.41,
+          75.64
+        ],
+        [
+          75.82,
+          78.58
+        ]
+      ]
+    },
+    {
+      "start": 78.64,
+      "end": 89.47,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          78.75,
+          79.47
+        ],
+        [
+          79.91,
+          80.61
+        ],
+        [
+          80.79,
+          81.37
+        ],
+        [
+          81.52,
+          82.25
+        ],
+        [
+          82.69,
+          83.41
+        ],
+        [
+          83.59,
+          86.79
+        ],
+        [
+          87,
+          89.73
+        ]
+      ]
+    },
+    {
+      "start": 89.62,
+      "end": 91.79,
+      "members": [
+        "DOYOUNG"
+      ],
+      "original": "넌 어디서 온 거니",
+      "romanization": "neon eodiseo on geoni",
+      "english": "Where did you come from?",
+      "adlib": false,
+      "voice": [
+        [
+          89.69,
+          91.74
+        ]
+      ]
+    },
+    {
+      "start": 79.04,
+      "end": 81.66,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          79.08,
+          81.59
+        ]
+      ]
+    },
+    {
+      "start": 81.82,
+      "end": 84.27,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          81.83,
+          84.19
+        ]
+      ]
+    },
+    {
+      "start": 91.12,
+      "end": 92.91,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "(내게 온 거니 Yeah)",
+      "romanization": "(naege on geoni yeah)",
+      "english": "(Did you come to me yeah)",
+      "adlib": true,
+      "voice": [
+        [
+          91.09,
+          92.91
+        ]
+      ]
+    },
+    {
+      "start": 92.45,
+      "end": 95.16,
+      "members": [
+        "DOYOUNG"
+      ],
+      "original": "이 큰 세상, 둘이 만났다는 게",
+      "romanization": "i keun sesang, duri mannatdaneun ge",
+      "english": "That in this big world, We found each other",
+      "adlib": false,
+      "voice": [
+        [
+          92.48,
+          94.15
+        ],
+        [
+          94.3,
+          95.34
+        ]
+      ]
+    },
+    {
+      "start": 94.95,
+      "end": 95.71,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "(I know)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          94.91,
+          95.57
+        ]
+      ]
+    },
+    {
+      "start": 95.34,
+      "end": 100.63,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "자꾸 웃음이 나와, 운명이란걸 믿게 됐어",
+      "romanization": "jakku useumi nawa, unmyeongirangeol mitge dwaesseo",
+      "english": "I can't stop smiling, You made me believe in fate",
+      "adlib": false,
+      "voice": [
+        [
+          95.29,
+          97.24
+        ],
+        [
+          98.07,
+          100.84
+        ]
+      ]
+    },
+    {
+      "start": 97.01,
+      "end": 98.46,
+      "members": [
+        "MARK"
+      ],
+      "original": "",
+      "romanization": "(Can’t believe no no)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          96.97,
+          98.44
+        ]
+      ]
+    },
+    {
+      "start": 99.76,
+      "end": 101.2,
+      "members": [
+        "MARK"
+      ],
+      "original": "",
+      "romanization": "(You and me oh-eh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          99.72,
+          101.13
+        ]
+      ]
+    },
+    {
+      "start": 100.81,
+      "end": 103.38,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "가끔은 시간도, 필요하겠지",
+      "romanization": "gakkeumeun shigando, piryohagetji",
+      "english": "Sometimes, We might need time",
+      "adlib": false,
+      "voice": [
+        [
+          100.7,
+          103.41
+        ]
+      ]
+    },
+    {
+      "start": 102.85,
+      "end": 104.55,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "(필요하겠지)",
+      "romanization": "(piryohagetji)",
+      "english": "(We might need time)",
+      "adlib": true,
+      "voice": [
+        [
+          102.91,
+          104.55
+        ]
+      ]
+    },
+    {
+      "start": 103.56,
+      "end": 107.1,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "하지만 우린, 결말을 안다는 걸",
+      "romanization": "hajiman urin, gyeolmareul andaneun geol",
+      "english": "But we already, Know how our story ends",
+      "adlib": false,
+      "voice": [
+        [
+          103.53,
+          104.66
+        ],
+        [
+          104.78,
+          107.12
+        ]
+      ]
+    },
+    {
+      "start": 105.59,
+      "end": 107.24,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "(결말을 알지)",
+      "romanization": "(gyeolmareul alji)",
+      "english": "(We know the ending)",
+      "adlib": true,
+      "voice": [
+        [
+          105.57,
+          107.18
+        ]
+      ]
+    },
+    {
+      "start": 107.31,
+      "end": 109.87,
+      "members": [
+        "TAEYONG"
+      ],
+      "original": "해피 엔딩의 연애 소설",
+      "romanization": "happy endingui yeonae soseol",
+      "english": "A romance novel with a happy ending",
+      "adlib": false,
+      "voice": [
+        [
+          107.33,
+          109.84
+        ]
+      ]
+    },
+    {
+      "start": 109.74,
+      "end": 111.91,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "(해피 엔딩일 거란걸)",
+      "romanization": "(happy endingiran georangol)",
+      "english": "(It's a happy ending)",
+      "adlib": true,
+      "voice": [
+        [
+          109.7,
+          111.86
+        ]
+      ]
+    },
+    {
+      "start": 111.31,
+      "end": 114.26,
+      "members": [
+        "JUNGWOO"
+      ],
+      "original": "네 마음이, 당연한 게 아냐",
+      "romanization": "ne maeumi, dangyeonhan ge anya",
+      "english": "I don't take, Your feelings for granted",
+      "adlib": false,
+      "voice": [
+        [
+          111.33,
+          114.4
+        ]
+      ]
+    },
+    {
+      "start": 113.76,
+      "end": 116.14,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "(The way you hold me)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          113.54,
+          116.02
+        ]
+      ]
+    },
+    {
+      "start": 114.38,
+      "end": 117.08,
+      "members": [
+        "JUNGWOO"
+      ],
+      "original": "매 순간 놀라울 뿐야",
+      "romanization": "mae sungan nollaul ppunya",
+      "english": "Every moment is just amazing",
+      "adlib": false,
+      "voice": [
+        [
+          114.41,
+          117.15
+        ]
+      ]
+    },
+    {
+      "start": 116.59,
+      "end": 118.86,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "(Feel so holy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          116.46,
+          118.82
+        ]
+      ]
+    },
+    {
+      "start": 121.41,
+      "end": 125.64,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "",
+      "romanization": "(I’ll always choose you)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          121.52,
+          125.94
+        ]
+      ]
+    },
+    {
+      "start": 125.93,
+      "end": 127.68,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "(너 아니면 안 돼)",
+      "romanization": "(neo animyeon an dwae)",
+      "english": "(No one else but you)",
+      "adlib": true,
+      "voice": [
+        [
+          125.92,
+          127.67
+        ]
+      ]
+    },
+    {
+      "start": 128.67,
+      "end": 131.12,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "(I can’t help myself no no no no)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          128.69,
+          131.12
+        ]
+      ]
+    },
+    {
+      "start": 131.45,
+      "end": 133.84,
+      "members": [
+        "JOHNNY"
+      ],
+      "original": "",
+      "romanization": "(I can’t help myself no no no no)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          131.47,
+          133.84
+        ]
+      ]
+    },
+    {
+      "start": 133.91,
+      "end": 138.3,
+      "members": [
+        "DOYOUNG"
+      ],
+      "original": "(You, 오랜 시간 속에)",
+      "romanization": "(you, oraen shigan soge)",
+      "english": "(You, through all the passing time)",
+      "adlib": true,
+      "voice": [
+        [
+          133.91,
+          138.19
+        ]
+      ]
+    },
+    {
+      "start": 139.75,
+      "end": 142.22,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "(I can’t help myself no no no)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          139.73,
+          142.18
+        ]
+      ]
+    },
+    {
+      "start": 142.52,
+      "end": 145.59,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "(I can’t help myself no no no, I)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          142.45,
+          144.9
+        ],
+        [
+          145,
+          145.59
+        ]
+      ]
+    },
+    {
+      "start": 146.94,
+      "end": 148.13,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "",
+      "romanization": "(Help myself)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          146.99,
+          148.15
+        ]
+      ]
+    },
+    {
+      "start": 154.48,
+      "end": 159.82,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "",
+      "romanization": "(Woo I can’t help myself)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          154.61,
+          158.08
+        ],
+        [
+          158.26,
+          159.94
+        ]
+      ]
+    },
+    {
+      "start": 156.32,
+      "end": 158.85,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          156.28,
+          158.79
+        ]
+      ]
+    },
+    {
+      "start": 159.03,
+      "end": 161.56,
+      "members": [
+        "YUTA"
+      ],
+      "original": "",
+      "romanization": "(I can’t help my, I can’t help myself)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          159.01,
+          161.48
+        ]
+      ]
+    },
+    {
+      "start": 162.86,
+      "end": 166.97,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "",
+      "romanization": "(No woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          162.87,
+          166.87
+        ]
+      ]
+    },
+    {
+      "start": 117.24,
+      "end": 121.3,
+      "members": [
+        "MARK"
+      ],
+      "original": "어떻게 말해야 할까, 너뿐이란걸",
+      "romanization": "eotteoke malhaeya halkka, neoppuniran geol",
+      "english": "How should I put it into words?, It's only you",
+      "adlib": false,
+      "voice": [
+        [
+          117.18,
+          120.23
+        ],
+        [
+          120.38,
+          121.39
+        ]
+      ]
+    },
+    {
+      "start": 121.45,
+      "end": 126.37,
+      "members": [
+        "DOYOUNG"
+      ],
+      "original": "I’ll always choose you, 너 아니면 안 돼",
+      "romanization": "i’ll always choose you, neo animyeon an dwae",
+      "english": "I'll always choose you, No one else but you",
+      "adlib": false,
+      "voice": [
+        [
+          121.45,
+          126.3
+        ]
+      ]
+    },
+    {
+      "start": 126.98,
+      "end": 132.42,
+      "members": [
+        "HAECHAN"
+      ],
+      "original": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          126.95,
+          129.51
+        ],
+        [
+          129.72,
+          132.4
+        ]
+      ]
+    },
+    {
+      "start": 132.6,
+      "end": 137.43,
+      "members": [
+        "YUTA"
+      ],
+      "original": "I’ll always choose you, 오랜 시간 속에",
+      "romanization": "i’ll always choose you, oraen shigan soge",
+      "english": "I'll always choose you, Through all the passing time",
+      "adlib": false,
+      "voice": [
+        [
+          132.53,
+          137.39
+        ]
+      ]
+    },
+    {
+      "start": 137.98,
+      "end": 143.56,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "",
+      "romanization": "I just can’t help myself no, I just can’t help myself no",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          138.02,
+          140.64
+        ],
+        [
+          140.79,
+          143.5
+        ]
+      ]
+    },
+    {
+      "start": 144.86,
+      "end": 155.78,
+      "members": [
+        "JUNGWOO"
+      ],
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          144.95,
+          145.71
+        ],
+        [
+          146.17,
+          146.84
+        ],
+        [
+          147.02,
+          147.61
+        ],
+        [
+          147.76,
+          148.43
+        ],
+        [
+          148.95,
+          149.65
+        ],
+        [
+          149.8,
+          152.99
+        ],
+        [
+          153.17,
+          155.91
+        ]
+      ]
+    },
+    {
+      "start": 155.94,
+      "end": 165.45,
+      "members": [
+        "JAEHYUN"
+      ],
+      "original": "",
+      "romanization": "I can’t, I can’t help my, I can’t, I can’t help myself no oh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          155.95,
+          156.71
+        ],
+        [
+          157.17,
+          157.87
+        ],
+        [
+          158.05,
+          158.61
+        ],
+        [
+          158.76,
+          159.45
+        ],
+        [
+          159.92,
+          160.62
+        ],
+        [
+          160.77,
+          164.02
+        ],
+        [
+          164.23,
+          166.97
+        ]
+      ]
+    },
+    {
+      "start": 165.6,
+      "end": 171.12,
+      "members": [
+        "DOYOUNG"
+      ],
+      "original": "I’ll always choose you, 난 너밖에 몰라",
+      "romanization": "i’ll always choose you, nan neobakke molla",
+      "english": "I'll always choose you, You're the only one I know",
+      "adlib": false,
+      "voice": [
+        [
+          165.48,
+          171.11
+        ]
+      ]
+    },
+    {
+      "start": 171.26,
+      "end": 172.53,
+      "members": [
+        "DOYOUNG"
+      ],
+      "original": "",
+      "romanization": "I just can’t help myself",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          171.39,
+          173.69
+        ]
+      ]
+    },
+    {
+      "start": 172.68,
+      "end": 178.23,
+      "members": [
+        "TAEIL"
+      ],
+      "original": "",
+      "romanization": "I just can’t help myself, **I just can’t help myself@JOHNNY**",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          172.75,
+          175.23
+        ],
+        [
+          175.69,
+          178.11
+        ],
+        [
+          177.01,
+          178.31,
+          [
+            "JOHNNY"
+          ]
+        ]
+      ]
     }
   ]
 }
