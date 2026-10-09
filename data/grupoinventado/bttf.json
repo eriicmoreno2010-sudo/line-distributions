@@ -295,7 +295,8 @@
           49.64,
           54.01,
           [
-            "CHENLE"
+            "CHENLE",
+            "ERIC"
           ]
         ]
       ]
@@ -458,7 +459,8 @@
           74.95,
           78.35,
           [
-            "HAECHAN"
+            "HAECHAN",
+            "MICHELLE"
           ]
         ]
       ]
@@ -855,7 +857,8 @@
           155.8,
           159.23,
           [
-            "CHENLE"
+            "CHENLE",
+            "ERIC"
           ]
         ]
       ]
@@ -1057,5 +1060,6 @@
       ]
     }
   ],
-  "audio": "audio/grupoinventado_bttf.mp3"
+  "audio": "audio/grupoinventado_bttf.mp3",
+  "audioOffset": -0.6
 }
