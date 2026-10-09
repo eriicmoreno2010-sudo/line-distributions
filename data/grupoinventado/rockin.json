@@ -45,391 +45,980 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 11.4,
+      "end": 13.36,
+      "members": [
+        "MINJE"
+      ],
       "original": "Yeah uh",
       "romanization": "Yeah uh",
       "english": "Yeah uh",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.4,
+          12.46
+        ],
+        [
+          12.99,
+          13.43
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 13.76,
+      "end": 15.92,
+      "members": [
+        "MINJE"
+      ],
       "original": "I’ve been thinkin’, どこまで行く？",
       "romanization": "I’ve been thinkin’, doko made iku?",
       "english": "I’ve been thinkin’, Where is the end",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          13.75,
+          14.67
+        ],
+        [
+          14.86,
+          15.92
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 16.78,
+      "end": 19.2,
+      "members": [
+        "MINJE"
+      ],
       "original": "悩んだって, 意味ないね",
       "romanization": "nayandatte, imi nai ne",
       "english": "So many worries, They're all pointless",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          16.8,
+          17.9
+        ],
+        [
+          18.05,
+          19.15
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 20.01,
+      "end": 25.61,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "不器用な夢, 背中押す, 僕の Heartbeat",
       "romanization": "bukiyou na yume, senaka osu, boku no Heartbeat",
       "english": "Clumsy expectations, They move me, My heartbeat like an engine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          19.99,
+          21.15
+        ],
+        [
+          21.28,
+          22.29
+        ],
+        [
+          22.44,
+          25.58
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 25.63,
+      "end": 28.65,
+      "members": [
+        "DONGHWA"
+      ],
       "original": "I said I’m okay, 傷なんて I don’t care",
       "romanization": "I said I’m okay, kizu nante I don’t care",
       "english": "I said I’m okay, I don’t care about the scars",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.67,
+          26.77
+        ],
+        [
+          27.21,
+          28.62
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 28.87,
+      "end": 31.89,
+      "members": [
+        "DONGHWA"
+      ],
       "original": "転んだって何, そんなもん Nothing",
       "romanization": "korondatte nani?, sonna mon Nothing",
       "english": "So what if I fall, That little thing is nothing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          28.83,
+          29.94
+        ],
+        [
+          30.44,
+          31.83
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 32.01,
+      "end": 35.11,
+      "members": [
+        "KEIJU"
+      ],
       "original": "よろけても Go, 歯を食いしばれ",
       "romanization": "yorokete mo Go, ha o kuishibare",
       "english": "Even if I stumble, go, Grit my teeth and stand back up",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.89,
+          33.22
+        ],
+        [
+          33.69,
+          35.3
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 35.32,
+      "end": 37.82,
+      "members": [
+        "KEIJU"
+      ],
       "original": "",
       "romanization": "So watch me swervin’, swervin’ now",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          35.32,
+          37.88
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 38.09,
+      "end": 41.28,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "転んだ分だけ, ぶつかった分だけ",
       "romanization": "koronda bun dake, butsukatta bun dake",
       "english": "As much as I’ve stumbled, As much as I’ve collided",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          38.08,
+          39.67
+        ],
+        [
+          39.86,
+          41.31
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 41.43,
+      "end": 44.44,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "To the horizon 飛び出せ",
       "romanization": "To the horizon tobidase",
       "english": "I’ll run to the horizon",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          41.46,
+          44.49
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 44.58,
+      "end": 48.66,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "僕を呼ぶ Callin’, No more fallin’ down 今",
       "romanization": "boku o yobu Callin’, No more fallin’ down ima",
       "english": "The callin’ that calls me, No more fallin’ down, not anymore",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.55,
+          46.43
+        ],
+        [
+          46.58,
+          48.77
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 48.79,
+      "end": 50.98,
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 51.11,
+      "end": 54.22,
+      "members": [
+        "JUWANG"
+      ],
       "original": "君だってほら, 転ぶくらい",
       "romanization": "kimi datte hora, korobu kurai",
       "english": "You know too, That falling down once in a while",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          51.2,
+          52.52
+        ],
+        [
+          52.67,
+          54.18
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 54.27,
+      "end": 57.3,
+      "members": [
+        "JUWANG"
+      ],
       "original": "大したことないだろ",
       "romanization": "taishita koto nai daro",
       "english": "Isn't a big deal",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          54.21,
+          57.32
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 57.45,
+      "end": 60.91,
+      "members": [
+        "KEIJU"
+      ],
       "original": "何度もふらふらよろけても",
       "romanization": "nando mo furafura yorokete mo",
       "english": "Even if I keep swaying and swaying",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          57.62,
+          60.92
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 61.06,
+      "end": 64.93,
+      "members": [
+        "KEIJU"
+      ],
       "original": "",
       "romanization": "I’ll be rockin’, rockin’ back and forth",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          61.07,
+          64.18
+        ],
+        [
+          64.53,
+          65.04
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 65.05,
+      "end": 68.91,
+      "members": [
+        "DONGHWA"
+      ],
       "original": "Yeah I kinda feel dizzy man, 楽しいから走るよ",
       "romanization": "Yeah I kinda feel dizzy man, tanoshii kara hashiru yo",
       "english": "Yeah I kinda feel dizzy man, It’s fun, I’ll run a little more",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          65.31,
+          65.74
+        ],
+        [
+          65.9,
+          68.91
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 69.08,
+      "end": 71.88,
+      "members": [
+        "DONGHWA"
+      ],
       "original": "転んだ僕だっていいじゃん, Damn I look fine",
       "romanization": "koronda boku datte ii jan, Damn I look fine",
       "english": "So what if I look like I fell flat, Damn I look fine",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          69.13,
+          71.89
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 72.24,
+      "end": 76.03,
+      "members": [
+        "DONGHWA"
+      ],
       "original": "My favorite nightmare, 何度転んでもまた立ち上がって",
       "romanization": "My favorite nightmare, nando korondemo mata tachiagatte",
       "english": "My favorite nightmare, Even if I now trip over my own feet and collapse from exhaustion",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          72.29,
+          74.11
+        ],
+        [
+          73.9,
+          76.17,
+          [
+            "MINJE"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 76.18,
+      "end": 77.67,
+      "members": [
+        "MINJE"
+      ],
       "original": "蝶のように舞う I’m a bee",
       "romanization": "chou no you ni mau I’m a bee",
       "english": "I’ll fly like a butterfly, I’m a bee",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          76.22,
+          77.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 77.8,
+      "end": 80.24,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "Okay, 傷なんて I don’t care",
       "romanization": "Okay, kizu nante I don’t care",
       "english": "Okay, I don’t care about the scars",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          77.82,
+          78.34
+        ],
+        [
+          78.84,
+          80.17
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 80.4,
+      "end": 83.39,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "転んだって何, そんなもん Nothing",
       "romanization": "korondatte nani?, sonna mon Nothing",
       "english": "So what if I fall, That little thing is nothing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          80.44,
+          81.48
+        ],
+        [
+          82.04,
+          83.45
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 83.54,
+      "end": 86.71,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "よろけても Go, 歯を食いしばれ",
       "romanization": "yorokete mo Go, ha o kuishibare",
       "english": "Even if I stumble, go, Grit my teeth and stand back up",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.42,
+          84.71
+        ],
+        [
+          85.11,
+          86.72
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 86.83,
+      "end": 89.31,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "",
       "romanization": "So watch me swervin’, swervin’ now",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          86.78,
+          89.35
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 89.61,
+      "end": 92.78,
+      "members": [
+        "JUWANG"
+      ],
       "original": "転んだ分だけ, ぶつかった分だけ",
       "romanization": "koronda bun dake, butsukatta bun dake",
       "english": "As much as I’ve stumbled, As much as I’ve collided",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          89.57,
+          91.25
+        ],
+        [
+          91.4,
+          92.75
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 92.92,
+      "end": 95.97,
+      "members": [
+        "JUWANG"
+      ],
       "original": "To the horizon 飛び出せ",
       "romanization": "To the horizon tobidase",
       "english": "I’ll run to the horizon",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          93.02,
+          95.98
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 96.13,
+      "end": 100.21,
+      "members": [
+        "KEIJU"
+      ],
       "original": "僕を呼ぶ Callin’, No more fallin’ down 今",
       "romanization": "boku o yobu Callin’, No more fallin’ down ima",
       "english": "The callin’ that calls me, No more fallin’ down, not anymore",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          96.05,
+          97.85
+        ],
+        [
+          98.08,
+          100.3
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 100.36,
+      "end": 102.41,
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 102.53,
+      "end": 105.69,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "君だってほら, 転ぶくらい",
       "romanization": "kimi datte hora, korobu kurai",
       "english": "You know too, That falling down once in a while",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          102.73,
+          104.05
+        ],
+        [
+          104.24,
+          105.71
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 105.84,
+      "end": 108.75,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "大したことないだろ",
       "romanization": "taishita koto nai daro",
       "english": "Isn't a big deal",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          105.71,
+          108.82
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 108.91,
+      "end": 112.45,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "何度もふらふらよろけても",
       "romanization": "nando mo furafura yorokete mo",
       "english": "Even if I keep swaying and swaying",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          109.15,
+          112.44
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 112.61,
+      "end": 116.48,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "",
       "romanization": "I’ll be rockin’, rockin’ back and forth",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          112.64,
+          115.68
+        ],
+        [
+          116.01,
+          116.59
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 116.64,
+      "end": 119.63,
+      "members": [
+        "MINJE"
+      ],
       "original": "やりたいならやれ, 顔上げ Heads up",
       "romanization": "yaritai nara yare, kao age Heads up",
       "english": "If you want it, do it, Lift your head, Heads up",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.78,
+          119.62
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 119.98,
+      "end": 123.06,
+      "members": [
+        "MINJE"
+      ],
       "original": "転んでもいい まずぶつかれ",
       "romanization": "koronde mo ii mazu butsukare",
       "english": "So what if you fall, just charge ahead",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          119.98,
+          123.06
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 123.22,
+      "end": 129.63,
+      "members": [
+        "JUWANG"
+      ],
       "original": "揺れながらも Ride on, 揺れる足取りだって",
       "romanization": "yurenagara mo Ride on, yureru ashidori datte",
       "english": "Ride on just as you are now, Even your unsteady footsteps",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          123.29,
+          125.01
+        ],
+        [
+          125.17,
+          129.4
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 129.91,
+      "end": 133.05,
+      "members": [
+        "DONGHWA"
+      ],
       "original": "転んだ分だけ, ぶつかった分だけ",
       "romanization": "koronda bun dake, butsukatta bun dake",
       "english": "As much as I’ve stumbled, As much as I’ve collided",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.88,
+          131.45
+        ],
+        [
+          131.6,
+          133.08
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 133.17,
+      "end": 136.17,
+      "members": [
+        "DONGHWA"
+      ],
       "original": "To the horizon 飛び出せ",
       "romanization": "To the horizon tobidase",
       "english": "I’ll run to the horizon",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          133.29,
+          136.22
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 136.32,
+      "end": 140.43,
+      "members": [
+        "KEIJU"
+      ],
       "original": "僕を呼ぶ Callin’, No more fallin’ down 今",
       "romanization": "boku o yobu Callin’, No more fallin’ down ima",
       "english": "The callin’ that calls me, No more fallin’ down, not anymore",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          136.37,
+          138.06
+        ],
+        [
+          138.36,
+          140.58
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 140.58,
+      "end": 142.68,
+      "members": [
+        "KickFlip"
+      ],
       "original": "",
       "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
       "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 142.83,
+      "end": 145.97,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "君だってほら, 転ぶくらい",
       "romanization": "kimi datte hora, korobu kurai",
       "english": "You know too, That falling down once in a while",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          142.96,
+          144.34
+        ],
+        [
+          144.5,
+          145.94
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 146.18,
+      "end": 148.97,
+      "members": [
+        "DONGHYEON"
+      ],
       "original": "大したことないだろ",
       "romanization": "taishita koto nai daro",
       "english": "Isn't a big deal",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          145.97,
+          149.02
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 149.15,
+      "end": 152.69,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "何度もふらふらよろけても",
       "romanization": "nando mo furafura yorokete mo",
       "english": "Even if I keep swaying and swaying",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          149.37,
+          152.71
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 152.84,
+      "end": 156.86,
+      "members": [
+        "KYEHOON"
+      ],
       "original": "",
       "romanization": "I’ll be rockin’, rockin’ back and forth",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          152.84,
+          155.94
+        ],
+        [
+          156.29,
+          156.83
+        ]
+      ]
+    },
+    {
+      "start": 16,
+      "end": 16.79,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "(Yeah yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          16.02,
+          16.28
+        ],
+        [
+          16.4,
+          16.8
+        ]
+      ]
+    },
+    {
+      "start": 19.21,
+      "end": 19.99,
+      "members": [
+        "MINJE"
+      ],
+      "original": "",
+      "romanization": "(Uh huh)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          19.21,
+          19.99
+        ]
+      ]
+    },
+    {
+      "start": 28.26,
+      "end": 28.93,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Woo woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          28.31,
+          28.55
+        ],
+        [
+          28.7,
+          28.93
+        ]
+      ]
+    },
+    {
+      "start": 29.91,
+      "end": 30.35,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          29.9,
+          30.31
+        ]
+      ]
+    },
+    {
+      "start": 79.83,
+      "end": 80.5,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Woo woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          79.87,
+          80.07
+        ],
+        [
+          80.25,
+          80.49
+        ]
+      ]
+    },
+    {
+      "start": 81.48,
+      "end": 81.89,
+      "members": [
+        "DONGHWA"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          81.46,
+          81.83
+        ]
+      ]
+    },
+    {
+      "start": 135.84,
+      "end": 139.47,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          135.8,
+          139.45
+        ]
+      ]
+    },
+    {
+      "start": 141.97,
+      "end": 144.99,
+      "members": [
+        "JUWANG"
+      ],
+      "original": "",
+      "romanization": "(KICK OFF THE WALL)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          142.04,
+          142.32
+        ],
+        [
+          142.43,
+          142.73
+        ],
+        [
+          142.85,
+          145.3
+        ]
+      ]
     }
   ]
 }
