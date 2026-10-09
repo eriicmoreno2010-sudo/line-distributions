@@ -1830,33 +1830,15 @@
       ]
     },
     {
-      "start": 186.78,
-      "end": 188.96,
-      "members": [
-        "DOYOUNG",
-        "IRENE"
-      ],
-      "original": "",
-      "romanization": "(This is my city yeah)",
-      "english": "",
-      "adlib": true,
-      "voice": [
-        [
-          186.74,
-          188.94
-        ]
-      ]
-    },
-    {
-      "start": 188.23,
-      "end": 189.91,
+      "start": 186.73,
+      "end": 189.97,
       "members": [
         "TAEIL",
         "MICHELLE"
       ],
-      "original": "(지빛 하늘에)",
-      "romanization": "(jibit haneure)",
-      "english": "(The colored sky)",
+      "original": "(This is my city 지빛 하늘에)",
+      "romanization": "(this is my city jibit haneure)",
+      "english": "(This is my city the colored sky)",
       "adlib": true,
       "voice": [
         [
