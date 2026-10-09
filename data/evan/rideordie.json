@@ -2,7 +2,7 @@
   "group": "EVAN",
   "song": "Ride or Die",
   "video": "videos/evan_rideordie_mv0qpabz.mp4",
-  "duration": 0,
+  "duration": 135.384542,
   "theme": "dark",
   "subunit": true,
   "layout": "classic",
@@ -475,5 +475,6 @@
       "english": "You are my ride or die",
       "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/evan_rideordie.mp3"
 }
