@@ -1,33 +1,12 @@
 {
   "group": "GRUPO INVENTADO",
   "song": "Ride or Die",
-  "video": "",
+  "video": "videos/grupoinventado_rideordie_mv0rbf4g.mp4",
   "duration": 0,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
   "members": [
-    {
-      "name": "ARNAU",
-      "image": "images/grupoinventado/rideordie/arnau.png",
-      "color": "#f08c00",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "IRENE",
-      "image": "images/grupoinventado/rideordie/irene.png",
-      "color": "#f92fde",
-      "focus": 50,
-      "lift": 3
-    },
-    {
-      "name": "MARC",
-      "image": "images/grupoinventado/rideordie/marc.png",
-      "color": "#2320fe",
-      "focus": 50,
-      "lift": 3
-    },
     {
       "name": "BIEL",
       "image": "images/grupoinventado/rideordie/biel.png",
@@ -36,9 +15,23 @@
       "lift": 3
     },
     {
-      "name": "MICHELLE",
-      "image": "images/grupoinventado/rideordie/michelle.png",
-      "color": "#ffee33",
+      "name": "ALEIX",
+      "image": "images/grupoinventado/rideordie/aleix.png",
+      "color": "#95ff5c",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "MAX",
+      "image": "images/grupoinventado/rideordie/max.png",
+      "color": "#361ba1",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JULEN",
+      "image": "images/grupoinventado/rideordie/julen.png",
+      "color": "#b86200",
       "focus": 50,
       "lift": 3
     },
@@ -54,9 +47,7 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "ARNAU"
-      ],
+      "members": [],
       "original": "",
       "romanization": "",
       "english": "",
