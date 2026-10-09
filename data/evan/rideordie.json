@@ -1,0 +1,31 @@
+{
+  "group": "EVAN",
+  "song": "Ride or Die",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": true,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "EVAN",
+      "image": "images/evan/rideordie/evan.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
