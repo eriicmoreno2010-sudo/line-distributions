@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Rockin'",
   "video": "videos/grupoinventado_rockin_mv17sbb1.mp4",
-  "duration": 0,
+  "duration": 159.5,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -47,13 +47,389 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "ARNAU"
-      ],
+      "members": [],
+      "original": "Yeah uh",
+      "romanization": "Yeah uh",
+      "english": "Yeah uh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’ve been thinkin’, どこまで行く？",
+      "romanization": "I’ve been thinkin’, doko made iku?",
+      "english": "I’ve been thinkin’, Where is the end",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "悩んだって, 意味ないね",
+      "romanization": "nayandatte, imi nai ne",
+      "english": "So many worries, They're all pointless",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "不器用な夢, 背中押す, 僕の Heartbeat",
+      "romanization": "bukiyou na yume, senaka osu, boku no Heartbeat",
+      "english": "Clumsy expectations, They move me, My heartbeat like an engine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I said I’m okay, 傷なんて I don’t care",
+      "romanization": "I said I’m okay, kizu nante I don’t care",
+      "english": "I said I’m okay, I don’t care about the scars",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "転んだって何, そんなもん Nothing",
+      "romanization": "korondatte nani?, sonna mon Nothing",
+      "english": "So what if I fall, That little thing is nothing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "よろけても Go, 歯を食いしばれ",
+      "romanization": "yorokete mo Go, ha o kuishibare",
+      "english": "Even if I stumble, go, Grit my teeth and stand back up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "So watch me swervin’, swervin’ now",
       "english": "",
-      "adlib": ""
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "転んだ分だけ, ぶつかった分だけ",
+      "romanization": "koronda bun dake, butsukatta bun dake",
+      "english": "As much as I’ve stumbled, As much as I’ve collided",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "To the horizon 飛び出せ",
+      "romanization": "To the horizon tobidase",
+      "english": "I’ll run to the horizon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "僕を呼ぶ Callin’, No more fallin’ down 今",
+      "romanization": "boku o yobu Callin’, No more fallin’ down ima",
+      "english": "The callin’ that calls me, No more fallin’ down, not anymore",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "君だってほら, 転ぶくらい",
+      "romanization": "kimi datte hora, korobu kurai",
+      "english": "You know too, That falling down once in a while",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "大したことないだろ",
+      "romanization": "taishita koto nai daro",
+      "english": "Isn't a big deal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "何度もふらふらよろけても",
+      "romanization": "nando mo furafura yorokete mo",
+      "english": "Even if I keep swaying and swaying",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I’ll be rockin’, rockin’ back and forth",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah I kinda feel dizzy man, 楽しいから走るよ",
+      "romanization": "Yeah I kinda feel dizzy man, tanoshii kara hashiru yo",
+      "english": "Yeah I kinda feel dizzy man, It’s fun, I’ll run a little more",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "転んだ僕だっていいじゃん, Damn I look fine",
+      "romanization": "koronda boku datte ii jan, Damn I look fine",
+      "english": "So what if I look like I fell flat, Damn I look fine",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "My favorite nightmare, 何度転んでもまた立ち上がって",
+      "romanization": "My favorite nightmare, nando korondemo mata tachiagatte",
+      "english": "My favorite nightmare, Even if I now trip over my own feet and collapse from exhaustion",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "蝶のように舞う I’m a bee",
+      "romanization": "chou no you ni mau I’m a bee",
+      "english": "I’ll fly like a butterfly, I’m a bee",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Okay, 傷なんて I don’t care",
+      "romanization": "Okay, kizu nante I don’t care",
+      "english": "Okay, I don’t care about the scars",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "転んだって何, そんなもん Nothing",
+      "romanization": "korondatte nani?, sonna mon Nothing",
+      "english": "So what if I fall, That little thing is nothing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "よろけても Go, 歯を食いしばれ",
+      "romanization": "yorokete mo Go, ha o kuishibare",
+      "english": "Even if I stumble, go, Grit my teeth and stand back up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "So watch me swervin’, swervin’ now",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "転んだ分だけ, ぶつかった分だけ",
+      "romanization": "koronda bun dake, butsukatta bun dake",
+      "english": "As much as I’ve stumbled, As much as I’ve collided",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "To the horizon 飛び出せ",
+      "romanization": "To the horizon tobidase",
+      "english": "I’ll run to the horizon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "僕を呼ぶ Callin’, No more fallin’ down 今",
+      "romanization": "boku o yobu Callin’, No more fallin’ down ima",
+      "english": "The callin’ that calls me, No more fallin’ down, not anymore",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "君だってほら, 転ぶくらい",
+      "romanization": "kimi datte hora, korobu kurai",
+      "english": "You know too, That falling down once in a while",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "大したことないだろ",
+      "romanization": "taishita koto nai daro",
+      "english": "Isn't a big deal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "何度もふらふらよろけても",
+      "romanization": "nando mo furafura yorokete mo",
+      "english": "Even if I keep swaying and swaying",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I’ll be rockin’, rockin’ back and forth",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "やりたいならやれ, 顔上げ Heads up",
+      "romanization": "yaritai nara yare, kao age Heads up",
+      "english": "If you want it, do it, Lift your head, Heads up",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "転んでもいい まずぶつかれ",
+      "romanization": "koronde mo ii mazu butsukare",
+      "english": "So what if you fall, just charge ahead",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "揺れながらも Ride on, 揺れる足取りだって",
+      "romanization": "yurenagara mo Ride on, yureru ashidori datte",
+      "english": "Ride on just as you are now, Even your unsteady footsteps",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "転んだ分だけ, ぶつかった分だけ",
+      "romanization": "koronda bun dake, butsukatta bun dake",
+      "english": "As much as I’ve stumbled, As much as I’ve collided",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "To the horizon 飛び出せ",
+      "romanization": "To the horizon tobidase",
+      "english": "I’ll run to the horizon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "僕を呼ぶ Callin’, No more fallin’ down 今",
+      "romanization": "boku o yobu Callin’, No more fallin’ down ima",
+      "english": "The callin’ that calls me, No more fallin’ down, not anymore",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "FLIP THE WORLD, KICK OFF THE WALL",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "君だってほら, 転ぶくらい",
+      "romanization": "kimi datte hora, korobu kurai",
+      "english": "You know too, That falling down once in a while",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "大したことないだろ",
+      "romanization": "taishita koto nai daro",
+      "english": "Isn't a big deal",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "何度もふらふらよろけても",
+      "romanization": "nando mo furafura yorokete mo",
+      "english": "Even if I keep swaying and swaying",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "",
+      "romanization": "I’ll be rockin’, rockin’ back and forth",
+      "english": "",
+      "adlib": false
     }
   ]
 }
