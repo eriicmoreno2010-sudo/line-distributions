@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Orange Barcelona",
   "video": "videos/grupoinventado_orangebarcelona_mv1a92mr.mp4",
-  "duration": 0,
+  "duration": 206.533333,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -1850,5 +1850,6 @@
         ]
       ]
     }
-  ]
+  ],
+  "audio": "audio/grupoinventado_orangebarcelona.mp3"
 }
