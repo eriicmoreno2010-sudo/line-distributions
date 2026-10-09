@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "MALA INFLUENCIA",
   "video": "videos/grupoinventado_malainfluencia_mv1bsugn.mp4",
-  "duration": 0,
+  "duration": 167.500667,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -94,15 +94,1439 @@
   ],
   "lyrics": [
     {
+      "start": 0.02,
+      "end": 3.31,
+      "members": [
+        "DINO"
+      ],
+      "original": "",
+      "romanization": "And I had time to think about it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          0.07,
+          3.33
+        ]
+      ]
+    },
+    {
+      "start": 3.72,
+      "end": 6.98,
+      "members": [
+        "DINO"
+      ],
+      "original": "",
+      "romanization": "It’s too much bullshit that surround it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          3.71,
+          5.4
+        ],
+        [
+          5.55,
+          7.01
+        ]
+      ]
+    },
+    {
+      "start": 7.12,
+      "end": 8.79,
+      "members": [
+        "DINO"
+      ],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          7.06,
+          8.8
+        ]
+      ]
+    },
+    {
+      "start": 9.72,
+      "end": 12.49,
+      "members": [
+        "JUN"
+      ],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          9.77,
+          12.57
+        ]
+      ]
+    },
+    {
+      "start": 12.57,
+      "end": 16.06,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          12.57,
+          14.5
+        ],
+        [
+          14.65,
+          14.95
+        ],
+        [
+          15.09,
+          15.39
+        ],
+        [
+          15.54,
+          15.97
+        ]
+      ]
+    },
+    {
+      "start": 16.04,
+      "end": 19.33,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "And I had time to think about it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          16.01,
+          19.33
+        ]
+      ]
+    },
+    {
+      "start": 19.74,
+      "end": 22.89,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "But life would be so much better without it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          19.8,
+          23.06
+        ]
+      ]
+    },
+    {
+      "start": 23.01,
+      "end": 24.72,
+      "members": [
+        "HOSHI"
+      ],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          23.08,
+          24.78
+        ]
+      ]
+    },
+    {
+      "start": 25.73,
+      "end": 28.44,
+      "members": [
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          25.76,
+          28.56
+        ]
+      ]
+    },
+    {
+      "start": 28.6,
+      "end": 31.96,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          28.55,
+          30.45
+        ],
+        [
+          30.61,
+          30.9
+        ],
+        [
+          31.09,
+          31.41
+        ],
+        [
+          31.54,
+          32.01
+        ]
+      ]
+    },
+    {
+      "start": 32.01,
+      "end": 32.94,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "Let’s go out ",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          32.01,
+          32.97
+        ]
+      ]
+    },
+    {
+      "start": 33.03,
+      "end": 33.98,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          33.11,
+          33.98
+        ]
+      ]
+    },
+    {
+      "start": 37.05,
+      "end": 37.92,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          37.03,
+          38.02
+        ]
+      ]
+    },
+    {
+      "start": 41,
+      "end": 41.82,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(chase the fade)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          41.03,
+          41.9
+        ]
+      ]
+    },
+    {
+      "start": 34.01,
+      "end": 36.96,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          34.06,
+          37
+        ]
+      ]
+    },
+    {
+      "start": 37.99,
+      "end": 40.97,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "Bust the scene, Flip the vibe, chase the fade",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          38.03,
+          40.97
+        ]
+      ]
+    },
+    {
+      "start": 41.73,
+      "end": 44.99,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "And be the section everybody talkin’ bout",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          41.76,
+          44.9
+        ]
+      ]
+    },
+    {
+      "start": 45.02,
+      "end": 45.92,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(talkin’ bout)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          45.05,
+          45.92
+        ]
+      ]
+    },
+    {
+      "start": 46.03,
+      "end": 47.96,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "Only fun shit is allowed",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          46.02,
+          47.93
+        ]
+      ]
+    },
+    {
+      "start": 48.69,
+      "end": 51.11,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          48.55,
+          49.67
+        ],
+        [
+          49.86,
+          51.07
+        ]
+      ]
+    },
+    {
+      "start": 49.32,
+      "end": 52.58,
+      "members": [
+        "SEUNGKWAN"
+      ],
+      "original": "",
+      "romanization": "An ordinary time ain’t enough for you",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          49.29,
+          52.65
+        ]
+      ]
+    },
+    {
+      "start": 52.61,
+      "end": 55.06,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          52.49,
+          53.62
+        ],
+        [
+          53.84,
+          55.05
+        ]
+      ]
+    },
+    {
+      "start": 53.29,
+      "end": 56.65,
+      "members": [
+        "SEUNGKWAN"
+      ],
+      "original": "",
+      "romanization": "You wanna have a good, good night",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          53.3,
+          56.62
+        ]
+      ]
+    },
+    {
+      "start": 56.58,
+      "end": 59.07,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          56.5,
+          57.65
+        ],
+        [
+          57.82,
+          59.04
+        ]
+      ]
+    },
+    {
+      "start": 57.38,
+      "end": 60.56,
+      "members": [
+        "DK"
+      ],
+      "original": "",
+      "romanization": "It’s 4 in the morning, what the fuck we doin’?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          57.3,
+          60.61
+        ]
+      ]
+    },
+    {
+      "start": 60.54,
+      "end": 63.13,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          60.52,
+          61.62
+        ],
+        [
+          61.84,
+          63.06
+        ]
+      ]
+    },
+    {
+      "start": 64.83,
+      "end": 65.97,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Okay okay",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          64.72,
+          65.98
+        ]
+      ]
+    },
+    {
       "start": 0,
       "end": 0,
       "members": [
-        "ARNAU"
+        "S.COUPS"
       ],
       "original": "",
-      "romanization": "",
+      "romanization": "(bad influence)",
       "english": "",
-      "adlib": ""
+      "adlib": true,
+      "voice": [
+        [
+          69.07,
+          69.91
+        ]
+      ]
+    },
+    {
+      "start": 61.28,
+      "end": 64.82,
+      "members": [
+        "DK"
+      ],
+      "original": "",
+      "romanization": "You turn and say, “a good, good time!”",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          61.23,
+          64.85
+        ]
+      ]
+    },
+    {
+      "start": 65.98,
+      "end": 69.21,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "And I had time to think about it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          66.04,
+          69.31
+        ]
+      ]
+    },
+    {
+      "start": 69.79,
+      "end": 72.84,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "But life would be so much better without it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          69.76,
+          73.08
+        ]
+      ]
+    },
+    {
+      "start": 72.99,
+      "end": 74.63,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          73.08,
+          74.69
+        ]
+      ]
+    },
+    {
+      "start": 75.81,
+      "end": 78.52,
+      "members": [
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          75.75,
+          78.61
+        ]
+      ]
+    },
+    {
+      "start": 78.58,
+      "end": 82.65,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          78.62,
+          80.49
+        ],
+        [
+          80.65,
+          80.96
+        ],
+        [
+          81.12,
+          81.42
+        ],
+        [
+          81.59,
+          81.92
+        ],
+        [
+          82.07,
+          82.54
+        ]
+      ]
+    },
+    {
+      "start": 80.61,
+      "end": 82.52,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "(good, good, good time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          80.61,
+          80.96
+        ],
+        [
+          81.15,
+          81.47
+        ],
+        [
+          81.62,
+          81.95
+        ],
+        [
+          82.1,
+          82.6
+        ]
+      ]
+    },
+    {
+      "start": 82.58,
+      "end": 84.51,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          82.59,
+          83.5
+        ],
+        [
+          83.65,
+          84.47
+        ]
+      ]
+    },
+    {
+      "start": 86.62,
+      "end": 90.34,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          86.52,
+          88.43
+        ],
+        [
+          88.58,
+          88.91
+        ],
+        [
+          89.09,
+          89.38
+        ],
+        [
+          89.53,
+          89.88
+        ],
+        [
+          90.04,
+          90.47
+        ]
+      ]
+    },
+    {
+      "start": 90.49,
+      "end": 94.35,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          90.52,
+          92.43
+        ],
+        [
+          92.58,
+          92.9
+        ],
+        [
+          93.05,
+          93.35
+        ],
+        [
+          93.53,
+          93.88
+        ],
+        [
+          94.03,
+          94.47
+        ]
+      ]
+    },
+    {
+      "start": 94.54,
+      "end": 96.42,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          94.55,
+          96.47
+        ]
+      ]
+    },
+    {
+      "start": 94.81,
+      "end": 95.45,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Yeah yeah",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          94.79,
+          95.43
+        ]
+      ]
+    },
+    {
+      "start": 99.05,
+      "end": 99.95,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          99.1,
+          99.95
+        ]
+      ]
+    },
+    {
+      "start": 102.99,
+      "end": 103.93,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(let’s go out)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          103.04,
+          103.93
+        ]
+      ]
+    },
+    {
+      "start": 106.96,
+      "end": 107.86,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(chase the fade)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          107.11,
+          107.85
+        ]
+      ]
+    },
+    {
+      "start": 84.27,
+      "end": 86.01,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "Sometimes you wanna luck up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          84.27,
+          86.07
+        ]
+      ]
+    },
+    {
+      "start": 87.77,
+      "end": 90.09,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "You get frustrated, call me stuck up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          87.75,
+          90.09
+        ]
+      ]
+    },
+    {
+      "start": 92.26,
+      "end": 94.09,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "But once you bring the plug up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          92.22,
+          94.1
+        ]
+      ]
+    },
+    {
+      "start": 96.54,
+      "end": 97.91,
+      "members": [
+        "WOOZI",
+        "MINGYU"
+      ],
+      "original": "",
+      "romanization": "Makes me wanna get fucked up",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          96.56,
+          98.1
+        ]
+      ]
+    },
+    {
+      "start": 98.02,
+      "end": 99.07,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "Let’s go out",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          98.04,
+          99
+        ]
+      ]
+    },
+    {
+      "start": 100.07,
+      "end": 102.97,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "Let’s go ‘round, What ya doin’ now?, Let’s go out",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          100,
+          102.96
+        ]
+      ]
+    },
+    {
+      "start": 104.02,
+      "end": 106.97,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "Bust the scene, Flip the vibe, chase the fade",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          103.99,
+          106.94
+        ]
+      ]
+    },
+    {
+      "start": 107.75,
+      "end": 110.96,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "And be the section everybody talkin’ bout",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          107.75,
+          110.93
+        ]
+      ]
+    },
+    {
+      "start": 111.03,
+      "end": 111.94,
+      "members": [
+        "VERNON"
+      ],
+      "original": "",
+      "romanization": "(talkin’ bout)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          111.05,
+          111.96
+        ]
+      ]
+    },
+    {
+      "start": 112.01,
+      "end": 113.98,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "Only fun shit is allowed",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          112.04,
+          114.03
+        ]
+      ]
+    },
+    {
+      "start": 114.57,
+      "end": 117.08,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          114.53,
+          115.63
+        ],
+        [
+          115.81,
+          117.03
+        ]
+      ]
+    },
+    {
+      "start": 115.28,
+      "end": 118.56,
+      "members": [
+        "SEUNGKWAN"
+      ],
+      "original": "",
+      "romanization": "An ordinary time ain’t enough for you",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          115.35,
+          118.59
+        ]
+      ]
+    },
+    {
+      "start": 118.5,
+      "end": 121.07,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          118.51,
+          119.61
+        ],
+        [
+          119.83,
+          121.07
+        ]
+      ]
+    },
+    {
+      "start": 119.29,
+      "end": 122.61,
+      "members": [
+        "SEUNGKWAN"
+      ],
+      "original": "",
+      "romanization": "You wanna have a good, good night",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          119.33,
+          122.7
+        ]
+      ]
+    },
+    {
+      "start": 122.54,
+      "end": 125.02,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          122.52,
+          123.54
+        ],
+        [
+          123.81,
+          124.97
+        ]
+      ]
+    },
+    {
+      "start": 123.25,
+      "end": 126.51,
+      "members": [
+        "DK"
+      ],
+      "original": "",
+      "romanization": "It’s 4 in the morning, what the fuck we doin’?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          123.24,
+          126.55
+        ]
+      ]
+    },
+    {
+      "start": 126.5,
+      "end": 129.06,
+      "members": [
+        "WONWOO"
+      ],
+      "original": "",
+      "romanization": "(Bad influence, you had to do it)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          126.54,
+          127.59
+        ],
+        [
+          127.8,
+          129.13
+        ]
+      ]
+    },
+    {
+      "start": 127.27,
+      "end": 130.82,
+      "members": [
+        "DK"
+      ],
+      "original": "",
+      "romanization": "You turn and say, “a good, good time!”",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          127.29,
+          130.78
+        ]
+      ]
+    },
+    {
+      "start": 132.1,
+      "end": 135.42,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "",
+      "romanization": "And I had time to think about it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          132.04,
+          135.38
+        ]
+      ]
+    },
+    {
+      "start": 135.79,
+      "end": 138.92,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "",
+      "romanization": "It’s too much bullshit that surround it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          135.83,
+          137.51
+        ],
+        [
+          137.63,
+          139.08
+        ]
+      ]
+    },
+    {
+      "start": 139.07,
+      "end": 140.63,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          139.07,
+          140.66
+        ]
+      ]
+    },
+    {
+      "start": 141.76,
+      "end": 144.36,
+      "members": [
+        "JUN"
+      ],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          141.76,
+          144.56
+        ]
+      ]
+    },
+    {
+      "start": 144.55,
+      "end": 148.01,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          144.55,
+          146.49
+        ],
+        [
+          146.64,
+          146.94
+        ],
+        [
+          147.11,
+          147.41
+        ],
+        [
+          147.6,
+          148
+        ]
+      ]
+    },
+    {
+      "start": 151.14,
+      "end": 152.01,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(bad influence)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          135.1,
+          135.88
+        ]
+      ]
+    },
+    {
+      "start": 153.57,
+      "end": 155.13,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Better without it",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          153.61,
+          155.11
+        ]
+      ]
+    },
+    {
+      "start": 135.09,
+      "end": 135.96,
+      "members": [
+        "S.COUPS"
+      ],
+      "original": "",
+      "romanization": "(bad influence)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          151.04,
+          151.95
+        ]
+      ]
+    },
+    {
+      "start": 158.59,
+      "end": 160.58,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "Wanna have a good time",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          158.57,
+          160.63
+        ]
+      ]
+    },
+    {
+      "start": 148.04,
+      "end": 151.29,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "And I had time to think about it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          148.07,
+          151.35
+        ]
+      ]
+    },
+    {
+      "start": 151.73,
+      "end": 154.97,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "But life would be so much better without it",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          151.8,
+          155.12
+        ]
+      ]
+    },
+    {
+      "start": 155.12,
+      "end": 156.69,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "I don’t want it at all",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          155.09,
+          156.82
+        ]
+      ]
+    },
+    {
+      "start": 157.81,
+      "end": 160.59,
+      "members": [
+        "THE8"
+      ],
+      "original": "",
+      "romanization": "But hey, I wanna have a good time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          157.76,
+          160.59
+        ]
+      ]
+    },
+    {
+      "start": 160.58,
+      "end": 164.64,
+      "members": [
+        "JOSHUA"
+      ],
+      "original": "",
+      "romanization": "(Good time, good time, good, good, good time)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          160.54,
+          162.53
+        ],
+        [
+          162.66,
+          162.96
+        ],
+        [
+          163.13,
+          163.43
+        ],
+        [
+          163.58,
+          163.91
+        ],
+        [
+          164.04,
+          164.58
+        ]
+      ]
     }
   ]
 }
