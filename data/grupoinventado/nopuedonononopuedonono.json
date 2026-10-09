@@ -582,20 +582,20 @@
       ]
     },
     {
-      "start": 99.76,
-      "end": 101.2,
+      "start": 99.75,
+      "end": 100.41,
       "members": [
         "MARK",
         "MARC"
       ],
       "original": "",
-      "romanization": "(You and me oh-eh)",
+      "romanization": "(You and me)",
       "english": "",
       "adlib": true,
       "voice": [
         [
-          99.72,
-          101.13
+          99.81,
+          100.45
         ]
       ]
     },
