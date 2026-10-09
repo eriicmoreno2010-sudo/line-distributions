@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "BTTF",
   "video": "videos/grupoinventado_bttf_mv19tvoy.mp4",
-  "duration": 0,
+  "duration": 180.18,
   "theme": "light",
   "subunit": false,
   "layout": "classic",
@@ -55,7 +55,7 @@
       "start": 15.25,
       "end": 17.62,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
@@ -66,7 +66,8 @@
       "start": 17.76,
       "end": 20.1,
       "members": [
-        "JENO"
+        "JENO",
+        "BIEL"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn the time time time",
@@ -83,7 +84,8 @@
       "start": 20.22,
       "end": 22.53,
       "members": [
-        "JENO"
+        "JENO",
+        "BIEL"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
@@ -100,7 +102,7 @@
       "start": 22.69,
       "end": 24.99,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
@@ -111,7 +113,8 @@
       "start": 25.11,
       "end": 26.9,
       "members": [
-        "JAEMIN"
+        "JAEMIN",
+        "MARC"
       ],
       "original": "",
       "romanization": "And it’s Back To The Future on the go",
@@ -128,7 +131,8 @@
       "start": 27.34,
       "end": 29.96,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "경고음 미친 듯이 내 귓속을 쏴",
       "romanization": "gyeonggoeum michin deusi nae gwitsogeul sswa",
@@ -145,7 +149,8 @@
       "start": 30.2,
       "end": 32.44,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "번개 치는 써킷 위의 Spark",
       "romanization": "beongae chineun sseokit wiui spark",
@@ -162,7 +167,8 @@
       "start": 32.65,
       "end": 34.93,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "초월한 듯 뒤섞인 Space-time",
       "romanization": "chowolhan deut dwisseokkin space time",
@@ -179,7 +185,8 @@
       "start": 35.14,
       "end": 37.3,
       "members": [
-        "MARK"
+        "MARK",
+        "ARNAU"
       ],
       "original": "여긴 어디? 상상 못 한 Stop",
       "romanization": "yeogin eodi? sangsang mot han stop",
@@ -196,7 +203,8 @@
       "start": 37.79,
       "end": 40.16,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "ERIC"
       ],
       "original": "시간을 뒤엎어, 떨어진 Alien",
       "romanization": "siganeul dwieopeo, tteoreojin alien",
@@ -217,7 +225,8 @@
       "start": 40.31,
       "end": 42.67,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "ERIC"
       ],
       "original": "눈앞에 펼쳐지는, 낯설지 않은 Sight",
       "romanization": "nunape pyeolchyeojineun, natseolji aneun sight",
@@ -234,7 +243,8 @@
       "start": 42.82,
       "end": 44.78,
       "members": [
-        "JENO"
+        "JENO",
+        "MARC"
       ],
       "original": "시간을 시간을, 뚫어내 난 왔어",
       "romanization": "siganeul siganeul, ttureonae nan wasseo",
@@ -251,7 +261,8 @@
       "start": 44.96,
       "end": 47.49,
       "members": [
-        "JENO"
+        "JENO",
+        "MARC"
       ],
       "original": "오래된 아니, 맨 처음 느낀 듯한 Moment",
       "romanization": "oraedoen ani, maen cheoeum neukkin deuthan moment",
@@ -268,11 +279,12 @@
       "start": 48.01,
       "end": 52.87,
       "members": [
-        "RENJUN"
+        "RENJUN",
+        "MICHELLE"
       ],
-      "original": "난 알아 저 눈**빛을 가진 소년@RENJUN,CHENLE**",
-      "romanization": "nan ara jeo nun**bicheul gajin sonyeon@RENJUN,CHENLE**",
-      "english": "I know him — the boy **with that look in his eyes@RENJUN,CHENLE**",
+      "original": "난 알아 저 눈**빛을 가진 소년@MICHELLE,ERIC**",
+      "romanization": "nan ara jeo nun**bicheul gajin sonyeon@MICHELLE,ERIC**",
+      "english": "I know him — the boy **with that look in his eyes@MICHELLE,ERIC**",
       "adlib": false,
       "voice": [
         [
@@ -292,7 +304,8 @@
       "start": 53.03,
       "end": 55.88,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "IRENE"
       ],
       "original": "네게 말을 걸어볼까, 상상 못 할 얘길 해 볼까",
       "romanization": "nege mareul georeobolkka, sangsang mot hal yaegil hae bolkka",
@@ -317,7 +330,8 @@
       "start": 56,
       "end": 58.3,
       "members": [
-        "JISUNG"
+        "JISUNG",
+        "BIEL"
       ],
       "original": "ay ay It’s my choice, 내 시간 속의 파워",
       "romanization": "ay ay it’s my choice, nae sigan sogui pawo",
@@ -334,7 +348,8 @@
       "start": 58.47,
       "end": 59.48,
       "members": [
-        "JISUNG"
+        "JISUNG",
+        "BIEL"
       ],
       "original": "휘어놔 내 맘대로",
       "romanization": "hwieonwa nae mamdaero",
@@ -351,7 +366,8 @@
       "start": 59.63,
       "end": 62.11,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "지우거나 더하는 Force, More than an observer",
       "romanization": "jiugeona deohaneun force, more than an observer",
@@ -368,7 +384,8 @@
       "start": 62.4,
       "end": 64.14,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "ERIC"
       ],
       "original": "그 답을 우린 알잖아",
       "romanization": "geu dabeul urin aljana",
@@ -385,7 +402,8 @@
       "start": 64.29,
       "end": 66.05,
       "members": [
-        "JISUNG"
+        "JISUNG",
+        "BIEL"
       ],
       "original": "나를 바꾸지 않을 거라고",
       "romanization": "nareul bakkuji aneul georago",
@@ -402,7 +420,7 @@
       "start": 66.34,
       "end": 68.71,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "Go Dream!, Go! Back To The Future",
@@ -413,7 +431,7 @@
       "start": 68.86,
       "end": 73.83,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "Whoa 그 빛나는 순간에 서다, I am the Future",
       "romanization": "whoa geu binnaneun sungane seoda, i am the future",
@@ -424,11 +442,12 @@
       "start": 73.99,
       "end": 76.46,
       "members": [
-        "JAEMIN"
+        "JAEMIN",
+        "MARC"
       ],
-      "original": "Bring it ha ha, **내 이름을 새겼지@HAECHAN**",
-      "romanization": "bring it ha ha, **nae ireumeul saegyeotji@HAECHAN**",
-      "english": "Bring it ha ha, **Carved my name on it@HAECHAN**",
+      "original": "Bring it ha ha, **내 이름을 새겼지@MICHELLE**",
+      "romanization": "bring it ha ha, **nae ireumeul saegyeotji@MICHELLE**",
+      "english": "Bring it ha ha, **Carved my name on it@MICHELLE**",
       "adlib": false,
       "voice": [
         [
@@ -448,7 +467,7 @@
       "start": 76.59,
       "end": 78.83,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn the time time time",
@@ -459,7 +478,7 @@
       "start": 78.99,
       "end": 81.29,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
@@ -470,7 +489,7 @@
       "start": 81.45,
       "end": 86.33,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "Whoa We Dream 나 서 있는, 지금이 바로 Future",
       "romanization": "whoa we dream na seo inneun, jigeumi baro future",
@@ -481,7 +500,8 @@
       "start": 86.91,
       "end": 90.11,
       "members": [
-        "JAEMIN"
+        "JAEMIN",
+        "ARNAU"
       ],
       "original": "Moving history, 충돌하며 직면하는 사건들을",
       "romanization": "moving history, chungdolhamyeo jingmyeonhaneun sageondeureul",
@@ -502,7 +522,8 @@
       "start": 90.26,
       "end": 91.96,
       "members": [
-        "JAEMIN"
+        "JAEMIN",
+        "ARNAU"
       ],
       "original": "내 손에 쥐고 한 발 전진",
       "romanization": "nae sone jwigo han bal jeonjin",
@@ -519,7 +540,8 @@
       "start": 92.12,
       "end": 94.25,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "That’s a big decision, 기억의 컬렉션",
       "romanization": "that’s a big decision, gieogui keollekseon",
@@ -540,7 +562,8 @@
       "start": 94.4,
       "end": 96.27,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "난 알지 필요 없을 걸 Revision",
       "romanization": "nan alji piryo eopseul geol revision",
@@ -557,7 +580,8 @@
       "start": 96.45,
       "end": 101.31,
       "members": [
-        "RENJUN"
+        "RENJUN",
+        "IRENE"
       ],
       "original": "장면들은 날 스쳐, 너를 떠올려",
       "romanization": "jangmyeondeureun nal seuchyeo, neoreul tteoollyeo",
@@ -574,7 +598,8 @@
       "start": 101.46,
       "end": 103.54,
       "members": [
-        "JISUNG"
+        "JISUNG",
+        "BIEL"
       ],
       "original": "시간을 시간을, 뚫어내 난 왔어",
       "romanization": "siganeul siganeul, ttureonae nan wasseo",
@@ -591,7 +616,8 @@
       "start": 103.72,
       "end": 106.2,
       "members": [
-        "JISUNG"
+        "JISUNG",
+        "BIEL"
       ],
       "original": "짜릿해 내 손에 달린, 먼 시간의 저울",
       "romanization": "jjarithae nae sone dallin, meon siganui jeoul",
@@ -608,7 +634,8 @@
       "start": 107.13,
       "end": 112.84,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "MICHELLE"
       ],
       "original": "안녕 나야, 내가 달라진 건지 말해줘",
       "romanization": "annyeong naya, naega dallajin geonji malhaejwo",
@@ -633,7 +660,8 @@
       "start": 113.17,
       "end": 117.42,
       "members": [
-        "RENJUN"
+        "RENJUN",
+        "IRENE"
       ],
       "original": "너를 보며 나를 봐, 절대 후회하지 않아",
       "romanization": "neoreul bomyeo nareul bwa, jeoldae huhoehaji ana",
@@ -679,7 +707,8 @@
       "start": 121.49,
       "end": 125.72,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "IRENE"
       ],
       "original": "걱정하지 않아도 돼, 그 어떤 시간 위라도 완전해 oh",
       "romanization": "geokjeonghaji anado dwae, geu eotteon sigan wirado wanjeonhae oh",
@@ -704,7 +733,8 @@
       "start": 125.87,
       "end": 135.82,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "ERIC"
       ],
       "original": "",
       "romanization": "Back To The Future, ohhh",
@@ -721,7 +751,8 @@
       "start": 137.66,
       "end": 140.08,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn the time time time",
@@ -738,7 +769,8 @@
       "start": 140.2,
       "end": 142.51,
       "members": [
-        "MARK"
+        "MARK",
+        "MARC"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
@@ -755,7 +787,7 @@
       "start": 142.66,
       "end": 144.94,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "Ya Ya Whoa Ya Ya Whoa, Ya Ya Whoa Ya Ya Whoa",
@@ -766,7 +798,8 @@
       "start": 145.06,
       "end": 146.93,
       "members": [
-        "JAEMIN"
+        "JAEMIN",
+        "ARNAU"
       ],
       "original": "",
       "romanization": "And it’s Back To The Future on the go",
@@ -783,7 +816,7 @@
       "start": 147.2,
       "end": 149.55,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "Go Dream!, Go! Back To The Future",
@@ -795,7 +828,7 @@
       "start": 149.68,
       "end": 154.74,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "Whoa 그 빛나는 순간에 서다, I am the Future",
       "romanization": "whoa geu binnaneun sungane seoda, i am the future",
@@ -806,11 +839,12 @@
       "start": 154.86,
       "end": 157.2,
       "members": [
-        "JENO"
+        "JENO",
+        "BIEL"
       ],
-      "original": "Bring it ha ha, **내 이름을 새겼지@CHENLE**",
-      "romanization": "bring it ha ha, **nae ireumeul saegyeotji@CHENLE**",
-      "english": "Bring it ha ha, **Carved my name on it@CHENLE**",
+      "original": "Bring it ha ha, **내 이름을 새겼지@ERIC**",
+      "romanization": "bring it ha ha, **nae ireumeul saegyeotji@ERIC**",
+      "english": "Bring it ha ha, **Carved my name on it@ERIC**",
       "adlib": false,
       "voice": [
         [
@@ -830,7 +864,7 @@
       "start": 157.32,
       "end": 159.68,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn the time time time",
@@ -841,7 +875,7 @@
       "start": 159.83,
       "end": 162.13,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "We gon’ we gon’ we gon’ turn it ra-ta-ta",
@@ -852,7 +886,7 @@
       "start": 162.28,
       "end": 167.14,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "Whoa We Dream 나 서 있는, 지금이 바로 Future",
       "romanization": "whoa we dream na seo inneun, jigeumi baro future",
@@ -863,7 +897,7 @@
       "start": 167.38,
       "end": 172.18,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "I’m the I’m the ta-ta-ta-ta, Future Future ra-ta-ta-ta",
@@ -874,7 +908,7 @@
       "start": 172.33,
       "end": 175.87,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "I’m the I’m the ta-ta-ta-ta, Back to the back to the",
@@ -885,7 +919,7 @@
       "start": 175.99,
       "end": 177.64,
       "members": [
-        "NCT DREAM"
+        "GRUPO INVENTADO"
       ],
       "original": "",
       "romanization": "Back To The Future",
@@ -896,7 +930,8 @@
       "start": 37.31,
       "end": 37.64,
       "members": [
-        "JENO"
+        "JENO",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Stop)",
@@ -913,7 +948,8 @@
       "start": 38.88,
       "end": 39.17,
       "members": [
-        "JISUNG"
+        "JISUNG",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Uh)",
@@ -930,7 +966,8 @@
       "start": 39.77,
       "end": 40.47,
       "members": [
-        "JISUNG"
+        "JISUNG",
+        "BIEL"
       ],
       "original": "",
       "romanization": "(Let's go)",
@@ -947,7 +984,8 @@
       "start": 47.13,
       "end": 48,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "ERIC"
       ],
       "original": "",
       "romanization": "(Ah yeah)",
@@ -964,7 +1002,8 @@
       "start": 52.64,
       "end": 52.93,
       "members": [
-        "HAECHAN"
+        "HAECHAN",
+        "IRENE"
       ],
       "original": "",
       "romanization": "(Uh)",
@@ -981,7 +1020,8 @@
       "start": 54.14,
       "end": 56.82,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "ERIC"
       ],
       "original": "",
       "romanization": "(Ah yeah)",
@@ -1002,7 +1042,8 @@
       "start": 120.62,
       "end": 120.95,
       "members": [
-        "CHENLE"
+        "CHENLE",
+        "IRENE"
       ],
       "original": "",
       "romanization": "(Ayy)",
