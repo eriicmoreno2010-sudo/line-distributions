@@ -2,7 +2,7 @@
   "group": "GRUPO INVENTADO",
   "song": "Ride or Die",
   "video": "videos/grupoinventado_rideordie_mv0rbf4g.mp4",
-  "duration": 0,
+  "duration": 135.384542,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -45,13 +45,575 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 16.33,
+      "end": 19.69,
+      "members": [
+        "EVAN"
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "Say something, Grab my, Hands oh",
       "english": "",
-      "adlib": ""
+      "adlib": false,
+      "voice": [
+        [
+          16.3,
+          17.23
+        ],
+        [
+          17.67,
+          18.63
+        ],
+        [
+          18.92,
+          19.85
+        ]
+      ]
+    },
+    {
+      "start": 19.82,
+      "end": 21.37,
+      "members": [
+        "EVAN"
+      ],
+      "original": "아직 널 놓지 않아",
+      "romanization": "ajik neol nochi ana",
+      "english": "I still won’t let you go",
+      "adlib": false,
+      "voice": [
+        [
+          19.77,
+          21.36
+        ]
+      ]
+    },
+    {
+      "start": 21.61,
+      "end": 23.85,
+      "members": [
+        "EVAN"
+      ],
+      "original": "센 척, 아닌 척 but",
+      "romanization": "sen cheok, anin cheok but",
+      "english": "Actin’ tough, Actin’ calm but",
+      "adlib": false,
+      "voice": [
+        [
+          21.52,
+          22.5
+        ],
+        [
+          22.82,
+          23.87
+        ]
+      ]
+    },
+    {
+      "start": 24.03,
+      "end": 26.17,
+      "members": [
+        "EVAN"
+      ],
+      "original": "There’s no more, 홀로였던 race track",
+      "romanization": "there’s no more, holloyeotdeon race track",
+      "english": "There’s no more, I ran alone on this race track",
+      "adlib": false,
+      "voice": [
+        [
+          23.99,
+          26.24
+        ]
+      ]
+    },
+    {
+      "start": 26.32,
+      "end": 28.88,
+      "members": [
+        "EVAN"
+      ],
+      "original": "걷잡을 수 없이 내 맘은 네게 가 이미",
+      "romanization": "geotjabeul su eopsi nae mameun nege ga imi",
+      "english": "Out of control, my heart’s runnin’ to you already",
+      "adlib": false,
+      "voice": [
+        [
+          26.31,
+          28.9
+        ]
+      ]
+    },
+    {
+      "start": 29.03,
+      "end": 31.71,
+      "members": [
+        "EVAN"
+      ],
+      "original": "So much pains got me crazy, 내 모든 것 다 yours",
+      "romanization": "so much pains got me crazy, nae modeun geot da yours",
+      "english": "So much pains got me crazy, Everything that’s mine is yours",
+      "adlib": false,
+      "voice": [
+        [
+          29.03,
+          31.85
+        ]
+      ]
+    },
+    {
+      "start": 31.83,
+      "end": 36.86,
+      "members": [
+        "EVAN"
+      ],
+      "original": "So take my heart, Just take my heart, 철없는 약속해",
+      "romanization": "so take my heart, just take my heart, cheoreomneun yaksokhae",
+      "english": "So take my heart, Just take my heart, It’s naive but I promise",
+      "adlib": false,
+      "voice": [
+        [
+          31.86,
+          33.11
+        ],
+        [
+          33.26,
+          36.85
+        ]
+      ]
+    },
+    {
+      "start": 37.19,
+      "end": 38.94,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "Took a couple tries just to be right",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          37.18,
+          39.14
+        ]
+      ]
+    },
+    {
+      "start": 39.09,
+      "end": 41.6,
+      "members": [
+        "EVAN"
+      ],
+      "original": "무너져도 난 그대로 it will be alright",
+      "romanization": "muneojyeodo nan geudaero it will be alright",
+      "english": "I’ll be here even if it crumbles, it will be alright",
+      "adlib": false,
+      "voice": [
+        [
+          39.15,
+          41.79
+        ]
+      ]
+    },
+    {
+      "start": 41.78,
+      "end": 44.23,
+      "members": [
+        "EVAN"
+      ],
+      "original": "태워버린 삶 속의 나와 just ignite",
+      "romanization": "taewobeorin sal sogui nawa just ignite",
+      "english": "My life’s toast, come with me and just ignite",
+      "adlib": false,
+      "voice": [
+        [
+          41.79,
+          44.35
+        ]
+      ]
+    },
+    {
+      "start": 44.35,
+      "end": 47.03,
+      "members": [
+        "EVAN"
+      ],
+      "original": "따라와 it’s gon' be unforgettable yeah",
+      "romanization": "ttarawa it’s gon’ be unforgettable yeah",
+      "english": "Follow me, it’s gon’ be unforgettable yeah",
+      "adlib": false,
+      "voice": [
+        [
+          44.37,
+          47.13
+        ]
+      ]
+    },
+    {
+      "start": 47.21,
+      "end": 52.38,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "You are my ride or die, Drive til the end of time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          47.26,
+          52.49
+        ]
+      ]
+    },
+    {
+      "start": 52.53,
+      "end": 57.6,
+      "members": [
+        "EVAN"
+      ],
+      "original": "내게 더 다가와, My love will never die",
+      "romanization": "naege deo dagawa, my love will never die",
+      "english": "Come a bit closer now, My love will never die",
+      "adlib": false,
+      "voice": [
+        [
+          52.55,
+          57.72
+        ]
+      ]
+    },
+    {
+      "start": 57.78,
+      "end": 62.84,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "You are my ride or die, Drive til the end of time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          57.75,
+          62.9
+        ]
+      ]
+    },
+    {
+      "start": 63.01,
+      "end": 68.53,
+      "members": [
+        "EVAN"
+      ],
+      "original": "입 맞춘 이 순간, It’s gonna be alright",
+      "romanization": "ip matchun i sungan, it’s gonna be alright",
+      "english": "This moment, when our lips touch, It’s gonna be alright",
+      "adlib": false,
+      "voice": [
+        [
+          63.02,
+          65.49
+        ],
+        [
+          65.64,
+          68.55
+        ]
+      ]
+    },
+    {
+      "start": 71.1,
+      "end": 74.52,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "Say something, Grab my, Hands oh",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          71.06,
+          72.01
+        ],
+        [
+          72.4,
+          73.35
+        ],
+        [
+          73.73,
+          74.63
+        ]
+      ]
+    },
+    {
+      "start": 74.64,
+      "end": 76.09,
+      "members": [
+        "EVAN"
+      ],
+      "original": "이대로 괜찮아",
+      "romanization": "idaero gwaenchana",
+      "english": "It’s alright as it is",
+      "adlib": false,
+      "voice": [
+        [
+          74.57,
+          76.12
+        ]
+      ]
+    },
+    {
+      "start": 76.33,
+      "end": 81.01,
+      "members": [
+        "EVAN"
+      ],
+      "original": "잃어버린 timeline, 어질러진 너란 물감",
+      "romanization": "ilheobeorin timeline, eojilleojin neoran mulgam",
+      "english": "This lost timeline, You’re paint but you’re all smeared",
+      "adlib": false,
+      "voice": [
+        [
+          76.32,
+          77.38
+        ],
+        [
+          77.65,
+          81.01
+        ]
+      ]
+    },
+    {
+      "start": 81.22,
+      "end": 85.65,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "Heartbreak is pullin me down, They be looking for blaming, So I lost my mind",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          81.23,
+          83.08
+        ],
+        [
+          83.23,
+          85.73
+        ]
+      ]
+    },
+    {
+      "start": 85.8,
+      "end": 86.58,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "God damn",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          85.8,
+          86.04
+        ],
+        [
+          86.19,
+          86.66
+        ]
+      ]
+    },
+    {
+      "start": 86.73,
+      "end": 88.9,
+      "members": [
+        "EVAN"
+      ],
+      "original": "끝이 없는 트랙, But you have to believe me",
+      "romanization": "kkeuchi eomneun track, but you have to believe me",
+      "english": "This never-ending track, But you have to believe me",
+      "adlib": false,
+      "voice": [
+        [
+          86.82,
+          89.06
+        ]
+      ]
+    },
+    {
+      "start": 89.02,
+      "end": 90.95,
+      "members": [
+        "EVAN"
+      ],
+      "original": "Oh 이제부터가 set it off",
+      "romanization": "oh ijebuteoga set it off",
+      "english": "Oh from now on set it off",
+      "adlib": false,
+      "voice": [
+        [
+          89.07,
+          91
+        ]
+      ]
+    },
+    {
+      "start": 91.62,
+      "end": 96.74,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "You are my ride or die, Drive til the end of time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          91.62,
+          96.82
+        ]
+      ]
+    },
+    {
+      "start": 96.86,
+      "end": 101.86,
+      "members": [
+        "EVAN"
+      ],
+      "original": "내게 더 다가와, My love will never die",
+      "romanization": "naege deo dagawa, my love will never die",
+      "english": "Come a bit closer now, My love will never die",
+      "adlib": false,
+      "voice": [
+        [
+          96.81,
+          102.12
+        ]
+      ]
+    },
+    {
+      "start": 102.04,
+      "end": 107.1,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "You are my ride or die, Drive til the end of time",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          102.07,
+          107.28
+        ]
+      ]
+    },
+    {
+      "start": 107.28,
+      "end": 112.88,
+      "members": [
+        "EVAN"
+      ],
+      "original": "입 맞춘 이 순간, It’s gonna be alright",
+      "romanization": "ip matchun i sungan, it’s gonna be alright",
+      "english": "This moment, when our lips touch, It’s gonna be alright",
+      "adlib": false,
+      "voice": [
+        [
+          107.31,
+          109.81
+        ],
+        [
+          109.97,
+          112.93
+        ]
+      ]
+    },
+    {
+      "start": 120.32,
+      "end": 123.35,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "It’s gonna be alright",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          120.36,
+          123.41
+        ]
+      ]
+    },
+    {
+      "start": 123.59,
+      "end": 130.65,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "Yeah yeah yeah yeah, Yeah yeah",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          123.66,
+          124.75
+        ],
+        [
+          124.99,
+          126.03
+        ],
+        [
+          126.27,
+          128.43
+        ],
+        [
+          128.9,
+          129.97
+        ],
+        [
+          130.18,
+          131.25
+        ]
+      ]
+    },
+    {
+      "start": 130.8,
+      "end": 133.85,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "You are my ride or die",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          130.73,
+          133.9
+        ]
+      ]
+    },
+    {
+      "start": 91.05,
+      "end": 91.52,
+      "members": [
+        "EVAN"
+      ],
+      "original": "",
+      "romanization": "(yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          91.01,
+          91.54
+        ]
+      ]
     }
-  ]
+  ],
+  "audio": "audio/grupoinventado_rideordie.mp3"
 }
