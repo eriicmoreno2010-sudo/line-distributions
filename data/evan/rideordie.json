@@ -10,7 +10,7 @@
     {
       "name": "EVAN",
       "image": "images/evan/rideordie/evan.png",
-      "color": "#ff4d6d",
+      "color": "#6a61e5",
       "focus": 50,
       "lift": 3
     }
@@ -19,13 +19,461 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "EVAN"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "Say something",
+      "romanization": "say something",
+      "english": "Say something",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Grab my",
+      "romanization": "grab my",
+      "english": "Grab my",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Hands oh",
+      "romanization": "hands oh",
+      "english": "Hands oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아직 널 놓지 않아",
+      "romanization": "ajik neol nochi ana",
+      "english": "I still won’t let you go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "센 척",
+      "romanization": "sen cheok",
+      "english": "Actin’ tough",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아닌 척 but",
+      "romanization": "anin cheok but",
+      "english": "Actin’ calm but",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "There’s no more",
+      "romanization": "there’s no more",
+      "english": "There’s no more",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "홀로였던 race track",
+      "romanization": "holloyeotdeon race track",
+      "english": "I ran alone on this race track",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "걷잡을 수 없이 내 맘은 네게 가 이미",
+      "romanization": "geotjabeul su eopsi nae mameun nege ga imi",
+      "english": "Out of control, my heart’s runnin’ to you already",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So much pains got me crazy",
+      "romanization": "so much pains got me crazy",
+      "english": "So much pains got me crazy",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 모든 것 다 yours",
+      "romanization": "nae modeun geot da yours",
+      "english": "Everything that’s mine is yours",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So take my heart",
+      "romanization": "so take my heart",
+      "english": "So take my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Just take my heart",
+      "romanization": "just take my heart",
+      "english": "Just take my heart",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "철없는 약속해",
+      "romanization": "cheoreomneun yaksokhae",
+      "english": "It’s naive but I promise",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Took a couple tries just to be right",
+      "romanization": "took a couple tries just to be right",
+      "english": "Took a couple tries just to be right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "무너져도 난 그대로 it will be alright",
+      "romanization": "muneojyeodo nan geudaero it will be alright",
+      "english": "I’ll be here even if it crumbles, it will be alright",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "태워버린 삶 속의 나와 just ignite",
+      "romanization": "taewobeorin sal sogui nawa just ignite",
+      "english": "My life’s toast, come with me and just ignite",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "따라와 it’s gon' be unforgettable yeah",
+      "romanization": "ttarawa it’s gon’ be unforgettable yeah",
+      "english": "Follow me, it’s gon’ be unforgettable yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You are my ride or die",
+      "romanization": "you are my ride or die",
+      "english": "You are my ride or die",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Drive til the end of time",
+      "romanization": "drive til the end of time",
+      "english": "Drive til the end of time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내게 더 다가와",
+      "romanization": "naege deo dagawa",
+      "english": "Come a bit closer now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "My love will never die",
+      "romanization": "my love will never die",
+      "english": "My love will never die",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You are my ride or die",
+      "romanization": "you are my ride or die",
+      "english": "You are my ride or die",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Drive til the end of time",
+      "romanization": "drive til the end of time",
+      "english": "Drive til the end of time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "입 맞춘 이 순간",
+      "romanization": "ip matchun i sungan",
+      "english": "This moment, when our lips touch",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It’s gonna be alright",
+      "romanization": "it’s gonna be alright",
+      "english": "It’s gonna be alright",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Say something",
+      "romanization": "say something",
+      "english": "Say something",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Grab my",
+      "romanization": "grab my",
+      "english": "Grab my",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Hands oh",
+      "romanization": "hands oh",
+      "english": "Hands oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이대로 괜찮아",
+      "romanization": "idaero gwaenchana",
+      "english": "It’s alright as it is",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "잃어버린 timeline",
+      "romanization": "ilheobeorin timeline",
+      "english": "This lost timeline",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어질러진 너란 물감",
+      "romanization": "eojilleojin neoran mulgam",
+      "english": "You’re paint but you’re all smeared",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Heartbreak is pullin me down",
+      "romanization": "heartbreak is pullin me down",
+      "english": "Heartbreak is pullin me down",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "They be looking for blaming",
+      "romanization": "they be looking for blaming",
+      "english": "They be looking for blaming",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "So I lost my mind",
+      "romanization": "so i lost my mind",
+      "english": "So I lost my mind",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "God damn",
+      "romanization": "god damn",
+      "english": "God damn",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끝이 없는 트랙",
+      "romanization": "kkeuchi eomneun track",
+      "english": "This never-ending track",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "But you have to believe me",
+      "romanization": "but you have to believe me",
+      "english": "But you have to believe me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Oh 이제부터가 set it off",
+      "romanization": "oh ijebuteoga set it off",
+      "english": "Oh from now on set it off",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You are my ride or die",
+      "romanization": "you are my ride or die",
+      "english": "You are my ride or die",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Drive til the end of time",
+      "romanization": "drive til the end of time",
+      "english": "Drive til the end of time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내게 더 다가와",
+      "romanization": "naege deo dagawa",
+      "english": "Come a bit closer now",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "My love will never die",
+      "romanization": "my love will never die",
+      "english": "My love will never die",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You are my ride or die",
+      "romanization": "you are my ride or die",
+      "english": "You are my ride or die",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Drive til the end of time",
+      "romanization": "drive til the end of time",
+      "english": "Drive til the end of time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "입 맞춘 이 순간",
+      "romanization": "ip matchun i sungan",
+      "english": "This moment, when our lips touch",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It’s gonna be alright",
+      "romanization": "it’s gonna be alright",
+      "english": "It’s gonna be alright",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "It’s gonna be alright",
+      "romanization": "it’s gonna be alright",
+      "english": "It’s gonna be alright",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah yeah yeah yeah",
+      "romanization": "yeah yeah yeah yeah",
+      "english": "Yeah yeah yeah yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Yeah yeah",
+      "romanization": "yeah yeah",
+      "english": "Yeah yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You are my ride or die",
+      "romanization": "you are my ride or die",
+      "english": "You are my ride or die",
+      "adlib": false
     }
   ]
 }
