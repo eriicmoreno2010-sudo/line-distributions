@@ -12,42 +12,90 @@
       "image": "images/nctwish/ispy/sion.png",
       "color": "#b84dff",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5208,
+        "cy": 0.1546,
+        "size": 0.0998,
+        "rot": 32,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "RIKU",
       "image": "images/nctwish/ispy/riku.png",
       "color": "#ff2424",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.3189,
+        "cy": 0.1632,
+        "size": 0.1007,
+        "rot": 12,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "YUSHI",
       "image": "images/nctwish/ispy/yushi.png",
       "color": "#39b5ea",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.4324,
+        "cy": 0.1639,
+        "size": 0.0964,
+        "rot": 24,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "JAEHEE",
       "image": "images/nctwish/ispy/jaehee.png",
       "color": "#11e450",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.7912,
+        "cy": 0.1427,
+        "size": 0.1015,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "RYO",
       "image": "images/nctwish/ispy/ryo.png",
       "color": "#f8dd2a",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.1889,
+        "cy": 0.1703,
+        "size": 0.1012,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     },
     {
       "name": "SAKUYA",
       "image": "images/nctwish/ispy/sakuya.png",
       "color": "#f24ae4",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.6992,
+        "cy": 0.2207,
+        "size": 0.1015,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
