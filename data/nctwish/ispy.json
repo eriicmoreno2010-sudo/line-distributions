@@ -1232,5 +1232,7 @@
       "adlib": false
     }
   ],
-  "instrumental": "audio/nctwish_ispy_inst.mp3"
+  "instrumental": "audio/nctwish_ispy_inst.mp3",
+  "instrumentalStart": 35.89078396590545,
+  "instrumentalEnd": 185.051429
 }
