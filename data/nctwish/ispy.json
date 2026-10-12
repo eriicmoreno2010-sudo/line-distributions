@@ -1,0 +1,66 @@
+{
+  "group": "NCT WISH",
+  "song": "I SPY",
+  "video": "",
+  "duration": 0,
+  "theme": "light",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "SION",
+      "image": "images/nctwish/ispy/sion.png",
+      "color": "#ff4d6d",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RIKU",
+      "image": "images/nctwish/ispy/riku.png",
+      "color": "#4dabf7",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUSHI",
+      "image": "images/nctwish/ispy/yushi.png",
+      "color": "#51cf66",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHEE",
+      "image": "images/nctwish/ispy/jaehee.png",
+      "color": "#ffd43b",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RYO",
+      "image": "images/nctwish/ispy/ryo.png",
+      "color": "#cc5de8",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SAKUYA",
+      "image": "images/nctwish/ispy/sakuya.png",
+      "color": "#20c997",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SION"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
