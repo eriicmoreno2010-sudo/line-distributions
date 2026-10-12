@@ -720,7 +720,7 @@
         "YUSHI"
       ],
       "original": "",
-      "romanization": "(ah)",
+      "romanization": "(Ah)",
       "english": "",
       "adlib": true,
       "voice": [
@@ -789,7 +789,10 @@
         ],
         [
           114.91,
-          116.6
+          116.6,
+          [
+            "SION"
+          ]
         ]
       ],
       "original": "내 세상으로 와, **I-I-I spy, I spy@SION**",
