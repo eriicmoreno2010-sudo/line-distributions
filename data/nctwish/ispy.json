@@ -2,7 +2,7 @@
   "group": "NCT WISH",
   "song": "I SPY",
   "video": "videos/nctwish_ispy_mv54bxko.mp4",
-  "duration": 195.604898,
+  "duration": 185.582683,
   "theme": "light",
   "subunit": false,
   "layout": "classic",
@@ -38,27 +38,1145 @@
     {
       "name": "RYO",
       "image": "images/nctwish/ispy/ryo.png",
-      "color": "#f5e05c",
+      "color": "#f8dd2a",
       "focus": 50,
       "lift": 3
     },
     {
       "name": "SAKUYA",
       "image": "images/nctwish/ispy/sakuya.png",
-      "color": "#f28cea",
+      "color": "#f24ae4",
       "focus": 50,
       "lift": 3
     }
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 1.61,
+      "end": 4.86,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I spy-I-I-I-I, With my little eye",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 5.04,
+      "end": 8.44,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I spy-I-I-I-I, With my little eye",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 9.44,
+      "end": 11.9,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          9.52,
+          11.94
+        ]
+      ],
+      "original": "갑자기 내게 생긴 능력",
+      "romanization": "gapjagi naege saenggin neungnyeok",
+      "english": "Out of nowhere, got this superpower",
+      "adlib": false
+    },
+    {
+      "start": 12.42,
+      "end": 15.34,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          12.37,
+          15.34
+        ]
+      ],
+      "original": "내 주위에서 널 바로 찾아내",
+      "romanization": "nae juwieseo neol baro chajanae",
+      "english": "I can spot you right away",
+      "adlib": false
+    },
+    {
+      "start": 15.78,
+      "end": 18.61,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          15.76,
+          18.64
+        ]
+      ],
+      "original": "그러다 눈이 너와 마주치면",
+      "romanization": "geureoda nuni neowa majuchimyeon",
+      "english": "And when our eyes meet",
+      "adlib": false
+    },
+    {
+      "start": 18.77,
+      "end": 22.14,
+      "members": [
+        "SION"
+      ],
+      "voice": [
+        [
+          18.77,
+          22.14
+        ]
+      ],
+      "original": "웃으며 Look at me, And I look at you, And you look away",
+      "romanization": "useumyeo look at me, and i look at you, and you look away",
+      "english": "With a smile, Look at me, And I look at you, And you look away",
+      "adlib": false
+    },
+    {
+      "start": 22.52,
+      "end": 25.49,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          22.61,
+          24.62
+        ],
+        [
+          24.3,
+          25.45,
+          [
+            "RIKU"
+          ]
+        ]
+      ],
+      "original": "Remember **작은 순간도@RIKU**",
+      "romanization": "remember **jageun sungando@RIKU**",
+      "english": "Remember, **Every little moment@RIKU**",
+      "adlib": false
+    },
+    {
+      "start": 25.93,
+      "end": 28.7,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          25.94,
+          28.02
+        ],
+        [
+          27.69,
+          28.85,
+          [
+            "RIKU"
+          ]
+        ]
+      ],
+      "original": "I wonder **넌 잘 몰라도@RIKU**",
+      "romanization": "i wonder **neon jal mollado@RIKU**",
+      "english": "I wonder, **You may not even know@RIKU**",
+      "adlib": false
+    },
+    {
+      "start": 28.72,
+      "end": 32.11,
+      "members": [
+        "SAKUYA"
+      ],
+      "voice": [
+        [
+          28.78,
+          29.07
+        ],
+        [
+          29.22,
+          29.5
+        ],
+        [
+          29.65,
+          29.93
+        ],
+        [
+          30.09,
+          30.36
+        ],
+        [
+          30.49,
+          32.16
+        ]
+      ],
+      "original": "그림자도 부러워서 난",
+      "romanization": "geurimjado bureowoseo nan",
+      "english": "Even your shadow makes me jealous",
+      "adlib": false
+    },
+    {
+      "start": 32.13,
+      "end": 35.44,
+      "members": [
+        "RYO"
+      ],
+      "voice": [
+        [
+          32.06,
+          34.34
+        ],
+        [
+          34.67,
+          35.58
+        ]
+      ],
+      "original": "태양을 가려봐, Ya ya ya, I’m",
+      "romanization": "taeyangeul garyeobwa, ya ya ya i’m",
+      "english": "So I block out the sun, Ya ya ya, I’m",
+      "adlib": false
+    },
+    {
+      "start": 35.46,
+      "end": 38.09,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "너란 애가 궁금해, 모든 느낌표 다",
+      "romanization": "neoran aega gunggeumhae, modeun neukkimpyo da",
+      "english": "Wanna figure you out, Every exclamation point",
+      "adlib": false
+    },
+    {
+      "start": 0.72,
+      "end": 1.47,
+      "members": [
+        "RIKU"
+      ],
+      "voice": [
+        [
+          0.77,
+          1.48
+        ]
+      ],
+      "original": "",
+      "romanization": "(Eh uhm)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 38.02,
+      "end": 38.89,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "(I spy)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          38.04,
+          38.94
+        ]
+      ]
+    },
+    {
+      "start": 38.81,
+      "end": 41.39,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "손끝까지 두근대, 감춘 물음표 다",
+      "romanization": "sonkkeutkkaji dugeundae, gamchun mureumpyo da",
+      "english": "Buzzing right down to my fingertips, Every question mark you hide",
+      "adlib": false
+    },
+    {
+      "start": 41.41,
+      "end": 42.3,
+      "members": [
+        "RYO"
+      ],
+      "voice": [
+        [
+          41.44,
+          42.33
+        ]
+      ],
+      "original": "",
+      "romanization": "(I spy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 42.17,
+      "end": 44.79,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "숨겨 왔던 비밀들, 나도 말해 줄게",
+      "romanization": "sumgyeo watdeon bimildeul, nado malhae julge",
+      "english": "All the secrets I’ve been hiding, I’ll tell you mine too",
+      "adlib": false
+    },
+    {
+      "start": 44.77,
+      "end": 45.73,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          44.81,
+          45.77
+        ]
+      ],
+      "original": "",
+      "romanization": "(All night)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 45.76,
+      "end": 48.79,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          45.82,
+          47.33
+        ],
+        [
+          47.33,
+          49,
+          [
+            "SION"
+          ]
+        ]
+      ],
+      "original": "내 맘에 들어와, **I-I-I spy, I spy@SION**",
+      "romanization": "nae mame deureowa, **i-i-i spy i spy@SION**",
+      "english": "Step into my heart, **I-I-I spy, I spy@SION**",
+      "adlib": false
+    },
+    {
+      "start": 48.85,
+      "end": 54.69,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I see you, I see you, I see you, I need you, I need you, I need you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 55.58,
+      "end": 58.86,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I feel you, I feel you, I feel you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 59.3,
+      "end": 62.47,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          59.3,
+          60.86
+        ],
+        [
+          60.77,
+          62.56,
+          [
+            "SAKUYA"
+          ]
+        ]
+      ],
+      "original": "내 세상으로 와, **I-I-I spy, I spy@SAKUYA**",
+      "romanization": "nae sesangeuro wa, **i-i-i spy i spy@SAKUYA**",
+      "english": "Come into my world, **I-I-I spy, I spy@SAKUYA**",
+      "adlib": false
+    },
+    {
+      "start": 62.58,
+      "end": 66.34,
+      "members": [
+        "SION"
+      ],
+      "voice": [
+        [
+          62.57,
+          63.02
+        ],
+        [
+          63.2,
+          63.81
+        ],
+        [
+          63.98,
+          66.36
+        ]
+      ],
+      "original": "Ah ah ah, 요즘에 맘에 드는 건 뭐야",
+      "romanization": "ah ah ah, yojeume mame deuneun geon mwoya",
+      "english": "Ah ah ah, What are you into these days?",
+      "adlib": false
+    },
+    {
+      "start": 66.52,
+      "end": 69.74,
+      "members": [
+        "RYO"
+      ],
+      "voice": [
+        [
+          66.55,
+          67.18
+        ],
+        [
+          67.37,
+          69.75
+        ]
+      ],
+      "original": "Ah ah, 지금 무슨 생각 중인 거야",
+      "romanization": "ah ah, jigeum museun saenggak jungin geoya",
+      "english": "Ah ah, What’s running through your mind?",
+      "adlib": false
+    },
+    {
+      "start": 69.92,
+      "end": 75.15,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          69.88,
+          70.53
+        ],
+        [
+          70.74,
+          73.2
+        ],
+        [
+          73.35,
+          73.82
+        ],
+        [
+          73.97,
+          74.42
+        ],
+        [
+          74.59,
+          75.15
+        ]
+      ],
+      "original": "Ah ah, 혹시 너도 잠 못 드는 밤이야?",
+      "romanization": "ah ah, hoksi neodo jam mot deuneun bamiya?",
+      "english": "Ah ah, Are you wide awake tonight too?",
+      "adlib": false
+    },
+    {
+      "start": 70.36,
+      "end": 70.99,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          70.39,
+          71
+        ]
+      ],
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 75.2,
+      "end": 75.67,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(woo)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          75.22,
+          75.72
+        ]
+      ]
+    },
+    {
+      "start": 75.7,
+      "end": 76.05,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Hey)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          75.63,
+          76.01
+        ]
+      ]
+    },
+    {
+      "start": 76.04,
+      "end": 77.62,
+      "members": [
+        "RIKU"
+      ],
+      "voice": [
+        [
+          76.07,
+          77.72
+        ]
+      ],
+      "original": "너의 맘 한 칸 숨겨진 공간",
+      "romanization": "neoui mam han kan sumgyeojin gonggan",
+      "english": "There’s a hidden room inside your heart",
+      "adlib": false
+    },
+    {
+      "start": 77.73,
+      "end": 80.62,
+      "members": [
+        "RIKU"
+      ],
+      "voice": [
+        [
+          77.75,
+          80.67
+        ]
+      ],
+      "original": "누가 있을까 혹시 나일까, 궁금해 Password password",
+      "romanization": "nuga isseulkka hoksi nailkka, gunggeumhae password password",
+      "english": "Who’s in there, could it be me?, I wanna know Password password",
+      "adlib": false
+    },
+    {
+      "start": 80.47,
+      "end": 82.44,
+      "members": [
+        "SION"
+      ],
+      "voice": [
+        [
+          80.54,
+          82.42
+        ]
+      ],
+      "original": "(Yeah 맘을 열어, yeah 맘을 열어, huh)",
+      "romanization": "(yeah mameul yeoreo, yeah mameul yeoreo huh)",
+      "english": "(Yeah open your heart, yeah open your heart, huh)",
+      "adlib": true
+    },
+    {
+      "start": 82.74,
+      "end": 86.02,
+      "members": [
+        "SAKUYA"
+      ],
+      "voice": [
+        [
+          82.84,
+          86.15
+        ]
+      ],
+      "original": "Tune the radar 널 찾아, 귀 쫑긋 세워 모두 다",
+      "romanization": "tune the radar neol chaja, gwi jjonggeut sewo modu da",
+      "english": "Tune the radar, searching for you, Dialed in, I catch it all",
+      "adlib": false
+    },
+    {
+      "start": 86.16,
+      "end": 89.18,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          86.19,
+          89.19
+        ]
+      ],
+      "original": "그 방향을 따라가면 나의 세계야",
+      "romanization": "geu banghyangeul ttaragamyeon naui segyeya",
+      "english": "Follow the signal, it leads to my world",
+      "adlib": false
+    },
+    {
+      "start": 89.56,
+      "end": 92.12,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "너란 애가 궁금해, 모든 느낌표 다",
+      "romanization": "neoran aega gunggeumhae, modeun neukkimpyo da",
+      "english": "Wanna figure you out, Every exclamation point",
+      "adlib": false
+    },
+    {
+      "start": 92.11,
+      "end": 92.98,
+      "members": [
+        "RYO"
+      ],
+      "voice": [
+        [
+          92.12,
+          93.04
+        ]
+      ],
+      "original": "",
+      "romanization": "(I spy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 92.9,
+      "end": 95.45,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "손끝까지 두근대, 감춘 물음표 다",
+      "romanization": "sonkkeutkkaji dugeundae, gamchun mureumpyo da",
+      "english": "Buzzing right down to my fingertips, Every question mark you hide",
+      "adlib": false
+    },
+    {
+      "start": 95.49,
+      "end": 96.36,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          95.51,
+          96.38
+        ]
+      ],
+      "original": "",
+      "romanization": "(I spy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 96.29,
+      "end": 98.85,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "숨겨 왔던 비밀들, 나도 말해 줄게",
+      "romanization": "sumgyeo watdeon bimildeul, nado malhae julge",
+      "english": "All the secrets I’ve been hiding, I’ll tell you mine too",
+      "adlib": false
+    },
+    {
+      "start": 98.89,
+      "end": 99.84,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          98.91,
+          99.87
+        ]
+      ],
+      "original": "",
+      "romanization": "(All night)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 112.84,
+      "end": 113.71,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "(ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          112.8,
+          113.88
+        ]
+      ]
+    },
+    {
+      "start": 99.86,
+      "end": 102.8,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          99.89,
+          101.42
+        ],
+        [
+          101.4,
+          103.12,
+          [
+            "RIKU"
+          ]
+        ]
+      ],
+      "original": "내 맘에 들어와, **I-I-I spy, I spy@RIKU**",
+      "romanization": "nae mame deureowa, **i-i-i spy i spy@RIKU**",
+      "english": "Step into my heart, **I-I-I spy, I spy@RIKU**",
+      "adlib": false
+    },
+    {
+      "start": 102.96,
+      "end": 108.83,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I see you, I see you, I see you, I need you, I need you, I need you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 109.59,
+      "end": 112.85,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I feel you, I feel you, I feel you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 113.38,
+      "end": 116.55,
+      "members": [
+        "RYO"
+      ],
+      "voice": [
+        [
+          113.43,
+          114.96
+        ],
+        [
+          114.91,
+          116.6
+        ]
+      ],
+      "original": "내 세상으로 와, **I-I-I spy, I spy@SION**",
+      "romanization": "nae sesangeuro wa, **i-i-i spy, i spy@SION**",
+      "english": "Come into my world, **I-I-I spy, I spy@SION**",
+      "adlib": false
+    },
+    {
+      "start": 117.84,
+      "end": 125.89,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          117.97,
+          125.94
+        ]
+      ],
+      "original": "너를 알아 갈수록 Ooh",
+      "romanization": "neoreul ara galsurok ooh",
+      "english": "The more I get to know you Ooh",
+      "adlib": false
+    },
+    {
+      "start": 126.12,
+      "end": 131.97,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          126.2,
+          131.94
+        ]
+      ],
+      "original": "내 세계가 커져가",
+      "romanization": "nae segyega keojyeoga",
+      "english": "My world keeps growing",
+      "adlib": false
+    },
+    {
+      "start": 132.23,
+      "end": 142.24,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "커져가 커져가 ah",
+      "romanization": "keojyeoga keojyeoga ah",
+      "english": "Growing growing ah",
+      "adlib": false,
+      "voice": [
+        [
+          132.17,
+          135.28
+        ],
+        [
+          135.57,
+          138.94
+        ],
+        [
+          139.1,
+          142.07
+        ]
+      ]
+    },
+    {
+      "start": 129.25,
+      "end": 132.45,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "(I spy-I-I-I-I with my little eye)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 132.62,
+      "end": 135.84,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "(I spy-I-I-I-I with my little eye)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 135.96,
+      "end": 139.15,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "(I spy-I-I-I-I with my little eye)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 139.27,
+      "end": 142.72,
       "members": [],
       "original": "",
-      "romanization": "",
+      "romanization": "(I spy-I-I-I-I with my little eye)",
       "english": "",
-      "adlib": ""
+      "adlib": true
+    },
+    {
+      "start": 142.78,
+      "end": 147.02,
+      "members": [
+        "RYO"
+      ],
+      "voice": [
+        [
+          142.76,
+          143.5
+        ],
+        [
+          143.68,
+          144.45
+        ],
+        [
+          144.47,
+          145.86
+        ],
+        [
+          145.98,
+          146.99
+        ]
+      ],
+      "original": "‘Cause I’m, 너란 애가 궁금해, 모든 느낌표 다",
+      "romanization": "’cause i’m, neoran aega gunggeumhae, modeun neukkimpyo da",
+      "english": "‘Cause I’m, Wanna figure you out, Every exclamation point",
+      "adlib": false
+    },
+    {
+      "start": 146.94,
+      "end": 147.87,
+      "members": [
+        "RYO"
+      ],
+      "voice": [
+        [
+          146.96,
+          147.92
+        ]
+      ],
+      "original": "",
+      "romanization": "(I spy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 147.78,
+      "end": 150.4,
+      "members": [
+        "SION"
+      ],
+      "voice": [
+        [
+          147.82,
+          149.27
+        ],
+        [
+          149.39,
+          150.35
+        ]
+      ],
+      "original": "손끝까지 두근대, 감춘 물음표 다",
+      "romanization": "sonkkeutkkaji dugeundae, gamchun mureumpyo da",
+      "english": "Buzzing right down to my fingertips, Every question mark you hide",
+      "adlib": false
+    },
+    {
+      "start": 150.35,
+      "end": 151.17,
+      "members": [
+        "SION"
+      ],
+      "voice": [
+        [
+          150.31,
+          151.27
+        ]
+      ],
+      "original": "",
+      "romanization": "(I spy)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 151.23,
+      "end": 153.87,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          151.14,
+          152.59
+        ],
+        [
+          152.7,
+          153.74
+        ]
+      ],
+      "original": "숨겨 왔던 비밀들, 나도 말해 줄게",
+      "romanization": "sumgyeo watdeon bimildeul, nado malhae julge",
+      "english": "All the secrets I’ve been hiding, I’ll tell you mine too",
+      "adlib": false
+    },
+    {
+      "start": 153.77,
+      "end": 154.7,
+      "members": [
+        "YUSHI"
+      ],
+      "voice": [
+        [
+          153.74,
+          154.73
+        ]
+      ],
+      "original": "",
+      "romanization": "(All night)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 157.77,
+      "end": 163.19,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(See you)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          157.97,
+          163.18
+        ]
+      ]
+    },
+    {
+      "start": 163.89,
+      "end": 165.39,
+      "members": [
+        "RYO"
+      ],
+      "original": "",
+      "romanization": "(Need you)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          163.79,
+          165.09
+        ]
+      ]
+    },
+    {
+      "start": 167.75,
+      "end": 168.68,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "(Ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          167.68,
+          168.75
+        ]
+      ]
+    },
+    {
+      "start": 154.69,
+      "end": 157.61,
+      "members": [
+        "JAEHEE"
+      ],
+      "voice": [
+        [
+          154.74,
+          156.27
+        ],
+        [
+          156.23,
+          157.97,
+          [
+            "SAKUYA"
+          ]
+        ]
+      ],
+      "original": "내 맘에 들어와, **I-I-I spy, I spy@SAKUYA**",
+      "romanization": "nae mame deureowa, **i-i-i spy i spy@SAKUYA**",
+      "english": "Step into my heart, **I-I-I spy, I spy@SAKUYA**",
+      "adlib": false
+    },
+    {
+      "start": 157.9,
+      "end": 163.76,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I see you, I see you, I see you, I need you, I need you, I need you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 164.55,
+      "end": 167.76,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I feel you, I feel you, I feel you",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 168.31,
+      "end": 169.67,
+      "members": [
+        "SION"
+      ],
+      "voice": [
+        [
+          168.25,
+          169.8
+        ]
+      ],
+      "original": "내 세상으로 와",
+      "romanization": "nae sesangeuro wa",
+      "english": "Come into my world",
+      "adlib": false
+    },
+    {
+      "start": 169.81,
+      "end": 173.02,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I spy-I-I-I-I, With my little eye",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 173.16,
+      "end": 176.36,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I spy-I-I-I-I, With my little eye",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 176.52,
+      "end": 179.79,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I spy-I-I-I-I, With my little eye",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 179.92,
+      "end": 183.36,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "I spy-I-I-I-I, With my little eye",
+      "english": "",
+      "adlib": false
     }
   ]
 }
