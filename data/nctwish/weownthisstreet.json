@@ -1294,5 +1294,6 @@
   "instrumental": "audio/nctwish_weownthisstreet_inst.mp3",
   "instrumentalStart": 55.64175814615385,
   "instrumentalEnd": 80.00596532564103,
-  "instrumentalFade": true
+  "instrumentalFade": true,
+  "cover": "covers/nctwish_weownthisstreet.jpg"
 }
