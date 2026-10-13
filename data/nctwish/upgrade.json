@@ -1203,6 +1203,7 @@
   ],
   "audio": "audio/nctwish_upgrade.mp3",
   "instrumental": "audio/nctwish_upgrade_inst.mp3",
-  "instrumentalStart": 41.69071263028846,
-  "instrumentalEnd": 169.038367
+  "instrumentalStart": 40.82384920977564,
+  "instrumentalEnd": 169.038367,
+  "instrumentalFade": true
 }
