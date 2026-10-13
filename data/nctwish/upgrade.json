@@ -2,7 +2,7 @@
   "group": "NCT WISH",
   "song": "UPGRADE",
   "video": "videos/nctwish_upgrade_mv6vdf9c.mp4",
-  "duration": 169.038367,
+  "duration": 169.45,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -1129,9 +1129,9 @@
       "members": [
         "YUSHI"
       ],
-      "original": "뚫고 나와, 한계를 **뒤집어@YUSHI,SION**",
-      "romanization": "ttulko nawa, hangyereul **dwijibeo@YUSHI,SION**",
-      "english": "Breaking through, Turning our limits **upside down@YUSHI,SION**",
+      "original": "뚫고 나와, **한계를@SION** **뒤집어@YUSHI,SION**",
+      "romanization": "ttulko nawa, **hangyereul@SION** **dwijibeo@YUSHI,SION**",
+      "english": "Breaking through, **Turning our limits@SION** **upside down@YUSHI,SION**",
       "adlib": false,
       "voice": [
         [
