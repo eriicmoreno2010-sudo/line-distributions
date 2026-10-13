@@ -257,23 +257,6 @@
       ]
     },
     {
-      "start": 62.74,
-      "end": 63.23,
-      "members": [
-        "YUSHI"
-      ],
-      "original": "",
-      "romanization": "(I do)",
-      "english": "",
-      "adlib": true,
-      "voice": [
-        [
-          62.72,
-          63.28
-        ]
-      ]
-    },
-    {
       "start": 63.15,
       "end": 63.74,
       "members": [
@@ -430,40 +413,6 @@
         [
           64.58,
           64.95
-        ]
-      ]
-    },
-    {
-      "start": 85.46,
-      "end": 86.19,
-      "members": [
-        "RIKU"
-      ],
-      "original": "(높이)",
-      "romanization": "(nopi)",
-      "english": "(Higher)",
-      "adlib": true,
-      "voice": [
-        [
-          85.39,
-          86.09
-        ]
-      ]
-    },
-    {
-      "start": 86.86,
-      "end": 87.43,
-      "members": [
-        "RIKU"
-      ],
-      "original": "",
-      "romanization": "(Yeah)",
-      "english": "",
-      "adlib": true,
-      "voice": [
-        [
-          86.71,
-          87.43
         ]
       ]
     },
