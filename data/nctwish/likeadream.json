@@ -3,7 +3,7 @@
   "song": "꿈결 Like A Dream",
   "video": "",
   "duration": 0,
-  "theme": "dark",
+  "theme": "light",
   "subunit": false,
   "layout": "classic",
   "members": [
@@ -54,7 +54,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "RYO"
+      ],
       "original": "빤히 날 또 바라볼 텐데",
       "romanization": "ppanhi nal tto barabol tende",
       "english": "You'll be staring at me again",
@@ -63,7 +65,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "RYO"
+      ],
       "original": "괜히 눈을 감고 그려보게 돼",
       "romanization": "gwaenhi nuneul gamgo geuryeoboge dwae",
       "english": "For no reason, I close my eyes and imagine it",
@@ -72,25 +76,20 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "멈추지 않을 Melodies",
-      "romanization": "meomchuji aneul melodies",
-      "english": "Melodies that will never stop",
+      "members": [
+        "YUSHI"
+      ],
+      "original": "멈추지 않을 Melodies, 선명히 번진 Memories",
+      "romanization": "meomchuji aneul melodies, seonmyeonghi beonjin memories",
+      "english": "Melodies that will never stop, Memories spreading vividly",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "선명히 번진 Memories",
-      "romanization": "seonmyeonghi beonjin memories",
-      "english": "Memories spreading vividly",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "YUSHI"
+      ],
       "original": "소중하게 담아둘래",
       "romanization": "sojunghage damadullae",
       "english": "I'll keep them close to my heart",
@@ -99,7 +98,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "RIKU"
+      ],
       "original": "All the time 떠올리면 웃게 돼",
       "romanization": "all the time tteoollimyeon utge dwae",
       "english": "Whenever I think of them, I smile all the time",
@@ -108,187 +109,108 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "네 하루 맨 뒷장의 맘이",
-      "romanization": "ne haru maen dwitjangui mami",
-      "english": "When the feelings on the last page of your day",
+      "members": [
+        "SION"
+      ],
+      "original": "네 하루 맨 뒷장의 맘이, 무거운 숨을 삼킬 때",
+      "romanization": "ne haru maen dwitjangui mami, mugeoun sumeul samkil ttae",
+      "english": "When the feelings on the last page of your day, Swallow a heavy sigh",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "무거운 숨을 삼킬 때",
-      "romanization": "mugeoun sumeul samkil ttae",
-      "english": "Swallow a heavy sigh",
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "구겨진 밤 나의 위로, 네 작은 두 손에 전해지게",
+      "romanization": "gugyeojin bam naui wiro, ne jageun du sone jeonhaejige",
+      "english": "May my comfort on a crumpled night, Reach your little hands",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "구겨진 밤 나의 위로",
-      "romanization": "gugyeojin bam naui wiro",
-      "english": "May my comfort on a crumpled night",
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "We go on and on and on, 베개 맡에, 깊은 꿈을 둘게",
+      "romanization": "we go on and on and on, begae mate, gipeun kkumeul dulge",
+      "english": "We go on and on and on, By your pillow, I'll leave a deep dream",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "네 작은 두 손에 전해지게",
-      "romanization": "ne jageun du sone jeonhaejige",
-      "english": "Reach your little hands",
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Like a dream, 함께 헤매일, 시간의 길가에",
+      "romanization": "like a dream, hamkke hemaeil, siganui gilgae",
+      "english": "Like a dream, Wandering together, Along the roads of time",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "We go on and on and on",
-      "romanization": "we go on and on and on",
-      "english": "We go on and on and on",
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "춤추듯 발을 맞추는, 너와 나",
+      "romanization": "chumchudeut bareul matchuneun, neowa na",
+      "english": "Matching our steps as if we're dancing, You and I",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "베개 맡에",
-      "romanization": "begae mate",
-      "english": "By your pillow",
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "둘만 아는 Passage, 그 안에 새겨둔 Message",
+      "romanization": "dulman aneun passage, geu ane saegyeodun message",
+      "english": "A passage only we know, A message engraved inside it",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "깊은 꿈을 둘게",
-      "romanization": "gipeun kkumeul dulge",
-      "english": "I'll leave a deep dream",
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "네 두 눈 위로 내린 소원들이, 가만히 널 비춰 주길",
+      "romanization": "ne du nun wiro naerin sowondeuri, gamanhi neol bichwo jugil",
+      "english": "May the wishes falling over your eyes, Quietly shine upon you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Like a dream",
-      "romanization": "like a dream",
-      "english": "Like a dream",
+      "members": [
+        "YUSHI"
+      ],
+      "original": "어느새 서로를 닮은, 너와 나",
+      "romanization": "eoneusae seororeul daleun, neowa na",
+      "english": "Before we know it, we've come to resemble each other, You and I",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "함께 헤매일",
-      "romanization": "hamkke hemaeil",
-      "english": "Wandering together",
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "어디로든 가자 다 괜찮아, 당연한 듯 같은 걸 바라봐",
+      "romanization": "eodirodeun gaja da gwaenchana, dangyeonhan deut gateun geol barabwa",
+      "english": "Let's go anywhere, it's all okay, We naturally wish for the same things",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "시간의 길가에",
-      "romanization": "siganui gilgae",
-      "english": "Along the roads of time",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "춤추듯 발을 맞추는",
-      "romanization": "chumchudeut bareul matchuneun",
-      "english": "Matching our steps as if we're dancing",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너와 나",
-      "romanization": "neowa na",
-      "english": "You and I",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "둘만 아는 Passage",
-      "romanization": "dulman aneun passage",
-      "english": "A passage only we know",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그 안에 새겨둔 Message",
-      "romanization": "geu ane saegyeodun message",
-      "english": "A message engraved inside it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네 두 눈 위로 내린 소원들이",
-      "romanization": "ne du nun wiro naerin sowondeuri",
-      "english": "May the wishes falling over your eyes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "가만히 널 비춰 주길",
-      "romanization": "gamanhi neol bichwo jugil",
-      "english": "Quietly shine upon you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어느새 서로를 닮은",
-      "romanization": "eoneusae seororeul daleun",
-      "english": "Before we know it, we've come to resemble each other",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너와 나",
-      "romanization": "neowa na",
-      "english": "You and I",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어디로든 가자 다 괜찮아",
-      "romanization": "eodirodeun gaja da gwaenchana",
-      "english": "Let's go anywhere, it's all okay",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "당연한 듯 같은 걸 바라봐",
-      "romanization": "dangyeonhan deut gateun geol barabwa",
-      "english": "We naturally wish for the same things",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "SAKUYA"
+      ],
       "original": "네 손을 잡고 다시 걸어보면 마치",
       "romanization": "ne soneul japgo dasi georeobomyeon machi",
       "english": "When I hold your hand and start walking again, it's like",
@@ -297,7 +219,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "SAKUYA"
+      ],
       "original": "왈츠처럼 넌 자꾸 날 이끄는 걸",
       "romanization": "walcheucheoreom neon jakku nal ikkeuneun geol",
       "english": "You keep leading me like a waltz",
@@ -306,281 +230,247 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "지친 맘이, 내 긴 밤이",
-      "romanization": "jichin mami, nae gin bami",
-      "english": "My tired heart, my long night",
+      "members": [
+        "SION"
+      ],
+      "original": "지친 맘이, 내 긴 밤이, 아팠던 하루 끝이, 벅차 때론",
+      "romanization": "jichin mami, nae gin bami, apatdeon haru kkeuchi, beokcha ttaeron",
+      "english": "My tired heart, my long night, The end of a painful day, Sometimes it's overwhelming",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "RIKU"
+      ],
+      "original": "But I was never alone alone, 겁날 게 없어, 네가 있을 테니까",
+      "romanization": "but i was never alone alone, geomnal ge eopseo, nega isseul tenikka",
+      "english": "But I was never alone alone, There's nothing to be afraid of, Because you'll be there",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "잠에 들면, 같은 꿈을 꿔 매일 With you",
+      "romanization": "jame deulmyeon, gateun kkumeul kkwo maeil with you",
+      "english": "When I fall asleep, I dream the same dream every day with you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "RYO"
+      ],
+      "original": "항상 바라, 널 수놓은 내일에",
+      "romanization": "hangsang bara, neul sunoeun naeire",
+      "english": "I always look forward, To the tomorrows I've embroidered with you",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "We go on and on and on, 오랜 꿈에, 너를 데려갈게",
+      "romanization": "we go on and on and on, oraen kkume, neoreul deryeogalge",
+      "english": "We go on and on and on, Into an old dream, I'll take you with me",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Like a dream, 함께 헤매일, 시간의 길가에",
+      "romanization": "like a dream, hamkke hemaeil, siganui gilgae",
+      "english": "Like a dream, Wandering together, Along the roads of time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "춤추듯 발을 맞추는, 너와 나",
+      "romanization": "chumchudeut bareul matchuneun, neowa na",
+      "english": "Matching our steps as if we're dancing, You and I",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
       "members": [],
-      "original": "아팠던 하루 끝이",
-      "romanization": "apatdeon haru kkeuchi",
-      "english": "The end of a painful day",
+      "original": "둘만 아는 Passage, 그 안에 새겨둔 Message",
+      "romanization": "dulman aneun passage, geu ane saegyeodun message",
+      "english": "A passage only we know, A message engraved inside it",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "벅차 때론",
-      "romanization": "beokcha ttaeron",
-      "english": "Sometimes it's overwhelming",
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "네 두 눈 위로 내린 소원들이, 가만히 널 비춰 주길",
+      "romanization": "ne du nun wiro naerin sowondeuri, gamanhi neol bichwo jugil",
+      "english": "May the wishes falling over your eyes, Quietly shine upon you",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "But I was never alone alone",
-      "romanization": "but i was never alone alone",
-      "english": "But I was never alone alone",
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "어느새 서로를 닮은, 너와 나",
+      "romanization": "eoneusae seororeul daleun, neowa na",
+      "english": "Before we know it, we've come to resemble each other, You and I",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "겁날 게 없어",
-      "romanization": "geomnal ge eopseo",
-      "english": "There's nothing to be afraid of",
+      "members": [
+        "RYO"
+      ],
+      "original": "너의 맘의 파동, 그 박에 맞게 Step on",
+      "romanization": "neoui mamui padong, geu bage matge step on",
+      "english": "The waves of your heart, Step on, matching their rhythm",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "네가 있을 테니까",
-      "romanization": "nega isseul tenikka",
-      "english": "Because you'll be there",
+      "members": [
+        "YUSHI"
+      ],
+      "original": "손을 놓지 않을 테니, 그저 날 바라만 봐",
+      "romanization": "soneul nochi aneul teni, geujeo nal baraman bwa",
+      "english": "I won't let go of your hand, Just keep looking at me",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "잠에 들면",
-      "romanization": "jame deulmyeon",
-      "english": "When I fall asleep",
+      "members": [
+        "SION"
+      ],
+      "original": "수없이 내 꿈에 온 너, 날아드는 Butterflies",
+      "romanization": "sueopsi nae kkume on neo, naradeuneun butterflies",
+      "english": "You, who came into my dreams countless times, Butterflies flying toward me",
       "adlib": false
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "같은 꿈을 꿔 매일 With you",
-      "romanization": "gateun kkumeul kkwo maeil with you",
-      "english": "I dream the same dream every day with you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "항상 바라",
-      "romanization": "hangsang bara",
-      "english": "I always look forward",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "널 수놓은 내일에",
-      "romanization": "neul sunoeun naeire",
-      "english": "To the tomorrows I've embroidered with you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We go on and on and on",
-      "romanization": "we go on and on and on",
-      "english": "We go on and on and on",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "오랜 꿈에",
-      "romanization": "oraen kkume",
-      "english": "Into an old dream",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너를 데려갈게",
-      "romanization": "neoreul deryeogalge",
-      "english": "I'll take you with me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Like a dream",
-      "romanization": "like a dream",
-      "english": "Like a dream",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "함께 헤매일",
-      "romanization": "hamkke hemaeil",
-      "english": "Wandering together",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "시간의 길가에",
-      "romanization": "siganui gilgae",
-      "english": "Along the roads of time",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "춤추듯 발을 맞추는",
-      "romanization": "chumchudeut bareul matchuneun",
-      "english": "Matching our steps as if we're dancing",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너와 나",
-      "romanization": "neowa na",
-      "english": "You and I",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "둘만 아는 Passage",
-      "romanization": "dulman aneun passage",
-      "english": "A passage only we know",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그 안에 새겨둔 Message",
-      "romanization": "geu ane saegyeodun message",
-      "english": "A message engraved inside it",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네 두 눈 위로 내린 소원들이",
-      "romanization": "ne du nun wiro naerin sowondeuri",
-      "english": "May the wishes falling over your eyes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "가만히 널 비춰 주길",
-      "romanization": "gamanhi neol bichwo jugil",
-      "english": "Quietly shine upon you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어느새 서로를 닮은",
-      "romanization": "eoneusae seororeul daleun",
-      "english": "Before we know it, we've come to resemble each other",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너와 나",
-      "romanization": "neowa na",
-      "english": "You and I",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너의 맘의 파동",
-      "romanization": "neoui mamui padong",
-      "english": "The waves of your heart",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그 박에 맞게 Step on",
-      "romanization": "geu bage matge step on",
-      "english": "Step on, matching their rhythm",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "손을 놓지 않을 테니",
-      "romanization": "soneul nochi aneul teni",
-      "english": "I won't let go of your hand",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그저 날 바라만 봐",
-      "romanization": "geujeo nal baraman bwa",
-      "english": "Just keep looking at me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "수없이 내 꿈에 온 너",
-      "romanization": "sueopsi nae kkume on neo",
-      "english": "You, who came into my dreams countless times",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "날아드는 Butterflies",
-      "romanization": "naradeuneun butterflies",
-      "english": "Butterflies flying toward me",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "members": [
+        "SION"
+      ],
       "original": "매번 널 알아볼게",
       "romanization": "maebeon neol arabolge",
       "english": "I'll recognize you every time",
       "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "RIKU"
+      ],
+      "original": "(맘이)",
+      "romanization": "(mami)",
+      "english": "(Heart)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "RYO"
+      ],
+      "original": "",
+      "romanization": "(Oh woah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SION"
+      ],
+      "original": "",
+      "romanization": "(Oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "(Oh oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SION"
+      ],
+      "original": "(잠에)",
+      "romanization": "(jame)",
+      "english": "(When I)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SION"
+      ],
+      "original": "(들면)",
+      "romanization": "(deulmyeon)",
+      "english": "(Fall asleep)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(항상)",
+      "romanization": "(hangsang)",
+      "english": "(Always)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(바라)",
+      "romanization": "(bara)",
+      "english": "(Look forward)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(데려갈게)",
+      "romanization": "(deryogalge)",
+      "english": "(Will take you)",
+      "adlib": true
     }
   ],
   "audio": "audio/nctwish_likeadream.mp3"
