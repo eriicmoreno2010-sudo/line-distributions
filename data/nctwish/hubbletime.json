@@ -54,13 +54,606 @@
     {
       "start": 0,
       "end": 0,
-      "members": [
-        "SION"
-      ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "members": [],
+      "original": "세어 봐, 이 빛이",
+      "romanization": "seeo bwa, i bichi",
+      "english": "Count it, this light",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "여기 온 만큼의 에너지",
+      "romanization": "yeogi on mankeumui eneoji",
+      "english": "The energy that has reached here",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "너와 나, 가지런히",
+      "romanization": "neowa na, gajireonhi",
+      "english": "You and I, side by side",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "커진 사랑의 크기",
+      "romanization": "keojin sarangui keugi",
+      "english": "The size of our growing love",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그 속도는 똑같음.",
+      "romanization": "geu sokdoneun ttokgateum.",
+      "english": "Its speed stays the same.",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "증폭의 공식은 My attitude",
+      "romanization": "jeungpogui gongsigeun my attitude",
+      "english": "The formula for amplification is My attitude",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "What you do to me, baby?",
+      "romanization": "what you do to me, baby?",
+      "english": "What you do to me, baby?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Baby, yeah",
+      "romanization": "baby, yeah",
+      "english": "Baby, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "처음 본 그 순간들부터",
+      "romanization": "cheoeum bon geu sungandeulbuteo",
+      "english": "From the very first moments we met",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "오늘까지 온 Infinite time",
+      "romanization": "oneulkkaji on infinite time",
+      "english": "Infinite time has brought us to today",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "좀 거창한, 또 대단한",
+      "romanization": "jom geochanghan, tto daedanhan",
+      "english": "A little grand, yet extraordinary",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 모든 변화,",
+      "romanization": "i modeun byeonhwa,",
+      "english": "All these changes,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You’re in my vision oh",
+      "romanization": "you're in my vision oh",
+      "english": "You're in my vision oh",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "나의 체감은 Universe 그 자체",
+      "romanization": "naui chegameun universe geu jache",
+      "english": "What I feel is the Universe itself",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This love runs for a Hubble time",
+      "romanization": "this love runs for a hubble time",
+      "english": "This love runs for a Hubble time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "별이 꺼지는 순간에도",
+      "romanization": "byeori kkeojineun sunganedo",
+      "english": "Even when the stars go out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "자꾸 말해 줘 “You’re mine”",
+      "romanization": "jakku malhae jwo \"you're mine\"",
+      "english": "Keep telling me \"You're mine\"",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "맞아, 영원히 너를 맴돌",
+      "romanization": "maja, yeongwonhi neoreul maemdol",
+      "english": "That's right, I'll orbit you forever",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 밤 너머",
+      "romanization": "i bam neomeo",
+      "english": "Beyond this night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세상의 저 끝까지 가 볼게",
+      "romanization": "sesangui jeo kkeutkkaji ga bolge",
+      "english": "I'll go all the way to the ends of the world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm just trying to have a good time",
+      "romanization": "i'm just trying to have a good time",
+      "english": "I'm just trying to have a good time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 내 편, Baby you are my home",
+      "romanization": "neon nae pyeon, baby you are my home",
+      "english": "You're on my side, Baby you are my home",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 큰 공간은 마치",
+      "romanization": "i keun gongganeun machi",
+      "english": "This vast space is like",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꿈이 현실이 된 듯이",
+      "romanization": "kkumi hyeonsiri doen deusi",
+      "english": "A dream that's become reality",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두 눈을 감아도 만져진",
+      "romanization": "du nuneul gamado manjyeojin",
+      "english": "A perfect world I could touch",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "완전한 세계였지",
+      "romanization": "wanjeonhan segyeyeotji",
+      "english": "Even with my eyes closed",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I want to see",
+      "romanization": "i want to see",
+      "english": "I want to see",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "that look in your eyes",
+      "romanization": "that look in your eyes",
+      "english": "that look in your eyes",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 깊이 빠져들고파",
+      "romanization": "deo gipi ppajyeodeulgopa",
+      "english": "I want to fall even deeper",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I love the way you look at me,",
+      "romanization": "i love the way you look at me,",
+      "english": "I love the way you look at me,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "baby, baby, hey",
+      "romanization": "baby, baby, hey",
+      "english": "baby, baby, hey",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "경계조차 없이 밀려난",
+      "romanization": "gyeonggyejocha eopsi millyeonan",
+      "english": "Walking toward the end of the horizon",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "지평선 그 끝을 걸어가",
+      "romanization": "jipyeongseon geu kkeuteul georeoga",
+      "english": "That stretches out without boundaries",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 커다란, 또 무한한",
+      "romanization": "i keodaran, tto muhanhan",
+      "english": "This vast and infinite",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You know it's all right",
+      "romanization": "you know it's all right",
+      "english": "You know it's all right",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This love runs for a Hubble time",
+      "romanization": "this love runs for a hubble time",
+      "english": "This love runs for a Hubble time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "별이 꺼지는 순간에도",
+      "romanization": "byeori kkeojineun sunganedo",
+      "english": "Even when the stars go out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "자꾸 말해 줘 “You’re mine”",
+      "romanization": "jakku malhae jwo \"you're mine\"",
+      "english": "Keep telling me \"You're mine\"",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "맞아, 영원히 너를 맴돌",
+      "romanization": "maja, yeongwonhi neoreul maemdol",
+      "english": "That's right, I'll orbit you forever",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 밤 너머",
+      "romanization": "i bam neomeo",
+      "english": "Beyond this night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세상의 저 끝까지 가 볼게",
+      "romanization": "sesangui jeo kkeutkkaji ga bolge",
+      "english": "I'll go all the way to the ends of the world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm just trying to have a good time",
+      "romanization": "i'm just trying to have a good time",
+      "english": "I'm just trying to have a good time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 내 편, Baby you are my home",
+      "romanization": "neon nae pyeon, baby you are my home",
+      "english": "You're on my side, Baby you are my home",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 난 세어 봐 얼마나",
+      "romanization": "dasi nan seeo bwa eolmana",
+      "english": "Once again, I count how much",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가늠할 수 있는 에너지인 걸까",
+      "romanization": "ganeumhal su inneun eneojiin geolkka",
+      "english": "Energy could we possibly measure?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I wanna see you shine,",
+      "romanization": "i wanna see you shine,",
+      "english": "I wanna see you shine,",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "wanna see your fineness",
+      "romanization": "wanna see your fineness",
+      "english": "wanna see your fineness",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "경이로움을 넘어선 Your highness",
+      "romanization": "gyeongiroumeul neomeoseon your highness",
+      "english": "Your highness, beyond all wonder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "얼마나 우린 커진 걸까",
+      "romanization": "eolmana urin keojin geolkka",
+      "english": "How much have we grown?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "You're the one, you're the truth",
+      "romanization": "you're the one, you're the truth",
+      "english": "You're the one, you're the truth",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm the fire, you're the spark",
+      "romanization": "i'm the fire, you're the spark",
+      "english": "I'm the fire, you're the spark",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This love runs for a Hubble time",
+      "romanization": "this love runs for a hubble time",
+      "english": "This love runs for a Hubble time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "별이 꺼지는 순간에도",
+      "romanization": "byeori kkeojineun sunganedo",
+      "english": "Even when the stars go out",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "자꾸 말해 줘 “You’re mine”",
+      "romanization": "jakku malhae jwo \"you're mine\"",
+      "english": "Keep telling me \"You're mine\"",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "맞아, 영원히 너를 맴돌",
+      "romanization": "maja, yeongwonhi neoreul maemdol",
+      "english": "That's right, I'll orbit you forever",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "이 밤 너머",
+      "romanization": "i bam neomeo",
+      "english": "Beyond this night",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세상의 저 끝까지 가 볼게",
+      "romanization": "sesangui jeo kkeutkkaji ga bolge",
+      "english": "I'll go all the way to the ends of the world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm just trying to have a good time",
+      "romanization": "i'm just trying to have a good time",
+      "english": "I'm just trying to have a good time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 내 편, Baby you are my home",
+      "romanization": "neon nae pyeon, baby you are my home",
+      "english": "You're on my side, Baby you are my home",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This love runs for a Hubble time",
+      "romanization": "this love runs for a hubble time",
+      "english": "This love runs for a Hubble time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "마지막 순간도 Baby",
+      "romanization": "majimak sungando baby",
+      "english": "Even in the final moment, Baby",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "자꾸 말해 줘 “You’re mine”",
+      "romanization": "jakku malhae jwo \"you're mine\"",
+      "english": "Keep telling me \"You're mine\"",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "맞아, 영원히 널 맴돌",
+      "romanization": "maja, yeongwonhi neol maemdol",
+      "english": "That's right, I'll orbit you forever",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "This love runs for a Hubble time",
+      "romanization": "this love runs for a hubble time",
+      "english": "This love runs for a Hubble time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "세상의 저 끝까지",
+      "romanization": "sesangui jeo kkeutkkaji",
+      "english": "All the way to the ends of the world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I'm just trying to have a good time",
+      "romanization": "i'm just trying to have a good time",
+      "english": "I'm just trying to have a good time",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "넌 내 편, Baby you are my home",
+      "romanization": "neon nae pyeon, baby you are my home",
+      "english": "You're on my side, Baby you are my home",
+      "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/nctwish_hubbletime.mp3"
 }
