@@ -2,7 +2,7 @@
   "group": "NCT WISH",
   "song": "Hubble Time",
   "video": "videos/nctwish_hubbletime_mv6kcada.mp4",
-  "duration": 165.041633,
+  "duration": 165.416667,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -1039,5 +1039,6 @@
   "audio": "audio/nctwish_hubbletime.mp3",
   "cover": "covers/nctwish_hubbletime.jpg",
   "npC1": "#f226ec",
-  "npC2": "#ff2e6d"
+  "npC2": "#ff2e6d",
+  "instrumental": "audio/nctwish_hubbletime_inst.mp3"
 }
