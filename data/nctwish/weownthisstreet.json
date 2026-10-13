@@ -1295,5 +1295,6 @@
   "instrumentalStart": 55.64175814615385,
   "instrumentalEnd": 80.00596532564103,
   "instrumentalFade": true,
-  "cover": "covers/nctwish_weownthisstreet.jpg"
+  "cover": "covers/nctwish_weownthisstreet.jpg",
+  "npC1": "#80eff9"
 }
