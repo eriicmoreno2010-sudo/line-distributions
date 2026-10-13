@@ -977,5 +977,6 @@
   "instrumental": "audio/nctwish_supermajor_inst.mp3",
   "instrumentalStart": 38.23701088173077,
   "instrumentalEnd": 63.26673765608974,
-  "instrumentalFade": true
+  "instrumentalFade": true,
+  "cover": "covers/nctwish_supermajor.jpg"
 }
