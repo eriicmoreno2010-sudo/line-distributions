@@ -1288,5 +1288,6 @@
       ]
     }
   ],
-  "audio": "audio/nctwish_weownthisstreet.mp3"
+  "audio": "audio/nctwish_weownthisstreet.mp3",
+  "instrumental": "audio/nctwish_weownthisstreet_inst.mp3"
 }
