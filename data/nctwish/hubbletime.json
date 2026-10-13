@@ -1040,5 +1040,8 @@
   "cover": "covers/nctwish_hubbletime.jpg",
   "npC1": "#f226ec",
   "npC2": "#ff2e6d",
-  "instrumental": "audio/nctwish_hubbletime_inst.mp3"
+  "instrumental": "audio/nctwish_hubbletime_inst.mp3",
+  "instrumentalStart": 40.70497967740385,
+  "instrumentalEnd": 165.041633,
+  "instrumentalFade": true
 }
