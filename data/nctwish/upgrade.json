@@ -1,7 +1,7 @@
 {
   "group": "NCT WISH",
   "song": "UPGRADE",
-  "video": "",
+  "video": "videos/nctwish_upgrade_mv6vdf9c.mp4",
   "duration": 169.038367,
   "theme": "dark",
   "subunit": false,
@@ -1208,5 +1208,5 @@
   "instrumentalFade": true,
   "cover": "covers/nctwish_upgrade.jpg",
   "npC1": "#6b547d",
-  "npC2": "#2e35ff"
+  "npC2": "#0d1078"
 }
