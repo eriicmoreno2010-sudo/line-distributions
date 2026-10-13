@@ -1207,5 +1207,6 @@
   "instrumentalEnd": 65.09602498413462,
   "instrumentalFade": true,
   "cover": "covers/nctwish_upgrade.jpg",
-  "npC1": "#9626f2"
+  "npC1": "#6b547d",
+  "npC2": "#2e35ff"
 }
