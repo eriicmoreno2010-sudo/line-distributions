@@ -57,10 +57,866 @@
       "members": [
         "SION"
       ],
-      "original": "",
-      "romanization": "",
-      "english": "",
-      "adlib": ""
+      "original": "Run this town",
+      "romanization": "run this town",
+      "english": "Run this town",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "복잡한 거리 위",
+      "romanization": "bokjapan geori wi",
+      "english": "On the busy streets",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "사람들 틈",
+      "romanization": "saramdeul teum",
+      "english": "Through the crowd",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "거슬러 걷지 우린",
+      "romanization": "geoseulleo geotji urin",
+      "english": "We walk against the flow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "낯선 Corner 장면마다",
+      "romanization": "natseon corner jangmyeonmada",
+      "english": "With every scene on an unfamiliar corner",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "가득히 가득히 우리가 새겨지게",
+      "romanization": "gadeuki gadeuki uriga saegyeojige",
+      "english": "Let us be engraved everywhere, everywhere",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "하나둘 텅 빈 표정",
+      "romanization": "hanadul teong bin pyojeong",
+      "english": "One by one, empty expressions",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "여기저기 정신없지",
+      "romanization": "yeogijeogi jeongsineopji",
+      "english": "It's chaotic everywhere",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Turn upside down 지금부턴",
+      "romanization": "turn upside down jigeumbuteon",
+      "english": "Turn upside down, from now on",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "고민 따윈 Let it go",
+      "romanization": "gomin ttawin let it go",
+      "english": "Let go of worries",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Yo!)",
+      "romanization": "(yo)",
+      "english": "(Yo!)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "모여드는 Crowd",
+      "romanization": "moyeodeuneun crowd",
+      "english": "The crowd gathers",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Now!)",
+      "romanization": "(now)",
+      "english": "(Now!)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We gon’ hit the ground",
+      "romanization": "we gon’ hit the ground",
+      "english": "We gon’ hit the ground",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "(Dash!)",
+      "romanization": "(dash)",
+      "english": "(Dash!)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Turn the beat on",
+      "romanization": "turn the beat on",
+      "english": "Turn the beat on",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "리듬 타 여유로운 Attitude",
+      "romanization": "rideum ta yeoyuroun attitude",
+      "english": "Ride the rhythm with a relaxed attitude",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "유연한 걸음으로 Break the loop",
+      "romanization": "yuy eonhan georeumeuro break the loop",
+      "english": "Break the loop with flexible steps",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "날 믿고 따라와",
+      "romanization": "nal mitgo ttarawa",
+      "english": "Trust me and follow along",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "I’m big boss 내일은",
+      "romanization": "i’m big boss naeireun",
+      "english": "I’m big boss, tomorrow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아직 Never know",
+      "romanization": "ajik never know",
+      "english": "Is still never known",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "끌린 대로 Go",
+      "romanization": "kkeullin daero go",
+      "english": "Go wherever we're drawn",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Run this town",
+      "romanization": "run this town",
+      "english": "Run this town",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Make it mine, 끝까지",
+      "romanization": "make it mine, kkeutkkaji",
+      "english": "Make it mine, all the way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 멀리 더 멀리 우리로 채워지게",
+      "romanization": "deo meolli deo meolli uriro chaewojige",
+      "english": "Let it be filled with us, farther and farther",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "멈칫하면 반칙",
+      "romanization": "meomchithamyeon banchik",
+      "english": "Hesitating is against the rules",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 높이 착지",
+      "romanization": "deo nopi chakji",
+      "english": "Landing even higher",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Keep on swerving",
+      "romanization": "keep on swerving",
+      "english": "Keep on swerving",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "춤을 추는 듯한 Flow",
+      "romanization": "chumeul chuneun deuthan flow",
+      "english": "A flow that feels like dancing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그 누가 막아",
+      "romanization": "geu nuga maga",
+      "english": "Who could stop us?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We can jump the wall",
+      "romanization": "we can jump the wall",
+      "english": "We can jump the wall",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "즐겨 시선 어디든지",
+      "romanization": "jeulgyeo siseon eodideunji",
+      "english": "Enjoy it, no matter where the eyes are watching",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꾸밈없는 Vibe",
+      "romanization": "kkumimeomneun vibe",
+      "english": "An unpretentious vibe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 크게 소리쳐",
+      "romanization": "deo keuge sorichyeo",
+      "english": "Shout even louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We own this street",
+      "romanization": "we own this street",
+      "english": "We own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Auto",
+      "romanization": "auto",
+      "english": "Auto",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "내 멋대로 날 Mode on",
+      "romanization": "nae meotdaero nal mode on",
+      "english": "I'll switch myself on, my own way",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Type not to follow",
+      "romanization": "type not to follow",
+      "english": "Type not to follow",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "개척해 That’s my motto",
+      "romanization": "gaecheokhae that’s my motto",
+      "english": "Explore new paths, that's my motto",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "낯선 도시의 소음은 BGM",
+      "romanization": "natseon dosiui soeumeun BGM",
+      "english": "The noise of an unfamiliar city is BGM",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "자극해 내 모든 Sense",
+      "romanization": "jageukhae nae modeun sense",
+      "english": "Stimulating all my senses",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Wake up 멍해진 세상을 깨워",
+      "romanization": "wake up meonghaejin sesangeul kkaewo",
+      "english": "Wake up, awaken this dazed world",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Say 1, 2, 3 Let’s go!",
+      "romanization": "say 1, 2, 3 let’s go!",
+      "english": "Say 1, 2, 3, let's go!",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Run this town",
+      "romanization": "run this town",
+      "english": "Run this town",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "눈부신 이 Feeling",
+      "romanization": "nunbusin i feeling",
+      "english": "This dazzling feeling",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "아득히 아득히 햇살은 조명이 돼",
+      "romanization": "adeuki adeuki haetsareun jomyeongi dwae",
+      "english": "Far, far away, the sunlight becomes our spotlight",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "멈칫하면 반칙",
+      "romanization": "meomchithamyeon banchik",
+      "english": "Hesitating is against the rules",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 높이 착지",
+      "romanization": "deo nopi chakji",
+      "english": "Landing even higher",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Keep on swerving",
+      "romanization": "keep on swerving",
+      "english": "Keep on swerving",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "춤을 추는 듯한 Flow",
+      "romanization": "chumeul chuneun deuthan flow",
+      "english": "A flow that feels like dancing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그 누가 막아",
+      "romanization": "geu nuga maga",
+      "english": "Who could stop us?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We can jump the wall",
+      "romanization": "we can jump the wall",
+      "english": "We can jump the wall",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "즐겨 시선 어디든지",
+      "romanization": "jeulgyeo siseon eodideunji",
+      "english": "Enjoy it, no matter where the eyes are watching",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꾸밈없는 Vibe",
+      "romanization": "kkumimeomneun vibe",
+      "english": "An unpretentious vibe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 크게 소리쳐",
+      "romanization": "deo keuge sorichyeo",
+      "english": "Shout even louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We own this street",
+      "romanization": "we own this street",
+      "english": "We own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "멈춰 있던 Clock",
+      "romanization": "meomchwo itdeon clock",
+      "english": "The clock that had stopped",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "다시 이어져",
+      "romanization": "dasi ieojyeo",
+      "english": "Starts moving again",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "두 발을 잡아 둔",
+      "romanization": "du bareul jaba dun",
+      "english": "To yesterday that held",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "어제에겐 Say good bye",
+      "romanization": "eojeegen say good bye",
+      "english": "Both my feet back, say goodbye",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "달려 Ready, go",
+      "romanization": "dallyeo ready, go",
+      "english": "Run, ready, go",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "걱정 말고 Let it roll",
+      "romanization": "geokjeong malgo let it roll",
+      "english": "Don't worry, let it roll",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "해가 떴지 No need to wait",
+      "romanization": "haega tteotji no need to wait",
+      "english": "The sun has risen, no need to wait",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Making my own thing yeah",
+      "romanization": "making my own thing yeah",
+      "english": "Making my own thing, yeah",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "Keep on swerving",
+      "romanization": "keep on swerving",
+      "english": "Keep on swerving",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "춤을 추는 듯한 Flow",
+      "romanization": "chumeul chuneun deuthan flow",
+      "english": "A flow that feels like dancing",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "그 누가 막아",
+      "romanization": "geu nuga maga",
+      "english": "Who could stop us?",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We can jump the wall",
+      "romanization": "we can jump the wall",
+      "english": "We can jump the wall",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "즐겨 시선 어디든지",
+      "romanization": "jeulgyeo siseon eodideunji",
+      "english": "Enjoy it, no matter where the eyes are watching",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "꾸밈없는 Vibe",
+      "romanization": "kkumimeomneun vibe",
+      "english": "An unpretentious vibe",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 크게 소리쳐",
+      "romanization": "deo keuge sorichyeo",
+      "english": "Shout even louder",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We own this street",
+      "romanization": "we own this street",
+      "english": "We own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "멈칫하면 반칙",
+      "romanization": "meomchithamyeon banchik",
+      "english": "Hesitating is against the rules",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "더 높이 착지",
+      "romanization": "deo nopi chakji",
+      "english": "Landing even higher",
+      "adlib": false
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [],
+      "original": "We, we own this street",
+      "romanization": "we, we own this street",
+      "english": "We, we own this street",
+      "adlib": false
     }
-  ]
+  ],
+  "audio": "audio/nctwish_weownthisstreet.mp3"
 }
