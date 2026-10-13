@@ -448,7 +448,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHEE"
+      ],
       "original": "(항상)",
       "romanization": "(hangsang)",
       "english": "(Always)",
@@ -457,7 +459,9 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHEE"
+      ],
       "original": "(바라)",
       "romanization": "(bara)",
       "english": "(Look forward)",
@@ -466,10 +470,67 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "JAEHEE"
+      ],
       "original": "(데려갈게)",
       "romanization": "(deryogalge)",
       "english": "(Will take you)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "RYO"
+      ],
+      "original": "",
+      "romanization": "(Yeah eh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(Like a dream)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(Baby yeah)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(Oh oh)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "(너와 너와 나)",
+      "romanization": "(neowa neowa na)",
+      "english": "(You and you and I)",
       "adlib": true
     }
   ],
