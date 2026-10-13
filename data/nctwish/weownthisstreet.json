@@ -3,7 +3,7 @@
   "song": "We Own This Street",
   "video": "",
   "duration": 0,
-  "theme": "dark",
+  "theme": "light",
   "subunit": false,
   "layout": "classic",
   "members": [
@@ -164,9 +164,33 @@
     {
       "start": 0,
       "end": 0,
-      "members": [],
+      "members": [
+        "RIKU"
+      ],
+      "original": "(멈춰 있던 Clock)",
+      "romanization": "(meomchwo itdeon clock)",
+      "english": "(The clock that had stopped)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "RIKU"
+      ],
+      "original": "(다시 이어져)",
+      "romanization": "(dasi ieojyeo)",
+      "english": "(Starts moving again)",
+      "adlib": true
+    },
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "JAEHEE"
+      ],
       "original": "",
-      "romanization": "",
+      "romanization": "(Keep on swerving)",
       "english": "",
       "adlib": true
     },
