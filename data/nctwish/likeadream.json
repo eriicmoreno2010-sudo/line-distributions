@@ -896,5 +896,6 @@
   "audio": "audio/nctwish_likeadream.mp3",
   "instrumental": "audio/nctwish_likeadream_inst.mp3",
   "instrumentalStart": 51.83663421746795,
-  "instrumentalEnd": 194.037551
+  "instrumentalEnd": 76.21571113798078,
+  "instrumentalFade": true
 }
