@@ -1,7 +1,7 @@
 {
   "group": "NCT WISH",
   "song": "꿈결 Like A Dream",
-  "video": "",
+  "video": "videos/nctwish_likeadream_mv6vdwsk.mp4",
   "duration": 194.037551,
   "theme": "light",
   "subunit": false,
@@ -900,5 +900,5 @@
   "instrumentalFade": true,
   "cover": "covers/nctwish_likeadream.jpg",
   "npC1": "#bae9fd",
-  "npC2": "#ff2eb2"
+  "npC2": "#f0b7db"
 }
