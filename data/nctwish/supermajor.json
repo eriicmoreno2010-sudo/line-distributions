@@ -973,5 +973,6 @@
       ]
     }
   ],
-  "audio": "audio/nctwish_supermajor.mp3"
+  "audio": "audio/nctwish_supermajor.mp3",
+  "instrumental": "audio/nctwish_supermajor_inst.mp3"
 }
