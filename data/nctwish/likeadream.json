@@ -1,0 +1,66 @@
+{
+  "group": "NCT WISH",
+  "song": "꿈결 Like A Dream",
+  "video": "",
+  "duration": 0,
+  "theme": "dark",
+  "subunit": false,
+  "layout": "classic",
+  "members": [
+    {
+      "name": "SION",
+      "image": "images/nctwish/likeadream/sion.png",
+      "color": "#b84dff",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RIKU",
+      "image": "images/nctwish/likeadream/riku.png",
+      "color": "#ff2424",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "YUSHI",
+      "image": "images/nctwish/likeadream/yushi.png",
+      "color": "#39b5ea",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "JAEHEE",
+      "image": "images/nctwish/likeadream/jaehee.png",
+      "color": "#11e450",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "RYO",
+      "image": "images/nctwish/likeadream/ryo.png",
+      "color": "#f8dd2a",
+      "focus": 50,
+      "lift": 3
+    },
+    {
+      "name": "SAKUYA",
+      "image": "images/nctwish/likeadream/sakuya.png",
+      "color": "#f24ae4",
+      "focus": 50,
+      "lift": 3
+    }
+  ],
+  "lyrics": [
+    {
+      "start": 0,
+      "end": 0,
+      "members": [
+        "SION"
+      ],
+      "original": "",
+      "romanization": "",
+      "english": "",
+      "adlib": ""
+    }
+  ]
+}
