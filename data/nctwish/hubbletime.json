@@ -1038,5 +1038,6 @@
   ],
   "audio": "audio/nctwish_hubbletime.mp3",
   "cover": "covers/nctwish_hubbletime.jpg",
-  "npC1": "#f226ec"
+  "npC1": "#f226ec",
+  "npC2": "#ff2e6d"
 }
