@@ -510,7 +510,9 @@
     {
       "start": 40.24,
       "end": 44.1,
-      "members": [],
+      "members": [
+        "SAKUYA"
+      ],
       "original": "날 믿고 **따라와,@SION** I’m big boss **내일은@SION**",
       "romanization": "nal mitgo **ttarawa,@SION** i’m big boss **naeireun@SION**",
       "english": "Trust me and **follow along,@SION** I’m big boss, **tomorrow@SION**",
@@ -1289,5 +1291,8 @@
     }
   ],
   "audio": "audio/nctwish_weownthisstreet.mp3",
-  "instrumental": "audio/nctwish_weownthisstreet_inst.mp3"
+  "instrumental": "audio/nctwish_weownthisstreet_inst.mp3",
+  "instrumentalStart": 55.64175814615385,
+  "instrumentalEnd": 190.040816,
+  "instrumentalFade": true
 }
