@@ -2,7 +2,7 @@
   "group": "NCT WISH",
   "song": "Super Major",
   "video": "",
-  "duration": 0,
+  "duration": 160.026122,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -52,778 +52,976 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Okay, what do I do?",
-      "romanization": "okay, what do i do?",
-      "english": "Okay, what do I do?",
-      "adlib": false
+      "start": 4.86,
+      "end": 9.87,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "",
+      "romanization": "Okay, what do I do?, Everything is new, yeah, Okay, what do I do?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          5.07,
+          5.31
+        ],
+        [
+          5.4,
+          5.67
+        ],
+        [
+          5.83,
+          6.55
+        ],
+        [
+          7.21,
+          8.31
+        ],
+        [
+          8.33,
+          8.56
+        ],
+        [
+          8.71,
+          8.97
+        ],
+        [
+          9.07,
+          9.91
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Everything is new, yeah",
-      "romanization": "everything is new, yeah",
-      "english": "Everything is new, yeah",
-      "adlib": false
+      "start": 11.57,
+      "end": 16.96,
+      "members": [
+        "SION"
+      ],
+      "original": "창문 너머 Dance, 빗방울이 반짝거려, 네모 뒤의 우릴 불러",
+      "romanization": "changmun neomeo dance, bitbanguri banjjakgeoryeo, nemo dwiui uril bulleo",
+      "english": "Dance beyond the window, Raindrops sparkle, Calling out to us behind the squares",
+      "adlib": false,
+      "voice": [
+        [
+          11.59,
+          13.72
+        ],
+        [
+          13.87,
+          15.38
+        ],
+        [
+          15.52,
+          17.11
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Okay, what do I do?",
-      "romanization": "okay, what do i do?",
-      "english": "Okay, what do I do?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "창문 너머 Dance",
-      "romanization": "changmun neomeo dance",
-      "english": "Dance beyond the window",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "빗방울이 반짝거려",
-      "romanization": "bitbanguri banjjakgeoryeo",
-      "english": "Raindrops sparkle",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네모 뒤의 우릴 불러",
-      "romanization": "nemo dwiui uril bulleo",
-      "english": "Calling out to us behind the squares",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 17.17,
+      "end": 18.04,
+      "members": [
+        "RYO"
+      ],
       "original": "눈 깜빡한 새",
       "romanization": "nun kkamppakan sae",
       "english": "In the blink of an eye",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          17.18,
+          18.24
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "헤엄치는 Whale",
-      "romanization": "heeomchineun whale",
-      "english": "A swimming whale",
-      "adlib": false
+      "start": 18.19,
+      "end": 23.61,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "헤엄치는 Whale, 바다를 책상 위에 쏟아, 뛰어들자, 눈을 감아",
+      "romanization": "heeomchineun whale, badareul chaeksang wie ssoda, ttwieodeulja, nuneul gama",
+      "english": "A swimming whale, Spilling the ocean onto the desk, Let's dive in, close your eyes",
+      "adlib": false,
+      "voice": [
+        [
+          18.23,
+          20.34
+        ],
+        [
+          20.49,
+          22.01
+        ],
+        [
+          22.2,
+          23.67
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "바다를 책상 위에 쏟아",
-      "romanization": "badareul chaeksang wie ssoda",
-      "english": "Spilling the ocean onto the desk",
-      "adlib": false
+      "start": 23.79,
+      "end": 24.48,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "Yeah, I got you, I got you",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          23.76,
+          24.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "뛰어들자, 눈을 감아",
-      "romanization": "ttwieodeulja, nuneul gama",
-      "english": "Let's dive in, close your eyes",
-      "adlib": false
+      "start": 24.64,
+      "end": 30.35,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "소란히 쏟아진, Melody in the air",
+      "romanization": "soranhi ssodajin, melody in the air",
+      "english": "Pouring down in a lively rush, Melody in the air",
+      "adlib": false,
+      "voice": [
+        [
+          24.82,
+          25.92
+        ],
+        [
+          26.07,
+          27.2
+        ],
+        [
+          28.15,
+          29.2
+        ],
+        [
+          29.41,
+          30.53
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Yeah, I got you, I got you",
-      "romanization": "yeah, i got you, i got you",
-      "english": "Yeah, I got you, I got you",
-      "adlib": false
+      "start": 27.13,
+      "end": 28.17,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Yeah, I got you, I got you)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          27.07,
+          28.25
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "소란히 쏟아진",
-      "romanization": "soranhi ssodajin",
-      "english": "Pouring down in a lively rush",
-      "adlib": false
+      "start": 36.2,
+      "end": 37.38,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(Ha)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          36.18,
+          37.55
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Yeah, I got you, I got you)",
-      "romanization": "(yeah, i got you, i got you)",
-      "english": "(Yeah, I got you, I got you)",
-      "adlib": true
+      "start": 56.48,
+      "end": 57.04,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "",
+      "romanization": "(Oh ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          56.51,
+          57.12
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Melody in the air",
-      "romanization": "melody in the air",
-      "english": "Melody in the air",
-      "adlib": false
+      "start": 59.44,
+      "end": 59.98,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "(I do)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          62.72,
+          63.28
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 63.15,
+      "end": 63.74,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "",
+      "romanization": "(Oh ah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          63.07,
+          63.68
+        ]
+      ]
+    },
+    {
+      "start": 30.49,
+      "end": 31.34,
+      "members": [
+        "JAEHEE"
+      ],
       "original": "다 마셔버려",
       "romanization": "da masyeobeoryeo",
       "english": "Drink it all up",
+      "adlib": false,
+      "voice": [
+        [
+          30.45,
+          31.49
+        ]
+      ]
+    },
+    {
+      "start": 31.46,
+      "end": 36.5,
+      "members": [
+        "RYO"
+      ],
+      "original": "더 높이 햇살 위, Yeah I’m with ya",
+      "romanization": "deo nopi haetsal wi, yeah i'm with ya",
+      "english": "Higher, above the sunlight, Yeah I'm with ya",
+      "adlib": false,
+      "voice": [
+        [
+          31.47,
+          32.54
+        ],
+        [
+          32.71,
+          36.59
+        ]
+      ]
+    },
+    {
+      "start": 37.37,
+      "end": 41.42,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Let’s go, We are super major, 꿈이 흘러가는 대로",
+      "romanization": "let's go, we are super major, kkumi heulleoganeun daero",
+      "english": "Let's go, We are super major, Letting our dreams flow wherever they go",
       "adlib": false
+    },
+    {
+      "start": 41.8,
+      "end": 44.46,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Nothing matters, Na-na-nothing matters",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 44.6,
+      "end": 48.06,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "흐린 걱정 마저, 잠이 들지, Airplane mode",
+      "romanization": "heurin geokjeong majeo, jami deulji, airplane mode",
+      "english": "Even our cloudy worries, Fall asleep, Airplane mode",
+      "adlib": false
+    },
+    {
+      "start": 48.43,
+      "end": 51.33,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Will be better, A-All will be better",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 51.3,
+      "end": 54.48,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Okay, what do I do?, Everything is new",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 54.63,
+      "end": 57.71,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "어려울 건 하나도, 없어 Easy peasy",
+      "romanization": "eoryeoul geon hanado, eopseo easy peasy",
+      "english": "There's nothing difficult, It's easy peasy",
+      "adlib": false
+    },
+    {
+      "start": 57.87,
+      "end": 61.1,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "무거운 고민 모두, 던져 놓아 툭",
+      "romanization": "mugeoun gomin modu, deonjyeo noa tuk",
+      "english": "All those heavy worries, Just toss them away",
+      "adlib": false
+    },
+    {
+      "start": 61.28,
+      "end": 64.57,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Okay, what do I do?, How you feeling feeling? ",
+      "english": "",
+      "adlib": false
+    },
+    {
+      "start": 64.69,
+      "end": 65.13,
+      "members": [
+        "RYO"
+      ],
+      "original": "",
+      "romanization": "(Good)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          64.58,
+          64.95
+        ]
+      ]
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "더 높이 햇살 위",
-      "romanization": "deo nopi haetsal wi",
-      "english": "Higher, above the sunlight",
-      "adlib": false
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(nopi)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          85.39,
+          86.09
+        ]
+      ]
     },
     {
       "start": 0,
       "end": 0,
-      "members": [],
-      "original": "Yeah I’m with ya",
-      "romanization": "yeah i'm with ya",
-      "english": "Yeah I'm with ya",
-      "adlib": false
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          86.71,
+          87.43
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Let’s go",
-      "romanization": "let's go",
-      "english": "Let's go",
-      "adlib": false
+      "start": 65.3,
+      "end": 67.91,
+      "members": [
+        "RYO"
+      ],
+      "original": "깨버려 Every reason, 아까워 Time",
+      "romanization": "kkaebeoryeo every reason, akkawo time",
+      "english": "Break free from every reason, Time is too precious",
+      "adlib": false,
+      "voice": [
+        [
+          65.36,
+          67.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We are super major",
-      "romanization": "we are super major",
-      "english": "We are super major",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "꿈이 흘러가는 대로",
-      "romanization": "kkumi heulleoganeun daero",
-      "english": "Letting our dreams flow wherever they go",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Nothing matters",
-      "romanization": "nothing matters",
-      "english": "Nothing matters",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Na-na-nothing matters",
-      "romanization": "na na nothing matters",
-      "english": "Na-na-nothing matters",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "흐린 걱정 마저",
-      "romanization": "heurin geokjeong majeo",
-      "english": "Even our cloudy worries",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잠이 들지, Airplane mode",
-      "romanization": "jami deulji, airplane mode",
-      "english": "Fall asleep, Airplane mode",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Will be better",
-      "romanization": "will be better",
-      "english": "Will be better",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "A-All will be better",
-      "romanization": "a all will be better",
-      "english": "A-all will be better",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Okay, what do I do?",
-      "romanization": "okay, what do i do?",
-      "english": "Okay, what do I do?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Everything is new",
-      "romanization": "everything is new",
-      "english": "Everything is new",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어려울 건 하나도",
-      "romanization": "eoryeoul geon hanado",
-      "english": "There's nothing difficult",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "없어 Easy peasy",
-      "romanization": "eopseo easy peasy",
-      "english": "It's easy peasy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "무거운 고민 모두",
-      "romanization": "mugeoun gomin modu",
-      "english": "All those heavy worries",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "던져 놓아 툭",
-      "romanization": "deonjyeo noa tuk",
-      "english": "Just toss them away",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Okay, what do I do?",
-      "romanization": "okay, what do i do?",
-      "english": "Okay, what do I do?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "How you feeling feeling? (Good)",
-      "romanization": "how you feeling feeling? (good)",
-      "english": "How you feeling feeling? (Good)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "깨버려 Every reason",
-      "romanization": "kkaebeoryeo every reason",
-      "english": "Break free from every reason",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "아까워 Time",
-      "romanization": "akkawo time",
-      "english": "Time is too precious",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 68.65,
+      "end": 70.23,
+      "members": [
+        "RYO"
+      ],
       "original": "때로는 마음이 Freezin’",
       "romanization": "ttaeroneun maeumi freezin'",
       "english": "Sometimes my heart is freezing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          68.63,
+          70.36
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "얼음벽 사이로 Oh oh",
-      "romanization": "eoreumbyeok sairo oh oh",
-      "english": "Between walls of ice, oh oh",
-      "adlib": false
+      "start": 70.37,
+      "end": 75.3,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "얼음벽 사이로 Oh oh, 물드는 Hope, 녹여 Sorrow",
+      "romanization": "eoreumbyeok sairo oh oh, muldeuneun hope, nogyeo sorrow",
+      "english": "Between walls of ice, oh oh, Hope starts to spread, Melt away sorrow",
+      "adlib": false,
+      "voice": [
+        [
+          70.36,
+          72.1
+        ],
+        [
+          72.22,
+          73.75
+        ],
+        [
+          73.87,
+          75.46
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "물드는 Hope",
-      "romanization": "muldeuneun hope",
-      "english": "Hope starts to spread",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "녹여 Sorrow",
-      "romanization": "nogyeo sorrow",
-      "english": "Melt away sorrow",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 75.45,
+      "end": 77.57,
+      "members": [
+        "JAEHEE"
+      ],
       "original": "Baby 햇살을 Text me",
       "romanization": "baby haetsareul text me",
       "english": "Baby, text me the sunshine",
+      "adlib": false,
+      "voice": [
+        [
+          75.66,
+          76.27
+        ],
+        [
+          76.43,
+          77.76
+        ]
+      ]
+    },
+    {
+      "start": 77.73,
+      "end": 80.98,
+      "members": [
+        "SION"
+      ],
+      "original": "스크린 밖으로 넘쳐, 상상을 담아서 그려낸 세상이",
+      "romanization": "seukeurin bakkeuro neomchyeo, sangsangeul damaseo geuryeonaen sesangi",
+      "english": "Overflowing beyond the screen, A world drawn by filling it with imagination",
+      "adlib": false,
+      "voice": [
+        [
+          77.76,
+          80.98
+        ]
+      ]
+    },
+    {
+      "start": 81.13,
+      "end": 84.29,
+      "members": [
+        "RIKU"
+      ],
+      "original": "열대어는 구름 위 날아, 하늘은 거꾸로 그려낸 Gravity",
+      "romanization": "yeoldaeeoneun gureum wi nara, haneureun geokkuro geuryeonaen gravity",
+      "english": "Tropical fish fly above the clouds, Gravity drawn with the sky upside down",
+      "adlib": false,
+      "voice": [
+        [
+          81.14,
+          84.37
+        ]
+      ]
+    },
+    {
+      "start": 84.41,
+      "end": 89.83,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "더 높이 햇살 위, Yeah I’m with ya",
+      "romanization": "deo nopi haetsal wi, yeah i'm with ya",
+      "english": "Higher, above the sunlight, Yeah I'm with ya",
+      "adlib": false,
+      "voice": [
+        [
+          84.36,
+          85.46
+        ],
+        [
+          85.61,
+          89.84
+        ]
+      ]
+    },
+    {
+      "start": 87.97,
+      "end": 90.13,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "(Everybody put your hands up to the sky)",
+      "english": "",
+      "adlib": true
+    },
+    {
+      "start": 110.12,
+      "end": 112.39,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "(몰라도)",
+      "romanization": "(mollado)",
+      "english": "(Even if we don't know it well)",
+      "adlib": true,
+      "voice": [
+        [
+          110.08,
+          112.36
+        ]
+      ]
+    },
+    {
+      "start": 133.22,
+      "end": 135.7,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "(대로)",
+      "romanization": "(daero)",
+      "english": "(Wherever they go)",
+      "adlib": true,
+      "voice": [
+        [
+          133.25,
+          135.66
+        ]
+      ]
+    },
+    {
+      "start": 139.01,
+      "end": 140.96,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "(들지, Airplane mode)",
+      "romanization": "(deulji, airplane mode)",
+      "english": "(Fall asleep, Airplane mode)",
+      "adlib": true,
+      "voice": [
+        [
+          138.98,
+          140.82
+        ]
+      ]
+    },
+    {
+      "start": 145.44,
+      "end": 145.99,
+      "members": [
+        "RYO"
+      ],
+      "original": "",
+      "romanization": "(I do)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          145.42,
+          146.03
+        ]
+      ]
+    },
+    {
+      "start": 146.65,
+      "end": 147.35,
+      "members": [
+        "RYO"
+      ],
+      "original": "",
+      "romanization": "(Is new)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          146.66,
+          147.32
+        ]
+      ]
+    },
+    {
+      "start": 152.07,
+      "end": 154.03,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "(고민 모두, yeah)",
+      "romanization": "(gomin modu, yeah)",
+      "english": "(All those heavy worries, yeah)",
+      "adlib": true,
+      "voice": [
+        [
+          152.05,
+          154.01
+        ]
+      ]
+    },
+    {
+      "start": 90.36,
+      "end": 94.36,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Let’s go, We are super major, 꿈이 흘러가는 대로",
+      "romanization": "let's go, we are super major, kkumi heulleoganeun daero",
+      "english": "Let's go, We are super major, Letting our dreams flow wherever they go",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "스크린 밖으로 넘쳐",
-      "romanization": "seukeurin bakkeuro neomchyeo",
-      "english": "Overflowing beyond the screen",
+      "start": 94.54,
+      "end": 97.42,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Nothing matters, Na-na-nothing matters",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "상상을 담아서 그려낸 세상이",
-      "romanization": "sangsangeul damaseo geuryeonaen sesangi",
-      "english": "A world drawn by filling it with imagination",
+      "start": 97.59,
+      "end": 101.07,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "흐린 걱정 마저, 잠이 들지, Airplane mode",
+      "romanization": "heurin geokjeong majeo, jami deulji, airplane mode",
+      "english": "Even our cloudy worries, Fall asleep, Airplane mode",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "열대어는 구름 위 날아",
-      "romanization": "yeoldaeeoneun gureum wi nara",
-      "english": "Tropical fish fly above the clouds",
+      "start": 101.37,
+      "end": 104.16,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Will be better, A-All will be better",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "하늘은 거꾸로 그려낸 Gravity",
-      "romanization": "haneureun geokkuro geuryeonaen gravity",
-      "english": "Gravity drawn with the sky upside down",
-      "adlib": false
+      "start": 105.04,
+      "end": 108.21,
+      "members": [
+        "SION"
+      ],
+      "original": "Life’s a random box, 이 상자 속",
+      "romanization": "life's a random box, i sangja sok",
+      "english": "Life's a random box, Inside this box",
+      "adlib": false,
+      "voice": [
+        [
+          105.08,
+          108.22
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "더 높이 햇살 위",
-      "romanization": "deo nopi haetsal wi",
-      "english": "Higher, above the sunlight",
-      "adlib": false
+      "start": 108.36,
+      "end": 111.48,
+      "members": [
+        "SION"
+      ],
+      "original": "알 수 없는 Fate, 잘 몰라도",
+      "romanization": "al su eomneun fate, jal mollado",
+      "english": "An unknown fate, Even if we don't know it well",
+      "adlib": false,
+      "voice": [
+        [
+          108.43,
+          111.48
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Yeah I’m with ya",
-      "romanization": "yeah i'm with ya",
-      "english": "Yeah I'm with ya",
-      "adlib": false
+      "start": 111.65,
+      "end": 116.61,
+      "members": [
+        "RYO"
+      ],
+      "original": "그래서 훨씬, 재밌는 걸 Oh",
+      "romanization": "geuraeseo hwolssin, jaeminneun geol oh",
+      "english": "That's exactly why it's, So much more fun, oh",
+      "adlib": false,
+      "voice": [
+        [
+          111.67,
+          115.16
+        ],
+        [
+          115.4,
+          116.66
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(Everybody put your hands up",
-      "romanization": "(everybody put your hands up",
-      "english": "(Everybody put your hands up",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "to the sky)",
-      "romanization": "to the sky)",
-      "english": "to the sky)",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Let’s go",
-      "romanization": "let's go",
-      "english": "Let's go",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We are super major",
-      "romanization": "we are super major",
-      "english": "We are super major",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "꿈이 흘러가는 대로",
-      "romanization": "kkumi heulleoganeun daero",
-      "english": "Letting our dreams flow wherever they go",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Nothing matters",
-      "romanization": "nothing matters",
-      "english": "Nothing matters",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Na-na-nothing matters",
-      "romanization": "na na nothing matters",
-      "english": "Na-na-nothing matters",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "흐린 걱정 마저",
-      "romanization": "heurin geokjeong majeo",
-      "english": "Even our cloudy worries",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잠이 들지, Airplane mode",
-      "romanization": "jami deulji, airplane mode",
-      "english": "Fall asleep, Airplane mode",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Will be better",
-      "romanization": "will be better",
-      "english": "Will be better",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "A-All will be better",
-      "romanization": "a all will be better",
-      "english": "A-all will be better",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Life’s a random box",
-      "romanization": "life's a random box",
-      "english": "Life's a random box",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "이 상자 속",
-      "romanization": "i sangja sok",
-      "english": "Inside this box",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "알 수 없는 Fate",
-      "romanization": "al su eomneun fate",
-      "english": "An unknown fate",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잘 몰라도",
-      "romanization": "jal mollado",
-      "english": "Even if we don't know it well",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "그래서 훨씬",
-      "romanization": "geuraeseo hwolssin",
-      "english": "That's exactly why it's",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "재밌는 걸 Oh",
-      "romanization": "jaeminneun geol oh",
-      "english": "So much more fun, oh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 116.69,
+      "end": 120.5,
+      "members": [
+        "JAEHEE"
+      ],
       "original": "가능성을 풀어놓아 It’s 50/50",
       "romanization": "ganeungseongeul pureonoa it's 50/50",
       "english": "Let your possibilities loose, it's 50/50",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          116.68,
+          117.8
+        ],
+        [
+          117.95,
+          118.16
+        ],
+        [
+          118.31,
+          119.44
+        ],
+        [
+          119.56,
+          119.8
+        ],
+        [
+          119.99,
+          120.63
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 120.61,
+      "end": 123.51,
+      "members": [
+        "YUSHI"
+      ],
       "original": "맘 아끼지 마, 기적을 믿지",
       "romanization": "mam akkiji ma, gijeogeul mitji",
       "english": "Don't hold back your heart, believe in miracles",
+      "adlib": false,
+      "voice": [
+        [
+          120.6,
+          121.12
+        ],
+        [
+          121.26,
+          121.57
+        ],
+        [
+          121.68,
+          122.73
+        ],
+        [
+          122.85,
+          123.15
+        ],
+        [
+          123.28,
+          124
+        ]
+      ]
+    },
+    {
+      "start": 123.66,
+      "end": 127.23,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "So, 찬란히 쏟아져 넘쳐, 행복이 빛처럼 퍼져간 세상이",
+      "romanization": "so, challanhi ssodajyeo neomchyeo, haengbogi bitcheoreom peojyeogan sesangi",
+      "english": "So, brilliantly overflowing, A world where happiness spreads like light",
+      "adlib": false,
+      "voice": [
+        [
+          123.64,
+          124
+        ],
+        [
+          124.14,
+          127.43
+        ]
+      ]
+    },
+    {
+      "start": 127.39,
+      "end": 130.52,
+      "members": [
+        "RIKU"
+      ],
+      "original": "여기서부터가 시작, 내일을 그려내 Making my destiny",
+      "romanization": "yeogiseobuteoga sijak, naeireul geuryeonae making my destiny",
+      "english": "This is where it all begins, Drawing tomorrow, making my destiny",
+      "adlib": false,
+      "voice": [
+        [
+          127.42,
+          130.74
+        ]
+      ]
+    },
+    {
+      "start": 130.67,
+      "end": 134.09,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "We are super major, 꿈이 흘러가는 대로",
+      "romanization": "we are super major, kkumi heulleoganeun daero",
+      "english": "We are super major, Letting our dreams flow wherever they go",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "So, 찬란히 쏟아져 넘쳐",
-      "romanization": "so, challanhi ssodajyeo neomchyeo",
-      "english": "So, brilliantly overflowing",
+      "start": 134.48,
+      "end": 137.16,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Nothing matters, Na-na-nothing matters",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "행복이 빛처럼 퍼져간 세상이",
-      "romanization": "haengbogi bitcheoreom peojyeogan sesangi",
-      "english": "A world where happiness spreads like light",
+      "start": 137.38,
+      "end": 140.7,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "흐린 걱정 마저, 잠이 들지, Airplane mode",
+      "romanization": "heurin geokjeong majeo, jami deulji, airplane mode",
+      "english": "Even our cloudy worries, Fall asleep, Airplane mode",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "여기서부터가 시작",
-      "romanization": "yeogiseobuteoga sijak",
-      "english": "This is where it all begins",
+      "start": 141.01,
+      "end": 143.84,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Will be better, A-All will be better",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "내일을 그려내 Making my destiny",
-      "romanization": "naeireul geuryeonae making my destiny",
-      "english": "Drawing tomorrow, making my destiny",
+      "start": 143.97,
+      "end": 147.08,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Okay, what do I do?, Everything is new",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We are super major",
-      "romanization": "we are super major",
-      "english": "We are super major",
+      "start": 147.27,
+      "end": 150.38,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "어려울 건 하나도, 없어 Easy peasy",
+      "romanization": "eoryeoul geon hanado, eopseo easy peasy",
+      "english": "There's nothing difficult, It's easy peasy",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "꿈이 흘러가는 대로",
-      "romanization": "kkumi heulleoganeun daero",
-      "english": "Letting our dreams flow wherever they go",
+      "start": 150.53,
+      "end": 153.71,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "무거운 고민 모두, 던져 놓아 툭",
+      "romanization": "mugeoun gomin modu, deonjyeo noa tuk",
+      "english": "All those heavy worries, Just toss them away",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Nothing matters",
-      "romanization": "nothing matters",
-      "english": "Nothing matters",
+      "start": 153.86,
+      "end": 157.26,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "",
+      "romanization": "Okay, what do I do?, How you feeling feeling?",
+      "english": "",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Na-na-nothing matters",
-      "romanization": "na na nothing matters",
-      "english": "Na-na-nothing matters",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "흐린 걱정 마저",
-      "romanization": "heurin geokjeong majeo",
-      "english": "Even our cloudy worries",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잠이 들지, Airplane mode",
-      "romanization": "jami deulji, airplane mode",
-      "english": "Fall asleep, Airplane mode",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Will be better",
-      "romanization": "will be better",
-      "english": "Will be better",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "A-All will be better",
-      "romanization": "a all will be better",
-      "english": "A-all will be better",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Okay, what do I do?",
-      "romanization": "okay, what do i do?",
-      "english": "Okay, what do I do?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Everything is new",
-      "romanization": "everything is new",
-      "english": "Everything is new",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "어려울 건 하나도",
-      "romanization": "eoryeoul geon hanado",
-      "english": "There's nothing difficult",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "없어 Easy peasy",
-      "romanization": "eopseo easy peasy",
-      "english": "It's easy peasy",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "무거운 고민 모두",
-      "romanization": "mugeoun gomin modu",
-      "english": "All those heavy worries",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "던져 놓아 툭",
-      "romanization": "deonjyeo noa tuk",
-      "english": "Just toss them away",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Okay, what do I do?",
-      "romanization": "okay, what do i do?",
-      "english": "Okay, what do I do?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "How you feeling feeling? (Good)",
-      "romanization": "how you feeling feeling? (good)",
-      "english": "How you feeling feeling? (Good)",
-      "adlib": false
+      "start": 156.16,
+      "end": 157.83,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "(How you feeling feeling? Good)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          156.15,
+          157.82
+        ]
+      ]
     }
   ],
   "audio": "audio/nctwish_supermajor.mp3"
