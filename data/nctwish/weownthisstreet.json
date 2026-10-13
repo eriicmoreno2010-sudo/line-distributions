@@ -2,7 +2,7 @@
   "group": "NCT WISH",
   "song": "We Own This Street",
   "video": "",
-  "duration": 0,
+  "duration": 190.040816,
   "theme": "light",
   "subunit": false,
   "layout": "classic",
@@ -52,41 +52,83 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 2.12,
+      "end": 6.96,
       "members": [
         "YUSHI"
       ],
       "original": "Run this town, 복잡한 거리 위, 사람들 틈",
       "romanization": "run this town, bokjapan geori wi, saramdeul teum",
       "english": "Run this town, On the busy streets, Through the crowd",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          2.17,
+          2.51
+        ],
+        [
+          2.65,
+          3.5
+        ],
+        [
+          3.61,
+          4.39
+        ],
+        [
+          4.58,
+          4.94
+        ],
+        [
+          5.09,
+          6.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 7.11,
+      "end": 9.64,
       "members": [
         "SION"
       ],
       "original": "거슬러 걷지 우린",
       "romanization": "geoseulleo geotji urin",
       "english": "We walk against the flow",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          7.16,
+          8.27
+        ],
+        [
+          8.45,
+          9.91
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 9.79,
+      "end": 15.49,
       "members": [
         "JAEHEE"
       ],
       "original": "낯선 Corner 장면마다, 가득히 가득히 우리가 새겨지게",
       "romanization": "natseon corner jangmyeonmada, gadeuki gadeuki uriga saegyeojige",
       "english": "With every scene on an unfamiliar corner, Let us be engraved everywhere, everywhere",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.85,
+          11.55
+        ],
+        [
+          11.75,
+          15.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 15.52,
+      "end": 17.16,
       "members": [
         "NCT WISH"
       ],
@@ -96,248 +138,493 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 18.11,
+      "end": 23.57,
       "members": [
         "SION"
       ],
       "original": "하나둘 텅 빈 표정, 여기저기 정신없지",
       "romanization": "hanadul teong bin pyojeong, yeogijeogi jeongsineopji",
       "english": "One by one, empty expressions, It's chaotic everywhere",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          18.2,
+          18.5
+        ],
+        [
+          18.65,
+          19.41
+        ],
+        [
+          20.05,
+          20.4
+        ],
+        [
+          20.56,
+          21.59
+        ],
+        [
+          21.72,
+          23.66
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 25.04,
+      "end": 31.18,
       "members": [
         "RYO"
       ],
       "original": "Turn upside down 지금부턴, 고민 따윈 Let it go",
       "romanization": "turn upside down jigeumbuteon, gomin ttawin let it go",
       "english": "Turn upside down, from now on, Let go of worries",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          25.04,
+          25.54
+        ],
+        [
+          25.78,
+          26.13
+        ],
+        [
+          26.25,
+          27.07
+        ],
+        [
+          27.7,
+          28.02
+        ],
+        [
+          28.17,
+          29.25
+        ],
+        [
+          29.32,
+          31.16
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 31.52,
+      "end": 31.99,
       "members": [
         "RIKU"
       ],
       "original": "",
       "romanization": "(Yo!)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          31.5,
+          31.97
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 31.64,
+      "end": 36.36,
       "members": [
         "RIKU"
       ],
       "original": "모여드는 Crowd, We gon’ hit the ground, Turn the beat on",
       "romanization": "moyeodeuneun crowd, we gon’ hit the ground, turn the beat on",
       "english": "The crowd gathers, We gon’ hit the ground, Turn the beat on",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          31.92,
+          33.22
+        ],
+        [
+          33.79,
+          35.16
+        ],
+        [
+          35.65,
+          36.43
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 33.38,
+      "end": 33.78,
       "members": [
         "RIKU"
       ],
       "original": "",
       "romanization": "(Now!)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          33.39,
+          33.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 35.28,
+      "end": 35.7,
       "members": [
         "RIKU"
       ],
       "original": "",
       "romanization": "(Dash!)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          35.26,
+          35.69
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 143.18,
+      "end": 144.19,
       "members": [
         "RIKU"
       ],
       "original": "(멈춰 있던 Clock)",
       "romanization": "(meomchwo itdeon clock)",
       "english": "(The clock that had stopped)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          143.11,
+          144.22
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 144.76,
+      "end": 146.03,
       "members": [
         "RIKU"
       ],
       "original": "(다시 이어져)",
       "romanization": "(dasi ieojyeo)",
       "english": "(Starts moving again)",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          144.79,
+          146.09
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 158.36,
+      "end": 160.4,
       "members": [
         "JAEHEE"
       ],
       "original": "",
       "romanization": "(Keep on swerving)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          158.36,
+          158.71
+        ],
+        [
+          158.86,
+          160.48
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 162.59,
+      "end": 163.73,
       "members": [
         "SION"
       ],
       "original": "",
       "romanization": "(Let it go)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          162.65,
+          163.63
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 164.82,
+      "end": 166.78,
       "members": [
         "YUSHI"
       ],
       "original": "",
       "romanization": "(We can jump the wall)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          164.83,
+          165.22
+        ],
+        [
+          165.37,
+          166.55
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 166.49,
+      "end": 167.77,
       "members": [
         "JAEHEE"
       ],
       "original": "",
       "romanization": "(Oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          166.48,
+          167.79
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 172.38,
+      "end": 175.4,
       "members": [
         "JAEHEE"
       ],
       "original": "",
       "romanization": "(We own this street)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          172.39,
+          175.27
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 174.17,
+      "end": 178.04,
       "members": [
-        "RYO"
+        "YUSHI"
       ],
       "original": "",
       "romanization": "(Oh oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          174.12,
+          175.45
+        ],
+        [
+          175.97,
+          177.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 176.93,
+      "end": 179.35,
       "members": [
         "JAEHEE"
       ],
       "original": "",
       "romanization": "(Woo ooh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          176.97,
+          179.33
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 180.25,
+      "end": 181.94,
       "members": [
-        "JAEHEE"
+        "SION"
       ],
       "original": "",
       "romanization": "(We own this street)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          180.28,
+          181.92
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 181.72,
+      "end": 185.75,
       "members": [
-        "RYO"
+        "YUSHI"
       ],
       "original": "",
       "romanization": "(Oh oh)",
       "english": "",
-      "adlib": true
+      "adlib": true,
+      "voice": [
+        [
+          181.79,
+          183.04
+        ],
+        [
+          183.59,
+          185.62
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 36.48,
+      "end": 40.06,
       "members": [
         "RIKU"
       ],
       "original": "리듬 타 여유로운 Attitude, 유연한 걸음으로 Break the loop",
-      "romanization": "rideum ta yeoyuroun attitude, yuy eonhan georeumeuro break the loop",
+      "romanization": "rideum ta yeoyuroun attitude, yuyeonhan georeumeuro break the loop",
       "english": "Ride the rhythm with a relaxed attitude, Break the loop with flexible steps",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          36.42,
+          38.26
+        ],
+        [
+          38.41,
+          40.18
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 40.24,
+      "end": 44.1,
       "members": [],
       "original": "날 믿고 **따라와,@SION** I’m big boss **내일은@SION**",
       "romanization": "nal mitgo **ttarawa,@SION** i’m big boss **naeireun@SION**",
       "english": "Trust me and **follow along,@SION** I’m big boss, **tomorrow@SION**",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          40.25,
+          40.63
+        ],
+        [
+          40.79,
+          41.07
+        ],
+        [
+          41.26,
+          41.7
+        ],
+        [
+          42.21,
+          42.54
+        ],
+        [
+          42.68,
+          43.01
+        ],
+        [
+          43.16,
+          43.62
+        ],
+        [
+          41.7,
+          42.28,
+          [
+            "SION"
+          ]
+        ],
+        [
+          43.61,
+          44.19,
+          [
+            "SION"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 44.11,
+      "end": 47.64,
       "members": [
         "SAKUYA"
       ],
       "original": "아직 Never know, 끌린 대로 Go",
       "romanization": "ajik never know, kkeullin daero go",
       "english": "Is still never known, Go wherever we're drawn",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          44.16,
+          44.71
+        ],
+        [
+          44.86,
+          45.88
+        ],
+        [
+          46.03,
+          47.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 47.83,
+      "end": 53.6,
       "members": [
         "JAEHEE"
       ],
-      "original": "Run this town, Make it mine, 끝까지",
-      "romanization": "run this town, make it mine, kkeutkkaji",
-      "english": "Run this town, Make it mine, all the way",
-      "adlib": false
+      "original": "Run this town, Make it mine, 끝까지, 더 멀리 더 멀리 우리로 채워지게",
+      "romanization": "run this town, make it mine, kkeutkkaji, deo meolli deo meolli uriro chaewojige",
+      "english": "Run this town, Make it mine, all the way, Let it be filled with us, farther and farther",
+      "adlib": false,
+      "voice": [
+        [
+          47.87,
+          48.26
+        ],
+        [
+          48.38,
+          48.73
+        ],
+        [
+          48.91,
+          49.23
+        ],
+        [
+          49.36,
+          50.11
+        ],
+        [
+          50.32,
+          50.64
+        ],
+        [
+          50.8,
+          51.35
+        ],
+        [
+          51.53,
+          53.58
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [
-        "JAEHEE"
-      ],
-      "original": "더 멀리 더 멀리 우리로 채워지게",
-      "romanization": "deo meolli deo meolli uriro chaewojige",
-      "english": "Let it be filled with us, farther and farther",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
+      "start": 53.64,
+      "end": 59.07,
       "members": [
         "NCT WISH"
       ],
@@ -347,8 +634,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 59.22,
+      "end": 61.01,
       "members": [
         "NCT WISH"
       ],
@@ -358,8 +645,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 61.19,
+      "end": 66.63,
       "members": [
         "NCT WISH"
       ],
@@ -369,8 +656,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 66.78,
+      "end": 70.54,
       "members": [
         "NCT WISH"
       ],
@@ -380,118 +667,257 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 70.76,
+      "end": 74.93,
       "members": [
         "YUSHI"
       ],
       "original": "Keep on swerving, 춤을 추는 듯한 Flow",
       "romanization": "keep on swerving, chumeul chuneun deuthan flow",
       "english": "Keep on swerving, A flow that feels like dancing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          70.75,
+          71.19
+        ],
+        [
+          71.34,
+          75.06
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 75.94,
+      "end": 78.91,
       "members": [
         "YUSHI"
       ],
       "original": "그 누가 막아, We can jump the wall",
       "romanization": "geu nuga maga, we can jump the wall",
       "english": "Who could stop us?, We can jump the wall",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          75.97,
+          77.03
+        ],
+        [
+          77.18,
+          77.5
+        ],
+        [
+          77.66,
+          78.9
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 79.79,
+      "end": 83.24,
       "members": [
         "JAEHEE"
       ],
       "original": "즐겨 시선 어디든지, **꾸밈없는 Vibe@SION**",
       "romanization": "jeulgyeo siseon eodideunji, **kkumimeomneun vibe@SION**",
       "english": "Enjoy it, no matter where the eyes are watching, **An unpretentious vibe@SION**",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          79.73,
+          80.89
+        ],
+        [
+          81.04,
+          82.22
+        ],
+        [
+          82.17,
+          83.61,
+          [
+            "SION"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 83.4,
+      "end": 87.85,
       "members": [
         "JAEHEE"
       ],
       "original": "더 크게 소리쳐, We own this street",
       "romanization": "deo keuge sorichyeo, we own this street",
       "english": "Shout even louder, We own this street",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.37,
+          85.44
+        ],
+        [
+          85.59,
+          87.96
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 87.87,
+      "end": 90.49,
       "members": [
         "RYO"
       ],
       "original": "Auto, 내 멋대로 날 Mode on",
       "romanization": "auto, nae meotdaero nal mode on",
       "english": "Auto, I'll switch myself on, my own way",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          87.93,
+          88.48
+        ],
+        [
+          89.03,
+          90.45
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 91,
+      "end": 94.63,
       "members": [
         "RYO"
       ],
       "original": "Type not to follow, 개척해 That’s my motto",
       "romanization": "type not to follow, gaecheokhae that’s my motto",
       "english": "Type not to follow, Explore new paths, that's my motto",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          90.97,
+          92.39
+        ],
+        [
+          92.85,
+          93.95
+        ],
+        [
+          94.1,
+          94.42
+        ],
+        [
+          94.61,
+          95.71
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 94.78,
+      "end": 99.13,
       "members": [
         "SAKUYA"
       ],
       "original": "낯선 도시의 소음은 BGM, 자극해 내 모든 Sense",
       "romanization": "natseon dosiui soeumeun BGM, jageukhae nae modeun sense",
       "english": "The noise of an unfamiliar city is BGM, Stimulating all my senses",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          95.03,
+          97.3
+        ],
+        [
+          97.49,
+          99.33
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 99.28,
+      "end": 100.93,
       "members": [
         "SION"
       ],
       "original": "Wake up 멍해진 세상을 깨워",
       "romanization": "wake up meonghaejin sesangeul kkaewo",
       "english": "Wake up, awaken this dazed world",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          99.28,
+          101.15
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 101.07,
+      "end": 102.87,
       "members": [
         "RIKU"
       ],
       "original": "",
       "romanization": "Say 1, 2, 3 Let’s go!",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          101,
+          101.53
+        ],
+        [
+          101.71,
+          102.03
+        ],
+        [
+          102.21,
+          103.12
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 103.02,
+      "end": 108.68,
       "members": [
         "YUSHI"
       ],
       "original": "Run this town, 눈부신 이 Feeling, 아득히 아득히 햇살은 조명이 돼",
       "romanization": "run this town, nunbusin i feeling, adeuki adeuki haetsareun jomyeongi dwae",
       "english": "Run this town, This dazzling feeling, Far, far away, the sunlight becomes our spotlight",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          103.11,
+          103.46
+        ],
+        [
+          103.62,
+          103.95
+        ],
+        [
+          104.12,
+          104.42
+        ],
+        [
+          104.57,
+          105.3
+        ],
+        [
+          105.5,
+          105.8
+        ],
+        [
+          105.98,
+          106.56
+        ],
+        [
+          106.74,
+          108.91
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 108.87,
+      "end": 114.29,
       "members": [
         "NCT WISH"
       ],
@@ -501,8 +927,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 114.44,
+      "end": 116.2,
       "members": [
         "NCT WISH"
       ],
@@ -512,8 +938,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 116.41,
+      "end": 121.91,
       "members": [
         "NCT WISH"
       ],
@@ -523,8 +949,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 122.08,
+      "end": 125.73,
       "members": [
         "NCT WISH"
       ],
@@ -534,151 +960,283 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 125.88,
+      "end": 130.29,
       "members": [
         "JAEHEE"
       ],
       "original": "Keep on swerving, 춤을 추는 듯한 Flow",
       "romanization": "keep on swerving, chumeul chuneun deuthan flow",
       "english": "Keep on swerving, A flow that feels like dancing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          125.96,
+          126.37
+        ],
+        [
+          126.49,
+          127.73
+        ],
+        [
+          127.9,
+          130.21
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 131.18,
+      "end": 134.04,
       "members": [
         "JAEHEE"
       ],
       "original": "그 누가 막아, We can jump the wall",
       "romanization": "geu nuga maga, we can jump the wall",
       "english": "Who could stop us?, We can jump the wall",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          131.18,
+          132.24
+        ],
+        [
+          132.45,
+          132.78
+        ],
+        [
+          132.94,
+          134.09
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 134.98,
+      "end": 138.51,
       "members": [
         "RYO"
       ],
       "original": "즐겨 시선 어디든지, **꾸밈없는 Vibe@SION**",
       "romanization": "jeulgyeo siseon eodideunji, **kkumimeomneun vibe@SION**",
       "english": "Enjoy it, no matter where the eyes are watching, **An unpretentious vibe@SION**",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          134.94,
+          136.1
+        ],
+        [
+          136.24,
+          137.47
+        ],
+        [
+          137.33,
+          138.78,
+          [
+            "SION"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 138.66,
+      "end": 142.08,
       "members": [
         "RYO"
       ],
       "original": "더 크게 소리쳐, We own this street",
       "romanization": "deo keuge sorichyeo, we own this street",
       "english": "Shout even louder, We own this street",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          138.58,
+          142.92
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 142.13,
+      "end": 145.33,
       "members": [
         "YUSHI"
       ],
       "original": "멈춰 있던 Clock, 다시 이어져",
       "romanization": "meomchwo itdeon clock, dasi ieojyeo",
       "english": "The clock that had stopped, Starts moving again",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          142.19,
+          143.43
+        ],
+        [
+          143.81,
+          145.29
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 145.71,
+      "end": 148.68,
       "members": [
         "YUSHI"
       ],
       "original": "두 발을 잡아 둔, 어제에겐 Say good bye",
       "romanization": "du bareul jaba dun, eojeegen say good bye",
       "english": "To yesterday that held, Both my feet back, say goodbye",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          145.73,
+          149.42
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 148.81,
+      "end": 152.46,
       "members": [
         "SAKUYA"
       ],
       "original": "달려 Ready, go, 걱정 말고 Let it roll",
       "romanization": "dallyeo ready, go, geokjeong malgo let it roll",
       "english": "Run, ready, go, Don't worry, let it roll",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          148.92,
+          152.63
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 152.61,
+      "end": 154.29,
       "members": [
         "RIKU"
       ],
       "original": "해가 떴지 No need to wait",
       "romanization": "haega tteotji no need to wait",
       "english": "The sun has risen, no need to wait",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          152.65,
+          154.62
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 154.5,
+      "end": 158.26,
       "members": [
         "JAEHEE"
       ],
       "original": "",
       "romanization": "Making my own thing yeah, **We, we own this street**",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          154.52,
+          158.12
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 158.41,
+      "end": 162.64,
       "members": [
         "RYO"
       ],
       "original": "Keep on swerving, 춤을 추는 듯한 Flow",
       "romanization": "keep on swerving, chumeul chuneun deuthan flow",
       "english": "Keep on swerving, A flow that feels like dancing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          158.37,
+          158.75
+        ],
+        [
+          158.91,
+          160.12
+        ],
+        [
+          160.27,
+          162.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 163.6,
+      "end": 166.6,
       "members": [
         "RYO"
       ],
       "original": "그 누가 막아, We can jump the wall",
       "romanization": "geu nuga maga, we can jump the wall",
       "english": "Who could stop us?, We can jump the wall",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          163.58,
+          165.14
+        ],
+        [
+          165.29,
+          166.45
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 167.42,
+      "end": 170.9,
       "members": [
         "SION"
       ],
       "original": "즐겨 시선 어디든지, **꾸밈없는 Vibe@SAKUYA**",
       "romanization": "jeulgyeo siseon eodideunji, **kkumimeomneun vibe@SAKUYA**",
       "english": "Enjoy it, no matter where the eyes are watching, **An unpretentious vibe@SAKUYA**",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          167.39,
+          168.42
+        ],
+        [
+          168.61,
+          169.85
+        ],
+        [
+          169.74,
+          171.19,
+          [
+            "SAKUYA"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 170.91,
+      "end": 173.32,
       "members": [
         "SION"
       ],
       "original": "더 크게 소리쳐, We own this street",
       "romanization": "deo keuge sorichyeo, we own this street",
       "english": "Shout even louder, We own this street",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          170.98,
+          175.23
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 173.53,
+      "end": 177.12,
       "members": [
         "NCT WISH"
       ],
@@ -688,8 +1246,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 177.33,
+      "end": 178.91,
       "members": [
         "NCT WISH"
       ],
@@ -699,8 +1257,8 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 179.07,
+      "end": 184.72,
       "members": [
         "NCT WISH"
       ],
@@ -710,15 +1268,24 @@
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
+      "start": 185.02,
+      "end": 189.04,
       "members": [
         "NCT WISH"
       ],
       "original": "더 높이 착지, We, we own this **street@RIKU**",
       "romanization": "deo nopi chakji, we, we own this **street@RIKU**",
       "english": "Landing even higher, We, we own this **street@RIKU**",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          188.35,
+          188.99,
+          [
+            "RIKU"
+          ]
+        ]
+      ]
     }
   ],
   "audio": "audio/nctwish_weownthisstreet.mp3"
