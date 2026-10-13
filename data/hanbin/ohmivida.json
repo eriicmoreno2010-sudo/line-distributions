@@ -12,7 +12,15 @@
       "image": "images/hanbin/ohmivida/hanbin.png",
       "color": "#ff4d6d",
       "focus": 50,
-      "lift": 3
+      "lift": 3,
+      "frame": {
+        "cx": 0.5372,
+        "cy": 0.5,
+        "size": 0.3158,
+        "rot": 0,
+        "flip": false,
+        "blur": 0
+      }
     }
   ],
   "lyrics": [
