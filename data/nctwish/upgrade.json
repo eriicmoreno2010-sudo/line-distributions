@@ -2,7 +2,7 @@
   "group": "NCT WISH",
   "song": "UPGRADE",
   "video": "",
-  "duration": 0,
+  "duration": 169.038367,
   "theme": "dark",
   "subunit": false,
   "layout": "classic",
@@ -52,753 +52,1153 @@
   ],
   "lyrics": [
     {
-      "start": 0,
-      "end": 0,
+      "start": 1.27,
+      "end": 7.67,
       "members": [
         "SION"
       ],
       "original": "",
       "romanization": "Uh? Okay, The robots back again, eh, Dive into virtual world, yeh",
       "english": "",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          1.28,
+          1.72
+        ],
+        [
+          2.21,
+          2.85
+        ],
+        [
+          3.28,
+          5.04
+        ],
+        [
+          5.89,
+          7.62
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 8.97,
+      "end": 11.53,
+      "members": [
+        "RIKU"
+      ],
       "original": "Yuh 난 따분했던 차원 비틀고",
       "romanization": "yuh nan ttabunhaetdeon chawon biteulgo",
       "english": "Yuh, twisting the dimension that used to bore me",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          9.02,
+          9.48
+        ],
+        [
+          9.67,
+          11.51
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 11.69,
+      "end": 13.53,
+      "members": [
+        "RIKU"
+      ],
       "original": "전혀 다른 세계 열어 New code",
       "romanization": "jeonhyeo dareun segye yeoreo new code",
       "english": "Opening up a completely different world, new code",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          11.68,
+          13.49
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "빨라지는 Tempo 속에 Alt Tab",
-      "romanization": "ppallajineun tempo soge alt tab",
-      "english": "Alt Tab in the speeding tempo",
-      "adlib": false
+      "start": 13.65,
+      "end": 16.96,
+      "members": [
+        "RIKU"
+      ],
+      "original": "빨라지는 Tempo 속에 Alt Tab, They be too slow, right?",
+      "romanization": "ppallajineun tempo soge alt tab, they be too slow, right?",
+      "english": "Alt Tab in the speeding tempo, They be too slow, right?",
+      "adlib": false,
+      "voice": [
+        [
+          13.64,
+          15.47
+        ],
+        [
+          15.63,
+          16.98
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "They be too slow, right?",
-      "romanization": "they be too slow, right?",
-      "english": "They be too slow, right?",
-      "adlib": false
+      "start": 17.22,
+      "end": 20.9,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "예상치도 못하게, 퍼지는 걸 Everywhere",
+      "romanization": "yesangchido mothage, peojineun geol everywhere",
+      "english": "Unexpectedly, Spreading everywhere",
+      "adlib": false,
+      "voice": [
+        [
+          17.24,
+          19.06
+        ],
+        [
+          19.25,
+          20.95
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "예상치도 못하게",
-      "romanization": "yesangchido mothage",
-      "english": "Unexpectedly",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "퍼지는 걸 Everywhere",
-      "romanization": "peojineun geol everywhere",
-      "english": "Spreading everywhere",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 20.94,
+      "end": 22.33,
+      "members": [
+        "RYO"
+      ],
       "original": "작은 틈까지도",
       "romanization": "jageun teumkkajido",
       "english": "Even into the smallest cracks",
+      "adlib": false,
+      "voice": [
+        [
+          20.94,
+          22.33
+        ]
+      ]
+    },
+    {
+      "start": 22.59,
+      "end": 24.85,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "몰아쳐 Beat on, beat on, 뒤집힌 Error",
+      "romanization": "morachyeo beat on, beat on, dwijipin error",
+      "english": "Crashing in, beat on, beat on, An overturned error",
+      "adlib": false,
+      "voice": [
+        [
+          22.6,
+          24.9
+        ]
+      ]
+    },
+    {
+      "start": 24.94,
+      "end": 28.21,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "Ooh, **Yeah, you got dash, 또 지루하게 뻔하지@SION**",
+      "romanization": "ooh, **yeah, you got dash, tto jiruhage ppeonhaji@SION**",
+      "english": "Ooh, **Yeah, you got dash, It's predictably boring again@SION**",
+      "adlib": false,
+      "voice": [
+        [
+          24.9,
+          25.46
+        ],
+        [
+          25.39,
+          26.49,
+          [
+            "SION"
+          ]
+        ],
+        [
+          26.64,
+          28.74,
+          [
+            "SION"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 28.4,
+      "end": 32.28,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "Ooh, **네온색 Logic, 널 뒤흔들어 온종일@RYO**",
+      "romanization": "ooh, **neonsaek logic, neol dwiheundeureo onjongil@RYO**",
+      "english": "Ooh, **Neon-colored logic, Shaking you up all day long@RYO**",
+      "adlib": false,
+      "voice": [
+        [
+          28.47,
+          29.31
+        ],
+        [
+          29.24,
+          30.25,
+          [
+            "RYO"
+          ]
+        ],
+        [
+          30.42,
+          32.65,
+          [
+            "RYO"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 32.45,
+      "end": 36.42,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "All day I know 어디라도, **네 숨을 조일@SAKUYA**",
+      "romanization": "all day i know eodirado, **ne sumeul joil@SAKUYA**",
+      "english": "All day I know, wherever you are, **Tightening your breath@SAKUYA**",
+      "adlib": false,
+      "voice": [
+        [
+          32.67,
+          36.1
+        ],
+        [
+          35.41,
+          36.6,
+          [
+            "SAKUYA"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 36.35,
+      "end": 37.1,
+      "members": [
+        "SION"
+      ],
+      "original": "",
+      "romanization": "(I know)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          36.33,
+          37.09
+        ]
+      ]
+    },
+    {
+      "start": 65.63,
+      "end": 65.93,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Yup)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          65.59,
+          65.91
+        ]
+      ]
+    },
+    {
+      "start": 67.55,
+      "end": 68.17,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Unlock)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          67.56,
+          68.17
+        ]
+      ]
+    },
+    {
+      "start": 69.5,
+      "end": 71.69,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Uh, uh, uh, what's up)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          69.5,
+          69.86
+        ],
+        [
+          70.07,
+          70.36
+        ],
+        [
+          70.51,
+          70.77
+        ],
+        [
+          70.96,
+          71.66
+        ]
+      ]
+    },
+    {
+      "start": 73.4,
+      "end": 73.82,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          73.43,
+          73.85
+        ]
+      ]
+    },
+    {
+      "start": 36.57,
+      "end": 40.49,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "Got it comin’ up to you, **We got that@SAKUYA**",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          37.01,
+          39.56
+        ],
+        [
+          39.74,
+          40.64,
+          [
+            "SAKUYA"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 40.92,
+      "end": 46.32,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Up-up-up upgrade, Up-up-up upgrade, 잘 봐 We gon’ make",
+      "romanization": "up-up-up upgrade, up-up-up upgrade, jal bwa we gon’ make",
+      "english": "Up-up-up upgrade, Up-up-up upgrade, Watch closely, we gon’ make",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "몰아쳐 Beat on, beat on",
-      "romanization": "morachyeo beat on, beat on",
-      "english": "Crashing in, beat on, beat on",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "뒤집힌 Error",
-      "romanization": "dwijipin error",
-      "english": "An overturned error",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh",
-      "romanization": "ooh",
-      "english": "Ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Yeah, you got dash",
-      "romanization": "yeah, you got dash",
-      "english": "Yeah, you got dash",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "또 지루하게 뻔하지",
-      "romanization": "tto jiruhage ppeonhaji",
-      "english": "It's predictably boring again",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ooh",
-      "romanization": "ooh",
-      "english": "Ooh",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네온색 Logic",
-      "romanization": "neonsaek logic",
-      "english": "Neon-colored logic",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "널 뒤흔들어 온종일",
-      "romanization": "neol dwiheundeureo onjongil",
-      "english": "Shaking you up all day long",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "All day I know 어디라도",
-      "romanization": "all day i know eodirado",
-      "english": "All day I know, wherever you are",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "네 숨을 조일",
-      "romanization": "ne sumeul joil",
-      "english": "Tightening your breath",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I know)",
-      "romanization": "(i know)",
-      "english": "(I know)",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Got it comin’ up to you",
-      "romanization": "got it comin’ up to you",
-      "english": "Got it comin’ up to you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We got that",
-      "romanization": "we got that",
-      "english": "We got that",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잘 봐 We gon’ make",
-      "romanization": "jal bwa we gon’ make",
-      "english": "Watch closely, we gon’ make",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 46.4,
+      "end": 48.56,
+      "members": [
+        "JAEHEE"
+      ],
       "original": "경계를 뒤틀어 Break it all",
       "romanization": "gyeonggyereul dwiteureo break it all",
       "english": "Twist the boundaries, break it all",
+      "adlib": false,
+      "voice": [
+        [
+          46.35,
+          48.48
+        ]
+      ]
+    },
+    {
+      "start": 48.94,
+      "end": 54,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Up-up-up upgrade, Up-up-up upgrade, 새겨진 New wave",
+      "romanization": "up-up-up upgrade, up-up-up upgrade, saegyeojin new wave",
+      "english": "Up-up-up upgrade, Up-up-up upgrade, A newly engraved new wave",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
+      "start": 54.15,
+      "end": 56.23,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "Gonna be what you need, don’t you know?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          54.1,
+          56.32
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
+      "start": 56.59,
+      "end": 58.14,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "Change up the vibe",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          56.53,
+          58.58
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "새겨진 New wave",
-      "romanization": "saegyeojin new wave",
-      "english": "A newly engraved new wave",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Gonna be what you need,",
-      "romanization": "gonna be what you need,",
-      "english": "Gonna be what you need,",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "don’t you know?",
-      "romanization": "don’t you know?",
-      "english": "don’t you know?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Change up the vibe",
-      "romanization": "change up the vibe",
-      "english": "Change up the vibe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 58.29,
+      "end": 60.07,
+      "members": [
+        "NCT WISH"
+      ],
       "original": "Yeah, 새롭게 바뀐 Pace",
       "romanization": "yeah, saeropge bakkwin pace",
       "english": "Yeah, a newly changed pace",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Reload, right now",
-      "romanization": "reload, right now",
-      "english": "Reload, right now",
-      "adlib": false
+      "start": 60.46,
+      "end": 63.86,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "Reload, right now, **The new original@RYO**",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          60.4,
+          62.36
+        ],
+        [
+          62.16,
+          63.94,
+          [
+            "RYO"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "The new original",
-      "romanization": "the new original",
-      "english": "The new original",
-      "adlib": false
+      "start": 63.91,
+      "end": 67.68,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "피해 Hurry, take a warning, 너를 집어삼켜 More, more",
+      "romanization": "pihae hurry, take a warning, neoreul jibeosamkyeo more, more",
+      "english": "Run, hurry, take a warning, Swallowing you up, more, more",
+      "adlib": false,
+      "voice": [
+        [
+          63.9,
+          67.1
+        ],
+        [
+          67.27,
+          67.66
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "피해 Hurry, take a warning",
-      "romanization": "pihae hurry, take a warning",
-      "english": "Run, hurry, take a warning",
-      "adlib": false
+      "start": 67.78,
+      "end": 71.5,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "번진 Panic 볼만하지, 우린 Trigger 파고들어 더 Uh",
+      "romanization": "beonjyeon panic bolmanhaji, urin trigger pagodeureo deo uh",
+      "english": "The spreading panic is quite a sight, We’re the trigger, digging in deeper, uh",
+      "adlib": false,
+      "voice": [
+        [
+          67.82,
+          71.04
+        ],
+        [
+          71.21,
+          71.56
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "너를 집어삼켜 More, more",
-      "romanization": "neoreul jibeosamkyeo more, more",
-      "english": "Swallowing you up, more, more",
-      "adlib": false
+      "start": 71.68,
+      "end": 75.6,
+      "members": [
+        "RYO"
+      ],
+      "original": "커져가는 Energy, 무너뜨려 또 하나씩",
+      "romanization": "keojyeoganeun energy, muneotteuryeo tto hanassik",
+      "english": "Energy growing bigger, Tearing things down, one by one",
+      "adlib": false,
+      "voice": [
+        [
+          71.91,
+          73.73
+        ],
+        [
+          73.9,
+          75.61
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "번진 Panic 볼만하지",
-      "romanization": "beonjyeon panic bolmanhaji",
-      "english": "The spreading panic is quite a sight",
-      "adlib": false
+      "start": 75.62,
+      "end": 79.73,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "I see it all, through the wall, 버틸 수 없겠지",
+      "romanization": "i see it all, through the wall, beotil su eopgetji",
+      "english": "I see it all, through the wall, You won't be able to hold out",
+      "adlib": false,
+      "voice": [
+        [
+          75.59,
+          79.8
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "우린 Trigger 파고들어 더 Uh",
-      "romanization": "urin trigger pagodeureo deo uh",
-      "english": "We’re the trigger, digging in deeper, uh",
-      "adlib": false
+      "start": 79.77,
+      "end": 83.45,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "번져온 Feelin’, 이 감각을 다 지배해",
+      "romanization": "beonjyeoon feelin’, i gamgageul da jibaehae",
+      "english": "The feeling spreading over, I take control of all these sensations",
+      "adlib": false,
+      "voice": [
+        [
+          79.76,
+          81.05
+        ],
+        [
+          81.24,
+          83.4
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "커져가는 Energy",
-      "romanization": "keojyeoganeun energy",
-      "english": "Energy growing bigger",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "무너뜨려 또 하나씩",
-      "romanization": "muneotteuryeo tto hanassik",
-      "english": "Tearing things down, one by one",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "I see it all, through the wall",
-      "romanization": "i see it all, through the wall",
-      "english": "I see it all, through the wall",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "버틸 수 없겠지",
-      "romanization": "beotil su eopgetji",
-      "english": "You won't be able to hold out",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "번져온 Feelin’",
-      "romanization": "beonjyeoon feelin’",
-      "english": "The feeling spreading over",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "이 감각을 다 지배해",
-      "romanization": "i gamgageul da jibaehae",
-      "english": "I take control of all these sensations",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 83.62,
+      "end": 84.69,
+      "members": [
+        "YUSHI"
+      ],
       "original": "단번에 Freeze it",
       "romanization": "danbeone freeze it",
       "english": "Freeze it in an instant",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          83.62,
+          84.94
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 84.84,
+      "end": 87.15,
+      "members": [
+        "RYO"
+      ],
       "original": "오류 속에 마비돼",
       "romanization": "oryu soge mabidwae",
       "english": "Paralyzed in an error",
+      "adlib": false,
+      "voice": [
+        [
+          85.01,
+          87.28
+        ]
+      ]
+    },
+    {
+      "start": 87.34,
+      "end": 91.17,
+      "members": [
+        "SION"
+      ],
+      "original": "All day I know 어디라도, **피할 수 없지@RIKU**",
+      "romanization": "all day i know eodirado, **pihal su eopji@RIKU**",
+      "english": "All day I know, wherever you are, **You can't escape@RIKU**",
+      "adlib": false,
+      "voice": [
+        [
+          87.26,
+          90.6
+        ],
+        [
+          89.92,
+          91.26,
+          [
+            "RIKU"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 90.93,
+      "end": 91.68,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "(I know)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          90.96,
+          91.66
+        ]
+      ]
+    },
+    {
+      "start": 94.34,
+      "end": 95.34,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "",
+      "romanization": "(Yeah we got that)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          94.35,
+          95.5
+        ]
+      ]
+    },
+    {
+      "start": 97.09,
+      "end": 97.42,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "",
+      "romanization": "(Yeah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          97.05,
+          97.52
+        ]
+      ]
+    },
+    {
+      "start": 99.01,
+      "end": 99.42,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "",
+      "romanization": "(Hah)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          98.99,
+          99.38
+        ]
+      ]
+    },
+    {
+      "start": 104.64,
+      "end": 105.46,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Upgrade)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          104.62,
+          105.49
+        ]
+      ]
+    },
+    {
+      "start": 106.53,
+      "end": 107.37,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Okay)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          106.54,
+          107.35
+        ]
+      ]
+    },
+    {
+      "start": 122.66,
+      "end": 124.33,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "(위로)",
+      "romanization": "(wiro)",
+      "english": "(Above)",
+      "adlib": true,
+      "voice": [
+        [
+          122.63,
+          124.28
+        ]
+      ]
+    },
+    {
+      "start": 159.49,
+      "end": 160.07,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "(Ey)",
+      "english": "",
+      "adlib": true,
+      "voice": [
+        [
+          159.52,
+          160.04
+        ]
+      ]
+    },
+    {
+      "start": 91.64,
+      "end": 95.14,
+      "members": [
+        "SION"
+      ],
+      "original": "이미 Comin’ up to you, **We got that@RIKU**",
+      "romanization": "imi comin’ up to you, **we got that@RIKU**",
+      "english": "It's already comin’ up to you, **We got that@RIKU**",
+      "adlib": false,
+      "voice": [
+        [
+          91.63,
+          94.15
+        ],
+        [
+          94.33,
+          95.2,
+          [
+            "RIKU"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 95.55,
+      "end": 100.75,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Up-up-up upgrade, Up-up-up upgrade, 잘 봐 We gon’ make",
+      "romanization": "up-up-up upgrade, up-up-up upgrade, jal bwa we gon’ make",
+      "english": "Up-up-up upgrade, Up-up-up upgrade, Watch closely, we gon’ make",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "All day I know 어디라도",
-      "romanization": "all day i know eodirado",
-      "english": "All day I know, wherever you are",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "피할 수 없지",
-      "romanization": "pihal su eopji",
-      "english": "You can't escape",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "(I know)",
-      "romanization": "(i know)",
-      "english": "(I know)",
-      "adlib": true
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "이미 Comin’ up to you",
-      "romanization": "imi comin’ up to you",
-      "english": "It's already comin’ up to you",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We got that",
-      "romanization": "we got that",
-      "english": "We got that",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "잘 봐 We gon’ make",
-      "romanization": "jal bwa we gon’ make",
-      "english": "Watch closely, we gon’ make",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 100.94,
+      "end": 103.02,
+      "members": [
+        "YUSHI"
+      ],
       "original": "경계를 뒤틀어 Break it all",
       "romanization": "gyeonggyereul dwiteureo break it all",
       "english": "Twist the boundaries, break it all",
+      "adlib": false,
+      "voice": [
+        [
+          100.96,
+          103.14
+        ]
+      ]
+    },
+    {
+      "start": 103.59,
+      "end": 108.58,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Up-up-up upgrade, Up-up-up upgrade, 새겨진 New wave",
+      "romanization": "up-up-up upgrade, up-up-up upgrade, saegyeojin new wave",
+      "english": "Up-up-up upgrade, Up-up-up upgrade, A newly engraved new wave",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
+      "start": 108.72,
+      "end": 110.8,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "Gonna be what you need, don’t you know?",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          108.7,
+          110.94
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
+      "start": 111.18,
+      "end": 112.79,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "Change up the vibe",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          111.14,
+          113.34
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "새겨진 New wave",
-      "romanization": "saegyeojin new wave",
-      "english": "A newly engraved new wave",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Gonna be what you need,",
-      "romanization": "gonna be what you need,",
-      "english": "Gonna be what you need,",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "don’t you know?",
-      "romanization": "don’t you know?",
-      "english": "don’t you know?",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Change up the vibe",
-      "romanization": "change up the vibe",
-      "english": "Change up the vibe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 112.91,
+      "end": 114.73,
+      "members": [
+        "NCT WISH"
+      ],
       "original": "Yeah, 새롭게 바뀐 Pace",
       "romanization": "yeah, saeropge bakkwin pace",
       "english": "Yeah, a newly changed pace",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Reload, right now",
-      "romanization": "reload, right now",
-      "english": "Reload, right now",
-      "adlib": false
+      "start": 115.05,
+      "end": 118.54,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "",
+      "romanization": "Reload, right now, **The new original@SION**",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          115.06,
+          116.87
+        ],
+        [
+          116.78,
+          118.56,
+          [
+            "SION"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "The new original",
-      "romanization": "the new original",
-      "english": "The new original",
-      "adlib": false
+      "start": 119.17,
+      "end": 123.04,
+      "members": [
+        "RYO"
+      ],
+      "original": "두 눈앞에, 무한히 마주한 세상 위로",
+      "romanization": "du nunape, muhanhi majuhan sesang wiro",
+      "english": "Before our very eyes, Above a world we face endlessly",
+      "adlib": false,
+      "voice": [
+        [
+          119.23,
+          120.1
+        ],
+        [
+          120.25,
+          123.04
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "두 눈앞에",
-      "romanization": "du nunape",
-      "english": "Before our very eyes",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "무한히 마주한 세상 위로",
-      "romanization": "muhanhi majuhan sesang wiro",
-      "english": "Above a world we face endlessly",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 123.8,
+      "end": 126.48,
+      "members": [
+        "RYO"
+      ],
       "original": "오직 우리만이 서 있을 때",
       "romanization": "ojik urimani seo isseul ttae",
       "english": "When we're the only ones standing",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          123.8,
+          126.97
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 126.74,
+      "end": 129.47,
+      "members": [
+        "NCT WISH"
+      ],
       "original": "Keep it low 지금부터 On a roll",
       "romanization": "keep it low jigeumbuteo on a roll",
       "english": "Keep it low, from now on, on a roll",
-      "adlib": false
+      "adlib": false,
+      "voice": []
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 129.63,
+      "end": 134.71,
+      "members": [
+        "JAEHEE"
+      ],
       "original": "힘껏 손에 쥐는 색다른 Glitch, oh",
       "romanization": "himkkeot sone jwineun saekdareun glitch, oh",
       "english": "A unique glitch held tightly in our hands, oh",
-      "adlib": false
+      "adlib": false,
+      "voice": [
+        [
+          129.66,
+          132.77
+        ],
+        [
+          133.15,
+          134.65
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Yeah, give me that, uh",
-      "romanization": "yeah, give me that, uh",
-      "english": "Yeah, give me that, uh",
-      "adlib": false
+      "start": 135.39,
+      "end": 140.45,
+      "members": [
+        "SION"
+      ],
+      "original": "",
+      "romanization": "Yeah, give me that, uh, Okay, that’s right",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          135.32,
+          136.18
+        ],
+        [
+          136.82,
+          137.14
+        ],
+        [
+          137.78,
+          138.42
+        ],
+        [
+          139.73,
+          140.32
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Okay, that’s right",
-      "romanization": "okay, that’s right",
-      "english": "Okay, that’s right",
-      "adlib": false
+      "start": 143,
+      "end": 146.02,
+      "members": [
+        "RIKU"
+      ],
+      "original": "",
+      "romanization": "We gotta upgrade, yeah ",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          143.13,
+          144.34
+        ],
+        [
+          145.6,
+          146.13
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "We gotta upgrade, yeah",
-      "romanization": "we gotta upgrade, yeah",
-      "english": "We gotta upgrade, yeah",
-      "adlib": false
+      "start": 148.2,
+      "end": 150.53,
+      "members": [
+        "SAKUYA"
+      ],
+      "original": "",
+      "romanization": "Ha, alright, Bring it back, back in",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          148.28,
+          148.72
+        ],
+        [
+          148.98,
+          149.71
+        ],
+        [
+          149.99,
+          151.15
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Ha, alright",
-      "romanization": "ha, alright",
-      "english": "Ha, alright",
-      "adlib": false
+      "start": 150.65,
+      "end": 154.16,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "Don’t you know, **Change up the vibe@YUSHI**",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          150.68,
+          155.91
+        ],
+        [
+          152.15,
+          154.29,
+          [
+            "YUSHI"
+          ]
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Bring it back, back in",
-      "romanization": "bring it back, back in",
-      "english": "Bring it back, back in",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Don’t you know",
-      "romanization": "don’t you know",
-      "english": "Don’t you know",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Change up the vibe",
-      "romanization": "change up the vibe",
-      "english": "Change up the vibe",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
+      "start": 154.34,
+      "end": 155.7,
+      "members": [
+        "SION"
+      ],
       "original": "거친 숨을 내쉬며",
       "romanization": "geochin sumeul naeswimyeo",
       "english": "Breathing hard",
+      "adlib": false,
+      "voice": [
+        [
+          154.36,
+          155.71
+        ]
+      ]
+    },
+    {
+      "start": 156.05,
+      "end": 159.42,
+      "members": [
+        "YUSHI"
+      ],
+      "original": "뚫고 나와, 한계를 **뒤집어@YUSHI,SION**",
+      "romanization": "ttulko nawa, hangyereul **dwijibeo@YUSHI,SION**",
+      "english": "Breaking through, Turning our limits **upside down@YUSHI,SION**",
+      "adlib": false,
+      "voice": [
+        [
+          156.04,
+          157.96
+        ],
+        [
+          157.75,
+          159.54,
+          [
+            "SION"
+          ]
+        ],
+        [
+          158.54,
+          159.52,
+          [
+            "YUSHI",
+            "SION"
+          ]
+        ]
+      ]
+    },
+    {
+      "start": 159.56,
+      "end": 163.33,
+      "members": [
+        "NCT WISH"
+      ],
+      "original": "Up-up-the up-the upgrade, 내 전불 걸어올 때",
+      "romanization": "up-up-the up-the upgrade, nae jeonbul georeool ttae",
+      "english": "Up-up-the up-the upgrade, When I put everything on the line",
       "adlib": false
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "뚫고 나와",
-      "romanization": "ttulko nawa",
-      "english": "Breaking through",
-      "adlib": false
+      "start": 163.38,
+      "end": 165.46,
+      "members": [
+        "JAEHEE"
+      ],
+      "original": "",
+      "romanization": "Yeah, you know what time it is",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          163.4,
+          165.39
+        ]
+      ]
     },
     {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "한계를 뒤집어",
-      "romanization": "hangyereul dwijibeo",
-      "english": "Turning our limits upside down",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-the up-the upgrade",
-      "romanization": "up-up-the up-the upgrade",
-      "english": "Up-up-the up-the upgrade",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "내 전불 걸어올 때",
-      "romanization": "nae jeonbul georeool ttae",
-      "english": "When I put everything on the line",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Yeah, you know what time it is",
-      "romanization": "yeah, you know what time it is",
-      "english": "Yeah, you know what time it is",
-      "adlib": false
-    },
-    {
-      "start": 0,
-      "end": 0,
-      "members": [],
-      "original": "Up-up-up upgrade",
-      "romanization": "up-up-up upgrade",
-      "english": "Up-up-up upgrade",
-      "adlib": false
+      "start": 166.05,
+      "end": 167.67,
+      "members": [
+        "RYO"
+      ],
+      "original": "",
+      "romanization": "Up-up-up upgrade",
+      "english": "",
+      "adlib": false,
+      "voice": [
+        [
+          166.07,
+          167.65
+        ]
+      ]
     }
   ],
   "audio": "audio/nctwish_upgrade.mp3"
