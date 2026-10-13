@@ -1201,5 +1201,6 @@
       ]
     }
   ],
-  "audio": "audio/nctwish_upgrade.mp3"
+  "audio": "audio/nctwish_upgrade.mp3",
+  "instrumental": "audio/nctwish_upgrade_inst.mp3"
 }
