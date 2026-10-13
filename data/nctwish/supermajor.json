@@ -979,5 +979,6 @@
   "instrumentalEnd": 63.26673765608974,
   "instrumentalFade": true,
   "cover": "covers/nctwish_supermajor.jpg",
-  "npC1": "#f2263b"
+  "npC1": "#f2263b",
+  "npC2": "#2ee7ff"
 }
