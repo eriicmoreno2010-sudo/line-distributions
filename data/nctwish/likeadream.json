@@ -899,5 +899,6 @@
   "instrumentalEnd": 76.21571113798078,
   "instrumentalFade": true,
   "cover": "covers/nctwish_likeadream.jpg",
-  "npC1": "#b0d0dd"
+  "npC1": "#bae9fd",
+  "npC2": "#fc2eff"
 }
