@@ -756,7 +756,7 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
 }
 
 
-/* Solo COLOR CODED LYRICS: evitar deformar las fotografías */
+/* COLOR CODED LYRICS: fotografía sin deformar y con encuadre completo */
 #coded-top .cstrip {
     position: relative;
     min-width: 0;
@@ -765,9 +765,10 @@ body.gcount-10 #ranking .member-time{ font-size:17px; }
 
 #coded-top .cstrip .cstrip-photo {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 45%;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center top !important;
 }
+
 
