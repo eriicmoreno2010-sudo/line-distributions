@@ -34,10 +34,16 @@ body.layout-coded #timeline-section{ display:none !important; }
 #coded-top{ position:relative; display:flex; width:100%; height:46%; background:#000; }
 .cstrip{ position:relative; flex:1 1 0; min-width:0; overflow:hidden; background:#000; }
 .cstrip-photo{
-    width:100%; height:100%; object-fit:cover; display:block;
-    filter:brightness(.38) saturate(.8);            /* APAGADO por defecto: si nadie canta, todos oscuros */
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center center;
+    display:block;
+    background:#000;
+    filter:brightness(.38) saturate(.8);
     transition:filter .28s ease;
 }
+
 .cstrip-grad{
     position:absolute; left:0; right:0; bottom:0; height:5%;
     background:linear-gradient(to top, var(--c) 0%, transparent 100%);
